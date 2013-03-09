@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/expanded_content" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/screencap_container" android:background="@drawable/pinstripe_details_tile" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <include android:id="@id/episode_screencap" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+    </FrameLayout>
+    <TextView android:id="@id/episode_description" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DetailsPage_ContentText" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_send_holo_light" android:id="@id/send" android:title="@string/send" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/ic_attachment_holo_light" android:id="@id/add_attachment" android:title="@string/add_file_attachment" android:showAsAction="never" />
+    <item android:id="@id/add_cc" android:title="@string/add_cc_label" android:showAsAction="never" />
+    <item android:id="@id/add_bcc" android:title="@string/add_bcc_label" android:showAsAction="never" />
+    <item android:id="@id/save" android:title="@string/save" android:showAsAction="never" />
+    <item android:icon="@drawable/trash" android:id="@id/discard" android:title="@string/discard" />
+    <item android:icon="@*android:drawable/ic_menu_preferences" android:id="@id/preferences" android:title="@string/menu_preferences" android:showAsAction="never" />
+    <item android:icon="@*android:drawable/ic_menu_help" android:id="@id/help_info_menu_item" android:title="@string/help_and_info" />
+    <item android:icon="@*android:drawable/ic_menu_send" android:id="@id/feedback_menu_item" android:title="@string/feedback" />
+</menu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="vertical" android:id="@id/topLayout" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip" />
+        <View android:background="@*android:drawable/code_lock_top" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="18.0sp" android:gravity="top|left|center" android:id="@id/infoText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="18.0sp" android:gravity="top|left|center" android:id="@id/bottomInfoText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_marginBottom="10.0dip" style="@style/SecurityPreferenceButtonContainer">
+        <Button android:id="@id/footerLeftButton" style="@style/SecurityPreferenceButton" />
+        <Button android:id="@id/footerRightButton" style="@style/SecurityPreferenceButton" />
+    </LinearLayout>
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

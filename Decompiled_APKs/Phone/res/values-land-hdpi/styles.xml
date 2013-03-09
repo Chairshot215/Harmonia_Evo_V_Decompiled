@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_dialpad">
+        <item name="android:layout_width">530.0px</item>
+        <item name="android:layout_height">318.0px</item>
+    </style>
+    <style name="style_accumulator">
+        <item name="android:layout_width">530.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="style_accumulator_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">11.0px</item>
+    </style>
+    <style name="layout_style_dialer_keypad">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@com.htc:drawable/phone_keypad_background</item>
+        <item name="android:paddingLeft">9.0px</item>
+        <item name="android:paddingTop">6.0px</item>
+        <item name="android:paddingRight">9.0px</item>
+        <item name="android:paddingBottom">2.0px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="image_style_dialer_button">
+        <item name="android:background">@drawable/htc_dial_button</item>
+        <item name="android:layout_width">132.0px</item>
+        <item name="android:layout_height">69.0px</item>
+    </style>
+    <style name="text_style_dialer_button_number">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12.0px</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_dialer_button_phonetic_alphabet">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">0.0px</item>
+    </style>
+    <style name="text_style_dialer_button_alphabet">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff797979</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">43.0px</item>
+    </style>
+    <style name="text_style_dialer_button_zero_number" parent="@style/text_style_dialer_button_number" />
+    <style name="image_style_dialer_button_symbol">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">33.0px</item>
+        <item name="android:layout_height">33.0px</item>
+        <item name="android:layout_marginLeft">9.0px</item>
+    </style>
+    <style name="image_style_dialer_button_symbol_plus">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">33.0px</item>
+        <item name="android:layout_height">33.0px</item>
+        <item name="android:layout_marginLeft">43.0px</item>
+    </style>
+    <style name="image_style_dialer_button_symbol_voicemail">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">33.0px</item>
+        <item name="android:layout_height">33.0px</item>
+        <item name="android:layout_marginLeft">46.0px</item>
+    </style>
+    <style name="layout_style_phone_keypad">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/phone_bg_keypad</item>
+        <item name="android:paddingLeft">10.0px</item>
+        <item name="android:paddingTop">9.0px</item>
+        <item name="android:paddingRight">4.0px</item>
+        <item name="android:paddingBottom">0.0px</item>
+        <item name="android:layout_width">530.0px</item>
+        <item name="android:layout_height">340.0px</item>
+    </style>
+    <style name="image_style_phone_button">
+        <item name="android:background">@drawable/phone_keypad_btn</item>
+        <item name="android:padding">0.0px</item>
+        <item name="android:layout_width">166.0px</item>
+        <item name="android:layout_height">76.0px</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginTop">0.0px</item>
+        <item name="android:layout_marginRight">6.0px</item>
+        <item name="android:layout_marginBottom">6.0px</item>
+    </style>
+    <style name="text_style_phone_button_number">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">17.0px</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_phone_button_phonetic_alphabet">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">0.0px</item>
+    </style>
+    <style name="text_style_phone_button_alphabet">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff797979</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">48.0px</item>
+    </style>
+    <style name="text_style_phone_button_zero_number" parent="@style/text_style_phone_button_number" />
+    <style name="image_style_phone_button_symbol">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">33.0px</item>
+        <item name="android:layout_height">33.0px</item>
+        <item name="android:layout_marginLeft">14.0px</item>
+    </style>
+    <style name="image_style_phone_button_symbol_plus">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">43.0px</item>
+    </style>
+    <style name="image_style_phone_button_symbol_voicemail">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">33.0px</item>
+        <item name="android:layout_height">33.0px</item>
+        <item name="android:layout_marginLeft">51.0px</item>
+    </style>
+</resources>

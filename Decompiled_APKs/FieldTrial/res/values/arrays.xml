@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sampleRates">
+        <item>1 sec</item>
+        <item>2 sec</item>
+        <item>3 sec</item>
+        <item>4 sec</item>
+        <item>5 sec</item>
+    </string-array>
+    <string-array name="callStates">
+        <item>0 = Entering CDMA state</item>
+        <item>1 = Sync Channel State</item>
+        <item>2 = Paging Channel State</item>
+        <item>3 = Traffic Channel Initialization State</item>
+        <item>4 = Traffic Channel State</item>
+        <item>5 = Exit State</item>
+        <item>6 = BCCH State</item>
+        <item>7 = FCCCH State</item>
+        <item>8 = NCCCH State</item>
+    </string-array>
+    <string-array name="bands">
+        <item>CDMA Cellular</item>
+        <item>CDMA PCS</item>
+    </string-array>
+    <string-array name="hdrSessionState">
+        <item>0 = Inactive State</item>
+        <item>1 = AMP Setup State</item>
+        <item>2 = AT initiated State</item>
+        <item>3 = AN initiated State</item>
+        <item>4 = Open State</item>
+    </string-array>
+    <string-array name="dataSessionState">
+        <item>0 = Null State</item>
+        <item>1 = Connect State</item>
+        <item>2 = Dormant State</item>
+    </string-array>
+    <string-array name="aaaAuthState">
+        <item>0 = Not Authenticated</item>
+        <item>1 = Authenticated</item>
+        <item>2 = Failed Authentication</item>
+    </string-array>
+    <string-array name="hdrState">
+        <item>0 = Inactive</item>
+        <item>1 = Init</item>
+        <item>2 = Idle</item>
+        <item>3 = Connected</item>
+    </string-array>
+</resources>

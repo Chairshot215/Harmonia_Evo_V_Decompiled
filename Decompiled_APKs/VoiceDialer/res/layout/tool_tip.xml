@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:drawable/alert_dark_frame" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_tip_title" />
+    <View android:id="@id/when_separator" android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vd_green_key" />
+        <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_tip_message" />
+    </LinearLayout>
+</LinearLayout>

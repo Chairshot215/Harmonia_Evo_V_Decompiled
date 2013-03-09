@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roaming_options_entries">
+        <item>أبدًا</item>
+        <item>تجوال بيانات محلي فقط</item>
+        <item>تلقائي</item>
+    </string-array>
+    <string-array name="roaming_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="defer_messages">
+        <item>@string/call_defer_none</item>
+        <item>@string/call_defer_in_meeting</item>
+        <item>@string/call_defer_call_you_back</item>
+        <item>@string/call_defer_call_you_back_in</item>
+        <item>@string/call_defer_text_me</item>
+        <item>@string/call_defer_custom</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_sprint">
+        <item>Sprint فقط</item>
+        <item>تلقائي</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_kddi">
+        <item>KDDI فقط</item>
+        <item>تلقائي</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_sprint">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_boost">
+        <item>المنزل فقط</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices">
+        <item>الوضع العالمي</item>
+        <item>وضع CDMA</item>
+        <item>وضع GSM / UMTS</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values">
+        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_v3">
+        <item>Sprint فقط</item>
+        <item>أي CDMA</item>
+        <item>أي GSM</item>
+        <item>تلقائي</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_v3">
+        <item>1000</item>
+        <item>1002</item>
+        <item>3</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices">
+        <item>GSM / UMTS مزدوج</item>
+        <item>GSM فقط</item>
+        <item>UMTS فقط</item>
+    </string-array>
+    <string-array name="data_roam_guard_values_2ndtype">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings_2ndtype">
+        <item>السؤال دومًا</item>
+        <item>عدم السؤال أبدًا</item>
+    </string-array>
+    <string-array name="data_roam_guard_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="call_waiting_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_waiting_entries">
+        <item>تمكين</item>
+        <item>تعطيل</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings">
+        <item>افتراضي</item>
+        <item>السؤال دومًا</item>
+        <item>عدم السؤال أبدًا</item>
+    </string-array>
+    <string-array name="sip_send_keepalive_options_translated">
+        <item>@string/sip_system_decide_translated</item>
+        <item>@string/sip_always_send_keepalive_translated</item>
+    </string-array>
+    <string-array name="network_mode_select_choices">
+        <item>LTE/CDMA</item>
+        <item>CDMA فقط</item>
+    </string-array>
+    <string-array name="network_mode_select_values">
+        <item>8</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_entries">
+        <item>تمكين</item>
+        <item>تعطيل</item>
+    </string-array>
+    <string-array name="global_roaming_select_choices">
+        <item>@string/global_roaming_option_all_trips</item>
+        <item>@string/global_roaming_option_this_trips</item>
+        <item>@string/global_roaming_option_deny</item>
+    </string-array>
+    <string-array name="global_roaming_select_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices_plus_lte">
+        <item>GSM / UMTS</item>
+        <item>GSM فقط</item>
+        <item>UMTS فقط</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_plus_lte">
+        <item>عالمي</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>CDMA فقط</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_plus_lte">
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="skt_network_mode">
+        <item>LTE/WCDMA Auto</item>
+        <item>WCDMA only</item>
+    </string-array>
+    <string-array name="skt_network_mode_values">
+        <item>9</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="plus_code_country_list">
+        <item>اليابان(001010),jp</item>
+        <item>جزر البهاما(011),bs</item>
+        <item>بنجلاديش(00),bd</item>
+        <item>برمودا(011),bm</item>
+        <item>الصين(00),cn</item>
+        <item>هونج كونج(001),hk</item>
+        <item>الهند(00),in</item>
+        <item>إندونيسيا(001),id</item>
+        <item>إسرائيل(00),il</item>
+        <item>كوريا(00700),kr</item>
+        <item>ماكاو(00),mo</item>
+        <item>المكسيك(00),mx</item>
+        <item>نيوزيلندا(00),nz</item>
+        <item>بيرو(00),pe</item>
+        <item>سايبان(011),mp</item>
+        <item>تايوان(005),tw</item>
+        <item>تايلاند(001),th</item>
+        <item>الولايات المتحدة الأمريكية(011),us</item>
+        <item>فنزويلا(00),ve</item>
+        <item>فيتنام(00),vn</item>
+    </string-array>
+    <string-array name="pref_entries_cb_language_list">
+        <item>الألمانية</item>
+        <item>الإنجليزية</item>
+        <item>الإيطالية</item>
+        <item>الفرنسية</item>
+        <item>الإسبانية</item>
+        <item>الهولندية</item>
+        <item>السويدية</item>
+        <item>الدنماركية</item>
+        <item>البرتغالية</item>
+        <item>الفنلندية</item>
+        <item>النرويجية</item>
+        <item>اليونانية</item>
+        <item>التركية</item>
+        <item>المجرية</item>
+        <item>البولندية</item>
+        <item>كل اللغات</item>
+    </string-array>
+    <string-array name="entryvalues_language_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_choices">
+        <item>WCDMA فقط</item>
+        <item>GSM فقط</item>
+        <item>GSM / WCDMA تلقائي</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices">
+        <item>LTE فقط</item>
+        <item>WCDMA فقط</item>
+        <item>GSM فقط</item>
+        <item>GSM / WCDMA تلقائي</item>
+        <item>GSM / WCDMA / LTE تلقائي</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values">
+        <item>11</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices_without_lte_only">
+        <item>WCDMA فقط</item>
+        <item>GSM فقط</item>
+        <item>GSM / WCDMA تلقائي</item>
+        <item>GSM / WCDMA / LTE تلقائي</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values_without_lte_only">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_choices">
+        <item>WCDMA فقط</item>
+        <item>GSM / WCDMA تلقائي</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_choices">
+        <item>EvDo فقط</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo تلقائي</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_values">
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_No2">
+        <item>المنزل فقط</item>
+        <item>تلقائي A</item>
+        <item>تلقائي B</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_No2">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_choices">
+        <item>NAM 1</item>
+        <item>NAM 2</item>
+        <item>NAM-تلقائي</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_choices">
+        <item>مختلط</item>
+        <item>EVDO- فقط</item>
+        <item>1X- فقط</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_value">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="timeout_values">
+        <item>5 ثوان</item>
+        <item>10 ثوان</item>
+        <item>15 ثانية</item>
+        <item>20 ثانية</item>
+        <item>25 ثانية</item>
+        <item>30 ثانية</item>
+    </string-array>
+    <string-array name="clear_codes_values">
+        <item>MARCACION NO DISPONIBLE -01-</item>
+        <item>USUARIO NO DISPONIBLE -03-</item>
+        <item>LLAMADA TERMINADA -6-</item>
+        <item>USUARIO NO DISPONIBLE -08-</item>
+        <item>USUARIO OCUPADO</item>
+        <item>USUARIO NO RESPONDE -18-</item>
+        <item>USUARIO NO RESPONDE -19-</item>
+        <item>USUARIO NO DISPONIBLE -21-</item>
+        <item>MARCACION NO DISPONIBLE -22-</item>
+        <item>LLAMADA TERMINADA -25-</item>
+        <item>LLAMADA TERMINADA -26-</item>
+        <item>USUARIO NO DISPONIBLE -27-</item>
+        <item>MARCACION NO DISPONIBLE -28-</item>
+        <item>LLAMADA TERMINADA -29-</item>
+        <item>LLAMADA TERMINADA -30-</item>
+        <item>LLAMADA TERMINADA -31-</item>
+        <item>LLAMADA TERMINADA -34-</item>
+        <item>LLAMADA TERMINADA -38-</item>
+        <item>LLAMADA TERMINADA -41-</item>
+        <item>LLAMADA TERMINADA -42-</item>
+        <item>LLAMADA TERMINADA -43-</item>
+        <item>LLAMADA TERMINADA -44-</item>
+        <item>LLAMADA TERMINADA -47-</item>
+        <item>LLAMADA TERMINADA -49-</item>
+        <item>LLAMADA TERMINADA -50-</item>
+        <item>LLAMADA TERMINADA -55-</item>
+        <item>LLAMADA TERMINADA -57-</item>
+        <item>LLAMADA TERMINADA -58-</item>
+        <item>LLAMADA TERMINADA -63-</item>
+        <item>LLAMADA TERMINADA -65-</item>
+        <item>LLAMADA TERMINADA -68-</item>
+        <item>LLAMADA TERMINADA -69-</item>
+        <item>LLAMADA TERMINADA -70-</item>
+        <item>LLAMADA TERMINADA -79-</item>
+        <item>LLAMADA TERMINADA -81-</item>
+        <item>LLAMADA TERMINADA -87-</item>
+        <item>LLAMADA TERMINADA -88-</item>
+        <item>LLAMADA TERMINADA -91-</item>
+        <item>LLAMADA TERMINADA -95-</item>
+        <item>LLAMADA TERMINADA -96-</item>
+        <item>LLAMADA TERMINADA -97-</item>
+        <item>LLAMADA TERMINADA -98-</item>
+        <item>LLAMADA TERMINADA -99-</item>
+        <item>LLAMADA TERMINADA -100-</item>
+        <item>LLAMADA TERMINADA -101-</item>
+        <item>LLAMADA TERMINADA -102-</item>
+        <item>LLAMADA TERMINADA -111-</item>
+        <item>LLAMADA TERMINADA -127-</item>
+    </string-array>
+    <string-array name="network_type_list">
+        <item>2G</item>
+        <item>3G</item>
+        <item>@string/network_mode_both</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>الوضع الافتراضي للشبكة</item>
+        <item>إخفاء الرقم</item>
+        <item>إظهار الرقم</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>DEFAULT</item>
+        <item>HIDE</item>
+        <item>SHOW</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>عالمي</item>
+        <item>EvDo فقط</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo تلقائي</item>
+        <item>GSM / WCDMA تلقائي</item>
+        <item>WCDMA فقط</item>
+        <item>GSM فقط</item>
+        <item>يفضل GSM / WCDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values">
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>الإنجليزية</item>
+        <item>الفرنسية</item>
+        <item>الإسبانية</item>
+        <item>اليابانية</item>
+        <item>الكورية</item>
+        <item>الصينية</item>
+        <item>العبرية</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA (الوضع التلقائي)</item>
+        <item>WCDMA فقط</item>
+        <item>GSM فقط</item>
+        <item>GSM/WCDA (يفضل WCDMA)</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>المنزل فقط</item>
+        <item>تلقائي</item>
+    </string-array>
+    <string-array name="cdma_system_select_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_choices">
+        <item>الشبكات المنزلية فقط</item>
+        <item>الشبكات المقترنة</item>
+        <item>أية شبكة</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_choices">
+        <item>CDMA/EvDo</item>
+        <item>CDMA فقط</item>
+        <item>EvDo فقط</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>بطاقة RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>إيقاف تشغيل TTY</item>
+        <item>TTY كامل</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="tty_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>عادي</item>
+        <item>طويل</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

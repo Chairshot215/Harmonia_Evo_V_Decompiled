@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/scene_landscape_tip_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/scene_landscape_tip_text_container" android:background="@drawable/camera_guides_container" android:layout_width="300.0px" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/scene_landscape_tip_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/scene_landscape_tip_text" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#c0000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

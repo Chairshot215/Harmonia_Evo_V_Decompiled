@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.camera.widget.EffectControlCircle android:id="@id/effect_circle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/effect_control_bar_container" android:layout_width="fill_parent" android:layout_height="@dimen/effect_control_bar_container_height" android:layout_marginBottom="@dimen/effect_control_bar_container_bottom_margin" android:layout_alignParentBottom="true">
+        <View android:id="@id/effect_control_bar_touch_receiver" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <SeekBar android:id="@id/effect_control_bar" android:background="@drawable/camera_zoom_track" android:paddingLeft="@dimen/zoom_bar_padding_left" android:paddingRight="@dimen/zoom_bar_padding_right" android:layout_width="@dimen/zoom_bar_width" android:layout_height="@dimen/zoom_bar_height" android:thumb="@drawable/camera_zoom_indicator" android:layout_centerInParent="true" />
+        <com.android.camera.rotate.RotateRelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/effect_control_bar_button_outer_margin" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/effect_control_decrease" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_effect_bar_down" android:layout_centerInParent="true" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+        <com.android.camera.rotate.RotateRelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/effect_control_bar_button_outer_margin" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/effect_control_increase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_effect_bar_up" android:layout_centerInParent="true" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/dialer" android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.htcdialer.widget.ButtonGroup android:id="@id/task_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/task_bar">
+        <com.htc.widget.HtcListView android:id="@*android:id/list" android:background="@color/list_item_background_color" android:scrollbars="none" android:fadingEdge="none" android:nextFocusUp="@*android:id/input" android:nextFocusDown="@*android:id/list" android:layout_width="@dimen/dialer_content_width" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_list_divider" android:layout_alignParentTop="true"
+          xmlns:htcdialer="http://schemas.android.com/apk/res/com.android.htcdialer" />
+        <ImageView android:id="@id/keypad_shadow" android:background="@drawable/phone_keypad_shadow_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignRight="@*android:id/list" />
+        <include android:id="@id/saveContact" layout="@layout/htc_list_item_compose" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dialpad" android:layout_width="@dimen/dial_pad_width" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <include layout="@layout/accumulator" />
+            <com.android.htcdialer.widget.DialerKeypad android:layout_gravity="right" android:id="@id/dialer_keypad" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/htc_dialer_handwriting" />
+                <include layout="@layout/htc_keypad" />
+            </com.android.htcdialer.widget.DialerKeypad>
+        </LinearLayout>
+    </RelativeLayout>
+    <ViewStub android:id="@id/show_keypad_stub" android:layout="@layout/htc_show_keypad" android:layout_width="fill_parent" android:layout_height="@dimen/accumulator_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

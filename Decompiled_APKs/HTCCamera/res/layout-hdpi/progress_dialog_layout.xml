@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@com.htc:drawable/popup_full_dark" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_dialog_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/progress_dialog_padding_left" android:layout_marginTop="@dimen/progress_dialog_padding_top" android:layout_marginRight="@dimen/progress_dialog_message_margin" android:layout_marginBottom="@dimen/progress_dialog_padding_bottom" />
+    <TextView android:gravity="center_vertical" android:id="@id/progress_dialog_message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/progress_dialog_padding_right" android:text="@string/processing_image" />
+</LinearLayout>

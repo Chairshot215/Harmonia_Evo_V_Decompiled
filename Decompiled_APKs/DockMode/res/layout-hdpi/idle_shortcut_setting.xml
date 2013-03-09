@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/idle_shortcut_setting_title_margin_top" android:text="@string/idle_shortcut_choose_shortcut" style="@com.htc:style/darklist_primary_m" />
+    <RelativeLayout android:id="@id/bg_pic" android:background="@drawable/dock_mode_shortcut_bg" android:layout_width="@dimen/idle_shortcut_setting_bg_width" android:layout_height="@dimen/idle_shortcut_setting_bg_height" android:layout_marginLeft="@dimen/idle_shortcut_setting_bg_paddingLeft" android:layout_marginTop="@dimen/idle_shortcut_setting_bg_margin_top" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center_horizontal" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/idle_shortcut_choose_hint_margin_top" android:text="@string/idle_shortcut_choose_hint" android:layout_centerHorizontal="true" style="@com.htc:style/darklist_secondary_m" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/apps_layout" android:paddingLeft="@dimen/idle_shortcut_padding_left" android:paddingTop="@dimen/idle_shortcut_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.htc.dockmode.shortcut.ShortcutSettingIcon android:id="@id/icon01" android:layout_width="@dimen/idle_shortcut_setting_width" android:layout_height="wrap_content" />
+            <com.htc.dockmode.shortcut.ShortcutSettingIcon android:id="@id/icon02" android:layout_width="@dimen/idle_shortcut_setting_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/idle_shortcut_margin_left" />
+            <com.htc.dockmode.shortcut.ShortcutSettingIcon android:id="@id/icon03" android:layout_width="@dimen/idle_shortcut_setting_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/idle_shortcut_margin_left" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.htc.widget.HtcFooter android:id="@id/footerbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/footerbutton2" android:text="@string/idle_shortcut_cancel" />
+        <com.htc.widget.HtcFooterButton android:id="@id/footerbutton1" android:text="@string/idle_shortcut_ok" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

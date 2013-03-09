@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="lock_pattern_style_small">
+        <item name="android:layout_width">350.0px</item>
+        <item name="android:layout_height">350.0px</item>
+        <item name="com.htc:lock_btn_default">@drawable/btn_code_lock_default_s</item>
+        <item name="com.htc:lock_btn_touch">@drawable/btn_code_lock_touched_s</item>
+        <item name="com.htc:lock_circle_default">@drawable/indicator_code_lock_point_area_default_s</item>
+        <item name="com.htc:lock_circle_green">@drawable/indicator_code_lock_point_area_green_s</item>
+        <item name="com.htc:lock_circle_red">@drawable/indicator_code_lock_point_area_red_s</item>
+    </style>
+    <style name="Theme.CreateShortCut" parent="@*android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="wifi_item">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@com.htc:dimen/alert_dialog_content_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/wifi_dialog_content_margin</item>
+        <item name="android:layout_marginRight">@com.htc:dimen/alert_dialog_content_margin_right</item>
+    </style>
+    <style name="wifi_item_xs">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@com.htc:dimen/alert_dialog_content_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/wifi_dialog_content_xs_margin</item>
+        <item name="android:layout_marginRight">@com.htc:dimen/alert_dialog_content_margin_right</item>
+    </style>
+    <style name="wifi_item_label" parent="@com.htc:style/list_primary_m">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="wifi_item_label_xs" parent="@com.htc:style/list_primary_xs">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="wifi_item_content" parent="@com.htc:style/list_secondary_m">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5.0</item>
+    </style>
+    <style name="wifi_item_spinner" parent="@com.htc:style/list_primary_m">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5.0</item>
+    </style>
+    <style name="wifi_item_edittext" parent="@com.htc:style/list_primary_m">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">5.0</item>
+    </style>
+    <style name="wifi_section">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_section_2">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="setup_wizard_button">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:minWidth">208.0dip</item>
+    </style>
+    <style name="lock_input_appearance">
+        <item name="android:layout_width">560.0px</item>
+        <item name="android:layout_height">55.0px</item>
+    </style>
+</resources>

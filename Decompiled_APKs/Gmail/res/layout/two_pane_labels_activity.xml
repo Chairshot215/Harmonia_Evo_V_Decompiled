@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/label_list_pane" android:layout_width="@dimen/label_list_pane_width" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" />
+    <FrameLayout android:id="@id/label_settings_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/label_list_pane" />
+</RelativeLayout>

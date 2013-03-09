@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/details_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/hero_header" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+    <include android:id="@id/header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/description_editorial_header" />
+    <include android:id="@id/description_panel" layout="@layout/details_text_flat" />
+    <include android:id="@id/videoimage" android:padding="@dimen/details_content_margin" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+</LinearLayout>

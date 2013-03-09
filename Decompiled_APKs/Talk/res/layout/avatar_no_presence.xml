@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="1.0px" android:layout_width="64.0dip" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.widget.QuickContactBadge android:id="@id/avatar_qcb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" style="?android:attr/quickContactBadgeStyleWindowMedium" />
+    <ImageView android:id="@id/avatar_regular" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+</RelativeLayout>

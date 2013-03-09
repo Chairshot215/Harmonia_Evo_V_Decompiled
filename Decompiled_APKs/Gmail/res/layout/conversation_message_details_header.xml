@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/details_collapsed_content" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/message_details_header_padding_left" android:paddingRight="@dimen/message_details_header_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/message_details_header_collapsed_height">
+        <TextView android:id="@id/recipients_summary" android:layout_marginRight="16.0dip" android:bufferType="spannable" android:singleLine="true" android:layout_weight="1.0" style="@style/message_header_small" />
+        <TextView android:id="@id/date_summary" android:lines="1" style="@style/message_header_date_text" />
+        <ImageView style="@style/message_header_expander_minimized" />
+    </LinearLayout>
+    <View android:id="@id/details_bottom_border" android:background="@color/conv_subject_border" android:layout_width="fill_parent" android:layout_height="@dimen/message_details_header_bottom_border_height" />
+</merge>

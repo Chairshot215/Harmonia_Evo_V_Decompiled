@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/time_date" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="@dimen/desk_clock_digital_width" android:layout_height="@dimen/desk_clock_digital_height" android:layout_marginLeft="@dimen/desk_clock_digital_marginLeft" android:layout_marginTop="@dimen/desk_clock_digital_marginTop" layout="@layout/desk_clock_digital" />
+    <TextView android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/date_marginLeft" android:layout_marginTop="@dimen/date_marginTop" android:layout_marginRight="@dimen/date_marginRight" android:layout_alignParentRight="@string/date_alignParentRight" style="@style/dateStyle" />
+    <TextView android:id="@id/nextAlarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nextAlarm_marginLeft" android:layout_marginTop="@dimen/nextAlarm_marginTop" android:layout_marginRight="@dimen/nextAlarm_marginRight" android:layout_alignParentRight="@string/nextAlarm_alignParentRight" style="@style/nextAlarmStyle" />
+    <ImageView android:id="@id/ic_alarm" android:layout_width="@dimen/ic_alarm_width" android:layout_height="@dimen/ic_alarm_height" android:layout_marginLeft="@dimen/ic_alarm_marginLeft" android:layout_marginTop="@dimen/ic_alarm_marginTop" android:layout_marginRight="@dimen/ic_alarm_marginRight" android:layout_alignParentRight="@string/ic_alarm_alignParentRight" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rosie-widget
+  xmlns:rosie="http://schemas.android.com/apk/res/com.htc">
+    <style rosie:id="4x4_weather" rosie:label="@string/widget_name" rosie:description="@string/rosie_widget_description" rosie:preview="@drawable/preview_weather_4x4" rosie:date="@string/release_date" rosie:name=".Weather4x4Widget" rosie:span_x="4" rosie:span_y="4" />
+    <style rosie:id="2x2_weatherwidget" rosie:label="@string/widget_name" rosie:description="@string/rosie_widget_description" rosie:preview="@drawable/preview_weather_2x2" rosie:date="@string/release_date" rosie:name=".Weather2x2Widget" rosie:configure="com.htc.widget3d.weather/com.htc.widget3d.weather.OptionActivity" rosie:span_x="2" rosie:span_y="2" />
+    <style rosie:id="2x1_weatherwidget" rosie:label="@string/widget_name" rosie:description="@string/rosie_widget_description" rosie:preview="@drawable/preview_weather_2x1" rosie:date="@string/release_date" rosie:name=".Weather2x1Widget" rosie:configure="com.htc.widget3d.weather/com.htc.widget3d.weather.OptionActivity" rosie:span_x="2" rosie:span_y="1" />
+</rosie-widget>

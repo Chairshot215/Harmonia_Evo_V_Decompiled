@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="100300468" android:versionName="1.0.2213372664.300468" package="com.htc.rosiewidgets.backgrounddata"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <application android:label="@string/app_name" android:icon="@drawable/widget_icon_data" android:description="@string/company" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="com.htc.fusion.fx" />
+        <uses-feature android:name="com.htc.android.rosie.widget" />
+        <receiver android:label="@string/app_name" android:icon="@drawable/widget_icon_data" android:name="com.htc.rosiewidgets.backgrounddata.BackgroundDataWidgetProvider" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/backgrounddatawidget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <intent-filter>
+            <action android:name="com.android.sync.SYNC_CONN_STATUS_CHANGED" />
+        </intent-filter>
+    </application>
+</manifest>

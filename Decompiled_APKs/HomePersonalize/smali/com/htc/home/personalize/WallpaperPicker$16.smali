@@ -1,0 +1,80 @@
+.class Lcom/htc/home/personalize/WallpaperPicker$16;
+.super Ljava/lang/Object;
+.source "WallpaperPicker.java"
+
+# interfaces
+.implements Lcom/htc/home/personalize/widget/WallpaperPanelAdapter$WallpaperUpdateCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/htc/home/personalize/WallpaperPicker;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/htc/home/personalize/WallpaperPicker;
+
+
+# direct methods
+.method constructor <init>(Lcom/htc/home/personalize/WallpaperPicker;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 1644
+    iput-object p1, p0, Lcom/htc/home/personalize/WallpaperPicker$16;->this$0:Lcom/htc/home/personalize/WallpaperPicker;
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onWallpaperUpdate(I)V
+    .locals 3
+    .parameter "pos"
+
+    .prologue
+    .line 1648
+    const-string v0, "WallpaperPicker"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "onWallpaperUpdate : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1655
+    iget-object v0, p0, Lcom/htc/home/personalize/WallpaperPicker$16;->this$0:Lcom/htc/home/personalize/WallpaperPicker;
+
+    #getter for: Lcom/htc/home/personalize/WallpaperPicker;->mWallpaperLoader:Lcom/htc/home/personalize/WallpaperLoader;
+    invoke-static {v0}, Lcom/htc/home/personalize/WallpaperPicker;->access$200(Lcom/htc/home/personalize/WallpaperPicker;)Lcom/htc/home/personalize/WallpaperLoader;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lcom/htc/home/personalize/WallpaperLoader;->setPosition(I)V
+
+    .line 1657
+    return-void
+.end method

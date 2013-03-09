@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:paddingLeft="@com.htc:dimen/htc_list_item_image_icon_left_margin" android:layout_width="@com.htc:dimen/htc_list_item_height" android:layout_height="@com.htc:dimen/htc_list_item_height" />
+    <CheckedTextView android:textSize="@com.htc:dimen/alert_dialog_textSize" android:textColor="@com.htc:color/text_selector" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@*android:id/text1" android:paddingLeft="10.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="?com.htc:attr_common_radiobutton" android:minHeight="@com.htc:dimen/alert_dialog_itemHeight" />
+</LinearLayout>

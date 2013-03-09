@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/first_run_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/twirling_baton" android:background="@drawable/help_connector" android:layout_width="wrap_content" android:layout_height="@dimen/first_run_baton_height" android:layout_alignLeft="@id/first_run_text" android:layout_alignRight="@id/first_run_text" android:layout_alignParentTop="true" />
+    <TextView android:textAppearance="@style/SuggestionText1Appearance" android:id="@id/first_run_text" android:paddingLeft="@dimen/first_run_padding_left" android:paddingRight="@dimen/first_run_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/first_run_help_text" android:layout_below="@id/twirling_baton" android:layout_alignParentLeft="true" />
+</RelativeLayout>

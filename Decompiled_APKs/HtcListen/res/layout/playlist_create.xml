@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/browser_header_layout" />
+        <com.htc.widget.HtcListView android:textSize="@com.htc:dimen/list_primary_m" android:id="@*android:id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:divider="@com.htc:drawable/common_list_divider" android:layout_weight="1.0" music:resolution="hvga" style="@style/HtcListStyle"
+          xmlns:music="http://schemas.android.com/apk/res/com.htc.music" />
+        <include layout="@layout/browser_footer_layout" />
+    </LinearLayout>
+</RelativeLayout>

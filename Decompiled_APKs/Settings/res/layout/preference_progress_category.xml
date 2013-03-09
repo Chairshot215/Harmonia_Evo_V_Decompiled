@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/dark_header" android:layout_width="fill_parent" android:layout_height="@dimen/list_separator_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@*android:id/title" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:attr/listSeparatorTextViewStyle" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/scanning_text" android:background="@null" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0sp" android:text="@string/progress_scanning" style="?android:attr/listSeparatorTextViewStyle" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/scanning_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/progress_scanning" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="left|center" android:id="@id/item_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_no_photo" android:layout_marginTop="@dimen/first_line_gap" android:layout_marginRight="@dimen/text_margin_right_no_date" android:singleLine="true" style="@com.htc:style/text_style_primary" />
+    <Button android:ellipsize="end" android:gravity="left|center" android:id="@id/item_button" android:background="@com.htc:drawable/common_pulldown" android:paddingLeft="@dimen/text_padding_left_dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_no_photo" android:layout_marginTop="@dimen/first_line_gap" android:layout_marginRight="@dimen/text_margin_right_no_date" android:minWidth="-1.0px" android:minHeight="-1.0px" android:singleLine="true" android:layout_below="@id/item_label" style="@com.htc:style/text_style_secondary" />
+</RelativeLayout>

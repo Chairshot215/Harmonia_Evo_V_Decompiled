@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ss:speechstrategy xmlns:ss="http://www.google.android.marvin.talkback.com/speechstrategy"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.google.android.marvin.talkback.com/speechstrategy speechstrategy.xsd" >
+
+  <!-- Launcher - Announce drag state for icons -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_LONG_CLICKED</ss:eventType>
+      <ss:className>com.android.launcher2.BubbleTextView</ss:className>
+      <ss:packageName>com.android.launcher</ss:packageName>
+      <ss:platformSdk>11||12||13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_dragging_icon</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- CALENDAR RULES -->
+
+  <!-- MonthView (Honeycomb) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_SELECTED</ss:eventType>
+      <ss:className>com.android.calendar.month.FullMonthView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.calendar.MonthViewSelectedFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+    <!-- MonthView (Honeycomb) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.calendar.month.FullMonthView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@com.google.android.marvin.talkback:string/template_announce_month</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- StatusBarService$ExpandedDialog -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.server.status.StatusBarService$ExpandedDialog</ss:className>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_status_bar_opened</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Phone - Speak in-call screen -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.phone.InCallScreen</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.phone.InCallScreenFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Phone - Dialer keys -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>1</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>1</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>2</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>2</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>3</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>3</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>4</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>4</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>5</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>5</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>6</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>6</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>7</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>7</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>8</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>8</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>9</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>9</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>11</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>0</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>10</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>*</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:currentItemIndex>12</ss:currentItemIndex>
+      <ss:itemCount>19</ss:itemCount>
+      <ss:platformSdk>&lt;=13</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>#</ss:template>
+    </ss:formatter>
+  </ss:rule>
+</ss:speechstrategy>

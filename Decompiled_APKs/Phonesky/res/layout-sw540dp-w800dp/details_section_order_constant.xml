@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/screenshots_panel" layout="@layout/details_screenshots" />
+    <include android:id="@id/movie_trailer" layout="@layout/movie_trailer" />
+    <View android:id="@id/constant_delimiter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_market_search" android:id="@id/search_button" android:title="@string/search_hint" android:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_menu_wish_off_dark" android:id="@id/wishlist_button" android:visible="false" android:title="@string/content_description_wishlist_add" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_market_share" android:id="@id/share_button" android:visible="false" android:title="@string/content_description_share" android:showAsAction="ifRoom" />
+</menu>

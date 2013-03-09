@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_container" android:paddingLeft="@dimen/message_header_inner_side_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/message_header_title_container_margin_right" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="bottom" android:id="@id/upper_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="24.0dip" android:lines="1" android:layout_alignParentRight="true" style="@style/message_header_extra_small" />
+    <ImageView android:id="@id/attachment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_attachment_holo_light" android:layout_toLeftOf="@id/upper_date" />
+    <TextView android:id="@id/sender_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/attachment" android:layout_alignBaseline="@id/upper_date" android:layout_alignParentLeft="true" style="@style/message_sender_name" />
+    <ImageView android:id="@id/presence" android:layout_below="@id/sender_name" style="@style/message_header_presence" />
+    <TextView android:id="@id/sender_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/presence" android:layout_below="@id/sender_name" style="@style/message_sender_email" />
+</RelativeLayout>

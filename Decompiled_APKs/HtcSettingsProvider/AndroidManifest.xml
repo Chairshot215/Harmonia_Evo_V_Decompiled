@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="100345137" android:versionName="1.0.2213373244.345137" package="com.htc.provider.settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:process="com.htc.bg">
+        <provider android:name=".NotificationFlashLightProvider" android:authorities="com.htc.provider.settings" />
+    </application>
+</manifest>

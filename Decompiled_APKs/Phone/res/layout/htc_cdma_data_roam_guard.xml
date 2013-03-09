@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/data_roam_guard" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/option_never_ask" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@com.htc:drawable/common_checkbox" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/option_never_ask_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/data_roam_guard_dialog_checkbox" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

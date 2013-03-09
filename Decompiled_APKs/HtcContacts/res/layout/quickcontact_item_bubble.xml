@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.quickselection.HtcCheckableImageView android:textColor="@color/black" android:gravity="bottom|center" android:id="@id/quickcontact_item" android:background="@drawable/quickcontact_slider_btn" android:paddingLeft="@dimen/quickcontact_item_paddingLeftRight" android:paddingTop="@dimen/quickcontact_item_paddingTop" android:paddingRight="@dimen/quickcontact_item_paddingLeftRight" android:paddingBottom="@dimen/quickcontact_item_paddingBottom" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/ball" android:visibility="gone" android:layout_width="@dimen/htc_list_item_notification_ball_dimen" android:layout_height="@dimen/htc_list_item_notification_ball_dimen" android:layout_marginLeft="@com.htc:dimen/htc_list_item_ball_margin_left" android:layout_marginBottom="@com.htc:dimen/htc_list_item_ball_margin_left" android:singleLine="true" />
+</FrameLayout>

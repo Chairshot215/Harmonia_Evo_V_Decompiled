@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LayoutMain" android:paddingTop="@dimen/App_Padding_Top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:fillViewport="true" android:layout_above="@id/DMIFooter">
+        <LinearLayout android:orientation="vertical" android:id="@id/DMITitleContent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/phonebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="phonebook" />
+            <Button android:id="@id/calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Calendar" />
+            <Button android:id="@id/sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SMS" />
+            <Button android:id="@id/BookMark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BookMark" />
+            <LinearLayout android:orientation="vertical" android:id="@id/DMIContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/DMIFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/slice_steps" />
+    </LinearLayout>
+</RelativeLayout>

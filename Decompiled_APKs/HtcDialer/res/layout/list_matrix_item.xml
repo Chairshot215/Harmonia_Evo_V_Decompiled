@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/two_column" android:paddingLeft="@dimen/list_view_paddingleft" android:paddingRight="@dimen/list_view_paddingRight" android:layout_width="@dimen/list_layout_width" android:layout_height="@dimen/list_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:MyContactMatrixItem="http://schemas.android.com/apk/res/com.android.htcdialer.carhome">
+    <com.android.htcdialer.carhome.MyContactMatrixItem android:id="@id/left_view" android:layout_width="@dimen/list_view_width" android:layout_height="@dimen/list_view_height" android:layout_marginLeft="@dimen/list_view_Left_marginLeft" android:layout_marginTop="@dimen/list_view_ContactMatrixItem_marginTop" android:layout_marginRight="@dimen/list_view_Left_marginRight" android:layout_marginBottom="@dimen/List_view_ContactMatrixItem_marginBottom" />
+    <com.android.htcdialer.carhome.MyContactMatrixItem android:id="@id/right_view" android:layout_width="@dimen/list_view_width" android:layout_height="@dimen/list_view_height" android:layout_marginLeft="@dimen/list_view_Right_marginLeft" android:layout_marginTop="@dimen/list_view_ContactMatrixItem_marginTop" android:layout_marginBottom="@dimen/List_view_ContactMatrixItem_marginBottom" android:layout_toRightOf="@id/left_view" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.TrackingView android:orientation="vertical" android:paddingLeft="0.0px" android:paddingRight="0.0px" android:paddingBottom="0.0px" android:focusable="true" android:visibility="gone" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bg_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/bg_frame" android:background="#ca000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/swtich_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/notification_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:id="@id/tab_header" android:background="@drawable/notification_header_bg" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <TextView android:textSize="@dimen/status_bar_tab_font_size" android:textStyle="bold" android:textColor="@color/notification_tab_on_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/notifications" android:background="@drawable/notification_tab_on" android:clickable="true" android:layout_width="0.0px" android:layout_height="@dimen/quick_settings_tab_height" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/status_bar_tab_font_size" android:textStyle="bold" android:textColor="@color/notification_tab_off_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/quick_settings" android:background="@drawable/notification_tab_off" android:clickable="true" android:layout_width="0.0px" android:layout_height="@dimen/quick_settings_tab_height" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.android.systemui.statusbar.phone.CloseDragHandle android:orientation="vertical" android:id="@id/close" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/status_bar_close_on" android:scaleType="fitXY" />
+    </com.android.systemui.statusbar.phone.CloseDragHandle>
+</com.android.systemui.statusbar.phone.TrackingView>

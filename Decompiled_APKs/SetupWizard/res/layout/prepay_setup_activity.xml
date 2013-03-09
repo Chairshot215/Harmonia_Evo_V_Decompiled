@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.setupwizard.BaseActivity$ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_margin_left" android:minHeight="@dimen/title_height" android:text="@string/prepay_setup_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    <TextView android:id="@id/description_text" android:layout_marginBottom="16.0dip" android:text="@string/prepay_setup_message" android:layout_below="@id/top_divider" android:layout_centerHorizontal="true" style="@style/DescriptionText" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:id="@id/agree_button" android:text="@string/prepay_agree_button_label" style="@style/Button" />
+        <Button android:id="@id/disagree_button" android:text="@string/prepay_disagree_button_label" style="@style/Button" />
+    </LinearLayout>
+</view>

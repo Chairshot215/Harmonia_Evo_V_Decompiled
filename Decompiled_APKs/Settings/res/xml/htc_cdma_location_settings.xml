@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:key="applications_settings" android:summary="@string/applications_settings_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/location_setting_off" android:key="category_location_off_key" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/e911" android:key="e911_only_key" android:summary="@string/e911_desc" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/location_setting_on" android:key="category_location_on_key" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/verizon_lbs" android:key="verizon_lbs_key" android:summary="@string/verizon_lbs_desc" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/third_party_lbs" android:key="3rdparty_lbs_key" android:summary="@string/third_party_lbs_desc" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/google_lbs" android:key="google_lbs_key" android:summary="@string/google_lbs_desc" />
+</com.htc.preference.HtcPreferenceScreen>

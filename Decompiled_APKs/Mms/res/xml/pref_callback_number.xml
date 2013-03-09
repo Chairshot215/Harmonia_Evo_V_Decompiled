@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_callback_setting_title" android:key="pref_callback_number_setting_category_key">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_sms_callback" android:key="pref_key_sms_callback" android:summary="@string/pref_summary_sms_callback" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_callback" android:key="pref_key_mms_callback" android:summary="@string/pref_summary_mms_callback" android:defaultValue="false" />
+        <com.htc.preference.HtcEditTextPreference android:persistent="true" android:title="@string/pref_callback_setting_title" android:key="pref_key_set_callback" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

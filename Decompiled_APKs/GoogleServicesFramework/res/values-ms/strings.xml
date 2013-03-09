@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">tidak diketahui</string>
+    <string name="sharedUserLabel">Google Services</string>
+    <string name="service_label">Pengemas Kini Sistem</string>
+    <string name="system_update_activity_name">Kemas kini sistem</string>
+    <string name="system_update_activity_title">Kemas kini sistem</string>
+    <string name="system_update_activity_battery_low_text">Bateri terlalu lemah untuk memasang kemas kini sistem. Sila sambungkan pengecas untuk meneruskan.</string>
+    <string name="system_update_activity_battery_low_charging_text">Bateri terlalu lemah untuk memasang kemas kini sistem. Sila tunggu sehingga bateri dicas dengan cukup.</string>
+    <string name="system_update_activity_roaming_text">Kemas kini sistem tidak boleh dimuat turun semasa dalam perayauan.</string>
+    <string name="system_update_requires_restart_status_text">Perlu dimulakan semula</string>
+    <string name="system_update_downloading_status_text">Memuat turun</string>
+    <string name="system_update_downloading_wifi_status2_text">Melalui Wi-Fi sahaja sehingga ^1</string>
+    <string name="system_update_verifying_status_text">Mengesahkan</string>
+    <string name="system_update_verification_failed_text">Gagal mengesahkan</string>
+    <string name="system_update_verified_status_text">Dimuat turun dan disahkan</string>
+    <string name="system_update_download_failed_status_text">Muat turun gagal</string>
+    <string name="system_update_download_retry_button_text">Cuba semula muat turun</string>
+    <string name="system_update_download_button_text">Muat turun</string>
+    <string name="system_update_install_button_text">Mula semula &amp; pasang</string>
+    <string name="system_update_check_now_button_text">Semak sekarang</string>
+    <string name="system_update_no_update_content_text">Sistem anda terkini pada masa ini</string>
+    <string name="system_update_last_checkin">Terakhir disemak untuk kemas kini ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Kemas kini sistem tersedia</string>
+    <string name="system_update_recommended_update_available_notification_message">Lihat butiran kemas kini.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Tidak berjaya memuat turun kemas kini sistem.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Muat turun tidak berjaya, sila cuba lagi.</string>
+    <string name="system_update_error_dialog_title">Ralat</string>
+    <string name="system_update_error_downloading_dialog_message">Terdapat masalah memuat turun kemas kini.</string>
+    <string name="system_update_error_installing_dialog_message">Terdapat masalah memasang kemas kini.</string>
+    <string name="system_update_install_dialog_label">Kemas kini sistem</string>
+    <string name="system_update_install_dialog_message_nonphone">Kemas kini sistem sedia untuk dipasangkan. Peranti Android anda akan dimulakan semula dan memasang kemas kini.</string>
+    <string name="system_update_install_dialog_message_phone">Kemas kini sistem sedia untuk dipasangkan. Peranti Android anda akan dimulakan semula dan memasang kemas kini. Anda tidak akan boleh membuat sebarang panggilan, termasuk panggilan kecemasan, sewaktu pemasangan dijalankan.</string>
+    <string name="system_update_install_dialog_battery_low_message">Kemas kini sistem sudah sedia tetapi bateri terlalu lemah untuk memasangnya. Sila sambungkan pengecas.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Kemas kini sistem sudah sedia tetapi bateri terlalu lemah untuk memasangkannya. Sila tunggu sehingga bateri dicaskan dengan cukup.</string>
+    <string name="system_update_install_dialog_now_button">Pasang sekarang</string>
+    <string name="system_update_install_dialog_later_button">Pasang kemudian</string>
+    <string name="system_update_install_dialog_info_button">Lagi maklumat...</string>
+    <string name="system_update_downloading_notification_title">Memuat turun kemas kini sistem</string>
+    <string name="system_update_verifying_notification_title">Mengesahkan kemas kini sistem</string>
+    <string name="system_update_download_dialog_label">Muat turun kemas kini sistem</string>
+    <string name="system_update_download_dialog_message">Kemas kini sistem yang akan mempertingkatkan peranti Android anda ada tersedia. Jika anda memuat turunnya melalui rangkaian mudah alih, bayaran mungkin dikenakan.</string>
+    <string name="system_update_download_dialog_now_button">Muat turun sekarang</string>
+    <string name="system_update_download_dialog_later_button">Muat turun kemudian</string>
+    <string name="system_update_download_dialog_cancel_button">Batal</string>
+    <string name="system_update_countdown_complete">Membut sekarang...</string>
+    <string name="system_update_countdown_cancel_button">Batalkan pemasangan</string>
+    <string name="system_update_complete_label">Kemas kini sistem</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Langganan penolakan</string>
+    <string name="ro_perm_label">baca mesej segera</string>
+    <string name="ro_perm_desc">Membenarkan aplikasi membaca data daripada pembekal kandungan Bual Google.</string>
+    <string name="wo_perm_label">tulis mesej segera</string>
+    <string name="wo_perm_desc">Membenarkan aplikasi menulis data ke pembekal kandungan Bual Google.</string>
+    <string name="gsf_label">Rangka Kerja Google Services</string>
+    <string name="search_chats">"Cari dalam sembang
+untuk '%1$s'"</string>
+    <string name="gtalkservice_label">Perkhidmatan Pemesejan Google</string>
+    <string name="c2dm_label">Perkhidmatan Pemesejan Cloud to Device</string>
+    <string name="sendTalkMsg_perm_label">Bertukar-tukar mesej dan menerima pemberitahuan penyegerakan daripada pelayan Google</string>
+    <string name="sendTalkMsg_perm_desc">Digunakan untuk mesej awan pelayan ke peranti dan untuk pemberitahuan penyegerakan. Bual Google menggunakan perkhidmatan ini untuk bertukar-tukar mesej dan untuk menyegerakkan status kehadiran. Aplikasi berniat jahat boleh menggunakan perkhidmatan ini untuk menghantar data berlebihan.</string>
+    <string name="perm_receive_data_message_label">menerima data dari Internet</string>
+    <string name="perm_receive_data_message_desc">Membenarkan aplikasi menerima mesej cloud to device yang dihantar oleh perkhidmatan aplikasi. Menggunakan perkhidmatan ini akan menyebabkan anda menanggung penggunaan data. Aplikasi berniat jahat boleh mengakibatkan penggunaan data berlebihan.</string>
+    <string name="perm_data_msg_broadcast_label">Siarkan mesej data ke aplikasi.</string>
+    <string name="perm_data_msg_broadcast_desc">Boleh menyiarkan mesej data yang diterima dari Internet kepada aplikasi yang didaftarkan untuk mendengarnya.</string>
+    <string name="perm_receive_xmpp_label">hantar dan terima mesej XMPP dari pelayan Google</string>
+    <string name="perm_receive_xmpp_desc">Membenarkan aplikasi Google menghantar dan menerima mesej XMPP ke dan dari pelayan Google.</string>
+    <string name="perm_xmpp_broadcast_label">Siarkan mesej XMPP ke aplikasi.</string>
+    <string name="perm_xmpp_broadcast_desc">Boleh siarkan mesej XMPP yang diterima dari pelayan Google ke aplikasi yg didaftar utk mendengarnya.</string>
+    <string name="perm_use_xmpp_endpoint_label">hantar &amp; terima msj XMPP ke &amp; dari pelayan Google.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Membenarkan aplikasi Google menghantar dan menerima mesej XMPP ke dan dari pelayan Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Siarkan mesej XMPP ke aplikasi.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Boleh menyiarkan mesej XMPP yang diterima daripada pelayan Google ke aplikasi.</string>
+    <string name="permlab_intentVendingOnly">Hantar siaran ke Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Boleh menghantar siaran ke Android Market untuk meminta pemasangan dan pengalihan keluar aplikasi.</string>
+    <string name="permlab_heartbeat">Hantar denyutan jantung ke pelayan Bual Google</string>
+    <string name="permdesc_heartbeat">Boleh menghantar bingkisan denyutan jantung ke pelayan Bual Google untuk memastikan kesihatan sambungan.</string>
+    <string name="group_chat">Sembang kumpulan: %s</string>
+    <string name="default_decline_reason">Maaf, saya sibuk sekarang.</string>
+    <string name="newMessages_label">Sembang baru</string>
+    <string name="notify_groupchat_label">Jemputan sembang kumpulan</string>
+    <string name="num_unread_chats">%s sembang belum dibaca</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s kepada %s</string>
+    <string name="subscription_notify_text">%s mahu boleh bersembang</string>
+    <string name="group_chat_invite_notify_text">Anda sudah menerima jemputan sembang kumpulan daripada %s</string>
+    <string name="group_chat_invite_dialog_text">%s menjemput anda menyertai sembang kumpulan.</string>
+    <string name="message_too_long">Anda tidak boleh menghantar mesej yang panjangnya melebihi 2,000 aksara.</string>
+    <string name="missed_video_chat_notification">Anda telah terlepas jemputan sembang video</string>
+    <string name="missed_voice_chat_notification">Anda terlepas jemputan sembang suara</string>
+    <string name="missed_video_chat_notification_no_wifi">Anda terlepas jemputan sembang video kerana anda tidak bersambung kepada Wi-Fi</string>
+    <string name="missed_voice_chat_notification_no_wifi">Anda terlepas jemputan sembang suara kerana anda tidak bersambung kepada Wi-Fi</string>
+    <string name="missed_video_chat_message">%1$s cuba untuk memulakan sembang video dengan anda</string>
+    <string name="missed_voice_chat_message">%1$s cuba untuk memulakan sembang suara dengan anda</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s cuba untuk memulakan sembang video dengan anda semasa anda tidak bersambung kepada Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s cuba untuk memulakan sembang suara dengan anda semasa anda tidak bersambung kepada Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">%1$s tiada untuk bersembang video.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s tiada untuk bersembang suara.</string>
+    <string name="end_cause_sent_terminate_video">Anda menamatkan sembang video dengan %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Anda menamatkan sembang suara dengan %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s menamatkan sembang video.</string>
+    <string name="end_cause_received_terminate_voice">%1$s menamatkan sembang suara.</string>
+    <string name="end_cause_network_problem_video">Maaf! Sembang video dengan %1$s gagal kerana masalah rangkaian. Sila cuba lagi.</string>
+    <string name="end_cause_network_problem_voice">Maaf! Sembang suara dengan %1$s gagal kerana masalah rangkaian. Sila cuba lagi.</string>
+    <string name="conn_auth_error_notify_ticker">Bual Google gagal disahkan</string>
+    <string name="conn_auth_error_notify_title">Pengesahan Bual Google gagal</string>
+    <string name="conn_auth_error_title">Ralat pengesahan</string>
+    <string name="conn_auth_error_message">Bual Google gagal untuk dilog masuk. Jika ini merupakan akaun Google Apps, sahkan bahawa perkhidmatan Sembang didayakan untuk akaun ini.</string>
+    <string name="conn_auth_error_button_retry">Cuba semula</string>
+    <string name="conn_auth_error_button_cancel">Batal</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Selamat datang ke ^1</string>
+    <string name="setup_wizard_title">Wizard persediaan</string>
+    <string name="error_dialog_title">Perhatian</string>
+    <string name="next_button_label">Seterusnya</string>
+    <string name="back_button_label">Kembali</string>
+    <string name="sign_in_button_label">Log masuk</string>
+    <string name="create_button_label">Buat</string>
+    <string name="skip_button_label">Langkau</string>
+    <string name="first_name">Nama pertama</string>
+    <string name="last_name">Nama akhir</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Batal</string>
+    <string name="done_button_label">Persediaan selesai</string>
+    <string name="try_again_button_label">Cuba lagi</string>
+    <string name="close_button_label">Tutup</string>
+    <string name="edit_text_help">Sentuh mana-mana kotak teks untuk mula menaip</string>
+    <string name="add_a_google_account">Tambah Akaun Google</string>
+    <string name="no_sim_setup_wireless">Anda tiada kad SIM yang dipasangkan, oleh sebab itu anda tidak boleh bersambung kepada rangkaian mudah alih untuk perkhidmatan suara atau data. Anda boleh bersambung kepada rangkaian Wi-Fi tanpa SIM.</string>
+    <string name="setup_wifi_button_label">Sambung kepada Wi-Fi</string>
+    <string name="no_network">Anda tiada sambungan rangkaian.</string>
+    <string name="no_network_help">Ini mungkin masalah sementara atau peranti Android anda tidak diperuntukkan untuk perkhidmatan data. Sila cuba lagi apabila disambungkan kepada rangkaian mudah alih atau bersambung kepada rangkaian Wi-Fi.</string>
+    <string name="server_error">Masalah berlaku semasa berkomunikasi dengan pelayan Google.</string>
+    <string name="server_error_help">Sila cuba sebentar lagi.</string>
+    <string name="network_unreliable">Tidak dapat mewujudkan sambungan data yang boleh dipercayai kepada pelayan.</string>
+    <string name="network_unreliable_help">Ini mungkin masalah sementara atau peranti Android anda tidak diperuntukkan untuk perkhidmatan data. Jika masalah berterusan, hubungi Penjagaan Pelanggan.</string>
+    <string name="invalid_login_character">Aksara tidak sah. Hanya 0-9, a-z, A-Z dan titik sahaja yang dibenarkan.</string>
+    <string name="invalid_password_character">Aksara kata laluan tidak sah.</string>
+    <string name="add_apn">Tetapan wayarles</string>
+    <string name="setup_google_account_title">Sediakan Akaun Google anda</string>
+    <string name="setup_complete_title">Persediaan Selesai</string>
+    <string name="cant_be_blank">Medan tidak boleh kosong.</string>
+    <string name="calendar">Kalendar Google</string>
+    <string name="talk">Bual Google</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Peranti Android anda tidak disambungkan kepada perkhidmatan data. Untuk melihat maklumat ini sekarang, lawati %s dari mana-mana komputer yang bersambung kepada Internet.</string>
+    <string name="field_cant_be_blank">Medan ini tidak boleh kosong</string>
+    <string name="field_invalid_domain">Ini bukan nama domain yang sah</string>
+    <string name="field_invalid_user">Ini bukan nama pengguna yang sah</string>
+    <string name="field_invalid_user_domain">Masukkan nama pengguna anda sahaja, bukan alamat e-mel anda</string>
+    <string name="field_invalid_login">Ini bukan nama akaun yang sah</string>
+    <string name="about_accounts_message"><font size="17">"Adalah mudah untuk menyediakan peranti Android anda! Apa yang anda perlukan hanyalah Akaun Google.
+"<font height="17">"
+"</font><b>Mengapa menggunakan Akaun Google?</b>"
+"<font height="3">"
+"</font>"Dengan Akaun Google, aplikasi Google disegerak secara automatik antara peranti Android dan komputer anda, tanpa mengira dari mana anda membuat pengemaskinian.
+"<font height="17">"
+"</font><b>Sudah ada Akaun Google?</b>"
+"<font height="3">"
+"</font>"Maka anda sudah bersedia! Sentuh sahaja “Log masuk” pada skrin berikutnya.
+"<font height="17">"
+"</font><b>Tiada Akaun Google?</b>"
+"<font height="3">"
+"</font>"No problem. Sentuh “Buat” pada skrin berikutnya dan kami akan membantu anda menyediakan akaun.
+"<font height="17">"
+"</font><b>Sentuh ”Seterusnya” untuk bermula!</b>"
+"</font></string>
+    <string name="fling_help_message">"Luncurkan jari anda ke atas atau ke bawah pada skrin untuk menatal.
+(Sentuh mesej ini untuk mengetepikannya.)"</string>
+    <string name="setup_device_title">Menyediakan ^1 anda</string>
+    <string name="dont_have_an_account">Tiada Akaun Google?</string>
+    <string name="create_one_now">Buat sekarang! Sangat mudah.</string>
+    <string name="already_have_an_account">Sudah mempunyai Akaun Google?</string>
+    <string name="sign_in_with_google_account">Log masuk dengan Akaun Google yang anda mahu pautkan ke peranti Android ini.</string>
+    <string name="skip_message">Mahu menyediakan akaun kemudian?</string>
+    <string name="touch_to_begin">Sentuh android untuk memulakan.</string>
+    <string name="delayed_gaia_agreement">Dengan meneruskan, anda bersetuju menerima Dasar Privasi <annotation id="google_privacy">Google</annotation> dan Dasar Privasi <annotation id="android_privacy">Tambahan</annotation>.</string>
+    <string name="open_keyboard_message">Untuk memulakan, buka papan kekunci dengan menggelangsarkannya.</string>
+    <string name="open_keyboard_message_to_continue">Untuk meneruskan, buka papan kekunci dengan menggelangsarkannya.</string>
+    <string name="emergency_dial">Dail kecemasan</string>
+    <string name="change_language">Tukar bahasa</string>
+    <string name="signing_in">Melog masuk...</string>
+    <string name="close_keyboard_message">Gelangsarkan papan kekunci kembali untuk meneruskan.</string>
+    <string name="communicating_message">Peranti Android anda perlu berkomunikasi dengan pelayan Google untuk menyediakan akaun anda. Ini mungkin mengambil masa sehingga lima minit.</string>
+    <string name="communicating_message_domain">Peranti Android anda perlu berkomunikasi dengan pelayan Google untuk mencari maklumat domain anda. Ini mungkin mengambil masa sehingga lima minit.</string>
+    <string name="username">Nama pengguna</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Kata laluan</string>
+    <string name="sign_in_agreement">Dengan melog masuk, anda bersetuju menerima Dasar Privasi <annotation id="google_privacy">Google</annotation> dan Dasar Privasi <annotation id="android_privacy">Tambahan</annotation>.</string>
+    <string name="create">Buat</string>
+    <string name="create_message">Perlukan Akaun Google?</string>
+    <string name="now_signing_in">Melog masuk...</string>
+    <string name="now_verifying_domain">Mencari domain anda...</string>
+    <string name="sign_in_with_google_account_short">Log masuk dengan Akaun Google anda:</string>
+    <string name="browser_sign_in_explanation">Gunakan skrin ini jika anda mempunyai log masuk khas yang perlu diambil kira yang memerlukan penyemak imbas Web.</string>
+    <string name="gls_browser_login_intro_message">Tidak boleh mengakses akaun Google atau Google Apps anda. Keizinan semula diperlukan.</string>
+    <string name="enter_domain_name">Masukkan nama domain syarikat anda:</string>
+    <string name="enter_user_name">Masukkan nama pengguna dan kata laluan anda untuk ^1:</string>
+    <string name="inactive_domain">Akaun ini tidak boleh digunakan kerana ia milik domain yang tidak aktif. Sila hubungi pentadbir domain untuk <b>^1</b> atau log masuk menggunakan akaun lain.</string>
+    <string name="invalid_username">Teks yang dimasukkan bukan nama pengguna yang sah.</string>
+    <string name="web_login_error_title">Maaf...</string>
+    <string name="web_login_error_desc">"Terdapat masalah menyambung kepada pelayan syarikat anda di ^1.
+
+Maklumat ralat:
+"</string>
+    <string name="web_login_error_redirects">Halaman log masuk web telah diubah hala terlalu banyak kali</string>
+    <string name="web_login_error_http">Ralat HTTP ^1 : ^2</string>
+    <string name="name_device_label">Berikan nama untuk peranti Android anda:</string>
+    <string name="device_name_hint">Nama peranti</string>
+    <string name="registering_device">Mendaftar peranti Android...</string>
+    <string name="error_account_disabled">"Akaun ini telah dilumpuhkan. 
+
+(Untuk mendapatkan butiran, pergi ke http://google.com/accounts/recovery pada komputer anda)."</string>
+    <string name="error_login_failed">"Nama pengguna dan kata laluan anda tidak sepadan. Sila cuba lagi. 
+
+(Untuk memulihkan maklumat akaun anda, pergi ke http://www.google.com/accounts/recovery di komputer anda.)"</string>
+    <string name="error_account_not_verified">"Akaun ini belum disahkan. Sila semak e-mel anda pada komputer dan ikuti pautan untuk mengesahkan akaun ini. 
+
+(Untuk memulihkan maklumat akaun anda, pergi ke http://www.google.com/accounts/recovery di komputer anda.)"</string>
+    <string name="captcha_message_string">Pengesahan</string>
+    <string name="captcha_instructions">Masukkan aksara yang anda lihat dalam gambar. Tidak sensitif huruf.</string>
+    <string name="create_google_account">Buat Akaun Google baru</string>
+    <string name="example_usernames">mis., JSmith, John.Smith</string>
+    <string name="create_account_agreement">Dengan membuat akaun ini anda bersetuju menerima Dasar Privasi <annotation id="google_privacy">Google</annotation> dan Dasar Privasi <annotation id="android_privacy">Tambahan</annotation>.</string>
+    <string name="account_already_has_gmail">Akaun sudah mempunyai Gmail.</string>
+    <string name="creating_account">Membuat akaun anda...</string>
+    <string name="checking_account">Menyemak ketersediaan nama pengguna...</string>
+    <string name="try_a_different_username">Cuba nama pengguna yang lain</string>
+    <string name="is_not_available"><b>^1</b> tidak tersedia.</string>
+    <string name="hint_size"><b>^1</b> mengandungi kurang daripada 6 atau lebih daripada 30 aksara.</string>
+    <string name="hint_numbers_only"><b>^1</b> tidak mengandungi sebarang huruf.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" boleh mengandungi huruf,
+nombor dan titik sahaja."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> tidak menggunakan Gmail</string>
+    <string name="sign_in">Log masuk</string>
+    <string name="sign_in_browser">Log masuk penyemak imbas</string>
+    <string name="here_are_alternatives">Berikut adalah beberapa pilihan lain:</string>
+    <string name="alternatives_list_title">Nama pengguna cadangan</string>
+    <string name="choose_a_password"><b>"Taipkan
+kata laluan"</b></string>
+    <string name="confirm_password"><b>"Sahkan
+kata laluan"</b></string>
+    <string name="password_strength"><b>"Kekuatan
+kata laluan"</b></string>
+    <string name="too_short">Terlalu pendek</string>
+    <string name="security_question"><b>"Soalan
+keselamatan"</b></string>
+    <string name="security_questions_title">Soalan keselamatan</string>
+    <string name="answer"><b>Jawapan</b></string>
+    <string name="password_mismatch">Kata laluan anda tidak sepadan. Sila taipkannya semula.</string>
+    <string name="your_account_was_created">Akaun anda telah dibuat!</string>
+    <string name="eight_chars_min">(minimum 8 aksara)</string>
+    <string name="just_in_case">Jika anda kehilangan kata laluan anda.</string>
+    <string name="verify_your_profile">Sahkan profil anda</string>
+    <string name="signed_in">Sudah dilog masuk!</string>
+    <string name="error_not_logged_in">Pengguna tidak dilog masuk.</string>
+    <string name="error_username_unavailable">Nama pengguna tidak tersedia.</string>
+    <string name="error_bad_password">Kata laluan terlalu lemah atau mengandungi aksara tidak sah. Sila cuba lagi.</string>
+    <string name="error_bad_username">Nama pengguna tidak sah.</string>
+    <string name="loading">Memuatkan...</string>
+    <string name="submission_title">Maaf...</string>
+    <string name="submission_error_text">Ralat telah berlaku. Sila cuba lagi.</string>
+    <string name="existing_account_error_title">Akaun sudah pun wujud</string>
+    <string name="existing_account_error_text">Sudah terdapat akaun ^1 pada peranti Android ini.</string>
+    <string name="account_linked_message"><font height="24">Akaun Google anda kini dipautkan ke peranti Android ini.</font></string>
+    <string name="syncing_message"><font size="17">"Aplikasi Google sedang menyegerak data sekarang. 
+"<font height="17">"
+"</font>"%i Apabila ikon ”menyegerak” hilang dari bar status di bahagian atas skrin anda, muat turun sudah selesai.
+"<font height="17">"
+"</font><b>Mengenai bar status...</b>"
+"<font height="3">"
+"</font>"Setiap kali anda menerima mesej baru atau pemberitahuan lain, ikon akan muncul dalam bar status.
+"<font height="17">"
+"</font>Gunakan jari anda untuk menyeret bar status itu ke bawah untuk membuka panel Pemberitahuan, dengan butiran mengenai semua pemberitahuan semasa anda.</font></string>
+    <string name="i_agree_next">Saya setuju, Seterusnya</string>
+    <string name="android_privacy_policy_title">Dasar Privasi Tambahan</string>
+    <string name="google_terms_of_service_title">Syarat Perkhidmatan Google</string>
+    <string name="google_privacy_policy_title">Dasar Privasi Google</string>
+    <string name="notification_update_title">Akaun anda harus dikemas kini</string>
+    <string name="notification_update_message">Sentuh di sini untuk menjalankan semula Wizard Persediaan</string>
+    <string name="common_message">"Gmail, sandaran dan banyak lagi ciri Android memerlukan Akaun Google.
+
+Sentuh "<b>Seterusnya</b>" untuk melog masuk dengan Akaun Google sedia ada atau membuat Akaun Google baru sekarang.
+
+Atau sentuh "<b>Langkau</b> untuk mula menggunakan Android anda. Anda boleh melog masuk ke Akaun Google kemudian dalam Tetapan, di bawah Akaun &amp; Penyegerakan.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Menambah akaun</font>" 
+
+Anda boleh menggunakan lebih daripada satu Akaun Google (seperti akaun rumah dan tempat kerja anda). Menambah Akaun Google hanya memerlukan beberapa langkah. 
+
+Sentuh “Seterusnya” untuk meneruskan atau tekan butang Kembali untuk keluar."</string>
+    <string name="reactivate_account_message">"Anda perlu memautkan akaun mel Google dengan peranti Android ini. 
+
+Anda sudah mempunyai nama pengguna mel Google ("<b>^1</b>") yang dikaitkan dengan akaun ini tetapi ia tidak aktif buat masa ini. 
+
+Sentuh “Seterusnya” untuk mengaktifkan semula nama pengguna ini dan menggunakannya. 
+
+Atau jika anda mahu menggunakan akaun yang lain, tekan butang Kembali dan daftar masuk dengan atau buat akaun lain."</string>
+    <string name="reactivating_account">Mengaktifkan semula akaun anda...</string>
+    <string name="your_account_was_reactivated">Akaun anda telah diaktifkan!</string>
+    <string name="account_recovery_info">Maklumat berikut akan membantu anda memulihkan kata laluan anda jika ia hilang</string>
+    <string name="secondary_email_label"><b>"E-mel
+Kedua"</b></string>
+    <string name="invalid_email">"Alamat e-mel yang dimasukkan tidak sah.
+ Contoh: joe@example.com"</string>
+    <string name="invalid_email_primary">Alamat e-mel kedua tidak boleh sama dengan yang sedang anda wujudkan</string>
+    <string name="tutorial_intro_title">Ketahui cara menggunakan ^1 anda</string>
+    <string name="begin_button_label">Mula</string>
+    <string name="tutorial_intro_message_generic">Terdapat beberapa perkara penting yang perlu difahami untuk menggunakan sepenuhnya peranti Android anda. <font size="17">"
+"</font>" 
+"<li>Menggunakan papan kekunci pada skrin</li> <font size="17">"
+"</font>" 
+Sentuh “Mulakan” untuk memulakan tutorial dan mengetahui lebih lanjut."</string>
+    <string name="tutorial_intro_message_setupwizard">Terdapat beberapa perkara penting yang perlu difahami untuk menggunakan sepenuhnya peranti Android anda. <font size="17">"
+"</font>" 
+"<li>Menggunakan papan kekunci pada skrin</li>" 
+"<li>Menyediakan Akaun Google</li> <font size="17">"
+"</font>" 
+Sentuh “Mulakan” untuk memulakan tutorial dan mengetahui lebih lanjut atau sentuh “Langkau” untuk melangkau tutorial ini dan meneruskan."</string>
+    <string name="keyboard_tutorial_title">Menggunakan papan kekunci pada skrin</string>
+    <string name="keyboard_tutorial_message">Sentuh mana-mana medan teks untuk membuka papan kekunci dan mula menaip. Cubalah di sini!</string>
+    <string name="keyboard_tutorial_edittext_hint">Sentuh di sini untuk mula menaip</string>
+    <string name="done_typing_message">Selesai menaip? Tekan butang Kembali untuk menutup papan kekunci.</string>
+    <string name="done_button_label_in_tutorial">Selesai</string>
+    <string name="backup_consent_title">Sandarkan tetapan saya</string>
+    <string name="backup_consent_message">Tetapan anda (seperti penanda halaman dan kata laluan Wi-Fi anda) boleh disandarkan ke Akaun Google anda secara automatik. Jika anda mendapatkan peranti Android baru (untuk menggantikan yang hilang atau jika anda tingkatkan), tetapan anda dipulihkan ke dalam peranti Android anda yang baru.</string>
+    <string name="backup_consent_howto_disable_message">Anda boleh menukar tetapan sandaran anda pada bila-bila masa dalam aplikasi Tetapan, di bawah Privasi.</string>
+    <string name="backup_consent_yes_agree">Sandarkan tetapan pada Akaun Google saya.</string>
+    <string name="restore_disable">Lumpuhkan pemulihan</string>
+    <string name="restore_enable">Dayakan pemulihan</string>
+    <string name="restore_enabled">Sekiranya tetapan anda telah dibuat sandaran sebelum ini, ia akan dipulihkan.</string>
+    <string name="restore_disabled">Tetapan anda tidak akan dipulihkan daripada sandaran.</string>
+    <string name="webview_progress_title">Menyambung kepada domain...</string>
+    <string name="webview_progress_verbose_message">"Pelayan syarikat anda sedang menghantar maklumat log masuk. Ini mungkin mengambil masa beberapa minit.
+Halaman log masuk syarikat anda akan muncul apabila penghantaran ini selesai."</string>
+    <string name="enterprise_unmanaged_domain">Domain ini tidak menggunakan Google Apps. Sila semak nama domain dan cuba lagi.</string>
+    <string name="use_location_for_services_agree">Setuju</string>
+    <string name="use_location_for_services_disagree">Tidak bersetuju</string>
+    <string name="use_location_for_services_title">Gunakan Lokasi Saya</string>
+    <string name="use_location_for_services_text">Adakah anda mahu membenarkan Google menggunakan lokasi untuk hasil carian yang lebih baik dan untuk perkhidmatan lain?</string>
+    <string name="permlab_readGsettings">Baca tetapan Google</string>
+    <string name="permdesc_readGsettings">Membenarkan aplikasi ini membaca tetapan Google.</string>
+    <string name="permlab_writeGsettings">Ubah suai tetapan Google</string>
+    <string name="permdesc_writeGsettings">Membenarkan aplikasi ini mengubah suai tetapan Google.</string>
+    <string name="permlab_readGservices">membaca konfigurasi perkhidmatan Google</string>
+    <string name="permdesc_readGservices">Membenarkan aplikasi ini membaca data konfigurasi perkhidmatan Google.</string>
+    <string name="permlab_writeGservices">Ubah suai konfigurasi perkhidmatan Google</string>
+    <string name="permdesc_writeGservices">Membenarkan aplikasi ini mengubah suai data konfigurasi perkhidmatan Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">akses kepada kata laluan untuk akaun Google</string>
+    <string name="permdesc_googleAuthPassword">Membenarkan aplikasi mengakses terus kata laluan untuk akaun Google yang anda telah konfigurasikan.</string>
+    <string name="permlab_googleMailSwitch">pilih penjenamaan Gmail atau Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Membenarkan aplikasi bertukar antara penjenamaan \"Gmail\" dan \"Google Mail\" pada nama yang dipaparkan.</string>
+    <string name="permlab_googleAuth">lihat akaun yang telah dikonfigurasikan</string>
+    <string name="permdesc_googleAuth">Membenarkan aplikasi melihat nama pengguna (alamat e-mel) akaun Google yang anda telah konfigurasikan.</string>
+    <string name="permlab_googleAuth_ALL">akses semua perkhidmatan Google</string>
+    <string name="permdesc_googleAuth_ALL">Membenarkan aplikasi melog masuk ke SEMUA perkhidmatan Google menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_OTHER">akses perkhidmatan Google yang lain</string>
+    <string name="permdesc_googleAuth_OTHER">Membenarkan aplikasi melog masuk ke perkhidmatan Google yang tidak ditentukan menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_mail">Mel Google</string>
+    <string name="permdesc_googleAuth_mail">Membenarkan aplikasi melog masuk ke mel Google menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_cl">Google Calendar</string>
+    <string name="permdesc_googleAuth_cl">Membenarkan aplikasi melog masuk ke Google Calendar menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_android">Perkhidmatan Android</string>
+    <string name="permdesc_googleAuth_android">Membenarkan aplikasi melog masuk ke perkhidmatan Android menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_sierra">Akaun Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Membenarkan aplikasi melog masuk ke Google Checkout (dan berpotensi untuk membuat pembelian) menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_sierraqa">Akaun Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Membenarkan aplikasi melog masuk ke Google Checkout QA menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Akaun Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Membenarkan aplikasi melog masuk ke Google Checkout Sandbox menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Membenarkan aplikasi melog masuk ke YouTube menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Nama pengguna YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Membenarkan aplikasi melihat nama pengguna YouTube yang dikaitkan dengan akaun Google yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_talk">Bual Google</string>
+    <string name="permdesc_googleAuth_talk">Membenarkan aplikasi melog masuk ke Bual Google menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_ig">Akaun iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Membenarkan aplikasi melog masuk ke iGoogle menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_lh2">Album Web Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Membenarkan aplikasi melog masuk ke Album Web Picasa menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_mobile">Aplikasi mudah alih Google</string>
+    <string name="permdesc_googleAuth_mobile">Membenarkan aplikasi melog masuk ke aplikasi mudah alih Google menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_cp">data kenalan dalam akaun Google</string>
+    <string name="permdesc_googleAuth_cp">Membenarkan aplikasi mengakses maklumat kenalan dan profil akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Membenarkan aplikasi melog masuk ke Google AdSense menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Membenarkan aplikasi melog masuk ke Google AdWords menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Membenarkan aplikasi melog masuk ke Blogger menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Membenarkan aplikasi melog masuk ke Dodgeball menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Membenarkan aplikasi melog masuk ke Google Base menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_groups2">Google Kumpulan</string>
+    <string name="permdesc_googleAuth_groups2">Membenarkan aplikasi melog masuk ke Google Kumpulan menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Membenarkan aplikasi melog masuk ke Google Health menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_jotspot">Jotspot</string>
+    <string name="permdesc_googleAuth_jotspot">Membenarkan aplikasi melog masuk ke JotSpot menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Membenarkan aplikasi melog masuk ke Knol menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_news">Google News</string>
+    <string name="permdesc_googleAuth_news">Membenarkan aplikasi melog masuk ke Google News menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Membenarkan aplikasi melog masuk ke Orkut menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_print">Google Book Search</string>
+    <string name="permdesc_googleAuth_print">Membenarkan aplikasi melog masuk ke Google Book Search menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Webmaster Tools</string>
+    <string name="permdesc_googleAuth_sitemaps">Membenarkan aplikasi melog masuk ke Google Webmaster Tools menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Membenarkan aplikasi melog masuk ke Google WiFi menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">Membenarkan aplikasi melog masuk ke Google Docs menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_wise">Google Spreadsheets</string>
+    <string name="permdesc_googleAuth_wise">Membenarkan aplikasi melog masuk ke Google Spreadsheets menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Membenarkan aplikasi melog masuk ke Google Finance menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_local">Peta Google</string>
+    <string name="permdesc_googleAuth_local">Membenarkan aplikasi melog masuk ke Peta Google menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_ah">Enjin Aplikasi Google</string>
+    <string name="permdesc_googleAuth_ah">Membenarkan aplikasi melog masuk ke Google App Engine menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_notebook">Google Notebook</string>
+    <string name="permdesc_googleAuth_notebook">Membenarkan aplikasi melog masuk ke Google Notebook menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Membenarkan aplikasi melog masuk ke Google Voice menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Pengecaman Pertuturan Diperibadikan</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Membenarkan aplikasi melog masuk ke perkhidmatan Pengecaman Pertuturan Diperibadikan menggunakan akaun yang disimpan pada peranti Android ini.</string>
+    <string name="gls_notification_title">Log masuk ke akaun anda</string>
+    <string name="gls_notification_new_account">Akaun ^1 diperlukan</string>
+    <string name="gls_notification_new_account_youtube">Akaun YouTube diperlukan</string>
+    <string name="gls_notification_login_error">Sentuh untuk log masuk ke akaun anda.</string>
+    <string name="gls_ui_add_account_title">Persediaan akaun</string>
+    <string name="gls_ui_google_account_subtitle">Akaun Google</string>
+    <string name="gls_ui_activity_title">Log masuk Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Log masuk penyemak imbas</string>
+    <string name="gls_ui_activity_title_enterprise">Log masuk Enterprise</string>
+    <string name="gls_ui_activity_title_youtube">Log masuk YouTube</string>
+    <string name="gls_ui_activity_authenticating">Mengesahkan...</string>
+    <string name="gls_captcha_activity_message">Sila masukkan aksara yang anda lihat dalam gambar:</string>
+    <string name="gls_captcha_activity_ok_button">Selesai</string>
+    <string name="gls_error_activity_message">Terdapat ralat rangkaian semasa cuba untuk melog masuk ke <b>^1</b>. Cuba semula sekarang atau tekan butang Kembali untuk membatalkan.</string>
+    <string name="gls_error_activity_retry_button">Cuba lagi</string>
+    <string name="gls_dmagent_activity_message">" Domain anda memerlukan pengurusan peranti mudah alih. Sila pasang aplikasi Dasar Peranti Google Apps untuk menguatkuasakan dasar keselamatan yang diperlukan oleh akaun "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Muat turun</string>
+    <string name="gls_login_activity_username_label">Nama pengguna</string>
+    <string name="gls_login_activity_password_label">Kata Laluan</string>
+    <string name="gls_login_activity_ok_button">Log masuk</string>
+    <string name="gls_login_activity_loginfail_text_both">Nama pengguna atau kata laluan tidak sah. Akaun <b>^1</b> diperlukan. Sila cuba lagi.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Anda telah memasukkan kata laluan yang salah atau akaun anda sudah bertukar. Sila masukkan semula kata laluan anda.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Taipkan kata laluan untuk akaun ini.</string>
+    <string name="gls_enterprise_login_activity_msg">"Sila log masuk ke akaun perusahaan anda di ^1 untuk pengesahan.
+Sentuh Log masuk untuk membuka halaman log masuk berasaskan web syarikat anda."</string>
+    <string name="gls_login_activity_badaccount_text">Anda tidak boleh menggunakan akaun itu dalam situasi ini. Sila cuba akaun lain.</string>
+    <string name="gls_login_activity_newaccount_text">Log masuk ke akaun <b>^1</b> anda.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Tiada akaun YouTube? Sentuh <a href="http://www.youtube.com/signup">di sini</a> untuk membuat akaun.</string>
+    <string name="gls_settings_tos_activity_title">Undang-undang Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Anda tidak disambungkan kepada perkhidmatan data. Untuk melihat maklumat ini sekarang, pergi ke %s dari mana-mana komputer yang bersambung kepada Internet.</string>
+    <string name="gls_settings_contributors_activity_title">Penyumbang</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Anda tidak disambungkan kepada perkhidmatan data. Untuk melihat maklumat ini sekarang, pergi ke %s dari mana-mana komputer yang bersambung kepada Internet.</string>
+    <string name="gls_webview_progress_title">Menyambung kepada domain...</string>
+    <string name="gls_webview_progress_verbose_message">"Pelayan syarikat anda sedang menghantar maklumat log masuk. Ini mungkin mengambil masa beberapa minit.
+Halaman log masuk syarikat anda akan muncul apabila penghantaran ini selesai."</string>
+    <string name="gls_sign_in_button_label">Log masuk</string>
+    <string name="gls_back_button_label">Kembali</string>
+    <string name="gls_cancel_button_label">Batal</string>
+    <string name="gls_exit_account_setup_button_label">Kelr dr pnyedn akaun</string>
+    <string name="gls_reauthorize_button_label">Izinkan semula</string>
+    <string name="gls_sign_in_message">Peranti Android anda perlu berkomunikasi dengan pelayan Google untuk menyediakan akaun anda. Ini mungkin mengambil masa sehingga lima minit.</string>
+    <string name="gls_sign_in_title">Melog masuk...</string>
+</resources>

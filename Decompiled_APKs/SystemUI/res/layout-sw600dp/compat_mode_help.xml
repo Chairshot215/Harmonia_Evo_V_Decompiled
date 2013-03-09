@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/compat_mode_help_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="60.0sp" android:id="@id/header" android:background="@drawable/compat_mode_help_divider_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="80.0dip" android:text="@string/compat_mode_help_header" android:maxLines="1" android:shadowColor="#ff000000" android:shadowRadius="8.0" />
+    <ImageView android:id="@id/diagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compat_mode_help_diagram" android:layout_centerInParent="true" android:contentDescription="@string/accessibility_compatibility_zoom_example" />
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/compat_mode_help_divider_bottom" android:layout_width="fill_parent" android:layout_height="190.0dip" android:layout_marginRight="80.0dip" android:layout_marginBottom="55.0dip" android:layout_alignLeft="@id/header" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/compat_mode_help_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_compatibility_zoom_button" />
+        <TextView android:textSize="28.0sp" android:id="@id/explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/compat_mode_help_body" android:shadowColor="#ff000000" android:shadowRadius="4.0" android:layout_toLeftOf="@id/icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <Button android:textSize="28.0sp" android:id="@id/button" android:layout_width="208.0dip" android:layout_height="48.0dip" android:layout_marginBottom="20.0dip" android:text="@*android:string/ok" android:layout_alignLeft="@id/header" android:layout_alignParentBottom="true" />
+</RelativeLayout>

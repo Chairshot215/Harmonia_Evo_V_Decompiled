@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="60.0dip" android:paddingTop="60.0dip" android:paddingRight="60.0dip" android:paddingBottom="120.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/setupWizardTitle" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/account_setup_title" android:layout_weight="0.25" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="0.55">
+        <TextView android:textAppearance="@style/setupWizardBodyTextPrimary" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/submission_title" />
+        <TextView android:textAppearance="@style/setupWizardBodyTextSecondary" android:id="@id/explanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/submission_error_text" android:layout_below="@id/title" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/back_button" android:visibility="gone" android:text="@string/back_button_label" style="@style/CustomButtonSize" />
+            <Button android:id="@id/try_again_button" android:text="@string/try_again_button_label" style="@style/CustomButtonSize" />
+            <Button android:id="@id/setupwifi_button" android:visibility="gone" android:text="@string/setup_wifi_button_label" style="@style/CustomButtonSize" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="0.2" />
+</LinearLayout>

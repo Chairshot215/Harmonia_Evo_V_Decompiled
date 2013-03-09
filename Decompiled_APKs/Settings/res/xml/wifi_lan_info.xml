@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/wifi_lan_info"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/wifi_lan_info_ip" android:key="ip_address" android:summary="@string/wifi_lan_info_default_status" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/wifi_lan_info_gateway" android:key="gateway" android:summary="@string/wifi_lan_info_default_status" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/wifi_lan_info_submask" android:key="netmask" android:summary="@string/wifi_lan_info_default_status" />
+</com.htc.preference.HtcPreferenceScreen>

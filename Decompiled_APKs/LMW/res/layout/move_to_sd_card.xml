@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cmd_bar" android:layout_below="@id/header_bar">
+        <TextView android:id="@id/description" android:text="@string/move_to_sd_hint" style="@style/description_small_box" />
+        <include android:id="@id/memory_info" android:layout_width="fill_parent" layout="@com.htc:layout/htc_list_item_separator_middle" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <com.htc.widget.HtcListView android:id="@id/applications" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="multipleChoice" style="@com.htc:style/htc_listview_style" />
+            <TextView android:layout_gravity="center" android:id="@id/no_items" android:background="@*android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nothing_to_move" style="@com.htc:style/list_secondary_l" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.htc.widget.HeaderBarShort android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.widget.HtcFooter android:id="@id/cmd_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_1" android:text="@string/back" />
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_2" android:text="@string/finish" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/now_playing_title" />
+    <FrameLayout android:background="@drawable/rec_widget_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <include android:visibility="gone" layout="@layout/rec_widget_error_indicator" />
+        <AdapterViewFlipper android:id="@id/widget_flipper" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:flipInterval="@integer/recommendations_flip_interval" android:autoStart="true" />
+        <RelativeLayout android:id="@id/empty_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_play_store_icon_watermark" android:scaleType="fitStart" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/content_generic_large_size" android:textColor="@color/page_error_text_color" android:gravity="center" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_recommendation_data_error" android:layout_centerInParent="true" />
+            <include layout="@layout/rec_widget_refresh" />
+        </RelativeLayout>
+        <include android:id="@id/widget_background_accessibility" android:visibility="gone" layout="@layout/widget_accessibility_overlay" />
+        <FrameLayout android:id="@id/interactive_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_play_store_icon_watermark" android:scaleType="fitStart" />
+            <TextView android:textSize="@dimen/content_generic_large_size" android:textColor="@color/page_error_text_color" android:gravity="center" android:id="@id/interactive_error_msg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <include android:id="@id/widget_loading_indicator" layout="@layout/rec_widget_loading_indicator" />
+    </FrameLayout>
+</LinearLayout>

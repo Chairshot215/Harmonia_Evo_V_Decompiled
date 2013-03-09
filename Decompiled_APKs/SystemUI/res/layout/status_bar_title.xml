@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.TitleView android:id="@id/titleView" android:background="@drawable/usage_monitor_titlebar_rest" android:layout_width="fill_parent" android:layout_height="@dimen/usage_monitor_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/title" android:background="@drawable/usage_monitor_titlebar_left_rest" android:paddingLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/title_primary_m" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/button" android:background="@drawable/usage_monitor_titlebar_btn" android:layout_width="@dimen/usage_monitor_title_btn_width" android:layout_height="fill_parent" android:src="@drawable/notification_icon_arrow" android:scaleType="center" />
+</com.android.systemui.statusbar.phone.TitleView>

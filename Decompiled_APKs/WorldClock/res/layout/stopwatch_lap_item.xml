@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left" android:id="@id/lap_id" android:layout_width="fill_parent" android:layout_height="@dimen/common_htclistview_item_height" android:layout_marginLeft="@dimen/stopwatch_lap_id_marginLeft" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    <TextView android:gravity="center" android:id="@id/lap_total_time" android:layout_width="fill_parent" android:layout_height="@dimen/common_htclistview_item_height" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    <TextView android:textStyle="bold" android:gravity="right" android:id="@id/lap_time" android:layout_width="fill_parent" android:layout_height="@dimen/common_htclistview_item_height" android:layout_marginRight="@dimen/stopwatch_lap_time_marginRight" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+</LinearLayout>

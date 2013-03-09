@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:text="@string/google_terms_of_service_title" />
+        <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/next_button" android:layout_below="@id/title_area">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <TextView android:textAppearance="@style/setupWizardTextPrimarySmall" android:id="@id/gender_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gender_prompt" android:layout_alignParentLeft="true" />
+                <Spinner android:id="@id/gender_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:prompt="@string/gender_prompt" />
+            </LinearLayout>
+            <CheckBox android:textAppearance="@style/setupWizardTextPrimarySmall" android:id="@id/agree_personalized_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/allow_personalized_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/web_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                <CheckBox android:textAppearance="@style/setupWizardTextPrimarySmall" android:textColorLink="?android:textColorPrimary" android:id="@id/agree_web_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/enable_web_history" android:layout_centerVertical="true" />
+                <TextView android:textAppearance="@style/setupWizardTextPrimarySmall" android:textColorLink="?android:textColorPrimary" android:id="@id/learn_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/learn_more" android:layout_centerVertical="true" />
+            </LinearLayout>
+            <TextView android:textColorLink="?android:textColorPrimary" android:id="@id/terms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_plus_tos_signup" style="@style/DescriptionText" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/back_button" android:text="@string/back_button_label" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BackButton" />
+    <Button android:id="@id/next_button" android:text="@string/i_accept" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+</view>

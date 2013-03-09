@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" style="?android:attr/dropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/photo" android:background="@drawable/btn_contact_picture" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/picture_unknown" android:layout_alignWithParentIfMissing="true" style="?android:attr/imageWellStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/photo">
+        <LinearLayout android:orientation="horizontal" android:id="@id/nameCell" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="?android:attr/dropDownItemStyle" />
+            <TextView android:textColor="?android:textColorSecondary" android:id="@id/type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="1.0" style="?android:attr/dropDownItemStyle" />
+        </LinearLayout>
+        <TextView android:id="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="?android:attr/dropDownItemStyle" />
+    </LinearLayout>
+</RelativeLayout>

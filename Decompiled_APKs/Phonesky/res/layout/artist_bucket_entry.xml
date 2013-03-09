@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.ArtistBucketEntry android:id="@id/artist_layer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" finsky:default_ratio="0.5"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.DocImageView android:id="@id/artist_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/placeholder_2by1_music" finsky:placeholder_type="promo" />
+    <com.google.android.finsky.layout.CellTitleOverlay android:id="@id/cell_overlay" android:drawablePadding="4.0dip" finsky:min_width_percent="0.25" finsky:max_width_percent="0.85" style="@style/CellTitleOverlayText" />
+    <View android:id="@id/accessibility_overlay" android:background="@drawable/highlight_overlay" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.google.android.finsky.layout.ArtistBucketEntry>

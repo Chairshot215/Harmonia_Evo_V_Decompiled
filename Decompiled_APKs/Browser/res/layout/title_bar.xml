@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/taburlbar" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/title_bar_nav" />
+    <ViewStub android:id="@id/snapshotbar_stub" android:layout="@layout/title_bar_snapshot" android:layout_width="fill_parent" android:layout_height="@dimen/toolbar_height" />
+    <ViewStub android:id="@id/autologin_stub" android:paddingTop="3.0dip" android:layout="@layout/title_bar_autologin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/taburlbar" />
+    <com.android.browser.PageProgressView android:id="@id/progress" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/progress_bar_margin" android:src="@drawable/progress" android:layout_below="@id/taburlbar" />
+</RelativeLayout>

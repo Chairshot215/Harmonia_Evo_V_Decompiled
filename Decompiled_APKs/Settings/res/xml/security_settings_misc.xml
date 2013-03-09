@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/sim_lock_settings_title" android:key="sim_lock">
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/sim_lock_settings_category">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.IccLockSettings" />
+        </com.htc.preference.HtcPreference>
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/security_passwords_title">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/show_password" android:key="show_password" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/device_admin_title" android:key="device_admin">
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/manage_device_admin" android:key="manage_device_admin" android:summary="@string/manage_device_admin_summary" android:fragment="com.android.settings.DeviceAdminSettings" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/install_applications" android:key="toggle_install_applications" android:summaryOn="@string/install_unknown_applications" android:summaryOff="@string/install_unknown_applications" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/credentials_title">
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/trusted_credentials" android:summary="@string/trusted_credentials_summary" android:fragment="com.android.settings.TrustedCredentialsSettings" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/credentials_install" android:key="install_credentials" android:summary="@string/credentials_install_summary">
+            <intent android:targetPackage="com.android.certinstaller" android:action="android.credentials.INSTALL" android:targetClass="com.android.certinstaller.CertInstallerMain" />
+        </com.htc.preference.HtcPreference>
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/credentials_reset" android:key="reset_credentials" android:summary="@string/credentials_reset_summary">
+            <intent android:targetPackage="com.android.settings" android:action="com.android.credentials.RESET" android:targetClass="com.android.settings.CredentialStorage" />
+        </com.htc.preference.HtcPreference>
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

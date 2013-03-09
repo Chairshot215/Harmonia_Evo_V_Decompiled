@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/qxdm_rotate_size" />
+        <EditText android:id="@id/qxdm_rotate_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:capitalize="none" android:autoText="false" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/qxdm_rotate_count" />
+        <EditText android:id="@id/qxdm_rotate_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:capitalize="none" android:autoText="false" />
+        <CheckBox android:id="@id/qxdm_auto_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/qxdm_auto_start" />
+        <RadioGroup android:orientation="vertical" android:id="@id/radio_group_storage" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/rb_phone_storage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            <RadioButton android:id="@id/rb_external_storage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+        </RadioGroup>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_diags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/qxdm_enable" android:paddingLeft="40.0dip" android:paddingTop="20.0dip" android:paddingRight="40.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/qxdm_enable" />
+            <Button android:id="@id/qxdm_disable" android:paddingLeft="40.0dip" android:paddingTop="20.0dip" android:paddingRight="40.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/qxdm_disable" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

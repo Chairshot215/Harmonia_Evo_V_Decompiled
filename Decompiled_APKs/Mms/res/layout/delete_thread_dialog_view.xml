@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/txt_delete_thread" android:paddingLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:paddingTop="@com.htc:dimen/alert_dialog_content_margin_top" android:paddingRight="@com.htc:dimen/alert_dialog_content_margin_right" android:paddingBottom="@com.htc:dimen/alert_dialog_content_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+    <CheckBox android:textColor="@com.htc:color/primary_text_color" android:id="@id/delete_locked" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delete_unlocked" style="@com.htc:style/list_primary_m" />
+</LinearLayout>

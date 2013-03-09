@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">Fjerner data...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">Slå av Bluetooth...</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"Du må kanskje oppheve paringen av denne telefonen på %s. 
+Trykk på OK for å avslutte, og prøv på nytt senere."</string>
+    <string name="UI_MSGBOX_BTN_BACK">Tilbake</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">Avbryt</string>
+    <string name="UI_MSGBOX_BTN_NO">Nei</string>
+    <string name="UI_MSGBOX_BTN_OK">OK</string>
+    <string name="UI_MSGBOX_BTN_QUIT">Avslutt</string>
+    <string name="UI_MSGBOX_BTN_RESUME">Gjenoppta</string>
+    <string name="UI_MSGBOX_BTN_SETTING">Innstilling</string>
+    <string name="UI_MSGBOX_BTN_YES">Ja</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">Overføring kan ikke slå på Bluetooth. Kontroller trådløsinnstillingene..</string>
+    <string name="UI_MSGBOX_CONN_FAILED">Trykk på Fortsett for å prøve på nytt, eller på Avbryt for å avslutte.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">Dupliser data</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">Du har allerede importert %1$s fra %2$s. Dupliserte poster kan bli opprettet.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">Hvis den gamle telefonen ikke blir funnet, må du sørge for at den er definert som synlig.</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">Alle tilgjengelige datatyper på %s er importert.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"Hvis du vil tillate overføring av data, kan du deaktivere kryptering/passord på din Blackberry og klikke på OK.
+Den vanlige banen er Alternativer>Sikkerhetsalternativer>Kryptering/Passord"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">Er du sikker på at du vil avslutte?</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">De importerte dataene fra %s vil fjernes. Er du sikker på at du vil avslutte?</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">Hvis du vil importere fra %s igjen, velger du og fjerner dataene fra denne telefonen først.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">Med unntak av Gmail- og Exchange-kontakter vil alle data av den valgte typen slettes fra denne telefonen.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">Med unntak av Gmail- og Exchange-kontakter vil alle data av den valgte typen slettes fra denne tableten.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">Hvis du vil importere fra %s igjen, velger du og fjerner dataene fra denne tableten først.</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">Du må kanskje starte %s på nytt og prøve igjen senere.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">Du må kanskje starte denne telefonen og den gamle telefonen på nytt, og deretter prøve igjen senere.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">Du må kanskje starte denne tableten og den gamle tableten på nytt, og deretter prøve igjen senere.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">Overføring mislyktes</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">Tilkobling mislyktes</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">Slett</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">Paring mislyktes</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">Spørring mislyktes</string>
+    <string name="ANDROID_TIPS_1">"1. Velg \"Meny\" > \"Innstillinger\" > \"Trådløs og nettverk\"
+
+2. Merk av for \"Bluetooth\"
+
+3. Velg \"Bluetooth-innstillinger\" 
+
+4. Merk av for \"Synlig\""</string>
+    <string name="ANDROID_TIPS_2">"1. Gå til skjermbildet Applikasjoner > \"Innstillinger\" > \"Trådløs og nettverk\"
+
+2. Velg \"Bluetooth-innstillinger\"
+
+3. Merk av for \"Bluetooth\"
+
+4. Merk av for \"Synlig\""</string>
+    <string name="ANDROID_TIPS_3">"1. Gå til skjermbildet Applikasjoner > Innstillinger > Trådløs og nettverk
+
+2. Velg Bluetooth-innstillinger 
+
+3. Merk av for Bluetooth
+
+4. Merk av for Synlig"</string>
+    <string name="APP_TIPS_1">"1. Velg Startside-knapp > Innstillinger > Generelt.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Hold deg på skjermbildet for Bluetooth-innstillinger."</string>
+    <string name="HTC_TIPS_1">"1. Gå til Startside-skjermbildet.
+
+2. Klikk på Start > Innstillinger > Tilkobling.
+
+3. Velg Bluetooth.
+
+4. Velg kategorien Modus.
+
+5. Slå på Bluetooth.
+
+6. Merk av for Gjør denne enheten synlig for andre enheter."</string>
+    <string name="HTC_TIPS_2">"1. Gå til Startside-skjermbildet.
+
+2. Klikk på Start > Innstillinger > Tilkobling > Bluetooth.
+
+3. Velg Bluetooth > Meny.
+
+4. Slå på Bluetooth.
+
+5. Sett Synlighet til På."</string>
+    <string name="HTC_TIPS_3">"1. Gå til Startside-skjermbildet.
+
+2. Klikk på Start > Innstillinger > Tilkobling > Bluetooth.
+
+3. Velg Bluetooth > Meny.
+
+4. Slå på Bluetooth.
+
+5. Sett Synlighet til På."</string>
+    <string name="HTC_TIPS_4">"1. Gå til Startside-skjermbildet.
+
+2. Klikk på Start > Innstillinger > Trådløse nett.
+
+3. Slå på Bluetooth.
+
+4. Klikk på venstre del av Bluetooth-knappen.
+
+5. Klikk på Avansert.
+
+6. Velg kategorien Modus.
+
+7. Merk av for Gjør denne enheten synlig for andre enheter."</string>
+    <string name="HTC_TIPS_5">"1. Velg \"Start\" > \"Verktøy\" > \"Innstillinger\" 
+
+2. Velg \"Trådløskontoller\" > \"Bluetooth\"
+
+3. Velg \"Avansert\"
+
+4. Velg kategorien \"Modus\"
+
+5. Merk av for \"Slå på Bluetooth\" og \"Gjør denne enheten synlig for andre enheter\""</string>
+    <string name="HTC_TIPS_6">"1. Velg \"Start\" > \"Innstillinger\" > \"Meny\" > \"Alle innstillinger\"
+
+2. Velg \"Bluetooth\" og slå det på
+
+3. Velg girkategorien
+
+.4. Velg teleskopikonet > \"Alltid synlig\""</string>
+    <string name="HTC_TIPS_7">"1. På startskjermbildet klikker du på \"→\".
+
+2. Klikk på Innstillinger > Bluetooth.
+
+3. Slå på Bluetooth."</string>
+    <string name="HTC_TIPS_8">"1. Velg Start > Verktøy > Innstillinger
+
+2. Klikk på Meny > Alle innstillinger
+
+3. Velg Bluetooth
+
+4. Velg kategorien Modus
+
+5. Slå på Bluetooth
+
+6. Merk av for Gjør denne enheten synlig for andre enheter"</string>
+    <string name="KYO_TIPS_1">"1. Select Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Select On/Off \"On Visible\"
+
+3. Select \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Select BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. Velg Meny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til På.
+
+4. Velg Innstillinger. 
+
+5. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="LGG_TIPS_2">"%s1. Velg Meny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til På.
+
+4. Velg Bluetooth-innstillinger.
+
+5. Sett Synlighet til Vis telefon."</string>
+    <string name="LGG_TIPS_3">"%s1. Velg Meny > Innstillinger > Bluetooth.
+
+2. Slå på Bluetooth.
+
+3. Sett Synlighet til Alltid synlig."</string>
+    <string name="LGG_TIPS_4">"%s1. Velg Meny og klikk på den siste kategorien.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på.
+
+4. Velg Innstillinger.
+
+5. Sett Min enhets synlighet til Synlig."</string>
+    <string name="LGG_TIPS_5">"1. Velg Meny > Innstillinger og verktøy > Bluetooth-meny.
+
+2. Sett Bluetooth til Slå på.
+
+3. Velg Alternativer > Oppdagingsmodus > På."</string>
+    <string name="MOT_TIPS_1">"%s1. Velg Meny > Innstillinger/verktøy > Innstillinger.
+
+2. Merk av for Bluetooth.
+
+3. Velg Bluetooth-strøm.
+
+4. Slå på.
+
+5. Velg Angi synlig.
+
+6. Velg Alltid."</string>
+    <string name="MOT_TIPS_10">"1. Velg Hovedmeny > Bluetooth.
+
+2. Velg Oppsett.
+
+3. Aktiver Endre strøm.
+
+4. Velg Tilbake.
+
+5. Velg Finn meg > synlig: 3 minutter."</string>
+    <string name="MOT_TIPS_11">"%s1. Velg Hovedmeny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth-kobling.
+
+3. Velg Oppsett.
+
+4. Aktiver Endre strøm.
+
+5. Velg Tilbake
+
+6. Velg Finn meg > synlig: 3 minutter."</string>
+    <string name="MOT_TIPS_12">"%s1. Velg Meny > \"Innstillinger\"
+
+2. Velg \"Tilkoblinger\"
+
+3. Velg \"Bluetooth\"
+
+4. Velg \"Alternativ\" > \"Administrer\" > \"Oppsett av Bluetooth\"
+
+5. Sett Bluetooth-strøm til \"På\"
+
+6. Velg \"Tilbake\"
+
+7. Velg \"Alternativ\" > \"Synlig\": På i 3 minutter"</string>
+    <string name="MOT_TIPS_2">"%s1. Velg Meny > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth."</string>
+    <string name="MOT_TIPS_3">"%s1. Velg Hovedmeny > Innstillinger.
+
+2. Velg Bluetooth-kobling.
+
+3. Velg Oppsett.
+
+4. Aktiver Endre strøm.
+
+5. Velg Tilbake
+
+6. Velg Finn meg > synlig: 3 minutter."</string>
+    <string name="MOT_TIPS_4">"%s1. Velg Hovedmeny > Innstillinger og verktøy.
+
+2. Velg Bluetooth.
+
+3. Sett Oppsett til på.
+
+4. Sett Oppdagingsmodus til på. 
+
+5. Velg Synlig om 3 minutter."</string>
+    <string name="MOT_TIPS_5">"1. Velg Meny > INNSTILLINGER og VERKTØY.
+
+2. Velg Bluetooth-meny.
+
+3. Sett Bluetooth til Slå på.
+
+4. Velg Alternativer. 
+
+5. Sett Oppdagingsmodus til På."</string>
+    <string name="MOT_TIPS_6">"1. Velg Meny > Verktøy.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Synlighet til Alltid synlig."</string>
+    <string name="MOT_TIPS_7">"1. Velg Meny > INNSTILLINGER og VERKTØY.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på.
+
+4. Velg Innstillinger.
+
+5. Sett Oppdagingsmodus til På."</string>
+    <string name="MOT_TIPS_8">"1. Velg Meny > INNSTILLINGER og VERKTØY.
+
+2. Velg Bluetooth-meny.
+
+3. Sett Bluetooth til Slå på.
+
+4. Velg Innstillinger.
+
+5. Sett Oppdagingsmodus til På."</string>
+    <string name="MOT_TIPS_9">"1. Velg Hovedmeny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth-kobling.
+
+3. Velg Oppsett.
+
+4. Aktiver Endre strøm.
+
+5. Velg Tilbake
+
+6. Velg Finn meg > synlig: 3 minutter."</string>
+    <string name="NOK_TIPS_1">"1. Velg Meny > Innstillinger > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_10">"1. Velg Meny > Innstillinger. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Velg Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_11">"1. Velg Meny > Verktøy > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_12">"1. Velg Menu > Kontrollpanel > Koble til. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_13">"1. Velg Hovedmeny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_14">"1. Velg Meny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Enhetens synlighet til Alltid synlig."</string>
+    <string name="NOK_TIPS_15">"1. Velg Meny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Enhetens synlighet til Vis til alle"</string>
+    <string name="NOK_TIPS_2">"1. Velg Meny > Verktøy.
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_4">"1. Velg Meny > Innstillinger > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Permanent synlighet."</string>
+    <string name="NOK_TIPS_5">"1. Velg Meny > Koble til. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Velg Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_51">"%s1. Velg Meny > Koble til. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Velg Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_6">"1. Velg Meny > Innstillinger > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Permanent synlighet."</string>
+    <string name="NOK_TIPS_7">"1. Velg Meny > Innstillinger > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Permanent synlighet."</string>
+    <string name="NOK_TIPS_8">"1. Velg Meny > Innstillinger > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Velg Bluetooth-innstillinger
+
+5. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="NOK_TIPS_9">"1. Velg Meny > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Slå på Bluetooth.
+
+4. Sett Min telefons synlighet til Vis til alle."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">Annet</string>
+    <string name="OTHER_PHONE_General">"Du kan aktivere Bluetooth på din ustøttede telefon:
+
+1. Gå til hovedskjermbildet
+
+2. Velg Meny > Innstillinger
+
+3. Velg Tilkobling > Bluetooth-innstilling
+
+4. Slå på Bluetooth
+
+5. Velg Synlighet/Synlig > Vis til alle
+
+6. Hold deg på Bluetooth-innstillingsskjermbildet"</string>
+    <string name="RIM_TIPS_1">"1. Velg Meny > Alternativer > Bluetooth.
+
+2. Klikk på Meny.
+
+3. Velg Aktiver Bluetooth.
+
+4. Klikk på Meny igjen
+
+5. Velg Alternativer. 
+
+6. Sett Synlig til Ja."</string>
+    <string name="RIM_TIPS_2">"1. Velg Meny > Administrer tilkoblinger. 
+
+2. Merk av for Bluetooth.
+
+3. Velg Bluetooth-alternativer.
+
+4. Klikk på Meny igjen
+
+5. Velg Alternativer. 
+
+6. Sett Synlig til Ja."</string>
+    <string name="RIM_TIPS_3">"1. Gå til skjermbildet Alle applikasjoner.
+
+2. Velg \"Administrer tilkoblinger\".
+
+3. Merk av for Bluetooth.
+
+4. Velg \"Bluetooth-tilkoblinger\".
+
+5. Sett Bluetooth til \"På\".
+
+6. Sett Synlig til \"Ja\"."</string>
+    <string name="RIM_TIPS_4">"1. Gå til skjermbildet Alle applikasjoner.
+
+2. Velg Administrer tilkoblinger.
+
+3. Merk av for Bluetooth.
+
+4. Velg Nettverk og tilkoblinger.
+
+5. Velg Bluetooth-tilkoblinger.
+
+6. Sett Bluetooth til På.
+
+7. Sett Synlig til Ja."</string>
+    <string name="SAM_TIPS_1">"%s1. Velg Meny > Bluetooth. 
+
+2. Sett Aktivering til På.
+
+3. Sett Min telefons synlighet til På."</string>
+    <string name="SAM_TIPS_10">"%s1. Velg \"Meny\" > \"Innstillinger\" > \"Nettverksinnstillinger\" > \"Bluetooth\"
+
+2. Sett Aktivering til \"På\"
+
+3. Sett \"Min telefons synlighet\" til På"</string>
+    <string name="SAM_TIPS_11">"%s1. Velg \"Meny\" > \"Applikasjoner\"
+
+2. Velg \"Bluetooth\"
+
+3. Angi \"Bluetooth-aktivering\"
+
+4. Velg \"Innstillinger\"
+
+5. Sett \"Min telefons synlighet\" til \"På\" og klikk på \"Lagre\"
+
+6. Gå til \"Startside\"-skjermbildet"</string>
+    <string name="SAM_TIPS_12">"%s1. Gå til Startside-skjermbildet.
+
+2. Velg \"Innstillinger\" > \"Tilkobling\" > \"Bluetooth\".
+
+3. Sett Aktivering til \"På\".
+
+4. Sett Min telefons synlighet til På."</string>
+    <string name="SAM_TIPS_2">"%s1. Velg Meny > Applikasjoner > Bluetooth. 
+
+2. Sett Aktivering til På.
+
+3. Sett Min telefons synlighet til På."</string>
+    <string name="SAM_TIPS_3">"1. Velg Meny > Innstillinger og verktøy > Bluetooth-meny. 
+
+2. Sett Bluetooth til Slå på.
+
+3. Velg Alternativer > Oppdagingsmodus > På."</string>
+    <string name="SAM_TIPS_4">"%s1. Velg Hovedmeny > Innstillinger > Bluetooth. 
+
+2. Slå på Bluetooth.
+
+3. Sett Synlighet til Alltid synlig."</string>
+    <string name="SAM_TIPS_5">"%s1. Velg Meny > Innstillinger/verktøy > Bluetooth-meny.
+
+2. Sett Oppsett til slå på.
+
+3. Sett Oppsettoppdagingsmodus til På."</string>
+    <string name="SAM_TIPS_6">"%s1. Velg Meny > Innstillinger.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på Bluetooth.
+
+4. Sett Min synlighet til På."</string>
+    <string name="SAM_TIPS_7">"%s1. Velg Meny > Innstillinger.
+
+2. Velg Bluetooth.
+
+3. Sett Aktivering til På.
+
+4. Sett Min telefons synlighet til På."</string>
+    <string name="SAM_TIPS_8">"%s1. Velg Meny > Verktøy > Bluetooth.
+
+2. Velg Bluetooth-innstillinger.
+
+3. Velg Aktiver.
+
+4. Sett Oppdagingsmodus til på."</string>
+    <string name="SAM_TIPS_9">"%s1. Velg Meny > Innstillinger.
+
+2. Velg Bluetooth.
+
+3. Sett Aktivering til På.
+
+4. Sett Min telefons synlighet til På."</string>
+    <string name="SAN_TIPS_1">"1. Velg Meny > Verktøy > Bluetooth. 
+
+2. Velg Mer… > Innstillinger > På.
+
+3. Sett Synlighet til Alltid synlig."</string>
+    <string name="SE_TIPS_1">"%s1. Velg Meny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på.
+
+4. Sett Synlighet til Vis telefon."</string>
+    <string name="SE_TIPS_2">"%s1. Velg Meny > Tilkobling. 
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på.
+
+4. Velg Alternativer.
+
+5. Sett Synlighet til Vis telefon."</string>
+    <string name="SE_TIPS_3">"%s1. Velg Meny > Koble til. 
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på.
+
+4. Sett Synlighet til Vis telefon."</string>
+    <string name="SE_TIPS_4">"%s1. Velg Meny > Innstillinger > Tilkobling.
+
+2. Velg Bluetooth.
+
+3. Sett Bluetooth til Slå på.
+
+4. Velg Alternativer.
+
+5. Sett Synlighet til Vis telefon."</string>
+    <string name="SE_TIPS_5">"1. Gå til \"Startside\"-skjermbildet.
+
+2. Velg \"Start\" > \"Innstillinger\" > \"Bluetooth\".
+
+3. Velg kategorien Modus.
+
+4. Slå på Bluetooth.
+
+5. Merk av for \"Gjør denne enheten synlig for andre enheter.\""</string>
+    <string name="SE_TIPS_6">"%s1. Gå til skjermbildet Applikasjoner > \"Innstillinger\" > \"Tilkoblinger\".
+
+2. Velg \"Bluetooth\".
+
+3. Sett Bluetooth til \"På\".
+
+4. Sett telefonens synlighet til \"Synlig\"."</string>
+    <string name="SHP_TIPS_1">"%s1. Velg \"Meny\" > \"Innstillinger\".
+
+2. Velg \"Tilkobling\" > \"Bluetooth\".
+
+3. Sett Slå av/på til \"På\"
+
+4. Velg Synlighet > \"Vis min telefon\"
+
+5. Kontroller at Bluetooth-håndsettet er på og gå til standbyskjermbildet"</string>
+    <string name="SIM_TIPS">Hvis du har bare ett SIM-kort, kan du fjerne det fra denne telefonen, sette det inn i den gamle telefonen og starte opp de to telefonene samtidig.</string>
+    <string name="app_icon_name">Overføring</string>
+    <string name="app_name">Overfør mine ting</string>
+    <string name="UI_About_Platform">for Android</string>
+    <string name="UI_About_Version">Versjon:</string>
+    <string name="UI_BTN_Done">Ferdig</string>
+    <string name="UI_BTN_Next">Neste</string>
+    <string name="UI_BTN_ReScan">Ny skann</string>
+    <string name="UI_BTN_Stop">Stopp</string>
+    <string name="UI_ERROR_TRY_AGAIN">Feil ble oppdaget.</string>
+    <string name="UI_IMPORTED">Importert</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">Importer til konto</string>
+    <string name="UI_IMPORT_PHONE">Importer til denne telefonen</string>
+    <string name="UI_INSERT_SD_CARD">Sett inn et SD-kort</string>
+    <string name="UI_Menu_BTN_About">Om</string>
+    <string name="UI_MOD_BOOKMARK">Bokmerke</string>
+    <string name="UI_MOD_CALENDAR">Kalender</string>
+    <string name="UI_MOD_PHONEBOOK">Kontakter</string>
+    <string name="UI_MOD_PHOTO">Kamerabilder</string>
+    <string name="UI_MOD_SMS">SMS</string>
+    <string name="UI_MOD_TASK">Oppgave</string>
+    <string name="UI_MOUNT_SD_CARD">Monter USB-lageret</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">kildetelefon</string>
+    <string name="UI_OPENOPORT_TEXT">"Kontroller %s.
+Du må kanskje autorisere tilkoblingen."</string>
+    <string name="UI_PHOTO_DESCRIPTION">Filer kun på telefonen</string>
+    <string name="UI_TEXT_AND">og</string>
+    <string name="UI_TEXT_BM_IMPORTED">Bokmerke importert</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">Bokmerker importert</string>
+    <string name="UI_TEXT_CAL_IMPORTED">kalenderoppføring importert</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">kalenderoppføring importert</string>
+    <string name="UI_TEXT_DATA">Data</string>
+    <string name="UI_TEXT_FAQ_PAGE">Besøk websiden for vanlige spørsmål.</string>
+    <string name="UI_TEXT_PB_IMPORTED">kontakt importert</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">kontakt importert</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">Kamerabilde importert</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">Kamerabilder importert</string>
+    <string name="UI_TEXT_SMS_IMPORTED">SMS importert</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">SMS importert</string>
+    <string name="UI_TEXT_TASK_IMPORTED">Oppgave importert</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">Oppgaver importert</string>
+    <string name="UI_TIP_ACCOUNT">Konto</string>
+    <string name="UI_TIP_CONFIRM">Bekreft at passordet er %1$s på %2$s</string>
+    <string name="UI_TIP_Co_1">Du er ferdig med å importere dataene dine fra %s til denne telefonen.</string>
+    <string name="UI_TIP_Co_1_TABLET">Du er ferdig med å importere dataene dine fra %s til denne tableten.</string>
+    <string name="UI_TIP_Co_TBD">"
+Ekstra kontaktfelt er lagret i notatfeltet."</string>
+    <string name="UI_TIP_ImDa_1">Avhengig av mulighetene på den gamle telefonen, kan du flytte kontakter, SMS-meldinger og kalenderhendelser til din nye HTC-telefon via Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">Avhengig av mulighetene på den gamle telefonen, kan du flytte kontakter, SMS-meldinger og kalenderhendelser til din nye HTC-tablet via Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">Avhengig av mulighetene på den gamle telefonen, kan du flytte kontakter og kalenderhendelser til din nye HTC-telefon via Bluetooth.</string>
+    <string name="UI_TIP_ImDa_2">Klikk på \"Neste\" for å begynne.</string>
+    <string name="UI_TIP_ImDa_35">Avhengig av mulighetene på den gamle telefonen, kan du flytte kontakter og andre data til din nye HTC-telefon via Bluetooth.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">Avhengig av mulighetene på den gamle telefonen, kan du flytte kontakter og andre data til din nye HTC-tablet via Bluetooth.</string>
+    <string name="UI_TIP_Info_1">Feil oppdaget i %s. Prøv på nytt senere.</string>
+    <string name="UI_TIP_Info_2">Prøv på nytt senere</string>
+    <string name="UI_TIP_Info_UnMatchPhone">Feil som oppstod i %s pga. ikke-kompatibel telefonmodell.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">Selv om andre %s-telefoner ikke står på støttet-listen, kan Overføring prøve å oppdage den gamle telefonen og se om dataene kan overføres.</string>
+    <string name="UI_TIP_Language">NOR</string>
+    <string name="UI_TIP_NoSuMo_1">%s støttes ikke. Ingen data kunne importeres fra den.</string>
+    <string name="UI_TIP_NoSuMo_2">Trykk på \"Ferdig\" for å avslutte.</string>
+    <string name="UI_TIP_ON">På %s:</string>
+    <string name="UI_TIP_PaWi">Angi %1$s på %2$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">%s lagret på din konto vil synkroniseres når du logger på tjenesten.</string>
+    <string name="UI_TIP_Re_TodoNotSupport">Oppgaver og aktivitetshendelser importeres ikke.</string>
+    <string name="UI_TIP_SelDT_2">Noen felt kan overføres fra %s pga. manglende full Bluetooth-støtte.</string>
+    <string name="UI_TIP_TUONBL">Slå på Bluetooth</string>
+    <string name="UI_TIP_TuOnBl_2">Klikk på \"Neste\" når du har slått på Bluetooth.</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">Fjern data på denne telefonen</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">Fjern data på denne tableten</string>
+    <string name="UI_TITLE_CONGRADULATIONS">Gratulerer</string>
+    <string name="UI_TITLE_CONN_WITH">Tilkobling med %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">Aktiver Bluetooth på %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">Aktivering av Bluetooth på din gamle telefon</string>
+    <string name="UI_TITLE_IMPORTING">Overfører %s</string>
+    <string name="UI_TITLE_INFO">Informasjon</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">Andre %s-telefoner</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">Laster telefonkonfigurasjon</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">Ikke støttet modell</string>
+    <string name="UI_TITLE_PAIRING">Parer...</string>
+    <string name="UI_TITLE_PAIRING_WITH">Paring med %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">Spør på telefonmodell</string>
+    <string name="UI_TITLE_SCANNING">Søker...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">Skanne etter telefoner</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">Velg datatypene du vil importere</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">Velg den gamle telefonen</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">Velg modellen</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">Velg telefonen</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">Andre %s-telefoner støttes ikke. Klikk på Ferdig for å avslutte.</string>
+</resources>

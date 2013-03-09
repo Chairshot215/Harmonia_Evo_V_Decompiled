@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/body_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="17.0px" style="@style/account_body">
+        <TextView android:id="@id/auth_create_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:text="@string/auth_create_text" style="@com.htc:style/darklist_primary_m" />
+        <Button android:textSize="@com.htc:dimen/button_primary_m" android:id="@id/auth_button_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_marginTop="8.0px" android:layout_marginBottom="16.0px" android:minWidth="230.0dip" android:text="@string/auth_button_register" style="com.htc:style/button_primary_m" />
+        <TextView android:id="@id/auth_login_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:text="@string/auth_login_text" style="@com.htc:style/darklist_primary_m" />
+        <Button android:textSize="@com.htc:dimen/button_primary_m" android:id="@id/auth_button_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_marginTop="8.0px" android:layout_marginBottom="14.0px" android:minWidth="230.0dip" android:text="@string/auth_button_login" style="com.htc:style/button_primary_m" />
+    </LinearLayout>
+</LinearLayout>

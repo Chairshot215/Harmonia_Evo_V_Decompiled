@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height">
+        <ImageView android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/img_1x1" android:layout_width="@dimen/htc_list_item_width_unread_img" android:layout_height="@dimen/htc_list_item_height_unread_img" android:scaleType="fitXY" />
+        <com.htc.widget.QuickContactBadge android:gravity="left" android:layout_gravity="left|center" android:id="@id/photo" android:padding="3.0px" android:layout_width="66.0px" android:layout_height="66.0px" android:layout_marginLeft="12.0px" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/htc_list_item_margin_left" android:layout_marginTop="@dimen/htc_list_item_margin_top" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:layout_marginBottom="@dimen/htc_list_item_margin_top" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="top|left|center" android:id="@id/txt_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/text_style_primary" />
+            <TextView android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="bottom|left|center" android:id="@id/txt_2x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/text_style_secondary" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_1x2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:layout_alignParentRight="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_1x3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:layout_toLeftOf="@id/img_1x2" />
+    </LinearLayout>
+    <ImageView android:id="@id/htc_list_item_top_round" android:background="@drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/htc_list_item_bottom_round" android:background="@drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</FrameLayout>

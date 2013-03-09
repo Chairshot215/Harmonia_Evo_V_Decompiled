@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="0.0px" android:layout_marginRight="14.0px">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.server.status.AnimatedImageView android:id="@id/icon" android:layout_width="34.0px" android:layout_height="34.0px" android:src="@*android:drawable/arrow_down_float" android:scaleType="fitCenter" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/title" android:paddingLeft="6.0px" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:ellipsize="marquee" android:id="@id/text" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

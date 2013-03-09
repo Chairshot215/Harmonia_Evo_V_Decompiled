@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/grid_picker_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HtcGridView android:gravity="center" android:id="@id/grid" android:background="@color/deckcontrol_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchMode="columnWidth" android:numColumns="@integer/online_wallpaper_picker_gridview_column_nb" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@*android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/emptyText" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" style="@style/text_style_empty_view" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/no_sdcard" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_sdcard_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_icon_fullscreen_no_sd" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/warning_text" android:padding="8.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/no_sdcard" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarShort android:id="@id/cmd_bar_header" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@com.htc:drawable/trans_bottomround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@com.htc:drawable/section_divider" android:layout_width="fill_parent" android:layout_height="14.0px" />
+    </LinearLayout>
+</RelativeLayout>

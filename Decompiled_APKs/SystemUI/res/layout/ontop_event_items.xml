@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onTopPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onTopMusic" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onTopDLNAMusic" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onTopDLNAGallery" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onTopCallFW" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/onTopMsgFW" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_height" />
+</merge>

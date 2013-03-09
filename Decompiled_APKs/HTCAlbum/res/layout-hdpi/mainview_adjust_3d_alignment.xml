@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.RepeatingImageButton android:id="@id/imageBtnLeft" android:background="@drawable/gallery_indicator_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.htc.widget.RepeatingImageButton android:id="@id/imageBtnRight" android:background="@drawable/gallery_indicator_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooter android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" htcfooter:enable_transparent="true">
+            <com.htc.widget.HtcFooterButton android:id="@id/foot_button_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.htc.widget.HtcFooterButton android:id="@id/foot_button_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.htc.widget.HtcFooter>
+    </LinearLayout>
+</RelativeLayout>

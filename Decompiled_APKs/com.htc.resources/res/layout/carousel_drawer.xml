@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.CarouselSlidingDrawer android:id="@id/drawer" android:background="?attr_common_app_bkg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:handle="@id/carousel_title_bar" android:content="@id/bin1"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/carousel_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/carousel_title_text" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <com.htc.widget.BinGridView android:scrollbarStyle="outsideInset" android:id="@id/bin1" android:background="@drawable/common_glance_bkg" android:paddingLeft="18.0px" android:paddingTop="6.0dip" android:paddingBottom="@dimen/carousel_widget_height" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:columnWidth="75.0dip" android:numColumns="auto_fit" android:layout_weight="1.0" android:layout_alignParentTop="true" />
+</com.htc.widget.CarouselSlidingDrawer>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/trans_topround" layout="@layout/htc_trans_topround" />
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_centerHorizontal="true">
+        <com.htc.widget.HtcProgressBar android:id="@id/progress_bar_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmallInverse" />
+        <com.htc.widget.HtcListItem2LineText android:id="@id/txt_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/progress_bar_1x1" style="@com.htc:style/list_primary_m" />
+        <TextView android:gravity="center_vertical" android:id="@id/txt_1x2" android:paddingLeft="@dimen/list_view_item_text_padding_right_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/progress_bar_1x1" android:layout_centerVertical="true" style="@com.htc:style/list_primary_m" />
+    </RelativeLayout>
+</RelativeLayout>

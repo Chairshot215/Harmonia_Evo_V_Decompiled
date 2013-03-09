@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/phone_bg_keypad" android:paddingLeft="@dimen/htc_dialpad_horizontal_gap" android:paddingRight="@dimen/htc_dialpad_horizontal_gap" android:paddingBottom="@dimen/htc_dialpad_vertical_gap" style="@style/style_dialpad"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="@dimen/htc_dialpad_vertical_gap" android:layout_marginBottom="@dimen/htc_dialpad_vertical_gap" android:layout_weight="1.0">
+        <Button android:id="@com.htc:id/one" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_1_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/two" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_2_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/three" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_3_number" style="@style/text_style_button_number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginBottom="@dimen/htc_dialpad_vertical_gap" android:layout_weight="1.0">
+        <Button android:id="@com.htc:id/four" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_4_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/five" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_5_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/six" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_6_number" style="@style/text_style_button_number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginBottom="@dimen/htc_dialpad_vertical_gap" android:layout_weight="1.0">
+        <Button android:id="@com.htc:id/seven" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_7_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/eight" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_8_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/nine" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_9_number" style="@style/text_style_button_number" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <Button android:id="@com.htc:id/cancel" android:background="@drawable/phone_btn_cancel" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/cancel" style="@style/text_style_phone_b_button_center" />
+        <Button android:id="@com.htc:id/zero" android:layout_marginRight="@dimen/htc_dialpad_horizontal_gap" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_dialer_keypad_0_number" style="@style/text_style_button_number" />
+        <Button android:id="@com.htc:id/ok" android:background="@drawable/phone_btn_ok" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/ok" style="@style/text_style_phone_b_button_center" />
+    </LinearLayout>
+</LinearLayout>

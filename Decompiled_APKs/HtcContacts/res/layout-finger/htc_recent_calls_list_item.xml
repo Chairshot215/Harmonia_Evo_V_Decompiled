@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.htccontacts.HtcRecentCallItem android:orientation="horizontal" android:id="@id/recentCall" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_length_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/htc_common_calls_photo_frame" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/customize_callLog_marginLeft" android:layout_marginTop="3.0px" android:layout_marginRight="@dimen/calllog_information_marginRight" android:layout_marginBottom="3.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/line1" android:paddingRight="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/text_style_primary" />
+            <TextView android:gravity="right" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_style_secondary" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/line2" android:paddingRight="@dimen/padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="3.0" style="@style/text_style_secondary" />
+            <TextView android:gravity="right" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/text_style_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/actionArea" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/action" android:background="?com.htc:attr_common_button_xsmall" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dialer_action_icon_marginRight" android:scaleType="center" />
+    </LinearLayout>
+    <CheckBox android:gravity="center_vertical" android:id="@id/selectedIcon" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_alignParentRight="true" />
+</com.android.htccontacts.HtcRecentCallItem>

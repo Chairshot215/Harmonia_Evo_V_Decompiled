@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/new_panel" layout="@layout/details_text" />
+    <include android:id="@id/description_panel" layout="@layout/details_text" />
+    <include android:id="@id/sample_reviews_panel" layout="@layout/details_reviews" />
+    <include android:id="@id/cross_sell_panel" layout="@layout/details_pack_layout" />
+    <include android:id="@id/core_content_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/details_pack_layout" />
+    <include android:id="@id/related_panel" layout="@layout/details_pack_layout" />
+    <include android:id="@id/about_author_panel" layout="@layout/details_text" />
+    <include android:id="@id/flag_content_panel" layout="@layout/details_listing_layout" />
+    <include layout="@layout/details_footer" />
+    <include android:id="@id/loading_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/details_loading_footer" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/clock_options" android:key="clock_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/clock_options">
+        <com.htc.preference.HtcListPreference android:entries="@array/pref_clock_entries" android:title="@string/clock_style" android:key="pref_clock" android:summary="@string/clock_style_summary" android:defaultValue="0" android:entryValues="@array/pref_clock_values" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/clock_color" android:key="clock_color_pref" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/clock_hide_ampm" android:key="clock_hide_ampm" android:summary="@string/clock_hide_ampm_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

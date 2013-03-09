@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_area" android:background="@drawable/title_bar">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/provider_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="5.0dip" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/provider_id" android:layout_width="fill_parent" android:layout_height="24.0dip" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@com.htc:dimen/htc_text_appearance_small" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/user_id" android:layout_width="fill_parent" android:layout_height="24.0dip" android:singleLine="true" android:layout_below="@id/provider_id" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:id="@id/sync_settings_error_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sync_is_failing" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/account_sync_command_bar" android:background="@*android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/dummy_view1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:textSize="@com.htc:dimen/htc_text_appearance_small" android:textColor="@com.htc:color/black_text_white_focused" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/cmd_bar_btn_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/cmd_bar_two_btn_margin" android:layout_marginTop="@dimen/btn_margin_top" android:singleLine="true" android:layout_weight="2.0" />
+        <Button android:textSize="@com.htc:dimen/htc_text_appearance_small" android:textColor="@com.htc:color/black_text_white_focused" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/cmd_bar_btn_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/cmd_bar_two_btn_margin" android:layout_marginTop="@dimen/btn_margin_top" android:layout_marginRight="@com.htc:dimen/cmd_bar_two_btn_margin" android:singleLine="true" android:layout_weight="2.0" />
+        <View android:id="@id/dummy_view2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/burst_thumb_bar" android:visibility="invisible" android:layout_width="@dimen/burst_thumbnail_bar_height_ds" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/burst_thumbnail_bar_bottom_margin_ds" android:layout_marginTop="@dimen/burst_thumbnail_bar_left_margin_ds" android:layout_marginBottom="@dimen/burst_thumbnail_bar_right_margin_ds" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/camera_panorama_preview_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/burst_thumb_0" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+            <ImageView android:id="@id/burst_thumb_1" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+            <ImageView android:id="@id/burst_thumb_2" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+            <ImageView android:id="@id/burst_thumb_3" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+            <ImageView android:id="@id/burst_thumb_4" android:layout_width="fill_parent" android:layout_height="0.0px" android:scaleType="fitXY" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

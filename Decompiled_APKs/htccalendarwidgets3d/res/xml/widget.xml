@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rosie-widget
+  xmlns:rosie="http://schemas.android.com/apk/res/com.htc">
+    <style rosie:id="monthview" rosie:label="@string/add_widget" rosie:description="@string/app_description" rosie:preview="@drawable/preview_calendar_4x4" rosie:date="@string/rosie_widget_release_date" rosie:name=".MonthViewWidget" rosie:span_x="4" rosie:span_y="4" />
+    <style rosie:id="agendalist" rosie:label="@string/add_widget" rosie:description="@string/app_description" rosie:preview="@drawable/preview_calendar_agenda" rosie:date="@string/rosie_widget_release_date" rosie:name=".AgendaListWidget" rosie:configure=".ManageCalendarsActivity" rosie:span_x="4" rosie:span_y="4" />
+    <style rosie:id="agendaview" rosie:label="@string/add_widget" rosie:description="@string/app_description" rosie:preview="@drawable/preview_calendar" rosie:date="@string/rosie_widget_release_date" rosie:name=".AgendaWidget" rosie:configure=".ManageCalendarsActivity" rosie:span_x="4" rosie:span_y="1" />
+</rosie-widget>

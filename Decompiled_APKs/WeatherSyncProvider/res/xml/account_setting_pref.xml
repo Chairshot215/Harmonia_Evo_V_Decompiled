@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcListPreference android:entries="@array/update_interval_list" android:title="@com.htc:string/common_string_update_schedule_title" android:key="check_frequency" android:dialogTitle="@com.htc:string/common_string_update_schedule_title" android:entryValues="@array/update_interval_values" />
+    <com.htc.preference.HtcListPreference android:entries="@array/temperature_unit_list" android:title="@string/pref_temperature_unit_title" android:key="temperature_unit" android:dialogTitle="@string/pref_temperature_unit_title" android:entryValues="@array/temperature_unit_values" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/month_coat" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <TextView android:textColor="#ffb4b4b4" android:gravity="center_horizontal" android:id="@id/month_label" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="-2.0px" android:text="@string/label_month" style="@com.htc:style/darklist_secondary_unread_xs" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/month" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/day_coat" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textColor="#ffb4b4b4" android:gravity="center_horizontal" android:id="@id/day_label" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="-2.0px" android:text="@string/label_day" style="@com.htc:style/darklist_secondary_unread_xs" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/day" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/day_31" android:focusable="false" android:visibility="invisible" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/day_29" android:focusable="false" android:visibility="invisible" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/day_28" android:focusable="false" android:visibility="invisible" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/year_coat" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textColor="#ffb4b4b4" android:gravity="center_horizontal" android:id="@id/year_label" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="-2.0px" android:text="@string/label_year" style="@com.htc:style/darklist_secondary_unread_xs" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/year" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+    </RelativeLayout>
+</merge>

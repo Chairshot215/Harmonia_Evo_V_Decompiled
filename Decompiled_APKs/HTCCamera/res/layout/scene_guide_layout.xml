@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/scene_portrait_view" android:layout="@layout/scene_portrait_layout" android:inflatedId="@id/scene_portrait_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/scene_sun_night_view" android:layout="@layout/scene_sun_night_layout" android:inflatedId="@id/scene_sun_night_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/scene_landscape_view" android:layout="@layout/scene_landscape_layout" android:inflatedId="@id/scene_landscape_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/scene_landscape_tip_view" android:layout="@layout/scene_landscape_tip_layout" android:inflatedId="@id/scene_landscape_tip_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

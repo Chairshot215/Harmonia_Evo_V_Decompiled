@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@com.htc:string/menu_settings" android:key="group">
+        <CheckBoxPreference android:persistent="true" android:title="@string/self_portrait" android:key="pref_camera_self_portrait" android:defaultValue="false" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <ListPreference android:entries="@array/pref_selftimer_choices" android:title="@string/self_timer" android:key="pref_camera_self_timer" android:defaultValue="none" android:dialogTitle="@string/self_timer" android:entryValues="@array/pref_selftimer_values" />
+        <com.android.camera.widget.CustomPreference android:title="@string/image_adjustment" android:key="pref_camera_image_property" />
+        <ListPreference android:title="@string/white_balance" android:key="pref_set_white_balance" android:dialogTitle="@string/white_balance" />
+        <ListPreference android:entries="@array/pref_iso_choices" android:title="@string/iso" android:key="pref_camera_iso" android:defaultValue="auto" android:dialogTitle="@string/iso" android:entryValues="@array/pref_iso_values" />
+        <ListPreference android:entries="@array/pref_storage_choices" android:title="@string/storage" android:key="pref_camera_storage_location" android:defaultValue="sdcard" android:dialogTitle="@string/storage" android:entryValues="@array/pref_storage_values" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/auto_focus" android:key="pref_camera_auto_focus" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/face_detection" android:key="pref_face_detection" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/shutter_sound" android:key="pref_play_shutter_sound" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <Preference android:title="@string/set_default" android:key="pref_set_default" />
+    </PreferenceCategory>
+</PreferenceScreen>

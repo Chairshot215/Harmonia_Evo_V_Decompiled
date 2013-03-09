@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">ตัวจัดการดาวน์โหลด</string>
+    <string name="permlab_downloadManager">เข้าถึงตัวจัดการดาวน์โหลด</string>
+    <string name="permdesc_downloadManager">อนุญาตให้แอปพลิเคชันเข้าถึงตัวจัดการการดาวน์โหลดและใช้ตัวจัดการนี้ในการดาวน์โหลดไฟล์ แอปพลิเคชันที่เป็นอันตรายสามารถใช้การทำงานนี้เพื่อขัดขวางการดาวน์โหลดและการเข้าถึงข้อมูลส่วนตัว</string>
+    <string name="permlab_downloadManagerAdvanced">รูปแบบการดาวน์โหลดการจัดการขั้นสูง</string>
+    <string name="permdesc_downloadManagerAdvanced">อนุญาตให้แอปพลิเคชันเข้าถึงฟังก์ชันขั้นสูงของตัวจัดการการดาวน์โหลด แอปพลิเคชันที่เป็นอันตรายสามารถใช้การทำงานนี้เพื่อขัดขวางการดาวน์โหลดและการเข้าถึงข้อมูลส่วนตัว</string>
+    <string name="permlab_downloadCompletedIntent">ส่งการแจ้งเตือนดาวน์โหลด</string>
+    <string name="permdesc_downloadCompletedIntent">อนุญาตให้แอปพลิเคชันส่งการแจ้งเตือนเกี่ยวกับการดาวน์โหลดที่เสร็จสิ้น แอปพลิเคชันที่เป็นอันตรายสามารถใช้การทำงานนี้สร้างความสับสนแก่แอปพลิเคชันอื่นๆ ที่ดาวน์โหลดไฟล์ได้</string>
+    <string name="permlab_seeAllExternal">ดูการดาวน์โหลดทั้งหมดที่ SD Card</string>
+    <string name="permdesc_seeAllExternal">อนุญาตให้แอปพลิเคชันนี้เห็นรายการดาวน์โหลดทั้งหมดในการ์ด SD ไม่ว่าจะเป็นรายการที่ดาวน์โหลดจากแอปพลิเคชันใดก็ตาม</string>
+    <string name="permlab_downloadCacheNonPurgeable">จองพื้นที่ในแคชดาวน์โหลด</string>
+    <string name="permdesc_downloadCacheNonPurgeable">อนุญาตให้แอปพลิเคชันดาวน์โหลดไฟล์ไปยังแคชดาวน์โหลด ซึ่งไม่สามารถถูกลบโดยอัตโนมัติได้เมื่อตัวจัดการการดาวน์โหลดต้องใช้เนื้อที่เพิ่มเติม</string>
+    <string name="permlab_downloadWithoutNotification">ดาวน์โหลดไฟล์โดยไม่ต้องแจ้งเตือน</string>
+    <string name="permdesc_downloadWithoutNotification">อนุญาตให้แอปพลิเคชันดาวน์โหลดไฟล์ผ่านตัวจัดการการดาวน์โหลดโดยไม่แสดงการแจ้งเตือนแก่ผู้ใช้</string>
+    <string name="permlab_accessAllDownloads">เข้าใช้งานการดาวน์โหลดของระบบทั้งหมด</string>
+    <string name="permdesc_accessAllDownloads">อนุญาตให้แอปพลิเคชันนี้ดูและแก้ไขรายการดาวน์โหลดทั้งหมดของทุกแอปพลิเคชันในระบบ</string>
+    <string name="download_unknown_title">&lt;ไม่มีหัวข้อ></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">และ%dมากกว่า</string>
+    <string name="notification_download_complete">ดาวน์โหลดเสร็จสมบูรณ์</string>
+    <string name="notification_download_failed">ดาวน์โหลดไม่สำเร็จ</string>
+    <string name="notification_need_wifi_for_size">ต้องใช้ WiFi ดาวน์โหลด</string>
+    <string name="notification_paused_in_background">หยุดชั่วคราวในเบื้องหลัง</string>
+    <string name="wifi_required_title">ขนาดดาวน์โหลดใหญ่เกินไปสำหรับเครือข่ายที่ใช้งาน</string>
+    <string name="wifi_required_body" formatted="false">"คุณต้องใช้ WiFi เพื่อดาวน์โหลดไฟล์ขนาด %s  นี้ให้เสร็จสิ้น
+
+แตะ %s  เพื่อเริ่มการดาวน์โหลดนี้ในครั้งต่อไปที่คุณเชื่อมต่อเครือข่าย WiFi"</string>
+    <string name="wifi_recommended_title">เข้าคิวเพื่อรอดาวน์โหลดในภายหลังหรือไม่</string>
+    <string name="wifi_recommended_body" formatted="false">"การเริ่มดาวน์โหลดรายการขนาด %s  ตอนนี้อาจลดเวลาใช้งานแบตเตอรี่และ/หรือทำให้ใช้งานข้อมูลผ่านมือถือมากไป ซึ่งผู้ให้บริการจะเก็บค่าใช้จ่ายตามแผนการใช้งานข้อมูลของคุณ
+
+แตะ %s เพื่อเริ่มการดาวน์โหลดนี้ในครั้งต่อไปที่เชื่อมต่อเครือข่าย WiFi"</string>
+    <string name="button_queue_for_wifi">คิว</string>
+    <string name="button_cancel_download">ยกเลิก</string>
+    <string name="button_start_now">เริ่มตอนนี้</string>
+    <string name="low_download_storage_view_title">พื้นที่เก็บไม่เพียงพอ</string>
+    <string name="low_download_storage_view_text">มีพื้นที่ว่างในการจัดเก็บไม่เพียงพอสำหรับการดาวน์โหลด</string>
+    <string name="notification_paused_no_wifi">หยุดชั่วคราว</string>
+    <string name="download_percent">%d%%</string>
+</resources>

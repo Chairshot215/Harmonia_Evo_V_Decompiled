@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.BadgeRow android:orientation="horizontal" android:background="@drawable/details_bg_with_highlight" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="4.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <LinearLayout android:id="@id/extra_badges_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_medium_size" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/primary_badge" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" android:layout_weight="1.0" finsky:decoration_position="left" />
+</com.google.android.finsky.layout.BadgeRow>

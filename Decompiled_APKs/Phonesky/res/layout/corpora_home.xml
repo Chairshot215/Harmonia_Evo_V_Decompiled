@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.SimpleMarginBox android:layout_width="fill_parent" android:layout_height="wrap_content" finsky:max_content_width="@dimen/framed_featured_content_max_width">
+        <com.google.android.finsky.layout.UnevenGrid android:id="@id/corpora_home_featured_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.finsky.layout.SimpleMarginBox>
+</ScrollView>

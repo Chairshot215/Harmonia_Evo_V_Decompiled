@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="117px" hgap="0px" vgap="0px" height="87px" keyTextSize="36px" popupTextSize="40px" totalRows="4" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,6,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" spellKeyBackground="@drawable/sapphire_spell_mode">
+    <row>
+        <key codes="0xFF1F" label="？" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="242" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="242" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="3" />
+        <key codes="242" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="4" />
+        <key codes="49" label="ㄅㄉㄚ" textScale="80%p" hgap="1px" />
+        <key codes="50" label="ㄍㄐㄞ" textScale="80%p" hgap="1px" />
+        <key codes="51" label="ㄓㄗㄢㄦ" textScale="75%p" hgap="1px" />
+        <key codes="-2" label="12#" width="86px" hgap="2px" tipsTextSize="17" function="true" rightEdge="true" textScale="82%p" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+    </row>
+    <row>
+        <key codes="0xFF01" label="！" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="243" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="243" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="3" />
+        <key codes="243" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="4" />
+        <key codes="52" label="ㄆㄊㄛ" textScale="80%p" hgap="1px" />
+        <key codes="53" label="ㄎㄑㄟ" textScale="80%p" hgap="1px" />
+        <key codes="54" label="ㄔㄘㄣㄧ" textScale="75%p" hgap="1px" />
+        <key codes="-16" function="true" width="86px" hgap="2px" rightEdge="true" grouped="1" />
+        <key codes="-23" hgap="-86px" width="86px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" rightEdge="true" grouped="1" />
+        <key codes="-24" hgap="-86px" width="86px" function="true" label="" textScale="80%p" longpressPreview="@drawable/sapphire_icon_mic" rightEdge="true" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" rightEdge="true" grouped="1" />
+    </row>
+    <row>
+        <key codes="0x3002" label="   。" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="244" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="244" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="3" />
+        <key codes="244" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="4" />
+        <key codes="55" label="ㄇㄋㄜ" hgap="1px" textScale="80%p" />
+        <key codes="56" label="ㄏㄒㄠㄡ" hgap="1px" textScale="75%p" />
+        <key codes="57" label="ㄕㄙㄤㄨ" hgap="1px" textScale="75%p" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" width="86px" hgap="2px" iconPreview="@drawable/sapphire_icon_backspace" function="true" repeatable="true" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="0xFF0C" label="，" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="245" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="245" hgap="-87px" width="87px" function="true" sticky="true" icon="@drawable/key_icon_spell_dn" leftEdge="true" splitSet="4" />
+        <key codes="246" hgap="-87px" width="87px" function="true" sticky="true" icon="@drawable/key_icon_spell_up" leftEdge="true" splitSet="3" />
+        <key codes="42" label="ㄈㄌㄝ" textScale="80%p" hgap="1px" />
+        <key codes="32" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" hgap="1px" />
+        <key codes="35" label="ㄖㄥㄩ" textScale="80%p" hgap="1px" />
+        <key codes="10" icon="@drawable/key_icon_enter" width="86px" hgap="2px" iconPreview="@drawable/sapphire_icon_enter" function="true" rightEdge="true" />
+    </row>
+</keyboard>

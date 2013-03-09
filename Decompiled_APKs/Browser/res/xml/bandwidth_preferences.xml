@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/pref_data_preload_choices" android:title="@string/pref_data_preload_title" android:key="preload_when" android:summary="@string/pref_data_preload_summary" android:dialogTitle="@string/pref_data_preload_dialogtitle" android:entryValues="@array/pref_data_preload_values" />
+    <CheckBoxPreference android:title="@string/pref_content_load_images" android:key="load_images" android:summary="@string/pref_content_load_images_summary" android:defaultValue="true" />
+</PreferenceScreen>

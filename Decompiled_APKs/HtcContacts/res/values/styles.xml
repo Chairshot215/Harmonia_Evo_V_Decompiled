@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeLaunchBackground" parent="@style/Theme.HTCBlack">
+        <item name="android:colorBackground">#ffffffff</item>
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff333333</item>
+    </style>
+    <style name="ThemeLaunchBackground.NoParent" parent="@style/ThemeLaunchBackground">
+        <item name="android:colorBackground">@*android:color/white</item>
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff333333</item>
+        <item name="android:windowBackground">@*android:drawable/screen_background_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="CustomizationListBackground">
+        <item name="android:background">@com.htc:color/listview_app_background</item>
+    </style>
+    <style name="CustomizationBackground">
+        <item name="android:background">?com.htc:attr_common_app_bkg</item>
+    </style>
+    <style name="CustomizationGroupTitleText1Style">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/color_255_255_255</item>
+    </style>
+    <style name="CustomizationGroupTitleText1ShadowStyle">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="CustomizationGroupTitleText2Style">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/secondary_title_color</item>
+    </style>
+    <style name="CustomizationGroupTitleText2ShadowStyle">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="CustomizationTextStyleEmptyView">
+        <item name="android:textSize">@dimen/text_size_empty_list</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:background">@*android:color/white</item>
+    </style>
+    <style name="Theme.Base" parent="@style/Theme.HTCBlack">
+        <item name="android:colorBackground">#ffffffff</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.FakeBrowseLaunchBackground" parent="@style/Theme.Base" />
+    <style name="Theme.FakeDetailLaunchBackground" parent="@style/Theme.Base" />
+    <style name="Theme.FullyTranslucent" parent="@*android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="FullyTransparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Theme.HTCBlack" parent="@*android:style/Theme">
+        <item name="android:colorForeground">@color/bright_foreground_light</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textColorPrimary">@color/list_item_primary_text</item>
+        <item name="android:textColorSecondary">@color/list_item_secondary_text</item>
+        <item name="android:windowBackground">@*android:drawable/screen_background_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_light_inverse</item>
+        <item name="android:textColorTertiary">@color/list_item_tertiary_text</item>
+    </style>
+    <style name="text_style_title_browse_normal">
+        <item name="android:textSize">@dimen/text_size_title_browse</item>
+        <item name="android:textColor">@color/__browse_title_bar_text_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="text_style_title_browse_shadow">
+        <item name="android:textSize">@dimen/text_size_title_browse</item>
+        <item name="android:textColor">@color/__browse_title_bar_text_shadow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginRight">@dimen/__browse_title_shadow_offset_x</item>
+        <item name="android:layout_marginBottom">@dimen/__browse_title_shadow_offset_y</item>
+    </style>
+    <style name="Theme" parent="@*android:style/Theme">
+        <item name="EditEntry_Button_Style">@style/Widget.HeroButton</item>
+    </style>
+    <style name="Widget.ListView.HtcGreen" parent="@*android:style/Widget.AbsListView">
+        <item name="android:divider">@*android:drawable/divider_horizontal_bright</item>
+    </style>
+    <style name="Dialog">
+        <item name="android:textAppearance">@*android:style/TextAppearance.DialogWindowTitle</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textColorHighlight">?android:textColorHighlightInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+        <item name="android:textColorLink">?android:textColorLinkInverse</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="Widget.HeroButton" parent="@*android:style/Widget.Button">
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+    </style>
+    <style name="Widget.HeroImageButton" parent="@*android:style/Widget.ImageButton">
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+    </style>
+    <style name="Theme_launch_background_contact_card">
+        <item name="android:colorBackground">#ffffffff</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="testAbsListViewStyle">
+        <item name="android:divider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="toolbar_margin">
+        <item name="android:paddingLeft">@dimen/htc_margin_left</item>
+        <item name="android:paddingRight">@dimen/htc_margin_right</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+    </style>
+    <style name="toolbar_button1">
+        <item name="android:textSize">@dimen/item_fontSize_large</item>
+        <item name="android:textColor">@*android:color/primary_text_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@com.htc:drawable/common_button_small</item>
+        <item name="android:layout_width">@dimen/button_action_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="mail_ap_panel_text_color">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="text_style_primary">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@color/list_item_primary_text</item>
+    </style>
+    <style name="text_style_secondary">
+        <item name="android:textSize">@com.htc:dimen/list_secondary_m</item>
+        <item name="android:textColor">@color/list_item_secondary_text</item>
+    </style>
+    <style name="text_style_tertiary">
+        <item name="android:textSize">@dimen/text_size_tertiary</item>
+        <item name="android:textColor">@color/list_item_tertiary_text</item>
+    </style>
+    <style name="text_style_title_browse">
+        <item name="android:textSize">@dimen/text_size_title_browse</item>
+        <item name="android:textColor">@color/color_255_255_255</item>
+    </style>
+    <style name="text_style_editor_label">
+        <item name="android:textSize">@dimen/htc_editor_list_buttonitem_labelsize</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="input_style_search_box">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/color_0_0_0</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:background">?com.htc:searchInputFieldStyle</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="text_style_empty_view">
+        <item name="android:textSize">@dimen/text_size_empty_list</item>
+        <item name="android:textColor">@color/color_0_0_0</item>
+    </style>
+    <style name="drop_down_box">
+        <item name="android:textColor">@com.htc:color/list_read</item>
+    </style>
+    <style name="htcDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+    </style>
+    <style name="Theme.SmartSearch" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+    <style name="FullyTranslucent" parent="@*android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="FullyTranslucent.QuickContact" parent="@style/FullyTranslucent">
+        <item name="android:windowAnimationStyle">@style/DummyAnimation</item>
+    </style>
+    <style name="QuickContact">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AnimationWindow">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="QuickContactAboveAnimation">
+        <item name="android:windowEnterAnimation">@anim/quickcontact_above_enter</item>
+        <item name="android:windowExitAnimation">@anim/quickcontact_above_exit</item>
+    </style>
+    <style name="QuickContactBelowAnimation">
+        <item name="android:windowEnterAnimation">@anim/quickcontact_below_enter</item>
+        <item name="android:windowExitAnimation">@anim/quickcontact_below_exit</item>
+    </style>
+    <style name="DummyAnimation">
+        <item name="android:windowExitAnimation">@anim/dummy_animation</item>
+    </style>
+    <style name="EditTextStyle">
+        <item name="android:textSize">@dimen/htc_editor_editortext_size</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:paddingLeft">@dimen/htc_editor_label_button_left_margin</item>
+        <item name="android:paddingRight">@dimen/htc_editor_entry_name_right_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="BackgroundOnly">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="send_via_spinner">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/global_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/global_margin_right</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="common_checkbox_text">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_marginRight">@dimen/global_margin_right</item>
+    </style>
+    <style name="SkinChange">
+        <item name="android:colorForeground">@*android:color/white</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textColorPrimary">@com.htc:color/list_item_primary_text</item>
+        <item name="android:textColorSecondary">@com.htc:color/list_item_secondary_text</item>
+        <item name="android:windowBackground">@*android:drawable/screen_background_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorForegroundInverse">@*android:color/white</item>
+    </style>
+    <style name="SkinChangeWithFack" parent="@style/SkinChange">
+        <item name="android:windowBackground">@null</item>
+        <item name="com.htc:fakescreenStyle">style_02</item>
+    </style>
+    <style name="SkinChangeWithFack3" parent="@style/SkinChange">
+        <item name="android:windowBackground">@null</item>
+        <item name="com.htc:fakescreenStyle">style_03</item>
+    </style>
+    <style name="Theme.SmartSearch.NoParent" parent="@style/Theme.SmartSearch">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+    <style name="Dialog.NoParent" parent="@style/Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="FullyTranslucent.NoParent" parent="@style/FullyTranslucent">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

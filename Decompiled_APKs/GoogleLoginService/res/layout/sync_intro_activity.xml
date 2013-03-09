@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:minHeight="@dimen/title_height" android:text="@string/sync_intro_activity_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/header_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <ProgressBar android:id="@id/top_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="false" android:layout_alignParentTop="true" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:id="@id/primary_message_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top_divider" style="@style/DescriptionText" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sync_settings_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/description_margin_sides" android:layout_marginRight="@dimen/description_margin_sides" android:layout_above="@id/done_button" android:layout_below="@id/header_section" android:layout_centerHorizontal="true">
+        <fragment android:id="@id/sync_settings" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.google.android.gsf.login.SyncSettingsFragment" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/backup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:layout_above="@id/done_button" android:layout_below="@id/header_section" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/backup_consent_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="16.0dip" android:text="@string/backup_consent_message" style="@style/DescriptionText" />
+        <LinearLayout android:orientation="vertical" android:id="@id/agree_restore_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/backup_restore_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_consent_yes_agree" android:layout_toLeftOf="@id/agree_restore" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <CheckBox android:id="@id/agree_restore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/backup_restore_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_consent_yes_agree" android:layout_toLeftOf="@id/agree_backup" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/agree_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:id="@id/done_button" android:text="@string/next_button_label" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+</view>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/app_instruct1" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/app_instruct1" />
+    <TextView android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/app_instruct2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <Button android:id="@id/BTN_instructID" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:text="@string/Button_instruct" />
+        <Button android:id="@id/BTN_cancelID" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/Button_Cancel" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/add_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center_vertical" android:id="@id/add_icon" android:background="@com.htc:drawable/common_add" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0px" />
+    <TextView android:textSize="27.0px" android:textColor="@color/dark_text_bright_focused" android:gravity="center_vertical" android:id="@id/add_text" android:layout_width="wrap_content" android:layout_height="72.0px" android:layout_marginLeft="7.0px" android:text="@string/add_city" />
+</LinearLayout>

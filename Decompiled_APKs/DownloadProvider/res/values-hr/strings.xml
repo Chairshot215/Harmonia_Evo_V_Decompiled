@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Upravitelj preuzimanjem</string>
+    <string name="permlab_downloadManager">Pristup upravitelju preuzimanjem.</string>
+    <string name="permdesc_downloadManager">Omogućuje aplikaciji pristup upravitelju preuzimanja i njegovu upotrebu za preuzimanje datoteka. Zlonamjerne aplikacije mogu to iskoristiti da bi ometale preuzimanja i pristupale privatnim podacima.</string>
+    <string name="permlab_downloadManagerAdvanced">Napredne funkcije upravitelja preuzimanjem.</string>
+    <string name="permdesc_downloadManagerAdvanced">Omogućuje aplikaciji pristup naprednim funkcijama upravitelja preuzimanja. Zlonamjerne aplikacije mogu to iskoristiti da bi ometale preuzimanja i pristupale privatnim podacima.</string>
+    <string name="permlab_downloadCompletedIntent">Pošalji obavijest o preuzimanju.</string>
+    <string name="permdesc_downloadCompletedIntent">Omogućuje aplikaciji slanje obavijesti o dovršenim preuzimanjima. Zlonamjerne aplikacije mogu to iskoristiti za zbunjivanje drugih aplikacija koje preuzimaju datoteke.</string>
+    <string name="permlab_seeAllExternal">Vidi sva preuzimanja na SD karticu</string>
+    <string name="permdesc_seeAllExternal">Omogućuje aplikaciji da vidi sva preuzimanja na SD kartici, bez obzira na to koja ih je aplikacija preuzela.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Rezerviraj prostor u predmemoriji preuzimanja</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Omogućuje aplikaciji preuzimanje datoteka u predmemoriju preuzimanja koja se ne može automatski izbrisati kada upravitelj preuzimanja treba više prostora.</string>
+    <string name="permlab_downloadWithoutNotification">preuzmi datoteke bez obavijesti</string>
+    <string name="permdesc_downloadWithoutNotification">Aplikaciji omogućuje preuzimanje datoteka putem upravitelja preuzimanja bez prikazivanja obavijesti korisniku.</string>
+    <string name="permlab_accessAllDownloads">Pristup svim preuzimanjima sustava</string>
+    <string name="permdesc_accessAllDownloads">Omogućuje aplikaciji prikaz i izmjenu svih preuzimanja koja je pokrenula bilo koja aplikacija u sustavu.</string>
+    <string name="download_unknown_title">&lt;Bez naziva></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" i još %d"</string>
+    <string name="notification_download_complete">Preuzimanje je dovršeno.</string>
+    <string name="notification_download_failed">Preuzimanje nije uspjelo.</string>
+    <string name="notification_need_wifi_for_size">Veličina preuzimanja zahtijeva Wi-Fi</string>
+    <string name="notification_paused_in_background">Pauzirano u pozadini.</string>
+    <string name="wifi_required_title">Preuzimanje preveliko za operaterovu mrežu</string>
+    <string name="wifi_required_body" formatted="false">"Morate upotrijebiti Wi-Fi da biste dovršili ovo preuzimanje veličine %s . 
+
+Dodirnite tekst %s da biste pokrenuli preuzimanje sljedeći put kada se povežete s Wi-Fi mrežom."</string>
+    <string name="wifi_recommended_title">U red za kasnije preuzimanje?</string>
+    <string name="wifi_recommended_body" formatted="false">"Pokretanje ovog preuzimanja od %s može skratiti vijek baterije i/ili uzrokovati pretjeranu upotrebu podatkovne veze i dodatne troškove.
+
+ Dodirnite %s da biste preuzeli pri sljedećem spajanju s WiFi mrežom."</string>
+    <string name="button_queue_for_wifi">Red</string>
+    <string name="button_cancel_download">Odustani</string>
+    <string name="button_start_now">Počni odmah</string>
+    <string name="low_download_storage_view_title">Nedovoljno memorije</string>
+    <string name="low_download_storage_view_text">Nema dovoljno slobodnog memorijskog prostora za preuzimanje.</string>
+    <string name="notification_paused_no_wifi">" (pauziran)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_tab_now" android:background="@color/detail_bkg_color" android:layout_width="fill_parent" android:layout_height="@dimen/now_forecast_tab_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/accu_logo_layout_height">
+        <ImageView android:id="@id/accu_icon" android:layout_width="@dimen/bottom_info_accu_icon_width" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/twopan_accu_logo_margin_left" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/tab_update_time_font" android:textColor="@color/tab_update_time_color" android:gravity="center_vertical" android:id="@id/now_more" android:paddingTop="@dimen/bottom_info_update_margin_top" android:paddingRight="@dimen/bottom_info_update_padding_right" android:layout_width="wrap_content" android:layout_height="@dimen/accu_logo_layout_height" android:text="@string/weather_more_detail" android:layout_toRightOf="@id/accu_icon" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/now_update_info" android:layout_width="wrap_content" android:layout_height="@dimen/accu_logo_layout_height" android:layout_marginTop="@dimen/link_info_margin_top" android:layout_marginRight="@dimen/tab_update_time_margin_right" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/tab_update_time_font" android:textColor="@color/tab_update_time_color" android:gravity="center_vertical" android:id="@id/update_time" android:layout_width="wrap_content" android:layout_height="@dimen/accu_logo_layout_height" />
+        <TextView android:textSize="@dimen/tab_update_time_font" android:textColor="@color/tab_update_time_color" android:gravity="center_vertical" android:id="@id/anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/accu_logo_layout_height" />
+    </LinearLayout>
+    <ImageView android:layout_width="@dimen/twopan_update_icon_width" android:layout_height="@dimen/accu_logo_layout_height" android:layout_marginTop="@dimen/link_info_margin_top" android:layout_marginRight="@dimen/tab_update_icon_margin_right" android:src="@drawable/icon_update" android:scaleType="centerInside" android:layout_toLeftOf="@id/now_update_info" />
+    <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/now_update_info" />
+    <LinearLayout android:id="@id/now_days" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

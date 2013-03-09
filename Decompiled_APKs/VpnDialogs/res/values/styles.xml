@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="transparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="label">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">2.0mm</item>
+    </style>
+    <style name="value">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:text">@string/blank_value</item>
+    </style>
+</resources>

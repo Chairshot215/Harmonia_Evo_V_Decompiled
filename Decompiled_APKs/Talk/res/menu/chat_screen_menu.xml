@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_video_default_holo_dark" android:id="@id/menu_item_video_chat" android:title="@string/menu_video_chat" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_audio_default_holo_dark" android:id="@id/menu_item_voice_chat" android:title="@string/menu_voice_chat" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_end_holo_dark" android:id="@id/cancel_video_button" android:title="@string/end_video_chat" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_end_holo_dark" android:id="@id/cancel_audio_button" android:title="@string/menu_end_audio_chat" android:showAsAction="ifRoom" />
+    <item android:id="@id/mute_unmute_button" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_video_ongoing_holo_light" android:id="@id/resume_video_chat_button" android:showAsAction="ifRoom" />
+    <item android:id="@id/audio_button" android:title="@string/menu_item_audio">
+        <menu>
+            <item android:id="@id/menu_item_speaker" android:title="@string/menu_item_speaker" />
+            <item android:id="@id/menu_item_wired_headphones" android:title="@string/menu_item_wired_headphones" />
+            <item android:id="@id/menu_item_handset_earpiece" android:title="@string/menu_item_handset_earpiece" />
+            <item android:id="@id/menu_item_bluetooh" android:title="@string/menu_item_bluetooth" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_menu_end_conversation" android:id="@id/menu_close_chat" android:title="@string/menu_close_chat" />
+    <item android:icon="@drawable/ic_menu_chat_off_record" android:id="@id/menu_item_otr" />
+    <item android:id="@id/menu_item_show_friend_info" android:title="@string/menu_user_info" />
+    <item android:icon="@*android:drawable/ic_menu_add" android:id="@id/menu_add_to_group_chat" android:title="@string/menu_add_contact" />
+    <item android:icon="@drawable/ic_menu_end_conversation" android:id="@id/menu_clear_chat" android:title="@string/menu_clear_chat" />
+</menu>

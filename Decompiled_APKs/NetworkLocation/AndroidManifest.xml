@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.google.uid.shared" android:versionCode="1108" android:versionName="1.1.08" package="com.google.android.location"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.READ_GSETTINGS" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.WRITE_GSETTINGS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <application android:label="@string/app_label" android:process="com.google.process.gapps">
+        <uses-library android:name="com.android.location.provider" />
+        <service android:name="NetworkLocationService">
+            <intent-filter>
+                <action android:name="com.google.android.location.NetworkLocationProvider" />
+                <action android:name="com.google.android.location.GeocodeProvider" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.location.internal.server.NetworkLocationService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.location.internal.ANDROID_NLP" />
+            </intent-filter>
+            <meta-data android:name="minProtocolVersion" android:value="1" />
+            <meta-data android:name="maxProtocolVersion" android:value="1" />
+            <meta-data android:name="nlpServiceIntent" android:value="com.google.android.location.internal.ANDROID_NLP" />
+        </service>
+        <activity android:theme="@style/AlertThemeSelector" android:name="ConfirmAlertActivity" android:excludeFromRecents="true" />
+    </application>
+</manifest>

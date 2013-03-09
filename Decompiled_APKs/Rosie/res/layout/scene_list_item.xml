@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/scene_picker_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scene_list_item_icon" android:layout_width="@dimen/scene_picker_list_item_thumbnail_width" android:layout_height="@dimen/scene_picker_list_item_height" />
+    <CheckedTextView android:textSize="@dimen/scene_picker_list_item_text_size" android:textColor="@color/all_item_background" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/scene_list_item_name" android:paddingLeft="@dimen/scene_picker_list_item_textview_padding_left" android:paddingRight="@dimen/scene_picker_list_item_textview_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/scene_picker_list_item_height" android:checkMark="?android:listChoiceIndicatorSingle" android:singleLine="true" />
+</LinearLayout>

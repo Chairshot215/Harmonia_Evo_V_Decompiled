@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/connect_to_pc_app_label"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreference android:enabled="true" android:ellipsize="marquee" android:title="@string/restore_usb_preference_info_title" android:key="connection_type" android:summary="@string/usb_disk_drive" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/restore_usb_checkbox_title" android:key="ask_me" android:summary="@string/restore_usb_checkbox_summary" android:defaultValue="true" />
+</com.htc.preference.HtcPreferenceScreen>

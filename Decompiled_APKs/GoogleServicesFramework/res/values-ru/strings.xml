@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Интернет</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">неизвестно</string>
+    <string name="sharedUserLabel">Службы Google</string>
+    <string name="service_label">Программа обновлений системы</string>
+    <string name="system_update_activity_name">Обновления системы</string>
+    <string name="system_update_activity_title">Обновления системы</string>
+    <string name="system_update_activity_battery_low_text">Заряда батареи не хватит для обновления системы. Подключите телефон к сети питания для продолжения работы.</string>
+    <string name="system_update_activity_battery_low_charging_text">Заряда батареи не хватит для установки обновления системы. Подождите, пока батарея зарядится.</string>
+    <string name="system_update_activity_roaming_text">Обновления системы нельзя загрузить при роуминге</string>
+    <string name="system_update_requires_restart_status_text">Повторите загрузку</string>
+    <string name="system_update_downloading_status_text">Загрузка</string>
+    <string name="system_update_downloading_wifi_status2_text">Через Wi-Fi только до ^1</string>
+    <string name="system_update_verifying_status_text">Проверка</string>
+    <string name="system_update_verification_failed_text">Подтверждение не выполнено</string>
+    <string name="system_update_verified_status_text">Загружено и проверено</string>
+    <string name="system_update_download_failed_status_text">Не удалось загрузить</string>
+    <string name="system_update_download_retry_button_text">Загрузить снова</string>
+    <string name="system_update_download_button_text">Загрузить</string>
+    <string name="system_update_install_button_text">Перезапустить и установить</string>
+    <string name="system_update_check_now_button_text">Проверить сейчас</string>
+    <string name="system_update_no_update_content_text">В настоящее время ваша система обновлена</string>
+    <string name="system_update_last_checkin">Последняя проверка обновлений: ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Доступно обновление системы</string>
+    <string name="system_update_recommended_update_available_notification_message">Просмотреть сведения об обновлении.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Не удалось загрузить обновление системы.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Не удалось выполнить загрузку, повторите попытку.</string>
+    <string name="system_update_error_dialog_title">Ошибка</string>
+    <string name="system_update_error_downloading_dialog_message">При загрузке обновления возникла неполадка.</string>
+    <string name="system_update_error_installing_dialog_message">При установке обновления возникла неполадка.</string>
+    <string name="system_update_install_dialog_label">Обновление системы</string>
+    <string name="system_update_install_dialog_message_nonphone">Обновление системы готово к установке. Устройство Android будет перезапущено, после чего начнется установка обновления.</string>
+    <string name="system_update_install_dialog_message_phone">Обновление системы готово к установке. Устройство Android будет перезапущено, после чего начнется установка обновления. Во время установки вы не сможете выполнять вызовы, в том числе и экстренные.</string>
+    <string name="system_update_install_dialog_battery_low_message">Обновление системы готово, но заряда батареи не хватит для его установки. Подключите телефон к сети питания.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Обновление системы готово, но заряда батареи не хватит для его установки. Подождите, пока батарея зарядится.</string>
+    <string name="system_update_install_dialog_now_button">Установить сейчас</string>
+    <string name="system_update_install_dialog_later_button">Установить позже</string>
+    <string name="system_update_install_dialog_info_button">Добавить информацию…</string>
+    <string name="system_update_downloading_notification_title">Загрузка обновления системы</string>
+    <string name="system_update_verifying_notification_title">Подтверждение обновления системы</string>
+    <string name="system_update_download_dialog_label">Загрузка обновления системы</string>
+    <string name="system_update_download_dialog_message">Доступно обновление системы, которое расширит возможности вашего устройства Android. Если вы загружаете его по беспроводной сети, может взиматься плата.</string>
+    <string name="system_update_download_dialog_now_button">Загрузить сейчас</string>
+    <string name="system_update_download_dialog_later_button">Загрузить позже</string>
+    <string name="system_update_download_dialog_cancel_button">Отмена</string>
+    <string name="system_update_countdown_complete">Выполняется перезагрузка…</string>
+    <string name="system_update_countdown_cancel_button">Отменить установку</string>
+    <string name="system_update_complete_label">Обновление системы</string>
+    <string name="system_update_complete_ok_button">ОК</string>
+    <string name="provider_label">Подписки Push</string>
+    <string name="ro_perm_label">читать мгновенные сообщения</string>
+    <string name="ro_perm_desc">Позволяет приложениям получать данные от поставщика содержания Google Talk.</string>
+    <string name="wo_perm_label">писать мгновенные сообщения</string>
+    <string name="wo_perm_desc">Позволяет приложениям записывать данные через поставщика содержания Google Talk.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"Искать в чатах
+: \"%1$s\""</string>
+    <string name="gtalkservice_label">Сервер обмена сообщениями Google</string>
+    <string name="c2dm_label">Push-режим</string>
+    <string name="sendTalkMsg_perm_label">Позволяет обмениваться сообщениями и получать уведомления о синхронизации от серверов Google</string>
+    <string name="sendTalkMsg_perm_desc">Используется для получения сообщений от сервера по технологии Push. В Google Talk эта служба используется для обмена сообщениями и синхронизации статусов присутствия. Вредоносные приложения могут использовать эту особенность для проведения DoS-атак.</string>
+    <string name="perm_receive_data_message_label">получать данные из Интернета</string>
+    <string name="perm_receive_data_message_desc">Разрешает приложениям получать сообщения по технологии push от серверов. Использование этой службы подразумевает интенсивный обмен данными. Вредоносные приложения могут использовать эту особенность для проведения DoS-атак.</string>
+    <string name="perm_data_msg_broadcast_label">Отправить сообщения с данными всем приложениям.</string>
+    <string name="perm_data_msg_broadcast_desc">Приложение сможет отправлять сообщения с данными, полученными из Интернета, приложениям, которые могут их прочитать.</string>
+    <string name="perm_receive_xmpp_label">обмениваться XMPP-сообщениями с серверами Google</string>
+    <string name="perm_receive_xmpp_desc">Позволяет приложениям Google обмениваться XMPP-сообщениями с серверами Google.</string>
+    <string name="perm_xmpp_broadcast_label">транслировать приложениям XMPP-сообщения</string>
+    <string name="perm_xmpp_broadcast_desc">Может транслировать XMPP-сообщения, полученные от серверов Google, приложениям, зарегистрированным для их получения.</string>
+    <string name="perm_use_xmpp_endpoint_label">Обмениваться XMPP-сообщениями с серверами Google.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Позволяет приложениям Google обмениваться XMPP-сообщениями с серверами Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Транслировать приложениям XMPP-сообщения.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Может транслировать приложениям XMPP-сообщения, полученные от серверов Google.</string>
+    <string name="permlab_intentVendingOnly">Отправлять запросы в Android-маркет.</string>
+    <string name="permdesc_intentVendingOnly">Может отправлять в Android-маркет запросы на установку и удаление приложений.</string>
+    <string name="permlab_heartbeat">Отправлять пакет поддержки связи на сервер Google Talk</string>
+    <string name="permdesc_heartbeat">Отправлять пакет поддержки связи на сервер Google Talk для поддержки соединения в работоспособном состоянии.</string>
+    <string name="group_chat">Групповой чат: %s</string>
+    <string name="default_decline_reason">К сожалению, мне сейчас некогда.</string>
+    <string name="newMessages_label">Новые чаты</string>
+    <string name="notify_groupchat_label">Приглашение в групповой чат</string>
+    <string name="num_unread_chats">Непрочитанных чатов: %s</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s > %s</string>
+    <string name="subscription_notify_text">%s хочет начать чат.</string>
+    <string name="group_chat_invite_notify_text">Пользователь %s приглашает вас в групповой чат</string>
+    <string name="group_chat_invite_dialog_text">%s приглашает вас в групповой чат.</string>
+    <string name="message_too_long">Нельзя посылать сообщения длиной более 2000 символов.</string>
+    <string name="missed_video_chat_notification">Вы пропустили приглашение в голосовой чат.</string>
+    <string name="missed_voice_chat_notification">Вы пропустили приглашение в видеочат.</string>
+    <string name="missed_video_chat_notification_no_wifi">Вы пропустили приглашение в видеочат, потому что не были подключены к Wi-Fi.</string>
+    <string name="missed_voice_chat_notification_no_wifi">Вы пропустили приглашение в голосовой чат, потому что не были подключены к Wi-Fi.</string>
+    <string name="missed_video_chat_message">Пользователь %1$s пытался поговорить с вами в видеочате.</string>
+    <string name="missed_voice_chat_message">Пользователь %1$s пытался поговорить с вами в голосовом чате.</string>
+    <string name="missed_video_chat_message_no_wifi">Пользователь %1$s пытался начать видеочат с вами, когда вы не были подключены к Wi-Fi.</string>
+    <string name="missed_voice_chat_message_no_wifi">Пользователь %1$s пытался начать голосовой чат с вами, когда вы не были подключены к Wi-Fi.</string>
+    <string name="end_cause_user_unavailable_video">Пользователь %1$s был недоступен для видеочата.</string>
+    <string name="end_cause_user_unavailable_voice">Пользователь %1$s был недоступен для голосового чата.</string>
+    <string name="end_cause_sent_terminate_video">Видеочат с пользователем %1$s завершен.</string>
+    <string name="end_cause_sent_terminate_voice">Голосовой чат с пользователем %1$s завершен.</string>
+    <string name="end_cause_received_terminate_video">Пользователь %1$s завершил видеочат.</string>
+    <string name="end_cause_received_terminate_voice">Пользователь %1$s завершил голосовой чат.</string>
+    <string name="end_cause_network_problem_video">Во время видеочата с пользователем %1$s произошла ошибка из-за проблем с сетью. Повторите попытку.</string>
+    <string name="end_cause_network_problem_voice">Во время голосового чата с пользователем %1$s произошла ошибка из-за проблем с сетью. Повторите попытку.</string>
+    <string name="conn_auth_error_notify_ticker">Сбой аутентификации Google Talk</string>
+    <string name="conn_auth_error_notify_title">Сбой аутентификации Google Talk</string>
+    <string name="conn_auth_error_title">Ошибка аутентификации</string>
+    <string name="conn_auth_error_message">Не удалось войти в Google Talk. Если это аккаунт Служб Google, убедитесь, что служба чата включена для этого аккаунта.</string>
+    <string name="conn_auth_error_button_retry">Повторить</string>
+    <string name="conn_auth_error_button_cancel">Отмена</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Добро пожаловать в ^1</string>
+    <string name="setup_wizard_title">Мастер настройки</string>
+    <string name="error_dialog_title">Внимание!</string>
+    <string name="next_button_label">Далее</string>
+    <string name="back_button_label">Назад</string>
+    <string name="sign_in_button_label">Войти</string>
+    <string name="create_button_label">Создать</string>
+    <string name="skip_button_label">Пропустить</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="done">ОК</string>
+    <string name="cancel_button_label">Отмена</string>
+    <string name="done_button_label">Закончить настройку</string>
+    <string name="try_again_button_label">Повторить</string>
+    <string name="close_button_label">Закрыть</string>
+    <string name="edit_text_help">Чтобы начать ввод, нажмите любое текстовое поле</string>
+    <string name="add_a_google_account">Добавить аккаунт Google</string>
+    <string name="no_sim_setup_wireless">Отсутствует SIM-карта, поэтому вы не можете подключиться к сотовой сети для получения доступа к службам передачи голоса или данных. Без SIM-карты можно подключиться к сети Wi-Fi.</string>
+    <string name="setup_wifi_button_label">Подключиться к Wi-Fi</string>
+    <string name="no_network">Сетевое подключение отсутствует.</string>
+    <string name="no_network_help">Возможно, в устройстве Android возникла временная неполадка либо не поддерживается передача данных. Повторите попытку, подключившись к сотовой сети или сети Wi-Fi.</string>
+    <string name="server_error">Произошла ошибка при обмене данными с серверами Google.</string>
+    <string name="server_error_help">Повторите попытку позже.</string>
+    <string name="network_unreliable">Не удается установить надежное подключение к серверу для передачи данных.</string>
+    <string name="network_unreliable_help">Возможно, это временная неполадка, либо ваше устройство Android не поддерживает передачу данных. Если неполадка сохранится, обратитесь в службу поддержки.</string>
+    <string name="invalid_login_character">Недопустимый символ. Допустимы только цифры 0-9, буквы a-z, A-Z и точки.</string>
+    <string name="invalid_password_character">Неверный символ пароля</string>
+    <string name="add_apn">Настройки беспроводной сети</string>
+    <string name="setup_google_account_title">Настройка аккаунта Google</string>
+    <string name="setup_complete_title">Настройка завершена</string>
+    <string name="cant_be_blank">Поле не может быть пустым.</string>
+    <string name="calendar">Календарь Google</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Ваше устройство Android не подключено к службе передачи данных. Для просмотра этой информации откройте страницу %s на любом компьютере, подключенном к Интернету.</string>
+    <string name="field_cant_be_blank">Это поле не может быть пустым.</string>
+    <string name="field_invalid_domain">Недопустимое имя домена</string>
+    <string name="field_invalid_user">Недопустимое имя пользователя</string>
+    <string name="field_invalid_user_domain">Введите только имя пользователя, не вводите адрес электронной почты</string>
+    <string name="field_invalid_login">Это недопустимое имя аккаунта</string>
+    <string name="about_accounts_message"><font size="17">"Настроить устройство Android очень просто! Нужен только аккаунт Google.
+"<font height="17">"
+"</font><b>Зачем нужен аккаунт Google?</b>"
+"<font height="3">"
+"</font>"Благодаря ему приложения Google автоматически синхронизируются на вашем устройстве Android и компьютере вне зависимости от того, где вы производили обновление.
+"<font height="17">"
+"</font><b>У вас уже есть аккаунт Google?</b>"
+"<font height="3">"
+"</font>"Тогда все готово! Просто нажмите \"Войти\" на следующей странице.
+"<font height="17">"
+"</font><b>У вас нет аккаунта Google?</b>"
+"<font height="3">"
+"</font>"Никаких проблем! Выберите \"Создать\" на следующей странице, и мы поможем вам зарегистрироваться.
+"<font height="17">"
+"</font><b>Чтобы начать работу, выберите \"Далее\"!</b>"
+"</font></string>
+    <string name="fling_help_message">"Для прокручивания страницы перемещайте палец вверх или вниз по экрану.
+(Нажмите на это сообщение, чтобы закрыть его.)"</string>
+    <string name="setup_device_title">Настройка ^1</string>
+    <string name="dont_have_an_account">Нет аккаунта Google?</string>
+    <string name="create_one_now">Создайте сейчас! Это очень просто.</string>
+    <string name="already_have_an_account">Уже есть аккаунт Google?</string>
+    <string name="sign_in_with_google_account">Войдите в аккаунт Google, который нужно связать с этим устройством Android.</string>
+    <string name="skip_message">Настроить аккаунт позднее?</string>
+    <string name="touch_to_begin">Чтобы начать, нажмите значок Android.</string>
+    <string name="delayed_gaia_agreement">Выполняя следующий шаг, вы принимаете политику конфиденциальности <annotation id="google_privacy">Google</annotation> и <annotation id="android_privacy">дополнительные</annotation> политики конфиденциальности.</string>
+    <string name="open_keyboard_message">Для начала работы выдвиньте клавиатуру.</string>
+    <string name="open_keyboard_message_to_continue">Для продолжения выдвиньте клавиатуру.</string>
+    <string name="emergency_dial">Экстренный вызов</string>
+    <string name="change_language">Изменить язык</string>
+    <string name="signing_in">Выполняется вход...</string>
+    <string name="close_keyboard_message">Для продолжения задвиньте клавиатуру.</string>
+    <string name="communicating_message">Чтобы настроить аккаунт, необходимо подключить устройство Android к серверам Google. Это займет не более пяти минут.</string>
+    <string name="communicating_message_domain">Чтобы настроить аккаунт, необходимо подключить устройство Android к серверам Google для установления информации о домене. Это займет не более пяти минут.</string>
+    <string name="username">Имя пользователя</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Пароль</string>
+    <string name="sign_in_agreement">Выполняя вход, вы принимаете <annotation id="google_privacy">основные</annotation> и <annotation id="android_privacy">дополнительные</annotation> правила Google по обеспечению конфиденциальности данных.</string>
+    <string name="create">Создать</string>
+    <string name="create_message">Нужен аккаунт Google?</string>
+    <string name="now_signing_in">Выполняется вход...</string>
+    <string name="now_verifying_domain">Поиск домена…</string>
+    <string name="sign_in_with_google_account_short">Введите имя пользователя и пароль.</string>
+    <string name="browser_sign_in_explanation">Используйте этот экран, если вам требуется веб-браузер для входа.</string>
+    <string name="gls_browser_login_intro_message">Не удается получить доступ к аккаунту Google или Google Apps. Требуется повторная авторизация.</string>
+    <string name="enter_domain_name">Введите домен вашей компании:</string>
+    <string name="enter_user_name">Введите имя пользователя и пароль для ^1:</string>
+    <string name="inactive_domain">Данный аккаунт нельзя использовать, так как он относится к неактивному домену. Свяжитесь с администратором домена <b>^1</b> или войдите в систему с помощью другого аккаунта.</string>
+    <string name="invalid_username">Введенный текст не является допустимым именем пользователя.</string>
+    <string name="web_login_error_title">Ошибка...</string>
+    <string name="web_login_error_desc">"При подключении к серверам компании по адресу ^1 возникли неполадки.
+
+Сведения об ошибках:
+"</string>
+    <string name="web_login_error_redirects">Слишком много переадресаций страницы входа</string>
+    <string name="web_login_error_http">Ошибка HTTP ^1 : ^2</string>
+    <string name="name_device_label">Настройте имя устройства Android:</string>
+    <string name="device_name_hint">Название устройства</string>
+    <string name="registering_device">Регистрация Android-устройства...</string>
+    <string name="error_account_disabled">"Аккаунт отключен. 
+
+(Для получения дополнительной информации откройте страницу http://google.com/accounts/recovery?hl=ru на компьютере)."</string>
+    <string name="error_login_failed">"Неверное имя пользователя или пароль. Повторите попытку. 
+
+(Для восстановления данных аккаунта перейдите на страницу http://google.com/accounts/recovery?hl=ru)."</string>
+    <string name="error_account_not_verified">"Аккаунт не был подтвержден. Откройте электронную почту на компьютере и подтвердите этот аккаунт. 
+
+(Для восстановления информации об аккаунте откройте на компьютере следующую страницу http://google.com/accounts/recovery?hl=ru)."</string>
+    <string name="captcha_message_string">Проверка</string>
+    <string name="captcha_instructions">Введите символы, показанные на картинке (регистр не учитывается).</string>
+    <string name="create_google_account">Создание нового аккаунта Google</string>
+    <string name="example_usernames">например IPetrov, Ivan.Petrov</string>
+    <string name="create_account_agreement">Создавая этот аккаунт, вы принимаете <annotation id="google_privacy">основные</annotation> и <annotation id="android_privacy">дополнительные</annotation> правила Google по обеспечению конфиденциальности данных.</string>
+    <string name="account_already_has_gmail">У аккаунта уже есть Gmail.</string>
+    <string name="creating_account">Создание аккаунта…</string>
+    <string name="checking_account">Проверка доступности имени пользователя...</string>
+    <string name="try_a_different_username">Попробуйте другое имя пользователя</string>
+    <string name="is_not_available">Имя пользователя <b>^1</b> недоступно.</string>
+    <string name="hint_size"><b>^1</b> содержит менее 6 или более 30 символов.</string>
+    <string name="hint_numbers_only"><b>^1</b> не содержит букв.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" может содержать только буквы,
+цифры и точки."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> не использует Gmail</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_in_browser">Вход в браузере</string>
+    <string name="here_are_alternatives">Возможны следующие варианты.</string>
+    <string name="alternatives_list_title">Предлагаемые имена пользователя</string>
+    <string name="choose_a_password"><b>"Введите
+пароль"</b></string>
+    <string name="confirm_password"><b>"Подтвердите
+пароль"</b></string>
+    <string name="password_strength"><b>"Безопасность
+пароля"</b></string>
+    <string name="too_short">Слишком короткий</string>
+    <string name="security_question"><b>"Вопрос
+о безопасности"</b></string>
+    <string name="security_questions_title">Вопросы безопасности</string>
+    <string name="answer"><b>Ответ</b></string>
+    <string name="password_mismatch">Пароли не совпадают. Введите их повторно.</string>
+    <string name="your_account_was_created">Аккаунт создан!</string>
+    <string name="eight_chars_min">(не менее 8 символов)</string>
+    <string name="just_in_case">В случае потери пароля.</string>
+    <string name="verify_your_profile">Подтвердите профиль</string>
+    <string name="signed_in">Вход выполнен!</string>
+    <string name="error_not_logged_in">Пользователь не выполнил вход.</string>
+    <string name="error_username_unavailable">Имя пользователя недоступно.</string>
+    <string name="error_bad_password">Пароль очень простой или содержит недействительные символы. Повторите попытку.</string>
+    <string name="error_bad_username">Неверное имя пользователя.</string>
+    <string name="loading">Загрузка...</string>
+    <string name="submission_title">Ошибка...</string>
+    <string name="submission_error_text">Произошла ошибка. Повторите попытку.</string>
+    <string name="existing_account_error_title">Аккаунт уже существует</string>
+    <string name="existing_account_error_text">На этом Android-устройстве уже есть аккаунт ^1.</string>
+    <string name="account_linked_message"><font height="24">Аккаунт Google связан с этим устройством Android.</font></string>
+    <string name="syncing_message"><font size="17">"В настоящее время приложения Google синхронизируют данные. 
+"<font height="17">"
+"</font>"%i Загрузка будет завершена, когда значок синхронизации исчезнет из панели состояния в верхней части экрана.
+"<font height="17">"
+"</font><b>О панели состояния...</b>"
+"<font height="3">"
+"</font>"Если вы получите новое сообщение или другое оповещение, в панели состояния появится значок.
+"<font height="17">"
+"</font>Панель уведомлений можно открыть, перетащив панель состояния вниз, и увидеть подробные сведения обо всех текущих уведомлениях.</font></string>
+    <string name="i_agree_next">Принимаю</string>
+    <string name="android_privacy_policy_title">Дополнительная политика конфиденциальности</string>
+    <string name="google_terms_of_service_title">Условия использования</string>
+    <string name="google_privacy_policy_title">Политика конфиденциальности Google</string>
+    <string name="notification_update_title">Необходимо обновить аккаунт</string>
+    <string name="notification_update_message">Для повторного запуска мастера настройки нажмите на эту ссылку</string>
+    <string name="common_message">"Почта Gmail, резервное копирование и многие другие функции Android требуют наличия аккаунта Google.
+
+Нажмите "<b>Далее</b>", чтобы войти в существующий аккаунт Google или создать новый аккаунт.
+
+Или нажмите "<b>Пропустить</b>, чтобы начать использовать Android. Вы можете войти в свой аккаунт Google позже, открыв настройки в разделе \"Аккаунты и синхронизация\".</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Добавление аккаунта</font>" 
+
+Вы можете использовать несколько аккаунтов Google (например, домашний и рабочий аккаунты). Добавить аккаунт Google очень просто. 
+
+Нажмите \"Далее\", чтобы продолжить, или \"Назад\", чтобы выйти."</string>
+    <string name="reactivate_account_message">"Необходимо связать аккаунт Google с этим устройством Android. 
+
+У вас уже есть имя пользователя электронной почты Google ("<b>^1</b>"), связанное с этим аккаунтом, но в настоящее время оно не активно. 
+
+Нажмите \"Далее\", чтобы активировать имя пользователя и использовать его для этого устройства Android. 
+
+Если необходимо использовать другой аккаунт, нажмите \"Назад\" и войдите в другой аккаунт или создайте новый."</string>
+    <string name="reactivating_account">Повторная активация аккаунта...</string>
+    <string name="your_account_was_reactivated">Аккаунт активирован!</string>
+    <string name="account_recovery_info">Следующая информация поможет восстановить пароль в случае его потери</string>
+    <string name="secondary_email_label"><b>"Дополнительный
+адрес электронной почты"</b></string>
+    <string name="invalid_email">"Введен неверный адрес электронной почты.
+ Пример правильного адреса: ivan@example.com"</string>
+    <string name="invalid_email_primary">Дополнительный адрес электронной почты не может совпадать с вновь создаваемым</string>
+    <string name="tutorial_intro_title">Узнайте, как пользоваться ^1</string>
+    <string name="begin_button_label">Начать</string>
+    <string name="tutorial_intro_message_generic">Здесь содержатся важные сведения, которые нужно знать о преимуществах устройства Android. <font size="17">"
+"</font>" 
+"<li>Работа с экранной клавиатурой</li> <font size="17">"
+"</font>" 
+Нажмите \"Начать\" для перехода к руководству."</string>
+    <string name="tutorial_intro_message_setupwizard">Здесь содержатся важные сведения, которые нужно знать о преимуществах устройства Android. <font size="17">"
+"</font>" 
+"<li>Работа с экранной клавиатурой</li>" 
+"<li>Настройка аккаунта Google</li> <font size="17">"
+"</font>" 
+Нажмите \"Начать\", чтобы перейти к руководству и получить дополнительную информацию, или \"Пропустить\", чтобы сразу продолжить работу."</string>
+    <string name="keyboard_tutorial_title">Работа с экранной клавиатурой</string>
+    <string name="keyboard_tutorial_message">Нажмите на любое текстовое поле, чтобы появилась клавиатура для ввода текста. Попробуйте нажать здесь:</string>
+    <string name="keyboard_tutorial_edittext_hint">Нажмите здесь, чтобы начать ввод текста</string>
+    <string name="done_typing_message">По окончании ввода нажмите клавишу \"Назад\", чтобы скрыть клавиатуру.</string>
+    <string name="done_button_label_in_tutorial">Готово</string>
+    <string name="backup_consent_title">Резерв. копия настроек</string>
+    <string name="backup_consent_message">Ваши настройки, включая закладки и параметры Wi-Fi, можно автоматически сохранять в аккаунте Google. Это позволит легко восстановить их в случае потери устройства Android или при покупке новой модели.</string>
+    <string name="backup_consent_howto_disable_message">Настройки резервного копирования можно в любое время изменить в разделе \"Восстановление и сброс\".</string>
+    <string name="backup_consent_yes_agree">Создать резервную копию настроек в моем аккаунте Google.</string>
+    <string name="restore_disable">Отключить восстановление</string>
+    <string name="restore_enable">Включить восстановление</string>
+    <string name="restore_enabled">Если вы уже выполняли резервное копирование настроек, они будут восстановлены.</string>
+    <string name="restore_disabled">Ваши настройки не будут восстановлены из резервной копии.</string>
+    <string name="webview_progress_title">Подключение к домену...</string>
+    <string name="webview_progress_verbose_message">"Серверы вашей компании отправляют регистрационную информацию. Это займет несколько минут.
+Когда передача будет завершена, откроется корпоративная страница входа."</string>
+    <string name="enterprise_unmanaged_domain">Этот домен не использует Службы Google. Проверьте имя домена и повторите попытку.</string>
+    <string name="use_location_for_services_agree">Принимаю</string>
+    <string name="use_location_for_services_disagree">Не принимаю</string>
+    <string name="use_location_for_services_title">Мое местоположение</string>
+    <string name="use_location_for_services_text">Разрешить Google использовать данные о местоположении для улучшения результативности поиска и работы других служб?</string>
+    <string name="permlab_readGsettings">Считывать настройки Google</string>
+    <string name="permdesc_readGsettings">Позволяет этому приложению считывать настройки Google.</string>
+    <string name="permlab_writeGsettings">Изменять настройки Google</string>
+    <string name="permdesc_writeGsettings">Позволяет этому приложению изменять настройки Google.</string>
+    <string name="permlab_readGservices">считывать конфигурацию служб Google</string>
+    <string name="permdesc_readGservices">Позволяет этому приложению считывать данные конфигурации службы Google.</string>
+    <string name="permlab_writeGservices">Изменять конфигурацию службы Google</string>
+    <string name="permdesc_writeGservices">Позволяет этому приложению изменять данные конфигурации службы Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Службы Google</string>
+    <string name="permlab_googleAuthPassword">получать доступ к паролям аккаунтов Google</string>
+    <string name="permdesc_googleAuthPassword">Предоставляет приложениям прямой доступ к паролям аккаунтов Google, настроенных вами.</string>
+    <string name="permlab_googleMailSwitch">выбирать торговую марку Gmail или Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Приложение сможет выбирать для показа название Gmail или Google Mail.</string>
+    <string name="permlab_googleAuth">просматривать настроенные аккаунты</string>
+    <string name="permdesc_googleAuth">Позволяет приложениям просматривать имена пользователей (электронные адреса) аккаунтов Google, настроенных вами.</string>
+    <string name="permlab_googleAuth_ALL">получать доступ ко всем службам Google</string>
+    <string name="permdesc_googleAuth_ALL">Приложение сможет входить во ВСЕ службы Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_OTHER">получать доступ к другим службам Google</string>
+    <string name="permdesc_googleAuth_OTHER">Приложение сможет входить в неуказанные службы Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Приложение сможет входить в почтовые службы Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_cl">Календарь Google</string>
+    <string name="permdesc_googleAuth_cl">Приложение сможет входить в Календарь Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_android">Службы Android</string>
+    <string name="permdesc_googleAuth_android">Приложение сможет входить в службы Android, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_sierra">Аккаунты Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Приложение сможет входить в Google Checkout (и, возможно, совершать покупки), используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_sierraqa">Аккаунты Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Приложение сможет входить в Google Checkout QA, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Аккаунты Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Приложение сможет входить в Google Checkout Sandbox, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Приложение сможет входить в YouTube, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Имена пользователей YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Приложение сможет видеть имена пользователей YouTube, связаные с аккаунтами Google на этом Android-устройстве.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Приложение сможет входить в Google Talk, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_ig">Аккаунты iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Приложение сможет входить в iGoogle, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_lh2">Веб-альбомы Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Приложение сможет входить в Веб-альбомы Picasa, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_mobile">Приложения Google для мобильных устройств</string>
+    <string name="permdesc_googleAuth_mobile">Приложение сможет входить в мобильные приложения Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_cp">контактные данные в аккаунтах Google</string>
+    <string name="permdesc_googleAuth_cp">Приложение будет иметь доступ к контактам и профилям аккаунтов на Android-устройстве.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Приложение сможет входить в Google AdSense, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Приложение сможет входить в Google AdWords, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Приложение сможет входить в Blogger, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Приложение сможет входить в Dodgeball, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Приложение сможет входить в Google Base, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_groups2">Группы Google</string>
+    <string name="permdesc_googleAuth_groups2">Приложение сможет входить в Группы Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Приложение сможет входить в Google Здоровье, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Приложение сможет входить в JotSpot, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Приложение сможет входить в Knol, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_news">Новости Google</string>
+    <string name="permdesc_googleAuth_news">Приложение сможет входить в Новости Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_orkut">orkut</string>
+    <string name="permdesc_googleAuth_orkut">Приложение сможет входить в orkut, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_print">Google Книги</string>
+    <string name="permdesc_googleAuth_print">Приложение сможет входить в Google Книги, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_sitemaps">Инструменты Google для веб-мастеров</string>
+    <string name="permdesc_googleAuth_sitemaps">Приложение сможет входить в Инструменты Google для веб-мастеров, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Приложение сможет входить в Google Wi-Fi, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_writely">Документы Google</string>
+    <string name="permdesc_googleAuth_writely">Приложение сможет входить в Документы Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_wise">Таблицы Google</string>
+    <string name="permdesc_googleAuth_wise">Приложение сможет входить в Таблицы Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_finance">Google Финансы</string>
+    <string name="permdesc_googleAuth_finance">Приложение сможет входить в Google-Финансы, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_local">Карты Google</string>
+    <string name="permdesc_googleAuth_local">Приложение сможет входить в Карты Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Приложение сможет входить в службу Google App Engine, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_notebook">Блокнот Google</string>
+    <string name="permdesc_googleAuth_notebook">Приложение сможет входить в Блокнот Google, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Приложение сможет входить в Google Voice, используя аккаунты на Android-устройстве.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Personalized Speech Recognition</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Приложение сможет входить в службу Personailzed Speech Recognition, используя аккаунты на Android-устройстве.</string>
+    <string name="gls_notification_title">Войти в аккаунт</string>
+    <string name="gls_notification_new_account">Необходим аккаунт в домене ^1</string>
+    <string name="gls_notification_new_account_youtube">Необходим аккаунт YouTube</string>
+    <string name="gls_notification_login_error">Нажмите, чтобы войти в аккаунт.</string>
+    <string name="gls_ui_add_account_title">Настройка аккаунта</string>
+    <string name="gls_ui_google_account_subtitle">Аккаунт Google</string>
+    <string name="gls_ui_activity_title">Вход в Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Вход в браузере</string>
+    <string name="gls_ui_activity_title_enterprise">Вход в корпоративный аккаунт</string>
+    <string name="gls_ui_activity_title_youtube">Вход в YouTube</string>
+    <string name="gls_ui_activity_authenticating">Аутентификация...</string>
+    <string name="gls_captcha_activity_message">Введите символы, изображенные на картинке:</string>
+    <string name="gls_captcha_activity_ok_button">Готово</string>
+    <string name="gls_error_activity_message">Произошла сетевая ошибка при попытке войти под именем <b>^1</b>. Повторите попытку сейчас или нажмите кнопку \"Назад\" для отмены.</string>
+    <string name="gls_error_activity_retry_button">Повторить</string>
+    <string name="gls_dmagent_activity_message">" В вашем домене необходимо управление мобильными устройствами. Установите приложение Google Apps Device Policy, чтобы задействовать правила безопасности, необходимые для аккаунта "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Загрузить</string>
+    <string name="gls_login_activity_username_label">Имя пользователя</string>
+    <string name="gls_login_activity_password_label">Пароль</string>
+    <string name="gls_login_activity_ok_button">Войти</string>
+    <string name="gls_login_activity_loginfail_text_both">Имя пользователя или пароль недействительны. Необходим аккаунт <b>^1</b>. Повторите попытку.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Вы ввели неверный пароль, или аккаунт был изменен. Введите пароль еще раз.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Введите пароль к этому аккаунту.</string>
+    <string name="gls_enterprise_login_activity_msg">"Войдите в корпоративный аккаунт ^1 для аутентификации.
+Нажмите \"Войти\", чтобы открыть веб-страницу входа для своей компании."</string>
+    <string name="gls_login_activity_badaccount_text">В данной ситуации вы не можете воспользоваться этим аккаунтом. Попробуйте использовать другой.</string>
+    <string name="gls_login_activity_newaccount_text">Выполните вход в свой аккаунт <b>^1</b>.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Нет аккаунта YouTube? Нажмите <a href="http://www.youtube.com/signup">здесь</a>, чтобы создать его.</string>
+    <string name="gls_settings_tos_activity_title">Правовая информация Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Вы не подключены к службе передачи данных. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере, подключенном к Интернету.</string>
+    <string name="gls_settings_contributors_activity_title">Благодарности</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Вы не подключены к службе передачи данных. Чтобы просмотреть эту информацию, откройте страницу %s на любом компьютере, подключенном к Интернету.</string>
+    <string name="gls_webview_progress_title">Подключение к домену...</string>
+    <string name="gls_webview_progress_verbose_message">"Серверы вашей компании отправляют регистрационную информацию на ваше устройство. Это займет несколько минут.
+Когда передача будет завершена, откроется корпоративная страница входа."</string>
+    <string name="gls_sign_in_button_label">Войти</string>
+    <string name="gls_back_button_label">Назад</string>
+    <string name="gls_cancel_button_label">Отмена</string>
+    <string name="gls_exit_account_setup_button_label">Выйти из настроек</string>
+    <string name="gls_reauthorize_button_label">Повторить авторизацию</string>
+    <string name="gls_sign_in_message">Чтобы настроить аккаунт, необходимо подключить устройство Android к серверам Google. Это займет не более пяти минут.</string>
+    <string name="gls_sign_in_title">Выполняется вход...</string>
+</resources>

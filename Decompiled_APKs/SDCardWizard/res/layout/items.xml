@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/sd_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/items_header" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.htc.widget.HtcListView android:id="@id/itemsListView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="#00000000" android:layout_weight="1.0" android:fastScrollEnabled="true" android:headerDividersEnabled="false" style="@com.htc:style/htc_listview_style" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooter android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.htc.widget.HtcFooterButton android:id="@id/cancelButton" android:text="@string/default_cancel_button_caption" />
+            <com.htc.widget.HtcFooterButton android:enabled="false" android:id="@id/moveToSdButton" android:visibility="gone" />
+            <com.htc.widget.HtcFooterButton android:enabled="false" android:id="@id/deleteButton" />
+        </com.htc.widget.HtcFooter>
+    </LinearLayout>
+</LinearLayout>

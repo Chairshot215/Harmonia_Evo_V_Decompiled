@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">carteira-android-google</string>
+    <string name="def_rlz">desconhecido</string>
+    <string name="sharedUserLabel">Serviços do Google</string>
+    <string name="service_label">Aplicativo de atualização do sistema</string>
+    <string name="system_update_activity_name">Atualizações do sistema</string>
+    <string name="system_update_activity_title">Atualizações do sistema</string>
+    <string name="system_update_activity_battery_low_text">Bateria muito fraca para instalar a atualização do sistema. Conecte o carregador para continuar.</string>
+    <string name="system_update_activity_battery_low_charging_text">Bateria muito fraca para instalar a atualização do sistema. Aguarde até que a bateria seja recarregada o suficiente.</string>
+    <string name="system_update_activity_roaming_text">As atualizações do sistema não podem ser baixadas durante o roaming.</string>
+    <string name="system_update_requires_restart_status_text">Exige uma reinicialização</string>
+    <string name="system_update_downloading_status_text">Download em andamento</string>
+    <string name="system_update_downloading_wifi_status2_text">Via Wi-Fi somente até ^1</string>
+    <string name="system_update_verifying_status_text">Verificando</string>
+    <string name="system_update_verification_failed_text">Falha na verificação</string>
+    <string name="system_update_verified_status_text">Download concluído e verificado</string>
+    <string name="system_update_download_failed_status_text">Falha no download</string>
+    <string name="system_update_download_retry_button_text">Tentar novamente o download</string>
+    <string name="system_update_download_button_text">Download</string>
+    <string name="system_update_install_button_text">Reiniciar e instalar</string>
+    <string name="system_update_check_now_button_text">Verificar agora</string>
+    <string name="system_update_no_update_content_text">O seu sistema está atualizado no momento</string>
+    <string name="system_update_last_checkin">Última verificação de atualizações ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Atualização do sistema disponível</string>
+    <string name="system_update_recommended_update_available_notification_message">Visualize os detalhes da atualização.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Falha no download da atualização do sistema.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Falha no download. Tente novamente.</string>
+    <string name="system_update_error_dialog_title">Erro</string>
+    <string name="system_update_error_downloading_dialog_message">Houve um problema no download da atualização.</string>
+    <string name="system_update_error_installing_dialog_message">Houve um problema ao instalar a atualização.</string>
+    <string name="system_update_install_dialog_label">Atualização do sistema</string>
+    <string name="system_update_install_dialog_message_nonphone">Uma atualização do sistema está pronta para ser instalada. Seu dispositivo Android será reiniciado e instalará a atualização.</string>
+    <string name="system_update_install_dialog_message_phone">Uma atualização de sistema está pronta para ser instalada. Seu dispositivo Android será reiniciado e instalará a atualização. Não será possível fazer chamadas durante a instalação, nem mesmo de emergência.</string>
+    <string name="system_update_install_dialog_battery_low_message">Uma atualização do sistema está pronta, mas a bateria está muito fraca para instalá-la. Conecte o carregador.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Uma atualização do sistema está pronta, mas a bateria está muito fraca para instalá-la. Aguarde até que a bateria seja recarregada o suficiente.</string>
+    <string name="system_update_install_dialog_now_button">Instalar agora</string>
+    <string name="system_update_install_dialog_later_button">Instalar mais tarde</string>
+    <string name="system_update_install_dialog_info_button">Mais informações…</string>
+    <string name="system_update_downloading_notification_title">Download da atualização do sistema em andamento</string>
+    <string name="system_update_verifying_notification_title">Verificando atualização do sistema</string>
+    <string name="system_update_download_dialog_label">Download de atualização do sistema</string>
+    <string name="system_update_download_dialog_message">Há uma atualização do sistema disponível para aprimorar seu dispositivo Android. Se o download for feito pela rede sem fio, poderão ser cobradas tarifas.</string>
+    <string name="system_update_download_dialog_now_button">Fazer download agora</string>
+    <string name="system_update_download_dialog_later_button">Fazer download depois</string>
+    <string name="system_update_download_dialog_cancel_button">Cancelar</string>
+    <string name="system_update_countdown_complete">Reiniciando agora…</string>
+    <string name="system_update_countdown_cancel_button">Cancelar instalação</string>
+    <string name="system_update_complete_label">Atualização do sistema</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Enviar inscrições</string>
+    <string name="ro_perm_label">ler mensagens instantâneas</string>
+    <string name="ro_perm_desc">Permite que os aplicativos leiam os dados do provedor de conteúdo do Google Talk.</string>
+    <string name="wo_perm_label">gravar mensagens instantâneas</string>
+    <string name="wo_perm_desc">Permite que os aplicativos gravem os dados no provedor de conteúdo do Google Talk.</string>
+    <string name="gsf_label">Estrutura dos serviços do Google</string>
+    <string name="search_chats">"Pesquisar nos bate-papos 
+por '%1$s'"</string>
+    <string name="gtalkservice_label">Serviço de mensagens do Google</string>
+    <string name="c2dm_label">Serviço de mensagens De Servidor para o Telemóvel</string>
+    <string name="sendTalkMsg_perm_label">Troca mensagens e recebe notificações de sincronização dos servidores do Google.</string>
+    <string name="sendTalkMsg_perm_desc">Utilizado para mensagens transmitidas De Servidor para o Telemóvel e para notificações sincronizadas. O Google Talk utiliza este serviço para trocar mensagens e sincronizar o estado de presença. As aplicações maliciosas podem utilizar este serviço para transmitir quantidades excessivas de dados.</string>
+    <string name="perm_receive_data_message_label">receber dados da internet</string>
+    <string name="perm_receive_data_message_desc">Permite que a aplicação aceite mensagens De Servidor para o Telemóvel enviadas pelo servidor do serviço da aplicação. A utilização deste serviço implica a utilização de dados. As aplicações mal intencionadas podem provocar uma utilização excessiva de dados.</string>
+    <string name="perm_data_msg_broadcast_label">Transmitir mensagens de dados aos aplicativos.</string>
+    <string name="perm_data_msg_broadcast_desc">Pode transmitir mensagens de dados recebidas da internet aos aplicativos registrados para escutá-los.</string>
+    <string name="perm_receive_xmpp_label">enviar e receber mens. XMPP de servidores do Google</string>
+    <string name="perm_receive_xmpp_desc">Permite que os aplicativos do Google enviem e recebam mensagens XMPP de servidores do Google.</string>
+    <string name="perm_xmpp_broadcast_label">Transmitir mensagens XMPP aos aplicativos.</string>
+    <string name="perm_xmpp_broadcast_desc">Pode transmitir mens. XMPP recebidas de serv. do Google a aplicativos registrados para monitorá-los.</string>
+    <string name="perm_use_xmpp_endpoint_label">Enviar e receber mens. XMPP de servidores Google</string>
+    <string name="perm_use_xmpp_endpoint_desc">Permite que os aplicativos do Google enviem e recebam mensagens XMPP de e para servidores do Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Transmitir mensagens XMPP para os aplicativos.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Pode transmitir mensagens XMPP recebidas de servidores do Google para aplicativos.</string>
+    <string name="permlab_intentVendingOnly">Enviar transmissões para o Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Permite o envio de transmissões para o Android Market solicitando a instalação e a remoção do aplicativo.</string>
+    <string name="permlab_heartbeat">Enviar sinal de funcionamento ao servidor do Google Talk</string>
+    <string name="permdesc_heartbeat">Pode enviar um pacote de sinal de funcionamento ao servidor do Google Talk para garantir a integridade da conexão.</string>
+    <string name="group_chat">Bate-papo em grupo: %s</string>
+    <string name="default_decline_reason">Desculpe, no momento estou ocupado(a).</string>
+    <string name="newMessages_label">Novos bate-papos</string>
+    <string name="notify_groupchat_label">Convite para bate-papo em grupo</string>
+    <string name="num_unread_chats">%s bate-papos não lidos</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s para %s</string>
+    <string name="subscription_notify_text">%s deseja poder bater papo</string>
+    <string name="group_chat_invite_notify_text">Você recebeu um convite para bate-papo em grupo de %s</string>
+    <string name="group_chat_invite_dialog_text">%s convidou você para entrar em um bate-papo em grupo.</string>
+    <string name="message_too_long">Não é possível enviar mensagens com mais de 2.000 caracteres.</string>
+    <string name="missed_video_chat_notification">Você perdeu um convite de papo-papo por vídeo</string>
+    <string name="missed_voice_chat_notification">Você perdeu um convite de papo-papo por voz</string>
+    <string name="missed_video_chat_notification_no_wifi">Você perdeu um convite de bate-papo por vídeo porque não estava conectado à rede Wi-Fi</string>
+    <string name="missed_voice_chat_notification_no_wifi">Você perdeu um convite de bate-papo por voz porque não estava conectado à rede Wi-Fi</string>
+    <string name="missed_video_chat_message">%1$s tentou iniciar um bate-papo por vídeo com você</string>
+    <string name="missed_voice_chat_message">%1$s tentou iniciar um bate-papo por voz com você</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s tentou iniciar um bate-papo por vídeo com você quando você não estava conectado à rede Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s tentou iniciar um bate-papo por voz com você quando você não estava conectado à rede Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">%1$s não estava disponível para bate-papo por vídeo.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s não estava disponível para bate-papo por voz.</string>
+    <string name="end_cause_sent_terminate_video">Você terminou o bate-papo por vídeo com %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Você terminou o bate-papo por voz com %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s terminou o bate-papo por vídeo.</string>
+    <string name="end_cause_received_terminate_voice">%1$s terminou o bate-papo por voz.</string>
+    <string name="end_cause_network_problem_video">O bate-papo por vídeo com %1$s falhou devido a um problema de rede. Tente novamente.</string>
+    <string name="end_cause_network_problem_voice">O bate-papo por voz com %1$s falhou devido a um problema de rede. Tente novamente.</string>
+    <string name="conn_auth_error_notify_ticker">Falha na autenticação do Google Talk</string>
+    <string name="conn_auth_error_notify_title">Falha na autenticação do Google Talk</string>
+    <string name="conn_auth_error_title">Erro de autenticação</string>
+    <string name="conn_auth_error_message">Falha de login do Google Talk. Se essa for uma conta do Google Apps, verifique se o serviço de bate-papo está ativado para essa conta.</string>
+    <string name="conn_auth_error_button_retry">Tentar novamente</string>
+    <string name="conn_auth_error_button_cancel">Cancelar</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Bem-vindo ao ^1</string>
+    <string name="setup_wizard_title">Assistente de configuração</string>
+    <string name="error_dialog_title">Atenção</string>
+    <string name="next_button_label">Próxima</string>
+    <string name="back_button_label">Voltar</string>
+    <string name="sign_in_button_label">Fazer login</string>
+    <string name="create_button_label">Criar</string>
+    <string name="skip_button_label">Ignorar</string>
+    <string name="first_name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Cancelar</string>
+    <string name="done_button_label">Concluir configuração</string>
+    <string name="try_again_button_label">Tentar novamente</string>
+    <string name="close_button_label">Fechar</string>
+    <string name="edit_text_help">Toque em qualquer caixa de texto para começar a digitar</string>
+    <string name="add_a_google_account">Adicionar uma Conta do Google</string>
+    <string name="no_sim_setup_wireless">Você não tem um cartão SIM instalado no telefone, portanto, você não pode se conectar a uma rede móvel para obter serviços de dados ou voz. Você pode se conectar a uma rede Wi-Fi sem um SIM.</string>
+    <string name="setup_wifi_button_label">Conectar-se à rede Wi-Fi</string>
+    <string name="no_network">Você não tem uma conexão de rede.</string>
+    <string name="no_network_help">Este pode ser um problema temporário ou seu aparelho Android não esteja habilitado para serviços de dados. Tente novamente quando conectado a uma rede móvel, ou conecte-se a uma rede Wi-Fi.</string>
+    <string name="server_error">Ocorreu um problema durante a comunicação com os servidores do Google.</string>
+    <string name="server_error_help">Tente novamente mais tarde.</string>
+    <string name="network_unreliable">Não é possível estabelecer uma conexão de dados confiável com o servidor.</string>
+    <string name="network_unreliable_help">Pode ser um problema temporário ou talvez seu dispositivo Android não esteja habilitado para serviços de dados. Se o problema continuar, entre em contato com o Serviço de atendimento ao cliente.</string>
+    <string name="invalid_login_character">Caractere inválido. São permitidos somente os caracteres 0-9, a-z, A-Z e pontos.</string>
+    <string name="invalid_password_character">Caractere de senha inválido.</string>
+    <string name="add_apn">Configurações de redes sem fio</string>
+    <string name="setup_google_account_title">Configuração da Conta do Google</string>
+    <string name="setup_complete_title">Config. concluída</string>
+    <string name="cant_be_blank">O campo não pode ficar em branco.</string>
+    <string name="calendar">Google Agenda</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Seu aparelho Android não está conectado a um serviço de dados. Para visualizar estas informações agora, acesse %s a partir de um computador conectado à Internet.</string>
+    <string name="field_cant_be_blank">Este campo não pode ficar em branco</string>
+    <string name="field_invalid_domain">Este nome de domínio é inválido.</string>
+    <string name="field_invalid_user">Este nome de usuário é inválido</string>
+    <string name="field_invalid_user_domain">Insira somente seu nome de usuário, não seu endereço de e-mail</string>
+    <string name="field_invalid_login">Este nome de conta é inválido</string>
+    <string name="about_accounts_message"><font size="17">"É fácil configurar seu aparelho Android! Você só precisa de uma Conta do Google.
+"<font height="17">"
+"</font><b>Por que usar uma Conta do Google?</b>"
+"<font height="3">"
+"</font>"Com uma Conta do Google, os aplicativos do Google são sincronizados automaticamente entre o seu aparelho Android e seu computador, onde quer que você faça atualizações.
+"<font height="17">"
+"</font><b>Já tem uma Conta do Google?</b>"
+"<font height="3">"
+"</font>"Então já está tudo certo! Basta tocar em \"Fazer login\" na próxima tela.
+"<font height="17">"
+"</font><b>Não tem uma Conta do Google?</b>"
+"<font height="3">"
+"</font>"Não tem problema. Toque em \"Criar\" na próxima tela que nós ajudaremos você a criar uma conta.
+"<font height="17">"
+"</font><b>Toque em \"Avançar\" para começar.</b>"
+"</font></string>
+    <string name="fling_help_message">"Deslize o dedo para cima ou para baixo para percorrer a tela.
+Toque nesta mensagem para fechá-la."</string>
+    <string name="setup_device_title">Configurando o seu ^1</string>
+    <string name="dont_have_an_account">Ainda não tem uma Conta do Google?</string>
+    <string name="create_one_now">Crie uma conta agora. É fácil!</string>
+    <string name="already_have_an_account">Você já tem uma Conta do Google?</string>
+    <string name="sign_in_with_google_account">Faça login com a Conta do Google que você deseja vincular a esse dispositivo Android.</string>
+    <string name="skip_message">Deseja configurar uma conta mais tarde?</string>
+    <string name="touch_to_begin">Toque no Android para começar.</string>
+    <string name="delayed_gaia_agreement">Ao continuar, você declara que aceita a Política de Privacidade do <annotation id="google_privacy">Google</annotation> e <annotation id="android_privacy">outras</annotation> políticas de privacidade.</string>
+    <string name="open_keyboard_message">Deslize o teclado para frente para começar.</string>
+    <string name="open_keyboard_message_to_continue">Deslize o teclado para frente para continuar.</string>
+    <string name="emergency_dial">Discagem de emergência</string>
+    <string name="change_language">Alterar idioma</string>
+    <string name="signing_in">Fazendo login...</string>
+    <string name="close_keyboard_message">Deslize o teclado para trás para continuar.</string>
+    <string name="communicating_message">Seu dispositivo Android precisa se comunicar com os servidores do Google para configurar sua conta. Esse processo pode levar até cinco minutos.</string>
+    <string name="communicating_message_domain">Seu dispositivo Android precisa se comunicar com os servidores do Google para encontrar informações de seu domínio. Esse processo pode demorar até cinco minutos.</string>
+    <string name="username">Nome de usuário</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Senha</string>
+    <string name="sign_in_agreement">Ao fazer login, você declara que aceita a Política de Privacidade do <annotation id="google_privacy">Google</annotation> e <annotation id="android_privacy">outras</annotation> políticas de privacidade.</string>
+    <string name="create">Criar</string>
+    <string name="create_message">Precisa de uma Conta do Google?</string>
+    <string name="now_signing_in">Fazendo login...</string>
+    <string name="now_verifying_domain">Encontrando seu domínio…</string>
+    <string name="sign_in_with_google_account_short">Faça login com sua conta do Google:</string>
+    <string name="browser_sign_in_explanation">Use esta tela se tiver considerações especiais de login que exigem um navegador da web.</string>
+    <string name="gls_browser_login_intro_message">Não é possível acessar sua Conta do Google ou do Google Apps. É necessário uma nova autorização.</string>
+    <string name="enter_domain_name">Insira o nome de domínio da sua empresa:</string>
+    <string name="enter_user_name">Insira seu nome de usuário e sua senha para ^1:</string>
+    <string name="inactive_domain">Esta conta não pode ser usada porque pertence a um domínio inativo. Entre em contato com o administrador do domínio <b>^1</b> ou faça login com outra conta.</string>
+    <string name="invalid_username">O texto inserido não é um nome de usuário válido.</string>
+    <string name="web_login_error_title">Desculpe...</string>
+    <string name="web_login_error_desc">"Ocorreu um problema ao estabelecer conexão com os servidores da sua empresa em ^1.
+
+Informações do erro:
+"</string>
+    <string name="web_login_error_redirects">A página de login da web foi redirecionada muitas vezes</string>
+    <string name="web_login_error_http">Erro de HTTP ^1: ^2</string>
+    <string name="name_device_label">Dê um nome para seu aparelho Android:</string>
+    <string name="device_name_hint">Nome do dispositivo</string>
+    <string name="registering_device">Registrando dispositivo Android ...</string>
+    <string name="error_account_disabled">"Esta conta foi desativada. 
+
+(Para obter detalhes, acesse http://google.com.br/accounts em seu computador.)"</string>
+    <string name="error_login_failed">"Seu nome de usuário não corresponde à sua senha. Tente novamente. 
+
+(Para recuperar as informações de sua conta, acesse http://google.com.br/accounts/recovery em seu computador.)"</string>
+    <string name="error_account_not_verified">"Esta conta não foi confirmada. Verifique seu e-mail em um computador e siga o link para confirmá-la. 
+
+(Para recuperar as informações de sua conta, acesse http://google.com.br/accounts/recovery em seu computador.)"</string>
+    <string name="captcha_message_string">Verificação</string>
+    <string name="captcha_instructions">Insira os caracteres que aparecem na imagem. As letras não diferenciam maiúsculas de minúsculas.</string>
+    <string name="create_google_account">Criar uma nova Conta do Google</string>
+    <string name="example_usernames">por exemplo, JSilva, Jose.Silva</string>
+    <string name="create_account_agreement">Ao criar esta conta, você declara que aceita a Políticas de Privacidade do <annotation id="google_privacy">Google</annotation> e <annotation id="android_privacy">outras</annotation> políticas de privacidade.</string>
+    <string name="account_already_has_gmail">A conta já tem um e-mail do Gmail.</string>
+    <string name="creating_account">Criando a sua conta...</string>
+    <string name="checking_account">Verificando disponibilidade do nome de usuário...</string>
+    <string name="try_a_different_username">Tente um nome de usuário diferente</string>
+    <string name="is_not_available"><b>^1</b> não está disponível.</string>
+    <string name="hint_size"><b>^1</b> contém menos de seis ou mais de 30 caracteres.</string>
+    <string name="hint_numbers_only"><b>^1</b> não contém nenhuma letra.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" pode conter somente letras,
+números e pontos."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> não usa o Gmail</string>
+    <string name="sign_in">Fazer login</string>
+    <string name="sign_in_browser">Login do navegador</string>
+    <string name="here_are_alternatives">Veja algumas alternativas:</string>
+    <string name="alternatives_list_title">Nomes de usuário sugeridos</string>
+    <string name="choose_a_password"><b>"Digite uma
+senha"</b></string>
+    <string name="confirm_password"><b>"Confirmar
+senha"</b></string>
+    <string name="password_strength"><b>"Nível de segurança
+da senha"</b></string>
+    <string name="too_short">Muito curta</string>
+    <string name="security_question"><b>"Pergunta de
+segurança"</b></string>
+    <string name="security_questions_title">Perguntas de segurança</string>
+    <string name="answer"><b>Resposta</b></string>
+    <string name="password_mismatch">As suas senhas não coincidem. Digite novamente.</string>
+    <string name="your_account_was_created">A sua conta foi criada.</string>
+    <string name="eight_chars_min">(no mínimo oito caracteres)</string>
+    <string name="just_in_case">Caso você perca a senha.</string>
+    <string name="verify_your_profile">Confira o seu perfil</string>
+    <string name="signed_in">Sessão iniciada.</string>
+    <string name="error_not_logged_in">Usuário não conectado.</string>
+    <string name="error_username_unavailable">Nome de usuário não disponível.</string>
+    <string name="error_bad_password">A senha é muito fácil ou contém caracteres inválidos. Tente novamente.</string>
+    <string name="error_bad_username">Nome de usuário inválido.</string>
+    <string name="loading">Carregando...</string>
+    <string name="submission_title">Desculpe…</string>
+    <string name="submission_error_text">Ocorreu um erro. Tente novamente.</string>
+    <string name="existing_account_error_title">A conta já existe.</string>
+    <string name="existing_account_error_text">Já existe uma conta ^1 neste aparelho Android.</string>
+    <string name="account_linked_message"><font height="24">Sua Conta do Google está agora ligada a este aparelho Android.</font></string>
+    <string name="syncing_message"><font size="17">"Os aplicativos do Google estão sincronizando dados no momento. 
+"<font height="17">"
+"</font>"%i Quando o ícone ”sincronizando” desaparecer da barra de status na parte superior da tela, o download estará concluído.
+"<font height="17">"
+"</font><b>Sobre a barra de status…</b>"
+"<font height="3">"
+"</font>"Sempre que você receber uma nova mensagem ou alguma outra notificação, aparecerá um ícone na barra de status.
+"<font height="17">"
+"</font>Use o dedo para arrastar a barra de status e abrir o Painel de notificações, com detalhes sobre todas as suas notificações atuais.</font></string>
+    <string name="i_agree_next">Aceito, Avançar</string>
+    <string name="android_privacy_policy_title">Política de privacidade complementar</string>
+    <string name="google_terms_of_service_title">Termos de Serviço do Google</string>
+    <string name="google_privacy_policy_title">Política de Privacidade do Google</string>
+    <string name="notification_update_title">É necessário atualizar a sua conta.</string>
+    <string name="notification_update_message">Toque aqui para executar o Assistente de configuração novamente.</string>
+    <string name="common_message">"O Gmail, backups e muitos outros recursos do Android exigem uma Conta do Google.
+
+Toque em "<b>Próximo</b>" para fazer login com uma Conta do Google existente ou crie uma nova Conta do Google agora.
+
+Ou toque em "<b>Ignorar</b> para começar a usar seu Android. Você pode fazer login em uma Conta do Google posteriormente em \"Configurações\", em \"Contas e sincronização\".</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Como adicionar uma conta</font>" 
+
+Você pode usar mais de uma Conta do Google (como sua conta pessoal e sua conta comercial). Para adicionar uma Conta do Google é necessário seguir apenas algumas etapas. 
+
+Toque em “Próxima” para continuar ou pressione o botão \"Voltar\" para sair."</string>
+    <string name="reactivate_account_message">"É necessário vincular uma conta do Google Mail a este dispositivo Android. 
+
+Você já tem um nome de usuário do Google Mail ("<b>^1</b>") associado a esta conta, mas ele não está ativo no momento. 
+
+Toque em “Avançar” para reativar esse nome de usuário e usá-lo com seu telefone. 
+
+Se preferir usar uma conta diferente, pressione o botão “Próximo”, faça login ou crie uma conta diferente."</string>
+    <string name="reactivating_account">Reativando a sua conta...</string>
+    <string name="your_account_was_reactivated">A sua conta foi ativada.</string>
+    <string name="account_recovery_info">As informações a seguir ajudarão a recuperar a sua senha, caso venha a perdê-la.</string>
+    <string name="secondary_email_label"><b>"E-mail
+secundário"</b></string>
+    <string name="invalid_email">"O endereço de e-mail inserido não é válido.
+ Exemplo: joao@example.com"</string>
+    <string name="invalid_email_primary">Os endereços de e-mail secundários não podem ser iguais aos que você está criando</string>
+    <string name="tutorial_intro_title">Aprenda a usar o ^1</string>
+    <string name="begin_button_label">Começar</string>
+    <string name="tutorial_intro_message_generic">Existem alguns pontos importantes que você deve entender para aproveitar seu dispositivo Android ao máximo. <font size="17">"
+"</font>" 
+"<li>Como usar o teclado virtual</li> <font size="17">"
+"</font>" 
+Toque em “Começar” para iniciar o tutorial e saber mais."</string>
+    <string name="tutorial_intro_message_setupwizard">Existem alguns pontos importantes que você deve entender para aproveitar seu dispositivo Android ao máximo. <font size="17">"
+"</font>" 
+"<li>Como usar o teclado virtual</li>" 
+"<li>Como configurar uma Conta do Google</li> <font size="17">"
+"</font>" 
+Toque em “Começar” para iniciar o tutorial e saber mais ou toque em “Ignorar” para pular o tutorial e continuar."</string>
+    <string name="keyboard_tutorial_title">Como usar o teclado virtual</string>
+    <string name="keyboard_tutorial_message">Toque em qualquer campo de texto para abrir o teclado e começar a digitar. Teste aqui.</string>
+    <string name="keyboard_tutorial_edittext_hint">Toque aqui para começar a digitar</string>
+    <string name="done_typing_message">Acabou de digitar? Pressione o botão \"Voltar\" para fechar o teclado.</string>
+    <string name="done_button_label_in_tutorial">Concluído</string>
+    <string name="backup_consent_title">Fazer backup de minhas configurações</string>
+    <string name="backup_consent_message">Você pode fazer backup de suas configurações (como os favoritos e senhas Wi-Fi) automaticamente em sua Conta do Google. Se você comprar um aparelho Android novo (para substituir aquele que você perdeu ou foi atualizado), as configurações serão restauradas para seu novo aparelho Android.</string>
+    <string name="backup_consent_howto_disable_message">Você pode alterar as suas configurações de backup a qualquer momento no aplicativo de Configurações, em Privacidade.</string>
+    <string name="backup_consent_yes_agree">Fazer backup das configurações na minha Conta do Google.</string>
+    <string name="restore_disable">Desativar restauração</string>
+    <string name="restore_enable">Ativar restauração</string>
+    <string name="restore_enabled">Caso você tenha feito backup anteriormente das configurações, elas serão restauradas.</string>
+    <string name="restore_disabled">Suas configurações não serão restauradas a partir do backup.</string>
+    <string name="webview_progress_title">Conectando-se ao domínio...</string>
+    <string name="webview_progress_verbose_message">"Os servidores de sua empresa estão enviando informações de login. Esse processo pode levar alguns minutos.
+A página de login de sua empresa será exibida quando esse processo estiver concluído."</string>
+    <string name="enterprise_unmanaged_domain">Este domínio não está usando o Google Apps. Verifique o nome do domínio e tente novamente.</string>
+    <string name="use_location_for_services_agree">Concordo</string>
+    <string name="use_location_for_services_disagree">Não concordo</string>
+    <string name="use_location_for_services_title">Usar \"Meu Local\"</string>
+    <string name="use_location_for_services_text">Deseja permitir que o Google use o local para resultados de pesquisa aprimorados e outros serviços?</string>
+    <string name="permlab_readGsettings">Ler configurações do Google</string>
+    <string name="permdesc_readGsettings">Permite que este aplicativo leia as configurações do Google.</string>
+    <string name="permlab_writeGsettings">Modificar configurações do Google</string>
+    <string name="permdesc_writeGsettings">Permite que este aplicativo modifique as configurações do Google.</string>
+    <string name="permlab_readGservices">ler a configuração de serviço do Google</string>
+    <string name="permdesc_readGservices">Permite que esse aplicativo leia os dados de configuração do serviço do Google.</string>
+    <string name="permlab_writeGservices">Modificar a configuração de serviço do Google</string>
+    <string name="permdesc_writeGservices">Permite que esse aplicativo modifique os dados de configuração do serviço do Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">acessar as senhas para as contas do Google.</string>
+    <string name="permdesc_googleAuthPassword">Permite que os aplicativos acessem diretamente as senhas para as contas do Google configuradas.</string>
+    <string name="permlab_googleMailSwitch">selecionar a marca Gmail ou E-mail do Google</string>
+    <string name="permdesc_googleMailSwitch">Permite que os aplicativos mudem o nome exibido entre as marcas \"Gmail\" e \"E-mail do Google\".</string>
+    <string name="permlab_googleAuth">visualizar contas configuradas</string>
+    <string name="permdesc_googleAuth">Permite que os aplicativos vejam os nomes de usuário (endereços de e-mail) das contas do Google configuradas.</string>
+    <string name="permlab_googleAuth_ALL">acessar todos os serviços do Google</string>
+    <string name="permdesc_googleAuth_ALL">Permite que os aplicativos acessem TODOS os serviços do Google usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_OTHER">acessar outros serviços do Google</string>
+    <string name="permdesc_googleAuth_OTHER">Permite que os aplicativos acessem serviços indeterminados do Google usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_mail">E-mail do Google</string>
+    <string name="permdesc_googleAuth_mail">Permite que os aplicativos façam login nos serviços de e-mail do Google usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_cl">Google Agenda</string>
+    <string name="permdesc_googleAuth_cl">Permite que os aplicativos acessem o Google Agenda usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_android">Serviços do Android</string>
+    <string name="permdesc_googleAuth_android">Permite que os aplicativos acessem os serviços do Android usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_sierra">Contas do Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">"Permite que os aplicativos  acessem o Google Checkout (e, possivelmente, façam compras), usando as contas armazenadas neste aparelho Android."</string>
+    <string name="permlab_googleAuth_sierraqa">Contas do Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Permite que os aplicativos acessem o Google Checkout (QA) usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Contas Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Permite que os aplicativos acessem o Google Checkout Sandbox usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Permite que os aplicativos acessem o YouTube usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Nomes de usuário do YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Permite que os aplicativos vejam os nomes de usuários do YouTube associados com as Contas do Google armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Permite que os aplicativos acessem o Google Talk usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_ig">Contas do iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Permite que os aplicativos acessem o iGoogle usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_lh2">Álbuns da web do Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Permite que os aplicativos acessem os Álbuns do Picasa usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_mobile">Aplicativos do Google Celular</string>
+    <string name="permdesc_googleAuth_mobile">Permite que os aplicativos acessem os aplicativos para celular do Google usando as contas armazenadas no dispositivo Android.</string>
+    <string name="permlab_googleAuth_cp">dados de contatos nas contas do Google</string>
+    <string name="permdesc_googleAuth_cp">Permite que os aplicativos acessem os contatos e as informações de perfil de contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Permite que os aplicativos acessem o Google AdSense usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Permite que os aplicativos acessem o Google AdWords usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Permite que os aplicativos façam login no Blogger usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Permite que os aplicativos acessem o Dodgeball usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Permite que os aplicativos acessem o Google Base usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_groups2">Grupos do Google</string>
+    <string name="permdesc_googleAuth_groups2">Permite que os aplicativos acessem os Grupos do Google usando as contas armazenadas neste aparelho Android</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Permite que os aplicativos acessem o Google Health usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Permite que os aplicativos acessem o JotSpot usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Permite que os aplicativos acesse o Knol usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_news">Google Notícias</string>
+    <string name="permdesc_googleAuth_news">Permite que os aplicativos acessem o Google Notícias usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_orkut">orkut</string>
+    <string name="permdesc_googleAuth_orkut">Permite que os aplicativos acessem o orkut usando as contas armazenadas este aparelho Android.</string>
+    <string name="permlab_googleAuth_print">Pesquisa de Livros do Google</string>
+    <string name="permdesc_googleAuth_print">Permite que os aplicativos acessem a Pesquisa de Livros do Google usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_sitemaps">Ferramentas do Google para webmasters</string>
+    <string name="permdesc_googleAuth_sitemaps">"Permite que os aplicativos acessem  as Ferramentas do Google para webmasters usando as contas armazenadas neste aparelho Android."</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Permite que os aplicativos acessem o Google WiFi usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">Permite que os aplicativos acessem o Google Docs usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_wise">Google Spreadsheets</string>
+    <string name="permdesc_googleAuth_wise">Permite que os aplicativos acessem as Planilhas do Google usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Permite que os aplicativos acessem o Google Finance usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Permite que os aplicativos façam login no Google Maps usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Permite que os aplicativos façam login no Google App Engine usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_notebook">Google Notas</string>
+    <string name="permdesc_googleAuth_notebook">Permite que os aplicativos façam login no Google Notebook usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Permite que os aplicativos acessem o Google Voice usando as contas armazenadas neste aparelho Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Reconhecimento de voz personalizado</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Permite que os aplicativos acessem o serviço de reconhecimento de voz personalizado usando as contas armazenadas neste aparelho Android.</string>
+    <string name="gls_notification_title">Fazer login na sua conta</string>
+    <string name="gls_notification_new_account">^1 conta necessária</string>
+    <string name="gls_notification_new_account_youtube">Conta do YouTube necessária</string>
+    <string name="gls_notification_login_error">Toque para fazer login na sua conta.</string>
+    <string name="gls_ui_add_account_title">Configuração da conta</string>
+    <string name="gls_ui_google_account_subtitle">Conta do Google</string>
+    <string name="gls_ui_activity_title">Login do Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Login do navegador</string>
+    <string name="gls_ui_activity_title_enterprise">Login da empresa</string>
+    <string name="gls_ui_activity_title_youtube">Login do YouTube</string>
+    <string name="gls_ui_activity_authenticating">Autenticando...</string>
+    <string name="gls_captcha_activity_message">Digite os caracteres da imagem:</string>
+    <string name="gls_captcha_activity_ok_button">Concluído</string>
+    <string name="gls_error_activity_message">Houve um erro de rede ao tentar fazer login no <b>^1</b>. Tente novamente agora ou pressione o botão \"Voltar\" para cancelar.</string>
+    <string name="gls_error_activity_retry_button">Tentar novamente</string>
+    <string name="gls_dmagent_activity_message">" Seu domínio requer o gerenciamento do aparelho celular. Instale o aplicativo de política do aparelho do Google Apps para reforçar as políticas de segurança exigidas pela conta de "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Download</string>
+    <string name="gls_login_activity_username_label">Nome de usuário</string>
+    <string name="gls_login_activity_password_label">Senha</string>
+    <string name="gls_login_activity_ok_button">Fazer login</string>
+    <string name="gls_login_activity_loginfail_text_both">O nome de usuário ou a senha não é válido. Uma conta <b>^1</b> é solicitada. Tente novamente.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Você inseriu a senha incorreta ou sua conta foi alterada. Insira sua senha novamente.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Digite a senha para esta conta.</string>
+    <string name="gls_enterprise_login_activity_msg">"Faça login na sua conta corporativa em ^1 para autenticação.
+Toque em \"Fazer login\" para abrir a página de login baseada na web da sua empresa."</string>
+    <string name="gls_login_activity_badaccount_text">A conta não pode ser usada nesta situação. Tente uma conta diferente.</string>
+    <string name="gls_login_activity_newaccount_text">Faça login na sua conta <b>^1</b>.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Você ainda não possui uma conta do YouTube? Toque <a href="http://www.youtube.com/signup">aqui</a> para criar uma.</string>
+    <string name="gls_settings_tos_activity_title">Inf. legais do Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Você não está conectado ao serviço de dados. Para visualizar esta informação agora, acesse %s em qualquer computador conectado à Internet.</string>
+    <string name="gls_settings_contributors_activity_title">Colaboradores</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Você não está conectado ao serviço de dados. Para visualizar estas informações agora, acesse %s em qualquer computador conectado à Internet.</string>
+    <string name="gls_webview_progress_title">Conectando-se ao domínio...</string>
+    <string name="gls_webview_progress_verbose_message">"Os servidores de sua empresa estão enviando informações de login para seu telefone. Isso pode levar alguns minutos.
+A página de login de sua empresa será exibida quando esse processo for concluído."</string>
+    <string name="gls_sign_in_button_label">Fazer login</string>
+    <string name="gls_back_button_label">Voltar</string>
+    <string name="gls_cancel_button_label">Cancelar</string>
+    <string name="gls_exit_account_setup_button_label">Sair conf. da conta</string>
+    <string name="gls_reauthorize_button_label">Autorizar novamente</string>
+    <string name="gls_sign_in_message">Seu dispositivo Android precisa se comunicar com os servidores do Google para configurar sua conta. Esse processo pode levar até cinco minutos.</string>
+    <string name="gls_sign_in_title">Fazendo login...</string>
+</resources>

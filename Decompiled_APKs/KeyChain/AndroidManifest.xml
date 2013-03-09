@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="100312746" android:versionName="1.0.2212313056.312746" package="com.android.keychain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:allowBackup="false" android:hardwareAccelerated="false" allowSkinChange="true">
+        <service android:name="com.android.keychain.KeyChainService">
+            <intent-filter>
+                <action android:name="android.security.IKeyChainService" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Transparent" android:name="com.android.keychain.KeyChainActivity" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.android.keychain.CHOOSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".KeyChainBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="module">
+		<xs:complexType>
+			<xs:attribute name="type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="cal"/>
+						<xs:enumeration value="pb"/>
+						<xs:enumeration value="sms"/>
+						<xs:enumeration value="bookmark"/>
+						<xs:enumeration value="photo"/>
+						<xs:enumeration value="music"/>
+						<xs:enumeration value="task"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="policy" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="returnstrings">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rs" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="RSUnique">
+			<xs:selector xpath="rs"/>
+			<xs:field xpath="@value"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="rs">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="module" maxOccurs="7"/>
+			</xs:sequence>
+			<xs:attribute name="value" type="xs:string" use="required"/>
+			<xs:attribute name="info" type="xs:string"/>
+			<xs:attribute name="communication" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

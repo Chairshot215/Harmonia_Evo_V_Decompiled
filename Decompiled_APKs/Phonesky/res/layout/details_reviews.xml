@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/details_section_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.AccessibleTextView android:id="@id/header" android:background="@drawable/highlight_overlay" android:clickable="false" android:layout_width="fill_parent" android:text="@string/details_reviews" style="@style/DetailsPage_HeaderText" />
+    <LinearLayout android:orientation="vertical" android:id="@id/section_content_sample_reviews" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/reviews_statistics" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/details_footer" android:background="@drawable/highlight_overlay" android:paddingBottom="4.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/separator_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="4.0dip" />
+        <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/black" android:gravity="right" android:id="@id/more_button" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="8.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/see_all" android:drawableRight="@drawable/ic_more_arrow_right" android:drawablePadding="12.0dip" />
+    </LinearLayout>
+</LinearLayout>

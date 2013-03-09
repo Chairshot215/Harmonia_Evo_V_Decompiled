@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HtcListItem android:id="@id/account_list_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HtcListItemColorBar android:id="@id/colorbar" />
+        <com.htc.widget.HtcListItemColorIcon android:id="@id/icon" />
+        <com.htc.widget.HtcListItem2LineText android:id="@id/text" />
+    </com.htc.widget.HtcListItem>
+    <TextView android:gravity="center_vertical" android:id="@id/retore_account_list_title" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@com.htc:dimen/htc_list_item_margin_top" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="@com.htc:dimen/htc_list_item_margin_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s" />
+</merge>

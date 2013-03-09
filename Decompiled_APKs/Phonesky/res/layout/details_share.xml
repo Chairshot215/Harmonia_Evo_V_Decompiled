@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.GooglePlusShareSection android:orientation="vertical" android:background="@drawable/content_row_background" android:paddingTop="12.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/details_special_row_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.finsky.layout.AccessibleTextView android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/DetailsPage_HeaderText" />
+        <ProgressBar android:layout_gravity="right|center" android:id="@id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/FinskyProgressSmallInverse" />
+    </FrameLayout>
+    <View android:background="@color/details_panel_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:textSize="@dimen/content_generic_medium_size" android:textColor="@color/black" android:id="@id/subheader" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:drawableLeft="@drawable/ic_developer_googleplus" android:drawablePadding="8.0dip" />
+</com.google.android.finsky.layout.GooglePlusShareSection>

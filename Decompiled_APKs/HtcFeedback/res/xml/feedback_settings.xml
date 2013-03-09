@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/feedback_error_report_title" android:key="error_report_category">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/feedback_error_report_setting" android:key="error_report_enable" android:summary="@string/feedback_setting_summary" android:disableDependentsState="true" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/auto_send_preference_entries" android:title="@string/auto_send_preference_title" android:key="auto_send_preference" android:entryValues="@array/auto_send_preference_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/feedback_application_log_title" android:key="application_log_category">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/feedback_application_log_setting" android:key="application_log_enable" android:summary="@string/feedback_application_log_summary" android:disableDependentsState="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/network_preference_title" android:key="network_preference_category">
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/network_preference_entries" android:title="@string/feedback_network_setting" android:key="network_preference" android:entryValues="@array/network_preference_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="fill" android:id="@id/item_layout" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+            <ImageView android:layout_gravity="left" android:id="@id/img_1x1" android:layout_width="@com.htc:dimen/htc_list_item_height" android:layout_height="@com.htc:dimen/htc_list_item_height" android:scaleType="fitXY" />
+            <include layout="@com.htc:layout/htc_list_item_1text" />
+            <ImageView android:id="@id/img_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0px" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:src="@com.htc:drawable/common_rearrange_rest" android:layout_alignParentRight="true" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/img_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.widget.PanoramaTrackingView android:id="@id/panorama_tracking_box" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.camera.rotate.RotateImageView android:id="@id/panorama_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/panorama_indicator_margin_top_portrait" android:layout_marginRight="@dimen/panorama_indicator_margin_right_portrait" android:src="@drawable/indicator_panorama" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:id="@id/panorama_shutter_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shutter_bar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/panorama_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_init_toast" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/panorama_init_toast_top_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:gravity="center" android:background="@com.htc:drawable/popup_full_dark" android:layout_width="@dimen/panorama_init_toast_text_width" android:layout_height="wrap_content" android:text="@string/how_to_start_panorama" android_layout_alignParentTop="true" style="@com.htc:style/info_primary_xl" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/panorama_thumb_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/panorama_thumb_container_margin_bottom" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/panorama_thumb_bar_background" android:background="@drawable/camera_panorama_preview_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/panorama_thumb_bar_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/panorama_thumb_container_shadow_left" android:layout_marginTop="@dimen/panorama_thumb_container_shadow_top" android:layout_marginRight="@dimen/panorama_thumb_container_shadow_right" android:layout_marginBottom="@dimen/panorama_thumb_container_shadow_bottom">
+            <ImageView android:id="@id/panorama_left_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/panorama_arrow_margin_left" android:layout_marginBottom="@dimen/panorama_thumb_arrow_margin" android:src="@drawable/panorama_left_arrow" />
+            <LinearLayout android:orientation="vertical" android:id="@id/panorama_thumb_container" android:background="#ffff0000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ViewStub android:visibility="gone" android:layout="@layout/panorama_thumb_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewStub android:visibility="gone" android:layout="@layout/panorama_thumb_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewStub android:visibility="gone" android:layout="@layout/panorama_thumb_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewStub android:visibility="gone" android:layout="@layout/panorama_thumb_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ViewStub android:visibility="gone" android:layout="@layout/panorama_thumb_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:id="@id/panorama_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/panorama_arrow_margin_left" android:layout_marginTop="@dimen/panorama_thumb_arrow_margin" android:src="@drawable/panorama_right_arrow" />
+        </LinearLayout>
+        <ImageView android:id="@id/panorama_thumb_highlight_frame" android:background="@drawable/camera_panorama_preview_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

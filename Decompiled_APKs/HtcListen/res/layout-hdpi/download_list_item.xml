@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="130.0px" android:minHeight="130.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="67.0px" android:layout_height="72.0px" android:layout_marginLeft="21.0px" android:layout_marginTop="14.0px" android:scaleType="fitXY" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="12.0px" android:layout_marginBottom="42.0px" android:src="@drawable/music_notification_album_cover" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="101.0px">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0px" android:layout_weight="1.0">
+            <TextView android:id="@id/track_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+            <TextView android:id="@id/album_artist_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+            <TextView android:id="@id/download_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+        </LinearLayout>
+        <ImageButton android:id="@id/action_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0px" android:layout_marginRight="9.0px" />
+    </LinearLayout>
+    <com.htc.widget.HtcProgressBar android:id="@id/progress" android:layout_width="364.0px" android:layout_height="wrap_content" android:layout_marginRight="14.0px" android:layout_marginBottom="18.0px" android:secondaryProgress="100" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

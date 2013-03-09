@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <View android:id="@id/divider" android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <com.htc.widget.HtcListItem android:id="@id/list_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HtcListItem2LineText android:id="@id/label" />
+        <com.htc.widget.HtcListItemRadioButton android:id="@id/radio_btn" />
+    </com.htc.widget.HtcListItem>
+</RelativeLayout>

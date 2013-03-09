@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.CarouselHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadingLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CustomizationListBackground">
+                <ProgressBar android:id="@*android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0px" style="?android:attr/progressBarStyleSmallInverse" />
+                <TextView android:id="@id/loadingText" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/content_loading" style="@style/text_style_empty_view" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.htc.widget.CarouselWidget android:id="@*android:id/tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?com.htc:tabSwitchBackgroundStyle" />
+    </com.htc.widget.CarouselHost>
+</RelativeLayout>

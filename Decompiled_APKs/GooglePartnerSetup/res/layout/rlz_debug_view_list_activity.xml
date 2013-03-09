@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/viewlist_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rlz_debug_sort_by" />
+        <Spinner android:id="@id/viewlist_select_order" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView android:id="@id/viewlist" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:id="@id/viewlist_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

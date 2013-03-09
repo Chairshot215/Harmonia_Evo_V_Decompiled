@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/label_options" android:title="@string/menu_manage_labels" android:showAsAction="ifRoom" />
+    <item android:icon="@*android:drawable/ic_menu_preferences" android:id="@id/preferences" android:title="@string/menu_preferences" android:showAsAction="never" />
+    <item android:icon="@*android:drawable/ic_menu_help" android:id="@id/help_info_menu_item" android:title="@string/help_and_info" android:showAsAction="never" />
+    <item android:icon="@*android:drawable/ic_menu_send" android:id="@id/feedback_menu_item" android:title="@string/feedback" android:showAsAction="never" />
+</menu>

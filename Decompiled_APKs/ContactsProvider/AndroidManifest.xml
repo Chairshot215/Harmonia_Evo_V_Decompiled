@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.shared" android:versionCode="305349145" android:versionName="3.5.2213362556.349145" android:sharedUserLabel="@string/sharedUserLabel" package="com.android.providers.contacts"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/read_write_all_voicemail_label" android:name="com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL" android:protectionLevel="signature" android:permissionGroup="android.permission-group.PERSONAL_INFO" android:description="@string/read_write_all_voicemail_description" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.cp" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.htc.socialnetwork.permission.useprovider" />
+    <uses-permission android:name="com.htc.socialnetwork.plurk.permission.useprovider" />
+    <uses-permission android:name="htc.socialnetwork.facebook.permission.SYSTEM_USE" />
+    <uses-permission android:name="com.htc.htctwitter.permission.useprovider" />
+    <uses-permission android:name="htc.opensense.permission.USE_BROADCAST" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+    <uses-permission android:name="com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL" />
+    <uses-permission android:name="htc.pluginmanager.permission.USE_PROVIDER" />
+    <uses-permission android:name="htc.friendstream.permission.SYSTEM_USE" />
+    <application android:label="@string/app_label" android:icon="@drawable/app_icon" android:process="android.process.acore">
+        <provider android:label="@string/provider_label" android:name="HtcContactsProvider2" android:readPermission="android.permission.READ_CONTACTS" android:writePermission="android.permission.WRITE_CONTACTS" android:multiprocess="false" android:authorities="contacts;com.android.contacts">
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPrefix="/search_suggest_query" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPrefix="/search_suggest_shortcut" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPattern="/contacts/.*/photo" />
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+        <provider android:name="CallLogProvider" android:readPermission="android.permission.READ_CONTACTS" android:writePermission="android.permission.WRITE_CONTACTS" android:multiprocess="false" android:authorities="call_log" android:syncable="false">
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPrefix="/search_suggest_query" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPrefix="/search_suggest_shortcut" />
+            <grant-uri-permission android:pathPattern=".*" />
+        </provider>
+        <provider android:name="VoicemailContentProvider" android:permission="com.android.voicemail.permission.ADD_VOICEMAIL" android:multiprocess="false" android:authorities="com.android.voicemail" android:syncable="false" />
+        <provider android:name="SocialProvider" android:readPermission="android.permission.READ_CONTACTS" android:writePermission="android.permission.WRITE_CONTACTS" android:multiprocess="false" android:authorities="com.android.social" android:syncable="false" />
+        <receiver android:name="ContactsUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="PackageIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="LocaleChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="RefineRigntoneUriReceiver">
+            <intent-filter>
+                <action android:name="com.htc.providers.media.DB_UPGRADE_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="HTCSyncReceiver">
+            <intent-filter>
+                <action android:name="psclient.intent.action.sync_begin" />
+                <action android:name="psclient.intent.action.stop_sync" />
+                <action android:name="psclient.intent.action.sync_end" />
+            </intent-filter>
+        </receiver>
+        <service android:name="VoicemailCleanupService" />
+    </application>
+</manifest>

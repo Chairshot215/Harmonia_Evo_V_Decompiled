@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="horizontal" android:id="@id/search_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" class="com.google.android.gm.AdvancedSearchWidget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:focusable="true" android:focusableInTouchMode="true" android:layout_width="1.0px" android:layout_height="1.0px">
+        <requestFocus />
+    </View>
+    <android.widget.SearchView android:gravity="center_vertical" android:id="@id/search" android:layout_width="@dimen/search_view_width" android:layout_height="fill_parent" android:imeOptions="actionSearch"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</view>

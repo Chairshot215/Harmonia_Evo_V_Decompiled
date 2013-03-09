@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@*android:drawable/dialog_frame" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_detail_indicator_undelivered" />
+        <TextView android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/undelivered_msg_dialog_title" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@*android:drawable/divider_horizontal_bright" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/body_text_view" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

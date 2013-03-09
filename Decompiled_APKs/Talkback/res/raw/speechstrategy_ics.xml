@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <ss:speechstrategy xmlns:ss="http://www.google.android.marvin.talkback.com/speechstrategy"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.google.android.marvin.talkback.com/speechstrategy speechstrategy.xsd">
+
+  <!-- This file contains speech strategy rules for built-in Android apps. -->
+  <!-- They override the default handlers to work around apps in current -->
+  <!-- and previous Android versions that should have had more -->
+  <!-- contentDescriptions. -->
+
+  <!-- CompoundButton - checked -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.CompoundButton</ss:className>
+      <ss:checked>true</ss:checked>
+      <ss:platformSdk>&lt;=15</ss:platformSdk>
+    </ss:filter>
+    <ss:metadata>
+      <ss:customVibration>@id/patterns_focused</ss:customVibration>
+      <ss:customEarcon>@id/sounds_focused</ss:customEarcon>
+    </ss:metadata>
+    <ss:formatter>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- CompoundButton - not checked -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.CompoundButton</ss:className>
+      <ss:platformSdk>&lt;=15</ss:platformSdk>
+    </ss:filter>
+    <ss:metadata>
+      <ss:customVibration>@id/patterns_focused</ss:customVibration>
+      <ss:customEarcon>@id/sounds_focused</ss:customEarcon>
+    </ss:metadata>
+    <ss:formatter>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Focused ImageView -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageView</ss:className>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.ImageViewFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Use a custom formatter for the ICS notification bar -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_HOVER_ENTER</ss:eventType>
+      <ss:packageName>com.android.systemui</ss:packageName>
+      <ss:recordCount>>0</ss:recordCount>
+      <ss:platformSdk>&gt;=14</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.TouchExplorationSystemUiFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- StatusBarService$ExpandedDialog -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.systemui.statusbar.phone.PhoneStatusBar$ExpandedDialog</ss:className>
+      <ss:packageName>com.android.systemui</ss:packageName>
+      <ss:platformSdk>&gt;=14</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_status_bar_opened</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Don't interrupt FOCUS events from the Touch Exploration tutorial -->
+  <ss:rule>
+    <ss:metadata>
+      <ss:queuing>UNINTERRUPTIBLE</ss:queuing>
+    </ss:metadata>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>com.android.settings.AccessibilityTutorialActivity$TutorialTextView</ss:className>
+      <ss:packageName>com.android.settings</ss:packageName>
+      <ss:platformSdk>14||15</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Launcher - Announce drag state for icons -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_LONG_CLICKED</ss:eventType>
+      <ss:className>com.android.launcher2.BubbleTextView</ss:className>
+      <ss:packageName>com.android.launcher</ss:packageName>
+      <ss:platformSdk>14</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_dragging_icon</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Launcher - Announce drag state for icons -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_LONG_CLICKED</ss:eventType>
+      <ss:className>android.widget.TextView</ss:className>
+      <ss:packageName>com.android.launcher</ss:packageName>
+      <ss:platformSdk>&gt;=15</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_dragging_icon</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Phone - Speak in-call screen -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.phone.InCallScreen</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:platformSdk>&gt;=14</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.phone.InCallScreenFormatterICS</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Phone - Drop call notifications -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_NOTIFICATION_STATE_CHANGED</ss:eventType>
+      <ss:className>android.app.Notification</ss:className>
+      <ss:packageName>com.android.phone</ss:packageName>
+      <ss:platformSdk>&gt;=14</ss:platformSdk>
+    </ss:filter>
+  </ss:rule>
+</ss:speechstrategy>

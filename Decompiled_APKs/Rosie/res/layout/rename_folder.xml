@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/rename_folder_ll_padding" android:paddingRight="@dimen/rename_folder_ll_padding" android:paddingBottom="@dimen/rename_folder_ll_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left" android:paddingBottom="@dimen/rename_folder_ll_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rename_folder_label" style="@com.htc:style/list_secondary_xl" />
+        <EditText android:gravity="fill_vertical" android:id="@id/folder_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:capitalize="none" android:autoText="false" style="@style/CustomStyle_common_inputfield_light_and_input_default_m" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/hint_blink_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_blink" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/hint_shake_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_shake" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/hint_smile_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">>
+<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_smile" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

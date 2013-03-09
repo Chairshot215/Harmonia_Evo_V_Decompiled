@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0pt" android:id="@id/state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/initializing" />
+    <TextView android:id="@id/substate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/microphone_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vd_mic_on" />
+            <ImageView android:id="@id/microphone_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vd_mic_off" />
+            <ImageView android:id="@id/retry_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_vd_retry" />
+        </FrameLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/examples" />
+    </LinearLayout>
+</LinearLayout>

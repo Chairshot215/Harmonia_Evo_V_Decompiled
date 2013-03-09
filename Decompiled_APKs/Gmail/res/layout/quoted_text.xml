@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/quoted_text_area" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/quoted_text_button_bar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <RelativeLayout android:id="@id/quoted_text_row" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <CheckBox android:gravity="center_vertical" android:id="@id/hide_quoted_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:contentDescription="@string/quoted_text" />
+            <TextView android:ellipsize="end" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="@string/quoted_text_label" android:layout_toRightOf="@id/hide_quoted_text" android:textAllCaps="true" style="@style/QuotedTextHeaderStyle" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#ffbabebe" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="12.0dip" />
+        <Button android:id="@id/respond_inline_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/respond_inline" android:textAllCaps="true" style="@style/RespondInlineButtonStyle" />
+    </LinearLayout>
+    <View android:id="@id/divider_bar" android:background="#ffbabebe" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/quoted_text_button_bar" />
+    <WebView android:id="@id/quoted_text_web_view" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider_bar" />
+</RelativeLayout>

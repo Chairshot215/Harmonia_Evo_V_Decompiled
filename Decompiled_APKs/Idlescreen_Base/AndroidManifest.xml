@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="300364321" android:versionName="3.0.2214223129.364321" package="com.htc.idlescreen.base" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_setidlescreen_settings" android:name="com.htc.idlescreen.permission.SET_IDLESCREEN" android:protectionLevel="signatureOrSystem" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:description="@string/permdesc_setidlescreen_settings" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="htc.android.Rosie.ACTION_ITEM_CHANGE" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false">
+        <uses-library android:name="com.htc.lockscreen.fusion" />
+        <uses-library android:name="com.htc.fusion.fx" />
+        <provider android:name="com.htc.idlescreen.base.setting.SettingProvider" android:authorities="com.htc.idlescreen.setting.provider" />
+        <provider android:name="com.htc.idlescreen.base.setting.SettingShortcutProvider" android:permission="com.htc.launcher.permission.READ_SETTINGS" android:authorities="com.htc.idlescreen.base.setting.shortcutprovider" />
+        <service android:name="com.htc.idlescreen.base.setting.SettingService">
+            <intent-filter>
+                <action android:name="com.htc.idlescreen.setting.service" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.htc.idlescreen.base.setting.CustomizeReceiver" android:permission="htc.permission.CUSTOMIZATION_CHANGE">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_FORCE_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/headerbar" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:bubble_visibility="invisible" headerbar:progress_visibility="invisible">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <LinearLayout android:orientation="vertical" android:id="@id/editTextLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0px" android:layout_weight="1.0">
+        <EditText android:layout_gravity="left" android:id="@id/textName" android:background="?com.htc:attr_common_inputfield_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="10.0px" android:layout_marginRight="14.0px" android:layout_marginBottom="10.0px" android:scrollHorizontally="true" android:singleLine="true" style="@com.htc:style/input_default_l" />
+    </LinearLayout>
+    <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:id="@id/cmd_bar_btn_1" />
+        <com.htc.widget.HtcFooterButton android:id="@id/cmd_bar_btn_2" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

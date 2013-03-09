@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@*android:id/inputArea" android:background="@drawable/phone_accumulator_bg" android:layout_width="fill_parent" android:layout_height="@dimen/accumulator_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/keypad_input_text_size" android:textColor="@color/phone_color_accumulator_text" android:ellipsize="end" android:gravity="right" android:id="@*android:id/input" android:background="@null" android:paddingLeft="@com.htc:dimen/htc_list_item_padding_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:cursorVisible="false" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:layout_weight="1.0" style="@com.htc:style/list_primary_xl" />
+    <ImageView android:id="@com.htc:id/backspace" android:background="@drawable/htc_btn_dial_delete" android:layout_marginRight="@dimen/accumulator_btn_margin_left_right" android:src="@drawable/phone_icon_backspace" android:scaleType="center" style="@style/style_accumulator_button" />
+</LinearLayout>

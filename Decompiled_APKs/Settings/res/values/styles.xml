@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layout_panel">
+        <item name="android:background">@*android:drawable/bottom_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/layout_panel_layout_height</item>
+    </style>
+    <style name="bottom_button">
+        <item name="android:textSize">@dimen/bottom_button_textSize</item>
+        <item name="android:textColor">@*android:color/background_dark</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:layout_width">@dimen/bottom_button_layout_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/bottom_button_layout_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/bottom_button_layout_marginTop</item>
+        <item name="android:layout_marginRight">@dimen/bottom_button_layout_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/bottom_button_layout_marginBottom</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="google_title_text">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textSize">@dimen/google_title_text_textSize</item>
+        <item name="android:textColor">#ffa5cb39</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14.0px</item>
+        <item name="android:layout_marginTop">9.0px</item>
+        <item name="android:layout_marginRight">14.0px</item>
+        <item name="android:layout_marginBottom">9.0px</item>
+    </style>
+    <style name="google_title_divider">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/green_divider</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">9.0px</item>
+        <item name="android:layout_marginBottom">9.0px</item>
+    </style>
+    <style name="layout_progressbar_panel">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/oobe_progress_panel</item>
+        <item name="android:paddingLeft">14.0px</item>
+        <item name="android:paddingRight">14.0px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="layout_progressbar_body">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Widget.DeviceDefault.TabWidget" parent="@*android:style/Widget.DeviceDefault.TabWidget">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="listSeparatorTextViewStyle" parent="@*android:style/Widget.DeviceDefault.Light.TextView.ListSeparator">
+        <item name="android:textSize">@com.htc:dimen/list_secondary_l</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingLeft">?listItemTitlePaddingLeft</item>
+        <item name="android:layout_height">38.0px</item>
+    </style>
+    <style name="Htc" />
+    <style name="Htc.WrappedButton" parent="@style/Htc">
+        <item name="android:textColor">@com.htc:color/black_text_white_focused</item>
+        <item name="android:background">?com.htc:attr_common_button</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="Htc.WrappedButton.Small" parent="@style/Htc.WrappedButton">
+        <item name="android:textColor">@color/common_button_small_text</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:paddingLeft">5.0px</item>
+        <item name="android:paddingRight">5.0px</item>
+        <item name="android:layout_margin">5.0px</item>
+    </style>
+    <style name="lock_title_text_appearance">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="lock_title_s_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/title_primary_l</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lock_footer_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/text_size_primary</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lock_button_style">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="lockpattern_size_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="lockpattern_example_title">
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="lockpattern_example_desp">
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="preferenceInformationStyle" parent="@*android:style/Preference.Information" />
+    <style name="Theme.Others" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="NoTitleBar" parent="@*android:style/Theme.DeviceDefault">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Skin">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="AddaccountSkin">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="@*android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="lock_pattern_style_small">
+        <item name="com.htc:lock_btn_default">@drawable/btn_code_lock_default_s</item>
+        <item name="com.htc:lock_btn_touch">@drawable/btn_code_lock_touched_s</item>
+        <item name="com.htc:lock_circle_default">@drawable/indicator_code_lock_point_area_default_s</item>
+        <item name="com.htc:lock_circle_green">@drawable/indicator_code_lock_point_area_green_s</item>
+        <item name="com.htc:lock_circle_red">@drawable/indicator_code_lock_point_area_red_s</item>
+    </style>
+    <style name="inputfield">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="inputfield_default_m" parent="@com.htc:style/input_default_m">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="line_divider">
+        <item name="android:background">@com.htc:drawable/common_list_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_line_divider">
+        <item name="android:background">@com.htc:drawable/common_list_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/wifi_dialog_line_margin</item>
+    </style>
+    <style name="Theme.base" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:alertDialogTheme">@style/dialogAlertTheme</item>
+    </style>
+    <style name="dialogAlertTheme">
+        <item name="android:textAppearance">@*android:style/TextAppearance</item>
+        <item name="android:textAppearanceInverse">@*android:style/TextAppearance.Inverse</item>
+        <item name="android:textColorPrimary">@*android:color/primary_text_dark</item>
+        <item name="android:textColorSecondary">@*android:color/secondary_text_dark</item>
+        <item name="android:textColorPrimaryInverse">@*android:color/primary_text_light</item>
+        <item name="android:textColorSecondaryInverse">@*android:color/secondary_text_light</item>
+        <item name="android:textColorPrimaryNoDisable">@*android:color/primary_text_dark_nodisable</item>
+        <item name="android:textColorSecondaryNoDisable">@*android:color/secondary_text_dark_nodisable</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@*android:color/primary_text_light_nodisable</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@*android:color/secondary_text_light_nodisable</item>
+        <item name="android:textColorHintInverse">#ff808080</item>
+        <item name="android:textAppearanceLarge">@*android:style/TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@*android:style/TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@*android:style/TextAppearance.Small</item>
+        <item name="android:textAppearanceLargeInverse">@*android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:textAppearanceMediumInverse">@*android:style/TextAppearance.Medium.Inverse</item>
+        <item name="android:textAppearanceSmallInverse">@*android:style/TextAppearance.Small.Inverse</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorHint">#ff808080</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+        <item name="android:itemTextAppearance">@*android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:textColorTertiary">@*android:color/tertiary_text_dark</item>
+        <item name="android:textColorTertiaryInverse">@*android:color/tertiary_text_light</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="Theme.Settings" parent="@style/Theme.DeviceDefault.Light.Override" />
+    <style name="Theme.DeviceDefault.Light.Override" parent="@*android:style/Theme.DeviceDefault.Light">
+        <item name="android:tabWidgetStyle">@style/Widget.DeviceDefault.TabWidget</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:alertDialogTheme">@style/dialogAlertTheme</item>
+        <item name="listSeparatorTextViewStyle">@style/listSeparatorTextViewStyle</item>
+        <item name="listItemTitlePaddingLeft">@dimen/list_item_title_padding_left</item>
+    </style>
+    <style name="Theme.NoPreview" parent="@*android:style/Theme.DeviceDefault">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="Theme.DeviceDefault.DialogWhenLarge" parent="@*android:style/Theme.DeviceDefault.DialogWhenLarge">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="info_label">
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_value">
+        <item name="android:textAppearance">@style/TextAppearance.info_value</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_small">
+        <item name="android:textAppearance">@style/TextAppearance.info_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="entry_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="form_value">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance" parent="@*android:style/TextAppearance" />
+    <style name="TextAppearance.info_label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.info_small" parent="@style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.info_value" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TallTitleBarTheme" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.CreateShortCut" parent="@*android:style/Theme.DeviceDefault.DialogWhenLarge" />
+    <style name="wifi_item">
+        <item name="android:gravity">left</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@com.htc:dimen/alert_dialog_content_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/wifi_dialog_content_margin</item>
+        <item name="android:layout_marginRight">@com.htc:dimen/alert_dialog_content_margin_right</item>
+    </style>
+    <style name="wifi_item_xs">
+        <item name="android:gravity">left</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@com.htc:dimen/alert_dialog_content_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/wifi_dialog_content_xs_margin</item>
+        <item name="android:layout_marginRight">@com.htc:dimen/alert_dialog_content_margin_right</item>
+    </style>
+    <style name="wifi_item_label" parent="@com.htc:style/list_primary_m">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_label_xs" parent="@com.htc:style/list_primary_xs">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_checkbox" parent="@com.htc:style/list_secondary_unread_l">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">?com.htc:attr_common_checkbox</item>
+    </style>
+    <style name="wifi_item_content" parent="@com.htc:style/list_secondary_m">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_spinner" parent="@com.htc:style/list_primary_read_m">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_edittext" parent="@com.htc:style/list_primary_m">
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="wifi_section">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_section_2">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="setup_wizard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="CryptKeeperBlankTheme" parent="@*android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="SecurityPreferenceButtonContainer" parent="@*android:style/DeviceDefault.SegmentedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+    <style name="SecurityPreferenceButton" parent="@*android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="vpn_label">
+        <item name="android:textSize">@com.htc:dimen/list_primary_xs</item>
+        <item name="android:textColor">@com.htc:color/list_primary</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="vpn_value">
+        <item name="android:textSize">@com.htc:dimen/list_primary_s</item>
+        <item name="android:textColor">@com.htc:color/list_primary</item>
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="vpn_checkbox">
+        <item name="android:textSize">@com.htc:dimen/list_primary_s</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">?com.htc:attr_common_checkbox</item>
+    </style>
+    <style name="vpn_spinner">
+        <item name="android:textSize">@com.htc:dimen/list_primary_read_m</item>
+        <item name="android:textColor">@com.htc:color/list_read</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="InputMethodPreferenceStyle">
+        <item name="android:layout">@layout/preference_inputmethod</item>
+        <item name="android:widgetLayout">@layout/preference_inputmethod_widget</item>
+    </style>
+    <style name="AccessibilityTutorialButton">
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialDivider">
+        <item name="android:gravity">fill_horizontal</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialTitle" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="AccessibilityTutorialBodyTextPrimary" parent="@*android:style/TextAppearance.Small" />
+    <style name="AccessibilityTutorialIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">96.0dip</item>
+        <item name="android:layout_height">96.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#b0000000</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="Theme.WifiDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:itemTextAppearance">@*android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="Theme.AccessibilityTutorialActivity" parent="@*android:style/Theme.DeviceDefault" />
+</resources>

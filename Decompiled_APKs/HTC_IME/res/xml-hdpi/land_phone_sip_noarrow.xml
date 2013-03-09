@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="113px" hgap="0px" vgap="0px" height="69px" keyTextSize="34px" popupTextSize="45px" keyboardBackground="@drawable/sapphire_land_background" keyboardPadding="0,2,5,2" functionKeyBackground="@drawable/sapphire_landscape_function_key" commonKeyBackground="@drawable/sapphire_landscape_common_key" closeKeyBackground="@drawable/qwerty_land_close_key">
+    <row>
+        <key codes="0x0028" label="(" hgap="4px" leftEdge="true" />
+        <key codes="0x0031" label="1" />
+        <key codes="0x0032" label="2" />
+        <key codes="0x0033" label="3" />
+        <key codes="0x002E" label="." />
+        <key codes="0x0035" label="5" />
+        <key codes="0x0036" label="6" />
+        <key codes="0x002C" label="," />
+        <key codes="-10" label="W" />
+        <key codes="-21" function="true" KeyBG="@drawable/sapphire_land_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+    <row>
+        <key codes="0x002B" label="+" hgap="4px" leftEdge="true" />
+        <key codes="0x0037" label="7" />
+        <key codes="0x0038" label="8" />
+        <key codes="0x0039" label="9" />
+        <key codes="0x002D" label="-" />
+        <key codes="0x0008" function="true" width="112px" hgap="1px" repeatable="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" />
+        <key codes="-20" function="true" width="112px" hgap="1px" KeyBG="@drawable/sapphire_land_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+    </row>
+    <row>
+        <key codes="0x0020" width="112px" hgap="1px" leftEdge="true" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" />
+        <key codes="0x002A" label="*" />
+        <key codes="0x0030" label="0" />
+        <key codes="0x0023" label="\#" />
+        <key codes="0x0024" label="$" />
+        <key codes="0x0a" function="true" sticky="true" width="112px" hgap="1px" icon="@drawable/key_icon_enter_toggle" iconPreview="@drawable/sapphire_icon_enter_toggle" />
+        <key codes="-19" function="true" width="112px" hgap="1px" KeyBG="@drawable/sapphire_land_keys_dpad_bg_up" showPreview="false" rightEdge="true" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+    </row>
+</keyboard>

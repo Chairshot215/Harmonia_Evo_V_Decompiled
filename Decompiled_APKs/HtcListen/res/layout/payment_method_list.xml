@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.htc.widget.HtcListView android:id="@id/payment_method_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/payment_list_view" />
+        <ViewStub android:id="@id/nopaymentmethod_stub_import" android:layout="@layout/no_paymentmethod" android:inflatedId="@id/nopaymentmethod_import" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/pen_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/pen_attr_for_each_app_title" android:key="pen_attr_for_each_app" android:summary="@string/pen_attr_for_each_app_summary" android:defaultValue="false" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/pen_tips_title" android:key="pen_tutorial" android:summary="@string/pen_tips_summary" />
+</com.htc.preference.HtcPreferenceScreen>

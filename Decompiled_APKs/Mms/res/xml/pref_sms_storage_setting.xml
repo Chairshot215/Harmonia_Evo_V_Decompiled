@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_sms_storage_title" android:key="pref_key_storage_settings">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_delete_immediately" android:key="pref_key_delete_immediately" android:summary="@string/pref_summary_delete_immediately" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_auto_delete" android:key="pref_key_auto_delete" android:summary="@string/pref_summary_auto_delete" android:defaultValue="false" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/pref_title_sms_delete" android:key="pref_key_sms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/pref_title_mms_delete" android:key="pref_key_mms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

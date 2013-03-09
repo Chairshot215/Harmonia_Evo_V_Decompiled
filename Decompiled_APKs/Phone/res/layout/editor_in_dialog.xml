@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:id="@id/mcc_mnc_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="4.0dip" android:text="@string/network_code_format" style="?android:attr/textAppearanceSmallInverse" />
+    <EditText android:id="@id/editor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" android:layout_below="@id/mcc_mnc_text" android:inputType="number" />
+</LinearLayout>

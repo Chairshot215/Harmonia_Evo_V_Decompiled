@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.android.worldclock.DigitalClock android:layout_gravity="center" android:orientation="vertical" android:id="@id/digitalClock" android:background="@color/transparent" android:paddingLeft="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/timetile" android:paddingTop="15.0px" android:paddingBottom="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0px" android:src="@drawable/clock_icon_alarm_dialogbox" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="27.0px" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/timeDisplay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0px">
+            <TextView android:textSize="27.0px" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/day" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:gravity="center_horizontal" android:id="@id/titleDivider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@com.htc:drawable/popup_title_divider" android:scaleType="fitXY" />
+</com.htc.android.worldclock.DigitalClock>

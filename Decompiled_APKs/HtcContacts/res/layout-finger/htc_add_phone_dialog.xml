@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left|center" android:id="@id/content" android:paddingLeft="@dimen/htc_common_margin_left" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/AlertAddPhoneTypeContact" android:singleLine="false" style="@style/text_style_primary" />
+    <View android:id="@id/divider" android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="@dimen/htc_item_kind_section_layout_high" android:layout_below="@id/content" />
+    <CheckBox android:gravity="left|center" android:id="@id/not_ask" android:paddingLeft="@dimen/gallery_margin_left_right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/do_not_ask_me_again" android:singleLine="false" android:layout_below="@id/divider" style="@style/text_style_secondary" />
+</RelativeLayout>

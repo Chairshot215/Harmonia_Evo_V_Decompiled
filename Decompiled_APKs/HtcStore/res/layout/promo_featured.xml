@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/promo_featured" android:background="@*android:color/black" android:paddingLeft="@dimen/promo_featured_padding" android:paddingTop="@dimen/promo_featured_padding" android:paddingRight="@dimen/promo_featured_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.store.module.view.PromoSwitcher android:id="@id/promo_switcher" android:layout_width="@dimen/promo_preview_width" android:layout_height="@dimen/promo_preview_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/featured_panel_margin_top">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/featured_item_view_1" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_1" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_1" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_1" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/featured_item_view_2" android:layout_marginLeft="@dimen/featured_featured_margin" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_2" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_2" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_2" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/featured_item_view_3" android:layout_marginLeft="@dimen/featured_featured_margin" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_3" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_3" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_3" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/featured_item_view_4" android:layout_marginLeft="@dimen/featured_featured_margin" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_4" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_4" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_4" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/extra_featured_icon_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/featured_extra_panel_margin_top" android:layout_alignParentTop="true">
+            <LinearLayout android:id="@id/featured_item_view_5" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_5" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_5" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_5" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/featured_item_view_6" android:layout_marginLeft="@dimen/featured_featured_margin" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_6" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_6" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_6" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/featured_item_view_7" android:layout_marginLeft="@dimen/featured_featured_margin" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_7" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_7" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_7" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/featured_item_view_8" android:layout_marginLeft="@dimen/featured_featured_margin" style="@style/featured_layout">
+                <ImageView android:id="@id/image_view_featured_icon_8" style="@style/featured_icon" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/featured_icon_height">
+                    <ImageView android:id="@id/image_view_featured_icon_reflection_8" style="@style/featured_icon_reflection" />
+                    <TextView android:id="@id/text_view_featured_label_8" style="@style/featured_label" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

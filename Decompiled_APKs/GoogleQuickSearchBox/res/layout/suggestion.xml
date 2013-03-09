@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.googlequicksearchbox.ui.DefaultSuggestionView style="@style/Suggestion"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/SuggestionIcon1" />
+    <FrameLayout android:id="@id/icon2_frame" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SuggestionIcon2.Frame">
+        <ImageView android:id="@id/icon2" android:visibility="gone" android:layout_centerVertical="true" style="@style/SuggestionIcon2" />
+        <ProgressBar android:id="@id/refreshing_spinner" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SuggestionIcon2.Spinner" />
+    </FrameLayout>
+    <TextView android:id="@id/text2" android:visibility="gone" android:singleLine="true" android:layout_toLeftOf="@id/icon2_frame" android:layout_toRightOf="@id/icon1" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/SuggestionText2" />
+    <TextView android:ellipsize="middle" android:id="@id/text1" android:layout_toLeftOf="@id/icon2_frame" android:layout_toRightOf="@id/icon1" android:layout_above="@id/text2" style="@style/SuggestionText1" />
+</com.google.android.googlequicksearchbox.ui.DefaultSuggestionView>

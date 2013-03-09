@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:paddingLeft="19.0px" android:paddingTop="22.0px" android:paddingRight="19.0px" android:paddingBottom="22.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textColor="@com.htc:color/primary_text_color" android:id="@id/desc" android:paddingBottom="@com.htc:dimen/info_primary_xl" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textStyle="bold" android:textColor="@com.htc:color/secondary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/olrespicker_details_ver" />
+            <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textColor="@com.htc:color/secondary_text_color" android:id="@id/ver" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textStyle="bold" android:textColor="@com.htc:color/secondary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/olrespicker_details_date" />
+            <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textColor="@com.htc:color/secondary_text_color" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textStyle="bold" android:textColor="@com.htc:color/secondary_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/olrespicker_details_size" />
+            <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textColor="@com.htc:color/secondary_text_color" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

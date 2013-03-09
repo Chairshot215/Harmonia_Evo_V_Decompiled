@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_action_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="7.5pt" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/wifi_offload_option" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="5.5pt" android:textColor="#ffbbbbbb" android:id="@id/wifi_offload_option_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disable_wifi_summary" android:maxLines="3" android:layout_below="@id/wifi_offload_option" android:layout_alignLeft="@id/wifi_offload_option" />
+    </RelativeLayout>
+</LinearLayout>

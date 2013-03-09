@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">웹</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">알 수 없음</string>
+    <string name="sharedUserLabel">Google 서비스</string>
+    <string name="service_label">시스템 업데이터</string>
+    <string name="system_update_activity_name">시스템 업데이트</string>
+    <string name="system_update_activity_title">시스템 업데이트</string>
+    <string name="system_update_activity_battery_low_text">배터리 전원이 부족해서 시스템 업데이트를 설치할 수 없습니다. 계속하려면 충전기를 연결하세요.</string>
+    <string name="system_update_activity_battery_low_charging_text">배터리 전원이 부족해서 시스템 업데이트를 설치할 수 없습니다. 배터리가 충전될 때까지 기다리세요.</string>
+    <string name="system_update_activity_roaming_text">로밍 중에는 시스템 업데이트를 다운로드할 수 없습니다.</string>
+    <string name="system_update_requires_restart_status_text">재시작 필요</string>
+    <string name="system_update_downloading_status_text">다운로드 중</string>
+    <string name="system_update_downloading_wifi_status2_text">^1까지 Wi-Fi를 통해서만 다운로드</string>
+    <string name="system_update_verifying_status_text">확인 중</string>
+    <string name="system_update_verification_failed_text">확인하지 못했습니다.</string>
+    <string name="system_update_verified_status_text">다운로드 및 확인</string>
+    <string name="system_update_download_failed_status_text">다운로드에 실패했습니다.</string>
+    <string name="system_update_download_retry_button_text">다운로드 재시도</string>
+    <string name="system_update_download_button_text">다운로드</string>
+    <string name="system_update_install_button_text">재시작 및 설치</string>
+    <string name="system_update_check_now_button_text">지금 확인</string>
+    <string name="system_update_no_update_content_text">시스템이 현재 최신 상태입니다.</string>
+    <string name="system_update_last_checkin">^1에 마지막으로 업데이트를 확인했습니다.</string>
+    <string name="system_update_recommended_update_available_notification_title">시스템 업데이트 사용 가능</string>
+    <string name="system_update_recommended_update_available_notification_message">업데이트 세부정보를 확인하세요.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">시스템 업데이트 다운로드에 실패했습니다.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">다운로드에 실패했습니다. 다시 시도해 주세요.</string>
+    <string name="system_update_error_dialog_title">오류</string>
+    <string name="system_update_error_downloading_dialog_message">업데이트를 다운로드하는 중에 문제가 발생했습니다.</string>
+    <string name="system_update_error_installing_dialog_message">업데이트를 설치하는 중에 문제가 발생했습니다.</string>
+    <string name="system_update_install_dialog_label">시스템 업데이트</string>
+    <string name="system_update_install_dialog_message_nonphone">시스템 업데이트를 설치할 준비가 되었습니다. Android 기기가 다시 시작되고 업데이트가 설치됩니다.</string>
+    <string name="system_update_install_dialog_message_phone">시스템 업데이트를 설치할 준비가 되었습니다. Android 기기가 다시 시작되고 업데이트가 설치됩니다. 설치 중에는 비상 전화를 비롯한 어떤 전화도 걸 수 없습니다.</string>
+    <string name="system_update_install_dialog_battery_low_message">시스템을 업데이트할 준비가 되었지만 배터리 전원이 부족해서 설치할 수 없습니다. 충전기를 연결하세요.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">시스템을 업데이트할 준비가 되었지만 배터리 전원이 부족해서 설치할 수 없습니다. 배터리가 충전될 때까지 기다리세요.</string>
+    <string name="system_update_install_dialog_now_button">지금 설치</string>
+    <string name="system_update_install_dialog_later_button">나중에 설치</string>
+    <string name="system_update_install_dialog_info_button">추가 정보...</string>
+    <string name="system_update_downloading_notification_title">시스템 업데이트 다운로드 중</string>
+    <string name="system_update_verifying_notification_title">시스템 업데이트 확인 중</string>
+    <string name="system_update_download_dialog_label">시스템 업데이트 다운로드</string>
+    <string name="system_update_download_dialog_message">Android 기기의 기능을 향상할 시스템 업데이트가 있습니다. 무선 네트워크를 통해 다운로드하는 경우 요금이 부과될 수 있습니다.</string>
+    <string name="system_update_download_dialog_now_button">지금 다운로드</string>
+    <string name="system_update_download_dialog_later_button">나중에 다운로드</string>
+    <string name="system_update_download_dialog_cancel_button">취소</string>
+    <string name="system_update_countdown_complete">지금 다시 부팅 중...</string>
+    <string name="system_update_countdown_cancel_button">설치 취소</string>
+    <string name="system_update_complete_label">시스템 업데이트</string>
+    <string name="system_update_complete_ok_button">확인</string>
+    <string name="provider_label">구독정보 푸시</string>
+    <string name="ro_perm_label">채팅 메시지 읽기</string>
+    <string name="ro_perm_desc">애플리케이션이 Google 토크 콘텐츠 제공업체에서 제공한 데이터를 읽을 수 있도록 합니다.</string>
+    <string name="wo_perm_label">채팅 메시지 쓰기</string>
+    <string name="wo_perm_desc">애플리케이션이 Google 토크 콘텐츠 제공업체에 데이터를 쓸 수 있도록 합니다.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"채팅 검색
+(검색어: '%1$s')"</string>
+    <string name="gtalkservice_label">Google 메시징 서비스</string>
+    <string name="c2dm_label">클라우드와 장치 간 메시징(C2DM) 서비스</string>
+    <string name="sendTalkMsg_perm_label">메시지를 교환하고 Google 서버로부터 동기화 알림 수신</string>
+    <string name="sendTalkMsg_perm_desc">C2DM과 동기화 알림에 사용됩니다. Google 토크는 메시지를 교환하고 상태를 동기화하는 데 이 서비스를 사용합니다. 악성 프로그램은 이 서비스를 사용하여 과도한 데이터를 전송할 수 있습니다.</string>
+    <string name="perm_receive_data_message_label">인터넷에서 데이터 받기</string>
+    <string name="perm_receive_data_message_desc">애플리케이션이 클라우드로부터 C2DM을 수신할 수 있도록 합니다. 이 서비스는 데이터 사용량을 높일 수 있으며 악성 프로그램의 경우 과다한 데이터 사용을 유발할 수 있습니다.</string>
+    <string name="perm_data_msg_broadcast_label">데이터 메시지를 애플리케이션에 전달합니다.</string>
+    <string name="perm_data_msg_broadcast_desc">인터넷에서 수신한 데이터 메시지를 등록된 애플리케이션으로 전달할 수 있습니다.</string>
+    <string name="perm_receive_xmpp_label">Google 서버에서 XMPP 메시지를 보내고 받습니다.</string>
+    <string name="perm_receive_xmpp_desc">Google 애플리케이션이 Google 서버에서 XMPP 메시지를 보내고 받을 수 있도록 합니다.</string>
+    <string name="perm_xmpp_broadcast_label">XMPP 메시지를 애플리케이션에 전달합니다.</string>
+    <string name="perm_xmpp_broadcast_desc">Google 서버에서 수신한 XMPP 메시지를 등록된 애플리케이션으로 전달할 수 있습니다.</string>
+    <string name="perm_use_xmpp_endpoint_label">Google 서버와 XMPP 메시지를 주고받습니다.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Google 애플리케이션이 Google 서버와 XMPP 메시지를 주고받을 수 있도록 합니다.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">XMPP 메시지를 애플리케이션에 전달합니다.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Google 서버에서 수신한 XMPP 메시지를 애플리케이션으로 전달할 수 있습니다.</string>
+    <string name="permlab_intentVendingOnly">Android 마켓에 브로드캐스트 보내기</string>
+    <string name="permdesc_intentVendingOnly">애플리케이션 설치 및 삭제를 요청하는 브로드캐스트를 Android 마켓에 보낼 수 있습니다.</string>
+    <string name="permlab_heartbeat">Google 토크 서버로 연결 점검 패킷 보내기</string>
+    <string name="permdesc_heartbeat">연결 상태를 확인하기 위해 Google 토크 서버로 점검 패킷을 보낼 수 있습니다.</string>
+    <string name="group_chat">그룹 채팅: %s</string>
+    <string name="default_decline_reason">죄송합니다. 지금은 통화 중입니다.</string>
+    <string name="newMessages_label">새 채팅</string>
+    <string name="notify_groupchat_label">그룹 채팅 초대</string>
+    <string name="num_unread_chats">읽지 않은 채팅 %s개</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s -> %s</string>
+    <string name="subscription_notify_text">%s님이 채팅하고 싶어합니다.</string>
+    <string name="group_chat_invite_notify_text">%s님이 그룹 채팅에 초대하셨습니다.</string>
+    <string name="group_chat_invite_dialog_text">%s님이 그룹 채팅에 초대했습니다.</string>
+    <string name="message_too_long">2,000자가 넘는 메시지는 보낼 수 없습니다.</string>
+    <string name="missed_video_chat_notification">부재중에 영상 채팅 초대를 받았습니다.</string>
+    <string name="missed_voice_chat_notification">부재중에 음성 채팅 초대를 받았습니다.</string>
+    <string name="missed_video_chat_notification_no_wifi">Wi-Fi에 연결되지 않았기 때문에 영상 채팅 초대를 받지 못했습니다</string>
+    <string name="missed_voice_chat_notification_no_wifi">Wi-Fi에 연결되어 있지 않아 음성 채팅 초대를 받지 못했습니다.</string>
+    <string name="missed_video_chat_message">%1$s님이 영상 채팅을 신청했습니다.</string>
+    <string name="missed_voice_chat_message">%1$s님이 음성 채팅을 신청했습니다.</string>
+    <string name="missed_video_chat_message_no_wifi">사용자의 Wi-Fi가 연결되지 않은 상태에서 %1$s님이 음성 채팅을 요청했습니다.</string>
+    <string name="missed_voice_chat_message_no_wifi">사용자의 Wi-Fi가 연결되지 않은 상태에서 %1$s님이 음성 채팅을 요청했습니다.</string>
+    <string name="end_cause_user_unavailable_video">%1$s님이 영상 채팅을 사용할 수 없습니다.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s님이 음성 채팅을 사용할 수 없습니다.</string>
+    <string name="end_cause_sent_terminate_video">%1$s님과의 영상 채팅을 종료했습니다.</string>
+    <string name="end_cause_sent_terminate_voice">%1$s님과의 음성 채팅을 종료했습니다.</string>
+    <string name="end_cause_received_terminate_video">%1$s님이 영상 채팅을 종료했습니다.</string>
+    <string name="end_cause_received_terminate_voice">%1$s님이 음성 채팅을 종료했습니다.</string>
+    <string name="end_cause_network_problem_video">네트워크 문제로 인해 %1$s님과 영상 채팅을 할 수 없습니다. 다시 시도해 주세요.</string>
+    <string name="end_cause_network_problem_voice">네트워크 문제로 인해 %1$s님과 음성 채팅을 사용할 수 없습니다. 다시 시도해 주세요.</string>
+    <string name="conn_auth_error_notify_ticker">Google 토크 인증 실패</string>
+    <string name="conn_auth_error_notify_title">Google 토크 인증 실패</string>
+    <string name="conn_auth_error_title">인증 오류</string>
+    <string name="conn_auth_error_message">Google 토크 로그인에 실패했습니다. Google 애플리케이션 계정인 경우 이 계정에서 채팅 서비스를 사용하도록 설정했는지 확인하세요.</string>
+    <string name="conn_auth_error_button_retry">다시 시도</string>
+    <string name="conn_auth_error_button_cancel">취소</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">^1 시작</string>
+    <string name="setup_wizard_title">설치 마법사</string>
+    <string name="error_dialog_title">주의</string>
+    <string name="next_button_label">다음</string>
+    <string name="back_button_label">뒤로</string>
+    <string name="sign_in_button_label">로그인</string>
+    <string name="create_button_label">만들기</string>
+    <string name="skip_button_label">건너뛰기</string>
+    <string name="first_name">이름</string>
+    <string name="last_name">성</string>
+    <string name="done">확인</string>
+    <string name="cancel_button_label">취소</string>
+    <string name="done_button_label">설정 완료</string>
+    <string name="try_again_button_label">다시 시도</string>
+    <string name="close_button_label">닫기</string>
+    <string name="edit_text_help">입력란을 눌러 입력하세요.</string>
+    <string name="add_a_google_account">Google 계정 추가</string>
+    <string name="no_sim_setup_wireless">SIM 카드가 설치되어 있지 않아 음성이나 데이터 서비스를 사용하기 위한 모바일 네트워크에 연결할 수 없습니다. SIM이 없으면 Wi-Fi 네트워크에 연결해 보세요.</string>
+    <string name="setup_wifi_button_label">Wi-Fi에 연결</string>
+    <string name="no_network">네트워크에 연결되어 있지 않습니다.</string>
+    <string name="no_network_help">일시적인 문제이거나 Android 기기에 데이터 서비스를 사용할 준비가 되어 있지 않을 수 있습니다. 모바일 네트워크에 연결되면 다시 시도하거나 Wi-Fi 네트워크에 연결해 보세요.</string>
+    <string name="server_error">Google 서버와 통신하는 중 문제가 발생했습니다.</string>
+    <string name="server_error_help">잠시 후에 다시 시도해 주세요.</string>
+    <string name="network_unreliable">서버와 안정적인 데이터 연결을 설정할 수 없습니다.</string>
+    <string name="network_unreliable_help">일시적인 문제이거나 Android 기기에 데이터 서비스에 대한 준비가 되어 있지 않을 수 있습니다. 문제가 계속되면 고객지원팀에 문의하세요.</string>
+    <string name="invalid_login_character">문자가 잘못되었습니다. 0-9, a-z, A-Z 및 마침표만 사용할 수 있습니다.</string>
+    <string name="invalid_password_character">비밀번호 문자가 잘못되었습니다.</string>
+    <string name="add_apn">무선 설정</string>
+    <string name="setup_google_account_title">Google 계정 설정</string>
+    <string name="setup_complete_title">설정 완료</string>
+    <string name="cant_be_blank">입력란은 비워 둘 수 없습니다.</string>
+    <string name="calendar">Google 캘린더</string>
+    <string name="talk">Google 토크</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android 기기가 데이터 서비스에 연결되어 있지 않습니다. 지금 이 정보를 보려면 인터넷에 연결된 컴퓨터에서 %s(으)로 이동하세요.</string>
+    <string name="field_cant_be_blank">입력란은 비워 둘 수 없습니다.</string>
+    <string name="field_invalid_domain">올바른 도메인 이름이 아닙니다.</string>
+    <string name="field_invalid_user">올바른 사용자 이름이 아닙니다.</string>
+    <string name="field_invalid_user_domain">이메일 주소가 아닌 사용자 이름만 입력하세요.</string>
+    <string name="field_invalid_login">올바른 계정 이름이 아닙니다.</string>
+    <string name="about_accounts_message"><font size="17">"Google 계정만 있으면 Android 기기를 쉽게 설정할 수 있습니다.
+"<font height="17">"
+"</font><b>Google 계정을 왜 사용해야 하나요?</b>"
+"<font height="3">"
+"</font>"Google 계정이 있으면 어디에서 업데이트하든지 관계 없이 Android 기기와 컴퓨터 간에 Google 애플리케이션이 자동으로 동기화됩니다.
+"<font height="17">"
+"</font><b>이미 Google 계정이 있으십니까?</b>"
+"<font height="3">"
+"</font>"그러면 모든 준비가 된 것입니다. 다음 화면에서 '로그인'을 터치하세요.
+"<font height="17">"
+"</font><b>Google 계정이 없으십니까?</b>"
+"<font height="3">"
+"</font>"문제 없습니다. 다음 화면에서 '만들기'를 터치하면 Google 계정 설정 방법을 안내해 드립니다.
+"<font height="17">"
+"</font><b>"시작하려면 '다음'을 터치하세요."</b>"
+"</font></string>
+    <string name="fling_help_message">"손가락을 화면 위/아래로 미끄러지듯 움직여 스크롤하세요.
+이 메시지를 표시하지 않으려면 메시지를 터치하세요."</string>
+    <string name="setup_device_title">^1 설정</string>
+    <string name="dont_have_an_account">Google 계정이 없으십니까?</string>
+    <string name="create_one_now">손쉽게 만들 수 있습니다.</string>
+    <string name="already_have_an_account">Google 계정이 이미 있습니까?</string>
+    <string name="sign_in_with_google_account">Android 기기에 연결할 Google 계정으로 로그인하세요.</string>
+    <string name="skip_message">계정을 나중에 설정하시겠습니까?</string>
+    <string name="touch_to_begin">시작하려면 Android를 터치하세요.</string>
+    <string name="delayed_gaia_agreement">계속하면 <annotation id="google_privacy">Google</annotation> 및 <annotation id="android_privacy">추가</annotation> 개인정보취급방침에 동의하게 됩니다.</string>
+    <string name="open_keyboard_message">시작하려면 키보드를 밀어 여세요.</string>
+    <string name="open_keyboard_message_to_continue">계속하려면 키보드를 밀어 여세요.</string>
+    <string name="emergency_dial">긴급 통화</string>
+    <string name="change_language">언어 변경</string>
+    <string name="signing_in">로그인하는 중...</string>
+    <string name="close_keyboard_message">계속하려면 키보드를 밀어 닫으세요.</string>
+    <string name="communicating_message">Android 기기에서 Google 서버와 통신하여 계정을 설정해야 합니다. 최대 5분 정도 걸릴 수 있습니다.</string>
+    <string name="communicating_message_domain">Android 기기에서 Google 서버와 통신하여 도메인 정보를 찾아야 합니다. 최대 5분 정도 걸릴 수 있습니다.</string>
+    <string name="username">사용자 이름</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">비밀번호</string>
+    <string name="sign_in_agreement">로그인하면 <annotation id="google_privacy">Google</annotation> 및 <annotation id="android_privacy">추가</annotation> 개인정보취급방침에 동의하게 됩니다.</string>
+    <string name="create">만들기</string>
+    <string name="create_message">Google 계정이 필요하십니까?</string>
+    <string name="now_signing_in">로그인하는 중...</string>
+    <string name="now_verifying_domain">도메인을 찾는 중...</string>
+    <string name="sign_in_with_google_account_short">Google 계정으로 로그인:</string>
+    <string name="browser_sign_in_explanation">웹브라우저가 필요한 로그인이 있을 경우 이 화면을 사용합니다.</string>
+    <string name="gls_browser_login_intro_message">Google 또는 Google Apps 계정에 액세스할 수 없습니다. 다시 인증을 받아야 합니다.</string>
+    <string name="enter_domain_name">회사의 도메인 이름 입력:</string>
+    <string name="enter_user_name">^1의 사용자 이름과 비밀번호를 입력:</string>
+    <string name="inactive_domain">사용 중지된 도메인에 속한 계정이므로 기기에서 사용할 수 없습니다. <b>^1</b> 도메인 관리자에게 문의하거나 다른 계정을 사용하여 로그인하세요.</string>
+    <string name="invalid_username">입력한 텍스트가 올바른 사용자 이름이 아닙니다.</string>
+    <string name="web_login_error_title">죄송합니다...</string>
+    <string name="web_login_error_desc">"^1에서 회사 서버에 연결하는 중에 오류가 발생했습니다.
+
+오류 정보:
+"</string>
+    <string name="web_login_error_redirects">웹 로그인 페이지가 너무 많이 리디렉션되었습니다.</string>
+    <string name="web_login_error_http">HTTP 오류 ^1 : ^2</string>
+    <string name="name_device_label">Android 기기 이름 지정:</string>
+    <string name="device_name_hint">기기 이름</string>
+    <string name="registering_device">Android 기기 등록 중...</string>
+    <string name="error_account_disabled">"사용 중지된 계정입니다. 
+
+자세한 내용을 보려면 컴퓨터에서 http://google.com/accounts/recovery 페이지로 이동하세요."</string>
+    <string name="error_login_failed">"사용자 이름과 비밀번호가 일치하지 않습니다. 다시 시도해 주세요. 
+
+계정 정보를 복구하려면 컴퓨터에서 http://www.google.com/accounts/recovery 페이지로 이동하세요."</string>
+    <string name="error_account_not_verified">"확인되지 않은 계정입니다. 컴퓨터에서 이메일을 확인하고 링크를 따라 계정을 확인하세요.
+
+계정 정보를 복구하려면 컴퓨터에서 http://www.google.com/accounts/recovery 페이지로 이동하세요."</string>
+    <string name="captcha_message_string">확인</string>
+    <string name="captcha_instructions">그림에 표시된 문자를 입력하세요. 대소문자는 구분하지 않습니다.</string>
+    <string name="create_google_account">새 Google 계정 만들기</string>
+    <string name="example_usernames">예: JSmith, John.Smith</string>
+    <string name="create_account_agreement">이 계정을 만들면 <annotation id="google_privacy">Google</annotation> 및 <annotation id="android_privacy">추가</annotation> 개인정보취급방침에 동의하게 됩니다.</string>
+    <string name="account_already_has_gmail">계정이 이미 Gmail에 연결되어 있습니다.</string>
+    <string name="creating_account">계정을 만드는 중...</string>
+    <string name="checking_account">사용자 이름 중복 여부 확인 중...</string>
+    <string name="try_a_different_username">다른 사용자 이름 사용</string>
+    <string name="is_not_available"><b>^1</b>을(를) 사용할 수 없습니다.</string>
+    <string name="hint_size"><b>^1</b>이(가) 6자 미만이거나 30자 이상입니다.</string>
+    <string name="hint_numbers_only"><b>^1</b>에 문자가 포함되어 있지 않습니다.</string>
+    <string name="hint_illegal_chars"><b>^1</b>"에는 문자, 숫자 및 마침표만
+사용할 수 있습니다."</string>
+    <string name="doesnt_use_gmail"><b>^1</b>은(는) Gmail을 사용하지 않습니다.</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_in_browser">브라우저 로그인</string>
+    <string name="here_are_alternatives">몇 가지 사용가능한 사용자 이름은 다음과 같습니다.</string>
+    <string name="alternatives_list_title">추천 사용자 이름</string>
+    <string name="choose_a_password"><b>"비밀번호
+입력"</b></string>
+    <string name="confirm_password"><b>"비밀번호
+확인"</b></string>
+    <string name="password_strength"><b>"비밀번호
+강도"</b></string>
+    <string name="too_short">너무 짧음</string>
+    <string name="security_question"><b>"비밀번호
+힌트"</b></string>
+    <string name="security_questions_title">비밀번호 힌트</string>
+    <string name="answer"><b>대답</b></string>
+    <string name="password_mismatch">비밀번호가 일치하지 않습니다. 다시 입력하세요.</string>
+    <string name="your_account_was_created">계정이 생성되었습니다.</string>
+    <string name="eight_chars_min">(최소 8자)</string>
+    <string name="just_in_case">비밀번호를 잊어버린 경우</string>
+    <string name="verify_your_profile">내 프로필 확인</string>
+    <string name="signed_in">로그인되었습니다.</string>
+    <string name="error_not_logged_in">로그인되지 않았습니다.</string>
+    <string name="error_username_unavailable">사용자 이름을 사용할 수 없습니다.</string>
+    <string name="error_bad_password">비밀번호가 너무 쉽거나 잘못된 문자를 포함하고 있습니다. 다시 시도해 주세요.</string>
+    <string name="error_bad_username">사용자 이름이 잘못되었습니다.</string>
+    <string name="loading">로드 중...</string>
+    <string name="submission_title">죄송합니다...</string>
+    <string name="submission_error_text">오류가 발생했습니다. 다시 시도해 주세요.</string>
+    <string name="existing_account_error_title">계정이 이미 있습니다</string>
+    <string name="existing_account_error_text">Android 기기에 ^1 계정이 이미 있습니다.</string>
+    <string name="account_linked_message"><font height="24">Google 계정이 Android 기기에 연결되었습니다.</font></string>
+    <string name="syncing_message"><font size="17">"Google 애플리케이션에서 데이터를 동기화하는 중입니다. 
+"<font height="17">"
+"</font>"%i화면 상단의 상태 표시줄에서 '동기화 중' 아이콘이 사라지면 다운로드가 완료된 것입니다.
+"<font height="17">"
+"</font><b>상태 표시줄 정보...</b>"
+"<font height="3">"
+"</font>"새 메시지나 기타 알림을 받을 때마다 상태 표시줄에 아이콘이 나타납니다.
+"<font height="17">"
+"</font>현재 알림에 대한 모든 세부정보가 들어 있는 알림 창을 열려면 손가락으로 상태 표시줄을 아래로 끌어서 여세요.</font></string>
+    <string name="i_agree_next">동의하며 다음 단계로 진행</string>
+    <string name="android_privacy_policy_title">추가 개인정보취급방침</string>
+    <string name="google_terms_of_service_title">Google 서비스 약관</string>
+    <string name="google_privacy_policy_title">Google 개인정보취급방침</string>
+    <string name="notification_update_title">계정을 업데이트해야 합니다.</string>
+    <string name="notification_update_message">설치 마법사를 다시 실행하려면 여기를 터치하세요.</string>
+    <string name="common_message">"Gmail, 백업 및 기타 Android 기능을 이용하려면 Google 계정이 있어야 합니다.
+
+"<b>다음</b>"을 터치하여 기존 Google 계정으로 로그인하거나 지금 새 Google 계정을 만드세요.
+
+또는 "<b>건너뛰기</b>"를 터치하여 간단히 Android를 사용할 수도 있습니다. 나중에 '설정'의 '계정 및 동기화'에서 Google 계정에 로그인할 수 있습니다."</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">계정 추가</font>" 
+
+한 개 이상의 Google 계정(예: 개인용 및 업무용 계정)을 동시에 사용할 수 있습니다. 계정 추가는 간단히 몇 단계만 진행하면 됩니다. 
+
+계속하려면 '다음'을 터치하고 종료하려면 '뒤로' 버튼을 누릅니다."</string>
+    <string name="reactivate_account_message">"이 Android 기기에 Gmail 계정을 연결해야 합니다. 
+
+이 계정과 연결된 Gmail 사용자 이름(("<b>^1</b>"))이 이미 있지만 현재 활성화되어 있지 않습니다. 
+
+사용자 이름을 다시 활성화하여 사용하려면 '다음'을 터치하세요. 
+
+다른 계정을 사용하려면 뒤로 버튼을 누르고 다른 계정으로 로그인하거나 다른 계정을 만드세요."</string>
+    <string name="reactivating_account">계정 재활성화 중...</string>
+    <string name="your_account_was_reactivated">계정이 활성화되었습니다.</string>
+    <string name="account_recovery_info">다음 정보는 비밀번호를 복구하는 데 사용됩니다.</string>
+    <string name="secondary_email_label"><b>"보조
+이메일"</b></string>
+    <string name="invalid_email">"입력한 이메일 주소가 잘못되었습니다.
+ 예: joe@example.com"</string>
+    <string name="invalid_email_primary">보조 이메일 주소는 기본 이메일 주소와 달라야 합니다.</string>
+    <string name="tutorial_intro_title">^1 사용법 알아보기</string>
+    <string name="begin_button_label">시작</string>
+    <string name="tutorial_intro_message_generic">Android 기기를 최대한 활용하기 위해 알아두어야 할 중요한 사항이 있습니다. <font size="17">"
+"</font>" 
+"<li>터치 키보드 사용</li> <font size="17">"
+"</font>" 
+안내서를 시작하여 자세한 내용을 알아보려면 '시작'을 터치하세요."</string>
+    <string name="tutorial_intro_message_setupwizard">Android 기기를 최대한 활용하기 위해 알아두어야 할 중요한 사항이 있습니다. <font size="17">"
+"</font>" 
+"<li>터치 키보드 사용</li>" 
+"<li>Google 계정 설정</li> <font size="17">"
+"</font>" 
+안내서를 시작하여 자세한 내용을 알아보려면 '시작'을 터치하고, 안내서를 건너뛰고 계속하려면 '건너뛰기'를 터치하세요."</string>
+    <string name="keyboard_tutorial_title">터치 키보드 사용</string>
+    <string name="keyboard_tutorial_message">키보드를 열어 문자를 입력하려면 텍스트 입력란을 터치하세요.</string>
+    <string name="keyboard_tutorial_edittext_hint">입력하려면 여기를 터치하세요.</string>
+    <string name="done_typing_message">"입력하셨습니까? 키보드를 닫으려면 '뒤로' 버튼을 누르세요."</string>
+    <string name="done_button_label_in_tutorial">완료</string>
+    <string name="backup_consent_title">내 설정 백업</string>
+    <string name="backup_consent_message">북마크 및 Wi-Fi 비밀번호와 같은 설정을 Google 계정에 자동으로 백업할 수 있습니다. Android 기기를 잃어버렸거나 업그레이드하기 위해 새로 구입하면 설정이 새 Android 기기에 복원됩니다.</string>
+    <string name="backup_consent_howto_disable_message">"'설정' 내 '개인정보 보호' 메뉴에서 언제든지 백업 설정을 변경할 수 있습니다."</string>
+    <string name="backup_consent_yes_agree">내 Google 계정으로 설정을 백업합니다.</string>
+    <string name="restore_disable">복원 사용 중지</string>
+    <string name="restore_enable">복원 사용</string>
+    <string name="restore_enabled">이전에 백업한 설정은 복원됩니다.</string>
+    <string name="restore_disabled">백업을 통해 설정이 복원되지 않습니다.</string>
+    <string name="webview_progress_title">도메인에 연결 중...</string>
+    <string name="webview_progress_verbose_message">"회사 서버에서 로그인 정보를 보내는 중입니다. 이 작업은 몇 분 정도 걸릴 수 있습니다.
+작업이 완료되면 회사의 로그인 페이지가 표시됩니다."</string>
+    <string name="enterprise_unmanaged_domain">도메인이 Google 애플리케이션을 사용하고 있지 않습니다. 도메인 이름을 확인하고 다시 시도하세요.</string>
+    <string name="use_location_for_services_agree">동의함</string>
+    <string name="use_location_for_services_disagree">동의 안함</string>
+    <string name="use_location_for_services_title">내 위치 사용</string>
+    <string name="use_location_for_services_text">검색결과 및 기타 서비스 향상을 위해 Google에 위치 정보를 제공하시겠습니까?</string>
+    <string name="permlab_readGsettings">Google 설정 읽기</string>
+    <string name="permdesc_readGsettings">이 애플리케이션이 Google 설정을 읽을 수 있도록 합니다.</string>
+    <string name="permlab_writeGsettings">Google 설정 수정</string>
+    <string name="permdesc_writeGsettings">이 애플리케이션이 Google 설정을 수정할 수 있도록 합니다.</string>
+    <string name="permlab_readGservices">Google 서비스 구성 읽기</string>
+    <string name="permdesc_readGservices">애플리케이션이 Google 서비스 구성 데이터를 읽을 수 있도록 합니다.</string>
+    <string name="permlab_writeGservices">Google 서비스 구성 수정</string>
+    <string name="permdesc_writeGservices">애플리케이션이 Google 구성 데이터를 수정할 수 있도록 합니다.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google 애플리케이션</string>
+    <string name="permlab_googleAuthPassword">Google 계정의 비밀번호에 액세스</string>
+    <string name="permdesc_googleAuthPassword">애플리케이션이 사용자가 구성한 Google 계정의 비밀번호에 직접 액세스할 수 있도록 허용합니다.</string>
+    <string name="permlab_googleMailSwitch">Gmail 또는 Google Mail 브랜드 선택</string>
+    <string name="permdesc_googleMailSwitch">"애플리케이션이 'Gmail'과 'Google Mail' 간에 전환하며 표시 이름을 사용할 수 있도록 합니다."</string>
+    <string name="permlab_googleAuth">구성된 계정 보기</string>
+    <string name="permdesc_googleAuth">애플리케이션이 사용자가 구성한 Google 계정의 사용자 이름(이메일 주소)을 볼 수 있도록 허용합니다.</string>
+    <string name="permlab_googleAuth_ALL">모든 Google 서비스에 액세스</string>
+    <string name="permdesc_googleAuth_ALL">애플리케이션이 Android 기기에 저장된 계정을 사용하여 모든 Google 서비스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_OTHER">다른 Google 서비스에 액세스</string>
+    <string name="permdesc_googleAuth_OTHER">애플리케이션이 Android 기기에 저장된 계정을 사용하여 지정되지 않은 Google 서비스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 메일 서비스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_cl">Google 캘린더</string>
+    <string name="permdesc_googleAuth_cl">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 캘린더에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_android">Android 서비스</string>
+    <string name="permdesc_googleAuth_android">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Android 서비스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout 계정</string>
+    <string name="permdesc_googleAuth_sierra">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google Checkout에 로그인하고 구매할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA 계정</string>
+    <string name="permdesc_googleAuth_sierraqa">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google Checkout QA에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout 샌드박스 계정</string>
+    <string name="permdesc_googleAuth_sierrasandbox">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google Checkout 샌드박스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">애플리케이션이 Android 기기에 저장된 계정을 사용하여 YouTube에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube 사용자 이름</string>
+    <string name="permdesc_googleAuth_YouTubeUser">애플리케이션이 Android 기기에 저장된 Google 계정과 연결된 YouTube 사용자 이름을 볼 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_talk">Google 토크</string>
+    <string name="permdesc_googleAuth_talk">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 토크에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_ig">iGoogle 계정</string>
+    <string name="permdesc_googleAuth_ig">애플리케이션이 Android 기기에 저장된 계정을 사용하여 iGoogle에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_lh2">Picasa 웹앨범</string>
+    <string name="permdesc_googleAuth_lh2">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Picasa 웹앨범에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_mobile">Google 모바일 애플리케이션</string>
+    <string name="permdesc_googleAuth_mobile">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 모바일 애플리케이션에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_cp">Google 계정의 주소록 데이터</string>
+    <string name="permdesc_googleAuth_cp">애플리케이션이 Android 기기에 저장된 계정의 주소록과 프로필 정보에 액세스할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_adsense">애드센스</string>
+    <string name="permdesc_googleAuth_adsense">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 애드센스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_adwords">애드워즈</string>
+    <string name="permdesc_googleAuth_adwords">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 애드워즈에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Blogger에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Dodgeball에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google Base에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_groups2">Google 그룹스</string>
+    <string name="permdesc_googleAuth_groups2">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 그룹스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google Health에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">애플리케이션이 Android 기기에 저장된 계정을 사용하여 JotSpot에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_knol">놀(Knol)</string>
+    <string name="permdesc_googleAuth_knol">애플리케이션이 Android 기기에 저장된 계정을 사용하여 놀에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_news">Google 뉴스</string>
+    <string name="permdesc_googleAuth_news">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 뉴스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">애플리케이션이 Android 기기에 저장된 계정을 사용하여 orkut에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_print">Google 도서</string>
+    <string name="permdesc_googleAuth_print">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 도서에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_sitemaps">Google 웹마스터 도구</string>
+    <string name="permdesc_googleAuth_sitemaps">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 웹마스터 도구에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google WiFi에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_writely">Google 문서도구</string>
+    <string name="permdesc_googleAuth_writely">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 문서도구에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_wise">Google 스프레드시트</string>
+    <string name="permdesc_googleAuth_wise">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 스프레드시트에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google Finance에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_local">Google 지도</string>
+    <string name="permdesc_googleAuth_local">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 지도에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google App Engine에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_notebook">Google 노트</string>
+    <string name="permdesc_googleAuth_notebook">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 노트에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">애플리케이션이 Android 기기에 저장된 계정을 사용하여 Google 보이스에 로그인할 수 있도록 합니다.</string>
+    <string name="permlab_googleAuth_speechpersonalization">맞춤 음성 인식</string>
+    <string name="permdesc_googleAuth_speechpersonalization">애플리케이션이 Android 기기에 저장된 계정을 사용하여 맞춤 음성 인식 서비스에 로그인할 수 있도록 합니다.</string>
+    <string name="gls_notification_title">계정에 로그인</string>
+    <string name="gls_notification_new_account">^1 계정 필요</string>
+    <string name="gls_notification_new_account_youtube">YouTube 계정 필요</string>
+    <string name="gls_notification_login_error">계정에 로그인하려면 터치하세요.</string>
+    <string name="gls_ui_add_account_title">계정 설정</string>
+    <string name="gls_ui_google_account_subtitle">Google 계정</string>
+    <string name="gls_ui_activity_title">Google 로그인</string>
+    <string name="gls_ui_activity_title_browser_signin">브라우저 로그인</string>
+    <string name="gls_ui_activity_title_enterprise">회사 로그인</string>
+    <string name="gls_ui_activity_title_youtube">YouTube 로그인</string>
+    <string name="gls_ui_activity_authenticating">인증하는 중...</string>
+    <string name="gls_captcha_activity_message">그림에 표시된 문자를 입력하세요.</string>
+    <string name="gls_captcha_activity_ok_button">완료</string>
+    <string name="gls_error_activity_message"><b>^1</b>"에 로그인하는 동안 네트워크 오류가 발생했습니다. 지금 다시 시도하거나, 취소하려면 '뒤로' 버튼을 누르세요."</string>
+    <string name="gls_error_activity_retry_button">다시 시도</string>
+    <string name="gls_dmagent_activity_message">" 도메인에 휴대기기 관리가 필요합니다. Google Apps Device Policy 애플리케이션을 설치하여 "<b>^1</b> 계정에 필요한 보안 정책을 실행하세요.</string>
+    <string name="gls_dmagent_activity_retry_button">다운로드</string>
+    <string name="gls_login_activity_username_label">사용자 이름</string>
+    <string name="gls_login_activity_password_label">비밀번호</string>
+    <string name="gls_login_activity_ok_button">로그인</string>
+    <string name="gls_login_activity_loginfail_text_both">사용자 이름 또는 비밀번호가 잘못되었습니다. <b>^1</b> 계정이 필요합니다. 다시 시도해 주세요.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">비밀번호를 잘못 입력했거나 계정이 변경되었습니다. 비밀번호를 다시 입력하세요.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">이 계정의 비밀번호를 입력하세요.</string>
+    <string name="gls_enterprise_login_activity_msg">"인증하려면 ^1에서 회사 계정으로 로그인하세요.
+회사의 웹기반 로그인 페이지를 열려면 터치하여 로그인하세요."</string>
+    <string name="gls_login_activity_badaccount_text">이 계정을 사용할 수 없습니다. 다른 계정을 사용하세요.</string>
+    <string name="gls_login_activity_newaccount_text"><b>^1</b> 계정에 로그인하세요.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">YouTube 계정이 없으십니까? 계정을 만들려면 <a href="http://www.youtube.com/signup">여기</a>를 터치하세요.</string>
+    <string name="gls_settings_tos_activity_title">Google 법적 고지</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">데이터 서비스에 연결되어 있지 않습니다. 지금 이 정보를 보려면 인터넷에 연결된 컴퓨터에서 %s(으)로 이동하세요.</string>
+    <string name="gls_settings_contributors_activity_title">도움을 주신 분들</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">데이터 서비스에 연결되어 있지 않습니다. 지금 이 정보를 보려면 인터넷에 연결된 컴퓨터에서 %s(으)로 이동하세요.</string>
+    <string name="gls_webview_progress_title">도메인에 연결 중...</string>
+    <string name="gls_webview_progress_verbose_message">"회사 서버에서 로그인 정보를 보내는 중입니다. 이 작업은 몇 분 정도 걸릴 수 있습니다.
+작업이 완료되면 회사의 로그인 페이지가 표시됩니다."</string>
+    <string name="gls_sign_in_button_label">로그인</string>
+    <string name="gls_back_button_label">뒤로</string>
+    <string name="gls_cancel_button_label">취소</string>
+    <string name="gls_exit_account_setup_button_label">계정 설정 종료</string>
+    <string name="gls_reauthorize_button_label">재인증</string>
+    <string name="gls_sign_in_message">Android 기기에서 Google 서버와 통신하여 계정을 설정해야 합니다. 최대 5분 정도 걸릴 수 있습니다.</string>
+    <string name="gls_sign_in_title">로그인하는 중...</string>
+</resources>

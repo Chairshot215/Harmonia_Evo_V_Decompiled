@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/recipientBlock" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?com.htc:titleBarBackgroundStyleLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sender_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/readscreen_recipient_block_margin_horizontal" android:layout_marginTop="@dimen/readscreen_recipient_block_margin_vertical" android:layout_marginRight="@dimen/readscreen_recipient_block_margin_horizontal">
+        <TextView android:gravity="center" android:id="@id/senderLabel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" style="@style/readscreen_label" />
+        <com.htc.widget.QuickContactBadge android:layout_gravity="left|center" android:id="@id/senderImage" android:paddingLeft="@dimen/readscreen_recipient_block_senderimage_padding" android:paddingTop="@dimen/readscreen_recipient_block_senderimage_padding" android:paddingRight="@dimen/readscreen_recipient_block_senderimage_padding" android:paddingBottom="@dimen/readscreen_recipient_block_senderimage_padding" android:visibility="gone" android:clickable="false" android:layout_width="@com.htc:integer/header_bar_image_frame_size" android:layout_height="@com.htc:integer/header_bar_image_frame_size" />
+        <FrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/readscreen_recipient_block_margin_horizontal" android:layout_weight="1.0">
+            <com.htc.android.mail.widget.HtcPhotoButton android:id="@id/senderBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageView android:id="@id/expand_icon" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/readscreen_recipient_block_margin_horizontal" android:src="@com.htc:drawable/common_icon_glance_pulldown_up_rest" android:scaleType="center" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/toBtnListSapphireMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/readscreen_recipient_block_margin_horizontal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ccBtnListSapphireMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/readscreen_recipient_block_margin_horizontal" />
+    <ViewStub android:id="@id/stub_tagListMain" android:layout="@layout/read_screen_tag_block" android:inflatedId="@id/tagListMain" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/margin_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/readscreen_recipient_block_margin_vertical" />
+</LinearLayout>

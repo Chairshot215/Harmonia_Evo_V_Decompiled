@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.RateReviewSection android:orientation="horizontal" android:id="@id/rate_and_review_section" android:background="@drawable/highlight_overlay" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.AccessibleTextView android:layout_gravity="center_vertical" android:id="@id/my_rating_text" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/details_special_row_min_height" android:layout_weight="1.0" style="@style/DetailsPage_HeaderText" />
+    <RatingBar android:layout_gravity="center_vertical" android:id="@id/my_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/details_content_margin" android:numStars="5" android:stepSize="1.0" style="@style/FinskyRatingBarMedium" />
+</com.google.android.finsky.layout.RateReviewSection>

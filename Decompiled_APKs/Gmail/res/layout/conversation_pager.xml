@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/conversation_pager" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/position_bar_frame" android:background="@color/position_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/position_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@*android:color/white" android:id="@id/newer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/previous" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@*android:color/white" android:id="@id/position" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textColor="@*android:color/white" android:id="@id/older" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/next" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.google.android.gm.CustomViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/conversation_page_side_margin" android:layout_marginRight="@dimen/conversation_page_side_margin" android:layout_above="@id/position_bar_frame" />
+</RelativeLayout>

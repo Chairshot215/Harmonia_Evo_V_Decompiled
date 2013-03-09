@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/LoginActivityOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:minHeight="@dimen/title_height" android:text="@string/login_activity_title" android:layout_alignParentLeft="true" />
+    <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_divider">
+        <View style="@style/InputFieldSideView" />
+        <LinearLayout android:orientation="vertical" android:layout_marginTop="@dimen/input_field_vmargins" android:layout_below="@id/top_divider" android:layout_centerHorizontal="true" style="@style/InputFieldView">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/description_margin_sides" android:layout_marginTop="@dimen/input_field_vmargins" android:layout_marginRight="@dimen/description_margin_sides" android:layout_marginBottom="5.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:id="@id/username_fixed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/description_margin_sides" android:layout_marginTop="@dimen/input_field_vmargins" android:layout_marginRight="@dimen/description_margin_sides" android:singleLine="true" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:id="@id/username_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:hint="@string/username" android:singleLine="true" android:selectAllOnFocus="true" android:capitalize="none" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:id="@id/password_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:hint="@string/password" android:password="true" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textPassword" android:imeOptions="actionDone" />
+            <TextView android:id="@id/sign_in_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:text="@string/sign_in_agreement" />
+        </LinearLayout>
+        <View style="@style/InputFieldSideView" />
+    </LinearLayout>
+    <Button android:id="@id/back_button" android:text="@string/back_button_label" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BackButton" />
+    <Button android:id="@id/next_button" android:text="@string/sign_in_button_label" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+</RelativeLayout>

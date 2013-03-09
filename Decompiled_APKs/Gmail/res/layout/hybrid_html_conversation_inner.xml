@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.gm.CustomWebView android:id="@id/web_view" style="@style/conversation_scrollable" />
+    <com.google.android.gm.MessageHeaderScrollView android:id="@id/conversation_overlay_scrollview" style="@style/conversation_scrollable">
+        <com.google.android.gm.HybridConversationScrollContainer android:id="@id/header_scroll_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.gm.MessageHeaderScrollView>
+    <include android:id="@id/snappy_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/conversation_side_padding" android:layout_marginRight="@dimen/conversation_side_padding" layout="@layout/conversation_message_header" />
+    <com.google.android.gm.ScrollIndicatorsView android:scrollbarStyle="outsideOverlay" android:id="@id/scroll_indicators" android:paddingLeft="@dimen/conversation_side_padding" android:paddingRight="@dimen/conversation_side_padding" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

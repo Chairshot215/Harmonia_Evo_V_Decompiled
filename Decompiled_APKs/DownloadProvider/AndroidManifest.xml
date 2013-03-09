@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" android:versionCode="100345400" android:versionName="1.0.2213292226.345400" package="com.android.providers.downloads"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_downloadManager" android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_downloadManager" />
+    <permission android:label="@string/permlab_downloadManagerAdvanced" android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_downloadManagerAdvanced" />
+    <permission android:label="@string/permlab_downloadCompletedIntent" android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" android:protectionLevel="signature" android:description="@string/permdesc_downloadCompletedIntent" />
+    <permission android:label="@string/permlab_downloadCacheNonPurgeable" android:name="android.permission.DOWNLOAD_CACHE_NON_PURGEABLE" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_downloadCacheNonPurgeable" />
+    <permission android:label="@string/permlab_downloadWithoutNotification" android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" android:protectionLevel="normal" android:permissionGroup="android.permission-group.NETWORK" android:description="@string/permdesc_downloadWithoutNotification" />
+    <permission android:label="@string/permlab_accessAllDownloads" android:name="android.permission.ACCESS_ALL_DOWNLOADS" android:protectionLevel="signature" android:description="@string/permdesc_accessAllDownloads" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL" />
+    <uses-permission android:name="android.permission.MODIFY_NETWORK_ACCOUNTING" />
+    <uses-permission android:name="android.permission.INSTALL_DRM" />
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="android.permission.READ_WRITE_OMA_DRM" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <application android:label="@string/app_label" android:process="android.process.media" allowSkinChange="true">
+        <provider android:name=".DownloadProvider" android:authorities="downloads">
+            <path-permission android:permission="android.permission.INTERNET" android:pathPrefix="/my_downloads" />
+            <path-permission android:permission="android.permission.ACCESS_ALL_DOWNLOADS" android:pathPrefix="/all_downloads" />
+            <path-permission android:permission="android.permission.INTERNET" android:pathPrefix="/download" />
+            <grant-uri-permission android:pathPrefix="/all_downloads/" />
+        </provider>
+        <service android:name=".DownloadService" android:permission="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+        <receiver android:name=".DownloadReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Translucent" android:name=".SizeLimitActivity" android:launchMode="singleTask" />
+    </application>
+</manifest>

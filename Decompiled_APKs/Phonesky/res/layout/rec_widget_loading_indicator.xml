@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_play_store_icon_watermark" android:scaleType="fitStart" />
+    <ProgressBar android:layout_gravity="top" android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal" />
+</FrameLayout>

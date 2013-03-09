@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/online_avatar_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.QuickContactBadge android:id="@id/online_avatar_image" android:layout_width="@dimen/extra_comments_quick_contact_badge_width" android:layout_height="@dimen/extra_comments_quick_contact_badge_height" android:layout_marginLeft="@dimen/extra_comments_contacts_padding_left" android:layout_marginTop="@dimen/extra_comments_contacts_padding_top" android:layout_marginRight="@dimen/extra_comments_contacts_padding_right" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/list_item_text_padding_top" android:paddingRight="@dimen/list_item_text_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/online_avatar_image">
+        <TextView android:textColorLink="@com.htc:color/link_text" android:id="@id/online_avatar_text" android:paddingBottom="@dimen/list_item_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <LinearLayout android:id="@id/online_shared_image_description" android:paddingBottom="@dimen/list_item_text_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/online_shared_image_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s_bold" />
+            <TextView android:id="@id/online_shared_image_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        </LinearLayout>
+        <RelativeLayout android:paddingRight="@dimen/list_item_share_image_padding_right" android:paddingBottom="@dimen/list_item_share_image_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/online_shared_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        </RelativeLayout>
+        <TextView android:id="@id/online_shared_image_time" android:paddingBottom="@dimen/list_item_text_second_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_m_italic" />
+    </LinearLayout>
+</RelativeLayout>

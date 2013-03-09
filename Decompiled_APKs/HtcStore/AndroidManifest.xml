@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="305356386" android:versionName="3.5.2213402139.356386" package="com.htc.store"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.htc.home.personalize.permission.INSTALL_ONLINE_RESOURCE" />
+    <uses-permission android:name="com.htc.cs.readwrite.database" />
+    <uses-permission android:name="com.htc.csengine.readwrite.database" />
+    <permission android:name="com.htc.store.permission.UNREGISTER_ACCOUNT" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:allowClearUserData="false" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/ThemeDefault.NoAnimation" android:name=".activity.landing.LandingTab" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.detail.DetailTab" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.EntryActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.store.action.ENTRY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.DispatchActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.store.action.DISPATCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.landing.LandingHub" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.landing.LandingOperator" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.landing.LandingFriendsComment" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.landing.LandingMyActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.landing.DeleteMarkedItem" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.landing.SearchMyActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.list.ListCategory" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.list.ListItem" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.preview.PreviewItem" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.detail.DetailInfo" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.detail.DetailComments" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.detail.DetailSimilar" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.TestActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.setting.SettingMain" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDefault" android:name=".activity.setting.SettingNotification" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <provider android:name=".provider.ContentProvider" android:authorities="com.htc.store.provider.ContentProvider" android:syncable="false" />
+        <provider android:name=".provider.CarouselProvider" android:exported="false" android:authorities="com.htc.store.provider.CarouselProvider" android:syncable="false" />
+        <receiver android:name=".receiver.InstallReceiver">
+            <intent-filter>
+                <data android:scheme="package" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.store.action.UPDATE_DOWNLOAD_STATUS" />
+                <action android:name="com.htc.store.action.SHOW.INSTALL.STATUS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.RequestReceiver">
+            <intent-filter>
+                <action android:name="com.htc.store.action.GET_MY_ACTIVITY_ONLINE_ITEM_IDS" />
+                <action android:name="com.htc.store.action.DOWNLOAD_ITEM" />
+                <action android:name="com.htc.store.action.DOWNLOAD_SOUNDSET" />
+                <action android:name="com.htc.store.action.GET_ONLINE_ITEMS" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETED" />
+                <action android:name="com.htc.store.action.INITIALIZE_DOWNLOAD_SOUNDSET_TASK" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.PeriodicalAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.htc.launcher.intent.LOADING_COMPLETE" />
+                <action android:name="com.htc.cs.connectedservice.loginsuccess" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.SyncReceiver">
+            <intent-filter>
+                <action android:name="com.htc.store.start.sync" />
+                <action android:name="com.htc.settings.accountsync.SYNC_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.AccountRemoveReceiver" android:permission="com.htc.store.permission.UNREGISTER_ACCOUNT">
+            <intent-filter>
+                <action android:name="com.htc.cs.connectedservice.accountremove" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.DeleteMarkedItemsReceiver">
+            <intent-filter>
+                <action android:name="com.htc.store.delete.marked.item" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.CheckUpdatesService">
+            <intent-filter>
+                <action android:name="com.htc.store.action.CHECK_UPDATES" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.ClearCachedImagesService">
+            <intent-filter>
+                <action android:name="com.htc.store.action.CLEAR_CACHED_IMAGES" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.SyncInstallationStatusService">
+            <intent-filter>
+                <action android:name="com.htc.store.action.SYNC_STATUS" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.CheckContentInServerService">
+            <intent-filter>
+                <action android:name="com.htc.store.action.CheckContentInServer" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.SyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter" />
+        </service>
+        <service android:name=".service.PeriodicalAlarmReceiveService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.store.action.PeriodicalAlarmReceive" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

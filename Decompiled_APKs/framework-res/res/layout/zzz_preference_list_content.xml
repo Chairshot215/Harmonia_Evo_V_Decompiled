@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/parentPanel" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="10.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/headers" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:listPreferredItemHeight="48.0dip" android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0px" android:drawSelectorOnTop="false" android:cacheColorHint="@color/transparent" android:divider="@drawable/divider_horizontal_dark_opaque" android:layout_weight="1.0" />
+                <FrameLayout android:id="@id/list_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+            <View android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/prefs_frame" android:background="#ff000000" android:visibility="gone" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="20.0">
+            <ImageView android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0px" android:src="#ff404040" android:scaleType="fitXY" />
+            <android.preference.PreferenceFrameLayout android:id="@id/prefs" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-1.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/button_bar" android:background="@drawable/bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <Button android:id="@id/back_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/back_button_label" android:layout_weight="1.0" android:layout_alignParentLeft="true" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentRight="true">
+            <Button android:id="@id/skip_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/skip_button_label" />
+            <Button android:id="@id/next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/next_button_label" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

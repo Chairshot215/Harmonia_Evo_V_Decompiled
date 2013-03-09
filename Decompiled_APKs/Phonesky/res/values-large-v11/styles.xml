@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogWhenLarge" parent="@*android:style/Theme.Holo.Light.Dialog.MinWidth">
+        <item name="android:windowBackground">@color/loading_background</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+    </style>
+    <style name="DialogDarkWhenLarge" parent="@*android:style/Theme.Holo.Dialog.MinWidth">
+        <item name="android:windowBackground">@color/loading_background</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+    </style>
+</resources>

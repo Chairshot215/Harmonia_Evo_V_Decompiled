@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/storage_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/internal_memory" android:key="internal_memory_category">
+        <com.android.settings.deviceinfo.UsageBarPreference android:key="memory_internal_chart" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_size" android:key="memory_internal_size" android:summary="@string/memory_calculating_size" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_apps_usage" android:key="memory_internal_apps" android:summary="@string/memory_calculating_size" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_downloads_usage" android:key="memory_internal_downloads" android:summary="@string/memory_calculating_size" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_dcim_usage" android:key="memory_internal_dcim" android:summary="@string/memory_calculating_size" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_music_usage" android:key="memory_internal_music" android:summary="@string/memory_calculating_size" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_media_misc_usage" android:key="memory_internal_media_misc" android:summary="@string/memory_calculating_size" />
+        <com.htc.preference.HtcPreference android:title="@string/memory_available" android:key="memory_internal_avail" android:summary="@string/memory_calculating_size" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

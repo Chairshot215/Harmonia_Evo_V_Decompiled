@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" />
+    <style name="Theme.base" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+    </style>
+    <style name="HtcListStyle">
+        <item name="android:background">@color/listview_background</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@com.htc:drawable/common_divider_items</item>
+    </style>
+    <style name="noTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

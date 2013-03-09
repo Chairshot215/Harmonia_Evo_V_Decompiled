@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <TextView android:id="@com.htc:id/txt_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htc_emergency_hint" style="@style/title_primary_rest_m" />
+    </LinearLayout>
+    <include layout="@layout/dtmf_display" />
+    <include android:id="@com.htc:id/keyPad" layout="@layout/htc_dialpad" />
+    <com.htc.widget.HtcFooter android:id="@com.htc:id/cmd_bar_1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView style="@style/style_taskbar_left_right_button" />
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_1" style="@style/style_taskbar_center_button" />
+        <ImageView style="@style/style_taskbar_left_right_button" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="@dimen/trans_topround_height" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/htc_unlock_pin_header_text_font_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/hTC_ShadowText1" />
+        <TextView android:textSize="@dimen/htc_unlock_pin_emergency_font_size" android:layout_gravity="center" android:id="@id/headerText2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@*android:drawable/ic_lock_idle_lock" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="@dimen/htc_unlock_pin_emergency_font_size" android:gravity="center" android:layout_gravity="center" android:id="@id/headerText3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keyguard_hint_about_ecc" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/topDisplayGroup" android:background="@drawable/accumulator_bg" android:layout_width="fill_parent" android:layout_height="@dimen/htc_unlock_pin_accumulator_height">
+        <TextView android:textSize="@dimen/htc_unlock_pin_accumulator_font_size" android:textColor="#ffffffff" android:gravity="right" android:id="@id/pinDisplay" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/htc_unlock_pin_accumulator_right_margin" android:layout_marginRight="@dimen/htc_unlock_pin_accumulator_left_margin" android:maxLines="1" android:layout_weight="1.0" android:inputType="textPassword" style="@com.htc:style/hTC_ShadowText1" />
+        <ImageButton android:id="@id/backspace" android:background="@drawable/htc_btn_dial_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/htc_unlock_pin_backsapce_top_margin" android:layout_marginRight="@dimen/htc_unlock_pin_backsapce_right_margin" android:src="@drawable/phone_icon_backspace" android:scaleType="center" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <include layout="@com.htc:layout/pin_keyboard" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height" android:layout_alignParentBottom="true" style="?com.htc:commandBarBackgroundStyle">
+        <Button android:textSize="@dimen/cmd_bar_btn_fontsize" android:id="@id/cmd_bar_btn_1" android:background="?attr_common_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/cmd_bar_btn_width" android:text="@string/CDMA_EMERGENCY_CALL" />
+    </LinearLayout>
+</LinearLayout>

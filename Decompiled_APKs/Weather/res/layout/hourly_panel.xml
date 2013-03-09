@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tab_hourly" android:background="@color/detail_bkg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hour_locate_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/hour_locate_img_height" android:layout_marginLeft="@dimen/today_info_city_name_margin_left" android:src="@drawable/icon_my_location_dark" android:scaleType="centerInside" />
+    <TextView android:textSize="@dimen/hourly_city_name_font" android:gravity="center_vertical" android:id="@id/hour_city_name" android:layout_width="wrap_content" android:layout_height="@dimen/hour_city_name_height" android:layout_toRightOf="@id/hour_locate_img" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/hour_update_info" android:layout_width="wrap_content" android:layout_height="@dimen/hour_city_time_height" android:layout_marginRight="@dimen/hour_city_time_margin_right" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/hourly_city_time_font" android:gravity="center_vertical" android:id="@id/hour_city_time" android:layout_width="wrap_content" android:layout_height="@dimen/hour_city_time_height" android:layout_alignBaseline="@id/hour_city_name" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/hourly_city_time_font" android:gravity="center_vertical" android:id="@id/anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/accu_logo_layout_height" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/hourly_scrollview" android:layout_width="@dimen/hourly_scrollview_height" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/scrollveiw_margin_left" android:layout_marginTop="@dimen/scrollveiw_margin_top" android:layout_below="@id/hour_city_name">
+        <RelativeLayout android:layout_width="@dimen/draw_frame_width" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/draw_frame" android:layout_width="@dimen/draw_frame_width" android:layout_height="@dimen/draw_frame_height" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/info_table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hourly_scrollview_height" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+    <View android:id="@id/left_white_bar" android:background="@color/detail_bkg_color" android:layout_width="@dimen/left_white_bar_width" android:layout_height="@dimen/left_white_bar_height" android:layout_marginLeft="@dimen/left_white_bar_left_margin" android:layout_marginTop="@dimen/left_white_bar_top_margin" android:layout_below="@id/hour_city_name" />
+    <View android:background="@color/detail_bkg_color" android:layout_width="@dimen/right_white_bar_width" android:layout_height="@dimen/right_white_bar_height" android:layout_marginLeft="@dimen/right_white_bar_left_margin" android:layout_marginTop="@dimen/right_white_bar_top_margin" android:layout_alignParentRight="true" />
+    <View android:background="@color/detail_bkg_color" android:layout_width="@dimen/left_white_area_width" android:layout_height="@dimen/left_white_area_height" android:layout_marginTop="@dimen/right_white_bar_top_margin" />
+    <ImageView android:id="@id/hour_tmp_img" android:visibility="gone" android:layout_width="@dimen/hourly_humidity_img_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hourly_tmp_img_margin_left" android:layout_marginTop="@dimen/hourly_tmp_img_margin_top" android:src="@drawable/icon_humidity" android:scaleType="centerInside" />
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/temp_table" android:layout_width="@dimen/temp_table_width" android:layout_height="@dimen/temp_table_height" android:layout_marginLeft="@dimen/temp_table_margin_left" android:layout_marginTop="@dimen/temp_table_margin_top" />
+    <TextView android:textSize="@dimen/textsize" android:textColor="#ffffffff" android:gravity="center" android:id="@id/hour_error_msg" android:background="@color/error_view_bkg" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/nodatamsg" />
+</RelativeLayout>

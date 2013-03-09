@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height">
+        <TextView android:gravity="center_horizontal" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/text_style_primary" />
+        <TextView android:gravity="center_horizontal" android:id="@id/event_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/name" style="@style/text_style_secondary" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/action_item_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@com.htc:drawable/common_list_divider" android:scaleType="fitXY" />
+            <Button android:ellipsize="marquee" android:gravity="center" android:id="@id/ButtonCancel" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_photo" android:layout_marginTop="@dimen/event_dialog_text_margin_top" android:layout_marginRight="@dimen/text_margin_left_photo" android:layout_marginBottom="@dimen/event_dialog_text_margin_top" android:text="@string/noButton" android:singleLine="true" style="@style/text_style_primary" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

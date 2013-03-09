@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/item_main_bar" android:background="@drawable/photo_bar" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:paddingBottom="@dimen/mainbar_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/view_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photo_review" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_effect" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:paddingBottom="@dimen/mainbar_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/view_effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photo_effect" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_settings" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/view_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_setting" android:text="@string/main_bar_settings_description" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_flash" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/view_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_bar_flash_description" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+        </RelativeLayout>
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_scene_quality" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/view_scene_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_camera_switch" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/icon_camera_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_bar_switch_description" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+        </RelativeLayout>
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mainbar_item_height" android:layout_weight="1.0">
+            <Button android:id="@id/btn_mode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:paddingBottom="@dimen/mainbar_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/view_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_mode_normal" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/shutter_bar_imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/shutter_bar" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/on_screen_view" android:layout="@layout/on_screen_layout" android:inflatedId="@id/on_screen_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/receiver_main_bar" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/handle_height" android:layout_alignParentBottom="true">
+        <View android:id="@id/receiver_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_effect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_settings" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_flash" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/receiver_capture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mainbar_shutter_btn_margin_top" android:layout_marginBottom="@dimen/mainbar_shutter_btn_margin_bottom" android:src="@drawable/shutter_btn_rest" android:scaleType="center" android:layout_weight="1.0" />
+        <View android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_scene_quality" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_camera_switch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100253498" android:versionName="1.0.2211232632.253498" package="com.htc.musicenhancer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false" allowSkinChange="true">
+        <service android:name=".EnhancerService" android:permission="com.htc.music.permission.ENHANCER_SERVICE" android:exported="true" />
+        <activity android:theme="@*android:style/Theme.Dialog.Alert" android:label="@string/download_albumart_title" android:name="ProgressActivity" android:launchMode="singleInstance" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@style/Transparent" android:name=".DialogActivity" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="action_show_data_fee_warning" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="action_show_connection_fail" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".EnhancerReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="action_start_music_activity" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.musicenhancer.action_first_download" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.musicenhancer.action_press_cancel_notif" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.htc.musicenhancer.provider.MScannerReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.htc.musicenhancer.provider.DownloadProvider" android:permission="com.htc.music.permission.ENHANCER_SERVICE" android:process=":enhancerprovider" android:authorities="music" />
+    </application>
+    <permission android:name="com.htc.music.permission.ENHANCER_SERVICE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.htc.music.permission.ENHANCER_SERVICE" />
+</manifest>

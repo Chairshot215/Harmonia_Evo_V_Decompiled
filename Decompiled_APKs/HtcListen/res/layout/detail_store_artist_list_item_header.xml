@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/listItem_h" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/listItem_h_left" android:layout_width="230.0px" android:layout_height="250.0px">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="20.0px">
+            <ImageView android:layout_gravity="right|center" android:id="@id/album_art" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0px" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/album_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/music_detail_song_cover" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px">
+            <ImageView android:layout_gravity="right" android:id="@id/album_art_reflection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0px" android:layout_marginRight="6.0px" />
+            <ImageView android:layout_gravity="left" android:id="@id/album_cover_reflection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="vertical" android:id="@id/listItem_h_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="10.0px">
+        <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/listItem_h_right1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/artist_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/number_of_albums" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/listItem_h_right2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0px">
+            <ImageButton android:id="@id/share_on" android:background="@drawable/common_detail_btn" android:layout_width="225.0px" android:layout_height="90.0px" android:src="@com.htc:drawable/common_icon_share_on" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

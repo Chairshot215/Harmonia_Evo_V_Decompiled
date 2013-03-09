@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/transparent" android:paddingLeft="13.0px" android:paddingTop="18.0px" android:paddingRight="13.0px" android:paddingBottom="18.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/title_margin_small" style="@com.htc:style/list_primary_s" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/text2_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/title_margin_small">
+        <TextView android:id="@id/text2_1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s_bold" />
+        <TextView android:id="@id/text2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@com.htc:dimen/cmd_bar_padding" style="?android:attr/progressBarStyleHorizontal" />
+</LinearLayout>

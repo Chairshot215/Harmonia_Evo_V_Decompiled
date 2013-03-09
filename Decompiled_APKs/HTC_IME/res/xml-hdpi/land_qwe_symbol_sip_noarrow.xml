@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="95px" hgap="0px" vgap="0px" height="77px" keyTextSize="35px" popupTextSize="45px" keyboardBackground="@drawable/sapphire_land_background" keyboardPadding="0,7,5,5" functionKeyBackground="@drawable/sapphire_landscape_function_key" commonKeyBackground="@drawable/sapphire_landscape_common_key" closeKeyBackground="@drawable/qwerty_land_close_key">
+    <row>
+        <key codes="0x0031,0x20AC" label="1" hgap="5px" leftEdge="true" />
+        <key codes="0x0032,0x00A5" label="2" />
+        <key codes="0x0033,0x00A3" label="3" />
+        <key codes="0x0034,0x007E" label="4" />
+        <key codes="0x0035,0x003D" label="5" />
+        <key codes="0x0036,0x005C" label="6" />
+        <key codes="0x0037,0x005E" label="7" />
+        <key codes="0x0038,0x005B" label="8" />
+        <key codes="0x0039,0x005D" label="9" />
+        <key codes="0x0030,0x00A1" label="0" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="0x0021,0x00BF" label="!" hgap="53px" leftEdge="true" />
+        <key codes="0x0040,0x007B" label="\@" />
+        <key codes="0x0023,0x007D" label="\#" />
+        <key codes="0x0024,0x003C" label="$" />
+        <key codes="0x0025,0x003E" label="%" />
+        <key codes="0x0026,0x00A6" label="&amp;" />
+        <key codes="0x002A,0x00A7" label="*" />
+        <key codes="0x003F,0x00AB" label="\?" />
+        <key codes="0x002F,0x00BB" label="/" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="0x005F,-13" label="_" text=":)" hgap="99px" leftEdge="true" />
+        <key codes="0x0022,-13" label="&quot;" text=";)" hgap="1px" />
+        <key codes="0x0027,-13" label="'" text=":(" />
+        <key codes="0x0028,-13" label="(" text=":'(" />
+        <key codes="0x0029,-13" label=")" text=":o" />
+        <key codes="0x002D,-13" label="-" text=":P" />
+        <key codes="0x002B,-13" label="+" text=":$" />
+        <key codes="0x003B,-13" label=";" text=":S" />
+        <key codes="0x0008" width="92px" hgap="2px" function="true" repeatable="true" rightEdge="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" />
+    </row>
+    <row>
+        <key codes="-4" width="102px" hgap="7px" function="true" leftEdge="true" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-12" label="1/2" width="92px" hgap="3px" textScale="80%p" function="true" />
+        <key codes="0x003A,0x003A" label=":" hgap="1px" />
+        <key codes="0x002C,0x002C" label="," />
+        <key codes="0x0020" width="275px" showPreview="false" icon="@drawable/key_icon_space" />
+        <key codes="0x002E,0x002E" label="." />
+        <key codes="-11" label="ABC" width="92px" hgap="2px" function="true" textScale="70%p" />
+        <key codes="0x000A" width="92px" hgap="3px" function="true" sticky="true" icon="@drawable/key_icon_enter_toggle" iconPreview="@drawable/sapphire_icon_enter_toggle" rightEdge="true" />
+    </row>
+</keyboard>

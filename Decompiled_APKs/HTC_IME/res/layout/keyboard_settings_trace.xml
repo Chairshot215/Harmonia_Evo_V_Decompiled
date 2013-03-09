@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/trace_keyboard_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/trace_keyboard_settings_trace_prediction_title" android:key="@string/trace_keyboard_settings_trace_prediction" android:summary="@string/trace_keyboard_settings_trace_prediction_summary" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_handwriting_color_entries" android:title="@string/trace_keyboard_settings_trace_color_title" android:key="@string/trace_keyboard_settings_stroke_color" android:dependency="trace_keyboard_settings_trace_prediction" android:entryValues="@array/keyboard_handwriting_color_values" />
+    <com.htc.android.htcime.settings.StrokeSeekBarPreference android:persistent="false" android:title="@string/trace_keyboard_settings_trace_width_title" android:key="@string/trace_keyboard_settings_stroke_width" android:dependency="trace_keyboard_settings_trace_prediction" />
+    <com.htc.android.htcime.settings.StrokeSeekBarPreference android:persistent="false" android:title="@string/keyboard_handwriting_settings_writing_stroke_speed_title" android:key="@string/trace_keyboard_settings_auto_commit_speed" android:dependency="trace_keyboard_settings_trace_prediction" />
+</com.htc.preference.HtcPreferenceScreen>

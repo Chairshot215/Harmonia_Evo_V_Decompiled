@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center_vertical" android:id="@id/sound_effect_icon" android:paddingLeft="@com.htc:dimen/htc_list_item_image_icon_left_margin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <CheckedTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/text1" android:paddingLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="?com.htc:attr_common_radiobutton" android:minHeight="@com.htc:dimen/htc_list_item_height" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+    <Button android:gravity="left|center" android:id="@id/btn1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:layout_marginBottom="13.0px" style="@com.htc:style/list_primary_m" />
+</LinearLayout>

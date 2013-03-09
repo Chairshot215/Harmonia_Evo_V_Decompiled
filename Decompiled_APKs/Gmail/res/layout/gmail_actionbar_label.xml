@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/label_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/labels" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/labels" android:singleLine="true" android:includeFontPadding="false" style="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
+    <TextView android:textColor="@color/actionbar_secondary" android:ellipsize="end" android:id="@id/account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle" />
+</LinearLayout>

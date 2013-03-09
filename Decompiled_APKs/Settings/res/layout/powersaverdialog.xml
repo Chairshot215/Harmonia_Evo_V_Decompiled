@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@com.htc:dimen/list_primary_m" android:textColor="@*android:color/white" android:id="@id/dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="19.0px" android:layout_marginRight="19.0px" android:text="@string/powersaver_servicedialog_message" />
+        <CheckBox android:textSize="@com.htc:dimen/htc_text_appearance_small" android:id="@id/dialog_show_again" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:text="@string/powersaver_servicedailog_checkbox_msg" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@com.htc:id/txt_1x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addContact_description" style="@com.htc:style/list_secondary_xl" />
+    <TextView android:gravity="center" android:id="@com.htc:id/txt_2x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/addContact_description" style="@com.htc:style/list_secondary_unread_xl" />
+    <FrameLayout android:gravity="center" android:paddingLeft="@com.htc:dimen/htc_list_item_padding_medium" android:paddingRight="@com.htc:dimen/htc_list_item_padding_medium" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@*android:id/button1" android:background="@com.htc:drawable/common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_save_to_new" style="@com.htc:style/list_secondary_unread_xl" />
+    </FrameLayout>
+    <include layout="@layout/htc_list_item_divider" />
+    <FrameLayout android:gravity="center" android:paddingLeft="@com.htc:dimen/htc_list_item_padding_medium" android:paddingRight="@com.htc:dimen/htc_list_item_padding_medium" android:layout_width="fill_parent" android:layout_height="@dimen/save_phone_dlg_list_height">
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@*android:id/button2" android:background="@com.htc:drawable/common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_save_to_exist" style="@com.htc:style/list_secondary_unread_xl" />
+    </FrameLayout>
+</LinearLayout>

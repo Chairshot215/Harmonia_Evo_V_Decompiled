@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.browser.preferences.NonformattingListPreference android:entries="@array/pref_homepage_choices" android:title="@string/pref_content_homepage" android:key="homepage_picker" android:entryValues="@array/pref_homepage_values" />
+    <PreferenceCategory android:title="@string/pref_general_autofill_title">
+        <CheckBoxPreference android:title="@string/pref_autofill_enabled" android:key="autofill_enabled" android:summary="@string/pref_autofill_enabled_summary" android:defaultValue="true" />
+        <PreferenceScreen android:title="@string/pref_autofill_profile_editor" android:key="autofill_profile" android:summary="@string/pref_autofill_profile_editor_summary" android:fragment="com.android.browser.AutoFillSettingsFragment" />
+    </PreferenceCategory>
+</PreferenceScreen>

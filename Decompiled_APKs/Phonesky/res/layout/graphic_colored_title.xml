@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.AccessibleFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <View android:background="@color/uneven_grid_cell_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.finsky.layout.CellWithOverlay android:id="@id/grid_cell_content" android:background="@drawable/market_grid_bg_2x2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/promoted_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.google.android.finsky.layout.CellTitleOverlay android:id="@id/cell_overlay" finsky:min_width_percent="0.25" finsky:max_width_percent="0.95" style="@style/CellTitleOverlayText" />
+        <View android:background="@color/uneven_grid_cell_top_highlight" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+        <View android:background="@color/uneven_grid_cell_highlight_bottom" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <View android:id="@id/corpus_strip" android:layout_width="@dimen/grid_item_strip_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        <View android:id="@id/accessibility_overlay" android:background="@drawable/highlight_overlay" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.finsky.layout.CellWithOverlay>
+</com.google.android.finsky.layout.AccessibleFrameLayout>

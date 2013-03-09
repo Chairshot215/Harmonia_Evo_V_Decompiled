@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/htc_title_black_list">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/htc_menu_require_password" android:key="pref_key_require_password" android:defaultValue="true" />
+        <com.htc.preference.HtcPreference android:title="@string/htc_menu_modify_password" android:key="pref_key_modify_password" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

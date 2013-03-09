@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="310242328" android:versionName="3.10.2211413046.242328" package="com.android.packageinstaller"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.packageinstaller" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <application android:theme="@*android:style/Theme.Holo.DialogWhenLarge.NoActionBar" android:label="@string/app_name" android:allowBackup="false">
+        <activity android:name=".PackageInstallerActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.INSTALL_PACKAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="application/vnd.android.package-archive" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.INSTALL_PACKAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InstallAppProgress" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".UninstallerActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DELETE" />
+                <action android:name="android.intent.action.UNINSTALL_PACKAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UninstallAppProgress" android:configChanges="keyboardHidden|orientation" />
+    </application>
+</manifest>

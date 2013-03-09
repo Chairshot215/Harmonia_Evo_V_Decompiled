@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/mobile_networks"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.android.phone.NationalRoamingList android:persistent="false" android:entries="@array/roaming_options_entries" android:title="@string/roaming" android:key="button_national_roaming_key" android:entryValues="@array/roaming_options_values" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/roaming" android:key="button_roaming_key" android:summaryOn="@string/roaming_enable" android:summaryOff="@string/roaming_disable" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/throttle_data_usage" android:key="button_data_usage_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.DataUsage" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/preference_smart_data_roaming_title" android:key="button_smart_data_roaming_key" android:summary="@string/smart_data_roaming_summery" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/roaming_sound" android:key="button_roaming_sound_key" android:summary="@string/roaming_sound_summary" android:defaultValue="true" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/advanced_settings_kddi" android:key="advanced_settings_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.HtcAdvancedSettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

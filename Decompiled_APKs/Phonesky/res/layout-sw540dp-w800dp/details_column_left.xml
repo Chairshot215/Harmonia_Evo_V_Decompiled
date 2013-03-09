@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.ObservableScrollView android:id="@id/details_column_left" android:fadingEdge="none" android:layout_width="@dimen/details_summary_width" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.DetailsLeftColumnContainer android:orientation="vertical" android:id="@id/details_column_left_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/item_details_panel" android:background="@color/title_background" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.finsky.layout.DocImageView android:layout_gravity="top|right|center" android:id="@id/thumbnail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="4.0dip" android:scaleType="fitEnd" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_marginTop="4.0dip" />
+        <include android:id="@id/warning_message_panel" layout="@layout/details_warning_message" />
+        <include android:id="@id/subscriptions_section" layout="@layout/subscriptions_section" />
+        <com.google.android.finsky.layout.ExplorePanel android:id="@id/explorer_panel" android:background="@color/title_background" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/explorer_layout" />
+        </com.google.android.finsky.layout.ExplorePanel>
+        <include android:id="@id/summary_byline_panel" android:layout_marginTop="4.0dip" layout="@layout/details_summary_byline" />
+        <include layout="@layout/details_badges" />
+        <include layout="@layout/details_plusone" />
+        <include android:id="@id/owned_actions_panel" layout="@layout/details_owned_actions" />
+        <include android:id="@id/share_panel" layout="@layout/details_share" />
+        <include android:id="@id/creator_related_panel" layout="@layout/details_pack_layout" />
+        <include android:id="@id/links_panel" layout="@layout/details_listing_layout" />
+        <include android:id="@id/cast_credits_panel" layout="@layout/details_generic" />
+        <include layout="@layout/details_column_left_summary" />
+        <View android:id="@id/leading_strip" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_marginTop="4.0dip" />
+    </com.google.android.finsky.layout.DetailsLeftColumnContainer>
+</com.google.android.finsky.layout.ObservableScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/person_info" layout="@layout/htc_lockscreen_person_info" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0px">
+        <Button android:gravity="center" android:id="@id/snooze" android:layout_width="169.0px" android:layout_height="60.0px" android:layout_marginRight="5.0px" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@com.htc:string/snooze" />
+        <Button android:gravity="center" android:id="@id/call" android:layout_width="169.0px" android:layout_height="60.0px" android:layout_marginLeft="5.0px" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@com.htc:string/quickselection_action_call" />
+    </LinearLayout>
+</LinearLayout>

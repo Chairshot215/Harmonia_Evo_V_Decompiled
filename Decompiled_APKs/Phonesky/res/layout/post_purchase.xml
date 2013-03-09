@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/details_summary_post_purchase" />
+    <View android:id="@id/leading_strip" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/pinstripe_details_layer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/post_purchase_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.TaskbarLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cmd_bar_1" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height" android:layout_alignParentBottom="true" style="?com.htc:commandBarBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" />
+    <Button android:id="@id/cmd_bar_btn_1" android:layout_width="@dimen/cmd_bar_btn_width" android:layout_height="wrap_content" style="?com.htc:commandBarButtonStyle" />
+</com.htc.widget.TaskbarLinearLayout>

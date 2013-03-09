@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HeaderBarShort android:id="@id/title_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/check_delete_layout" android:layout_below="@id/title_2">
+        <TextView android:textSize="@com.htc:dimen/list_primary_xs" android:id="@id/label_for_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_layout_margin_horizontal" android:layout_marginTop="10.0px" android:layout_marginRight="@dimen/common_layout_margin_horizontal" android:text="@string/filename" android:layout_below="@id/title_2" />
+        <EditText android:id="@id/filename" android:background="?com.htc:attr_common_inputfield_light" android:paddingLeft="@dimen/editor_padding_left" android:paddingRight="@dimen/editor_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_layout_margin_horizontal" android:layout_marginTop="10.0px" android:layout_marginRight="@dimen/common_layout_margin_horizontal" android:layout_below="@id/label_for_edittext" style="@com.htc:style/input_default_s" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_xs" android:id="@id/backupdescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_layout_margin_horizontal" android:layout_marginTop="10.0px" android:layout_marginRight="@dimen/common_layout_margin_horizontal" android:text="@string/backup_description" android:layout_below="@id/filename" />
+    </RelativeLayout>
+    <com.htc.widget.HtcFooter android:id="@id/check_delete_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/button1" />
+        <com.htc.widget.HtcFooterButton android:id="@id/button2" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:textMailHeaderBar="http://schemas.android.com/apk/res/com.htc.android.mail">
+    <com.htc.android.mail.widget.TextMailHeaderBar1 android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" textMailHeaderBar:headerbar_text1="@string/newExchangeAccount" />
+    <com.htc.android.mail.widget.MailFooterBar2Btn android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/scrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ex_margin_vertical_ss" android:layout_marginBottom="@com.htc:dimen/htc_footer_height" android:layout_below="@id/header">
+        <RelativeLayout android:orientation="vertical" android:id="@id/mainScreenLayout" android:background="@color/list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/mainScreen" android:background="@com.htc:drawable/trans_4round" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_email_addr" android:text="@string/email_addr_label" style="@style/ec_account_label" />
+                <AutoCompleteTextView android:id="@id/edt_email_addr" android:hint="@string/email_addr_hint" android:capitalize="none" android:autoText="false" style="@style/ec_account_field" />
+                <View android:id="@id/line1_above_serverName" android:layout_marginTop="@dimen/pure_divider_marginTop" style="@style/pure_divider" />
+                <TextView android:id="@id/tv_exchange_svr" android:text="@string/server_name_label" style="@style/ec_account_label" />
+                <EditText android:id="@id/edt_exchange_svr" android:hint="@string/server_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                <View android:id="@id/line2_above_domain" android:layout_marginTop="@dimen/pure_divider_marginTop" style="@style/pure_divider" />
+                <TextView android:id="@id/tv_domain_name" android:text="@string/domain_name_label" style="@style/ec_account_label" />
+                <EditText android:id="@id/edt_domain_name" android:hint="@string/domain_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                <View android:id="@id/line3_above_userName" android:layout_marginTop="@dimen/pure_divider_marginTop" style="@style/pure_divider" />
+                <TextView android:id="@id/tv_user_id" android:text="@string/user_name_label" style="@style/ec_account_label" />
+                <EditText android:id="@id/edt_user_id" android:hint="@string/user_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                <View android:id="@id/line4_above_password" android:layout_marginTop="@dimen/pure_divider_marginTop" style="@style/pure_divider" />
+                <TextView android:id="@id/tv_user_pwd" android:text="@string/password_label" style="@style/ec_account_label" />
+                <EditText android:id="@id/edt_user_pwd" android:hint="@string/password_hint" android:password="true" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                <CheckBox android:id="@id/show_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/show_password" android:layout_alignTop="@id/bottomCorner" style="@style/ec_checkbox" />
+                <CheckBox android:id="@id/chk_use_ssl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/use_ssl" android:layout_alignTop="@id/bottomCorner" style="@style/ec_checkbox" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

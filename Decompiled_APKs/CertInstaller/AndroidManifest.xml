@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100312746" android:versionName="1.0.2212313053.312746" package="com.android.certinstaller"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.certinstaller" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:label="@string/app_name" android:allowBackup="false" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/Transparent" android:name=".CertInstallerMain" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.credentials.INSTALL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/x-x509-ca-cert" />
+                <data android:mimeType="application/x-x509-user-cert" />
+                <data android:mimeType="application/x-pkcs12" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Transparent" android:name=".CertInstaller" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CertFileList" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

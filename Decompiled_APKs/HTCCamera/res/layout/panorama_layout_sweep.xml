@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/panorama_indicator_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/panorama_indicator_margin_top_portrait" android:layout_marginRight="@dimen/panorama_indicator_margin_right_portrait" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <View android:id="@id/panorama_indicator_top_padding" android:visibility="gone" android:layout_width="1.0px" android:layout_height="@dimen/panorama_indicator_margin_top_padding_portrait" />
+        <com.android.camera.rotate.RotateImageView android:id="@id/panorama_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_panorama" />
+    </LinearLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_sweep_indicator_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/panorama_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_spinner_30" android:layout_centerInParent="true" />
+        <com.android.camera.widget.PanoramaIndicatorView android:id="@id/panorama_sweep_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_arrows_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/panorama_arrow_margin_left" android:layout_marginRight="@dimen/panorama_arrow_margin_top" android:layout_marginBottom="@dimen/panorama_arrow_margin_right">
+        <ImageView android:id="@id/panorama_left_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panorama_left_arrow" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/panorama_center_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/panorama_right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/panorama_right_arrow" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <RelativeLayout android:id="@id/panorama_shutter_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/panorama_shutter_bar_height" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shutter_bar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/panorama_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/panorama_shutter_button_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_init_toast" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/panorama_init_toast_container_bottom_margin" android:layout_marginTop="@dimen/panorama_init_toast_container_left_margin" android:layout_marginRight="@dimen/panorama_init_toast_container_top_margin" android:layout_marginBottom="@dimen/panorama_init_toast_container_right_margin">
+        <TextView android:gravity="center" android:id="@id/panorama_init_toast_text" android:background="@com.htc:drawable/popup_full_dark" android:layout_width="@dimen/panorama_init_toast_text_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/panorama_init_toast_top_margin" android:text="@string/how_to_start_panorama" android:layout_centerHorizontal="true" android_layout_alignParentTop="true" style="@com.htc:style/info_primary_xl" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_init_direction_toast" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/panorama_init_toast_container_bottom_margin" android:layout_marginTop="@dimen/panorama_init_toast_container_left_margin" android:layout_marginRight="@dimen/panorama_init_toast_container_top_margin" android:layout_marginBottom="@dimen/panorama_init_toast_container_right_margin">
+        <TextView android:gravity="center" android:id="@id/panorama_init_direction_toast_text" android:background="@com.htc:drawable/popup_full_dark" android:layout_width="@dimen/panorama_init_toast_text_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/panorama_init_toast_top_margin" android:layout_centerHorizontal="true" android_layout_alignParentTop="true" style="@com.htc:style/info_primary_xl" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/panorama_review_image_container" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/panorama_review_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:textMailHeaderBar="http://schemas.android.com/apk/res/com.htc.android.mail">
+    <com.htc.android.mail.widget.TextMailHeaderBar1 android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" textMailHeaderBar:headerbar_text1="@string/menu_out_of_the_office" />
+    <com.htc.android.mail.widget.MailFooterBar2Btn android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/scrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/footerBar" android:layout_below="@id/header">
+        <RelativeLayout android:orientation="vertical" android:background="#ff000000" android:fadingEdge="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/scrolltopShadow" android:layout_alignParentTop="true" style="@style/topround_v1" />
+            <ImageView android:id="@id/topCorner" android:background="#fff2f2f2" android:layout_below="@id/scrolltopShadow" style="@style/top_round_small" />
+            <LinearLayout android:orientation="vertical" android:id="@id/mainScreen" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topCorner">
+                <TextView android:id="@id/tv_where" android:layout_marginBottom="@dimen/ex_margin_vertical_ss" android:text="@string/oof_i_am_currently" style="@style/ex_account_label" />
+                <com.htc.widget.HtcSpinner android:id="@id/spinner_doing" android:drawSelectorOnTop="true" android:prompt="@string/oof_i_am_currently" style="@style/ex_spinner" />
+                <View android:id="@id/line1" android:visibility="gone" android:layout_marginTop="@dimen/oof_divider_marginTop" style="@style/pure_divider" />
+                <TextView android:id="@id/meetingStartTime" android:text="@string/compose_meeting_start_time_label_text" style="@style/ex_account_label" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/meetingStartTimeBtns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ex_margin_vertical_ms">
+                    <Button android:ellipsize="marquee" android:id="@id/start_date_text" android:layout_width="0.0dip" android:layout_marginRight="0.0px" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="2.3" android:marqueeRepeatLimit="marquee_forever" style="@style/ex_single_button" />
+                    <Button android:id="@id/start_time_text" android:layout_width="0.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="1.0" style="@style/ex_single_button" />
+                </LinearLayout>
+                <View android:id="@id/line2" android:visibility="gone" android:layout_marginTop="@dimen/oof_divider_marginTop" style="@style/pure_divider" />
+                <TextView android:id="@id/meetingEndTime" android:visibility="visible" android:text="@string/compose_meeting_end_time_label_text" style="@style/ex_account_label" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/meetingEndTimeBtns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ex_margin_vertical_ms">
+                    <Button android:ellipsize="marquee" android:id="@id/end_date_text" android:layout_width="0.0dip" android:layout_marginRight="0.0px" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="2.3" android:marqueeRepeatLimit="marquee_forever" style="@style/ex_single_button" />
+                    <Button android:id="@id/end_time_text" android:layout_width="0.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="1.0" style="@style/ex_single_button" />
+                </LinearLayout>
+                <View android:id="@id/line3" android:visibility="gone" android:layout_marginTop="@dimen/oof_divider_marginTop" style="@style/pure_divider" />
+                <EditText android:textColor="@color/black" android:gravity="top|left|center" android:id="@id/etOofMessage" android:background="?com.htc:attr_common_inputfield_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ex_margin_horizontal_s" android:layout_marginTop="@dimen/ex_margin_vertical" android:layout_marginRight="@dimen/ex_margin_horizontal_s" android:minHeight="270.0px" android:hint="@string/oof_reply_msg_hint" android:minLines="3" android:capitalize="sentences" android:autoText="true" android:textCursorDrawable="@null" />
+                <CheckBox android:id="@id/chk_reply_external" android:checked="false" android:text="@string/oof_send_to_external_recipient" style="@style/ex_checkbox" />
+                <ImageView android:orientation="vertical" android:background="@color/list_bg" android="@+id/bottomCorner" style="@style/bottom_round_small" />
+                <ImageView android:id="@id/scrollBottomShadow" style="@style/section_divider" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

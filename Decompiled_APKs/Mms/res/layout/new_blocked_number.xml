@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/composer_window"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/recipients_panel" android:background="@drawable/common_titlebar_sublevel" android:paddingLeft="@dimen/compose_header_paddingLeft" android:paddingRight="@dimen/compose_header_paddingRight" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/title_2line_height">
+        <com.android.mms.ui.RecipientsEditor android:textSize="@com.htc:dimen/input_default_m" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/recipients_editor_stub" android:background="@drawable/common_black_inputfield_view" android:paddingLeft="@dimen/editor_padding_left" android:paddingTop="@dimen/editor_padding_top" android:paddingRight="@dimen/editor_padding_right" android:paddingBottom="@dimen/editor_padding_bottom" android:layout_width="0.0px" android:layout_height="wrap_content" android:hint="@string/hint_type_to_add_block_member" android:layout_weight="1.0" style="@com.htc:style/input_default_m" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/contact_picker" style="@style/compose_recipient_contact_picker" />
+    </LinearLayout>
+    <View android:id="@id/addBlockMemberView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_top_with_title_2line" android:drawSelectorOnTop="false" android:layout_weight="1.0" android:layout_above="@id/confirm_panel" style="@style/htc_listview_style" />
+    <com.htc.widget.HtcFooter android:id="@id/confirm_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/button_cancel" android:text="@string/no" />
+        <com.htc.widget.HtcFooterButton android:id="@id/button_ok" android:text="@string/done" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

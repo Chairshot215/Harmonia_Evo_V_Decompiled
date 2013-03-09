@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/language_keyboard_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/phone_language" android:key="phone_language" android:fragment="com.android.settings.LocalePicker" />
+    <com.android.settings.inputmethod.SpellCheckersPreference android:title="@string/spellcheckers_settings_title" android:key="spellcheckers_settings" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_settings_category" android:key="keyboard_settings_category">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/current_input_method" android:key="current_input_method" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/voice_category" android:key="voice_category">
+        <com.htc.preference.HtcListPreference android:title="@string/recognizer_title" android:key="recognizer" android:dialogTitle="@string/recognizer_title" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/recognizer_settings_title" android:key="recognizer_settings" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/tts_settings_title" android:key="tts_settings" android:fragment="com.android.settings.tts.TextToSpeechSettings" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pointer_settings_category" android:key="pointer_settings_category">
+        <com.android.settings.PointerSpeedPreference android:title="@string/pointer_speed" android:key="pointer_speed" android:dialogTitle="@string/pointer_speed" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.widget.SlidingDrawer android:orientation="vertical" android:id="@id/setting_panel" android:layout_width="fill_parent" android:layout_height="@dimen/panel_height_portrait" android:layout_alignParentTop="true" android:handle="@id/drawer_handle" android:content="@id/rotate_layout_setting">
+        <ImageView android:id="@id/drawer_handle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.android.camera.rotate.RotateLinearLayout android:id="@id/rotate_layout_setting" android:layout_width="fill_parent" android:layout_height="@dimen/settings_list_height">
+            <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </com.android.camera.rotate.RotateLinearLayout>
+    </com.android.camera.widget.SlidingDrawer>
+    <com.android.camera.widget.SlidingDrawer android:orientation="vertical" android:id="@id/submenu_layout" android:layout_width="fill_parent" android:layout_height="@dimen/panel_height_portrait" android:layout_alignParentTop="true" android:handle="@id/submenu_handle" android:content="@id/rotate_layout_submenu">
+        <ImageView android:id="@id/submenu_handle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.android.camera.rotate.RotateLinearLayout android:id="@id/rotate_layout_submenu" android:layout_width="fill_parent" android:layout_height="@dimen/settings_list_height">
+            <LinearLayout android:orientation="vertical" android:id="@id/sub_menu" android:background="@drawable/submenu_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:gravity="center" android:id="@id/sub_title" android:background="@drawable/menu_header" android:layout_width="fill_parent" android:layout_height="@dimen/settings_list_title" android:singleLine="true" style="@style/text_style_settings_title" />
+                <ListView android:id="@id/sub_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/menu_divider" />
+            </LinearLayout>
+        </com.android.camera.rotate.RotateLinearLayout>
+    </com.android.camera.widget.SlidingDrawer>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:process="system" android:versionCode="15" android:versionName="4.0.3-eng..20120427.201342" package="com.android.systemui" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <application android:label="@string/app_label" android:icon="@drawable/ic_launcher_settings" android:allowClearUserData="false" android:persistent="true" android:allowBackup="false" android:hardwareAccelerated="false">
+        <service android:name="SystemUIService" android:exported="true" />
+        <service android:name=".screenshot.TakeScreenshotService" android:exported="false" android:process=":screenshot" />
+        <service android:name=".LoadAverageService" android:exported="true" />
+        <service android:name=".ImageWallpaper" android:permission="android.permission.BIND_WALLPAPER" android:exported="true" />
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@*android:string/usb_storage_activity_title" android:name=".usb.UsbStorageActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@*android:style/Theme.Dialog.Alert" android:name="com.android.internal.app.ExternalMediaFormatActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:name=".usb.UsbConfirmActivity" android:permission="android.permission.MANAGE_USB" android:exported="true" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" />
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:name=".usb.UsbPermissionActivity" android:permission="android.permission.MANAGE_USB" android:exported="true" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" />
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:name=".usb.UsbResolverActivity" android:permission="android.permission.MANAGE_USB" android:exported="true" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" />
+        <activity android:theme="@*android:style/Theme.Holo.Dialog.Alert" android:name=".usb.UsbAccessoryUriActivity" android:permission="android.permission.MANAGE_USB" android:exported="true" android:excludeFromRecents="true" android:finishOnCloseSystemDialogs="true" />
+        <activity android:theme="@*android:style/Theme.Holo.Panel" android:name=".net.NetworkOverLimitActivity" android:permission="android.permission.MANAGE_NETWORK_POLICY" android:exported="true" android:taskAffinity="com.android.systemui.net" android:excludeFromRecents="true" android:launchMode="singleTop" android:finishOnCloseSystemDialogs="true" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="Nyandroid" android:icon="@drawable/nyandroid04" android:name=".Nyandroid" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

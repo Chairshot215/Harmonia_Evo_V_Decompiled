@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">bilinmiyor</string>
+    <string name="sharedUserLabel">Google Hizmetleri</string>
+    <string name="service_label">Sistem Güncelleyicisi</string>
+    <string name="system_update_activity_name">Sistem güncellemeleri</string>
+    <string name="system_update_activity_title">Sistem güncellemeleri</string>
+    <string name="system_update_activity_battery_low_text">Sistem güncellemesini yüklemeye yetmeyecek kadar düşük pil. Devam etmek için lütfen şarj cihazını takın.</string>
+    <string name="system_update_activity_battery_low_charging_text">Pil seviyesi, sistem güncellemesini yükleyemeyecek kadar düşük. Lütfen pilin yeterince dolmasını bekleyin.</string>
+    <string name="system_update_activity_roaming_text">Dolaşım sırasında sistem güncellemeleri indirilemez.</string>
+    <string name="system_update_requires_restart_status_text">Yeniden başlatma gerekiyor</string>
+    <string name="system_update_downloading_status_text">İndiriliyor</string>
+    <string name="system_update_downloading_wifi_status2_text">^1 tarihine kadar yalnızca Kablosuz üzerinden</string>
+    <string name="system_update_verifying_status_text">Doğrulanıyor</string>
+    <string name="system_update_verification_failed_text">Doğrulama başarısız oldu</string>
+    <string name="system_update_verified_status_text">İndirildi ve doğrulandı</string>
+    <string name="system_update_download_failed_status_text">İndirme başarısız oldu</string>
+    <string name="system_update_download_retry_button_text">İndirmeyi yeniden dene</string>
+    <string name="system_update_download_button_text">İndir</string>
+    <string name="system_update_install_button_text">Yeniden başlat ve yükle</string>
+    <string name="system_update_check_now_button_text">Şimdi denetle</string>
+    <string name="system_update_no_update_content_text">Sisteminiz şu anda güncel</string>
+    <string name="system_update_last_checkin">Güncelleme için son kontrol: ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Sistem güncellemesi var</string>
+    <string name="system_update_recommended_update_available_notification_message">Güncelleme bilgilerini görüntüle.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Sistem güncellemesi indirilemedi.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">İndirilemedi, lütfen yeniden deneyin.</string>
+    <string name="system_update_error_dialog_title">Hata</string>
+    <string name="system_update_error_downloading_dialog_message">Güncelleme indirilirken bir sorun oluştu.</string>
+    <string name="system_update_error_installing_dialog_message">Güncelleme yüklenirken bir sorun oluştu.</string>
+    <string name="system_update_install_dialog_label">Sistem güncellemesi</string>
+    <string name="system_update_install_dialog_message_nonphone">Bir sistem güncellemesi yüklenmeye hazır. Android cihazınız yeniden başlatılacak ve güncellemeyi yükleyecek.</string>
+    <string name="system_update_install_dialog_message_phone">Bir sistem güncellemesi yüklenmeye hazır. Android cihazınız yeniden başlatılacak ve güncellemeyi yükleyecek. Yükleme sırasında acil durum çağrıları da dahil olmak üzere hiçbir arama yapamayacaksınız.</string>
+    <string name="system_update_install_dialog_battery_low_message">Bir sistem güncellemesi hazır durumda ancak pil seviyesi bu güncellemeyi yükleyemeyecek kadar düşük. Lütfen şarj cihazını takın.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Bir sistem güncellemesi hazır durumda ancak pil seviyesi bu güncellemeyi yükleyemeyecek kadar düşük. Lütfen pilin yeterince dolmasını bekleyin.</string>
+    <string name="system_update_install_dialog_now_button">Şimdi yükle</string>
+    <string name="system_update_install_dialog_later_button">Daha sonra yükle</string>
+    <string name="system_update_install_dialog_info_button">Daha fazla bilgi…</string>
+    <string name="system_update_downloading_notification_title">Sistem güncellemesi indiriliyor</string>
+    <string name="system_update_verifying_notification_title">Sistem güncellemesi doğrulanıyor</string>
+    <string name="system_update_download_dialog_label">Sistem güncellemesini indirme</string>
+    <string name="system_update_download_dialog_message">Android cihazınızın özelliklerini geliştirecek bir sistem güncellemesi mevcut. Bu güncellemeyi kablosuz ağ ile indirmeniz halinde ücret uygulanabilir.</string>
+    <string name="system_update_download_dialog_now_button">Şimdi indir</string>
+    <string name="system_update_download_dialog_later_button">Sonra indir</string>
+    <string name="system_update_download_dialog_cancel_button">İptal</string>
+    <string name="system_update_countdown_complete">Şimdi yeniden yükleniyor...</string>
+    <string name="system_update_countdown_cancel_button">Yüklemeyi iptal et</string>
+    <string name="system_update_complete_label">Sistem güncellendi</string>
+    <string name="system_update_complete_ok_button">Tamam</string>
+    <string name="provider_label">Push Abonelikleri</string>
+    <string name="ro_perm_label">anlık iletileri oku</string>
+    <string name="ro_perm_desc">Uygulamalara, Google Talk içerik sağlayıcısından gelen verileri okuma izni verir.</string>
+    <string name="wo_perm_label">anlık iletiler yaz</string>
+    <string name="wo_perm_desc">Uygulamalara Google Talk içerik sağlayıcısına veri yazma izni verir.</string>
+    <string name="gsf_label">Google Hizmetleri Çerçevesi</string>
+    <string name="search_chats">"Sohbetlerde ara:
+'%1$s'"</string>
+    <string name="gtalkservice_label">Google Mesaj Hizmeti</string>
+    <string name="c2dm_label">Cloud to Device Mesaj Hizmeti</string>
+    <string name="sendTalkMsg_perm_label">Mesajları değiş tokuş eder ve Google sunucularından senkronizasyon bildirimlerini alır</string>
+    <string name="sendTalkMsg_perm_desc">Sunucu \"cloud to device\" mesajları ve senkronizasyon bildirimleri için kullanılır. Google Talk, bu hizmeti mesajları değiş tokuş etmek ve durum senkronizasyonu için kullanır. Kötü niyetli bir uygulama, bu hizmeti aşırı miktarda veri iletmek için kullanabilir.</string>
+    <string name="perm_receive_data_message_label">"İnternet'ten veri al"</string>
+    <string name="perm_receive_data_message_desc">Uygulamaların, kendi hizmetleri tarafından gönderilen \"cloud to device\" mesajları kabul etmesine izin verir. Bu hizmeti kullanmak veri kullanımını artırır. Kötü niyetli uygulamalar aşırı veri kullanımına neden olabilir.</string>
+    <string name="perm_data_msg_broadcast_label">Veri iletilerini uygulamalar için yayınla</string>
+    <string name="perm_data_msg_broadcast_desc">"İnternet'ten alınan veri iletilerini, söz konusu iletileri dinlemek üzere kaydedilmiş uygulamalar için yayınlayabilir."</string>
+    <string name="perm_receive_xmpp_label">Google sunucuları ile XMPP mesajı alışverişi yap</string>
+    <string name="perm_receive_xmpp_desc">Google uygulamalarının, Google sunucularıyla XMPP mesajları alışverişinde bulunmasına izin verir.</string>
+    <string name="perm_xmpp_broadcast_label">XMPP mesajlarını uygulamalara yayınla.</string>
+    <string name="perm_xmpp_broadcast_desc">Google sunclrndn alınan XMPP mesajlrnı, bunları dinlemek üzere kaydedilmiş uyglmlra yayınlayabilir.</string>
+    <string name="perm_use_xmpp_endpoint_label">Google sunucuları ile XMPP mesajı alışverişi yap</string>
+    <string name="perm_use_xmpp_endpoint_desc">Google uygulamalarına, Google sunucularıyla XMPP mesajları alışverişinde bulunma izni verir.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">XMPP mesajlarını uygulamalara yayınla.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Google sunucularından alınan XMPP mesajlarını uygulamalara yayınlayabilir.</string>
+    <string name="permlab_intentVendingOnly">"Android Market'e yayın gönderin."</string>
+    <string name="permdesc_intentVendingOnly">"Yayınları Android Market'e gönderebilir ve uygulama yüklenmesini ve kaldırılmasını isteyebilir."</string>
+    <string name="permlab_heartbeat">Google Talk sunucusuna sinyal gönder</string>
+    <string name="permdesc_heartbeat">Bağlantının elverişliliğinden emin olmak için Google Talk sunucusuna sinyal paketi gönderebilir.</string>
+    <string name="group_chat">Grup sohbeti: %s</string>
+    <string name="default_decline_reason">Maalesef, şu an meşgulüm.</string>
+    <string name="newMessages_label">Yeni sohbetler</string>
+    <string name="notify_groupchat_label">Grup sohbeti davetiyesi</string>
+    <string name="num_unread_chats">%s okunmamış sohbet</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s -> %s</string>
+    <string name="subscription_notify_text">%s sohbet edebilmek istiyor</string>
+    <string name="group_chat_invite_notify_text">%s kullanıcısından bir grup sohbeti davetiyesi aldınız</string>
+    <string name="group_chat_invite_dialog_text">%s sizi bir grup sohbetine katılmaya davet ediyor.</string>
+    <string name="message_too_long">2000 karakteri aşan mesajları gönderemezsiniz.</string>
+    <string name="missed_video_chat_notification">Bir görüntülü sohbet davetini kaçırdınız</string>
+    <string name="missed_voice_chat_notification">Bir sesli sohbet davetini kaçırdınız</string>
+    <string name="missed_video_chat_notification_no_wifi">Kablosuz ağa bağlı olmadığınız için bir görüntülü sohbet davetini kaçırdınız</string>
+    <string name="missed_voice_chat_notification_no_wifi">Kablosuz ağa bağlı olmadığınız için bir sesli sohbet davetini kaçırdınız</string>
+    <string name="missed_video_chat_message">%1$s sizinle görüntülü sohbet başlatmayı denedi</string>
+    <string name="missed_voice_chat_message">%1$s sizinle sesli sohbet başlatmayı denedi</string>
+    <string name="missed_video_chat_message_no_wifi">Siz bir Kablosuz ağa bağlı değilken %1$s sizinle bir görüntülü sohbet başlatmayı denedi</string>
+    <string name="missed_voice_chat_message_no_wifi">Siz bir Kablosuz ağa bağlı değilken %1$s sizinle bir sesli sohbet başlatmayı denedi</string>
+    <string name="end_cause_user_unavailable_video">%1$s görüntülü sohbet için uygun değil.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s sesli sohbet için uygun değil.</string>
+    <string name="end_cause_sent_terminate_video">%1$s ile yaptığınız görüntülü sohbeti sonlandırdınız.</string>
+    <string name="end_cause_sent_terminate_voice">%1$s ile yaptığınız sesli sohbeti sonlandırdınız.</string>
+    <string name="end_cause_received_terminate_video">%1$s görüntülü sohbeti sonlandırdı.</string>
+    <string name="end_cause_received_terminate_voice">%1$s sesli sohbeti sonlandırdı.</string>
+    <string name="end_cause_network_problem_video">Maalesef bir ağ sorunundan dolayı %1$s ile görüntülü sohbet başarısız oldu. Lütfen tekrar deneyin.</string>
+    <string name="end_cause_network_problem_voice">Maalesef bir ağ sorunundan dolayı %1$s ile sesli sohbet başarısız oldu. Lütfen tekrar deneyin.</string>
+    <string name="conn_auth_error_notify_ticker">Google Talk kimlik doğrulaması başarısız oldu</string>
+    <string name="conn_auth_error_notify_title">Google Talk kimlik doğrulaması başarısız oldu</string>
+    <string name="conn_auth_error_title">Kimlik Doğrulama Hatası</string>
+    <string name="conn_auth_error_message">Google Talk girişi yapılamadı. Bu bir Google Apps hesabı ise Sohbet hizmetinin bu hesap için etkinleştirilmiş olduğunu doğrulayın.</string>
+    <string name="conn_auth_error_button_retry">Tekrar Dene</string>
+    <string name="conn_auth_error_button_cancel">İptal</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">^1 - Hoş Geldiniz</string>
+    <string name="setup_wizard_title">Kurulum Sihirbazı</string>
+    <string name="error_dialog_title">Dikkat</string>
+    <string name="next_button_label">İleri</string>
+    <string name="back_button_label">Geri</string>
+    <string name="sign_in_button_label">Oturum açın</string>
+    <string name="create_button_label">Oluştur</string>
+    <string name="skip_button_label">Atla</string>
+    <string name="first_name">Ad</string>
+    <string name="last_name">Soyadı</string>
+    <string name="done">Tamam</string>
+    <string name="cancel_button_label">İptal</string>
+    <string name="done_button_label">Kurulumu bitir</string>
+    <string name="try_again_button_label">Tekrar dene</string>
+    <string name="close_button_label">Kapat</string>
+    <string name="edit_text_help">Yazmaya başlamak için herhangi bir metin kutusuna dokunun</string>
+    <string name="add_a_google_account">Bir Google Hesabı Ekleyin</string>
+    <string name="no_sim_setup_wireless">SIM kart takılı olmadığından ses veya veri hizmetleri için herhangi bir mobil ağa bağlanamazsınız. SIM kart olmadan Kablosuz ağa bağlanabilirsiniz.</string>
+    <string name="setup_wifi_button_label">Kablosuz özelliğine bağlan</string>
+    <string name="no_network">Ağ bağlantınız yok.</string>
+    <string name="no_network_help">Bu geçici bir sorun olabilir veya Android cihazınız veri hizmetleri almıyordur. Lütfen mobil ağa bağlandığınızda tekrar deneyin veya Kablosuz ağa bağlanın.</string>
+    <string name="server_error">Google sunucuları ile iletişim sırasında bir sorun oldu.</string>
+    <string name="server_error_help">Lütfen daha sonra yeniden deneyin.</string>
+    <string name="network_unreliable">Sunucu ile sağlam bir veri bağlantısı kurulamıyor.</string>
+    <string name="network_unreliable_help">Bu, geçici bir sorun olabilir veya Android cihazınızda veri hizmeti kullanılmıyordur. Sorun devam ederse Müşteri Hizmetlerini arayın.</string>
+    <string name="invalid_login_character">Geçersiz karakter. Yalnızca 0-9, a-z, A-Z ve nokta kullanılabilir.</string>
+    <string name="invalid_password_character">Geçersiz şifre karakteri.</string>
+    <string name="add_apn">Kablosuz ayarları</string>
+    <string name="setup_google_account_title">Google Hesabınızı kurun</string>
+    <string name="setup_complete_title">Kurulum Tamamlandı</string>
+    <string name="cant_be_blank">Alan boş olamaz.</string>
+    <string name="calendar">Google Takvim</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">"Android cihazınız veri hizmetine bağlı değil. Bu bilgileri şimdi görüntülemek için, İnternet'e bağlı herhangi bir bilgisayardan %s adresine gidin."</string>
+    <string name="field_cant_be_blank">Bu alan boş olamaz</string>
+    <string name="field_invalid_domain">Bu geçerli bir alan adı değil</string>
+    <string name="field_invalid_user">Bu geçerli bir kullanıcı adı değil</string>
+    <string name="field_invalid_user_domain">E-posta adresinizi değil, yalnızca kullanıcı adınızı girin</string>
+    <string name="field_invalid_login">Bu geçerli bir hesap adı değil</string>
+    <string name="about_accounts_message"><font size="17">"Android cihazınızın ayarlarını yapmak kolaydır! Yalnızca bir Google Hesabı gerekir.
+"<font height="17">"
+"</font><b>Neden Google Hesabı kullanmalısınız?</b>"
+"<font height="3">"
+"</font>"Google uygulamaları, bir Google Hesabı ile telefonunuz ve bilgisayarınız arasında, güncellemeyi nereden yaptığınıza bakmaksızın senkronize edilir.
+"<font height="17">"
+"</font><b>Zaten bir Google Hesabınız var mı?</b>"
+"<font height="3">"
+"</font>"O zaman hazırsınız demektir! Bir sonraki ekranda \"Oturum açın\"a dokunmanız yeterli.
+"<font height="17">"
+"</font><b>Google Hesabınız yok mu?</b>"
+"<font height="3">"
+"</font>"Sorun değil. Bir sonraki ekranda \"Oluştur\"a dokunursanız hesap oluşturmanıza yardımcı oluruz.
+"<font height="17">"
+"</font><b>Başlamak için \"İleri\"ye dokunun!</b>"
+"</font></string>
+    <string name="fling_help_message">"Kaydırmak için parmağınızı ekranda aşağı yukarı kaydırın.
+(Bu mesajı kapatmak için üzerine dokunun.)"</string>
+    <string name="setup_device_title">^1 hesabınızı oluşturma</string>
+    <string name="dont_have_an_account">Google Hesabınız yok mu?</string>
+    <string name="create_one_now">Hemen bir tane oluşturun! Kolayca yapılabilir.</string>
+    <string name="already_have_an_account">Zaten bir Google Hesabınız var mı?</string>
+    <string name="sign_in_with_google_account">Bu Android cihazına bağlanmasını istediğiniz Google Hesabı ile oturum açın.</string>
+    <string name="skip_message">Hesabı daha sonra mı oluşturmak istersiniz?</string>
+    <string name="touch_to_begin">"Başlamak için android'e dokunun."</string>
+    <string name="delayed_gaia_agreement">Devam etmekle <annotation id="google_privacy">Google</annotation> ve <annotation id="android_privacy">Ek</annotation>" Gizlilik Politikaları'nı kabul etmiş olursunuz."</string>
+    <string name="open_keyboard_message">Başlamak için klavyeyi kaydırarak açın.</string>
+    <string name="open_keyboard_message_to_continue">Devam etmek için klavyeyi kaydırarak açın.</string>
+    <string name="emergency_dial">Acil arama</string>
+    <string name="change_language">Dili değiştir</string>
+    <string name="signing_in">Oturum açılıyor...</string>
+    <string name="close_keyboard_message">Devam etmek için klavyeyi kaydırarak geri yerleştirin.</string>
+    <string name="communicating_message">Hesabınızın kurulumu için Android cihazınızın Google sunucuları ile iletişim kurması gerekiyor. Bu işlem beş dakika kadar sürebilir.</string>
+    <string name="communicating_message_domain">Android cihazınızın, alan adı bilgilerinizi bulması için Google sunucuları ile bağlantı kurması gerekiyor. Bu, beş dakika kadar sürebilir.</string>
+    <string name="username">Kullanıcı adı</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Şifre</string>
+    <string name="sign_in_agreement">Oturum açmakla <annotation id="google_privacy">Google</annotation> ve <annotation id="android_privacy">Ek</annotation>" Gizlilik Politikaları'nı kabul etmiş olursunuz."</string>
+    <string name="create">Oluştur</string>
+    <string name="create_message">Bir Google hesabına mı ihtiyacınız var?</string>
+    <string name="now_signing_in">Oturum açılıyor...</string>
+    <string name="now_verifying_domain">Alanınız bulunuyor...</string>
+    <string name="sign_in_with_google_account_short">Google Hesabınız ile oturum açın:</string>
+    <string name="browser_sign_in_explanation">Web tarayıcısı gerektiren özel oturum açma olanaklarınız varsa, bu ekranı kullanın.</string>
+    <string name="gls_browser_login_intro_message">Google veya Google Apps hesabına erişilemiyor. Yeniden yetkilendirme gerekli.</string>
+    <string name="enter_domain_name">Şirketinizin alan adını girin:</string>
+    <string name="enter_user_name">^1 için kullanıcı adınızı ve şifrenizi girin:</string>
+    <string name="inactive_domain">Bu hesap, etkin olmayan bir alan adına ait olduğu için kullanılamaz. Lütfen <b>^1</b> alan adı yöneticisi ile bağlantı kurun veya başka bir hesapla oturum açın.</string>
+    <string name="invalid_username">Girilen metin, geçerli bir kullanıcı adı değil.</string>
+    <string name="web_login_error_title">Maalesef...</string>
+    <string name="web_login_error_desc">"^1 alanında şirketinizin sunucularına bağlanırken bir hata oluştu.
+
+Hata bilgileri:
+"</string>
+    <string name="web_login_error_redirects">Web giriş sayfası çok fazla sayıda yeniden yönlendirme işlemi gerçekleştirdi</string>
+    <string name="web_login_error_http">HTTP hatası ^1 : ^2</string>
+    <string name="name_device_label">Android cihazınıza bir ad verin:</string>
+    <string name="device_name_hint">Cihaz adı</string>
+    <string name="registering_device">Android cihazı kaydediliyor...</string>
+    <string name="error_account_disabled">"Bu hesap devre dışı bırakıldı. 
+
+(Ayrıntılar için bilgisayarınızda http://google.com/accounts/revovery adresine gidin.)"</string>
+    <string name="error_login_failed">"Kullanıcı adınız ve şifreniz eşleşmiyor. Lütfen tekrar deneyin. 
+
+(Hesap bilgilerinizi kurtarmak için bilgisayarınızda http://www.google.com/accounts/recovery adresine gidin.)"</string>
+    <string name="error_account_not_verified">"Bu hesap doğrulanmadı. E-postanızı bir bilgisayarda kontrol edin ve bu hesabı doğrulamak için bağlantıyı izleyin. 
+
+(Hesap bilgilerinizi kurtarmak için bilgisayarınızda http://google.com/accounts/recovery adresine gidin.)"</string>
+    <string name="captcha_message_string">Doğrulama</string>
+    <string name="captcha_instructions">Resimde gördüğünüz karakterleri girin. Harfler büyük/küçük harfe duyarlı değildir.</string>
+    <string name="create_google_account">Yeni bir Google Hesabı oluşturun</string>
+    <string name="example_usernames">örn. CSemih,·Can.Semih</string>
+    <string name="create_account_agreement">Bu hesabı oluşturmakla <annotation id="google_privacy">Google</annotation> ve <annotation id="android_privacy">Ek</annotation>" Gizlilik Politikaları'nı kabul etmiş olursunuz."</string>
+    <string name="account_already_has_gmail">Hesapta Gmail zaten var.</string>
+    <string name="creating_account">Hesabınız oluşturuluyor…</string>
+    <string name="checking_account">Kullanıcı adının bulunup bulunmadığı denetleniyor…</string>
+    <string name="try_a_different_username">Farklı bir kullanıcı adı deneyin</string>
+    <string name="is_not_available"><b>^1</b> müsait değil.</string>
+    <string name="hint_size"><b>^1</b>" 6'dan az veya 30'dan çok karakter içeriyor."</string>
+    <string name="hint_numbers_only"><b>^1</b> hiçbir harf içermiyor.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" yalnızca harf,
+sayı ve nokta içerebilir."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> Gmail kullanmıyor</string>
+    <string name="sign_in">Oturum açın</string>
+    <string name="sign_in_browser">Tarayıcıda oturum açın</string>
+    <string name="here_are_alternatives">Birkaç alternatif:</string>
+    <string name="alternatives_list_title">Önerilen kullanıcı adları</string>
+    <string name="choose_a_password"><b>"Bir şifre
+yazın"</b></string>
+    <string name="confirm_password"><b>"Şifreyi
+onayla"</b></string>
+    <string name="password_strength"><b>"Şifre
+gücü"</b></string>
+    <string name="too_short">Çok kısa</string>
+    <string name="security_question"><b>"Güvenlik
+sorusu"</b></string>
+    <string name="security_questions_title">Güvenlik soruları</string>
+    <string name="answer"><b>Yanıt</b></string>
+    <string name="password_mismatch">Şifreleriniz eşleşmiyor. Lütfen yeniden yazın.</string>
+    <string name="your_account_was_created">Hesabınız oluşturuldu!</string>
+    <string name="eight_chars_min">(minimum 8 karakter)</string>
+    <string name="just_in_case">Şifrenizi kaybetmeniz durumunda.</string>
+    <string name="verify_your_profile">Profilinizi doğrulayın</string>
+    <string name="signed_in">Oturum açıldı!</string>
+    <string name="error_not_logged_in">Kullanıcı oturum açmadı.</string>
+    <string name="error_username_unavailable">Kullanıcı adı kullanılamıyor.</string>
+    <string name="error_bad_password">Şifre çok zayıf veya geçersiz karakterler içeriyor. Lütfen yeniden deneyin.</string>
+    <string name="error_bad_username">Geçersiz kullanıcı adı.</string>
+    <string name="loading">Yükleniyor...</string>
+    <string name="submission_title">Maalesef…</string>
+    <string name="submission_error_text">Hata oluştu. Lütfen yeniden deneyin.</string>
+    <string name="existing_account_error_title">Hesap zaten var</string>
+    <string name="existing_account_error_text">Bu Android cihazında ^1 adlı bir hesap zaten var.</string>
+    <string name="account_linked_message"><font height="24">Google Hesabınız artık bu Android cihazına bağlı.</font></string>
+    <string name="syncing_message"><font size="17">"Google uygulamaları şu anda veri senkronize ediyor. 
+"<font height="17">"
+"</font>"%i \"Senkronizasyon\" simgesi, ekranınızın en üstündeki durum çubuğundan kaybolduğunda indirme işlemi tamamlanmış demektir.
+"<font height="17">"
+"</font><b>Durum çubuğu hakkında…</b>"
+"<font height="3">"
+"</font>"Yeni bir ileti veya başka bir bildirim aldığınızda durum çubuğunda bir simge görüntülenir.
+"<font height="17">"
+"</font>Bildirim panelini mevcut bildirimlerinizin tamamı hakkında daha ayrıntılı bilgi içerecek biçimde açmak için durum çubuğunu parmağınızla aşağıya sürükleyin.</font></string>
+    <string name="i_agree_next">Kabul ediyorum, İleri</string>
+    <string name="android_privacy_policy_title">Ek Gizlilik Politikası</string>
+    <string name="google_terms_of_service_title">Google Hizmet Şartları</string>
+    <string name="google_privacy_policy_title">Google Gizlilik Politikası</string>
+    <string name="notification_update_title">Hesabınızın güncellenmesi gerekiyor</string>
+    <string name="notification_update_message">Kurulum Sihirbazını yeniden çalıştırmak için buraya dokunun</string>
+    <string name="common_message">"Gmail, yedekleme ve diğer birçok Android özelliğini kullanmak için Google Hesabınız olmalıdır.
+
+Var olan bir Google Hesabı ile oturum açmak için "<b>İleri</b>"'ye dokunun veya şimdi yeni bir Google Hesabı oluşturun.
+
+Android'i kullanmaya başlamak için "<b>Atla</b>"'ya da dokunabilirsiniz. Daha sonra, Ayarlar'da Hesaplar ve Senkronizasyon bölümünden bir Google Hesabında oturum açabilirsiniz."</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Hesap ekleme</font>" 
+
+Birden fazla Google Hesabı (ev ve iş hesaplarınız gibi) kullanabilirsiniz. Google Hesabı ekleme, yalnızca birkaç adımdan oluşur. 
+
+Devam etmek için “İleri”ye dokunun veya çıkmak için Geri düğmesine basın."</string>
+    <string name="reactivate_account_message">"Bir Google Mail hesabını bu Android cihazına bağlamanız gerekiyor. 
+
+Bu hesapla ilişkilendirilmiş bir Google Mail kullanıcı adınız ("<b>^1</b>") zaten var, ancak şu anda etkin değil. 
+
+Bu kullanıcı adını tekrar etkinleştirmek ve kullanmak için \"İleri\"ye dokunun. 
+
+Farklı bir hesap kullanmak istiyorsanız Geri düğmesine basın ve farklı bir hesapla oturum açın veya farklı bir hesap oluşturun."</string>
+    <string name="reactivating_account">Hesabınız yeniden etkinleştiriliyor…</string>
+    <string name="your_account_was_reactivated">Hesabınız etkinleştirildi!</string>
+    <string name="account_recovery_info">Şifrenizin kaybolması durumunda, aşağıdaki bilgiler şifrenizi kurtarmanıza yardımcı olur</string>
+    <string name="secondary_email_label"><b>"İkincil
+E-posta"</b></string>
+    <string name="invalid_email">"Girilen e-posta adresi geçerli değil.
+ Örnek: can@example.com"</string>
+    <string name="invalid_email_primary">İkincil e-posta adresleri, şu anda oluşturduğunuz adresle aynı olamaz</string>
+    <string name="tutorial_intro_title">^1 cihazınızı nasıl kullanacağınızı öğrenin</string>
+    <string name="begin_button_label">Başlat</string>
+    <string name="tutorial_intro_message_generic">Android cihazınızdan en iyi şekilde yararlanmak için bilinmesi gereken bazı önemli noktalar vardır. <font size="17">"
+"</font>" 
+"<li>Ekran klavyesini kullanma</li> <font size="17">"
+"</font>" 
+Eğiticiyi başlatmak için \"Başlat\"a dokunun ve daha fazla bilgi alın."</string>
+    <string name="tutorial_intro_message_setupwizard">Android cihazınızdan en iyi şekilde yararlanmak için bilmeniz gereken bazı önemli noktalar vardır. <font size="17">"
+"</font>" 
+"<li>Ekran klavyesini kullanma</li>" 
+"<li>Google Hesabı kurma</li> <font size="17">"
+"</font>" 
+Eğiticiyi başlatmak için \"Başlat\"a dokunup daha fazla bilgi alın veya bu eğiticiyi atlamak ve devam etmek için \"Atla\"ya dokunun."</string>
+    <string name="keyboard_tutorial_title">Ekran klavyesini kullanma</string>
+    <string name="keyboard_tutorial_message">Klavyeyi açmak için herhangi bir metin alanına dokunun ve yazmaya başlayın. Burada deneyin!</string>
+    <string name="keyboard_tutorial_edittext_hint">Yazmaya başlamak için buraya dokunun</string>
+    <string name="done_typing_message">Yazma işleminiz bitti mi? Klavyeyi kapatmak için Geri düğmesine basın.</string>
+    <string name="done_button_label_in_tutorial">Bitti</string>
+    <string name="backup_consent_title">Ayarlarımı yedekle</string>
+    <string name="backup_consent_message">Ayarlarınız (yer işaretleriniz ve Kablosuz şifreleriniz gibi) Google Hesabınıza otomatik olarak yedeklenebilir. Yeni bir Android cihazı alırsanız (kaybettiğinizin yerine veya üst modele geçerek), ayarlarınız yeni Android cihazınıza geri yüklenir.</string>
+    <string name="backup_consent_howto_disable_message">Yedekleme ayarlarınızı istediğiniz zaman Gizlilik altında bulunan Ayarlar uygulamasında değiştirebilirsiniz.</string>
+    <string name="backup_consent_yes_agree">Ayarları Google Hesabıma yedekle.</string>
+    <string name="restore_disable">Geri yüklemeyi devre dışı bırak</string>
+    <string name="restore_enable">Geri yüklemeyi etkinleştir</string>
+    <string name="restore_enabled">Daha önceden ayarlarınızı yedeklediyseniz ayarlarınız geri yüklenecektir.</string>
+    <string name="restore_disabled">Ayarlarınız yedekten geri yüklenmeyecek.</string>
+    <string name="webview_progress_title">Alana bağlanıyor...</string>
+    <string name="webview_progress_verbose_message">"Şirketinizin sunucuları oturum açma bilgileri gönderiyor. Bu işlem birkaç dakika kadar sürebilir.
+İşlem tamamlandığında şirketinizin oturum açma sayfası görüntülenecektir."</string>
+    <string name="enterprise_unmanaged_domain">Bu alan, Google Apps kullanmıyor. Lütfen alan adını kontrol edin ve tekrar deneyin.</string>
+    <string name="use_location_for_services_agree">Kabul ediyorum</string>
+    <string name="use_location_for_services_disagree">Kabul etmiyorum</string>
+    <string name="use_location_for_services_title">"Konumum'u Kullan"</string>
+    <string name="use_location_for_services_text">"Google'a, gelişmiş arama sonuçları ve diğer hizmetler için konum kullanma izni vermek istiyor musunuz?"</string>
+    <string name="permlab_readGsettings">Google ayarlarını oku</string>
+    <string name="permdesc_readGsettings">Bu uygulamaya Google ayarlarınızı okuma izni verir.</string>
+    <string name="permlab_writeGsettings">Google ayarlarını değiştir</string>
+    <string name="permdesc_writeGsettings">Bu uygulamaya Google ayarlarını değiştirme izni verir.</string>
+    <string name="permlab_readGservices">Google hizmet yapılandırmasını oku</string>
+    <string name="permdesc_readGservices">Bu uygulamanın Google hizmeti yapılandırma verilerini okuyabilmesini sağlar.</string>
+    <string name="permlab_writeGservices">Google hizmet yapılandırmasını değiştir</string>
+    <string name="permdesc_writeGservices">Bu uygulamanın Google hizmeti yapılandırma verilerini değiştirebilmesini sağlar.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">Google hesaplarının şifrelerine eriş</string>
+    <string name="permdesc_googleAuthPassword">Uygulamalara yapılandırdığınız Google hesaplarının şifrelerine doğrudan erişim izni verir.</string>
+    <string name="permlab_googleMailSwitch">Gmail veya Google Mail markasını seç</string>
+    <string name="permdesc_googleMailSwitch">Uygulamalara, görüntülenen adı \"Gmail\" ve \"Google Mail\" markalaması arasında değiştirme izni verir.</string>
+    <string name="permlab_googleAuth">yapılandırılmış hesapları görüntüle</string>
+    <string name="permdesc_googleAuth">Uygulamalara yapılandırdığınız Google hesaplarının kullanıcı adlarını (e-posta adreslerini) görme izni verir.</string>
+    <string name="permlab_googleAuth_ALL">tüm Google hizmetlerine eriş</string>
+    <string name="permdesc_googleAuth_ALL">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak TÜM Google hizmetlerinde oturum açma izni verir.</string>
+    <string name="permlab_googleAuth_OTHER">diğer Google hizmetlerine eriş</string>
+    <string name="permdesc_googleAuth_OTHER">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak tanımlanmamış Google hizmetlerinde oturum açma izni verir.</string>
+    <string name="permlab_googleAuth_mail">Google mail</string>
+    <string name="permdesc_googleAuth_mail">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google posta hizmetlerinde oturum açma izni verir.</string>
+    <string name="permlab_googleAuth_cl">Google Takvim</string>
+    <string name="permdesc_googleAuth_cl">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Takvim oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_android">Android hizmetleri</string>
+    <string name="permdesc_googleAuth_android">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Android hizmetlerinde oturum açma izni verir.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout hesapları</string>
+    <string name="permdesc_googleAuth_sierra">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Checkout oturum açma (ve potansiyel olarak alışveriş yapabilme) izni verir.</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA hesapları</string>
+    <string name="permdesc_googleAuth_sierraqa">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Checkout QA oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandbox hesapları</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Checkout Sandbox oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak YouTube oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube kullanıcı adları</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Uygulamalara, bu Android cihazında saklanan Google hesaplarıyla ilişkili YouTube kullanıcı adlarını görme izni verir.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Talk oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_ig">iGoogle hesapları</string>
+    <string name="permdesc_googleAuth_ig">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak iGoogle oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_lh2">Picasa Web Albümleri</string>
+    <string name="permdesc_googleAuth_lh2">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Picasa Web Albümleri oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_mobile">Google mobil uygulamaları</string>
+    <string name="permdesc_googleAuth_mobile">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google mobil uygulamalar oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_cp">Google hesaplarındaki kişi verileri</string>
+    <string name="permdesc_googleAuth_cp">Uygulamalara, bu Android cihazında saklanan hesaplara ait kişi ve profil bilgilerine erişme izni verir.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google AdSense oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google AdWords oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Blogger oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Dodgeball oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Base oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_groups2">Google Grupları</string>
+    <string name="permdesc_googleAuth_groups2">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Grupları oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Health oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak JotSpot oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Knol oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_news">Google Haberler</string>
+    <string name="permdesc_googleAuth_news">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Haberler oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Orkut oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_print">Google Kitap Arama</string>
+    <string name="permdesc_googleAuth_print">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Kitap Arama oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Web Yöneticisi Araçları</string>
+    <string name="permdesc_googleAuth_sitemaps">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Web Yöneticisi Araçları oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google WiFi oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_writely">Google Dokümanlar</string>
+    <string name="permdesc_googleAuth_writely">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Dokümanlar oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_wise">Google E-Tablolar</string>
+    <string name="permdesc_googleAuth_wise">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google E-Tablolar oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_finance">Google Finans</string>
+    <string name="permdesc_googleAuth_finance">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Finans oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_local">Google Haritalar</string>
+    <string name="permdesc_googleAuth_local">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Haritalar oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google App Engine oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_notebook">Google Not Defteri</string>
+    <string name="permdesc_googleAuth_notebook">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Not Defteri oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Google Voice oturumu açma izni verir.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Personalized Speech Recognition</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Uygulamalara, bu Android cihazında saklanan hesapları kullanarak Personalized Speech Recognition hizmetinde oturum açma izni verir.</string>
+    <string name="gls_notification_title">Hesabınızda oturum açın</string>
+    <string name="gls_notification_new_account">^1 hesabı gerekli</string>
+    <string name="gls_notification_new_account_youtube">YouTube hesabı gerekir</string>
+    <string name="gls_notification_login_error">Hesabınızda oturum açmak için dokunun.</string>
+    <string name="gls_ui_add_account_title">Hesap kurulumu</string>
+    <string name="gls_ui_google_account_subtitle">Google Hesabı</string>
+    <string name="gls_ui_activity_title">Google oturumu açma</string>
+    <string name="gls_ui_activity_title_browser_signin">Tarayıcıda oturum açın</string>
+    <string name="gls_ui_activity_title_enterprise">Kurumsal oturum açma</string>
+    <string name="gls_ui_activity_title_youtube">YouTube oturumu açma</string>
+    <string name="gls_ui_activity_authenticating">Kimlik doğrulaması yapılıyor...</string>
+    <string name="gls_captcha_activity_message">Lütfen resimde gördüğünüz karakterleri girin:</string>
+    <string name="gls_captcha_activity_ok_button">Bitti</string>
+    <string name="gls_error_activity_message"><b>^1</b>" oturumu açılmaya çalışırken bir ağ hatası oluştu. Şimdi tekrar deneyin veya iptal etmek için İptal'e basın."</string>
+    <string name="gls_error_activity_retry_button">Tekrar dene</string>
+    <string name="gls_dmagent_activity_message">" Alan adınız mobil cihaz yönetimi gerektiriyor. Lütfen "<b>^1</b> hesabının gerektirdiği güvenlik politikalarını yürürlüğe sokmak için Google Apps Device Policy uygulamasını yükleyin.</string>
+    <string name="gls_dmagent_activity_retry_button">İndir</string>
+    <string name="gls_login_activity_username_label">Kullanıcı adı</string>
+    <string name="gls_login_activity_password_label">Şifre</string>
+    <string name="gls_login_activity_ok_button">Oturum açın</string>
+    <string name="gls_login_activity_loginfail_text_both">Kullanıcı adı ve şifre geçerli değil. <b>^1</b> hesabı gerekiyor. Lütfen tekrar deneyin.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Yanlış şifre girdiniz veya hesabınız değişmiş. Lütfen şifrenizi tekrar girin.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Bu hesap için şifreyi yazın.</string>
+    <string name="gls_enterprise_login_activity_msg">"Kimlik doğrulama için lütfen ^1 alanındaki kurumsal hesabınızda oturum açın.
+Şirketinizin web tabanlı oturum açma sayfasını açmak için Oturum aç'a dokunun."</string>
+    <string name="gls_login_activity_badaccount_text">Bu durumda söz konusu hesabı kullanamazsınız. Lütfen farklı bir hesap deneyin.</string>
+    <string name="gls_login_activity_newaccount_text"><b>^1</b> hesabınızda oturum açın.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Bir YouTube hesabınız yok mu? Hesap oluşturmak için <a href="http://www.youtube.com/signup">buraya</a> dokunun.</string>
+    <string name="gls_settings_tos_activity_title">Google yasal</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">"Veri hizmetine bağlı değilsiniz. Bu bilgileri şimdi görüntülemek için İnternet'e bağlı herhangi bir bilgisayardan %s adresine gidin."</string>
+    <string name="gls_settings_contributors_activity_title">Katkıda bulunanlar</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">"Veri hizmetine bağlı değilsiniz. Bu bilgileri şimdi görüntülemek için İnternet'e bağlı herhangi bir bilgisayardan %s adresine gidin."</string>
+    <string name="gls_webview_progress_title">Alana bağlanıyor...</string>
+    <string name="gls_webview_progress_verbose_message">"Şirketinizin sunucuları oturum açma bilgileri gönderiyor. Bu işlem birkaç dakika kadar sürebilir.
+İşlem tamamlandığında şirketinizin oturum açma sayfası görüntülenir."</string>
+    <string name="gls_sign_in_button_label">Oturum açın</string>
+    <string name="gls_back_button_label">Geri</string>
+    <string name="gls_cancel_button_label">İptal</string>
+    <string name="gls_exit_account_setup_button_label">Hesap kurulumndn çık</string>
+    <string name="gls_reauthorize_button_label">Yeniden yetkilendir</string>
+    <string name="gls_sign_in_message">Hesabınızın kurulumu için Android cihazınızın Google sunucuları ile iletişim kurması gerekiyor. Bu işlem beş dakika kadar sürebilir.</string>
+    <string name="gls_sign_in_title">Oturum açılıyor...</string>
+</resources>

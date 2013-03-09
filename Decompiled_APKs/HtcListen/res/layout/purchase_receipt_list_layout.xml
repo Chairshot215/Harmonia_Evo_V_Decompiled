@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/purchaseReceiptLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.htc.widget.HtcListView android:id="@*android:id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/HtcListStyle" />
+        <ViewStub android:id="@id/message_stub_import" android:layout="@layout/no_paymentmethod" android:inflatedId="@id/message_inflate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/footerStub" android:layout="@layout/browser_footer_layout" android:inflatedId="@id/footerInflate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

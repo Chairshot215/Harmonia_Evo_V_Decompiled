@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/PhotoLayout" android:layout_width="@dimen/list_item_height_1" android:layout_height="@dimen/list_item_height_1">
+        <ImageView android:id="@id/Photo" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="bottom|left|center" android:id="@id/fIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_icon_indicator_facebook" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/textLayout" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginTop="0.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="3.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/Name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SocialNetworkUpdateMeLabel" android:singleLine="true" android:layout_weight="1.0" style="@style/text_style_primary" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@id/Description" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/SocialNetworkUpdateMeDescription" android:singleLine="true" android:layout_weight="1.0" style="@style/text_style_secondary" />
+            <TextView android:gravity="right" android:id="@id/Time" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_style_tertiary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

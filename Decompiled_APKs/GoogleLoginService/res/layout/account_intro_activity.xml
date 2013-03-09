@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:layout_marginRight="@dimen/title_indent">
+            <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/account_intro_recommended_title" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/learn_more_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:src="@drawable/ic_menu_info_holo_dark" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+        <View android:id="@id/top_divider" android:layout_below="@id/title_content" style="@style/TopDivider" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/StackButtonedContent">
+        <TextView android:id="@id/common_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignParentTop="true" style="@style/DescriptionText" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/common_message" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/make_it_google_graphic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/android_make_it_google" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/buttons" style="@style/StackedButtons">
+        <Button android:id="@id/next_button" android:layout_width="fill_parent" android:text="@string/sign_in_button_label" style="@style/Button" />
+        <Button android:id="@id/create_button" android:layout_width="fill_parent" android:layout_marginTop="@dimen/button_vertical_spacing" android:text="@string/create_button_label" style="@style/Button" />
+        <Button android:id="@id/skip_button" android:layout_width="fill_parent" android:layout_marginTop="@dimen/button_vertical_spacing" android:text="@string/not_now_button_label" style="@style/Button" />
+    </LinearLayout>
+</view>

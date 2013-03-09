@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_hwkb_settings_title" android:key="keyboard_hwkb_settings" android:summary="@string/keyboard_hwkb_settings_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcListPreference android:persistent="true" android:title="@string/keyboard_hwkb_default_lang_title" android:key="@string/keyboard_hwkb_def_lang" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_hwkb_chinese_input_title" android:key="@string/keyboard_hwkb_chinese_input_title" android:summary="@string/keyboard_hwkb_chinese_input_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsHWKBSSSettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_fqwerty_prediction_title" android:key="@string/keyboard_ime_settings_hw_fqwerty_prediction" android:summary="@string/keyboard_ime_settings_fqwerty_prediction_summary" android:defaultValue="false" />
+</com.htc.preference.HtcPreferenceScreen>

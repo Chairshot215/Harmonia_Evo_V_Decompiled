@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="fill" android:id="@id/account_item" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@com.htc:dimen/htc_list_item_margin_top" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="3.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="top|left|center" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/list_primary_m" />
+        <TextView android:gravity="left|center" android:layout_gravity="bottom|left|center" android:id="@id/txt_2x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+    </LinearLayout>
+    <CheckBox android:gravity="center_vertical" android:id="@id/chk_1x1" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="3.0px" android:button="?com.htc:attr_common_checkbox" android:layout_alignParentRight="true" />
+</LinearLayout>

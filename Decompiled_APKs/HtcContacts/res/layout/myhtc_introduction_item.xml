@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/myhtc_desc_right_textsize" android:id="@id/text" android:paddingLeft="@dimen/myhtc_desc_left_margin" android:paddingTop="20.0dip" android:paddingRight="@dimen/myhtc_desc_right_margin" android:layout_width="fill_parent" android:layout_height="683.0px" android:singleLine="false" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ImageView android:id="@com.htc:id/htc_list_item_top_round" android:background="@com.htc:drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@com.htc:id/htc_list_item_bottom_round" android:background="@com.htc:drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="683.0px" android:layout_alignParentBottom="true" />
+</FrameLayout>

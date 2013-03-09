@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tutorial_page_title_bar" layout="@com.htc:layout/title_1" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tutorial_page_cmd_bar" android:layout_below="@id/tutorial_page_title_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/shadow_img" android:layout_width="@dimen/camera_shadow_img_width" android:layout_height="@dimen/camera_shadow_img_height" android:layout_marginLeft="@dimen/camera_shadow_img_marginLeft" android:layout_marginTop="@dimen/camera_shadow_img_marginTop" android:src="@drawable/oobe_app_shadow" />
+            <ImageView android:id="@id/tutorial_img" android:layout_width="@dimen/camera_tutorial_img_width" android:layout_height="@dimen/camera_tutorial_img_height" android:layout_marginTop="@dimen/camera_tutorial_img_marginTop" android:scaleType="matrix" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@*android:color/white" android:id="@id/tutorial_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/camera_tutorial_text_marginLeft" android:layout_marginTop="@dimen/camera_tutorial_text_marginTop" android:layout_marginRight="@dimen/camera_tutorial_text_marginRight" android:text="@string/camera_tutorial_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@id/tutorial_page_cmd_bar" layout="@com.htc:layout/cmd_bar_2" />
+</RelativeLayout>

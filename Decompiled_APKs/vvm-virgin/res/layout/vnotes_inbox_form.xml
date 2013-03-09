@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/vnotes_title_bar" />
+    <RelativeLayout android:id="@id/mwiSection" android:background="@*android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/TitleSection">
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/mwiText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/inbox_mwi_text" />
+        <Button android:id="@id/callVoicemailButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_call_for_vm" android:layout_below="@id/mwiText" />
+    </RelativeLayout>
+    <ListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mwiSection" android:fastScrollEnabled="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="top|center" android:layout_gravity="center_horizontal" android:id="@id/empty" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/inbox_list_empty" android:layout_below="@id/mwiSection" android:layout_centerVertical="true" />
+</RelativeLayout>

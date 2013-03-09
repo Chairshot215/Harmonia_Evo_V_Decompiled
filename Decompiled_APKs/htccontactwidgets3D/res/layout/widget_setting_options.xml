@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/list_setting_options" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <include android:id="@id/oldTitle" layout="@com.htc:layout/title_1" />
+    <com.htc.widget.HeaderBarShort android:id="@id/newTitle" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <com.htc.widget.HtcListView android:textColor="@color/black" android:id="@id/optionlist" android:background="#f2f2f2f2" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/setting_activity_margin_top" android:drawSelectorOnTop="false" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_list_divider" />
+</LinearLayout>

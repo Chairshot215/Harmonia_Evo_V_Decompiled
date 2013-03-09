@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Latauksen hallinta</string>
+    <string name="permlab_downloadManager">Avaa latauksen hallinta.</string>
+    <string name="permdesc_downloadManager">Antaa sovelluksen käyttää latauksien hallintaa. Haitalliset sovellukset voivat keskeyttää latauksia ja käyttää yksityistietoja.</string>
+    <string name="permlab_downloadManagerAdvanced">Latauksen hallinnan lisätoiminnot.</string>
+    <string name="permdesc_downloadManagerAdvanced">Antaa sovelluksen käyttää latauksien hallinnan lisätoimintoja. Haitalliset sovellukset voivat keskeyttää latauksia ja käyttää yksityistietoja.</string>
+    <string name="permlab_downloadCompletedIntent">Lähetä latausilmoituksia.</string>
+    <string name="permdesc_downloadCompletedIntent">Antaa sovelluksen lähettää valmistuneita latauksia koskevia ilmoituksia. Haitalliset sovellukset voivat käyttää tätä muiden tiedostoja lataavien sovelluksien häiritsemiseen.</string>
+    <string name="permlab_seeAllExternal">Näyttää kaikki SD-kortin lataukset</string>
+    <string name="permdesc_seeAllExternal">Antaa sovelluksen nähdä kaikki SD-kortille tehtävät lataukset huolimatta latauksen suorittaneesta sovelluksesta.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Varaa tilaa välimuistiin</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Antaa sovelluksen ladata tiedostoja latausvälimuistiin, jota ei voi automaattisesti poistaa latauksen hallinnan tarvitessa lisää tilaa.</string>
+    <string name="permlab_downloadWithoutNotification">lataa tiedostoja ilmoittamatta</string>
+    <string name="permdesc_downloadWithoutNotification">Antaa sovelluksen ladata tiedostoja latauksen hallinnan kautta ilmoittamatta siitä käyttäjälle.</string>
+    <string name="permlab_accessAllDownloads">Salli kaikki järjestelmälataukset</string>
+    <string name="permdesc_accessAllDownloads">Antaa sovelluksen tarkastella ja muokata kaikkia minkä tahansa järjestelmän sovelluksen käynnistämiä latauksia.</string>
+    <string name="download_unknown_title">&lt;Nimetön></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" ja %d muuta"</string>
+    <string name="notification_download_complete">Lataus valmis.</string>
+    <string name="notification_download_failed">Lataus epäonnistui.</string>
+    <string name="notification_need_wifi_for_size">Lataa wifi-yhteydellä</string>
+    <string name="notification_paused_in_background">Keskeytetty taustalla.</string>
+    <string name="wifi_required_title">Lataus on liian suuri operaattorin verkolle</string>
+    <string name="wifi_required_body" formatted="false">"Tämä %s n lataus täytyy suorittaa wifi-yhteyden ollessa käytössä. 
+
+Aloita lataus seuraavan kerran, kun yhdistät wifi-verkkoon, koskettamalla %s ."</string>
+    <string name="wifi_recommended_title">Asetetaanko jonoon myöhempää latausta varten?</string>
+    <string name="wifi_recommended_body" formatted="false">"Jos aloitat tämän %s :n latauksen nyt, akun virtaa voi kulua tav. enemmän ja/tai operaattori voi veloittaa ylim. mobiilitiedons.
+
+Aloita lataus seuraavan kerran, kun yhdistät wifi-verkkoon, koskettamalla %s."</string>
+    <string name="button_queue_for_wifi">Jono</string>
+    <string name="button_cancel_download">Peruuta</string>
+    <string name="button_start_now">Aloita nyt</string>
+    <string name="low_download_storage_view_title">Liian vähän tallennustilaa</string>
+    <string name="low_download_storage_view_text">Tallennustilaa on liian vähän lataamista varten.</string>
+    <string name="notification_paused_no_wifi">" (keskeytetty)"</string>
+    <string name="download_percent">%d %%</string>
+</resources>

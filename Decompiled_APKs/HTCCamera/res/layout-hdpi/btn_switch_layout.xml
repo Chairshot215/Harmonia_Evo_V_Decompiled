@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/layout_camera_switch" android:visibility="invisible" android:layout_width="136.0px" android:layout_height="136.0px">
+        <Button android:id="@id/btn_camera_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/icon_camera_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_camera_flip" android:layout_centerInParent="true" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="no_window_content_overlay">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@*android:color/transparent</item>
+    </style>
+    <style name="no_window_content_overlay_black" parent="@style/no_window_content_overlay">
+        <item name="android:windowBackground">@*android:color/black</item>
+    </style>
+    <style name="Theme" />
+    <style name="Theme.base" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.fakescreen" parent="@style/Theme.base">
+        <item name="com.htc:fakescreenStyle">style_04</item>
+    </style>
+    <style name="Theme.fakescreen.video" parent="@style/Theme.base">
+        <item name="com.htc:fakescreenStyle">style_04</item>
+    </style>
+    <style name="Theme.white" parent="@style/Theme.base">
+        <item name="android:windowBackground">@com.htc:color/white</item>
+    </style>
+    <style name="Theme.black" parent="@style/Theme.base">
+        <item name="android:windowBackground">@com.htc:color/black</item>
+    </style>
+    <style name="Theme.popdialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@com.htc:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="buttonTextColorLogin">
+        <item name="android:textAppearance">?android:textAppearanceInverse</item>
+        <item name="android:textColor">@color/text_btn</item>
+    </style>
+    <style name="Theme.Translucent" parent="@style/Theme">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+    </style>
+    <style name="TitleTextBlackStyle">
+        <item name="android:textSize">@com.htc:dimen/input_default_m</item>
+        <item name="android:textColor">@com.htc:color/black</item>
+    </style>
+    <style name="details_popup_body_text_style">
+        <item name="android:textSize">@com.htc:dimen/list_primary_s</item>
+        <item name="android:textColor">@com.htc:color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TitleTextStyle_Filmstrip">
+        <item name="android:textSize">@com.htc:dimen/gallery_glance_title_m</item>
+        <item name="android:textColor">@com.htc:color/title_primary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="TitleSubTextStyle_Filmstrip">
+        <item name="android:textSize">@com.htc:dimen/gallery_glance_title_s</item>
+        <item name="android:textColor">#ffd1d0d0</item>
+    </style>
+</resources>

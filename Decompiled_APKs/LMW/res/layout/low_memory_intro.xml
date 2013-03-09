@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_below="@id/header_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/description_group" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/htc_listview_style">
+                <ImageView android:id="@id/description_image" android:layout_width="@dimen/image_width" android:layout_height="@dimen/image_height" android:layout_marginLeft="@dimen/image_margin_left" android:layout_marginTop="@dimen/image_margin_top" android:src="@drawable/application_storage" />
+                <TextView android:gravity="left|center" android:id="@id/memory_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:singleLine="true" android:layout_below="@id/description_image" android:marqueeRepeatLimit="marquee_forever" style="@style/description_title" />
+                <TextView android:id="@id/description_text" android:paddingBottom="@dimen/application_storage_description_text_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:text="@string/low_memory_intro_hint" android:layout_below="@id/memory_info" style="@style/description_text" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/radio_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView style="@style/list_divider" />
+                <com.htc.widget.HtcListView android:id="@id/choice_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@com.htc:drawable/common_list_divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.htc.widget.HeaderBarShort android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.widget.HtcFooter android:id="@id/cmd_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_1" android:text="@string/back" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

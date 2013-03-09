@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ss:speechstrategy xmlns:ss="http://www.google.android.marvin.talkback.com/speechstrategy"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.google.android.marvin.talkback.com/speechstrategy speechstrategy.xsd" >
+
+  <!-- Launcher - Announce drag state for icons-->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_LONG_CLICKED</ss:eventType>
+      <ss:className>com.android.launcher2.BubbleTextView</ss:className>
+      <ss:packageName>com.android.launcher</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_dragging_icon</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+    <!-- Drop extra event for Gingerbread notification shade -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.systemui.statusbar.TrackingView</ss:className>
+      <ss:packageName>com.android.systemui</ss:packageName>
+    </ss:filter>
+    <ss:formatter>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Google Quick Search Box widget -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.google.android.googlequicksearchbox</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+      <ss:currentItemIndex>0||1</ss:currentItemIndex>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_change_search_category</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.TextView</ss:className>
+      <ss:packageName>com.google.android.googlequicksearchbox</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+      <ss:currentItemIndex>1||2</ss:currentItemIndex>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_search_box</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.google.android.googlequicksearchbox</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+      <ss:currentItemIndex>2||3</ss:currentItemIndex>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_voice_search</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- CALENDAR RULES -->
+
+  <!-- DayView (day/week version) (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_SELECTED</ss:eventType>
+      <ss:className>com.android.calendar.DayView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.calendar.DayOrWeekOrAgendaViewSelectedFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- WeekView (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_SELECTED</ss:eventType>
+      <ss:className>com.android.calendar.WeekView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.calendar.DayOrWeekOrAgendaViewSelectedFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- MonthView (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_SELECTED</ss:eventType>
+      <ss:className>com.android.calendar.MonthView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.calendar.MonthViewSelectedFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- AgendaListView (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_SELECTED</ss:eventType>
+      <ss:className>com.android.calendar.AgendaListView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.calendar.DayOrWeekOrAgendaViewSelectedFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- DayView (day/month version) (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.calendar.DayView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+       <ss:custom>com.google.android.marvin.talkback.formatter.calendar.DayViewWindowStateChangedFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- WeekView (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.calendar.WeekView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_announce_week</ss:template>
+      <ss:split> – </ss:split>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- MonthView (Gingerbread) -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.calendar.MonthView</ss:className>
+      <ss:packageName>com.google.android.calendar</ss:packageName>
+      <ss:platformSdk>9||10</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_announce_month</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+</ss:speechstrategy>

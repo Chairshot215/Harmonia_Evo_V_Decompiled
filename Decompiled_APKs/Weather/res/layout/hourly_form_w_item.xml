@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="60.0px" android:layout_height="85.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="50.0px" android:layout_height="wrap_content" android:layout_marginTop="-5.0px" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="65.0px" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0px" android:textColor="#ff4c4c4c" android:gravity="center" android:id="@id/temp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0px" android:textColor="#ffc4c4c4" android:gravity="center" android:id="@id/precip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0px" android:text="@string/hourly_precip_text" />
+        <TextView android:textSize="12.0px" android:textColor="#ff4c4c4c" android:gravity="center" android:id="@id/humidity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0px" />
+    </RelativeLayout>
+</RelativeLayout>

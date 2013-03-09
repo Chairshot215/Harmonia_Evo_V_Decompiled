@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="setupWizardBodyTextPrimary" parent="@*android:attr/textAppearanceMedium">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardBodyTextSecondary" parent="@*android:attr/textAppearanceMedium">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardBodyTextPrimaryLarge" parent="@*android:attr/textAppearanceLarge">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardBodyTextSecondaryLarge" parent="@*android:attr/textAppearanceLarge">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardTextPrimarySmall" parent="@*android:attr/textAppearanceSmall">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardTextSecondarySmall" parent="@*android:attr/textAppearanceSmall">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardTitle">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="setupWizardTextPrimaryGreen">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="setupWizardTitleDivider">
+        <item name="android:background">@color/title_color</item>
+    </style>
+    <style name="BrowserTheme" parent="@*android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+    </style>
+    <style name="AutoCompleteTextView">
+        <item name="android:textAppearance">?android:textAppearanceLargeInverse</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:completionHintView">@*android:layout/simple_dropdown_item_1line</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@*android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@*android:drawable/spinner_dropdown_background</item>
+    </style>
+    <style name="CustomTitle" parent="@*android:style/Theme">
+        <item name="android:windowTitleSize">60.0dip</item>
+    </style>
+    <style name="InvisibleNoTitle">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="WelcomeTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="ActivationTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="LocationSharingTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="NoAccountTosTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="SetupCompleteTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="PrepaySetupTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="SimMissingTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="setupWizardOuterFrame">
+        <item name="android:paddingLeft">@dimen/screen_margin_sides</item>
+        <item name="android:paddingTop">@dimen/screen_margin_top</item>
+        <item name="android:paddingRight">@dimen/screen_margin_sides</item>
+        <item name="android:paddingBottom">@dimen/screen_margin_bottom</item>
+    </style>
+    <style name="WelcomeOuterFrame" parent="@style/setupWizardOuterFrame">
+        <item name="android:paddingTop">@dimen/welcome_screen_margin_top</item>
+        <item name="android:paddingBottom">@dimen/welcome_screen_margin_bottom</item>
+    </style>
+    <style name="WelcomeTitle">
+        <item name="android:textSize">40.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+    <style name="Title">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+    <style name="DescriptionText">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/description_text_size</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/description_margin_sides</item>
+        <item name="android:layout_marginTop">@dimen/description_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/description_margin_sides</item>
+    </style>
+    <style name="Button">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+    </style>
+    <style name="LanguageSpinnerPositioning">
+        <item name="android:layout_marginLeft">-3.0dip</item>
+        <item name="android:layout_marginTop">@dimen/language_spinner_margin_top</item>
+        <item name="android:layout_below">@id/top_divider</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="StartButtonPositioning">
+        <item name="android:layout_marginTop">@dimen/start_button_margin_top</item>
+        <item name="android:layout_below">@id/change_language_spinner</item>
+        <item name="android:layout_alignRight">@id/change_language_spinner</item>
+    </style>
+    <style name="AndroidFramePositioning">
+        <item name="android:layout_marginLeft">@dimen/welcome_screen_android_margin_left</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_android_margin_bottom</item>
+        <item name="android:layout_above">@id/welcome_emergency_dial</item>
+        <item name="android:layout_below">@id/start</item>
+    </style>
+    <style name="AndroidPositioning">
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="TopDivider">
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginBottom">7.0dip</item>
+    </style>
+    <style name="PreferenceDivider" parent="@style/TopDivider">
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+    </style>
+    <style name="BottomDivider" parent="@style/TopDivider">
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="Spinner" parent="@*android:style/Widget.Holo.Spinner">
+        <item name="android:gravity">left|center</item>
+    </style>
+    <style name="WelcomeImageLinearLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="WelcomeImageLandscapeFrame">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4.0</item>
+    </style>
+    <style name="WelcomeImagePortraitFrame">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3.0</item>
+    </style>
+    <style name="WelcomeImageLandscape">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="WelcomeImagePortrait">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="MissingSimBackButton" parent="@style/Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_above">@id/skip_button</item>
+    </style>
+    <style name="MissingSimSkipButton" parent="@style/Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="BackButton" parent="@style/Button">
+        <item name="android:background">@drawable/btn_dir_prev_holo_dark</item>
+        <item name="android:paddingLeft">15.0dip</item>
+    </style>
+    <style name="NextButton" parent="@style/Button">
+        <item name="android:background">@drawable/btn_dir_next_holo_dark</item>
+        <item name="android:paddingRight">18.0dip</item>
+    </style>
+</resources>

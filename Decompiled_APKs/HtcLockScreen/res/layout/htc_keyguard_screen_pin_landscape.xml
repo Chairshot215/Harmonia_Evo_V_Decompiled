@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:gravity="center" android:orientation="horizontal" android:id="@id/enter_password_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="68.0dip" android:layout_marginRight="6.0dip" android:text="@*android:string/keyguard_password_enter_password_code" style="@style/lock_title_s_text_appearance" />
+    <EditText android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/passwordEntry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="138.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="138.0dip" android:singleLine="true" android:inputType="textPassword" />
+    <TextView android:gravity="center" android:orientation="horizontal" android:id="@id/hint_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" style="@style/lock_title_s_text_appearance" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.htc.lockscreen.keyboard.HtcPinKeyboard android:id="@id/keyboard2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <View android:id="@id/space_killer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <include layout="@layout/common_button_bar1" />
+    <include layout="@layout/common_button_bar2" />
+</LinearLayout>

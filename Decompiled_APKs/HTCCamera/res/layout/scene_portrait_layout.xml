@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/scene_portrait_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/camera_guides_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0px" android:src="@drawable/indicator_face_detection" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:text="@string/doubleshot_hint_scene_portrait" android:shadowColor="#c0000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

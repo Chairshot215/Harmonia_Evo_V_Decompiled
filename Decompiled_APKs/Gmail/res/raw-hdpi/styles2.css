@@ -1,0 +1,47 @@
+/* Copyright (C) 2010 Google Inc. All Rights Reserved */
+
+/* Absolute size values for MDPI are 2/3rds of the corresponding HDPI values. */
+
+body {
+  margin: 0;
+  /* The "new notification" bar in layout/html_conversation.xml relies on these
+   * padding values. */
+  padding: 0 0 48px;
+}
+
+.gm-body {
+  display: none;
+  font-size: 21px;
+}
+
+.gm-expanded > .gm-body {
+  display: block;
+}
+
+/* NOTE: this style is affected by zoom, so it is MDPI-native. It is not dpi-variable. */
+.gm-message-content {
+  padding: 12px 24px 30px;
+  font-size: 14px;
+}
+
+.elided-text {
+  display: none;
+}
+
+.elided-text,
+.quoted-text {
+  color: purple;
+}
+
+.gm-elided-text {
+  color: #666;
+  font: bold 12px "Droid Sans", Arial, sans-serif;
+  padding: 0.5em 0;
+}
+
+/* TODO(attila): Clean up the legacy styles below this line. */
+
+span.highlight {
+  font-size: inherit;
+  background-color: yellow;
+}

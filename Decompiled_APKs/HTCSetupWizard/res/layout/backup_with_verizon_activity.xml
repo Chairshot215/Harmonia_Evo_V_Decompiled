@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/backup_verizon_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:paddingLeft="@dimen/layout_margin_left" android:paddingRight="@dimen/layout_margin_right" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/backup_desc_1" android:paddingBottom="@dimen/layout_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_top" android:text="@string/backup_verizon_desc" style="@style/textAppearance_content" />
+            <TextView android:id="@id/backup_desc_2" android:paddingBottom="@dimen/layout_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_top" android:text="@string/backup_verizon_terms_service" style="@style/textAppearance_content" />
+            <CheckBox android:textAppearance="@style/textAppearance_content" android:gravity="top|left|center" android:id="@id/agree_checkbox" android:paddingTop="@dimen/layout_margin_top" android:paddingBottom="@dimen/layout_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/backup_verizon_agree_desc" />
+            <Button android:id="@id/learn_more" android:layout_marginLeft="0.0px" android:text="@string/backup_verizon_learn_more_desc" style="@style/normal_button" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout style="@style/layout_panel">
+        <Button android:id="@id/bt_next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

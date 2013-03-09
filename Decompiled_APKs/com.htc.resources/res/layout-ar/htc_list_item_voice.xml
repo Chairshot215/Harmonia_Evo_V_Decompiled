@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/round_top" android:background="@drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="12.0px" />
+    <ImageView android:layout_gravity="left|center" android:id="@id/icon_nowplaying" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_list_item_margin_left" android:layout_marginTop="0.0px" />
+    <TextView android:gravity="right|center" android:layout_gravity="right|center" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:singleLine="true" style="@style/text_style_secondary" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/htc_list_item_margin_left_add_text" android:paddingTop="@dimen/htc_list_item_margin_top" android:layout_width="275.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="left|center" android:id="@id/icon_storage" android:paddingRight="@dimen/htc_list_item_margin_left_add_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_layout" android:paddingRight="12.0px" android:layout_width="275.0dip" android:layout_height="wrap_content" android:layout_toLeftOf="@id/duration" android:layout_toRightOf="@id/icon_nowplaying" android:layout_centerVertical="true">
+            <TextView android:ellipsize="marquee" android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/icon_nowplaying" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:marqueeRepeatLimit="marquee_forever" style="@style/list_primary_m" />
+            <TextView android:ellipsize="marquee" android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/icon_nowplaying" android:layout_below="@id/line1" android:layout_alignWithParentIfMissing="true" android:marqueeRepeatLimit="marquee_forever" style="@style/list_secondary_m" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right|center" android:orientation="vertical" android:paddingTop="@dimen/htc_list_item_margin_top" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="right" android:id="@id/delete_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_left_add_text" />
+        <TextView android:id="@id/duration1" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_left_add_text" android:singleLine="true" style="@style/list_secondary_m" />
+    </LinearLayout>
+</merge>

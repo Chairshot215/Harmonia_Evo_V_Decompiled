@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="117px" hgap="0px" vgap="0px" height="87px" keyTextSize="38px" popupTextSize="48px" accentPage="4" totalRows="4" keyTextYOffset="0" topLabelTextSize="15px" topLabelTextYOffset="0" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,7,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" pageKeyBackground="@drawable/sapphire_sym_page_toggle" spellKeyBackground="@drawable/sapphire_spell_mode">
+    <row>
+        <key codes="-52" labelsource="@string/alternates_for_cp_12key_sym_math" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="-13,-13" label=":)" text=":)" />
+        <key codes="-13,-13" label=";)" text=";)" />
+        <key codes="-13,-13" label=":(" text=":(" />
+        <key codes="-12" label="1/3" textScale="80%p" function="true" height="176px" width="86px" hgap="2px" showPreview="false" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-61" labelsource="@string/alternates_for_cp_12key_sym_punctuation" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="-13,-13" label=":'(" text=":'(" />
+        <key codes="-13,-13" label=":o" text=":o" />
+        <key codes="-13,-13" label=":P" text=":P" />
+    </row>
+    <row>
+        <key codes="-53" label="表情" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="-13,-13" label=":$" text=":$" />
+        <key codes="-13,-13" label=":S" text=":S" />
+        <key codes="-13,-13" label="(^o^)" text="(^o^)" />
+        <key codes="0x0008" function="true" width="88px" hgap="1px" rightEdge="true" repeatable="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" />
+    </row>
+    <row>
+        <key codes="-54" label="其他" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="-13,-13" label="^o^y" text="^o^y" />
+        <key codes="-13,-13" label="(^_^)" text="(^_^)" />
+        <key codes="-11" labelsource="@string/alternates_for_cp_sym_back" width="117px" hgap="0px" function="true" textScale="90%p" />
+        <key codes="0x0a" function="true" rightEdge="true" width="88px" hgap="1px" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="132" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

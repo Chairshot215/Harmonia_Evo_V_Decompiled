@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/wait_for_sync_wrapper" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_gravity="center" android:id="@id/wait_for_sync_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/not_synced_title" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wait_for_manual_sync_body" android:layout_below="@id/wait_for_sync_title" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/wait_for_sync_wrapper" android:layout_centerHorizontal="true">
+        <Button android:id="@id/manual_sync" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manual_sync" />
+        <Button android:id="@id/change_sync_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_sync_settings" android:layout_toRightOf="@id/manual_sync" />
+    </RelativeLayout>
+</RelativeLayout>

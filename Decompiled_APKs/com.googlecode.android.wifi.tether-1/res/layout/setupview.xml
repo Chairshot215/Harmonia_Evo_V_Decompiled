@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setup_layout_category_wifi" android:key="wifiprefs">
+        <ListPreference android:entries="@array/devicenames" android:title="@string/setup_layout_devicetype" android:key="devicepref" android:summary="@string/setup_layout_devicetype_summary" android:defaultValue="auto" android:dialogTitle="@string/setup_layout_devicetype_dialog_title" android:entryValues="@array/devicevalues" />
+        <ListPreference android:entries="@array/setupnames" android:title="@string/setup_layout_setupmethod" android:key="setuppref" android:summary="@string/setup_layout_setupmethod_summary" android:defaultValue="auto" android:dialogTitle="@string/setup_layout_setupmethod_dialog_title" android:entryValues="@array/setupvalues" />
+        <CheckBoxPreference android:title="@string/setup_layout_wifiencryption" android:key="encpref" android:summary="@string/setup_layout_wifiencryption_summary" />
+        <ListPreference android:entries="@array/encsetupnames" android:title="@string/setup_layout_encryptionsetup" android:key="encsetuppref" android:summary="@string/setup_layout_encryptionsetup_summary" android:dependency="encpref" android:defaultValue="auto" android:dialogTitle="Setup Method" android:entryValues="@array/encsetupvalues" />
+        <EditTextPreference android:title="@string/setup_layout_passphrase" android:key="passphrasepref" android:summary="@string/setup_layout_passphrase_summary" android:dependency="encpref" android:defaultValue="abcdefghijklm" android:dialogTitle="@string/setup_layout_passphrase_dialog_title" />
+        <EditTextPreference android:maxLength="15" android:title="@string/setup_layout_ssid" android:key="ssidpref" android:summary="@string/setup_layout_ssid_summary" android:defaultValue="AndroidTether" android:dialogTitle="@string/setup_layout_ssid_dialog_title" android:dialogMessage="@string/setup_layout_ssid_dialog_message" />
+        <CheckBoxPreference android:title="@string/setup_layout_hidessid" android:key="hidessidpref" android:summary="@string/setup_layout_hidessid_summary" />
+        <ListPreference android:entries="@array/channelnames" android:title="@string/setup_layout_channel" android:key="channelpref" android:summary="@string/setup_layout_channel_summary" android:defaultValue="1" android:dialogTitle="@string/setup_layout_channel_dialog_title" android:entryValues="@array/channelvalues" />
+        <ListPreference android:entries="@array/powernames" android:title="@string/setup_layout_txpower" android:key="txpowerpref" android:summary="@string/setup_layout_txpower_summary" android:defaultValue="disabled" android:dialogTitle="@string/setup_layout_txpower_dialog_title" android:entryValues="@array/powervalues" />
+        <CheckBoxPreference android:title="@string/setup_layout_dontdisablebt" android:key="dontdisablebtpref" android:summary="@string/setup_layout_dontdisablebt_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/setup_layout_driverreload" android:key="driverreloadpref" android:summary="@string/setup_layout_driverreload_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_security" android:key="securityprefs">
+        <CheckBoxPreference android:title="@string/setup_layout_accesscontrol" android:key="acpref" android:summary="@string/setup_layout_accesscontrol_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_keepalive" android:key="keepaliveprefs">
+        <CheckBoxPreference android:title="@string/setup_layout_keepalive_title" android:key="keepalivecheckpref" android:summary="@string/setup_layout_keepalive_summary" />
+        <EditTextPreference android:maxLength="1024" android:title="@string/setup_layout_keepalive_websites_manual" android:key="keepalivecheckwebsitespref" android:summary="@string/setup_layout_keepalive_websites_manualsummary" android:dependency="keepalivecheckpref" android:defaultValue="@string/setup_layout_keepalive_websites_default" android:inputType="textUri" />
+        <EditTextPreference android:maxLength="8" android:title="@string/setup_layout_keepalive_interval_manual" android:key="keepalivecheckprefcheckintervalpref" android:summary="@string/setup_layout_keepalive_interval_manualsummary" android:dependency="keepalivecheckpref" android:defaultValue="5" android:inputType="number" />
+        <ListPreference android:entries="@array/keepaliveoption" android:title="@string/setup_layout_keepalive_option" android:key="keepalivecheckoptionpref" android:summary="@string/setup_layout_keepalive_optionsummary" android:dependency="keepalivecheckpref" android:defaultValue="karetry" android:dialogTitle="@string/setup_layout_keepalive_option" android:entryValues="@array/keepaliveoptionvalues" />
+        <EditTextPreference android:maxLength="8" android:title="@string/setup_layout_keepalive_intervalshutdown_manual" android:key="keepalivecheckprefcheckintervalshutdownpref" android:summary="@string/setup_layout_keepalive_intervalshutdown_manualsummary" android:dependency="keepalivecheckpref" android:defaultValue="10" android:inputType="number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_shutdown" android:key="shutdownprefs">
+        <CheckBoxPreference android:title="@string/setup_layout_shutdown_timer" android:key="shutdowntimerpref" android:summary="@string/setup_layout_shutdown_timer_summary" android:defaultValue="false" />
+        <com.googlecode.android.wifi.tether.ui.SeekBarPreference android:max="120" android:text="@string/setup_layout_shutdown_timer_unit_minutes" android:title="@string/setup_layout_shutdown_timer_limit" android:key="shutdowntimerlimitpref" android:summary="@string/setup_layout_shutdown_timer_limit_summary" android:dependency="shutdowntimerpref" android:defaultValue="5" android:dialogMessage="@string/setup_layout_shutdown_timer_dialog_elapsed" />
+        <CheckBoxPreference android:title="@string/setup_layout_shutdown_inactive" android:key="shutdownpref" android:summary="@string/setup_layout_shutdown_inactive_summary" android:defaultValue="false" />
+        <com.googlecode.android.wifi.tether.ui.SeekBarPreference android:max="120" android:text="@string/setup_layout_shutdown_inactive_unit_minutes" android:title="@string/setup_layout_shutdown_inactive_idle_time" android:key="shutdownidlepref" android:summary="@string/setup_layout_shutdown_inactive_idle_summary" android:dependency="shutdownpref" android:defaultValue="5" android:dialogMessage="@string/setup_layout_shutdown_inactive_dialog_idletime" />
+        <CheckBoxPreference android:title="@string/setup_layout_quotashutdown_title" android:key="quotashutdownpref" android:summary="@string/setup_layout_quotashutdown_summary" android:defaultValue="false" />
+        <EditTextPreference android:maxLength="8" android:title="@string/setup_layout_quotashutdown_limit_manual" android:key="quotamanualshutdownidlepref" android:summary="@string/setup_layout_quotashutdown_limit_manualsummary" android:dependency="quotashutdownpref" android:defaultValue="100" android:inputType="number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_lan" android:key="lanprefs">
+        <ListPreference android:entries="@array/lannetworkvalues" android:title="@string/setup_layout_lan" android:key="lannetworkpref" android:summary="@string/setup_layout_lan_summary" android:defaultValue="192.168.2.0/24" android:dialogTitle="@string/setup_layout_lan_dialog_title" android:entryValues="@array/lannetworkvalues" />
+        <CheckBoxPreference android:title="@string/setup_layout_mssclamping" android:key="mssclampingpref" android:summary="@string/setup_layout_mssclamping_summary" />
+        <CheckBoxPreference android:title="@string/setup_layout_routingfix" android:key="routefixpref" android:summary="@string/setup_layout_routingfix_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_dns" android:key="dnsprefs">
+        <EditTextPreference android:maxLength="15" android:title="@string/setup_layout_dnsprimary" android:key="dnsprimarypref" android:summary="@string/setup_layout_dnsprimary_summary" android:defaultValue="8.8.8.8" android:dialogTitle="@string/setup_layout_dnsprimary_dialog_title" android:dialogMessage="@string/setup_layout_dnsprimary_dialog_message" />
+        <EditTextPreference android:maxLength="15" android:title="@string/setup_layout_dnssecondary" android:key="dnssecondarypref" android:summary="@string/setup_layout_dnssecondary_summary" android:defaultValue="8.8.4.4" android:dialogTitle="@string/setup_layout_dnssecondary_dialog_title" android:dialogMessage="@string/setup_layout_dnssecondary_dialog_message" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_notifications">
+        <ListPreference android:entries="@array/notificationmodenames" android:title="@string/setup_layout_notification" android:key="notificationpref" android:summary="@string/setup_layout_notification_summary" android:defaultValue="2" android:dialogTitle="@string/setup_layout_notification_dialog_title" android:entryValues="@array/notificationmodevalues" />
+        <RingtonePreference android:title="@string/setup_layout_ringtone" android:key="notifyring" android:summary="@string/setup_layout_ringtone_summary" android:ringtoneType="notification" android:showDefault="true" android:showSilent="true" />
+        <CheckBoxPreference android:title="@string/setup_layout_vibrate" android:key="notifyvibrate" android:summary="@string/setup_layout_vibrate_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setup_layout_category_misc" android:key="miscprefs">
+        <CheckBoxPreference android:title="@string/setup_layout_updatecheck" android:key="updatepref" android:summary="@string/setup_layout_updatecheck_summary" />
+        <CheckBoxPreference android:title="@string/setup_layout_wakelock" android:key="wakelockpref" android:summary="@string/setup_layout_wakelock_summary" android:defaultValue="true" />
+        <ListPreference android:entries="@array/batterytempnames" android:title="@string/setup_layout_battery" android:key="batterytemppref" android:summary="@string/setup_layout_battery_summary" android:defaultValue="celsius" android:dialogTitle="@string/setup_layout_battery" android:entryValues="@array/batterytempvalues" />
+        <CheckBoxPreference android:title="@string/setup_layout_enable4gpref" android:key="enable4gpref" android:summary="@string/setup_layout_enable4gpref_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

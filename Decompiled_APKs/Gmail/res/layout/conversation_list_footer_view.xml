@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gm.ConversationListFooterView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/network_error" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_email_network_error" />
+        <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:textColor="@color/black_text" android:id="@id/error_text" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="@string/network_error" android:layout_weight="1.0" />
+        <Button android:textColor="@color/black_text" android:id="@id/retry_button" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight">
+        <ProgressBar android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminate="true" style="?android:attr/progressBarStyle" />
+        <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:textColor="@color/black_text" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="@string/loading" />
+    </LinearLayout>
+</com.google.android.gm.ConversationListFooterView>

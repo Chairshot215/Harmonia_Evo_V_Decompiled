@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.voicesearch.EditorLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/editor_dialog" android:background="#000000ff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.voicesearch.actioneditor.VoiceActionEditor android:id="@id/slot_editor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/header_footer_size" style="?android:attr/buttonBarStyle">
+        <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/editor_cancel_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/editor_go_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/go" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</com.google.android.voicesearch.EditorLayout>

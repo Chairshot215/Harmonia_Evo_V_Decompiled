@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/htc_call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key" android:summary="@string/sum_fdn">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.FdnSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_category_key">
+        <com.htc.preference.HtcListPreference android:persistent="true" android:title="@string/voicemail_provider" android:key="button_voicemail_provider_key" android:summary="@string/sum_voicemail_choose_provider" />
+        <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/voicemail_settings" android:key="button_voicemail_setting_key">
+            <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/voicemail_settings_number_label" android:key="button_voicemail_key" android:dialogTitle="@string/voicemail" phone:confirmMode="confirm" />
+        </com.htc.preference.HtcPreferenceScreen>
+        <com.htc.preference.HtcPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/clear_mwi" android:key="button_clear_mwi_key" android:summary="@string/sum_clear_mwi" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/dial_in_voicemail_title" android:key="button_dial_in_voicemail_key" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/call_fwd_to_voicemail_entries" android:title="@string/always_call_fwd_to_voicemail_title" android:key="button_always_call_fwd_to_voicemail_key" android:summary="@string/always_call_fwd_to_voicemail_summary" android:entryValues="@array/call_fwd_to_voicemail_values" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/call_fwd_to_voicemail_entries" android:title="@string/call_fwd_to_voicemail_title" android:key="button_call_fwd_to_voicemail_key" android:summary="@string/call_fwd_to_voicemail_summary" android:entryValues="@array/call_fwd_to_voicemail_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/phone_number_option_title" android:key="button_phone_number_category_key">
+        <com.htc.preference.HtcPreferenceScreen android:persistent="true" android:title="@string/phone_number_option_title" android:key="button_phone_number_key" android:summary="@string/phone_number_option_summary">
+            <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.EditMSISDNContactScreen" />
+        </com.htc.preference.HtcPreferenceScreen>
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/other_settings" android:key="button_misc_category_key" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/auto_retry_mode_title" android:key="button_auto_retry_key" android:summary="@string/auto_retry_mode_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/hac_mode_title" android:key="button_hac_key" android:defaultValue="false" android:summaryOn="@string/sum_hac_enabled" android:summaryOff="@string/sum_hac_disabled" />
+    <com.htc.preference.HtcListPreference android:entries="@array/dtmf_tone_entries" android:title="@string/dtmf_tones_title" android:key="button_dtmf_settings" android:summary="@string/dtmf_tones_summary" android:entryValues="@array/dtmf_tone_values" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="true" android:title="@string/htc_advanced_setting" android:key="button_advanced_key" android:summary="@string/htc_sum_advanced_setting">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.PhonePreference" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/htc_labelAssistedDialing" android:key="button_cdma_assissted_dialing_key" android:summary="@string/htc_sum_cdma_AssistedDialing">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nbpcd.AssistedDialingSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

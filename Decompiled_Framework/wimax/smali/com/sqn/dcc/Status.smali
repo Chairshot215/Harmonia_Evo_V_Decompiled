@@ -1,0 +1,19 @@
+.class public Lcom/sqn/dcc/Status;
+.super Ljava/lang/Object;
+.source "Status.java"
+
+
+# static fields
+.field public static final STATUS_FAILURE:I = -0x1
+
+.field public static final STATUS_OK:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

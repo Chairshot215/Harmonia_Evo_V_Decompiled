@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HtcListView android:id="@id/list1" android:background="@com.htc:color/listview_app_background" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/list_divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/no_sdcard" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_sdcard_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_icon_fullscreen_no_sd" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/warning_text" android:padding="8.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/no_sdcard" />
+    </LinearLayout>
+    <com.htc.widget.HeaderBarShort android:id="@id/cmd_bar_header" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

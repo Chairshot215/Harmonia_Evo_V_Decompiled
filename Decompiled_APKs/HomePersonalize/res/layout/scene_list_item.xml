@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scene_list_item_icon" android:layout_width="@dimen/list_item_icon_width" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <CheckedTextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/scene_list_item_name" android:paddingLeft="@dimen/list_item_padding_left" android:paddingRight="@dimen/list_item_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_item_height" android:checkMark="?android:listChoiceIndicatorSingle" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+</LinearLayout>

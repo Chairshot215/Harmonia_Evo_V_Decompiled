@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarTall android:id="@id/application_headerbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarImage android:id="@id/application_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="left_panel" />
+        <com.htc.widget.HeaderBarText android:id="@id/application_name" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="left_panel" />
+    </com.htc.widget.HeaderBarTall>
+    <ScrollView android:id="@id/report_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="top" android:id="@id/desc_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:hint="@string/report_feedback_summary" android:maxLines="5" android:minLines="5" android:singleLine="true" style="@com.htc:style/list_primary_l" />
+            <View android:id="@id/desc_divider" android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+            <CheckBox android:id="@id/send_location_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/report_location_title" style="@com.htc:style/darklist_primary_l" />
+            <TextView android:id="@id/send_radio_data_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/report_location_summary" style="@com.htc:style/darklist_primary_l" />
+            <TextView android:textColor="@color/linked_text" android:id="@id/preview_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/report_preview_link_underline" style="@com.htc:style/darklist_primary_l" />
+            <View android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+            <TextView android:id="@id/privacy_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/report_privacy_summary" style="@com.htc:style/darklist_primary_l" />
+            <TextView android:textColor="@color/linked_text" android:id="@id/privacy_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/report_privacy_link_underline" style="@com.htc:style/darklist_primary_l" />
+            <CheckBox android:id="@id/privacy_check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/report_privacy_title" style="@com.htc:style/darklist_primary_l" />
+        </LinearLayout>
+    </ScrollView>
+    <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/btn_cancel" android:text="@string/btn_feedback_cancel" />
+        <com.htc.widget.HtcFooterButton android:id="@id/btn_setting" android:text="@string/btn_feedback_settings" />
+        <com.htc.widget.HtcFooterButton android:id="@id/btn_send" android:text="@string/btn_feedback_send" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

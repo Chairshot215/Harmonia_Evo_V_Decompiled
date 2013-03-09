@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">אינטרנט</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">Shopper-Android-Google</string>
+    <string name="def_wallet_client_id">Wallet-Android-Google</string>
+    <string name="def_rlz">לא ידוע</string>
+    <string name="sharedUserLabel">Google Services</string>
+    <string name="service_label">מעדכן המערכת</string>
+    <string name="system_update_activity_name">עדכוני מערכת</string>
+    <string name="system_update_activity_title">עדכוני מערכת</string>
+    <string name="system_update_activity_battery_low_text">הסוללה חלשה מדי להתקנת עדכון מערכת. חבר מטען כדי להמשיך.</string>
+    <string name="system_update_activity_battery_low_charging_text">הסוללה חלשה מדי להתקנת עדכון מערכת. המתן עד שהסוללה תיטען במידה מספקת.</string>
+    <string name="system_update_activity_roaming_text">לא ניתן להוריד עדכוני מערכת בעת נדידה.</string>
+    <string name="system_update_requires_restart_status_text">דורש הפעלה מחדש</string>
+    <string name="system_update_downloading_status_text">מוריד</string>
+    <string name="system_update_downloading_wifi_status2_text">באמצעות חיבור Wi-Fi, רק עד {0/}</string>
+    <string name="system_update_verifying_status_text">מוודא</string>
+    <string name="system_update_verification_failed_text">האימות נכשל</string>
+    <string name="system_update_verified_status_text">הורד ואומת</string>
+    <string name="system_update_download_failed_status_text">ההורדה נכשלה</string>
+    <string name="system_update_download_retry_button_text">נסה שוב להוריד</string>
+    <string name="system_update_download_button_text">הורד</string>
+    <string name="system_update_install_button_text">הפעל מחדש והתקן</string>
+    <string name="system_update_check_now_button_text">בדוק כעת</string>
+    <string name="system_update_no_update_content_text">המערכת שלך מעודכנת כעת</string>
+    <string name="system_update_last_checkin">חיפוש עדכון אחרון ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">עדכון מערכת זמין</string>
+    <string name="system_update_recommended_update_available_notification_message">הצג פרטי עדכון.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">הורדת עדכון מערכת נכשלה.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">ההורדה נכשלה, נסה שוב.</string>
+    <string name="system_update_error_dialog_title">שגיאה</string>
+    <string name="system_update_error_downloading_dialog_message">היתה בעיה בהורדת העדכון.</string>
+    <string name="system_update_error_installing_dialog_message">היתה בעיה בהתקנת העדכון.</string>
+    <string name="system_update_install_dialog_label">עדכון מערכת</string>
+    <string name="system_update_install_dialog_message_nonphone">עדכון מערכת מוכן להתקנה. מכשיר ה-Android שלך יופעל מחדש ויתקין את העדכון.</string>
+    <string name="system_update_install_dialog_message_phone">עדכון מערכת מוכן להתקנה. מכשיר ה-Android שלך יופעל מחדש ויתקין את העדכון. לא תוכל לבצע שיחות, כולל שיחות חירום, במהלך ההתקנה.</string>
+    <string name="system_update_install_dialog_battery_low_message">עדכון המערכת מוכן, אך הסוללה חלשה מדי להתקנת העדכון. חבר מטען.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">קיים עדכון מערכת מוכן אך הסוללה חלשה מדי להתקנת העדכון. המתן עד שהסוללה תיטען במידה מספקת.</string>
+    <string name="system_update_install_dialog_now_button">התקן כעת</string>
+    <string name="system_update_install_dialog_later_button">התקן מאוחר יותר</string>
+    <string name="system_update_install_dialog_info_button">למידע נוסף...</string>
+    <string name="system_update_downloading_notification_title">מוריד עדכון מערכת</string>
+    <string name="system_update_verifying_notification_title">מאמת עדכון מערכת</string>
+    <string name="system_update_download_dialog_label">הורדת עדכון מערכת</string>
+    <string name="system_update_download_dialog_message">קיים עדכון מערכת זמין שישפר את מכשיר ה-Android שלך. אם תוריד אותו ברשת האלחוטית, ייתכן שייגבה ממך תשלום.</string>
+    <string name="system_update_download_dialog_now_button">הורד עכשיו</string>
+    <string name="system_update_download_dialog_later_button">הורד מאוחר יותר</string>
+    <string name="system_update_download_dialog_cancel_button">ביטול</string>
+    <string name="system_update_countdown_complete">מאתחל מחדש כעת...</string>
+    <string name="system_update_countdown_cancel_button">בטל את ההתקנה</string>
+    <string name="system_update_complete_label">עדכון מערכת</string>
+    <string name="system_update_complete_ok_button">אישור</string>
+    <string name="provider_label">משתמשים רשומים של Push</string>
+    <string name="ro_perm_label">קרא הודעות מיידיות</string>
+    <string name="ro_perm_desc">מאפשר ליישומים לקרוא את נתוני ספק התוכן של Google Talk.</string>
+    <string name="wo_perm_label">כתוב הודעות מיידיות</string>
+    <string name="wo_perm_desc">מאפשר ליישומים לכתוב נתונים בספק התוכן של Google Talk.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"חפש צ'אטים
+עבור '%1$s'"</string>
+    <string name="gtalkservice_label">שירות העברת הודעות של Google</string>
+    <string name="c2dm_label">שירות העברת הודעות מענן להתקן</string>
+    <string name="sendTalkMsg_perm_label">החלפת הודעות וקבלת התראות סינכרון משרתי Google</string>
+    <string name="sendTalkMsg_perm_desc">משמש עבור הודעות שרת מענן למכשיר ולצורך סינכרון התראות. Google Talk משתמש בשירות זה כדי לשלוח ולקבל הודעות וכדי לסנכרן את סטטוס הנוכחות. יישום זדוני עלול להשתמש בשירות זה כדי לשדר נתונים בכמות מופרזת.</string>
+    <string name="perm_receive_data_message_label">קבל נתונים מהאינטרנט</string>
+    <string name="perm_receive_data_message_desc">מאפשר ליישומים לקבל הודעות מענן למכשיר הנשלחות על ידי השירות של היישום. השימוש בשירות זה יגרום לשימוש בנתונים. יישומים זדוניים עלולים לגרום לשימוש מופרז בנתונים.</string>
+    <string name="perm_data_msg_broadcast_label">שדר הודעות עם נתונים ליישומים.</string>
+    <string name="perm_data_msg_broadcast_desc">ניתן לשדר הודעות נתונים שהתקבלו מהאינטרנט ליישומים שנרשמו כדי להאזין להן.</string>
+    <string name="perm_receive_xmpp_label">שלח וקבל הודעות XMPP נכנסות ויוצאות בשרתי Google</string>
+    <string name="perm_receive_xmpp_desc">מאפשר ליישומי Google לשלוח ולקבל הודעות XMPP נכנסות ויוצאות בשרתי Google.</string>
+    <string name="perm_xmpp_broadcast_label">שדר הודעות XMPP ליישומים.</string>
+    <string name="perm_xmpp_broadcast_desc">ניתן לשדר הודעות XMPP שהתקבלו משרתי Google ליישומים שנרשמו כדי להאזין להן.</string>
+    <string name="perm_use_xmpp_endpoint_label">שלח וקבל הודעות XMPP אל שרתי Google ומהם.</string>
+    <string name="perm_use_xmpp_endpoint_desc">מאפשר ליישומי Google לשלוח ולקבל הודעות XMPP אל שרתי Google ומהם.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">שדר הודעות XMPP ליישומים.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">ניתן לשדר הודעות XMPP שהתקבלו משרתי Google ליישומים.</string>
+    <string name="permlab_intentVendingOnly">"שלח שידורים ל'חנות Android'."</string>
+    <string name="permdesc_intentVendingOnly">"ניתן לשלוח שידורים ל'חנות Android' בבקשה להתקנה והסרה של יישומים."</string>
+    <string name="permlab_heartbeat">שלח פעימה לשרת Google Talk</string>
+    <string name="permdesc_heartbeat">יכול לשלוח חבילת פעימות (heartbeat packet) אל שרת Google Talk כדי להבטיח את תקינות החיבור.</string>
+    <string name="group_chat">"צ'אט קבוצתי: %s"</string>
+    <string name="default_decline_reason">מצטער, איני פנוי כעת.</string>
+    <string name="newMessages_label">"צ'אטים חדשים"</string>
+    <string name="notify_groupchat_label">"הזמנה לצ'אט קבוצתי"</string>
+    <string name="num_unread_chats">"%s צ'אטים שלא נקראו"</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s אל %s</string>
+    <string name="subscription_notify_text">"%s רוצה לשוחח בצ'אט"</string>
+    <string name="group_chat_invite_notify_text">"קיבלת הזמנה לצ'אט קבוצתי מאת %s"</string>
+    <string name="group_chat_invite_dialog_text">"%s מזמין אותך להצטרף לצ'אט קבוצתי."</string>
+    <string name="message_too_long">אין אפשרות לשלוח הודעות שאורכן עולה על 2000 תווים.</string>
+    <string name="missed_video_chat_notification">"החמצת הזמנה לווידאו צ'אט"</string>
+    <string name="missed_voice_chat_notification">"החמצת הזמנה לצ'אט קולי"</string>
+    <string name="missed_video_chat_notification_no_wifi">"החמצת הזמנה לווידאו צ'אט מכיוון שלא היית מחובר ל-Wi-Fi"</string>
+    <string name="missed_voice_chat_notification_no_wifi">"החמצת הזמנה לצ'אט קולי מכיוון שלא היית מחובר ל-Wi-Fi"</string>
+    <string name="missed_video_chat_message">"%1$s ניסה ליזום איתך וידאו צ'אט"</string>
+    <string name="missed_voice_chat_message">"%1$s ניסה ליזום איתך צ'אט קולי"</string>
+    <string name="missed_video_chat_message_no_wifi">"%1$s ניסה להתחיל וידאו צ'אט איתך כשלא היית מחובר ל-Wi-Fi"</string>
+    <string name="missed_voice_chat_message_no_wifi">"%1$s ניסה להתחיל צ'אט קולי איתך כשלא היית מחובר ל-Wi-Fi"</string>
+    <string name="end_cause_user_unavailable_video">"%1$s לא היה זמין לווידאו צ'אט."</string>
+    <string name="end_cause_user_unavailable_voice">"%1$s לא היה זמין לצ'אט קולי."</string>
+    <string name="end_cause_sent_terminate_video">"סיימת את הווידאו צ'אט עם %1$s."</string>
+    <string name="end_cause_sent_terminate_voice">"סיימת את הצ'אט הקולי עם %1$s."</string>
+    <string name="end_cause_received_terminate_video">"%1$s סיים את הווידאו צ'אט."</string>
+    <string name="end_cause_received_terminate_voice">"%1$s סיים את הצ'אט הקולי."</string>
+    <string name="end_cause_network_problem_video">"מצטערים! הווידאו צ'אט עם %1$s נכשל עקב בעיית רשת. נסה שוב."</string>
+    <string name="end_cause_network_problem_voice">"מצטערים! הצ'אט הקולי עם %1$s נכשל עקב בעייתרשת. נסה שוב."</string>
+    <string name="conn_auth_error_notify_ticker">האימות של Google Talk נכשל</string>
+    <string name="conn_auth_error_notify_title">האימות של Google Talk נכשל</string>
+    <string name="conn_auth_error_title">שגיאת אימות</string>
+    <string name="conn_auth_error_message">"הכניסה של Google Talk נכשלה. אם זהו חשבון Google Apps, ודא ששירות הצ'אט מופעל עבור חשבון זה."</string>
+    <string name="conn_auth_error_button_retry">נסה שוב</string>
+    <string name="conn_auth_error_button_cancel">ביטול</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">ברוך הבא אל ‎^1</string>
+    <string name="setup_wizard_title">אשף ההגדרה</string>
+    <string name="error_dialog_title">לידיעתך</string>
+    <string name="next_button_label">הבא</string>
+    <string name="back_button_label">הקודם</string>
+    <string name="sign_in_button_label">כניסה</string>
+    <string name="create_button_label">צור</string>
+    <string name="skip_button_label">דלג</string>
+    <string name="first_name">שם פרטי</string>
+    <string name="last_name">שם משפחה</string>
+    <string name="done">אישור</string>
+    <string name="cancel_button_label">ביטול</string>
+    <string name="done_button_label">סיים הגדרה</string>
+    <string name="try_again_button_label">נסה שוב</string>
+    <string name="close_button_label">סגור</string>
+    <string name="edit_text_help">גע בתיבת טקסט כלשהי כדי להתחיל להקליד</string>
+    <string name="add_a_google_account">הוסף חשבון Google</string>
+    <string name="no_sim_setup_wireless">לא מותקן לך כרטיס SIM ולכן לא תוכל להתחבר לרשת לנייד כדי לקבל שירותים קוליים או שירותי נתונים. תוכל להתחבר לרשת Wi-Fi ללא כרטיס SIM.</string>
+    <string name="setup_wifi_button_label">התחבר ל-Wi-Fi</string>
+    <string name="no_network">אין לך חיבור לרשת.</string>
+    <string name="no_network_help">ייתכן שזו בעיה זמנית או שמכשיר ה-Android שלך לא הותאם לשירותי נתונים. נסה שוב כשתהיה מחובר לרשת לנייד או התחבר לרשת Wi-Fi.</string>
+    <string name="server_error">היתה בעיה במהלך התקשורת עם שרתי Google.</string>
+    <string name="server_error_help">נסה שוב מאוחר יותר.</string>
+    <string name="network_unreliable">אין אפשרות ליצור חיבור נתונים אמין לשרת.</string>
+    <string name="network_unreliable_help">ייתכן שמדובר בבעיה זמנית או שמכשיר ה-Android שלך לא הותאם לשירותי נתונים. אם הבעיה נמשכת, פנה לשירות הלקוחות.</string>
+    <string name="invalid_login_character">תו לא חוקי. ניתן להשתמש רק בתווים 0-9, a-z, ‏A-Z ובנקודות.</string>
+    <string name="invalid_password_character">תו לא חוקי בסיסמה.</string>
+    <string name="add_apn">הגדרות חיבור אלחוטי</string>
+    <string name="setup_google_account_title">הגדר את חשבון Google שלך</string>
+    <string name="setup_complete_title">ההגדרה הושלמה</string>
+    <string name="cant_be_blank">השדה לא יכול להיות ריק.</string>
+    <string name="calendar">יומן Google</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">מכשיר ה-Android שלך לא מחובר לשירות נתונים. כדי להציג מידע זה כעת, עבור אל %s מכל מחשב המחובר לאינטרנט.</string>
+    <string name="field_cant_be_blank">שדה זה לא יכול להיות ריק.</string>
+    <string name="field_invalid_domain">זהו אינו שם דומיין חוקי</string>
+    <string name="field_invalid_user">שם משתמש זה אינו חוקי</string>
+    <string name="field_invalid_user_domain">הזן את שם המשתמש שלך בלבד, לא את כתובת הדוא\"ל</string>
+    <string name="field_invalid_login">שם חשבון זה אינו חוקי</string>
+    <string name="about_accounts_message"><font size="17">"קל להגדיר את מכשיר ה-Android! כל מה שאתה צריך הוא חשבון Google.
+"<font height="17">"
+"</font><b>מדוע כדאי להשתמש בחשבון Google?</b>"
+"<font height="3">"
+"</font>"בעזרת חשבון Google, יישומי Google מסונכרנים באופן אוטומטי בין מכשיר ה-Android והמחשב, ללא קשר למיקום שבו אתה מבצע את העדכון.
+"<font height="17">"
+"</font><b>כבר יש לך חשבון Google?</b>"
+"<font height="3">"
+"</font>"אתה מוכן ומזומן! פשוט גע ב'היכנס' במסך הבא.
+"<font height="17">"
+"</font><b>אין לך חשבון Google?</b>"
+"<font height="3">"
+"</font>"אין בעיה. גע ב'צור' במסך הבא ונעזור לך להגדיר חשבון.
+"<font height="17">"
+"</font><b>"גע ב'הבא' כדי להתחיל!"</b>"
+"</font></string>
+    <string name="fling_help_message">"החלק את האצבע למעלה או למטה במסך כדי לגלול.
+(גע בהודעה זו כדי לסגור אותה.)"</string>
+    <string name="setup_device_title">הגדרת ‎^1</string>
+    <string name="dont_have_an_account">אין לך חשבון Google?</string>
+    <string name="create_one_now">צור חשבון כעת! בקלות.</string>
+    <string name="already_have_an_account">כבר יש לך חשבון Google?</string>
+    <string name="sign_in_with_google_account">היכנס באמצעות חשבון Google שברצונך לקשר למכשיר Android זה.</string>
+    <string name="skip_message">רוצה להגדיר חשבון במועד מאוחר יותר?</string>
+    <string name="touch_to_begin">גע ב-Android כדי להתחיל.</string>
+    <string name="delayed_gaia_agreement">אם תמשיך, המשמעות היא שאתה מסכים למדיניות הפרטיות של <annotation id="google_privacy">Google</annotation> ולכללי מדיניות פרטיות <annotation id="android_privacy">נוספים</annotation>.</string>
+    <string name="open_keyboard_message">החלק ופתח את המקלדת כדי להתחיל.</string>
+    <string name="open_keyboard_message_to_continue">החלק ופתח את המקלדת כדי להמשיך.</string>
+    <string name="emergency_dial">חיוג חירום</string>
+    <string name="change_language">שנה שפה</string>
+    <string name="signing_in">נכנס...</string>
+    <string name="close_keyboard_message">החלק את המקלדת לאחור כדי להמשיך.</string>
+    <string name="communicating_message">מכשיר ה-Android שלך צריך ליצור קשר עם שרתי Google כדי להגדיר את החשבון שלך. פעולה זו עשויה להימשך עד חמש דקות.</string>
+    <string name="communicating_message_domain">מכשיר ה-Android שלך צריך ליצור קשר עם שרתי Google כדי למצוא את פרטי הדומיין שלך. פעולה זו עשויה להימשך עד חמש דקות.</string>
+    <string name="username">שם משתמש</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">סיסמה</string>
+    <string name="sign_in_agreement">בכניסתך, אתה מסכים למדיניות הפרטיות של <annotation id="google_privacy">Google</annotation> ולכללי מדיניות פרטיות <annotation id="android_privacy">נוספים</annotation>.</string>
+    <string name="create">צור</string>
+    <string name="create_message">זקוק לחשבון Google?</string>
+    <string name="now_signing_in">נכנס...</string>
+    <string name="now_verifying_domain">מוצא את הדומיין…</string>
+    <string name="sign_in_with_google_account_short">היכנס עם חשבון Google:</string>
+    <string name="browser_sign_in_explanation">השתמש במסך זה אם יש לך שיקולים מיוחדים בכניסה הדורשים דפדפן אינטרנט.</string>
+    <string name="gls_browser_login_intro_message">אין אפשרות לגשת לחשבון Google או Google Apps שלך. דרושה הרשאה מחדש.</string>
+    <string name="enter_domain_name">הזן את שם הדומיין של החברה שלך:</string>
+    <string name="enter_user_name">הזן את שם המשתמש ואת הסיסמה של ‎^1:</string>
+    <string name="inactive_domain">לא ניתן להשתמש בחשבון זה מאחר שהוא שייך לדומיין לא פעיל. פנה למנהל המערכת של הדומיין <b>^1</b> או היכנס באמצעות חשבון אחר.</string>
+    <string name="invalid_username">הטקסט שהוזן אינו שם משתמש חוקי.</string>
+    <string name="web_login_error_title">מצטערים...</string>
+    <string name="web_login_error_desc">"אירעה בעיה בהתחברות לשרתי החברה שלך בדומיין ‎^1.
+
+פרטי שגיאה:
+"</string>
+    <string name="web_login_error_redirects">דף ההתחברות לאינטרנט הפנה מחדש פעמים רבות מדי</string>
+    <string name="web_login_error_http">שגיאת HTTP‏ ‎^1 ‏: ‎^2</string>
+    <string name="name_device_label">תן שם למכשיר Android שלך:</string>
+    <string name="device_name_hint">שם המכשיר</string>
+    <string name="registering_device">רושם את מכשיר Android…</string>
+    <string name="error_account_disabled">"חשבון זה הושבת. 
+
+(לקבלת פרטים, עבור אל http://google.com/accounts/recovery במחשב.)"</string>
+    <string name="error_login_failed">"שם המשתמש והסיסמה אינם תואמים. נסה שוב. 
+
+(כדי לשחזר את פרטי החשבון, עבור אל http://google.com/accounts/recovery במחשב.)"</string>
+    <string name="error_account_not_verified">"חשבון זה לא אומת. בדוק בדוא\"ל במחשב והפעל את הקישור כדי לאמת חשבון זה. 
+
+(כדי לשחזר את פרטי החשבון, עבור אל http://google.com/accounts/recovery במחשב.)"</string>
+    <string name="captcha_message_string">אימות</string>
+    <string name="captcha_instructions">הזן את התווים שאתה רואה בתמונה. האותיות אינן תלויות רישיות.</string>
+    <string name="create_google_account">צור חשבון Google חדש</string>
+    <string name="example_usernames">למשל, JSmith, ‏John.Smith</string>
+    <string name="create_account_agreement">ביצירת חשבון זה אתה מסכים למדיניות הפרטיות של <annotation id="google_privacy">Google</annotation> ולכללי מדיניות פרטיות <annotation id="android_privacy">נוספים</annotation>.</string>
+    <string name="account_already_has_gmail">כבר יש בחשבון Gmail.</string>
+    <string name="creating_account">יוצר את חשבונך…</string>
+    <string name="checking_account">בודק את הזמינות של שם המשתמש...</string>
+    <string name="try_a_different_username">נסה שם משתמש אחר</string>
+    <string name="is_not_available"><b>‎^1</b> אינו זמין.</string>
+    <string name="hint_size"><b>‎^1</b> מכיל פחות מ-6 תווים או יותר מ-30 תווים.</string>
+    <string name="hint_numbers_only"><b>‎^1</b> לא כולל אותיות.</string>
+    <string name="hint_illegal_chars"><b>‎^1</b>" יכול להכיל רק אותיות,
+מספרים ונקודות."</string>
+    <string name="doesnt_use_gmail"><b>‎^1</b> אינו משתמש ב-Gmail</string>
+    <string name="sign_in">כניסה</string>
+    <string name="sign_in_browser">כניסת דפדפן</string>
+    <string name="here_are_alternatives">הנה כמה חלופות:</string>
+    <string name="alternatives_list_title">הצעות לשמות משתמש</string>
+    <string name="choose_a_password"><b>"הקלד 
+סיסמה"</b></string>
+    <string name="confirm_password"><b>"אשר
+סיסמה"</b></string>
+    <string name="password_strength"><b>"חוזק
+סיסמה"</b></string>
+    <string name="too_short">קצר מדי</string>
+    <string name="security_question"><b>"שאלת
+אבטחה"</b></string>
+    <string name="security_questions_title">שאלות אבטחה</string>
+    <string name="answer"><b>תשובה</b></string>
+    <string name="password_mismatch">הסיסמאות שלך אינן תואמות. הקלד אותן מחדש.</string>
+    <string name="your_account_was_created">החשבון שלך נוצר!</string>
+    <string name="eight_chars_min">(8 תווים לפחות)</string>
+    <string name="just_in_case">במקרה שתאבד את הסיסמה.</string>
+    <string name="verify_your_profile">אמת את הפרופיל שלך</string>
+    <string name="signed_in">נכנס!</string>
+    <string name="error_not_logged_in">המשתמש לא נכנס.</string>
+    <string name="error_username_unavailable">שם המשתמש לא זמין.</string>
+    <string name="error_bad_password">הסיסמה חלשה מדי או מכילה תווים לא חוקיים. נסה שוב.</string>
+    <string name="error_bad_username">שם משתמש לא חוקי.</string>
+    <string name="loading">טוען...</string>
+    <string name="submission_title">מצטערים...</string>
+    <string name="submission_error_text">אירעה שגיאה. נסה שוב.</string>
+    <string name="existing_account_error_title">החשבון כבר קיים</string>
+    <string name="existing_account_error_text">כבר יש חשבון בשם ^1 במכשיר Android זה.</string>
+    <string name="account_linked_message"><font height="24">חשבון Google שלך מקושר כעת למכשיר Android זה.</font></string>
+    <string name="syncing_message"><font size="17">"יישומי Google מסנכרנים נתונים כעת. 
+"<font height="17">"
+"</font>"%i כאשר הסמל \"מסנכרן\" נעלם משורת המצב שבחלק העליון של המסך, ההורדה הסתיימה.
+"<font height="17">"
+"</font><b>על שורת המצב…</b>"
+"<font height="3">"
+"</font>"בכל פעם שתקבל הודעה חדשה או התראה אחרת, יופיע סמל בשורת המצב.
+"<font height="17">"
+"</font>"השתמש באצבע כדי לגרור מטה את שורת המצב ולפתוח את החלונית 'התראות', שבה יש פרטים על כל ההתראות הנוכחיות."</font></string>
+    <string name="i_agree_next">אני מסכים, הבא</string>
+    <string name="android_privacy_policy_title">מדיניות פרטיות נוספת</string>
+    <string name="google_terms_of_service_title">תנאים והגבלות של Google</string>
+    <string name="google_privacy_policy_title">מדיניות הפרטיות של Google</string>
+    <string name="notification_update_title">עליך לעדכן את החשבון</string>
+    <string name="notification_update_message">גע כאן כדי להפעיל מחדש את אשף ההגדרה</string>
+    <string name="common_message">"Gmail, גיבויים ותכונות רבות אחרות של Android דורשים חשבון Google‏.
+
+גע באפשרות "<b>הבא</b>" כדי להיכנס באמצעות חשבון Google קיים או כדי ליצור חשבון Google חדש כעת.
+
+או גע באפשרות "<b>דלג</b>" כדי להתחיל להשתמש ב-Android. ניתן להיכנס לחשבון Google מאוחר יותר ב'הגדרות', בקטע 'חשבונות וסינכרון'."</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">הוספת חשבון</font>" 
+
+ניתן להשתמש ביותר מחשבון Google אחד (כגון החשבון הביתי והחשבון בעבודה). הוספת חשבון Google מתבצעת בכמה צעדים פשוטים. 
+
+גע ב“הבא” כדי להמשיך או לחץ על לחצן 'הקודם' כדי לצאת."</string>
+    <string name="reactivate_account_message">"עליך לקשר חשבון דוא\"ל של Google למכשיר Android זה. 
+
+כבר יש לך שם משתמש של דוא\"ל של Google ("<b>^1</b>") המשויך לחשבון זה, אך הוא אינו פעיל כרגע. 
+
+גע ב\"הבא\" כדי להפעיל מחדש שם משתמש זה וכדי להשתמש בו. 
+
+לחלופין, אם ברצונך להשתמש בחשבון אחר, לחץ על לחצן 'הקודם' והיכנס עם חשבון אחר או צור חשבון אחר."</string>
+    <string name="reactivating_account">מפעיל מחדש את חשבונך...</string>
+    <string name="your_account_was_reactivated">החשבון שלך הופעל!</string>
+    <string name="account_recovery_info">המידע הבא יעזור לך לשחזר את הסיסמה אם היא תאבד אי פעם</string>
+    <string name="secondary_email_label"><b>"דוא\"ל
+משני"</b></string>
+    <string name="invalid_email">"כתובת הדוא\"ל שהוזנה אינה חוקית.
+ דוגמה: joe@example.com"</string>
+    <string name="invalid_email_primary">כתובות דוא\"ל משניות לא יכולות להיות זהות לכתובת שאתה יוצר</string>
+    <string name="tutorial_intro_title">למד כיצד להשתמש ב-^1 שלך</string>
+    <string name="begin_button_label">התחל</string>
+    <string name="tutorial_intro_message_generic">יש מספר דברים חשובים שכדאי להבין כדי להפיק את המרב ממכשיר ה-Android. <font size="17">"
+"</font>" 
+"<li>שימוש במקלדת שבמסך</li> <font size="17">"
+"</font>" 
+גע ב\"התחל\" כדי להפעיל את מערך השיעור ולקבל מידע נוסף."</string>
+    <string name="tutorial_intro_message_setupwizard">יש מספר דברים חשובים שכדאי להבין כדי להפיק את המרב ממכשיר ה-Android. <font size="17">"
+"</font>" 
+"<li>שימוש במקלדת שבמסך</li>" 
+"<li>הגדרת חשבון Google</li> <font size="17">"
+"</font>" 
+גע ב\"התחל\" כדי להפעיל את מערך השיעור ולקבל מידע נוסף או גע ב\"דלג\" כדי לדלג על מערך שיעור זה ולהמשיך."</string>
+    <string name="keyboard_tutorial_title">שימוש במקלדת שבמסך</string>
+    <string name="keyboard_tutorial_message">גע בשדה טקסט כלשהו כדי לפתוח את המקלדת והתחל להקליד. נסה זאת כאן!</string>
+    <string name="keyboard_tutorial_edittext_hint">גע כאן כדי להתחיל בהקלדה</string>
+    <string name="done_typing_message">"סיימת להקליד? לחץ על הלחצן 'הקודם' כדי לסגור את המקלדת."</string>
+    <string name="done_button_label_in_tutorial">סיום</string>
+    <string name="backup_consent_title">גבה את ההגדרות שלי</string>
+    <string name="backup_consent_message">ניתן לגבות את ההגדרות (כגון הסימניות וסיסמאות ה-Wi-Fi) בחשבון Google שלך באופן אוטומטי. אם תקבל מכשיר Android חדש (כדי להחליף מכשיר שאבד או כדי לשדרג מכשיר), ההגדרות ישוחזרו במכשיר ה-Android החדש שלך.</string>
+    <string name="backup_consent_howto_disable_message">"תוכל לשנות את הגדרות הגיבוי בכל עת ביישום 'הגדרות', מתחת ל'פרטיות'."</string>
+    <string name="backup_consent_yes_agree">גבה הגדרות בחשבון Google שלי.</string>
+    <string name="restore_disable">השבת שחזור</string>
+    <string name="restore_enable">הפוך שחזור לפעיל</string>
+    <string name="restore_enabled">אם גיבית בעבר את ההגדרות, הן ישוחזרו.</string>
+    <string name="restore_disabled">ההגדרות שלך לא ישוחזרו מהגיבוי.</string>
+    <string name="webview_progress_title">מתחבר לדומיין...</string>
+    <string name="webview_progress_verbose_message">"שרתי החברה שלך שולחים פרטי כניסה. תהליך זה יכול להימשך מספר דקות.
+דף הכניסה של החברה יופיע כאשר התהליך יסתיים."</string>
+    <string name="enterprise_unmanaged_domain">דומיין זה לא משתמש ב-Google Apps. בדוק את שם הדומיין ונסה שוב.</string>
+    <string name="use_location_for_services_agree">מסכים</string>
+    <string name="use_location_for_services_disagree">לא מסכים</string>
+    <string name="use_location_for_services_title">"השתמש ב'מיקום שלי'"</string>
+    <string name="use_location_for_services_text">האם ברצונך לאפשר ל-Google להשתמש במיקום לצורך קבלת תוצאות חיפוש משופרות ושירותים אחרים?</string>
+    <string name="permlab_readGsettings">קרא את הגדרות Google</string>
+    <string name="permdesc_readGsettings">מאפשר ליישום זה לקרוא את הגדרות Google.</string>
+    <string name="permlab_writeGsettings">שנה את הגדרות Google</string>
+    <string name="permdesc_writeGsettings">מאפשר ליישום זה לשנות את הגדרות Google.</string>
+    <string name="permlab_readGservices">קרא את תצורת השירות של Google</string>
+    <string name="permdesc_readGservices">מאפשר ליישום זה לקרוא את נתוני התצורה של שירות Google.</string>
+    <string name="permlab_writeGservices">שנה את תצורת השירות של Google</string>
+    <string name="permdesc_writeGservices">מאפשר ליישום זה לשנות את נתוני תצורת השירות של Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">גישה לסיסמאות של חשבונות Google</string>
+    <string name="permdesc_googleAuthPassword">מאפשר ליישומים גישה ישירה לסיסמאות של חשבונות Google שהגדרת.</string>
+    <string name="permlab_googleMailSwitch">בחר מיתוג של Gmail או Google Mail</string>
+    <string name="permdesc_googleMailSwitch">מאפשר ליישומים להעביר את השם המוצג בין מיתוג \"Gmail\" ומיתוג \"Google Mail\".</string>
+    <string name="permlab_googleAuth">הצג חשבונות מוגדרים</string>
+    <string name="permdesc_googleAuth">מאפשר ליישומים לראות את שמות המשתמש (כתובות דוא\"ל) של חשבונות Google שהגדרת.</string>
+    <string name="permlab_googleAuth_ALL">גישה לכל שירותי Google</string>
+    <string name="permdesc_googleAuth_ALL">מאפשר ליישומים להיכנס לכל שירותי Google באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_OTHER">גישה לשירותי Google אחרים</string>
+    <string name="permdesc_googleAuth_OTHER">מאפשר ליישומים להיכנס לשירותי Google שלא צוינו באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">מאפשר ליישומים להיכנס לשירותי הדוא\"ל של Google באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_cl">יומן Google</string>
+    <string name="permdesc_googleAuth_cl">"מאפשר ליישומים להיכנס ל'יומן Google' באמצעות החשבונות המאוחסנים במכשיר Android זה."</string>
+    <string name="permlab_googleAuth_android">שירותי Android</string>
+    <string name="permdesc_googleAuth_android">מאפשר ליישומים להיכנס לשירותי Android באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_sierra">חשבונות Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">מאפשר ליישומים להיכנס ל-Google Checkout (עם אפשרות לביצוע רכישות) באמצעות חשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_sierraqa">חשבונות Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">מאפשר ליישומים להיכנס ל-Google Checkout QA באמצעות חשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_sierrasandbox">חשבונות Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">מאפשר ליישומים להיכנס ל-Google Checkout Sandbox באמצעות חשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_youtube">‏YouTube</string>
+    <string name="permdesc_googleAuth_youtube">מאפשר ליישומים להיכנס ל-YouTube באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_YouTubeUser">שמות משתמשים של YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">מאפשר ליישומים לראות את שמות המשתמשים ב-YouTube המשויכים לחשבונות Google המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">מאפשר ליישומים להיכנס ל-Google Talk באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_ig">חשבונות iGoogle</string>
+    <string name="permdesc_googleAuth_ig">מאפשר ליישומים להיכנס ל-iGoogle באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_lh2">אלבומי Google</string>
+    <string name="permdesc_googleAuth_lh2">"מאפשר ליישומים להיכנס ל'אלבומי Google' באמצעות החשבונות המאוחסנים במכשיר Android זה."</string>
+    <string name="permlab_googleAuth_mobile">יישומי Google לנייד</string>
+    <string name="permdesc_googleAuth_mobile">מאפשר ליישומים להיכנס ליישומים של Google לנייד באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_cp">נתוני אנשי קשר בחשבונות Google</string>
+    <string name="permdesc_googleAuth_cp">מאפשר ליישומים לגשת לאנשי הקשר ולפרטי הפרופיל של החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">מאפשר ליישומים להיכנס ל-Google AdSense באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">מאפשר ליישומים להיכנס ל-Google AdWords באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">מאפשר ליישומים להיכנס ל-Blogger באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">מאפשר ליישומים להיכנס ל-Dodgeball באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">מאפשר ליישומים להיכנס ל-Google Base באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_groups2">קבוצות Google</string>
+    <string name="permdesc_googleAuth_groups2">"מאפשר ליישומים להיכנס ל'קבוצות Google' באמצעות החשבונות המאוחסנים במכשיר Android זה."</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">מאפשר ליישומים להיכנס ל-Google Health באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">מאפשר ליישומים להיכנס ל-JotSpot באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">מאפשר ליישומים להיכנס ל-Knol באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_news">חדשות Google</string>
+    <string name="permdesc_googleAuth_news">"מאפשר ליישומים להיכנס ל'חדשות Google' באמצעות החשבונות המאוחסנים במכשיר Android זה."</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">מאפשר ליישומים להיכנס ל-Orkut באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_print">Google ספרים</string>
+    <string name="permdesc_googleAuth_print">מאפשר ליישומים להיכנס ל-Google Book Search באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Webmaster Tools</string>
+    <string name="permdesc_googleAuth_sitemaps">מאפשר ליישומים להיכנס ל-Google Webmaster Tools באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">מאפשר ליישומים להיכנס ל-Google WiFi באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">מאפשר ליישומים להיכנס ל-Google Docs באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_wise">גיליונות אלקטרוניים של Google</string>
+    <string name="permdesc_googleAuth_wise">"מאפשר ליישומים להיכנס ל'גיליונות האלקטרוניים של Google' באמצעות החשבונות המאוחסנים במכשיר Android זה."</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">מאפשר ליישומים להיכנס ל-Google Finance באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_local">מפות Google</string>
+    <string name="permdesc_googleAuth_local">"מאפשר ליישומים להיכנס ל'מפות Google' באמצעות החשבונות המאוחסנים במכשיר Android זה."</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">מאפשר ליישומים להיכנס ל-Google App Engine באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_notebook">Google Notebook</string>
+    <string name="permdesc_googleAuth_notebook">מאפשר ליישומים להיכנס ל-Google Notebook באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">מאפשר ליישומים להיכנס ל-Google Voice באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Personalized Speech Recognition</string>
+    <string name="permdesc_googleAuth_speechpersonalization">מאפשר ליישומים להיכנס לשירות Personalized Speech Recognition באמצעות החשבונות המאוחסנים במכשיר Android זה.</string>
+    <string name="gls_notification_title">היכנס לחשבון שלך</string>
+    <string name="gls_notification_new_account">נדרש חשבון של ^1</string>
+    <string name="gls_notification_new_account_youtube">דרוש חשבון YouTube</string>
+    <string name="gls_notification_login_error">גע כדי להיכנס לחשבון.</string>
+    <string name="gls_ui_add_account_title">הגדרת חשבון</string>
+    <string name="gls_ui_google_account_subtitle">חשבון Google</string>
+    <string name="gls_ui_activity_title">כניסה ל-Google</string>
+    <string name="gls_ui_activity_title_browser_signin">כניסת דפדפן</string>
+    <string name="gls_ui_activity_title_enterprise">כניסה ארגונית</string>
+    <string name="gls_ui_activity_title_youtube">כניסה ל-YouTube</string>
+    <string name="gls_ui_activity_authenticating">מאמת…</string>
+    <string name="gls_captcha_activity_message">הקלד את התווים שאתה רואה בתמונה:</string>
+    <string name="gls_captcha_activity_ok_button">סיום</string>
+    <string name="gls_error_activity_message">אירעה שגיאת רשת במהלך ניסיון להיכנס אל <b>^1</b>". נסה שוב כעת או לחץ על הלחצן 'הקודם' כדי לבטל."</string>
+    <string name="gls_error_activity_retry_button">נסה שוב</string>
+    <string name="gls_dmagent_activity_message">" הדומיין שלך דורש ניהול מכשיר נייד. התקן את היישום 'מדיניות מכשיר' של Google Apps כדי לאכוף מדיניות אבטחה שדורש החשבון "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">הורד</string>
+    <string name="gls_login_activity_username_label">שם משתמש</string>
+    <string name="gls_login_activity_password_label">סיסמה</string>
+    <string name="gls_login_activity_ok_button">כניסה</string>
+    <string name="gls_login_activity_loginfail_text_both">שם המשתמש או הסיסמה אינם חוקיים. דרוש חשבון מסוג <b>^1</b>. נסה שוב.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">הזנת סיסמה שגויה או שהחשבון שלך השתנה. הזן מחדש את הסיסמה.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">הקלד את הסיסמה של חשבון זה.</string>
+    <string name="gls_enterprise_login_activity_msg">"היכנס לחשבון החברה בכתובת ‎^1 לצורך אימות.
+גע ב'כניסה' כדי לפתוח את דף הכניסה של החברה מבוסס האינטרנט."</string>
+    <string name="gls_login_activity_badaccount_text">אינך יכול להשתמש בחשבון זה במצב זה. נסה חשבון אחר.</string>
+    <string name="gls_login_activity_newaccount_text">היכנס לחשבון <b>^1</b> שלך.</string>
+    <string name="gls_login_activity_youtube_domain">‏YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">אין לך חשבון YouTube? גע <a href="http://www.youtube.com/signup">כאן</a> כדי ליצור חשבון.</string>
+    <string name="gls_settings_tos_activity_title">הודעות משפטיות של Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">אינך מחובר לשירות נתונים. כדי להציג מידע זה כעת, עבור אל %s מכל מחשב המחובר לאינטרנט.</string>
+    <string name="gls_settings_contributors_activity_title">תורמים</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">אינך מחובר לשירות נתונים. כדי להציג מידע זה כעת, עבור אל %s מכל מחשב המחובר לאינטרנט.</string>
+    <string name="gls_webview_progress_title">מתחבר לדומיין...</string>
+    <string name="gls_webview_progress_verbose_message">"שרתי החברה שלך שולחים פרטי כניסה. תהליך זה יכול להימשך מספר דקות.
+דף הכניסה של החברה יופיע כאשר התהליך יסתיים."</string>
+    <string name="gls_sign_in_button_label">כניסה</string>
+    <string name="gls_back_button_label">הקודם</string>
+    <string name="gls_cancel_button_label">ביטול</string>
+    <string name="gls_exit_account_setup_button_label">צא מהגדרת החשבון</string>
+    <string name="gls_reauthorize_button_label">תן הרשאה מחדש</string>
+    <string name="gls_sign_in_message">מכשיר ה-Android שלך צריך ליצור קשר עם שרתי Google כדי להגדיר את החשבון. פעולה זו עשויה להימשך עד חמש דקות.</string>
+    <string name="gls_sign_in_title">נכנס...</string>
+</resources>

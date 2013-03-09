@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/htc_set_up_wifi_network" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <fragment android:id="@id/wifi_setup_fragment" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" class="com.android.settings.wifi.WifiSettingsSetupWizardFragment" />
+    </LinearLayout>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:text="@string/next_label" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

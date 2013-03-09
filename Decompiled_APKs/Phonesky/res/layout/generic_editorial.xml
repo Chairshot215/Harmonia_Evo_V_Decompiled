@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.ObservableScrollView android:background="@color/details_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/details_scroller_container" android:background="@drawable/pinstripe_details_tile" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/editorial_page_header" />
+        <include android:id="@id/hero_header" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+        <include android:id="@id/episode_header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/description_editorial_header" />
+        <include android:id="@id/description_panel" layout="@layout/details_text_flat" />
+        <include android:id="@id/hero_video" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+        <include layout="@layout/details_plusone" />
+        <include android:id="@id/song_list" layout="@layout/music_song_list" />
+        <include android:id="@id/body_of_work_panel" layout="@layout/details_pack_layout" />
+    </LinearLayout>
+</com.google.android.finsky.layout.ObservableScrollView>

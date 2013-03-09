@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/hint_dialog" android:background="@drawable/hint_msg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="@dimen/hint_message_width" android:layout_height="@dimen/hint_message_height" android:layout_marginTop="@dimen/hint_message_margin_top" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/hint_message_text_size" android:textColor="#bb000000" android:gravity="center" android:id="@id/hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

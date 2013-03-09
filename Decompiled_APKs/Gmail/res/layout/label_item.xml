@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gm.LabelItemView android:background="@drawable/label_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/label_list_minimum_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/label_box" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/LabelItemIcon" />
+    <TextView android:textColor="@color/text_color_unread_invertible" android:id="@id/unread" android:layout_marginRight="@dimen/label_list_item_right_margin" android:layout_alignParentRight="true" style="@style/unreadCount" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/label_list_item_left_margin" android:layout_marginTop="@dimen/label_swatch_height" android:layout_marginBottom="@dimen/label_swatch_height" android:layout_toLeftOf="@id/unread" android:layout_centerVertical="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/text_color_primary_invertible" android:ellipsize="end" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/text_color_primary_invertible" android:id="@id/description" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/name" />
+    </RelativeLayout>
+</com.google.android.gm.LabelItemView>

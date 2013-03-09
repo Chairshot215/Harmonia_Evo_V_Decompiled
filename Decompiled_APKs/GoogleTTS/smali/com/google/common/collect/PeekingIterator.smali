@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/google/common/collect/PeekingIterator;
+.super Ljava/lang/Object;
+.source "PeekingIterator.java"
+
+# interfaces
+.implements Ljava/util/Iterator;
+
+
+# annotations
+.annotation build Lcom/google/common/annotations/GwtCompatible;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Iterator",
+        "<TE;>;"
+    }
+.end annotation

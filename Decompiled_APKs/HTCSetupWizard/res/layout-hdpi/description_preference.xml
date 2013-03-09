@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@*android:attr/writePermission" android:background="@drawable/divider_horizontal_dark_opaque" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ImageView android:layout_gravity="center" android:id="@*android:attr/protectionLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@*android:attr/label" android:paddingRight="?android:scrollbarSize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/layout_generic">
+        <TextView android:id="@*android:id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textAppearance_content" />
+        <TextView android:id="@*android:id/summary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" android:layout_below="@*android:id/title" style="@style/textAppearance_secondary" />
+    </RelativeLayout>
+    <ImageView android:id="@*android:attr/permissionGroup" android:background="@drawable/divider_horizontal_dark_opaque" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@*android:id/widget_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

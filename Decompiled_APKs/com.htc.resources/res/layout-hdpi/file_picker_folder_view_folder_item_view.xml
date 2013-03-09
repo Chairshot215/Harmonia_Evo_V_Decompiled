@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:id="@id/file_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img" android:layout_width="@dimen/htc_list_item_height" android:layout_height="@dimen/htc_list_item_height" />
+        <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:id="@id/file_item" android:paddingLeft="14.0px" android:paddingRight="14.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="26.0px" android:textColor="@color/dark_text_bright_focused" android:ellipsize="marquee" android:gravity="left" android:id="@id/filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0px" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="20.0px" android:textColor="@color/light_grey_text_bright_focused" android:gravity="top|left|center" android:id="@id/lastmodify" android:paddingTop="4.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

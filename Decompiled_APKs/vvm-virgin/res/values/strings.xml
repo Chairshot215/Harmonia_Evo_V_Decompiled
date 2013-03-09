@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="id_sort_order_newest_first">0</string>
+    <string name="id_sort_order_oldest_first">1</string>
+    <string name="id_sort_order_unread_first">2</string>
+    <string name="id_sort_order_read_first">3</string>
+    <string name="id_sort_order_alphabetical">4</string>
+    <string name="app_name">Voicemail</string>
+    <string name="app_package">com.coremobility.app.vnotes</string>
+    <string name="nab_app_name">Contact Download</string>
+    <string name="use_provider">Use vnotes provider</string>
+    <string name="ro_perm_label">read voicemail messages</string>
+    <string name="ro_perm_desc">Allows applications to read voicemail data from vnotes content provider.</string>
+    <string name="wo_perm_label">compose voicemail messages</string>
+    <string name="wo_perm_desc">Allows applications to compose voicemail messages to vnotes content provider.</string>
+    <string name="unknown_sender">Unknown</string>
+    <string name="messageNotDelivered">Message not delivered</string>
+    <string name="of">of</string>
+    <string name="fwd_vvm_email_subject">Fw: %1$s</string>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="second">second</string>
+    <string name="seconds">seconds</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="doNotShow1">Do not show again</string>
+    <string name="doNotShow2">(Go to Settings to personalize later)</string>
+    <string name="defaultPlanName">your current plan</string>
+    <string name="doNotShow1_optional_dialog">Do not show again</string>
+    <string name="doNotShow2_optional_dialog">(Go to Settings, Check for update)</string>
+    <string name="all_lines">All Lines</string>
+    <string name="mobile">Mobile</string>
+    <string name="line">Line</string>
+    <string name="menu_email">Email</string>
+    <string name="menu_text_message">Text Message</string>
+    <string name="menu_call">Call</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_record">Record</string>
+    <string name="menu_reply">Reply</string>
+    <string name="menu_reply_all">Reply all</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_delete_this_msg">Delete message</string>
+    <string name="menu_permanent_delete">Permanently delete message</string>
+    <string name="menu_details">Details</string>
+    <string name="menu_retry_send">Retry sending all</string>
+    <string name="menu_outbox">Undelivered</string>
+    <string name="menu_compose">Compose</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_read">Read</string>
+    <string name="menu_send_email">Send email to %1$s</string>
+    <string name="menu_save_contact">Add to contacts</string>
+    <string name="menu_play_all_new">Play all new</string>
+    <string name="menu_retry_download">Retry download</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_title_reply_opts">Reply options</string>
+    <string name="menu_mark_as_unread">Mark as unread</string>
+    <string name="menu_empty_deleted">Empty Deleted</string>
+    <string name="menu_restore_to_inbox">Restore to Inbox</string>
+    <string name="menu_move_to_sd_card">Move to SD card (save)</string>
+    <string name="menu_mark_as_read">Mark as read</string>
+    <string name="dialog_title_attention">Attention</string>
+    <string name="dialog_title_delete">Delete</string>
+    <string name="dialog_title_restore">Restore to Inbox</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="dialog_title_activate">Activate</string>
+    <string name="dialog_title_forward_voicemail">Forward Voicemail</string>
+    <string name="dialog_title_free_trail_full">Free Trial Full</string>
+    <string name="dialog_title_phone_number">Phone Number</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="dialog_item_call">Call %1$s</string>
+    <string name="dialog_item_add_new_contact">Add new contact</string>
+    <string name="dialog_item_add_to_existing_contact">Add to existing contact</string>
+    <string name="dialog_title_deleted_folder_full">Deleted folder full</string>
+    <string name="dialog_button_empty_deleted">Empty Deleted</string>
+    <string name="dialog_message_deleted_folder_now_full">"The Deleted folder is now full.
+
+Would you like to empty the Deleted folder to clear space for the future?"</string>
+    <string name="dialog_title_inbox_folder_full">Inbox full</string>
+    <string name="dialog_message_inbox_folder_now_full">"The Inbox is now full. New messages cannot be downloaded.
+
+Please delete or save messages to your SD card to clear space for new messages."</string>
+    <string name="dialog_message_inbox_folder_full_restore_previously">"Messages cannot be restored because the Inbox is full.
+
+Please delete or save messages to your SD card to clear space and try again."</string>
+    <string name="dialog_message_inbox_folder_full_move_previously">"Messages cannot be moved because the Inbox is full.
+
+Please delete or save messages to your SD card to clear space and try again."</string>
+    <string name="dialog_message_inbox_folder_full_move_now">"The Inbox is now full. New messages cannot be downloaded or moved.
+
+Please delete or save messages to your SD card to clear space and try again."</string>
+    <string name="title_vnotes_inbox">Voicemail</string>
+    <string name="menu_move_to_sd">Move to SD</string>
+    <string name="dialog_button_personalize">Personalize now</string>
+    <string name="dialog_button_close">Close</string>
+    <string name="dialog_button_listen_now">Listen now</string>
+    <string name="dialog_button_listen_later">Listen later</string>
+    <string name="dialog_button_ignore">Ignore</string>
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_no">No</string>
+    <string name="dialog_title_filter">Filter</string>
+    <string name="dialog_title_delete_done">Delete successful</string>
+    <string name="toast_title_restore_to_inbox">Restored to Inbox</string>
+    <string name="dialog_button_delete">Delete</string>
+    <string name="dialog_button_move">Move</string>
+    <string name="dialog_button_cancel_request">Cancel request</string>
+    <string name="dialog_button_restore">Restore</string>
+    <string name="dialog_button_configure_now">Configure now</string>
+    <string name="dialog_button_later">Later</string>
+    <string name="btn_call_for_vm">Call for new voicemail</string>
+    <string name="btn_play_all_new">Play all new</string>
+    <string name="btn_pending">Pending</string>
+    <string name="inbox_mwi_text">You have new voicemail that cannot be downloaded.</string>
+    <string name="dialog_title_personalize">Personalize your voicemail</string>
+    <string name="dialog_message_personalize">To setup your voicemail greeting and other options, please tap the Personalize now button.</string>
+    <string name="dialog_message_one_or_more_msgs_locked">One or more messages are locked. You have to unlock messages before deleting.</string>
+    <string name="dialog_message_inbox_full">Your voicemail inbox is full. You cannot receive new voicemail until you listen to some messages, or unlock locked messages, so they can be auto-deleted.</string>
+    <string name="inbox_list_empty">You have no voicemail messages.</string>
+    <string name="dialog_message_prov_success">Voicemail has been provisioned successfully.</string>
+    <string name="dialog_message_retry_download">Attempting to download new messages.</string>
+    <string name="dialog_message_configure_carboncopy">In order to carbon copy your voicemail, you must first supply an email address.</string>
+    <string name="vnote_fwd_prefix">(fw)</string>
+    <string name="filtered_by">Filtered by:</string>
+    <string name="unheard_message">unheard message</string>
+    <string name="unheard_messages">unheard messages</string>
+    <string name="noemail_intent">No activity to handle email application Intent.</string>
+    <string name="carbon_copy">Carbon copy</string>
+    <string name="carbon_copy_sent_confirm">Message will be carbon copied to</string>
+    <string name="menu_sort_order">Sort order</string>
+    <string name="newest_to_oldest">Newest to oldest</string>
+    <string name="Sender">Sender</string>
+    <string name="unheard_to_heard">Unheard vs. heard</string>
+    <string name="menu_about">About</string>
+    <string name="menu_filter">Filter list</string>
+    <string name="menu_terms_privacy_notices">Terms, Privacy %1$s Notices</string>
+    <string name="about_suggestions_text">Feedback:</string>
+    <string name="about_feedback_button">Send Feedback</string>
+    <string name="open_source_license_button">View Open Source Licenses</string>
+    <string name="voicemail_feedback">Voicemail Feedback (%1$s - %2$s)</string>
+    <string name="voicemail_mdn_feedback">Voicemail Feedback (%1$s - %2$s MDN: %3$s)</string>
+    <string name="feedback_sent_from_device">"
+
+
+
+Sent from %1$s device."</string>
+    <string name="about_copyright_text_1">Copyright © %1$d Smith Micro Software, Inc.</string>
+    <string name="about_copyright_text_2">All Rights Reserved.</string>
+    <string name="dialog_message_minium_vtt_service">"Welcome to Voicemail. In order to receive %1$s voicemail on this handset please make sure you have data plan.
+
+%2$s"</string>
+    <string name="dialog_message_forward_voicemail">To use this voicemall application you must forward your voicemails (missed calls) to Smith Micro voicemail system.</string>
+    <string name="dialog_message_full_trail">"We're Sorry, but our 30-day free trial is full now. We hope to be launching our service in near feature.Please check back later."</string>
+    <string name="dialog_message_activation_process">Activation is in process</string>
+    <string name="dialog_message_deactivation_process">Deactivation is in process</string>
+    <string name="dialog_message_callforward_falied">Call forwarding is not enabled for this handset. Please be patient we will update the build soon.</string>
+    <string name="welcome_voicemail_text">"
+\u0009\u0009&lt;V2T>
+\u0009\u0009\u0009&lt;transcription>
+\u0009\u0009\u0009\u0009&lt;messageCount>1&lt;/messageCount>
+\u0009\u0009\u0009\u0009&lt;transcriptionProcessing>
+\u0009\u0009\u0009\u0009\u0009&lt;qos>GOLD&lt;/qos>
+\u0009\u0009\u0009\u0009&lt;/transcriptionProcessing>
+\u0009\u0009\u0009\u0009&lt;transcriptionMessage>
+\u0009\u0009\u0009\u0009\u0009&lt;languageCode>en&lt;/languageCode>
+\u0009\u0009\u0009\u0009\u0009&lt;confidenceLevel>1.0&lt;/confidenceLevel>
+\u0009\u0009\u0009\u0009\u0009&lt;text>Visual Voicemail-to-Text is an add-on service available to Visual Voicemail customers.
+
+This service allows you to have your voicemail systematically transcribed from voice into text and then presented within the Visual Voicemail client.&lt;/text>
+\u0009\u0009\u0009\u0009&lt;/transcriptionMessage>
+\u0009\u0009\u0009&lt;/transcription>
+\u0009\u0009&lt;/V2T>"</string>
+    <string name="dialog_message_vtt_min_svc">Welcome to Voicemail. Smith Micro Voicemail application uses text messaging (SMS), Internet access, and call forwarding service to manage your voicemails on the handset. Check with your wireless carrier to understand the charges that may apply. If you have unlimited data and messaging plans then you should be good to use this application.</string>
+    <string name="dialog_button_activate">Activate</string>
+    <string name="phone_number_text">Phone number : %1$s</string>
+    <string name="email_address_text">Email address :</string>
+    <string name="email_address_hint">Enter your email address</string>
+    <string name="full_name_text">Full name :</string>
+    <string name="full_name_hint">Enter your full name</string>
+    <string name="loading_voicemail">Loading voicemail information..</string>
+    <string name="dialog_title_whats_new_voicemail">"What's new in Voicemail?"</string>
+    <string name="dialog_title_learn_more_trail">Learn about FREE Trial</string>
+    <string name="dialog_title_subscribe">Subscribe</string>
+    <string name="dialog_title_subscribing_voicetotext">Subscribing</string>
+    <string name="dialog_title_data_collection_consent">Data collection consent</string>
+    <string name="dialog_title_try_voicetotext">Try Voicemail-to-Text</string>
+    <string name="dialog_title_free_onemonth_trial">FREE one month trial</string>
+    <string name="dialog_title_unsubscribe">Unsubscribe</string>
+    <string name="dialog_title_unsubscribe_voicemail_to_text">Unsubscribe Voicemail-to-Text</string>
+    <string name="dialog_title_unsubscribing_monthly">Unsubscribed</string>
+    <string name="dialog_title_what_is_visual_voicemail">What is Visual Voicemail?</string>
+    <string name="dialog_message_subscribing_for_day">"Thank you for subscribing to the Voicemail-to-Text 24 Hour Day Pass service. We're updating your account now and we'll notify you when it's completed.
+
+Once active all new messages will be transcribed to text."</string>
+    <string name="dialog_message_subscribing_generic">"Thank you for subscribing to the Voicemail-to-Text %1$s service. We're updating your account now and we'll notify you when it's completed.
+
+Once active all new messages will be transcribed to text."</string>
+    <string name="dialog_message_try_voicetotext_trial">"You are signing up to try the %1$s for Voicemail-to-Text Service that will expire %2$s.
+
+Do you wish to continue signing up for this trial?
+
+You will not be automatically subscribed when your trial is over, but a reminder will be sent upon trial completion."</string>
+    <string name="dialog_message_free_onemonth_trial">"Your %1$s for Voicemail-to-Text is being activated. We will notify you when it's completed.
+
+New voicemail messages will be transcribed to text for one month and will expire %2$s.
+
+Thank you.
+"</string>
+    <string name="dialog_message_unsubscribe">"Are you sure you want to unsubscribe from Voicemail-to-Text?
+
+Messages will no longer be transcribed after this month's billing cycle."</string>
+    <string name="dialog_message_unsubscribe_trial_left">"Are you sure you want to unsubscribe from Voicemail-to-Text?
+
+Your FREE trial is still active, messages will be transcribed for %d days."</string>
+    <string name="dialog_message_unsubscribe_trial_left_single">"Are you sure you want to unsubscribe from Voicemail-to-Text?
+
+Your FREE trial is still active, messages will be transcribed for %d day."</string>
+    <string name="dialog_message_unsubscribe_trial">"Are you sure you want to unsubscribe from Voicemail-to-Text Free Trial?
+
+Messages will no longer be transcribed and any time remaining in the free trial will be lost."</string>
+    <string name="dialog_message_unsubscribing_monthly">"You have been unsubscribed from the Voicemail-to-Text service.
+
+Messages will continue to be transcribed until the end of this month's billing cycle.
+
+Thank you for using this service."</string>
+    <string name="dialog_message_subscrbie_single_plan_canned">"By subscribing to Voicemail-to-Text, %1$s
+
+Tap the Subscribe button to complete your subscription."</string>
+    <string name="dialog_message_subscrbie_single_plan_canned_trial_left">"By subscribing to Voicemail-to-Text, %1$s
+
+Tap the Subscribe button to complete your subscription.
+
+Your subscription will begin after the trial ends."</string>
+    <string name="dialog_message_subscribing_active_trial_left">"Thank you for subscribing to the Voicemail-to-Text %1$s service. We're updating your account now and we'll notify you when it's completed.
+
+Your %2$s will take effect after your Free Trial has expired."</string>
+    <string name="dialog_button_learn_about_trail">Learn about FREE Trial</string>
+    <string name="dialog_button_subscribe_voicetotext">Subscribe to Voicemail-to-Text</string>
+    <string name="dialog_button_start_month_trail">Start FREE One Month Trial</string>
+    <string name="dialog_button_start_trail">Start Trial</string>
+    <string name="toast_title_transcribing">Transcribing Message</string>
+    <string name="toast_title_unsubscribing">Unsubscribed</string>
+    <string name="toast_message_transcribing">"Your message is being transcribed, this may take minute or two. We'll notify you when it's ready."</string>
+    <string name="toast_message_unsubscribing">Messages will no longer be transcribed to text.</string>
+    <string name="toast_title_activated_subscription">Activated Subscription</string>
+    <string name="toast_message_activated_subscription">New messages will be transcribed from now on.</string>
+    <string name="toast_title_activated_freetrial">Activated FREE Trial</string>
+    <string name="toast_message_activated_freetrial">New messages will be transcribed for one month.</string>
+    <string name="notification_ticker_expiration_text">Expiration Notice</string>
+    <string name="dialog_title_vtt_loading_animation">Please wait</string>
+    <string name="dialog_message_vtt_loading_animation">Verifying your account information, this may take a minute...</string>
+    <string name="dialog_title_open_source_license_info">Open source licenses</string>
+    <string name="dialog_message_error_open_source_license_info">Sorry. Error Loading open source license info.</string>
+    <string name="toast_message_activated_subscription_trial_ends">Subscription will begin when trial ends</string>
+    <string name="toast_message_unsubscribing_trial_ends">Messages will no longer be transcribed to text after the free trial ends.</string>
+    <string name="toast_title_moved_to_deleted_folder">Moved to Deleted folder</string>
+    <string name="toast_title_moved_to_sd_card">Moved to SD card</string>
+    <string name="toast_moved_to_sd_card">Your message has been moved to your SD card.</string>
+    <string name="title_inbox_move">Inbox</string>
+    <string name="id_directory_name_inbox">Inbox</string>
+    <string name="id_directory_name_outbox">Outbox</string>
+    <string name="id_directory_name_deleted">Deleted</string>
+    <string name="id_directory_name_saved">SD card</string>
+    <string name="deleted_folder_empty">You have no deleted voicemail messages.</string>
+    <string name="dialog_title_empty_deleted_folder">Empty Deleted box</string>
+    <string name="dialog_message_empty_deleted_folder">"Emptying the Deleted folder will permanently delete the messages.
+
+Are you sure you want to permanently delete these messages?"</string>
+    <string name="dialog_button_empty_deleted_folder">Delete messages</string>
+    <string name="dialog_title_permanently_delete_message">Delete message</string>
+    <string name="dialog_message_permanently_delete_message">"Deleting a message from the Deleted folder will permanently delete the message.
+
+Are you sure you want to permanently delete this message?"</string>
+    <string name="dialog_button_permanently_delete_message">Delete message</string>
+    <string name="dialog_message_restore_one_message">Are you sure you want to restore this message?</string>
+    <string name="title_vnotes_saved">SD card (%d)</string>
+    <string name="menu_move_to_inbox">Move to Inbox</string>
+    <string name="toast_title_moved_to_inbox">Moved to Inbox</string>
+    <string name="toast_moved_to_inbox">Your message has been moved back to your Inbox.</string>
+    <string name="title_saved_move">SD card</string>
+    <string name="dialog_button_delete_message">Delete message</string>
+    <string name="dialog_button_delete_messages">Delete messages</string>
+    <string name="dialog_message_permanently_delete_from_saved">"Deleting a message from SD card will permanently delete the message.
+
+Are you sure you want to permanently delete this message?"</string>
+    <string name="dialog_message_permanently_locked_delete_from_saved">"This message is locked. Deleting the message from the SD card will permanently delete it. This cannot be undone.
+
+Do you want to permanently delete it anyway?"</string>
+    <string name="outbox_list_empty">All messages delivered.</string>
+    <string name="title_vnotes_outbox">Undelivered messages</string>
+    <string name="dialog_message_delete_unsent">This unsent message will be deleted.</string>
+    <string name="dialog_title_outbox_finished">Undelivered messages</string>
+    <string name="dialog_message_outbox_finished">There are no more undelivered messages.</string>
+    <string name="voicemail_activation_message">Activation Message</string>
+    <string name="menu_lock">Lock</string>
+    <string name="menu_unlock">Unlock</string>
+    <string name="menu_txt_msg">Text message</string>
+    <string name="menu_forward">Forward</string>
+    <string name="menu_subscribe">Subscribe</string>
+    <string name="menu_trial">Free trial</string>
+    <string name="btn_speaker">Speaker</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_restore">Restore to Inbox</string>
+    <string name="btn_next">Newer</string>
+    <string name="btn_previous">Older</string>
+    <string name="btn_play">Play</string>
+    <string name="dialog_message_delete_message">This message will be deleted.</string>
+    <string name="dialog_message_saved_permanently_delete_message">This message will be permanently deleted.</string>
+    <string name="dialog_message_delete_locked_message">This message is locked. Do you want to delete it anyway?</string>
+    <string name="dialog_message_permanently_delete_locked_message">"This message is locked. Deleting the message from the SD card will permanently delete it. This cannot be undone.
+
+Do you want to permanently delete it anyway?"</string>
+    <string name="dialog_message_delete_unread_message">The message is unheard. Do you want to delete it anyway?</string>
+    <string name="dialog_message_permanently_delete_unread_message">The message is unheard. Do you want to permanently delete it anyway?</string>
+    <string name="dialog_message_delete_locked_and_unheard_message">The message is locked and unheard. Do you want to delete it anyway?</string>
+    <string name="dialog_message_permanently_delete_locked_and_unheard_message">The message is locked and unheard. Do you want to permanently delete it anyway?</string>
+    <string name="dialog_selected_message_delete_locked_and_unheard_message">The selected message is locked and unheard. Do you want to delete it anyway?</string>
+    <string name="dialog_selected_message_permanently_delete_locked_and_unheard_message">The selected message is locked and unheard. Do you want to permanently delete it anyway?</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_agree">Agree</string>
+    <string name="dialog_button_disagree">Disagree</string>
+    <string name="flag_urgent">Urgent</string>
+    <string name="flag_private">Private</string>
+    <string name="btn_recipients">Recipients (%d)</string>
+    <string name="dialog_message_outbox_message_sent">Undelivered message has been sent to server.</string>
+    <string name="transcription_arrived">Message transcription now available.</string>
+    <string name="rate_text_transcription">Rate this text transcription</string>
+    <string name="rate_it">Rate the transcription</string>
+    <string name="my_rating">My Rating</string>
+    <string name="rating_none">Tap a star to add your rating</string>
+    <string name="rating_poor">Very Poor</string>
+    <string name="rating_below_average">Poor</string>
+    <string name="rating_average">Average</string>
+    <string name="rating_above_average">Good</string>
+    <string name="rating_excellent">Very Good</string>
+    <string name="attribute_home">Home</string>
+    <string name="attribute_work">Work</string>
+    <string name="attribute_mobile">Mobile</string>
+    <string name="attribute_other">Other</string>
+    <string name="sent_to">Sent to:</string>
+    <string name="btn_try_voicemail_to_text_free">Try Voicemail-to-Text FREE</string>
+    <string name="btn_subscribe_voicemail_to_text">Subscribe to Voicemail-to-Text</string>
+    <string name="btn_rate_text_transcription">Rate text transcription</string>
+    <string name="rate_helper_text">Ratings help us improve transcription quality</string>
+    <string name="trial_time_left_text">%1$s left in free trial</string>
+    <string name="after_rate_text">Your transcription rating is %1$s</string>
+    <string name="activating_trial_helper_text">Activating FREE Trial</string>
+    <string name="activating_trial_helper_text_message">Activating FREE Trial. This message will not be transcribed.</string>
+    <string name="activating_subscription_helper_text">Activating subscription</string>
+    <string name="activating_subscription_helper_text_message">Activating subscription. This message will not be transcribed.</string>
+    <string name="activating_subscription_helper_text_effective">Activating subscription. It will begin when trial expires.</string>
+    <string name="message_transcribed">Message is being transcribed.</string>
+    <string name="time_left_genric_plan_text">%1$s left in transcription service</string>
+    <string name="copy_transcription_text">Copy text</string>
+    <string name="toast_title_copy_transcription_text">Copied text</string>
+    <string name="toast_message_copy_transcription_text">Text has been copied to your clipboard.</string>
+    <string name="button_ok">OK</string>
+    <string name="title_vnotes_recipients_form">Message recipients</string>
+    <string name="title_vnotes_record_form">Compose</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_rec">Record</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_discard">Discard</string>
+    <string name="dialog_title_send_vnote">Voicemail sent</string>
+    <string name="dialog_message_send_vnote">Voice message to %1$s will be sent.</string>
+    <string name="dialog_title_discard">Discard</string>
+    <string name="dialog_message_confirm_rec_discard">Your message will be discarded.</string>
+    <string name="dialog_title_cannot_send">Cannot send this message</string>
+    <string name="dialog_message_invalid_recipients">Your voice message contains invalid recipients.</string>
+    <string name="menu_recent_list">Recent list</string>
+    <string name="menu_review">Review</string>
+    <string name="menu_append">Append</string>
+    <string name="menu_rerecord">Re-record</string>
+    <string name="rec_form_edit_recipient_hint">To</string>
+    <string name="multiple_recipients">multiple recipients</string>
+    <string name="multiple_recipients_word_cap">Multiple recipients</string>
+    <string name="rec_option_urgency_text">Urgency</string>
+    <string name="rec_option_urgency_subtext">Mark this message urgent</string>
+    <string name="rec_option_privacy_text">Privacy</string>
+    <string name="rec_option_privacy_subtext">Mark this message private</string>
+    <string name="recent_list_title">Recent list</string>
+    <string name="rec_status_ready">Press record</string>
+    <string name="rec_status_recording">Recording</string>
+    <string name="rec_status_recorded">Recorded</string>
+    <string name="rec_status_playing">Playing</string>
+    <string name="rec_status_at_tone">Record at tone</string>
+    <string name="more_record_options">Tap Send or open the Menu for more options.</string>
+    <string name="more_record_options_disabled">Address your message and then tap Send or open the Menu for more options.</string>
+    <string name="cannot_operate_during_voice_call">Message recording or playback is not allowed during a voice call.</string>
+    <string name="dialog_message_error_creating_msg">Error creating message.</string>
+    <string name="record_greeting_summary">Record your greeting for %1$s below. After you record your greeting you can review what you recorded, re-record a new greeting, or tap Save to save your greeting.</string>
+    <string name="record_greeting_saved">Your greeting for %1$s has been saved.</string>
+    <string name="no_contact_entries_found">Invalid recipient contact information.</string>
+    <string name="dialog_title_duplicate_message">Duplicate message</string>
+    <string name="dialog_message_duplicate_error">This message already exists in this folder.</string>
+    <string name="dialog_title_saved_at_limit">SD card full</string>
+    <string name="dialog_message_saved_at_limit_error">"The SD card is now full.
+
+You will need to clear more space to save more messages."</string>
+    <string name="dialog_message_saved_at_limit_previously_error">"Message cannot be moved because the SD card is full.
+
+Please clear some space and try again."</string>
+    <string name="dialog_title_saved_at_count_limit">Message storage limit reached</string>
+    <string name="dialog_message_saved_at_count_limit_error">"We can only store 500 messages on the SD card.
+
+You will need to clear some space to save more messages."</string>
+    <string name="dialog_message_saved_at_count_limit_previously_error">"Message cannot be moved because we can only store 500 messages on the SD card.
+
+Please clear some space and try again."</string>
+    <string name="title_vnotes_forward_form">Forward</string>
+    <string name="activity_result_outbox_full">Error: Outbox is full.</string>
+    <string name="activity_result_cannot_copy">Error: Cannot create copy of audio file.</string>
+    <string name="activity_result_no_src">Error: Source audio does not exist.</string>
+    <string name="activity_result_cannot_create">Error: Message could not be created.</string>
+    <string name="activity_result_corrupt">Error: Source message is corrupt.</string>
+    <string name="activity_result_reply_error">Error: General error.</string>
+    <string name="vnotes_search_settings_description">Search voicemails</string>
+    <string name="title_vnotes_search_results_form">Voicemail Search Results</string>
+    <string name="vnotes_search_hint">Search voicemail</string>
+    <string name="search_results_empty">No voicemails found</string>
+    <string name="searchable_items_label">Voicemail</string>
+    <string name="matches_found">"%1$d match(es) found for '%2$s'"</string>
+    <string name="no_matches_found">"No match(es) found for '%1$s'"</string>
+    <string name="from_name_edit_hint">Enter your Display name</string>
+    <string name="from_name_title_text">Display name</string>
+    <string name="from_name_body_text">Enter a name to identify yourself to people when replying or forwarding messages</string>
+    <string name="title_vnotes_settings_form">Voicemail settings</string>
+    <string name="title_vnotes_shared_lines_form">Shared Phone Lines Settings</string>
+    <string name="preference_title_speakerphone">Speakerphone</string>
+    <string name="preference_title_change_greeting">Personalize voicemail</string>
+    <string name="preference_title_data_consent_agreement">Data consent agreement</string>
+    <string name="preference_title_inbox_sort_order">Inbox sort order</string>
+    <string name="preference_title_from_name">Display name</string>
+    <string name="preference_title_upgrade">Check for update</string>
+    <string name="preference_title_about">About Voicemail</string>
+    <string name="preference_title_shared_phone_lines">Shared Phone Lines</string>
+    <string name="preference_title_friendly_name">Friendly Names</string>
+    <string name="preference_title_inbox_filter">Inbox Filter Lock</string>
+    <string name="preference_title_help">Help</string>
+    <string name="preference_summary_speakerphone_on">Speakerphone is automatically on</string>
+    <string name="preference_summary_speakerphone_off">Speakerphone is automatically off</string>
+    <string name="preference_summary_change_greeting">Change your voicemail greeting for incoming calls and update password</string>
+    <string name="preference_summary_inbox_sort_order">Change default sort order from %1$s</string>
+    <string name="preference_summary_from_name">Enter a name to identify yourself to people when replying or forwarding messages</string>
+    <string name="preference_summary_from_name_2">%1$s is currently being used to identify you when sending messages</string>
+    <string name="preference_summary_shared_phone_lines">Configure how multiple phone line information is displayed</string>
+    <string name="preference_summary_friendly_name">Create friendly names for each phone line for inbox display</string>
+    <string name="preference_summary_inbox_filter">Always filter inbox on a specific phone line</string>
+    <string name="dialog_title_change_greeting">Personalize voicemail</string>
+    <string name="dialog_title_inbox_filter_lock">Inbox Filter Lock</string>
+    <string name="dialog_message_change_greeting">You will be transferred to the voicemail system. Follow the voice prompts for changing your greeting and setting your password.</string>
+    <string name="dialog_title_check_upgrade">Check for update</string>
+    <string name="dialog_message_check_upgrade_unavailable">No update is available at this time.</string>
+    <string name="dialog_message_checking">Checking...</string>
+    <string name="dialog_message_downloading">Downloading...</string>
+    <string name="dialog_message_canceling">Canceling...</string>
+    <string name="dialog_message_upgrade_general_failure">General failure. Please try again at a later time.</string>
+    <string name="dialog_message_upgrade_connection_failure">Failed to connect to server. Please try again at a later time.</string>
+    <string name="dialog_message_upgrade_no_file_space">Not enough system file space available.</string>
+    <string name="dialog_button_upgrade">Update</string>
+    <string name="dialog_deactivate_trial_text">In order to deactivate this service you must complete a short exit survey. You must complete this survey to restore your existing voicemail.</string>
+    <string name="dialog_title_survey">Survey</string>
+    <string name="dialog_button_submitt">Submit</string>
+    <string name="dialog_button_update">Update</string>
+    <string name="dialog_reactivate_text">This will activate your phone number on Smith Micro VMS system.Press Continue to activate.</string>
+    <string name="dialog_deactivate_text">This will deactivate your phone number on Smith Micro VMS system and also revert back to carrier voicemail system. Press Continue to deactivate.</string>
+    <string name="dialog_button_unsubscribe">Unsubscribe</string>
+    <string name="dialog_message_unsubscribe_free_trial">"Are you sure you want to unsubscribe to Voicemail-to-Text?
+
+Messages will no longer be transcribed and anytime remaining in the free trial will be lost."</string>
+    <string name="dialog_message_survey_summary">1. I would like to deactivate this service because:</string>
+    <string name="preference_record_greeting">Record greeting</string>
+    <string name="preference_record_greeting_summary">Record your voicemail greeting</string>
+    <string name="preference_notifications_text">Notifications</string>
+    <string name="preference_notifications_text_summary">Set your notification sound and vibrate settings</string>
+    <string name="preference_notifications_text_summary_2">Display message notifications in status bar</string>
+    <string name="preference_inbox_text">Inbox</string>
+    <string name="preference_inbox_text_summary">Configure your voicemail inbox</string>
+    <string name="preference_playback_text">Playback</string>
+    <string name="preference_playback_text_summary">Configure your voicemail playback</string>
+    <string name="preference_carboncopy_text">Auto forward to email</string>
+    <string name="preference_carboncopy_text_summary">Send a copy of new messages to an email address of your choice</string>
+    <string name="preference_deactivate_text">Unsubscribe</string>
+    <string name="preference_title_playback_screen">Playback screen</string>
+    <string name="preference_summary_on_playback_screen">Customize the look of the message playback screen</string>
+    <string name="preference_summary_off_playback_screen">Customize message playback screen requires Voicemail-to-Text subscription</string>
+    <string name="preference_activate_text_summary">Subscription will transcribe all voicemail messages to text</string>
+    <string name="preference_activate_pending_text">Please wait...</string>
+    <string name="preference_deactivate_pending_text">Please wait...</string>
+    <string name="preference_activate_never_state_text">Please wait...</string>
+    <string name="preference_activate_never_state_text_summary">Verifying Voicemail-to-Text account information, this may take a minute</string>
+    <string name="preference_delayed_opt_in_text_dynamic_summary">Cancel subscription service for transcribing new messages to text</string>
+    <string name="preference_delayed_opt_in_text_dynamic_summary_trial_left">Cancel subscription service for transcribing new messages to text when trial ends</string>
+    <string name="preference_notifications_title">Notification settings</string>
+    <string name="preference_inbox_title">Inbox settings</string>
+    <string name="preference_playback_title">Playback settings</string>
+    <string name="preference_carboncopy_title">Auto forward to email settings</string>
+    <string name="preference_selectringtone_title">Select sound</string>
+    <string name="preference_selectringtone_summary">Set your notification sound</string>
+    <string name="preference_vibrate_text">Vibrate</string>
+    <string name="preference_vibrate_text_summary_on">Vibrate is on</string>
+    <string name="preference_vibrate_text_summary_off">Vibrate is off</string>
+    <string name="preference_pictures_text">Pictures</string>
+    <string name="preference_pictures_text_summary">Show pictures from contacts</string>
+    <string name="preference_sortorder_text">Sortorder</string>
+    <string name="preference_sortorder_text_summary">Newest to oldest</string>
+    <string name="preference_navigation_text">Navigation</string>
+    <string name="preference_navigation_text_summary">Old-school arraows</string>
+    <string name="preference_autocopy_email_address_title">Change email address</string>
+    <string name="preference_autocopy_email_address_title_2">Add email address</string>
+    <string name="preference_autocopy_email_address_summary">No email address added</string>
+    <string name="preference_autocopy_text">Auto forward</string>
+    <string name="preference_autocopy_text_summary_on">Auto forward to email is on</string>
+    <string name="preference_autocopy_text_summary_off">Auto forward to email is off</string>
+    <string name="preference_audiofile_text">Include message audio</string>
+    <string name="preference_audiofile_text_summary_on">Message audio will be sent</string>
+    <string name="preference_audiofile_text_summary_off">Message audio will not be sent</string>
+    <string name="preference_transcription_text">Include message text</string>
+    <string name="preference_transcription_text_summary_on">Message text will be sent</string>
+    <string name="preference_transcription_text_summary_off">Message text will not be sent</string>
+    <string name="preference_notification_selection_title">When to notify</string>
+    <string name="preference_notification_immediate_text">Immediate notification</string>
+    <string name="preference_notification_immediate_text_summary">Notify me as soon as the audio message is received</string>
+    <string name="preference_notification_both_text">Audio and text available</string>
+    <string name="preference_notification_both_text_summary">Only notify me when both the audio and text transcription is available</string>
+    <string name="repeat_notification_dialog_title">Select notification repeat</string>
+    <string name="preference_repeat_notification_text">Repeat notifications</string>
+    <string name="email_address_edit_hint">Enter your Email address</string>
+    <string name="preference_transcription_font">Transcription font size</string>
+    <string name="preference_font_normal">Normal</string>
+    <string name="preference_greeting_name_title">Record greeting Name</string>
+    <string name="preference_greeting_name">Name</string>
+    <string name="preference_greeting_name_summary">Record your name</string>
+    <string name="preference_greeting_name_text">Name is used with Standard greeting, John Smith at %1$s is not available. If you record personalize greeting Unavailable, then name will not be used.</string>
+    <string name="preference_greeting_unavailable_title">Record greeting - Unavailable</string>
+    <string name="preference_greeting_unavailable">Unavailable greeting</string>
+    <string name="preference_greeting_unavailable_summary">Record a greeting for when you are unavailable</string>
+    <string name="preference_greeting_unavailable_text">Record your Unavailable greeting for %1$s below. After you record your greeting you can review what you recorded, re-record a new greeting, or tap Save to save your greeting.</string>
+    <string name="preference_title_contact_pictures">Pictures</string>
+    <string name="preference_summary_contact_pictures_on">Show pictures from contacts</string>
+    <string name="preference_summary_contact_pictures_off">Hide pictures from contacts</string>
+    <string name="preference_try_vtt_text_summary">Start free trial subscription service for transcribing new messages to text</string>
+    <string name="preference_subscription_daypass_countdown">About %1$s left in Day pass</string>
+    <string name="preference_subscription_countdown">%1$s left in transcription service</string>
+    <string name="trial_expired">Trial has expired</string>
+    <string name="preference_title_voicemail_to_text">Voicemail-to-Text</string>
+    <string name="preference_try_vtt_text">Voicemail-to-Text</string>
+    <string name="preference_trial_countdown">%1$s left in free trial</string>
+    <string name="preference_manage_voicemail_to_text_summary">Manage subscription services for transcribing new messages to text</string>
+    <string name="preference_deactivate_text_dynamic_summary">Cancel subscription service for transcribing new messages to text</string>
+    <string name="preference_deactivate_text_dynamic_summary_trial_left">Cancel subscription service for transcribing new messages to text when trial ends</string>
+    <string name="preference_activate_text_free_trial_dynamic_summary">Start %1$s subscription service for transcribing new messages to text</string>
+    <string name="preference_activate_text_dynamic_summary">Start %1$s service for transcribing new messages to text</string>
+    <string name="preference_reinstate_monthly_subscription_summary">Reinstate %1$s service for transcribing new messages to text</string>
+    <string name="preference_activate_plan_pending_text_summary">Activating %1$s...</string>
+    <string name="preference_deactivate_plan_pending_text_summary">Canceling %1$s...</string>
+    <string name="preference_activate_trial_pending_text_summary">Activating free trial...</string>
+    <string name="preference_deactivate_trial_pending_text_summary">Canceling free trial...</string>
+    <string name="preference_activate_pending_text_summary">Activating monthly subscription...</string>
+    <string name="preference_deactivate_pending_text_summary">Canceling monthly subscription...</string>
+    <string name="dialog_choice_title_unsubscribe_free_trial">Unsubscribe Free Trial</string>
+    <string name="dialog_choice_summary_unsubscribe_free_trial">Cancel the Free Trial to Voicemail-to-Text. Transcriptions will stop immediately.</string>
+    <string name="dialog_title_manage_subscription">Manage subscription</string>
+    <string name="dialog_title_unsubcribed_confirm">Unsubscribed</string>
+    <string name="dialog_message_unsubcribed_confirm">"Your monthly subscription to the Voicemail-to-Text service has ended.
+
+Messages will no longer be transcribed to text."</string>
+    <string name="dialog_message_unsubcribed_free_trial_confirm">"You have been unsubscribed from the Voicemail-to-Text FREE Trial.
+
+Messages will no longer be transcribed to text.
+
+Thank you for using this service."</string>
+    <string name="dialog_title_free_trial_ended_confirm">Free trial ended</string>
+    <string name="dialog_message_free_trial_ended_confirm">"Your FREE trial to the Voicemail-to-Text service has ended.
+
+Messages will no longer be transcribed to text.
+
+To continue receiving transcriptions go to Voicemail Settings to sign up for the monthly subscription to Voicemail-to-Text."</string>
+    <string name="dialog_message_unsubscribing_monthly_with_free_trial">"You have been unsubscribed from the Voicemail-to-Text monthly service.
+
+Messages will continue to be transcribed until the FREE Trial ends."</string>
+    <string name="dialog_title_please_wait">Please wait...</string>
+    <string name="dialog_message_activating_free_trial">Activating Free Trial to Voicemail-to-Text</string>
+    <string name="dialog_message_deactivating_free_trial">Unsubscribing from Free Trial to Voicemail-to-Text</string>
+    <string name="dialog_message_activating_monthly">Activating subscription to Voicemail-to-Text</string>
+    <string name="dialog_message_deactivating_monthly">Unsubscribing from monthly subscription to Voicemail-to-Text</string>
+    <string name="preference_title_social_accounts">Social networking accounts</string>
+    <string name="preference_summary_social_accounts">Manage logins for Facebook and Twitter</string>
+    <string name="preference_title_social_network_account_settings">Social networking account settings</string>
+    <string name="preference_title_facebook_account">Facebook account</string>
+    <string name="preference_summary_facebook_account">Add an account to send voicemail messages to Facebook</string>
+    <string name="preference_title_twitter_account">Twitter account</string>
+    <string name="preference_summary_twitter_account">Add an account to send voicemail messages to Twitter</string>
+    <string name="preference_summary_saved_facebook_username">"Saved %1$s's account"</string>
+    <string name="preference_summary_saved_twitter_username">"Saved %1$s's account"</string>
+    <string name="toast_title_twitter_account_saved">Twitter Account Saved</string>
+    <string name="toast_summary_twitter_account_saved">You can now send messages to your %1$s account.</string>
+    <string name="toast_title_facebook_account_saved">Facebook Account Saved</string>
+    <string name="toast_summary_facebook_account_saved">You can now send messages to your %1$s account.</string>
+    <string name="dialog_title_unavailable_option">Unavailable option</string>
+    <string name="dialog_button_free_trial">Free Trial</string>
+    <string name="dialog_button_no_thanks">No, Thanks</string>
+    <string name="dialog_summay_subscribe_to_freetrail">"We're sorry, but this option is only available when you have an active subscription to Voicemail-to-Text.
+
+Subscribing will allow you to update your Facebook status or post to Twitter using Google Speak Now.
+
+Would you like to try a Free one month trial?
+"</string>
+    <string name="dialog_summay_subscribe_to_mrc">"We're sorry, but this option is only available when you have an active subscription to Voicemail-to-Text.
+
+Subscribing will allow you to update your Facebook status or post to Twitter using Google Speak Now.
+
+Would you like to subscribe?
+"</string>
+    <string name="preference_title_show_text_transcription">Show text transcription</string>
+    <string name="preference_summary_on_displayed_transcriptions">Text transcription is displayed for transcribed messages</string>
+    <string name="preference_summary_off_displayed_transcriptions">Text transcription is hidden for transcribed messages</string>
+    <string name="preference_screen_title">Playback screen Settings</string>
+    <string name="restore_list_empty">No messages to restore</string>
+    <string name="delete_list_empty">No messages to delete</string>
+    <string name="menu_select_all">Select all</string>
+    <string name="menu_select_none">Deselect all</string>
+    <string name="dialog_title_deleting">Deleting</string>
+    <string name="dialog_message_deleting">Deleting...</string>
+    <string name="dialog_deleting_messages">Deleting messages</string>
+    <string name="title_vnotes_delete_form">Delete</string>
+    <string name="dialog_dont_delete_provision_body">This message is used for activating the Voicemail service and cannot be deleted.</string>
+    <string name="dialog_message_restoring">Restoring...</string>
+    <string name="dialog_title_cancel_restore">Cancel restore request</string>
+    <string name="dialog_title_multi_restore">Please wait...</string>
+    <string name="dialog_message_multi_restore_cancel_none">"Are you sure you want to cancel this restore request?
+
+No messages have been restored so far."</string>
+    <string name="title_saved_delete">SD card</string>
+    <string name="no_messages_sdcard">"You have no voicemail messages saved to this SD card.
+
+To save messages go to the message you want to save and select the Menu. Then choose the Move to SD card option."</string>
+    <string name="no_sdcard_in_saved">No SD card found. Please insert an SD card to save messages.</string>
+    <string name="dialog_title_cancel_delete">Cancel delete request</string>
+    <string name="dialog_title_multi_delete">Please wait...</string>
+    <string name="dialog_message_multi_delete_cancel_none">"Are you sure you want to cancel this delete request?
+
+No messages have been deleted so far."</string>
+    <string name="move_list_empty">No messages to move</string>
+    <string name="btn_move_to_sd">Move to SD</string>
+    <string name="btn_move_to_inbox">Move to Inbox</string>
+    <string name="dialog_title_move_to_inbox">Move to Inbox</string>
+    <string name="dialog_title_move_to_inbox_wait">Please wait...</string>
+    <string name="dialog_title_move_to_sd">Move to SD</string>
+    <string name="dialog_message_moving_to_inbox">Moving to Inbox</string>
+    <string name="dialog_message_moving">Moving...</string>
+    <string name="dialog_title_cancel_move">Cancel move request</string>
+    <string name="dialog_message_multi_move_cancel_none">"Are you sure you want to cancel this move request?
+
+No messages have been moved so far."</string>
+    <string name="title_vnotes_reply_all_form">Reply all</string>
+    <string name="dialog_reply_sms">SMS message</string>
+    <string name="dialog_reply_audio">Audio message</string>
+    <string name="dialog_reply_email">Email message</string>
+    <string name="dialog_message_vnote_error_record_failed">Record failed</string>
+    <string name="dialog_message_vnote_error_outbox_limit">Maximum number of undelivered messages has been reached.</string>
+    <string name="dialog_message_vnote_error_draft_limit">Maximum message count in Drafts has been reached.</string>
+    <string name="dialog_message_vnote_error_send_vnote">Error sending voicemail</string>
+    <string name="dialog_message_vnote_error_vnote_empty">Your recorded message is empty or not long enough. Please re-record the message.</string>
+    <string name="dialog_message_vnote_error_from_name_length">Display name must be at least one character long.</string>
+    <string name="dialog_message_vnote_error_from_name_not_saved">Display name could not be saved.</string>
+    <string name="dialog_message_vnote_error_recording_limit_reached">Recording time limit reached.</string>
+    <string name="dialog_message_vnote_error_unrecognized_error">Error V%02d: Unrecognized Error. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_mip_outage">Error V%02d: Voice message will be delivered when data service becomes available.</string>
+    <string name="dialog_message_vnote_error_mip_not_provisioned">Error V%02d: Data services not enabled for this account. Voice message delivery delayed.</string>
+    <string name="dialog_message_vnote_error_connect_timeout">Error V%02d: Timeout connecting to server.</string>
+    <string name="dialog_message_vnote_error_unsupported_message">Error V%02d: Unsupported message. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_fatal_server_error">Error V%02d: Unknown error. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_service_denied">Error V%02d: Service denied. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_msg_corrupt">Error V%02d: Message corrupt. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_invalid_recipient">Error V%02d: Invalid recipient. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_msg_not_accepted">Error V%02d: Message content not accepted. Voice message not delivered.</string>
+    <string name="dialog_message_vnote_error_auth_failed">There is a delay in setting up your voicemail. Your message will be sent as soon as this step is complete.</string>
+    <string name="dialog_message_vnote_error_service_unavailable">Error V%02d: Server unavailable. Voice message delivery delayed.</string>
+    <string name="dialog_message_vnote_error_may_not_be_delivered">Error V%02d: Voice message may not have been delivered.</string>
+    <string name="dialog_message_vnote_error_pending_warning">%1$s pending delivery.</string>
+    <string name="dialog_message_vnote_error_pending_24_warning">Error V%02d: Voice message delivery delayed for more than 24 hours.</string>
+    <string name="dialog_message_vnote_error_record_error">Record Error %02d</string>
+    <string name="dialog_message_vnote_error_playback_error">Playback Error %02d</string>
+    <string name="dialog_message_vnote_error_playback_prepare_error">Unable to play message.</string>
+    <string name="dialog_message_vnote_error_record_out_of_memory">Out of memory. Delete Inbox messages to free space.</string>
+    <string name="dialog_message_cannot_fwd_private">Private messages cannot be forwarded.</string>
+    <string name="dialog_message_cannot_fwd">You cannot forward this message.</string>
+    <string name="dialog_message_cannot_reply">You cannot reply to this message.</string>
+    <string name="dialog_message_cannot_operate_during_call">Message recording or playback is not allowed during a voice call.</string>
+    <string name="dialog_message_error">Error:</string>
+    <string name="dialog_message_error_media_player">Error in Media Player.</string>
+    <string name="dialog_message_error_send_vnote">Error sending voicemail.</string>
+    <string name="dialog_message_error_fwd_email">Error creating attachment. Please verify that SD card is inserted, and not in use.</string>
+    <string name="dialog_message_error_reply_email">Error replying via Email.</string>
+    <string name="dialog_message_error_no_selection">No item was selected.</string>
+    <string name="dialog_message_error_sdcard">An SD card is required to forward this message. Please insert an SD card and try again.</string>
+    <string name="dialog_message_error_move_to_sdcard">Error moving to SD card.</string>
+    <string name="dialog_message_error_sdcard_removed">Your SD card has been removed.</string>
+    <string name="dialog_message_error_no_sdcard">"There is no SD card inserted in your device.
+
+Please insert an SD card and try again."</string>
+    <string name="dialog_title_error_sdcard">SD card error</string>
+    <string name="dialog_message_error_forward_sdcard_no_space">"An SD card is required to forward this message. There isn't enough space on your SD card to continue.
+
+Please clear some space and try again."</string>
+    <string name="dialog_message_error_forward_sdcard_title">Forwarding error</string>
+    <string name="dialog_title_vtt_account_error">Account verification error</string>
+    <string name="dialog_message_vtt_error_verifying_account_info">"Communication with the Voicemail-to-Text server has timed out. We will continue to verify your Voicemail-to-Text account status in the background.
+
+Voicemail service will not be interrupted while we verify the account status."</string>
+    <string name="dialog_message_vtt_error_code_getsubscription_generic">"Error T%02d: Communication with the Voicemail-to-Text server has failed. We will continue to verify your Voicemail-to-Text account status in the background.
+
+Voicemail service will not be interrupted while we verify the account status."</string>
+    <string name="dialog_message_vtt_error_mip_outage">Error T%02d: We will continue retrying in the background when data service becomes available.</string>
+    <string name="dialog_message_vtt_error_mip_not_provisioned">Error T%02d: Data services not enabled for this account.</string>
+    <string name="dialog_message_vtt_error_connect_timeout">Error T%02d: Timeout connecting to server.</string>
+    <string name="dialog_message_vtt_error_auth_failed">There is a delay in verifying account information.</string>
+    <string name="dialog_message_vtt_error_service_unavailable">Error T%02d: Server unavailable. Please try again at a later time.</string>
+    <string name="dialog_message_vtt_error_generic_failure">Error T%02d: Timeout connecting to server. We will continue retrying in the background and notify you upon completion of the check.</string>
+    <string name="dialog_message_vtt_subscription_timeout_error">Communication with the Voicemail-to-Text server has timed out. We will continue retrying in the background and notify you upon completion of the check.</string>
+    <string name="dialog_message_subscribing_monthly">"Thank you for subscribing to the Voicemail-to-Text Monthly service. We're updating your account now and we'll notify you when it's completed.
+
+Once active all new messages will be transcribed to text."</string>
+    <string name="notification_ticker_mwi">Voicemail cannot be downloaded.</string>
+    <string name="notification_title_mwi">Voicemail pending</string>
+    <string name="notification_message_mwi">Tap here to call voicemail</string>
+    <string name="notification_ticker_new_vnote">New voicemail from %1$s</string>
+    <string name="notification_ticker_new_urgent_vnote">New Urgent voicemail from %1$s</string>
+    <string name="notification_ticker_one_new_urgent_vnote">, 1 is Urgent</string>
+    <string name="notification_ticker_new_multiple_urgent_vnote">, %1$d are Urgent</string>
+    <string name="notification_ticker_only_new_urgent_vnotes">%1$d new Urgent voicemails</string>
+    <string name="notification_title_new_vnote">New voicemail</string>
+    <string name="notification_title_new_vnote_vtt">New voicemail</string>
+    <string name="notification_message_new_vnote">%1$s</string>
+    <string name="notification_time_duration_new_vnote">%1$s (%2$s)</string>
+    <string name="notification_title_trial_expiration">Trial Expires in %1$d Days</string>
+    <string name="notification_message_trial_expiration">Voicemail-to-Text trial will expire in %1$d days</string>
+    <string name="notification_ticker_multiple_new_vnote">%1$d new voicemails</string>
+    <string name="notification_title_multiple_new_vnote">New voicemail</string>
+    <string name="notification_message_multiple_new_vnote">%1$d unread voicemails</string>
+    <string name="notification_message_multiple_new_vnote_vtt">%1$d unread voicemails</string>
+    <string name="notification_ticker_mandated_upgrade">A mandatory update is now required.</string>
+    <string name="notification_ticker_optional_upgrade">An optional update is now available.</string>
+    <string name="notification_title_upgrade">Voicemail</string>
+    <string name="notification_message_mandated_upgrade">Start mandatory update</string>
+    <string name="notification_message_optional_upgrade">Start optional update</string>
+    <string name="notification_title_upgrade_checking">Updating Voicemail application</string>
+    <string name="notification_ticker_optional_survey">Pleas Complete Survey.</string>
+    <string name="notification_ticker_message_optional_survey">Tap here to complete survey</string>
+    <string name="launch_test">Launch test</string>
+    <string name="menu_text_it">Send via SMS</string>
+    <string name="menu_add_to_calendar">Add calendar event</string>
+    <string name="menu_send_via_email">Send via email</string>
+    <string name="button_show_free_trial">Show Free trial button</string>
+    <string name="button_show_subscription">Show subscription button</string>
+    <string name="button_hide_free_trial">Hide Free trial button</string>
+    <string name="button_hide_subscription">Hide subscription button</string>
+    <string name="button_start">Start</string>
+    <string name="button_discard">Discard</string>
+    <string name="button_start_over">Start over</string>
+    <string name="button_send">Send</string>
+    <string name="dialog_title_start_over">Start over</string>
+    <string name="dialog_message_start_over">"The current message will be cleared.
+
+Are you sure you want to start over?"</string>
+    <string name="dialog_button_start_over">Start over</string>
+    <string name="button_add_more">Add more</string>
+    <string name="dialog_title_discard_message">Discard message</string>
+    <string name="dialog_message_discard_message">Are you sure you want to discard this message?</string>
+    <string name="dialog_button_discard_message">Discard message</string>
+    <string name="dialog_message_twitter_status">Posting to your Twitter account.</string>
+    <string name="dialog_message_facebook_status">Posting to your Facebook account.</string>
+    <string name="toast_title_message_sent">Message Posted</string>
+    <string name="toast_message_message_sent_twitter">Message has been posted to your Twitter account.</string>
+    <string name="toast_message_message_sent_facebook">Message has been posted to your Facebook account.</string>
+    <string name="title_talk_to_create_twitter_post">"Talk to create your 
+Twitter post transcription"</string>
+    <string name="title_talk_to_create_facebook_status">"Talk to create your 
+Facebook status transcription"</string>
+    <string name="send_button_summary_twitter_post">Press the Send button when you are ready to post to Twitter.</string>
+    <string name="send_button_summary_facebook_status">Press the Send button when you are ready to post your status to Facebook.</string>
+    <string name="start_button_summary_transcription">Press the Start button and begin speaking to have your voice transcribed to text.</string>
+    <string name="dialog_title_speech_intent_error">Error</string>
+    <string name="dialog_message_speech_intent_error">Speech Recognizer not available in this hardware.</string>
+    <string name="dialog_button_speech_intent_ok">Ok</string>
+    <string name="title_talk_to_create_default_post">Talk to create your context transcription</string>
+    <string name="title_facebook_status">Facebook Status</string>
+    <string name="title_twitter_Post">Twitter Post</string>
+    <string name="button_to">To:</string>
+    <string name="twitter_message_too_long">Message too long. Only the first 140 characters will be posted.</string>
+    <string name="facebook_post_status">Post text to Facebook wall</string>
+    <string name="twitter_post_status">Post text to Twitter</string>
+    <string name="social_network_twitter_duplicate_message">This tweet has already been posted your Twitter account.</string>
+    <string name="social_network_data_failure">Your data service is not available. Please try again later.</string>
+    <string name="social_network_timeout_error">Communication with the %1$s has timed out. Please try again later.</string>
+    <string name="social_network_title_twitter">Twitter</string>
+    <string name="social_network_title_facebook">Facebook</string>
+    <string name="posting_to">Posting To:</string>
+    <string name="login_to_facebook">Login to Facebook</string>
+    <string name="login_to_twitter">Login to Twitter</string>
+    <string name="username_facebook_status">"%1$s's Facebook account"</string>
+    <string name="username_twitter">"%1$s's Twitter account"</string>
+    <string name="dialog_message_duplicate_fb_status">This status has already been posted to your Facebook account.</string>
+    <string name="title_talk_to_create_sms_message">"Talk to create your 
+SMS transcription"</string>
+    <string name="title_talk_to_create_email_message">"Talk to create your 
+Email transcription"</string>
+    <string name="nosms_intent">No Activity to handle sms application Intent.</string>
+    <string name="sort_order_newest_first">Newest first</string>
+    <string name="sort_order_oldest_first">Oldest first</string>
+    <string name="sort_order_unread_first">Unread first</string>
+    <string name="sort_order_read_first">Read first</string>
+    <string name="sort_order_alphabetical">Alphabetical</string>
+    <string name="dialog_message_authentication_failed_twitter">"Twitter authentication failed. Please verify username and password.
+"</string>
+    <string name="dialog_message_authentication_failed_facebook">"Facebook authentication failed. Please verify username and password.
+"</string>
+    <string name="twitter_login">Twitter login</string>
+    <string name="dialog_message_facebook_post_maxed_out">"Voicemail has reached the maximum number of posts to Facebook for the day.
+
+Please try again tomorrow or log into Facebook using the web browser.
+"</string>
+    <string name="dialog_message_twitter_post_maxed_out">"Voicemail has reached the maximum number of posts to Twitter for the day.
+
+Please try again tomorrow or log into Twitter using the web browser.
+"</string>
+    <string name="voicemail_directory_count">Voicemail - %1$s (%2$s)</string>
+    <string name="notification_sender_trial_expiration">%1$s</string>
+    <string name="dialog_message_vnote_error_data_roam">Error V%1$02d: Voice message will be sent when you return to %2$s service.</string>
+    <string name="dialog_message_vtt_error_data_roam">Error T%1$02d: We will continue retrying in the background when you return to %2$s service.</string>
+    <string name="dialog_message_data_collection_consent">RECORDING SPEECH DATA. As part of the Service, %1$s also copies and uses Speech Data, as defined below, to tune, enhance and improve the speech recognition and other components of the Service, and other %2$s services and products. In accepting the terms and conditions of this Agreement, you acknowledge, consent and agree that %3$s may make copies of the Speech Data as part of the Service. Such information shall be used only by %4$s or third parties acting under the direction of %5$s, pursuant to confidentiality agreements, to tune, enhance and improve the speech recognition and other components of the Service, and other %6$s services and products. %7$s will not use the information elements in any Speech Data for any purpose except as set forth above. Speech Data means the audio files or portions of such files, associated transcriptions and log files provided by you hereunder or generated in connection with the Service.</string>
+    <string name="dialog_message_data_collection_consent_static">RECORDING SPEECH DATA. As part of the Service, Sprint also copies and uses Speech Data, as defined below, to tune, enhance and improve the speech recognition and other components of the Service, and other Sprint services and products. In accepting the terms and conditions of this Agreement, you acknowledge, consent and agree that Sprint may make copies of the Speech Data as part of the Service. Such information shall be used only by Sprint or third parties acting under the direction of Sprint, pursuant to confidentiality agreements, to tune, enhance and improve the speech recognition and other components of the Service, and other Sprint services and products. Sprint will not use the information elements in any Speech Data for any purpose except as set forth above. Speech Data means the audio files or portions of such files, associated transcriptions and log files provided by you hereunder or generated in connection with the Service.</string>
+    <string name="dialog_message_prov_failed">Voicemail failed to provision. Please contact customer solutions.</string>
+    <string name="dialog_message_what_is_voicemail">"Visual Voicemail allows you to see who each message is from without having to dial into a system, similar to an email inbox. It allows you to listen to the messages in any order you choose.
+
+We are also offering a free 1 month trial to our Voicemail-to-Text service. With this service you'll also have the ability to read transcriptions of your voicemails.
+
+Tap on the Learn about FREE Trial button to get more information about the Voicemail-to-Text free trial.
+"</string>
+    <string name="dialog_message_whats_new_voicemail">"Visual Voicemail now offers the ability to transcribe your audio messages to text.
+
+We are offering a 1 month free trial of our Voicemail-to-Text service. This service will transcribe your voicemails into text allowing you to read them or listen to them at your convenience.
+
+Tap on the Learn about FREE Trial button to get more information about the Voicemail-to-Text free trial.
+"</string>
+    <string name="dialog_message_learn_more_trial">"We offer a 1 month free trial of our Voicemail-to-Text service. This service will transcribe your voicemails into text allowing you to read them or listen to them at your convenience.
+
+Voicemail-to-Text allows you to:
+- Read your messages when you're in an environment that is too loud to hear messages.
+- Copy and paste information to your calendar, tasks,contacts, emails etc.
+- Search your messages using keywords.
+
+Sign up for the free trial now and have fun reading your voicemails!
+"</string>
+    <string name="preference_summary_data_consent_agree">You agreed to send speech data to assist with the quality of this product</string>
+    <string name="preference_summary_data_consent_disagree">You disagreed to send speech data to assist with the quality of this product</string>
+    <string name="dialog_message_vnote_error_vision_locked">Error V%02d: Voice message will be delivered when data services are unlocked.</string>
+    <string name="dialog_message_vtt_error_vision_locked">Error T%02d: We will continue retrying in the background when data services are unlocked.</string>
+    <string name="dialog_title_vtt_error">Voicemail error</string>
+    <string name="dialog_message_vtt_error_account_type">"Voicemail-to-Text has failed to subscribe due to problems with your account.
+
+Please contact Customer Solutions for assistance."</string>
+    <string name="dialog_message_vtt_error_account_type_errorcode">"Voicemail-to-Text has failed to subscribe due to problems with your account.
+
+Please contact Customer Solutions for assistance.
+(Error T%1$s)"</string>
+    <string name="dialog_message_vtt_error_payment_type">"Voicemail-to-Text has failed to subscribe due to problems with your payment.
+
+Please contact Customer Solutions for assistance."</string>
+    <string name="dialog_message_vtt_error_payment_type_errorcode">"Voicemail-to-Text has failed to subscribe due to problems with your payment.
+
+Please contact Customer Solutions for assistance.
+(Error T%1$s)"</string>
+    <string name="dialog_message_vtt_error_generic_type">"Voicemail-to-Text has failed to subscribe.
+
+Please contact Customer Solutions for assistance."</string>
+    <string name="dialog_message_vtt_error_generic_type_errorcode">"Voicemail-to-Text has failed to subscribe.
+
+Please contact Customer Solutions for assistance.
+(Error T%1$s)"</string>
+</resources>

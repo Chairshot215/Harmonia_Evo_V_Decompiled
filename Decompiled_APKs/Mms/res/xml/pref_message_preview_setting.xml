@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_msg_preview_title" android:key="pref_key_msg_preview_settings">
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_message_preview_labels" android:title="@string/pref_msg_preview_title" android:key="pref_key_msg_preview" android:summary="@string/pref_msg_preview_item1" android:defaultValue="1" android:entryValues="@array/pref_entries_message_preview_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

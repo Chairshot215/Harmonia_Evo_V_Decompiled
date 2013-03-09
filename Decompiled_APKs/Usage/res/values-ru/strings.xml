@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Монитор использования</string>
+    <string name="process_kernel_label">ОС Android</string>
+    <string name="roaming_warning">Разрешить интернет-роуминг? Возможны высокие расходы за использование передачи данных.</string>
+    <string name="roaming_reenable_title">Внимание!</string>
+    <string name="display_order_text">Упорядочить по:</string>
+    <string name="app_name_label">Приложение</string>
+    <string name="launch_count_label">Подсчет</string>
+    <string name="usage_time_label">Время использования</string>
+    <string name="tether_settings_title_usb">USB-тетеринг</string>
+    <string name="tether_settings_title_wifi">Wi-Fi роутер</string>
+    <string name="tether_settings_title_bluetooth">Интернет через Bluetooth</string>
+    <string name="tether_settings_title_usb_bluetooth">USB-модем</string>
+    <string name="tether_settings_title_all">USB-модем и Wi-Fi роутер</string>
+    <string name="data_usage_summary_title">Передача данных</string>
+    <string name="data_usage_cycle">Цикл использования данных</string>
+    <string name="data_usage_menu_roaming">Интернет-роуминг</string>
+    <string name="data_usage_menu_restrict_background">Запрет передачи дан.</string>
+    <string name="data_usage_menu_split_4g">Отдельно передача по сети 4G</string>
+    <string name="data_usage_menu_show_wifi">Показать использование Wi-Fi</string>
+    <string name="data_usage_menu_show_ethernet">Показать перед. по сети Ethernet</string>
+    <string name="data_usage_change_cycle">Изменить цикл…</string>
+    <string name="data_usage_pick_cycle_day">День месяца для обнуления счётчика данных:</string>
+    <string name="data_usage_empty">За этот период приложения не передавали данные.</string>
+    <string name="data_usage_label_foreground">Активно</string>
+    <string name="data_usage_label_background">Фон</string>
+    <string name="data_usage_disclaimer">Измерено телефоном. Учет использования данных оператора может отличаться.</string>
+    <string name="data_usage_disable_mobile">Отключить Мобильный интернет?</string>
+    <string name="data_usage_disable_mobile_limit">Задать ограничение для моб.сети</string>
+    <string name="data_usage_disable_4g_limit">Задать ограничение для 4G</string>
+    <string name="data_usage_disable_3g_limit">Задать ограничение для 2G-3G</string>
+    <string name="data_usage_disable_wifi_limit">Задать лимит данных для Wi-Fi</string>
+    <string name="data_usage_tab_wifi">Wi-Fi</string>
+    <string name="data_usage_tab_ethernet">Ethernet</string>
+    <string name="data_usage_tab_mobile">Моб.данные</string>
+    <string name="data_usage_tab_4g">4G</string>
+    <string name="data_usage_tab_3g">2G-3G</string>
+    <string name="data_usage_list_mobile">моб. сети</string>
+    <string name="data_usage_list_none">нет</string>
+    <string name="data_usage_enable_mobile">Передача данных по моб. сети</string>
+    <string name="data_usage_enable_3g">Передача данных по сети 2G-3G</string>
+    <string name="data_usage_enable_4g">Передача данных по сети 4G</string>
+    <string name="data_usage_app_settings">Просмотреть настройки приложения</string>
+    <string name="data_usage_app_restrict_background">Запретить фонов. передачу данных</string>
+    <string name="data_usage_app_restrict_background_summary">Отключение фоновой передачи данных только для Мобильного интернета. Если сеть Wi-Fi доступна, она используется.</string>
+    <string name="data_usage_app_restrict_background_summary_disabled">Чтобы запретить фоновую передачу данных для этого приложения, сначала установите лимит передачи данных для Мобильного интернета.</string>
+    <string name="data_usage_app_restrict_dialog_title">Запретить фоновую передачу данных?</string>
+    <string name="data_usage_app_restrict_dialog">"Если сеть Wi-Fi недоступна, то при использовании этой функции приложение, которое зависит от фоновой передачи данных, может перестать работать.
+
+В приложении можно найти более подходящие настройки управления использованием данных."</string>
+    <string name="data_usage_restrict_denied_dialog">Запрет фоновой передачи данных возможен только если установлен лимит передачи данных для Мобильного интернета.</string>
+    <string name="data_usage_cycle_editor_title">Дата сброса цикла использования данных</string>
+    <string name="data_usage_cycle_editor_subtitle">Дата каждого месяца:</string>
+    <string name="data_usage_cycle_editor_positive">Установить</string>
+    <string name="data_usage_warning_editor_title">Установить предупреждение о передаче данных</string>
+    <string name="data_usage_limit_editor_title">Настроить лимит передачи данных</string>
+    <string name="data_usage_limit_dialog_title">Ограничение передачи данных</string>
+    <string name="data_usage_limit_dialog">"По достижении установленного ограничения ваше подключение для передачи данных %1$s будет отключено.
+
+Так как ваш телефон подсчитывает объем переданных данных, а оператор может считать трафик иначе, рекомендуется установить умеренный лимит."</string>
+    <string name="data_usage_restrict_background_title">Запретить фоновую передачу данных?</string>
+    <string name="data_usage_restrict_background">Если вы запретите фоновую передачу данных по Мобильному интернету, некоторые приложения и услуги не будут работать, пока вы не подключитесь к сети Wi-Fi.</string>
+    <string name="data_usage_sweep_warning"><font size="21">^1</font> <font size="9">^2</font>"
+"<font size="12">предупреждение</font></string>
+    <string name="data_usage_sweep_limit"><font size="21">^1</font> <font size="9">^2</font>"
+"<font size="12">лимит</font></string>
+    <string name="data_usage_uninstalled_apps">Удаленные приложения</string>
+    <string name="data_usage_received_sent">Принято %1$s, отправлено %2$s</string>
+    <string name="data_usage_total_during_range">%2$s: использовано приблизительно %1$s</string>
+    <string name="usage_stats_label">Статистика использования</string>
+    <string name="on">Вкл.</string>
+    <string name="off">Выкл.</string>
+    <string name="advanced">Дополнительно</string>
+    <string name="usage_settings">Использование</string>
+    <string name="reset_data_count">Сбросить счетчик данных</string>
+    <string name="on_day_of_each_month">%1$s числа каждого месяца</string>
+    <string name="dialog_title_attention">Внимание!</string>
+    <string name="dialog_content_cancel_limit">Отключение лимита на использование данных отключит также все настройки на ограничение фоновой обработки данных.</string>
+</resources>

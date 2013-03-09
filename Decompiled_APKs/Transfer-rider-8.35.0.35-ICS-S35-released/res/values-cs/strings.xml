@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">Mazání dat...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">Vypínání Bluetooth</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"Je možné, že u tohoto telefonu bude nutné zrušit párování na %s. 
+Stisknutím tlačítka OK ukončete a opakujte akci později."</string>
+    <string name="UI_MSGBOX_BTN_BACK">Zpět</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">Storno</string>
+    <string name="UI_MSGBOX_BTN_NO">Ne</string>
+    <string name="UI_MSGBOX_BTN_OK">OK</string>
+    <string name="UI_MSGBOX_BTN_QUIT">Konec</string>
+    <string name="UI_MSGBOX_BTN_RESUME">Pokračovat</string>
+    <string name="UI_MSGBOX_BTN_SETTING">Nastavení</string>
+    <string name="UI_MSGBOX_BTN_YES">Ano</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">Služba Přenést nemůže zapnout Bluetooth, zkontrolujte prosím bezdrátové nastavení.</string>
+    <string name="UI_MSGBOX_CONN_FAILED">Stiskněte položku Pokračovat, chcete-li opakovat akci nebo pro ukončení klepněte na tlačítko Storno.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">Duplikovat data</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">Již jste provedli import %1$s z %2$s. Mohou vzniknout duplicitní záznamy.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">Pokud váš starý telefon není nalezen, ujistěte se, že je nastaven jako zjistitelný.</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">Každý dostupný typ dat v %s byl importován.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"Chcete-li umožnit přenos dat, zakažte na vašem přístroji blackberry šifrování či heslo a potom klepněte na tlačítko „OK“.
+Obvyklá cesta je Možnosti>Možnosti zabezpečení>Šifrování/heslo"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">Opravdu chcete skončit?</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">Importovaná data z %s budou vymazána. Opravdu chcete skončit?</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">Chcete-li znovu importovat z %s, nejprve vyberte a vymažte data z tohoto telefonu.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">Kromě kontaktů Gmail a Exchange všechna data vybraného typu budou z tohoto telefonu odstraněna.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">Kromě kontaktů Gmail a Exchange všechna data vybraného typu budou z tohoto tabletu odstraněna.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">Chcete-li znovu importovat z %s, nejprve vyberte a vymažte data z tohoto tabletu.</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">Možná je nutné restartovat %s a opakovat akci později.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">Možná je nutné restartovat tento telefon a starý telefon a opakovat akci později.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">Možná je nutné restartovat tento tablet a starý telefon a opakovat akci později.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">Přenos se nezdařil</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">Připojení se nezdařilo</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">Odstranit</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">Párování se nezdařilo</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">Ověření se nezdařilo</string>
+    <string name="ANDROID_TIPS_1">"1. Vyberte položky \"menu\" > \"Nastavení\" > \"Bezdrátové ovládání\"
+
+2. Zaškrtněte políčko \"Bluetooth\"
+
+3. Vyberte položku \"Nastavení Bluetooth\" 
+
+4. Zaškrtněte políčko \"Zjistitelné\""</string>
+    <string name="ANDROID_TIPS_2">"1. Přejděte na obrazovku Aplikace > \"Nastavení\" > \"Bezdrátová připojení a sítě\"
+
+2. Vyberte položku \"Nastavení Bluetooth\"
+
+3. Zaškrtněte políčko \"Bluetooth\"
+
+4. Zaškrtněte políčko \"Viditelné\""</string>
+    <string name="ANDROID_TIPS_3">"1. Přejděte na obrazovku Aplikace > „Nastavení“ > „Bezdrátová připojení a sítě“
+
+2. Vyberte položku „Nastavení Bluetooth“ 
+
+3. Zaškrtněte políčko „Bluetooth“
+
+4. Zaškrtněte políčko „Viditelné“"</string>
+    <string name="APP_TIPS_1">"1. Vyberte tlačítko Výchozí > Nastavení > Obecné.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Zůstaňte na obrazovce nastavení Bluetooth."</string>
+    <string name="HTC_TIPS_1">"1. Přejděte na Výchozí obrazovku.
+
+2. Klepněte na položky Start > Nastavení > Připojitelnost.
+
+3. Vyberte položku Bluetooth.
+
+4. Vyberte kartu Režim.
+
+5. Zapněte Bluetooth.
+
+6. Zaškrtněte políčko Umožnit, aby toto zařízení bylo v ostatních zařízeních viditelné."</string>
+    <string name="HTC_TIPS_2">"1. Přejděte na Výchozí obrazovku.
+
+2. Klepněte na položky Start > Nastavení > Připojitelnost > Bluetooth.
+
+3. Vyberte položku Bluetooth > Nabídka.
+
+4. Zapněte Bluetooth.
+
+5. Nastavte Viditelnost jako Zapnuto."</string>
+    <string name="HTC_TIPS_3">"1. Přejděte na Výchozí obrazovku.
+
+2. Klepněte na položky Start > Nastavení > Připojitelnost > Bluetooth.
+
+3. Vyberte položku Bluetooth > Nabídka.
+
+4. Zapněte Bluetooth.
+
+5. Nastavte Viditelnost jako Zapnuto."</string>
+    <string name="HTC_TIPS_4">"1. Přejděte na Výchozí obrazovku.
+
+2. Klepněte na položky Start > Nastavení > Ovládání bezdrátových sítí.
+
+3. Zapněte Bluetooth.
+
+4. Klepněte na levou část tlačítka Bluetooth.
+
+5. Klepněte na tlačítko Upřesnit.
+
+6. Vyberte kartu Režim.
+
+7. Zaškrtněte políčko Umožnit, aby toto zařízení bylo v ostatních zařízeních viditelné."</string>
+    <string name="HTC_TIPS_5">"1. Vyberte položky \"Start\" > \"Nástroje\" > \"Nastavení\" 
+
+2. Vyberte položky \"Ovládání bezdrátových sítí\" > \"Bluetooth\"
+
+3. Vyberte položku \"Upřesnit\"
+
+4. Vyberte kartu \"Režim\"
+
+5. Zaškrtněte políčka \"Zapnout Bluetooth\" a \"Umožnit, aby toto zařízení bylo v ostatních zařízeních viditelné\""</string>
+    <string name="HTC_TIPS_6">"1. Vyberte položky \"Start\" >\"Nastavení\" > \"Menu\" > \"Všechna nastavení\"
+
+2. Vyberte položku \"Bluetooth\" a zapněte tuto funkci
+
+3. Vyberte kartu s ozubeným kolečkem
+
+4. Vyberte ikonu dalekohledu > \"Vždy viditelné\""</string>
+    <string name="HTC_TIPS_7">"1. Na obrazovce Start klepněte na \"→\".
+
+2. Klepněte na položku Nastavení > Bluetooth.
+
+3. Zapíná Bluetooth."</string>
+    <string name="HTC_TIPS_8">"1. Vyberte položky „Start“ > „Nástroje“ > „Nastavení“
+
+2. Klepněte na položky „Menu“ > „Všechna nastavení“
+
+3. Vyberte položku Bluetooth
+
+4. Vyberte kartu „Režim“
+
+5. Zapněte Bluetooth
+
+6. Zaškrtněte políčko „Umožnit, aby toto zařízení bylo v ostatních zařízeních viditelné“"</string>
+    <string name="KYO_TIPS_1">"1. Select Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Select On/Off \"On Visible\"
+
+3. Select \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Select BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth na Zapnout.
+
+4. Vyberte položku Nastavení.
+
+5. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="LGG_TIPS_2">"%s1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth na Zapnout.
+
+4. Vyberte položku Nastavení Bluetooth.
+
+5. Nastavte Viditelnost jako Zobrazit telefon."</string>
+    <string name="LGG_TIPS_3">"%s1. Vyberte položky Nabídka > Nastavení > Bluetooth.
+
+2. Zapněte Bluetooth.
+
+3. Nastavte Viditelnost na Vždy viditelné."</string>
+    <string name="LGG_TIPS_4">"%s1. Vyberte položku Nabídka a klepněte na poslední kartu.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Vyberte položku Nastavení.
+
+5. Nastavte Viditelnost mého zařízení na Viditelné."</string>
+    <string name="LGG_TIPS_5">"1. Vyberte položky Nabídka > Nastavení a nástroje > Nabídka Bluetooth.
+
+2. Nastavte Bluetooth jako Zapnout.
+
+3. Vyberte položky Možnosti > Režim zjišťování > Zapnuto."</string>
+    <string name="MOT_TIPS_1">"%s1. Vyberte položky Nabídka > Nastavení/nástroje > Nastavení.
+
+2. Zaškrtněte políčko Bluetooth.
+
+3. Vyberte položku Napájení Bluetooth.
+
+4. Zapněte.
+
+5. Vyberte položku Nastavit jako zjistitelné.
+
+6. Vyberte položku vždy."</string>
+    <string name="MOT_TIPS_10">"1. Vyberte položky Hlavní nabídka > Bluetooth.
+
+2. Vyberte položku Nastavení.
+
+3. Nastavte Změnit napájení na zapnuto.
+
+4. Vyberte položku Zpět
+
+5. Vyberte položku Najdi mě > zjistitelné: 3 minuty."</string>
+    <string name="MOT_TIPS_11">"%s1. Vyberte položky Hlavní nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Připojení Bluetooth.
+
+3. Vyberte položku Nastavení.
+
+4. Nastavte Změnit napájení na zapnuto.
+
+5. Vyberte položku Zpět.
+
+6. Vyberte položku Najdi mě > zjistitelné: 3 minuty."</string>
+    <string name="MOT_TIPS_12">"%s1. Vyberte položky Menu > \"Nastavení\"
+
+2. Vyberte položku \"Připojení\"
+
+3. Vyberte položku \"Bluetooth\"
+
+4. Vyberte položku \"Možnost\" > \"Spravovat\" > \"Nastavit Bluetooth\"
+
+5. U položky Napájení Bluetooth vyberte \"zapnuto\"
+
+6. Vyberte položku \"Zpět\"
+
+7. Vyberte \"Možnost\" > Viditelné: Zapnout na 3 minuty"</string>
+    <string name="MOT_TIPS_2">"%s1. Vyberte položky Nabídka > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth."</string>
+    <string name="MOT_TIPS_3">"%s1. Vyberte položky Hlavní nabídka > Nastavení.
+
+2. Vyberte položku Připojení Bluetooth.
+
+3. Vyberte položku Nastavení.
+
+4. Nastavte Změnit napájení na zapnuto.
+
+5. Vyberte položku Zpět.
+
+6. Vyberte položku Najdi mě > zjistitelné: 3 minuty."</string>
+    <string name="MOT_TIPS_4">"%s1. Vyberte položky Hlavní nabídka > Nastavení a nástroje
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Nastavení jako zapnout.
+
+4. Nastavte Režim zjišťování jako Zapnuto. 
+
+5. Vyberte položku Zjistitelné za 3 minuty."</string>
+    <string name="MOT_TIPS_5">"1. Vyberte položky Nabídka > NASTAVENÍ A NÁSTROJE.
+
+2. Vyberte položku Nabídka Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Vyberte položku Možnosti. 
+
+5. Nastavte Režim zjišťování jako Zapnuto."</string>
+    <string name="MOT_TIPS_6">"1. Vyberte položky Nabídka > Nástroje.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost na Vždy viditelné."</string>
+    <string name="MOT_TIPS_7">"1. Vyberte položky Nabídka > NASTAVENÍ A NÁSTROJE.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Vyberte položku Nastavení. 
+
+5. Nastavte Režim zjišťování jako Zapnuto."</string>
+    <string name="MOT_TIPS_8">"1. Vyberte položky Nabídka > NASTAVENÍ A NÁSTROJE.
+
+2. Vyberte položku Nabídka Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Vyberte položku Nastavení. 
+
+5. Nastavte Režim zjišťování jako Zapnuto."</string>
+    <string name="MOT_TIPS_9">"1. Vyberte položky Hlavní nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Připojení Bluetooth.
+
+3. Vyberte položku Nastavení.
+
+4. Nastavte Změnit napájení na zapnuto.
+
+5. Vyberte položku Zpět.
+
+6. Vyberte položku Najdi mě > zjistitelné: 3 minuty."</string>
+    <string name="NOK_TIPS_1">"1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_10">"1. Vyberte položky Nabídka > Nastavení.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_11">"1. Vyberte položky Nabídka > Nástroje > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_12">"1. Vyberte položky Nabídka > Ovládací panel > Připojit.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_13">"1. Vyberte položky Hlavní nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_14">"1. Vyberte položky Menu > „Nastavení“ > „Připojení“.
+
+2. Vyberte položku „Bluetooth“.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte „Viditelnost zařízení“ na „Vždy viditelné“."</string>
+    <string name="NOK_TIPS_15">"1. Vyberte položky „Menu“ > „Nastavení“ > „Připojení“.
+
+2. Vyberte položku „Bluetooth“.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte „Viditelnost zařízení“ na „Zobrazit všem“."</string>
+    <string name="NOK_TIPS_2">"1. Vyberte položky Nabídka > Nástroje.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_4">"1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Trvalá viditelnost."</string>
+    <string name="NOK_TIPS_5">"1. Vyberte položky Nabídka > Připojit.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_51">"%s1. Vyberte položky Nabídka > Připojit.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_6">"1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Trvalá viditelnost."</string>
+    <string name="NOK_TIPS_7">"1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Trvalá viditelnost."</string>
+    <string name="NOK_TIPS_8">"1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Vyberte položku Nastavení Bluetooth5. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="NOK_TIPS_9">"1. Vyberte položky Nabídka > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Zapněte Bluetooth.
+
+4. Nastavte Viditelnost mého telefonu na Zobrazit všem."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">Jiné</string>
+    <string name="OTHER_PHONE_General">"Můžete povolit Bluetooth na vašem nepodporovaném telefonu:
+
+1. Jděte na hlavní obrazovku
+
+2. Vyberte položky nabídka > nastavení
+
+3. Vyberte položky připojení > nastavení Bluetooth
+
+4. Zapnout Bluetooth
+
+5. Vyberte položky Viditelnost/Zjistitelný > Zobrazit všem
+
+6. Zůstaňte na obrazovce nastavení Bluetooth"</string>
+    <string name="RIM_TIPS_1">"1. Vyberte položky Nabídka > Možnosti > Bluetooth.
+
+2. Klepněte na položku Nabídka.
+
+3. Vyberte položku Povolit komunikaci Bluetooth.
+
+4. Klepněte opět na položku Nabídka
+
+5. Vyberte položku Možnosti.
+
+6. Nastavte Zjistitelné na Ano."</string>
+    <string name="RIM_TIPS_2">"1. Vyberte položky Nabídka > Spravovat připojení.
+
+2. Zaškrtněte políčko Bluetooth.
+
+3. Vyberte položku Možnosti Bluetooth.
+
+4. Klepněte opět na položku Nabídka
+
+5. Vyberte položku Možnosti. 
+
+6. Nastavte Zjistitelné na Ano."</string>
+    <string name="RIM_TIPS_3">"1. Přejděte na obrazovku Všechny aplikace.
+
+2. Vyberte možnost „Spravovat připojení“.
+
+3. Zaškrtněte políčko \"Bluetooth\".
+
+4. Vyberte možnost „Připojení Bluetooth“.
+
+5. Nastavte Bluetooth na „Zapnout“.
+
+6. Nastavte Zjistitelné na „Ano“."</string>
+    <string name="RIM_TIPS_4">"1. Přejděte na obrazovku Všechny aplikace.
+
+2. Vyberte možnost „Spravovat připojení“.
+
+3. Zaškrtněte políčko „Bluetooth“
+
+4. Vyberte možnost „Sítě a připojení“.
+
+5. Vyberte možnost „Připojení Bluetooth“.
+
+6. Nastavte Bluetooth na „Zapnout“.
+
+7. Nastavte Viditelné na „Ano“."</string>
+    <string name="SAM_TIPS_1">"%s1. Vyberte položku Nabídka > Bluetooth.
+
+2. Nastavte Aktivace jako Zapnuto.
+
+3. Nastavte Viditelnost mého telefonu na Zapnuto."</string>
+    <string name="SAM_TIPS_10">"%s1. Vyberte \"Menu\" > \"Nastavení\" > \"Nastavení sítě\" > \"Bluetooth\"
+
+2. Nastavte Aktivace jako \"Zapnuto\".
+
+3. Nastavte \"Viditelnost mého telefonu\" na \"Zapnuto\""</string>
+    <string name="SAM_TIPS_11">"%s1. Vyberte položky \"Menu\" > \"Aplikace\"
+
+2. Vyberte položku „Bluetooth“
+
+3. Nastavte položku \"Aktivace Bluetooth\"
+
+4. Vyberte položku \"Nastavení\"
+
+5. Nastavte \"Viditelnost mého telefonu\" na \"Zapnuto\" a klepněte na \"Uložit\"
+
+6. Přejděte na obrazovku \"Plocha\""</string>
+    <string name="SAM_TIPS_12">"%s1. Přejděte na obrazovku Plocha.
+
+2. Vyberte položku \"Nastavení\" > \"Připojitelnost\" > \"Bluetooth\".
+
+3. Nastavte Aktivace na \"Zapnuto\".
+
+4. Nastavte Viditelnost mého telefonu na \"Zapnuto\"."</string>
+    <string name="SAM_TIPS_2">"%s1. Vyberte položky Nabídka > Aplikace > Bluetooth.
+
+2. Nastavte Aktivace jako Zapnuto.
+
+3. Nastavte Viditelnost mého telefonu na Zapnuto."</string>
+    <string name="SAM_TIPS_3">"%s1. Vyberte položky Nabídka > Nastavení a nástroje > Nabídka Bluetooth.
+
+2. Nastavte Bluetooth jako Zapnout.
+
+3. Vyberte položky Možnosti > Režim zjišťování > Zapnuto."</string>
+    <string name="SAM_TIPS_4">"%s1. Vyberte položky Hlavní nabídka > Nastavení > Bluetooth.
+
+2. Zapněte Bluetooth.
+
+3. Nastavte Viditelnost na Vždy viditelné."</string>
+    <string name="SAM_TIPS_5">"%s1. Vyberte položky Nabídka > Nastavení/nástroje > Nabídka Bluetooth.
+
+2. Nastavte Nastavení jako zapnout.
+
+3. Nastavte Nastavení režimu zjišťování jako Zapnuto."</string>
+    <string name="SAM_TIPS_6">"%s1. Vyberte položky Nabídka > Nastavení.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout Bluetooth.
+
+4. Nastavte Má viditelnost jako Zapnuto."</string>
+    <string name="SAM_TIPS_7">"%s1. Vyberte položky Nabídka > Nastavení.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Aktivace jako Zapnuto.
+
+4. Nastavte Viditelnost mého telefonu na Zapnuto."</string>
+    <string name="SAM_TIPS_8">"%s1. Vyberte položky Nabídka > Nástroje > Bluetooth.
+
+2. Vyberte položku Nastavení Bluetooth.
+
+3. Vyberte položku Povolit.
+
+4. Nastavte Režim zjišťování jako Zapnuto."</string>
+    <string name="SAM_TIPS_9">"%s1. Vyberte položky Nabídka > Nastavení.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Aktivace jako Zapnuto.
+
+4. Nastavte Viditelnost mého telefonu na Zapnuto."</string>
+    <string name="SAN_TIPS_1">"1. Vyberte položky Nabídka > Nástroje > Bluetooth.
+
+2. Vyberte položky Další… > Nastavení > Zapnuto.
+
+3. Nastavte Viditelnost na Vždy viditelné."</string>
+    <string name="SE_TIPS_1">"%s1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Nastavte Viditelnost jako Zobrazit telefon."</string>
+    <string name="SE_TIPS_2">"%s1. Vyberte položky Nabídka > Připojitelnost. 
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Vyberte položku Možnosti.
+
+5. Nastavte Viditelnost jako Zobrazit telefon."</string>
+    <string name="SE_TIPS_3">"%s1. Vyberte položky Nabídka > Připojit.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Nastavte Viditelnost jako Zobrazit telefon."</string>
+    <string name="SE_TIPS_4">"%s1. Vyberte položky Nabídka > Nastavení > Připojitelnost.
+
+2. Vyberte položku Bluetooth.
+
+3. Nastavte Bluetooth jako Zapnout.
+
+4. Vyberte položku Možnosti.
+
+5. Nastavte Viditelnost jako Zobrazit telefon."</string>
+    <string name="SE_TIPS_5">"1. Přejděte na obrazovku \"Výchozí\".
+
+2. Klepněte na položky \"Start\" > \"Nastavení\" > \"Bluetooth\".
+
+3. Vyberte kartu Režim.
+
+4. Zapněte Bluetooth.
+
+5. Zaškrtněte políčko \"Umožnit, aby toto zařízení bylo v ostatních zařízeních viditelné.\""</string>
+    <string name="SE_TIPS_6">"%s1. Přejděte na obrazovku Aplikace > „Nastavení“ > „Připojení“
+
+2. Vyberte položku „Bluetooth“.
+
+3. Nastavte Bluetooth na „Zapnout“.
+
+4. Nastavte viditelnost telefonu na „Viditelný“"</string>
+    <string name="SHP_TIPS_1">"%s1. Vyberte položky \"Menu\" > \"Nastavení\"
+
+2. Vyberte položky \"Připojitelnost\" > \"Bluetooth\"
+
+3. Nastavte spínač pro vypnutí a zapnutí na \"Zapnuto\"
+
+4. Vyberte viditelnost > \"Zobrazit telefon\"
+
+5. Ujistěte se, že je zapnutý Blueooth zařízení a přejděte na pohotovostní obrazovku"</string>
+    <string name="SIM_TIPS">Pokud máte jen jednu kartu SIM, můžete ji vyjmout z tohoto telefonu, vložit do starého telefonu a potom oba telefony zapnout najednou.</string>
+    <string name="app_icon_name">Přenést</string>
+    <string name="app_name">Přesunout mé věci</string>
+    <string name="UI_About_Platform">pro Android</string>
+    <string name="UI_About_Version">Verze:</string>
+    <string name="UI_BTN_Done">Hotovo</string>
+    <string name="UI_BTN_Next">Další</string>
+    <string name="UI_BTN_ReScan">Zn. hledat</string>
+    <string name="UI_BTN_Stop">Zastavit</string>
+    <string name="UI_ERROR_TRY_AGAIN">Došlo k chybám.</string>
+    <string name="UI_IMPORTED">importovaných</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">Importovat do účtu</string>
+    <string name="UI_IMPORT_PHONE">Importovat do tohoto telefonu</string>
+    <string name="UI_INSERT_SD_CARD">Vložte prosím kartu SD</string>
+    <string name="UI_Menu_BTN_About">O aplikaci</string>
+    <string name="UI_MOD_BOOKMARK">Záložka</string>
+    <string name="UI_MOD_CALENDAR">Kalendář</string>
+    <string name="UI_MOD_PHONEBOOK">kontakty</string>
+    <string name="UI_MOD_PHOTO">Snímky z fotoaparátu</string>
+    <string name="UI_MOD_SMS">SMS</string>
+    <string name="UI_MOD_TASK">Úkol</string>
+    <string name="UI_MOUNT_SD_CARD">Připojte úložiště USB</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">zdrojový telefon</string>
+    <string name="UI_OPENOPORT_TEXT">"Zkontrolujte %s.
+Možná je nutné autorizovat připojení."</string>
+    <string name="UI_PHOTO_DESCRIPTION">Pouze soubory v telefonu</string>
+    <string name="UI_TEXT_AND">a</string>
+    <string name="UI_TEXT_BM_IMPORTED">Záložka importována</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">Záložky importovány</string>
+    <string name="UI_TEXT_CAL_IMPORTED">importovaných položek kalendáře</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">importovaných položek kalendáře</string>
+    <string name="UI_TEXT_DATA">Data</string>
+    <string name="UI_TEXT_FAQ_PAGE">Navštivte webovou stránku Časté otázky.</string>
+    <string name="UI_TEXT_PB_IMPORTED">importovaných kontaktů</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">importovaných kontaktů</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">Importován snímek z fotoaparátu</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">Importovány snímky z fotoaparátu</string>
+    <string name="UI_TEXT_SMS_IMPORTED">importovaných SMS</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">importovaných SMS</string>
+    <string name="UI_TEXT_TASK_IMPORTED">Úkol importován</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">Úkoly importovány</string>
+    <string name="UI_TIP_ACCOUNT">Účet</string>
+    <string name="UI_TIP_CONFIRM">Potvrďte, že heslo je %1$s na %2$s</string>
+    <string name="UI_TIP_Co_1">Dokončili jste import data z %s do tohoto telefonu.</string>
+    <string name="UI_TIP_Co_1_TABLET">Dokončili jste import data z %s do tohoto tabletu.</string>
+    <string name="UI_TIP_Co_TBD">"
+Další pole kontaktů byla uložena v poli poznámky."</string>
+    <string name="UI_TIP_ImDa_1">V závislosti na možnostech vašeho starého telefonu můžete přes Bluetooth přesunout kontakty, zprávy SMS a události kalendáře do nového telefonu HTC.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">V závislosti na možnostech vašeho starého telefonu můžete přes Bluetooth přesunout kontakty, zprávy SMS a události kalendáře do nového tabletu HTC.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">V závislosti na možnostech vašeho starého telefonu můžete přes Bluetooth přesunout kontakty a události kalendáře do nového telefonu HTC.</string>
+    <string name="UI_TIP_ImDa_2">Začněte klepnutím na položku „Další“.</string>
+    <string name="UI_TIP_ImDa_35">V závislosti na možnostech vašeho starého telefonu můžete přes Bluetooth přesunout kontakty a další data do nového telefonu HTC.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">V závislosti na možnostech vašeho starého telefonu můžete přes Bluetooth přesunout kontakty a další data do nového tabletu HTC.</string>
+    <string name="UI_TIP_Info_1">V %s došlo k chybám. Opakujte akci později.</string>
+    <string name="UI_TIP_Info_2">Opakujte akci později</string>
+    <string name="UI_TIP_Info_UnMatchPhone">Chyby, ke kterým došlo v %s kvůli neodpovídajícímu modelu telefonu.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">I když další telefony %s nejsou v seznamu podporovaných telefonů, služba Přenést se může pokusit detekovat váš starý telefon a vyzkoušet, zda je možné přenos dat provést.</string>
+    <string name="UI_TIP_Language">CSY</string>
+    <string name="UI_TIP_NoSuMo_1">%s není podporován. Nelze importovat žádná data.</string>
+    <string name="UI_TIP_NoSuMo_2">Ukončete stisknutím tlačítka „Hotovo“.</string>
+    <string name="UI_TIP_ON">Na %s:</string>
+    <string name="UI_TIP_PaWi">Zadejte prosím %1$s na %2$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">%s uložený pod vaším účtem bude synchronizován, když se přihlásíte ke službě.</string>
+    <string name="UI_TIP_Re_TodoNotSupport">Úkoly a události úloh se neimportují.</string>
+    <string name="UI_TIP_SelDT_2">Některá pole nelze převést z %s kvůli nedostatečné podpoře Bluetooth.</string>
+    <string name="UI_TIP_TUONBL">Zapíná Bluetooth</string>
+    <string name="UI_TIP_TuOnBl_2">Klepněte na položku „Další“, když úspěšně zapnete Bluetooth.</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">Vymazat data v tomto telefonu</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">Vymazat data v tomto tabletu</string>
+    <string name="UI_TITLE_CONGRADULATIONS">Blahopřejeme</string>
+    <string name="UI_TITLE_CONN_WITH">Připojování k %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">Povolit Bluetooth v %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">Povolení Bluetooth na vašem starém telefonu</string>
+    <string name="UI_TITLE_IMPORTING">Probíhá přenos %s</string>
+    <string name="UI_TITLE_INFO">Informace</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">Jiné telefony %s</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">Načítání konfigurace telefonu</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">Tento model není podporován</string>
+    <string name="UI_TITLE_PAIRING">Párování...</string>
+    <string name="UI_TITLE_PAIRING_WITH">Párování s %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">Ověřování modelu telefonu</string>
+    <string name="UI_TITLE_SCANNING">Hledání...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">Hledání telefonů</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">Vyberte typy dat k importu</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">Vyberte svůj starý telefon</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">Vyberte model</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">Vyberte telefon</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">Jiné telefony %s nejsou podporovány. Pro ukončení klepněte na tlačítko „Hotovo“.</string>
+</resources>

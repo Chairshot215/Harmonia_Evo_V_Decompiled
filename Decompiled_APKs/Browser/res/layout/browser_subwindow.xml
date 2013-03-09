@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subwindow_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/inner_container" android:background="@*android:drawable/dialog_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/subwindow_close" android:background="@*android:drawable/btn_default" android:padding="0.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*android:drawable/ic_menu_close_clear_cancel" />
+    </LinearLayout>
+</RelativeLayout>

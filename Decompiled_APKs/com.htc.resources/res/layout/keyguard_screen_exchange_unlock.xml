@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" android:layout_above="@id/emergencyCall">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/topHeader" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="4.0dip" android:drawableLeft="@*android:drawable/ic_lock_idle_lock" android:drawablePadding="5.0dip" android:layout_alignParentTop="true" />
+            <View android:id="@id/spacerTop" android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="9.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ffff3333" android:id="@id/remain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="9.0dip" />
+            <EditText android:id="@id/password" android:nextFocusDown="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="7.0dip" android:hint="@*android:string/lockscreen_glogin_password_hint" android:inputType="textPassword" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:layout_gravity="center" android:id="@id/emergencyCall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*android:string/lockscreen_emergency_call" android:drawablePadding="8.0dip" android:layout_weight="1.0" />
+        <Button android:layout_gravity="center" android:id="@id/ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lockscreen_exchange_submit_button" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

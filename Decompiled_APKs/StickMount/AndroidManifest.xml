@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="5" android:versionName="1.5" package="eu.chainfire.stickmount"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name=".StickMountApplication">
+        <activity android:theme="@*android:style/Theme.Holo" android:label="@string/app_name" android:name=".StickMountActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter" />
+        </activity>
+        <receiver android:name=".StickMountReceiver">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" android:resource="@xml/device_filter" />
+            <intent-filter>
+                <action android:name="eu.chainfire.stickmount.unmountall" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/app_name" android:name=".StickMountService">
+            <intent-filter>
+                <action android:name="eu.chainfire.stickmount.StickMountService" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-feature android:name="android.hardware.usb.host" required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

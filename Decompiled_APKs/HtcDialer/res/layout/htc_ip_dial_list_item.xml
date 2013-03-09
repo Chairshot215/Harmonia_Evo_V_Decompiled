@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/primaryText" android:layout_width="0.0px" android:layout_height="@dimen/list_item_height_1" android:layout_marginLeft="@dimen/text_margin_left_no_photo" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/list_secondary_m" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/delete" android:paddingRight="@dimen/list_item_delete_icon_padding_right" android:layout_width="@dimen/list_item_delete_icon_width" android:layout_height="@dimen/list_item_height_1" android:src="@com.htc:drawable/common_delete_on" android:scaleType="center" />
+</LinearLayout>

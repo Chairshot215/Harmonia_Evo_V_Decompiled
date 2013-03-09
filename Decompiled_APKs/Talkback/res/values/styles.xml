@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccessibilityTutorialButton">
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:drawablePadding">3.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialDivider">
+        <item name="android:gravity">fill_horizontal</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialTitle" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="AccessibilityTutorialBodyTextPrimary" parent="@*android:style/TextAppearance.Small" />
+    <style name="AccessibilityTutorialIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">96.0dip</item>
+        <item name="android:layout_height">96.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#b0000000</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+</resources>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">Android - Google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">necunoscut</string>
+    <string name="sharedUserLabel">Google Services</string>
+    <string name="service_label">Instrument de actualizare</string>
+    <string name="system_update_activity_name">Actualizări de sistem</string>
+    <string name="system_update_activity_title">Actualizări de sistem</string>
+    <string name="system_update_activity_battery_low_text">Bateria este prea descărcată pentru a instala actualizarea de sistem. Conectaţi un încărcător pentru a continua.</string>
+    <string name="system_update_activity_battery_low_charging_text">Bateria este prea descărcată pentru a instala actualizarea de sistem. Vă recomandăm să aşteptaţi până ce bateria se va încărca suficient.</string>
+    <string name="system_update_activity_roaming_text">Actualizările de sistem nu se pot descărca în roaming.</string>
+    <string name="system_update_requires_restart_status_text">Este necesară repornirea</string>
+    <string name="system_update_downloading_status_text">Se descarcă...</string>
+    <string name="system_update_downloading_wifi_status2_text">Numai prin Wi-Fi până la ^1</string>
+    <string name="system_update_verifying_status_text">Se verifică</string>
+    <string name="system_update_verification_failed_text">Verificarea a eşuat</string>
+    <string name="system_update_verified_status_text">Descărcat şi verificat</string>
+    <string name="system_update_download_failed_status_text">Descărcarea a eşuat</string>
+    <string name="system_update_download_retry_button_text">Încercaţi din nou descărcarea</string>
+    <string name="system_update_download_button_text">Descărcaţi</string>
+    <string name="system_update_install_button_text">Reporniţi şi instalaţi</string>
+    <string name="system_update_check_now_button_text">Verificaţi acum</string>
+    <string name="system_update_no_update_content_text">Sistemul dvs. este în prezent actualizat</string>
+    <string name="system_update_last_checkin">Ultima verificare a actualizării s-a efectuat ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Actualizare de sistem disponibilă</string>
+    <string name="system_update_recommended_update_available_notification_message">Vizualizaţi detaliile de actualizare.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Descărcarea actualizării de sistem a eşuat.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Descărcarea nu a reuşit. Încercaţi din nou.</string>
+    <string name="system_update_error_dialog_title">Eroare</string>
+    <string name="system_update_error_downloading_dialog_message">A apărut o problemă în timpul actualizării.</string>
+    <string name="system_update_error_installing_dialog_message">A apărut o problemă la instalarea variantei actualizate.</string>
+    <string name="system_update_install_dialog_label">Actualizare sistem</string>
+    <string name="system_update_install_dialog_message_nonphone">O actualizare a sistemului este pregătită pentru instalare. Dispozitivul dvs. Android va reporni şi va instala actualizarea.</string>
+    <string name="system_update_install_dialog_message_phone">O actualizare a sistemului este pregătită pentru instalare. Dispozitivul dvs. Android va reporni şi va instala actualizarea. În timpul instalării nu veţi putea efectua niciun apel, nici apeluri de urgenţă.</string>
+    <string name="system_update_install_dialog_battery_low_message">Actualizarea sistemului este pregătită, însă instalarea nu se poate face deoarece bateria este descărcată. Vă recomandăm să conectaţi încărcătorul.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Actualizarea sistemului este pregătită, însă instalarea nu se poate face deoarece bateria este descărcată. Vă recomandăm să aşteptaţi până ce bateria se va încărca suficient.</string>
+    <string name="system_update_install_dialog_now_button">Instalaţi acum</string>
+    <string name="system_update_install_dialog_later_button">Instalaţi mai târziu</string>
+    <string name="system_update_install_dialog_info_button">Mai multe informaţii...</string>
+    <string name="system_update_downloading_notification_title">Se descarcă actualizarea sistemului</string>
+    <string name="system_update_verifying_notification_title">Se verifică actualizarea sistemului</string>
+    <string name="system_update_download_dialog_label">Descărcare actualizări sistem</string>
+    <string name="system_update_download_dialog_message">Este disponibilă o actualizare de sistem care va îmbunătăţi funcţiile dispozitivului Android. Dacă o descărcaţi prin reţeaua wireless, este posibil să se aplice taxe.</string>
+    <string name="system_update_download_dialog_now_button">Descărcaţi acum</string>
+    <string name="system_update_download_dialog_later_button">Descărcaţi mai târziu</string>
+    <string name="system_update_download_dialog_cancel_button">Anulaţi</string>
+    <string name="system_update_countdown_complete">Reporneşte acum...</string>
+    <string name="system_update_countdown_cancel_button">Anulaţi instalarea</string>
+    <string name="system_update_complete_label">Actualizare sistem</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Abonamente push</string>
+    <string name="ro_perm_label">citiţi mesaje instantanee</string>
+    <string name="ro_perm_desc">Permite aplicaţiilor să citească date de la furnizorul de conţinut Google Talk.</string>
+    <string name="wo_perm_label">scrieţi mesaje instantanee</string>
+    <string name="wo_perm_desc">Permite aplicaţiilor să scrie date către furnizorul de conţinut Google Talk.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"Căutaţi conversaţii
+pentru „%1$s”"</string>
+    <string name="gtalkservice_label">Serviciu de mesagerie Google</string>
+    <string name="c2dm_label">Serviciul de mesagerie dintre nor şi dispozitiv</string>
+    <string name="sendTalkMsg_perm_label">Schimbă mesaje şi primeşte notificări de sincronizare de la serverele Google</string>
+    <string name="sendTalkMsg_perm_desc">Utilizat pentru mesajele de server dintre nor şi dispozitiv şi pentru notificările de sincronizare. Google Talk utilizează acest serviciu pentru a schimba mesaje şi pentru a sincroniza starea curentă. Aplicaţiile rău intenţionate pot utiliza acest serviciu pentru a transmite date în exces.</string>
+    <string name="perm_receive_data_message_label">primirea datelor prin internet</string>
+    <string name="perm_receive_data_message_desc">Permite aplicaţiilor să accepte mesaje dintre nor şi dispozitiv trimise de serviciul aplicaţiei. Funcţionarea acestui serviciu poate atrage utilizarea de date. Aplicaţiile rău intenţionate pot cauza utilizarea datelor în exces.</string>
+    <string name="perm_data_msg_broadcast_label">Difuzaţi mesajele de date către aplicaţii.</string>
+    <string name="perm_data_msg_broadcast_desc">Puteţi difuza mesajele de date primite de pe internet, către aplicaţii marcate să le asculte.</string>
+    <string name="perm_receive_xmpp_label">trim. şi prim. mes. XMPP la şi de la serv. Google</string>
+    <string name="perm_receive_xmpp_desc">Permite aplicaţiilor Google să trimită şi să primească mesaje XMPP la şi de la serverele Google.</string>
+    <string name="perm_xmpp_broadcast_label">Difuzaţi mesajele XMPP către aplicaţii.</string>
+    <string name="perm_xmpp_broadcast_desc">Puteţi difuza mes. XMPP primite de la serverele Google către aplicaţii înregistrate să le asculte.</string>
+    <string name="perm_use_xmpp_endpoint_label">trim. la şi prim. de la serv. Google mes. XMPP.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Permite aplicaţiilor Google să trimită la şi să primească de la serverele Google mesaje XMPP.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Difuzaţi mesajele XMPP către aplicaţii.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Poate difuza mesaje de XMPP primite de la serverele Google către aplicaţii.</string>
+    <string name="permlab_intentVendingOnly">Trimiteţi emisiunile către Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Puteţi trimite la Android Market cereri de instalare şi dezinstalare a aplicaţiilor.</string>
+    <string name="permlab_heartbeat">Trimiteţi un mesaj de difuzare către serverul Google Talk</string>
+    <string name="permdesc_heartbeat">Poate trimite un pachet de mesaje de difuzare către serverul Google Talk pentru a fi siguri de integritatea conexiunii.</string>
+    <string name="group_chat">Conversaţie de grup: %s</string>
+    <string name="default_decline_reason">Regret, acum sunt ocupat(ă).</string>
+    <string name="newMessages_label">Conversaţii noi prin chat</string>
+    <string name="notify_groupchat_label">Invitaţie la conversaţie de grup prin chat</string>
+    <string name="num_unread_chats">%s (de) conversaţii necitite</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s către %s</string>
+    <string name="subscription_notify_text">%s doreşte să poată conversa</string>
+    <string name="group_chat_invite_notify_text">Aţi primit o invitaţie la o conversaţie de grup de la %s</string>
+    <string name="group_chat_invite_dialog_text">%s vă invită să vă alăturaţi la o conversaţie de grup.</string>
+    <string name="message_too_long">Nu puteţi trimite mesaje cu o lungime mai mare de 2000 de caractere.</string>
+    <string name="missed_video_chat_notification">Aţi ratat o invitaţie prin chat video</string>
+    <string name="missed_voice_chat_notification">Aţi ratat o invitaţie prin chat vocal</string>
+    <string name="missed_video_chat_notification_no_wifi">Aţi ratat o invitaţie prin chat vocal, pentru că nu aţi fost conectat(ă) la Wi-Fi</string>
+    <string name="missed_voice_chat_notification_no_wifi">Aţi ratat o invitaţie prin chat vocal, pentru că nu aţi fost conectat(ă) la Wi-Fi</string>
+    <string name="missed_video_chat_message">%1$s a încercat să iniţieze un chat video cu dvs.</string>
+    <string name="missed_voice_chat_message">%1$s a încercat să iniţieze un chat vocal cu dvs.</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s a încercat să pornească un chat video cu dvs. cât timp nu eraţi conectat(ă) la Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s a încercat să pornească un chat vocal cu dvs. cât timp nu eraţi conectat(ă) la Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">%1$s nu a fost disponibil pentru chat video.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s nu a fost disponibil pentru chat vocal.</string>
+    <string name="end_cause_sent_terminate_video">Aţi încheiat conversaţia prin chat video cu %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Aţi încheiat conversaţia prin chat vocal cu %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s a încheiat conversaţia prin chat video.</string>
+    <string name="end_cause_received_terminate_voice">%1$s a încheiat conversaţia prin chat vocal.</string>
+    <string name="end_cause_network_problem_video">"Ne pare rău, conversaţia prin chat video cu %1$s nu a reuşit din cauza unei probleme  de reţea. Încercaţi din nou."</string>
+    <string name="end_cause_network_problem_voice">"Ne pare rău, conversaţia prin chat vocal cu %1$s nu a reuşit din cauza unei probleme  de reţea. Încercaţi din nou."</string>
+    <string name="conn_auth_error_notify_ticker">Autentificarea Google Talk a eşuat</string>
+    <string name="conn_auth_error_notify_title">Autentificarea Google Talk a eşuat</string>
+    <string name="conn_auth_error_title">Eroare de autentificare</string>
+    <string name="conn_auth_error_message">Google Talk a eşuat la conectare. Dacă acesta este un cont Google Apps, confirmaţi dacă are serviciul de conversaţii activat.</string>
+    <string name="conn_auth_error_button_retry">Încercaţi din nou</string>
+    <string name="conn_auth_error_button_cancel">Anulaţi</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Bun venit la ^1</string>
+    <string name="setup_wizard_title">Expert de configurare</string>
+    <string name="error_dialog_title">Atenţie</string>
+    <string name="next_button_label">Înainte</string>
+    <string name="back_button_label">Înapoi</string>
+    <string name="sign_in_button_label">Conectaţi-vă</string>
+    <string name="create_button_label">Creaţi</string>
+    <string name="skip_button_label">Omiteţi</string>
+    <string name="first_name">Prenume</string>
+    <string name="last_name">Nume de familie</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Anulaţi</string>
+    <string name="done_button_label">Finalizaţi configurarea</string>
+    <string name="try_again_button_label">Încercaţi din nou</string>
+    <string name="close_button_label">Închideţi</string>
+    <string name="edit_text_help">Atingeţi orice casetă de text pentru a începe să introduceţi text</string>
+    <string name="add_a_google_account">Adăugaţi un Cont Google</string>
+    <string name="no_sim_setup_wireless">Nu aveţi un card SIM instalat şi prin urmare nu vă puteţi conecta la o reţea de telefonie mobilă pentru servicii de voce sau de date. Vă puteţi conecta la o reţea Wi-Fi, fără un card SIM.</string>
+    <string name="setup_wifi_button_label">Conectaţi-vă la Wi-Fi</string>
+    <string name="no_network">Nu aveţi o conexiune la reţea.</string>
+    <string name="no_network_help">Este posibil ca aceasta să fie o problemă temporară sau ca dispozitivul dvs. Android să nu fie pregătit pentru serviciile de date. Încercaţi din nou atunci când v-aţi conectat la o reţea de telefonie mobilă sau la o reţea Wi-Fi.</string>
+    <string name="server_error">A apărut o problemă în timpul comunicării cu serverele Google.</string>
+    <string name="server_error_help">Încercaţi din nou mai târziu.</string>
+    <string name="network_unreliable">Nu se poate stabili o conexiune de date sigură la server.</string>
+    <string name="network_unreliable_help">Este posibil ca aceasta să fie o problemă temporară sau ca dispozitivul dvs. Android să nu fie pregătit pentru servicii de date. Dacă problema persistă apelaţi Serviciul de relaţii cu clienţii.</string>
+    <string name="invalid_login_character">Caracter nevalid. Sunt permise numai cifre de la 0 la 9, litere de la a la z şi de la A la Z şi puncte.</string>
+    <string name="invalid_password_character">Caracter nevalid în parolă.</string>
+    <string name="add_apn">Setări pentru wireless</string>
+    <string name="setup_google_account_title">Creaţi Contul dvs. Google</string>
+    <string name="setup_complete_title">Config. finalizată</string>
+    <string name="cant_be_blank">Câmpul nu poate fi necompletat.</string>
+    <string name="calendar">Google Calendar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Dispozitivul dvs. Android nu este conectat la un serviciu de date. Pentru a vedea aceste informaţii acum, accesaţi %s de pe orice computer conectat la internet.</string>
+    <string name="field_cant_be_blank">Acest câmp nu poate fi necompletat</string>
+    <string name="field_invalid_domain">Acesta nu este un nume valid de domeniu</string>
+    <string name="field_invalid_user">Acesta nu este un nume de utilizator valid</string>
+    <string name="field_invalid_user_domain">Introduceţi numai numele de utilizator, nu adresa de e-mail</string>
+    <string name="field_invalid_login">Acesta nu este un nume valid de cont</string>
+    <string name="about_accounts_message"><font size="17">"Configurarea telefonului este simplă! Nu aveţi nevoie decât de un Cont Google.
+"<font height="17">"
+"</font><b>De ce este recomandat să utilizaţi un Cont Google?</b>"
+"<font height="3">"
+"</font>"Cu ajutorul unui Cont Google, aplicaţiile Google sunt sincronizate automat între telefonul Android şi computer, indiferent de dispozitivul pe care efectuaţi o actualizare.
+"<font height="17">"
+"</font><b>Aveţi deja un Cont Google?</b>"
+"<font height="3">"
+"</font>"Înseamnă că sunteţi pregătit(ă)! Nu trebuie decât să atingeţi „Conectaţi-vă” în următorul ecran.
+"<font height="17">"
+"</font><b>Nu aveţi un Cont Google?</b>"
+"<font height="3">"
+"</font>"Nicio problemă. Atingeţi „Creaţi” în următorul ecran, iar noi vă vom ajuta să creaţi unul.
+"<font height="17">"
+"</font><b>Atingeţi „Înainte” pentru a începe!</b>"
+"</font></string>
+    <string name="fling_help_message">"Glisaţi degetul în sus sau în jos pe ecran pentru a derula.
+(Atingeţi acest mesaj pentru a-l închide.)"</string>
+    <string name="setup_device_title">Se configurează ^1</string>
+    <string name="dont_have_an_account">Nu aveţi un Cont Google?</string>
+    <string name="create_one_now">Creaţi unul acum! Este simplu!</string>
+    <string name="already_have_an_account">Aveţi deja un Cont Google?</string>
+    <string name="sign_in_with_google_account">Conectaţi-vă folosind Contul Google pe care doriţi să îl conectaţi la acest dispozitiv Android.</string>
+    <string name="skip_message">Doriţi să creţi un cont mai târziu?</string>
+    <string name="touch_to_begin">Apăsaţi Android pentru a începe.</string>
+    <string name="delayed_gaia_agreement">Continuând, acceptaţi Politicile de confidenţialitate <annotation id="google_privacy">Google</annotation> şi pe cele <annotation id="android_privacy">suplimentare</annotation>.</string>
+    <string name="open_keyboard_message">Deschideţi tastatura prin glisare pentru a începe.</string>
+    <string name="open_keyboard_message_to_continue">Deschideţi tastatura prin glisare pentru a continua.</string>
+    <string name="emergency_dial">Apel de urgenţă</string>
+    <string name="change_language">Schimbaţi limba</string>
+    <string name="signing_in">Se conectează...</string>
+    <string name="close_keyboard_message">Glisaţi tastatura înapoi pentru a continua.</string>
+    <string name="communicating_message">Pentru a vă configura contul, este nevoie ca dispozitivul dvs. Android să comunice cu serverele Google. Poate să dureze până la cinci minute.</string>
+    <string name="communicating_message_domain">Pentru a găsi informaţii despre domeniul dvs., este nevoie ca dispozitivul Android să comunice cu serverele Google. Poate să dureze până la cinci minute.</string>
+    <string name="username">Nume de utilizator</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Parolă</string>
+    <string name="sign_in_agreement">Conectându-vă, acceptaţi Politicile de confidenţialitate<annotation id="google_privacy">Google</annotation> şi pe cele <annotation id="android_privacy">suplimentare</annotation>.</string>
+    <string name="create">Creaţi</string>
+    <string name="create_message">Aveţi nevoie de un cont Google?</string>
+    <string name="now_signing_in">Se conectează...</string>
+    <string name="now_verifying_domain">Se caută domeniul dvs...</string>
+    <string name="sign_in_with_google_account_short">Conectaţi-vă utilizând Contul dvs. Google:</string>
+    <string name="browser_sign_in_explanation">Utilizaţi acest ecran dacă aveţi condiţii de conectare care necesită un browser web.</string>
+    <string name="gls_browser_login_intro_message">Nu se poate accesa Contul dvs. Google sau Google Apps. Reautorizarea este necesară.</string>
+    <string name="enter_domain_name">Introduceţi numele domeniului companiei:</string>
+    <string name="enter_user_name">Introduceţi numele de utilizator şi parola pentru ^1:</string>
+    <string name="inactive_domain">Acest cont nu poate fi utilizat, deoarece face parte dintr-un domeniu inactiv. Contactaţi administratorul de domeniu pentru <b>^1</b> sau conectaţi-vă cu un alt cont.</string>
+    <string name="invalid_username">Textul introdus nu reprezintă un nume de utilizator valid.</string>
+    <string name="web_login_error_title">Ne pare rău...</string>
+    <string name="web_login_error_desc">"A apărut o problemă la conectarea la serverele companiei, la  ^1.
+
+ Informaţii despre eroare:
+"</string>
+    <string name="web_login_error_redirects">Pagina de conectare pe web a efectuat prea multe redirecţionări</string>
+    <string name="web_login_error_http">eroare HTTP ^1 : ^2</string>
+    <string name="name_device_label">Daţi dispozitivului dvs. Android un nume:</string>
+    <string name="device_name_hint">Nume dispozitiv</string>
+    <string name="registering_device">Se înregistrează dispozitivul Android...</string>
+    <string name="error_account_disabled">"Acest cont a fost dezactivat. 
+
+(Pentru detalii, accesaţi http://google.ro/accounts/recovery de pe computer.)"</string>
+    <string name="error_login_failed">"Numele dvs. de utilizator şi parola nu se potrivesc. Încercaţi din nou. 
+
+(Pentru a vă recupera informaţiile despre cont, accesaţi http://www.google.com/accounts/recovery de pe computerul dvs.)"</string>
+    <string name="error_account_not_verified">"Acest cont nu a fost confirmat. Verificaţi de pe un computer e-mailurile primite şi accesaţi linkul necesar pentru confirmarea acestui cont. 
+
+(Pentru a recupera informaţiile despre cont accesaţi http://www.google.com/accounts/recovery de pe computer.)"</string>
+    <string name="captcha_message_string">Verificare</string>
+    <string name="captcha_instructions">Introduceţi caracterele pe care le vedeţi în imagine. Nu se face diferenţă între minuscule şi majuscule.</string>
+    <string name="create_google_account">Creaţi un Cont Google nou</string>
+    <string name="example_usernames">ex., VPopescu, Victor.Popescu</string>
+    <string name="create_account_agreement">Prin crearea acestui cont, acceptaţi Politicile de confidenţialitate <annotation id="google_privacy">Google</annotation> şi pe cele <annotation id="android_privacy">suplimentare</annotation>.</string>
+    <string name="account_already_has_gmail">Contul utilizează deja Gmail.</string>
+    <string name="creating_account">Se creează contul dvs...</string>
+    <string name="checking_account">Se verifică disponibilitatea numelui de utilizator...</string>
+    <string name="try_a_different_username">Încercaţi un alt nume de utilizator</string>
+    <string name="is_not_available"><b>^1</b> nu este disponibil.</string>
+    <string name="hint_size"><b>^1</b> conţine mai puţin de 6 sau mai mult de 30 de caractere.</string>
+    <string name="hint_numbers_only"><b>^1</b> nu conţine litere.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" poate conţine numai litere,
+numere şi puncte."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> nu utilizează Gmail</string>
+    <string name="sign_in">Conectaţi-vă</string>
+    <string name="sign_in_browser">Browser pentru conectare</string>
+    <string name="here_are_alternatives">Iată câteva alternative:</string>
+    <string name="alternatives_list_title">Nume de utilizator sugerate</string>
+    <string name="choose_a_password"><b>"Introduceţi o 
+ parolă "</b></string>
+    <string name="confirm_password"><b>" Confirmaţi
+parola"</b></string>
+    <string name="password_strength"><b>"Puterea
+parolei"</b></string>
+    <string name="too_short">Prea scurtă</string>
+    <string name="security_question"><b>"Întrebare
+de securitate"</b></string>
+    <string name="security_questions_title">Întrebări de securitate</string>
+    <string name="answer"><b>Răspuns</b></string>
+    <string name="password_mismatch">Parolele dvs. nu corespund. Introduceţi-le din nou.</string>
+    <string name="your_account_was_created">Contul dvs. a fost creat!</string>
+    <string name="eight_chars_min">(8 caractere minimum)</string>
+    <string name="just_in_case">În caz că pierdeţi parola.</string>
+    <string name="verify_your_profile">Confirmaţi profilul dvs.</string>
+    <string name="signed_in">Conectat!</string>
+    <string name="error_not_logged_in">Utilizatorul nu este conectat.</string>
+    <string name="error_username_unavailable">Numele de utilizator nu este disponibil.</string>
+    <string name="error_bad_password">Parola este prea slabă sau conţine caractere nevalide. Încercaţi din nou.</string>
+    <string name="error_bad_username">Nume de utilizator nevalid.</string>
+    <string name="loading">Se încarcă...</string>
+    <string name="submission_title">Ne pare rău...</string>
+    <string name="submission_error_text">A apărut o eroare. Încercaţi din nou.</string>
+    <string name="existing_account_error_title">Contul deja există</string>
+    <string name="existing_account_error_text">Există deja un cont ^1 pe acest dispozitiv Android.</string>
+    <string name="account_linked_message"><font height="24">Contul dvs. Google este acum conectat la acest dispozitiv Android.</font></string>
+    <string name="syncing_message"><font size="17">" Acum, aplicaţiile Google sincronizează datele. 
+"<font height="17">"
+"</font>"%i Descărcarea se va termina atunci când pictograma „se sincronizează” o să dispară din bara de stare aflată în partea de sus a ecranului. 
+"<font height="17">"
+"</font><b> Despre bara de stare...</b>"
+"<font height="3">"
+"</font>"De fiecare dată când primiţi un mesaj nou sau o altă notificare, va fi vizibilă o pictogramă în bara de stare. 
+"<font height="17">"
+"</font>Trageţi cu degetul în jos bara de stare, pentru a deschide panoul de notificări ce conţine detalii despre toate notificările curente.</font></string>
+    <string name="i_agree_next">Sunt de acord, Înainte</string>
+    <string name="android_privacy_policy_title">Politica de confidenţialitate suplimentară</string>
+    <string name="google_terms_of_service_title">Termenii şi condiţiile Google</string>
+    <string name="google_privacy_policy_title">Politica de confidenţialitate Google</string>
+    <string name="notification_update_title">Contul dvs. trebuie actualizat</string>
+    <string name="notification_update_message">Atingeţi acest punct pentru a rula din nou expertul de configurare</string>
+    <string name="common_message">"Pentru a beneficia de serviciul Gmail, de copiile de rezervă şi de multe alte funcţii Android aveţi nevoie de un Cont Google.
+
+Atingeţi "<b>Înainte</b>" pentru a vă conecta la un Cont Google existent sau pentru a crea chiar acum un Cont Google nou.
+
+De asemenea, puteţi să atingeţi "<b>Omiteţi</b> dacă doriţi să începeţi să utilizaţi imediat telefonul. Vă puteţi conecta ulterior la un Cont Google în Setări, sub Conturi &amp; sincronizare.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Adăugarea unui cont</font>" 
+
+Puteţi utiliza mai multe Conturi Google (cum ar fi conturile de acasă şi de la birou). Adăugarea unui Cont Google presupune numai câţiva paşi. 
+
+Atingeţi „Înainte” pentru a continua sau apăsaţi pe butonul Înapoi pentru a ieşi."</string>
+    <string name="reactivate_account_message">"Este necesar să conectaţi un cont de e-mail Google la acest dispozitiv Android. 
+
+Aveţi deja un nume de utilizator de e-mail Google ("<b>^1</b>") asociat acestui cont, însă în prezent nu este activ. 
+
+Atingeţi „Înainte” pentru a reactiva acest nume de utilizator şi pentru a-l utiliza. 
+
+Dacă doriţi să utilizaţi alt cont, apăsaţi pe butonul Înapoi şi conectaţi-vă sau creaţi alt cont."</string>
+    <string name="reactivating_account">Se reactivează contul dvs...</string>
+    <string name="your_account_was_reactivated">Contul dvs. a fost activat!</string>
+    <string name="account_recovery_info">Următoarele informaţii vă vor ajuta să recuperaţi parola în eventualitatea în care o veţi pierde</string>
+    <string name="secondary_email_label"><b>"Adresă secundară de
+e-mail"</b></string>
+    <string name="invalid_email">"Adresa de e-mail introdusă nu este validă.
+ Exemplu: joe@example.com"</string>
+    <string name="invalid_email_primary">Adresele de e-mail secundare nu pot fi identice cu cele pe care le creaţi acum</string>
+    <string name="tutorial_intro_title">Aflaţi cum puteţi utiliza ^1</string>
+    <string name="begin_button_label">Începeţi</string>
+    <string name="tutorial_intro_message_generic">Trebuie să înţelegeţi câteva aspecte importante pentru a profita la maximum de dispozitivul dvs. Android. <font size="17">"
+"</font>" 
+"<li>Utilizarea tastaturii de pe ecran</li> <font size="17">"
+"</font>" 
+Atingeţi „Începeţi” pentru a porni programul de instruire şi pentru a afla mai multe."</string>
+    <string name="tutorial_intro_message_setupwizard">Trebuie să înţelegeţi câteva aspecte importante pentru a profita la maximum de dispozitivul dvs. Android. <font size="17">"
+"</font>" 
+"<li>Utilizarea tastaturii de pe ecran</li>" 
+"<li>Crearea unui cont Google</li> <font size="17">"
+"</font>" 
+Atingeţi „Începeţi” pentru a porni programul de instruire şi pentru a afla mai multe sau atingeţi „Omiteţi” pentru a omite acest program de instruire şi pentru a continua."</string>
+    <string name="keyboard_tutorial_title">Se utilizează tastatura de pe ecran</string>
+    <string name="keyboard_tutorial_message">Atingeţi orice câmp de text pentru a deschide tastatura şi pentru a începe să introduceţi text. Încercaţi aici!</string>
+    <string name="keyboard_tutorial_edittext_hint">Atingeţi acest punct pentru a începe introducerea textului</string>
+    <string name="done_typing_message">Aţi introdus tot textul? Apăsaţi pe butonul Înapoi pentru a închide tastatura.</string>
+    <string name="done_button_label_in_tutorial">Terminat</string>
+    <string name="backup_consent_title">Creaţi o copie de rezervă setărilor dvs.</string>
+    <string name="backup_consent_message">Puteţi realiza în mod automat copii de rezervă pentru setări (cum ar fi marcajele şi parolele Wi-Fi) în Contul dvs. Google. Dacă obţineţi un dispozitiv Android nou (pentru a-l înlocui pe cel vechi sau pentru a trece la o versiune superioară), setările sunt restabilite atunci când vă conectaţi utilizând Contul Google.</string>
+    <string name="backup_consent_howto_disable_message">Puteţi modifica oricând setările pentru copii de rezervă din aplicaţia Setări, în secţiunea Confidenţialitate.</string>
+    <string name="backup_consent_yes_agree">Creaţi o copie de rezervă a setărilor în Contul dvs. Google.</string>
+    <string name="restore_disable">Dezactivaţi restabilirea</string>
+    <string name="restore_enable">Activaţi restabilirea</string>
+    <string name="restore_enabled">Dacă aţi creat anterior o copie de rezervă setărilor, acestea vor fi restabilite.</string>
+    <string name="restore_disabled">Setările dvs. nu vor fi restabilite din copia de rezervă.</string>
+    <string name="webview_progress_title">Se conectează la domeniul...</string>
+    <string name="webview_progress_verbose_message">"Serverele companiei dvs. trimit informaţii de conectare. Aceasta poate dura câteva minute.
+Pagina de conectare a companiei va apărea după finalizare."</string>
+    <string name="enterprise_unmanaged_domain">Acest domeniu nu utilizează Google Apps. Verificaţi numele domeniului şi încercaţi din nou.</string>
+    <string name="use_location_for_services_agree">Acceptaţi</string>
+    <string name="use_location_for_services_disagree">Nu sunt de acord</string>
+    <string name="use_location_for_services_title">Utilizaţi Locaţia mea</string>
+    <string name="use_location_for_services_text">Permiteţi ca Google să utilizeze locaţia pentru rezultate de căutare îmbunătăţite şi alte servicii?</string>
+    <string name="permlab_readGsettings">Citiţi setările Google</string>
+    <string name="permdesc_readGsettings">Permite acestei aplicaţii să citească setările Google.</string>
+    <string name="permlab_writeGsettings">Modificaţi setările Google</string>
+    <string name="permdesc_writeGsettings">Permite acestei aplicaţii să modifice setările Google.</string>
+    <string name="permlab_readGservices">citirea configurării serviciului Google</string>
+    <string name="permdesc_readGservices">Permite acestei aplicaţii să citească datele de configurare ale serviciului Google.</string>
+    <string name="permlab_writeGservices">Modificaţi configuraţia serviciului Google</string>
+    <string name="permdesc_writeGservices">Permite acestei aplicaţii să modifice datele de configurare ale serviciului Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">acces la parolele pentru Conturile Google</string>
+    <string name="permdesc_googleAuthPassword">Permite aplicaţiilor accesul direct la parole pentru contul/conturile Google configurat(e).</string>
+    <string name="permlab_googleMailSwitch">selectaţi serviciul Gmail sau Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Permite aplicaţiilor să comute numele afişat între „Gmail” şi „Google Mail”.</string>
+    <string name="permlab_googleAuth">vizualizaţi conturile configurate</string>
+    <string name="permdesc_googleAuth">Permite aplicaţiilor să vadă numele de utilizatori (adresele de e-mail) pentru contul/conturile Google configurat(e).</string>
+    <string name="permlab_googleAuth_ALL">accesaţi toate serviciile Google</string>
+    <string name="permdesc_googleAuth_ALL">Permite aplicaţiilor să se conecteze la TOATE serviciile Google folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_OTHER">accesaţi alte servicii Google</string>
+    <string name="permdesc_googleAuth_OTHER">Permite aplicaţiilor să se conecteze la servicii Google neprecizate folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Permite aplicaţiilor să se conecteze la serviciile de e-mail Google folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_cl">Google Calendar</string>
+    <string name="permdesc_googleAuth_cl">Permite aplicaţiilor să se conecteze la Google Calendar cu ajutorul conturilor stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_android">Servicii Android</string>
+    <string name="permdesc_googleAuth_android">Permite aplicaţiilor să se conecteze la serviciile Android folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_sierra">Conturi Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Permite aplicaţiilor să se conecteze la Google Checkout (şi potenţial să efectueze achiziţii) folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_sierraqa">conturi Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Permite aplicaţiilor să se conecteze la Google Checkout QA folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Conturi Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Permite aplicaţiilor să se conecteze la Google Checkout Sandbox folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Permite aplicaţiilor să se conecteze la YouTube folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Nume de utilizator YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Permite aplicaţiilor să vadă numele de utilizator YouTube asociate Conturilor Google stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Permite aplicaţiilor să se conecteze la Google Talk folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_ig">conturi iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Permite aplicaţiilor să se conecteze la iGoogle folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_lh2">Picasa Web Albums</string>
+    <string name="permdesc_googleAuth_lh2">Permite aplicaţiilor să se conecteze la Picasa Web Albums folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_mobile">Aplicaţii Google Mobil</string>
+    <string name="permdesc_googleAuth_mobile">Permite aplicaţiilor să se conecteze la aplicaţiile mobile Google folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_cp">date de contact în Conturile Google</string>
+    <string name="permdesc_googleAuth_cp">Permite aplicaţiilor să acceseze date din agendă şi informaţii de profil din conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Permite aplicaţiilor să se conecteze la Google AdSense folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Permite aplicaţiilor să se conecteze la Google AdWords folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Permite aplicaţiilor să se conecteze la Blogger folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Permite aplicaţiilor să se conecteze la Dodgeball folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Permite aplicaţiilor să se conecteze la Google Base folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_groups2">Grupuri Google</string>
+    <string name="permdesc_googleAuth_groups2">Permite aplicaţiilor să se conecteze la Grupuri Google folosind conturile stocate pe acest dispozitiv Android</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Permite aplicaţiilor să se conecteze la Google Health folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Permite aplicaţiilor să se conecteze la JotSpot folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Permite aplicaţiilor să se conecteze la Knol folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_news">Ştiri Google</string>
+    <string name="permdesc_googleAuth_news">Permite aplicaţiilor să se conecteze la Ştiri Google folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_orkut">orkut</string>
+    <string name="permdesc_googleAuth_orkut">Permite aplicaţiilor să se conecteze la orkut folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_print">Google Căutare de cărţi</string>
+    <string name="permdesc_googleAuth_print">Permite aplicaţiilor să se conecteze la Google Căutare de cărţi folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_sitemaps">Instrumente Google pentru webmasteri</string>
+    <string name="permdesc_googleAuth_sitemaps">Permite aplicaţiilor să se conecteze la Instrumentele Google pentru webmasteri folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Permite aplicaţiilor să se conecteze la Google WiFi folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">Permite aplicaţiilor să se conecteze la Google Docs folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_wise">Google Spreadsheets</string>
+    <string name="permdesc_googleAuth_wise">Permite aplicaţiilor să se conecteze la Google Spreadsheets folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Permite aplicaţiilor să se conecteze la Google Finance folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_local">Hărţi Google</string>
+    <string name="permdesc_googleAuth_local">Permite aplicaţiilor să se conecteze la Hărţi Google folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Permite aplicaţiilor să se conecteze la Google App Engine folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_notebook">Blocnotes Google</string>
+    <string name="permdesc_googleAuth_notebook">Permite aplicaţiilor să se conecteze la Blocnotes Google folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Permite aplicaţiilor să se conecteze la Google Voice folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Recunoaşterea vocală personalizată</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Permite aplicaţiilor să se conecteze la serviciul Personalized Speech Recognition folosind conturile stocate pe acest dispozitiv Android.</string>
+    <string name="gls_notification_title">Conectaţi-vă la contul dvs.</string>
+    <string name="gls_notification_new_account">Cont ^1 necesar</string>
+    <string name="gls_notification_new_account_youtube">Este necesar un cont YouTube</string>
+    <string name="gls_notification_login_error">Apăsaţi pentru a vă conecta la contul dvs.</string>
+    <string name="gls_ui_add_account_title">Configurarea contului</string>
+    <string name="gls_ui_google_account_subtitle">Cont Google</string>
+    <string name="gls_ui_activity_title">Conectare la Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Browser pentru conectare</string>
+    <string name="gls_ui_activity_title_enterprise">Conectare la companie</string>
+    <string name="gls_ui_activity_title_youtube">Conectare la YouTube</string>
+    <string name="gls_ui_activity_authenticating">Se autentifică...</string>
+    <string name="gls_captcha_activity_message">Introduceţi caracterele pe care le vedeţi în imagine:</string>
+    <string name="gls_captcha_activity_ok_button">Terminat</string>
+    <string name="gls_error_activity_message">A apărut o eroare de reţea în timpul încercării de conectare la <b>^1</b>. Încercaţi din nou acum sau apăsaţi butonul Înapoi pentru a anula.</string>
+    <string name="gls_error_activity_retry_button">Încercaţi din nou</string>
+    <string name="gls_dmagent_activity_message">" Domeniul dvs. necesită gestionarea dispozitivelor mobile. Instalaţi aplicaţia Politica pentru dispozitive Google Apps pentru a aplica politicile de securitate cerute de contul "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Descărcaţi</string>
+    <string name="gls_login_activity_username_label">Nume de utilizator</string>
+    <string name="gls_login_activity_password_label">Parolă</string>
+    <string name="gls_login_activity_ok_button">Conectaţi-vă</string>
+    <string name="gls_login_activity_loginfail_text_both">Numele de utilizator sau parola nu sunt valide. Este necesar un cont pe domeniul <b>^1</b>. Încercaţi din nou.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Aţi introdus parola greşită sau contul dvs. a fost modificat. Reintroduceţi parola.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Introduceţi parola pentru acest cont.</string>
+    <string name="gls_enterprise_login_activity_msg">"Conectaţi-vă la contul dvs. de companie la ^1 pentru autentificare.
+ Atingeţi Conectaţi-vă pentru a deschide pagina online de conectare a companiei dvs."</string>
+    <string name="gls_login_activity_badaccount_text">Nu puteţi utiliza acel cont în această situaţie. Încercaţi un cont diferit.</string>
+    <string name="gls_login_activity_newaccount_text">Conectaţi-vă la contul dvs. de pe domeniul <b>^1</b></string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Nu aveţi un cont YouTube? Apăsaţi <a href="http://www.youtube.com/signup">aici</a> pentru a crea unul.</string>
+    <string name="gls_settings_tos_activity_title">Aspecte juridice Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Nu sunteţi conectat(ă) la un serviciu de date. Pentru a vedea aceste informaţii acum, accesaţi %s de pe orice computer conectat la internet.</string>
+    <string name="gls_settings_contributors_activity_title">Colaboratori</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Nu sunteţi conectat(ă) la un serviciu de date. Pentru a vedea aceste informaţii acum, accesaţi %s de pe orice computer conectat la internet.</string>
+    <string name="gls_webview_progress_title">Se conectează la domeniul...</string>
+    <string name="gls_webview_progress_verbose_message">"Serverele companiei dvs. trimit informaţiile de conectare, fapt care poate dura câteva minute.
+Pagina de conectare a companiei dvs. va apărea la finalizarea acţiunii."</string>
+    <string name="gls_sign_in_button_label">Conectaţi-vă</string>
+    <string name="gls_back_button_label">Înapoi</string>
+    <string name="gls_cancel_button_label">Anulaţi</string>
+    <string name="gls_exit_account_setup_button_label">Părăs. config. cont.</string>
+    <string name="gls_reauthorize_button_label">Autorizaţi din nou</string>
+    <string name="gls_sign_in_message">Pentru a vă configura contul, este nevoie ca dispozitivul dvs. Android să comunice cu serverele Google. Poate să dureze până la cinci minute.</string>
+    <string name="gls_sign_in_title">Se conectează...</string>
+</resources>

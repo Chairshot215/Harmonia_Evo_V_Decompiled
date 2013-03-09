@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/privacy_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/location_section_title" android:key="location_category">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/use_location_title" android:key="use_location" android:summary="@string/use_location_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/backup_section_title" android:key="backup_category">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/backup_settings_title" android:key="backup_settings" />
+        <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/backup_configure_account_title" android:key="configure_account" android:summary="@string/backup_configure_account_default_summary">
+            <intent android:action="dummy" />
+        </com.htc.preference.HtcPreferenceScreen>
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/auto_restore_title" android:key="auto_restore" android:summary="@string/auto_restore_summary" />
+        <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:key="htc_backup_settings">
+            <intent android:action="com.android.updater.BACKUP_SETTING" />
+        </com.htc.preference.HtcPreferenceScreen>
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

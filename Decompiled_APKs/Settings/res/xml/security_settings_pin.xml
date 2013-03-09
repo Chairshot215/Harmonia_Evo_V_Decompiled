@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/lock_settings_title" android:key="security_category">
+        <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_launch_picker_title" android:key="unlock_set_or_change" android:summary="@string/unlock_set_unlock_mode_pin" />
+        <com.android.settings.framework.preference.security.HtcInactivityTimeListPreference />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

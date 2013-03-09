@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/meeting_block_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:id="@id/btnCheckCalendar" android:visibility="gone" android:layout_marginTop="@dimen/ex_margin_vertical" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/check_calendar" style="@style/ex_single_button" />
+        <View android:id="@id/line_divider_startTime" android:visibility="gone" android:layout_marginTop="@dimen/pure_divider_marginTop" style="@style/pure_divider" />
+        <TextView android:id="@id/meetingStartTime" android:layout_marginTop="10.0px" android:text="@string/compose_meeting_start_time_label_text" style="@style/ex_account_label" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/meetingStartTimeBtns" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/start_time_text" android:layout_width="0.0dip" android:layout_marginRight="0.0px" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="7.0" style="@style/ex_single_button" />
+            <Button android:id="@id/start_time2_text" android:layout_width="0.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="3.5" style="@style/ex_single_button" />
+        </LinearLayout>
+        <View android:id="@id/line_divider_endTime" android:visibility="gone" android:layout_marginTop="14.0px" style="@style/pure_divider" />
+        <TextView android:id="@id/meetingEndTime" android:layout_marginTop="10.0px" android:text="@string/compose_meeting_end_time_label_text" style="@style/ex_account_label" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/meetingEndTimeBtns" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/end_time_text" android:layout_width="0.0dip" android:layout_marginRight="0.0px" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="7.0" style="@style/ex_single_button" />
+            <Button android:id="@id/end_time2_text" android:layout_width="0.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:layout_weight="3.5" style="@style/ex_single_button" />
+        </LinearLayout>
+        <View android:id="@id/line_divider_where" android:visibility="gone" android:layout_marginTop="14.0px" style="@style/pure_divider" />
+        <TextView android:id="@id/textLocation" android:visibility="gone" android:layout_marginTop="10.0px" android:text="@string/compose_meeting_location_label_text" style="@style/ex_account_label" />
+        <EditText android:id="@id/meeting_location" android:visibility="gone" android:layout_marginTop="0.0px" android:hint="@string/compose_location_hint_text" android:textCursorDrawable="@null" style="@style/ex_account_field" />
+        <View android:id="@id/line_divider_endMeet" android:visibility="gone" android:layout_marginTop="14.0px" style="@style/pure_divider" />
+    </LinearLayout>
+</LinearLayout>

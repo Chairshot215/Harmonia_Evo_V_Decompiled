@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/sip_settings" android:key="sip_settings_category_key">
+        <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/sip_accounts_title" android:key="sip_account_settings_key">
+            <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.sip.SipSettings" />
+        </com.htc.preference.HtcPreferenceScreen>
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/sip_call_options_entries" android:title="@string/sip_call_options_title" android:key="sip_call_options_key" android:entryValues="@array/sip_call_options_values" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/sip_call_options_wifi_only_entries" android:title="@string/sip_call_options_title" android:key="sip_call_options_wifi_only_key" android:dialogTitle="@string/sip_call_options_wifi_only_title" android:entryValues="@array/sip_call_options_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

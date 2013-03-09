@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" android:versionCode="100345400" android:versionName="1.0.2213292226.345400" package="com.android.providers.downloads.ui"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <application android:label="@string/app_label" android:icon="@mipmap/ic_launcher_download" android:process="android.process.media" android:hardwareAccelerated="false">
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name=".DownloadList" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_DOWNLOADS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

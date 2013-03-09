@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textColor="#ff333333" android:autoLink="all" android:linksClickable="true" android:id="@id/message_view" android:background="@drawable/status_bubble" android:paddingLeft="16.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:textColor="@color/text_sent_time" android:autoLink="none" android:linksClickable="false" android:id="@id/sent_at" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/message_view" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:layout_width="120.0px" android:layout_height="120.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/btn_thumbnail" android:background="@drawable/icon_thumbnail_selector" android:layout_width="97.0px" android:layout_height="97.0px" android:layout_marginRight="10.0px" android:layout_marginBottom="10.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/icon_thumbnail" android:layout_width="69.0px" android:layout_height="53.0px" android:layout_marginRight="16.0px" android:layout_marginBottom="43.0px" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

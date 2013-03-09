@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/pref_title_mms" android:key="mms_setting_preferenceScreen">
+        <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_mms_settings_title" android:key="pref_key_mms_preference_category">
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_delivery_reports" android:key="pref_key_mms_delivery_reports" android:summary="@string/pref_summary_mms_delivery_reports" android:defaultValue="false" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_read_reports" android:key="pref_key_mms_read_reports" android:summary="@string/pref_summary_mms_read_reports" android:defaultValue="false" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval" android:summary="@string/pref_summary_mms_auto_retrieval" android:defaultValue="true" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_retrieval_during_roaming" android:summary="@string/pref_summary_mms_retrieval_during_roaming" android:dependency="pref_key_mms_auto_retrieval" android:defaultValue="false" />
+            <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_mms_priority" android:title="@string/htc_setting_priority" android:key="pref_key_mms_priority" android:defaultValue="medium" android:entryValues="@array/pref_entry_values_mms_priority" />
+            <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/htc_pref_entries_mms_max_size" android:title="@string/htc_setting_message_size_limit" android:key="pref_key_mms_max_size" android:defaultValue="3" android:entryValues="@array/htc_pref_entry_values_mms_max_size" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/ngm_group_conversation" android:key="pref_key_ngm_group_conversation" android:summary="@string/pref_summary_ngm_group_conversation" android:defaultValue="true" />
+            <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_attachment_storage_labels" android:title="@string/attachment_storage" android:key="pref_key_attachment_storage_setting" android:summary="@string/phone_storage" android:defaultValue="0" android:entryValues="@array/pref_entries_attachment_storage_values" />
+            <com.htc.preference.HtcPreferenceScreen android:title="@string/htc_cdma_mms_connections_setting" android:key="pref_key_htc_cdma_mms_connections_settings_setting">
+                <intent android:targetPackage="com.android.mms" android:action="android.intent.action.VIEW" android:targetClass="com.htc.messaging.ui.HtcCdmaMmsConnEditor" />
+            </com.htc.preference.HtcPreferenceScreen>
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_message_preview" android:key="pref_key_mms_message_preview" android:summary="@string/pref_summary_mms_message_preview" android:defaultValue="true" />
+            <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_mms_displaymode" android:title="@string/htc_setting_displaymode" android:key="pref_key_mms_displaymode" android:defaultValue="Expand" android:entryValues="@array/pref_values_mms_displaymode" />
+            <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_play_mode" android:title="@string/pref_title_play_mode" android:key="pref_key_play_mode" android:summary="@string/play_mode_manual" android:defaultValue="manual" android:entryValues="@array/pref_entry_values_play_mode" />
+            <com.android.mms.ui.DeleteAllMmsPreference android:title="@string/htc_setting_delete_all_mms" android:key="pref_key_delete_all_mms" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_restricted_mode" android:key="pref_key_mms_restricted_mode" android:summary="@string/pref_summary_mms_restricted_mode" android:defaultValue="false" />
+        </com.htc.preference.HtcPreferenceCategory>
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

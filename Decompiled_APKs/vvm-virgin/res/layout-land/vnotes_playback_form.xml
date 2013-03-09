@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/playbackLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.coremobility.visualvoicemail">
+    <RelativeLayout android:id="@id/mainFrame" android:background="@drawable/incall_frame_normal_tall" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true">
+        <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="3.0dip" android:layout_above="@id/progressbarLayout" android:layout_below="@id/mainFrame" android:layout_alignParentTop="true">
+            <include android:id="@id/messageInfo" layout="@layout/vnotes_playback_message_info" />
+        </ScrollView>
+        <include android:id="@id/progressbarLayout" layout="@layout/vnotes_playback_progress" />
+        <View android:id="@id/divider_top" android:background="@drawable/divider_groove" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_above="@id/progressbarLayout" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="?android:textColorSecondary" android:id="@id/messageIndex" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowRadius="3.0" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

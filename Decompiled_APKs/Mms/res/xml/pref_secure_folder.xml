@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@com.htc:string/dl_settings" android:key="pref_cmcc_setting">
+        <com.android.mms.ui.ManagePasswordPreference android:title="@string/pref_title_manage_password" android:key="pref_key_manage_password" android:summary="@string/pref_summary_manage_password" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_thread_mode" android:key="pref_key_mms_thread_mode" android:summary="@string/pref_summary_mms_thread_mode" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_save_block_message" android:key="pref_key_save_block_message" android:summary="@string/pref_summary_save_block_message" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_forward_sender_info" android:key="pref_key_forward_sender_info" android:summary="@string/pref_summary_forward_sender_info" android:defaultValue="false" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

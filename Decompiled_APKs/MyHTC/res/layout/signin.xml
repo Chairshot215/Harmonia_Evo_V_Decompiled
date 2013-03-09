@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_1" />
+    <ScrollView android:orientation="vertical" android:id="@id/scrollview" android:background="@com.htc:drawable/fill_topround" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_margin_to_title" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="top|center" android:orientation="vertical" android:id="@id/linearView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <AutoCompleteTextView android:id="@id/edt_email_addr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:layout_marginBottom="@dimen/border_margin" android:hint="@string/edtxt_email_hint" style="@style/auto_complete_text" />
+            <EditText android:id="@id/edt_user_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:layout_marginBottom="@dimen/checkbox_margin" android:hint="@string/edtxt_password_hint" style="@style/input_password" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:layout_marginBottom="@dimen/checkbox_margin">
+                <CheckBox android:id="@id/show_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_show_password_chkbx" android:layout_weight="1.0" style="@style/check_box" />
+            </LinearLayout>
+            <View android:id="@id/view_line" android:background="@*android:drawable/divider_horizontal_bright" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:id="@id/tv_forgot_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:text="@string/txt_forgot_password" style="@com.htc:style/list_primary_m" />
+            <Button android:id="@id/bt_cs_help_password" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/border_margin" android:layout_marginBottom="@dimen/border_margin" android:text="@string/bt_cs_retrieve" android:layout_alignParentLeft="true" style="@style/small_button" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/cmd_bar_2" />
+</LinearLayout>

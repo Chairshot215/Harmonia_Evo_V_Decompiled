@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_padding_merge" android:visibility="gone" android:layout_width="@dimen/me_bubble_empty_width" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sensor_merge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_marging_vertical" android:layout_marginTop="@dimen/bubble_marging" android:layout_marginRight="@dimen/bubble_marging_vertical" android:layout_weight="1.0">
+        <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.widget.QuickContactBadge android:id="@id/badge" android:layout_width="0.0px" android:layout_height="0.0px" />
+            <ImageView android:id="@id/photo_icon" android:layout_width="0.0px" android:layout_height="0.0px" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/msg_body" android:paddingLeft="@dimen/me_bubble_padding_left" android:paddingRight="@dimen/others_bubble_padding_right" android:paddingBottom="@dimen/bubble_padding_bottom" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColorLink="@com.htc:color/link_text" android:autoLink="all" android:linksClickable="false" android:id="@id/msg_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/message_view_text_marginTop" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+                <ImageButton android:layout_gravity="top" android:id="@id/right_button" android:background="@drawable/common_button_small" android:visibility="gone" android:layout_width="@dimen/compose_send_btn_width" android:layout_height="@dimen/compose_send_btn_height" android:layout_marginLeft="@dimen/common_item_icon_margin_left" android:layout_marginTop="@dimen/common_item_icon_margin_top" android:src="@drawable/l_msg_icon_save" />
+            </LinearLayout>
+            <ViewStub android:id="@id/mms_layout_view_stub" android:layout="@layout/mms_layout_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/message_view_viewstub_marginBottom" android:layout_marginBottom="@dimen/message_view_viewstub_marginBottom" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0px">
+                <ImageView android:id="@id/radioline_status_indicator_fake" android:visibility="gone" android:layout_width="@dimen/fake_one_indicator_width" android:layout_height="0.0px" android:scaleType="center" />
+                <TextView android:id="@id/sent_time_view_fake" android:layout_width="wrap_content" android:layout_height="0.0px" style="@com.htc:style/list_secondary_m" />
+                <LinearLayout android:id="@id/indicator_fake" android:visibility="gone" android:layout_width="@dimen/fake_indicator_width" android:layout_height="0.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/radioline_status_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+                <TextView android:id="@id/sent_time_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@com.htc:style/list_secondary_m" />
+                <ImageView android:id="@id/right_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="centerInside" />
+                <ImageView android:id="@id/second_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="centerInside" />
+                <ImageView android:id="@id/third_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="centerInside" />
+                <ImageView android:id="@id/fourth_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/right_padding_merge" android:visibility="gone" android:layout_width="@dimen/others_bubble_empty_width" android:layout_height="fill_parent" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="fill" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:gravity="center" android:id="@com.htc:id/txt_1x1" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@com.htc:dimen/htc_list_item_margin_left" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="@com.htc:dimen/htc_list_item_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/footer_search_company_directory" android:singleLine="false" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/list_primary_xs" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@com.htc:id/img_1x1" android:background="@drawable/icon_search_company_directory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:adjustViewBounds="true" />
+</LinearLayout>

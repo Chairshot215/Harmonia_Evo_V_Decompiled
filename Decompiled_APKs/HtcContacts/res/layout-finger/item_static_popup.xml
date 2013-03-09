@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/addmore" android:background="@com.htc:drawable/common_list_item_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_editor_entry_name_left_title_margin" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="@dimen/text_size_primary" android:textColor="@color/item_primary_text" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/label" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_editor_entry_label_name_left_margin" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_secondary" android:textColor="@color/item_secondary_text" android:ellipsize="marquee" android:gravity="top|left|center" android:id="@id/expand" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/htc_editor_edittext_height" android:layout_marginLeft="@dimen/htc_editor_entry_label_name_left_margin" android:layout_marginTop="0.0px" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right|center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_editor_entry_name_right_more_margin" android:src="@com.htc:drawable/common_more_rest" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/channel_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_add_channel_name" style="@com.htc:style/list_primary_m" />
+        <EditText android:id="@id/channel_name_edit" android:background="?com.htc:attr_common_black_inputfield_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:inputType="textNoSuggestions" style="@com.htc:style/input_default_m" />
+        <TextView android:id="@id/channel_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_add_channel_number" style="@com.htc:style/list_primary_m" />
+        <EditText android:id="@id/channel_number_edit" android:background="?com.htc:attr_common_black_inputfield_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" android:inputType="textNoSuggestions" style="@com.htc:style/input_default_m" />
+        <CheckBox android:id="@id/channel_enable_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:button="?com.htc:attr_common_checkbox" android:text="@string/pref_add_channel_enable" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+</ScrollView>

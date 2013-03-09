@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_vnotes_shared_lines_form"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/preference_title_friendly_name" android:key="preference_friendly_names" android:summary="@string/preference_summary_friendly_name">
+        <intent android:targetPackage="com.coremobility.app.vnotes" android:action="android.intent.action.MAIN" android:targetClass="com.coremobility.app.vnotes.CM_VnoteFriendlyNamesForm" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_title_inbox_filter" android:key="preference_inbox_filter" android:summary="@string/preference_summary_inbox_filter" />
+</PreferenceScreen>

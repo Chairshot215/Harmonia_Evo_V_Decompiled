@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/folder_square" />
+    <AbsoluteLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/label" android:paddingLeft="8.0dip" android:paddingRight="50.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <CheckBox android:id="@id/CheckBoxAdapter" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </AbsoluteLayout>
+</LinearLayout>

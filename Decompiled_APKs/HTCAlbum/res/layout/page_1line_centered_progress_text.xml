@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="@com.htc:color/common_color_listview_listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/section_divider" layout="@layout/htc_section_divider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/section_divider">
+        <include android:id="@id/trans_topround" layout="@layout/htc_trans_topround" />
+    </RelativeLayout>
+    <include android:id="@id/trans_bottomround" layout="@layout/htc_trans_bottomround" />
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:gravity="center" android:id="@id/pbar_1x1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallInverse" />
+        <TextView android:gravity="center" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_marginLeft="12.0px" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+</RelativeLayout>

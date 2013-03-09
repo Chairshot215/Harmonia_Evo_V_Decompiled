@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/list_tab_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lists_loading_indicator" android:background="@color/loading_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/pli_empty_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/white" android:paddingLeft="@dimen/page_loading_indicator_left_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/page_error_indicator" />
+</FrameLayout>

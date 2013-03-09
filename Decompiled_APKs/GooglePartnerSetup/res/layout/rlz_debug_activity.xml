@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/info_layout">
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_brand_code_label" style="@style/info_label" />
+            <TextView android:id="@id/brand_code" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_guid_label" style="@style/info_label" />
+            <TextView android:id="@id/guid" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_pid_label" style="@style/info_label" />
+            <TextView android:id="@id/pid" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_activated_label" style="@style/info_label" />
+            <TextView android:id="@id/activated" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_acap_label" style="@style/info_label" />
+            <TextView android:id="@id/acap" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_wake_time_label" style="@style/info_label" />
+            <TextView android:id="@id/wake_time" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_backoff_label" style="@style/info_label" />
+            <TextView android:id="@id/backoff" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_enabled_label" style="@style/info_label" />
+            <TextView android:id="@id/enabled" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_max_ping_table_size_label" style="@style/info_label" />
+            <TextView android:id="@id/max_table_size" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_ping_interval_label" style="@style/info_label" />
+            <TextView android:id="@id/ping_interval" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_initial_delay_label" style="@style/info_label" />
+            <TextView android:id="@id/initial_delay" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_max_retry_interval_label" style="@style/info_label" />
+            <TextView android:id="@id/max_retry_interval" style="@style/info_value" />
+        </LinearLayout>
+        <LinearLayout style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_delay_after_event_label" style="@style/info_label" />
+            <TextView android:id="@id/delay_after_event" style="@style/info_value" />
+        </LinearLayout>
+        <RadioGroup android:id="@id/oem" style="@style/entry_layout">
+            <TextView android:text="@string/rlz_debug_oem_label" style="@style/info_label" />
+            <RadioButton android:id="@id/oem_enabled" android:text="@string/rlz_debug_oem_enabled" />
+            <RadioButton android:id="@id/oem_disabled" android:text="@string/rlz_debug_oem_disabled" />
+        </RadioGroup>
+        <LinearLayout android:layout_width="fill_parent" style="@style/entry_layout">
+            <Button android:id="@id/view_applist" android:layout_width="fill_parent" android:text="@string/rlz_debug_view_applist" android:layout_weight="1.0" style="@style/info_value" />
+            <Button android:id="@id/view_pinglist" android:layout_width="fill_parent" android:text="@string/rlz_debug_view_pinglist" android:layout_weight="1.0" style="@style/info_value" />
+            <Button android:id="@id/view_eventlist" android:layout_width="fill_parent" android:text="@string/rlz_debug_view_eventlist" android:layout_weight="1.0" style="@style/info_value" />
+        </LinearLayout>
+        <Button android:id="@id/view_client_ids" android:layout_width="fill_parent" android:text="@string/rlz_debug_view_client_ids" style="@style/info_value" />
+    </LinearLayout>
+</ScrollView>

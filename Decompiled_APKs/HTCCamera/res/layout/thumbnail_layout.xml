@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.widget.OffsetRelativeLayout android:id="@id/thumbnail_button_container" android:layout_width="@dimen/thumbnail_button_width" android:layout_height="@dimen/thumbnail_button_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <Button android:id="@id/thumbnail_button" android:background="@drawable/gallery_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.android.camera.rotate.RotateRelativeLayout android:id="@id/thumbnail_button_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/thumbnail_button_content_margin_left" android:layout_marginTop="@dimen/thumbnail_button_content_margin_top" android:layout_marginRight="@dimen/thumbnail_button_content_margin_right" android:layout_marginBottom="@dimen/thumbnail_button_content_margin_bottom">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <RelativeLayout android:background="@drawable/camera_icon_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/thumbnail_button_icon" android:layout_width="@dimen/thumbnail_width" android:layout_height="@dimen/thumbnail_height" android:layout_marginLeft="@dimen/thumbnail_left_margin" android:layout_marginTop="@dimen/thumbnail_top_margin" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+                <TextView android:id="@id/thumbnail_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/effect_panel_button_image_text_padding" android:text="@string/on_screen_btn_gallery" style="@style/text_style_effect_panel_button_text" />
+            </LinearLayout>
+        </com.android.camera.rotate.RotateRelativeLayout>
+    </com.android.camera.widget.OffsetRelativeLayout>
+</RelativeLayout>

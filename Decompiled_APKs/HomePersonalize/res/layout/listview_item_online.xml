@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_view_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/list_item_icon" android:visibility="visible" android:layout_width="@dimen/list_item_icon_width" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_name_left" android:layout_centerVertical="true">
+        <TextView android:id="@id/list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@id/list_item_download_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/common_string_loading" android:layout_below="@id/list_item_name" style="@com.htc:style/list_secondary_s" />
+    </LinearLayout>
+    <RadioButton android:id="@id/radio_button" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0px" android:layout_weight="0.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/check_box" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/downloading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/common_string_loading" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@com.htc:style/list_primary_xl" />
+    <ProgressBar android:id="@id/listitem_progress" android:visibility="gone" android:layout_width="@dimen/list_item_downloading_width" android:layout_height="@dimen/list_item_downloading_height" android:layout_marginRight="@dimen/list_item_loading_margin" android:layout_toLeftOf="@id/downloading" android:layout_centerVertical="true" style="?android:attr/progressBarStyleInverse" />
+</RelativeLayout>

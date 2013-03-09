@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.ComposeFrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/compose" android:background="?attr_common_button_small" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/compose_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_icon_add_compose" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/button_primary_m" android:textStyle="bold" android:textColor="@color/dark_text_bright_focused" android:gravity="center" android:id="@id/compose_txt" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0px" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/htc_list_item_top_round" android:background="@drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/htc_list_item_bottom_round" android:background="@drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</com.htc.widget.ComposeFrameLayout>

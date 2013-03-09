@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_development_hardware_accel" android:key="enable_hardware_accel" android:defaultValue="true" />
+    <CheckBoxPreference android:enabled="false" android:title="@string/pref_development_hardware_accel_skia" android:key="enable_hardware_accel_skia" android:defaultValue="false" />
+    <ListPreference android:entries="@array/pref_development_ua_choices" android:title="@string/pref_development_uastring" android:key="user_agent" android:defaultValue="0" android:entryValues="@array/pref_development_ua_values" />
+    <CheckBoxPreference android:title="@string/pref_development_visual_indicator" android:key="enable_visual_indicator" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_development_cpu_upload_path" android:key="enable_cpu_upload_path" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_development_error_console" android:key="javascript_console" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_development_single_column_rendering" android:key="small_screen" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_development_viewport" android:key="wide_viewport" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pref_development_normal_rendering" android:key="normal_layout" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_development_trace" android:key="enable_tracing" android:defaultValue="false" />
+    <CheckBoxPreference android:title="Enable light touch" android:key="enable_light_touch" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_development_nav_dump" android:key="enable_nav_dump" android:defaultValue="false" />
+    <EditTextPreference android:singleLine="true" android:title="@string/js_engine_flags" android:key="js_engine_flags" />
+    <Preference android:title="@string/pref_development_reset_prelogin" android:key="reset_prelogin" />
+</PreferenceScreen>

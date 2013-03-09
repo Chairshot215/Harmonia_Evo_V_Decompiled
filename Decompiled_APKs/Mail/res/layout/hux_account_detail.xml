@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.android.mail.widget.TextMailHeaderBar1 android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/footer_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.android.mail.widget.MailFooterBar2Btn android:id="@id/footerBar2Btn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.htc.android.mail.widget.MailFooterBar1Btn android:id="@id/footerBar1Btn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/screenContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer_bar" android:layout_below="@id/header">
+        <ImageView android:id="@id/scrolltopShadow" style="@style/topround_v1" />
+        <com.htc.widget.HtcListView android:id="@id/screen_1_listView" android:background="@color/list_bg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:stackFromBottom="false" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_list_divider" mail:topBorderHeight="0.0px" mail:bottomBorderHeight="8.0px" mail:shouldFillEmpty="false"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:mail="http://schemas.android.com/apk/res/com.htc.android.mail" />
+        <com.htc.widget.HtcListView android:id="@id/screen_2_1_listView" android:background="@color/list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_list_divider" android:layout_weight="1.0" />
+        <ScrollView android:id="@id/otherScreens" android:background="@com.htc:drawable/fill_4round" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/screen2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <AutoCompleteTextView android:id="@id/emailaddress" android:nextFocusDown="@id/password" android:layout_marginTop="@dimen/ec_margin_top_vertical" android:hint="@string/email_addr_label" android:capitalize="none" android:autoText="false" style="@style/ec_account_field" />
+                    <View android:id="@id/screen2_line1" android:layout_marginTop="@dimen/pure_divider_marginTop" style="@style/pure_divider" />
+                    <EditText android:id="@id/password" android:nextFocusUp="@id/emailaddress" android:layout_marginTop="@dimen/ec_margin_bottom_vertical_s" android:hint="@string/password_label" android:password="true" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                    <CheckBox android:id="@id/show_pwd" android:checked="false" android:text="@string/show_password" style="@style/ec_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/screen3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/account_desc" android:layout_marginTop="@dimen/ec_margin_top_vertical" android:text="@string/ec_account_name" android:textCursorDrawable="@null" style="@style/ec_account_label" />
+                    <EditText android:id="@id/account_name" android:hint="@string/ec_account_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                    <TextView android:id="@id/your_desc" android:text="@string/ec_your_name" style="@style/ec_account_label" />
+                    <EditText android:id="@id/your_name" android:hint="@string/ec_your_name_hint" android:capitalize="none" android:autoText="false" style="@style/ec_account_field" />
+                    <CheckBox android:id="@id/default_account" android:checked="false" android:text="@string/ec_default_account" style="@style/ec_checkbox" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/screen4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/edit_email_desc" android:layout_marginTop="@dimen/ec_margin_top_vertical" android:text="@string/email_addr_label" style="@style/ec_account_label" />
+                    <AutoCompleteTextView android:id="@id/edit_email" android:focusable="false" android:clickable="false" android:hint="@string/email_addr_label" android:capitalize="none" android:autoText="false" style="@style/ec_account_field" />
+                    <TextView android:id="@id/edit_accountName_desc" android:text="@string/ec_account_name" style="@style/ec_account_label" />
+                    <EditText android:id="@id/edit_accountName" android:hint="@string/ec_account_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                    <TextView android:id="@id/edit_yourName_desc" android:text="@string/ec_your_name" style="@style/ec_account_label" />
+                    <EditText android:id="@id/edit_your_name" android:hint="@string/ec_your_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                    <CheckBox android:id="@id/update_pwd" android:checked="false" android:text="@string/update_pwd" style="@style/ec_checkbox" />
+                    <TextView android:id="@id/edit_pwd_desc" android:visibility="gone" android:text="@string/password_label" style="@style/ec_account_label" />
+                    <EditText android:id="@id/edit_pwd" android:visibility="gone" android:layout_marginBottom="@dimen/ec_margin_top_vertical" android:hint="@string/password_label" android:password="true" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+        <ImageView android:id="@id/scrollBottomShadow" style="@style/bottomround_v1" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="setupWizardBodyTextPrimary" parent="@*android:attr/textAppearanceMedium">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardBodyTextSecondary" parent="@*android:attr/textAppearanceMedium">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardTextPrimarySmall" parent="@*android:attr/textAppearanceSmall">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardTextSecondarySmall" parent="@*android:attr/textAppearanceSmall">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="setupWizardTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="setupWizardTextPrimaryGreen">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="setupWizardTitleDivider">
+        <item name="android:background">@color/title_color</item>
+    </style>
+    <style name="BrowserTheme" parent="@*android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+    </style>
+    <style name="AutoCompleteTextView">
+        <item name="android:textAppearance">?android:textAppearanceLargeInverse</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:completionHintView">@*android:layout/simple_dropdown_item_1line</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@*android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@*android:drawable/spinner_dropdown_background</item>
+    </style>
+    <style name="Theme.InvisibleDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="gls_baseStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+    </style>
+    <style name="gls_topHeader" parent="@style/gls_baseStyle">
+        <item name="android:textAppearance">@style/gls_TextAppearance.topHeader</item>
+    </style>
+    <style name="gls_header" parent="@style/gls_topHeader">
+        <item name="android:layout_marginTop">5.0dip</item>
+    </style>
+    <style name="gls_baseEditText" parent="@style/gls_baseStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <style name="gls_baseButton" parent="@style/gls_baseStyle">
+        <item name="android:minWidth">100.0dip</item>
+    </style>
+    <style name="gls_TextAppearance" parent="@*android:style/TextAppearance" />
+    <style name="gls_TextAppearance.topHeader" parent="@style/gls_TextAppearance">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="gls_enterpriseSignInTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="gls_enterpriseSignInText" parent="@*android:attr/textAppearanceMedium">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="gls_BrowserTheme" parent="@*android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+    </style>
+    <style name="gls_AutoCompleteTextView">
+        <item name="android:textAppearance">?android:textAppearanceLargeInverse</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:completionHintView">@*android:layout/simple_dropdown_item_1line</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@*android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@*android:drawable/spinner_dropdown_background</item>
+    </style>
+    <style name="systemUpdateTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+    </style>
+    <style name="systemUpdateStatus">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="systemUpdateDescription" parent="@*android:attr/textAppearanceMedium">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">@color/highlight_color</item>
+        <item name="android:textColorLink">@color/link_color</item>
+    </style>
+    <style name="Button">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:paddingLeft">32.0dip</item>
+        <item name="android:paddingRight">32.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonQualifier">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0sp</item>
+        <item name="android:layout_marginRight">16.0sp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

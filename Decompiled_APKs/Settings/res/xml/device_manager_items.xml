@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/system_updates" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/fumo" android:key="fumo_key" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/cidc" android:key="cidc_key" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/ciprl" android:key="ciprl_key" />
+</com.htc.preference.HtcPreferenceScreen>

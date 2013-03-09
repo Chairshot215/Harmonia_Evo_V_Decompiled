@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textSize="24.0dip" android:id="@id/TV_LB_Status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/sync_status" android:singleLine="false" />
+            <ImageView android:id="@id/Icon_Sync_Status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_list_sync_anim" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/linearLayout1" android:layout_alignLeft="@id/linearLayout1" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0dip" android:id="@id/TV_Show_Status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/status_disconnected" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/linearLayout3" android:layout_alignLeft="@id/linearLayout3" android:layout_alignRight="@id/linearLayout3">
+            <TextView android:textSize="24.0dip" android:id="@id/TV_LB_History" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sync_history" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/linearLayout5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/linearLayout4" android:layout_alignLeft="@id/linearLayout3" android:layout_alignRight="@id/linearLayout3">
+            <TextView android:textSize="18.0dip" android:id="@id/TV_LB_Last_Sync_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/last_sync" android:singleLine="false" />
+            <TextView android:id="@id/TV_Show_Last_Sync_Time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_sync_records" android:singleLine="false" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/relativeLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="20.0px" android:id="@id/BTN_Sync" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sync_now_label" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/margin_fill" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item_details_panel" android:background="@color/title_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/leading_strip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.google.android.finsky.layout.ObservableScrollView android:id="@id/extra_details_scroller" android:visibility="gone" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <com.google.android.finsky.activities.PurchaseContentLayout android:id="@id/extra_details_contents" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/purchase_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/purchase_content_summary" />
+                <include layout="@layout/purchase_wallet_byline" />
+                <include layout="@layout/purchase_content_extra" />
+            </LinearLayout>
+            <include layout="@layout/purchase_acquire_row" />
+            <include layout="@layout/purchase_acquire_row_footer" />
+        </com.google.android.finsky.activities.PurchaseContentLayout>
+    </com.google.android.finsky.layout.ObservableScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/htc_list_item_margin_left" android:paddingTop="@dimen/htc_list_item_margin_top" android:paddingRight="@dimen/htc_list_item_margin_right" android:paddingBottom="@dimen/htc_list_item_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_1x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/list_primary_m" android:textColor="@color/bright_text_dark_focused" android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="top|left|center" android:id="@id/txt_1x1" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        <TextView android:textSize="@dimen/list_secondary_m" android:textColor="#ffb4b4b4" android:id="@id/txt_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_2x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/list_secondary_m" android:textColor="#ffb4b4b4" android:gravity="left|center" android:layout_gravity="bottom|left|center" android:id="@id/txt_2x1" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/list_secondary_m" android:textColor="#ffb4b4b4" android:gravity="right|center" android:layout_gravity="bottom|right|center" android:id="@id/txt_2x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

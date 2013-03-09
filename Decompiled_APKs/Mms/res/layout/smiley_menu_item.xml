@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/common_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/smiley_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_image_icon_left_margin" />
+    <TextView android:id="@id/smiley_name" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    <TextView android:id="@id/smiley_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@com.htc:dimen/htc_list_item_text_left_margin" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+</LinearLayout>

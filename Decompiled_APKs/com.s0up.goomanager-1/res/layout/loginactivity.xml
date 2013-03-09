@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/txtHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sponsor Login" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txtUsernameHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Username: " android:layout_below="@id/txtHeader" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <EditText android:id="@id/txtUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtUsernameHint" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:inputType="textFilter|textNoSuggestions">
+        <requestFocus />
+    </EditText>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txtPasswordHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password: " android:layout_below="@id/txtUsername" android:layout_alignParentLeft="true" />
+    <EditText android:id="@id/txtPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtPasswordHint" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:inputType="textNoSuggestions|textPassword" />
+    <Button android:id="@id/btnLogin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Login" android:layout_below="@id/txtPassword" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <TextView android:gravity="center" android:autoLink="web" android:id="@id/txtSponsorAbout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/loginAbout" android:layout_above="@id/buttons" android:layout_below="@id/btnLogin" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

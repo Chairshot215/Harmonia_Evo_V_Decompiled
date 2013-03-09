@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/edit_idd_layout" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/NBPCD_add_idd_desc" style="@style/nbpcd_listitem_textview" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/NBPCD_currnet_counntry" style="@style/nbpcd_listitem_textview" />
+            <EditText android:enabled="false" android:textAppearance="?android:textAppearanceMedium" android:id="@id/view_country" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/nbpcd_listitem" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/NBPCD_edit_idd" style="@style/nbpcd_listitem_textview" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/edit_idd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" style="@style/nbpcd_listitem" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/edit_idd_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

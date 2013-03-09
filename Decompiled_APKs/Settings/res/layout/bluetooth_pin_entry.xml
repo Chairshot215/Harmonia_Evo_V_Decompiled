@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:paddingTop="@com.htc:dimen/alert_dialog_content_margin_top" android:paddingRight="@com.htc:dimen/alert_dialog_content_margin_right" android:paddingBottom="@com.htc:dimen/alert_dialog_content_margin_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textColor="#ff000000" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <EditText android:id="@id/text" android:singleLine="true" android:inputType="textPassword" style="@style/wifi_item_edittext" />
+        <TextView android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/pin_values_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_pin_values_hint" style="@com.htc:style/list_primary_s" />
+        <CheckBox android:textColor="#ff000000" android:id="@id/alphanumeric_pin" android:layout_marginLeft="-4.0dip" android:text="@string/bluetooth_enable_alphanumeric_pin" style="@style/wifi_item_checkbox" />
+        <TextView android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/message_below_pin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s" />
+    </LinearLayout>
+</ScrollView>

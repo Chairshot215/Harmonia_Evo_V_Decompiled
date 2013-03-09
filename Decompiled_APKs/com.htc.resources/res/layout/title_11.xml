@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/recipientBlock" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?com.htc:titleBarBackgroundStyleLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/sender_block" android:layout_width="fill_parent" android:layout_height="@dimen/title_mail_layout_height">
+        <TextView android:textSize="@dimen/title_primary_s" android:textColor="@color/titleTextColor" android:gravity="center" android:id="@id/senderLabel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/title_margin_small" android:layout_marginRight="8.0px" android:layout_centerVertical="true" />
+        <ImageButton android:gravity="center" android:layout_gravity="left|center" android:id="@id/senderImage" android:background="?attr_command_bar_btn" android:padding="@dimen/title_detail_image_padding" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/detail_title_image_frame_width" android:layout_height="@dimen/detail_title_image_frame_height" android:layout_marginLeft="@dimen/title_margin_small" android:layout_marginRight="8.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.htc.widget.HtcPhotoButton android:textSize="@dimen/button_secondary_m" android:layout_gravity="left|center" android:id="@id/senderBtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/infoBlock" android:layout_width="80.0px" android:layout_height="fill_parent">
+            <ImageView android:id="@id/info2" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/title_margin_small" android:src="?attr_attachment_collapse_selector" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/toBtnListSapphireMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_margin_small" android:layout_marginTop="4.0px" android:layout_marginRight="@dimen/title_margin_medium">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/toLabelSapphire" android:layout_marginRight="8.0px" style="@style/readscreen_label_1" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/toBtnListSapphire1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/toBtnListSapphire2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/toBtnListSapphire3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ccBtnListSapphireMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_margin_small" android:layout_marginTop="4.0px" android:layout_marginRight="@dimen/title_margin_medium">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/ccLabelSapphire" android:layout_marginRight="8.0px" style="@style/readscreen_label_1" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ccBtnListSapphire1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ccBtnListSapphire2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ccBtnListSapphire3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

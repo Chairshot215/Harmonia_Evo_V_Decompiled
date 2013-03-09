@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:layout_marginBottom="@com.htc:dimen/alert_dialog_content_margin_bottom">
+        <TextView android:layout_gravity="left" android:id="@id/remind_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vzw_remind_dialog_message" style="@com.htc:style/list_secondary_unread_xl" />
+        <CheckBox android:textSize="@com.htc:dimen/list_secondary_read_l" android:textColor="@color/black" android:layout_gravity="left" android:id="@id/remind_dialog_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dont_remind_again" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

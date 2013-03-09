@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/wimax_settings_category"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/wimax_settings_category" android:key="wimax_settings">
+        <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/wimax_notify_backoff" android:key="backoff_rescan" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/wimax_information" android:key="wimax_info">
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/service_provider_header" android:key="service_provider" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/signal_strength_header" android:key="signal_strength" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/wimax_ip_address" android:key="ip_address" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

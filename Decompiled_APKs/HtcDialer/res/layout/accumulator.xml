@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/accumulator" android:layout_width="fill_parent" android:layout_height="@dimen/accumulator_height" style="@style/style_accumulator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_centerHorizontal="true" layout="@layout/hint" />
+    <FrameLayout android:id="@id/search_go_parent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/search_go_btn" android:layout_marginLeft="@dimen/task_bar_center_margin_left_right" android:src="@drawable/phone_icon_voice" android:scaleType="center" style="@style/style_accumulator_left_button" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/accumulatorLayout" android:nextFocusDown="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_toLeftOf="@id/backspace_parent" android:layout_toRightOf="@id/search_go_parent" android:layout_centerHorizontal="true">
+        <com.android.htcdialer.widget.AccumulatorText android:textSize="@dimen/fontSize_large" android:textColor="@color/phone_color_accumulator_text" android:ellipsize="end" android:gravity="right|center" android:id="@*android:id/input" android:background="@null" android:paddingLeft="@com.htc:dimen/htc_list_item_padding_medium" android:nextFocusDown="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0px" android:cursorVisible="false" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/backspace_parent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@com.htc:id/backspace" android:background="@drawable/htc_btn_dial_delete" android:layout_marginRight="@dimen/accumulator_btn_margin_left_right" android:src="@drawable/phone_icon_backspace" android:scaleType="center" style="@style/style_accumulator_button" />
+    </FrameLayout>
+</RelativeLayout>

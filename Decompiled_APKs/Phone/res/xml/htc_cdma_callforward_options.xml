@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/call_forwarding_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.android.phone.HtcCdmaCallForwardEditPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/labelCFU" android:key="button_cfu_key" android:dialogTitle="@string/labelCFU" android:dialogMessage="@string/messageCFU" phone:confirmMode="activation" phone:serviceClass="voice" phone:reason="unconditional" />
+    <com.android.phone.HtcCdmaCallForwardEditPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/labelCFB" android:key="button_cfb_key" android:dialogTitle="@string/labelCFB" android:dialogMessage="@string/messageCFB" phone:confirmMode="activation" phone:serviceClass="voice" phone:reason="busy" />
+    <com.android.phone.HtcCdmaCallForwardEditPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/labelCFNRy" android:key="button_cfnry_key" android:dialogTitle="@string/labelCFNRy" android:dialogMessage="@string/messageCFNRy" phone:confirmMode="activation" phone:serviceClass="voice" phone:reason="no_reply" />
+    <com.android.phone.HtcCdmaCallForwardEditPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/labelCFNRc" android:key="button_cfnrc_key" android:dialogTitle="@string/labelCFNRc" android:dialogMessage="@string/messageCFNRc" phone:confirmMode="activation" phone:serviceClass="voice" phone:reason="not_reachable" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/labelCF_CancelAll" android:key="button_cfcaf_key" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="top|center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:foreground="@drawable/title_bar_shadow" android:fillViewport="true" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/flag_content_instruction" android:background="@drawable/highlight_overlay" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/flag_page_description" style="@style/BaseText" />
+        <View android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RadioGroup android:orientation="vertical" android:id="@id/flag_item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaseText" />
+        <TextView android:id="@id/flag_content_footer" android:background="@drawable/highlight_overlay" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BaseText" />
+    </LinearLayout>
+</ScrollView>

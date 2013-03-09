@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="336142" android:versionName="V.5.2.1.14" package="com.coremobility.app.vnotes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/use_provider" android:name="com.coremobility.app.vnotes.permission.USE_VNOTESPROVIDER" android:protectionLevel="dangerous" android:permissionGroup="android.permission-group.MESSAGES" android:description="@string/use_provider" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.sprint.internal.permission.SYSTEMPROPERTIES" />
+    <uses-permission android:name="com.sprint.permission.INSTALL_UPDATES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="com.coremobility.app.vnotes.permission.USE_VNOTESPROVIDER" />
+    <application android:label="Voicemail" android:icon="@drawable/icon" android:name="com.coremobility.integration.app.CM_App" android:taskAffinity="com.coremobility.app.vnotes" android:hardwareAccelerated="true">
+        <service android:name="com.coremobility.integration.app.CM_Service" android:exported="true" />
+        <receiver android:name="com.coremobility.integration.message.CM_SMSReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".CM_MessageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sprint.android.SPRINTEXTENSION_STARTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="APP_REQUEST_REFRESH_PHONE_INFO" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/app_name" android:name=".CM_VnoteHomeScreenWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.coremobility.app.vnotes.intent.action.MESSAGE_COUNT_CHANGED" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/vnotes_homescreen_widget_provider" />
+        </receiver>
+        <provider android:name="com.coremobility.integration.app.CM_VnotesContentProvider" android:permission="com.coremobility.app.vnotes.permission.USE_VNOTESPROVIDER" android:authorities="com.coremobility.provider" android:grantUriPermissions="true">
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:path="/search_suggest_query" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:path="/vnotes_mime_join" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:path="/vnotes" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:path="/vnotes_mime" />
+        </provider>
+        <activity android:theme="@style/NoTitleBar" android:label="@string/app_name" android:name=".CM_VnoteInbox" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation">
+            <meta-data android:name="android.app.default_searchable" android:value=".CM_VnoteSearchResultsActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="voicemsg" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="voicemail" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sprint.action.UPGRADE_CHECK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.coremobility.app.vnotes.ACTION_UPDATE_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:label="PlaybackScreen" android:name=".CM_VnotePlaybackForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android-dir/vvm" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteRecordForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="voicemsg" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="voicemail" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteOutbox" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_DeletedFolderForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_DeletedForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteSaved" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteSettingsForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.coremobility.app.vnotes.action.LAUNCH_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="voicemail" android:host="tweet" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteNotificationSettingsForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.coremobility.app.vnotes.NOTIFICATION_SETTINGS" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/TitleBar" android:name=".SM_PlaybackSettingsForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteAutoForwardSettingsForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.coremobility.app.vnotes.AUTOCOPY_SETTINGS" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteForwardForm" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" taskAffinity="com.coremobility.app.vnotes" />
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteTextForwardForm" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" taskAffinity="com.coremobility.app.vnotes" />
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteRecipientsForm" android:taskAffinity="com.coremobility.app.vnotes" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteDeleteForm" android:taskAffinity="com.coremobility.app.vnotes" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteInboxMoveForm" android:taskAffinity="com.coremobility.app.vnotes" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteSavedMoveForm" android:taskAffinity="com.coremobility.app.vnotes" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteSavedDeleteForm" android:taskAffinity="com.coremobility.app.vnotes" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteReplyAllForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".CM_VnoteAboutForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/TitleBar" android:name=".CM_VnoteSearchResultsActivity" android:launchMode="singleTop" android:configChanges="locale|keyboardHidden|orientation">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/vnotes_searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".CM_SocialComposeActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="voicemail" android:host="tweet" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/twitter_login" android:name="SM_TwitterLogin" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/TitleBar" android:name=".SM_SocialAccountSettings" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".SM_WebHelpForm" android:taskAffinity="com.coremobility.app.vnotes" android:clearTaskOnLaunch="true" android:configChanges="locale|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_menu" android:background="@drawable/menu_panel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:background="@drawable/menu_header" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/settings_list_title" android:text="@com.htc:string/menu_settings" android:singleLine="true" style="@style/text_style_settings_title" />
+        <ListView android:id="@id/main_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/menu_divider" />
+    </LinearLayout>
+</FrameLayout>

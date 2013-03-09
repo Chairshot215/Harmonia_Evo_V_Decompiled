@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/detail_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarImage android:id="@id/to_full_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="right_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/add_city" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.widget.HeaderBarImage android:id="@id/sync" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.widget.HeaderBarText android:id="@id/title_app_name" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <View android:id="@id/gl_replace" android:layout_width="@dimen/ma_detail_gl_view_width" android:layout_height="@dimen/ma_detail_gl_view_height" android:layout_below="@id/title_bar" />
+    <RelativeLayout android:id="@id/tab_content" android:layout_width="wrap_content" android:layout_height="@dimen/tab_content_height" android:layout_below="@id/gl_replace" />
+    <View android:background="@com.htc:drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/tab_button_bar" />
+    <com.htc.widget.HtcFooter android:id="@id/tab_button_bar" android:layout_width="fill_parent" android:layout_height="@dimen/ma_detail_tab_btn_height" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/tab_now" android:text="@string/tab_now" />
+        <com.htc.widget.HtcFooterButton android:id="@id/tab_hourly" android:text="@string/tab_hourly" />
+        <com.htc.widget.HtcFooterButton android:id="@id/tab_5day" />
+    </com.htc.widget.HtcFooter>
+    <TextView android:textSize="@dimen/error_msg_font" android:textColor="#ffffffff" android:gravity="center" android:id="@id/no_data_msg" android:background="@color/error_view_bkg" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="@dimen/tab_content_height" android:text="@string/nodatamsg" android:layout_above="@id/tab_button_bar" />
+</RelativeLayout>

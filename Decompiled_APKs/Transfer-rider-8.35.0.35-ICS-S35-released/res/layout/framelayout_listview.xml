@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/LayoutMain" android:paddingLeft="@dimen/App_Padding_Left" android:paddingTop="@dimen/App_Padding_Top" android:paddingRight="@dimen/App_Padding_Right" android:paddingBottom="@dimen/App_Padding_Bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.widget.HtcListView android:id="@id/ListViewSelect" android:background="@color/common_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:layout_above="@id/DMIFooter" android:layout_below="@id/linear" style="@style/Sty_HTCListview"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+    <LinearLayout android:orientation="vertical" android:id="@id/DMIFooter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/slice_steps" />
+        <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.htc.widget.HtcFooterButton android:id="@id/footer_button_back" android:visibility="gone" />
+            <com.htc.widget.HtcFooterButton android:id="@id/footer_button_mid" android:visibility="gone" />
+            <com.htc.widget.HtcFooterButton android:id="@id/footer_button_next" android:visibility="gone" />
+        </com.htc.widget.HtcFooter>
+    </LinearLayout>
+</RelativeLayout>

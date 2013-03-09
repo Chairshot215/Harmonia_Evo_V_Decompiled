@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_general">
+        <CheckBoxPreference android:title="@string/title_use_slot0" android:key="use_slot0" android:summary="@string/summary_use_slot0" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_use_proxy" android:key="use_proxy" android:summary="@string/summary_use_proxy" android:defaultValue="true" />
+        <EditTextPreference android:title="@string/title_proxy_host" android:key="proxy_host" android:summary="@string/summary_proxy_host" android:dependency="use_proxy" android:defaultValue="@string/default_proxy_host" android:dialogTitle="@string/dialog_title_proxy_host" />
+        <EditTextPreference android:title="@string/title_proxy_port" android:key="proxy_port" android:summary="@string/summary_proxy_port" android:dependency="use_proxy" android:defaultValue="@string/default_proxy_port" android:dialogTitle="@string/dialog_title_proxy_port" />
+    </PreferenceCategory>
+</PreferenceScreen>

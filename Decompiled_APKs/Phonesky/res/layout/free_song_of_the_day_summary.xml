@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.FreeSongOfTheDaySummary android:orientation="horizontal" android:id="@id/song_container" android:background="@drawable/title_with_highlight" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="12.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="8.0dip" android:focusable="true" android:nextFocusDown="@id/buy_button" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.SongIndex android:id="@id/song_index" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/content_entry_large_size" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/song_index_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/status_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/FinskyProgressSmallInverse" />
+    </com.google.android.finsky.layout.SongIndex>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/summary_title_size" android:textStyle="bold" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5" />
+        <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_medium_size" android:textStyle="bold" android:textColor="@color/grey" android:ellipsize="end" android:id="@id/creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <Button android:layout_gravity="right" android:id="@id/buy_button" android:visibility="visible" android:nextFocusUp="@id/song_container" android:layout_marginRight="0.0dip" style="@style/DetailsPage_BuyButton" />
+    </LinearLayout>
+</com.google.android.finsky.layout.FreeSongOfTheDaySummary>

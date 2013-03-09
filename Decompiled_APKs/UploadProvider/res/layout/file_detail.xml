@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/file_detail" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" style="@style/MyBackGround"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarTall android:id="@id/headerBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MyListViewColor">
+        <LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height">
+            <TextView android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@com.htc:dimen/htc_list_item_margin_top" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_time" style="@com.htc:style/text_style_primary" />
+            <TextView android:id="@id/submit_time" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="@com.htc:dimen/htc_list_item_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/text_style_secondary" />
+        </LinearLayout>
+        <View android:background="@com.htc:drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height">
+            <TextView android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@com.htc:dimen/htc_list_item_margin_top" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_message" style="@com.htc:style/text_style_primary" />
+            <TextView android:id="@id/error_message" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="@com.htc:dimen/htc_list_item_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/text_style_secondary" />
+        </LinearLayout>
+        <View android:background="@com.htc:drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <View android:id="@id/fill_bottomround_view" android:background="@com.htc:drawable/fill_bottomround" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.htc.widget.HtcFooter android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/doneButton" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

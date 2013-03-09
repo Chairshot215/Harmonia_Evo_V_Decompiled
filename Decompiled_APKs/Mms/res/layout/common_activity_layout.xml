@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <View android:id="@id/paddingView" android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_above="@id/list" android:layout_below="@id/header_container" />
+    <com.htc.widget.HtcListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/foot_container" android:layout_below="@id/paddingView" style="@style/htc_listview_style" />
+    <TextView android:gravity="center" android:id="@id/empty_string" android:background="#ff1e1e1e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0px" android:text="@string/no_quick_text" android:layout_above="@id/foot_container" android:layout_below="@id/header_container" style="@com.htc:style/darklist_primary_m" />
+    <LinearLayout android:orientation="vertical" android:id="@id/foot_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0px" android:layout_alignParentBottom="true" />
+    <View android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

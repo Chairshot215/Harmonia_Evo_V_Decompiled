@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.DeliveryReportListItem android:orientation="horizontal" android:paddingRight="@dimen/delivery_report_list_item_paddingRight" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/htc_listitem_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:id="@id/recipient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/delivery_report_list_text_marginLeft" android:singleLine="true" android:layout_alignParentTop="true" style="@com.htc:style/list_primary_m" />
+    <TextView android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/delivery_report_list_text_marginLeft" android:singleLine="true" android:layout_below="@id/recipient" style="@com.htc:style/list_primary_m" />
+    <TextView android:ellipsize="marquee" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/delivery_report_list_text_marginLeft" android:singleLine="false" android:layout_below="@id/status" android:layout_alignParentBottom="true" style="@com.htc:style/list_primary_m" />
+    <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/delivery_report_list_image_marginTop" android:layout_marginRight="@dimen/delivery_report_list_image_marginRight" android:layout_alignParentRight="true" />
+</com.android.mms.ui.DeliveryReportListItem>

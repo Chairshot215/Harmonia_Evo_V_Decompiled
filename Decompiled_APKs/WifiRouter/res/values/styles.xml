@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="no_window_content_overlay">
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@*android:color/transparent</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="list3">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="trans_top_round_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@com.htc:drawable/trans_topround</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="trans_bottom_round_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@com.htc:drawable/trans_bottomround</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="connection_button" parent="@com.htc:style/list_primary_s">
+        <item name="android:background">?com.htc:attr_common_button</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/connection_button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_top_bottom</item>
+    </style>
+    <style name="intro_text">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@com.htc:color/list_primary</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/intro_guild_text_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/intro_guild_text_margin_left_right</item>
+    </style>
+    <style name="guild_text">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@com.htc:color/list_primary</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/intro_guild_text_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/intro_guild_text_margin_left_right</item>
+    </style>
+    <style name="sub_label_text">
+        <item name="android:textSize">@com.htc:dimen/list_primary_xs</item>
+        <item name="android:textColor">@com.htc:color/list_primary</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/item_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/item_margin_left_right</item>
+    </style>
+    <style name="input_field">
+        <item name="android:textSize">@com.htc:dimen/list_primary_s</item>
+        <item name="android:textColor">@com.htc:color/list_primary</item>
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/item_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/item_margin_left_right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:capitalize">none</item>
+        <item name="android:autoText">false</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="spinner_field">
+        <item name="android:textSize">@com.htc:dimen/list_primary_read_m</item>
+        <item name="android:textColor">@com.htc:color/list_read</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/item_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/item_margin_left_right</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="show_password_checkbox">
+        <item name="android:textSize">@com.htc:dimen/list_secondary_read_l</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+</resources>

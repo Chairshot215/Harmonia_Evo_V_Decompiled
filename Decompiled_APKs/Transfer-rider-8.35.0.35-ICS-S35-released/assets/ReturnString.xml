@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+value atrribute is return string tag value is phone id
+-->
+<returnstrings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Phone_ReturnString.xsd">
+	
+	<!-- ===================  blackberry   ====================== -->
+	<!-- BlackBerry 8800 : BlackBerry IP Modem-->
+	<rs value="BlackBerry" communication="RIM" info="BlackBerry,BlackBerry">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="8830" communication="RIM" info="BlackBerry,8830">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="9860" communication="RIM" info="BlackBerry,9860">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="8330" communication="RIM" info="BlackBerry,8330">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="9630" communication="RIM" info="BlackBerry,9630">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="9670" communication="RIM" info="BlackBerry,9630">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="8130" communication="RIM" info="BlackBerry,8130">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="9500" communication="RIM" info="BlackBerry,9500">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	<rs value="9520" communication="RIM" info="BlackBerry,9520">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+	
+    <!-- ===================  Sony Ericsson   ====================== -->
+    
+    <rs value="android" communication="ANDROID_TYPE_1" info="Android,Android">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"   policy="default"/>
+    	<module type="task"   policy="default"/>
+    	<module type="sms"   policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    </rs>
+    <rs value="" communication="PBAP_TYPE_1" info="PBAP,PBAP">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    <rs value="MotoA953" communication="PBAP_TYPE_1" info="Motorola,MileStone2">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    <rs value="MB525" communication="PBAP_TYPE_1" info="Motorola,MB525">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    <rs value="Undefined" communication="PBAP_TYPE_1" info="Samsung,I9000 Galaxys S">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    <rs value="GT-I9000" communication="PBAP_TYPE_1" info="Samsung,I9000 Galaxys S">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    <rs value="MB860" communication="PBAP_TYPE_1" info="Motorola,Atrix 4G">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    <rs value="SCH-U940/206" communication="PBAP_TYPE_1" info="Samsung,SCH-U940">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="SCH-U550/201" communication="PBAP_TYPE_1" info="Samsung,SCH-U550">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="SCH-U410/194" communication="PBAP_TYPE_1" info="Samsung,SCH-U410">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="SPH-M540/119" communication="PBAP_TYPE_1" info="Samsung,SPH-M540">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="SPH-M630/119" communication="PBAP_TYPE_1"  info="Samsung,SPH-M630">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="SPH-M800/172" communication="PBAP_TYPE_1" info="Samsung,SPH-M800">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="VX8800  204" communication="PBAP_TYPE_1" info="LG,VX8800">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="VX8350  157" communication="PBAP_TYPE_1" info="LG,VX8350">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="VX8560  97" communication="PBAP_TYPE_1" info="LG,VX8560">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="LG-LX160" communication="PBAP_TYPE_1" info="LG,LX160">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="VX9100  203" communication="PBAP_TYPE_1" info="LG,VX9100">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="VX10K  205" communication="PBAP_TYPE_1" info="LG,VX10K">
+    	<module type="pb"   policy="spec_5"/>
+    </rs>
+    <rs value="PocketPC" communication="PBAP_TYPE_1" info="HTC,PocketPC">
+    	<module type="pb"   policy="spec_4"/>
+    </rs>
+    <rs value="SmartPhone" communication="PBAP_TYPE_1" info="HTC,Snap">
+    	<module type="pb"   policy="spec_4"/>
+    </rs>
+    <rs value="Sony Ericsson U8i" communication="PBAP_TYPE_1" info="Sony Ericsson,Vivaz pro">
+    	<module type="pb"   policy="default"/>
+    </rs>
+    
+    
+    <rs value="610" communication="SNE_OBEX" info="Sony Ericsson,610">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="710" communication="SNE_OBEX" info="Sony Ericsson,710">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="890" communication="SNE_OBEX" info="Sony Ericsson,890">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="W395c" communication="SNE_OBEX" info="Sony Ericsson,W395c">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="S700 series" communication="SNE_OBEX" info="Sony Ericsson,S700">
+    	<module type="pb"   policy="spec_2"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<!--module type="photo"  policy="sne_file_4"/-->
+    </rs>
+    <rs value="Sony Ericsson 910" communication="SNE_OBEX" info="Sony Ericsson,910">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W900" communication="SNE_OBEX" info="Sony Ericsson,W900">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson T700" communication="TYPE_2" info="Sony Ericsson,T700">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson T707" communication="TYPE_2" info="Sony Ericsson,T707">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson C510" communication="SNE_OBEX" info="Sony Ericsson,C510">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson C702" communication="TYPE_2" info="Sony Ericsson,C702">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson C750" communication="SNE_OBEX" info="Sony Ericsson,C705">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson C902" communication="SNE_OBEX" info="Sony Ericsson,C902">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson C903" communication="SNE_OBEX" info="Sony Ericsson,C903">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson C905" communication="TYPE_2" info="Sony Ericsson,C905">
+    	<module type="pb"   policy="spec_1"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson G502" communication="TYPE_2" info="Sony Ericsson,G502">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson G705" communication="TYPE_2" info="Sony Ericsson,G705">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K300" communication="SNE_OBEX" info="Sony Ericsson,K300">
+    	<module type="pb"   policy="spec_1"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K310" communication="SNE_OBEX" info="Sony Ericsson,K310">
+    	<module type="pb"   policy="spec_1"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K320" communication="SNE_OBEX" info="Sony Ericsson,K320">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K510" communication="SNE_OBEX" info="Sony Ericsson,K510">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K550" communication="SNE_OBEX" info="Sony Ericsson,K550">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K610" communication="SNE_OBEX" info="Sony Ericsson,K610">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K660" communication="TYPE_2" info="Sony Ericsson,K660">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K700" communication="SNE_OBEX" info="Sony Ericsson,K700">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K770" communication="TYPE_2" info="Sony Ericsson,K770">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K850" communication="TYPE_2" info="Sony Ericsson,K850">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="K700 series" communication="SNE_OBEX" info="Sony Ericsson,K700">
+    	<module type="pb"   policy="spec_4"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<!--module type="photo"  policy="sne_file_5"/-->
+    </rs>
+    <rs value="Sony Ericsson K750" communication="SNE_OBEX" info="Sony Ericsson,K750">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<!--module type="photo"  policy="sne_file_4"/-->
+    </rs>
+    <rs value="Sony Ericsson K800" communication="SNE_OBEX" info="Sony Ericsson,K800">
+    	<module type="pb"   policy="spec_3"/>
+     	<module type="cal"  policy="spec_1"/>
+     	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+     	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K810" communication="SNE_OBEX" info="Sony Ericsson,K810">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson S500" communication="SNE_OBEX" info="Sony Ericsson,S500">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson T630" communication="SNE_OBEX" info="Sony Ericsson,T630">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+     	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson V600" communication="SNE_OBEX" info="Sony Ericsson,V600">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson V640" communication="SNE_OBEX" info="Sony Ericsson,V640">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson V630" communication="SNE_OBEX" info="Sony Ericsson,V630">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W300" communication="SNE_OBEX" info="Sony Ericsson,W300">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W350" communication="SNE_OBEX" info="Sony Ericsson,W350">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W380" communication="SNE_OBEX" info="Sony Ericsson,W380">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W395" communication="SNE_OBEX" info="Sony Ericsson,W395">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+    <rs value="Sony Ericsson W508" communication="SNE_OBEX" info="Sony Ericsson,W508">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W550" communication="SNE_OBEX" info="Sony Ericsson,W550">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W580" communication="SNE_OBEX" info="Sony Ericsson,W580">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W595" communication="SNE_OBEX" info="Sony Ericsson,W595">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W600" communication="SNE_OBEX" info="Sony Ericsson,W600">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W610" communication="SNE_OBEX" info="Sony Ericsson,W610">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W700" communication="SNE_OBEX" info="Sony Ericsson,W700">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<!--module type="photo"  policy="sne_file_4"/-->
+    </rs>
+    <rs value="Sony Ericsson W710" communication="SNE_OBEX" info="Sony Ericsson,W710">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W715" communication="TYPE_2" info="Sony Ericsson,W715">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W760" communication="TYPE_2" info="Sony Ericsson,W760">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W800" communication="SNE_OBEX" info="Sony Ericsson,W800">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<!--module type="photo"  policy="sne_file_4"/-->
+    </rs>
+    <rs value="Sony Ericsson W810" communication="SNE_OBEX" info="Sony Ericsson,W810">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<!--module type="photo"  policy="sne_file_4"/-->
+    </rs>
+    <rs value="Sony Ericsson W850" communication="SNE_OBEX" info="Sony Ericsson,W850">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W705" communication="TYPE_2" info="Sony Ericsson,W705">
+     	<module type="pb"   policy="spec_3"/>
+     	<module type="cal"  policy="spec_1"/>
+     	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W910" communication="TYPE_2" info="Sony Ericsson,W910">
+     	<module type="pb"   policy="spec_3"/>
+     	<module type="cal"  policy="spec_1"/>
+     	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W880" communication="SNE_OBEX" info="Sony Ericsson,W880">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W890" communication="TYPE_2" info="Sony Ericsson,W890">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W902" communication="SNE_OBEX" info="Sony Ericsson,W902">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W980" communication="TYPE_2" info="Sony Ericsson,W980">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_4"/-->
+    </rs>
+    <rs value="Sony Ericsson Z310" communication="SNE_OBEX" info="Sony Ericsson,Z310">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson U10" communication="TYPE_2" info="Sony Ericsson,Aino">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K790" communication="SNE_OBEX" info="Sony Ericsson,K790">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson T715" communication="TYPE_2" info="Sony Ericsson,T715">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W830" communication="SNE_OBEX" info="Sony Ericsson,W830">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    
+    <rs value="Sony Ericsson Z310a" communication="SNE_OBEX" info="Sony Ericsson,Z310a">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>    	
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z310i" communication="SNE_OBEX" info="Sony Ericsson,Z310i">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z520" communication="SNE_OBEX" info="Sony Ericsson,Z520">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z520i" communication="SNE_OBEX" info="Sony Ericsson,Z520i">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z525" communication="SNE_OBEX" info="Sony Ericsson,Z525">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z530" communication="SNE_OBEX" info="Sony Ericsson,Z530">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+    <rs value="Sony Ericsson Z550" communication="SNE_OBEX" info="Sony Ericsson,Z550">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z610" communication="SNE_OBEX" info="Sony Ericsson,Z610">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z710" communication="SNE_OBEX" info="Sony Ericsson,Z710">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z750" communication="TYPE_2" info="Sony Ericsson,Z750">
+    	<module type="pb"   policy="spec_3_1"/>
+    	<module type="cal"  policy="spec_1_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z770" communication="SNE_OBEX" info="Sony Ericsson,Z770">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson Z780" communication="SNE_OBEX" info="Sony Ericsson,Z780">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="T610 series" communication="SNE_OBEX" info="Sony Ericsson,T610">
+    	<module type="pb"   policy="spec_2"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+    <rs value="T630-T628" communication="SNE_OBEX" info="Sony Ericsson,T630">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+    <rs value="Z600" communication="SNE_OBEX" info="Sony Ericsson,Z600">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+    <rs value="Sony Ericsson V800" communication="SNE_OBEX" info="Sony Ericsson,V800">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="T610" communication="SNE_OBEX" info="Sony Ericsson,T610">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+    <rs value="Sony Ericsson T650" communication="SNE_OBEX" info="Sony Ericsson,T650">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson K530" communication="SNE_OBEX" info="Sony Ericsson,K530">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="770" communication="TYPE_2" info="Sony Ericsson,770">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W660" communication="SNE_OBEX" info="Sony Ericsson,W660">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="W890" communication="SNE_OBEX" info="Sony Ericsson,W890">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="W910" communication="TYPE_2" info="Sony Ericsson,W910">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W960i" communication="SNE_OBEX" info="Sony Ericsson,W960i">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+    <rs value="Sony Ericsson W995" communication="TYPE_2" info="Sony Ericsson,W995">
+    	<module type="pb"   policy="spec_3"/>
+    	<module type="cal"  policy="spec_1"/>
+    	<module type="sms"  policy="se_sms"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="sne_file_1"/-->
+    </rs>
+  
+    
+    <!-- ===================  Nokia   ====================== -->
+    
+    <rs value="Nokia 3250" communication="TYPE_1" info="Nokia,3250">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 500" communication="TYPE_CONML" info="Nokia,500">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-750" communication="TYPE_CONML" info="Nokia,500">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="Nokia E6" communication="TYPE_1" info="Nokia,E6">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-609" communication="TYPE_1" info="Nokia,E6">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia X7" communication="TYPE_1" info="Nokia,X7">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-707" communication="TYPE_1" info="Nokia,X7">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="Nokia 3600 slide" communication="TYPE_S40_OBEX_1" info="Nokia,3600 slide">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="obex_1"/>
+    </rs>
+    <rs value="Nokia 5320" communication="TYPE_1" info="Nokia,5320">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-409" communication="TYPE_1" info="Nokia,5320">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5630" communication="TYPE_1" info="Nokia,5630">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-431" communication="TYPE_1" info="Nokia,5630">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5700" communication="TYPE_1" info="Nokia,5700 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-230" communication="TYPE_1" info="Nokia,5700 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5800 XpressMusic" communication="TYPE_1" info="Nokia,5800 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-356" communication="TYPE_1" info="Nokia,5800 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6110" communication="TYPE_1" info="Nokia,6110">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-122" communication="TYPE_1" info="Nokia,6110">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6121" communication="TYPE_1" info="Nokia,6121(4) classic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-308" communication="TYPE_1" info="Nokia,6121 classic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-422" communication="TYPE_1" info="Nokia,6124 classic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6122c" communication="TYPE_1" info="Nokia,6122c">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-425" communication="TYPE_1" info="Nokia,6122c">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6210 Navigator" communication="TYPE_1" info="Nokia,6210 Navigator">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6220c" communication="TYPE_1"  info="Nokia,6220c">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-25" communication="TYPE_6" info="Nokia,6260">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6290" communication="TYPE_1" info="Nokia,6290">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-176" communication="TYPE_1" info="Nokia,6290">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6300" communication="TYPE_4" info="Nokia,6300">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6500s-1" communication="TYPE_4" info="Nokia,6500s">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6600" communication="TYPE_1" info="Nokia,6600">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7610s" communication="TYPE_4" info="Nokia,7610 Supernova">
+     	<module type="pb"   policy="default"/>
+     	<module type="cal"  policy="default"/>
+     	<module type="sms"  policy="default"/>
+    </rs>
+    <rs value="RM-354" communication="TYPE_4" info="Nokia,7610 Supernova">
+     	<module type="pb"   policy="default"/>
+     	<module type="cal"  policy="default"/>
+     	<module type="sms"  policy="default"/>
+    </rs>
+    <rs value="Nokia 6650d-1c" communication="TYPE_1" info="Nokia,6650d">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    </rs>
+    <rs value="RM-400" communication="TYPE_1" info="Nokia,6650d">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E5-00" communication="TYPE_1" info="Nokia,E5-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E5-00.2" communication="TYPE_1" info="Nokia,E5-00.2">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-632" communication="TYPE_1" info="Nokia,E5-00.2">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia X5-01" communication="TYPE_1" info="Nokia,X5-01">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-627" communication="TYPE_1" info="Nokia,X5-01">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E50" communication="TYPE_1" info="Nokia,E50">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    </rs>
+    <rs value="RM-171" communication="TYPE_1" info="Nokia,E50">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+    </rs>
+    <rs value="Nokia E51" communication="TYPE_1" info="Nokia,E51">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E60" communication="TYPE_1" info="Nokia,E60">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    </rs>
+    <rs value="RM-49" communication="TYPE_1" info="Nokia,E60">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    </rs>
+    <rs value="Nokia 5530 XpressMusic" communication="TYPE_1" info="Nokia,5530 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-504" communication="TYPE_1" info="Nokia,5530 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N86 8MP" communication="TYPE_1" info="Nokia,N86 8MP">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5230" communication="TYPE_1" info="Nokia,5230">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5233" communication="TYPE_1" info="Nokia,5233">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-625" communication="TYPE_1" info="Nokia,5233">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5730 XpressMusic" communication="TYPE_1" info="Nokia,5730 XpressMusic">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E72-1" communication="TYPE_1" info="Nokia,E72-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="RM-530" communication="TYPE_1" info="Nokia,E72-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="Nokia E72" communication="TYPE_1" info="Nokia,E72">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="Nokia N93i" communication="TYPE_1" info="Nokia,N93i">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N93" communication="TYPE_1" info="Nokia,N93">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-153" communication="TYPE_1" info="Nokia,N93">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N93-1" communication="TYPE_1" info="Nokia,N93-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-55" communication="TYPE_1" info="Nokia,N93-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E61i-1" communication="TYPE_1" info="Nokia,E61i-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+     </rs>
+    <rs value="Nokia E62" communication="TYPE_1" info="Nokia,E62">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E63" communication="TYPE_1" info="Nokia,E63">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-437" communication="TYPE_1" info="Nokia,E63">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia C7-00" communication="TYPE_CONML" info="Nokia,C7-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-675" communication="TYPE_CONML" info="Nokia,C7-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="C2-03" communication="TYPE_S40_OBEX_1" info="Nokia,C2-03">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-702" communication="TYPE_S40_OBEX_1" info="Nokia,C2-03">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    	<module type="task"  policy="default"/>
+    </rs>
+    <rs value="Nokia C5-03" communication="TYPE_1" info="Nokia,C5-03">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-697" communication="TYPE_1" info="Nokia,C5-03">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+     <rs value="Nokia N71" communication="TYPE_1" info="Nokia,N71">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E65" communication="TYPE_1" info="Nokia,E65">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E66" communication="TYPE_1" info="Nokia,E66">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E66-1" communication="TYPE_1" info="Nokia,E66-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-343" communication="TYPE_1" info="Nokia,E66-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E71" communication="TYPE_1" info="Nokia,E71">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E75" communication="TYPE_1" info="Nokia,E75">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E90" communication="TYPE_1" info="Nokia,E90">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RA-6" communication="TYPE_1" info="Nokia,E90">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N75" communication="TYPE_1" info="Nokia,N75">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N76" communication="TYPE_1" info="Nokia,N76">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-135" communication="TYPE_1" info="Nokia,N76">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N77" communication="TYPE_1" info="Nokia,N77">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-194" communication="TYPE_1" info="Nokia,N77">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N78" communication="TYPE_1" info="Nokia,N78">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N79" communication="TYPE_1" info="Nokia,N79">
+    	<module type="pb"   policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N80-1" communication="TYPE_1" info="Nokia,N80-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-92" communication="TYPE_1" info="Nokia,N80-1">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N82" communication="TYPE_1" info="Nokia,N82">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-313" communication="TYPE_1" info="Nokia,N82">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N81" communication="TYPE_1"  info="Nokia,N81">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N85" communication="TYPE_1"  info="Nokia,N85">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-333" communication="TYPE_1" info="Nokia,N85">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N90" communication="TYPE_6" info="Nokia,N90">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+     	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-42" communication="TYPE_6" info="Nokia,N90">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    </rs>
+     <rs value="Nokia N91" communication="TYPE_1" info="Nokia,N91">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+     <rs value="RM-158" communication="TYPE_1" info="Nokia,N91">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N95 8GB" communication="TYPE_1" info="Nokia,N95 8GB">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-320" communication="TYPE_1" info="Nokia,N95 8GB">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N95" communication="TYPE_1" info="Nokia,N95">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-159" communication="TYPE_1" info="Nokia,N95">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N96-1" communication="TYPE_1" info="Nokia,N96">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-247" communication="TYPE_1"  info="Nokia,N96">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="spec_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-506" communication="TYPE_1"  info="Nokia,N97">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+       	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N97" communication="TYPE_1"  info="Nokia,N97">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E6-00" communication="TYPE_CONML"  info="Nokia,E6-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-609" communication="TYPE_CONML"  info="Nokia,E6-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia X7-00" communication="TYPE_CONML"  info="Nokia,X7-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value=" RM-707" communication="TYPE_CONML"  info="Nokia,X7-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia X6-00" communication="TYPE_1"  info="Nokia,X6-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia X6 8G" communication="TYPE_1"  info="Nokia,X6 8G">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="Nokia X3-00" communication="TYPE_S40_OBEX_1"  info="Nokia,X3-00">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia C6-01" communication="TYPE_1"  info="Nokia,C6-01">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia C6-00" communication="TYPE_1"  info="Nokia,C6-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-612" communication="TYPE_1"  info="Nokia,C6-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E7-00" communication="TYPE_1"  info="Nokia,E7-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-626" communication="TYPE_1"  info="Nokia,E7-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N8-00" communication="TYPE_1"  info="Nokia,N8-00">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N97-3" communication="TYPE_1"  info="Nokia,N97-3">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N97 mini" communication="TYPE_1"  info="Nokia,N97 mini">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia" communication="TYPE_1"  info="Nokia,Nokia">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="NSE-3" communication="TYPE_1" info="Nokia,NSE-3">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N73" communication="TYPE_1" info="Nokia,N73">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N73-1" communication="TYPE_1" info="Nokia,N73">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-133" communication="TYPE_1" info="Nokia, N73">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N73-5" communication="TYPE_1" info="Nokia, N73">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+     	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-132" communication="TYPE_1" info="Nokia, N73">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<!-- module type="bookmark"  policy="default"/-->
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6220" communication="TYPE_6"  info="Nokia,6220">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6288" communication="TYPE_4" info="Nokia,6288">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6234" communication="TYPE_4" info="Nokia,6234">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6131" communication="TYPE_4" info="Nokia,6131">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6555b" communication="TYPE_4" info="Nokia,6555b">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7310 Supernova" communication="TYPE_S40_OBEX_1" info="Nokia,7310 Supernova">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5130c-2" communication="TYPE_S40_OBEX_1" info="Nokia,5130c">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6301" communication="TYPE_S40_OBEX_1" info="Nokia,6301">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+       	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6280" communication="TYPE_4" info="Nokia,6280">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6085" communication="TYPE_4" info="Nokia,6085">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 3120 classic" communication="TYPE_S40_OBEX_1" info="Nokia,3120 classic">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+       	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 8600 Luna" communication="TYPE_4" info="Nokia,8600 Luna">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 8800e-1" communication="TYPE_S40_OBEX_2" info="Nokia,8800e">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_2"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6133" communication="TYPE_4"  info="Nokia,6133">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+       	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6111" communication="TYPE_4"  info="Nokia,6111">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6233" communication="TYPE_4"  info="Nokia,6233">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7900" communication="TYPE_S40_OBEX_2" info="Nokia,7900">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_2"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7500" communication="TYPE_4" info="Nokia,7500">
+       	<module type="pb"   policy="spec_1"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 3109c" communication="TYPE_4"  info="Nokia,3109c">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6208c" communication="TYPE_S40_OBEX_1"  info="Nokia,6208c">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+     	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6230i" communication="TYPE_S40_FBUS_1"  info="Nokia,6230i">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="fbus_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6265i" communication="TYPE_4"  info="Nokia,6265i">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7390" communication="TYPE_4"  info="Nokia,7390">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6600 fold" communication="TYPE_S40_OBEX_1"  info="Nokia,6600 fold">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 3555b" communication="TYPE_4"  info="Nokia,3555b">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7210c" communication="TYPE_S40_OBEX_1"  info="Nokia,7210c">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6263" communication="TYPE_4"  info="Nokia,6263">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia E61" communication="TYPE_1"  info="Nokia,E61">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="default"/>
+      	<!-- module type="bookmark"  policy="default"/-->
+    </rs>
+
+    <rs value="Nokia 5610d-1" communication="TYPE_S40_OBEX_1"  info="Nokia,5610d">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="obex_1"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6126" communication="TYPE_4"  info="Nokia,6126">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+       	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 5300" communication="TYPE_4"  info="Nokia,5300">
+       	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>    
+    	<module type="sms"  policy="default"/>
+      	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>    
+    <rs value="Nokia 6270" communication="TYPE_6"  info="Nokia,6270">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 9300" communication="TYPE_6"  info="Nokia,9300">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 9500" communication="TYPE_6"  info="Nokia,9500">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    </rs>
+    <rs value="Nokia N70" communication="TYPE_6"  info="Nokia,N70">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N70-1" communication="TYPE_6"  info="Nokia,N70">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-84" communication="TYPE_6"  info="Nokia,N70">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N70-5" communication="TYPE_6"  info="Nokia,N70">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-99" communication="TYPE_6"  info="Nokia,N70">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia N72" communication="TYPE_6"  info="Nokia,N72">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-180" communication="TYPE_6"  info="Nokia,N72">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6620" communication="TYPE_6"  info="Nokia,6620">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="NHL-12" communication="TYPE_6"  info="Nokia,6620">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    </rs>
+    <rs value="Nokia 6681" communication="TYPE_6"  info="Nokia,6681">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-1" communication="TYPE_6"  info="Nokia,6630">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-36" communication="TYPE_6"  info="Nokia,6680">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RM-58" communication="TYPE_6"  info="Nokia,6682">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 7610" communication="TYPE_6"  info="Nokia,7610">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="RH-51" communication="TYPE_6"  info="Nokia,7610">
+     	<module type="pb"   policy="default"/>
+     	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 3230" communication="TYPE_6"  info="Nokia,3230">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6120" communication="TYPE_6"  info="Nokia,6120">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <rs value="Nokia 6230" communication="TYPE_S40_FBUS_1"  info="Nokia,6230">
+    	<module type="pb"   policy="default"/>
+    	<module type="cal"  policy="default"/>
+    	<module type="sms"  policy="fbus_1"/>
+    	<module type="bookmark"  policy="default"/>
+    	<!--module type="photo"  policy="nokia_file_1"/-->
+    </rs>
+    <!-- ===================  SAMASUNG   ====================== -->
+    <rs value="SAMSUNG SGH-E590" communication="TYPE_7"  info="SAMASUNG,SGH-E590">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<!--inbox can not be read. RMS not support. module type="sms"  policy="samsung_sms_J708I_read"/-->
+    </rs>
+    <rs value="SAMSUNG SGH-D900" communication="TYPE_7" info="SAMASUNG,SGH-D900">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_notime"/>
+    	<module type="sms"  policy="samsung_sms_d900_read"/>
+    </rs>
+    <rs value="SAMSUNG SGH-F268" communication="TYPE_7_F268" info="SAMASUNG,SGH-F268">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_notime"/>
+    	<module type="sms"  policy="samsung_sms_d900_read"/>
+    </rs>
+    <rs value="SAMSUNG SGH-E740" communication="TYPE_7" info="SAMASUNG,SGH-E740">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<module type="sms"  policy="samsung_sms_J708I_read"/>
+    </rs>
+    <rs value="SAMSUNG SGH-E380" communication="TYPE_7" info="SAMASUNG,SGH-E380">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    </rs>
+    
+    <rs value="SAMSUNG SGH-T339" communication="TYPE_7" info="SAMASUNG,SGH-T339">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<module type="sms"  policy="samsung_sms_d900_read"/>
+    </rs>
+
+    <rs value="SAMSUNG SGH-F488E" communication="TYPE_7" info="SAMASUNG,SGH-F488E">
+     	<module type="pb"   policy="samsung_mem_pb_1R"/>
+     	<module type="cal"  policy="samsung_cal_ORG_notime"/>
+     	<module type="sms"  policy="samsung_sms_d900_read"/>
+    </rs>
+
+    <rs value="SAMSUNG SGH-E848i" communication="TYPE_7" info="SAMASUNG,SGH-E848i">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<module type="sms"  policy="samsung_sms_d900_read"/>
+    </rs>
+    
+    <rs value="SAMSUNG SGH-J708i" communication="TYPE_8" info="SAMASUNG,SGH-J708i">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<module type="sms"  policy="samsung_sms_J708I_read"/>
+    </rs>
+    <rs value="SAMSUNG SGH-J700" communication="TYPE_8" info="SAMASUNG,SGH-J700">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_notime"/>
+    	<module type="sms"  policy="samsung_sms_J708I_read"/>
+    </rs>
+  
+    <rs value="SAMSUNG SGH-G600" communication="TYPE_8" info="SAMASUNG,SGH-G600">
+    	<module type="pb"   policy="samsung_mem_pb_1R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<module type="sms"  policy="samsung_sms_J708I_read"/>
+    </rs>
+    <rs value="SGH-G800" communication="SAMSUNG_MOBEX_TYPE_1" info="SAMASUNG,SGH-G800">
+    	<module type="pb"   policy="spec_6"/>
+    	<module type="cal"   policy="spec_1"/>
+    	<module type="sms"   policy="default"/>
+    </rs>
+    <rs value="GT-M8800" communication="SAMSUNG_MOBEX_TYPE_1" info="SAMASUNG,GT-M8800">
+    	<module type="pb"   policy="spec_8"/>
+    	<module type="cal"   policy="spec_1"/>
+    	<module type="sms"   policy="default"/>
+    </rs>
+    <rs value="SGH-U900" communication="SAMSUNG_MOBEX_TYPE_1" info="SAMASUNG,SGH-U900">
+    	<module type="pb"   policy="spec_7"/>
+    	<module type="cal"   policy="spec_1"/>
+    	<module type="sms"   policy="default"/>
+    </rs>
+     
+    <rs value="SGH-P520" communication="TYPE_9" info="SAMASUNG,SGH-P520">
+    	<module type="pb"   policy="samsung_mem_pb_1L"/>
+    	<module type="cal"  policy="samsung_cal_SSH_read"/>
+    	<module type="sms"  policy="samsung_sms_p520_read"/>
+    </rs>
+    <!-- 在Droid下测试E570不稳定，常不能返回returnString -->
+    <rs value="SGH-E570" communication="TYPE_11" info="SAMASUNG,SGH-E570">
+    	<module type="pb"   policy="samsung_mem_pb_12L"/>
+    	<module type="cal"  policy="samsung_cal_SSH_read"/>
+    	<module type="sms"  policy="samsung_sms_e570_read"/>
+    </rs>
+    	
+    <rs value="SAMSUNG SGH-T729" communication="TYPE_12" info="SAMASUNG,SGH-T729">
+    	<module type="pb"   policy="samsung_mem_pb_2R"/>
+    	<module type="cal"  policy="samsung_cal_ORG_read"/>
+    	<module type="sms"  policy="samsung_sms_d900_read"/>
+    </rs>
+    
+    <rs value="Beat" communication="TYPE_14" info="SAMASUNG,Beat">
+    	<module type="pb"   policy="samsung_mem_pb_12L"/>
+    	<module type="cal"  policy="samsung_cal_SSH_read"/>
+    	<module type="sms"  policy="samsung_sms_p520_read"/>
+    </rs>
+    <rs value="SGH-Z560" communication="SAM_SYNCML_TYPE_1" info="SAMASUNG,SGH-Z560">
+    	<module type="pb"   policy="spec_2"/>
+    	<module type="cal"  policy="default"/>
+    </rs>
+
+    <!-- ===================  LG   ====================== -->
+    <rs value="KG800" communication="TYPE_10" info="LG,KG800">
+    	<module type="pb"   policy="LGKG_mem_pb_1"/>
+    </rs>
+    <!-- 不稳定 
+    <rs value="KF600" communication="TYPE_13">
+    	<module type="pb"   policy="LGKF_mem_pb_1"/>
+    </rs>
+    -->
+    <!-- ===================  MOTO V3XX  ====================== -->
+    <rs value="RAZRV3xxv" communication="TYPE_15" info="Motorola,RAZRV3xxv">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_v3xx"/>
+    	<module type="sms"   policy="moto_p2k_sms_read"/>
+    </rs>
+    <rs value="RAZRV3xx" communication="TYPE_15" info="Motorola,RAZRV3xx">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_v3xx"/>
+    	<module type="sms"   policy="moto_p2k_sms_read"/>
+    </rs>
+    <rs value="V3" communication="TYPE_16" info="Motorola,V3">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="sms"   policy="moto_p2k_sms_read"/>
+    </rs>
+    <rs value="W490" communication="TYPE_26" info="Motorola,W490">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_read"/>
+    	<module type="sms"   policy="moto_p2k_sms_read"/>
+    </rs>
+    <rs value="VE20" communication="TYPE_17" info="Motorola,VE20">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    </rs>
+    <rs value="MOTOZ9" communication="TYPE_15" info="Motorola,Z9">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_read"/>
+    	<module type="sms"   policy="moto_p2k_sms_read"/>
+    </rs>
+    <rs value="V3c Rev2" communication="TYPE_18" info="Motorola, V3c">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_read"/>
+    	<!-- Do not support SMS. Because SMS is unstable.(Refer to RMS Spec)  -->
+    </rs>
+    <rs value="Motorola CDMA V9m Phone" communication="TYPE_18" info="Motorola, CDMA V9m">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_read"/>
+    	<!-- Do not support SMS. Because SMS is unstable.(Refer to RMS Spec)  -->
+    </rs>
+    <rs value="Motorola CDMA V3c Rev2 Phone" communication="TYPE_18" info="Motorola,CDMA V3c">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_pb_read"/>
+    	<!-- Do not support SMS. Because SMS is unstable.(Refer to RMS Spec)  -->
+    </rs>
+    <rs value="Motorola V3m-Sprint Phone" communication="TYPE_19" info="Motorola,V3m-Sprint">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="Motorola V3s Phone" communication="TYPE_20" info="Motorola,V3s">
+    	<module type="pb"   policy="moto_v3s_pb_read"/>    	
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+
+
+    <rs value="Motorola CDMA L7c phone" communication="TYPE_24" info="Motorola,CDMA L7c">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="Motorola CDMA Z6m Phone" communication="TYPE_21" info="Motorola,CDMA Z6m">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="L9" communication="TYPE_22" info="Motorola,L9">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    </rs>
+    <rs value="Motorola CDMA Z6c Phone" communication="TYPE_19" info="Motorola,CDMA Z6c">
+    	<module type="pb"   policy="moto_z6c_pb_read"/>
+    	<module type="cal"   policy="moto_z6c_cal_read"/>
+    </rs>
+    <rs value="Motorola CDMA e815 Phone" communication="TYPE_19" info="Motorola,CDMA E815">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="Motorola SLV-L7c Phone" communication="TYPE_19" info="Motorola,SLV-L7c">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="L6" communication="TYPE_23" info="Motorola,L6">
+    	<module type="pb"   policy="moto_l6_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="Motorola CDMA Z6tv Phone" communication="TYPE_19" info="Motorola,CDMA Z6tv">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    	<module type="cal"   policy="moto_v3m_cal_read"/>
+    </rs>
+    <rs value="K3" communication="TYPE_19" info="Motorola,K3">
+    	<module type="pb"   policy="moto_v3m_pb_read"/>
+    </rs>
+    <rs value="Z3" communication="TYPE_22" info="Motorola,Z3">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    </rs>
+
+    <rs value="Motorola V9mS Phone" communication="TYPE_25" info="Motorola,V9mS">
+    	<module type="pb"   policy="moto_p2k_pb_read"/>
+    	<module type="cal"   policy="moto_p2k_cal_read"/>
+    </rs>
+<!-- Sharp Phone -->
+    <rs value="770SH" communication="SHARP_TYPE_1" info="Sharp,770SH">
+    	<module type="pb"   policy="spec_6"/>
+    	<module type="cal"   policy="spec_1"/>
+    </rs>
+    <rs value="GX40" communication="SHARP_TYPE_1" info="Sharp,GX40">
+    	<module type="pb"   policy="spec_6"/>
+    	<module type="cal"   policy="default"/>
+    </rs>
+    <rs value="EM30_CMCC" communication="MOT_SYNCML_TYPE_1" info="Motorola,EM30">
+    	<module type="pb"   policy="spec_6"/>
+    	<module type="cal"   policy="spec_6"/>
+    	<module type="sms"  policy="se_sms"/>
+    </rs>
+
+    
+</returnstrings>
+

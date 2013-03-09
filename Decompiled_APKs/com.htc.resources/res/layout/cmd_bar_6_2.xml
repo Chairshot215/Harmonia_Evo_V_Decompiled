@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cmd_bar_6" android:background="@drawable/common_sub_panel_navbar_75" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" />
+    <ImageButton android:id="@id/cmd_bar_imgbtn_1" android:background="?attr_command_bar_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" />
+    <View android:gravity="center" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/cmd_bar_imgbtn_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_five_btn_margin" style="?com.htc:commandBarImageButtonStyle" />
+    <View android:gravity="center" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/cmd_bar_imgbtn_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_five_btn_margin" style="?com.htc:commandBarImageButtonStyle" />
+    <View android:gravity="center" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/cmd_bar_imgbtn_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_five_btn_margin" style="?com.htc:commandBarImageButtonStyle" />
+    <View android:gravity="center" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_five_btn_margin" android:layout_marginRight="@dimen/cmd_bar_two_btn_margin">
+        <ImageButton android:id="@id/cmd_bar_imgbtn_5" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?com.htc:commandBarImageButtonStyle" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/titleTextColor" android:id="@id/cmd_bar_imgbtn_5_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/title_text_shadow_style" />
+    </RelativeLayout>
+</LinearLayout>

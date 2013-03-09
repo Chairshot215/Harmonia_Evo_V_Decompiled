@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarText android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <com.htc.widget.HtcListView android:id="@id/messages" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:stackFromBottom="false" android:layout_below="@id/header" style="@style/htc_listview_style" />
+    <RelativeLayout android:gravity="center" android:id="@id/no_sim_view" android:background="#ff1e1e1e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <ImageView android:id="@id/sim_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/common_icon_fullscreen_no_sim" />
+        <TextView android:gravity="center" android:paddingBottom="@dimen/empty_message_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_sim_card" android:layout_below="@id/sim_icon" style="@com.htc:style/darklist_primary_l" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@id/empty_message" android:background="#ff1e1e1e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cust_sim_empty" android:layout_below="@id/header" style="@com.htc:style/darklist_primary_m" />
+</RelativeLayout>

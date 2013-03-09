@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_vnotes_settings_form" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.coremobility.app.customui.CM_PreferenceGroup android:key="preference_subscription" />
+    <PreferenceScreen android:title="@string/preference_title_data_consent_agreement" android:key="preference_data_consent" android:summary="@string/preference_summary_data_consent_agree" />
+    <PreferenceScreen android:title="@string/preference_title_change_greeting" android:key="preference_change_greeting" android:summary="@string/preference_summary_change_greeting" />
+    <PreferenceScreen android:title="@string/preference_record_greeting" android:key="preference_record_greeting" android:summary="@string/preference_record_greeting_summary">
+        <PreferenceScreen android:title="@string/preference_greeting_name" android:key="preference_greeting_name" android:summary="@string/preference_greeting_name_summary" />
+        <PreferenceScreen android:title="@string/preference_greeting_unavailable" android:key="preference_greeting_unavailable" android:summary="@string/preference_greeting_unavailable_summary" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_notifications_text" android:summary="@string/preference_notifications_text_summary">
+        <intent android:targetPackage="com.coremobility.app.vnotes" android:action="android.intent.action.MAIN" android:targetClass="com.coremobility.app.vnotes.CM_VnoteNotificationSettingsForm" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_title_social_accounts" android:key="preference_social_accounts" android:summary="@string/preference_summary_social_accounts">
+        <intent android:targetPackage="com.coremobility.app.vnotes" android:action="android.intent.action.MAIN" android:targetClass="com.coremobility.app.vnotes.SM_SocialAccountSettings" />
+    </PreferenceScreen>
+    <ListPreference android:entries="@array/preference_inbox_sortorder_entries" android:title="@string/preference_title_inbox_sort_order" android:key="preference_inbox_sort_order" android:defaultValue="@string/id_sort_order_newest_first" android:dialogTitle="@string/preference_title_inbox_sort_order" android:negativeButtonText="@string/dialog_button_cancel" android:entryValues="@array/preference_inbox_sortorder_values" />
+    <CheckBoxPreference android:title="@string/preference_title_contact_pictures" android:key="preference_show_contact_pictures" android:defaultValue="true" android:summaryOn="@string/preference_summary_contact_pictures_on" android:summaryOff="@string/preference_summary_contact_pictures_off" />
+    <PreferenceScreen android:title="@string/preference_title_playback_screen" android:summary="@string/preference_summary_on_playback_screen">
+        <intent android:targetPackage="com.coremobility.app.vnotes" android:action="android.intent.action.MAIN" android:targetClass="com.coremobility.app.vnotes.SM_PlaybackSettingsForm" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/preference_title_speakerphone" android:key="preference_speakerphone" android:summary="@string/preference_summary_speakerphone_off" android:defaultValue="false" android:summaryOn="@string/preference_summary_speakerphone_on" android:summaryOff="@string/preference_summary_speakerphone_off" />
+    <PreferenceScreen android:title="@string/preference_title_from_name" android:key="preference_from_name" android:summary="@string/preference_summary_from_name" />
+    <PreferenceScreen android:title="@string/preference_carboncopy_text" android:key="preference_autoforward_screen" android:summary="@string/preference_carboncopy_text_summary">
+        <intent android:targetPackage="com.coremobility.app.vnotes" android:action="android.intent.action.MAIN" android:targetClass="com.coremobility.app.vnotes.CM_VnoteAutoForwardSettingsForm" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preference_title_upgrade" android:key="preference_upgrade" />
+    <PreferenceScreen android:title="@string/preference_title_help" android:key="preference_help" />
+    <PreferenceScreen android:title="@string/preference_title_about" android:key="preference_about" />
+</PreferenceScreen>

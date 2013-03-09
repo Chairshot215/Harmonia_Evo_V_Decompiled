@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.Title1 android:orientation="vertical" android:id="@id/title_1" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="?com.htc:titleBarBackgroundStyleSmall">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/title_1_pbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_margin_small" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmallTitle" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/title_primary_m" android:textColor="@color/titleShadowColor" android:gravity="center" android:id="@id/title_1_txt_1x1_shadow" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+            <TextView android:textSize="@dimen/title_primary_m" android:textColor="@color/titleTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/title_1_txt_1x1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+            <Button android:textSize="@dimen/title_button_text_size" android:textColor="@color/titleTextColor" android:gravity="center" android:id="@id/title_1_btn_1x1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_margin_small" android:layout_toRightOf="@id/title_1_txt_1x1" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/title_1line_remainingWord_text_size" android:textColor="@color/titleShadowColor" android:id="@id/title_1_txt_1x2_shadow" android:paddingBottom="3.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0px" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/title_1line_remainingWord_text_size" android:textColor="@color/titleTextColor" android:id="@id/title_1_txt_1x2" android:paddingBottom="2.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0px" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/title_1_pbar_1x1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0px" android:layout_marginRight="@dimen/title_margin_small" android:layout_alignParentRight="true" style="?android:attr/progressBarStyleSmallTitle" />
+        <ImageView android:id="@id/title_1_img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/title_margin_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/title_margin_small" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/title_1_img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Button android:id="@id/btn_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?com.htc:titleBarButtonStyleSearch" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.htc.widget.Title1>

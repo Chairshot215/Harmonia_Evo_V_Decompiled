@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="70.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/personal_level" android:src="@drawable/ic_email_caret_single" style="@style/PersonalIndicatorStyle" />
+        <TextView android:textSize="@dimen/senders_font_size" android:id="@id/senders" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/long_string" android:lines="1" android:layout_toRightOf="@id/personal_level" style="@style/SendersStyle" />
+        <LinearLayout android:layout_width="@dimen/total_conversationbar_width" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/labels_font_size" android:id="@id/labels" android:paddingTop="@dimen/labels_padding_top" android:layout_width="@dimen/max_total_label_width" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:text="@string/long_string" android:lines="1" />
+            <ImageView android:id="@id/paperclip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0sp" android:src="@drawable/ic_attachment_holo_light" />
+            <TextView android:textSize="@dimen/date_font_size" android:id="@id/date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0sp" android:layout_marginRight="16.0dip" android:text="@string/long_string" android:lines="1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/checkmark" android:src="@drawable/btn_check_on_normal_holo_light" style="@style/CheckmarkStyle" />
+        <TextView android:id="@id/subject" android:layout_width="@dimen/subject_width" android:text="@string/long_string" android:lines="2" style="@style/SubjectStyle" />
+        <ImageView android:id="@id/star" android:src="@drawable/btn_star_off_normal_gmail_holo_light" style="@style/StarStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/addressContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/card_address_text_view" android:text="@string/card_address_address1" style="@style/card_form_padding" />
+    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/card_address" android:hint="@string/card_address_address1" android:singleLine="true" android:capitalize="words" style="@style/edittext" />
+    <View style="@style/divider" />
+    <TextView android:id="@id/lbl_card_city" android:text="@string/card_address_city" style="@style/card_form_padding" />
+    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/card_city" android:hint="@string/card_address_city" android:singleLine="true" android:capitalize="words" style="@style/edittext" />
+    <View style="@style/divider" />
+    <TextView android:id="@id/lbl_card_state" android:text="@string/card_address_state" style="@style/card_form_padding" />
+    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/card_state" android:hint="@string/card_county_hint" android:singleLine="true" android:capitalize="words" style="@style/edittext" />
+    <View style="@style/divider" />
+    <TextView android:id="@id/lbl_card_zip" android:text="@string/card_address_zip" style="@style/card_form_padding" />
+    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/card_zip" android:longClickable="false" android:hint="@string/card_address_zip" android:lines="1" android:maxLength="8" android:inputType="textPostalAddress" style="@style/edittext" />
+    <View style="@style/divider" />
+    <TextView android:id="@id/lbl_card_country" android:text="@string/card_address_country" style="@style/card_form_padding" />
+    <EditText android:enabled="false" android:textSize="@com.htc:dimen/input_default_m" android:id="@id/card_country" android:focusable="false" android:focusableInTouchMode="false" android:hint="@string/card_address_country" android:singleLine="true" android:capitalize="words" style="@style/edittext" />
+    <View style="@style/divider" />
+</LinearLayout>

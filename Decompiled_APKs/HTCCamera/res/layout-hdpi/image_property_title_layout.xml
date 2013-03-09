@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:paddingTop="@dimen/image_property_top_margin_portrait" android:layout_width="fill_parent" android:layout_height="@dimen/title_space" android:layout_marginLeft="@dimen/image_property_left_margin_portrait" android:layout_marginRight="@dimen/image_property_right_margin_portrait">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/image_property_width_sharpnes" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:src="@drawable/icon_sharpness" />
+            <TextView android:ellipsize="marquee" android:id="@id/title_text_sharpness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:text="@string/setting_sharpness" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/image_property_width_saturation" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:src="@drawable/icon_saturation" />
+            <TextView android:ellipsize="marquee" android:id="@id/title_text_saturation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:text="@string/setting_saturation" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/image_property_width_contrast" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:src="@drawable/icon_contrast" />
+            <TextView android:ellipsize="marquee" android:id="@id/title_text_contrast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:text="@string/setting_contrast" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/image_property_width_brightness" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:src="@drawable/icon_brightness" />
+            <TextView android:ellipsize="marquee" android:id="@id/title_text_brightness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0px" android:text="@string/brightness_level_tile" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="@dimen/tumbler_base_width" android:layout_marginLeft="@dimen/image_property_left_margin_portrait" android:layout_marginTop="@dimen/title_space">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:paddingRight="@dimen/image_property_value_right_padding" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/edge_space" android:layout_height="fill_parent" android:layout_marginRight="@dimen/image_property_value_right_margin">
+            <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_p2" android:layout_weight="0.0" />
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_p1" android:layout_weight="0.0" />
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_0" android:layout_weight="0.0" />
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_m1" android:layout_weight="0.0" />
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/property_level_m2" android:layout_weight="0.0" />
+        </LinearLayout>
+        <ImageView android:gravity="center" android:layout_width="@dimen/line_space" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/slider_level_line_marginLeft1" android:src="@drawable/slider_level_line" android:scaleType="center" />
+        <ImageView android:gravity="center" android:layout_width="@dimen/line_space" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/slider_level_line_marginLeft2" android:src="@drawable/slider_level_line" />
+        <ImageView android:gravity="center" android:layout_width="@dimen/line_space" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/slider_level_line_marginLeft3" android:src="@drawable/slider_level_line" />
+        <ImageView android:gravity="left" android:layout_width="@dimen/edge_space" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/level_5lines_left_margin" android:src="@drawable/slider_level_5lines" />
+    </LinearLayout>
+</RelativeLayout>

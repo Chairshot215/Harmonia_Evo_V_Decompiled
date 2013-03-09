@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="305256826" android:versionName="3.5.2211282659.256826" package="com.htc.UpgradeSetup"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BACKUP_DATA" />
+    <uses-permission android:name="htc.permission.WRITE_CUSTOMIZATION_SETTINGS" />
+    <restore-components>
+        <item name=".UpgradeSetupActivity" enabled="true" />
+    </restore-components>
+    <application android:label="@string/htc_private_app" android:taskAffinity="">
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name=".UpgradeSetupActivity" android:enabled="false" android:screenOrientation="nosensor" android:configChanges="locale|mcc|mnc|keyboardHidden|orientation">
+            <intent-filter android:priority="99">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

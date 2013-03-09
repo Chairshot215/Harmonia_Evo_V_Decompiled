@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/List_Item_Height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/linearLayout_spinner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcSpinner android:id="@id/spinner_account" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/linearLayout_module" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/listitem_multi_check_left" />
+    </LinearLayout>
+</LinearLayout>

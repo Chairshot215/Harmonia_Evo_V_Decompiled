@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/scrollViewTxPower" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txpower_warning_line1" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/txpower_warning_line2" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roaming_options_entries">
+        <item>Nooit</item>
+        <item>Alleen nationaal gegevensroamen</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="roaming_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="defer_messages">
+        <item>@string/call_defer_none</item>
+        <item>@string/call_defer_in_meeting</item>
+        <item>@string/call_defer_call_you_back</item>
+        <item>@string/call_defer_call_you_back_in</item>
+        <item>@string/call_defer_text_me</item>
+        <item>@string/call_defer_custom</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_sprint">
+        <item>Alleen Sprint</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_kddi">
+        <item>Alleen KDDI</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_sprint">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_boost">
+        <item>Alleen thuis</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices">
+        <item>Wereldwijde modus</item>
+        <item>CDMA-modus</item>
+        <item>GSM/UMTS modus</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values">
+        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_v3">
+        <item>Alleen Sprint</item>
+        <item>Elke CDMA</item>
+        <item>Elke GSM</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_v3">
+        <item>1000</item>
+        <item>1002</item>
+        <item>3</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices">
+        <item>GSM/UMTS Dual</item>
+        <item>Alleen GSM</item>
+        <item>Alleen UMTS</item>
+    </string-array>
+    <string-array name="data_roam_guard_values_2ndtype">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings_2ndtype">
+        <item>Altijd vragen</item>
+        <item>Nooit vragen</item>
+    </string-array>
+    <string-array name="data_roam_guard_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="call_waiting_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_waiting_entries">
+        <item>Inschakelen</item>
+        <item>Uitschakelen</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings">
+        <item>Standaard</item>
+        <item>Altijd vragen</item>
+        <item>Nooit vragen</item>
+    </string-array>
+    <string-array name="sip_send_keepalive_options_translated">
+        <item>@string/sip_system_decide_translated</item>
+        <item>@string/sip_always_send_keepalive_translated</item>
+    </string-array>
+    <string-array name="network_mode_select_choices">
+        <item>LTE/CDMA</item>
+        <item>Alleen CDMA</item>
+    </string-array>
+    <string-array name="network_mode_select_values">
+        <item>8</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_entries">
+        <item>Inschakelen</item>
+        <item>Uitschakelen</item>
+    </string-array>
+    <string-array name="global_roaming_select_choices">
+        <item>@string/global_roaming_option_all_trips</item>
+        <item>@string/global_roaming_option_this_trips</item>
+        <item>@string/global_roaming_option_deny</item>
+    </string-array>
+    <string-array name="global_roaming_select_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices_plus_lte">
+        <item>GSM/UMTS</item>
+        <item>Alleen GSM</item>
+        <item>Alleen UMTS</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_plus_lte">
+        <item>Globaal</item>
+        <item>LTE/CDMA</item>
+        <item>GSM/UMTS</item>
+        <item>Alleen CDMA</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_plus_lte">
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="skt_network_mode">
+        <item>LTE/WCDMA auto</item>
+        <item>Alleen WCDMA</item>
+    </string-array>
+    <string-array name="skt_network_mode_values">
+        <item>9</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="plus_code_country_list">
+        <item>Japan(001010),jp</item>
+        <item>Bahamas(011),bs</item>
+        <item>Bangladesh(00),bd</item>
+        <item>Bermuda(011),bm</item>
+        <item>China(00),cn</item>
+        <item>Hong Kong(001),hk</item>
+        <item>India(00),in</item>
+        <item>Indonesia(001),id</item>
+        <item>Israel(00),il</item>
+        <item>Korea(00700),kr</item>
+        <item>Macao(00),mo</item>
+        <item>Mexico(00),mx</item>
+        <item>New Zealand(00),nz</item>
+        <item>Peru(00),pe</item>
+        <item>Saipan(011),mp</item>
+        <item>Taiwan(005),tw</item>
+        <item>Thailand(001),th</item>
+        <item>U.S.A.(011),us</item>
+        <item>Venezuela(00),ve</item>
+        <item>Viet Nam(00),vn</item>
+    </string-array>
+    <string-array name="pref_entries_cb_language_list">
+        <item>Duits</item>
+        <item>Engels</item>
+        <item>Italiaans</item>
+        <item>Frans</item>
+        <item>Spaans</item>
+        <item>Nederlands</item>
+        <item>Zweeds</item>
+        <item>Deens</item>
+        <item>Portugees</item>
+        <item>Fins</item>
+        <item>Noors</item>
+        <item>Grieks</item>
+        <item>Turks</item>
+        <item>Hongaars</item>
+        <item>Pools</item>
+        <item>Alle talen</item>
+    </string-array>
+    <string-array name="entryvalues_language_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_choices">
+        <item>Alleen WCDMA</item>
+        <item>Alleen GSM</item>
+        <item>GSM/WCDMA automatisch</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices">
+        <item>Alleen LTE</item>
+        <item>Alleen WCDMA</item>
+        <item>Alleen GSM</item>
+        <item>GSM/WCDMA automatisch</item>
+        <item>GSM/WCDMA/LTE automatisch</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values">
+        <item>11</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices_without_lte_only">
+        <item>Alleen WCDMA</item>
+        <item>Alleen GSM</item>
+        <item>GSM/WCDMA automatisch</item>
+        <item>GSM/WCDMA/LTE automatisch</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values_without_lte_only">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_choices">
+        <item>Alleen WCDMA</item>
+        <item>GSM/WCDMA automatisch</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_choices">
+        <item>Alleen EvDo</item>
+        <item>Cdma zonder EvDo</item>
+        <item>Cdma / EvDo automatisch</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_values">
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_No2">
+        <item>Alleen thuis</item>
+        <item>Automatisch-A</item>
+        <item>Automatisch-B</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_No2">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_choices">
+        <item>NAM 1</item>
+        <item>NAM 2</item>
+        <item>Automatisch NAM</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_choices">
+        <item>Hybride</item>
+        <item>Alleen EVDO</item>
+        <item>Alleen 1X</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_value">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="timeout_values">
+        <item>5 s</item>
+        <item>10 s</item>
+        <item>15 s</item>
+        <item>20 s</item>
+        <item>25 s</item>
+        <item>30 sec</item>
+    </string-array>
+    <string-array name="clear_codes_values">
+        <item>MARCACION NO DISPONIBLE -01-</item>
+        <item>USUARIO NO DISPONIBLE -03-</item>
+        <item>LLAMADA TERMINADA -6-</item>
+        <item>USUARIO NO DISPONIBLE -08-</item>
+        <item>USUARIO OCUPADO</item>
+        <item>USUARIO NO RESPONDE -18-</item>
+        <item>USUARIO NO RESPONDE -19-</item>
+        <item>USUARIO NO DISPONIBLE -21-</item>
+        <item>MARCACION NO DISPONIBLE -22-</item>
+        <item>LLAMADA TERMINADA -25-</item>
+        <item>LLAMADA TERMINADA -26-</item>
+        <item>USUARIO NO DISPONIBLE -27-</item>
+        <item>MARCACION NO DISPONIBLE -28-</item>
+        <item>LLAMADA TERMINADA -29-</item>
+        <item>LLAMADA TERMINADA -30-</item>
+        <item>LLAMADA TERMINADA -31-</item>
+        <item>LLAMADA TERMINADA -34-</item>
+        <item>LLAMADA TERMINADA -38-</item>
+        <item>LLAMADA TERMINADA -41-</item>
+        <item>LLAMADA TERMINADA -42-</item>
+        <item>LLAMADA TERMINADA -43-</item>
+        <item>LLAMADA TERMINADA -44-</item>
+        <item>LLAMADA TERMINADA -47-</item>
+        <item>LLAMADA TERMINADA -49-</item>
+        <item>LLAMADA TERMINADA -50-</item>
+        <item>LLAMADA TERMINADA -55-</item>
+        <item>LLAMADA TERMINADA -57-</item>
+        <item>LLAMADA TERMINADA -58-</item>
+        <item>LLAMADA TERMINADA -63-</item>
+        <item>LLAMADA TERMINADA -65-</item>
+        <item>LLAMADA TERMINADA -68-</item>
+        <item>LLAMADA TERMINADA -69-</item>
+        <item>LLAMADA TERMINADA -70-</item>
+        <item>LLAMADA TERMINADA -79-</item>
+        <item>LLAMADA TERMINADA -81-</item>
+        <item>LLAMADA TERMINADA -87-</item>
+        <item>LLAMADA TERMINADA -88-</item>
+        <item>LLAMADA TERMINADA -91-</item>
+        <item>LLAMADA TERMINADA -95-</item>
+        <item>LLAMADA TERMINADA -96-</item>
+        <item>LLAMADA TERMINADA -97-</item>
+        <item>LLAMADA TERMINADA -98-</item>
+        <item>LLAMADA TERMINADA -99-</item>
+        <item>LLAMADA TERMINADA -100-</item>
+        <item>LLAMADA TERMINADA -101-</item>
+        <item>LLAMADA TERMINADA -102-</item>
+        <item>LLAMADA TERMINADA -111-</item>
+        <item>LLAMADA TERMINADA -127-</item>
+    </string-array>
+    <string-array name="network_type_list">
+        <item>2G</item>
+        <item>3G</item>
+        <item>@string/network_mode_both</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Netwerkstandaard</item>
+        <item>Nummer verbergen</item>
+        <item>Nummer weergeven</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>DEFAULT</item>
+        <item>HIDE</item>
+        <item>SHOW</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>Globaal</item>
+        <item>Alleen EvDo</item>
+        <item>CDMA zonder EvDo</item>
+        <item>CDMA/EvDo automatisch</item>
+        <item>GSM/WCDMA automatisch</item>
+        <item>Alleen WCDMA</item>
+        <item>Alleen GSM</item>
+        <item>Voorkeur voor GSM/WCDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values">
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>Engels</item>
+        <item>Frans</item>
+        <item>Spaans</item>
+        <item>Japans</item>
+        <item>Koreaans</item>
+        <item>Chinees</item>
+        <item>Hebreeuws</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA (automatische modus)</item>
+        <item>Alleen WCDMA</item>
+        <item>Alleen GSM</item>
+        <item>GSM/WCDMA (voorkeur voor WCDMA)</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Alleen thuis</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_system_select_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_choices">
+        <item>Alleen thuisnetwerken</item>
+        <item>Partnernetwerken</item>
+        <item>Elk netwerk</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_choices">
+        <item>CDMA/EvDo</item>
+        <item>Alleen cdma</item>
+        <item>Alleen EvDo</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY uit</item>
+        <item>TTY volledig</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="tty_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normaal</item>
+        <item>Lang</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:ellipsize="end" android:id="@id/subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_no_photo" android:layout_marginTop="3.0px" android:layout_marginRight="5.0px" android:singleLine="true" style="@style/text_style_primary" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_no_photo" android:layout_marginRight="5.0px">
+            <TextView android:id="@id/type" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/text_style_secondary" />
+            <TextView android:ellipsize="end" android:gravity="right" android:id="@id/date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/text_style_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/unreadImg" android:layout_width="@com.htc:dimen/htc_list_item_width_unread_img" android:layout_height="@com.htc:dimen/htc_list_item_height_unread_img" android:src="@com.htc:drawable/common_unread_indicator" android:layout_alignParentLeft="true" />
+</FrameLayout>

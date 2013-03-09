@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/additional_cdma_call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/tty_mode_entries" android:title="@string/tty_mode_option_title" android:key="button_tty_mode_key" android:summary="@string/tty_mode_option_summary" android:entryValues="@array/tty_mode_values" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/htc_labelNBPCD" android:key="button_cdma_nbpcd_key" android:summary="@string/htc_sum_cdma_call_setting">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nbpcd.NBPCDSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.android.phone.CdmaVoicePrivacyCheckBoxPreference android:persistent="false" android:title="@string/voice_privacy" android:key="button_voice_privacy_key" android:summary="@string/voice_privacy_summary" />
+</com.htc.preference.HtcPreferenceScreen>

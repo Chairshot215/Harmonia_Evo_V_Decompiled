@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/arrow_img_layout_port" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/arrow_img_left_port" android:layout_marginTop="@dimen/arrow_img_top_port">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_arrow_port_3" android:scaleType="center" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_arrow_port_2" android:scaleType="center" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_arrow_port_1" android:scaleType="center" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/arrow_text_layout_port" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/arrow_text_top_port">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doubleshot_hint_arrow_port" android:shadowColor="#c0000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/arrow_img_layout_land" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/arrow_img_left_land" android:layout_marginTop="@dimen/arrow_img_top_land">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_arrow_land_3" android:scaleType="center" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_arrow_land_2" android:scaleType="center" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_arrow_land_1" android:scaleType="center" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/arrow_text_layout_land" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/arrow_text_top_land">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0px" android:text="@string/doubleshot_hint_arrow_land" android:shadowColor="#c0000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerInParent="true" />
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

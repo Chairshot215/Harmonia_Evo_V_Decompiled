@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.view.impl.EditableMediaViewImpl android:gravity="fill" android:orientation="horizontal" android:id="@id/view_holder" android:background="#ffffffff" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/compose_btn_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background" android:background="@drawable/l_msg_button_notrans" android:layout_width="fill_parent" android:layout_height="@dimen/compose_btn_height" />
+    <FrameLayout android:id="@id/main_panel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="@dimen/compose_btn_height" android:layout_height="@dimen/compose_btn_height">
+            <ImageView android:id="@id/media_preview" android:layout_width="@dimen/compose_btn_image_width" android:layout_height="@dimen/compose_btn_image_height" android:layout_marginLeft="1.0px" android:layout_marginTop="1.0px" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <ImageView android:id="@id/thumbnail_mask" android:background="@drawable/l_msg_mask_thumbnail" android:layout_width="@dimen/compose_btn_height" android:layout_height="@dimen/compose_btn_height" />
+    </FrameLayout>
+    <ImageView android:background="@drawable/l_msg_attachment_divider" android:layout_width="wrap_content" android:layout_height="@dimen/compose_btn_height" android:layout_toRightOf="@id/main_panel" />
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/info_panel" android:paddingLeft="@dimen/common_layout_margin_horizontal" android:paddingRight="@dimen/common_layout_margin_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_replace" android:layout_toRightOf="@id/main_panel">
+        <TextView android:ellipsize="marquee" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/editable_media_view_title_margin_top" android:singleLine="true" style="@style/attach_btn_text_primary" />
+        <TextView android:ellipsize="marquee" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/attach_btn_text_secondary" />
+    </LinearLayout>
+    <ImageView android:id="@id/btn_replace" android:focusable="true" android:layout_width="@dimen/compose_send_btn_width" android:layout_height="@dimen/compose_send_btn_height" android:src="@drawable/l_msg_icon_replace" android:scaleType="center" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/btn_remove" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/compose_send_btn_width" android:layout_height="@dimen/compose_send_btn_height" android:src="@drawable/l_msg_icon_replace" android:scaleType="center" />
+    <ImageView android:background="@drawable/l_msg_attachment_divider" android:layout_width="wrap_content" android:layout_height="@dimen/compose_btn_height" android:layout_alignLeft="@id/btn_replace" />
+</com.android.mms.view.impl.EditableMediaViewImpl>

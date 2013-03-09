@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_title_cb_enable">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/pref_title_recevie_channel_list" android:key="recevie_channel_list" />
+        <com.android.phone.LanguageListPreference android:entries="@array/pref_entries_cb_language_list" android:title="@string/pref_title_lang_list" android:key="lang_list" android:defaultValue="15" android:dialogTitle="@string/pref_dialog_lang_title_list" android:entryValues="@array/entryvalues_language_list_preference" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/pref_title_add_channel" android:key="add_channel" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:persistent="false" android:title="@string/pref_title_set_cb_channels" android:key="list_channel_key" />
+</com.htc.preference.HtcPreferenceScreen>

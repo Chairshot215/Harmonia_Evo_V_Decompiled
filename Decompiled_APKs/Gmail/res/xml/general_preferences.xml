@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gm="http://schemas.android.com/apk/res/com.google.android.gm">
+    <CheckBoxPreference android:persistent="false" android:title="@string/preference_confirm_before_delete_title" android:key="confirm-actions-delete" android:summary="@string/preference_confirm_before_delete_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/preference_confirm_before_archive_title" android:key="confirm-actions-archive" android:summary="@string/preference_confirm_before_archive_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/preference_confirm_before_send_title" android:key="confirm-actions-send" android:summary="@string/preference_confirm_before_send_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/preferences_actionStrip_action_title" android:key="action-strip-action-reply-all" android:summary="@string/preferences_actionStrip_action_summary" android:defaultValue="@bool/prefDefault_actionStripActionReplyAll" />
+    <com.google.android.gm.preference.FancySummaryListPreference android:persistent="false" android:entries="@array/prefEntries_autoAdvance" android:title="@string/preference_advance_to_title" android:key="auto-advance-key" android:defaultValue="@string/prefDefault_autoAdvance" android:dialogTitle="@string/prefDialogTitle_autoAdvance" android:entryValues="@array/prefValues_autoAdvance" gm:entrySummaries="@array/prefSummaries_autoAdvance" />
+    <com.google.android.gm.preference.FancySummaryListPreference android:persistent="false" android:entries="@array/prefEntries_messageTextSizeName" android:title="@string/preferences_message_text_size_title" android:key="message-text-key" android:defaultValue="@string/prefDefault_messageTextSize" android:dialogTitle="@string/prefDialogTitle_messageTextSize" android:entryValues="@array/prefValues_messageTextSize" gm:entrySummaries="@array/prefEntries_messageTextSizeSummary" />
+    <CheckBoxPreference android:title="@string/preferences_hide_checkboxes_title" android:key="hide-checkboxes" android:summary="@string/preferences_hide_checkboxes_summary" android:defaultValue="false" />
+    <com.google.android.gm.preference.FancySummaryListPreference android:entries="@array/prefEntries_snapHeader" android:title="@string/preferences_disable_snap_headers_title" android:key="snap-headers" android:defaultValue="@string/prefDefault_snapHeader" android:dialogTitle="@string/preferences_disable_snap_headers_title" android:entryValues="@array/prefValues_snapHeader" gm:entrySummaries="@array/prefSummaries_snapHeader" />
+    <PreferenceScreen android:title="@string/clear_history_title" android:key="clear-search-history" android:summary="@string/clear_history_summary" />
+    <PreferenceScreen android:title="@string/clear_display_images_whitelist_title" android:key="clear-display-images-whitelist" android:summary="@string/clear_display_images_whitelist_summary" />
+</PreferenceScreen>

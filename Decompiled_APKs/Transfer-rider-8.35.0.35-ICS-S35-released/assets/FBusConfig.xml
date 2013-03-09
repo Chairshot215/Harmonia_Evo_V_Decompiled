@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fbus>
+
+ 	<pb>
+ 		<group id = "default">
+ 	  		<type name="number" idlist="11,">	  			
+	  			<field desc="Phone number" phoneid="10" pimid="108" type="xwstring"/>
+	  			<field desc="Phone number" phoneid="0" pimid="109" type="xwstring"/>
+	  			<field desc="Phone number" phoneid="1" pimid="132" type="xwstring"/>
+	  			<field desc="Mobile number" phoneid="3" pimid="104" type="xwstring"/>
+	  			<field desc="Video" phoneid="12" pimid="125" type="xwstring"/>
+	  			<field desc="Home number" phoneid="2" pimid="102" type="xwstring"/>
+	  			<field desc="Office number" phoneid="6" pimid="100" type="xwstring"/>
+	  			<field desc="Fax number" phoneid="4" pimid="112" type="xwstring"/>
+	  		</type>
+	  		<type name="general" idlist="47,31,7,71,70,63,82,83,84,85,86,8,44,10,56,87,74,75,76,77,78,79,80,">
+	  			<field desc="Skip" phoneid="47" pimid="0" type="skip"/>
+	  			<field desc="Skip" phoneid="31" pimid="0" type="skip"/>
+	  			<field desc="Skip" phoneid="74" pimid="0" type="skip"/>
+	
+	  			<field desc="Full Name" phoneid="7" pimid="5" type="xwstring"/>
+	  			<field desc="Last name" phoneid="71" pimid="2" type="xwstring"/>
+	  			<field desc="First name" phoneid="70" pimid="1" type="xwstring"/>
+	
+	  			<field desc="PPT address" phoneid="63" pimid="2017" type="xwstring"/>
+	  		 	<field desc="Video sharing SIP" phoneid="83" pimid="2051" type="xwstring"/>
+	
+	  			<field desc="Company" phoneid="85" pimid="4004" type="xwstring"/>
+	  			<field desc="Job title" phoneid="84" pimid="4015" type="xwstring"/>
+	  			<field desc="Name(Formal)" phoneid="82" pimid="4013" type="xwstring"/>
+	  			<field desc="Nickname" phoneid="86" pimid="4005" type="xwstring"/>	
+	  			<field desc="E-mail address" phoneid="8" pimid="1000" type="xwstring"/>
+	  			<field desc="Web address" phoneid="44" pimid="1500" type="xwstring"/>
+	  			<field desc="Note" phoneid="10" pimid="3002" type="xwstring"/>
+	  			<field desc="User ID" phoneid="56" pimid="3036" type="xwstring"/>
+	  			<field desc="Birthday" phoneid="87" pimid="4003" type="datetime6byte"/>
+	
+	  			<field desc="Postal address(Extended address)" phoneid="75" pimid="2031" type="xwstring"/>
+	  			<field desc="Postal address(Street)" phoneid="76" pimid="2032" type="xwstring"/>
+	  			<field desc="Postal address(City)" phoneid="77" pimid="2034" type="xwstring"/>
+	  			<field desc="Postal address(State/Province)" phoneid="78" pimid="2035" type="xwstring"/>
+	  			<field desc="Postal address(Postal/ZIP code)" phoneid="79" pimid="2036" type="xwstring"/>
+	  			<field desc="Postal address(Country)" phoneid="80" pimid="2038" type="xwstring"/>
+	  		</type>
+  		</group>
+ 		<group id = "spec_1">
+	  		<type name="number" idlist="11,">	  			
+	  			<field desc="Phone number" phoneid="10" pimid="108" type="xwstring"/>
+	  			<field desc="Phone number" phoneid="0" pimid="109" type="xwstring"/>
+	  			<field desc="Phone number" phoneid="1" pimid="132" type="xwstring"/>
+	  			<field desc="Mobile number" phoneid="3" pimid="104" type="xwstring"/>
+	  			<field desc="Video" phoneid="12" pimid="125" type="xwstring"/>
+	  			<field desc="Home number" phoneid="2" pimid="102" type="xwstring"/>
+	  			<field desc="Office number" phoneid="6" pimid="100" type="xwstring"/>
+	  			<field desc="Fax number" phoneid="4" pimid="112" type="xwstring"/>
+	  		</type>
+	  		<type name="general" idlist="47,31,7,71,70,63,82,83,84,85,86,8,44,10,56,87,74,75,76,77,78,79,80,">
+	  			<field desc="Skip" phoneid="47" pimid="0" type="skip"/>
+	  			<field desc="Skip" phoneid="31" pimid="0" type="skip"/>
+	  			<field desc="Skip" phoneid="74" pimid="0" type="skip"/>
+	
+	  			<field desc="Full Name" phoneid="7" pimid="5" type="xwstring"/>
+	  			<field desc="Last name" phoneid="71" pimid="2" type="xwstring"/>
+	  			<field desc="First name" phoneid="70" pimid="1" type="xwstring"/>
+	
+	  			<field desc="PPT address" phoneid="63" pimid="2017" type="xwstring" headlen="8" />
+	  		 	<field desc="Video sharing SIP" phoneid="83" pimid="2051" type="xwstring"/>
+	
+	  			<field desc="Company" phoneid="85" pimid="4004" type="xwstring"/>
+	  			<field desc="Job title" phoneid="84" pimid="4015" type="xwstring"/>
+	  			<field desc="Name(Formal)" phoneid="82" pimid="4013" type="xwstring"/>
+	  			<field desc="Nickname" phoneid="86" pimid="4005" type="xwstring"/>	
+	  			<field desc="E-mail address" phoneid="8" pimid="1000" type="xwstring"/>
+	  			<field desc="Web address" phoneid="44" pimid="1500" type="xwstring"/>
+	  			<field desc="Note" phoneid="10" pimid="3002" type="xwstring"/>
+	  			<field desc="User ID" phoneid="56" pimid="3036" type="xwstring"/>
+	  			<field desc="Birthday" phoneid="87" pimid="4003" type="datetime6byte"/>
+	
+	  			<field desc="Postal address(Extended address)" phoneid="75" pimid="2031" type="xwstring"/>
+	  			<field desc="Postal address(Street)" phoneid="76" pimid="2032" type="xwstring"/>
+	  			<field desc="Postal address(City)" phoneid="77" pimid="2034" type="xwstring"/>
+	  			<field desc="Postal address(State/Province)" phoneid="78" pimid="2035" type="xwstring"/>
+	  			<field desc="Postal address(Postal/ZIP code)" phoneid="79" pimid="2036" type="xwstring"/>
+	  			<field desc="Postal address(Country)" phoneid="80" pimid="2038" type="xwstring"/>
+	  		</type>
+  		</group>
+ 	</pb>
+ 	
+  	<cal>
+  		<group id = "default">
+  		</group>
+ 	</cal>
+ 	
+  	<sms>
+  		<group id = "default">	  		
+	  		<param name="sms_type">obex</param>
+	  		<param name="who">PC Suite</param>
+	  		<param name="obex_capability">x-obex/capability</param>
+	  		<param name="folder_list_guid">F9EC7BC4953c11d2984E525400DC9E09</param>
+	  		<param name="folder_list_type">x-obex/folder-listing</param>
+	  		<box id="1" name="inbox">C:\predefmessages\1</box>
+	  		<box id="3" name="sent">C:\predefmessages\3</box>
+	  		<box id="0" name="outbox">C:\predefmessages\4</box>
+	  		<box id="2" name="draft">C:\predefmessages\5</box>
+  		</group>
+   		<group id = "obex_1">	  		
+	  		<param name="sms_type">obex</param>
+	  		<param name="who">PC Suite</param>
+	  		<param name="obex_capability">x-obex/capability</param>
+	  		<param name="folder_list_guid">F9EC7BC4953c11d2984E525400DC9E09</param>
+	  		<param name="folder_list_type">x-obex/folder-listing</param>
+	  		<box id="1" name="inbox">C:\Messaging\1</box>
+	  		<box id="0" name="outbox">C:\Messaging\2</box>
+	  		<box id="3" name="sent">C:\Messaging\3</box>
+	  		<box id="1" name="archive">C:\Messaging\4</box>
+	  		<box id="2" name="draft">C:\Messaging\5</box>
+  		</group>
+   		<group id = "obex_2">	  		
+	  		<param name="sms_type">obex</param>
+	  		<param name="who">PC Suite</param>
+	  		<param name="obex_capability">x-obex/capability</param>
+	  		<param name="folder_list_guid">F9EC7BC4953c11d2984E525400DC9E09</param>
+	  		<param name="folder_list_type">x-obex/folder-listing</param>
+	  		<box id="1" name="inbox">S:\Messaging\1</box>
+	  		<box id="3" name="sent">S:\Messaging\3</box>
+	  		<box id="0" name="outbox">S:\Messaging\4</box>
+	  		<box id="2" name="draft">S:\Messaging\5</box>
+  		</group>
+  		<group id = "fbus_1">	  		
+	  		<param name="sms_type">fbus_smsid</param>
+	  		<box id="1" name="inbox">2</box>
+	  		<box id="2" name="draft">4</box>
+	  		<box id="3" name="sent">3</box>
+  		</group>
+  		
+ 	</sms>
+
+</fbus>

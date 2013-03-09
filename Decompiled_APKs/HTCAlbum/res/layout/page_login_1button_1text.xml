@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@com.htc:color/common_color_listview_listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/section_divider" layout="@layout/htc_section_divider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/section_divider">
+        <include android:id="@id/trans_topround" layout="@layout/htc_trans_topround" />
+    </RelativeLayout>
+    <include android:id="@id/trans_bottomround" layout="@layout/htc_trans_bottomround" />
+    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:paddingLeft="@dimen/page_btn_padding_left_right_1" android:paddingRight="@dimen/page_btn_padding_left_right_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:gravity="center" android:id="@id/loginBtn" android:layout_width="fill_parent" android:layout_height="@dimen/page_btn_height" android:layout_marginTop="@dimen/page_btn_padding_top_bottom_1" android:layout_weight="0.0" style="@com.htc:style/button_secondary_l" />
+        <TextView android:layout_gravity="left" android:id="@id/loginText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_text_padding_top_bottom_1" android:text="@string/login_text" style="@com.htc:style/list_body_unread_l" />
+    </LinearLayout>
+</RelativeLayout>

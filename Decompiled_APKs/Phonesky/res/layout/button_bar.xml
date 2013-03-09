@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.ButtonBar android:orientation="horizontal" android:id="@id/button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?attr/finskyButtonBarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/positive_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/submit" android:layout_weight="1.0" style="?attr/finskyButtonBarButtonStyle" />
+    <Button android:id="@id/negative_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" style="?attr/finskyButtonBarButtonStyle" />
+</com.google.android.finsky.layout.ButtonBar>

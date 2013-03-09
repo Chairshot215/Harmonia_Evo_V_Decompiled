@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="htc_zero_button_style">
+        <item name="android:background">@drawable/button_zero</item>
+        <item name="android:padding">0.0px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/zero_button_width</item>
+        <item name="android:layout_height">@dimen/zero_button_height</item>
+        <item name="android:src">@drawable/no0</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="htc_equal_button_style">
+        <item name="android:background">@drawable/button_equal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/equal_button_width</item>
+        <item name="android:layout_height">@dimen/equal_button_height</item>
+        <item name="android:src">@drawable/equal</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

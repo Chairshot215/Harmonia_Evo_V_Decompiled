@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.phone" android:versionCode="306" android:versionName="@string/ap_version_id" package="com.htc.android.qxdm2sd"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:label="@string/qxdm_label" android:icon="@drawable/icon">
+        <receiver android:name="BootCompleteReceiver" android:process="com.android.phone">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="com.htc.android.qxdm2sd.QXDM2SD.DAEMON.STOP" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="QXDM2SDReceiver">
+            <intent-filter>
+                <action android:name="com.htc.android.qxdm2sd.QXDM2SD.CONTROLLER" />
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/qxdm_name" android:icon="@drawable/icon" android:name="QXDM2SD" android:process="com.android.phone" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.category.SMITH" />
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+                <category android:name="com.htc.category.HTC_LOGGERS" />
+                <category android:name="com.htc.category.HTC_LOGGERS.CONTROLLER" />
+                <category android:name="com.htc.category.HTC_SSD_ALL" />
+                <category android:name="com.htc.category.HTC_TOOLS_ALL" />
+                <category android:name="com.htc.category.HTC_SSD_SQA" />
+                <category android:name="com.htc.category.HTC_TOOLS_SQA" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

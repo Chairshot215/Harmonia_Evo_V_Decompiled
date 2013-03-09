@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/LoginActivityOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:minHeight="@dimen/title_height" android:text="@string/plus_faq_title" android:layout_alignParentTop="true" />
+    <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/next_button" android:layout_below="@id/top_divider">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:text="@string/plus_faq_text" android:layout_alignParentTop="true" style="@style/DescriptionText" />
+            <TextView android:id="@id/dasher_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:text="@string/dasher_warning" android:layout_below="@id/description" style="@style/DescriptionText" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:id="@id/back_button" android:background="@drawable/btn_dir_prev_holo_dark" android:text="@string/back_button_label" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BackButton" />
+    <Button android:id="@id/next_button" android:background="@drawable/btn_dir_next_holo_dark" android:text="@string/next_button_label" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+</RelativeLayout>

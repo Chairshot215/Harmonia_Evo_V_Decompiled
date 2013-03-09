@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="168120105" android:versionName="1.6.8.120105" package="com.muvee.video.trimer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:theme="@style/NoActionBar" android:label="@string/app_name" android:icon="@drawable/ringtone_trimmer_video" android:name="com.muvee.video.trimer.MVideoTrimer" android:debuggable="false" android:excludeFromRecents="true" allowSkinChange="true">
+        <activity android:label="@string/app_name" android:name="com.muvee.video.trimer.MainActivity" android:launchMode="standard" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIDEO_TRIM" />
+                <action android:name="android.intent.action.VIDEO_TRIM_CLOSED" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="MBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+</manifest>

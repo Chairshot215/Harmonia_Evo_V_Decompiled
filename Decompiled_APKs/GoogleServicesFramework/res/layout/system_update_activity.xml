@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/system_update_outer_padding_sides" android:paddingTop="@dimen/system_update_outer_padding_top" android:paddingRight="@dimen/system_update_outer_padding_sides" android:paddingBottom="@dimen/system_update_outer_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/systemUpdateTitle" android:id="@id/title" android:paddingLeft="32.0dip" android:paddingTop="24.0dip" android:paddingRight="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.5dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="6.5px" android:indeterminate="true" android:layout_below="@id/title" style="?android:attr/progressBarStyleHorizontal" />
+    <TextView android:textAppearance="@style/systemUpdateStatus" android:id="@id/size" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/progress" android:layout_alignParentRight="true" />
+    <TextView android:textAppearance="@style/systemUpdateStatus" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/size" android:layout_below="@id/progress" />
+    <TextView android:textAppearance="@style/systemUpdateStatus" android:id="@id/status2" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/status" android:layout_alignParentRight="true" />
+    <FrameLayout android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <Button android:layout_gravity="bottom|right|center" android:id="@id/action_button" android:layout_height="48.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="32.0dip" style="@style/Button" />
+        <TextView android:layout_gravity="center_vertical" android:id="@id/button_qualifier" android:paddingLeft="24.0dip" android:paddingTop="24.0dip" android:paddingRight="24.0dip" android:paddingBottom="32.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_update_activity_battery_low_text" style="@style/ButtonQualifier" />
+    </FrameLayout>
+    <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom" android:layout_below="@id/status2">
+        <TextView android:textAppearance="@style/systemUpdateDescription" android:id="@id/description" android:paddingLeft="32.0dip" android:paddingTop="24.0dip" android:paddingRight="32.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>

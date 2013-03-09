@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="95px" hgap="0px" vgap="-2px" height="64px" keyTextSize="36px" popupTextSize="45px" totalRows="5" keyboardBackground="@drawable/sapphire_land_background" keyboardPadding="0,6,5,6" functionKeyBackground="@drawable/sapphire_landscape_function_key" commonKeyBackground="@drawable/sapphire_landscape_common_key" closeKeyBackground="@drawable/qwerty_land_close_key">
+    <row>
+        <key codes="200" label="ㄅ" hgap="5px" leftEdge="true" />
+        <key codes="204" label="ㄉ" />
+        <key codes="239" icon="@drawable/zy_tone3" iconPreview="@drawable/zy_tone3_inv" />
+        <key codes="240" icon="@drawable/zy_tone4" iconPreview="@drawable/zy_tone4_inv" />
+        <key codes="214" label="ㄓ" />
+        <key codes="238" icon="@drawable/zy_tone2" iconPreview="@drawable/zy_tone2_inv" />
+        <key codes="241" icon="@drawable/zy_tone5" iconPreview="@drawable/zy_tone5_inv" />
+        <key codes="221" label="ㄚ" />
+        <key codes="225" label="ㄞ" />
+        <key codes="229" label="ㄢ" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="201" label="ㄆ" hgap="5px" leftEdge="true" />
+        <key codes="205" label="ㄊ" />
+        <key codes="208" label="ㄍ" />
+        <key codes="211" label="ㄐ" />
+        <key codes="215" label="ㄔ" />
+        <key codes="218" label="ㄗ" />
+        <key codes="234" label="ㄧ" />
+        <key codes="222" label="ㄛ" />
+        <key codes="226" label="ㄟ" />
+        <key codes="230" label="ㄣ" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="202" label="ㄇ" hgap="5px" leftEdge="true" />
+        <key codes="206" label="ㄋ" />
+        <key codes="209" label="ㄎ" />
+        <key codes="212" label="ㄑ" />
+        <key codes="216" label="ㄕ" />
+        <key codes="219" label="ㄘ" />
+        <key codes="235" label="ㄨ" />
+        <key codes="223" label="ㄜ" />
+        <key codes="227" label="ㄠ" />
+        <key codes="231" label="ㄤ" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="203" label="ㄈ" hgap="5px" leftEdge="true" />
+        <key codes="207" label="ㄌ" />
+        <key codes="210" label="ㄏ" />
+        <key codes="213" label="ㄒ" />
+        <key codes="217" label="ㄖ" />
+        <key codes="220" label="ㄙ" />
+        <key codes="236" label="ㄩ" />
+        <key codes="224" label="ㄝ" />
+        <key codes="228" label="ㄡ" />
+        <key codes="232" label="ㄥ" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-4" width="92px" function="true" leftEdge="true" hgap="7px" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-16" hgap="3px" width="92px" function="true" label="" textScale="90%p" leftEdge="true" grouped="1" />
+        <key codes="-23" hgap="-92px" width="92px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" leftEdge="true" grouped="1" />
+        <key codes="-24" hgap="-92px" width="92px" function="true" label="" textScale="90%p" longpressPreview="@drawable/sapphire_icon_mic" leftEdge="true" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" leftEdge="true" grouped="1" />
+        <key codes="65292" label="，" topLabel="   。" textScale="80%p" width="95px" hgap="1px" popup="@layout/port_accent_window" popupCharacters="@string/minikeyboard_port_py_6" accentType="0" alignIndex="0" labelOffsetY="-5" />
+        <key codes="32" icon="@drawable/key_icon_zhuyin_space" iconPreview="@drawable/sapphire_icon_space" showPreview="false" width="285px" splitSet="1" xt9idx="42" />
+        <key codes="237" label="-" hgap="-285px" width="285px" splitSet="4" />
+        <key codes="233" label="ㄦ" width="95px" xt9idx="43" />
+        <key codes="-2" label="12#" textScale="90%p" width="92px" hgap="2px" function="true" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" hgap="3px" width="92px" function="true" repeatable="true" xt9idx="45" />
+        <key codes="10" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" hgap="3px" width="92px" function="true" rightEdge="true" xt9idx="46" />
+    </row>
+</keyboard>

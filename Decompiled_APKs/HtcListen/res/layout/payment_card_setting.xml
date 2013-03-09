@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <RelativeLayout android:id="@id/scroll_view" android:background="@color/listview_background" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/lbl_card_header" android:text="@string/add_card_info_header" style="@style/card_header_text_on_non_trans" />
+                <View style="@style/divider" />
+                <TextView android:id="@id/card_first_name" android:text="@string/card_firstname_oncard" style="@style/card_form_padding" />
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/cardholder_firstname" android:hint="@string/card_firstname_oncard" android:singleLine="true" android:capitalize="words" android:inputType="textCapWords" style="@style/edittext" />
+                <View style="@style/divider_padding" />
+                <TextView android:id="@id/card_lastname" android:text="@string/card_lastname_oncard" style="@style/card_form_padding" />
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/cardholder_lastname" android:hint="@string/card_lastname_oncard" android:singleLine="true" android:capitalize="words" android:inputType="textCapWords" style="@style/edittext" />
+                <View style="@style/divider_padding" />
+                <TextView android:text="@string/card_detail_number" style="@style/card_form_padding" />
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/card_number" android:hint="@string/card_number_hint" android:singleLine="true" android:maxLength="16" android:inputType="number" style="@style/edittext" />
+                <View style="@style/divider_padding" />
+                <TextView android:id="@id/lbl_card_expire" android:text="@string/card_detail_expire" style="@style/card_form_padding" />
+                <TextView android:textSize="@com.htc:dimen/input_default_m" android:textColor="@color/black" android:id="@id/expire_date" android:layout_marginBottom="10.0px" android:hint="@string/card_detail_expire" android:singleLine="true" style="@style/edittext" />
+                <View android:id="@id/item_footer" style="@style/sectionbottom" />
+                <TextView android:id="@id/lbl_address" android:text="@string/card_holder_address_header" style="@style/card_header_text_on_non_trans" />
+                <View style="@style/divider" />
+                <include layout="@layout/address" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" layout="@layout/payment_footer_layout" />
+</LinearLayout>

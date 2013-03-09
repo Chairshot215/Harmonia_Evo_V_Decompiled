@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.Title6 android:orientation="vertical" android:id="@id/title_6" android:layout_width="fill_parent" android:layout_height="@dimen/title_2line_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_6_left_block" android:background="?attr_common_title_thick_btn_left" android:layout_width="0.0px" android:layout_height="95.0px" android:baselineAligned="false" android:layout_weight="1.0">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/title_6_btn_1x1" android:background="?attr_common_b_button" android:padding="2.0px" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="3.0px" android:src="@drawable/edit_icon_addphoto" android:scaleType="centerCrop" />
+            <com.htc.widget.ButtonStyleEditText android:textSize="@dimen/input_default_m" android:gravity="center_vertical" android:id="@id/title_6_inputfield_1x1" android:background="?attr_common_black_inputfield_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:capitalize="words" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_6_button_layout" android:background="?attr_common_title_thick_btn_right" android:focusable="true" android:clickable="true" android:layout_width="76.0px" android:layout_height="95.0px">
+            <ImageView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title_6_button_img_right" android:padding="0.0px" android:layout_width="44.0px" android:layout_height="44.0px" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/title_secondary_m" android:textColor="@color/secondarytitleTextColor" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title6_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/title_text_shadow_style" />
+        </LinearLayout>
+    </LinearLayout>
+</com.htc.widget.Title6>

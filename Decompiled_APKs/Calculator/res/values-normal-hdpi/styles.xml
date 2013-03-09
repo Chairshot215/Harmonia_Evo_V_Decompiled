@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="display_style">
+        <item name="android:textSize">@dimen/lcd_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">@dimen/lcd_layout_margin_top</item>
+        <item name="android:paddingBottom">0.0px</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:shadowColor">@color/lcd_text_shadow_color</item>
+        <item name="android:shadowRadius">@integer/lcd_text_shadow_radius</item>
+    </style>
+</resources>

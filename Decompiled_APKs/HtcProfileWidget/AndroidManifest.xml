@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="300344798" android:versionName="3.0.2213382542.344798" package="com.htc.widget.profile"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/application_name" android:icon="@drawable/application_icon" android:description="@string/htc_corp" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="com.htc.fusion.fx" />
+        <uses-feature android:name="com.htc.android.rosie.widget" />
+        <receiver android:label="@string/add_widget_label" android:icon="@drawable/application_icon" android:name=".HtcWidgetReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/widget_metadata" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="@string/widget_category" />
+        </receiver>
+    </application>
+</manifest>

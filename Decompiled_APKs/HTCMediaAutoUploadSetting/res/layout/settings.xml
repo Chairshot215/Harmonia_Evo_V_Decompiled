@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" htcfooter:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <com.htc.widget.HtcListView android:id="@*android:id/list" android:background="@com.htc:color/listview_app_background" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@*android:color/transparent" android:divider="@null" android:layout_weight="1.0" style="@style/CustomizationListBackground" />
+    <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:id="@id/btn_cancel" android:text="@string/cancel" />
+        <com.htc.widget.HtcFooterButton android:id="@id/btn_ok" android:text="@string/ok" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

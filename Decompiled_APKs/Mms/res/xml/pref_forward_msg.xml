@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:paddingTop="@com.htc:dimen/alert_dialog_content_margin_top" android:paddingRight="@com.htc:dimen/alert_dialog_content_margin_right" android:paddingBottom="@com.htc:dimen/alert_dialog_content_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@*android:id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@*android:attr/label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/number_field" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/edit_container" android:layout_width="0.0dip" android:layout_height="@dimen/pref_forward_msg_editbox_height" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/select_contact" android:background="?com.htc:attr_common_button_small" android:layout_width="@dimen/compose_contactPicker_height" android:layout_height="@dimen/compose_contactPicker_height" android:layout_marginLeft="@dimen/common_margin_left" android:src="@drawable/message_icon_contact" />
+        </LinearLayout>
+        <TextView android:id="@*android:attr/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_msg_forward_dlg_warning" style="@com.htc:style/list_secondary_read_xs" />
+    </LinearLayout>
+</ScrollView>

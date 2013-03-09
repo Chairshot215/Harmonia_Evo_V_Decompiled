@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_lab_quick_controls" android:key="enable_quick_controls" android:summary="@string/pref_lab_quick_controls_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_use_instant_search" android:key="use_instant_search" android:summary="@string/pref_use_instant_search_summary" android:defaultValue="false" />
+</PreferenceScreen>

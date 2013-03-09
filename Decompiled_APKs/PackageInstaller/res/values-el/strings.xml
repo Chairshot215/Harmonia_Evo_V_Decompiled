@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Package Installer</string>
+    <string name="install">Εγκατάσταση</string>
+    <string name="done">Τέλος</string>
+    <string name="security_settings_desc">Να επιτρέπεται σε αυτή την εφαρμογή να:</string>
+    <string name="cancel">Ακύρωση</string>
+    <string name="unknown">Άγνωστο</string>
+    <string name="installing">Εγκατάσταση...</string>
+    <string name="install_done">Πραγματοποιήθηκε εγκατάσταση της εφαρμογής</string>
+    <string name="install_confirm_question">Θέλετε να εγκαταστήσετε αυτήν την εφαρμογή;</string>
+    <string name="install_failed">Η εφαρμογή δεν είναι εγκατεστημένη</string>
+    <string name="install_failed_invalid_apk">Το πακέτο ενδέχεται να είναι κατεστραμμένο.</string>
+    <string name="install_failed_inconsistent_certificates">Υπάρχει ήδη εγκατεστημένο ένα πακέτο με το ίδιο όνομα και με προβληματική υπογραφή.</string>
+    <string name="install_failed_older_sdk">Το πακέτο λειτουργεί μόνο με νεότερες εκδόσεις του Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Αυτή η εφαρμογή δεν είναι συμβατή με τη CPU αυτού του τηλεφώνου.</string>
+    <string name="install_failed_file_not_found">Το καθορ. πακέτο διεγράφη πριν από την ολοκλ. της εγκατ.</string>
+    <string name="install_failed_verify_failed">Ανεπιτυχής επαλήθευση και αδυναμία εγκατάστασης.</string>
+    <string name="install_failed_verify_timeout">Λήξη χρον. ορίου κατά την επαλήθ.πακέτου. Προσπαθ. ξανά.</string>
+    <string name="install_failed_msg">Δεν ήταν δυνατή η εγκατάσταση του %1$s στο τηλέφωνο.</string>
+    <string name="launch">Άνοιγμα</string>
+    <string name="unknown_apps_dlg_title">Η εγκατάσταση αποκλείστηκε</string>
+    <string name="unknown_apps_dlg_text">Για μεγαλύτερη ασφάλεια, το τηλέφωνό σας είναι ρυθμισμένο ώστε να αποκλείει την εγκατάσταση εφαρμογών που δεν προέρχονται από το Android Market.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="allow_source_dlg_title">Να επιτρέπεται νέα προέλευση για εφαρμογές;</string>
+    <string name="allow_source_dlg_text">"Η εφαρμογή %1$s θέλει να κάνει εγκατάσταση άλλων εφαρμογών.
+
+Να επιτραπεί τώρα και στο μέλλον;"</string>
+    <string name="manage_applications">Διαχείριση εφαρμογών</string>
+    <string name="dlg_app_replacement_title">Αντικατάσταση εφαρμογής</string>
+    <string name="dlg_app_replacement_statement">"Η εφαρμογή που εγκαθιστάτε θα αντικαταστήσει μια άλλη εφαρμογή
+
+Όλα τα προηγούμενα δεδομένα χρήστη θα αποθηκευτούν."</string>
+    <string name="dlg_sys_app_replacement_statement">"Αυτή είναι εφαρμογή συστήματος. Θέλετε παρ' όλα αυτά να την αντικαταστήσετε;
+
+Όλα τα προηγούμενα δεδομένα χρήστη θα αποθηκευτούν."</string>
+    <string name="out_of_space_dlg_title">Δεν υπάρχει χώρος</string>
+    <string name="out_of_space_dlg_text">Δεν ήταν δυνατή η εγκατάσταση της εφαρμογής %1$s. Απελευθερώστε λίγο χώρο και προσπαθήστε ξανά.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Η εφαρμογή δεν βρέθηκε</string>
+    <string name="app_not_found_dlg_text">Η εφαρμογή δεν βρέθηκε στη λίστα των εγκατεστημένων εφαρμογών.</string>
+    <string name="uninstall_application_title">Κατάργηση εγκατάστασης εφαρμογής</string>
+    <string name="uninstall_update_title">Κατάργηση εγκατάστασης ενημέρωσης</string>
+    <string name="uninstall_activity_text">Η δραστηριότητα %1$s αποτελεί τμήμα της ακόλουθης εφαρμογής:</string>
+    <string name="uninstall_application_text">Η εγκατάσταση αυτής της εφαρμογής θα καταργηθεί.</string>
+    <string name="uninstall_update_text">Θα γίνει αντικατάσταση της εφαρμογής με την εργοστασιακή έκδοση.</string>
+    <string name="uninstalling">Κατάργηση εγκατάστασης...</string>
+    <string name="uninstall_done">Η κατάργηση εγκατάστασης ολοκληρώθηκε</string>
+    <string name="uninstall_failed">Η κατάργηση εγκατάστασης δεν ήταν επιτυχής</string>
+    <string name="uninstall_failed_device_policy_manager">Αδύνατη η κατάργηση της εγκατάστασης: το πακέτο είναι ενεργός διαχειρ. συσκευής.</string>
+    <string name="manage_device_administrators">Διαχείριση διαχειριστών συσκευής</string>
+    <string name="uninstall_failed_msg">Δεν ήταν δυνατή η κατάργηση της εγκατάστασης της εφαρμογής %1$s</string>
+    <string name="Parse_error_dlg_title">Σφάλμα ανάλυσης</string>
+    <string name="Parse_error_dlg_text">Παρουσιάστηκε ένα πρόβλημα κατά την ανάλυση του πακέτου.</string>
+</resources>

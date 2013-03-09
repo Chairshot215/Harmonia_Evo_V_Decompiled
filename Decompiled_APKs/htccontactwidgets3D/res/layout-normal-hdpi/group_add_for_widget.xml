@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="64.0px" android:maxHeight="64.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0px"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/Icon" android:background="@com.htc:drawable/common_add_rest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="2.0px" android:scaleType="center" />
+        <TextView android:gravity="center_vertical" android:id="@id/PrimaryText" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="64.0px" android:layout_marginLeft="5.0px" android:text="@string/add_group" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+</FrameLayout>

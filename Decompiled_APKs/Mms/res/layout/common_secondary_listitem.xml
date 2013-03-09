@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" style="@style/htc_listitem_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/divider" android:background="@drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:ellipsize="marquee" android:gravity="left" android:layout_gravity="left" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_layout_margin_horizontal" android:layout_marginRight="@dimen/common_layout_margin_horizontal" android:singleLine="true" style="@style/primary_list_item" />
+    <TextView android:ellipsize="marquee" android:gravity="left" android:layout_gravity="left" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_layout_margin_horizontal" android:layout_marginRight="@dimen/common_layout_margin_horizontal" android:singleLine="true" style="@style/secondary_list_item" />
+</LinearLayout>

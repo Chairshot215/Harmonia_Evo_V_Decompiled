@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@*android:drawable/status_bar_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="6.0px" android:layout_marginRight="14.0px">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="53.0px" android:src="@drawable/notification_photo_shadow" />
+            <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_notification_frame_size" android:layout_height="wrap_content" android:layout_marginLeft="7.0px" android:layout_marginTop="2.0px" android:layout_marginRight="7.0px">
+                <ImageView android:id="@id/photo" android:layout_width="@dimen/incall_notification_frame_size" android:layout_height="@dimen/incall_notification_frame_size" android:scaleType="fitXY" />
+                <ImageView android:id="@id/ref_photo" android:layout_width="@dimen/incall_notification_frame_size" android:layout_height="@dimen/incall_notification_reflection_height" android:scaleType="fitXY" />
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="2.0px" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-1.0px">
+                <ImageView android:id="@id/icon" android:layout_width="38.0px" android:layout_height="38.0px" android:scaleType="fitXY" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <Chronometer android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0px" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/notification_end_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/notification_end_button" android:background="@drawable/notification_btn_endcall" android:layout_width="@dimen/notification_btn_width" android:layout_height="@dimen/notification_btn_height" android:src="@drawable/notification_btn_icon_call" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

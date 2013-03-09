@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Splet</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">neznano</string>
+    <string name="sharedUserLabel">Googlove storitve</string>
+    <string name="service_label">Orodje za posodabljanje sistema</string>
+    <string name="system_update_activity_name">Sistemske posodobitve</string>
+    <string name="system_update_activity_title">Sistemske posodobitve</string>
+    <string name="system_update_activity_battery_low_text">Baterija je prešibka za namestitev sistemske posodobitve. Če želite nadaljevati, priključite napajalnik.</string>
+    <string name="system_update_activity_battery_low_charging_text">Baterija je prešibka za namestitev sistemske posodobitve. Počakajte, da se dovolj napolni.</string>
+    <string name="system_update_activity_roaming_text">Sistemskih posodobitev ni mogoče prenašati med gostovanjem.</string>
+    <string name="system_update_requires_restart_status_text">Potreben je ponovni zagon</string>
+    <string name="system_update_downloading_status_text">Prenos</string>
+    <string name="system_update_downloading_wifi_status2_text">Prek Wi-Fi-ja samo do ^1</string>
+    <string name="system_update_verifying_status_text">Preverjanje</string>
+    <string name="system_update_verification_failed_text">Preverjanje ni uspelo</string>
+    <string name="system_update_verified_status_text">Prenos končan in preverjen</string>
+    <string name="system_update_download_failed_status_text">Prenos ni uspel</string>
+    <string name="system_update_download_retry_button_text">Poskusi ponovno prenesti</string>
+    <string name="system_update_download_button_text">Prenos</string>
+    <string name="system_update_install_button_text">Ponovno zaženi in namesti</string>
+    <string name="system_update_check_now_button_text">Preveri</string>
+    <string name="system_update_no_update_content_text">Sistem je posodobljen</string>
+    <string name="system_update_last_checkin">Zadnje iskanje posodobitev ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Na voljo je sistemska posodobitev</string>
+    <string name="system_update_recommended_update_available_notification_message">Ogled podrobnosti posodobitve</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Prenos sistemske posodobitve ni bil uspešen.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Prenos ni uspel. Poskusite znova.</string>
+    <string name="system_update_error_dialog_title">Napaka</string>
+    <string name="system_update_error_downloading_dialog_message">Pri prenosu posodobitve je prišlo do težave.</string>
+    <string name="system_update_error_installing_dialog_message">Pri namestitvi posodobitve je prišlo do težave.</string>
+    <string name="system_update_install_dialog_label">Sistemska posodobitev</string>
+    <string name="system_update_install_dialog_message_nonphone">Sistemska posodobitev je pripravljena za namestitev. Naprava Android se bo znova zagnala in jo namestila.</string>
+    <string name="system_update_install_dialog_message_phone">Sistemska posodobitev je pripravljena za namestitev. Naprava Android se bo znova zagnala in jo namestila. Med namestitvijo ne boste mogli klicati (niti številk v sili ne).</string>
+    <string name="system_update_install_dialog_battery_low_message">Na voljo je sistemska posodobitev, vendar je baterija prešibka za namestitev. Priklopite napajalnik.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Na voljo je sistemska posodobitev, vendar je baterija prešibka za namestitev. Počakajte, da se dovolj napolni.</string>
+    <string name="system_update_install_dialog_now_button">Namestite</string>
+    <string name="system_update_install_dialog_later_button">Namesti pozneje</string>
+    <string name="system_update_install_dialog_info_button">Več informacij ...</string>
+    <string name="system_update_downloading_notification_title">Prenašanje sistemske posodobitve</string>
+    <string name="system_update_verifying_notification_title">Preverjanje sistemske posodobitve</string>
+    <string name="system_update_download_dialog_label">Prenos sistemske posodobitve</string>
+    <string name="system_update_download_dialog_message">Na voljo je sistemska posodobitev, ki bo izpopolnila napravo Android. Če jo prenesete prek mobilnega omrežja, boste morali morda plačati prenos.</string>
+    <string name="system_update_download_dialog_now_button">Prenesi</string>
+    <string name="system_update_download_dialog_later_button">Prenesi pozneje</string>
+    <string name="system_update_download_dialog_cancel_button">Prekliči</string>
+    <string name="system_update_countdown_complete">Ponovni zagon ...</string>
+    <string name="system_update_countdown_cancel_button">Prekliči namestitev</string>
+    <string name="system_update_complete_label">Sistemska posodobitev</string>
+    <string name="system_update_complete_ok_button">V redu</string>
+    <string name="provider_label">Potisne naročnine</string>
+    <string name="ro_perm_label">branje neposrednih sporočil</string>
+    <string name="ro_perm_desc">Dovoli programom, da berejo podatke iz ponudnika vsebine Google Talk.</string>
+    <string name="wo_perm_label">pisanje neposrednih sporočil</string>
+    <string name="wo_perm_desc">Dovoli programom, da zapisujejo podatke v ponudnika vsebine Google Talk.</string>
+    <string name="gsf_label">Googlove storitve</string>
+    <string name="search_chats">"Išči po klepetih
+»%1$s«"</string>
+    <string name="gtalkservice_label">Googlova storitev za sporočanje</string>
+    <string name="c2dm_label">Storitev za sporočanje oblak–naprava</string>
+    <string name="sendTalkMsg_perm_label">Izmenjuje si sporočila z Googlovimi strežniki in od njih prejema obvestila o sinhronizaciji</string>
+    <string name="sendTalkMsg_perm_desc">Storitev se uporablja za strežniška sporočila oblak–naprava in obvestila o sinhronizaciji. Google Talk jo uporablja za izmenjavo sporočil in sinhronizacijo stanja prisotnosti. Zlonamerni programi lahko izkoristijo to storitev za prenašanje odvečnih podatkov.</string>
+    <string name="perm_receive_data_message_label">prejemaj podatke iz interneta</string>
+    <string name="perm_receive_data_message_desc">Dovoli programom, da sprejemajo sporočila oblak–naprava, ki jih pošilja programska storitev. Uporaba te storitve bo vključevala rabo podatkov. Zlonamerni programi lahko povzročijo čezmerno uporabo podatkov.</string>
+    <string name="perm_data_msg_broadcast_label">Oddajaj podatkovna sporočila programom.</string>
+    <string name="perm_data_msg_broadcast_desc">Lahko pošlje podatkovna sporočila, prejeta prek spleta, programom, ki so registrirani, da jih prejemajo.</string>
+    <string name="perm_receive_xmpp_label">pošiljanje sporočil XMPP v Googlove strežnike in prejemanje iz njih</string>
+    <string name="perm_receive_xmpp_desc">Omogoča Googlovim programom pošiljanje sporočil XMPP v Googlove strežnike in prejemanje tovrstnih sporočil iz njih.</string>
+    <string name="perm_xmpp_broadcast_label">Oddaja sporočila XMPP programom.</string>
+    <string name="perm_xmpp_broadcast_desc">Sporočila XMPP, prejeta iz Googlovih strežnikov, lahko pošlje programom, registriranim, da jih prejemajo.</string>
+    <string name="perm_use_xmpp_endpoint_label">pošiljanje sporočil XMPP v Googlove strežnike in prejemanje iz njih.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Omogoča Googlovim programom pošiljanje sporočil XMPP Googlovim strežnikom in prejemanje iz njih.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Pošiljanje sporočil XMPP programom.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Programom lahko pošilja sporočila XMPP, prejeta iz Googlovih strežnikov.</string>
+    <string name="permlab_intentVendingOnly">Pošlji oddaje v Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Lahko pošlje oddaje v Android Market in zahteva namestitev ali odstranitev programa.</string>
+    <string name="permlab_heartbeat">Pošlji signal obveščanja o izvajanju v strežnik Google Talk</string>
+    <string name="permdesc_heartbeat">Lahko pošlje paket signalov obveščanja o izvajanju v strežnik Google Talk in tako zagotovi dobro povezavo.</string>
+    <string name="group_chat">Skupinski klepet: %s</string>
+    <string name="default_decline_reason">Oprostite, trenutno sem zaseden.</string>
+    <string name="newMessages_label">Novi klepeti</string>
+    <string name="notify_groupchat_label">Povabilo k skupinskemu klepetu</string>
+    <string name="num_unread_chats">%s neprebranih klepetov</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s za %s</string>
+    <string name="subscription_notify_text">Oseba %s bi rada klepetala</string>
+    <string name="group_chat_invite_notify_text">Oseba %s vam je poslala vabilo v skupinski klepet</string>
+    <string name="group_chat_invite_dialog_text">%s vas vabi, da se pridružite skupinskem klepetu.</string>
+    <string name="message_too_long">Sporočil, daljših od 2000 znakov, ni mogoče pošiljati.</string>
+    <string name="missed_video_chat_notification">Zgrešili ste povabilo na videoklepet</string>
+    <string name="missed_voice_chat_notification">Zgrešili ste povabilo na glasovni klepet</string>
+    <string name="missed_video_chat_notification_no_wifi">Zgrešili ste povabilo na videoklepet, ker niste bili povezani v Wi-Fi</string>
+    <string name="missed_voice_chat_notification_no_wifi">Zgrešili ste povabilo na glasovni klepet, ker niste bili povezani na Wi-Fi</string>
+    <string name="missed_video_chat_message">Oseba %1$s je poskusila začeti videoklepet z vami</string>
+    <string name="missed_voice_chat_message">Oseba %1$s je poskusila začeti glasovni klepet z vami</string>
+    <string name="missed_video_chat_message_no_wifi">Oseba %1$s je poskušala začeti videoklepet z vami, ko niste bili povezani v Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">Oseba %1$s je poskušala začeti videoklepet z vami, ko niste bili povezani v Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">%1$s ni bil na voljo za videoklepet.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s ni bil na voljo za glasovni klepet.</string>
+    <string name="end_cause_sent_terminate_video">Končali ste videoklepet z osebo %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Končali ste glasovni klepet z osebo %1$s.</string>
+    <string name="end_cause_received_terminate_video">Oseba %1$s je končala videoklepet.</string>
+    <string name="end_cause_received_terminate_voice">Oseba %1$s je končala glasovni klepet.</string>
+    <string name="end_cause_network_problem_video">Videoklepet z osebo %1$s žal ni uspel zaradi težave z omrežjem . Poskusite znova.</string>
+    <string name="end_cause_network_problem_voice">Videoklepet z osebo %1$s žal ni uspel zaradi težave z omrežjem . Poskusite znova.</string>
+    <string name="conn_auth_error_notify_ticker">Preverjanje pristnosti povezave s storitvijo Google Talk ni uspelo</string>
+    <string name="conn_auth_error_notify_title">Preverjanje pristnosti povezave s storitvijo Google Talk ni uspelo</string>
+    <string name="conn_auth_error_title">Napaka pri preverjanju pristnosti</string>
+    <string name="conn_auth_error_message">Prijava storitve Google Talk ni bila uspešna. Če gre za račun Google Aplikacije, preverite, ali je storitev za klepet omogočena.</string>
+    <string name="conn_auth_error_button_retry">Poskusi znova</string>
+    <string name="conn_auth_error_button_cancel">Prekliči</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Dobrodošli v ^1</string>
+    <string name="setup_wizard_title">Čarovnik za namestitev</string>
+    <string name="error_dialog_title">Pozor</string>
+    <string name="next_button_label">Naprej</string>
+    <string name="back_button_label">Nazaj</string>
+    <string name="sign_in_button_label">Prijava</string>
+    <string name="create_button_label">Ustvari</string>
+    <string name="skip_button_label">Preskoči</string>
+    <string name="first_name">Ime</string>
+    <string name="last_name">Priimek</string>
+    <string name="done">V redu</string>
+    <string name="cancel_button_label">Prekliči</string>
+    <string name="done_button_label">Dokončaj namestitev</string>
+    <string name="try_again_button_label">Poskusite znova.</string>
+    <string name="close_button_label">Zapri</string>
+    <string name="edit_text_help">Dotaknite se katerega koli besedilnega polja, da začnete tipkati</string>
+    <string name="add_a_google_account">Dodajanje Google Računa</string>
+    <string name="no_sim_setup_wireless">Ni kartice SIM, zato se ne morete povezati z mobilnim omrežjem za glasovne ali podatkovne storitve. Brez kartice SIM se lahko povežete z omrežjem Wi-Fi.</string>
+    <string name="setup_wifi_button_label">Vzpostavi povezavo z brezžičnim omrežjem</string>
+    <string name="no_network">Nimate omrežne povezave.</string>
+    <string name="no_network_help">Težava je lahko le začasna ali pa naprava Android ni nastavljena za podatkovne storitve. Poskusite znova, ko boste prijavljeni v mobilno omrežje, ali pa se povežite z omrežjem Wi-Fi.</string>
+    <string name="server_error">Prišlo je do težave pri komunikaciji z Googlovimi strežniki.</string>
+    <string name="server_error_help">Poskusite znova pozneje.</string>
+    <string name="network_unreliable">Zanesljive podatkovne povezave s strežnikom ni mogoče vzpostaviti.</string>
+    <string name="network_unreliable_help">Morda gre za začasno težavo ali pa naprava Android ne podpira podatkovnih storitev. Če se težave nadaljujejo, pokličite center za pomoč naročnikom.</string>
+    <string name="invalid_login_character">Neveljaven znak. Dovoljeni so samo znaki 0-9, a-z, A-Z in pike.</string>
+    <string name="invalid_password_character">Neveljaven znak za geslo.</string>
+    <string name="add_apn">Brezžične nastavitve</string>
+    <string name="setup_google_account_title">Nastavitev Google Računa</string>
+    <string name="setup_complete_title">Namestitev končana</string>
+    <string name="cant_be_blank">Polje ne sme biti prazno.</string>
+    <string name="calendar">Google Koledar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Naprava Android ni povezana s podatkovno storitvijo. Če si želite podatke ogledati zdaj, obiščite %s iz katerega koli računalnika, ki je povezan z internetom.</string>
+    <string name="field_cant_be_blank">To polje ne more biti prazno.</string>
+    <string name="field_invalid_domain">Ime domene ni veljavno</string>
+    <string name="field_invalid_user">Uporabniško ime ni veljavno.</string>
+    <string name="field_invalid_user_domain">Vnesite samo svoje uporabniško ime, ne e-poštnega naslova</string>
+    <string name="field_invalid_login">Ime računa ni veljavno</string>
+    <string name="about_accounts_message"><font size="17">"Nastavitev naprave Android je preprosta. Potrebujete le Google Račun. 
+ "<font height="17">" 
+ "</font> <b>Zakaj bi uporabljali Google Račun?</b>" 
+ "<font height="3">" 
+ "</font>"Z Google Računom se Googlovi programi samodejno sinhronizirajo med vašo napravo Android in računalnikom, ne glede na to, kje ste izvajali posodobitve.
+ "<font height="17">" 
+ "</font> <b>Ali že imate Google Račun?</b>" 
+ "<font height="3">" 
+ "</font>"Potem imate vse, kar potrebujete. Na naslednjem zaslonu se dotaknite možnosti »Prijava«.
+ "<font height="17">" 
+ "</font> <b>Ali še nimate Google Računa?</b>" 
+ "<font height="3">" 
+ "</font>"Nič hudega. Na naslednjem zaslonu se dotaknite možnosti »Ustvari« in pomagali vam bomo ustvariti.
+ "<font height="17">" 
+ "</font> <b>Dotaknite se »Naprej« in začnite.</b>" 
+ "</font></string>
+    <string name="fling_help_message">"Če se želite pomikati navzgor ali navzdol, drsite s prstom po zaslonu.
+(Dotaknite se tega sporočila, da izgine.)"</string>
+    <string name="setup_device_title">Nameščanje ^1</string>
+    <string name="dont_have_an_account">Še nimate Google Računa?</string>
+    <string name="create_one_now">Ustvarite ga zdaj! Preprosto je.</string>
+    <string name="already_have_an_account">Ali že imate Google Račun?</string>
+    <string name="sign_in_with_google_account">Prijavite se v Google Račun, ki ga želite povezati s to napravo Android.</string>
+    <string name="skip_message">Ali želite namestiti račun pozneje?</string>
+    <string name="touch_to_begin">Če želite začeti, se dotaknite androida.</string>
+    <string name="delayed_gaia_agreement">Če nadaljujete, pomeni, da se strinjate z <annotation id="google_privacy">Googlovim</annotation> in <annotation id="android_privacy">dodatnimi</annotation> pravilniki o zasebnosti.</string>
+    <string name="open_keyboard_message">Če želite začeti, odprite tipkovnico.</string>
+    <string name="open_keyboard_message_to_continue">Če želite nadaljevati, odprite tipkovnico.</string>
+    <string name="emergency_dial">Klic v sili</string>
+    <string name="change_language">Spremeni jezik</string>
+    <string name="signing_in">Prijava ...</string>
+    <string name="close_keyboard_message">Če želite nadaljevati, zaprite tipkovnico.</string>
+    <string name="communicating_message">Za namestitev računa mora naprava Android vzpostaviti povezavo z Googlovimi strežniki. To lahko traja do pet minut.</string>
+    <string name="communicating_message_domain">Naprava Android vzpostaviti povezavo z Googlovimi strežniki, da najde podatke o vaši domeni. To lahko traja do pet minut.</string>
+    <string name="username">Uporabniško ime</string>
+    <string name="domain_name">primer.com</string>
+    <string name="password">Geslo</string>
+    <string name="sign_in_agreement">Če se prijavite, pomeni, da se strinjate z <annotation id="google_privacy">Googlovim</annotation> in <annotation id="android_privacy">dodatnimi</annotation> pravilniki o zasebnosti.</string>
+    <string name="create">Ustvari</string>
+    <string name="create_message">Potrebujete Google Račun?</string>
+    <string name="now_signing_in">Prijava ...</string>
+    <string name="now_verifying_domain">Iskanje domene …</string>
+    <string name="sign_in_with_google_account_short">Prijavite se z Google Računom:</string>
+    <string name="browser_sign_in_explanation">Uporabite ta zaslon, če imate posebne zahteve glede prijave, za katere je potreben spletni brskalnik.</string>
+    <string name="gls_browser_login_intro_message">Ni dostopa do vašega Google Računa ali računa za Google Aplikacije. Potrebna je vnovična pooblastitev.</string>
+    <string name="enter_domain_name">Vnesite ime domene podjetja:</string>
+    <string name="enter_user_name">Vnesite svoje uporabniško ime in geslo za ^1:</string>
+    <string name="inactive_domain">Tega računa ne morete uporabljati, ker pripada nedejavni domeni. Obrnite se na skrbnika domene <b>^1</b> ali se prijavite z drugim računom.</string>
+    <string name="invalid_username">Besedilo, ki ste ga vnesli, ni veljavno uporabniško ime.</string>
+    <string name="web_login_error_title">Oprostite ...</string>
+    <string name="web_login_error_desc">"Prišlo je do težave pri vzpostavljanju povezave s strežnikom podjetja na ^1.
+
+Informacije o napaki:
+"</string>
+    <string name="web_login_error_redirects">Spletna stran za prijavo se je prevečkrat preusmerila</string>
+    <string name="web_login_error_http">Napaka HTTP ^1 : ^2</string>
+    <string name="name_device_label">Poimenujte svojo napravo Android:</string>
+    <string name="device_name_hint">Ime naprave</string>
+    <string name="registering_device">Registracija naprave Android ...</string>
+    <string name="error_account_disabled">"Ta račun je onemogočen. 
+
+(Za več informacij z računalnikom obiščite http://google.com/accounts/recovery.)"</string>
+    <string name="error_login_failed">"Uporabniško ime in geslo se ne ujemata. Poskusite znova. 
+
+(Če želite obnoviti podatke računa, z računalnikom pojdite na http://www.google.com/accounts/recovery.)"</string>
+    <string name="error_account_not_verified">"Ta račun ni potrjen. Preverite e-pošto z računalnikom in sledite povezavi, da potrdite račun. 
+
+(Če želite obnoviti podatke računa, z računalnikom obiščite http://www.google.com/accounts/recovery.)"</string>
+    <string name="captcha_message_string">Potrditev</string>
+    <string name="captcha_instructions">Vnesite znake, ki jih vidite na sliki. Ni razlikovanja med malimi in velikimi črkami.</string>
+    <string name="create_google_account">Ustvarjanje novega Google Računa</string>
+    <string name="example_usernames">npr. JNovak, Janez.Novak</string>
+    <string name="create_account_agreement">Če se ustvarite račun, pomeni, da se strinjate z <annotation id="google_privacy">Googlovim</annotation> in <annotation id="android_privacy">dodatnimi</annotation> pravilniki o zasebnosti.</string>
+    <string name="account_already_has_gmail">Račun že ima Gmail.</string>
+    <string name="creating_account">Ustvarjanje računa …</string>
+    <string name="checking_account">Preverjanje razpoložljivosti uporabniškega imena ...</string>
+    <string name="try_a_different_username">Poskusite z drugim uporabniškim imenom</string>
+    <string name="is_not_available"><b>^1</b> ni na voljo.</string>
+    <string name="hint_size"><b>^1</b> vsebuje manj kot 6 ali več kot 30 znakov.</string>
+    <string name="hint_numbers_only"><b>^1</b> ne vsebuje nobene črke.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" lahko vsebuje samo črke,
+številke in pike."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> ne uporablja Gmaila</string>
+    <string name="sign_in">Prijava</string>
+    <string name="sign_in_browser">Prijava v brskalnik</string>
+    <string name="here_are_alternatives">Še nekaj predlogov:</string>
+    <string name="alternatives_list_title">Predlagana uporabniška imena</string>
+    <string name="choose_a_password"><b>"Vpišite
+geslo"</b></string>
+    <string name="confirm_password"><b>"Potrdi
+geslo"</b></string>
+    <string name="password_strength"><b>"Zanesljivost
+gesla"</b></string>
+    <string name="too_short">Prekratko</string>
+    <string name="security_question"><b>"Varnostno
+vprašanje"</b></string>
+    <string name="security_questions_title">Varnostna vprašanja</string>
+    <string name="answer"><b>Odgovor</b></string>
+    <string name="password_mismatch">Gesli se ne ujemata. Vnesite ju znova.</string>
+    <string name="your_account_was_created">Vaš račun je ustvarjen!</string>
+    <string name="eight_chars_min">(najmanj 8 znakov)</string>
+    <string name="just_in_case">Če izgubite geslo.</string>
+    <string name="verify_your_profile">Preverite svoj profil</string>
+    <string name="signed_in">Prijavljeni!</string>
+    <string name="error_not_logged_in">Uporabnik ni prijavljen.</string>
+    <string name="error_username_unavailable">Uporabniško ime ni na voljo.</string>
+    <string name="error_bad_password">Geslo ni dovolj močno ali vsebuje neveljavne znake. Poskusite znova.</string>
+    <string name="error_bad_username">Neveljavno uporabniško ime.</string>
+    <string name="loading">Nalaganje ...</string>
+    <string name="submission_title">Oprostite ...</string>
+    <string name="submission_error_text">Napaka. Poskusite znova.</string>
+    <string name="existing_account_error_title">Račun že obstaja</string>
+    <string name="existing_account_error_text">V tej napravi Android je že račun ^1.</string>
+    <string name="account_linked_message"><font height="24">Google Račun je zdaj povezan z napravo Android</font></string>
+    <string name="syncing_message"><font size="17">"Googlovi programi trenutno sinhronizirajo podatke. 
+"<font height="17">"
+"</font>"%i Ko ikona sinhronizacije v vrstici stanja na vrhu zaslona izgine, je prenos končan.
+"<font height="17">"
+"</font><b>O vrstici stanja …</b>"
+"<font height="3">"
+"</font>"Vsakič, ko prejmete novo sporočilo ali kako drugo obvestilo, se v vrstici stanja pojavi ikona.
+"<font height="17">"
+"</font>S prstom povlecite vrstico stanja navzdol in odprite ploščo z obvestili, kjer najdete natančnejše podatke o vseh aktualnih obvestilih.</font></string>
+    <string name="i_agree_next">Strinjam se, naprej</string>
+    <string name="android_privacy_policy_title">Dodatni pravilnik o zasebnosti</string>
+    <string name="google_terms_of_service_title">Googlovi pogoji storitve</string>
+    <string name="google_privacy_policy_title">Pravilnik o zasebnosti za Google</string>
+    <string name="notification_update_title">Vaš račun je treba posodobiti</string>
+    <string name="notification_update_message">Dotaknite se tukaj, da znova zaženete čarovnika za namestitev</string>
+    <string name="common_message">"Gmail, varnostne kopije in številne druge Androidove funkcije zahtevajo Google Račun
+
+Dotaknite se izbire "<b>Naprej</b>" za prijavo v obstoječi Google Račun ali ustvarite nov Google Račun.
+
+Ali pa se dotaknite izbire "<b>Preskoči</b>, če želite le začeti uporabljati telefon. V Google račun se lahko prijavite pozneje v nastavitvah pod »Računi in sinhronizacija«-</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Dodajanje računa</font>" 
+
+Uporabljate lahko več Google Računov (na primer zasebnega in službenega). Za dodajanje Google Računa je potrebnih samo nekaj korakov. 
+
+Pritisnite »Naprej« za nadaljevanje ali gumb »Nazaj« za izhod."</string>
+    <string name="reactivate_account_message">"Tej napravi Android je treba dodeliti Googlov poštni račun. 
+
+S tem računom je že povezano uporabniško ime za Googlovo pošto ("<b>^1</b>"), vendar trenutno ni aktivno. 
+
+Pritisnite »Naprej«, da znova aktivirate to uporabniško ime in ga začnete uporabljati. 
+
+Če želite uporabiti drug račun, pritisnite »Nazaj« in se prijavite z drugim računom ali ustvarite novega."</string>
+    <string name="reactivating_account">Ponovna aktivacija računa …</string>
+    <string name="your_account_was_reactivated">Vaš račun je aktiviran!</string>
+    <string name="account_recovery_info">Ti podatki vam bodo pomagali obnoviti geslo, če ga kdaj izgubite.</string>
+    <string name="secondary_email_label"><b>"Dodatni
+e-poštni naslov"</b></string>
+    <string name="invalid_email">"Vneseni e-poštni naslov ni veljaven.
+ Primer: janez@primer.com"</string>
+    <string name="invalid_email_primary">Sekundarni e-poštni naslovi ne morejo biti enaki naslovu, ki ga ustvarjate</string>
+    <string name="tutorial_intro_title">Naučite se uporabljati ^1.</string>
+    <string name="begin_button_label">Začni</string>
+    <string name="tutorial_intro_message_generic">Če želite izkoristiti vse prednosti naprave Android, je pomembno vedeti nekaj stvari. <font size="17">"
+"</font>" 
+"<li>Uporaba zaslonske tipkovnice</li> <font size="17">"
+"</font>" 
+Pritisnite »Začni«, da zaženete vadnico in izveste več."</string>
+    <string name="tutorial_intro_message_setupwizard">Če želite izkoristiti vse prednosti naprave Android, je pomembno vedeti nekaj stvari. <font size="17">"
+"</font>" 
+"<li>Uporaba zaslonske tipkovnice</li>" 
+"<li>Ustvarjanje Google Računa</li> <font size="17">"
+"</font>" 
+Pritisnite »Začni«, da zaženete vadnico in izveste več, ali »Preskoči«, da preskočite to vadnico in nadaljujete."</string>
+    <string name="keyboard_tutorial_title">Uporaba zaslonske tipkovnice</string>
+    <string name="keyboard_tutorial_message">Dotaknite se katerega koli besedilnega polja, da odprete tipkovnico in začnete tipkati. Poskusite tukaj!</string>
+    <string name="keyboard_tutorial_edittext_hint">Dotaknite se tukaj, da začnete tipkati</string>
+    <string name="done_typing_message">Ali ste končali s tipkanjem? Pritisnite »Nazaj«, da zaprete tipkovnico.</string>
+    <string name="done_button_label_in_tutorial">Dokončano</string>
+    <string name="backup_consent_title">Varnostno kopiranje nastavitev</string>
+    <string name="backup_consent_message">Nastavitve (kot so zaznamki in gesla za Wi-Fi) lahko samodejno varnostno kopirate v Google Račun. V novi napravi Android (če ste staro izgubili ali če napravo nadgradite) se nastavitve obnovijo v novi napravi.</string>
+    <string name="backup_consent_howto_disable_message">Nastavitve za varnostno kopiranje lahko vedno spremenite v programu »Nastavitve«, v razdelku »Zasebnost«.</string>
+    <string name="backup_consent_yes_agree">Naredi varnostno kopijo nastavitev v mojem Google Računu.</string>
+    <string name="restore_disable">Onemogoči obnovitev</string>
+    <string name="restore_enable">Omogoči obnovitev</string>
+    <string name="restore_enabled">Če ste ustvarili varnostno kopijo nastavitev, bodo te obnovljene.</string>
+    <string name="restore_disabled">Vaših nastavitev ne bo mogoče obnoviti iz varnostne kopije.</string>
+    <string name="webview_progress_title">Povezovanje z domeno ...</string>
+    <string name="webview_progress_verbose_message">"Strežniki vašega podjetja pošiljajo prijavne informacije. To lahko traja nekaj minut.
+Ko bo postopek končan, se bo odprla prijavna stran vašega podjetja."</string>
+    <string name="enterprise_unmanaged_domain">Ta domena ne uporablja storitve Google Aplikacije. Preverite ime domene in poskusite znova.</string>
+    <string name="use_location_for_services_agree">Se strinjam</string>
+    <string name="use_location_for_services_disagree">Ne strinjam se</string>
+    <string name="use_location_for_services_title">Uporabi mojo lokacijo</string>
+    <string name="use_location_for_services_text">Želite dovoliti Googlu, da za boljše rezultate iskanja in druge storitve uporablja podatke o lokaciji?</string>
+    <string name="permlab_readGsettings">Preberi Googlove nastavitve</string>
+    <string name="permdesc_readGsettings">Dovoli temu programu, da bere Googlove nastavitve.</string>
+    <string name="permlab_writeGsettings">Spremeni Googlove nastavitve</string>
+    <string name="permdesc_writeGsettings">Dovoli temu programu, da spremeni Googlove nastavitve.</string>
+    <string name="permlab_readGservices">preberi konfiguracijo Googlove storitve</string>
+    <string name="permdesc_readGservices">Dovoli programu, da bere podatke o konfiguraciji Googlove storitve.</string>
+    <string name="permlab_writeGservices">Spremeni konfiguracijo storitve Google</string>
+    <string name="permdesc_writeGservices">Dovoli programu, da spremeni podatke o konfiguraciji Googlove storitve.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Aplikacije</string>
+    <string name="permlab_googleAuthPassword">dostop do gesel za Googlove račune</string>
+    <string name="permdesc_googleAuthPassword">Omogoči programom neposreden dostop do gesel za Googlove račune, ki ste jih konfigurirali.</string>
+    <string name="permlab_googleMailSwitch">izbira blagovne znamke Gmail ali Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Programom omogoča preklop med imeni prikazanih blagovnih znamk »Gmail« in »Google Mail«.</string>
+    <string name="permlab_googleAuth">ogled konfiguriranih računov</string>
+    <string name="permdesc_googleAuth">Dovoli programom, da vidijo uporabniška imena (ali e-poštne naslove) Googlovih računov, ki ste jih konfigurirali.</string>
+    <string name="permlab_googleAuth_ALL">dostop do vseh Googlovih storitev</string>
+    <string name="permdesc_googleAuth_ALL">Programom omogoča prijavo v VSE Googlove storitve z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_OTHER">dostop do drugih Googlovih storitev</string>
+    <string name="permdesc_googleAuth_OTHER">Programom omogoča prijavo v nedoločene Googlove storitve z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Programom omogoča prijavo v Googlove e-poštne storitve z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_cl">Google Koledar</string>
+    <string name="permdesc_googleAuth_cl">Programom omogoča prijavo v Google Koledar z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_android">Androidove storitve</string>
+    <string name="permdesc_googleAuth_android">Programom omogoča prijavo v Androidove storitve z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_sierra">Računi Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Programom omogoča prijavo v Google Checkout (in mogoče tudi nakupe) z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_sierraqa">Računi Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Programom omogoča prijavo v Google Checkout QA z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Računi Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Programom omogoča prijavo v Google Checkout Sandbox z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Programom omogoča prijavo v YouTube z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Uporabniška imena v YouTubu</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Programom omogoča prikaz uporabniških imen za YouTube, ki so povezani z Google Računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Programom omogoča prijavo v Google Talk z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_ig">Računi iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Programom omogoča prijavo v iGoogle z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_lh2">Spletni albumi Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Programom omogoča prijavo v Spletnem albume Picasa z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_mobile">Googlovi programi za mobilne naprave</string>
+    <string name="permdesc_googleAuth_mobile">Programom omogoča prijavo v Googlove programe za mobilne naprave z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_cp">podatki o stikih v računih Google</string>
+    <string name="permdesc_googleAuth_cp">Programom omogoča dostop do stikov in podatkov o profilu, ki so shranjeni v napravi Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Programom omogoča prijavo v Google AdSense z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Programom omogoča prijavo v Google AdWords z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Programom omogoča prijavo v Blogger z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Programom omogoča prijavo v Dodgeball z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Programom omogoča prijavo v Google Base z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_groups2">Google Skupine</string>
+    <string name="permdesc_googleAuth_groups2">Programom omogoča prijavo v Google Skupine z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Programom omogoča prijavo v Google Health z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Programom omogoča prijavo v JotSpot z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Programom omogoča prijavo v Knol z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_news">Google Novice</string>
+    <string name="permdesc_googleAuth_news">Programom omogoča prijavo v Google News z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_orkut">orkut</string>
+    <string name="permdesc_googleAuth_orkut">Programom omogoča prijavo v Orkut z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_print">Google Iskanje knjig</string>
+    <string name="permdesc_googleAuth_print">Programom omogoča prijavo v Google Iskanje knjig z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Orodja za spletne skrbnike</string>
+    <string name="permdesc_googleAuth_sitemaps">Programom omogoča prijavo v Google Orodja za spletne skrbnike z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Programom omogoča prijavo v Google WiFi z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_writely">Google Dokumenti</string>
+    <string name="permdesc_googleAuth_writely">Programom omogoča prijavo v Google Dokumente z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_wise">Google Preglednice</string>
+    <string name="permdesc_googleAuth_wise">Programom omogoča prijavo v Google Preglednice z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Programom omogoča prijavo v Google Finance z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_local">Google Zemljevidi</string>
+    <string name="permdesc_googleAuth_local">Programom omogoča prijavo v Google Zemljevide z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Programom omogoča prijavo v Google App Engine z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_notebook">Google Beležnica</string>
+    <string name="permdesc_googleAuth_notebook">Programom omogoča prijavo v Google Beležnico z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Programom omogoča prijavo v Google Voice z računi, shranjenimi v napravi Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Personalized Speech Recognition</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Programom omogoča prijavo v Personalized Speech Recognition z računi, shranjenimi v napravi Android.</string>
+    <string name="gls_notification_title">Prijavite se v račun</string>
+    <string name="gls_notification_new_account">Potreben je račun ^1</string>
+    <string name="gls_notification_new_account_youtube">Potreben je račun YouTube</string>
+    <string name="gls_notification_login_error">Dotaknite se, da se prijavite v račun.</string>
+    <string name="gls_ui_add_account_title">Namestitev računa</string>
+    <string name="gls_ui_google_account_subtitle">Google Račun</string>
+    <string name="gls_ui_activity_title">Prijava v Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Prijava v brskalnik</string>
+    <string name="gls_ui_activity_title_enterprise">Prijava za podjetja</string>
+    <string name="gls_ui_activity_title_youtube">Prijava v YouTube</string>
+    <string name="gls_ui_activity_authenticating">Preverjanje pristnosti ...</string>
+    <string name="gls_captcha_activity_message">Vpišite znake, ki jih vidite na sliki:</string>
+    <string name="gls_captcha_activity_ok_button">Dokončano</string>
+    <string name="gls_error_activity_message">Med prijavo v <b>^1</b> je prišlo do omrežne napake. Poskusite znova ali pritisnite gumb »Nazaj« za preklic.</string>
+    <string name="gls_error_activity_retry_button">Poskusite znova</string>
+    <string name="gls_dmagent_activity_message">" Vaša domena zahteva upravljanje mobilnih naprav. Namestite program Google Apps Device Policy, če želite uveljaviti varnostne pravilnike, potrebne za račun "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Prenos</string>
+    <string name="gls_login_activity_username_label">Uporabniško ime</string>
+    <string name="gls_login_activity_password_label">Geslo</string>
+    <string name="gls_login_activity_ok_button">Prijava</string>
+    <string name="gls_login_activity_loginfail_text_both">Uporabniško ime ali geslo ni veljavno. Račun <b>^1</b> je potreben. Poskusite ponovno.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Vnesli ste napačno geslo oziroma je bil račun spremenjen. Znova vnesite geslo.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Vpišite geslo za ta račun.</string>
+    <string name="gls_enterprise_login_activity_msg">"Prijavite se v račun svojega podjetja na ^1 za preverjanje pristnosti.
+Dotaknite se gumba »Prijava«, da odprete spletno stran za prijavo svojega podjetja."</string>
+    <string name="gls_login_activity_badaccount_text">V tem primeru ni mogoče uporabiti tega računa. Poskusite z drugim računom.</string>
+    <string name="gls_login_activity_newaccount_text">Vpišite se v svoj račun <b>^1</b>.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Nimate računa YouTube? Dotaknite se <a href="http://www.youtube.com/signup">tukaj</a>, da ga ustvarite.</string>
+    <string name="gls_settings_tos_activity_title">Googlova pravna obvestila</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Podatkovna storitev ni na voljo. Če si želite podatke ogledati zdaj, obiščite %s iz katerega koli računalnika, ki je povezan z internetom.</string>
+    <string name="gls_settings_contributors_activity_title">Sodelavci</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Niste povezani s podatkovno storitvijo. Če si želite podatke ogledati zdaj, obiščite %s iz katerega koli računalnika, ki je povezan z internetom.</string>
+    <string name="gls_webview_progress_title">Povezovanje z domeno ...</string>
+    <string name="gls_webview_progress_verbose_message">"Strežniki vašega podjetja pošiljajo podatke za prijavo. To lahko traja nekaj minut.
+Potem se bo pokazalo okno vašega podjetja za prijavo."</string>
+    <string name="gls_sign_in_button_label">Prijava</string>
+    <string name="gls_back_button_label">Nazaj</string>
+    <string name="gls_cancel_button_label">Prekliči</string>
+    <string name="gls_exit_account_setup_button_label">Izhod iz nastav. računa</string>
+    <string name="gls_reauthorize_button_label">Ponovna pooblastitev</string>
+    <string name="gls_sign_in_message">Za namestitev računa mora naprava Android vzpostaviti povezavo z Googlovimi strežniki. To lahko traja do pet minut.</string>
+    <string name="gls_sign_in_title">Prijavljanje ...</string>
+</resources>

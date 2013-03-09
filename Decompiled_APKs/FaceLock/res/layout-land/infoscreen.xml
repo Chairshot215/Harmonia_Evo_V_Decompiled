@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="horizontal" android:id="@id/topLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:gravity="top|center" android:id="@id/headerText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_alignParentBottom="true" style="@style/SecurityPreferenceButtonContainer">
+                <Button android:id="@id/footerLeftButton" style="@style/SecurityPreferenceButton" />
+                <Button android:id="@id/footerRightButton" style="@style/SecurityPreferenceButton" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@*android:drawable/code_lock_left" android:layout_width="2.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="15.0sp" android:gravity="top|left|center" android:id="@id/infoText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="15.0sp" android:gravity="top|left|center" android:id="@id/bottomInfoText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

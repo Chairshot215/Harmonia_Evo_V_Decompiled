@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/newer" android:layout_width="128.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:text="@string/previous" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <Button android:id="@id/older" android:layout_width="128.0dip" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="@string/next" />
+</LinearLayout>

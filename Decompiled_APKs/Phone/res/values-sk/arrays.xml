@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roaming_options_entries">
+        <item>Nikdy</item>
+        <item>Len národný dátový roaming</item>
+        <item>Automaticky</item>
+    </string-array>
+    <string-array name="roaming_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="defer_messages">
+        <item>@string/call_defer_none</item>
+        <item>@string/call_defer_in_meeting</item>
+        <item>@string/call_defer_call_you_back</item>
+        <item>@string/call_defer_call_you_back_in</item>
+        <item>@string/call_defer_text_me</item>
+        <item>@string/call_defer_custom</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_sprint">
+        <item>Len Sprint</item>
+        <item>Automaticky</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_kddi">
+        <item>Len KDDI</item>
+        <item>Automaticky</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_sprint">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_boost">
+        <item>Len doma</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices">
+        <item>Globálny režim</item>
+        <item>Režim CDMA</item>
+        <item>Režim GSM/UMTS</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values">
+        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_v3">
+        <item>Len Sprint</item>
+        <item>Ľubovoľná sieť CDMA</item>
+        <item>Ľubovoľná sieť GSM</item>
+        <item>Automaticky</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_v3">
+        <item>1000</item>
+        <item>1002</item>
+        <item>3</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices">
+        <item>GSM/UMTS Dual</item>
+        <item>Len GSM</item>
+        <item>Len UMTS</item>
+    </string-array>
+    <string-array name="data_roam_guard_values_2ndtype">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings_2ndtype">
+        <item>Vždy sa opýtať</item>
+        <item>Nikdy sa nepýtať</item>
+    </string-array>
+    <string-array name="data_roam_guard_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="call_waiting_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_waiting_entries">
+        <item>Povoliť</item>
+        <item>Zakázať</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings">
+        <item>Predvolené</item>
+        <item>Vždy sa opýtať</item>
+        <item>Nikdy sa nepýtať</item>
+    </string-array>
+    <string-array name="sip_send_keepalive_options_translated">
+        <item>@string/sip_system_decide_translated</item>
+        <item>@string/sip_always_send_keepalive_translated</item>
+    </string-array>
+    <string-array name="network_mode_select_choices">
+        <item>LTE/CDMA</item>
+        <item>Len CDMA</item>
+    </string-array>
+    <string-array name="network_mode_select_values">
+        <item>8</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_entries">
+        <item>Povoliť</item>
+        <item>Zakázať</item>
+    </string-array>
+    <string-array name="global_roaming_select_choices">
+        <item>@string/global_roaming_option_all_trips</item>
+        <item>@string/global_roaming_option_this_trips</item>
+        <item>@string/global_roaming_option_deny</item>
+    </string-array>
+    <string-array name="global_roaming_select_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices_plus_lte">
+        <item>GSM/UMTS</item>
+        <item>Len GSM</item>
+        <item>Len UMTS</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_plus_lte">
+        <item>Globálne</item>
+        <item>LTE/CDMA</item>
+        <item>GSM/UMTS</item>
+        <item>Len CDMA</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_plus_lte">
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="skt_network_mode">
+        <item>Automaticky LTE/WCDMA</item>
+        <item>Len WCDMA</item>
+    </string-array>
+    <string-array name="skt_network_mode_values">
+        <item>9</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="plus_code_country_list">
+        <item>Japan(001010),jp</item>
+        <item>Bahamas(011),bs</item>
+        <item>Bangladesh(00),bd</item>
+        <item>Bermuda(011),bm</item>
+        <item>China(00),cn</item>
+        <item>Hong Kong(001),hk</item>
+        <item>India(00),in</item>
+        <item>Indonesia(001),id</item>
+        <item>Israel(00),il</item>
+        <item>Korea(00700),kr</item>
+        <item>Macao(00),mo</item>
+        <item>Mexico(00),mx</item>
+        <item>New Zealand(00),nz</item>
+        <item>Peru(00),pe</item>
+        <item>Saipan(011),mp</item>
+        <item>Taiwan(005),tw</item>
+        <item>Thailand(001),th</item>
+        <item>U.S.A.(011),us</item>
+        <item>Venezuela(00),ve</item>
+        <item>Viet Nam(00),vn</item>
+    </string-array>
+    <string-array name="pref_entries_cb_language_list">
+        <item>Nemčina</item>
+        <item>Angličtina</item>
+        <item>Taliančina</item>
+        <item>Francúzština</item>
+        <item>Španielčina</item>
+        <item>Holandčina</item>
+        <item>Švédčina</item>
+        <item>Dánčina</item>
+        <item>Portugalčina</item>
+        <item>Fínčina</item>
+        <item>Nórčina</item>
+        <item>Gréčtina</item>
+        <item>Turečtina</item>
+        <item>Maďarčina</item>
+        <item>Poľština</item>
+        <item>Všetky jazyky</item>
+    </string-array>
+    <string-array name="entryvalues_language_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_choices">
+        <item>Len WCDMA</item>
+        <item>Len GSM</item>
+        <item>Automaticky GSM/WCDMA</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices">
+        <item>Len LTE</item>
+        <item>Len WCDMA</item>
+        <item>Len GSM</item>
+        <item>Automaticky GSM/WCDMA</item>
+        <item>Automaticky GSM/WCDMA/LTE</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values">
+        <item>11</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices_without_lte_only">
+        <item>Len WCDMA</item>
+        <item>Len GSM</item>
+        <item>Automaticky GSM/WCDMA</item>
+        <item>Automaticky GSM/WCDMA/LTE</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values_without_lte_only">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_choices">
+        <item>Len WCDMA</item>
+        <item>Automaticky GSM/WCDMA</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_choices">
+        <item>Len EvDo</item>
+        <item>CDMA bez EvDo</item>
+        <item>Automaticky CDMA/EvDo</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_values">
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_No2">
+        <item>Len doma</item>
+        <item>Automaticky A</item>
+        <item>Automaticky B</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_No2">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_choices">
+        <item>NAM 1</item>
+        <item>NAM 2</item>
+        <item>Automaticky NAM</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_choices">
+        <item>Hybridný</item>
+        <item>Len EVDO</item>
+        <item>Len 1X</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_value">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="timeout_values">
+        <item>5 s.</item>
+        <item>10 s.</item>
+        <item>15 s.</item>
+        <item>20 s.</item>
+        <item>25 s.</item>
+        <item>30 s.</item>
+    </string-array>
+    <string-array name="clear_codes_values">
+        <item>MARCACION NO DISPONIBLE -01-</item>
+        <item>USUARIO NO DISPONIBLE -03-</item>
+        <item>LLAMADA TERMINADA -6-</item>
+        <item>USUARIO NO DISPONIBLE -08-</item>
+        <item>USUARIO OCUPADO</item>
+        <item>USUARIO NO RESPONDE -18-</item>
+        <item>USUARIO NO RESPONDE -19-</item>
+        <item>USUARIO NO DISPONIBLE -21-</item>
+        <item>MARCACION NO DISPONIBLE -22-</item>
+        <item>LLAMADA TERMINADA -25-</item>
+        <item>LLAMADA TERMINADA -26-</item>
+        <item>USUARIO NO DISPONIBLE -27-</item>
+        <item>MARCACION NO DISPONIBLE -28-</item>
+        <item>LLAMADA TERMINADA -29-</item>
+        <item>LLAMADA TERMINADA -30-</item>
+        <item>LLAMADA TERMINADA -31-</item>
+        <item>LLAMADA TERMINADA -34-</item>
+        <item>LLAMADA TERMINADA -38-</item>
+        <item>LLAMADA TERMINADA -41-</item>
+        <item>LLAMADA TERMINADA -42-</item>
+        <item>LLAMADA TERMINADA -43-</item>
+        <item>LLAMADA TERMINADA -44-</item>
+        <item>LLAMADA TERMINADA -47-</item>
+        <item>LLAMADA TERMINADA -49-</item>
+        <item>LLAMADA TERMINADA -50-</item>
+        <item>LLAMADA TERMINADA -55-</item>
+        <item>LLAMADA TERMINADA -57-</item>
+        <item>LLAMADA TERMINADA -58-</item>
+        <item>LLAMADA TERMINADA -63-</item>
+        <item>LLAMADA TERMINADA -65-</item>
+        <item>LLAMADA TERMINADA -68-</item>
+        <item>LLAMADA TERMINADA -69-</item>
+        <item>LLAMADA TERMINADA -70-</item>
+        <item>LLAMADA TERMINADA -79-</item>
+        <item>LLAMADA TERMINADA -81-</item>
+        <item>LLAMADA TERMINADA -87-</item>
+        <item>LLAMADA TERMINADA -88-</item>
+        <item>LLAMADA TERMINADA -91-</item>
+        <item>LLAMADA TERMINADA -95-</item>
+        <item>LLAMADA TERMINADA -96-</item>
+        <item>LLAMADA TERMINADA -97-</item>
+        <item>LLAMADA TERMINADA -98-</item>
+        <item>LLAMADA TERMINADA -99-</item>
+        <item>LLAMADA TERMINADA -100-</item>
+        <item>LLAMADA TERMINADA -101-</item>
+        <item>LLAMADA TERMINADA -102-</item>
+        <item>LLAMADA TERMINADA -111-</item>
+        <item>LLAMADA TERMINADA -127-</item>
+    </string-array>
+    <string-array name="network_type_list">
+        <item>2G</item>
+        <item>3G</item>
+        <item>@string/network_mode_both</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Predvolené sieťou</item>
+        <item>Skryť číslo</item>
+        <item>Zobraziť číslo</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>DEFAULT</item>
+        <item>HIDE</item>
+        <item>SHOW</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>Globálne</item>
+        <item>Len EvDo</item>
+        <item>CDMA bez EvDo</item>
+        <item>Automaticky CDMA/EvDo</item>
+        <item>Automaticky GSM/WCDMA</item>
+        <item>Len WCDMA</item>
+        <item>Len GSM</item>
+        <item>GSM/WCDMA preferované</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values">
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>Angličtina</item>
+        <item>Francúzština</item>
+        <item>Španielčina</item>
+        <item>Japončina</item>
+        <item>Kórejčina</item>
+        <item>Čínština</item>
+        <item>Hebrejčina</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA (automatický režim)</item>
+        <item>Len WCDMA</item>
+        <item>Len GSM</item>
+        <item>GSM/WCDA (WCDMA preferované)</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Len doma</item>
+        <item>Automaticky</item>
+    </string-array>
+    <string-array name="cdma_system_select_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_choices">
+        <item>Len domovská sieť</item>
+        <item>Pridružené siete</item>
+        <item>Ľubovoľná sieť</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_choices">
+        <item>CDMA/EvDo</item>
+        <item>Len CDMA</item>
+        <item>Len EvDo</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY vypnutý</item>
+        <item>TTY plné</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="tty_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normálne</item>
+        <item>Dlhé</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

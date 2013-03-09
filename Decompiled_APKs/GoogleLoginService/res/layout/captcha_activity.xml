@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:text="@string/gls_ui_activity_authenticating" />
+        <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/next_button" android:layout_below="@id/title_area">
+        <RelativeLayout android:id="@id/captcha" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/description_text_size" android:id="@id/instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:text="@string/captcha_instructions" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/captcha_image_view" android:focusable="false" android:clickable="false" android:layout_width="@dimen/captcha_width" android:layout_height="@dimen/captcha_height" android:layout_marginTop="6.0dip" android:src="@drawable/ic_menu_info_holo_dark" android:scaleType="fitXY" android:layout_below="@id/instructions" />
+            <EditText android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:id="@id/captcha_answer_edit" android:layout_height="wrap_content" android:singleLine="true" android:selectAllOnFocus="true" android:inputType="textNoSuggestions" android:imeOptions="actionDone" style="@style/CaptchaEditPositioning" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:id="@id/cancel_button" android:text="@string/back_button_label" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BackButton" />
+    <Button android:id="@id/next_button" android:text="@string/next_button_label" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+</view>

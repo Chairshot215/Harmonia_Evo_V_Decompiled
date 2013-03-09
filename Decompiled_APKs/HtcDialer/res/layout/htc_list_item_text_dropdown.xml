@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/style_content_edit_speed_dial"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="left|center" android:id="@com.htc:id/txt_1x1" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_marginTop="@com.htc:dimen/htc_list_item_margin_top" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:text="@string/unknown" android:singleLine="false" style="@style/style_content_edit_speed_dial_textview" />
+    <Button android:textColor="@com.htc:color/secondary_text_color" android:ellipsize="end" android:gravity="left|center" android:id="@com.htc:id/txt_2x1" android:background="?com.htc:attr_common_pulldown" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/unknown" android:singleLine="true" android:layout_below="@com.htc:id/txt_1x1" style="@style/style_content_edit_speed_dial_button" />
+    <ImageView android:id="@com.htc:id/htc_list_item_top_round" android:background="@com.htc:drawable/trans_topround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" />
+    <ImageView android:id="@com.htc:id/htc_list_item_bottom_round" android:background="@com.htc:drawable/trans_bottomround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</RelativeLayout>

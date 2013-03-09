@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:id="@id/details_expanded_content" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/message_details_header_padding_left" android:paddingRight="@dimen/message_details_header_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:paddingTop="14.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="1">
+        <TableRow>
+            <TextView android:id="@id/date_heading" android:text="@string/date_heading" style="@style/message_details_heading" />
+            <TextView android:id="@id/date_value" style="@style/message_details_value" />
+        </TableRow>
+        <TableRow android:id="@id/replyto_row" android:visibility="gone">
+            <TextView android:id="@id/replyto_heading" android:text="@string/replyto_heading" style="@style/message_details_heading" />
+            <TextView android:autoLink="email" android:id="@id/replyto_value" style="@style/message_details_value_selectable" />
+        </TableRow>
+        <TableRow android:id="@id/to_row" android:visibility="gone">
+            <TextView android:id="@id/to_heading" android:text="@string/to_heading" style="@style/message_details_heading" />
+            <TextView android:autoLink="email" android:id="@id/to_value" style="@style/message_details_value_selectable" />
+        </TableRow>
+        <TableRow android:id="@id/cc_row" android:visibility="gone">
+            <TextView android:id="@id/cc_heading" android:text="@string/cc_heading" style="@style/message_details_heading" />
+            <TextView android:autoLink="email" android:id="@id/cc_value" style="@style/message_details_value_selectable" />
+        </TableRow>
+        <TableRow android:id="@id/bcc_row" android:visibility="gone">
+            <TextView android:id="@id/bcc_heading" android:text="@string/bcc_heading" style="@style/message_details_heading" />
+            <TextView android:autoLink="email" android:id="@id/bcc_value" style="@style/message_details_value_selectable" />
+        </TableRow>
+    </TableLayout>
+    <ImageView android:layout_gravity="top|right|center" android:layout_marginTop="14.0dip" style="@style/message_header_expander_maximized" />
+</FrameLayout>

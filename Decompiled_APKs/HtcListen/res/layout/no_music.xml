@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/emptyLayout" android:background="@com.htc:color/title_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/topShadow" android:background="@com.htc:drawable/topround_v1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/bottomShadow" android:background="@com.htc:drawable/bottomround_v1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:background="@com.htc:color/listview_app_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomShadow" android:layout_below="@id/topShadow">
+        <ImageView android:background="@com.htc:drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <TextView android:gravity="center" android:id="@id/emptyText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@com.htc:style/list_primary_m" />
+        <ImageView android:background="@com.htc:drawable/trans_bottomround" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/appendix_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/online_appendix_margin_right" android:layout_marginBottom="@dimen/online_appendix_margin_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

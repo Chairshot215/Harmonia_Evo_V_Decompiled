@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_ime_settings_title" android:key="keyboard_ime_settings" android:summary="@string/keyboard_ime_settings_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_ime_settings_fqwerty_title" android:selectable="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_fqwerty_prediction_title" android:key="@string/keyboard_ime_settings_fqwerty_prediction" android:summary="@string/keyboard_ime_settings_fqwerty_prediction_summary" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_qwerty_sc_title" android:key="@string/keyboard_ime_settings_fqwerty_sc" android:summary="@string/keyboard_ime_settings_qwerty_sc_summary" android:dependency="keyboard_ime_settings_fqwerty_prediction" android:defaultValue="false" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_ime_settings_pcqwerty_title" android:selectable="false" android:key="@string/keyboard_ime_settings_pcqwerty" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_qwerty_sc_title" android:key="@string/keyboard_ime_settings_pcqwerty_sc" android:summary="@string/keyboard_ime_settings_qwerty_sc_summary" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_pcqwerty_wc_title" android:key="@string/keyboard_ime_settings_pcqwerty_wc" android:summary="@string/keyboard_ime_settings_pcqwerty_wc_summary" android:defaultValue="true" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_ime_settings_others_title" android:selectable="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_others_sound_title" android:key="@string/keyboard_ime_settings_others_sound" android:summary="@string/keyboard_ime_settings_others_sound_summary" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_ime_settings_others_vibration_title" android:key="@string/keyboard_ime_settings_others_vibration" android:summary="@string/keyboard_ime_settings_others_vibration_summary" android:defaultValue="true" />
+</com.htc.preference.HtcPreferenceScreen>

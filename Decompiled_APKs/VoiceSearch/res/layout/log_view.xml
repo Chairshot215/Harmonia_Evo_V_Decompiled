@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/log_view_refresh_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/refresh" android:layout_weight="1.0" />
+        <Button android:id="@id/log_view_send_mail_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/en_US_action_send_email" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:id="@id/log_view_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

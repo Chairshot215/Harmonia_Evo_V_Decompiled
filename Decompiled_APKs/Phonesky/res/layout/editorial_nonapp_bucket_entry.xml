@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.EditorialBucketEntry android:id="@id/editorial_entry" android:background="@drawable/highlight_overlay" android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.SimpleMarginBox android:layout_width="fill_parent" android:layout_height="wrap_content" finsky:max_content_width="@dimen/editorial_nonapp_cell_width">
+        <com.google.android.finsky.layout.EditorialNonAppBucketContent android:id="@id/editorial_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.finsky.layout.DocImageView android:id="@id/li_thumbnail" android:layout_width="@dimen/details_summary_large_width" android:layout_height="@dimen/details_summary_large_size" android:layout_marginRight="6.0dip" android:scaleType="fitStart" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" finsky:placeholder_type="regular" />
+            <TextView android:textSize="@dimen/content_generic_large_size" android:textStyle="bold" android:id="@id/li_title" android:paddingLeft="0.0dip" android:layout_marginLeft="@dimen/details_button_outer_glow" android:layout_toRightOf="@id/li_thumbnail" android:layout_alignParentTop="true" style="@style/ContentEntryTitle" />
+            <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_large_size" android:id="@id/li_creator" android:paddingLeft="0.0dip" android:layout_marginLeft="@dimen/details_button_outer_glow" android:layout_marginTop="-2.0dip" android:drawablePadding="4.0dip" android:layout_toRightOf="@id/li_thumbnail" android:layout_below="@id/li_title" style="@style/ContentEntrySubtitle" />
+            <TextView android:textSize="@dimen/content_generic_medium_size" android:textColor="@color/black" android:id="@id/li_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/details_button_outer_glow" android:maxLines="4" android:layout_toRightOf="@id/li_thumbnail" android:layout_below="@id/li_creator" />
+            <Button android:id="@id/buy_button" android:layout_marginLeft="0.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="0.0dip" android:layout_toRightOf="@id/li_thumbnail" android:layout_below="@id/li_description" style="@style/DetailsPage_EditorialBuyButton" />
+        </com.google.android.finsky.layout.EditorialNonAppBucketContent>
+    </com.google.android.finsky.layout.SimpleMarginBox>
+</com.google.android.finsky.layout.EditorialBucketEntry>

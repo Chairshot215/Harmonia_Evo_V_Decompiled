@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="14" android:versionName="4.0.1-eng.u52.20120418.152538" package="com.htc.android.fieldtrial"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.Manifest.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="@string/app_name" android:description="@string/htc_company_short_name">
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name=".FieldTrial" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="FieldTrialBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="cdma33284" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/group_list" android:name="ListGroupsActivity" android:screenOrientation="nosensor" />
+        <activity android:label="@string/item_list" android:name="ListItemsActivity" android:screenOrientation="nosensor" />
+    </application>
+</manifest>

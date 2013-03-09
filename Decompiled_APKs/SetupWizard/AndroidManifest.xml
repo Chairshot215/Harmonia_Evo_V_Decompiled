@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="130" android:versionName="1.3" package="com.google.android.setupwizard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.PERFORM_CDMA_PROVISIONING" />
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.READ_GSETTINGS" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.WRITE_GSETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application android:label="@string/setup_wizard_title" android:name="SetupWizardApplication" android:allowClearUserData="false" android:hardwareAccelerated="true">
+        <meta-data android:name="android.SETUP_VERSION" android:value="eclair_1" />
+        <receiver android:name="LoginAccountsMissingReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.googlelogin.LOGIN_ACCOUNTS_MISSING" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/InvisibleNoTitle" android:label="@string/setup_wizard_title" android:name="SetupWizardActivity" android:excludeFromRecents="true" android:launchMode="singleTop" android:immersive="true">
+            <intent-filter android:priority="5">
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.DEVICE_INITIALIZATION_WIZARD" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/WelcomeTheme" android:label="@string/setup_wizard_title" android:name="SetupWizardTestActivity" android:exported="true" android:launchMode="singleTop" android:immersive="true" />
+        <activity android:theme="@style/WelcomeTheme" android:label="@string/location_sharing_title" android:name="WelcomeActivity" android:screenOrientation="behind" android:immersive="true" />
+        <activity android:theme="@style/ActivationTheme" android:label="@string/activation_title" android:name="ActivationActivity" android:permission="android.permission.PERFORM_CDMA_PROVISIONING" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="behind" android:windowSoftInputMode="stateAlwaysHidden" android:immersive="true">
+            <intent-filter>
+                <action android:name="com.android.phone.PERFORM_VOICELESS_CDMA_PROVISIONING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/LocationSharingTheme" android:label="@string/location_sharing_title" android:name="LocationSharingActivity" android:screenOrientation="behind" android:immersive="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoAccountTosTheme" android:label="@string/tos_title" android:name="NoAccountTosActivity" android:immersive="true" />
+        <activity android:theme="@style/SetupCompleteTheme" android:label="@string/setup_complete_title" android:name="SetupCompleteActivity" android:immersive="true" />
+        <activity android:theme="@style/PrepaySetupTheme" android:label="@string/prepay_setup_title" android:name="PrepaySetupActivity" android:immersive="true" />
+        <activity android:theme="@style/SimMissingTheme" android:label="@string/sim_missing_title" android:name="SimMissingActivity" android:immersive="true" />
+        <service android:name="PrepayDetectionService" />
+    </application>
+</manifest>

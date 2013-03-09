@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="appinventor.ai_Leslie_Ann43.VmRoms"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="VmRoms" android:icon="@drawable/ya" android:debuggable="true">
+        <activity android:name=".Screen1" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.google.appinventor.components.runtime.ListPickerActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.google.appinventor.components.runtime.WebViewActivity" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

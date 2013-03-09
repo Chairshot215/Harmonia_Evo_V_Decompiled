@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/device_settings_category_title">
+        <PreferenceScreen android:title="@string/search_sources" android:key="search_sources" android:summary="@string/search_sources_summary" />
+        <com.google.android.googlequicksearchbox.preferences.OkCancelPreference android:persistent="false" android:title="@string/clear_shortcuts" android:key="clear_shortcuts" android:dialogTitle="@string/clear_shortcuts" android:dialogMessage="@string/clear_shortcuts_prompt" android:positiveButtonText="@string/clear_shortcuts_agree" android:negativeButtonText="@string/clear_shortcuts_disagree" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/google_settings_category_title" android:key="google_settings">
+        <CheckBoxPreference android:persistent="false" android:title="@string/use_location_title" android:key="use_location" android:summary="@string/yes_agree_use_location" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/search_history" android:key="search_history" android:summary="@string/search_history_summary_no_account" android:defaultValue="true" />
+        <ListPreference android:title="@string/select_google_account" android:key="google_account" android:summary="@string/select_google_account_summary_no_accounts" />
+        <Preference android:persistent="false" android:enabled="false" android:title="@string/manage_search_history" android:key="manage_search_history" android:summary="@string/manage_search_history_summary_no_account" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/use_google_com" android:key="use_google_com" android:defaultValue="false" />
+        <Preference android:persistent="false" android:title="@string/settings_tos_title">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/tos_url" />
+        </Preference>
+    </PreferenceCategory>
+    <Preference android:title="@string/license_activity_title" android:key="open_source_licenses" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/setupWizardTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/keyboard_tutorial_title" />
+        <View android:layout_gravity="center" android:background="@color/divider_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:textAppearance="@style/setupWizardBodyTextPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:text="@string/keyboard_tutorial_message" />
+        <EditText android:id="@id/sample_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/keyboard_tutorial_edittext_hint" android:singleLine="true" android:inputType="textLongMessage|textCapSentences|textAutoCorrect" android:privateImeOptions="com.google.android.gsf.login:ShowTutorial" />
+        <TextView android:textAppearance="@style/setupWizardTextPrimaryGreen" android:id="@id/done_typing_message" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/done_typing_message" />
+    </LinearLayout>
+    <RelativeLayout android:background="@*android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/back_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/back_button_label" android:drawableLeft="@drawable/ic_btn_back" android:drawablePadding="3.0dip" android:layout_alignParentLeft="true" />
+        <Button android:enabled="false" android:id="@id/next_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/next_button_label" android:drawableRight="@drawable/ic_btn_next" android:drawablePadding="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

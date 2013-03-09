@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeDefault">
+        <item name="android:listPreferredItemHeight">@com.htc:dimen/htc_list_item_height</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ThemeDefault.NoAnimation" parent="@style/ThemeDefault">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <style name="ThemeTransparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ThemeTranslucent">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@drawable/bg_translucent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="listview_style" parent="@com.htc:style/htc_listview_style">
+        <item name="android:background">@com.htc:color/listview_app_background</item>
+        <item name="android:cacheColorHint">@com.htc:color/listview_app_background</item>
+        <item name="android:divider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="common_button_text">
+        <item name="android:textSize">@com.htc:dimen/input_default_m</item>
+        <item name="android:textColor">#ff4c4c4c</item>
+        <item name="android:shadowColor">@*android:color/white</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="black_shadow_top_left">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="black_shadow_bottom_right">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="preview_item_label_text" parent="@com.htc:style/darklist_secondary_xl" />
+    <style name="preview_item_status_text" parent="@com.htc:style/darklist_secondary_l" />
+    <style name="preview_empty_text">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="featured_layout">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">@dimen/featured_layout_height</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="featured_icon" parent="@style/featured_icon_reflection">
+        <item name="android:src">@drawable/default_featured_icon</item>
+    </style>
+    <style name="featured_icon_reflection">
+        <item name="android:layout_width">@dimen/featured_icon_width</item>
+        <item name="android:layout_height">@dimen/featured_icon_height</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="featured_label">
+        <item name="android:textSize">@dimen/featured_label_text_size</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/featured_icon_reflection_height</item>
+        <item name="android:layout_marginLeft">@dimen/featured_label_text_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/featured_label_text_margin_left_right</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="detail_info_list_item_text_primary">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="detail_info_list_item_text_secondary">
+        <item name="android:textSize">@com.htc:dimen/list_secondary_m</item>
+        <item name="android:textColor">#ff4c4c4c</item>
+    </style>
+</resources>

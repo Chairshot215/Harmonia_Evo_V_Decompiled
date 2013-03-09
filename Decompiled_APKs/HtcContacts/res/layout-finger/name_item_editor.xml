@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_item_edit_text_with_label" />
+    <View android:gravity="bottom" android:id="@id/common_divider" android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

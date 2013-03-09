@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/cardButtonParent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="95.0px" android:layout_marginLeft="8.0px" android:layout_marginRight="8.0px" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/cardButton" android:paddingLeft="5.0px" android:paddingTop="4.0px" android:paddingRight="58.0px" android:paddingBottom="5.0px" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:gravity="center" android:id="@id/photo" android:layout_width="71.0px" android:layout_height="71.0px" android:layout_marginLeft="12.0px" android:layout_marginTop="12.0px" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:gravity="center" android:id="@id/detailButton" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:layout_marginRight="14.0px" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0px" android:layout_marginTop="16.0px" android:layout_marginRight="8.0px" android:layout_toLeftOf="@id/detailButton" android:layout_toRightOf="@id/photo" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0px">
+                <ImageView android:id="@id/callTypeIcon" android:layout_width="25.0px" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <TextView android:gravity="center_vertical" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/name" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0px">
+                <TextView android:id="@id/numberType" android:layout_width="25.0px" android:layout_height="fill_parent" android:singleLine="true" />
+                <TextView android:id="@id/number" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/number" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/numberType" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

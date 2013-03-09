@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="vertical" android:id="@id/topLayout" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.android.facelockutil.Preview android:gravity="center" android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.facelock.Draw android:id="@id/oval" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/statusText" android:background="@color/enrollment_error" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignLeft="@id/preview" android:layout_alignBottom="@id/preview" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_marginBottom="10.0dip" style="@style/SecurityPreferenceButtonContainer">
+        <Button android:id="@id/footerLeftButton" android:text="@string/shared_cancel_label" style="@style/SecurityPreferenceButton" />
+        <Button android:id="@id/footerRightButton" android:text="@string/enrollment_continue_label" style="@style/SecurityPreferenceButton" />
+    </LinearLayout>
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

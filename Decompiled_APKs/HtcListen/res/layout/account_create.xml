@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <FrameLayout android:id="@id/content" android:background="@color/listview_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout style="@style/auth.container">
+                    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_user_id" android:hint="@string/login_activity_username_label" android:inputType="textEmailAddress" style="@style/auth.edittext" />
+                </LinearLayout>
+                <View style="@style/divider" />
+                <LinearLayout style="@style/auth.container">
+                    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_password" android:hint="@string/login_activity_password_label" android:inputType="textPassword" style="@style/auth.edittext" />
+                </LinearLayout>
+                <View style="@style/divider" />
+                <LinearLayout style="@style/auth.container">
+                    <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_confirm_password" android:layout_marginRight="10.0px" android:hint="@string/login_activity_confirm_password_label" android:inputType="textPassword" style="@style/auth.edittext" />
+                </LinearLayout>
+                <View style="@style/divider" />
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_first_name" android:hint="@string/first_name" android:inputType="textCapWords" style="@style/auth.edittext" />
+                <View style="@style/divider" />
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_last_name" android:hint="@string/last_name" android:inputType="textCapWords" style="@style/auth.edittext" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/create_button_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View style="@style/divider" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" style="@style/auth">
+                        <CheckBox android:textColor="#ff000000" android:id="@id/auth_read_termsandconditions" android:layout_width="wrap_content" style="@style/auth" />
+                        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/auth">
+                            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auth_read_termsandconditions" style="@com.htc:style/list_primary_s" />
+                            <Button android:textColor="@color/dark_blue" android:gravity="left" android:id="@id/term_button" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auth_termsofuse" style="@com.htc:style/list_primary_s" />
+                        </LinearLayout>
+                        <Button android:textSize="@com.htc:dimen/button_secondary_m" android:id="@id/auth_button_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:text="@string/auth_button_register" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View style="@style/divider" />
+                <CheckBox android:id="@id/auth_send_promo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:text="@string/auth_send_promo" android:layout_weight="1.0" style="@com.htc:style/list_primary_s" />
+                <View style="@style/divider" />
+                <ImageView android:id="@id/buttonSpacer" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_below="@id/editing_window_content" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

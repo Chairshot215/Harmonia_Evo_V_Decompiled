@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:text="@string/show_error_activity_title" />
+        <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    </RelativeLayout>
+    <ScrollView style="@style/StackButtonedContent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/submission_title" android:visibility="gone" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/DescriptionText" />
+            <TextView android:id="@id/explanation" android:text="@string/submission_error_text" android:layout_below="@id/submission_title" android:layout_centerHorizontal="true" style="@style/DescriptionText" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/buttons" style="@style/StackedButtons">
+        <Button android:id="@id/next_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/next_button_label" style="@style/Button" />
+        <Button android:id="@id/skip_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/skip_button_label" style="@style/Button" />
+    </LinearLayout>
+</view>

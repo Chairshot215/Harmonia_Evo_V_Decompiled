@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/land_compose_bar" android:background="@color/list_bg" android:padding="@dimen/land_compose_frame_padding" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_horizontal" android:id="@id/land_send_btn" android:background="?com.htc:attr_common_button_small" android:layout_width="wrap_content" android:layout_height="@dimen/land_bar_size" android:layout_marginBottom="@dimen/land_compose_frame_padding" android:minWidth="@dimen/land_compose_btn_min_width" android:minHeight="0.0dip" android:text="@string/compose_send_mail_text" style="@com.htc:style/list_primary_m" />
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/land_attach_btn" android:background="?com.htc:attr_common_button_small" android:layout_width="wrap_content" android:layout_height="@dimen/land_bar_size" android:src="@drawable/mail_icon_attachment" android:minWidth="@dimen/land_compose_btn_min_width" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_voice_domestic" android:key="button_roaming_voice_domestic" android:disableDependentsState="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_data_domestic" android:key="button_roaming_data_domestic" android:summary="@string/roaming_data_domestic_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_voice_international" android:key="button_roaming_voice_international" android:disableDependentsState="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_data_international" android:key="button_roaming_data_international" android:summary="@string/roaming_data_international_summary" />
+</com.htc.preference.HtcPreferenceScreen>

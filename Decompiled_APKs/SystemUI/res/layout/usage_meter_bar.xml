@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/subcategory_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/title_margin_large" android:layout_marginRight="@com.htc:dimen/title_margin_large" />
+    <com.htc.widget.HtcProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/title_margin_large" android:layout_marginRight="@com.htc:dimen/title_margin_large" android:progress="100" android:secondaryProgress="100" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="left" android:id="@id/used" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/title_margin_large" android:layout_marginRight="@com.htc:dimen/title_margin_large" android:layout_weight="1.0" />
+        <TextView android:gravity="right" android:id="@id/quota" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/title_margin_large" android:layout_marginRight="@com.htc:dimen/title_margin_large" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

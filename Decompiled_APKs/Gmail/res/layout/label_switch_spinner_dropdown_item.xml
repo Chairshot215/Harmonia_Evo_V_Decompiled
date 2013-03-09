@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/account_dropdown_item_height" style="?android:attr/spinnerDropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/AccountSpinnerDropdownTextPrimary" />
+    <TextView android:id="@id/unread" style="@style/unreadCount" />
+</LinearLayout>

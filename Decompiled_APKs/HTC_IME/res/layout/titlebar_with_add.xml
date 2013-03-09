@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/margin_top_with_title_middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/headerRight1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.widget.HeaderBarMiddle>
+</LinearLayout>

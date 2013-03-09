@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dummy_padding_top" android:layout_width="fill_parent" android:layout_height="@com.htc:integer/header_bar_mheight" android:layout_alignParentTop="true" />
+    <ViewStub android:id="@id/stub_default_list" android:layout="@layout/mail_list_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dummy_padding_top" />
+    <ViewStub android:id="@id/stub_expand_list" android:layout="@layout/mail_list_expand" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dummy_padding_top" />
+    <TextView android:textSize="@com.htc:dimen/list_primary_m" android:textColor="#ffffffff" android:gravity="center" android:id="@id/emptyText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title_large" android:singleLine="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadingLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title_large">
+        <ProgressBar android:id="@*android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallInverse" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_m" android:textColor="@com.htc:color/white" android:id="@id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_load_mails" />
+    </LinearLayout>
+</RelativeLayout>

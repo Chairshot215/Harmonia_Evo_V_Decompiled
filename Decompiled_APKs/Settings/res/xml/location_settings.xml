@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/location_network_based" android:key="location_network" android:summary="@string/location_neighborhood_level" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/location_gps" android:key="location_gps" android:summary="@string/location_street_level" />
+</com.htc.preference.HtcPreferenceScreen>

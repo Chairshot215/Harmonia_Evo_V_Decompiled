@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/lock_title" style="?android:attr/textAppearanceLarge" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/lock_intro_message" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/bt_next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_2" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" style="?com.htc:titleBarBackgroundStyleSmall">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0px" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/htc_list_item_notification_text_size" android:textStyle="bold" android:textColor="@color/titleTextColor" android:gravity="center" android:id="@id/title_2_txt_1x1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?com.htc:notificationBubbleStyleShadow" />
+            <Button android:id="@id/btn_search" android:visibility="gone" style="?com.htc:titleBarButtonStyleSearch" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="36.0px" android:layout_marginRight="40.0px">
+            <TextView android:id="@id/title_2_txt_1x2_shadow" style="@style/titleBarShadowStyle" />
+            <TextView android:id="@id/title_2_txt_1x2" style="@style/titleBarStyle" />
+        </RelativeLayout>
+        <ImageView android:id="@id/title_2_img_1x1" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_margin_medium" android:src="?attr_titlebar_control" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

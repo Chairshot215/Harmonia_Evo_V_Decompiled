@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.android.mail.ProviderListItem android:gravity="center" android:id="@id/provider_list_item" android:layout_width="wrap_content" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/provider_list_icon" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <TextView android:gravity="center_vertical" android:id="@id/provider_list_text" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" style="@com.htc:style/list_primary_m" />
+</com.htc.android.mail.ProviderListItem>

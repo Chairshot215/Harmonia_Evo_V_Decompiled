@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings.framework.activity.powersaver">
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/data_usage_menu_restrict_background" android:key="restrict_background" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/data_usage_menu_split_4g" android:key="enable_split_4g" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/data_usage_menu_show_wifi" android:key="show_wifi" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/data_usage_menu_show_ethernet" android:key="show_ethernet" />
+</com.htc.preference.HtcPreferenceScreen>

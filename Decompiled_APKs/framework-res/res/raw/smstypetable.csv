@@ -1,0 +1,26 @@
+# Other Service: 0x000E, (discard, nack)
+#com.kddi.android.intent.action.LOCKSMS_RECEIVED,com.kddi.android.permission.RECEIVE_LOCKSMS,2,0x000E,0x00,,,,,,
+
+# What's this? 0x000701
+#com.kddi.android.intent.action.KUPSMS_RECEIVED,com.kddi.android.permission.RECEIVE_KUPSMS,2,0xFFFF,0x01,0,3,0x000701,,,
+
+# Optional Service: 0xEF43 (support, ack)
+#com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xEF43,0x00,,,,,,
+
+# Optional Service: 0xEF40 (support, ack)
+#com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xEF40,0x00,,,,,,
+
+# Optional Service: 0xEF44 -> 0xEF55 (support ack)
+#com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xFFFF,0xFF,0,2,0xEF44,0,2,0xEF55
+
+# Optional Service: 0xEF56 -> 0xEF7E (discard, nack)
+,,1,0xFFFF,0xFF,0,2,0xEF56,0,2,0xEF7E
+
+# Other Service: 0x0002 -> 0x005F (discard, nack)
+,,1,0xFFFF,0xFF,0,2,0x0002,0,2,0x005F
+
+# Other Service: 0x0060 -> 0x00AF (discard, ack)
+,,0,0xFFFF,0xFF,0,2,0x0060,0,2,0x00AF
+
+# Other Service: 0x00B0 -> 0x00FF (support, ack)
+#com.kddi.android.intent.action.UNSUP_SMS_RECEIVED,com.kddi.android.permission.RECEIVE_UNSUP_SMS,0,0xFFFF,0xFF,0,2,0x00B0,0,2,0x00FF

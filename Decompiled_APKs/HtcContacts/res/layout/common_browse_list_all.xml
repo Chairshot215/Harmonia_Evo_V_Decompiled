@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.htccontacts.widget.title.BrowseHeaderBar android:id="@id/headerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+    <com.htc.widget.HtcListView android:id="@*android:id/list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:stackFromBottom="false" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_list_divider" style="@style/CustomizationListBackground" />
+    <include layout="@layout/common_empty_list" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemePreview">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="com.htc:fakescreenStyle">style_01</item>
+    </style>
+    <style name="text_style_empty_view">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/list_item_primary_text_color</item>
+    </style>
+    <style name="no_window_content_overlay">
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@*android:color/transparent</item>
+    </style>
+    <style name="text_style_primary">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/list_item_primary_text_color</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/preview_common_header" />
+    <include layout="@layout/preview_common_button_set" />
+    <View android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/common_button_sets" android:layout_below="@id/common_header" />
+    <ViewStub android:id="@id/preview_item_decorflow_layout" android:layout="@layout/preview_item_decorflow" android:inflatedId="@id/preview_item_decorflow_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/preview_item_decorflow_layout_margin_top" android:layout_above="@id/common_button_sets" android:layout_below="@id/common_header" />
+    <ViewStub android:id="@id/preview_item_status_layout" android:layout="@layout/preview_item_status" android:inflatedId="@id/preview_item_status_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/preview_item_status_margin_bottom" android:layout_above="@id/common_button_sets" />
+    <include android:layout_above="@id/common_button_sets" android:layout_below="@id/common_header" layout="@layout/preview_empty" />
+</RelativeLayout>

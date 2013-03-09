@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">Usuwanie danych...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">Wyłączanie Bluetooth...</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"Może być konieczne usunięcie sparowania tego telefonu z %s. 
+Naciśnij OK, aby wyjść i spróbuj ponownie później."</string>
+    <string name="UI_MSGBOX_BTN_BACK">Wstecz</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">Anuluj</string>
+    <string name="UI_MSGBOX_BTN_NO">Nie</string>
+    <string name="UI_MSGBOX_BTN_OK">OK</string>
+    <string name="UI_MSGBOX_BTN_QUIT">Zakończ</string>
+    <string name="UI_MSGBOX_BTN_RESUME">Wznów</string>
+    <string name="UI_MSGBOX_BTN_SETTING">Ustawienie</string>
+    <string name="UI_MSGBOX_BTN_YES">Tak</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">Informacja Transfer nie może włączyć funkcji Bluetooth. Sprawdź ustawienia komunikacji bezprzewodowej.</string>
+    <string name="UI_MSGBOX_CONN_FAILED">Naciśnij Wznów, aby spróbować ponownie, lub Anuluj, aby zakończyć.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">Powielone dane</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">Już importowałeś %1$s z %2$s. Mogą zostać utworzone powielone wpisy.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">Jeżeli stary telefon nie zostanie wykryty, sprawdź, czy jest w nim włączona funkcja wykrywalności.</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">Zaimportowano wszystkie dane dostępne w %s.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"Aby umożliwić transfer danych, wyłącz funkcję szyfrowania/ochrony hasłem w urządzeniu Blackberry, a następnie dotknij przycisk „OK”.
+Standardowa ścieżka dostępu to: Opcje>Opcje bezpieczeństwa>Szyfrowanie/Hasło"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">Czy na pewno zakończyć?</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">Dane zaimportowane z urządzenia %s zostaną usunięte. Czy na pewno zakończyć?</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">Aby importować ponownie z %s,najpierw wybierz i wyczyść dane na tym telefonie.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">Wszystkie dane wybranego typu, z wyjątkiem kontaktów Gmail i Exchange, zostaną usunięte z tego telefonu.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">W zależności od możliwości Twojego starego telefonu można będzie przenieść kontakty i wydarzenia kalendarza do Twojego nowego telefonu HTC za pośrednictwem Bluetooth.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">Aby importować ponownie z %s,najpierw wybierz i wyczyść dane na tym tablecie.</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">Może być konieczne ponowne uruchomienie %s i wykonanie kolejnej próby.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">Może być konieczne ponowne uruchomienie tego oraz Twojego starego telefonu i wykonanie kolejnej próby.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">Może być konieczne ponowne uruchomienie tego oraz Twojego starego tabletu i wykonanie kolejnej próby.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">Transfer nie powiódł się</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">Błąd połączenia</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">Usuń</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">Kojarzenie nieudane</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">Błąd zapytania</string>
+    <string name="ANDROID_TIPS_1">"1. Wybierz \"menu\" > \"Ustawienia\" > \"Bezprzewodowe i sieci\"
+
+2. Zaznacz \"Bluetooth\"
+
+3. Wybierz \"Ustawienia Bluetooth\" 
+
+4. Zaznacz \"Wykrywalne\""</string>
+    <string name="ANDROID_TIPS_2">"1. Przejdź do ekranu Aplikacje > „Ustawienia” > „Sieci zwykłe i bezprzewodowe”
+
+2. Wybierz „Ustawienia Bluetooth”
+
+3. Zaznacz „Bluetooth”
+
+4. Zaznacz „Widoczne”"</string>
+    <string name="ANDROID_TIPS_3">"1. Przejdź do ekranu Aplikacje > „Ustawienia” > „Sieci zwykłe i bezprzewodowe”
+
+2. Wybierz „Ustawienia Bluetooth”
+
+3. Zaznacz „Bluetooth”
+
+4. Zaznacz „Wykrywalne”"</string>
+    <string name="APP_TIPS_1">"1. Wybierz przycisk ekranu głównego > Ustawienia > Ogólna.
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Pozostań na ekranie ustawień Bluetooth."</string>
+    <string name="HTC_TIPS_1">"1. Przejdź do ekranu głównego.
+
+2. Dotknij Start > Ustawienia > Łączność.
+
+3. Wybierz Bluetooth.
+
+4. Wybierz kartę Tryb.
+
+5. Włącz Bluetooth.
+
+6. Zaznacz opcję Pozwól, aby urządzenie było widoczne dla innych urządzeń."</string>
+    <string name="HTC_TIPS_2">"1. Przejdź do ekranu głównego.
+
+2. Dotknij Start > Ustawienia > Łączność > Bluetooth.
+
+3. Wybierz Bluetooth > Menu.
+
+4. Włącz Bluetooth.
+
+5. Ustaw opcję Widoczność jako Wł."</string>
+    <string name="HTC_TIPS_3">"1. Przejdź do ekranu głównego.
+
+2. Dotknij Start > Ustawienia > Łączność > Bluetooth.
+
+3. Wybierz Bluetooth > Menu.
+
+4. Włącz Bluetooth.
+
+5. Ustaw opcję Widoczność jako Wł."</string>
+    <string name="HTC_TIPS_4">"1. Przejdź do ekranu głównego.
+
+2. Dotknij Start > Ustawienia > Sterowanie bezprzewodowe.
+
+3. Włącz Bluetooth.
+
+4. Dotknij lewą część przycisku Bluetooth.
+
+5. Dotknij Zaawansowane.
+
+6. Wybierz kartę Tryb.
+
+7. Zaznacz opcję Pozwól, aby urządzenie było widoczne dla innych urządzeń."</string>
+    <string name="HTC_TIPS_5">"1. Wybierz \"Start\" > \"Narzędzia\" > \"Ustawienia\" 
+
+2. Wybierz \"Sterowanie bezprzewodowe\" > \"Bluetooth\"
+
+3. Wybierz \"Zaawansowane\"
+
+4. Wybierz kartę \"Tryb\"
+
+5. Zaznacz \"Włącz Bluetooth\" i \"Pozwól, aby urządzenie było widoczne dla innych urządzeń\""</string>
+    <string name="HTC_TIPS_6">"1. Wybierz \"Start\" >\"Ustawienia\" > \"Menu\" > \"Wszystkie ustawienia\"
+
+2. Wybierz \"Bluetooth\" i włącz tę funkcję
+
+3. Wybierz kartę oznaczoną ikoną koła zębatego
+
+4. Wybierz ikonę teleskopu > \"Zawsze widoczne\""</string>
+    <string name="HTC_TIPS_7">"1. Na ekranie startowym dotknij „→”.
+
+2. Stuknij kolejno Ustawienia > Bluetooth.
+
+3. Włącz Bluetooth."</string>
+    <string name="HTC_TIPS_8">"1. Wybierz „Start” > „Narzędzia” > „Ustawienia”
+
+2. Kliknij „Menu” > „Wszystkie ustawienia”
+
+3. Wybierz Bluetooth
+
+4. Wybierz kartę „Tryb”
+
+5. Włącz Bluetooth
+
+6. Zaznacz opcję „Pozwól, aby urządzenie było widoczne dla innych urządzeń”"</string>
+    <string name="KYO_TIPS_1">"1. Select Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Select On/Off \"On Visible\"
+
+3. Select \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Select BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. Wybierz kolejno Menu > Ustawienia > Łączność.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Wł.
+
+4. Wybierz Ustawienia. 
+
+5. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="LGG_TIPS_2">"%s1. Wybierz kolejno Menu > Ustawienia > Łączność.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Wł.
+
+4. Wybierz Ustawienia Bluetooth.
+
+5. Ustaw opcję Widoczność jako Pokazuj telefon."</string>
+    <string name="LGG_TIPS_3">"%s1. Wybierz kolejno Menu > Ustawienia > Bluetooth.
+
+2. Włącz Bluetooth.
+
+3. Ustaw opcję Widoczność jako Zawsze widoczny."</string>
+    <string name="LGG_TIPS_4">"%s1. Wybierz Menu i kliknij ostatnią kartę.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Wybierz Ustawienia.
+
+5. Ustaw opcję Widoczność mojego urządzenia jako Widoczne."</string>
+    <string name="LGG_TIPS_5">"1. Wybierz Menu > Ustawienia i narzędzia > Menu Bluetooth.
+
+2. Ustaw opcję Bluetooth jako Włącz.
+
+3. Wybierz Opcje > Tryb wykrywania > Wł."</string>
+    <string name="MOT_TIPS_1">"%s1. Wybierz Menu > Ustawienia/narzędzia > Ustawienia.
+
+2. Zaznacz Bluetooth.
+
+3. Wybierz Zasilanie Bluetooth.
+
+4. Włącz.
+
+5. Wybierz Ustaw wykrywalność.
+
+6. Wybierz zawsze."</string>
+    <string name="MOT_TIPS_10">"1. Wybierz Menu główne > Bluetooth.
+
+2. Wybierz Konfiguracja.
+
+3. Ustaw opcję Zmień ustawienia zasilania jako Wł.
+
+4. Wybierz Wstecz.
+
+5. Wybierz Odszukaj mnie > wykrywanie: 3 minuty."</string>
+    <string name="MOT_TIPS_11">"%s1. Wybierz Menu główne > Ustawienia > Łączność.
+
+2. Wybierz Łącze Bluetooth.
+
+3. Wybierz Konfiguracja.
+
+4. Ustaw opcję Zmień ustawienia zasilania jako Wł.
+
+5. Wybierz Wstecz
+
+6. Wybierz Odszukaj mnie > wykrywanie: 3 minuty."</string>
+    <string name="MOT_TIPS_12">"%s1. Wybierz Menu > „Ustawienia”
+
+2. Wybierz „Połączenia”
+
+3. Wybierz „Bluetooth”
+
+4. Wybierz „Opcje” > „Zarządzaj” > „Konfiguruj Bluetooth”
+
+5. Włącz zasilanie Bluetooth („wł.”)
+
+6. Wybierz „Wstecz”
+
+7. Wybierz „Opcje” > Wykrywalne: Wł. na 3 minuty"</string>
+    <string name="MOT_TIPS_2">"%s1. Wybierz Menu > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth."</string>
+    <string name="MOT_TIPS_3">"%s1. Wybierz Menu główne > Ustawienia.
+
+2. Wybierz Łącze Bluetooth.
+
+3. Wybierz Konfiguracja.
+
+4. Ustaw opcję Zmień ustawienia zasilania jako Wł.
+
+5. Wybierz Wstecz
+
+6. Wybierz Odszukaj mnie > wykrywanie: 3 minuty."</string>
+    <string name="MOT_TIPS_4">"%s1. Wybierz Menu główne > Ustawienia i narzędzia.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Konfiguracja jako Wł.
+
+4. Ustaw Tryb wykrywania jako wł. 
+
+5. Ustaw opcję Wykrywanie na 3 minuty."</string>
+    <string name="MOT_TIPS_5">"1. Wybierz Menu > USTAWIENIA I NARZĘDZIA.
+
+2. Wybierz Menu Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Wybierz Opcje. 
+
+5. Ustaw Tryb wykrywania jako Wł."</string>
+    <string name="MOT_TIPS_6">"1. Wybierz Menu > Narzędzia.
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw opcję Widoczność jako Zawsze widoczny."</string>
+    <string name="MOT_TIPS_7">"1. Wybierz Menu > USTAWIENIA I NARZĘDZIA.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Wybierz Ustawienia.
+
+5. Ustaw Tryb wykrywania jako Wł."</string>
+    <string name="MOT_TIPS_8">"1. Wybierz Menu > USTAWIENIA I NARZĘDZIA.
+
+2. Wybierz Menu Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Wybierz Ustawienia.
+
+5. Ustaw Tryb wykrywania jako Wł."</string>
+    <string name="MOT_TIPS_9">"1. Wybierz Menu główne > Ustawienia > Łączność.
+
+2. Wybierz Łącze Bluetooth.
+
+3. Wybierz Konfiguracja.
+
+4. Ustaw opcję Zmień ustawienia zasilania jako Wł.
+
+5. Wybierz Wstecz
+
+6. Wybierz Odszukaj mnie > wykrywanie: 3 minuty."</string>
+    <string name="NOK_TIPS_1">"1. Wybierz kolejno Menu > Ustawienia > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_10">"1. Wybierz Menu > Ustawienia. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Wybierz widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_11">"1. Wybierz Menu > Narzędzia > Łączność.
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_12">"1. Wybierz Menu > Panel sterowania > Połącz. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_13">"1. Wybierz Menu główne > Ustawienia > Łączność.
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_14">"1. Wybierz Menu > „Ustawienia” > „Połączenie”.
+
+2. Wybierz „Bluetooth”.
+
+3. Włącz Bluetooth.
+
+4. Ustaw opcję „Widoczność urządzenia” jako „Zawsze widoczny”."</string>
+    <string name="NOK_TIPS_15">"1. Wybierz „Menu” > „Ustawienia” > „Łączność”.
+
+2. Wybierz „Bluetooth”.
+
+3. Włącz Bluetooth.
+
+4. Ustaw opcję „Widoczność urządzenia” jako „Wyświetlaj wszystkim”"</string>
+    <string name="NOK_TIPS_2">"1. Wybierz Menu > Narzędzia.
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_4">"1. Wybierz kolejno Menu > Ustawienia > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj na stałe."</string>
+    <string name="NOK_TIPS_5">"1. Wybierz Menu > Połącz. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Wybierz widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_51">"%s1. Wybierz Menu > Połącz. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Wybierz widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_6">"1. Wybierz kolejno Menu > Ustawienia > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj na stałe."</string>
+    <string name="NOK_TIPS_7">"1. Wybierz kolejno Menu > Ustawienia > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj na stałe."</string>
+    <string name="NOK_TIPS_8">"1. Wybierz kolejno Menu > Ustawienia > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Wybierz Ustawienia Bluetooth
+
+5. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="NOK_TIPS_9">"1. Wybierz Menu > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Włącz Bluetooth.
+
+4. Ustaw widoczność telefonu jako Pokazuj wszystkim."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">Inni</string>
+    <string name="OTHER_PHONE_General">"Możesz włączyć Bluetooth w swoim nieobsługiwanym telefonie:
+
+1. Przejdź do głównego ekranu
+
+2. Wybierz Menu > Ustawienia
+
+3. Wybierz Połączenie > Ustawienia Bluetooth
+
+4. Włącz Bluetooth
+
+5. Wybierz Widoczność/Wykrywalność > Pokaż wszystkim
+
+6. Pozostań na ekranie ustawień Bluetooth"</string>
+    <string name="RIM_TIPS_1">"1. Wybierz Menu > Opcje > Bluetooth.
+
+2. Kliknij Menu.
+
+3. Wybierz Włącz Bluetooth.
+
+4. Kliknij ponownie Menu
+
+5. Wybierz Opcje. 
+
+6. Ustaw opcję Wykrywalne jako Tak."</string>
+    <string name="RIM_TIPS_2">"1. Wybierz Menu > Zarządzaj połączeniami. 
+
+2. Zaznacz Bluetooth.
+
+3. Wybierz Opcje Bluetooth.
+
+4. Kliknij ponownie Menu
+
+5. Wybierz Opcje. 
+
+6. Ustaw opcję Wykrywalne jako Tak."</string>
+    <string name="RIM_TIPS_3">"1. Przejdź do ekranu Wszystkie aplikacje.
+
+2. Wybierz „Zarządzaj połączeniami”.
+
+3. Zaznacz „Bluetooth”.
+
+4. Wybierz „Połączenia Bluetooth”.
+
+5. Ustaw opcję Bluetooth jako „Wł.”.
+
+6. Ustaw opcję Wykrywalne jako „Tak”."</string>
+    <string name="RIM_TIPS_4">"1. Przejdź do ekranu Wszystkie aplikacje.
+
+2. Wybierz „Zarządzaj połączeniami”.
+
+3. Zaznacz „Bluetooth”.
+
+4. Wybierz „Sieci i połączenia”.
+
+5. Wybierz „Połączenia Bluetooth”.
+
+6. Ustaw opcję Bluetooth jako „Wł.”.
+
+7. Ustaw opcję Wykrywalne jako „Tak”."</string>
+    <string name="SAM_TIPS_1">"%s1. Wybierz Menu > Bluetooth. 
+
+2. Ustaw opcję Aktywacja jako Wł.
+
+3. Ustaw widoczność telefonu jako Wł."</string>
+    <string name="SAM_TIPS_10">"%s1. Wybierz „Menu” > „Ustawienia” > „Ustawienia sieci” > „Bluetooth”
+
+2. Ustaw opcję Aktywacja jako „Wł.”
+
+3. Ustaw „widoczność telefonu” jako „Wł.”"</string>
+    <string name="SAM_TIPS_11">"%s1. Wybierz „Menu” > „Aplikacje”
+
+2. Wybierz „Bluetooth”
+
+3. Ustaw „aktywację Bluetooth”
+
+4. Wybierz „Ustawienia”
+
+5. Ustaw „widoczność telefonu” jako „Wł.” i kliknij „Zapisz”
+
+6. Przejdź do „ekranu głównego”"</string>
+    <string name="SAM_TIPS_12">"%s1. Przejdź do ekranu głównego.
+
+2. Wybierz „Ustawienia” > „Łączność” > „Bluetooth”.
+
+3. Ustaw opcję Aktywacja jako „Wł.”
+
+4. Ustaw widoczność telefonu jako „Wł.”"</string>
+    <string name="SAM_TIPS_2">"%s1. Wybierz Menu > Aplikacje > Bluetooth. 
+
+2. Ustaw opcję Aktywacja jako Wł.
+
+3. Ustaw widoczność telefonu jako Wł."</string>
+    <string name="SAM_TIPS_3">"1. Wybierz Menu > Ustawienia i narzędzia > Menu Bluetooth. 
+
+2. Ustaw opcję Bluetooth jako Włącz.
+
+3. Wybierz Opcje > Tryb wykrywania > Wł."</string>
+    <string name="SAM_TIPS_4">"%s1. Wybierz Menu główne > Ustawienia > Bluetooth. 
+
+2. Włącz Bluetooth.
+
+3. Ustaw opcję Widoczność jako Zawsze widoczny."</string>
+    <string name="SAM_TIPS_5">"%s1. Wybierz Menu > Ustawienia/narzędzia > Menu Bluetooth.
+
+2. Ustaw opcję Konfiguracja jako ustaw dla.
+
+3. Ustaw Tryb wykrywania konfiguracji jako Wł."</string>
+    <string name="SAM_TIPS_6">"%s1. Wybierz Menu > Ustawienia.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz Bluetooth.
+
+4. Ustaw opcję Moja widoczność jako Wł."</string>
+    <string name="SAM_TIPS_7">"%s1. Wybierz Menu > Ustawienia.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Aktywacja jako Wł.
+
+4. Ustaw widoczność telefonu jako Wł."</string>
+    <string name="SAM_TIPS_8">"%s1. Wybierz Menu > Narzędzia/użytki > Bluetooth.
+
+2. Wybierz Ustawienia Bluetooth.
+
+3. Wybierz Włącz.
+
+4. Ustaw Tryb wykrywania jako wł."</string>
+    <string name="SAM_TIPS_9">"%s1. Wybierz Menu > Ustawienia.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Aktywacja jako Wł.
+
+4. Ustaw widoczność telefonu jako Wł."</string>
+    <string name="SAN_TIPS_1">"1. Wybierz kolejno Menu > Narzędzia > Bluetooth. 
+
+2. Wybierz Więcej… > Ustawienia > Wł.
+
+3. Ustaw opcję Widoczność jako Zawsze widoczny."</string>
+    <string name="SE_TIPS_1">"%s1. Wybierz kolejno Menu > Ustawienia > Łączność.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Ustaw opcję Widoczność jako Pokazuj telefon."</string>
+    <string name="SE_TIPS_2">"%s1. Wybierz Menu > Łączność. 
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Wybierz Opcje.
+
+5. Ustaw opcję Widoczność jako Pokazuj telefon."</string>
+    <string name="SE_TIPS_3">"%s1. Wybierz Menu > Połącz. 
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Ustaw opcję Widoczność jako Pokazuj telefon."</string>
+    <string name="SE_TIPS_4">"%s1. Wybierz kolejno Menu > Ustawienia > Łączność.
+
+2. Wybierz Bluetooth.
+
+3. Ustaw opcję Bluetooth jako Włącz.
+
+4. Wybierz Opcje.
+
+5. Ustaw opcję Widoczność jako Pokazuj telefon."</string>
+    <string name="SE_TIPS_5">"1. Przejdź do \"ekranu głównego\".
+
+2. Dotknij kolejno \"Start\" > \"Ustawienia\" > \"Bluetooth\".
+
+3. Wybierz kartę Tryb.
+
+4. Włącz Bluetooth.
+
+5. Zaznacz opcję \"Pozwól, aby urządzenie było widoczne dla innych urządzeń.\""</string>
+    <string name="SE_TIPS_6">"%s1. Przejdź do ekranu Aplikacje > „Ustawienia” > „Łączność”.
+
+2. Wybierz „Bluetooth”.
+
+3. Ustaw opcję Bluetooth jako „Wł.”.
+
+4. Ustaw opcję Widoczność telefonu jako „Widoczne”."</string>
+    <string name="SHP_TIPS_1">"%s1. Wybierz „Menu” > „Ustawienia”
+
+2. Wybierz „Łączność” > „Bluetooth”
+
+3. Ustaw przełącznik Wł./Wył. w pozycji „Wł.”
+
+4. Wybierz Widoczność > „Pokaż mój telefon”
+
+5. Upewnij się, że zestaw słuchawkowy Bluetooth jest włączony i przejdź do ekranu oczekiwania"</string>
+    <string name="SIM_TIPS">Jeśli posiadasz tylko jedną kartę SIM, możesz wyjąć ją z telefonu, włożyć do starego aparatu, a następnie uruchomić dwa telefony w tym samym czasie.</string>
+    <string name="app_icon_name">Transfer</string>
+    <string name="app_name">Prześlij moje rzeczy</string>
+    <string name="UI_About_Platform">dla systemu Android</string>
+    <string name="UI_About_Version">Wersja:</string>
+    <string name="UI_BTN_Done">Gotowe</string>
+    <string name="UI_BTN_Next">Dalej</string>
+    <string name="UI_BTN_ReScan">Pon-skan</string>
+    <string name="UI_BTN_Stop">Zatrzymaj</string>
+    <string name="UI_ERROR_TRY_AGAIN">Wystąpiły błędy.</string>
+    <string name="UI_IMPORTED">Importowano</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">Importuj do konta</string>
+    <string name="UI_IMPORT_PHONE">Importuj do tego telefonu</string>
+    <string name="UI_INSERT_SD_CARD">Włóż kartę SD</string>
+    <string name="UI_Menu_BTN_About">Informacje</string>
+    <string name="UI_MOD_BOOKMARK">Zakładka</string>
+    <string name="UI_MOD_CALENDAR">Kalendarz</string>
+    <string name="UI_MOD_PHONEBOOK">Kontakty</string>
+    <string name="UI_MOD_PHOTO">Zdjęcia z aparatu</string>
+    <string name="UI_MOD_SMS">SMS</string>
+    <string name="UI_MOD_TASK">Zadanie</string>
+    <string name="UI_MOUNT_SD_CARD">Należy podłączyć pamięć USB</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">telefon źródłowy</string>
+    <string name="UI_OPENOPORT_TEXT">Sprawdź %s. Może być konieczna autoryzacja połączenia.</string>
+    <string name="UI_PHOTO_DESCRIPTION">Tylko pliki w telefonie</string>
+    <string name="UI_TEXT_AND">i</string>
+    <string name="UI_TEXT_BM_IMPORTED">Zaimportowano zakładkę</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">Zaimportowano zakładki</string>
+    <string name="UI_TEXT_CAL_IMPORTED">Importowano wpisów kalendarza</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">Importowano wpisów kalendarza</string>
+    <string name="UI_TEXT_DATA">Dane</string>
+    <string name="UI_TEXT_FAQ_PAGE">Odwiedź stronę z najczęstszymi pytaniami</string>
+    <string name="UI_TEXT_PB_IMPORTED">Importowano kontaktów</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">Importowano kontaktów</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">Zdjęcie aparatu importowane</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">Zdjęcia aparatu importowane</string>
+    <string name="UI_TEXT_SMS_IMPORTED">Importowano SMSów</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">Importowano SMSów</string>
+    <string name="UI_TEXT_TASK_IMPORTED">Importowane zadanie</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">Importowane zadania</string>
+    <string name="UI_TIP_ACCOUNT">Konto</string>
+    <string name="UI_TIP_CONFIRM">Potwierdź kod %1$s w %2$s</string>
+    <string name="UI_TIP_Co_1">Zakończyłeś importowanie danych z %s do tego telefonu.</string>
+    <string name="UI_TIP_Co_1_TABLET">Zakończyłeś importowanie danych z %s do tego tabletu.</string>
+    <string name="UI_TIP_Co_TBD">"
+Dodatkowe pola kontaktów zostały zapisane w polu notatek."</string>
+    <string name="UI_TIP_ImDa_1">W zależności od możliwości Twojego starego telefonu można będzie przenieść kontakty, wiadomości SMS i wydarzenia kalendarza do Twojego nowego telefonu HTC za pośrednictwem Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">W zależności od możliwości Twojego starego telefonu można będzie przenieść kontakty, wiadomości SMS i wydarzenia kalendarza do Twojego nowego tabletu HTC za pośrednictwem Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">W zależności od możliwości Twojego starego telefonu można będzie przenieść kontakty i wydarzenia kalendarza do Twojego nowego telefonu HTC za pośrednictwem Bluetooth.</string>
+    <string name="UI_TIP_ImDa_2">Dotknij „Dalej”, aby rozpocząć.</string>
+    <string name="UI_TIP_ImDa_35">W zależności od możliwości Twojego starego telefonu można będzie przenieść kontakty i inne dane do Twojego nowego telefonu HTC za pośrednictwem Bluetooth.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">W zależności od możliwości Twojego starego telefonu można będzie przenieść kontakty i inne dane do Twojego nowego tabletu HTC za pośrednictwem Bluetooth.</string>
+    <string name="UI_TIP_Info_1">W %s wystąpiły błędy. Spróbuj ponownie później.</string>
+    <string name="UI_TIP_Info_2">Spróbuj ponownie później</string>
+    <string name="UI_TIP_Info_UnMatchPhone">Z powodu niemożności dopasowania modeli telefonów w %s wystąpił błąd.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">Inne telefony %s nie znajdują się na liście obsługiwanych urządzeń, lecz aplikacja Transfer może spróbować wykryć stary telefon i sprawdzić, czy transfer danych jest możliwy.</string>
+    <string name="UI_TIP_Language">PLK</string>
+    <string name="UI_TIP_NoSuMo_1">%s nie jest obsługiwany. Nie można importować żadnych danych.</string>
+    <string name="UI_TIP_NoSuMo_2">Naciśnij \"Gotowe\", aby wyjść.</string>
+    <string name="UI_TIP_ON">W %s:</string>
+    <string name="UI_TIP_PaWi">Wprowadź %1$s w %2$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">%s zapisane na twoim koncie zostanie zsynchronizowane po zalogowaniu do usługi.</string>
+    <string name="UI_TIP_Re_TodoNotSupport">Zaplanowane zadnia i wydarzenia nie są importowane.</string>
+    <string name="UI_TIP_SelDT_2">Niektóre pola mogą nie zostać przeniesione z %s z powodu braku pełnego wsparcia dla technologii Bluetooth.</string>
+    <string name="UI_TIP_TUONBL">Włącz Bluetooth</string>
+    <string name="UI_TIP_TuOnBl_2">Dotknij „Dalej” po włączeniu Bluetooth.</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">Wyczyść dane na tym telefonie</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">Wyczyść dane na tym tablecie</string>
+    <string name="UI_TITLE_CONGRADULATIONS">Gratulacje</string>
+    <string name="UI_TITLE_CONN_WITH">Łączenie z %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">Włączanie Bluetooth w %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">Włączanie Bluetooth w starym telefonie</string>
+    <string name="UI_TITLE_IMPORTING">Transfer %s</string>
+    <string name="UI_TITLE_INFO">Informacje</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">Inne telefony %s</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">Wczytywanie konfiguracji telefonu</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">Nieobsługiwany model</string>
+    <string name="UI_TITLE_PAIRING">Parowane...</string>
+    <string name="UI_TITLE_PAIRING_WITH">Kojarzenie z %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">Pytanie o model telefonu</string>
+    <string name="UI_TITLE_SCANNING">Przeszukiwanie...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">Skanowanie w poszukiwaniu telefonów</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">Wybierz rodzaj importowanych danych</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">Wybierz stary telefon</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">Wybierz model</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">Wybierz telefon</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">Inne telefony %s nie są obsługiwane. Naciśnij „Gotowe”, aby wyjść.</string>
+</resources>

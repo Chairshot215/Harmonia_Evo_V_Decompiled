@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="400264380" android:versionName="4.0.2211262136.264380" package="com.android.htmlviewer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.htmlviewer" />
+    <application android:label="@string/app_label">
+        <activity android:theme="@*android:style/Theme.Light" android:label="HTMLViewer" android:name="HTMLViewerActivity" android:hardwareAccelerated="false">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+        </activity>
+        <provider android:name="FileContentProvider" android:exported="false" android:multiprocess="false" android:authorities="com.android.htmlfileprovider" android:syncable="false" android:grantUriPermissions="true" />
+    </application>
+</manifest>

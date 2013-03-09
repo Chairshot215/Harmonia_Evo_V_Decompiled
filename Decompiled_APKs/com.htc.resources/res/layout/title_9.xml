@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/title_9" android:layout_width="fill_parent" android:layout_height="@dimen/title_2line_height" android:layout_alignParentTop="true" style="?com.htc:titleBarBackgroundStyleSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/title9_header2" android:layout_width="140.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0px">
+        <TextView android:textSize="@dimen/title_text_size" android:textColor="@*android:color/white" android:gravity="left" android:id="@id/title_9_txt_1x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0px" style="@style/title_text_shadow_style" />
+        <TextView android:textSize="12.0px" android:textColor="@*android:color/white" android:gravity="left" android:id="@id/title_9_txt_2x1" android:layout_width="fill_parent" android:layout_height="23.0px" android:layout_marginTop="2.0px" style="@style/title_text_shadow_style" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="70.0px" android:layout_height="fill_parent" android:layout_toRightOf="@id/title9_header2">
+        <TextView android:textSize="16.0px" android:textStyle="bold" android:textColor="@*android:color/white" android:gravity="right|center" android:id="@id/title_9_text1x2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0px" style="@style/title_text_shadow_style" />
+    </RelativeLayout>
+    <ImageView android:layout_width="82.0px" android:layout_height="47.0px" android:layout_marginLeft="1.0px" android:layout_marginTop="6.0px" android:src="@drawable/stock_indicator_black" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/title_9_img_1x1" android:layout_width="82.0px" android:layout_height="47.0px" android:layout_marginLeft="1.0px" android:layout_marginTop="6.0px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/title9_txt_1x3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0px" android:layout_marginRight="10.0px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/text_percent" />
+    <TextView android:id="@id/title9_txt_2x3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0px" android:layout_marginRight="10.0px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/text_percent" />
+</RelativeLayout>

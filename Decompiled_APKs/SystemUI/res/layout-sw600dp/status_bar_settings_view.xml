@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.tablet.SettingsView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <LinearLayout android:id="@id/airplane" style="@style/StatusBarPanelSettingsRow">
+        <ImageView android:id="@id/airplane_icon" android:src="@drawable/ic_sysbar_airplane_on" style="@style/StatusBarPanelSettingsIcon" />
+        <TextView android:id="@id/airplane_label" android:text="@string/status_bar_settings_airplane" style="@style/StatusBarPanelSettingsContents" />
+        <Switch android:layout_gravity="center_vertical" android:id="@id/airplane_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+    <LinearLayout android:id="@id/network" style="@style/StatusBarPanelSettingsRow">
+        <ImageView android:id="@id/network_icon" android:src="@drawable/ic_sysbar_wifi_on" style="@style/StatusBarPanelSettingsIcon" />
+        <TextView android:id="@id/network_label" android:text="@string/status_bar_settings_wifi_button" style="@style/StatusBarPanelSettingsContents" />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+    <LinearLayout android:id="@id/rotate" style="@style/StatusBarPanelSettingsRow">
+        <ImageView android:id="@id/rotate_icon" android:src="@drawable/ic_sysbar_rotate_on" style="@style/StatusBarPanelSettingsIcon" />
+        <TextView android:id="@id/rotate_label" android:text="@string/status_bar_settings_auto_rotation" style="@style/StatusBarPanelSettingsContents" />
+        <Switch android:layout_gravity="center_vertical" android:id="@id/rotate_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+    <LinearLayout style="@style/StatusBarPanelSettingsRow">
+        <ImageView android:id="@id/brightness_icon" android:src="@drawable/ic_sysbar_brightness" style="@style/StatusBarPanelSettingsIcon" />
+        <com.android.systemui.statusbar.policy.ToggleSlider android:id="@id/brightness" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:layout_weight="1.0" systemui:text="@string/status_bar_settings_auto_brightness_label" />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+    <LinearLayout android:id="@id/do_not_disturb" style="@style/StatusBarPanelSettingsRow">
+        <ImageView android:id="@id/do_not_disturb_icon" android:src="@drawable/ic_notification_open" style="@style/StatusBarPanelSettingsIcon" />
+        <TextView android:text="@string/status_bar_settings_notifications" style="@style/StatusBarPanelSettingsContents" />
+        <Switch android:layout_gravity="center_vertical" android:id="@id/do_not_disturb_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+    <LinearLayout android:id="@id/settings" style="@style/StatusBarPanelSettingsRow">
+        <ImageView android:id="@id/settings" android:src="@drawable/ic_sysbar_quicksettings" style="@style/StatusBarPanelSettingsIcon" />
+        <TextView android:text="@string/status_bar_settings_settings_button" style="@style/StatusBarPanelSettingsContents" />
+    </LinearLayout>
+    <View style="@style/StatusBarPanelSettingsPanelSeparator" />
+</com.android.systemui.statusbar.tablet.SettingsView>

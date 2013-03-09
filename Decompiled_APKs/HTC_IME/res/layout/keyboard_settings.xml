@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:key="keyboard_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_hwkb_settings_title" android:key="@string/keyboard_hwkb_settings" android:summary="@string/keyboard_hwkb_settings_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsHWKBSettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_types_entries" android:title="@string/keyboard_types_title" android:key="@string/keyboard_types" android:defaultValue="2" android:entryValues="@array/keyboard_types_values" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_sipswitch_settings_title" android:key="@string/keyboard_sipswitch_settings_title" android:summary="@string/keyboard_sipswitch_settings_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsSSSettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcListPreference android:persistent="true" android:title="@string/keyboard_bilingual_settings_title" android:key="@string/keyboard_bilingual_settings" android:dialogTitle="@string/keyboard_bilingual_2nd_language_dialog_title" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_ime_settings_title" android:key="@string/keyboard_ime_settings_title" android:summary="@string/keyboard_ime_settings_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsIMESettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_ime_settings_title_zh" android:key="@string/keyboard_ime_settings_title_zh" android:summary="@string/keyboard_ime_settings_summary_zh">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsCP" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/kb_tutorial_title" android:key="@string/kb_tutorial_title" android:summary="@string/kb_tutorial_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.tutorial.RegionalCorrection" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/trace_keyboard_settings_title" android:key="@string/trace_keyboard_settings" android:summary="@string/trace_keyboard_settings_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsTraceKeyboard" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_ime_settings_udb_editor_title" android:key="@string/keyboard_ime_settings_udb_editor" android:summary="@string/keyboard_ime_settings_udb_editor_title_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsUserDictionary" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/DAM" android:key="@string/DAM" android:summary="@string/DAM_Data">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.DAMDemo" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.browser.view.BookmarkContainer android:id="@id/list_item" android:background="@drawable/bookmark_thumb_selector" android:paddingLeft="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/widgetItemMinHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/favicon" android:background="@drawable/bookmark_list_favicon_bg" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/label" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:scrollHorizontally="true" android:layout_toRightOf="@id/favicon" android:layout_centerVertical="true" />
+</com.android.browser.view.BookmarkContainer>

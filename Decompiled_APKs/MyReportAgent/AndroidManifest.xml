@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="305271172" android:versionName="3.5.2211282347.271172" package="com.htc.reportagent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-library android:name="com.htc.framework" />
+    <application android:label="@string/htc_private_app" android:description="@string/htc_company_name" android:hardwareAccelerated="false">
+        <receiver android:name=".receiver.ReportAgentReceiver" android:permission="com.htc.permission.UPLOAD_LOG">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.BUGREPORT" />
+                <action android:name="com.htc.intent.action.USER_PROFILING" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.PolicyReceiver" android:permission="com.htc.permission.UPLOAD_LOG">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.htc.intent.action.TELLHTC_SETTING_CHANGE" />
+                <action android:name="com.htc.intent.action.ULOG_POLICY_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="ReportService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.htcreportagent.upload" />
+                <action android:name="com.htc.reportagent.action.BOOT_COMPLETE" />
+                <action android:name="com.htc.reportagent.action.ULOG_POLICY_CHANGED" />
+                <action android:name="com.htc.reportagent.action.TIME_SET" />
+                <action android:name="com.htc.reportagent.action.SETUP_WIZARD_FINISHED" />
+                <action android:name="com.htc.reportagent.action.CONNECTION_CHANGE" />
+                <action android:name="com.htc.reportagent.action.POLICY_ALARM" />
+                <action android:name="com.htc.reportagent.action.POLICY_SETTING_CHANGE" />
+                <action android:name="com.htc.reportagent.action.BUDGET_ALARM" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DUMP" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.htc.permission.FEEDBACK_PROTECT" />
+    <uses-permission android:name="com.htc.permission.UBLS_WRITE_POLICY" />
+    <permission android:label="@string/permlab_uploadLog" android:name="com.htc.permission.UPLOAD_LOG" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_uploadLog" />
+</manifest>

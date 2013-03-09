@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:layout="@layout/preference_kb_title" android:title="@string/user_dictionary_sync_title" android:selectable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.android.htcime.settings.UserDictionarySyncDialogPreference android:title="@string/user_dictionary_sync_backup_title" android:key="@string/user_dictionary_sync_backup" android:summary="@string/user_dictionary_sync_backup_title_summary" android:dialogTitle="@string/user_dictionary_sync_backup_title" android:dialogMessage="@string/user_dictionary_sync_backup_dialog_message" />
+    <com.htc.android.htcime.settings.UserDictionarySyncDialogPreference android:title="@string/user_dictionary_sync_restore_title" android:key="@string/user_dictionary_sync_restore" android:summary="@string/user_dictionary_sync_restore_title_summary" android:dialogTitle="@string/user_dictionary_sync_restore_title" android:dialogMessage="@string/user_dictionary_sync_restore_dialog_message" />
+</com.htc.preference.HtcPreferenceScreen>

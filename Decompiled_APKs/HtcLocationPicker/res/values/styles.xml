@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeBlack">
+        <item name="android:windowBackground">@drawable/screen_background_black</item>
+    </style>
+    <style name="ThemeTranslucent">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@drawable/translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="ThemeTransparent">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+    </style>
+    <style name="ThemeSkinChangeBkg">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+    </style>
+    <style name="ThemeDialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+    </style>
+    <style name="buttonDialogButton" parent="@com.htc:style/list_primary_m">
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/button_dialog_button_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/button_dialog_button_margin_left_right</item>
+    </style>
+    <style name="buttonDialogDivider">
+        <item name="android:paddingTop">@dimen/button_dialog_divider_padding</item>
+        <item name="android:paddingBottom">@dimen/button_dialog_divider_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@com.htc:drawable/common_divider_items</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="icon_list_item">
+        <item name="android:textSize">@dimen/text_size_icon_list_item</item>
+        <item name="android:textColor">@color/primary_selected_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/icon_list_item_height</item>
+        <item name="android:layout_marginLeft">@dimen/icon_list_item_margin_left</item>
+    </style>
+    <style name="Theme.OptionActivity" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.LocationPicker_Mgr_Activity" parent="@style/Theme.OptionActivity">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="SkinChange">
+        <item name="android:colorForeground">@*android:color/white</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textColorPrimary">@com.htc:color/list_item_primary_text</item>
+        <item name="android:textColorSecondary">@com.htc:color/list_item_secondary_text</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorForegroundInverse">@*android:color/white</item>
+    </style>
+</resources>

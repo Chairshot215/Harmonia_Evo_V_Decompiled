@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/glance_background" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/error_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/sd_icon" android:background="@com.htc:drawable/common_icon_fullscreen_no_sd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@com.htc:dimen/title_primary_m" android:textColor="@color/textColorActivityTitle" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/sd_message" android:padding="11.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/common_string_no_SD_card" />
+        <com.htc.widget.HtcListView android:id="@*android:id/list" android:visibility="gone" android:layout_width="0.0px" android:layout_height="0.0px" />
+    </LinearLayout>
+    <include layout="@layout/player_title" />
+</RelativeLayout>

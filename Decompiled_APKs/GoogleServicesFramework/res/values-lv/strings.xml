@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Tīmeklis</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">nezināms</string>
+    <string name="sharedUserLabel">Google pakalpojumi</string>
+    <string name="service_label">System Updater</string>
+    <string name="system_update_activity_name">Sistēmas atjauninājumi</string>
+    <string name="system_update_activity_title">Sistēmas atjauninājumi</string>
+    <string name="system_update_activity_battery_low_text">Akumulatora uzlādes līmenis ir pārāk zems, lai instalētu sistēmas atjauninājumu. Lai turpinātu, pievienojiet uzlādes ierīci.</string>
+    <string name="system_update_activity_battery_low_charging_text">Akumulatora uzlādes līmenis ir pārāk zems, lai instalētu sistēmas atjauninājumu. Lūdzu, uzgaidiet, līdz akumulators būs pietiekami uzlādēts.</string>
+    <string name="system_update_activity_roaming_text">Viesabonēšanas laikā nevar lejupielādēt sistēmas atjauninājumus.</string>
+    <string name="system_update_requires_restart_status_text">Nepieciešams veikt restartēšanu</string>
+    <string name="system_update_downloading_status_text">Notiek lejupielāde</string>
+    <string name="system_update_downloading_wifi_status2_text">Tikai Wi-Fi tīklā līdz: ^1</string>
+    <string name="system_update_verifying_status_text">Notiek pārbaude</string>
+    <string name="system_update_verification_failed_text">Verifikācija neizdevās.</string>
+    <string name="system_update_verified_status_text">Lejupielādēts un apstiprināts</string>
+    <string name="system_update_download_failed_status_text">Lejupielāde neizdevās</string>
+    <string name="system_update_download_retry_button_text">Atkārtoti lejupielādēt</string>
+    <string name="system_update_download_button_text">Lejupielādēt</string>
+    <string name="system_update_install_button_text">Restartēt un instalēt</string>
+    <string name="system_update_check_now_button_text">Pārbaudīt tūlīt</string>
+    <string name="system_update_no_update_content_text">Jūs pašlaik izmantojat sistēmas jaunāko versiju.</string>
+    <string name="system_update_last_checkin">Pēdējā atjauninājumu pārbaude: ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Pieejams sistēmas atjauninājums</string>
+    <string name="system_update_recommended_update_available_notification_message">Skatiet informāciju par atjauninājumu.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Sistēmas atjauninājuma lejupielāde nebija veiksmīga.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Lejupielāde nebija veiksmīga. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="system_update_error_dialog_title">Kļūda</string>
+    <string name="system_update_error_downloading_dialog_message">Lejupielādējot atjauninājumu, radās problēma.</string>
+    <string name="system_update_error_installing_dialog_message">Instalējot jauninājumu, radās problēma.</string>
+    <string name="system_update_install_dialog_label">Sistēmas atjauninājums</string>
+    <string name="system_update_install_dialog_message_nonphone">Ir pieejams sistēmas atjauninājums instalēšanai. Android ierīce tiks restartēta, un atjauninājums tiks instalēts.</string>
+    <string name="system_update_install_dialog_message_phone">Ir pieejams sistēmas atjauninājums instalēšanai. Android ierīce tiks restartēta, un atjauninājums tiks instalēts. Instalēšanas laikā nevarēsiet veikt zvanus, tostarp ārkārtas zvanus.</string>
+    <string name="system_update_install_dialog_battery_low_message">Ir pieejams sistēmas atjauninājums, taču akumulatora uzlādes līmenis ir pārāk zems, lai instalētu šo atjauninājumu. Lūdzu, pievienojiet uzlādes ierīci.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Ir pieejams sistēmas atjauninājums, taču akumulatora uzlādes līmenis ir pārāk zems, lai instalētu šo atjauninājumu. Lūdzu, uzgaidiet, līdz akumulators būs pietiekami uzlādēts.</string>
+    <string name="system_update_install_dialog_now_button">Instalēt tūlīt</string>
+    <string name="system_update_install_dialog_later_button">Instalēt vēlāk</string>
+    <string name="system_update_install_dialog_info_button">Plašāka informācija...</string>
+    <string name="system_update_downloading_notification_title">Sistēmas atjauninājuma lejupielāde</string>
+    <string name="system_update_verifying_notification_title">Sistēmas atjauninājuma apstiprināšana</string>
+    <string name="system_update_download_dialog_label">Sistēmas atjauninājuma lejupielāde</string>
+    <string name="system_update_download_dialog_message">Ir pieejams sistēmas atjauninājums, kas uzlabos jūsu Android ierīces darbību. Par šī atjauninājuma lejupielādi bezvadu tīklā, iespējams, būs jāmaksā.</string>
+    <string name="system_update_download_dialog_now_button">Lejupielādēt tūlīt</string>
+    <string name="system_update_download_dialog_later_button">Lejupielādēt vēlāk</string>
+    <string name="system_update_download_dialog_cancel_button">Atcelt</string>
+    <string name="system_update_countdown_complete">Notiek atsāknēšana...</string>
+    <string name="system_update_countdown_cancel_button">Atcelt instalēšanu</string>
+    <string name="system_update_complete_label">Sistēmas atjauninājums</string>
+    <string name="system_update_complete_ok_button">Labi</string>
+    <string name="provider_label">Pašpiegādes abonementi</string>
+    <string name="ro_perm_label">lasīt tūlītējos ziņojumus</string>
+    <string name="ro_perm_desc">Ļauj lietojumprogrammām lasīt datus no pakalpojuma Google Talk satura sniedzēja.</string>
+    <string name="wo_perm_label">rakstīt tūlītējos ziņojumus</string>
+    <string name="wo_perm_desc">Ļauj lietojumprogrammām rakstīt datus pakalpojuma Google Talk satura sniedzējā.</string>
+    <string name="gsf_label">Google pakalpojumu platforma</string>
+    <string name="search_chats">"Meklēšana tērzēšanas sarunās:
+vienums “%1$s”"</string>
+    <string name="gtalkservice_label">Pakalpojums Google Messaging</string>
+    <string name="c2dm_label">Pakalpojums Cloud to Device Messaging</string>
+    <string name="sendTalkMsg_perm_label">Nodrošina ziņojumu apmaiņu un sinhronizācijas paziņojumu saņemšanu no Google serveriem.</string>
+    <string name="sendTalkMsg_perm_desc">Tiek izmantots servera ziņojumiem no mākoņa uz ierīci un sinhronizācijas paziņojumiem. Pakalpojumā Google Talk šis pakalpojums tiek izmantots, lai nodrošinātu ziņojumu apmaiņu un klātbūtnes statusa sinhronizāciju. Ļaunprātīga lietojumprogramma var izmantot šo pakalpojumu, lai pārraidītu pārmērīgu datu apjomu.</string>
+    <string name="perm_receive_data_message_label">datu saņemšana no interneta</string>
+    <string name="perm_receive_data_message_desc">Ļauj lietojumprogrammām pieņemt lietojumprogrammas pakalpojuma ziņojumus no mākoņa uz ierīci. Šī pakalpojuma lietošana sekmē datu izmantošanu. Ļaunprātīgu lietojumprogrammu darbība var izraisīt pārmērīgu datu izmantošanu.</string>
+    <string name="perm_data_msg_broadcast_label">Pārraidīt datu ziņojumus uz lietojumprogrammām.</string>
+    <string name="perm_data_msg_broadcast_desc">Var pārraidīt no interneta saņemtos datu ziņojumus uz lietojumprogrammām, kas ir reģistrētas, lai klausītos šādus ziņojumus.</string>
+    <string name="perm_receive_xmpp_label">sūtīt XMPP ziņ. Google serv. un saņemt tos no tiem</string>
+    <string name="perm_receive_xmpp_desc">Ļauj Google lietojumprogrammām sūtīt XMPP ziņojumus Google serveriem un saņemt tos no tiem.</string>
+    <string name="perm_xmpp_broadcast_label">Pārraidīt XMPP ziņojumus uz lietojumprogrammām.</string>
+    <string name="perm_xmpp_broadcast_desc">Var pārraidīt no Google serv. uz reģistrētām lietojumpr. saņemtus XMPP ziņoj., lai tos klausītos.</string>
+    <string name="perm_use_xmpp_endpoint_label">sūt. XMPP ziņ. uz Google serv. un saņ. tos no tiem</string>
+    <string name="perm_use_xmpp_endpoint_desc">Ļauj Google lietojumprogrammām sūtīt XMPP ziņojumus uz Google serveriem un saņemt ziņojumus no tiem.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Pārraidīt XMPP ziņojumus uz lietojumprogrammām</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Var pārraidīt XMPP ziņojumus, kas lietojumprogrammās saņemti no Google serveriem.</string>
+    <string name="permlab_intentVendingOnly">Sūtīt apraides uz pakalpojumu Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Var sūtīt apraides uz pakalpojumu Android Market, lai pieprasītu lietojumprogrammas instalēšanu vai noņemšanu.</string>
+    <string name="permlab_heartbeat">Sūtīt uz Google Talk serveri periodisko kontrolziņojumu</string>
+    <string name="permdesc_heartbeat">Uz Google Talk serveri var nosūtīt periodiskā kontrolziņojuma pakotni, lai nodrošinātu stabilu savienojumu.</string>
+    <string name="group_chat">Grupas tērzēšana: %s</string>
+    <string name="default_decline_reason">Diemžēl pašlaik esmu aizņemts.</string>
+    <string name="newMessages_label">Jaunas tērzēšanas sarunas</string>
+    <string name="notify_groupchat_label">Grupas tērzēšanas ielūgums</string>
+    <string name="num_unread_chats">%s nelasītas tērzēšanas sarunas</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">No: %s; kam: %s</string>
+    <string name="subscription_notify_text">Lietotājs %s vēlas tērzēt.</string>
+    <string name="group_chat_invite_notify_text">Jūs saņēmāt grupas tērzēšanas ielūgumu no lietotāja %s.</string>
+    <string name="group_chat_invite_dialog_text">Lietotājs %s aicina jūs pievienoties grupas tērzēšanai.</string>
+    <string name="message_too_long">Nevar nosūtīt ziņojumus, kuru garums pārsniedz 2000 rakstzīmes.</string>
+    <string name="missed_video_chat_notification">Nokavējāt video tērzēšanas uzaicinājumu</string>
+    <string name="missed_voice_chat_notification">Nokavējāt balss tērzēšanas uzaicinājumu</string>
+    <string name="missed_video_chat_notification_no_wifi">Jums ir neatbildēts video tērzēšanas uzaicinājums, jo nebijāt izveidojis savienojumu ar Wi-Fi.</string>
+    <string name="missed_voice_chat_notification_no_wifi">Jums ir neatbildēts balss tērzēšanas uzaicinājums, jo nebijāt izveidojis savienojumu ar Wi-Fi.</string>
+    <string name="missed_video_chat_message">%1$s mēģināja sākt video tērzēšanu ar jums.</string>
+    <string name="missed_voice_chat_message">%1$s mēģināja sākt balss tērzēšanu ar jums.</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s mēģināja sākt video tērzēšanu ar jums, kad nebijāt izveidojis savienojumu ar Wi-Fi.</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s mēģināja sākt balss tērzēšanu ar jums, kad nebijāt izveidojis savienojumu ar Wi-Fi.</string>
+    <string name="end_cause_user_unavailable_video">%1$s nevarēja piedalīties video tērzēšanā.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s nevarēja piedalīties balss tērzēšanā.</string>
+    <string name="end_cause_sent_terminate_video">Jūs beidzāt video tērzēšanu ar lietotāju %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Jūs beidzāt balss tērzēšanu ar lietotāju %1$s.</string>
+    <string name="end_cause_received_terminate_video">Lietotājs %1$s beidza video tērzēšanu.</string>
+    <string name="end_cause_received_terminate_voice">Lietotājs %1$s beidza balss tērzēšanu.</string>
+    <string name="end_cause_network_problem_video">Diemžēl video tērzēšana ar lietotāju %1$s neizdevās, jo radās tīkla problēma. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="end_cause_network_problem_voice">Diemžēl balss tērzēšana ar lietotāju %1$s neizdevās, jo radās tīkla problēma. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="conn_auth_error_notify_ticker">Neizdevās Google Talk autentifikācija</string>
+    <string name="conn_auth_error_notify_title">Neizdevās Google Talk autentifikācija</string>
+    <string name="conn_auth_error_title">Autentifikācijas kļūda</string>
+    <string name="conn_auth_error_message">Neizdevās pieteikties pakalpojumā Google Talk. Ja šis ir Google Apps konts, pārliecinieties, ka tam ir iespējots pakalpojums Tērzēšana.</string>
+    <string name="conn_auth_error_button_retry">Mēģināt vēlreiz</string>
+    <string name="conn_auth_error_button_cancel">Atcelt</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Laipni lūdzam pakalpojumā ^1!</string>
+    <string name="setup_wizard_title">Iestatīšanas vednis</string>
+    <string name="error_dialog_title">Uzmanību!</string>
+    <string name="next_button_label">Tālāk</string>
+    <string name="back_button_label">Atpakaļ</string>
+    <string name="sign_in_button_label">Pierakstīties</string>
+    <string name="create_button_label">Izveidot</string>
+    <string name="skip_button_label">Izlaist</string>
+    <string name="first_name">Vārds</string>
+    <string name="last_name">Uzvārds</string>
+    <string name="done">Labi</string>
+    <string name="cancel_button_label">Atcelt</string>
+    <string name="done_button_label">Pabeigt iestatīšanu</string>
+    <string name="try_again_button_label">Mēģināt vēlreiz</string>
+    <string name="close_button_label">Aizvērt</string>
+    <string name="edit_text_help">Pieskarieties jebkuram tekstlodziņam, lai sāktu datu ievadi.</string>
+    <string name="add_a_google_account">Google konta pievienošana</string>
+    <string name="no_sim_setup_wireless">SIM karte nav ievietota, tāpēc nevar izveidot savienojumu ar mobilo tīklu, lai izmantotu balss vai datu pakalpojumus. Varat izveidot savienojumu ar Wi-Fi tīklu bez SIM kartes.</string>
+    <string name="setup_wifi_button_label">Izveidot savienojumu ar Wi-Fi</string>
+    <string name="no_network">Nav tīkla savienojuma.</string>
+    <string name="no_network_help">Iespējams, tā ir īslaicīga problēma vai arī jūsu Android ierīce nav paredzēta datu pakalpojumiem. Lūdzu, mēģiniet vēlreiz, kad ierīce būs pievienota mobilajam tīklam, vai pievienojiet to Wi-Fi tīklam.</string>
+    <string name="server_error">Sazinoties ar Google serveriem, radās problēma.</string>
+    <string name="server_error_help">Lūdzu, vēlāk mēģiniet vēlreiz.</string>
+    <string name="network_unreliable">Nevar izveidot uzticamu datu savienojumu ar serveri.</string>
+    <string name="network_unreliable_help">Iespējams, šī ir īslaicīga problēma, vai arī jūsu Android ierīcē nav atbalstīta datu pakalpojumu izmantošana. Ja šī problēma joprojām pastāv, zvaniet klientu atbalsta dienestam.</string>
+    <string name="invalid_login_character">Rakstzīme nav derīga. Drīkst izmantot tikai ciparus 0–9, burtus a–z un A–Z, kā arī punktus.</string>
+    <string name="invalid_password_character">Paroles rakstzīme nav derīga.</string>
+    <string name="add_apn">Bezvadu savienojuma iestatījumi</string>
+    <string name="setup_google_account_title">Google konta iestatīšana</string>
+    <string name="setup_complete_title">Iestatīšana pabeigta</string>
+    <string name="cant_be_blank">Lauks nedrīkst būt tukšs.</string>
+    <string name="calendar">Google kalendārs</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Jūsu Android ierīce nav savienota ar datu pakalpojumu. Lai skatītu šo informāciju tūlīt, dodieties uz vietni %s jebkurā datorā, kam ir savienojums ar internetu.</string>
+    <string name="field_cant_be_blank">Šis lauks nedrīkst būt tukšs.</string>
+    <string name="field_invalid_domain">Šis domēna nosaukums nav derīgs.</string>
+    <string name="field_invalid_user">Šis lietotājvārds nav derīgs.</string>
+    <string name="field_invalid_user_domain">Ievadiet tikai lietotājvārdu, nevis e-pasta adresi.</string>
+    <string name="field_invalid_login">Šis konta nosaukums nav derīgs.</string>
+    <string name="about_accounts_message"><font size="17">"Iestatīt Android ierīci ir vienkārši. Jums tikai ir nepieciešams Google konts.
+"<font height="17">"
+"</font><b>Kāpēc jāizmanto Google konts?</b>"
+"<font height="3">"
+"</font>"Izmantojot Google kontu, Google lietojumprogrammas tiek automātiski sinhronizētas starp jūsu Android ierīci un datoriem neatkarīgi no tā, kur jūs veicat atjauninājumu.
+"<font height="17">"
+"</font><b>Vai jums jau ir Google konts?</b>"
+"<font height="3">"
+"</font>"Tad varat turpināt darbu. Nākamajā ekrānā pieskarieties vienumam Pierakstīties.
+"<font height="17">"
+"</font><b>Vai jums nav Google konta?</b>"
+"<font height="3">"
+"</font>"Tas nekas. Nākamajā ekrānā pieskarieties vienumam Izveidot, un mēs palīdzēsim izveidot kontu.
+"<font height="17">"
+"</font><b>Pieskarieties vienumam Tālāk, lai sāktu darbu.</b>"
+"</font></string>
+    <string name="fling_help_message">"Slidiniet pirkstu uz augšu vai uz leju pa ekrānu, lai ritinātu.
+(Pieskarieties šim ziņojumam, lai to vairs nerādītu.)"</string>
+    <string name="setup_device_title">^1 iestatīšana</string>
+    <string name="dont_have_an_account">Vai jums nav Google konta?</string>
+    <string name="create_one_now">Izveidojiet kontu tūlīt! Tas ir vienkārši.</string>
+    <string name="already_have_an_account">Vai jums jau ir Google konts?</string>
+    <string name="sign_in_with_google_account">Pierakstieties, izmantojot to Google kontu, kuru vēlaties saistīt ar šo Android ierīci.</string>
+    <string name="skip_message">Vai vēlaties iestatīt kontu vēlāk?</string>
+    <string name="touch_to_begin">Pieskarieties androīdam, lai sāktu.</string>
+    <string name="delayed_gaia_agreement">Turpinot darbu, jūs piekrītat <annotation id="google_privacy">Google</annotation> un <annotation id="android_privacy">papildu</annotation> konfidencialitātes politikai.</string>
+    <string name="open_keyboard_message">Lai sāktu darbu, izbīdiet tastatūru.</string>
+    <string name="open_keyboard_message_to_continue">Lai turpinātu, izbīdiet tastatūru.</string>
+    <string name="emergency_dial">Ārkārtas zvans</string>
+    <string name="change_language">Mainīt valodu</string>
+    <string name="signing_in">Notiek pierakstīšanās…</string>
+    <string name="close_keyboard_message">Lai turpinātu, iebīdiet tastatūru.</string>
+    <string name="communicating_message">Lai iestatītu kontu, Android ierīcei ir jāsazinās ar Google serveriem. Tas var ilgt līdz pat piecām minūtēm.</string>
+    <string name="communicating_message_domain">Lai atrastu domēna informāciju, Android ierīcei ir jāsazinās ar Google serveriem. Tas var ilgt līdz pat piecām minūtēm.</string>
+    <string name="username">Lietotājvārds</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Parole</string>
+    <string name="sign_in_agreement">Pierakstoties jūs piekrītat <annotation id="google_privacy">Google</annotation> un <annotation id="android_privacy">papildu</annotation> konfidencialitātes politikai.</string>
+    <string name="create">Izveidot</string>
+    <string name="create_message">Vai jums ir nepieciešams Google konts?</string>
+    <string name="now_signing_in">Notiek pierakstīšanās…</string>
+    <string name="now_verifying_domain">Notiek domēna meklēšana…</string>
+    <string name="sign_in_with_google_account_short">Pierakstieties savā Google kontā:</string>
+    <string name="browser_sign_in_explanation">Izmantojiet šo ekrānu, ja pieteikšanās ir jāveic īpašā veidā, izmantojot tīmekļa pārlūkprogrammu.</string>
+    <string name="gls_browser_login_intro_message">Nevar piekļūt jūsu Google vai Google Apps kontam. Nepieciešama atkārtota autorizācija.</string>
+    <string name="enter_domain_name">Ievadiet uzņēmuma domēna nosaukumu:</string>
+    <string name="enter_user_name">Ievadiet domēna ^1 lietotājvārdu un paroli:</string>
+    <string name="inactive_domain">Šo kontu nevar izmantot, jo tas pieder neaktīvam domēnam. Lūdzu, sazinieties ar domēna administratoru saistībā ar <b>^1</b> vai pierakstieties, izmantojot citu kontu.</string>
+    <string name="invalid_username">Ievadītais teksts nav derīgs lietotājvārds.</string>
+    <string name="web_login_error_title">Atvainojiet...</string>
+    <string name="web_login_error_desc">"Veidojot savienojumu ar uzņēmuma serveriem domēnā ^1, radās problēma.
+
+Informācija par kļūdu:
+"</string>
+    <string name="web_login_error_redirects">Tīmekļa pieteikšanās lapā pārāk daudz reižu ir veikta novirzīšana.</string>
+    <string name="web_login_error_http">HTTP kļūda ^1: ^2</string>
+    <string name="name_device_label">Piešķiriet savai Android ierīcei nosaukumu:</string>
+    <string name="device_name_hint">Ierīces nosaukums</string>
+    <string name="registering_device">Reģistrēt Android ierīci...</string>
+    <string name="error_account_disabled">"Šis konts tika atspējots. 
+
+(Lai iegūtu papildinformāciju, apmeklējiet vietni http://google.com/accounts/?hl=lv, izmantojot datoru.)"</string>
+    <string name="error_login_failed">"Lietotājvārds un parole neatbilst. Lūdzu, mēģiniet vēlreiz.
+
+(Lai atgūtu konta informāciju, apmeklējiet vietni http://www.google.com/accounts/recovery, izmantojot datoru.)"</string>
+    <string name="error_account_not_verified">"Šis konts nav apstiprināts. Lūdzu, datorā pārbaudiet e-pastu un atveriet norādīto saiti, lai apstiprinātu kontu. 
+
+(Lai atgūtu konta informāciju, apmeklējiet vietni http://www.google.com/accounts/recovery/?hl=lv, izmantojot datoru.)"</string>
+    <string name="captcha_message_string">Verifikācija</string>
+    <string name="captcha_instructions">Ievadiet attēlā redzamās rakstzīmes. Burti nav reģistrjutīgi.</string>
+    <string name="create_google_account">Jauna Google konta izveide</string>
+    <string name="example_usernames">piem., JOzols, Janis.Ozols</string>
+    <string name="create_account_agreement">Izveidojot šo kontu, jūs piekrītat <annotation id="google_privacy">Google</annotation> un <annotation id="android_privacy">papildu</annotation> konfidencialitātes politikai.</string>
+    <string name="account_already_has_gmail">Kontam jau ir pakalpojums Gmail.</string>
+    <string name="creating_account">Notiek konta izveide...</string>
+    <string name="checking_account">Notiek lietotājvārda pieejamības pārbaude...</string>
+    <string name="try_a_different_username">Izmantojiet citu lietotājvārdu</string>
+    <string name="is_not_available">Lietotājvārds <b>^1</b> nav pieejams.</string>
+    <string name="hint_size"><b>^1</b> ietver mazāk par 6 vai vairāk par 30 rakstzīmēm.</string>
+    <string name="hint_numbers_only"><b>^1</b> neietver burtus.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" drīkst ietvert tikai burtus,
+ciparus un punktus."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> neizmanto pakalpojumu Gmail.</string>
+    <string name="sign_in">Pierakstīties</string>
+    <string name="sign_in_browser">Pierakstīšanās pārlūkprogrammā</string>
+    <string name="here_are_alternatives">Tālāk ir norādītas dažas alternatīvas:</string>
+    <string name="alternatives_list_title">Ieteiktie lietotājvārdi</string>
+    <string name="choose_a_password"><b>"Ievadiet
+paroli"</b></string>
+    <string name="confirm_password"><b>"Apstipriniet
+paroli"</b></string>
+    <string name="password_strength"><b>"Paroles
+drošums"</b></string>
+    <string name="too_short">Pārāk īsa</string>
+    <string name="security_question"><b>"Drošības
+jautājums"</b></string>
+    <string name="security_questions_title">Drošības jautājumi</string>
+    <string name="answer"><b>Atbildēt</b></string>
+    <string name="password_mismatch">Paroles neatbilst. Lūdzu, ievadiet tās atkārtoti.</string>
+    <string name="your_account_was_created">Konts ir izveidots.</string>
+    <string name="eight_chars_min">(vismaz 8 rakstzīmes)</string>
+    <string name="just_in_case">Paroles pazaudēšanas gadījumā.</string>
+    <string name="verify_your_profile">Profila apstiprināšana</string>
+    <string name="signed_in">Esat pierakstījies!</string>
+    <string name="error_not_logged_in">Lietotājs nav pierakstījies.</string>
+    <string name="error_username_unavailable">Lietotājvārds nav pieejams.</string>
+    <string name="error_bad_password">Parole ir pārāk vāja vai ietver nederīgas rakstzīmes. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="error_bad_username">Lietotājvārds nav derīgs.</string>
+    <string name="loading">Notiek ielāde...</string>
+    <string name="submission_title">Atvainojiet...</string>
+    <string name="submission_error_text">Radās kļūda. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="existing_account_error_title">Konts jau pastāv</string>
+    <string name="existing_account_error_text">Šajā Android ierīcē jau pastāv konts ^1.</string>
+    <string name="account_linked_message"><font height="24">Jūsu Google konts tagad ir saistīts ar šo Android ierīci.</font></string>
+    <string name="syncing_message"><font size="17">"Pašlaik notiek Google lietojumprogrammu datu sinhronizācija. 
+"<font height="17">"
+"</font>"%i Kad ekrāna augšpusē esošajā statusa joslā vairs nav redzama sinhronizācijas ikona, lejupielāde ir pabeigta.
+"<font height="17">"
+"</font><b>Par statusa joslu</b>"
+"<font height="3">"
+"</font>"Ikreiz, kad saņemat jaunu ziņojumu vai citu paziņojumu, statusa joslā tiek parādīta ikona.
+"<font height="17">"
+"</font>Ar pirkstu velciet statusa joslu uz leju, lai atvērtu paneli Paziņojumi, kurā ir sniegta informācija par visiem pašlaik aktīvajiem paziņojumiem.</font></string>
+    <string name="i_agree_next">Es piekrītu, tālāk</string>
+    <string name="android_privacy_policy_title">Papildu konfidencialitātes politika</string>
+    <string name="google_terms_of_service_title">Google pakalpojumu sniegšanas noteikumi</string>
+    <string name="google_privacy_policy_title">Google konfidencialitātes politika</string>
+    <string name="notification_update_title">Nepieciešams atjaunināt kontu</string>
+    <string name="notification_update_message">Pieskarieties šeit, lai atkārtoti palaistu iestatīšanas vedni.</string>
+    <string name="common_message">"Lai izmantotu pakalpojumu Gmail, dublējumus un citas Android funkcijas, ir nepieciešams Google konts.
+
+Pieskarieties "<b>Tālāk</b>", lai pierakstītos, izmantojot esošu Google kontu, vai izveidojiet jaunu Google kontu.
+
+Varat arī pieskarties "<b>Izlaist</b>, lai sāktu lietot Android. Google kontā varēsiet pierakstīties vēlāk, atverot vienumu Iestatījumi, kas atrodas sadaļā Konti un sinhronizācija.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Konta pievienošana</font>"
+
+Varat izmantot vairākus Google kontus (piemēram, mājas un darba kontu). Lai pievienotu Google kontu, ir jāveic tikai dažas darbības.
+
+Pieskarieties pogai Tālāk, lai turpinātu, vai nospiediet pogu Atpakaļ, lai izietu."</string>
+    <string name="reactivate_account_message">"Šai Android ierīcei ir jāpiesaista Google Mail konts.
+
+Jums jau ir ar šo kontu saistīts Google Mail lietotājvārds (("<b>^1</b>")), taču pašlaik tas nav aktīvs.
+
+Pieskarieties Tālāk, lai atkārtoti aktivizētu un izmantotu šo lietotājvārdu.
+
+Ja vēlaties izmantot citu kontu, nospiediet pogu Atpakaļ un pierakstieties, izmantojot citu kontu, vai izveidojiet jaunu kontu."</string>
+    <string name="reactivating_account">Notiek konta atkārtota aktivizēšana…</string>
+    <string name="your_account_was_reactivated">Konts ir aktivizēts.</string>
+    <string name="account_recovery_info">Tālāk sniegtā informācija palīdzēs atgūt paroli, ja tā tiks pazaudēta.</string>
+    <string name="secondary_email_label"><b>"Papildu
+e-pasta adrese"</b></string>
+    <string name="invalid_email">"Ievadītā e-pasta adrese nav derīga.
+ Piemērs: janis@example.com"</string>
+    <string name="invalid_email_primary">Papildu e-pasta adrese nedrīkst būt vienāda ar izveidoto e-pasta adresi.</string>
+    <string name="tutorial_intro_title">Informācija par to, kā izmantot ierīci ^1</string>
+    <string name="begin_button_label">Sākt</string>
+    <string name="tutorial_intro_message_generic">Lai pilnībā izmantotu visas Android ierīces iespējas, ir jāizprot dažas būtiskas lietas.<font size="17">"
+"</font>" 
+"<li>Ekrāntastatūras izmantošana</li> <font size="17">"
+"</font>" 
+Pieskarieties pogai Sākt, lai sāktu mācības un iegūtu plašāku informāciju."</string>
+    <string name="tutorial_intro_message_setupwizard">Lai pilnībā izmantotu visas Android ierīces iespējas, ir jāizprot dažas būtiskas lietas.<font size="17">"
+"</font>" 
+"<li>Ekrāntastatūras izmantošana</li>" 
+"<li>Google konta iestatīšana</li> <font size="17">"
+"</font>" 
+Pieskarieties pogai Sākt, lai sāktu mācības un iegūtu plašāku informāciju, vai pieskarieties pogai Izlaist, lai izlaistu šīs mācības un turpinātu darbu."</string>
+    <string name="keyboard_tutorial_title">Ekrāna tastatūras izmantošana</string>
+    <string name="keyboard_tutorial_message">Pieskarieties jebkuram teksta laukam, lai atvērtu tastatūru un sāktu informācijas ievadi. Izmēģiniet šeit!</string>
+    <string name="keyboard_tutorial_edittext_hint">Pieskarieties šeit, lai sāktu ievadi.</string>
+    <string name="done_typing_message">Vai beidzāt rakstīt? Nospiediet pogu Atpakaļ, lai aizvērtu tastatūru.</string>
+    <string name="done_button_label_in_tutorial">Gatavs</string>
+    <string name="backup_consent_title">Iestatījumu dublēšana</string>
+    <string name="backup_consent_message">Jūsu iestatījumiem (piemēram, grāmatzīmēm un Wi-Fi parolēm) var tikt automātiski izveidotas dublējumkopijas jūsu Google kontā. Ja sākat lietot jaunu Android ierīci (aizstājot pazaudētu ierīci vai jauninot esošu), iestatījumi tiek atjaunoti jaunajā Android ierīcē.</string>
+    <string name="backup_consent_howto_disable_message">Dublēšanas iestatījumus var jebkurā brīdi mainīt, izmantojot lietojumprogrammas Iestatījumi sadaļu Konfidencialitāte.</string>
+    <string name="backup_consent_yes_agree">Dublēt iestatījumus Google kontā.</string>
+    <string name="restore_disable">Atspējot atjaunošanu</string>
+    <string name="restore_enable">Iespējot atjaunošanu</string>
+    <string name="restore_enabled">Ja iepriekš dublējāt iestatījumus, tie tiks atjaunoti.</string>
+    <string name="restore_disabled">Iestatījumi netiks atjaunoti no dublējuma.</string>
+    <string name="webview_progress_title">Notiek savienojuma izveide ar domēnu...</string>
+    <string name="webview_progress_verbose_message">"No uzņēmuma serveriem tiek sūtīta pierakstīšanās informācija. Tas var ilgt dažas minūtes.
+Pēc šīs darbības pabeigšanas tiks parādīta uzņēmuma pierakstīšanās lapa."</string>
+    <string name="enterprise_unmanaged_domain">Šis domēns neizmanto pakalpojumu Google Apps. Lūdzu, pārbaudiet domēna nosaukumu un mēģiniet vēlreiz.</string>
+    <string name="use_location_for_services_agree">Piekrītu</string>
+    <string name="use_location_for_services_disagree">Nepiekrītu</string>
+    <string name="use_location_for_services_title">Manas atrašanās vietas izmantošana</string>
+    <string name="use_location_for_services_text">Vai vēlaties ļaut Google izmantot atrašanās vietas informāciju, lai uzlabotu meklēšanas rezultātus un citus pakalpojumus?</string>
+    <string name="permlab_readGsettings">Lasīt Google iestatījumus</string>
+    <string name="permdesc_readGsettings">Ļauj šai lietojumprogrammai lasīt Google iestatījumus.</string>
+    <string name="permlab_writeGsettings">Modificēt Google iestatījumus</string>
+    <string name="permdesc_writeGsettings">Ļauj šai lietojumprogrammai modificēt Google iestatījumus.</string>
+    <string name="permlab_readGservices">lasīt Google pakalpojumu konfigurāciju</string>
+    <string name="permdesc_readGservices">Ļauj šai lietojumprogrammai lasīt Google pakalpojumu konfigurācijas datus.</string>
+    <string name="permlab_writeGservices">Modificēt Google pakalpojumu konfigurāciju</string>
+    <string name="permdesc_writeGservices">Ļauj šai lietojumprogrammai modificēt Google pakalpojumu konfigurācijas datus.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">piekļūt Google kontu parolēm</string>
+    <string name="permdesc_googleAuthPassword">Ļauj lietojumprogrammām tieši piekļūt konfigurētā(-o) Google konta(-u) parolēm.</string>
+    <string name="permlab_googleMailSwitch">atlasīt Gmail vai Google Mail zīmolradi</string>
+    <string name="permdesc_googleMailSwitch">Ļauj lietojumprogrammām pārslēgt attēloto nosaukumu no zīmola Gmail uz zīmolu Google Mail un otrādi.</string>
+    <string name="permlab_googleAuth">skatīt konfigurētos kontus</string>
+    <string name="permdesc_googleAuth">Ļauj lietojumprogrammām piekļūt konfigurētā(-o) Google konta(-u) lietotājvārdiem (e-pasta adresēm).</string>
+    <string name="permlab_googleAuth_ALL">piekļūt visiem Google pakalpojumiem</string>
+    <string name="permdesc_googleAuth_ALL">Ļauj lietojumprogrammām pierakstīties VISOS Google pakalpojumos, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_OTHER">piekļūt citiem Google pakalpojumiem</string>
+    <string name="permdesc_googleAuth_OTHER">Ļauj lietojumprogrammām pierakstīties nenoteiktos Google pakalpojumos, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Ļauj lietojumprogrammām pierakstīties Google Mail pakalpojumos, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_cl">Google kalendārs</string>
+    <string name="permdesc_googleAuth_cl">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google kalendārs, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_android">Android pakalpojumi</string>
+    <string name="permdesc_googleAuth_android">Ļauj lietojumprogrammām pierakstīties Android pakalpojumos, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout konti</string>
+    <string name="permdesc_googleAuth_sierra">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Checkout (un, iespējams, veikt pirkumus), izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA konti</string>
+    <string name="permdesc_googleAuth_sierraqa">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Checkout QA, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-os).</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandbox konti</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Checkout Sandbox, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Ļauj lietojumprogrammām pierakstīties pakalpojumā YouTube, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube lietotājvārdi</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Ļauj lietojumprogrammām piekļūt YouTube lietotājvārdam(-iem), kas saistīts(-i) ar šajā Android ierīcē saglabāto(-ajiem) Google kontu(-iem).</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Talk, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_ig">iGoogle konti</string>
+    <string name="permdesc_googleAuth_ig">Ļauj lietojumprogrammām pierakstīties pakalpojumā iGoogle, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_lh2">Picasa tīmekļa albumi</string>
+    <string name="permdesc_googleAuth_lh2">Ļauj lietojumprogrammām pierakstīties Picasa tīmekļa albumos, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_mobile">Google mobilo ierīču lietojumprogrammas</string>
+    <string name="permdesc_googleAuth_mobile">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google mobilajām ierīcēm, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_cp">veido savienojumu ar Google kontu datiem</string>
+    <string name="permdesc_googleAuth_cp">Ļauj lietojumprogrammām piekļūt šajā Android ierīcē saglabātā(-o) konta(-u) kontaktpersonām un profila informācijai.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Ļauj lietojumprogrammām pierakstīties programmā Google AdSense, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Ļauj lietojumprogrammām pierakstīties programmā Google AdWords, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Ļauj lietojumprogrammām pierakstīties pakalpojumā Blogger, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Ļauj lietojumprogrammām pierakstīties pakalpojumā Dodgeball, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Base, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_groups2">Google grupas</string>
+    <string name="permdesc_googleAuth_groups2">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google grupas, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_health">Google veselība</string>
+    <string name="permdesc_googleAuth_health">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google veselība, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Ļauj lietojumprogrammām pierakstīties pakalpojumā JotSpot, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Ļauj lietojumprogrammām pierakstīties pakalpojumā Knol, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_news">Google ziņas</string>
+    <string name="permdesc_googleAuth_news">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google ziņas, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Ļauj lietojumprogrammām pierakstīties pakalpojumā Orkut, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_print">Google grāmatu meklēšana</string>
+    <string name="permdesc_googleAuth_print">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google grāmatu meklēšana, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_sitemaps">Google tīmekļa pārziņa rīki</string>
+    <string name="permdesc_googleAuth_sitemaps">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google tīmekļa pārziņa rīki, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Ļauj lietojumprogrammām pierakstīties Google WiFi tīklā, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_writely">Google dokumenti</string>
+    <string name="permdesc_googleAuth_writely">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google dokumenti, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_wise">Google izklājlapas</string>
+    <string name="permdesc_googleAuth_wise">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google izklājlapas, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_finance">Google finanses</string>
+    <string name="permdesc_googleAuth_finance">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google finanses, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Maps, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Ļauj lietojumprogrammām pierakstīties platformā Google App Engine, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_notebook">Google bloknots</string>
+    <string name="permdesc_googleAuth_notebook">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google bloknots, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Ļauj lietojumprogrammām pierakstīties pakalpojumā Google Voice, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="permlab_googleAuth_speechpersonalization">Personalizēta runas atpazīšana</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Ļauj lietojumprogrammām pierakstīties personalizētās runas atpazīšanas pakalpojumā, izmantojot šajā Android ierīcē saglabāto(-os) kontu(-us).</string>
+    <string name="gls_notification_title">Pierakstīties savā kontā</string>
+    <string name="gls_notification_new_account">Ir nepieciešams ^1 konts.</string>
+    <string name="gls_notification_new_account_youtube">Ir nepieciešams YouTube konts.</string>
+    <string name="gls_notification_login_error">Pieskarieties, lai pierakstītos kontā.</string>
+    <string name="gls_ui_add_account_title">Konta iestatīšana</string>
+    <string name="gls_ui_google_account_subtitle">Google konts</string>
+    <string name="gls_ui_activity_title">Pierakstīšanās vietnē Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Pierakstīšanās pārlūkprogrammā</string>
+    <string name="gls_ui_activity_title_enterprise">Pierakstīšanās uzņēmuma kontā</string>
+    <string name="gls_ui_activity_title_youtube">Pierakstīšanās pakalpojumā YouTube</string>
+    <string name="gls_ui_activity_authenticating">Notiek autentificēšana...</string>
+    <string name="gls_captcha_activity_message">Lūdzu, ievadiet attēlā redzamās rakstzīmes:</string>
+    <string name="gls_captcha_activity_ok_button">Gatavs</string>
+    <string name="gls_error_activity_message">Mēģinot pierakstīties kontā <b>^1</b>, radās tīkla kļūda. Mēģiniet vēlreiz tūlīt vai nospiediet pogu Atpakaļ, lai atceltu darbību.</string>
+    <string name="gls_error_activity_retry_button">Mēģināt vēlreiz</string>
+    <string name="gls_dmagent_activity_message">" Jūsu domēnam ir nepieciešama mobilās ierīces pārvaldība. Lūdzu, instalējiet Google Apps ierīču politikas lietojumprogrammu, lai ieviestu drošības politikas, kas nepieciešamas kontam "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Lejupielādēt</string>
+    <string name="gls_login_activity_username_label">Lietotājvārds</string>
+    <string name="gls_login_activity_password_label">Parole</string>
+    <string name="gls_login_activity_ok_button">Pierakstīties</string>
+    <string name="gls_login_activity_loginfail_text_both">Lietotājvārds vai parole nav derīga. Ir nepieciešams <b>^1</b> konts. Lūdzu, mēģiniet vēlreiz.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Ievadījāt nepareizu paroli, vai jūsu konts ir mainīts. Lūdzu, vēlreiz ievadiet paroli.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Ievadiet šī konta paroli.</string>
+    <string name="gls_enterprise_login_activity_msg">"Lūdzu, pierakstieties uzņēmuma kontā domēnā ^1, lai veiktu autentifikāciju.
+Pieskarieties pogai Pierakstīties, lai atvērtu uzņēmuma tīmekļa pierakstīšanās lapu."</string>
+    <string name="gls_login_activity_badaccount_text">Šo kontu konkrētajā situācijā nevar izmantot. Lūdzu, izmantojiet citu kontu.</string>
+    <string name="gls_login_activity_newaccount_text">Pierakstieties savā <b>^1</b> kontā.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Vai jums nav YouTube konta? Pieskarieties <a href="http://www.youtube.com/signup">šeit</a>, lai to izveidotu.</string>
+    <string name="gls_settings_tos_activity_title">Google juridiskā informācija</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Nav izveidots savienojums ar datu pakalpojumu. Lai skatītu šo informāciju tūlīt, dodieties uz vietni %s jebkurā datorā, kam ir savienojums ar internetu.</string>
+    <string name="gls_settings_contributors_activity_title">Līdzdalībnieki</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Nav izveidots savienojums ar datu pakalpojumu. Lai skatītu šo informāciju tūlīt, dodieties uz vietni %s jebkurā datorā, kam ir savienojums ar internetu.</string>
+    <string name="gls_webview_progress_title">Notiek savienojuma izveide ar domēnu...</string>
+    <string name="gls_webview_progress_verbose_message">"No jūsu uzņēmuma serveriem tiek sūtīta pieteikšanās informācija. Tas var ilgt dažas minūtes.
+Kad process būs pabeigts, tiks parādīta jūsu uzņēmuma pierakstīšanās lapa."</string>
+    <string name="gls_sign_in_button_label">Pierakstīties</string>
+    <string name="gls_back_button_label">Atpakaļ</string>
+    <string name="gls_cancel_button_label">Atcelt</string>
+    <string name="gls_exit_account_setup_button_label">Aizv. konta iestat.</string>
+    <string name="gls_reauthorize_button_label">Atkārtoti autorizēt</string>
+    <string name="gls_sign_in_message">Lai iestatītu kontu, Android ierīcei ir jāsazinās ar Google serveriem. Tas var ilgt līdz pat piecām minūtēm.</string>
+    <string name="gls_sign_in_title">Notiek pierakstīšanās...</string>
+</resources>

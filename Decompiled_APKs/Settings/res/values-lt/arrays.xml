@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Azija</item>
+        <item>Australija</item>
+        <item>Ramiojo vandenyno regionas</item>
+        <item>Visi</item>
+    </string-array>
+    <string-array name="date_format_values">
+        <item></item>
+        <item>MM-dd-yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>yyyy-MM-dd</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 min.</item>
+        <item>10 minučių</item>
+        <item>30 minučių</item>
+    </string-array>
+    <string-array name="screen_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Niekada</item>
+        <item>15 sek.</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 min.</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>30 min.</item>
+    </string-array>
+    <string-array name="dream_timeout_values">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>nedelsiant</item>
+        <item>5 sek.</item>
+        <item>15 sek.</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 min.</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>30 min.</item>
+    </string-array>
+    <string-array name="lock_after_timeout_values">
+        <item>0</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>Mažas</item>
+        <item>Įprastas</item>
+        <item>Didelis</item>
+        <item>Labai didelis</item>
+    </string-array>
+    <string-array name="entryvalues_font_size">
+        <item>0.85</item>
+        <item>1.0</item>
+        <item>1.15</item>
+        <item>1.30</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Labai lėtas</item>
+        <item>Lėtas</item>
+        <item>Normalus</item>
+        <item>Greitas</item>
+        <item>Labai greitas</item>
+    </string-array>
+    <string-array name="tts_rate_values">
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Labai žemas</item>
+        <item>Žemas</item>
+        <item>Normalus</item>
+        <item>Aukštas</item>
+        <item>Labai aukštas</item>
+    </string-array>
+    <string-array name="tts_pitch_values">
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+    </string-array>
+    <string-array name="tts_demo_strings">
+        <item>This is an example of speech synthesis in English.</item>
+        <item>Voici un échantillon de synthèse vocale en français.</item>
+        <item>Dies ist ein Beispiel für Sprachsynthese in Deutsch.</item>
+        <item>Questo è un esempio di sintesi vocale in italiano.</item>
+        <item>Este es un ejemplo de síntesis de voz en español.</item>
+    </string-array>
+    <string-array name="tts_demo_string_langs">
+        <item>eng</item>
+        <item>fra</item>
+        <item>deu</item>
+        <item>ita</item>
+        <item>spa</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Nuskaitoma…</item>
+        <item>Prisijungiama…</item>
+        <item>Autentifikuojama…</item>
+        <item>Gaunamas IP adresas…</item>
+        <item>Prisijungta</item>
+        <item>Atidėta</item>
+        <item>Atsijungiama…</item>
+        <item>Atjungta</item>
+        <item>Nesėkmingas</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Nuskaitoma…</item>
+        <item>Prisijungiama prie %1$s…</item>
+        <item>Autentifikuojama iš %1$s…</item>
+        <item>Gaunamas IP adresas iš %1$s…</item>
+        <item>Prisijungta prie %1$s</item>
+        <item>Atidėta</item>
+        <item>Atsijungiama nuo %1$s…</item>
+        <item>Atjungta</item>
+        <item>Nesėkmingas</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+    <string-array name="wifi_security_no_eap">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Open</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Mygtuko paspaudimas</item>
+        <item>PIN kodas iš susieto įrenginio</item>
+        <item>Šio įreng. PIN kodas</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Prijungta</item>
+        <item>Pakviestas</item>
+        <item>Nepavyko</item>
+        <item>Pasiekiama</item>
+        <item>Nepasiekiama</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>1 valanda</item>
+        <item>Nėra skirtojo laiko pabaigos</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Prastas</item>
+        <item>Vidutinis</item>
+        <item>Geras</item>
+        <item>Puikus</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Visada</item>
+        <item>Tik kai įjungtas į lizdą</item>
+        <item>Niekada (naudojama daugiau duomenų)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Visada</item>
+        <item>Tik kai įjungtas į lizdą</item>
+        <item>Niekada</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automobiliai</item>
+        <item>Tik 5 GHz</item>
+        <item>Tik 2,4 GHz</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Naudojimo laikas</item>
+        <item>Paleisti skaičiavimą</item>
+        <item>Programos pavadinimas</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nėra</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Išjungta</item>
+        <item>Mygtuko paspaudimas</item>
+        <item>Prieigos taško PIN kodas</item>
+        <item>Šio įrenginio PIN kodas</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statinis</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Nėra</item>
+        <item>Rankiniu būdu</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Išjungta</item>
+        <item>Perspėjimas</item>
+        <item>Vibruoti</item>
+    </string-array>
+    <string-array name="emergency_tone_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="special_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+    </string-array>
+    <string-array name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nėra</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP arba CHAP</item>
+    </string-array>
+    <string-array name="apn_auth_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4 / IPv6</item>
+    </string-array>
+    <string-array name="apn_protocol_values">
+        <item>IP</item>
+        <item>IPV6</item>
+        <item>IPV4V6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Nenurodyta</item>
+    </string-array>
+    <string-array name="bearer_values">
+        <item>14</item>
+        <item>13</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Vidinė įrenginio atmintis</item>
+        <item>Išimama SD kortelė</item>
+        <item>Leisti nuspręsti sistemai</item>
+    </string-array>
+    <string-array name="app_install_location_values">
+        <item>device</item>
+        <item>sdcard</item>
+        <item>auto</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Visada</item>
+        <item>Niekada</item>
+        <item>Tik begarsiame režime</item>
+        <item>Tik tada, kai telefonas nėra begarsiame režime</item>
+    </string-array>
+    <string-array name="vibrate_values">
+        <item>always</item>
+        <item>never</item>
+        <item>silent</item>
+        <item>notsilent</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Trumpas</item>
+        <item>Vidutinis</item>
+        <item>Ilgas</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Niekada netikrinti</item>
+        <item>Tikrinti tik DRM turinį</item>
+        <item>Visada tikrinti</item>
+    </string-array>
+    <string-array name="hdcp_checking_values">
+        <item>never</item>
+        <item>drm-only</item>
+        <item>always</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Niekada nenaudoti HDCP tikrinimo</item>
+        <item>Taikyti HDCP tikrinimą tik DRM turiniui</item>
+        <item>Visada naudoti HDCP tikrinimą</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animacija išjungta</item>
+        <item>Animacijos mastelis 0,5x</item>
+        <item>Animacijos mastelis 1x</item>
+        <item>Animacijos mastelis 1,5x</item>
+        <item>Animacijos mastelis 2x</item>
+        <item>Animacijos mastelis 5x</item>
+        <item>Animacijos mastelis 10x</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animacija išjungta</item>
+        <item>Animacijos mastelis 0,5x</item>
+        <item>Animacijos mastelis 1x</item>
+        <item>Animacijos mastelis 1,5x</item>
+        <item>Animacijos mastelis 2x</item>
+        <item>Animacijos mastelis 5x</item>
+        <item>Animacijos mastelis 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standartinis apribojimas</item>
+        <item>Nėra fono procesų</item>
+        <item>Daugiausia 1 procesas</item>
+        <item>Daugiausia 2 procesai</item>
+        <item>Daugiausia 3 procesai</item>
+        <item>Daugiausia 4 procesai</item>
+    </string-array>
+    <string-array name="app_process_limit_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="vpn_types">
+        <item>PPTP</item>
+        <item>L2TP/IPSec PSK</item>
+        <item>L2TP/IPSec RSA</item>
+        <item>IPSec Xauth PSK</item>
+        <item>IPSec Xauth RSA</item>
+        <item>IPSec Hybrid RSA</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP / „IPSec“ VPN su iš anksto bendrinamais raktais</item>
+        <item>L2TP / „IPSec“ VPN su sertifikatais</item>
+        <item>„IPSec“ VPN su iš anksto bendrinamais raktais ir „Xauth“ autentifikavimu</item>
+        <item>„IPSec“ VPN su sertifikatais ir „Xauth“ autentifikavimu</item>
+        <item>„IPSec“ VPN su sertifikatu ir hibridiniu autentifikavimu</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Atjungta</item>
+        <item>Inicijuojama...</item>
+        <item>Prisijungiama…</item>
+        <item>Prijungta</item>
+        <item>Skirtasis laikas</item>
+        <item>Nepavyko</item>
+    </string-array>
+    <string-array name="animations_entries">
+        <item>Nėra animacijos</item>
+        <item>Kai kurios animacijos</item>
+        <item>Visos animacijos</item>
+    </string-array>
+    <string-array name="animations_summaries">
+        <item>Nerodomas animacijų langas</item>
+        <item>Rodomos kai kurios langų animacijos</item>
+        <item>Rodomos visos langų animacijos</item>
+    </string-array>
+    <string-array name="tts_lang_entries">
+        <item>Anglų (JAV)</item>
+        <item>Anglų (JK)</item>
+        <item>Prancūzų</item>
+        <item>Vokiečių</item>
+        <item>Italų</item>
+        <item>Ispanų</item>
+    </string-array>
+    <string-array name="wifi_security_eap_type">
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PEAP</item>
+    </string-array>
+    <string-array name="wifi_security_eap_type_entries_with_ccx">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>LEAP</item>
+        <item>FAST</item>
+    </string-array>
+    <string-array name="wifi_security_encryption_type_entries">
+        <item>TKIP</item>
+        <item>AES</item>
+    </string-array>
+    <string-array name="wifi_security_peap_subtype">
+        <item>PEAPv0/MSCHAPv2</item>
+        <item>PEAPv1/GTC</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ttls_phase2_entries">
+        <item>MSCHAPV2</item>
+        <item>MSCHAP</item>
+        <item>PAP</item>
+    </string-array>
+    <string-array name="wifi_security_wep_eap">
+        <item>Nėra</item>
+        <item>LEAP</item>
+    </string-array>
+    <string-array name="wifi_eap_security_entries">
+        <item>Automatinis</item>
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA Personal</item>
+        <item>WPA2 Personal</item>
+        <item>WPA Enterprise</item>
+        <item>WPA2 Enterprise</item>
+    </string-array>
+    <string-array name="wifi_eap_security_without_auto_entries">
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA Personal</item>
+        <item>WPA2 Personal</item>
+        <item>WPA Enterprise</item>
+        <item>WPA2 Enterprise</item>
+    </string-array>
+    <string-array name="wifi_eap_security_without_auto_entries_with_wapi">
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA Personal</item>
+        <item>WPA2 Personal</item>
+        <item>WPA Enterprise</item>
+        <item>WPA2 Enterprise</item>
+        <item>WAPI-PSK</item>
+        <item>WAPI-CERT</item>
+    </string-array>
+    <string-array name="wifi_security_entries_with_wapi">
+        <item>Automatinis</item>
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x Enterprise</item>
+        <item>WAPI-PSK</item>
+        <item>WAPI-CERT</item>
+    </string-array>
+    <string-array name="wifi_security_without_auto_entries_with_wapi">
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x Enterprise</item>
+        <item>WAPI-PSK</item>
+        <item>WAPI-CERT</item>
+    </string-array>
+    <string-array name="wifi_eap_security_entries_with_wapi">
+        <item>Automatinis</item>
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA Personal</item>
+        <item>WPA2 Personal</item>
+        <item>WPA Enterprise</item>
+        <item>WPA2 Enterprise</item>
+        <item>WAPI-PSK</item>
+        <item>WAPI-CERT</item>
+    </string-array>
+    <string-array name="wifi_no_certificate_install">
+        <item>Nėra</item>
+    </string-array>
+    <string-array name="wifi_wep_index">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="apn_mmsprotocol_entries">
+        <item>WAP 2.0</item>
+        <item>WAP 1.2</item>
+    </string-array>
+    <string-array name="apn_mmsprotocol_values">
+        <item>2.0</item>
+        <item>1.2</item>
+    </string-array>
+    <string-array name="fota_download_entries">
+        <item>Atsisiųsti automatiškai</item>
+        <item>Klausti prieš atsisiunčiant</item>
+        <item>Niekada</item>
+    </string-array>
+    <string-array name="fota_download_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="htc_cdma_dtmf_tone_entries">
+        <item>Ilgi tonai</item>
+        <item>Trumpi tonai</item>
+        <item>Išjungta</item>
+    </string-array>
+    <string-array name="htc_cdma_dtmf_tone_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="profile_item_list">
+        <item>Normalus</item>
+        <item>Vibruoti</item>
+        <item>Begarsis</item>
+    </string-array>
+    <string-array name="profile_item_list_ct">
+        <item>Normalus</item>
+        <item>Vibruoti</item>
+        <item>Begarsis</item>
+        <item>Lauke</item>
+    </string-array>
+    <string-array name="wifi_htc_sleep_policy_entries">
+        <item>Po 15 min</item>
+        <item>Niekada, kai įjungtas į tinklą</item>
+        <item>Niekada</item>
+    </string-array>
+    <string-array name="alias_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>en_HK</item>
+    </string-array>
+    <string-array name="alias_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="display_mode_entries">
+        <item>Automatinis</item>
+        <item>Dienos režimas</item>
+        <item>Nakties režimas</item>
+    </string-array>
+    <string-array name="display_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="inactivity_time_values">
+        <item>0</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+    </string-array>
+    <string-array name="wifi_wep_type">
+        <item>Automatinis</item>
+        <item>WEP ASCII</item>
+        <item>WEP šešioliktainis</item>
+    </string-array>
+    <string-array name="wifi_security_entries">
+        <item>Automatinis</item>
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x Enterprise</item>
+    </string-array>
+    <string-array name="wifi_security_without_auto_entries">
+        <item>Nėra</item>
+        <item>WEP</item>
+        <item>WPA/WPA2 PSK</item>
+        <item>802.1x Enterprise</item>
+    </string-array>
+    <string-array name="powersaver_setschedule_list">
+        <item>10% baterijos energijos</item>
+        <item>15% baterijos energijos</item>
+        <item>20% baterijos energijos</item>
+        <item>25% baterijos energijos</item>
+        <item>30% baterijos energijos</item>
+    </string-array>
+    <string-array name="powersaver_setschedule_value">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="powersaver_setschedule_list_3_5">
+        <item>Niekada</item>
+        <item>10% baterijos energijos</item>
+        <item>15% baterijos energijos</item>
+        <item>20% baterijos energijos</item>
+        <item>25% baterijos energijos</item>
+        <item>30% baterijos energijos</item>
+    </string-array>
+    <string-array name="powersaver_setschedule_value_3_5">
+        <item>0</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="powermode_list">
+        <item>Didelis našumas</item>
+        <item>Normalus</item>
+        <item>Ekonominis</item>
+    </string-array>
+    <string-array name="powermode_list_description">
+        <item>Sureguliuokite savo telefono nustatymus, kad padidintumėte našumą</item>
+        <item>Sureguliuokite savo telefono nustatymus, kad sumažintumėte elektros energijos naudojimą</item>
+        <item>Sureguliuokite savo telefono nustatymus, kad žymiai sumažintumėte elektros energijos naudojimą</item>
+    </string-array>
+    <string-array name="powermode_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="deskdock_dim_screen_entries">
+        <item>1 minutė</item>
+        <item>10 minučių</item>
+        <item>30 minučių</item>
+        <item>1 valanda</item>
+        <item>4 valandos</item>
+        <item>8 valandos</item>
+        <item>Niekada</item>
+    </string-array>
+    <string-array name="deskdock_dim_screen_values">
+        <item>1</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>240</item>
+        <item>480</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="htc_screen_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="wifi_settings_access_condition_entries">
+        <item>Išorė</item>
+        <item>Namai</item>
+    </string-array>
+    <string-array name="wifi_settings_access_condition_values">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+    <string-array name="htc_app_storage_settings_items">
+        <item>@string/htc_internal_sd_card_category_title</item>
+        <item>@string/sd_card_storage</item>
+    </string-array>
+    <string-array name="animations_values">
+        <item>00</item>
+        <item>01</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="tts_lang_values">
+        <item>eng-USA</item>
+        <item>eng-GBR</item>
+        <item>fra-FRA</item>
+        <item>deu-DEU</item>
+        <item>ita-ITA</item>
+        <item>spa-ESP</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_values">
+        <item>twomin</item>
+        <item>fivemin</item>
+        <item>onehour</item>
+        <item>never</item>
+    </string-array>
+    <string-array name="tts_engine_entries">
+        <item>Pico TTS</item>
+    </string-array>
+    <string-array name="tts_engine_values">
+        <item>com.svox.pico</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup_without_peer_device">
+        <item>Spustelėkite mygtuką</item>
+        <item>PIN iš šio įrenginio</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup_only_pbc">
+        <item>Spustelėkite mygtuką</item>
+    </string-array>
+    <string-array name="power_saver_screen_timeout">
+        <item>15000</item>
+        <item>30000</item>
+        <item>45000</item>
+        <item>60000</item>
+        <item>120000</item>
+    </string-array>
+    <string-array name="apn_protocol_entries_no_ipv4v6">
+        <item>IPv4</item>
+        <item>IPv6</item>
+    </string-array>
+    <string-array name="apn_protocol_values_no_ipv4v6">
+        <item>IP</item>
+        <item>IPV6</item>
+    </string-array>
+    <string-array name="bearer_entries_no_lte">
+        <item>eHRPD</item>
+        <item>Nenurodyta</item>
+    </string-array>
+    <string-array name="bearer_values_no_lte">
+        <item>13</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="bearer_entries_no_ehrpd">
+        <item>LTE</item>
+        <item>Nenurodyta</item>
+    </string-array>
+    <string-array name="bearer_values_no_ehrpd">
+        <item>14</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_eap_method_with_aka">
+        <item>AKA</item>
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+    </string-array>
+    <string-array name="display_resolution_items">
+        <item>@string/display_resolution_item_automatic</item>
+        <item>@string/display_resolution_item_720p</item>
+        <item>@string/display_resolution_item_480p</item>
+    </string-array>
+    <string-array name="uak_sub_menu_items">
+        <item>@string/uak_sub_menu_item_reassign</item>
+        <item>@string/uak_sub_menu_item_remove</item>
+    </string-array>
+</resources>

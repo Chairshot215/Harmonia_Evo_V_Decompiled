@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseText" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="MyAppsHeaderText">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="BucketHeaderText" parent="@style/BaseText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="BucketHeader">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bucket_header_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/base_row_height</item>
+    </style>
+    <style name="ContentEntryTitle" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/content_entry_medium_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingExtra">0.0sp</item>
+    </style>
+    <style name="ContentEntrySubtitle" parent="@*android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/content_entry_small_size</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ContentEntryIcon">
+        <item name="android:layout_width">@dimen/bucket_entry_icon_width</item>
+        <item name="android:layout_height">@dimen/bucket_entry_icon_height</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:maxHeight">@dimen/bucket_entry_icon_height</item>
+    </style>
+    <style name="DetailsPage_SummaryText">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DetailsPage_BylineText" parent="@style/DetailsPage_SummaryText">
+        <item name="android:textColor">@color/details_content_text_color</item>
+    </style>
+    <style name="DetailsPage_Button">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/buy_button</item>
+        <item name="android:background">@drawable/details_page_regular_button</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">@dimen/details_button_width</item>
+        <item name="android:layout_height">@dimen/details_button_height</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:minHeight">@dimen/details_button_height</item>
+    </style>
+    <style name="DetailsPage_BuyButton" parent="@style/DetailsPage_Button">
+        <item name="android:background">@drawable/details_page_buy_button</item>
+    </style>
+    <style name="DetailsPage_EditorialBuyButton" parent="@style/DetailsPage_BuyButton">
+        <item name="android:background">@drawable/details_page_buy_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/details_button_width</item>
+    </style>
+    <style name="DetailsPage_SubscriptionButton" parent="@style/DetailsPage_Button" />
+    <style name="DetailsPage_MainBuyButton">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:textColor">@color/buy_button</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/details_page_buy_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/details_button_height</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="DetailsPage_SmallBuyButton" parent="@style/DetailsPage_BuyButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/details_button_small_height</item>
+        <item name="android:minWidth">@dimen/details_button_small_width</item>
+    </style>
+    <style name="DetailsPage_FooterButton">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/details_page_more_button</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">12.0dip</item>
+    </style>
+    <style name="DetailsPage_Panel">
+        <item name="android:background">@color/main_background</item>
+        <item name="android:paddingLeft">@dimen/details_content_margin</item>
+        <item name="android:paddingRight">@dimen/details_content_margin</item>
+    </style>
+    <style name="DetailsPage_HeaderText" parent="@style/BaseText">
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/details_content_margin</item>
+        <item name="android:paddingRight">@dimen/details_content_margin</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/details_section_header_height</item>
+        <item name="android:lineSpacingExtra">1.0sp</item>
+    </style>
+    <style name="DetailsPage_ContentText">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textColor">@color/details_content_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">5.0sp</item>
+    </style>
+    <style name="DetailsPage_CaptionText" parent="@style/DetailsPage_ContentText">
+        <item name="android:lineSpacingExtra">0.0sp</item>
+    </style>
+    <style name="FinskyRatingBarSmall" parent="@*android:style/Widget.RatingBar">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:maxHeight">@dimen/rating_bar_small_height</item>
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:minHeight">@dimen/rating_bar_small_height</item>
+        <item name="android:thumb">@null</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="FinskyRatingBarMedium" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">@dimen/rating_bar_medium_height</item>
+        <item name="android:indeterminateDrawable">@drawable/custom_ratingbar_big</item>
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_big</item>
+        <item name="android:minHeight">@dimen/rating_bar_medium_height</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="FinskyRatingBarLarge" parent="@*android:style/Widget.RatingBar">
+        <item name="android:maxHeight">48.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/ratingbar_full_holo_dark</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_full_holo_dark</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+    <style name="FinskyRatingBarGrid" parent="@style/FinskyRatingBarSmall">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar_grid</item>
+    </style>
+    <style name="PurchasePage_InstrumentFooterText">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingExtra">1.0sp</item>
+    </style>
+    <style name="PurchasePage_RedeemFooterText" parent="@style/PurchasePage_InstrumentFooterText">
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="TransparentTitleBackground">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="AddInstrumentBodyTextPrimary">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+    </style>
+    <style name="AddInstrumentBodyTextSecondary">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+    </style>
+    <style name="AddInstrumentBodyTextAddressSnippet" parent="@style/AddInstrumentBodyTextPrimary">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SetupWizardTitle">
+        <item name="android:textSize">@dimen/setup_wizard_title_text_size</item>
+        <item name="android:textColor">@color/setup_wizard_title_color</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">0.15</item>
+        <item name="android:textUnderlineThickness">sans-serif-light</item>
+    </style>
+    <style name="SetupWizardContentHeight">
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">0.8</item>
+    </style>
+    <style name="SetupWizardBottomMargin">
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">0.05</item>
+    </style>
+    <style name="SetupWizardContentWidth">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">0.9</item>
+    </style>
+    <style name="SetupWizardDivider">
+        <item name="android:background">@color/setup_wizard_divider_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3.0dip</item>
+    </style>
+    <style name="SetupWizardProgressBar" parent="@*android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SetupWizardButton">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/setup_wizard_button_min_height</item>
+        <item name="android:minWidth">@dimen/setup_wizard_button_min_width</item>
+    </style>
+    <style name="SetupWizardBottomDivider" parent="@style/SetupWizardDivider">
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="SetupWizardNextButton" parent="@style/SetupWizardButton" />
+    <style name="SetupWizardStackedButtons">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GenericContentRow" parent="@style/BaseText">
+        <item name="android:textSize">@dimen/content_generic_medium_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/permissions_secondary_foreground</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="GenericContentNewBadge" parent="@style/BaseText">
+        <item name="android:textSize">@dimen/content_generic_xsmall_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FinskyProgressSmallInverse" parent="@*android:style/Widget.ProgressBar.Small.Inverse" />
+    <style name="AntennaHeaderText" parent="@style/DetailsPage_HeaderText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/details_content_margin</item>
+        <item name="android:paddingRight">@dimen/details_content_margin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FreeSongOfTheDayHeaderText" parent="@style/DetailsPage_HeaderText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/details_content_margin</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">@dimen/details_content_margin</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="CellTitleOverlayText" parent="@style/BaseText">
+        <item name="android:textSize">@dimen/content_entry_medium_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="UpdateAddressInstrumentTitle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/setup_wizard_title_color</item>
+    </style>
+    <style name="UpdateAddressBillingInformationTitle">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AccountSelector">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/details_content_margin</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">@dimen/details_content_margin</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">8.0dip</item>
+    </style>
+    <style name="ButtonBarDefaultStyle" parent="@*android:style/ButtonBar">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+    </style>
+    <style name="WidgetTitleText">
+        <item name="android:textSize">@dimen/widget_title_font_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textUnderlineThickness">sans-serif-light</item>
+    </style>
+    <style name="NowPlayingImageCell">
+        <item name="android:background">@drawable/shadow_nowplaying_widget</item>
+    </style>
+    <style name="NowPlayingImage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="NowPlayingAcessibility">
+        <item name="android:background">@drawable/highlight_overlay</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="RedeemGiftCardText">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/details_content_margin</item>
+        <item name="android:layout_marginRight">@dimen/details_content_margin</item>
+    </style>
+    <style name="RedeemGiftCardEditText" parent="@*android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/details_content_margin</item>
+        <item name="android:layout_marginRight">@dimen/details_content_margin</item>
+    </style>
+    <style name="WishlistEmptyStyle">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WarmWelcomeButton">
+        <item name="android:textSize">@dimen/content_generic_medium_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/details_page_regular_button</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/details_content_margin_no_glow</item>
+        <item name="android:layout_marginRight">@dimen/details_content_margin_no_glow</item>
+        <item name="android:minWidth">@dimen/details_button_minwidth</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="FinskyTheme" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/loading_background</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonStyle</item>
+    </style>
+    <style name="FinskyDarkTheme" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/loading_background</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonStyle</item>
+    </style>
+    <style name="InstrumentTheme" parent="@*android:style/Theme.Light.NoTitleBar" />
+    <style name="ExternalAddCreditCardTheme" parent="@style/InstrumentTheme" />
+    <style name="FinskyBaseDialogTheme" parent="@*android:style/Theme.Dialog">
+        <item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonStyle</item>
+    </style>
+    <style name="FinskyDialogTheme" parent="@style/FinskyBaseDialogTheme" />
+    <style name="FinskyDarkDialogTheme" parent="@style/FinskyDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="SettingsTheme" parent="@*android:style/Theme">
+        <item name="android:windowTitleSize">@dimen/action_bar_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/TransparentTitleBackground</item>
+    </style>
+    <style name="DialogWhenLarge" parent="@style/FinskyTheme" />
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyDarkTheme" />
+    <style name="Fullscreen" parent="@*android:style/Theme.Black.NoTitleBar.Fullscreen" />
+    <style name="Fullscreen.NoBackground" parent="@style/Fullscreen">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="LightWidgetTheme" parent="@style/FinskyTheme" />
+    <style name="TrampolineTheme" parent="@*android:style/Theme.Panel" />
+</resources>

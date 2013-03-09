@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="305332586" android:versionName="3.5.2213162525.332586" package="com.htc.feedback"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/tell_htc" android:description="@com.htc:string/htc_about_company_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name="ReportActivity" android:permission="com.htc.permission.FEEDBACK_PROTECT" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.APP_ERROR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/HtcActionBar" android:label="@string/app_name" android:name="ReportSettingsActivity" android:permission="com.htc.permission.FEEDBACK_PROTECT" android:taskAffinity="com.htc.feedback.ReportSettingActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.feedback.REPORT_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/preview_title" android:name="PreviewActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="@string/preview_title" android:name="PreviewInfoActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.Dialog.Alert" android:label="@string/title_htc_tos" android:name="PrivacyPageActivity" android:excludeFromRecents="true" android:configChanges="orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Dialog.Alert" android:label="@string/app_name" android:name="SystemCrashActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="FeedbackBugReportActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation" />
+        <service android:name="FeedbackService" />
+        <service android:name="AdditionalInfoService" />
+        <service android:name="ReceiverService" />
+        <receiver android:name="FeedbackReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.APP_ERROR" />
+                <action android:name="com.android.updater.NOTIFY_SYSTEM_CRASH" />
+                <action android:name="android.htc.intent.action.NOTIFY_SYSTEM_NATIVE_CRASH" />
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_FORCE_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <permission android:label="@string/permlab_feedback" android:name="com.htc.permission.FEEDBACK_PROTECT" android:protectionLevel="signature" android:description="@string/permdesc_feedback" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DUMP" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

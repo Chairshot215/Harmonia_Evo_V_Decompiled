@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/widget_picker_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_picker_title" style="@com.htc:style/darklist_primary_m" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/widget_picker_subtitle_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/left_arrow" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/home_widget_picker_arrow_left" android:scaleType="center" />
+        <TextView android:layout_gravity="center" android:id="@id/widget_picker_subtitle" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/darklist_secondary_m" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/right_arrow" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/home_widget_picker_arrow_right" android:scaleType="center" />
+    </LinearLayout>
+</LinearLayout>

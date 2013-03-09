@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layout_style_phone_keypad">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">0.0px</item>
+        <item name="android:paddingTop">3.0px</item>
+        <item name="android:paddingRight">0.0px</item>
+        <item name="android:paddingBottom">0.0px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">315.0px</item>
+    </style>
+    <style name="keyboard_size_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="image_style_phone_button">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginLeft">@dimen/button_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/button_marginTop</item>
+        <item name="android:layout_marginRight">@dimen/button_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/button_marginBottom</item>
+    </style>
+    <style name="image_style_phone_button_ok" parent="@com.htc:style/title_primary_xl">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_marginLeft">@dimen/button_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/button_marginTop</item>
+        <item name="android:layout_marginRight">@dimen/button_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/button_marginBottom</item>
+    </style>
+    <style name="lock_title_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="lock_title_s_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/title_primary_s</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lock_footer_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/text_size_secondary</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lock_pattern_style_small">
+        <item name="android:layout_width">544.0px</item>
+        <item name="android:layout_height">544.0px</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+        <item name="com.htc:lock_btn_default">@drawable/btn_code_lock_default</item>
+        <item name="com.htc:lock_btn_touch">@drawable/btn_code_lock_touched</item>
+        <item name="com.htc:lock_circle_default">@drawable/pattern_btn_off</item>
+        <item name="com.htc:lock_circle_green">@drawable/pattern_btn_on</item>
+        <item name="com.htc:lock_circle_red">@drawable/pattern_btn_red</item>
+    </style>
+    <style name="lock_pattern_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginBottom">5.0px</item>
+    </style>
+    <style name="lock_pattern_footbar_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginBottom">0.0px</item>
+    </style>
+    <style name="Theme.LockScreen" parent="@*android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="hint_text_style">
+        <item name="android:textSize">@dimen/lockscreen_hint_textSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15.0px</item>
+        <item name="android:layout_marginRight">15.0px</item>
+        <item name="android:layout_marginBottom">@dimen/lockscreen_hint_text_marginBottom</item>
+        <item name="android:maxWidth">@dimen/lockscreen_hint_text_maxWidth</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="button_text_style">
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.1</item>
+    </style>
+    <style name="music_grip_show">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="reminder_icon">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="reminder_calendar_desp">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@id/calendar_icon</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="reminder_calendar_desp2">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="reminder_alarm_desp">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@id/alarm_bg</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="reminder_sim_desp">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@id/sim_icon</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="unlock_text_shadow">
+        <item name="android:shadowColor">#ff4d4d4d</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+</resources>

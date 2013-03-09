@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="childBackgroundDrawable" format="reference" />
+    <attr name="max_height" format="dimension" />
+    <attr name="load_once" format="boolean" />
+    <attr name="fade_in_after_load" format="boolean" />
+    <attr name="placeholder_type" format="integer">
+        <enum name="none" value="0" />
+        <enum name="regular" value="1" />
+        <enum name="promo" value="2" />
+    </attr>
+    <attr name="content" format="reference" />
+    <attr name="contentId" format="reference" />
+    <attr name="decoration_position" format="integer">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="use_whitescale" format="boolean" />
+    <attr name="max_width" format="dimension" />
+    <attr name="max_content_width" format="dimension" />
+    <attr name="min_width_percent" format="float" />
+    <attr name="max_width_percent" format="float" />
+    <attr name="default_ratio" format="float" />
+    <attr name="multi_account_drawable" format="reference" />
+    <attr name="min_row_count" format="integer" />
+    <attr name="enforce_button_alignment" format="boolean" />
+    <attr name="use_holo_dark_icon" format="boolean" />
+    <attr name="finskyButtonBarStyle" format="reference" />
+    <attr name="finskyButtonBarButtonStyle" format="reference" />
+</resources>

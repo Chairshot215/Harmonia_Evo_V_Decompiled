@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@com.htc:drawable/popup_full_dark" android:layout_width="fill_parent" android:layout_height="421.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="left|center" android:paddingLeft="7.0px" android:paddingTop="4.0px" android:layout_width="fill_parent" android:layout_height="62.0px" android:text="@string/nowplaying_title" style="@com.htc:style/title_primary_m" />
+    <View android:layout_gravity="center_horizontal" android:background="#ff494949" android:layout_width="433.0px" android:layout_height="3.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="201.0px">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="27.0px">
+            <ImageView android:id="@id/albumart" android:layout_width="140.0px" android:layout_height="140.0px" />
+            <ImageView android:id="@id/album_reflection" android:layout_width="140.0px" android:layout_height="33.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0px" android:layout_marginTop="18.0px">
+            <TextView android:ellipsize="end" android:id="@id/line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:singleLine="true" style="@com.htc:style/darklist_primary_m" />
+            <TextView android:ellipsize="end" android:id="@id/line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginTop="4.0px" android:singleLine="true" style="@com.htc:style/darklist_secondary_l" />
+            <com.htc.widget.HtcSeekBar android:id="@id/progress" android:paddingLeft="18.0px" android:paddingRight="18.0px" android:layout_width="320.0px" android:layout_height="wrap_content" android:layout_marginTop="8.0px" seekbar:seek_bar_display_mode="mode_thick"
+              xmlns:seekbar="http://schemas.android.com/apk/res/com.htc" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginTop="15.0px" android:layout_marginRight="16.0px">
+                <TextView android:layout_gravity="left|center" android:id="@id/currenttime" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" style="@com.htc:style/darklist_secondary_s" />
+                <TextView android:gravity="right|center" android:layout_gravity="center" android:id="@id/totaltime" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" style="@com.htc:style/darklist_secondary_s" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="center_horizontal" android:background="#ff494949" android:layout_width="432.0px" android:layout_height="2.0px" />
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/playpause" android:background="?com.htc:attr_common_b_button" android:layout_width="188.0px" android:layout_height="77.0px" android:layout_marginTop="16.0px" android:src="@com.htc:drawable/common_icon_glance_play_on" android:onClick="playPauseClicked" />
+</LinearLayout>

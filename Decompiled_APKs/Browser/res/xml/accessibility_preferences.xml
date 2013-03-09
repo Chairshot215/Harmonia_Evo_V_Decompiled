@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_force_userscalable" android:key="force_userscalable" android:summary="@string/pref_force_userscalable_summary" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/pref_font_size_category">
+        <com.android.browser.preferences.FontSizePreview android:title="@string/preview" />
+        <com.android.browser.preferences.SeekBarSummaryPreference android:max="30" android:title="@string/pref_text_zoom" android:key="text_zoom" android:defaultValue="10" />
+        <com.android.browser.preferences.SeekBarSummaryPreference android:max="10" android:title="@string/pref_zoom_on_double_tap" android:key="double_tap_zoom" android:defaultValue="5" />
+        <com.android.browser.preferences.SeekBarSummaryPreference android:max="20" android:title="@string/pref_min_font_size" android:key="min_font_size" android:defaultValue="0" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_inverted_category">
+        <com.android.browser.preferences.InvertedContrastPreview android:title="@string/preview" />
+        <CheckBoxPreference android:title="@string/pref_inverted" android:key="inverted" android:summary="@string/pref_inverted_summary" android:defaultValue="false" />
+        <com.android.browser.preferences.SeekBarSummaryPreference android:max="20" android:title="@string/pref_inverted_contrast" android:key="inverted_contrast" android:dependency="inverted" android:defaultValue="0" />
+    </PreferenceCategory>
+</PreferenceScreen>

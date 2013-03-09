@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.Title1 android:orientation="vertical" android:id="@id/title_1" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.DropDownList android:id="@id/title_1_dropdown" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/title_1_left" android:background="?attr_common_titlebar_btn" android:paddingLeft="12.0px" android:paddingRight="10.0px" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/title_primary_m" android:textColor="@color/titleTextColor" android:gravity="center_vertical" android:id="@id/title_1_txt_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <ImageButton android:id="@id/title_1_img_1x1" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="44.0px" android:layout_height="44.0px" android:layout_marginTop="10.0px" android:src="@drawable/common_icon_titlebar_pulldown" android:layout_alignParentRight="true" />
+            <ProgressBar android:id="@id/title_1_pbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_margin_small" android:layout_marginTop="18.0px" android:layout_toLeftOf="@id/title_1_img_1x1" style="?android:attr/progressBarStyleSmallTitle" />
+        </RelativeLayout>
+    </com.htc.widget.DropDownList>
+</com.htc.widget.Title1>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <TextView android:gravity="center_horizontal" android:id="@id/AudioMSGTVid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="100.0dip">
+        <Button android:id="@id/ReceiverID" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/SpeakerID" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/RecordID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:drawableTop="@drawable/rec" />
+        <Button android:id="@id/playRecordID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+        <TextView android:gravity="center_horizontal" android:id="@id/Audio_NextStepid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

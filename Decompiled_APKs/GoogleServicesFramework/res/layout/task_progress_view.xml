@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/setupWizardTitle" android:id="@id/simple_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="11.0dip" />
+        <View android:layout_gravity="center" android:background="@color/divider_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="14.0dip" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/verbose_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="@string/communicating_message" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@*android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center" android:id="@id/cancel_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/cancel_button_label" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

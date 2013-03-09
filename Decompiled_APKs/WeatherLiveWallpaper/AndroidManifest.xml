@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100350863" android:versionName="1.0.2214162469.350863" package="com.htc.android.WeatherLiveWallpaper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.BIND_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:description="@com.htc:string/htc_about_company_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="com.htc.lockscreen.fusion" />
+        <uses-library android:name="com.htc.fusion.fx" />
+        <service android:label="@string/app_name" android:name=".Weather" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/livewallpaper" />
+        </service>
+        <service android:label="@string/app_name" android:name=".service.WeatherWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+        </service>
+        <activity android:label="@string/app_name" android:name=".setting.WallpaperSetting">
+            <intent-filter>
+                <action android:name="com.htc.android.WeatherLiveWallpaper.setting.WallpaperSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:label="@string/app_name" android:name=".service.WeatherLoopingService">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

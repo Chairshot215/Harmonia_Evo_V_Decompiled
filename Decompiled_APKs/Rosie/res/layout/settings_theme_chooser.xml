@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:enabled="false" android:id="@id/title_bar" android:background="@com.htc:drawable/common_titlebar_sublevel" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/choose_sences_title_height" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/launcher_hv_textsize" android:textColor="@color/bb_textcolor_press" android:gravity="center" android:id="@id/title" android:paddingRight="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:text="@string/themes_change_choose" />
+        <TextView android:enabled="false" android:textSize="@dimen/launcher_hv_textsize" android:textColor="@color/bb_textcolor_normal" android:gravity="center" android:id="@id/drawer_title" android:paddingLeft="1.0px" android:paddingTop="1.0px" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:text="@string/themes_change_choose" />
+    </RelativeLayout>
+    <com.htc.widget.HtcListView android:id="@id/themes_list" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@drawable/rosie_common_divider_items_scene" android:layout_below="@id/title" />
+</RelativeLayout>

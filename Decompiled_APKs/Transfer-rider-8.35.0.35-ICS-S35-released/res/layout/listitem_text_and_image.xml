@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout01" android:background="@color/common_background" android:paddingLeft="@dimen/Content_Padding_LR" android:paddingRight="@dimen/Content_Padding_LR" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/List_2Line_Large_Font_Size" android:textColor="@*android:color/black" android:id="@id/TVItemName" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nothing" />
+        <ImageView android:id="@id/IVCheckboxStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mark_error" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/RelativeLayout01">
+        <TextView android:textSize="@dimen/List_2Line_Small_Font_Size" android:textColor="@*android:color/black" android:id="@id/TVErrorStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="error_status" android:layout_below="@id/TVItemName" android:layout_alignLeft="@id/TVItemName" />
+    </LinearLayout>
+</RelativeLayout>

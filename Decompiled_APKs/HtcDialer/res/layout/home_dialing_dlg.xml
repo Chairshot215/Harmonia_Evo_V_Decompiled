@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@com.htc:color/listview_app_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/item_select" layout="@layout/htc_list_item_text_dropdown" />
+        <include layout="@layout/htc_list_item_divider" />
+        <include android:id="@id/item_yes" layout="@com.htc:layout/htc_list_item_2text_2stamp_radio" />
+        <include layout="@layout/htc_list_item_divider" />
+        <include android:id="@id/item_no" layout="@com.htc:layout/htc_list_item_2text_2stamp_radio" />
+        <include layout="@layout/htc_list_item_divider" />
+        <include android:id="@id/item_reminder" layout="@com.htc:layout/htc_list_item_text_checkbox" />
+    </LinearLayout>
+</ScrollView>

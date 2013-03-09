@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/new_message_notification_margin_side" android:layout_marginRight="@dimen/new_message_notification_margin_side" android:layout_marginBottom="@dimen/new_message_notification_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:maxHeight="48.0dip" />
+    <LinearLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Light.Button" orientation="horizontal">
+        <TextView android:gravity="center_vertical" android:id="@id/notification_msg" android:paddingLeft="22.0dip" android:maxWidth="400.0dip" android:layout_alignParentLeft="true" style="@style/newMessageNotificationText" />
+        <TextView android:gravity="right|center" android:layout_marginRight="20.0dip" android:text="@string/show" android:layout_weight="1.0" android:layout_alignParentRight="true" style="@style/newMessageNotificationText" />
+    </LinearLayout>
+</FrameLayout>

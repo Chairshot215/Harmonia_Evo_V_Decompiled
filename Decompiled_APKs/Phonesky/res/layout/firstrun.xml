@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/background_holo_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/firstrun_pinstripe" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/content_generic_medium_size" android:gravity="center" android:id="@id/firstrun_description" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:lineSpacingExtra="3.0dip" />
+            <TextView android:textSize="@dimen/content_generic_xsmall_size" android:textStyle="bold" android:id="@id/learn_more" android:background="@drawable/highlight_overlay" android:paddingLeft="2.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="27.0dip" android:text="@string/firstrun_learn_more" android:drawableRight="@drawable/ic_more_play" android:drawablePadding="2.0dip" />
+            <TextView android:textSize="@dimen/content_generic_medium_size" android:gravity="center" android:id="@id/firstrun_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:text="@string/launcher_name" android:drawableTop="@drawable/ic_launcher_play_store_promo" />
+            <Button android:textSize="@dimen/content_generic_medium_size" android:id="@id/continue_button" android:paddingLeft="21.0dip" android:paddingTop="4.0dip" android:paddingRight="21.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:minHeight="25.0dip" android:text="@string/firstrun_continue" style="@style/DetailsPage_BuyButton" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

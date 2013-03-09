@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.MoreExpandableHtcListView android:id="@id/list" android:background="@com.htc:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+    <include android:id="@id/empty" layout="@layout/page_1line_centered_text" />
+</LinearLayout>

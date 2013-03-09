@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/cmd_bar_11" android:layout_width="fill_parent" android:layout_height="180.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/timer_start_end" android:background="@drawable/common_panel_fullscreen_base" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_width="fill_parent" android:layout_height="90.0px">
+        <TextView android:textColor="@color/white" android:id="@id/time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/darklist_secondary_s" />
+        <TextView android:textColor="@color/white" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/darklist_secondary_s" />
+        <RelativeLayout android:paddingTop="@dimen/cmd_bar_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.htc.widget.SeekBar android:id="@id/mediacontroller_progress" android:layout_width="@dimen/cmd_bar_playback_width" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/common_sub_panel_navbar_75" android:layout_width="fill_parent" android:layout_height="90.0px">
+        <ImageButton android:id="@id/cmd_bar_imgbtn_1" android:background="?attr_command_bar_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/cmd_bar_imgbtn_2" android:background="?attr_command_bar_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/cmd_bar_imgbtn_3" android:background="?attr_command_bar_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

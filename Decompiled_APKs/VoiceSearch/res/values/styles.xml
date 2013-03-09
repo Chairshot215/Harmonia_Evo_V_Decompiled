@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Recognition" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/RecognitionAnimation</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.VoiceSearchDialog" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Theme.Slot" parent="@*android:style/Theme.Holo.Light" />
+    <style name="RecognitionAnimation">
+        <item name="android:windowEnterAnimation">@anim/holo_window_in</item>
+        <item name="android:windowExitAnimation">@anim/holo_window_out</item>
+    </style>
+    <style name="Theme.Suggestion" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:colorBackground">#ffffffff</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="Theme.VoiceIme" parent="@*android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="correctable_highlight" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/correctable_highlight_color</item>
+    </style>
+    <style name="contacts_list_main" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/editor_grayed_out_text</item>
+    </style>
+    <style name="contacts_list_highlight" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="slot_title_main" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="slot_title_invalid" parent="@*android:style/TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffcc0000</item>
+    </style>
+    <style name="positioned_dialog">
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="watch_video_button">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="help_dialog" parent="@style/positioned_dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="help_dialog_content" />
+    <style name="disambig_dialog" parent="@style/positioned_dialog">
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="disambig_dialog_content">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_margin">16.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="square_button">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/stateful_colored_background</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@*android:attr/theme" android:paddingRight="8.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@*android:attr/label" android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@*android:attr/theme">
+        <TextView android:ellipsize="marquee" android:id="@*android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:singleLine="true" style="@style/textAppearance_primary" />
+        <TextView android:id="@*android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_below="@*android:id/title" style="@style/textAppearance_secondary" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <FrameLayout android:id="@*android:attr/icon" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@*android:attr/name" android:paddingRight="22.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@*android:attr/manageSpaceActivity" android:paddingLeft="36.0px" android:paddingTop="18.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <FrameLayout android:id="@*android:attr/allowClearUserData" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@*android:attr/icon">
+                <ImageView android:id="@*android:attr/permission" android:paddingRight="22.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@*android:attr/readPermission" android:paddingLeft="36.0px" android:paddingTop="18.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@*android:id/widget_frame" android:paddingTop="18.0px" android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

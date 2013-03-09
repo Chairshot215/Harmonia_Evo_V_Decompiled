@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:seekbar="http://schemas.android.com/apk/res/com.htc">
+    <LinearLayout android:orientation="vertical" android:id="@id/cmd_bar_11" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.htc.widget.HtcFooter android:id="@id/player_foot_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.htc.widget.HtcFooterButton android:id="@id/cmd_bar_imgbtn_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="@integer/footer_button_weight" />
+            <com.htc.widget.HtcFooterButton android:id="@id/cmd_bar_imgbtn_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="@integer/footer_button_weight" />
+            <com.htc.widget.HtcFooterButton android:id="@id/cmd_bar_imgbtn_4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="@integer/footer_button_weight" />
+            <RelativeLayout android:id="@id/timer_start_end" android:paddingLeft="@dimen/time_padding" android:paddingRight="@dimen/time_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="@integer/footer_seekbar_weight">
+                <TextView android:id="@id/time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@com.htc:style/label_title_secondary_xxs" />
+                <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@com.htc:style/label_title_secondary_xxs" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/time" android:layout_toRightOf="@id/time_current" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+                    <com.htc.widget.HtcSeekBar android:id="@id/mediacontroller_progress" android:paddingLeft="@dimen/seekbar_padding" android:paddingRight="@dimen/seekbar_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" seekbar:seek_bar_display_mode="mode_thick" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.htc.widget.HtcFooterButton android:ellipsize="marquee" android:id="@id/cmd_bar_imgbtn_more" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="@integer/footer_button_weight" />
+        </com.htc.widget.HtcFooter>
+    </LinearLayout>
+</RelativeLayout>

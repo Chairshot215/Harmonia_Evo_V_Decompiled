@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/vzw_location_sharing_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/layout_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/layout_margin_left" android:layout_marginRight="@dimen/layout_margin_right">
+                <RelativeLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/vzw_location_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vzw_location_title" style="@style/textAppearance_primary" />
+                    <TextView android:id="@id/vzw_location_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vzw_location_summary" android:layout_below="@id/vzw_location_title" android:layout_alignParentLeft="true" style="@style/textAppearance_secondary" />
+                </RelativeLayout>
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/vzw_location_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_top" android:layout_marginBottom="@dimen/layout_margin_bottom" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/layout_margin_left" android:layout_marginRight="@dimen/layout_margin_right">
+                <RelativeLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/std_location_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/std_location_title" android:layout_alignParentLeft="true" style="@style/textAppearance_primary" />
+                    <TextView android:id="@id/std_location_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/std_location_summary" android:layout_below="@id/std_location_title" android:layout_alignParentLeft="true" style="@style/textAppearance_secondary" />
+                </RelativeLayout>
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/std_location_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_top" android:layout_marginBottom="@dimen/layout_margin_bottom" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/layout_margin_left" android:layout_marginRight="@dimen/layout_margin_right">
+                <RelativeLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/google_location_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_location_title" android:layout_alignParentLeft="true" style="@style/textAppearance_primary" />
+                    <TextView android:id="@id/google_location_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/google_location_summary" android:layout_below="@id/google_location_title" android:layout_alignParentLeft="true" style="@style/textAppearance_secondary" />
+                </RelativeLayout>
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/allow_location_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_top" android:layout_marginBottom="@dimen/layout_margin_bottom" />
+        </LinearLayout>
+    </ScrollView>
+    <CheckBox android:id="@id/allow_privacy_check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_left" android:layout_marginTop="@dimen/layout_margin_top" />
+    <TextView android:id="@id/privacy_agree" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_left" android:layout_marginTop="@dimen/layout_margin_top" android:layout_marginRight="@dimen/layout_margin_right" android:text="@string/privacy_agree" style="@style/textAppearance_secondary" />
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="117px" hgap="0px" vgap="0px" height="87px" keyTextSize="35px" popupTextSize="38px" totalRows="4" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,5,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" spellKeyBackground="@drawable/sapphire_spell_mode">
+    <row>
+        <key codes="0xFF1F" label="？" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="242" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="242" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="3" />
+        <key codes="242" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="4" />
+        <key codes="239" label="'" hgap="1px" />
+        <key codes="50" label="abc" xt9idx="2" hgap="1px" />
+        <key codes="51" label="def" xt9idx="3" hgap="1px" />
+        <key codes="0xFF1A" label="：" width="87px" rightEdge="true" hgap="2px" />
+    </row>
+    <row>
+        <key codes="0xFF01" label="！" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="243" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="243" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="3" />
+        <key codes="243" label="" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="4" />
+        <key codes="52" label="ghi" xt9idx="6" hgap="1px" />
+        <key codes="53" label="jkl" xt9idx="7" hgap="1px" />
+        <key codes="54" label="mno" xt9idx="8" hgap="1px" />
+        <key codes="-16" function="true" width="86px" hgap="2px" rightEdge="true" grouped="1" />
+        <key codes="-23" hgap="-86px" width="86px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" rightEdge="true" grouped="1" />
+        <key codes="-24" hgap="-86px" width="86px" function="true" label="" textScale="80%p" longpressPreview="@drawable/sapphire_icon_mic" rightEdge="true" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" rightEdge="true" grouped="1" />
+    </row>
+    <row>
+        <key codes="0x2026" label="…" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="244" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="244" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="3" />
+        <key codes="244" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="4" />
+        <key codes="55" label="pqrs" xt9idx="11" hgap="1px" />
+        <key codes="56" label="tuv" xt9idx="12" hgap="1px" />
+        <key codes="57" label="wxyz" xt9idx="13" hgap="1px" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" width="86px" hgap="2px" iconPreview="@drawable/sapphire_icon_backspace" function="true" repeatable="true" xt9idx="14" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="0x3001" label="  、" width="87px" hgap="5px" leftEdge="true" splitSet="1" />
+        <key codes="245" hgap="-87px" width="87px" function="true" sticky="true" leftEdge="true" splitSet="2" />
+        <key codes="245" hgap="-87px" width="87px" function="true" sticky="true" icon="@drawable/key_icon_spell_dn" leftEdge="true" splitSet="4" />
+        <key codes="246" hgap="-87px" width="87px" function="true" sticky="true" icon="@drawable/key_icon_spell_up" leftEdge="true" splitSet="3" />
+        <key codes="0xFF0C" label="，" width="53px" hgap="1px" />
+        <key codes="32" width="181px" hgap="1px" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" xt9idx="16" />
+        <key codes="0x3002" label="   。" width="53px" hgap="1px" />
+        <key codes="-2" label="12#" function="true" width="63px" hgap="1px" textScale="82%p" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="10" icon="@drawable/key_icon_enter" width="86px" hgap="2px" iconPreview="@drawable/sapphire_icon_enter" xt9idx="18" function="true" rightEdge="true" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="132" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

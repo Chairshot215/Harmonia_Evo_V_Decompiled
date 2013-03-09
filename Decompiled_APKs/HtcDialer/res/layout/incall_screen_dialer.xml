@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"> >
+<include layout="@com.htc:layout/title_1" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <include layout="@layout/htc_keypad_display" />
+    <include android:id="@com.htc:id/keyPad" layout="@layout/htc_phone_keypad" />
+    <include layout="@com.htc:layout/cmd_bar_7" />
+</LinearLayout>

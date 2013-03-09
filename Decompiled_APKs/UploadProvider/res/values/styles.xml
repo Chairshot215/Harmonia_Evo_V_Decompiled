@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="default_photo_size">
+        <item name="android:layout_width">@com.htc:dimen/title_image_width</item>
+        <item name="android:layout_height">@com.htc:dimen/title_image_height</item>
+    </style>
+    <style name="MyListView">
+        <item name="android:background">@*android:color/white</item>
+    </style>
+    <style name="MyBackGround">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="MyListViewColor">
+        <item name="android:background">@*android:color/white</item>
+    </style>
+    <style name="MyTheme">
+        <item name="android:colorForeground">@*android:color/white</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textColorPrimary">@com.htc:color/list_item_primary_text</item>
+        <item name="android:textColorSecondary">@com.htc:color/list_item_secondary_text</item>
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorForegroundInverse">@*android:color/white</item>
+    </style>
+</resources>

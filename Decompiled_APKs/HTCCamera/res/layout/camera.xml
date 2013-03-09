@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/camera_layout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.android.camera">
+    <SurfaceView android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ViewStub android:id="@id/preview_filter" android:layout="@layout/preview_filter_layout" android:inflatedId="@id/preview_filter_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/upper_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/preview_duplicate" android:layout="@layout/preview_duplicate_layout" android:inflatedId="@id/preview_duplicate_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/grid_view" android:layout="@layout/grid_layout" android:inflatedId="@id/grid_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ViewStub android:id="@id/face_detection_view" android:layout="@layout/face_detection_layout" android:inflatedId="@id/face_detection_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/focus_view" android:layout="@layout/focus_layout" android:inflatedId="@id/focus_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/focus_view_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/effect_control_view" android:layout="@layout/effect_control_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/zoom_bar_view" android:layout="@layout/zoom_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/second_view" android:layout="@layout/second_layout" android:inflatedId="@id/second_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ViewStub android:id="@id/indicators_view" android:layout="@layout/indicators_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/timer_base_view" android:layout="@layout/timer_base_layout" android:inflatedId="@id/timer_base_view_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ViewStub android:id="@id/recording_timer_view" android:layout="@layout/recording_timer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/self_timer_view" android:layout="@layout/self_timer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/panorama_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/burst_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/scene_guide_view" android:layout="@layout/scene_guide_layout" android:inflatedId="@id/scene_guide_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/thumbnail_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/main_view" android:layout="@layout/main_layout" android:inflatedId="@id/main_view_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ViewStub android:id="@id/effect_panel_view" android:layout="@layout/effect_panel_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/main_view_ds" android:layout="@layout/main_layout_ds" android:inflatedId="@id/main_view_stub_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <ViewStub android:id="@id/recording_view_ds" android:layout="@layout/recording_layout_ds" android:inflatedId="@id/recording_view_stub_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/detection_hint_view" android:layout="@layout/detection_hint_layout" android:inflatedId="@id/detection_hint_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/zoom_view_ds" android:layout="@layout/zoom_layout_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/handshake_view" android:layout="@layout/handshake_layout" android:inflatedId="@id/handshake_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/auto_scene_view" android:layout="@layout/auto_scene_layout" android:inflatedId="@id/auto_scene_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/scene_indicator_view" android:layout="@layout/scene_indicator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/review_animation_view" android:layout="@layout/review_animation_layout" android:inflatedId="@id/review_animation_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/video_thumbnail_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/screen_save" android:layout="@layout/screen_save_layout" android:inflatedId="@id/screen_save_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/power_warning_view" android:layout="@layout/power_warning_layout" android:inflatedId="@id/power_warning_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/action_screen_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/processing_dialog_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/processing_dialog" android:layout="@layout/progress_dialog_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

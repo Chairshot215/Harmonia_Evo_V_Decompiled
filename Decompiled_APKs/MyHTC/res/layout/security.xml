@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_1" />
+    <ScrollView android:gravity="center" android:layout_gravity="center" android:id="@id/scrollview" android:background="@com.htc:drawable/fill_topround" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_margin_to_title" android:layout_weight="1.0">	->	<LinearLayout android:orientation="vertical" android:padding="@dimen/border_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tv_ask_security" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_ask_security" style="@com.htc:style/list_primary_s" />
+            <TextView android:id="@id/tv_security_question" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s" />
+            <EditText android:id="@id/edt_security_answer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/border_margin" android:layout_marginBottom="@dimen/border_margin" android:hint="@string/edtxt_security_answer_hint" style="@style/default_input" />
+            <Button android:layout_gravity="right" android:id="@id/bt_verify" android:visibility="gone" android:text="@string/bt_cs_verify" style="@style/small_button" />
+        </LinearLayout>
+    </ScrollView>>
+<ImageView android:id="@id/bottombar" android:background="@com.htc:drawable/trans_bottomround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/cmd_bar_2" />
+</LinearLayout>

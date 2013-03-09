@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.ComposeMessageScrollView android:id="@id/scroll_view" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/scroll_view_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/recipients_subject_linear" style="@style/recipients_subject_linear">
+            <LinearLayout android:id="@id/recipients_bar" style="@style/recipients_bar">
+                <LinearLayout android:id="@id/recipients_content" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ViewStub android:id="@id/recipients_editor_stub" style="@style/compose_recipients_editor" />
+                </LinearLayout>
+                <ImageButton android:id="@id/contact_picker" android:visibility="gone" style="@style/compose_recipient_contact_picker" />
+            </LinearLayout>
+            <ViewStub android:id="@id/ngm_group_message_stub" style="@style/ngm_editor" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/recipient_button_screen" android:visibility="gone" style="@style/compose_recipient_button_screen" />
+                <LinearLayout android:id="@id/subject_bar" android:visibility="gone" style="@style/compose_subject_bar">
+                    <com.android.mms.ui.SubjectEditor android:gravity="center_vertical" android:id="@id/subject" android:paddingLeft="@dimen/editor_padding_left" android:paddingTop="@dimen/editor_padding_top" android:paddingRight="@dimen/editor_padding_right" android:paddingBottom="@dimen/editor_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/htc_subject_hint" android:singleLine="true" android:capitalize="sentences" android:autoText="true" style="@com.htc:style/input_default_m" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/compose_padding_view" android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.htc.widget.HtcListView android:id="@id/vcard_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/compose_sms_vcard_list_height" android:layout_weight="1.0" style="@style/htc_listview_style" />
+            <LinearLayout android:id="@id/fill_topround_bar" android:background="@drawable/common_trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/fill_space" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" style="@style/fill_space" />
+            <LinearLayout android:id="@id/bottom_panel_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.mms.ui.ComposeMessageScrollView>

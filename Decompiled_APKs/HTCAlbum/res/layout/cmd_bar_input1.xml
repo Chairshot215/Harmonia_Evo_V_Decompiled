@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:id="@id/cmd_bar_input1" android:background="@com.htc:drawable/common_sub_panel_navbar" android:paddingLeft="@com.htc:dimen/search_box_padding" android:paddingRight="@com.htc:dimen/search_box_padding" android:layout_width="fill_parent" android:layout_height="@dimen/height_of_footer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/cmd_bar_text_1x1" android:layout_width="fill_parent" android:layout_height="@dimen/height_of_footer" android:singleLine="true" android:layout_centerVertical="true" style="@com.htc:style/input_default_m" />
+</RelativeLayout>

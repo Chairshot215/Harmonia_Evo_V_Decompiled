@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/common_radiobutton_on_disable" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/common_radiobutton_off_disable" />
+    <item android:state_window_focused="false" android:state_checked="true" android:drawable="@drawable/common_radiobutton_on" />
+    <item android:state_window_focused="false" android:state_checked="false" android:drawable="@drawable/common_radiobutton_off" />
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/common_radiobutton_selected" />
+    <item android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/common_radiobutton_selected" />
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/common_radiobutton_selected" />
+    <item android:state_focused="true" android:state_checked="false" android:drawable="@drawable/common_radiobutton_off_selected" />
+    <item android:state_checked="false" android:drawable="@drawable/common_radiobutton_off" />
+    <item android:state_checked="true" android:drawable="@drawable/common_radiobutton_on" />
+</selector>

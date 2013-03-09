@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">desconegut</string>
+    <string name="sharedUserLabel">Google Services</string>
+    <string name="service_label">Actualitzador del sistema</string>
+    <string name="system_update_activity_name">Actualitzacions del sistema</string>
+    <string name="system_update_activity_title">Actualitzacions del sistema</string>
+    <string name="system_update_activity_battery_low_text">"No queda prou bateria per instal·lar l'actualització del sistema. Connecteu el carregador per continuar."</string>
+    <string name="system_update_activity_battery_low_charging_text">"No queda prou bateria per instal·lar l'actualització del sistema. Espereu-vos a que la bateria estigui prou carregada."</string>
+    <string name="system_update_activity_roaming_text">No es poden baixar les actualitzacions del sistema en itinerància.</string>
+    <string name="system_update_requires_restart_status_text">Cal reiniciar</string>
+    <string name="system_update_downloading_status_text">"S'està baixant"</string>
+    <string name="system_update_downloading_wifi_status2_text">Per Wi-Fi només fins a ^1</string>
+    <string name="system_update_verifying_status_text">"S'està verificant"</string>
+    <string name="system_update_verification_failed_text">Ha fallat la verificació</string>
+    <string name="system_update_verified_status_text">Baixada i verificada</string>
+    <string name="system_update_download_failed_status_text">Error de baixada</string>
+    <string name="system_update_download_retry_button_text">Torna a provar la baixada</string>
+    <string name="system_update_download_button_text">Baixa</string>
+    <string name="system_update_install_button_text">Reinicia i instal·la</string>
+    <string name="system_update_check_now_button_text">Comprova ara</string>
+    <string name="system_update_no_update_content_text">El sistema està actualitzat</string>
+    <string name="system_update_last_checkin">"Última comprovació d'actualització: ^1."</string>
+    <string name="system_update_recommended_update_available_notification_title">Hi ha una actualització del sistema disponible</string>
+    <string name="system_update_recommended_update_available_notification_message">"Mostra els detalls de l'actualització."</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">"La baixada de l'actualització del sistema no s'ha realitzat correctament."</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">La baixada no ha estat correcta; torneu-ho a provar.</string>
+    <string name="system_update_error_dialog_title">Error</string>
+    <string name="system_update_error_downloading_dialog_message">"S'ha produït un problema en baixar l'actualització."</string>
+    <string name="system_update_error_installing_dialog_message">"S'ha produït un problema en instal·lar l'actualització."</string>
+    <string name="system_update_install_dialog_label">Actualització del sistema</string>
+    <string name="system_update_install_dialog_message_nonphone">"Hi ha una actualització del sistema preparada per instal·lar-se. El dispositiu Android es reiniciarà i instal·larà l'actualització."</string>
+    <string name="system_update_install_dialog_message_phone">"Hi ha una actualització del sistema preparada per instal·lar-se. El dispositiu Android es reiniciarà i instal·larà l'actualització. Durant la instal·lació, no podràs fer cap trucada, incloses les trucades d'emergència."</string>
+    <string name="system_update_install_dialog_battery_low_message">Hi ha una actualització del sistema preparada, però no queda prou bateria per instal·lar-la. Connecteu el carregador.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Hi ha una actualització del sistema preparada, però no queda prou bateria per instal·lar-la. Espereu-vos a que la bateria estigui prou carregada.</string>
+    <string name="system_update_install_dialog_now_button">Instal·la ara</string>
+    <string name="system_update_install_dialog_later_button">"Instal·la'l més tard"</string>
+    <string name="system_update_install_dialog_info_button">Més informació...</string>
+    <string name="system_update_downloading_notification_title">"S'està baixant l'actualització del sistema"</string>
+    <string name="system_update_verifying_notification_title">"S'està verificant l'actualització del sistema"</string>
+    <string name="system_update_download_dialog_label">"Baixada d'actualització del sistema"</string>
+    <string name="system_update_download_dialog_message">"Hi ha disponible una actualització del sistema que millorarà el dispositiu Android. Si la baixes mitjançant la xarxa sense fil, és possible que s'apliquin càrrecs."</string>
+    <string name="system_update_download_dialog_now_button">Baixa ara</string>
+    <string name="system_update_download_dialog_later_button">Baixa-ho més tard</string>
+    <string name="system_update_download_dialog_cancel_button">Cancel·la</string>
+    <string name="system_update_countdown_complete">"S'està reiniciant..."</string>
+    <string name="system_update_countdown_cancel_button">Cancel·la la instal·lació</string>
+    <string name="system_update_complete_label">Actualització del sistema</string>
+    <string name="system_update_complete_ok_button">"D'acord"</string>
+    <string name="provider_label">Subscripcions de tramesa automàtica</string>
+    <string name="ro_perm_label">llegir missatges instantanis</string>
+    <string name="ro_perm_desc">Permet que les aplicacions llegeixin dades del proveïdor de contingut de Google Talk.</string>
+    <string name="wo_perm_label">escriure missatges instantanis</string>
+    <string name="wo_perm_desc">Permet a les aplicacions escriure dades al proveïdor de contingut de Google Talk.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"Cerca als xats:
+\"%1$s\""</string>
+    <string name="gtalkservice_label">Servei de missatgeria de Google</string>
+    <string name="c2dm_label">Servei de missatgeria del núvol al dispositiu</string>
+    <string name="sendTalkMsg_perm_label">Intercanvia missatges i rep notificacions de sincronització dels servidors de Google</string>
+    <string name="sendTalkMsg_perm_desc">"S'utilitza per als missatges del núvol del servidor al dispositiu i per a les notificacions de sincronització. Google Talk utilitza aquest servei per intercanviar missatges i per sincronitzar l'estat de presència. Una aplicació maliciosa podria utilitzar aquest servei per transmetre dades en excés."</string>
+    <string name="perm_receive_data_message_label">"rep dades d'Internet"</string>
+    <string name="perm_receive_data_message_desc">"Permet a les aplicacions acceptar missatges del núvol al dispositiu enviats pel servei de l'aplicació. Si utilitzeu aquest servei, s'utilitzaran dades. Les aplicacions malicioses poden causar un ús excessiu de les dades."</string>
+    <string name="perm_data_msg_broadcast_label">Difon missatges de dades a les aplicacions.</string>
+    <string name="perm_data_msg_broadcast_desc">"Pot difondre missatges de dades rebuts d'Internet a les aplicacions registrades per escoltar-los."</string>
+    <string name="perm_receive_xmpp_label">rep i envia missatges XMPP als servidors de Google</string>
+    <string name="perm_receive_xmpp_desc">Permet que les aplicacions de Google rebin i enviïn missatges XMPP als servidors de Google.</string>
+    <string name="perm_xmpp_broadcast_label">Difon missatges XMPP a les aplicacions.</string>
+    <string name="perm_xmpp_broadcast_desc">Pot difondre missatges XMPP de servidors de Google a aplicacions registrades per escoltar-los.</string>
+    <string name="perm_use_xmpp_endpoint_label">rep i envia missatges XMPP als servidors de Google.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Permet que les aplicacions de Google rebin i enviïn missatges XMPP als servidors de Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Difon missatges XMPP a les aplicacions.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Pot difondre missatges XMPP rebuts des dels servidors de Google a les aplicacions.</string>
+    <string name="permlab_intentVendingOnly">Envia difusions a Android Market.</string>
+    <string name="permdesc_intentVendingOnly">"Pot enviar difusions a Android Market per sol·licitar la instal·lació i l'eliminació d'aplicacions."</string>
+    <string name="permlab_heartbeat">Envia un batec al servidor de Google Talk</string>
+    <string name="permdesc_heartbeat">Pot enviar un paquet de batec al servidor de Google Talk per garantir el bon estat de la connexió.</string>
+    <string name="group_chat">Xat en grup: %s</string>
+    <string name="default_decline_reason">Em sap greu, però en aquests moments estic ocupat/ada.</string>
+    <string name="newMessages_label">Xats nous</string>
+    <string name="notify_groupchat_label">Invitació a xat en grup</string>
+    <string name="num_unread_chats">%s xats no llegits</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">De %s a %s</string>
+    <string name="subscription_notify_text">%s vol poder xatejar</string>
+    <string name="group_chat_invite_notify_text">Heu rebut una invitació a un xat en grup de %s</string>
+    <string name="group_chat_invite_dialog_text">%s et convida a unir-te a un xat en grup.</string>
+    <string name="message_too_long">No podeu enviar missatges de més de 2.000 caràcters.</string>
+    <string name="missed_video_chat_notification">"T'has perdut una invitació a un xat de vídeo"</string>
+    <string name="missed_voice_chat_notification">"T'has perdut una invitació a un xat de veu"</string>
+    <string name="missed_video_chat_notification_no_wifi">"T'has perdut una invitació a un xat de vídeo perquè no estaves connectat a la Wi-Fi."</string>
+    <string name="missed_voice_chat_notification_no_wifi">"T'has perdut una invitació a un xat de veu perquè no estaves connectat a la Wi-Fi."</string>
+    <string name="missed_video_chat_message">"%1$s ha provat d'iniciar un xat de vídeo amb tu"</string>
+    <string name="missed_voice_chat_message">"%1$s ha provat d'iniciar un xat de veu amb tu"</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s ha intentat iniciar un xat de vídeo amb tu mentre no estaves connectat a la Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s ha intentat iniciar un xat de veu amb tu mentre no estaves connectat a la Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">%1$s no estava disponible per al xat de vídeo.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s no estava disponible per al xat de veu.</string>
+    <string name="end_cause_sent_terminate_video">Has finalitzat el xat de vídeo amb %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Has finalitzat el xat de veu amb %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s ha finalitzat el xat de vídeo.</string>
+    <string name="end_cause_received_terminate_voice">%1$s ha finalitzat el xat de veu.</string>
+    <string name="end_cause_network_problem_video">"S'ha produït un error al xat de vídeo amb %1$s a causa d'un problema a la xarxa . Torna-ho a provar."</string>
+    <string name="end_cause_network_problem_voice">"S'ha produït un error al xat de veu amb %1$s a causa d'un problema a la xarxa . Torna-ho a provar."</string>
+    <string name="conn_auth_error_notify_ticker">"Error d'autenticació de Google Talk"</string>
+    <string name="conn_auth_error_notify_title">"Error d'autenticació de Google Talk"</string>
+    <string name="conn_auth_error_title">"Error d'autenticació"</string>
+    <string name="conn_auth_error_message">"Google Talk no ha pogut iniciar la sessió. Si es tracta d'un compte de Google Apps, confirmeu que el servei de xats està activat per al compte."</string>
+    <string name="conn_auth_error_button_retry">Torna-ho a provar</string>
+    <string name="conn_auth_error_button_cancel">Cancel·la</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Benvingut a ^1</string>
+    <string name="setup_wizard_title">Auxiliar de configuració</string>
+    <string name="error_dialog_title">Atenció</string>
+    <string name="next_button_label">Següent</string>
+    <string name="back_button_label">Enrere</string>
+    <string name="sign_in_button_label">Inicia la sessió</string>
+    <string name="create_button_label">Crea</string>
+    <string name="skip_button_label">Omet</string>
+    <string name="first_name">Nom</string>
+    <string name="last_name">Cognoms</string>
+    <string name="done">"D'acord"</string>
+    <string name="cancel_button_label">Cancel·la</string>
+    <string name="done_button_label">Acabament de la configuració</string>
+    <string name="try_again_button_label">Torna-ho a provar</string>
+    <string name="close_button_label">Tanca</string>
+    <string name="edit_text_help">Toqueu qualsevol quadre de text per començar a escriure</string>
+    <string name="add_a_google_account">"Addició d'un compte de Google"</string>
+    <string name="no_sim_setup_wireless">No tens cap targeta SIM instal·lada, motiu pel qual no et pots connectar a una xarxa mòbil per obtenir serveis de veu o de dades. Tot i això, et pots connectar a una xarxa Wi-Fi sense una targeta SIM.</string>
+    <string name="setup_wifi_button_label">"Connecta't a una xarxa Wi-fi"</string>
+    <string name="no_network">No teniu cap connexió de xarxa.</string>
+    <string name="no_network_help">"És possible que es tracti d'un problema temporal o bé que el dispositiu Android no disposi de serveis de dades. Torna-ho a provar quan estiguis connectat a una xarxa mòbil o bé connecta't a una xarxa Wi-Fi."</string>
+    <string name="server_error">"S'ha produït un problema en comunicar-se amb els servidors de Google."</string>
+    <string name="server_error_help">Torneu-ho a provar més tard.</string>
+    <string name="network_unreliable">No es pot establir una connexió de dades fiable amb el servidor.</string>
+    <string name="network_unreliable_help">"Podria tractar-se d'un problema temporal o pot ser que el dispositiu Android no tingui serveis de dades. Si el problema continua, truca al servei d'atenció al client."</string>
+    <string name="invalid_login_character">Caràcter no vàlid. Només es permeten 0-9, a-z, A-Z i punts.</string>
+    <string name="invalid_password_character">Caràcter de contrasenya no vàlid.</string>
+    <string name="add_apn">Configuració sense fil</string>
+    <string name="setup_google_account_title">Configuració del Compte de Google</string>
+    <string name="setup_complete_title">Configuració completa</string>
+    <string name="cant_be_blank">El camp no pot estar en blanc.</string>
+    <string name="calendar">Google Calendar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">El dispositiu Android no està connectat a cap servei de dades. Per veure aquesta informació ara, vés a %s des de qualsevol equip connectat a Internet.</string>
+    <string name="field_cant_be_blank">Aquest camp no pot estar en blanc</string>
+    <string name="field_invalid_domain">Aquest nom de domini no és vàlid</string>
+    <string name="field_invalid_user">"Aquest nom d'usuari no és vàlid"</string>
+    <string name="field_invalid_user_domain">"Introduïu només el nom d'usuari, no l'adreça electrònica"</string>
+    <string name="field_invalid_login">Aquest nom de compte no és vàlid</string>
+    <string name="about_accounts_message"><font size="17">"Configurar el teu dispositiu Android és d'allò més fàcil. L'únic que necessites és un Compte de Google.
+"<font height="17">"
+"</font><b>Per què fer servir un Compte de Google?</b>"
+"<font height="3">"
+"</font>"Amb un Compte de Google, les aplicacions de Google se sincronitzen de manera automàtica entre el dispositiu Android i l'equip, amb independència d'on es faci l'actualització.
+"<font height="17">"
+"</font><b>Ja tens un Compte de Google?</b>"
+"<font height="3">"
+"</font>"Si és així, ja estàs preparat! Només cal que toquis \"Inicia la sessió\" a la pantalla següent.
+"<font height="17">"
+"</font><b>No tens cap Compte de Google?</b>"
+"<font height="3">"
+"</font>"Cap problema. Toca \"Crea\" a la pantalla següent i t'ajudarem a crear-ne un.
+"<font height="17">"
+"</font><b>Toca \"Següent\" per començar.</b>"
+"</font></string>
+    <string name="fling_help_message">"Desplaceu el dit cap amunt o cap avall a la pantalla per desplaçar-la.
+(Toqueu aquest missatge per descartar-lo.)"</string>
+    <string name="setup_device_title">"S'està configurant ^1"</string>
+    <string name="dont_have_an_account">No teniu un Compte de Google?</string>
+    <string name="create_one_now">Creeu-ne un ara. És fàcil.</string>
+    <string name="already_have_an_account">Ja tinc un compte.</string>
+    <string name="sign_in_with_google_account">Inicia la sessió amb el Compte de Google que vulguis enllaçar amb aquest dispositiu Android.</string>
+    <string name="skip_message">Voleu configurar un compte més endavant?</string>
+    <string name="touch_to_begin">"Toqueu l'androide per començar."</string>
+    <string name="delayed_gaia_agreement">Si continueu, accepteu les polítiques de privadesa de <annotation id="google_privacy">Google</annotation> i les <annotation id="android_privacy">addicionals</annotation>.</string>
+    <string name="open_keyboard_message">Obriu el teclat per començar.</string>
+    <string name="open_keyboard_message_to_continue">Obriu el teclat per continuar.</string>
+    <string name="emergency_dial">"Trucada d'emergència"</string>
+    <string name="change_language">"Canvia l'idioma"</string>
+    <string name="signing_in">"S'està iniciant la sessió…"</string>
+    <string name="close_keyboard_message">Tanqueu el teclat per continuar.</string>
+    <string name="communicating_message">"El dispositiu Android s'ha de comunicar amb els servidors de Google per configurar el teu compte. Això pot trigar fins a cinc minuts."</string>
+    <string name="communicating_message_domain">"El dispositiu Android s'ha de comunicar amb els servidors de Google per cercar la informació del domini. Això pot trigar fins a cinc minuts."</string>
+    <string name="username">"Nom d'usuari"</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Contrasenya</string>
+    <string name="sign_in_agreement">Si inicieu la sessió, accepteu les polítiques de privadesa de <annotation id="google_privacy">Google</annotation> i les <annotation id="android_privacy">addicionals</annotation>.</string>
+    <string name="create">Crea</string>
+    <string name="create_message">Necessiteu un Compte de Google?</string>
+    <string name="now_signing_in">"S'està iniciant la sessió…"</string>
+    <string name="now_verifying_domain">"S'està cercant el domini..."</string>
+    <string name="sign_in_with_google_account_short">"Dades d'inici de sessió del compte de Google:"</string>
+    <string name="browser_sign_in_explanation">"Utilitzeu aquesta pantalla si teniu requisits especials d'inici de sessió que requereixen un navegador web."</string>
+    <string name="gls_browser_login_intro_message">No es pot accedir al teu compte de Google o de Google Apps. Cal que es torni a concedir autorització.</string>
+    <string name="enter_domain_name">Introduïu el nom del domini de la vostra empresa:</string>
+    <string name="enter_user_name">"Introduïu el nom d'usuari i la contrasenya de ^1:"</string>
+    <string name="inactive_domain">"Aquest compte no es pot utilitzar perquè pertany a un domini inactiu. Contacta amb l'administrador del domini per "<b>^1</b> o bé inicia la sessió amb un altre compte.</string>
+    <string name="invalid_username">"El text introduït no és un nom d'usuari vàlid."</string>
+    <string name="web_login_error_title">Ho sentim...</string>
+    <string name="web_login_error_desc">"Hi ha un problema de connexió als servidors de la vostra empresa a ^1.
+
+Informació de l'error:
+"</string>
+    <string name="web_login_error_redirects">"La pàgina d'inici web ha redirigit massa vegades"</string>
+    <string name="web_login_error_http">"Error d'HTTP ^1 : ^2"</string>
+    <string name="name_device_label">Posa un nom al teu dispositiu Android:</string>
+    <string name="device_name_hint">Nom del dispositiu</string>
+    <string name="registering_device">"S'està registrant el dispositiu Android..."</string>
+    <string name="error_account_disabled">"Aquest compte s'ha desactivat. 
+
+(Per veure'n els detalls, vés a http://google.com/accounts/recovery a l'equip.)"</string>
+    <string name="error_login_failed">"El nom d'usuari i la contrasenya no coincideixen. Torna-ho a provar. 
+
+(Per recuperar la informació del compte, vés a http://www.google.com/accounts/recovery al teu equip.)"</string>
+    <string name="error_account_not_verified">"No s'ha verificat aquest compte. Comprova el correu electrònic en un equip i segueix l'enllaç per verificar-lo. 
+
+(Per recuperar la informació del compte, vés a http://www.google.com/accounts/recovery al teu equip.)"</string>
+    <string name="captcha_message_string">Verificació</string>
+    <string name="captcha_instructions">Introdueix els caràcters que vegis a la imatge. No distingeix entre majúscules i minúscules.</string>
+    <string name="create_google_account">Crea un compte de Google nou</string>
+    <string name="example_usernames">p. ex., JGrau, Jordi.Grau</string>
+    <string name="create_account_agreement">En crear aquest compte, accepteu les polítiques de privadesa de <annotation id="google_privacy">Google</annotation> i altres polítiques de privadesa <annotation id="android_privacy">addicionals</annotation>.</string>
+    <string name="account_already_has_gmail">El compte ja té Gmail.</string>
+    <string name="creating_account">"S'està creant el compte..."</string>
+    <string name="checking_account">"S'està comprovant la disponibilitat del nom d'usuari..."</string>
+    <string name="try_a_different_username">"Prova amb un altre nom d'usuari"</string>
+    <string name="is_not_available"><b>^1</b> no està disponible.</string>
+    <string name="hint_size"><b>^1</b> conté menys de 6 o més de 30 caràcters.</string>
+    <string name="hint_numbers_only"><b>^1</b> no conté cap lletra.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" només pot incloure lletres,
+nombres i punts."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> no utilitza Gmail</string>
+    <string name="sign_in">Inicia la sessió</string>
+    <string name="sign_in_browser">Inici de sessió del navegador</string>
+    <string name="here_are_alternatives">Aquí teniu algunes alternatives:</string>
+    <string name="alternatives_list_title">"Noms d'usuari suggerits"</string>
+    <string name="choose_a_password"><b>"Escriviu una
+contrasenya"</b></string>
+    <string name="confirm_password"><b>"Confirma la
+contrasenya"</b></string>
+    <string name="password_strength"><b>"Seguretat
+de la contrasenya"</b></string>
+    <string name="too_short">Massa curta</string>
+    <string name="security_question"><b>"Pregunta de
+seguretat"</b></string>
+    <string name="security_questions_title">Preguntes de seguretat</string>
+    <string name="answer"><b>Resposta</b></string>
+    <string name="password_mismatch">Les contrasenyes no coincideixen. Torneu a escriure-les.</string>
+    <string name="your_account_was_created">"S'ha creat el vostre compte."</string>
+    <string name="eight_chars_min">(8 caràcters com a mínim)</string>
+    <string name="just_in_case">En cas que perdeu la contrasenya.</string>
+    <string name="verify_your_profile">Verificació del perfil</string>
+    <string name="signed_in">"S'ha iniciat la sessió."</string>
+    <string name="error_not_logged_in">"L'usuari no ha iniciat la sessió."</string>
+    <string name="error_username_unavailable">"El nom d'usuari no està disponible."</string>
+    <string name="error_bad_password">La contrasenya és massa dèbil o conté caràcters no vàlids. Torneu-ho a provar.</string>
+    <string name="error_bad_username">"Nom d'usuari no vàlid."</string>
+    <string name="loading">"S'està carregant..."</string>
+    <string name="submission_title">Ho sentim...</string>
+    <string name="submission_error_text">"S'ha produït un error. Torneu-ho a provar."</string>
+    <string name="existing_account_error_title">El compte ja existeix</string>
+    <string name="existing_account_error_text">Ja hi ha un compte ^1 en aquest dispositiu Android.</string>
+    <string name="account_linked_message"><font height="24">El teu Compte de Google ara està enllaçat a aquest dispositiu Android.</font></string>
+    <string name="syncing_message"><font size="17">"Les aplicacions de Google estan sincronitzant les dades. 
+"<font height="17">"
+"</font>"%i Quan la icona de sincronització desaparegui de la barra d'estat de la part superior de la pantalla, la baixada haurà acabat.
+"<font height="17">"
+"</font><b>"Quant a la barra d'estat…"</b>"
+"<font height="3">"
+"</font>"Sempre que rebeu un missatge nou o una altra notificació, apareix una icona a la barra d'estat.
+"<font height="17">"
+"</font>"Amb el dit, arrossegueu cap avall la barra d'estat per obrir el tauler Notificacions, que conté detalls sobre totes les notificacions actuals."</font></string>
+    <string name="i_agree_next">Les accepto, endavant</string>
+    <string name="android_privacy_policy_title">Política de privadesa addicional</string>
+    <string name="google_terms_of_service_title">"Condicions d'ús de Google"</string>
+    <string name="google_privacy_policy_title">Política de privadesa de Google</string>
+    <string name="notification_update_title">Cal actualitzar el compte</string>
+    <string name="notification_update_message">"Toqueu aquí per tornar a executar l'Auxiliar de configuració"</string>
+    <string name="common_message">"Gmail, les còpies de seguretat i moltes altres funcions d'Android requereixen un Compte de Google.
+
+Toca "<b>Següent</b>" per iniciar la sessió amb un Compte de Google existent o bé crea'n un de nou ara.
+
+També pots tocar "<b>Omet</b> per començar a utilitzar el teu Android. Pots iniciar la sessió a un Compte de Google més tard a Configuració, a Comptes i sincronització.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">"Addició d'un compte"</font>" 
+
+Pots utilitzar més d'un Compte de Google (com ara el compte particular i el de la feina). Per afegir un Compte de Google, només cal seguir uns quants passos. 
+
+Toca \"Següent\" per continuar o prem el botó \"Enrere\" per sortir."</string>
+    <string name="reactivate_account_message">"Has d'enllaçar un compte de Google Mail amb aquest dispositiu Android. 
+
+Ja tens un nom d'usuari de Google Mail, ("<b>^1</b>"), associat amb aquest compte, però no està actiu actualment. 
+
+Toca \"Següent\" per tornar a activar aquest nom d'usuari i per utilitzar-lo. 
+
+O bé, si vols utilitzar un altre compte, prem el botó \"Enrere\" i inicia la sessió amb un altre compte o crea un compte nou."</string>
+    <string name="reactivating_account">"S'està reactivant el compte..."</string>
+    <string name="your_account_was_reactivated">"S'ha activat el vostre compte."</string>
+    <string name="account_recovery_info">La informació següent et permetrà recuperar la contrasenya si la perds</string>
+    <string name="secondary_email_label"><b>"Adreça electrònica
+secundària"</b></string>
+    <string name="invalid_email">"L'adreça electrònica que heu introduït no és vàlida.
+ Exemple: jordi@example.com"</string>
+    <string name="invalid_email_primary">"L'adreça electrònica secundària no pot ser la mateixa que la que esteu creant"</string>
+    <string name="tutorial_intro_title">Apreneu a utilitzar ^1</string>
+    <string name="begin_button_label">Inici</string>
+    <string name="tutorial_intro_message_generic">Per aprofitar el dispositiu Android al màxim, cal comprendre algunes qüestions importants. <font size="17">"
+"</font>" 
+"<li>Ús del teclat en pantalla</li> <font size="17">"
+"</font>" 
+Toca \"Inici\" per iniciar el tutorial i obtenir més informació."</string>
+    <string name="tutorial_intro_message_setupwizard">Per aprofitar el dispositiu Android al màxim, cal comprendre algunes qüestions importants. <font size="17">"
+"</font>" 
+"<li>Ús del teclat en pantalla</li>" 
+"<li>"Configuració d'un Compte de Google"</li> <font size="17">"
+"</font>" 
+Toca \"Inici\" per iniciar el tutorial i obtenir més informació, o bé \"Omet\" per ometre aquest tutorial i continuar."</string>
+    <string name="keyboard_tutorial_title">Ús del teclat en pantalla</string>
+    <string name="keyboard_tutorial_message">Toqueu qualsevol camp de text per obrir el teclat i començar a escriure. Proveu-ho aquí.</string>
+    <string name="keyboard_tutorial_edittext_hint">Toqueu aquí per començar a escriure</string>
+    <string name="done_typing_message">"Ja has acabat d'escriure? Prem el botó \"Enrere\" per tancar el teclat."</string>
+    <string name="done_button_label_in_tutorial">Fet</string>
+    <string name="backup_consent_title">Fes una còpia de seguretat de la configuració</string>
+    <string name="backup_consent_message">"Es pot fer una còpia de seguretat automàtica de la teva configuració (com ara les adreces d'interès i les contrasenyes de les xarxes Wi-Fi) al Compte de Google. Si tens un dispositiu Android nou (per substituir-ne un que hagis perdut o bé si fas una actualització), la configuració es restaurarà al dispositiu Android nou."</string>
+    <string name="backup_consent_howto_disable_message">"Podeu canviar la configuració de còpia de seguretat en qualsevol moment a l'aplicació Configuració, a Privadesa."</string>
+    <string name="backup_consent_yes_agree">Fes una còpia de seguretat de la configuració al meu Compte de Google.</string>
+    <string name="restore_disable">Desactiva la restauració</string>
+    <string name="restore_enable">Activa la restauració</string>
+    <string name="restore_enabled">Si heu fet una còpia de seguretat de la configuració anteriorment, es restaurarà.</string>
+    <string name="restore_disabled">"La configuració no es restaurarà des d'una còpia de seguretat."</string>
+    <string name="webview_progress_title">"S'està connectant amb el domini..."</string>
+    <string name="webview_progress_verbose_message">"Els servidors de la teva empresa estan enviant la informació d'inici de sessió. Això pot trigar una estona.
+La pàgina d'inici de sessió de l'empresa apareixerà quan es completi aquest procés."</string>
+    <string name="enterprise_unmanaged_domain">Aquest domini no utilitza Google Apps. Comproveu el nom del domini i torneu-ho a provar.</string>
+    <string name="use_location_for_services_agree">Ho accepto</string>
+    <string name="use_location_for_services_disagree">No ho accepto</string>
+    <string name="use_location_for_services_title">Utilitza La meva ubicació</string>
+    <string name="use_location_for_services_text">Voleu permetre a Google que utilitzi la ubicació per millorar els resultats de la cerca i altres serveis?</string>
+    <string name="permlab_readGsettings">Llegeix la configuració de Google</string>
+    <string name="permdesc_readGsettings">Permet a aquesta aplicació llegir la configuració de Google.</string>
+    <string name="permlab_writeGsettings">Modifica la configuració de Google</string>
+    <string name="permdesc_writeGsettings">Permet a aquesta aplicació modificar la configuració de Google.</string>
+    <string name="permlab_readGservices">llegeix la configuració dels serveis de Google</string>
+    <string name="permdesc_readGservices">Permet a aquesta aplicació llegir les dades de configuració dels serveis de Google.</string>
+    <string name="permlab_writeGservices">Modificar la configuració dels serveis de Google</string>
+    <string name="permdesc_writeGservices">Permet a aquesta aplicació modificar les dades de configuració dels serveis de Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">accedir a les contrasenyes dels comptes de Google</string>
+    <string name="permdesc_googleAuthPassword">Permet a les aplicacions accedir directament a les contrasenyes dels comptes de Google que hàgiu configurat.</string>
+    <string name="permlab_googleMailSwitch">selecciona la marca Gmail o Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Permet que les aplicacions canviïn el nom de visualització entre les marques \"Gmail\" i \"Google Mail\".</string>
+    <string name="permlab_googleAuth">visualitzar els comptes configurats</string>
+    <string name="permdesc_googleAuth">"Permet a les aplicacions veure els noms d'usuari (adreces electròniques) dels comptes de Google que heu configurat."</string>
+    <string name="permlab_googleAuth_ALL">accedir a tots els serveis de Google</string>
+    <string name="permdesc_googleAuth_ALL">Permet que les aplicacions iniciïn la sessió a TOTS els serveis de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_OTHER">accedir a altres serveis de Google</string>
+    <string name="permdesc_googleAuth_OTHER">Permet que les aplicacions iniciïn la sessió a serveis de Google sense especificar mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_mail">Correu de Google</string>
+    <string name="permdesc_googleAuth_mail">Permet que les aplicacions iniciïn la sessió als serveis de correu de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_cl">Google Calendar</string>
+    <string name="permdesc_googleAuth_cl">Permet que les aplicacions iniciïn la sessió a Google Calendar mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_android">"Serveis d'Android"</string>
+    <string name="permdesc_googleAuth_android">"Permet que les aplicacions iniciïn la sessió als serveis d'Android mitjançant els comptes emmagatzemats en aquest dispositiu Android."</string>
+    <string name="permlab_googleAuth_sierra">Comptes de Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Permet que les aplicacions iniciïn la sessió a Google Checkout (i que possiblement hi facin compres) mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_sierraqa">Comptes de control de qualitat de Google Checkout</string>
+    <string name="permdesc_googleAuth_sierraqa">Permet que les aplicacions iniciïn la sessió als comptes de control de qualitat de Google Checkout mitjançant els comptes emmagatzemats en aquest telèfon.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Comptes de Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Permet que les aplicacions iniciïn la sessió a Google Checkout Sandbox mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Permet que les aplicacions iniciïn la sessió a YouTube mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">"Noms d'usuari de YouTube"</string>
+    <string name="permdesc_googleAuth_YouTubeUser">"Permet que les aplicacions puguin veure el nom d'usuari de YouTube associat als comptes de Google emmagatzemats en aquest dispositiu Android."</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Permet que les aplicacions iniciïn la sessió a Google Talk mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_ig">"Comptes d'iGoogle"</string>
+    <string name="permdesc_googleAuth_ig">Permet que les aplicacions iniciïn la sessió a iGoogle mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_lh2">Àlbums web de Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Permet que les aplicacions iniciïn la sessió a Àlbums web de Picasa mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_mobile">Aplicacions de Google Mobile</string>
+    <string name="permdesc_googleAuth_mobile">Permet que les aplicacions iniciïn la sessió a aplicacions per a mòbils de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_cp">dades de contacte dels comptes de Google</string>
+    <string name="permdesc_googleAuth_cp">Permet que les aplicacions accedeixin als contactes i a la informació de perfil dels comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Permet que les aplicacions iniciïn la sessió a AdSense de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Permet que les aplicacions iniciïn la sessió a Google AdWordse mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Permet que les aplicacions iniciïn la sessió a Blogger mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Permet que les aplicacions iniciïn la sessió a Dodgeball mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Permet que les aplicacions iniciïn la sessió a Google Base mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_groups2">Google Grups</string>
+    <string name="permdesc_googleAuth_groups2">Permet que les aplicacions iniciïn la sessió a Google Grups mitjançant els comptes emmagatzemats en aquest dispositiu Android</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Permet que les aplicacions iniciïn la sessió a Google Health mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Permet que les aplicacions iniciïn la sessió a Jotspot mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Permet que les aplicacions iniciïn la sessió a Knol mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_news">Google Notícies</string>
+    <string name="permdesc_googleAuth_news">Permet que les aplicacions iniciïn la sessió a Google Notícies mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Permet que les aplicacions iniciïn la sessió a orkut mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_print">Cerca de Google Book</string>
+    <string name="permdesc_googleAuth_print">Permet que les aplicacions iniciïn la sessió a Google Llibres mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_sitemaps">Eines per a administradors web de Google</string>
+    <string name="permdesc_googleAuth_sitemaps">Permet que les aplicacions iniciïn la sessió a Eines per a administradors web de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Permet que les aplicacions iniciïn la sessió a Google WiFi mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">Permet que les aplicacions iniciïn la sessió a Google Docs mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_wise">Fulls de càlcul de Google</string>
+    <string name="permdesc_googleAuth_wise">Permet que les aplicacions iniciïn la sessió a Fulls de càlcul de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Permet que les aplicacions iniciïn la sessió a Google Finance mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Permet que les aplicacions iniciïn la sessió a Google Maps mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Permet que les aplicacions iniciïn la sessió a Google App Engine mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_notebook">Bloc de notes de Google</string>
+    <string name="permdesc_googleAuth_notebook">Permet que les aplicacions iniciïn la sessió al Bloc de notes de Google mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Permet que les aplicacions iniciïn la sessió a Google Voice mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Reconeixement de veu personalitzat</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Permet que les aplicacions iniciïn la sessió al servei de reconeixement de veu personalitzat mitjançant els comptes emmagatzemats en aquest dispositiu Android.</string>
+    <string name="gls_notification_title">Inicieu la sessió al vostre compte</string>
+    <string name="gls_notification_new_account">Cal un compte de ^1</string>
+    <string name="gls_notification_new_account_youtube">Cal un compte de YouTube</string>
+    <string name="gls_notification_login_error">Toqueu per iniciar la sessió al compte.</string>
+    <string name="gls_ui_add_account_title">Configuració del compte</string>
+    <string name="gls_ui_google_account_subtitle">Compte de Google</string>
+    <string name="gls_ui_activity_title">Inici de sessió a Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Inici de sessió del navegador</string>
+    <string name="gls_ui_activity_title_enterprise">Inici de sessió empresarial</string>
+    <string name="gls_ui_activity_title_youtube">Inici de sessió a YouTube</string>
+    <string name="gls_ui_activity_authenticating">"S'està autenticant…"</string>
+    <string name="gls_captcha_activity_message">Escriviu els caràcters que veieu a la imatge:</string>
+    <string name="gls_captcha_activity_ok_button">Fet</string>
+    <string name="gls_error_activity_message">"S'ha produït un error de xarxa en intentar iniciar la sessió a "<b>^1</b>. Torneu-ho a provar ara o premeu el botó Enrere per cancel·lar-ho.</string>
+    <string name="gls_error_activity_retry_button">Torna-ho a provar</string>
+    <string name="gls_dmagent_activity_message">" El teu domini requereix gestió del dispositiu mòbil. Instal·la l'aplicació de la política de dispositius de Google Apps perquè s'apliquin les polítiques de seguretat exigides pel compte "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Baixa</string>
+    <string name="gls_login_activity_username_label">"Nom d'usuari"</string>
+    <string name="gls_login_activity_password_label">Contrasenya</string>
+    <string name="gls_login_activity_ok_button">Inicia la sessió</string>
+    <string name="gls_login_activity_loginfail_text_both">"El nom d'usuari o la contrasenya no són vàlids. Cal tenir un compte de "<b>^1</b>. Torneu-ho a provar.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Heu introduït una contrasenya incorrecta o el compte ha canviat. Torneu a introduir la contrasenya.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">"Escriviu la contrasenya d'aquest compte."</string>
+    <string name="gls_enterprise_login_activity_msg">"Inicieu la sessió al vostre compte empresarial, a ^1, per fer l'autenticació.
+Toqueu Inicia la sessió per obrir la pàgina d'inici de sessió web de la vostra empresa."</string>
+    <string name="gls_login_activity_badaccount_text">No podeu utilitzar aquest compte en aquesta situació. Proveu-ho amb un altre compte.</string>
+    <string name="gls_login_activity_newaccount_text">Inicieu la sessió al vostre compte de <b>^1</b>.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">No teniu un compte de YouTube? Toqueu <a href="http://www.youtube.com/signup">aquí</a> per crear-ne un.</string>
+    <string name="gls_settings_tos_activity_title">Informació legal de Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">No estàs connectat a cap servei de dades. Per veure aquesta informació ara, vés a %s des de qualsevol equip connectat a Internet.</string>
+    <string name="gls_settings_contributors_activity_title">Col·laboradors</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">No estàs connectat a cap servei de dades. Per veure aquesta informació ara, vés a %s des de qualsevol equip connectat a Internet.</string>
+    <string name="gls_webview_progress_title">"S'està connectant amb el domini..."</string>
+    <string name="gls_webview_progress_verbose_message">"Els servidors de la teva empresa estan enviant informació d'inici de sessió. Això pot trigar una estona.
+La pàgina d'inici de sessió de l'empresa apareixerà quan es completi aquest procés."</string>
+    <string name="gls_sign_in_button_label">Inicia la sessió</string>
+    <string name="gls_back_button_label">Enrere</string>
+    <string name="gls_cancel_button_label">Cancel·la</string>
+    <string name="gls_exit_account_setup_button_label">Surt de la configuració del compte</string>
+    <string name="gls_reauthorize_button_label">Torna a autoritzar</string>
+    <string name="gls_sign_in_message">"El dispositiu Android s'ha de comunicar amb els servidors de Google per configurar el teu compte. Això pot trigar fins a cinc minuts."</string>
+    <string name="gls_sign_in_title">"S'està iniciant la sessió..."</string>
+</resources>

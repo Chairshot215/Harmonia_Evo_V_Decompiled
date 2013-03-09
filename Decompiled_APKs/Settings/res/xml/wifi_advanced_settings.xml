@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/wifi_advanced_titlebar" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/wifi_notify_open_networks" android:key="notify_open_networks" android:summary="@string/wifi_notify_open_networks_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/wifi_offload_notify_me_title" android:key="notify_me" android:summary="@string/wifi_offload_notify_me_summary" />
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/wifi_sleep_policy_entries" android:title="@string/wifi_setting_sleep_policy_title" android:key="sleep_policy" android:entryValues="@array/wifi_sleep_policy_values" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/wifi_enable_watchdog_service" android:key="wifi_enable_watchdog_service" android:summary="@string/wifi_enable_watchdog_service_summary" />
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/wifi_settings_access_condition_entries" android:title="@string/wifi_settings_access_condition_title" android:key="access_condition" android:entryValues="@array/wifi_settings_access_condition_values" />
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/wifi_frequency_band_entries" android:title="@string/wifi_setting_frequency_band_title" android:key="frequency_band" android:summary="@string/wifi_setting_frequency_band_summary" android:entryValues="@array/wifi_frequency_band_values" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/wifi_advanced_pwr_active_mode_title" android:key="wifi_pwr_active_mode" android:summary="@string/wifi_advanced_pwr_active_mode_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/wifi_advanced_auto_disconnect_title" android:key="auto_disconnect" android:summary="@string/wifi_advanced_auto_disconnect_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/never_auto_turn_on_wifi_title" android:key="never_auto_turn_on_wifi" android:summary="@string/never_auto_turn_on_wifi_summary" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/wifi_lan_info" android:key="lan_info" android:fragment="com.android.settings.wifi.LanInfo">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.LanInfo" />
+    </com.htc.preference.HtcPreference>
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/cw_account_info" android:key="cw_account_info" android:fragment="com.android.settings.wifi.CWAccountInfo">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.CWAccountInfo" />
+    </com.htc.preference.HtcPreference>
+    <com.htc.preference.HtcPreference android:title="@string/wifi_advanced_mac_address_title" android:key="mac_address" style="?android:attr/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreference android:title="@string/wifi_advanced_ip_address_title" android:key="current_ip_address" style="?android:attr/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/wifi_dlna_ip_titlebar" android:key="wifi_dlna_setting_titlebar" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/wifi_dlna_auto_ip_label" android:key="wifi_dlna_auto_ip" android:summary="@string/wifi_dlna_auto_ip_summary" />
+</com.htc.preference.HtcPreferenceScreen>

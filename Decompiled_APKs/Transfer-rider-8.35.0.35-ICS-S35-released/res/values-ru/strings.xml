@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">Удаление данных...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">Выключение Bluetooth...</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"Возможно, в %s потребуется отменить сопряжение с этим телефоном. 
+Нажмите OK для выхода и повторите попытку позже."</string>
+    <string name="UI_MSGBOX_BTN_BACK">Назад</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">Отмена</string>
+    <string name="UI_MSGBOX_BTN_NO">Нет</string>
+    <string name="UI_MSGBOX_BTN_OK">OK</string>
+    <string name="UI_MSGBOX_BTN_QUIT">Выйти</string>
+    <string name="UI_MSGBOX_BTN_RESUME">Продолжить</string>
+    <string name="UI_MSGBOX_BTN_SETTING">Настройка</string>
+    <string name="UI_MSGBOX_BTN_YES">Да</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">Функция \"Передача\" не может включить Bluetooth. Проверьте настройки беспроводной связи.</string>
+    <string name="UI_MSGBOX_CONN_FAILED">Нажмите \"Продолжить\", чтобы повторить попытку, или \"Отмена\", чтобы выйти.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">Дубликаты данных</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">Вы уже импортировали %1$s из %2$s. Могут появиться дубликаты записей.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">Если ваш старый телефон не найден, убедитесь, что он установлен как видимый.</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">С %s импортированы данные всех доступных типов.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"Чтобы разрешите передачу данных, отключите шифрование/пароль на Blackberry и затем нажмите \"OK\".
+Обычный путь – Параметры > Параметры безопасности > Шифрование/Пароль"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">Вы действительно хотите выйти?</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">Импортированные данные %s будут удалены. Вы действительно хотите выйти?</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">Для нового импорта из %s сначала выберите и удалите данные из этого телефона.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">Кроме контактов Gmail и Exchange, все данные выбранного типа будут удалены из этого телефона.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">Кроме контактов Gmail и Exchange, все данные выбранного типа будут удалены из этого планшета.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">Для нового импорта из %s сначала выберите и удалите данные из этого планшета.</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">Возможно, вам придется перезапустить %s и повторить попытку позже.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">Возможно, необходимо перезапустить этот и старый телефоны и затем повторить попытку.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">Возможно, необходимо перезапустить этот планшет и старый телефон и затем повторить попытку.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">Не удалось перенести</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">Сбой при подключении</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">Удалить</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">Не удалось выполнить сопряжение</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">Сбой запроса</string>
+    <string name="ANDROID_TIPS_1">"1. Выберите \"меню\" > \"Настройка\" > \"Беспроводные подключения и сети\"
+
+2. Установите флажок \"Bluetooth\"
+
+3. Выберите \"Настройки Bluetooth\" 
+
+4. Установите флажок \"Видимый\""</string>
+    <string name="ANDROID_TIPS_2">"1. Откройте экран \"Приложения\" и выберите \"Настройки\" > \"Беспроводные подключения и сети\"
+
+2. Выберите \"Настройки Bluetooth\"
+
+3. Установите флажок \"Bluetooth\"
+
+4. Установите флажок \"Видимый\""</string>
+    <string name="ANDROID_TIPS_3">"1. Откройте экран \"Приложения\" и выберите \"Настройки\" > \"Беспроводные подключения и сети\"
+
+2. Выберите \"Настройки Bluetooth\"
+
+3. Установите флажок \"Bluetooth\"
+
+4. Установите флажок \"Видимый\""</string>
+    <string name="APP_TIPS_1">"1. Нажмите кнопку Дом > Настройки > Общие.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Оставайтесь на экране настройки Bluetooth."</string>
+    <string name="HTC_TIPS_1">"1. Перейдите на главный экран.
+
+2. Нажмите Пуск > Настройки > Подключение.
+
+3. Выберите Bluetooth.
+
+4. Выберите вкладку Режим.
+
+5. Включите Bluetooth.
+
+6. Установите флажок Сделать это устройство видимым для других устройств."</string>
+    <string name="HTC_TIPS_2">"1. Перейдите на главный экран.
+
+2. Нажмите Пуск > Настройки > Подключение > Bluetooth.
+
+3. Выберите Bluetooth > Меню.
+
+4. Включите Bluetooth.
+
+5. Установите Видимость в положение Вкл."</string>
+    <string name="HTC_TIPS_3">"1. Перейдите на главный экран.
+
+2. Нажмите Пуск > Настройки > Подключение > Bluetooth.
+
+3. Выберите Bluetooth > Меню.
+
+4. Включите Bluetooth.
+
+5. Установите Видимость в положение Вкл."</string>
+    <string name="HTC_TIPS_4">"1. Перейдите на главный экран.
+
+2. Нажмите Пуск > Настройки > Беспроводная связь.
+
+3. Включите Bluetooth.
+
+4. Нажмите левую часть кнопки Bluetooth.
+
+5. Нажмите Дополнительно.
+
+6. Выберите вкладку Режим.
+
+7. Установите флажок Сделать это устройство видимым для других устройств."</string>
+    <string name="HTC_TIPS_5">"1. Выберите \"Пуск\" > \"Инструменты\" > \"Настройка\" 
+
+2. Выберите \"Беспроводная связь\" > \"Bluetooth\"
+
+3. Выберите \"Дополнительно\"
+
+4. Выберите вкладку \"Режим\"
+
+5. Установите флажки \"Включить Bluetooth\" и \"Сделать это устройство видимым для других устройств\""</string>
+    <string name="HTC_TIPS_6">"1. Выберите \"Пуск\" > \"Настройка\" > \"Меню\" > \"Все настройки\"
+
+2. Выберите \"Bluetooth\" и включите эту функцию
+
+3. Откройте вкладку с шестеренкой
+
+4. Выберите значок телескопа > \"Всегда видимый\""</string>
+    <string name="HTC_TIPS_7">"1. На экране \"Пуск\" нажмите \"→\".
+
+2. Нажмите \"Настройки\" > Bluetooth.
+
+3. Включите Bluetooth."</string>
+    <string name="HTC_TIPS_8">"1. Выберите \"Пуск\" > \"Инструменты\" > \"Настройки\"
+
+2. Нажмите \"Меню\" > \"Все настройки\"
+
+3. Выберите \"Bluetooth\"
+
+4. Выберите вкладку \"Режим\"
+
+5. Включить Bluetooth
+
+6. Установите флажок \"Сделать это устройство видимым для других устройств\""</string>
+    <string name="KYO_TIPS_1">"1. Select Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Select On/Off \"On Visible\"
+
+3. Select \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Select BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Настройки.
+
+5. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="LGG_TIPS_2">"%s1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Настройки Bluetooth.
+
+5. Установите Видимость в положение Показывать телефон."</string>
+    <string name="LGG_TIPS_3">"%s1. Выберите Меню > Настройки > Bluetooth.
+
+2. Включите Bluetooth.
+
+3. Установите Видимость в положение Всегда видимый."</string>
+    <string name="LGG_TIPS_4">"%s1. Выберите Меню и нажмите последнюю вкладку.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Настройки.
+
+5. Установите Видимость моего устройства в положение Видимое."</string>
+    <string name="LGG_TIPS_5">"1. Выберите Меню > Настройки и инструменты > Меню Bluetooth.
+
+2. Установите Bluetooth в положение Вкл.
+
+3. Выберите Параметры > Режим видимости > Вкл."</string>
+    <string name="MOT_TIPS_1">"%s1. Выберите Меню > Настройки и инструменты > Настройки.
+
+2. Установите флажок Bluetooth.
+
+3. Выберите Электропитание Bluetooth.
+
+4. Включите.
+
+5. Выберите Установить как видимый.
+
+6. Выберите Всегда."</string>
+    <string name="MOT_TIPS_10">"1. Выберите Главное меню > Bluetooth.
+
+23. Выберите Настройка.
+
+3. Установите Изменение электропитания в положение Вкл.
+
+4. Нажмите Назад.
+
+5. Select Найди меня > видимость: 3 минуты."</string>
+    <string name="MOT_TIPS_11">"%s1. Выберите Главное меню > Настройки > Подключение.
+
+2. Выберите Связь по Bluetooth.
+
+3. Выберите Настройка.
+
+4. Установите Изменение электропитания в положение Вкл.
+
+5. Нажмите Назад
+
+6. Select Найди меня > видимость: 3 минуты."</string>
+    <string name="MOT_TIPS_12">"%s1. Выберите \"Меню\" > \"Настройка\"
+
+2. Выберите \"Подключения\"
+
+3. Выберите \"Bluetooth\"
+
+4. Выберите \"Параметры\" > \"Управление\" > \"Настройка Bluetooth\"
+
+5. Установите \"Электропитание Bluetooth\" в положение \"Вкл.\"
+
+6. Выберите \"Назад\".
+
+7. Выберите \"Параметры\" > \"Видимый: вкл. на 3 мин.\""</string>
+    <string name="MOT_TIPS_2">"%s1. Выберите Меню > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth."</string>
+    <string name="MOT_TIPS_3">"%s1. Выберите Главное меню > Настройки.
+
+2. Выберите Связь по Bluetooth.
+
+3. Выберите Настройка.
+
+4. Установите Изменение электропитания в положение Вкл.
+
+5. Нажмите Назад
+
+6. Select Найди меня > видимость: 3 минуты."</string>
+    <string name="MOT_TIPS_4">"%s1. Выберите Главное меню > Настройки и инструменты.
+
+2. Выберите Bluetooth.
+
+3. Установите Настройка в положение Вкл.
+
+4. Установите Режим видимости в положение Вкл.
+
+5. Выберите Видимость 3 минуты."</string>
+    <string name="MOT_TIPS_5">"1. Выберите Меню > НАСТРОЙКИ И ИНСТРУМЕНТЫ.
+
+2. Выберите Меню Bluetooth
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Параметры.
+
+5. Установите Режим видимости в положение Вкл."</string>
+    <string name="MOT_TIPS_6">"1. Нажмите Меню > Инструменты.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Установите Видимость в положение Всегда видимый."</string>
+    <string name="MOT_TIPS_7">"1. Выберите Меню > НАСТРОЙКИ И ИНСТРУМЕНТЫ.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Настройки.
+
+5. Установите Режим видимости в положение Вкл."</string>
+    <string name="MOT_TIPS_8">"1. Выберите Меню > НАСТРОЙКИ И ИНСТРУМЕНТЫ.
+
+2. Выберите Меню Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Настройки.
+
+5. Установите Режим видимости в положение Вкл."</string>
+    <string name="MOT_TIPS_9">"1. Выберите Главное меню > Настройки > Подключение.
+
+2. Выберите Связь по Bluetooth.
+
+3. Выберите Настройка.
+
+4. Установите Изменение электропитания в положение Вкл.
+
+5. Нажмите Назад
+
+6. Select Найди меня > видимость: 3 минуты."</string>
+    <string name="NOK_TIPS_1">"1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="NOK_TIPS_10">"1. Выберите Меню > Настройки.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="NOK_TIPS_11">"1. Нажмите Меню > Инструменты > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем"</string>
+    <string name="NOK_TIPS_12">"1. Выберите Меню > Панель управления > Подключить. 
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="NOK_TIPS_13">"1. Выберите Главное меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем"</string>
+    <string name="NOK_TIPS_14">"1. Выберите Меню > \"Настройки\" > \"Подключение\".
+
+2. Выберите \"Bluetooth\".
+
+3. Включите Bluetooth.
+
+4. Установите \"Видимость устройства\" в положение \"Всегда видимый\"."</string>
+    <string name="NOK_TIPS_15">"1. Выберите \"Меню\" > \"Настройки\" > \"Подключения\".
+
+2. Выберите \"Bluetooth\".
+
+3. Включите Bluetooth.
+
+4. Установите \"Видимость устройства\" в положение \"Показывать всем\""</string>
+    <string name="NOK_TIPS_2">"1. Нажмите Меню > Инструменты.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем"</string>
+    <string name="NOK_TIPS_4">"1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Постоянная видимость."</string>
+    <string name="NOK_TIPS_5">"1. Выберите Меню > Подключить.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="NOK_TIPS_51">"%s1. Выберите Меню > Подключить.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="NOK_TIPS_6">"1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Постоянная видимость."</string>
+    <string name="NOK_TIPS_7">"1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Постоянная видимость."</string>
+    <string name="NOK_TIPS_8">"1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Выберите Настройки Bluetooth
+
+5. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="NOK_TIPS_9">"1. Выберите Меню > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Включите Bluetooth.
+
+4. Для элемента Видимость моего телефона выберите Показывать всем."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">Другие</string>
+    <string name="OTHER_PHONE_General">"Вы можете включить Bluetooth в неподдерживаемом телефоне:
+
+1. Перейдите на главный экран
+
+2. Выберите Меню > Настройка
+
+3. Выберите Подключение > Настройка Bluetooth
+
+4. Включить Bluetooth
+
+5. Выберите Видимость/Обнаруживаемое > Показывать всем
+
+6. Оставайтесь на экране настройки Bluetooth"</string>
+    <string name="RIM_TIPS_1">"1. Выберите Меню > Параметры > Bluetooth.
+
+2. Нажмите Меню.
+
+3. Выберите Включить Bluetooth.
+
+4. Снова нажмите Меню
+
+5. Выберите Параметры.
+
+6. Установите Видимый в положение Да."</string>
+    <string name="RIM_TIPS_2">"1. Выберите Меню > Управление подключениями.
+
+2. Установите флажок Bluetooth.
+
+3. Выберите Параметры Bluetooth.
+
+4. Снова нажмите Меню5. Выберите Параметры.
+
+6. Установите Видимый в положение Да."</string>
+    <string name="RIM_TIPS_3">"1. Откройте экран \"Все приложения\".
+
+2. Выберите \"Управление подключениями\".
+
+3. Установите флажок \"Bluetooth\".
+
+4. Выберите \"Подключения Bluetooth\".
+
+5. Установите Bluetooth в положение \"Вкл.\".
+
+6. Для параметра \"Видимый\" выберите \"Да\"."</string>
+    <string name="RIM_TIPS_4">"1. Откройте экран \"Все приложения\".
+
+2. Выберите \"Управление подключениями\".
+
+3. Установите флажок \"Bluetooth\".
+
+4. Выберите \"Сети и подключения\".
+
+5. Выберите \"Подключения Bluetooth\".
+
+6. Установите Bluetooth в положение \"Вкл.\".
+
+7. Для параметра \"Видимый\" выберите \"Да\"."</string>
+    <string name="SAM_TIPS_1">"%s1. Выберите Меню > Bluetooth.
+
+2. Установите Активация в положение Вкл.
+
+3. Установите Видимость моего телефона в положение Вкл."</string>
+    <string name="SAM_TIPS_10">"%s1. Выберите \"Меню\" > \"Настройка\" > \"Настройки сети\" > \"Bluetooth\"
+
+2. Установите \"Активация\" в положение \"Вкл.\"
+
+3. Установите \"Видимость моего телефона\" в положение \"Вкл.\""</string>
+    <string name="SAM_TIPS_11">"%s1. Выберите \"Меню\" > \"Приложения\"
+
+2. Выберите \"Bluetooth\"
+
+3. Установите флажок \"Активация Bluetooth\"
+
+4. Выберите \"Настройка\"
+
+5. Установите \"Видимость моего телефона\" в положение \"Вкл.\" и нажмите кнопку \"Сохранить\"
+
+6. Перейдите на \"начальный экран\""</string>
+    <string name="SAM_TIPS_12">"%s1. Перейдите на начальный экран.
+
+2. Выберите \"Настройка\" > \"Подключения\" > \"Bluetooth\".
+
+3. Установите \"Активация\" в положение \"Вкл.\".
+
+4. Установите \"Видимость моего телефона\" в положение \"Вкл.\"."</string>
+    <string name="SAM_TIPS_2">"%s1. Выберите Меню > Приложения > Bluetooth.
+
+2. Установите Активация в положение Вкл.
+
+3. Установите Видимость моего телефона в положение Вкл."</string>
+    <string name="SAM_TIPS_3">"1. Выберите Меню > Настройки и инструменты > Меню Bluetooth.
+
+2. Установите Bluetooth в положение Вкл.
+
+3. Выберите Параметры > Режим видимости > Вкл."</string>
+    <string name="SAM_TIPS_4">"%s1. Выберите Главное меню > Настройки > Bluetooth.
+
+2. Включите Bluetooth.
+
+3. Установите Видимость в положение Всегда видимый."</string>
+    <string name="SAM_TIPS_5">"%s1. Выберите Меню > Настройки/инструменты > Меню Bluetooth.
+
+2. Установите Настройка в положение Вкл.
+
+3. Установите Настройка режима видимости в положение Вкл."</string>
+    <string name="SAM_TIPS_6">"%s1. Выберите Меню > Настройки.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкличить Bluetooth.
+
+4. Установите Моя видимость в положение Вкл."</string>
+    <string name="SAM_TIPS_7">"%s1. Выберите Меню > Настройки.
+
+2. Выберите Bluetooth.
+
+3. Установите Активация в положение Вкл.
+
+4. Установите Видимость моего телефона в положение Вкл."</string>
+    <string name="SAM_TIPS_8">"%s1. Выберите Меню > Инструменты/Приложения > Bluetooth.
+
+2. Выберите Настройки Bluetooth.
+
+3. Выберите Включить.
+
+4. Установите Режим видимости в положение Вкл."</string>
+    <string name="SAM_TIPS_9">"%s1. Выберите Меню > Настройки.
+
+2. Выберите Bluetooth.
+
+3. Установите Активация в положение Вкл.
+
+4. Установите Видимость моего телефона в положение Вкл."</string>
+    <string name="SAN_TIPS_1">"1. Выберите Меню > Инструменты > Bluetooth.
+
+2. Выберите Дополнительно… > Настройки > Вкл.
+
+3. Установите Видимость в положение Всегда видимый."</string>
+    <string name="SE_TIPS_1">"%s1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Установите Видимость в положение Показывать телефон."</string>
+    <string name="SE_TIPS_2">"%s1. Выберите Меню > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Параметры.
+
+5. Установите Видимость в положение Показывать телефон."</string>
+    <string name="SE_TIPS_3">"%s1. Выберите Меню > Подключить.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Установите Видимость в положение Показывать телефон."</string>
+    <string name="SE_TIPS_4">"%s1. Выберите Меню > Настройки > Подключение.
+
+2. Выберите Bluetooth.
+
+3. Установите Bluetooth в положение Вкл.
+
+4. Выберите Параметры.
+
+5. Установите Видимость в положение Показывать телефон."</string>
+    <string name="SE_TIPS_5">"1. Перейдите на \"главный\" экран.
+
+2. Нажмите \"Пуск\" > \"Настройка\" > \"Bluetooth\".
+
+3. Выберите вкладку \"Режим\".
+
+4. Включите Bluetooth.
+
+5. Установите флажок \"Сделать это устройство видимым для других устройств\"."</string>
+    <string name="SE_TIPS_6">"%s1. Откройте экран \"Приложения\" и выберите \"Настройки\" > \"Подключения\"
+
+2. Выберите \"Bluetooth\".
+
+3. Установите Bluetooth в положение \"Вкл.\".
+
+4. Для параметра \"Видимость телефона\" установите значение \"Видимый\""</string>
+    <string name="SHP_TIPS_1">"%s1. Выберите \"Меню\" > \"Настройка\"
+
+2. Выберите \"Подключения\" > \"Bluetooth\"
+
+3. Установите переключатель \"Вкл.ыкл.\" в положение \"Вкл.\"
+
+4. Выберите для параметра \"Видимость\" > \"Показывать мой телефон\".
+
+5. Убедитесь, что модуль Bluetooth в телефоне включен, и перейдите к экрану ожидания."</string>
+    <string name="SIM_TIPS">Если у вас всего одна SIM-карту, можно извлечь ее из этого телефона, вставить в старый телефон и затем одновременно загрузить эти два телефона.</string>
+    <string name="app_icon_name">Перенос</string>
+    <string name="app_name">Передать мои материалы</string>
+    <string name="UI_About_Platform">для Android</string>
+    <string name="UI_About_Version">Версия:</string>
+    <string name="UI_BTN_Done">Готово</string>
+    <string name="UI_BTN_Next">Далее</string>
+    <string name="UI_BTN_ReScan">Повтор</string>
+    <string name="UI_BTN_Stop">Стоп</string>
+    <string name="UI_ERROR_TRY_AGAIN">Произошли ошибки.</string>
+    <string name="UI_IMPORTED">импортировано</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">Импортировать в аккаунт</string>
+    <string name="UI_IMPORT_PHONE">Импортировать в этот телефон</string>
+    <string name="UI_INSERT_SD_CARD">Вставьте карту SD</string>
+    <string name="UI_Menu_BTN_About">О программе</string>
+    <string name="UI_MOD_BOOKMARK">Закладка</string>
+    <string name="UI_MOD_CALENDAR">Календарь</string>
+    <string name="UI_MOD_PHONEBOOK">Контакты</string>
+    <string name="UI_MOD_PHOTO">Фотоснимки камеры</string>
+    <string name="UI_MOD_SMS">SMS</string>
+    <string name="UI_MOD_TASK">Задача</string>
+    <string name="UI_MOUNT_SD_CARD">Подключите USB-накопитель</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">исходный телефон</string>
+    <string name="UI_OPENOPORT_TEXT">"Проверьте %s.
+Возможно, необходимо будет авторизовать подключение."</string>
+    <string name="UI_PHOTO_DESCRIPTION">Только файлы в телефоне</string>
+    <string name="UI_TEXT_AND">и</string>
+    <string name="UI_TEXT_BM_IMPORTED">Закладка импортирована</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">Закладки импортированы</string>
+    <string name="UI_TEXT_CAL_IMPORTED">записей календаря импортировано</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">записей календаря импортировано</string>
+    <string name="UI_TEXT_DATA">Данные</string>
+    <string name="UI_TEXT_FAQ_PAGE">Посетите веб-страницу ответов на часто задаваемые вопросы.</string>
+    <string name="UI_TEXT_PB_IMPORTED">контактов импортировано</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">контактов импортировано</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">Фотоснимок камеры импортирован</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">Фотоснимки камеры импортированы</string>
+    <string name="UI_TEXT_SMS_IMPORTED">SMS импортировано</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">SMS импортировано</string>
+    <string name="UI_TEXT_TASK_IMPORTED">Задача импортирована</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">Задачи импортированы</string>
+    <string name="UI_TIP_ACCOUNT">Аккаунт</string>
+    <string name="UI_TIP_CONFIRM">Подтвердите код связи %1$s на %2$s</string>
+    <string name="UI_TIP_Co_1">Импорт ваших данных из %s в этот телефон завершен.</string>
+    <string name="UI_TIP_Co_1_TABLET">Импорт ваших данных из %s в этот планшет завершен.</string>
+    <string name="UI_TIP_Co_TBD">"
+Дополнительные поля контактных данных сохранены в поле примечаний."</string>
+    <string name="UI_TIP_ImDa_1">В зависимости от возможностей вашего старого телефона, вы можете переместить контакты, SMS-сообщения и события из календаря в новый телефон HTC по Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">В зависимости от возможностей вашего старого телефона, вы можете переместить контакты, SMS-сообщения и события из календаря в новый планшет HTC по Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">В зависимости от возможностей вашего старого телефона, вы можете переместить контакты и события из календаря в новый телефон HTC по Bluetooth.</string>
+    <string name="UI_TIP_ImDa_2">Чтобы начать, нажмите \"Далее\".</string>
+    <string name="UI_TIP_ImDa_35">В зависимости от возможностей вашего старого телефона, вы можете переместить контакты и другие данные в новый телефон HTC по Bluetooth.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">В зависимости от возможностей вашего старого телефона, вы можете переместить контакты и другие данные в новый планшет HTC по Bluetooth.</string>
+    <string name="UI_TIP_Info_1">В %s данных обнаружены ошибки. Повторите попытку позже.</string>
+    <string name="UI_TIP_Info_2">Повторите попытку позже.</string>
+    <string name="UI_TIP_Info_UnMatchPhone">В %s произошла ошибка из-за несоответствия модели телефона.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">Хотя других телефонов %s нет в списке поддерживаемых, функция \"Передача\" может попытаться определить ваш старый телефон и проверить возможность передачи данных.</string>
+    <string name="UI_TIP_Language">RUS</string>
+    <string name="UI_TIP_NoSuMo_1">%s не поддерживается. С него нельзя импортировать данные.</string>
+    <string name="UI_TIP_NoSuMo_2">Для выхода нажмите \"Готово\".</string>
+    <string name="UI_TIP_ON">B %s:</string>
+    <string name="UI_TIP_PaWi">Введите %1$s на %2$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">%s сохранено в вашем аккаунте и будет синхронизировано, когда вы войдете в службу.</string>
+    <string name="UI_TIP_Re_TodoNotSupport">Список дел и задач не импортированы.</string>
+    <string name="UI_TIP_SelDT_2">Возможно, некоторые поля не будут переданы из %s из-за неполной поддержки Bluetooth.</string>
+    <string name="UI_TIP_TUONBL">Включить Bluetooth</string>
+    <string name="UI_TIP_TuOnBl_2">Убедившись, что функция Bluetooth включена, нажмите \"Далее\".</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">Удаление данных из этого телефона</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">Удаление данных из этого планшета</string>
+    <string name="UI_TITLE_CONGRADULATIONS">Поздравляем</string>
+    <string name="UI_TITLE_CONN_WITH">Подключение к %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">Включить Bluetooth на %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">Включение Bluetooth в вашем старом телефоне</string>
+    <string name="UI_TITLE_IMPORTING">Выполняется перенос %s</string>
+    <string name="UI_TITLE_INFO">Информация</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">Другие телефоны %s</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">Загрузка конфигурации телефона</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">Модель не поддерживается</string>
+    <string name="UI_TITLE_PAIRING">Сопряжение...</string>
+    <string name="UI_TITLE_PAIRING_WITH">Сопряжение с %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">Запрос модели телефона</string>
+    <string name="UI_TITLE_SCANNING">Поиск...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">Поиск телефонов</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">Выберите типы данных для импорта</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">Выберите свой старый телефон</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">Выберите модель</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">Выберите свой телефон</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">Другие телефоны %s не поддерживаются. Для выхода нажмите \"Готово\".</string>
+</resources>

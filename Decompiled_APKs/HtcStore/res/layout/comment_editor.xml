@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@com.htc:layout/cmd_bar_2" />
+    <LinearLayout android:orientation="vertical" android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:layout_weight="1.0" android:layout_above="@com.htc:id/cmd_bar_2">
+        <EditText android:gravity="top|left|center" android:id="@id/comment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="false" android:inputType="textCapSentences|textMultiLine" />
+    </LinearLayout>
+    <include layout="@com.htc:layout/title_1_3" />
+</RelativeLayout>

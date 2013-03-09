@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.htccontacts.widget.title.GenericHeaderBar android:id="@id/headerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customize_listView_marginTop">
+        <View android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+        <include layout="@layout/list_item_edit_text_with_label" />
+        <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include layout="@layout/list_item_drop_down_with_label" />
+    </LinearLayout>
+    <View android:id="@id/blankList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" style="@color/color_blank_area" />
+    <View android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+    <com.android.htccontacts.widget.HtcButtonFrameLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/ButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" htccontacts:buttonStyle="save_cancel"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+</LinearLayout>

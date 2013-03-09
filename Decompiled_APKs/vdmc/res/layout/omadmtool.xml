@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="22.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_serveraddr_caption" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00aa00" android:id="@id/text_server_addr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_wait" />
+        <TextView android:textSize="22.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_serverport_caption" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00aa00" android:id="@id/text_server_port" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_wait" />
+    </LinearLayout>
+</ScrollView>

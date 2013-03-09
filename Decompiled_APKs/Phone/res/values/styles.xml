@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_dialpad">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="textShadowOnBackground">
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="CallProgressing">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="alertingLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="alertingBtn">
+        <item name="android:textSize">@dimen/fontSize_bottom_control</item>
+        <item name="android:textColor">@color/color_bottom_control</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Skin">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Skin1">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="ShadowText1">
+        <item name="android:shadowColor">@color/htc_shadow_1_color</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="ShadowText2">
+        <item name="android:shadowColor">@color/htc_shadow_2_color</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_primary">
+        <item name="android:textSize">@dimen/htc_fontSize_primary</item>
+        <item name="android:textColor">@color/htc_font_color_primary</item>
+    </style>
+    <style name="text_style_secondary">
+        <item name="android:textSize">@dimen/htc_fontSize_secondary</item>
+        <item name="android:textColor">@color/htc_font_color_secondary</item>
+    </style>
+    <style name="CallForwardEditPreference">
+        <item name="serviceClass">voice</item>
+        <item name="reason">unconditional</item>
+    </style>
+    <style name="Theme.Transparent" parent="@*android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="toolbar_margin">
+        <item name="android:background">@com.htc:drawable/common_sub_panel_navbar</item>
+        <item name="android:paddingLeft">@dimen/global_toolbar_margin</item>
+        <item name="android:paddingRight">@dimen/global_toolbar_margin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0px</item>
+    </style>
+    <style name="toolbar_button1">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/toolbar_button</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/global_toolbar_margin</item>
+        <item name="android:layout_marginRight">@dimen/global_toolbar_margin</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="google_title_text">
+        <item name="android:textSize">16.0px</item>
+        <item name="android:textColor">@color/text_title_green_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0px</item>
+        <item name="android:layout_marginTop">4.0px</item>
+        <item name="android:layout_marginRight">4.0px</item>
+        <item name="android:layout_marginBottom">4.0px</item>
+    </style>
+    <style name="google_title_divider">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0px</item>
+        <item name="android:layout_marginTop">4.0px</item>
+        <item name="android:layout_marginRight">4.0px</item>
+        <item name="android:layout_marginBottom">4.0px</item>
+        <item name="android:src">@drawable/green_divider</item>
+    </style>
+    <style name="nbpcd_listitem" parent="@com.htc:style/input_default_l">
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_marginLeft">@dimen/editor_text_padding</item>
+        <item name="android:layout_marginRight">@dimen/editor_text_padding</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="nbpcd_listitem_textview">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:layout_marginLeft">@dimen/editor_text_padding</item>
+        <item name="android:layout_marginRight">@dimen/editor_text_padding</item>
+    </style>
+    <style name="title_shadow">
+        <item name="android:shadowColor">@com.htc:color/title_shadow</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Incoming">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="IccPanel">
+        <item name="android:windowBackground">@drawable/grayBg</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="AlertPanel">
+        <item name="android:windowBackground">@drawable/grayBg</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="info_label">
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="entry_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance" parent="@*android:style/TextAppearance" />
+    <style name="TextAppearance.info_label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="incall_top_button" parent="@*android:style/Widget.Button">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">0.0sp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="TextAppearance.DialerLine1" parent="@*android:style/TextAppearance.Widget.Button">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dialer_button_text</item>
+    </style>
+    <style name="TextAppearance.DialerLine2" parent="@*android:style/TextAppearance.Widget.Button">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/dialer_button_text</item>
+    </style>
+    <style name="TextAppearance.EmergencyDialerLine1" parent="@*android:style/TextAppearance.Widget.Button">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="TextAppearance.EmergencyDialerLine2" parent="@*android:style/TextAppearance.Widget.Button">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="EditPhoneNumberPreference">
+        <item name="enableButtonText">@string/enable</item>
+        <item name="disableButtonText">@string/disable</item>
+        <item name="changeNumButtonText">@string/change_num</item>
+        <item name="confirmMode">activation</item>
+    </style>
+    <style name="EmergencyCallBack">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="EriWidgetBackground" />
+    <style name="TextAppearance.EriWidget" parent="@style/TextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="ccOtaButtonBar">
+        <item name="android:background">@*android:drawable/bottom_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="ccOtaButton">
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="ccOtaNextButton" parent="@style/ccOtaButton">
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="ccOtaSkipButton" parent="@style/ccOtaButton">
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="ccOtaDialVisible">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="ccOtaWizardTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/ota_title_color</item>
+    </style>
+    <style name="ccOtaTextPrimary">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="InCallRoundButtonLabel">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="darklist_primary_xxl">
+        <item name="android:textSize">@com.htc:dimen/list_primary_xxl</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="darklist_secondary_xxl">
+        <item name="android:textSize">@com.htc:dimen/list_secondary_xxl</item>
+        <item name="android:textColor">@com.htc:color/darklist_secondary</item>
+    </style>
+    <style name="text_style_button_number">
+        <item name="android:textSize">@dimen/phone_button_number_text_size</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/phone_keypad_btn</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="text_style_phone_b_button_center" parent="@style/text_style_button_number">
+        <item name="android:textSize">@dimen/phone_button_primary</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+    </style>
+    <style name="title_primary_rest_m" parent="@com.htc:style/title_primary_m">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="style_accumulator">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_accumulator_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@com.htc:dimen/htc_list_item_margin_right</item>
+    </style>
+    <style name="style_taskbar_left_right_button">
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="style_taskbar_center_button" parent="@style/title_shadow">
+        <item name="android:layout_weight">4.0</item>
+    </style>
+</resources>

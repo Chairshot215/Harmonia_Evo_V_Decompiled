@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/city_list_item_group" android:layout_width="fill_parent" android:layout_height="@dimen/city_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:id="@id/city_list_item_cityname" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@id/city_list_item_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_m" />
+    </LinearLayout>
+    <ImageView android:id="@id/city_list_item_icon" android:layout_width="94.0px" android:layout_height="92.0px" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <TextView android:textSize="20.0px" android:textColor="@color/temp_text_color" android:gravity="right" android:id="@id/city_list_item_h_tmp" android:layout_width="42.0px" android:layout_height="36.0px" android:layout_marginTop="10.0px" android:layout_marginRight="12.0px" android:layout_alignParentRight="true" />
+    <TextView android:textSize="20.0px" android:textColor="@color/temp_text_color" android:gravity="right" android:id="@id/city_list_item_l_tmp" android:layout_width="42.0px" android:layout_height="36.0px" android:layout_marginTop="-12.0px" android:layout_below="@id/city_list_item_h_tmp" android:layout_alignRight="@id/city_list_item_h_tmp" />
+    <TextView android:textSize="42.0px" android:textColor="#ff000000" android:gravity="center" android:id="@id/city_list_item_current_tmp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/city_list_item_h_tmp" />
+</RelativeLayout>

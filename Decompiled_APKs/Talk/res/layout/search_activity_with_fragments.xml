@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.google.android.talk.SearchActivity$SearchResultsFragment" android:id="@id/results" android:tag="results_fragment" android:background="@drawable/panel_bg_white_leftstroke_holo_light" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="4.0" />
+    <FrameLayout android:gravity="top" android:layout_gravity="top" android:id="@id/chat" android:tag="chat_result_fragment" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="6.0" />
+</LinearLayout>

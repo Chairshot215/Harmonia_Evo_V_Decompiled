@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:actionMenuTextAppearance" android:gravity="center" android:id="@id/titleView" android:background="@drawable/video_panel_dropdown_title_bg_holo_dark" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <GridView android:gravity="center" android:id="@id/gridview" android:background="@drawable/video_panel_dropdown_bg_holo_dark" android:layout_width="0.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

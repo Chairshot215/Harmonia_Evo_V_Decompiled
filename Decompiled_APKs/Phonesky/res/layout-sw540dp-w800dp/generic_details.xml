@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.DetailsMarginBox android:background="@drawable/margin_fill" android:layout_width="fill_parent" android:layout_height="fill_parent" finsky:max_content_width="@dimen/framed_content_max_width"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <include layout="@layout/details_banner" />
+    <include layout="@layout/details_column_left" />
+    <include layout="@layout/details_column_right" />
+</com.google.android.finsky.layout.DetailsMarginBox>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:background="@drawable/common_sub_panel_navbar_75" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/cmd_bar_11" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/cmd_bar_imgbtn_1" android:background="?attr_command_bar_btn" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/cmd_bar_imgbtn_2" android:background="?attr_command_bar_btn" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_weight="1.0" />
+        <RelativeLayout android:paddingTop="4.0px" android:layout_width="@dimen/cmd_bar_playback_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_padding_1" android:layout_marginRight="@dimen/cmd_bar_padding_1">
+            <RelativeLayout android:id="@id/timer_start_end" android:paddingTop="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/white" android:id="@id/time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" style="@style/darklist_secondary_s" />
+                <TextView android:textColor="@color/white" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/darklist_secondary_s" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingTop="@dimen/cmd_bar_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.htc.widget.SeekBar android:id="@id/mediacontroller_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageButton android:id="@id/cmd_bar_imgbtn_3" android:background="?attr_command_bar_btn" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_marginRight="@dimen/cmd_bar_two_btn_margin" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

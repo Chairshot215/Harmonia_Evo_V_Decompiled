@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.HtcMCCallCard android:orientation="vertical" android:id="@id/multiple_and_conference_layout" android:background="@drawable/listview_listbackground" android:paddingRight="@dimen/mc_call_card_panel_padding_right" android:paddingBottom="@dimen/mc_call_card_panel_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:id="@id/con_call_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/topround" android:background="@drawable/listview_listbackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/topround_v1" />
+                <include android:id="@id/title_1" layout="@layout/htc_list_item_separator" />
+                <LinearLayout android:orientation="vertical" android:id="@id/list_1" android:background="@color/list_item_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/title_2" layout="@layout/htc_list_item_separator_middle" />
+                <LinearLayout android:orientation="vertical" android:id="@id/list_2" android:background="@color/list_item_background_color" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <View android:background="@com.htc:drawable/bottomround_v1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/con_call_listview" />
+    </RelativeLayout>
+</com.android.phone.HtcMCCallCard>

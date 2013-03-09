@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HtcFooter android:id="@id/footerbar_photo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_pwr" htcfooter:footerButtonImage="@com.htc:drawable/common_icon_glance_power_on" />
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_prev" htcfooter:footerButtonImage="@com.htc:drawable/common_icon_back" />
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_pp" htcfooter:footerButtonImage="@com.htc:drawable/common_icon_play" />
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_next" htcfooter:footerButtonImage="@com.htc:drawable/common_icon_next" />
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_more" android:text="@string/dmc_more_label" />
+    </com.htc.widget.HtcFooter>
+    <com.htc.widget.HtcFooter android:id="@id/footerbar_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_pwr" android:layout_weight="3.0" htcfooter:footerButtonImage="@com.htc:drawable/common_icon_glance_power_on" />
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_pp" android:layout_weight="3.0" htcfooter:footerButtonImage="@com.htc:drawable/common_icon_play" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/timer_start_end" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_height="fill_parent" android:layout_weight="20.0">
+            <TextView android:textSize="12.0dip" android:textColor="@com.htc:color/white" android:layout_gravity="center_vertical" android:id="@id/time_current" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.htc.widget.HtcSeekBar android:id="@id/mediacontroller_progress" android:paddingLeft="24.0px" android:paddingRight="24.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@com.htc:color/white" android:layout_gravity="center_vertical" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.htc.widget.HtcFooterButton android:id="@id/fbtn_more" android:text="@string/dmc_more_label" android:layout_weight="3.0" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

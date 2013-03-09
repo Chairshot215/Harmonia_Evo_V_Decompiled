@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/powersaver_settings_title" android:key="powersaver_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/powersaver_power_usage_summary_title" android:key="powersaver_setting_text" android:summary="@string/power_usage_summary" android:order="43" android:fragment="com.android.settings.fuelgauge.PowerUsageSummary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_auto_wifi" android:key="powersaver_location_aware_wifi" android:order="53" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_switch_2G_call" android:key="powersaver_switch_2G_call" android:order="54" android:summaryOn="@string/powersaver_switch_2G_call_summary" android:summaryOff="@string/powersaver_switch_2G_call_summary" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/quick_boot_category_text" android:key="quick_boot_category_text" android:order="101" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/enable_fastboot" android:key="enable_fastboot" android:order="102" android:summaryOn="@string/summary_disable_fastboot" android:summaryOff="@string/summary_disable_fastboot" />
+</com.htc.preference.HtcPreferenceScreen>

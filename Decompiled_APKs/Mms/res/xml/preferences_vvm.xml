@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_vvm_settings_title" android:key="pref_key_vvm_settings_category">
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_attachment_storage_labels" android:title="@string/attachment_storage" android:key="pref_key_vvm_archive_storage" android:summary="@string/phone_storage" android:defaultValue="0" android:entryValues="@array/pref_entries_attachment_storage_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_vvm_notification_title" android:key="pref_key_vvm_notification_category">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_play_notification" android:key="pref_key_vvm_play_notification" android:defaultValue="true" />
+        <com.android.mms.ui.MmsRingtonePreference android:title="@string/htc_pref_title_notification_ringtone" android:key="pref_key_vvm_notification_ringtone" android:summary="@string/pref_summary_notification_ringtone" android:dependency="pref_key_vvm_play_notification" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" android:showDefault="true" android:showSilent="false" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_notification_vibrate" android:key="pref_key_vvm_vibrate_notification" android:summary="@string/pref_summary_received_notification_vibrate" android:dependency="pref_key_vvm_play_notification" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_charm_notification" android:key="pref_key_vvm_charm_notifications" android:summary="@string/pref_summary_charm_notification" android:dependency="pref_key_vvm_play_notification" android:defaultValue="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

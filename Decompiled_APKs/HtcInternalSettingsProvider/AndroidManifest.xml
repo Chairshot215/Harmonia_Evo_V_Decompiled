@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100308027" android:versionName="1.0.2212312028.308027" package="com.htc.providers.settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:process=":remote" android:description="@string/app_description">
+        <provider android:label="@string/htc_internal_settings_provider_name" android:name=".HtcInternalSettingsProvider" android:writePermission="android.permission.WRITE_SETTINGS" android:multiprocess="true" android:authorities="com.htc.providers.settings.HtcInternalSettingsProvider" />
+        <provider android:label="@string/htc_preferred_app_provider_name" android:name=".HtcPreferredAppProvider" android:writePermission="android.permission.WRITE_SETTINGS" android:multiprocess="true" android:authorities="com.htc.providers.settings.HtcPreferredAppProvider" />
+    </application>
+</manifest>

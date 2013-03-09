@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/wait_for_sync_wrapper" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip">
+        <ProgressBar android:id="@id/progress_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <TextView android:id="@id/wait_for_sync_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/wait_for_sync_title" android:layout_toRightOf="@id/progress_spinner" style="@style/WaitActivityTitle" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/wait_for_sync_body" android:layout_toRightOf="@id/progress_spinner" android:layout_below="@id/wait_for_sync_title" />
+    </RelativeLayout>
+</RelativeLayout>

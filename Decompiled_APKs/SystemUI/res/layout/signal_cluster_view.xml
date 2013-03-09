@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.SignalClusterView android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/wifi_combo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-6.0dip">
+        <ImageView android:id="@id/wifi_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/wifi_inout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View android:id="@id/spacer" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:visibility="invisible" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+        <FrameLayout android:id="@id/mobile_combo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/mobile_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/mobile_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="bottom|right|center" android:id="@id/mobile_inout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</com.android.systemui.statusbar.SignalClusterView>

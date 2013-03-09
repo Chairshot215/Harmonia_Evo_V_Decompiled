@@ -1,0 +1,248 @@
+<?xml version="1.0" ?>
+<SyncML>
+<nokia_phonebook_1>
+	<category>nokia</category>
+	<version>1.2</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcard</content>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>0179AB671B68F26698269B4CA78222AD0318000000000012504320537569746520446174612053796E63106000000008436F6E7461637473</syncml_server_object>
+	<sync_ml_guid>00000002-0000-1000-8000-0002ee000002</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml+wbxml</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+</nokia_phonebook_1>
+
+<sne_phonebook_1>
+	<category>sony ericsson</category>
+	<version>1.2</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcard</content>
+	<IsSNE>true</IsSNE>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>8F4C3A44E217E4634A713063EF043AE503000000000000254176712053796E6320537276205F704862665F61505A61535565594F346E326E395A515F5F106000000708436F6E7461637473</syncml_server_object>
+	<sync_ml_guid>00001106-0000-1000-8000-00805f9b34fb</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml.ds.notification.</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+</sne_phonebook_1>
+
+<sne_bookmark_1>
+	<category>sony ericsson</category>
+	<version>1.2</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vbookmark</content>
+	<IsSNE>true</IsSNE>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>66BB85504E45975F53DB1D8D1648C89E03000000000000254176712053796E63205372762065337643555337685F747A586139786F6B6D315065775F5F106000000009426F6F6B6D61726B73</syncml_server_object>
+	<sync_ml_guid>00001106-0000-1000-8000-00805f9b34fb</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml.ds.notification.</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+</sne_bookmark_1>
+
+<nokia_phonebook_2>
+	<category>nokia</category>
+	<version>1.1</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcard</content>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>0179AB671B68F26698269B4CA78222AD0318000000000012504320537569746520446174612053796E63106000000008436F6E7461637473</syncml_server_object>
+	<sync_ml_guid>00000002-0000-1000-8000-0002ee000002</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml+wbxml</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+	
+	<syncml_format><![CDATA[<?xml version="1.0"?>
+	<!DOCTYPE SyncML PUBLIC "-//SYNCML//DTD_SyncML_1.1//EN" "http://www.openmobilealliance.org/tech/DTD/OMA-TS-SyncML_RepPro_DTD-V1_1.dtd">
+	<SyncML xmlns="syncml:SYNCML1.1"><SyncHdr><VerDTD>1.1</VerDTD><VerProto>SyncML/1.1</VerProto><SessionID>0</SessionID><MsgID>1</MsgID><Target><LocURI>IMEI:%s</LocURI></Target><Source><LocURI>PC Suite Data Sync</LocURI></Source></SyncHdr><SyncBody><Alert><CmdID>1</CmdID><Data>206</Data><Item><Source><LocURI>Contacts</LocURI></Source><Meta><Type xmlns="syncml:metinf">text/x-vcard</Type><Anchor xmlns="syncml:metinf"><Last>0</Last><Next>0</Next></Anchor></Meta></Item></Alert><Final/></SyncBody></SyncML>]]></syncml_format>
+	<pcsuite_guid>00005005-0000-1000-8000-0002ee000001</pcsuite_guid>
+	<pcsuite_target>F9EC7BC4953C11D2984E525400DC9E09</pcsuite_target>
+	<pcsuite_capability_type>x-obex/capability</pcsuite_capability_type>
+	<pcsuite_who>PC Suite</pcsuite_who>
+</nokia_phonebook_2>
+
+<mot_1>
+	<category>motorola</category>
+	<version>1.1</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>32768</max_pkg_size>
+	<alert_status>404</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcard</content>
+	<!-- <include_ctcap/> -->
+	<sync_ml_guid>00001103-0000-1000-8000-00805f9b34fb</sync_ml_guid>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<!-- use syncml paramter as auth -->
+	<syncml_format><![CDATA[<Cred>
+            <Meta>
+                <Type xmlns="syncml:metinf">syncml:auth-basic</Type>
+                <Format xmlns="syncml:metinf">b64</Format>
+            </Meta>
+            <Data>Og==</Data>
+        </Cred>]]></syncml_format>
+</mot_1>
+<SAM_PB_1>
+	<category>samsung</category>
+	<version>1.1</version>
+	<not_support_more_data/>
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>32768</max_pkg_size>
+	<alert_status>200</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcard</content>
+	<!-- <include_ctcap/> -->
+	<sync_ml_guid>00001103-0000-1000-8000-00805f9b34fb</sync_ml_guid>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>	
+</SAM_PB_1>
+<SAM_CAL_1>
+	<category>samsung</category>
+	<version>1.1</version>
+	<not_support_more_data/>
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>32768</max_pkg_size>
+	<alert_status>200</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcalendar</content>
+	<!-- <include_ctcap/> -->
+	<sync_ml_guid>00001103-0000-1000-8000-00805f9b34fb</sync_ml_guid>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>	
+</SAM_CAL_1>
+<nokia_calendar_1>
+	<category>nokia</category>
+	<version>1.2</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcalendar;text/calendar</content>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>65ADF16B1FEED840028683CFC8226B8B0318000000000012504320537569746520446174612053796E6310600000000843616C656E646172</syncml_server_object>
+	<sync_ml_guid>00000002-0000-1000-8000-0002ee000002</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml+wbxml</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+</nokia_calendar_1>
+
+
+<nokia_calendar_2>
+	<category>nokia</category>
+	<version>1.1</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vcalendar</content>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>65ADF16B1FEED840028683CFC8226B8B0318000000000012504320537569746520446174612053796E6310600000000843616C656E646172</syncml_server_object>
+	<sync_ml_guid>00000002-0000-1000-8000-0002ee000002</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml+wbxml</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+	
+	
+	<syncml_format><![CDATA[<?xml version="1.0"?>
+	<!DOCTYPE SyncML PUBLIC "-//SYNCML//DTD_SyncML_1.1//EN" "http://www.openmobilealliance.org/tech/DTD/OMA-TS-SyncML_RepPro_DTD-V1_1.dtd">
+	<SyncML xmlns="syncml:SYNCML1.1"><SyncHdr><VerDTD>1.1</VerDTD><VerProto>SyncML/1.1</VerProto><SessionID>0</SessionID><MsgID>1</MsgID><Target><LocURI>IMEI:%s</LocURI></Target><Source><LocURI>PC Suite Data Sync</LocURI></Source></SyncHdr><SyncBody><Alert><CmdID>1</CmdID><Data>206</Data><Item><Source><LocURI>Calendar</LocURI></Source><Meta><Type xmlns="syncml:metinf">text/x-vcalendar</Type><Anchor xmlns="syncml:metinf"><Last>0</Last><Next>0</Next></Anchor></Meta></Item></Alert><Final/></SyncBody></SyncML>]]></syncml_format>
+	<pcsuite_guid>00005005-0000-1000-8000-0002ee000001</pcsuite_guid>
+	<pcsuite_target>F9EC7BC4953C11D2984E525400DC9E09</pcsuite_target>
+	<pcsuite_capability_type>x-obex/capability</pcsuite_capability_type>
+	<pcsuite_who>PC Suite</pcsuite_who>
+
+</nokia_calendar_2>
+
+<nokia_sms_1>
+	<category>nokia</category>
+	<version>1.2</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vMessage</content>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>252B0198607A9D34D52773F254433F910318000000000012504320537569746520446174612053796E63106000000003736D73</syncml_server_object>
+	<sync_ml_guid>00000002-0000-1000-8000-0002ee000002</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml+wbxml</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+</nokia_sms_1>
+
+<nokia_bookmark_1>
+	<category>nokia</category>
+	<version>1.2</version>
+	<!-- <not_support_more_data/> -->
+	<!-- <not_support_number_of_change/> -->
+	<!-- <not_support_max_pkg_size/> -->
+	<!-- <not_support_max_obj_size/> -->
+	<max_pkg_size>65535</max_pkg_size>
+	<alert_status>508</alert_status>
+	<max_obj_size>102400</max_obj_size>
+	<content>text/x-vbookmark</content>
+	<!-- <include_ctcap/> -->
+	<syncml_server_object>349730EEC746A1E073DB381C7B305A5D03180000000000085043205375697465106000000009426F6F6B6D61726B73</syncml_server_object>
+	<sync_ml_guid>00000002-0000-1000-8000-0002ee000002</sync_ml_guid>
+	<sync_ml_channel>0</sync_ml_channel>
+	<max_obex_pkg_size>2048</max_obex_pkg_size>
+	<obex_connect_target>SYNCML-SYNC</obex_connect_target>
+	<obex_select_service_type>application/vnd.syncml+wbxml</obex_select_service_type>
+	<obex_content_type>application/vnd.syncml+wbxml</obex_content_type>
+</nokia_bookmark_1>
+
+</SyncML>

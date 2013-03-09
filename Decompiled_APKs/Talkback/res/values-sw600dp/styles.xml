@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccessibilityTutorialButton">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:minWidth">208.0dip</item>
+    </style>
+    <style name="AccessibilityTutorialTitle" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textColor">@color/title_color</item>
+    </style>
+    <style name="AccessibilityTutorialBodyTextPrimary" parent="@*android:style/TextAppearance.Medium" />
+</resources>

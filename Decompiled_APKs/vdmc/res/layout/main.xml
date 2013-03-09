@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hello" />
+    <Button android:id="@id/Start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/start_session" android:autoText="true" />
+    <Button android:id="@id/Start_prl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/start_prl" android:autoText="true" />
+    <Button android:id="@id/Start_dc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/start_dc" android:autoText="true" />
+    <Button android:id="@id/Start_hfa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/start_hfa" android:autoText="true" />
+    <Button android:id="@id/Resume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/resume_download" android:autoText="true" />
+    <Button android:id="@id/TreeRegister" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/tree_register_nodes" android:autoText="true" />
+    <Button android:id="@id/Test" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="normal" android:text="@string/test" android:autoText="true" />
+    <TextView android:textStyle="bold" android:id="@id/statetv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/statetv" />
+</LinearLayout>

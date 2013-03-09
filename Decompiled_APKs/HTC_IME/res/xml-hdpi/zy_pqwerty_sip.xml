@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="53px" hgap="0px" vgap="0px" height="80px" keyTextSize="36px" popupTextSize="45px" totalRows="5" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,6,5,4" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" splitKeyBackground="@drawable/qwerty_split_key" closeKeyBackground="@drawable/qwerty_close_key">
+    <row>
+        <key codes="200" label="ㄅ" leftEdge="true" labelOffsetY="-3" hgap="5px" />
+        <key codes="204" label="ㄉ" labelOffsetY="-3" />
+        <key codes="239" icon="@drawable/zy_tone3" iconPreview="@drawable/zy_tone3_inv" />
+        <key codes="240" icon="@drawable/zy_tone4" iconPreview="@drawable/zy_tone4_inv" />
+        <key codes="214" label="ㄓ" labelOffsetY="-3" />
+        <key codes="238" icon="@drawable/zy_tone2" iconPreview="@drawable/zy_tone2_inv" />
+        <key codes="241" icon="@drawable/zy_tone5" iconPreview="@drawable/zy_tone5_inv" />
+        <key codes="221" label="ㄚ" labelOffsetY="-3" />
+        <key codes="225" label="ㄞ" labelOffsetY="-3" />
+        <key codes="229" label="ㄢ" rightEdge="true" labelOffsetY="-3" />
+    </row>
+    <row>
+        <key codes="201" label="ㄆ" leftEdge="true" labelOffsetY="-3" hgap="5px" />
+        <key codes="205" label="ㄊ" labelOffsetY="-3" />
+        <key codes="208" label="ㄍ" labelOffsetY="-3" />
+        <key codes="211" label="ㄐ" labelOffsetY="-3" />
+        <key codes="215" label="ㄔ" labelOffsetY="-3" />
+        <key codes="218" label="ㄗ" labelOffsetY="-3" />
+        <key codes="234" label="ㄧ" labelOffsetY="-3" />
+        <key codes="222" label="ㄛ" labelOffsetY="-3" />
+        <key codes="226" label="ㄟ" labelOffsetY="-3" />
+        <key codes="230" label="ㄣ" rightEdge="true" labelOffsetY="-3" />
+    </row>
+    <row>
+        <key codes="202" label="ㄇ" leftEdge="true" labelOffsetY="-3" hgap="5px" />
+        <key codes="206" label="ㄋ" labelOffsetY="-3" />
+        <key codes="209" label="ㄎ" labelOffsetY="-3" />
+        <key codes="212" label="ㄑ" labelOffsetY="-3" />
+        <key codes="216" label="ㄕ" labelOffsetY="-3" />
+        <key codes="219" label="ㄘ" labelOffsetY="-3" />
+        <key codes="235" label="ㄨ" labelOffsetY="-3" />
+        <key codes="223" label="ㄜ" labelOffsetY="-3" />
+        <key codes="227" label="ㄠ" labelOffsetY="-3" />
+        <key codes="231" label="ㄤ" rightEdge="true" labelOffsetY="-3" />
+    </row>
+    <row>
+        <key codes="203" label="ㄈ" leftEdge="true" labelOffsetY="-3" hgap="5px" />
+        <key codes="207" label="ㄌ" labelOffsetY="-3" />
+        <key codes="210" label="ㄏ" labelOffsetY="-3" />
+        <key codes="213" label="ㄒ" labelOffsetY="-3" />
+        <key codes="217" label="ㄖ" labelOffsetY="-3" />
+        <key codes="220" label="ㄙ" labelOffsetY="-3" />
+        <key codes="236" label="ㄩ" labelOffsetY="-3" />
+        <key codes="224" label="ㄝ" labelOffsetY="-3" />
+        <key codes="228" label="ㄡ" labelOffsetY="-3" />
+        <key codes="232" label="ㄥ" rightEdge="true" labelOffsetY="-3" />
+    </row>
+    <row height="82px">
+        <key codes="-4" width="74px" hgap="6px" function="true" leftEdge="true" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-16" width="64px" hgap="3px" function="true" label="" textScale="90%p" grouped="1" />
+        <key codes="-23" hgap="-64px" width="64px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-64px" width="64px" function="true" label="" textScale="75%p" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="65292" label="，" topLabel="   。" hgap="1px" popup="@layout/port_accent_window" popupCharacters="@string/minikeyboard_port_py_6" accentType="0" alignIndex="0" labelOffsetY="-5" />
+        <key codes="32" icon="@drawable/key_icon_space" showPreview="false" iconPreview="@drawable/sapphire_icon_space" width="85px" splitSet="1" hgap="1px" xt9idx="42" />
+        <key codes="237" label="-" hgap="-85px" width="85px" splitSet="4" />
+        <key codes="233" label="ㄦ" labelOffsetY="-3" hgap="1px" xt9idx="43" />
+        <key codes="-2" label="12#" textScale="70%p" width="64px" function="true" hgap="1px" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" width="64px" hgap="1px" function="true" repeatable="true" xt9idx="45" />
+        <key codes="10" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" width="64px" hgap="1px" function="true" rightEdge="true" xt9idx="46" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="132" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

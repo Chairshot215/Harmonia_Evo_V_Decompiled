@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/layout_style_dialer_keypad">
+        <LinearLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/one" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_1_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/two" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_2_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/three" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_3_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/four" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_4_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/five" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_5_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/six" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_6_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/seven" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_7_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/eight" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_8_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/nine" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_9_number" style="@style/text_style_dialer_button_number" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/star" style="@style/image_style_dialer_button">
+                <ImageView android:src="@drawable/htc_pin_icon_star" style="@style/image_style_dialer_button_symbol" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/zero" style="@style/image_style_dialer_button">
+                <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/htc_dialer_keypad_0_number" style="@style/text_style_dialer_button_zero_number" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/pound" style="@style/image_style_dialer_button">
+                <ImageView android:src="@drawable/htc_pin_icon_pound" style="@style/image_style_dialer_button_symbol" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

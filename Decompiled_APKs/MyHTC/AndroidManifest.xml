@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="207368200" android:versionName="2.7.2214332147.368200" package="com.htc.cs"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_cs" android:name="com.htc.cs.readwrite.database" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_cs" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="com.android.mms.permission.READ_DATA" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="com.htc.csengine.readwrite.database" />
+    <uses-permission android:name="com.htc.cs.readwrite.database" />
+    <uses-permission android:name="com.android.settings.permission.ACCESS_SETTINGS" />
+    <uses-permission android:name="htc.pluginmanager.permission.USE_BROADCAST" />
+    <uses-permission android:name="com.htc.msg.mfn.set" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.htc.store.permission.UNREGISTER_ACCOUNT" />
+    <application android:label="@string/app_name" android:icon="@drawable/common_icon_default_htc" android:allowClearUserData="false" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.accountactivities.CS_login" android:screenOrientation="user" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".activity.accountactivities.CSSettingActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.htc.cs.ACCOUNT_MANAGER_ENTRY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".activity.accountactivities.CSConfirmDialog" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".activity.accountactivities.CSErrorHandlingDialog" android:excludeFromRecents="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize">
+            <intent-filter>
+                <action android:name="com.htc.cs.CSWebExceptionDB.RequireNewPassword" />
+                <action android:name="com.htc.cs.CSWebExceptionDB.DeviceDisconnected" />
+            </intent-filter>
+        </activity>
+        <provider android:name=".provider.ConnectedServiceProvider" android:readPermission="com.htc.cs.readwrite.database" android:writePermission="com.htc.cs.readwrite.database" android:multiprocess="true" android:authorities="com.htc.connectedservice.csprovider" android:syncable="true" />
+        <provider android:name=".sync.dashboard.DashboardProvider" android:readPermission="com.htc.cs.readwrite.database" android:writePermission="com.htc.cs.readwrite.database" android:protectionLevel="signatureOrSystem" android:multiprocess="false" android:authorities="com.htc.cs.dashboard" android:syncable="false" />
+        <receiver android:name=".receiver.PoweronReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+                <action android:name="com.htc.cs.connectedservice.loginsuccess" />
+                <action android:name="com.htc.cs.connectedservice.accountremove" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="com.htc.launcher.intent.LOADING_COMPLETE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <data android:mimeType="application/vnd.csclient" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.htc.settings.accountsync.ACTION_SYNC_SCHEDULE_CHANGE" />
+                <action android:name="com.htc.cs.CSTriageException" />
+                <action android:name="com.htc.cs.UnlockScreen" />
+                <action android:name="com.htc.cs.CallOwner" />
+                <action android:name="android.server.checkin.FOTA_INSTALL_COMPLETE" />
+                <action android:name="com.htc.cs.connectedservice.updateURL" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.ConnectedService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator_cs" />
+        </service>
+        <service android:name=".service.DashboardService" android:exported="true" android:process="com.htc.bgp">
+            <intent-filter>
+                <action android:name="com.htc.cs.service.DashboardService" />
+                <action android:name="com.htc.cs.account.change" />
+                <action android:name="com.htc.cs.boot_completed" />
+                <action android:name="com.htc.cs.connectedservice.accountremove" />
+                <action android:name="com.htc.cs.dashboard.sim.loaded" />
+                <action android:name="com.htc.cs.dashboard.callforwarding" />
+                <action android:name="com.htc.cs.dashboard.msgforwarding.number" />
+                <action android:name="com.htc.cs.dashboard.msgforwarding.email" />
+                <action android:name="com.htc.cs.dashboard.location" />
+                <action android:name="com.htc.cs.dashboard.location.stop" />
+                <action android:name="com.htc.cs.dashboard.lock" />
+                <action android:name="com.htc.cs.dashboard.ring" />
+                <action android:name="com.htc.cs.dashboard.ring.stop" />
+                <action android:name="com.htc.cs.dashboard.wipe" />
+                <action android:name="com.htc.cs.dashboard.sendsetting" />
+                <action android:name="com.htc.cs.dashboard.sendversion" />
+                <action android:name="com.htc.cs.dashboard.timechange" />
+                <action android:name="com.htc.cs.dashboard.readServerTime" />
+                <action android:name="com.htc.cs.dashboard.sync_schedule" />
+                <action android:name="com.htc.cs.dashboard.check_sim_change" />
+                <action android:name="com.htc.cs.bind_complete" />
+                <action android:name="com.htc.cs.FOTA_INSTALL_COMPLETE" />
+                <action android:name="com.htc.cs.initservice" />
+                <action android:name="com.htc.cs.renew.datacenter" />
+                <action android:name="com.htc.cs.connectedservice.updateURL" />
+                <action android:name="com.htc.cs.dashboard.legaldoc" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <meta-data android:name="opensense" android:resource="@xml/supports" />
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@com.htc:string/menu_settings" android:key="listen_online_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/online_setting_account_detail_title" android:key="account_detail_switch" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/online_setting_downloading_title" android:key="downloading_switch" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/options_menu_my_purchases" android:key="purchase_switch" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/online_setting_payment_method_title" android:key="payment_method_switch" />
+    <com.htc.preference.HtcListPreference android:persistent="false" android:title="@string/online_setting_storage_title" android:key="storage_switch" android:dialogTitle="@string/online_setting_storage_title" android:entryValues="@array/listen_online_setting_storage_values" />
+</com.htc.preference.HtcPreferenceScreen>

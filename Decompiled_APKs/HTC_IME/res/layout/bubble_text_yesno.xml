@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.htc.android.htcime">
+    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/tu_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="bottom|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:textSize="@dimen/tu_result_yes_size" android:id="@id/tu_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="67.0dip" android:minHeight="33.0dip" android:text="@string/yes" />
+        <Button android:textSize="@dimen/tu_result_no_size" android:id="@id/tu_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="67.0dip" android:minHeight="33.0dip" android:text="@string/no" />
+    </LinearLayout>
+</LinearLayout>

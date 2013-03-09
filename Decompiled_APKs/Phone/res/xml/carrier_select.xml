@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/label_available" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/search_networks" android:key="button_srch_netwrks_key" android:summary="@string/sum_search_networks" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/select_automatically" android:key="button_auto_select_key" android:summary="@string/sum_select_automatically" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/prefer_networks" android:key="button_prefer_networks" android:summary="@string/sum_prefer_networks" />
+</com.htc.preference.HtcPreferenceScreen>

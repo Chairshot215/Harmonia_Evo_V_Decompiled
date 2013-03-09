@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="117px" hgap="0px" vgap="0px" height="87px" keyTextSize="38px" popupTextSize="48px" accentPage="4" totalRows="4" keyTextYOffset="0" topLabelTextSize="15px" topLabelTextYOffset="0" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,7,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" pageKeyBackground="@drawable/sapphire_sym_page_toggle" SymWidthKeyBackground="@drawable/sapphire_12key_sym_width" spellKeyBackground="@drawable/sapphire_spell_mode">
+    <row>
+        <key codes="-52" labelsource="@string/alternates_for_cp_12key_sym_math" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x002C,0x0026,0x005B" label="," />
+        <key codes="0x002E,0x002A,0x005D" label="." />
+        <key codes="0x003A,0x0027,0x005E" label=":" />
+        <key codes="-12" label="1/3" textScale="80%p" function="true" height="176px" width="86px" hgap="2px" showPreview="false" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-61" labelsource="@string/alternates_for_cp_12key_sym_punctuation" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x0021,0x0028,0x007B" label="!" />
+        <key codes="0x003F,0x0029,0x007D" label="\?" />
+        <key codes="0x003B,0x0022,0x002B" label=";" />
+    </row>
+    <row>
+        <key codes="-53" label="表情" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x0040,0x005C,0x003C" label="\@" />
+        <key codes="0x0023,0x007E,0x003E" label="\#" />
+        <key codes="0x0024,0x002F,0x002D" label="$" />
+        <key codes="0x0008" function="true" width="88px" hgap="1px" rightEdge="true" repeatable="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" />
+    </row>
+    <row>
+        <key codes="-54" label="其他" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="-55" sticky="true" function="true" width="116px" hgap="1px" iconPreview="@drawable/sapphire_sym_width_toggle" />
+        <key codes="0x0025,0x005F,0x003D" label="%" />
+        <key codes="-11" labelsource="@string/alternates_for_cp_sym_back" width="117px" hgap="0px" function="true" textScale="90%p" />
+        <key codes="0x0a" function="true" rightEdge="true" width="88px" hgap="1px" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="132" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

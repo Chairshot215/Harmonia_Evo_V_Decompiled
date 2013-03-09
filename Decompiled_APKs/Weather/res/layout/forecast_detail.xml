@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_color" android:gravity="center" android:id="@id/day_info" android:layout_width="fill_parent" android:layout_height="@dimen/day_space" android:layout_marginTop="@dimen/day_marginTop" android:singleLine="true" />
+    <ImageView android:id="@id/day_condition" android:layout_width="fill_parent" android:layout_height="@dimen/day_image_space" android:scaleType="fitCenter" android:layout_below="@id/day_info" />
+    <RelativeLayout android:gravity="center" android:id="@id/day_temp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/day_temp_space" android:layout_marginBottom="@dimen/day_temp_marginBottom" android:layout_below="@id/day_condition">
+        <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_temp_high_color" android:gravity="center_vertical" android:id="@id/day_high_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_temp_low_color" android:gravity="center_vertical" android:id="@id/day_low_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/day_high_temp" />
+    </RelativeLayout>
+</merge>

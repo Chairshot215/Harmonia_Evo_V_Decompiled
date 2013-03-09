@@ -1,0 +1,2300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="accumulator_font_size_array">
+        <item>21</item>
+        <item>24</item>
+        <item>30</item>
+    </integer-array>
+    <string-array name="transport_types">
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+    <string-array name="sip_call_options_entries">
+        <item>@string/sip_call_options_entry_1</item>
+        <item>@string/sip_call_options_entry_2</item>
+        <item>@string/sip_call_options_entry_3</item>
+    </string-array>
+    <string-array name="sip_call_options_wifi_only_entries">
+        <item>@string/sip_call_options_wifi_only_entry_1</item>
+        <item>@string/sip_call_options_entry_2</item>
+        <item>@string/sip_call_options_entry_3</item>
+    </string-array>
+    <string-array name="sip_call_options_values">
+        <item>@string/sip_always</item>
+        <item>@string/sip_address_only</item>
+        <item>@string/sip_ask_me_each_time</item>
+    </string-array>
+    <string-array name="phone_type_values">
+        <item>@string/pstn_phone</item>
+        <item>@string/internet_phone</item>
+    </string-array>
+    <string-array name="sip_send_keepalive_options">
+        <item>@string/sip_system_decide</item>
+        <item>@string/sip_always_send_keepalive</item>
+    </string-array>
+    <string-array name="roaming_options_entries">
+        <item>Never</item>
+        <item>National data roaming only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="roaming_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="defer_messages">
+        <item>@string/call_defer_none</item>
+        <item>@string/call_defer_in_meeting</item>
+        <item>@string/call_defer_call_you_back</item>
+        <item>@string/call_defer_call_you_back_in</item>
+        <item>@string/call_defer_text_me</item>
+        <item>@string/call_defer_custom</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_sprint">
+        <item>Sprint only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_kddi">
+        <item>KDDI only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_sprint">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_boost">
+        <item>Home only</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices">
+        <item>Global Mode</item>
+        <item>CDMA Mode</item>
+        <item>GSM / UMTS Mode</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values">
+        <item>7</item>
+        <item>4</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_v3">
+        <item>Sprint Only</item>
+        <item>Any CDMA</item>
+        <item>Any GSM</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_v3">
+        <item>1000</item>
+        <item>1002</item>
+        <item>3</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices">
+        <item>GSM / UMTS Dual</item>
+        <item>GSM only</item>
+        <item>UMTS only</item>
+    </string-array>
+    <string-array name="data_roam_guard_values_2ndtype">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings_2ndtype">
+        <item>Always Ask</item>
+        <item>Never Ask</item>
+    </string-array>
+    <string-array name="data_roam_guard_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="call_waiting_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_waiting_entries">
+        <item>Enable</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="data_roam_guard_settings">
+        <item>Default</item>
+        <item>Always Ask</item>
+        <item>Never Ask</item>
+    </string-array>
+    <string-array name="sip_send_keepalive_options_translated">
+        <item>@string/sip_system_decide_translated</item>
+        <item>@string/sip_always_send_keepalive_translated</item>
+    </string-array>
+    <string-array name="network_mode_select_choices">
+        <item>LTE/CDMA</item>
+        <item>CDMA only</item>
+    </string-array>
+    <string-array name="network_mode_select_values">
+        <item>8</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="call_fwd_to_voicemail_entries">
+        <item>Enable</item>
+        <item>Disable</item>
+    </string-array>
+    <string-array name="global_roaming_select_choices">
+        <item>@string/global_roaming_option_all_trips</item>
+        <item>@string/global_roaming_option_this_trips</item>
+        <item>@string/global_roaming_option_deny</item>
+    </string-array>
+    <string-array name="global_roaming_select_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="world_phone_preferred_gsm_network_mode_choices_plus_lte">
+        <item>GSM / UMTS</item>
+        <item>GSM only</item>
+        <item>UMTS only</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_choices_plus_lte">
+        <item>Global</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>CDMA only</item>
+    </string-array>
+    <string-array name="world_phone_mode_of_operation_mode_values_plus_lte">
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="skt_network_mode">
+        <item>LTE/WCDMA Auto</item>
+        <item>WCDMA only</item>
+    </string-array>
+    <string-array name="skt_network_mode_values">
+        <item>9</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="plus_code_country_list">
+        <item>Japan(001010),jp</item>
+        <item>Bahamas(011),bs</item>
+        <item>Bangladesh(00),bd</item>
+        <item>Bermuda(011),bm</item>
+        <item>China(00),cn</item>
+        <item>Hong Kong(001),hk</item>
+        <item>India(00),in</item>
+        <item>Indonesia(001),id</item>
+        <item>Israel(00),il</item>
+        <item>Korea(00700),kr</item>
+        <item>Macao(00),mo</item>
+        <item>Mexico(00),mx</item>
+        <item>New Zealand(00),nz</item>
+        <item>Peru(00),pe</item>
+        <item>Saipan(011),mp</item>
+        <item>Taiwan(005),tw</item>
+        <item>Thailand(001),th</item>
+        <item>U.S.A.(011),us</item>
+        <item>Venezuela(00),ve</item>
+        <item>Viet Nam(00),vn</item>
+    </string-array>
+    <integer-array name="incall_control_layout_margin_bottom_array">
+        <item>0</item>
+    </integer-array>
+    <string-array name="pref_entries_cb_language_list">
+        <item>German</item>
+        <item>English</item>
+        <item>Italian</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Dutch</item>
+        <item>Swedish</item>
+        <item>Danish</item>
+        <item>Portuguese</item>
+        <item>Finnish</item>
+        <item>Norwegian</item>
+        <item>Greek</item>
+        <item>Turkish</item>
+        <item>Hungarian</item>
+        <item>Polish</item>
+        <item>All languages</item>
+    </string-array>
+    <string-array name="entryvalues_language_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_choices">
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA auto</item>
+    </string-array>
+    <string-array name="preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices">
+        <item>LTE only</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA auto</item>
+        <item>GSM / WCDMA / LTE auto</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values">
+        <item>11</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_choices_without_lte_only">
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA auto</item>
+        <item>GSM / WCDMA / LTE auto</item>
+    </string-array>
+    <string-array name="preferred_lte_network_mode_values_without_lte_only">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_choices">
+        <item>WCDMA only</item>
+        <item>GSM / WCDMA auto</item>
+    </string-array>
+    <string-array name="h3g_preferred_gsm_network_mode_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_choices">
+        <item>EvDo only</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo auto</item>
+    </string-array>
+    <string-array name="preferred_cdma_network_mode_values">
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_No2">
+        <item>Home only</item>
+        <item>Automatic A</item>
+        <item>Automatic B</item>
+    </string-array>
+    <string-array name="cdma_system_select_values_No2">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_choices">
+        <item>NAM 1</item>
+        <item>NAM 2</item>
+        <item>Auto-NAM</item>
+    </string-array>
+    <string-array name="cdma_switch_nam_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_choices">
+        <item>Hybrid</item>
+        <item>EVDO-Only</item>
+        <item>1X-Only</item>
+    </string-array>
+    <string-array name="cdma_operating_mode_value">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="timeout_values">
+        <item>5 sec</item>
+        <item>10 sec</item>
+        <item>15 sec</item>
+        <item>20 sec</item>
+        <item>25 sec</item>
+        <item>30 sec</item>
+    </string-array>
+    <integer-array name="clear_codes_index">
+        <item>1</item>
+        <item>3</item>
+        <item>6</item>
+        <item>8</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>21</item>
+        <item>22</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>34</item>
+        <item>38</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>47</item>
+        <item>49</item>
+        <item>50</item>
+        <item>55</item>
+        <item>57</item>
+        <item>58</item>
+        <item>63</item>
+        <item>65</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>79</item>
+        <item>81</item>
+        <item>87</item>
+        <item>88</item>
+        <item>91</item>
+        <item>95</item>
+        <item>96</item>
+        <item>97</item>
+        <item>98</item>
+        <item>99</item>
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>111</item>
+        <item>127</item>
+    </integer-array>
+    <string-array name="clear_codes_values">
+        <item>MARCACION NO DISPONIBLE -01-</item>
+        <item>USUARIO NO DISPONIBLE -03-</item>
+        <item>LLAMADA TERMINADA -6-</item>
+        <item>USUARIO NO DISPONIBLE -08-</item>
+        <item>USUARIO OCUPADO</item>
+        <item>USUARIO NO RESPONDE -18-</item>
+        <item>USUARIO NO RESPONDE -19-</item>
+        <item>USUARIO NO DISPONIBLE -21-</item>
+        <item>MARCACION NO DISPONIBLE -22-</item>
+        <item>LLAMADA TERMINADA -25-</item>
+        <item>LLAMADA TERMINADA -26-</item>
+        <item>USUARIO NO DISPONIBLE -27-</item>
+        <item>MARCACION NO DISPONIBLE -28-</item>
+        <item>LLAMADA TERMINADA -29-</item>
+        <item>LLAMADA TERMINADA -30-</item>
+        <item>LLAMADA TERMINADA -31-</item>
+        <item>LLAMADA TERMINADA -34-</item>
+        <item>LLAMADA TERMINADA -38-</item>
+        <item>LLAMADA TERMINADA -41-</item>
+        <item>LLAMADA TERMINADA -42-</item>
+        <item>LLAMADA TERMINADA -43-</item>
+        <item>LLAMADA TERMINADA -44-</item>
+        <item>LLAMADA TERMINADA -47-</item>
+        <item>LLAMADA TERMINADA -49-</item>
+        <item>LLAMADA TERMINADA -50-</item>
+        <item>LLAMADA TERMINADA -55-</item>
+        <item>LLAMADA TERMINADA -57-</item>
+        <item>LLAMADA TERMINADA -58-</item>
+        <item>LLAMADA TERMINADA -63-</item>
+        <item>LLAMADA TERMINADA -65-</item>
+        <item>LLAMADA TERMINADA -68-</item>
+        <item>LLAMADA TERMINADA -69-</item>
+        <item>LLAMADA TERMINADA -70-</item>
+        <item>LLAMADA TERMINADA -79-</item>
+        <item>LLAMADA TERMINADA -81-</item>
+        <item>LLAMADA TERMINADA -87-</item>
+        <item>LLAMADA TERMINADA -88-</item>
+        <item>LLAMADA TERMINADA -91-</item>
+        <item>LLAMADA TERMINADA -95-</item>
+        <item>LLAMADA TERMINADA -96-</item>
+        <item>LLAMADA TERMINADA -97-</item>
+        <item>LLAMADA TERMINADA -98-</item>
+        <item>LLAMADA TERMINADA -99-</item>
+        <item>LLAMADA TERMINADA -100-</item>
+        <item>LLAMADA TERMINADA -101-</item>
+        <item>LLAMADA TERMINADA -102-</item>
+        <item>LLAMADA TERMINADA -111-</item>
+        <item>LLAMADA TERMINADA -127-</item>
+    </string-array>
+    <string-array name="network_type_list">
+        <item>2G</item>
+        <item>3G</item>
+        <item>@string/network_mode_both</item>
+    </string-array>
+    <string-array name="operator_name">
+        <item>COSMOTE</item>
+        <item>vodafone GR</item>
+        <item>TIM GR</item>
+        <item>vodafone NL</item>
+        <item>NL KPN</item>
+        <item>NL Telfort</item>
+        <item>T-Mobile NL</item>
+        <item>Orange NL</item>
+        <item>PROXIMUS</item>
+        <item>Mobistar</item>
+        <item>BASE</item>
+        <item>Orange F</item>
+        <item>F - Contact</item>
+        <item>F SFR</item>
+        <item>F - Contact</item>
+        <item>BYTEL</item>
+        <item>F - Contact</item>
+        <item>Monaco</item>
+        <item>MOBILAND</item>
+        <item>vodafone ES</item>
+        <item>Orange</item>
+        <item>YOIGO</item>
+        <item>movistar</item>
+        <item>pannon 3G</item>
+        <item>T-Mobile H</item>
+        <item>vodafone HU</item>
+        <item>m:tel</item>
+        <item>GSMBIH</item>
+        <item>T-Mobile HR</item>
+        <item>TELE2</item>
+        <item>VIP</item>
+        <item>Telenor</item>
+        <item>ProMonte</item>
+        <item>MTS</item>
+        <item>TMO CG</item>
+        <item>Vip SRB</item>
+        <item>TIM</item>
+        <item>vodafone IT</item>
+        <item>I WIND</item>
+        <item>3 ITA</item>
+        <item>VF-RO</item>
+        <item>COSMOTE</item>
+        <item>RO Digi.Mobil</item>
+        <item>RO ORANGE</item>
+        <item>Swisscom</item>
+        <item>sunrise</item>
+        <item>orange CH</item>
+        <item>In &amp;amp; Phone</item>
+        <item>T2</item>
+        <item>T-Mobile CZ</item>
+        <item>EUROTEL - CZ</item>
+        <item>Vodafone CZ</item>
+        <item>Orange SK</item>
+        <item>T-Mobile SK</item>
+        <item>O2-SK</item>
+        <item>A1</item>
+        <item>T-Mobile A</item>
+        <item>Orange A</item>
+        <item>tele - ring</item>
+        <item>3 AT</item>
+        <item>Orange A</item>
+        <item>UK01</item>
+        <item>ATL-VOD</item>
+        <item>PMN UK</item>
+        <item>O2 - UK</item>
+        <item>vodafone UK</item>
+        <item>Opal UK</item>
+        <item>3 UK</item>
+        <item>T-Mobile UK</item>
+        <item>T-Mobile UK</item>
+        <item>T-Mobile UK</item>
+        <item>Orange</item>
+        <item>JT-Wave</item>
+        <item>C &amp;amp; W</item>
+        <item>MANX</item>
+        <item>TDC MOBIL</item>
+        <item>SONOFON</item>
+        <item>3 DK</item>
+        <item>TELIA DK</item>
+        <item>SONOFON</item>
+        <item>TELIA S</item>
+        <item>3 SE</item>
+        <item>SWEDEN</item>
+        <item>Sweden3G</item>
+        <item>Telenor SE</item>
+        <item>S COMVIQ</item>
+        <item>N Telenor</item>
+        <item>NetCom</item>
+        <item>T3</item>
+        <item>NetworkN</item>
+        <item>dna</item>
+        <item>elisa</item>
+        <item>dna</item>
+        <item>FI AMT</item>
+        <item>SONERA</item>
+        <item>OMNITEL LT</item>
+        <item>BITE GSM</item>
+        <item>TELE2</item>
+        <item>LMT</item>
+        <item>TELE2</item>
+        <item>BITE LV</item>
+        <item>EMT</item>
+        <item>elisa</item>
+        <item>TELE2</item>
+        <item>MTS</item>
+        <item>MegaFon</item>
+        <item>RUS_SCN</item>
+        <item>SCS</item>
+        <item>SMARTS</item>
+        <item>DTC</item>
+        <item>Far East</item>
+        <item>KUGSM</item>
+        <item>SMARTS</item>
+        <item>NTC</item>
+        <item>Utel</item>
+        <item>INDIGO</item>
+        <item>TELE2</item>
+        <item>Beeline</item>
+        <item>MOTIV</item>
+        <item>Utel</item>
+        <item>Beeline</item>
+        <item>MTS UKR</item>
+        <item>Beeline</item>
+        <item>KYIVSTAR</item>
+        <item>GT</item>
+        <item>life:)</item>
+        <item>VELCOM</item>
+        <item>MTS</item>
+        <item>BeST</item>
+        <item>Orange MD</item>
+        <item>MOLDCELL</item>
+        <item>MDA EVENTIS</item>
+        <item>Plus</item>
+        <item>Era</item>
+        <item>Orange PL</item>
+        <item>Play</item>
+        <item>T-Mobile D</item>
+        <item>Vodafone.de</item>
+        <item>E-Plus</item>
+        <item>o2 - de</item>
+        <item>o2 - de</item>
+        <item>GIBTEL</item>
+        <item>vodafone P</item>
+        <item>OPTIMUS</item>
+        <item>TMN</item>
+        <item>LUXGSM</item>
+        <item>TANGO</item>
+        <item>VOX.LU</item>
+        <item>vodafone IE</item>
+        <item>O2 - IRL</item>
+        <item>METEOR</item>
+        <item>3 IRL</item>
+        <item>Siminn</item>
+        <item>Vodafone</item>
+        <item>Viking</item>
+        <item>IS-IceCell</item>
+        <item>On-waves</item>
+        <item>NOVA IS</item>
+        <item>AMC - AL</item>
+        <item>vodafone AL</item>
+        <item>EAGLE AL</item>
+        <item>vodafone MT</item>
+        <item>go mobile</item>
+        <item>CYTAMOBILE-VODAFONE</item>
+        <item>MTN</item>
+        <item>GEOCELL</item>
+        <item>MAGTI</item>
+        <item>BEELINE</item>
+        <item>Beeline AM</item>
+        <item>VivaCell</item>
+        <item>M-Tel BG</item>
+        <item>vivatel</item>
+        <item>GLOBUL</item>
+        <item>TR TURKCELL</item>
+        <item>VODAFONE TR</item>
+        <item>AVEA</item>
+        <item>FT-GSM</item>
+        <item>KALL</item>
+        <item>TELE GRL</item>
+        <item>SMT</item>
+        <item>SI vodafone</item>
+        <item>MOBITEL</item>
+        <item>T-2</item>
+        <item>SI TUSMOBIL</item>
+        <item>T-Mobile MK</item>
+        <item>COSMOFON</item>
+        <item>Vip MKD</item>
+        <item>Swiss FL</item>
+        <item>Orange FL</item>
+        <item>FL1</item>
+        <item>TANGO</item>
+        <item>Fido</item>
+        <item>Rogers Wireless</item>
+        <item>AMERIS</item>
+        <item>PROSOD</item>
+        <item>UnionTel</item>
+        <item>Centennial Communications</item>
+        <item>Cellular One</item>
+        <item>DIGICEL</item>
+        <item>Highland Cellular</item>
+        <item>Corr Wireless</item>
+        <item>Plateau Wireless</item>
+        <item>AT &amp;amp; T</item>
+        <item>T-Mobile</item>
+        <item>AT &amp;amp; T</item>
+        <item>West Central</item>
+        <item>Alaska Wireless</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>T-Mobile</item>
+        <item>Cell</item>
+        <item>WestLink</item>
+        <item>Carolina</item>
+        <item>AT &amp;amp; T</item>
+        <item>Yorkville</item>
+        <item>iCAN_GSM</item>
+        <item>AT &amp;amp; T</item>
+        <item>CBW</item>
+        <item>Viaero Wireless</item>
+        <item>USA ONELINK</item>
+        <item>T-Mobile</item>
+        <item>West Virginia Wireless</item>
+        <item>Cell One</item>
+        <item>Chinook</item>
+        <item>T-Mobile</item>
+        <item>ROAMING</item>
+        <item>Epic Touch</item>
+        <item>AmeriLink PCS</item>
+        <item>Einstein PCS</item>
+        <item>Jasper</item>
+        <item>T-Mobile</item>
+        <item>Wireless 2000 PCS</item>
+        <item>NPI Wireless</item>
+        <item>IMMIX</item>
+        <item>USABIGFOOT</item>
+        <item>ASTAC</item>
+        <item>Telemetrix</item>
+        <item>PTSI</item>
+        <item>i wireless</item>
+        <item>AirLink PCS</item>
+        <item>Pinpoint</item>
+        <item>T-Mobile</item>
+        <item>PACE</item>
+        <item>ACSIAC</item>
+        <item>UNICEL</item>
+        <item>TXCELL</item>
+        <item>FCSI</item>
+        <item>XIT</item>
+        <item>AT &amp;amp; T</item>
+        <item>Mid-Tex</item>
+        <item>Indigo</item>
+        <item>Commnet</item>
+        <item>EASTER</item>
+        <item>Pine Cellular</item>
+        <item>SXLP</item>
+        <item>High Plains</item>
+        <item>Cell One Amarillo</item>
+        <item>Sprocket</item>
+        <item>PetroCom</item>
+        <item>AT &amp;amp; T</item>
+        <item>C1ECI</item>
+        <item>FARMERS</item>
+        <item>iCAN_GSM</item>
+        <item>SLP Cellular</item>
+        <item>Lamar Cellular</item>
+        <item>BTW</item>
+        <item>PR Claro</item>
+        <item>Blue Sky</item>
+        <item>movistar</item>
+        <item>TELCEL</item>
+        <item>APUP-PCS</item>
+        <item>DIGICEL</item>
+        <item>C &amp;amp; W</item>
+        <item>F-Orange</item>
+        <item>ONLY</item>
+        <item>AMIGO</item>
+        <item>DigicelF</item>
+        <item>C &amp;amp; W</item>
+        <item>DIGICEL</item>
+        <item>APUA-PCS</item>
+        <item>C &amp;amp; W</item>
+        <item>Cingular</item>
+        <item>C &amp;amp; W</item>
+        <item>CCT Boatphone</item>
+        <item>MOBILITY</item>
+        <item>Cingular</item>
+        <item>C &amp;amp; W</item>
+        <item>DIGICEL</item>
+        <item>C &amp;amp; W</item>
+        <item>C &amp;amp; W</item>
+        <item>C &amp;amp; W</item>
+        <item>DIGICEL</item>
+        <item>C &amp;amp; W</item>
+        <item>DIGICEL</item>
+        <item>Telcell GSM</item>
+        <item>CT GSM</item>
+        <item>SETAR GSM</item>
+        <item>DIGICEL</item>
+        <item>BaTelCell</item>
+        <item>C &amp;amp; W</item>
+        <item>C &amp;amp; W</item>
+        <item>Cingular</item>
+        <item>CUBACEL</item>
+        <item>orange</item>
+        <item>Claro DOM</item>
+        <item>COMCEL</item>
+        <item>TSTT</item>
+        <item>C &amp;amp; W</item>
+        <item>AZERCELL GSM</item>
+        <item>BAKCELL GSM 2000</item>
+        <item>Nar</item>
+        <item>Beeline KZ</item>
+        <item>KCELL</item>
+        <item>NEO</item>
+        <item>B-Mobile</item>
+        <item>TASHICELL</item>
+        <item>Vodafone IN</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>!DEA</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>Reliance</item>
+        <item>AirTel</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>Vodafone IN</item>
+        <item>AirTel</item>
+        <item>Aircel</item>
+        <item>Reliance</item>
+        <item>!DEA</item>
+        <item>Vodafone IN</item>
+        <item>Loop Mobile</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>Aircel</item>
+        <item>Vodafone IN</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Vodafone IN</item>
+        <item>AirTel</item>
+        <item>Aircel</item>
+        <item>CellOne</item>
+        <item>Aircel</item>
+        <item>Reliance</item>
+        <item>Aircel</item>
+        <item>CellOne</item>
+        <item>AirTel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>AirTel</item>
+        <item>Vodafone IN</item>
+        <item>AirTel</item>
+        <item>Reliance</item>
+        <item>CellOne</item>
+        <item>Reliance</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>!DEA</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>Vodafone IN</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>Reliance</item>
+        <item>DOLPHIN</item>
+        <item>DOLPHIN</item>
+        <item>AirTel</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>!DEA</item>
+        <item>CellOne</item>
+        <item>CellOne</item>
+        <item>!DEA</item>
+        <item>Reliance</item>
+        <item>Vodafone IN</item>
+        <item>Reliance</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>AirTel</item>
+        <item>Aircel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>Reliance</item>
+        <item>RELIANCE</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>AirTel</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>Mobilink</item>
+        <item>UFONE</item>
+        <item>ZONG</item>
+        <item>Telenor PK</item>
+        <item>WaridTel</item>
+        <item>AWCC</item>
+        <item>ROSHAN</item>
+        <item>AREEBA</item>
+        <item>Etisalat</item>
+        <item>Mobitel</item>
+        <item>DIALOG</item>
+        <item>Tigo</item>
+        <item>SIR AIRTEL</item>
+        <item>Hutch</item>
+        <item>MPTGSM</item>
+        <item>alfa</item>
+        <item>RL MTC Lebanon</item>
+        <item>zain JO</item>
+        <item>UMNIAH</item>
+        <item>Orange JO</item>
+        <item>SYRIATEL</item>
+        <item>MTN</item>
+        <item>SYR MOBILE SYR</item>
+        <item>ASIACELL</item>
+        <item>SanaTel</item>
+        <item>ASIACELL</item>
+        <item>SanaTel</item>
+        <item>zain IQ</item>
+        <item>IRAQNA</item>
+        <item>Zain KW</item>
+        <item>WATANIYA</item>
+        <item>ALJAWAL</item>
+        <item>mobily</item>
+        <item>SabaFon</item>
+        <item>MTN</item>
+        <item>YemYY</item>
+        <item>OMAN MOBILE</item>
+        <item>nawras</item>
+        <item>ETISALAT</item>
+        <item>du</item>
+        <item>ORANGE</item>
+        <item>Cellcom</item>
+        <item>IL Pelephone</item>
+        <item>JAWWAL</item>
+        <item>BATELCO</item>
+        <item>zain BH</item>
+        <item>Qtel</item>
+        <item>UNTLMN</item>
+        <item>MobiCom</item>
+        <item>IR-TCI</item>
+        <item>IR KISH</item>
+        <item>MTCE</item>
+        <item>Taliya</item>
+        <item>Beeline UZ</item>
+        <item>Ucell</item>
+        <item>UZB MTS</item>
+        <item>Somoncom</item>
+        <item>INDIGO-T</item>
+        <item>MLT</item>
+        <item>Babilon</item>
+        <item>BEELINE TJ</item>
+        <item>INDIGO-3G</item>
+        <item>BITEL</item>
+        <item>MEGACOM</item>
+        <item>MTS TM</item>
+        <item>EMOBILE</item>
+        <item>JP DOCOMO</item>
+        <item>SoftBank</item>
+        <item>KTF</item>
+        <item>SK Telecom</item>
+        <item>KTF</item>
+        <item>VN MOBIFONE</item>
+        <item>VINAFONE</item>
+        <item>VIETTEL</item>
+        <item>CSL</item>
+        <item>CSL</item>
+        <item>3 HK</item>
+        <item>3(2G)</item>
+        <item>SMC-Voda</item>
+        <item>CSL</item>
+        <item>CMHK</item>
+        <item>454-15</item>
+        <item>PCCW</item>
+        <item>CSL</item>
+        <item>PCCW</item>
+        <item>SmarTone</item>
+        <item>CTM</item>
+        <item>MT Macau</item>
+        <item>CTM</item>
+        <item>3 Macau</item>
+        <item>MOBITEL</item>
+        <item>TMIC</item>
+        <item>CADCOMMS</item>
+        <item>STARCELL</item>
+        <item>CAMSHIN</item>
+        <item>LAO GSM</item>
+        <item>ETLMNW</item>
+        <item>LATMOBIL</item>
+        <item>TIGO</item>
+        <item>CMCC</item>
+        <item>UNICOM</item>
+        <item>CMCC</item>
+        <item>CMCC</item>
+        <item>Far EasTone</item>
+        <item>ACeS</item>
+        <item>KGT-Online</item>
+        <item>VIBO</item>
+        <item>Chunghwa</item>
+        <item>MOBITAI</item>
+        <item>TW Mobile</item>
+        <item>TransAsia</item>
+        <item>SUNNET</item>
+        <item>GrameemPhone</item>
+        <item>AKTEL</item>
+        <item>Banglalink</item>
+        <item>bMobile</item>
+        <item>WARID BD</item>
+        <item>DHIMOBILE</item>
+        <item>WMOBILE</item>
+        <item>TIME3G</item>
+        <item>TIME3G</item>
+        <item>MY MAXIS</item>
+        <item>CELCOM</item>
+        <item>DiGi</item>
+        <item>U Mobile</item>
+        <item>CELCOM</item>
+        <item>Telstra</item>
+        <item>YES OPTUS</item>
+        <item>vodafone AU</item>
+        <item>3TELSTRA</item>
+        <item>ACeS</item>
+        <item>INDOSAT</item>
+        <item>axis</item>
+        <item>TELKOMSEL</item>
+        <item>XL</item>
+        <item>INDOSAT</item>
+        <item>Mobile-8</item>
+        <item>3</item>
+        <item>TT</item>
+        <item>ISLACOM</item>
+        <item>GLOBE</item>
+        <item>SMART</item>
+        <item>SUN</item>
+        <item>ACeS</item>
+        <item>CURE</item>
+        <item>TH GSM</item>
+        <item>ACT-1900</item>
+        <item>DTAC</item>
+        <item>ACeS</item>
+        <item>GSM 1800</item>
+        <item>TRUE</item>
+        <item>SingTel</item>
+        <item>SingTel-G18</item>
+        <item>M1-3GSM</item>
+        <item>STARHUB</item>
+        <item>b-mobile</item>
+        <item>DSTCom</item>
+        <item>vodafone NZ</item>
+        <item>Telecom NZ</item>
+        <item>NZ Comms</item>
+        <item>BMobile</item>
+        <item>Digicel PNG</item>
+        <item>U-CALL</item>
+        <item>BREEZE</item>
+        <item>SMILE</item>
+        <item>FJ VODAFONE</item>
+        <item>Blue Sky</item>
+        <item>KL-Frigate</item>
+        <item>MOBILIS</item>
+        <item>VINI</item>
+        <item>KOKANET</item>
+        <item>Samoatel GO</item>
+        <item>FSM Telecom</item>
+        <item>PLWPMC</item>
+        <item>MobiNiL</item>
+        <item>vodafone EG</item>
+        <item>etisalat</item>
+        <item>Mobilis</item>
+        <item>Djezzy</item>
+        <item>NEDJMA</item>
+        <item>MEDITEL</item>
+        <item>IAM</item>
+        <item>TUNTEL</item>
+        <item>TUNSIANA</item>
+        <item>Libyana</item>
+        <item>Libya Al Madar</item>
+        <item>GAMCEL</item>
+        <item>AFRICELL</item>
+        <item>GMCOMIUM</item>
+        <item>ALIZE</item>
+        <item>SENTEL</item>
+        <item>MATTEL</item>
+        <item>MAURITEL</item>
+        <item>MALITEL ML</item>
+        <item>ORANGE ML</item>
+        <item>Orange GN</item>
+        <item>LAGUI</item>
+        <item>Areeba</item>
+        <item>GINCL</item>
+        <item>ACELL-CI</item>
+        <item>Orange CI</item>
+        <item>KoZ</item>
+        <item>MTN CI</item>
+        <item>BF Celtel</item>
+        <item>SAHELCOM</item>
+        <item>CELTEL</item>
+        <item>TELECEL</item>
+        <item>TOGO CEL</item>
+        <item>TELCEL</item>
+        <item>TELECEL BENIN</item>
+        <item>BENINCELL</item>
+        <item>BBCOM</item>
+        <item>GloBenin</item>
+        <item>CELLPLUS-MRU</item>
+        <item>EMTEL</item>
+        <item>LoneStar</item>
+        <item>Celcom</item>
+        <item>CELTEL</item>
+        <item>MILLICOM</item>
+        <item>GH MTN</item>
+        <item>ONEtouch</item>
+        <item>tiGO</item>
+        <item>celtel</item>
+        <item>MTN-NG</item>
+        <item>Mtel</item>
+        <item>glo</item>
+        <item>EMTS NGA</item>
+        <item>CELTEL</item>
+        <item>Telecel</item>
+        <item>NationLink</item>
+        <item>MTN CAM</item>
+        <item>Orange CAM</item>
+        <item>CPV MOVEL</item>
+        <item>CPV T+</item>
+        <item>CSTmovel</item>
+        <item>GETESA</item>
+        <item>LIBERTIS</item>
+        <item>TELECEL</item>
+        <item>CELTEL</item>
+        <item>CELTEL</item>
+        <item>WARID RC</item>
+        <item>MTN-CG</item>
+        <item>VODACOM CD</item>
+        <item>CELTEL</item>
+        <item>SCELL</item>
+        <item>CCT</item>
+        <item>OASIS</item>
+        <item>UNITEL</item>
+        <item>Orange Bissau</item>
+        <item>GTM</item>
+        <item>C &amp;amp; W SEY</item>
+        <item>AIRTEL</item>
+        <item>MobiTel</item>
+        <item>MTN</item>
+        <item>R-CELL</item>
+        <item>ET-MTN</item>
+        <item>TELESOM</item>
+        <item>SOMAFONE</item>
+        <item>Golis</item>
+        <item>Telsom</item>
+        <item>EVATIS</item>
+        <item>Safaricom</item>
+        <item>CELTEL</item>
+        <item>MOBITEL</item>
+        <item>ZANTEL</item>
+        <item>VodaCom</item>
+        <item>celtel</item>
+        <item>UG CelTel</item>
+        <item>MTN-UGANDA</item>
+        <item>Uganda Telecom</item>
+        <item>WaridTel</item>
+        <item>SPACETEL</item>
+        <item>SAFARIS</item>
+        <item>ONATEL</item>
+        <item>TELECEL-BDI</item>
+        <item>mCel</item>
+        <item>VodaCom-MZ</item>
+        <item>CELTEL</item>
+        <item>TELECEL</item>
+        <item>Celtel</item>
+        <item>Orange MG</item>
+        <item>TELMA</item>
+        <item>Orange re</item>
+        <item>OUTREMER</item>
+        <item>SFR REUNION</item>
+        <item>ZW NET*ONE</item>
+        <item>TELECEL</item>
+        <item>ECONET</item>
+        <item>MTC NAMIBIA</item>
+        <item>NAM Cell One</item>
+        <item>TNM</item>
+        <item>CELTEL</item>
+        <item>Vodacom-LS</item>
+        <item>EZI-CEL</item>
+        <item>MASCOM</item>
+        <item>Orange</item>
+        <item>Swazi-MTN</item>
+        <item>HURI</item>
+        <item>VodaCom-SA</item>
+        <item>Cell C</item>
+        <item>MTN-SA</item>
+        <item>BTL</item>
+        <item>Claro GTM</item>
+        <item>COMCEL</item>
+        <item>movistar</item>
+        <item>Claro SLV</item>
+        <item>DIGICEL</item>
+        <item>TELEMOVIL</item>
+        <item>movistar</item>
+        <item>PERSONAL</item>
+        <item>ClaroHND</item>
+        <item>CELTEL</item>
+        <item>HT - 200</item>
+        <item>ClaroNIC</item>
+        <item>MOVISTARNI</item>
+        <item>ClaroNIC</item>
+        <item>I.C.E.</item>
+        <item>I.C.E.</item>
+        <item>PANCW</item>
+        <item>CLARO PA</item>
+        <item>movistar</item>
+        <item>movistar</item>
+        <item>CLARO PER</item>
+        <item>movistar</item>
+        <item>CLARO ARGENTINA</item>
+        <item>AR PERSONAL</item>
+        <item>TIM</item>
+        <item>TIM</item>
+        <item>TIM</item>
+        <item>Claro</item>
+        <item>VIVO</item>
+        <item>VIVO</item>
+        <item>VIVO</item>
+        <item>SCTL</item>
+        <item>BRA BrTCelular</item>
+        <item>VIVO</item>
+        <item>AMAZONIA</item>
+        <item>Oi</item>
+        <item>CTBC</item>
+        <item>CTBC</item>
+        <item>CTBC</item>
+        <item>ENTEL</item>
+        <item>movistar</item>
+        <item>ClaroCHL</item>
+        <item>ENTEL</item>
+        <item>DIGITEL</item>
+        <item>DIGITEL</item>
+        <item>DIGITEL</item>
+        <item>movistar</item>
+        <item>VE_MOVILNET</item>
+        <item>VIVA</item>
+        <item>BOMOV</item>
+        <item>Telecel</item>
+        <item>DIGICEL</item>
+        <item>CLNK PLS</item>
+        <item>movistar</item>
+        <item>PORTA GSM</item>
+        <item>HPGYSA</item>
+        <item>CLARO PY</item>
+        <item>Telecel</item>
+        <item>Personal</item>
+        <item>TeleG</item>
+        <item>DIGICEL</item>
+        <item>UNIQA</item>
+        <item>MOVISTAR</item>
+        <item>CLARO URUGUAY</item>
+        <item>C &amp;amp; W FLK</item>
+        <item>TM CELL</item>
+        <item>Thuraya</item>
+        <item>Thuraya</item>
+        <item>MCP</item>
+        <item>AeroMobile</item>
+        <item>OnAir</item>
+        <item>Navitas</item>
+        <item>cellular at SEA</item>
+        <item>Seanet</item>
+        <item>UnionTel</item>
+        <item>IT &amp;amp; E</item>
+        <item>Edge Wireless</item>
+        <item>WILKES</item>
+        <item>WILKES</item>
+        <item>CWCI</item>
+        <item>Stelera Wireless</item>
+        <item>GCI</item>
+        <item>PR Claro</item>
+        <item>TELCEL GSM</item>
+        <item>Claro JAM</item>
+        <item>C &amp;amp; W</item>
+        <item>CHIPPIE</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>TATA DOCOMO</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>Vodafone IN</item>
+        <item>!DEA</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>Aircel</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>!DEA</item>
+        <item>Claro HND</item>
+        <item>CLARO ARGENTINA</item>
+        <item>Comcel 3GSM</item>
+        <item>OLA</item>
+        <item>COL Movistar</item>
+    </string-array>
+    <string-array name="operator_mccmnc_id">
+        <item>20201</item>
+        <item>20205</item>
+        <item>20210</item>
+        <item>20404</item>
+        <item>20408</item>
+        <item>20412</item>
+        <item>20416</item>
+        <item>20420</item>
+        <item>20601</item>
+        <item>20610</item>
+        <item>20620</item>
+        <item>20801</item>
+        <item>20802</item>
+        <item>20810</item>
+        <item>20813</item>
+        <item>20820</item>
+        <item>20888</item>
+        <item>21210</item>
+        <item>21303</item>
+        <item>21401</item>
+        <item>21403</item>
+        <item>21404</item>
+        <item>21407</item>
+        <item>21601</item>
+        <item>21630</item>
+        <item>21670</item>
+        <item>21805</item>
+        <item>21890</item>
+        <item>21901</item>
+        <item>21902</item>
+        <item>21910</item>
+        <item>22001</item>
+        <item>22002</item>
+        <item>22003</item>
+        <item>22004</item>
+        <item>22005</item>
+        <item>22201</item>
+        <item>22210</item>
+        <item>22288</item>
+        <item>22299</item>
+        <item>22601</item>
+        <item>22603</item>
+        <item>22605</item>
+        <item>22610</item>
+        <item>22801</item>
+        <item>22802</item>
+        <item>22803</item>
+        <item>22807</item>
+        <item>22808</item>
+        <item>23001</item>
+        <item>23002</item>
+        <item>23003</item>
+        <item>23101</item>
+        <item>23102</item>
+        <item>23106</item>
+        <item>23201</item>
+        <item>23203</item>
+        <item>23205</item>
+        <item>23207</item>
+        <item>23210</item>
+        <item>23212</item>
+        <item>23401</item>
+        <item>23403</item>
+        <item>23409</item>
+        <item>23410</item>
+        <item>23415</item>
+        <item>23416</item>
+        <item>23420</item>
+        <item>23430</item>
+        <item>23431</item>
+        <item>23432</item>
+        <item>23433</item>
+        <item>23450</item>
+        <item>23455</item>
+        <item>23458</item>
+        <item>23801</item>
+        <item>23802</item>
+        <item>23806</item>
+        <item>23820</item>
+        <item>23877</item>
+        <item>24001</item>
+        <item>24002</item>
+        <item>24004</item>
+        <item>24005</item>
+        <item>24008</item>
+        <item>24010</item>
+        <item>24201</item>
+        <item>24202</item>
+        <item>24203</item>
+        <item>24205</item>
+        <item>24403</item>
+        <item>24405</item>
+        <item>24412</item>
+        <item>24414</item>
+        <item>24491</item>
+        <item>24601</item>
+        <item>24602</item>
+        <item>24603</item>
+        <item>24701</item>
+        <item>24702</item>
+        <item>24705</item>
+        <item>24801</item>
+        <item>24802</item>
+        <item>24803</item>
+        <item>25001</item>
+        <item>25002</item>
+        <item>25004</item>
+        <item>25005</item>
+        <item>25007</item>
+        <item>25010</item>
+        <item>25012</item>
+        <item>25013</item>
+        <item>25015</item>
+        <item>25016</item>
+        <item>25017</item>
+        <item>25019</item>
+        <item>25020</item>
+        <item>25028</item>
+        <item>25035</item>
+        <item>25039</item>
+        <item>25099</item>
+        <item>25501</item>
+        <item>25502</item>
+        <item>25503</item>
+        <item>25505</item>
+        <item>25506</item>
+        <item>25701</item>
+        <item>25702</item>
+        <item>25704</item>
+        <item>25901</item>
+        <item>25902</item>
+        <item>25904</item>
+        <item>26001</item>
+        <item>26002</item>
+        <item>26003</item>
+        <item>26006</item>
+        <item>26201</item>
+        <item>26202</item>
+        <item>26203</item>
+        <item>26207</item>
+        <item>26208</item>
+        <item>26601</item>
+        <item>26801</item>
+        <item>26803</item>
+        <item>26806</item>
+        <item>27001</item>
+        <item>27077</item>
+        <item>27099</item>
+        <item>27201</item>
+        <item>27202</item>
+        <item>27203</item>
+        <item>27205</item>
+        <item>27401</item>
+        <item>27402</item>
+        <item>27404</item>
+        <item>27407</item>
+        <item>27408</item>
+        <item>27411</item>
+        <item>27601</item>
+        <item>27602</item>
+        <item>27603</item>
+        <item>27801</item>
+        <item>27821</item>
+        <item>28001</item>
+        <item>28010</item>
+        <item>28201</item>
+        <item>28202</item>
+        <item>28204</item>
+        <item>28301</item>
+        <item>28305</item>
+        <item>28401</item>
+        <item>28403</item>
+        <item>28405</item>
+        <item>28601</item>
+        <item>28602</item>
+        <item>28603</item>
+        <item>28801</item>
+        <item>28802</item>
+        <item>29001</item>
+        <item>29266</item>
+        <item>29340</item>
+        <item>29341</item>
+        <item>29364</item>
+        <item>29370</item>
+        <item>29401</item>
+        <item>29402</item>
+        <item>29403</item>
+        <item>29501</item>
+        <item>29502</item>
+        <item>29505</item>
+        <item>29577</item>
+        <item>30237</item>
+        <item>30272</item>
+        <item>30801</item>
+        <item>30802</item>
+        <item>31002</item>
+        <item>31003</item>
+        <item>31004</item>
+        <item>31005</item>
+        <item>31007</item>
+        <item>31008</item>
+        <item>31010</item>
+        <item>31015</item>
+        <item>31016</item>
+        <item>31017</item>
+        <item>31018</item>
+        <item>31019</item>
+        <item>31020</item>
+        <item>31021</item>
+        <item>31022</item>
+        <item>31023</item>
+        <item>31024</item>
+        <item>31025</item>
+        <item>31026</item>
+        <item>31027</item>
+        <item>31031</item>
+        <item>31032</item>
+        <item>31034</item>
+        <item>31035</item>
+        <item>31038</item>
+        <item>31039</item>
+        <item>31040</item>
+        <item>31041</item>
+        <item>31042</item>
+        <item>31045</item>
+        <item>31046</item>
+        <item>31049</item>
+        <item>31053</item>
+        <item>31056</item>
+        <item>31057</item>
+        <item>31058</item>
+        <item>31059</item>
+        <item>31061</item>
+        <item>31063</item>
+        <item>31064</item>
+        <item>31065</item>
+        <item>31066</item>
+        <item>31067</item>
+        <item>31068</item>
+        <item>31069</item>
+        <item>31070</item>
+        <item>31071</item>
+        <item>31074</item>
+        <item>31076</item>
+        <item>31077</item>
+        <item>31078</item>
+        <item>31079</item>
+        <item>31080</item>
+        <item>31087</item>
+        <item>31088</item>
+        <item>31089</item>
+        <item>31090</item>
+        <item>31091</item>
+        <item>31095</item>
+        <item>31098</item>
+        <item>31100</item>
+        <item>31103</item>
+        <item>31104</item>
+        <item>31107</item>
+        <item>31108</item>
+        <item>31109</item>
+        <item>31111</item>
+        <item>31113</item>
+        <item>31114</item>
+        <item>31117</item>
+        <item>31118</item>
+        <item>31119</item>
+        <item>31121</item>
+        <item>31125</item>
+        <item>31126</item>
+        <item>31131</item>
+        <item>31133</item>
+        <item>33011</item>
+        <item>33211</item>
+        <item>33403</item>
+        <item>33420</item>
+        <item>33430</item>
+        <item>33805</item>
+        <item>33818</item>
+        <item>34001</item>
+        <item>34002</item>
+        <item>34008</item>
+        <item>34020</item>
+        <item>34260</item>
+        <item>34275</item>
+        <item>34430</item>
+        <item>34492</item>
+        <item>34493</item>
+        <item>34614</item>
+        <item>34857</item>
+        <item>35002</item>
+        <item>35010</item>
+        <item>35211</item>
+        <item>35230</item>
+        <item>35486</item>
+        <item>35611</item>
+        <item>35811</item>
+        <item>35850</item>
+        <item>36011</item>
+        <item>36070</item>
+        <item>36251</item>
+        <item>36269</item>
+        <item>36301</item>
+        <item>36320</item>
+        <item>36439</item>
+        <item>36584</item>
+        <item>36611</item>
+        <item>36620</item>
+        <item>36801</item>
+        <item>37001</item>
+        <item>37002</item>
+        <item>37201</item>
+        <item>37412</item>
+        <item>37635</item>
+        <item>40001</item>
+        <item>40002</item>
+        <item>40004</item>
+        <item>40101</item>
+        <item>40102</item>
+        <item>40177</item>
+        <item>40211</item>
+        <item>40277</item>
+        <item>40401</item>
+        <item>40402</item>
+        <item>40403</item>
+        <item>40404</item>
+        <item>40405</item>
+        <item>40407</item>
+        <item>40409</item>
+        <item>40410</item>
+        <item>40411</item>
+        <item>40412</item>
+        <item>40413</item>
+        <item>40414</item>
+        <item>40415</item>
+        <item>40416</item>
+        <item>40417</item>
+        <item>40418</item>
+        <item>40419</item>
+        <item>40420</item>
+        <item>40421</item>
+        <item>40422</item>
+        <item>40424</item>
+        <item>40425</item>
+        <item>40427</item>
+        <item>40428</item>
+        <item>40429</item>
+        <item>40430</item>
+        <item>40431</item>
+        <item>40433</item>
+        <item>40434</item>
+        <item>40435</item>
+        <item>40436</item>
+        <item>40437</item>
+        <item>40438</item>
+        <item>40440</item>
+        <item>40441</item>
+        <item>40442</item>
+        <item>40443</item>
+        <item>40444</item>
+        <item>40445</item>
+        <item>40446</item>
+        <item>40449</item>
+        <item>40450</item>
+        <item>40451</item>
+        <item>40452</item>
+        <item>40453</item>
+        <item>40454</item>
+        <item>40455</item>
+        <item>40456</item>
+        <item>40457</item>
+        <item>40458</item>
+        <item>40459</item>
+        <item>40460</item>
+        <item>40462</item>
+        <item>40464</item>
+        <item>40466</item>
+        <item>40467</item>
+        <item>40468</item>
+        <item>40469</item>
+        <item>40470</item>
+        <item>40471</item>
+        <item>40472</item>
+        <item>40473</item>
+        <item>40474</item>
+        <item>40475</item>
+        <item>40476</item>
+        <item>40477</item>
+        <item>40478</item>
+        <item>40480</item>
+        <item>40481</item>
+        <item>40482</item>
+        <item>40483</item>
+        <item>40484</item>
+        <item>40485</item>
+        <item>40486</item>
+        <item>40487</item>
+        <item>40488</item>
+        <item>40489</item>
+        <item>40490</item>
+        <item>40491</item>
+        <item>40492</item>
+        <item>40493</item>
+        <item>40494</item>
+        <item>40495</item>
+        <item>40496</item>
+        <item>40497</item>
+        <item>40498</item>
+        <item>40501</item>
+        <item>40505</item>
+        <item>40506</item>
+        <item>40507</item>
+        <item>40509</item>
+        <item>40510</item>
+        <item>40511</item>
+        <item>40513</item>
+        <item>40515</item>
+        <item>40518</item>
+        <item>40519</item>
+        <item>40520</item>
+        <item>40521</item>
+        <item>40522</item>
+        <item>40550</item>
+        <item>40551</item>
+        <item>40552</item>
+        <item>40553</item>
+        <item>40554</item>
+        <item>40555</item>
+        <item>40556</item>
+        <item>40566</item>
+        <item>40567</item>
+        <item>40570</item>
+        <item>41001</item>
+        <item>41003</item>
+        <item>41004</item>
+        <item>41006</item>
+        <item>41007</item>
+        <item>41201</item>
+        <item>41220</item>
+        <item>41240</item>
+        <item>41250</item>
+        <item>41301</item>
+        <item>41302</item>
+        <item>41303</item>
+        <item>41305</item>
+        <item>41308</item>
+        <item>41401</item>
+        <item>41501</item>
+        <item>41503</item>
+        <item>41601</item>
+        <item>41603</item>
+        <item>41677</item>
+        <item>41701</item>
+        <item>41702</item>
+        <item>41709</item>
+        <item>41800</item>
+        <item>41802</item>
+        <item>41805</item>
+        <item>41808</item>
+        <item>41820</item>
+        <item>41830</item>
+        <item>41902</item>
+        <item>41903</item>
+        <item>42001</item>
+        <item>42003</item>
+        <item>42101</item>
+        <item>42102</item>
+        <item>42170</item>
+        <item>42202</item>
+        <item>42203</item>
+        <item>42402</item>
+        <item>42403</item>
+        <item>42501</item>
+        <item>42502</item>
+        <item>42503</item>
+        <item>42505</item>
+        <item>42601</item>
+        <item>42602</item>
+        <item>42701</item>
+        <item>42888</item>
+        <item>42899</item>
+        <item>43211</item>
+        <item>43214</item>
+        <item>43219</item>
+        <item>43232</item>
+        <item>43404</item>
+        <item>43405</item>
+        <item>43407</item>
+        <item>43601</item>
+        <item>43602</item>
+        <item>43603</item>
+        <item>43604</item>
+        <item>43605</item>
+        <item>43612</item>
+        <item>43701</item>
+        <item>43705</item>
+        <item>43801</item>
+        <item>44000</item>
+        <item>44010</item>
+        <item>44020</item>
+        <item>45002</item>
+        <item>45005</item>
+        <item>45008</item>
+        <item>45201</item>
+        <item>45202</item>
+        <item>45204</item>
+        <item>45400</item>
+        <item>45402</item>
+        <item>45403</item>
+        <item>45404</item>
+        <item>45406</item>
+        <item>45410</item>
+        <item>45412</item>
+        <item>45415</item>
+        <item>45416</item>
+        <item>45418</item>
+        <item>45419</item>
+        <item>45500</item>
+        <item>45501</item>
+        <item>45503</item>
+        <item>45504</item>
+        <item>45505</item>
+        <item>45601</item>
+        <item>45602</item>
+        <item>45604</item>
+        <item>45605</item>
+        <item>45618</item>
+        <item>45701</item>
+        <item>45702</item>
+        <item>45703</item>
+        <item>45708</item>
+        <item>46000</item>
+        <item>46001</item>
+        <item>46002</item>
+        <item>46007</item>
+        <item>46601</item>
+        <item>46668</item>
+        <item>46688</item>
+        <item>46689</item>
+        <item>46692</item>
+        <item>46693</item>
+        <item>46697</item>
+        <item>46699</item>
+        <item>46703</item>
+        <item>47001</item>
+        <item>47002</item>
+        <item>47003</item>
+        <item>47004</item>
+        <item>47007</item>
+        <item>47201</item>
+        <item>47202</item>
+        <item>50200</item>
+        <item>50201</item>
+        <item>50212</item>
+        <item>50213</item>
+        <item>50216</item>
+        <item>50218</item>
+        <item>50219</item>
+        <item>50501</item>
+        <item>50502</item>
+        <item>50503</item>
+        <item>50506</item>
+        <item>51000</item>
+        <item>51001</item>
+        <item>51008</item>
+        <item>51010</item>
+        <item>51011</item>
+        <item>51021</item>
+        <item>51051</item>
+        <item>51089</item>
+        <item>51402</item>
+        <item>51501</item>
+        <item>51502</item>
+        <item>51503</item>
+        <item>51505</item>
+        <item>51511</item>
+        <item>51518</item>
+        <item>52001</item>
+        <item>52015</item>
+        <item>52018</item>
+        <item>52020</item>
+        <item>52023</item>
+        <item>52099</item>
+        <item>52501</item>
+        <item>52502</item>
+        <item>52503</item>
+        <item>52505</item>
+        <item>52802</item>
+        <item>52811</item>
+        <item>53001</item>
+        <item>53005</item>
+        <item>53024</item>
+        <item>53701</item>
+        <item>53730</item>
+        <item>53901</item>
+        <item>54001</item>
+        <item>54101</item>
+        <item>54201</item>
+        <item>54411</item>
+        <item>54509</item>
+        <item>54601</item>
+        <item>54720</item>
+        <item>54801</item>
+        <item>54927</item>
+        <item>55001</item>
+        <item>55280</item>
+        <item>60201</item>
+        <item>60202</item>
+        <item>60203</item>
+        <item>60301</item>
+        <item>60302</item>
+        <item>60303</item>
+        <item>60400</item>
+        <item>60401</item>
+        <item>60502</item>
+        <item>60503</item>
+        <item>60600</item>
+        <item>60601</item>
+        <item>60701</item>
+        <item>60702</item>
+        <item>60703</item>
+        <item>60801</item>
+        <item>60802</item>
+        <item>60901</item>
+        <item>60910</item>
+        <item>61001</item>
+        <item>61002</item>
+        <item>61101</item>
+        <item>61102</item>
+        <item>61104</item>
+        <item>61105</item>
+        <item>61202</item>
+        <item>61203</item>
+        <item>61204</item>
+        <item>61205</item>
+        <item>61302</item>
+        <item>61401</item>
+        <item>61402</item>
+        <item>61403</item>
+        <item>61501</item>
+        <item>61503</item>
+        <item>61602</item>
+        <item>61603</item>
+        <item>61604</item>
+        <item>61605</item>
+        <item>61701</item>
+        <item>61710</item>
+        <item>61801</item>
+        <item>61807</item>
+        <item>61901</item>
+        <item>61902</item>
+        <item>62001</item>
+        <item>62002</item>
+        <item>62003</item>
+        <item>62120</item>
+        <item>62130</item>
+        <item>62140</item>
+        <item>62150</item>
+        <item>62160</item>
+        <item>62201</item>
+        <item>62302</item>
+        <item>62304</item>
+        <item>62401</item>
+        <item>62402</item>
+        <item>62501</item>
+        <item>62502</item>
+        <item>62601</item>
+        <item>62701</item>
+        <item>62801</item>
+        <item>62802</item>
+        <item>62803</item>
+        <item>62901</item>
+        <item>62907</item>
+        <item>62910</item>
+        <item>63001</item>
+        <item>63002</item>
+        <item>63005</item>
+        <item>63086</item>
+        <item>63089</item>
+        <item>63102</item>
+        <item>63203</item>
+        <item>63207</item>
+        <item>63301</item>
+        <item>63310</item>
+        <item>63401</item>
+        <item>63402</item>
+        <item>63510</item>
+        <item>63601</item>
+        <item>63701</item>
+        <item>63704</item>
+        <item>63730</item>
+        <item>63782</item>
+        <item>63801</item>
+        <item>63902</item>
+        <item>63903</item>
+        <item>64002</item>
+        <item>64003</item>
+        <item>64004</item>
+        <item>64005</item>
+        <item>64101</item>
+        <item>64110</item>
+        <item>64111</item>
+        <item>64122</item>
+        <item>64201</item>
+        <item>64202</item>
+        <item>64203</item>
+        <item>64282</item>
+        <item>64301</item>
+        <item>64304</item>
+        <item>64501</item>
+        <item>64502</item>
+        <item>64601</item>
+        <item>64602</item>
+        <item>64604</item>
+        <item>64700</item>
+        <item>64702</item>
+        <item>64710</item>
+        <item>64801</item>
+        <item>64803</item>
+        <item>64804</item>
+        <item>64901</item>
+        <item>64903</item>
+        <item>65001</item>
+        <item>65010</item>
+        <item>65101</item>
+        <item>65102</item>
+        <item>65201</item>
+        <item>65202</item>
+        <item>65310</item>
+        <item>65401</item>
+        <item>65501</item>
+        <item>65507</item>
+        <item>65510</item>
+        <item>70267</item>
+        <item>70401</item>
+        <item>70402</item>
+        <item>70403</item>
+        <item>70601</item>
+        <item>70602</item>
+        <item>70603</item>
+        <item>70604</item>
+        <item>70610</item>
+        <item>70801</item>
+        <item>70802</item>
+        <item>70830</item>
+        <item>71021</item>
+        <item>71030</item>
+        <item>71073</item>
+        <item>71201</item>
+        <item>71202</item>
+        <item>71401</item>
+        <item>71403</item>
+        <item>71420</item>
+        <item>71606</item>
+        <item>71610</item>
+        <item>72207</item>
+        <item>72231</item>
+        <item>72234</item>
+        <item>72402</item>
+        <item>72403</item>
+        <item>72404</item>
+        <item>72405</item>
+        <item>72406</item>
+        <item>72410</item>
+        <item>72411</item>
+        <item>72415</item>
+        <item>72416</item>
+        <item>72423</item>
+        <item>72424</item>
+        <item>72431</item>
+        <item>72432</item>
+        <item>72433</item>
+        <item>72434</item>
+        <item>73001</item>
+        <item>73002</item>
+        <item>73003</item>
+        <item>73010</item>
+        <item>73401</item>
+        <item>73402</item>
+        <item>73403</item>
+        <item>73404</item>
+        <item>73406</item>
+        <item>73601</item>
+        <item>73602</item>
+        <item>73603</item>
+        <item>73801</item>
+        <item>73802</item>
+        <item>74000</item>
+        <item>74001</item>
+        <item>74401</item>
+        <item>74402</item>
+        <item>74404</item>
+        <item>74405</item>
+        <item>74602</item>
+        <item>74603</item>
+        <item>74604</item>
+        <item>74807</item>
+        <item>74810</item>
+        <item>75001</item>
+        <item>79502</item>
+        <item>90105</item>
+        <item>90106</item>
+        <item>90112</item>
+        <item>90114</item>
+        <item>90115</item>
+        <item>90117</item>
+        <item>90118</item>
+        <item>90121</item>
+        <item>310020</item>
+        <item>310032</item>
+        <item>310090</item>
+        <item>311001</item>
+        <item>311005</item>
+        <item>311240</item>
+        <item>311360</item>
+        <item>311370</item>
+        <item>330110</item>
+        <item>334020</item>
+        <item>338070</item>
+        <item>348170</item>
+        <item>362951</item>
+        <item>405025</item>
+        <item>405027</item>
+        <item>405029</item>
+        <item>405030</item>
+        <item>405031</item>
+        <item>405032</item>
+        <item>405034</item>
+        <item>405035</item>
+        <item>405036</item>
+        <item>405037</item>
+        <item>405038</item>
+        <item>405039</item>
+        <item>405041</item>
+        <item>405042</item>
+        <item>405043</item>
+        <item>405044</item>
+        <item>405045</item>
+        <item>405046</item>
+        <item>405047</item>
+        <item>405750</item>
+        <item>405751</item>
+        <item>405752</item>
+        <item>405753</item>
+        <item>405754</item>
+        <item>405755</item>
+        <item>405756</item>
+        <item>405799</item>
+        <item>405800</item>
+        <item>405801</item>
+        <item>405802</item>
+        <item>405803</item>
+        <item>405804</item>
+        <item>405805</item>
+        <item>405806</item>
+        <item>405807</item>
+        <item>405808</item>
+        <item>405809</item>
+        <item>405810</item>
+        <item>405811</item>
+        <item>405812</item>
+        <item>405845</item>
+        <item>405846</item>
+        <item>405848</item>
+        <item>405849</item>
+        <item>405850</item>
+        <item>405852</item>
+        <item>405853</item>
+        <item>708001</item>
+        <item>722310</item>
+        <item>732101</item>
+        <item>732111</item>
+        <item>732123</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Network default</item>
+        <item>Hide number</item>
+        <item>Show number</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>DEFAULT</item>
+        <item>HIDE</item>
+        <item>SHOW</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>Global</item>
+        <item>EvDo only</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo auto</item>
+        <item>GSM / WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values">
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Chinese</item>
+        <item>Hebrew</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_choices">
+        <item>GSM/WCDMA (auto mode)</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM/WCDA (WCDMA preferred)</item>
+    </string-array>
+    <string-array name="gsm_umts_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Home only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_system_select_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_choices">
+        <item>Home Networks only</item>
+        <item>Affiliated Networks</item>
+        <item>Any Network</item>
+    </string-array>
+    <string-array name="cdma_roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_choices">
+        <item>CDMA/EvDo</item>
+        <item>CDMA only</item>
+        <item>EvDo only</item>
+    </string-array>
+    <string-array name="cdma_network_preferences_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY Off</item>
+        <item>TTY Full</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="tty_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normal</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

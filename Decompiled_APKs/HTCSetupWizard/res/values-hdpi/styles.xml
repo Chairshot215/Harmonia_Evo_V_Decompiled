@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textAppearance_primary" parent="@com.htc:style/darklist_primary_m" />
+    <style name="textAppearance_secondary" parent="@com.htc:style/darklist_secondary_m" />
+    <style name="textAppearance_content" parent="@com.htc:style/darklist_primary_m" />
+    <style name="layout_generic">
+        <item name="android:layout_marginLeft">14.0px</item>
+        <item name="android:layout_marginTop">14.0px</item>
+        <item name="android:layout_marginRight">14.0px</item>
+        <item name="android:layout_marginBottom">14.0px</item>
+    </style>
+    <style name="google_title_text">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textSize">30.0px</item>
+        <item name="android:textColor">@color/text_title_green_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">14.0px</item>
+        <item name="android:layout_marginTop">9.0px</item>
+        <item name="android:layout_marginRight">14.0px</item>
+        <item name="android:layout_marginBottom">9.0px</item>
+    </style>
+    <style name="google_title_divider">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/green_divider</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">9.0px</item>
+        <item name="android:layout_marginBottom">9.0px</item>
+    </style>
+    <style name="titleBarStyle">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/text_2layer_title_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@com.htc:drawable/common_titlebar_sublevel</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52.0px</item>
+        <item name="android:shadowColor">@color/text_2layer_title_shadow_color</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="black_theme_panel">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@com.htc:drawable/common_sub_panel_navbar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">90.0px</item>
+    </style>
+    <style name="textAppearance_tutorial_menu">
+        <item name="android:textSize">33.0px</item>
+        <item name="android:textColor">@color/text_tutorial_menu_color</item>
+        <item name="android:layout_marginLeft">45.0px</item>
+        <item name="android:layout_marginTop">54.0px</item>
+        <item name="android:layout_marginRight">45.0px</item>
+    </style>
+    <style name="textAppearance_tutorial_summary">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/text_tutorial_summary_color</item>
+        <item name="android:layout_marginLeft">45.0px</item>
+        <item name="android:layout_marginTop">54.0px</item>
+        <item name="android:layout_marginRight">45.0px</item>
+    </style>
+    <style name="textAppearance_2LayerTitle_mem_att">
+        <item name="android:textSize">21.0px</item>
+        <item name="android:textColor">@color/text_2layer_title_color_mem_att</item>
+        <item name="android:shadowColor">@color/text_2layer_title_shadow_color_mem_att</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="layout_progressbar_panel">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/oobe_progress_panel</item>
+        <item name="android:paddingLeft">14.0px</item>
+        <item name="android:paddingRight">14.0px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Theme.Light.NoTitleBar.Customize" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:colorForeground">@color/white</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:textColorPrimary">@color/text_primary_color</item>
+        <item name="android:textColorSecondary">@color/text_secondary_color</item>
+        <item name="android:listPreferredItemHeight">75.0px</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColorTertiary">@color/text_secondary_color</item>
+    </style>
+</resources>

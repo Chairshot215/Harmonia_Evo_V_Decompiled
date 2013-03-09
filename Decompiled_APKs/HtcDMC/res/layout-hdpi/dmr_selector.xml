@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/glance_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_main_listview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HtcListView android:textSize="18.0sp" android:id="@id/main_listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/layout_content_margin_top" android:layout_marginBottom="@dimen/layout_content_margin_bottom" android:drawSelectorOnTop="false" android:divider="@com.htc:drawable/list_divider" android:dividerHeight="1.0px" android:layout_weight="1.0" style="@style/HtcListStyle"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/inc_title_22" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/inc_footerbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.htc.widget.HtcFooter android:id="@id/footerbar_done_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.htc.widget.HtcFooterButton android:id="@id/fbtn_cancel" android:text="@com.htc:string/bt_cancel_str" />
+                <com.htc.widget.HtcFooterButton android:id="@id/fbtn_done" android:text="@com.htc:string/bt_done_str" />
+            </com.htc.widget.HtcFooter>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

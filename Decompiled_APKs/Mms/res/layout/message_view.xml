@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/one_message_view" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadingLayout" android:background="@drawable/l_round_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-10.0px">
+        <ProgressBar android:id="@*android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/compose_progressbar_marginRight" style="?android:attr/progressBarStyleSmallInverse" />
+        <TextView android:textSize="@dimen/text_size_primary" android:textColor="#ff000000" android:id="@id/loadingText" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/common_string_loading" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0px">
+        <include android:id="@id/msg_subject" android:visibility="gone" layout="@com.htc:layout/htc_list_item_separator" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0px" android:textColor="@drawable/text_color_black" android:id="@id/sms_body" android:background="@color/htc_text_color_white" android:paddingLeft="8.0px" android:paddingTop="6.0px" android:paddingRight="8.0px" android:paddingBottom="6.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/mms_body" android:background="@color/htc_text_color_white" android:paddingLeft="8.0px" android:paddingTop="6.0px" android:paddingRight="8.0px" android:paddingBottom="6.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/playbackLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.coremobility.visualvoicemail">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/playbackBtns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <com.coremobility.app.customui.CM_ImageButton android:id="@id/callBtn" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="54.0dip" android:src="@drawable/ic_btn_vvm_call" />
+        <ImageButton android:id="@id/replyBtn" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="54.0dip" android:src="@drawable/ic_btn_vvm_reply" />
+        <ImageButton android:id="@id/speakerBtn" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="54.0dip" android:src="@drawable/ic_btn_vvm_speaker_on" />
+        <com.coremobility.app.customui.CM_ImageButton android:id="@id/deleteBtn" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="wrap_content" android:layout_height="54.0dip" android:src="@drawable/ic_btn_vvm_delete" />
+    </LinearLayout>
+    <com.coremobility.app.customui.CM_HorizontalScrollView android:id="@id/details" android:background="@color/black" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/playbackBtns" android:layout_alignParentTop="true">
+        <com.coremobility.app.customui.CM_LinearLayout android:orientation="horizontal" android:id="@id/scrollContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.coremobility.app.customui.CM_HorizontalScrollView>
+    <View android:id="@id/contextMenuStub1" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <View android:id="@id/contextMenuStub2" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

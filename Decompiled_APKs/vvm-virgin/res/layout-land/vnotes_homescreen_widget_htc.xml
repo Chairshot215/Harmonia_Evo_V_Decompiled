@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/app_widget" android:background="@drawable/app_icon_background_htc" android:paddingBottom="12.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:src="@drawable/ic_launcher_vvm" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/counter_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@id/widget_icon" android:layout_alignBottom="@id/widget_icon">
+        <ImageView android:layout_gravity="center" android:id="@id/counter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/counter_icon_htc" />
+        <TextView android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/counter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="13.0dip" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/app_name_text" android:background="@drawable/text_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/app_name" android:maxLines="1" android:includeFontPadding="false" android:shadowColor="#bb000000" android:shadowRadius="2.75" android:layout_below="@id/widget_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

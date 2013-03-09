@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Sty_Step_ImgBtn">
+        <item name="android:background">@drawable/oobe_progress_radio_off</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_margin">10.0sp</item>
+    </style>
+    <style name="Sty_Title_Text">
+        <item name="android:textSize">@dimen/Title_Font_Size</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Sty_Listview">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:transcriptMode">disabled</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@com.htc:drawable/list_divider</item>
+        <item name="android:headerDividersEnabled">true</item>
+    </style>
+    <style name="Sty_Content_Text">
+        <item name="android:textSize">@dimen/Content_Font_Size</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="Sty_Content_Text_Link">
+        <item name="android:textSize">@dimen/Content_Font_Size</item>
+    </style>
+    <style name="Sty_Content_Text_White">
+        <item name="android:textSize">@dimen/Content_Font_Size</item>
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="Sty_HTCListview" parent="@com.htc:style/htc_listview_style" />
+    <style name="FakeScreenStyle">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="com.htc:fakescreenStyle">style_02</item>
+    </style>
+</resources>

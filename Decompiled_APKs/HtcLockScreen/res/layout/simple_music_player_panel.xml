@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/music_cover_bg" android:layout_width="@dimen/lockscreen_music_album_shadow_width" android:layout_height="@dimen/lockscreen_music_album_shadow_height" android:layout_marginLeft="@dimen/lockscreen_music_album_shadow_x" android:layout_marginTop="@dimen/lockscreen_music_album_shadow_y" />
+    <ImageView android:id="@id/album_cover" android:layout_width="@dimen/lockscreen_music_album_shadow_width" android:layout_height="@dimen/lockscreen_music_album_shadow_height" />
+    <RelativeLayout android:layout_width="@dimen/screen_width" android:layout_height="@dimen/lockscreen_music_message_panel_height">
+        <RelativeLayout android:id="@id/message_panel" android:background="@com.htc:drawable/lockscreen_arcglass_top" android:layout_width="@dimen/screen_width" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginTop="@dimen/lockscreen_music_message_panel_y">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lockscreen_music_grip_x" android:layout_marginTop="@dimen/lockscreen_music_grip_y" android:src="@drawable/grip" style="@style/music_grip_show" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginTop="@dimen/lockscreen_music_track_name_y">
+                <TextView android:textSize="@dimen/lockscreen_music_track_name_textSize" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:id="@id/track_name" android:layout_width="@dimen/lockscreen_music_track_name_maxWidth" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.1" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/control_panel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lockscreen_music_control_panel_y" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/pre_button" android:background="@drawable/common_transport_prev" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/toggle_pause_button" android:background="@drawable/common_transport_play" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/next_button" android:background="@drawable/common_transport_next" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:layout_width="1.0px" android:layout_height="1.0px" android:layout_marginLeft="0.0px" android:layout_marginTop="@dimen/lockscreen_music_y" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/music_hint" android:visibility="gone" style="@style/hint_text_style" />
+</RelativeLayout>

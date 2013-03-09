@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pinDisplayGroup" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="74.0px" android:layout_marginLeft="12.0px" android:layout_marginTop="157.0px" android:layout_marginRight="12.0px" android:layout_centerHorizontal="true" style="?com.htc:searchInputFieldStyle">
+        <EditText android:textSize="32.0sp" android:id="@id/pinDisplay" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" android:inputType="textPassword" />
+        <FrameLayout android:layout_width="54.0px" android:layout_height="fill_parent">
+            <ImageButton android:layout_gravity="center" android:id="@id/backspace" android:background="@drawable/htc_btn_dial_delete" android:duplicateParentState="true" android:layout_width="60.0px" android:layout_height="60.0px" android:src="@drawable/phone_icon_backspace" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="309.0px" android:layout_alignParentBottom="true">
+        <TextView android:textSize="32.0px" android:textColor="@*android:color/white" android:id="@id/headerText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="32.0px" android:id="@id/headerText2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@*android:drawable/ic_lock_idle_lock" android:drawablePadding="5.0dip" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/headerText3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keyguard_hint_about_ecc" android:layout_above="@id/pinDisplayGroup" android:layout_below="@id/headerText" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height" android:layout_alignParentBottom="true" style="?com.htc:commandBarBackgroundStyle">
+        <Button android:id="@id/ok" android:background="@drawable/phone_button_call" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:text="@*android:string/ok" android:layout_weight="1.0" style="?com.htc:commandBarButtonStyle" />
+        <Button android:textSize="@dimen/cmd_bar_btn_fontsize" android:id="@id/cmd_bar_btn_1" android:background="?attr_common_button" android:layout_width="0.0px" android:layout_height="74.0px" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_marginRight="@dimen/cmd_bar_two_btn_margin" android:text="@string/CDMA_EMERGENCY_CALL" android:layout_weight="1.0" />
+        <Button android:id="@id/cancel" android:background="@drawable/phone_btn_bg" android:visibility="gone" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cmd_bar_two_btn_margin" android:text="@*android:string/cancel" android:layout_weight="1.0" style="?com.htc:commandBarButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

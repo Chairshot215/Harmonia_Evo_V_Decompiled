@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/compose_area_left_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <include layout="@layout/compose_area_from" />
+            <include layout="@layout/compose_area_recipients" />
+        </LinearLayout>
+        <include layout="@layout/compose_area_buttons" />
+    </LinearLayout>
+    <com.google.android.gm.AttachmentsView android:orientation="vertical" android:id="@id/attachments" android:paddingLeft="0.0dip" android:paddingTop="2.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/compose_area_right_padding" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/compose_area_right_padding">
+        <include layout="@layout/compose_body" />
+    </FrameLayout>
+    <com.google.android.gm.QuotedTextView android:id="@id/quoted_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/compose_area_right_padding" />
+    <FrameLayout android:id="@id/composearea_tap_trap_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

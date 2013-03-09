@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/ViewMode" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/EditMode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttonLayout" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/enableAssisted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" style="@style/nbpcd_listitem_textview" />
+                <TextView android:textSize="@dimen/htc_margin_top_item_text_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enableAssisted" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/referCountry" style="@style/nbpcd_listitem_textview" />
+            <com.htc.widget.HtcSpinner android:textSize="@com.htc:dimen/list_primary_m" android:textColor="@com.htc:color/list_primary" android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:prompt="@string/referCountry" style="@style/nbpcd_listitem" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/CountryCode" style="@style/nbpcd_listitem_textview" />
+            <EditText android:enabled="false" android:id="@id/edit_countryCode" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" style="@style/nbpcd_listitem" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/IDDPre" style="@style/nbpcd_listitem_textview" />
+            <EditText android:enabled="false" android:id="@id/edit_idd" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" style="@style/nbpcd_listitem" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/NDDPre" style="@style/nbpcd_listitem_textview" />
+            <EditText android:enabled="false" android:id="@id/edit_ndd" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" style="@style/nbpcd_listitem" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Area_city" style="@style/nbpcd_listitem_textview" />
+            <EditText android:enabled="false" android:id="@id/edit_area" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" style="@style/nbpcd_listitem" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/NumberLength" style="@style/nbpcd_listitem_textview" />
+            <EditText android:enabled="false" android:id="@id/edit_numberlength" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" style="@style/nbpcd_listitem" />
+            <EditText android:id="@id/edit_mcc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">ウェブ</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_rlz">不明</string>
+    <string name="sharedUserLabel">Googleサービス</string>
+    <string name="app_label">Googleアカウントマネージャー</string>
+    <string name="gls_label">Google</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">^1へようこそ</string>
+    <string name="next_button_label">次へ</string>
+    <string name="back_button_label">戻る</string>
+    <string name="sign_in_button_label">ログイン</string>
+    <string name="create_button_label">アカウントを作成</string>
+    <string name="not_now_button_label">今は設定しない</string>
+    <string name="skip_button_label">スキップ</string>
+    <string name="new_button_label">新しいアカウント</string>
+    <string name="existing_button_label">既存のアカウント</string>
+    <string name="first_name">名</string>
+    <string name="last_name">姓</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">キャンセル</string>
+    <string name="try_again_button_label">再試行</string>
+    <string name="close_button_label">閉じる</string>
+    <string name="edit_text_help">文字入力エリアをタップして入力します</string>
+    <string name="add_a_google_account">Googleアカウントを追加</string>
+    <string name="no_sim_setup_wireless">SIMカードが挿入されていないため、通話やデータサービスを提供するモバイルネットワークに接続できません。Wi-FiネットワークにはSIMカードなしで接続できます。</string>
+    <string name="setup_wifi_button_label">Wi-Fiに接続</string>
+    <string name="setup_wizard_title">セットアップウィザード</string>
+    <string name="captcha_title">CAPTCHAを入力する必要があります</string>
+    <string name="choose_account_title">アカウントの選択</string>
+    <string name="show_error_title">発生したエラー</string>
+    <string name="close_and_launch_title">セットアップウィザードを閉じています</string>
+    <string name="server_error">Googleサーバーとの通信中に問題が発生しました。</string>
+    <string name="server_error_help">しばらくしてからもう一度お試しください。</string>
+    <string name="network_unreliable">サーバーとの安定した接続を確立できません。</string>
+    <string name="network_unreliable_help">一時的な問題か、Android搭載端末がデータサービスに対応していない可能性があります。引き続き問題が発生する場合は、お客様サポートにお問い合わせください。</string>
+    <string name="invalid_login_character">無効な文字です。使用できるのは0～9、a～z、A～Z、ピリオドのみです。</string>
+    <string name="invalid_password_character">パスワードの文字が無効です。</string>
+    <string name="add_apn">ワイヤレス設定</string>
+    <string name="setup_google_account_title">Googleアカウントの設定</string>
+    <string name="setup_complete_title">セットアップ完了</string>
+    <string name="cant_be_blank">フィールドは空にできません。</string>
+    <string name="calendar">Googleカレンダー</string>
+    <string name="talk">Googleトーク</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android搭載携帯がデータサービスに接続されていません。この情報を表示するにはブラウザで %s にアクセスしてください。</string>
+    <string name="field_cant_be_blank">このフィールドは必須です。</string>
+    <string name="field_invalid_domain">無効なドメイン名です</string>
+    <string name="field_invalid_user">無効なユーザー名です</string>
+    <string name="field_invalid_user_domain">メールアドレスではなく、ユーザー名のみ入力してください</string>
+    <string name="setup_device_title">^1のセットアップ</string>
+    <string name="dont_have_an_account">Googleアカウントをお持ちでない場合</string>
+    <string name="create_one_now">作成は簡単。今すぐ作成しよう。</string>
+    <string name="already_have_an_account">Googleアカウントをお持ちの場合</string>
+    <string name="sign_in_with_google_account">このAndroid搭載端末で使用するGoogleアカウントでログインしてください。</string>
+    <string name="skip_message">後でアカウントを作成する場合</string>
+    <string name="delayed_gaia_agreement">" 次に進むことにより、"<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>と<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="plus_query_title">Google+に参加する</string>
+    <string name="plus_query_text">Google+は、現実の世界と同じような情報共有をウェブ上で可能にします。</string>
+    <string name="circles_subtitle">サークル</string>
+    <string name="circles_text">大事な情報をオンラインで共有する一番簡単な方法です。</string>
+    <string name="uploads_subtitle">インスタントアップロード</string>
+    <string name="uploads_text">すべてのデバイスの画像を簡単に同期させることができます。</string>
+    <string name="huddle_text">サークル内のすべての人にグループメッセージを送信できます。</string>
+    <string name="plus_declined_button_label">今は設定しない</string>
+    <string name="plus_accepted_button_label">Google+に参加する</string>
+    <string name="plus_name_check_title">Google+に問い合わせ中...</string>
+    <string name="plus_name_check_text">これには数分かかることがあります。</string>
+    <string name="plus_faq_title">Google+へようこそ</string>
+    <string name="plus_faq_text" formatted="false">"Google+では、友だちに見つけてもらうための公開プロフィールを作成します。あなたのメールアドレスを知っている人なら誰でも、プロフィールを検索して表示できます。
+
+ウェブのいたるところにある+1ボタンをクリックするとおすすめの内容を世界と共有することができます。あなたのプロフィールと+1した内容は検索、広告、ウェブ上で公開されます。
+
+今のところプロフィールには名前（%s %s）だけが表示されています。画像や略歴などの情報はGoogle+を使い始めてから追加できます。"</string>
+    <string name="dasher_warning">%sの管理者はすべてのGoogle+データを所有しており、あなたの許可なくいつでもプロフィールを削除/変更できます。</string>
+    <string name="picassa_info_title">PicasaとGoogle+</string>
+    <string name="picassa_info_text" formatted="false">Picasaウェブアルバムの画像と動画をGoogle+でも利用できます。コメントの名前は「%s」ではなく「%s %s」となります。Google+で画像を共有すると、その相手はさらに別のユーザーとその画像を共有できます。アルバムの表示設定は変更されません。いつでも設定を変更して他での共有を制限できます。</string>
+    <string name="name_title">名前</string>
+    <string name="name_title_plus">あなたのGoogle+名</string>
+    <string name="name_title_local">この携帯端末の所有者...</string>
+    <string name="name_text">名前は端末やGoogleサービスのカスタマイズに使用されます。</string>
+    <string name="name_text_local">携帯端末では一部のアプリをカスタマイズする際にユーザーの名前が使用されます。</string>
+    <string name="bad_name_title">この名前を使用</string>
+    <string name="invalid_name_title">この名前は使用できません</string>
+    <string name="bad_name_display">%1$s %2$s</string>
+    <string name="bad_name_text">"この名前をGoogle+で使用するにはGoogleチームの審査を受ける必要があります。ご希望の名前がGoogleの名前付けポリシーに違反している場合、プロフィールが停止されることがあります。プロフィールが停止されると、有効なプロフィールが必要とされるGoogleサービスの利用が制限されます。
+
+"<annotation id="learn_more">詳細</annotation></string>
+    <string name="bad_name_text2">"これをGoogle+の名前として使用するには審査を受ける必要があります。Google+の名前付けポリシーに違反している場合、プロフィールが停止されることがあります。その場合は、Google+をはじめプロフィールに関連付けられているサービスの一部の機能が利用できなくなります。
+
+"<annotation id="learn_more">詳細</annotation></string>
+    <string name="invalid_name_text">この名前は無効な文字を含んでいるためGoogle+では使用できません。</string>
+    <string name="invalid_nickname_text">この名前は無効な文字を含んでいるためGoogle+では使用できません。ニックネーム、以前の名前、肩書きを使用したい場合は、参加後にプロフィールに追加できます。</string>
+    <string name="invalid_other_text">この名前はGoogle+では使用できません。</string>
+    <string name="bad_name_agree_text">上記の利用規約に同意し、この名前を使用します。</string>
+    <string name="bad_name_decline_button_label">名前を変更</string>
+    <string name="bad_name_agree_button_label">審査のため名前を送信</string>
+    <string name="bad_name_skip_button_label">Google+をスキップ</string>
+    <string name="photo_title">あなたの写真</string>
+    <string name="photo_text">この写真は連絡先レコードで使用されます。後でユーザーアプリケーションで変更できます。</string>
+    <string name="photo_text_es">Google+で友だちに公開する写真を撮影します。後で新しい画像を選ぶことができます。</string>
+    <string name="photo_button_label">写真を撮影</string>
+    <string name="retake_photo_button_label">写真を撮り直す</string>
+    <string name="photo_failure">カメラを起動できません</string>
+    <string name="crop_failure">写真をトリミングできません</string>
+    <string name="open_keyboard_message">開始するにはキーボードをスライドして開きます。</string>
+    <string name="open_keyboard_message_to_continue">続行するにはキーボードをスライドして開きます。</string>
+    <string name="emergency_dial">緊急通報</string>
+    <string name="change_language">言語を変更</string>
+    <string name="close_keyboard_message">続行するにはキーボードをスライドして閉じます。</string>
+    <string name="communicating_message">携帯端末からGoogleに接続してアカウントにログインしようとしています。この作業には最大5分かかります。</string>
+    <string name="creating_account_title">アカウントを保存中...</string>
+    <string name="checking_username_message">"お使いの端末はご希望の名前が使用できるかどうかGoogleに確認しています。
+
+この処理には数分かかることがあります。"</string>
+    <string name="adding_account_title">アカウントを保存中...</string>
+    <string name="account_setup_network_failure_title">Googleに接続できませんでした</string>
+    <string name="account_setup_network_failure_text">もう一度試すか、今はスキップしてください。</string>
+    <string name="plus_failure_title">しばらくしてからGoogle+への参加をお試しください</string>
+    <string name="plus_failure_new_account_text">Googleアカウントが作成されましたが、Google+への参加リクエストは正常に処理されませんでした。ブラウザから plus.google.com にアクセスしてもう一度お試しください。</string>
+    <string name="plus_failure_text">Google+への参加リクエストが正常に処理されませんでした。ブラウザから plus.google.com にアクセスしてもう一度お試しください。</string>
+    <string name="login_title">メールアドレスとパスワードの入力</string>
+    <string name="login_task_title">ログインしています</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">パスワード</string>
+    <string name="sign_in_agreement">" ログインすることにより、"<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>と<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="create_prompt">" Googleアカウントをお持ちでない場合、"<annotation id="create_account">今すぐアカウントを作成</annotation>できます。</string>
+    <string name="create">作成</string>
+    <string name="create_message">Googleアカウントをお持ちでない場合</string>
+    <string name="now_signing_in">ログイン中...</string>
+    <string name="now_verifying_domain">ドメインを探しています...</string>
+    <string name="sign_in_with_google_account_short">Googleアカウントでログイン:</string>
+    <string name="browser_sign_in_explanation">ウェブブラウザを必要とする特別なログインにはこの画面を使用してください。</string>
+    <string name="gls_browser_login_intro_message">このAndroid搭載携帯からGoogleまたはGoogle Appsのアカウントにアクセスできません。再承認が必要です。</string>
+    <string name="enter_domain_name">会社のドメイン名を入力してください:</string>
+    <string name="enter_user_name">^1のユーザー名とパスワードを入力します:</string>
+    <string name="inactive_domain">" このアカウントは無効なドメインに属しているため使用できません。"<b>^1</b>のドメイン管理者に問い合わせるか、別のアカウントでログインしてください。</string>
+    <string name="invalid_username">入力したユーザー名は無効です。</string>
+    <string name="web_login_error_title">申し訳ありません...</string>
+    <string name="web_login_error_desc">"^1にある会社のサーバーへの接続に問題が発生しました。
+
+エラー情報:
+"</string>
+    <string name="web_login_error_redirects">ウェブログインページのリダイレクトが多すぎます</string>
+    <string name="web_login_error_http">HTTPエラー^1: ^2</string>
+    <string name="captcha_instructions">表示されているテキストをここに入力してください:</string>
+    <string name="create_google_account">メールアドレスを作成</string>
+    <string name="example_usernames">例: JSmith、John.Smith</string>
+    <string name="create_account_agreement">アカウントを作成することにより、<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>と<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="background_task_error">新しいGmailアカウントが作成されましたが、この端末のアカウントに追加する際にエラーが発生しました。もう一度お試しいただくか、新しいアカウントに手動でログインするか、アカウントの作成をスキップしてください。</string>
+    <string name="retry_button_label">再試行</string>
+    <string name="login_button_label">手動でログイン</string>
+    <string name="account_already_has_gmail">このアカウントでは既にGmailを使用しています。</string>
+    <string name="error_account_disabled">"このアカウントは無効になっています。
+
+（詳しくはウェブブラウザで http://google.co.jp/accounts にアクセスしてください。）"</string>
+    <string name="no_network">ネットワークに接続していません。</string>
+    <string name="no_network_help">一時的な問題か、Android搭載端末がデータサービスに対応していない可能性があります。モバイルネットワークに接続された状態でもう一度試すか、Wi-Fiネットワークに接続してください。</string>
+    <string name="no_network_help_wifi_only">一時的な問題の可能性があります。もう一度お試しいただくか別のWi-Fiネットワークに接続してください。</string>
+    <string name="error_login_failed">"ユーザー名とパスワードが一致しません。もう一度お試しください。
+
+アカウント情報を復元するには、google.com/accounts/recovery/にアクセスします。"</string>
+    <string name="error_account_not_verified">"このアカウントは確認されていません。メールを確認し、メールに記載されているリンク先にアクセスしてこのアカウントを確認してください。
+
+（アカウント情報を忘れた場合は、パソコンで http://www.google.co.jp/accounts/recovery にアクセスしてください。）"</string>
+    <string name="add_account_init">アカウント作成ページを読み込み中...</string>
+    <string name="add_account_init_for_update_credentials">認証情報の更新ページを読み込み中...</string>
+    <string name="add_account_init_for_add_account">アカウント追加ページを読み込み中...</string>
+    <string name="add_account_pageload" />
+    <string name="add_account_final">新しいアカウントを作成中...</string>
+    <string name="add_account_final_adding">アカウントを追加中...</string>
+    <string name="add_account_final_updating">認証情報を更新中...</string>
+    <string name="add_account_init_waiting_for_network">ネットワークの準備完了まで待機しています...</string>
+    <string name="exit_menu_item">ブラウザログインを終了</string>
+    <string name="creating_account">ユーザーアカウントを作成中...</string>
+    <string name="creating_profile">プロフィールを作成しています...</string>
+    <string name="name_check">名前を確認しています...</string>
+    <string name="checking_account">使用できるか確認しています...</string>
+    <string name="try_a_different_username">別のユーザー名をお試しください</string>
+    <string name="is_not_available">ユーザー名<b>^1</b>は使用できません。</string>
+    <string name="suggestions_hint">タップして候補を表示</string>
+    <string name="suggest_username_next_button_label">ユーザー名の変更</string>
+    <string name="hint_size">" "<b>^1</b>が6文字未満か30文字を超えています。</string>
+    <string name="hint_numbers_only">" "<b>^1</b>に文字が含まれていません。</string>
+    <string name="hint_illegal_chars">" "<b>^1</b>"に使用できるのは、文字、数字、
+ピリオドのみです。"</string>
+    <string name="doesnt_use_gmail">" "<b>^1</b>ではGmailを使用していません</string>
+    <string name="sign_in">ログイン</string>
+    <string name="sign_in_browser">ブラウザログイン</string>
+    <string name="here_are_alternatives">ユーザー名の候補:</string>
+    <string name="alternatives_list_title">ユーザー名候補</string>
+    <string name="alternatives_list_hint">タップして候補を表示</string>
+    <string name="password_title">パスワードを作成</string>
+    <string name="choose_a_password">パスワード</string>
+    <string name="confirm_password">パスワードの再入力</string>
+    <string name="too_short">短すぎます</string>
+    <string name="security_question">" "<b>"セキュリティ
+保護用の質問"</b></string>
+    <string name="security_questions_title">セキュリティ保護用の質問</string>
+    <string name="answer">" "<b>回答</b></string>
+    <string name="password_mismatch">パスワードが一致しません。再入力してください。</string>
+    <string name="your_account_was_created">アカウントが作成されました。</string>
+    <string name="eight_chars_min">（8文字以上）</string>
+    <string name="verify_your_profile">プロフィールの確認</string>
+    <string name="error_not_logged_in">ユーザーがログインしていません。</string>
+    <string name="error_username_unavailable">このユーザー名は使用できません。</string>
+    <string name="error_bad_password">パスワードの安全性が低いか無効な文字が含まれています。別のパスワードをお試しください。</string>
+    <string name="error_bad_username">ユーザー名が無効です。</string>
+    <string name="loading">読み込み中...</string>
+    <string name="existing_account_error_title">アカウントが既に存在します</string>
+    <string name="existing_account_error_text">アカウント^1は既にこのAndroid 搭載携帯に追加されています</string>
+    <string name="submission_title">申し訳ありません...</string>
+    <string name="submission_error_text">エラーが発生しました。もう一度お試しください。</string>
+    <string name="sync_intro_title">アカウントの同期</string>
+    <string name="syncing_message">" "<font size="17">"Googleアプリケーションのデータを同期中です。
+"<font height="17">"
+"</font>Googleアカウントからデータを同期している間、画面の上部のステータスバーに%i同期中のアイコンが表示されます。初回の同期には、連絡先、メール、カレンダーの予定、その他のGoogleアプリデータの量によって数分かかることがあります。</font></string>
+    <string name="account_tos_title">アカウント作成の完了</string>
+    <string name="account_tos_plus_title">Google+への参加の完了</string>
+    <string name="account_tos_account_title">アカウントを完了</string>
+    <string name="account_tos_google_title">Google+への参加の完了</string>
+    <string name="i_accept">同意する</string>
+    <string name="android_privacy_policy_title">プライバシーポリシーの続き</string>
+    <string name="google_terms_of_service_title">アカウント作成の完了</string>
+    <string name="google_privacy_policy_title">Googleプライバシーポリシー</string>
+    <string name="google_plus_privacy_policy_title">Google+プライバシーポリシー</string>
+    <string name="allow_personalized_content">Google以外のウェブサイトでコンテンツや広告をカスタマイズできるよう、Googleに個人情報の使用を許可する。</string>
+    <string name="enable_web_history">ウェブ履歴を有効にする。</string>
+    <string name="learn_more"><annotation id="learn_more">詳細</annotation></string>
+    <string name="google_plus_tos_login">Google+アカウントを作成すると、<annotation id="google_plus_privacy">Google+</annotation>のプライバシーポリシーに同意したことになります。</string>
+    <string name="google_plus_tos_signup">下記の[<b>同意する</b>]をタップすることにより、<annotation id="tos">利用規約</annotation>、<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>、<annotation id="google_plus_privacy">Google+のプライバシーポリシー</annotation>、<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="account_creation_tos">下記の[<b>同意する</b>]をタップすることにより、<annotation id="tos">利用規約</annotation>、<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>、<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="gender_prompt">性別</string>
+    <string name="gender_hint">性別をお選びください</string>
+    <string name="account_intro_title">Googleアカウント</string>
+    <string name="account_intro_required_title">Powered by Google</string>
+    <string name="account_intro_recommended_title">Googleを利用する</string>
+    <string name="common_message">"Googleアカウントを使用すると、次のメリットがあります。
+
+"<li><ul>管理しているすべての情報をどこからでも閲覧、整理できます。</ul></li>"
+
+"<li><ul>データを自動的にバックアップできます。</ul></li>"
+
+"<li><ul>Googleのサービスをどこからでも簡単に利用できます。</ul></li></string>
+    <string name="add_account_message">" 複数のGoogleアカウント（たとえば自宅用と仕事用）を使用できます。Googleアカウントを追加するには["<b>ログイン</b>]または[<b>アカウントを作成</b>]をタップしてしてください。</string>
+    <string name="account_intro_default_message">Googleアカウントがあればすべてのデータを安全に保管できます。</string>
+    <string name="account_intro_custom_endtext">%sをお使いですか？今すぐログインしてください。</string>
+    <string name="account_intro_simple_message">既存のアカウントを追加するか、新しいアカウントを作成しますか？</string>
+    <string name="learn_more_title"><annotation id="learn_more">詳細</annotation></string>
+    <string name="learn_more_account_intro">"Googleアカウントを使用すると、
+"<li><ul>どこからでも自分の情報を閲覧し、整理することができます。<li>メールや連絡先、音楽、写真などのデータを自動的にバックアップできます。</li><li>連絡先、カレンダー、マップなど他にもいろいろなGoogleサービスをどこからでも簡単に利用できます。</li></ul></li></string>
+    <string name="learn_more_account_intro_title">Googleアカウントについて</string>
+    <string name="learn_more_web_history">"ウェブ履歴を利用すると、過去の検索内容やアクセスしたサイトに基づいて検索結果をさらにカスタマイズできます。
+
+ウェブ履歴のON/OFFの切り替え、表示、管理方法については、www.google.com/history/?hl=ja をご覧ください。"</string>
+    <string name="learn_more_web_history_title">ウェブ履歴について</string>
+    <string name="learn_more_bad_name">Google+では一般的な名称を使用する必要があります。プロフィールは企業、組織、家族などではなく個人を表すものです。名前には姓と名の両方を含め、1つの言語で指定してください。職業や肩書き、不要な句読点は含めないでください。登録が完了したら、プロフィールの[他の名前]フィールドにニックネームや別名を指定して関連付けることができます。</string>
+    <string name="learn_more_bad_name_title">名前付けポリシーについて</string>
+    <string name="wait_for_device_country_title">アカウント設定</string>
+    <string name="wait_for_device_country_msg">携帯端末の情報を収集中。この処理には最大30秒かかります。</string>
+    <string name="reactivate_account_message">" Google Mailアカウントを追加する必要があります。
+
+Google Mailユーザー名 ( "<b>^1</b>" ) が既にこのアカウントに関連付けられていますが、このユーザー名は現在有効ではありません。
+
+このユーザー名を再度有効にする場合は[次へ]をタップしてください。
+
+別のアカウントを使用する場合は[戻る]ボタンを押して、別のアカウントでログインするか、別のアカウントを作成してください。"</string>
+    <string name="reactivating_account">アカウントを有効にしています...</string>
+    <string name="your_account_was_reactivated">アカウントが有効になりました。</string>
+    <string name="recovery_title">予備の情報</string>
+    <string name="account_recovery_info">パスワードを忘れた場合は、セキュリティ保護用の質問に答えて再設定リンクを別のメールアドレスに送信できます。</string>
+    <string name="security_question_prompt">セキュリティ保護用の質問を選んでください</string>
+    <string name="secondary_email_label">予備のメールアドレス</string>
+    <string name="invalid_email">"入力したメールアドレスが無効です。
+例: joe@example.com"</string>
+    <string name="invalid_email_primary">予備のメールアドレスには、作成するアドレスとは違うアドレスを指定してください</string>
+    <string name="backup_consent_title">設定のバックアップ</string>
+    <string name="backup_consent_message">"Googleアカウントを使用して、アプリや設定（ブックマークやWi-Fiパスワードなど）、その他のデータをバックアップします。以前にアカウントをバックアップしている場合は、今すぐお使いの携帯端末に復元できます。
+
+バックアップの設定は[設定]からいつでも変更できます。"</string>
+    <string name="backup_consent_message_no_restore">"Googleアカウントを使用して、アプリや設定（ブックマークやWi-Fiパスワードなど）、その他のデータをバックアップします。
+
+バックアップの設定は[設定]からいつでも変更できます。"</string>
+    <string name="backup_consent_howto_disable_message">データのバックアップ設定は、[設定]アプリケーションの[バックアップとリセット]で変更できます。</string>
+    <string name="backup_consent_yes_agree">Googleアカウントでこの端末を常にバックアップする</string>
+    <string name="restore_consent_yes_agree">Googleアカウントからこの端末に復元する</string>
+    <string name="restore_disable">復元を無効にする</string>
+    <string name="restore_enable">復元を有効にする</string>
+    <string name="restore_enabled">"以前にバックアップした設定があれば、
+復元されます。"</string>
+    <string name="restore_disabled">バックアップから設定が復元されません。</string>
+    <string name="restoring_title">復元しています...</string>
+    <string name="restoring_message">お使いの端末はGoogleに接続してアカウントを復元しようとしています。この作業には最大5分かかります。</string>
+    <string name="restored_title">復元されました</string>
+    <string name="restored_message" />
+    <string name="webview_progress_title">ドメインに接続中...</string>
+    <string name="webview_progress_verbose_message">"会社のサーバーからログイン情報を受信しています。この処理には数分かかることがあります。
+完了すると、会社のログインページが表示されます。"</string>
+    <string name="enterprise_unmanaged_domain">このドメインではGoogle Appsを使用していません。ドメイン名を確認して、入力し直してください。</string>
+    <string name="gls_notification_title">アカウントにログインしてください</string>
+    <string name="gls_notification_new_account">^1アカウントが必要です</string>
+    <string name="gls_notification_new_account_youtube">YouTubeアカウントが必要です</string>
+    <string name="gls_notification_login_error">タップしてアカウントにログインしてください。</string>
+    <string name="gls_ui_add_account_title">アカウント設定</string>
+    <string name="gls_ui_google_account_subtitle">Googleアカウント</string>
+    <string name="gls_ui_activity_title">Googleにログイン</string>
+    <string name="gls_ui_activity_title_browser_signin">ブラウザログイン</string>
+    <string name="gls_ui_activity_title_enterprise">エンタープライズにログイン</string>
+    <string name="gls_ui_activity_title_youtube">YouTubeにログイン</string>
+    <string name="gls_ui_activity_title_checking_in">準備しています...</string>
+    <string name="gls_ui_activity_authenticating">認証中...</string>
+    <string name="gls_captcha_activity_message">画像に表示されている文字を入力してください:</string>
+    <string name="gls_captcha_activity_ok_button">完了</string>
+    <string name="gls_error_activity_message">"  "<b>^1</b> へのログイン中にネットワークエラーが発生しました。今すぐ再試行するか、[戻る]ボタンを押してキャンセルしてください。</string>
+    <string name="gls_error_activity_retry_button">再試行</string>
+    <string name="gls_dmagent_activity_message">" このドメインでは携帯端末管理が必要です。Google Apps端末ポリシーアプリケーションをインストールして、アカウント "<b>^1</b> に必要なセキュリティポリシーを適用してください。</string>
+    <string name="gls_dmagent_activity_retry_button">ダウンロード</string>
+    <string name="gls_login_activity_username_label">ユーザー名</string>
+    <string name="gls_login_activity_password_label">パスワード</string>
+    <string name="gls_login_activity_ok_button">ログイン</string>
+    <string name="gls_login_activity_loginfail_text_both">" ユーザー名またはパスワードが無効です。 "<b>^1</b> のアカウントが必要です。もう一度お試しください。</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">入力したパスワードが間違っているかアカウントが変更されています。パスワードを再入力してください。</string>
+    <string name="gls_invalid_two_factor">アカウントの通常のパスワードではなく、アプリケーション固有のパスワードを使用してください。</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">このアカウントのパスワードを入力してください。</string>
+    <string name="gls_enterprise_login_activity_msg">"認証のため^1のエンタープライズアカウントにログインしてください。
+[ログイン]にタップすると、会社のウェブベースのログインページが開きます。"</string>
+    <string name="gls_login_activity_badaccount_text">そのアカウントは対応していないため使用できません。別のアカウントをお試しください。</string>
+    <string name="gls_login_activity_newaccount_text">"  "<b>^1</b> アカウントにログインします。</string>
+    <string name="gls_login_activity_create_youtube">" YouTubeアカウントをお持ちでない場合は、"<a href="http://www.youtube.com/signup">ここ</a>をタップして作成してください。</string>
+    <string name="gls_webview_progress_title">ドメインに接続中...</string>
+    <string name="gls_webview_progress_verbose_message">"会社のサーバーからログイン情報を受信しています。この処理には数分かかることがあります。
+完了すると会社のログインページが表示されます。"</string>
+    <string name="gls_sign_in_button_label">ログイン</string>
+    <string name="gls_back_button_label">戻る</string>
+    <string name="gls_cancel_button_label">キャンセル</string>
+    <string name="gls_exit_account_setup_button_label">アカウント設定を終了</string>
+    <string name="gls_reauthorize_button_label">再承認</string>
+    <string name="permlab_googleAuthPassword">Googleアカウントのパスワードにアクセスする</string>
+    <string name="permdesc_googleAuthPassword">設定したGoogleアカウントのパスワードに直接アクセスすることをアプリケーションに許可します。</string>
+    <string name="header_data_and_synchronization">データと同期</string>
+    <string name="permlab_googleMailSwitch">GmailまたはGoogle Mailを選択してください</string>
+    <string name="permdesc_googleMailSwitch">「Gmail」と「Google Mail」の表示名の切り替えをアプリケーションに許可します。</string>
+    <string name="sync_item_title">%sを同期</string>
+    <string name="grant_credentials_permission_message_header">権限のリクエスト</string>
+    <string name="grant_credentials_permission_message_footer">次の権限がリクエストされています:</string>
+    <string name="grant_credentials_permission_message_app">次のアプリケーションが以降Googleアカウントにアクセスすることを求めています:</string>
+    <string name="grant_permissions_header_text">権限のリクエスト</string>
+    <string name="allow">アクセスの許可</string>
+    <string name="deny">スキップ</string>
+    <string name="permission_request_notification_title">権限がリクエストされました</string>
+    <string name="permission_request_notification_with_subtitle">"次のアカウントにアクセスする権限が
+リクエストされました: %s"</string>
+    <string name="notification_title">ログインエラー: %1$s</string>
+    <string name="account_setup_title">Googleアカウント</string>
+    <string name="signed_in">ログインしました</string>
+    <string name="account_linked_message">%sにログインしてデータを同期しています。</string>
+    <string name="account_created_message">新しいアカウントが作成されました: %s</string>
+    <string name="done_button_label">完了</string>
+    <string name="captcha_message_string">所定の回数以上失敗しました。</string>
+    <string name="login_activity_title">ログイン</string>
+    <string name="show_error_activity_title">ログインできませんでした</string>
+    <string name="login_activity_task_title">ログインしています...</string>
+    <string name="sync_intro_activity_title_first_account">バックアップと復元</string>
+    <string name="sync_intro_activity_title_first_created_account">バックアップ</string>
+    <string name="sync_intro_activity_title">アカウントにログインしました</string>
+    <string name="username">メール</string>
+    <string name="error_invalid_second_factor">アカウントの通常のパスワードではなく、アプリケーション固有のパスワードを使用してください。</string>
+    <string name="error_needs_browser">アカウントにアクセスするには、ウェブでログインする必要があります。[次へ]をタップしてブラウザログインを開始します。</string>
+    <string name="error_unknown">予期しないサーバーエラー: %s</string>
+</resources>

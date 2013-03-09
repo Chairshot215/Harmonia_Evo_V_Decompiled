@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="16.0px" android:paddingBottom="16.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@*android:id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <SeekBar android:id="@*android:id/seekbar" android:paddingLeft="20.0px" android:paddingRight="16.0px" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:paddingLeft="16.0px" android:paddingRight="16.0px" android:paddingBottom="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/volume_media_description" style="@com.htc:style/list_primary_m" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/media_mute_button" android:background="?android:selectableItemBackground" android:paddingLeft="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <SeekBar android:id="@id/media_volume_seekbar" android:paddingLeft="20.0px" android:paddingRight="16.0px" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/volume_seekbar_side_margin" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ringer_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:paddingTop="16.0px" android:paddingBottom="16.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_list_divider" android:scaleType="fitXY" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/ringer_description_text" android:paddingLeft="16.0px" android:paddingRight="16.0px" android:paddingBottom="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/volume_ring_description" style="@com.htc:style/list_primary_m" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ringer_mute_button" android:background="?android:selectableItemBackground" android:paddingLeft="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <SeekBar android:id="@id/ringer_volume_seekbar" android:paddingLeft="20.0px" android:paddingRight="16.0px" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/volume_seekbar_side_margin" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/notification_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:paddingTop="16.0px" android:paddingBottom="16.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_list_divider" android:scaleType="fitXY" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/notification_description_text" android:paddingLeft="16.0px" android:paddingRight="16.0px" android:paddingBottom="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/volume_notification_description" style="@com.htc:style/list_primary_m" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/notification_mute_button" android:background="?android:selectableItemBackground" android:paddingLeft="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <SeekBar android:id="@id/notification_volume_seekbar" android:paddingLeft="20.0px" android:paddingRight="16.0px" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/volume_seekbar_side_margin" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:paddingTop="16.0px" android:paddingBottom="16.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_list_divider" android:scaleType="fitXY" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:paddingLeft="16.0px" android:paddingRight="16.0px" android:paddingBottom="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/volume_alarm_description" style="@com.htc:style/list_primary_m" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/alarm_mute_button" android:background="?android:selectableItemBackground" android:paddingLeft="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <SeekBar android:id="@id/alarm_volume_seekbar" android:paddingLeft="20.0px" android:paddingRight="16.0px" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/volume_seekbar_side_margin" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

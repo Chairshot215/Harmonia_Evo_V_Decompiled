@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/settings_label"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcListPreference android:entries="@array/display_mode_entries" android:title="@string/display_mode_title" android:key="display_mode" android:defaultValue="0" android:dialogTitle="@string/display_mode_title" android:entryValues="@array/display_mode_values" />
+</com.htc.preference.HtcPreferenceScreen>

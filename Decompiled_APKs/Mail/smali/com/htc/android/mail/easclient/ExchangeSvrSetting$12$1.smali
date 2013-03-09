@@ -1,0 +1,78 @@
+.class Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12$1;
+.super Ljava/lang/Object;
+.source "ExchangeSvrSetting.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12;->handleMessage(Landroid/os/Message;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$1:Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12;
+
+
+# direct methods
+.method constructor <init>(Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 1586
+    iput-object p1, p0, Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12$1;->this$1:Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12;
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .prologue
+    .line 1588
+    iget-object v1, p0, Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12$1;->this$1:Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12;
+
+    iget-object v1, v1, Lcom/htc/android/mail/easclient/ExchangeSvrSetting$12;->this$0:Lcom/htc/android/mail/easclient/ExchangeSvrSetting;
+
+    invoke-virtual {v1}, Lcom/htc/android/mail/easclient/ExchangeSvrSetting;->getBaseContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "input_method"
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+
+    .line 1589
+    .local v0, imm:Landroid/view/inputmethod/InputMethodManager;
+    invoke-static {}, Lcom/htc/android/mail/easclient/ExchangeSvrSetting;->access$3200()Lcom/htc/android/mail/easclient/ExchangeSvrSetting;
+
+    move-result-object v1
+
+    #getter for: Lcom/htc/android/mail/easclient/ExchangeSvrSetting;->editSvrName:Landroid/widget/EditText;
+    invoke-static {v1}, Lcom/htc/android/mail/easclient/ExchangeSvrSetting;->access$1100(Lcom/htc/android/mail/easclient/ExchangeSvrSetting;)Landroid/widget/EditText;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
+
+    .line 1590
+    return-void
+.end method

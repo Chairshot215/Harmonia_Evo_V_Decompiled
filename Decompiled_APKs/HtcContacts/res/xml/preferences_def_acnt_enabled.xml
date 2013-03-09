@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/syncGroupPreference" android:key="sync_groups" android:summary="@string/syncGroupPreference_summary">
+        <intent android:targetPackage="com.android.contacts" android:action="android.intent.action.VIEW" android:targetClass="com.android.contacts.ContactsGroupSyncSelector" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/importFromSim">
+        <intent android:targetPackage="com.android.phone" android:mimeType="vnd.android.cursor.item/sim-contact" android:action="android.intent.action.VIEW" android:targetClass="com.android.phone.SimContacts" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/defaultGroupPreference">
+        <intent android:targetPackage="com.android.contacts" android:action="android.intent.action.MAIN" android:targetClass="com.android.contacts.SetDefaultAccount" />
+    </PreferenceScreen>
+</PreferenceScreen>

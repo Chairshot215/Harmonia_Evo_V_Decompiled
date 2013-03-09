@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="305363221" android:versionName="3.5.2214212943.363221" package="com.htc.android.psclient"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES" />
+    <uses-permission android:name="android.htc.connect_to_pc.permission.INTENT" />
+    <permission android:name="android.htc.connect_to_pc.permission.INTENT" android:protectionLevel="signatureOrSystem" />
+    <skip-erased />
+    <application android:label="@string/connect_to_pc_app_label" android:icon="@drawable/icon_launcher_usb2pc" android:process="com.htc.bgp" android:description="@string/htc_corp_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <meta-data android:name="com.htc.appsharing.list.exclude" android:value="true" />
+        <activity android:theme="@style/Theme.usb_to_pc" android:name="UsbConnectionSettings" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/connect_to_pc_app_label" android:name="RestoreUsbSettings" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.usb_to_pc" android:name="SwitchUsbSettings" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Dialog" android:name="WarningMsg" android:launchMode="singleTask" />
+        <service android:name="ConnectToPCService" />
+        <receiver android:name="PSBootEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="UsbConnectedReceiver">
+            <intent-filter>
+                <action android:name="com.htc.android.psclient.SERVER_STARTUP" />
+                <action android:name="com.htc.is.enabled" />
+                <action android:name="com.htc.is.disabled" />
+                <action android:name="com.htc.ml.enabled" />
+                <action android:name="com.htc.ml.disabled" />
+                <action android:name="com.htc.ipt.enabled" />
+                <action android:name="com.htc.ipt.disabled" />
+                <action android:name="INTENT_OPTION_CHANGED" />
+                <action android:name="com.htc.android.ackISOFF" />
+                <action android:name="action.pctoolIsConnected" />
+                <action android:name="android.net.hotspot.HOTSPOT_STATE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="android.hardware.usb.action.USB_CONNECT2PC" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="default_type_change_notify_from_dock" />
+                <action android:name="ask_me_change_notify_from_dock" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.app.admin.intent.ALLOW_INTERNET_SHARING_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="MediaReceiver">
+            <intent-filter>
+                <data android:scheme="file" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

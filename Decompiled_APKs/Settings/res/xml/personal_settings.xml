@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/home_wallpaper_settings_title" android:key="home_wallpaper_settings" android:summary="@string/home_wallpaper_settings_summary" android:order="20" />
+    <com.android.settings.DefaultRingtonePreference android:persistent="true" android:title="@string/default_ringtone_settings_title" android:key="ringtone" android:summary="@string/ringtone_summary" android:order="100" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" android:showDefault="false" android:showSilent="false" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Webb</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">okänt</string>
+    <string name="sharedUserLabel">Google-tjänster</string>
+    <string name="service_label">Systemuppdatering</string>
+    <string name="system_update_activity_name">Systemuppdateringar</string>
+    <string name="system_update_activity_title">Systemuppdateringar</string>
+    <string name="system_update_activity_battery_low_text">Det finns för lite batteri för att installera systemuppdateringen. Anslut laddaren om du vill fortsätta.</string>
+    <string name="system_update_activity_battery_low_charging_text">Du har för lite batteri för att installera systemuppdateringen. Vänta tills batteriet är laddat.</string>
+    <string name="system_update_activity_roaming_text">Det går inte att hämta systemuppdateringar vid roaming.</string>
+    <string name="system_update_requires_restart_status_text">Kräver en omstart</string>
+    <string name="system_update_downloading_status_text">Hämtar</string>
+    <string name="system_update_downloading_wifi_status2_text">Endast via Wi-Fi t.o.m. ^1</string>
+    <string name="system_update_verifying_status_text">Bekräftar</string>
+    <string name="system_update_verification_failed_text">Det gick inte att verifiera</string>
+    <string name="system_update_verified_status_text">Hämtad och verifierad</string>
+    <string name="system_update_download_failed_status_text">Hämtningen misslyckades</string>
+    <string name="system_update_download_retry_button_text">Försök hämta igen</string>
+    <string name="system_update_download_button_text">Hämta</string>
+    <string name="system_update_install_button_text">Starta om och installera</string>
+    <string name="system_update_check_now_button_text">Kontrollera nu</string>
+    <string name="system_update_no_update_content_text">Ditt system är för närvarande uppdaterat</string>
+    <string name="system_update_last_checkin">Senaste sökningen efter uppdateringar gjordes ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Systemuppdatering tillgänglig</string>
+    <string name="system_update_recommended_update_available_notification_message">Visa uppdateringsinformation.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Det gick inte att hämta systemuppdatering.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Det gick inte att hämta. Försök igen.</string>
+    <string name="system_update_error_dialog_title">Fel</string>
+    <string name="system_update_error_downloading_dialog_message">Ett problem inträffade när uppdateringen hämtades.</string>
+    <string name="system_update_error_installing_dialog_message">Ett problem inträffade när uppdateringen installerades.</string>
+    <string name="system_update_install_dialog_label">Systemuppdatering</string>
+    <string name="system_update_install_dialog_message_nonphone">En systemuppdatering är klar för installation. Android-enheten kommer att startas om och installera uppdateringen.</string>
+    <string name="system_update_install_dialog_message_phone">En systemuppdatering är klar för installation. Android-enheten kommer att startas om och installera uppdateringen. Du kan inte ringa några samtal, inte ens nödsamtal, medan installationen pågår.</string>
+    <string name="system_update_install_dialog_battery_low_message">En systemuppdatering är färdig att installeras men telefonen har för lite batteri. Anslut laddaren.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">En systemuppdatering är färdig att installeras men telefonen har för lite batteri. Vänta tills batteriet är laddat.</string>
+    <string name="system_update_install_dialog_now_button">Installera nu</string>
+    <string name="system_update_install_dialog_later_button">Installera senare</string>
+    <string name="system_update_install_dialog_info_button">Mer info…</string>
+    <string name="system_update_downloading_notification_title">Hämtar systemuppdatering</string>
+    <string name="system_update_verifying_notification_title">Verifierar systemuppdatering</string>
+    <string name="system_update_download_dialog_label">Hämta systemuppdatering</string>
+    <string name="system_update_download_dialog_message">En systemuppdatering som kan förbättra Android-enheten är tillgänglig. Om du hämtar den via det trådlösa nätverket kan avgifter tillkomma.</string>
+    <string name="system_update_download_dialog_now_button">Hämta nu</string>
+    <string name="system_update_download_dialog_later_button">Hämta senare</string>
+    <string name="system_update_download_dialog_cancel_button">Avbryt</string>
+    <string name="system_update_countdown_complete">Startar nu om…</string>
+    <string name="system_update_countdown_cancel_button">Avbryt installationen</string>
+    <string name="system_update_complete_label">Systemuppdatering</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Push-prenumerationer</string>
+    <string name="ro_perm_label">läsa snabbmeddelanden</string>
+    <string name="ro_perm_desc">Tillåter att ett program skriver data från innehållsleverantören för Google Talk.</string>
+    <string name="wo_perm_label">skriva snabbmeddelanden</string>
+    <string name="wo_perm_desc">Tillåter att ett program skriver data till innehållsleverantören för Google Talk.</string>
+    <string name="gsf_label">Ramverk för tjänster från Google</string>
+    <string name="search_chats">"Sök i chattar
+efter %1$s"</string>
+    <string name="gtalkservice_label">Googles meddelandetjänst</string>
+    <string name="c2dm_label">Meddelandetjänsten moln till enhet</string>
+    <string name="sendTalkMsg_perm_label">Skickar och tar emot meddelanden och tar emot synkroniseringsmeddelanden från Googles servrar</string>
+    <string name="sendTalkMsg_perm_desc">Används för att skicka moln till enhet-meddelanden från servrar och för synkroniseringsmeddelanden. Google Talk använder den här tjänsten för att skicka och ta emot meddelanden och för att synkronisera närvarostatus. Ett skadligt program kan använda den här tjänsten och orsaka överdriven dataanvändning.</string>
+    <string name="perm_receive_data_message_label">ta emot data från Internet</string>
+    <string name="perm_receive_data_message_desc">Tillåter att program tar emot moln till enhet-meddelanden som har skickats från programtjänsten. Tjänsten innebär dataanvändning. Skadliga program kan orsaka överdriven dataanvändning.</string>
+    <string name="perm_data_msg_broadcast_label">Sänd datameddelanden till appar.</string>
+    <string name="perm_data_msg_broadcast_desc">Kan sända datameddelanden som tagits emot från Internet till program som har registrerats för att lyssna efter dem.</string>
+    <string name="perm_receive_xmpp_label">skicka och ta emot XMPP till och från Googles servrar</string>
+    <string name="perm_receive_xmpp_desc">Gör så att appar från Google kan skicka och ta emot XMPP-meddelanden till och från Googles servrar.</string>
+    <string name="perm_xmpp_broadcast_label">Sända XMPP-meddelanden till appar.</string>
+    <string name="perm_xmpp_broadcast_desc">XMPP-meddelanden från Googles servrar kan sändas till appar som registrerats för att identifiera dem.</string>
+    <string name="perm_use_xmpp_endpoint_label">skicka och ta emot XMPP till och från Googles servrar</string>
+    <string name="perm_use_xmpp_endpoint_desc">Gör så att appar från Google kan skicka och ta emot XMPP-meddelanden till och från Googles servrar.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Sänd XMPP-meddelanden till appar.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">XMPP-meddelanden från Googles servrar kan sändas till appar.</string>
+    <string name="permlab_intentVendingOnly">Skicka sändningar till Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Kan skicka sändningar till Android Market och begära installation och borttagningar av appar.</string>
+    <string name="permlab_heartbeat">Skicka puls till Google Talk-server</string>
+    <string name="permdesc_heartbeat">Kan skicka ett pulspaket till Google Talk-servern för att kontrollera anslutningens status.</string>
+    <string name="group_chat">Gruppchatt: %s</string>
+    <string name="default_decline_reason">Jag är tyvärr upptagen just nu.</string>
+    <string name="newMessages_label">Nya chattar</string>
+    <string name="notify_groupchat_label">Inbjudan till gruppchatt</string>
+    <string name="num_unread_chats">%s olästa chattar</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s till %s</string>
+    <string name="subscription_notify_text">%s vill kunna chatta</string>
+    <string name="group_chat_invite_notify_text">Du har fått en inbjudan till gruppchatt från %s</string>
+    <string name="group_chat_invite_dialog_text">%s har bjudit in dig till en gruppchatt.</string>
+    <string name="message_too_long">Det går inte att skicka meddelanden som är längre än 2 000 tecken.</string>
+    <string name="missed_video_chat_notification">Du missade en inbjudan till videochatt</string>
+    <string name="missed_voice_chat_notification">Du missade en inbjudan till röstchatt</string>
+    <string name="missed_video_chat_notification_no_wifi">Du missade en inbjudan till en videochatt eftersom telefonen inte var ansluten till ett WiFi-nätverk</string>
+    <string name="missed_voice_chat_notification_no_wifi">Du missade en inbjudan till en röstchatt eftersom telefonen inte var ansluten till ett WiFi-nätverk</string>
+    <string name="missed_video_chat_message">%1$s försökte starta en videochatt med dig</string>
+    <string name="missed_voice_chat_message">%1$s försökte starta en röstchatt med dig</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s försökte inleda en videochatt med dig när din telefon inte var ansluten till ett WiFi-nätverk</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s försökte inleda en röstchatt med dig när din telefon inte var ansluten till ett WiFi-nätverk</string>
+    <string name="end_cause_user_unavailable_video">%1$s var inte tillgänglig för videochatt.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s var inte tillgänglig för röstchatt.</string>
+    <string name="end_cause_sent_terminate_video">Du avslutade videochatten med %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Du avslutade röstchatten med %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s avslutade videochatten.</string>
+    <string name="end_cause_received_terminate_voice">%1$s avslutade röstchatten.</string>
+    <string name="end_cause_network_problem_video">Tyvärr! Videochatten med %1$s misslyckades på grund av ett nätverksproblem. Försök igen.</string>
+    <string name="end_cause_network_problem_voice">Tyvärr! Röstchatten med %1$s misslyckades på grund av ett nätverksproblem. Försök igen.</string>
+    <string name="conn_auth_error_notify_ticker">Google Talk-autentiseringen misslyckades</string>
+    <string name="conn_auth_error_notify_title">Google Talk-autentiseringen misslyckades</string>
+    <string name="conn_auth_error_title">Autentiseringsfel</string>
+    <string name="conn_auth_error_message">Det gick inte att logga in på Google Talk. Om det här är ett Google Apps-konto kontrollerar du att chattjänsten är aktiverad för kontot.</string>
+    <string name="conn_auth_error_button_retry">Försök igen</string>
+    <string name="conn_auth_error_button_cancel">Avbryt</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Välkommen till ^1</string>
+    <string name="setup_wizard_title">Installationsguide</string>
+    <string name="error_dialog_title">Obs!</string>
+    <string name="next_button_label">Nästa</string>
+    <string name="back_button_label">Tillbaka</string>
+    <string name="sign_in_button_label">Logga in</string>
+    <string name="create_button_label">Skapa</string>
+    <string name="skip_button_label">Hoppa över</string>
+    <string name="first_name">Förnamn</string>
+    <string name="last_name">Efternamn</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Avbryt</string>
+    <string name="done_button_label">Slutför registrering</string>
+    <string name="try_again_button_label">Försök igen</string>
+    <string name="close_button_label">Stäng</string>
+    <string name="edit_text_help">Tryck på en textruta om du vill börja skriva</string>
+    <string name="add_a_google_account">Lägg till ett Google-konto</string>
+    <string name="no_sim_setup_wireless">Inget SIM-kort har installerats så det går inte att ansluta enheten till ett mobilt nätverk för röst- och datatjänster. Du kan ansluta enheten till ett Wi-Fi-nätverk utan SIM-kort.</string>
+    <string name="setup_wifi_button_label">Anslut till WiFi</string>
+    <string name="no_network">Du har ingen nätverksanslutning.</string>
+    <string name="no_network_help">Det kan bero på ett tillfälligt fel eller så är Android-enheten inte anpassad för datatjänster. Försök igen när enheten är ansluten till ett mobilt nätverk eller ett WiFi-nätverk.</string>
+    <string name="server_error">Ett problem inträffade när du kommunicerade med Googles servrar.</string>
+    <string name="server_error_help">Försök igen senare.</string>
+    <string name="network_unreliable">Det går inte att upprätta en pålitlig dataanslutning till servern.</string>
+    <string name="network_unreliable_help">Det kan bero på ett tillfälligt fel eller så är Android-enheten inte anpassad för datatjänster. Ring kundtjänst om problemet kvarstår.</string>
+    <string name="invalid_login_character">Ogiltiga tecken. Endast 0-9, a-z, A-Z och punkter tillåts.</string>
+    <string name="invalid_password_character">Ogiltigt tecken i lösenordet.</string>
+    <string name="add_apn">Trådlösa inställningar</string>
+    <string name="setup_google_account_title">Skapa ditt Google-konto</string>
+    <string name="setup_complete_title">Konfiguration klar</string>
+    <string name="cant_be_blank">Fältet får inte vara tomt.</string>
+    <string name="calendar">Google Kalender</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android-enheten är inte ansluten till en datatjänst. Besök %s från en dator som är ansluten till Internet om du vill visa informationen nu.</string>
+    <string name="field_cant_be_blank">Fältet får inte vara tomt.</string>
+    <string name="field_invalid_domain">Detta är inte ett giltigt domännamn</string>
+    <string name="field_invalid_user">Detta är inte ett giltigt användarnamn</string>
+    <string name="field_invalid_user_domain">Ange endast användarnamn, inte e-postadress</string>
+    <string name="field_invalid_login">Detta är inte ett giltigt kontonamn</string>
+    <string name="about_accounts_message"><font size="17">"Det är enkelt att konfigurera Android-enheten! Det enda du behöver är ett Google-konto.
+"<font height="17">"
+"</font><b>Varför krävs det ett Google-konto?</b>"
+"<font height="3">"
+"</font>"Om du har ett Google-konto synkroniseras alla appar från Google automatiskt mellan Android-enheten och datorn, oavsett var du gör ändringen.
+"<font height="17">"
+"</font><b>Har du redan ett Google-konto?</b>"
+"<font height="3">"
+"</font>"Då är du klar! Tryck bara på Logga in på nästa sida.
+"<font height="17">"
+"</font><b>Har du inget Google-konto?</b>"
+"<font height="3">"
+"</font>"Det gör inget. Tryck på Skapa på nästa sida så hjälper vi dig att registrera ett konto.
+"<font height="17">"
+"</font><b>Tryck på Nästa när du vill sätta igång!</b>"
+"</font></string>
+    <string name="fling_help_message">"Rulla med fingret upp och ned på skärmen.
+(Tryck på det här meddelandet om du vill ta bort det.)"</string>
+    <string name="setup_device_title">Registrera din ^1</string>
+    <string name="dont_have_an_account">Har du inget Google-konto?</string>
+    <string name="create_one_now">Skapa ett nu! Det är enkelt.</string>
+    <string name="already_have_an_account">Har du redan ett Google-konto?</string>
+    <string name="sign_in_with_google_account">Logga in med det Google-konto som du vill ska kopplas till Android-enheten.</string>
+    <string name="skip_message">Vill du registrera ett konto senare?</string>
+    <string name="touch_to_begin">Tryck på Android när du vill börja.</string>
+    <string name="delayed_gaia_agreement">När du fortsätter godkänner du <annotation id="google_privacy">Googles sekretesspolicy</annotation> och <annotation id="android_privacy">ytterligare</annotation> sekretesspolicyer.</string>
+    <string name="open_keyboard_message">Öppna tangentbordet när du vill börja.</string>
+    <string name="open_keyboard_message_to_continue">Öppna tangentbordet för att fortsätta.</string>
+    <string name="emergency_dial">Nödsamtal</string>
+    <string name="change_language">Byt språk</string>
+    <string name="signing_in">Loggar in…</string>
+    <string name="close_keyboard_message">Skjut tillbaka tangentbordet när du vill fortsätta.</string>
+    <string name="communicating_message">Android-enheten måste kommunicera med Googles servrar när ditt konto registreras. Det kan ta upp till fem minuter.</string>
+    <string name="communicating_message_domain">Android-enheten måste kommunicera med Googles servrar för att hitta domäninformationen. Det kan ta upp till fem minuter.</string>
+    <string name="username">Användarnamn</string>
+    <string name="domain_name">exempel.se</string>
+    <string name="password">Lösenord</string>
+    <string name="sign_in_agreement">När du registrerar dig godkänner du <annotation id="google_privacy">Googles sekretesspolicy</annotation> och <annotation id="android_privacy">ytterligare</annotation> sekretesspolicyer.</string>
+    <string name="create">Skapa</string>
+    <string name="create_message">Behöver du ett Google-konto?</string>
+    <string name="now_signing_in">Loggar in…</string>
+    <string name="now_verifying_domain">Letar efter din domän…</string>
+    <string name="sign_in_with_google_account_short">Logga in med ditt Google-konto:</string>
+    <string name="browser_sign_in_explanation">Använd den här skärmen om du har särskilda inloggningsskäl som kräver en webbläsare.</string>
+    <string name="gls_browser_login_intro_message">Ingen åtkomst till ditt Google- eller Google Apps-konto. Ny auktorisering krävs.</string>
+    <string name="enter_domain_name">Ange ditt företags domännamn:</string>
+    <string name="enter_user_name">Ange användarnamn och lösenord för ^1:</string>
+    <string name="inactive_domain">Det här kontot kan inte användas eftersom det tillhör en inaktiv domän. Kontakta domänadministratören för <b>^1</b> eller logga in med ett annat konto.</string>
+    <string name="invalid_username">Texten du angav är inte ett giltigt användarnamn.</string>
+    <string name="web_login_error_title">Tyvärr...</string>
+    <string name="web_login_error_desc">"Det gick inte att ansluta till ditt företags servrar på ^1.
+
+Felbeskrivning:
+"</string>
+    <string name="web_login_error_redirects">Sidan för webbinloggning har omdirigerats för många gånger</string>
+    <string name="web_login_error_http">HTTP-fel ^1 : ^2</string>
+    <string name="name_device_label">Ge Android-enheten ett namn:</string>
+    <string name="device_name_hint">Enhetens namn</string>
+    <string name="registering_device">Android-enheten registreras...</string>
+    <string name="error_account_disabled">"Det här kontot har inaktiverats. 
+
+(Besök http://google.com/accounts/recovery om du vill ha mer information.)"</string>
+    <string name="error_login_failed">"Ditt användarnamn och lösenord matchar inte. Försök igen. 
+
+(Besök http://www.google.com/accounts/recovery på datorn om du vill återställa din kontoinformation.)"</string>
+    <string name="error_account_not_verified">"Kontot har inte verifierats. Öppna ditt e-postkonto på datorn och följ länken för att verifiera kontot. 
+
+(Besök http://www.google.com/accounts/recovery på datorn om du vill återställa din kontoinformation.)"</string>
+    <string name="captcha_message_string">Verifiering</string>
+    <string name="captcha_instructions">Ange tecknen du ser i bilden. Bokstäverna är inte skiftlägeskänsliga.</string>
+    <string name="create_google_account">Skapa ett nytt Google-konto</string>
+    <string name="example_usernames">t.ex. JSvensson, Johan.Svensson</string>
+    <string name="create_account_agreement">När du skapar kontot godkänner du <annotation id="google_privacy">Googles sekretesspolicy</annotation> och <annotation id="android_privacy">ytterligare</annotation> sekretesspolicyer.</string>
+    <string name="account_already_has_gmail">Kontot har redan Gmail.</string>
+    <string name="creating_account">Skapar ditt konto…</string>
+    <string name="checking_account">Kontrollerar om användarnamnet är tillgängligt…</string>
+    <string name="try_a_different_username">Försök med ett annat användarnamn</string>
+    <string name="is_not_available"><b>^1</b> är inte tillgänglig.</string>
+    <string name="hint_size"><b>^1</b> innehåller färre än 6 eller mer än 30 tecken.</string>
+    <string name="hint_numbers_only"><b>^1</b> innehåller inte några bokstäver.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" får bara innehålla bokstäver,
+siffror och punkter."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> använder inte Gmail</string>
+    <string name="sign_in">Logga in</string>
+    <string name="sign_in_browser">Webbläsarinloggning</string>
+    <string name="here_are_alternatives">Här är några alternativ:</string>
+    <string name="alternatives_list_title">Förslag på användarnamn</string>
+    <string name="choose_a_password"><b>"Ange ett 
+lösenord"</b></string>
+    <string name="confirm_password"><b>"Bekräfta
+lösenord"</b></string>
+    <string name="password_strength"><b>"Lösenordets
+styrka"</b></string>
+    <string name="too_short">För kort</string>
+    <string name="security_question"><b>"Säkerhetsfråga
+"</b></string>
+    <string name="security_questions_title">Säkerhetsfrågor</string>
+    <string name="answer"><b>Svar</b></string>
+    <string name="password_mismatch">Dina lösenord matchar inte. Försök igen.</string>
+    <string name="your_account_was_created">Ditt konto har skapats!</string>
+    <string name="eight_chars_min">(minst 8 tecken)</string>
+    <string name="just_in_case">Om du förlorar ditt lösenord.</string>
+    <string name="verify_your_profile">Verifiera din profil</string>
+    <string name="signed_in">Inloggad!</string>
+    <string name="error_not_logged_in">Användaren är inte inloggad.</string>
+    <string name="error_username_unavailable">Användarnamnet är inte tillgängligt.</string>
+    <string name="error_bad_password">Lösenordet är för svagt eller innehåller ogiltiga tecken. Försök igen.</string>
+    <string name="error_bad_username">Ogiltigt användarnamn.</string>
+    <string name="loading">Läser in...</string>
+    <string name="submission_title">Tyvärr…</string>
+    <string name="submission_error_text">Ett fel inträffade. Försök igen.</string>
+    <string name="existing_account_error_title">Kontot finns redan</string>
+    <string name="existing_account_error_text">Det finns redan ett ^1-konto på Android-enheten</string>
+    <string name="account_linked_message"><font height="24">Ditt Google-konto har nu kopplats till Android-enheten.</font></string>
+    <string name="syncing_message"><font size="17">"Googles program synkroniserar data nu. 
+"<font height="17">"
+"</font>"%i När ikonen Synkronisering försvinner från statusfältet längst upp på skärmen är hämtningen slutförd.
+"<font height="17">"
+"</font><b>Om statusfältet …</b>"
+"<font height="3">"
+"</font>"När du tar emot ett nytt meddelande eller en annan avisering visas en ikon i statusfältet.
+"<font height="17">"
+"</font>Använd fingret om du vill dra ned statusfältet och öppna aviseringspanelen med information om alla nuvarande aviseringar.</font></string>
+    <string name="i_agree_next">Jag godkänner, fortsätt</string>
+    <string name="android_privacy_policy_title">Ytterligare sekretesspolicy</string>
+    <string name="google_terms_of_service_title">Googles användarvillkor</string>
+    <string name="google_privacy_policy_title">Googles sekretesspolicy</string>
+    <string name="notification_update_title">Ditt konto måste uppdateras</string>
+    <string name="notification_update_message">Tryck här om du vill köra installationsguiden igen</string>
+    <string name="common_message">"För Gmail, säkerhetskopiering och många andra Android-funktioner krävs ett Google-konto.
+
+Tryck på "<b>Nästa</b>" om du vill logga in med ett befintligt Google-konto eller skapa ett nytt Google-konto nu.
+
+Du kan också trycka på "<b>Hoppa över</b> om du vill börja använda din Android direkt. Du kan logga in på ett Google-konto senare i Inställningar, under Konto och synkronisering.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Lägga till ett konto</font>" 
+
+Du kan använda mer än ett Google-konto (till exempel ett privat konto och ett jobbkonto). Det krävs bara några få steg för att lägga till ett Google-konto. 
+
+Tryck på Nästa om du vill fortsätta eller tryck på knappen Tillbaka om du vill avsluta."</string>
+    <string name="reactivate_account_message">"Du måste koppla ett konto för Google Mail till den här Android-enheten. 
+
+Du har redan ett användarnamn för Google Mail ("<b>^1</b>") som är kopplat till det här kontot, men det är inte aktivt för närvarande. 
+
+Tryck på Nästa om du vill aktivera användarnamnet igen och använda det. 
+
+Om du vill använda ett annat konto trycker du på Tillbaka, och loggar in med ett annat konto eller skapar ett nytt."</string>
+    <string name="reactivating_account">Aktivera ditt konto igen…</string>
+    <string name="your_account_was_reactivated">Ditt konto har aktiverats!</string>
+    <string name="account_recovery_info">Använd följande information om du glömmer ditt lösenord och måste återställa det</string>
+    <string name="secondary_email_label"><b>"Alternativ
+e-post"</b></string>
+    <string name="invalid_email">"E-postadressen som har angetts är inte giltig. 
+ Exempel: kalle@exempel.se"</string>
+    <string name="invalid_email_primary">Den alternativa e-postadressen får inte vara samma som den som du skapar</string>
+    <string name="tutorial_intro_title">Lär dig hur du använder din ^1</string>
+    <string name="begin_button_label">Börja</string>
+    <string name="tutorial_intro_message_generic">Vissa saker bör du ha koll på för att få ut så mycket som möjligt av din Android-enhet. <font size="17">"
+"</font>"
+"<li>Så använder du tangentbordet på skärmen</li> <font size="17">"
+"</font>" 
+Tryck på Börja om du vill starta självstudiekursen och lära dig mer."</string>
+    <string name="tutorial_intro_message_setupwizard">Vissa saker bör du ha koll på för att få ut så mycket som möjligt av din Android-enhet. <font size="17">"
+"</font>" 
+"<li>Så använder du tangentbordet på skärmen</li>"
+"<li>Så öppnar du ett Google-konto</li> <font size="17">"
+"</font>" 
+Tryck på Börja om du vill starta självstudiekursen och lära dig mer eller tryck på Hoppa över om du vill hoppa över kursen och fortsätta."</string>
+    <string name="keyboard_tutorial_title">Använda tangentbordet på skärmen</string>
+    <string name="keyboard_tutorial_message">Tryck på ett textfält om du vill öppna tangentbordet och börja skriva. Testa här!</string>
+    <string name="keyboard_tutorial_edittext_hint">Tryck här om du vill börja skriva</string>
+    <string name="done_typing_message">Har du skrivit klart? Tryck på Tillbaka om du vill stänga tangentbordet.</string>
+    <string name="done_button_label_in_tutorial">Klar</string>
+    <string name="backup_consent_title">Säkerhetskopiera mina inställningar</string>
+    <string name="backup_consent_message">Inställningar som bokmärken och Wi-Fi-lösenord kan automatiskt säkerhetskopieras till ditt Google-konto. Om du skaffar en ny Android-enhet (om du till exempel ersätter en enhet som du tappat eller om du köpt en senare version) återställs inställningarna till den nya Android-enheten.</string>
+    <string name="backup_consent_howto_disable_message">Du kan ändra dina inställningar för säkerhetskopiering när som helst under Sekretess i Inställningar.</string>
+    <string name="backup_consent_yes_agree">Säkerhetskopiera inställningar till mitt Google-konto.</string>
+    <string name="restore_disable">Inaktivera återställning</string>
+    <string name="restore_enable">Aktivera återställning</string>
+    <string name="restore_enabled">Om du har säkerhetskopierat dina inställningar tidigare kommer de att återställas.</string>
+    <string name="restore_disabled">Dina inställningar kommer inte att återställas från säkerhetskopian.</string>
+    <string name="webview_progress_title">Ansluter till domän...</string>
+    <string name="webview_progress_verbose_message">"Ditt företags servrar skickar inloggningsuppgifterna. Det kan ta några minuter.
+Sedan visas företagets inloggningssida."</string>
+    <string name="enterprise_unmanaged_domain">Den här domänen använder inte Google Apps. Kontrollera domännamnet och försök igen.</string>
+    <string name="use_location_for_services_agree">Jag godkänner</string>
+    <string name="use_location_for_services_disagree">Godkänn inte</string>
+    <string name="use_location_for_services_title">Använd Min plats</string>
+    <string name="use_location_for_services_text">Vill du tillåta att Google använder plats för förbättrade sökresultat och andra tjänster?</string>
+    <string name="permlab_readGsettings">Läs Googles inställningar</string>
+    <string name="permdesc_readGsettings">Tillåter att programmet läser Googles inställningar.</string>
+    <string name="permlab_writeGsettings">Ändra inställningar för Google</string>
+    <string name="permdesc_writeGsettings">Tillåter att programmet ändrar Googles inställningar.</string>
+    <string name="permlab_readGservices">läs om konfiguration av tjänster från Google</string>
+    <string name="permdesc_readGservices">Tillåter att programmet läser konfigurationsdata för tjänster från Google.</string>
+    <string name="permlab_writeGservices">Ändra konfiguration av tjänster från Google</string>
+    <string name="permdesc_writeGservices">Tillåter att programmet ändrar konfigurationsdata för tjänster från Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">åtkomst till lösenord till Google-konton</string>
+    <string name="permdesc_googleAuthPassword">Ger ett program direktåtkomst till lösenorden till de Google-konton som du har konfigurerat.</string>
+    <string name="permlab_googleMailSwitch">välj varumärket Gmail eller Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Tillåter att appar växlar mellan varumärkena Gmail och Google Mail.</string>
+    <string name="permlab_googleAuth">visa konfigurerade konton</string>
+    <string name="permdesc_googleAuth">Tillåter att ett program ser användarnamnen (e-postadresserna) till de Google-konton du har konfigurerat.</string>
+    <string name="permlab_googleAuth_ALL">åtkomst till alla tjänster från Google</string>
+    <string name="permdesc_googleAuth_ALL">Tillåter att appar loggar in på ALLA tjänster från Google med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_OTHER">åtkomst till andra tjänster från Google</string>
+    <string name="permdesc_googleAuth_OTHER">Tillåter att appar loggar in på ospecificerade tjänster från Google med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_mail">Googles e-posttjänster</string>
+    <string name="permdesc_googleAuth_mail">Tillåter att appar loggar in på Googles e-posttjänster med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_cl">Google Kalender</string>
+    <string name="permdesc_googleAuth_cl">Tillåter att appar loggar in på Google Kalender med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_android">Android-tjänster</string>
+    <string name="permdesc_googleAuth_android">Tillåter att appar loggar in på Android-tjänster med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout-konto</string>
+    <string name="permdesc_googleAuth_sierra">Tillåter att appar loggar in på Google Checkout (så att användaren kan göra inköp) med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_sierraqa">Konto för Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Tillåter att appar loggar in på Google Checkout QA med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Konto för Google Checkouts sandlåda</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Tillåter att appar loggar in på Google Checkouts sandlåda med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Tillåter att appar loggar in på YouTube med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube-användarnamn</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Tillåter att appar ser de användarnamn för YouTube som är kopplade till Google-konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Tillåter att appar loggar in på Google Talk med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_ig">iGoogle-konton</string>
+    <string name="permdesc_googleAuth_ig">Tillåter att appar loggar in på iGoogle med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_lh2">Picasa webbalbum</string>
+    <string name="permdesc_googleAuth_lh2">Tillåter att appar loggar in på Picasa webbalbum med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_mobile">Googles program för mobilen</string>
+    <string name="permdesc_googleAuth_mobile">Tillåter att appar loggar in på Googles mobilappar med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_cp">kontaktuppgifter i Google-konton</string>
+    <string name="permdesc_googleAuth_cp">Tillåter att appar kommer åt kontakt- och profiluppgifterna i konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Tillåter att appar loggar in på Google AdSense med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Tillåter att appar loggar in på Google AdWords med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Tillåter att appar loggar in på Blogger med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Tillåter att appar loggar in på Dodgeball med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Tillåter att appar loggar in på Google Base med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_groups2">Google Grupper</string>
+    <string name="permdesc_googleAuth_groups2">Tillåter att appar loggar in på Google Grupper med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_health">Google Hälsa</string>
+    <string name="permdesc_googleAuth_health">Tillåter att appar loggar in på Google Health med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Tillåter att appar loggar in på JotSpot med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Tillåter att appar loggar in på Knol med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_news">Google Nyheter</string>
+    <string name="permdesc_googleAuth_news">Tillåter att appar loggar in på Google Nyheter med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Tillåter att appar loggar in på Orkut med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_print">Google Böcker</string>
+    <string name="permdesc_googleAuth_print">Tillåter att appar loggar in på Google Böcker med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_sitemaps">Googles verktyg för webbansvariga</string>
+    <string name="permdesc_googleAuth_sitemaps">Tillåter att appar loggar in på Googles verktyg för webbansvariga med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Tillåter att appar loggar in på Google WiFi med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_writely">Google Dokument</string>
+    <string name="permdesc_googleAuth_writely">Tillåter att appar loggar in på Google Dokument med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_wise">Google Dokument</string>
+    <string name="permdesc_googleAuth_wise">Tillåter att appar loggar in på Google Dokument med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_finance">Google Ekonomi</string>
+    <string name="permdesc_googleAuth_finance">"Tillåter att appar loggar in på Google Ekonomi med konton som sparats  på Android-enheten."</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Tillåter att appar loggar in på Google Maps med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Tillåter att appar loggar in på Google App Engine med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_notebook">Google Anteckningsblock</string>
+    <string name="permdesc_googleAuth_notebook">Tillåter att appar loggar in på Google Anteckningsblock med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Tillåter att appar loggar in på Google Voice med konton som sparats på Android-enheten.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Anpassad taligenkänning</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Tillåter att appar loggar in på den anpassade tjänsten för taligenkänning med konton som sparats på Android-enheten.</string>
+    <string name="gls_notification_title">Logga in på ditt konto</string>
+    <string name="gls_notification_new_account">Du behöver ett ^1-konto</string>
+    <string name="gls_notification_new_account_youtube">Du behöver ett YouTube-konto</string>
+    <string name="gls_notification_login_error">Tryck här om du vill logga in på ditt konto.</string>
+    <string name="gls_ui_add_account_title">Kontoinställningar</string>
+    <string name="gls_ui_google_account_subtitle">Google-konto</string>
+    <string name="gls_ui_activity_title">Inloggning för Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Webbläsarinloggning</string>
+    <string name="gls_ui_activity_title_enterprise">Inloggning för företag</string>
+    <string name="gls_ui_activity_title_youtube">Inloggning för YouTube</string>
+    <string name="gls_ui_activity_authenticating">Autentiserar…</string>
+    <string name="gls_captcha_activity_message">Ange tecknen som du ser i bilden:</string>
+    <string name="gls_captcha_activity_ok_button">Klar</string>
+    <string name="gls_error_activity_message">Ett nätverksfel uppstod när du försökte logga in på <b>^1</b>. Försök igen eller klicka på bakåtknappen om du vill avbryta.</string>
+    <string name="gls_error_activity_retry_button">Försök igen</string>
+    <string name="gls_dmagent_activity_message">" Din domän måste hanteras på en mobil enhet. Installera appen Google Apps Device Policy för att tillämpa de säkerhetspolicyer som krävs för kontot "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Hämta</string>
+    <string name="gls_login_activity_username_label">Användarnamn</string>
+    <string name="gls_login_activity_password_label">Lösenord</string>
+    <string name="gls_login_activity_ok_button">Logga in</string>
+    <string name="gls_login_activity_loginfail_text_both">Användarnamnet eller lösenordet är ogiltigt. Du måste ha ett <b>^1</b>-konto. Försök igen.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Du angav fel lösenord eller så har kontot ändrats. Ange lösenordet igen.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Ange kontots lösenord.</string>
+    <string name="gls_enterprise_login_activity_msg">"Logga in på ditt företagskonto på ^1 för autentisering.
+ Tryck på Logga in om du vill öppna företagets webbaserade inloggningssida."</string>
+    <string name="gls_login_activity_badaccount_text">Du kan inte använda kontot i detta sammanhang. Försök med ett annat konto.</string>
+    <string name="gls_login_activity_newaccount_text">Logga in på ditt <b>^1</b>-konto.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Har du inget YouTube-konto? Tryck <a href="http://www.youtube.com/signup">här</a> om du vill skapa ett.</string>
+    <string name="gls_settings_tos_activity_title">Google Legal</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Telefonen är inte ansluten till en datatjänst. Besök %s på en dator som är ansluten till Internet om du vill visa informationen nu.</string>
+    <string name="gls_settings_contributors_activity_title">Medarbetare</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Telefonen är inte ansluten till en datatjänst. Besök %s på en dator som är ansluten till Internet om du vill visa informationen nu.</string>
+    <string name="gls_webview_progress_title">Ansluter till domän...</string>
+    <string name="gls_webview_progress_verbose_message">"Inloggningsuppgifterna skickas från företagets servrar. Det kan ta några minuter.
+Sedan visas företagets inloggningssida."</string>
+    <string name="gls_sign_in_button_label">Logga in</string>
+    <string name="gls_back_button_label">Tillbaka</string>
+    <string name="gls_cancel_button_label">Avbryt</string>
+    <string name="gls_exit_account_setup_button_label">Avsluta kontoinst.</string>
+    <string name="gls_reauthorize_button_label">Auktorisera igen</string>
+    <string name="gls_sign_in_message">Android-enheten måste kommunicera med Googles servrar när ditt konto registreras. Det kan ta upp till fem minuter.</string>
+    <string name="gls_sign_in_title">Loggar in...</string>
+</resources>

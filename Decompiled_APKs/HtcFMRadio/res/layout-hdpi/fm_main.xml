@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc"
+  xmlns:fm="http://schemas.android.com/apk/res/com.htc.fm">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" headerbar:bubble_visibility="invisible" headerbar:progress_visibility="invisible">
+        <com.htc.widget.HeaderBarText android:id="@id/text_title01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/fm_app_name" headerbar:panel_gravity="center_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/btn_power" android:layout_width="wrap_content" android:layout_height="fill_parent" headerbar:panel_gravity="right_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/btn_add" android:layout_width="wrap_content" android:layout_height="fill_parent" headerbar:panel_gravity="right_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/btn_presets" android:layout_width="wrap_content" android:layout_height="fill_parent" headerbar:panel_gravity="right_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <ImageView android:id="@id/bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fmradio_bg_875_108" android:layout_below="@id/header" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/container" android:layout_width="512.0px" android:layout_height="368.0px" android:layout_marginLeft="14.0px" android:layout_marginTop="16.0px" android:layout_marginRight="14.0px" android:layout_below="@id/header">
+        <ImageView android:id="@id/fmradio_on" android:background="@drawable/screen_on" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/top_container" android:layout_width="512.0px" android:layout_height="231.0px">
+            <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:gravity="top|left|center" android:id="@id/text_index" android:layout_width="30.0px" android:layout_height="30.0px" android:layout_marginLeft="5.0px" android:layout_marginTop="7.0px" android:layout_alignParentTop="true" />
+            <TextView android:textSize="85.0px" android:textColor="#fff8f8ff" android:gravity="right|center" android:id="@id/text_freq" android:visibility="invisible" android:layout_width="250.0px" android:layout_height="wrap_content" android:layout_marginLeft="227.0px" android:layout_marginTop="50.0px" android:singleLine="true" android:shadowColor="#ffdcdcdc" android:shadowRadius="2.5" android:layout_alignParentTop="true" />
+            <TextView android:textSize="34.0px" android:textColor="#fff8f8ff" android:ellipsize="marquee" android:gravity="center" android:id="@id/text_name" android:layout_width="350.0px" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:singleLine="true" android:shadowColor="#ffdcdcdc" android:shadowRadius="1.6" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" />
+            <com.htc.fm.FreqRollBar android:orientation="horizontal" android:id="@id/container2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0px" android:layout_alignParentBottom="true">
+                <ImageSwitcher android:layout_gravity="left" android:id="@id/switcher4" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="0.0px" android:layout_marginTop="0.0px" />
+                <ImageSwitcher android:layout_gravity="left" android:id="@id/switcher3" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="1.0px" android:layout_marginTop="0.0px" />
+                <ImageSwitcher android:layout_gravity="left" android:id="@id/switcher2" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="1.0px" android:layout_marginTop="0.0px" />
+                <ImageView android:layout_gravity="left" android:id="@id/point" android:layout_width="19.0px" android:layout_height="114.0px" android:layout_marginLeft="8.0px" android:layout_marginTop="0.0px" android:src="@drawable/point" />
+                <ImageSwitcher android:layout_gravity="left" android:id="@id/switcher" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="5.0px" android:layout_marginTop="0.0px" />
+            </com.htc.fm.FreqRollBar>
+            <ImageView android:id="@id/label_mhz" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0px" android:src="@drawable/mhz" android:layout_toRightOf="@id/container2" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.htc.fm.SignalBar android:id="@id/signalbar" android:layout_width="fill_parent" android:layout_height="182.0px" android:layout_marginLeft="16.0px" android:layout_marginTop="139.0px" android:layout_marginRight="16.0px" fm:maxCount="7" fm:space="8" fm:onResID="@drawable/level_light" fm:offResID="@drawable/level_light_off" />
+        <RelativeLayout android:id="@id/bottom_container" android:layout_width="512.0px" android:layout_height="137.0px" android:layout_below="@id/top_container">
+            <com.htc.fm.MirrorFace android:orientation="horizontal" android:id="@id/container3" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+                <ImageSwitcher android:layout_gravity="top|left|center" android:id="@id/switcher4Reverse" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="0.0px" android:layout_marginTop="0.0px" />
+                <ImageSwitcher android:layout_gravity="top|left|center" android:id="@id/switcher3Reverse" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="1.0px" android:layout_marginTop="0.0px" />
+                <ImageSwitcher android:layout_gravity="top|left|center" android:id="@id/switcher2Reverse" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="1.0px" android:layout_marginTop="0.0px" />
+                <ImageView android:layout_gravity="top|left|center" android:id="@id/pointReverse" android:layout_width="19.0px" android:layout_height="114.0px" android:layout_marginLeft="8.0px" android:layout_marginTop="0.0px" android:src="@drawable/point_reverse" />
+                <ImageSwitcher android:layout_gravity="top|left|center" android:id="@id/switcherReverse" android:layout_width="70.0px" android:layout_height="114.0px" android:layout_marginLeft="5.0px" android:layout_marginTop="0.0px" />
+            </com.htc.fm.MirrorFace>
+            <ImageView android:id="@id/label_re_mhz" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/re_mhz" android:layout_toRightOf="@id/container3" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/number_cover_layer_off" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/number_cover_off" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/number_cover_layer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/number_cover" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tunebar" android:layout_width="516.0px" android:layout_height="52.0px" android:layout_marginLeft="12.0px" android:layout_marginTop="84.0px" android:layout_marginRight="12.0px" android:layout_below="@id/container">
+        <LinearLayout android:layout_width="416.0px" android:layout_height="52.0px" android:layout_marginLeft="50.0px">
+            <ImageView android:id="@id/tunerpanel" android:layout_width="wrap_content" android:layout_height="52.0px" android:layout_marginLeft="-10.0px" android:layout_marginRight="-10.0px" android:src="@drawable/tuner_panel" />
+        </LinearLayout>
+        <com.htc.fm.FMRepeatingImageButton android:id="@id/btn_back" android:background="#00000000" android:focusable="true" android:visibility="visible" android:layout_width="50.0px" android:layout_height="50.0px" android:src="@drawable/fm_tune_down" />
+        <com.htc.fm.FMRepeatingImageButton android:gravity="center" android:id="@id/btn_next" android:background="#00000000" android:focusable="true" android:visibility="visible" android:layout_width="50.0px" android:layout_height="50.0px" android:layout_marginLeft="466.0px" android:src="@drawable/fm_tune_up" />
+    </RelativeLayout>
+    <com.htc.fm.FMSeekBar android:id="@id/seekbar" android:focusable="true" android:layout_width="455.0px" android:layout_height="197.0px" android:layout_marginLeft="40.0px" android:layout_marginTop="84.0px" android:layout_marginRight="40.0px" android:layout_below="@id/container" fm:highlight_height="51" fm:frequences="@array/frequences" fm:positions="@array/positions" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="158.0px" android:layout_marginRight="156.0px" android:layout_marginBottom="58.0px" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/seekDownBack" android:layout_width="114.0px" android:layout_height="74.0px">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/seekDown" android:layout_width="54.0px" android:layout_height="54.0px" android:layout_marginLeft="44.0px" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/seekUpBack" android:layout_width="114.0px" android:layout_height="74.0px">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/seekUp" android:layout_width="54.0px" android:layout_height="54.0px" android:layout_marginLeft="24.0px" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

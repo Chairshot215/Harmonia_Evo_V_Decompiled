@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Menadžer za preuzimanje</string>
+    <string name="permlab_downloadManager">Pristup menadžeru za preuzimanje</string>
+    <string name="permdesc_downloadManager">Dozvoljava aplikaciji da pristupi menadžeru za preuzimanje i da ga koristi za preuzimanje datoteka. Zlonamerne aplikacije mogu ovo koristiti za ometanje preuzimanja i pristup privatnim informacijama.</string>
+    <string name="permlab_downloadManagerAdvanced">Napredne funkcije menadžera za preuzimanje.</string>
+    <string name="permdesc_downloadManagerAdvanced">Dozvoljava aplikaciji da pristupi naprednim funkcijama menadžera za preuzimanje. Zlonamerne aplikacije mogu ovo koristiti za ometanje preuzimanja i pristup privatnim informacijama.</string>
+    <string name="permlab_downloadCompletedIntent">Slanje obaveštenja o preuzimanju.</string>
+    <string name="permdesc_downloadCompletedIntent">Dozvoljava aplikaciji da šalje obaveštenja o završenim preuzimanjima. Zlonamerne aplikacije mogu ovo koristiti za zbunjivanje drugih aplikacija za preuzimanje datoteka.</string>
+    <string name="permlab_seeAllExternal">Vidi sva preuzimanja na SD kartici</string>
+    <string name="permdesc_seeAllExternal">Dozvoljava aplikaciji da vidi sva preuzimanja na SD karticu, bez obzira na to koja ih je aplikacija preuzela.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Rezervisanje servisa u kešu za preuzimanje</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Dozvoljava aplikaciji da preuzme datoteke preko keša za preuzimanje bez automatskog brisanja kada je menadžeru za preuzimanje potrebno više prostora.</string>
+    <string name="permlab_downloadWithoutNotification">preuzimanje datoteka bez obaveštenja</string>
+    <string name="permdesc_downloadWithoutNotification">Dozvoljava aplikaciji da preuzme datoteke preko menadžera za preuzimanje bez prikazivanja bilo kakvog obeveštenja korisniku.</string>
+    <string name="permlab_accessAllDownloads">Pristup svim preuzetim datotekama</string>
+    <string name="permdesc_accessAllDownloads">Dozvoljava da se aplikacije prikažu i modifikuju sva preuzimanja od strane bilo koje aplikacije na sistemu.</string>
+    <string name="download_unknown_title">&lt;Bez naslova></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">i još %d</string>
+    <string name="notification_download_complete">Preuzimanje je završeno.</string>
+    <string name="notification_download_failed">Preuzimanje nije uspelo.</string>
+    <string name="notification_need_wifi_for_size">Veličina preuzimanja zahteva Wi-Fi vezu.</string>
+    <string name="notification_paused_in_background">Pauzirano u pozadini.</string>
+    <string name="wifi_required_title">Preuzimanje je preveliko za mrežu operatera</string>
+    <string name="wifi_required_body" formatted="false">"Morate da koristite Wi-Fi da biste dovršili ovo preuzimanje od %s . 
+
+Dodirnite %s  da biste započeli ovo preuzimanje kada se sledeći put povežete sa Wi-Fi mrežom."</string>
+    <string name="wifi_recommended_title">Dodati u red za preuzimanje kasnije?</string>
+    <string name="wifi_recommended_body" formatted="false">"Ovim preuzimanjem od %s  možete da skratite vek trajanja baterije i/ili preterano koristite mobilnu vezu za prenos podataka, što može da dovede do troškova kod mobilnog operatera shodno tarifnom paketu.
+
+ Dodirnite %s da biste započeli ovo preuzimanje kada se ponovo povežete sa Wi-Fi mrežom."</string>
+    <string name="button_queue_for_wifi">Red</string>
+    <string name="button_cancel_download">Otkaži</string>
+    <string name="button_start_now">Pokreni sada</string>
+    <string name="low_download_storage_view_title">Nedovoljna memorija</string>
+    <string name="low_download_storage_view_text">Nema dovoljno prostora u memoriji za vaše preuzimanje.</string>
+    <string name="notification_paused_no_wifi">" (pauzirano)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

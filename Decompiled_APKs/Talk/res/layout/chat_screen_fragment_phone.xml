@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/switcher_root" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:orientation="horizontal" android:id="@id/switch_hint_parent" android:background="#ff3d3d3d" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="24.0dip" class="com.google.android.talk.fragments.ChatScreenFragment$HintHolder">
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/switch_hint_far_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/switch_hint_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/switch_hint_center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/switch_hint_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/switch_hint_far_right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+    </view>
+    <android.support.v4.view.ViewPager android:id="@id/gallery" android:background="@color/chatview_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include layout="@layout/input_field_phone" />
+</LinearLayout>

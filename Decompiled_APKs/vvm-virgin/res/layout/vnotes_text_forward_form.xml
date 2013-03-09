@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.coremobility.visualvoicemail">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/recipientSection" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.coremobility.app.customui.CM_ImageButton android:id="@id/contactsButton" android:background="@drawable/btn_media_player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tab_unselected_contacts" android:layout_alignParentRight="true" />
+        <LinearLayout android:id="@id/divider" android:background="@color/white" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/contactsButton" android:layout_alignTop="@id/contactsButton" android:layout_alignBottom="@id/contactsButton" />
+        <com.coremobility.app.customui.CM_RecipientEditor android:id="@id/recipientEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/rec_form_edit_recipient_hint" android:singleLine="true" android:completionThreshold="2" android:layout_toLeftOf="@id/divider" android:layout_alignTop="@id/contactsButton" android:layout_alignBottom="@id/contactsButton" android:inputType="textEmailAddress" android:imeOptions="actionDone|flagNoExtractUi" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomButtonSection" android:background="@*android:drawable/bottom_bar" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/sendButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_send" android:layout_weight="1.0" />
+        <Button android:id="@id/cancelButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_discard" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.coremobility.app.customui.CM_TwoLineCheckedTextView android:id="@id/privateCheckbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottomButtonSection" />
+    <com.coremobility.app.customui.CM_TwoLineCheckedTextView android:id="@id/urgentCheckbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/privateCheckbox" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@*android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_alignTop="@id/urgentCheckbox" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@*android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_alignBottom="@id/urgentCheckbox" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@*android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_alignBottom="@id/privateCheckbox" />
+    <ScrollView android:id="@id/textSection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/urgentCheckbox" android:layout_below="@id/recipientSection">
+        <TextView android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@*android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_alignTop="@id/textSection" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@*android:drawable/divider_horizontal_dark" android:scaleType="fitXY" android:layout_alignBottom="@id/textSection" />
+</RelativeLayout>

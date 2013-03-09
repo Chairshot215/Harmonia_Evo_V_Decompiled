@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_1" />
+    <ScrollView android:orientation="vertical" android:id="@id/scrollview" android:background="@com.htc:drawable/fill_topround" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_margin_to_title" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/mainScreen" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/edt_firstname_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:hint="@string/edtxt_first_name_hint" style="@style/default_input" />
+            <EditText android:id="@id/edt_lastname_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:hint="@string/edtxt_last_name_hint" style="@style/default_input" />
+            <com.htc.widget.HtcSpinner android:id="@id/spinner_countrycode_id" android:background="?com.htc:attr_common_pulldown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:prompt="@string/title_choose_region" style="?com.htc:attr/attr_common_pulldown" />
+            <TextView android:textColorLink="#ff000000" android:id="@id/tv_htc_term" android:padding="@dimen/boarder_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="spannable" style="@com.htc:style/list_secondary_m" />
+            <Button android:id="@id/bt_setup_name" android:visibility="gone" android:text="@string/bt_cs_next" style="@style/small_button" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/bottombar" android:background="@com.htc:drawable/trans_bottomround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/cmd_bar_2" />
+</LinearLayout>

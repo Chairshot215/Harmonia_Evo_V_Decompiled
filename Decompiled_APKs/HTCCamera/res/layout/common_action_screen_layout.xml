@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/review_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/common_action_screen_review_bar_height" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/review_bar_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:id="@id/review_btn_delete" android:layout_width="@dimen/common_action_screen_large_review_btn_width" android:layout_height="@dimen/common_action_screen_review_bar_button_height" />
+            <Button android:id="@id/review_btn_setas" android:layout_width="@dimen/common_action_screen_medium_review_btn_width" android:layout_height="@dimen/common_action_screen_review_bar_button_height" />
+            <Button android:id="@id/review_btn_share" android:layout_width="0.0px" android:layout_height="@dimen/common_action_screen_review_bar_button_height" />
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/shutter_bar" android:layout_alignParentBottom="true" />
+        <com.android.camera.rotate.RotateRelativeLayout android:id="@id/back_to_camera_btn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_action_screen_back_button_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <Button android:id="@id/back_to_camera_btn" android:layout_width="@dimen/common_action_screen_back_button_width" android:layout_height="@dimen/common_action_screen_back_button_width" android:layout_centerInParent="true" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/common_action_screen_review_bar_button_height" android:layout_alignParentBottom="true">
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/review_btn_icon_delete_container" android:layout_width="@dimen/common_action_screen_large_review_btn_icon_width" android:layout_height="@dimen/common_action_screen_review_bar_button_height" android:layout_marginBottom="@dimen/common_action_screen_review_btn_icon_margin_bottom">
+                <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/review_btn_icon_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_delete" android:text="@string/action_screen_button_delete" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+            </com.android.camera.rotate.RotateRelativeLayout>
+            <View android:id="@id/review_btn_icon_empty_container" android:layout_width="0.0px" android:layout_height="fill_parent" />
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/review_btn_icon_setas_container" android:layout_width="@dimen/common_action_screen_small_review_btn_icon_width" android:layout_height="@dimen/common_action_screen_review_bar_button_height" android:layout_marginBottom="@dimen/common_action_screen_review_btn_icon_margin_bottom">
+                <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/review_btn_icon_setas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_set_as" android:text="@string/action_screen_button_set_as" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+            </com.android.camera.rotate.RotateRelativeLayout>
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/review_btn_icon_share_container" android:layout_width="0.0px" android:layout_height="@dimen/common_action_screen_review_bar_button_height" android:layout_marginBottom="@dimen/common_action_screen_review_btn_icon_margin_bottom">
+                <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/review_btn_icon_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_share" android:text="@string/action_screen_button_share" android:layout_centerInParent="true" style="@style/text_style_main_bar_button_text" />
+            </com.android.camera.rotate.RotateRelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/review_btn_anchor_setas" android:layout_width="@dimen/common_action_screen_small_review_btn_icon_width" android:layout_height="fill_parent" />
+            <View android:id="@id/review_btn_anchor_delete" android:layout_width="0.0px" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/review_screen_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/common_action_screen_review_bar_height">
+        <RelativeLayout android:id="@id/review_btn_play_receiver" android:padding="30.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <Button android:id="@id/review_btn_play" android:background="@drawable/gallery_icon_video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

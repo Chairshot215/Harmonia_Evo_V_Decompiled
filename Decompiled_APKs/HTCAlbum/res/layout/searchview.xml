@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mainView_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/sn_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/sn_login_view" android:background="@com.htc:drawable/fill_full_round" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:gravity="center" android:id="@id/loginBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:minHeight="44.0px" android:layout_weight="0.0" style="@style/buttonTextColorLogin" />
+            <TextView android:layout_gravity="left" android:id="@id/loginText" android:paddingLeft="16.0px" android:paddingTop="7.0dip" android:paddingRight="16.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_text" style="@com.htc:style/text_style_secondary" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sn_empty_view" android:background="@com.htc:drawable/fill_full_round" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center" android:id="@id/txt_1x1" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@com.htc:style/text_style_secondary"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

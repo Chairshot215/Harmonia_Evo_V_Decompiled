@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@com.htc:drawable/section_divider_top" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_section_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="right" android:id="@com.htc:id/txt_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_weight="1.0" style="@com.htc:style/info_primary_m" />
+    <TextView android:gravity="right" android:id="@com.htc:id/txt_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_weight="1.0" style="@com.htc:style/info_primary_m" />
+    <ImageView android:id="@com.htc:id/img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:src="@drawable/phone_notification_hold" />
+</LinearLayout>

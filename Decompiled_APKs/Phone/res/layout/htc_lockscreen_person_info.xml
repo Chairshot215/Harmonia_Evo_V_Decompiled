@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/person_info" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/photo" android:layout_width="250.0px" android:layout_height="250.0px" android:layout_marginTop="40.0px" android:layout_marginBottom="3.0px" android:src="@drawable/lockscreen_avatar" />
+    <TextView android:textSize="32.0px" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/text_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/call_defer_reminder_label" android:singleLine="true" />
+    <TextView android:textSize="22.0px" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/text_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

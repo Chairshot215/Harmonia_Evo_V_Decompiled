@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="305301824" android:versionName="3.5.2212263014.301824" package="com.htc.provider.CustomizationSettings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <skip-erased />
+    <permission android:name="htc.permission.WRITE_CUSTOMIZATION_SETTINGS" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:allowClearUserData="false" android:process="com.htc.bgp">
+        <provider android:name="CustomizationSettingsProvider" android:writePermission="htc.permission.WRITE_CUSTOMIZATION_SETTINGS" android:authorities="customization_settings" />
+    </application>
+</manifest>

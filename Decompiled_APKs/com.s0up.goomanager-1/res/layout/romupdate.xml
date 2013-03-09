@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gimhead" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/romUpdateAvailableText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/romUpdateAvailable" android:layout_below="@id/imgLogo" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/romUpdateName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/romUpdateAvailable" android:layout_below="@id/romUpdateAvailableText" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnDownloadGapps" android:background="@drawable/custom_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download Gapps" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="@style/ButtonText" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnShare" android:background="@drawable/custom_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share" android:layout_weight="0.5" style="@style/ButtonText" />
+            <Button android:id="@id/btnDownloadFile" android:background="@drawable/custom_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Download" android:layout_weight="0.5" style="@style/ButtonText" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/romUpdateDescription" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/romUpdateAvailable" android:layout_below="@id/romUpdateName" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

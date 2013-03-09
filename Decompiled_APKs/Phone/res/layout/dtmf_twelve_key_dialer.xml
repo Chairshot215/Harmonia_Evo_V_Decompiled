@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.DTMFTwelveKeyDialerView android:orientation="vertical" android:id="@id/dtmf_dialer" android:visibility="gone" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/style_accumulator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/dialer_keypad" layout="@layout/dtmf_display" />
+    <include layout="@layout/htc_dialpad" />
+</com.android.phone.DTMFTwelveKeyDialerView>

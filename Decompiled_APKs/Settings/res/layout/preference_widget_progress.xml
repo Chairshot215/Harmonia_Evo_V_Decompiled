@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_dark_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="9.0px" android:layout_marginRight="9.0px" android:layout_marginBottom="9.0px" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:ellipsize="marquee" android:id="@*android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/darklist_primary_m" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/battery_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0sp" android:layout_marginTop="5.0sp" android:layout_toRightOf="@*android:id/title" style="@com.htc:style/darklist_secondary_m" />
+        <com.android.settings.BatteryBar android:id="@id/status_progress" android:layout_width="fill_parent" android:layout_height="@dimen/battery_bar_layout_height" android:layout_marginTop="3.0sp" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0sp" android:maxHeight="14.0dip" android:max="100" android:indeterminate="false" android:minWidth="50.0dip" android:layout_below="@*android:id/title" android:layout_alignLeft="@*android:id/title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</LinearLayout>

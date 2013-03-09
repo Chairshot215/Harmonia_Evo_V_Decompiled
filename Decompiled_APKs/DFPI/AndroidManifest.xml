@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="200217358" android:versionName="2.0.2122302837.217358" package="com.htc.demoflopackageinstaller"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <application>
+        <receiver android:name=".PIReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fema.startreport" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fema.endreport" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hs.action_disable_sceenlock" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".DFUsageDataCollectionService">
+            <intent-filter>
+                <action android:name="com.htc.DFPI.dataCollect" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.dfpi.install_demoflo" />
+                <action android:name="com.htc.dfpi.install_demorecovery" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="action_net_schedule_everyhour" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="action_net_schedule_cancel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.fema.beginvideo" />
+                <action android:name="com.fema.endvideo" />
+                <action android:name="com.fema.interruptvideo" />
+            </intent-filter>
+        </service>
+        <service android:name=".ApkInstallService" />
+    </application>
+</manifest>

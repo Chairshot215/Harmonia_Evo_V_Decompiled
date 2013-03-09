@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:text="@string/wifi_offload_auto_turn_on_dialog_text" style="@com.htc:style/list_primary_xs" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="6.0dip" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:layout_marginBottom="6.0dip" android:minHeight="@com.htc:dimen/htc_list_item_height">
+                    <Button android:textColor="@com.htc:color/list_primary" android:gravity="center" android:id="@id/ok" android:background="?com.htc:attr_common_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_ok" />
+                </LinearLayout>
+                <View style="@style/line_divider" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="6.0dip" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:layout_marginBottom="6.0dip" android:minHeight="@com.htc:dimen/htc_list_item_height">
+                    <Button android:textColor="@com.htc:color/list_primary" android:gravity="center" android:id="@id/auto_connect_to_wifi" android:background="?com.htc:attr_common_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auto_connect_to_wifi" />
+                </LinearLayout>
+                <View style="@style/line_divider" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="6.0dip" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:layout_marginBottom="6.0dip" android:minHeight="@com.htc:dimen/htc_list_item_height">
+                    <Button android:textColor="@com.htc:color/list_primary" android:gravity="center" android:id="@id/no_auto_turn_on" android:background="?com.htc:attr_common_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/never_auto_turn_on_wifi" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

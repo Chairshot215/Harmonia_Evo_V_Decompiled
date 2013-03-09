@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.tablet.CompatModePanel android:paddingRight="20.0dip" android:paddingBottom="@dimen/panel_float" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="vertical" android:id="@id/compat_mode_radio_group" android:background="@*android:drawable/dialog_full_holo_dark" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/compat_mode_off_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compat_mode_off" />
+        <RadioButton android:id="@id/compat_mode_on_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compat_mode_on" />
+    </RadioGroup>
+</com.android.systemui.statusbar.tablet.CompatModePanel>

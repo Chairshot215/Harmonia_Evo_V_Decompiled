@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Preferences
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:title="@string/displayGroupPreference" android:key="display_group" android:summary="@string/displayGroupPreference_summary" android:defaultValue="Contacts" />
+    <Preferences android:title="@string/importFromSim">
+        <intent android:targetPackage="com.android.phone" android:mimeType="vnd.android.cursor.item/sim-contact" android:action="android.intent.action.VIEW" android:targetClass="com.android.phone.SimContacts" />
+    </Preferences>
+</Preferences>

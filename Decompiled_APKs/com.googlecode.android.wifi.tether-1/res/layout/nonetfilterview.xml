@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:paddingLeft="15.0px" android:paddingTop="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nonetfilter_layout_line1" />
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:autoLink="web" android:paddingLeft="15.0px" android:paddingTop="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nonetfilter_layout_line2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

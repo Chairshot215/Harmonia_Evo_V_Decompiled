@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_block" layout="@com.htc:layout/title_1" />
+    <include android:id="@id/command_bar" layout="@com.htc:layout/cmd_bar_2" />
+    <RelativeLayout android:id="@id/rearrangeList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/command_bar" android:layout_below="@id/title_block">
+        <com.htc.Weather.TouchInterceptor android:id="@id/rearrangelv" android:focusable="false" android:fadingEdge="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="@color/transparent" android:divider="@com.htc:drawable/common_divider_items" />
+    </RelativeLayout>
+</RelativeLayout>

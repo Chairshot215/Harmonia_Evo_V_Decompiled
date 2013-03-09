@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.htc.widget.HeaderBarText android:id="@id/header_centertext" android:layout_width="fill_parent" android:layout_height="wrap_content" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <com.htc.widget.HtcFooter android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/foot_button_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.htc.widget.HtcFooterButton android:id="@id/foot_button_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.htc.widget.HtcFooter>
+    <com.htc.widget.HtcListView android:id="@id/main_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer" android:layout_below="@id/header" />
+</RelativeLayout>

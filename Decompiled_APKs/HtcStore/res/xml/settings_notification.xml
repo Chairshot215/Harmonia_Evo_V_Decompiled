@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:key="pref_notification_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/text_notification_settings" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/text_notification_switch_marked_items" android:key="pref_notification_switch_marked_items" android:summary="@string/text_notification_switch_summary_marked_items" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/text_notification_switch_updates" android:key="pref_notification_switch_updates" android:summary="@string/text_notification_switch_summary_updates" android:defaultValue="true" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/text_sound_and_vibration" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/text_notification_sound_switch" android:key="pref_notification_sound_switch" android:defaultValue="true" />
+    <com.htc.preference.HtcPreference android:title="@string/text_notification_sound" android:key="pref_notification_sound" android:summary="@string/text_notification_sound_summary" android:dependency="pref_notification_sound_switch" android:ringtoneType="notification" android:showDefault="true" android:showSilent="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/text_notification_vibrate" android:key="pref_notification_vibrate" android:summary="@string/text_notification_vibrate_summary" android:defaultValue="true" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.htc.widget.HeaderBarText android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.widget.HeaderBarImage android:id="@id/header_button" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.widget.HeaderBarMiddle>
+    <ListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_bar" />
+</RelativeLayout>

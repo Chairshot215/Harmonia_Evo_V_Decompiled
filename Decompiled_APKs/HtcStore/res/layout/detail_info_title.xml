@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HeaderBarMiddle android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarImage android:id="@id/left_button" android:layout_width="wrap_content" android:layout_height="wrap_content" headerbar:panel_gravity="left_panel" />
+    <com.htc.widget.HeaderBarText android:id="@id/center_text" android:layout_width="wrap_content" android:layout_height="wrap_content" headerbar:panel_gravity="center_panel" />
+    <com.htc.widget.HeaderBarImage android:id="@id/right_button_1" android:layout_width="wrap_content" android:layout_height="wrap_content" headerbar:panel_gravity="right_panel" />
+    <com.htc.widget.HeaderBarImage android:id="@id/right_button_2" android:layout_width="wrap_content" android:layout_height="wrap_content" headerbar:panel_gravity="right_panel" />
+</com.htc.widget.HeaderBarMiddle>

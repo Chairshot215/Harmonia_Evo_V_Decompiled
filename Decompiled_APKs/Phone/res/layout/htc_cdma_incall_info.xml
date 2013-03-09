@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/cdmaInfoLayout" android:background="@drawable/phone_caller_id_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/title_fontSize_big" android:gravity="center_horizontal" android:id="@id/cdmaInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/htc_margin_top_information" android:layout_marginBottom="@dimen/htc_margin_top_information" android:singleLine="true" />
+</LinearLayout>

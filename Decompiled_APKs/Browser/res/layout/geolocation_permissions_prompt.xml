@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.browser.GeolocationPermissionsPrompt android:background="@drawable/geolocation_permissions_prompt_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/message" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" />
+    <CheckBox android:id="@id/remember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/message" android:layout_alignLeft="@id/message" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/geolocation_permissions_prompt_remember" android:layout_toRightOf="@id/remember" android:layout_alignBaseline="@id/remember" />
+    <LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:layout_below="@id/remember" android:showDividers="beginning" android:dividerPadding="16.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@null" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+            <Button android:id="@id/dont_share_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/geolocation_permissions_prompt_dont_share" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:id="@id/share_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/geolocation_permissions_prompt_share" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.browser.GeolocationPermissionsPrompt>

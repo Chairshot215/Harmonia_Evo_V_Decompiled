@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="15" android:versionName="4.0.4-292727" package="com.google.android.feedback"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <application android:label="@string/app_label" android:hardwareAccelerated="true">
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/report_feedback" android:name=".FeedbackActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.APP_ERROR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:label="@string/preview_feedback" android:name=".PreviewActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name=".ShowTextActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name=".ShowStringListActivity" android:excludeFromRecents="true" />
+        <activity android:theme="@style/TosTheme" android:name=".ShowTosActivity" android:excludeFromRecents="true" />
+        <service android:name=".SendService" />
+        <service android:name=".BugReportService">
+            <intent-filter>
+                <action android:name="android.intent.action.BUG_REPORT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".FeedbackConnectivityReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

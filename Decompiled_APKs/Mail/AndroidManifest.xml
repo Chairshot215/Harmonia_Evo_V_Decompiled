@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:minSdkVersion="10" android:versionCode="405350873" android:versionName="4.5.2213372759.350873" package="com.htc.android.mail"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <skip-erased />
+    <uses-permission android:name="com.htc.task" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.QUERY_DRM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BACKUP_DATA" />
+    <uses-permission android:name="com.android.settings.permission.ACCESS_SLEEPMODE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="com.android.settings.permission.ACCESS_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_EMAIL_NOTIFICATION" />
+    <uses-permission android:name="htc.pluginmanager.permission.USE_PROVIDER" />
+    <permission android:name="com.htc.android.mail.permission.READ_ACCOUNT" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.android.mail.permission.WRITE_ACCOUNT" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.android.mail.permission.READ_MAIL" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.android.mail.permission.WRITE_MAIL" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.android.email.permission.READ_ATTACHMENT" android:protectionLevel="dangerous" android:permissionGroup="android.permission-group.MESSAGES" />
+    <permission android:name="com.android.email.permission.WRITE_ATTACHMENT" android:protectionLevel="signatureOrSystem" android:permissionGroup="android.permission-group.MESSAGES" />
+    <permission android:name="com.htc.android.mail.permission.HUX_PROV" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.android.mail.permission.ACCESS_MAIL_SERVICE" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.android.mail.permission.ACCESS_EAS_SERVICE" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="com.htc.android.mail.permission.READ_ACCOUNT" />
+    <uses-permission android:name="com.htc.android.mail.permission.WRITE_ACCOUNT" />
+    <uses-permission android:name="com.htc.android.mail.permission.READ_MAIL" />
+    <uses-permission android:name="com.htc.android.mail.permission.WRITE_MAIL" />
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+    <uses-permission android:name="com.android.email.permission.WRITE_ATTACHMENT" />
+    <uses-permission android:name="com.htc.android.mail.permission.ACCESS_MAIL_SERVICE" />
+    <uses-permission android:name="com.htc.android.mail.permission.ACCESS_EAS_SERVICE" />
+    <uses-permission android:name="com.htc.vvm.READ_VVM" />
+    <uses-permission android:name="android.permission.VZW_HUX" />
+    <uses-permission android:name="com.westtek.jcp.PRINT" />
+    <uses-permission android:name="com.htc.FilePicker.permission.INTENT_TOKEN" />
+    <uses-permission android:name="com.htc.permission.ACCESS_HTCIME_DATA" />
+    <application android:theme="@style/windowNullContentOverlay" android:label="@string/htc_private_app" android:icon="@drawable/mail" android:allowClearUserData="true" android:description="@string/htc_company_short_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <provider android:name="com.htc.android.mail.MailCarousel" android:multiprocess="false" android:authorities="com.htc.android.mail.MailCarousel" />
+        <provider android:label="@string/sync_mail_label" android:name="MailProvider" android:readPermission="com.htc.android.mail.permission.READ_MAIL" android:writePermission="com.htc.android.mail.permission.WRITE_MAIL" android:multiprocess="false" android:authorities="mail">
+            <path-permission android:readPermission="com.htc.android.mail.permission.READ_ACCOUNT" android:writePermission="com.htc.android.mail.permission.WRITE_ACCOUNT" android:pathPrefix="/accounts" />
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPrefix="/suggestion" />
+        </provider>
+        <provider android:name=".provider.AttachmentProvider" android:readPermission="com.android.email.permission.READ_ATTACHMENT" android:writePermission="com.android.email.permission.WRITE_ATTACHMENT" android:multiprocess="false" android:authorities="com.htc.android.mail.attachmentprovider" android:grantUriPermissions="true" />
+        <provider android:name=".eassvc.core.EASProvider" android:multiprocess="false" android:authorities="htceas" />
+        <activity android:theme="@style/list_noTitleBar" android:name=".activity.MailShortcutNoAcctActivity" android:exported="false" />
+        <activity android:label="Mail" android:name="MailList" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail_singlelist" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name=".easclient.OutOfOffice" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemePreview" android:name="MailListTab" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail_tab" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/list_Translucent" android:label="@string/mail_shortcut_label" android:name="MailShortcut" android:enabled="false" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AppMonitorReceiver" android:permission="htc.android.Rosie.ACTION_ITEM_CHANGE" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.launcher.action.ACTION_ITEM_ADDED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.launcher.action.ACTION_ITEM_REMOVED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/no_window_content_overlay" android:label="Choose Provider" android:name="ProviderListScreen" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-provider" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name="ManageRecipient" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemePreview" android:label="@string/htc_private_app" android:name="ComposeActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SENDTO" />
+                <action android:name="android.intent.action.SENDMEETING" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="mailto" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/*" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/mail" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="share" />
+                <data android:mimeType="text/*" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDMEETING" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/mail" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.android.mail.SEND_NOTE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="signatureEditor" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowNoTitle="true" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemePreview" android:name="ReadScreen" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.htc.mail.READ_MAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/mail" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:label="Search" android:name="MailSearch" android:exported="false" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:mimeType="vnd.android.cursor.item/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/list_noTitleBar" android:name=".SearchResultActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name="MailPreferenceActivity" android:configChanges="keyboardHidden|orientation|screenSize" lable="General Email Setting">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Sync and Connect Service" android:name=".huxservice.HuxService" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Sync and Connect New Account" android:name=".huxservice.HuxNewAccount" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Sync and Connect Restore Account" android:name=".huxservice.HuxRestoreAccount" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Sync and Connect Add Account" android:name=".huxservice.HuxAddAccount" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Sync and Connect Edit Account" android:name=".huxservice.HuxEditAccount" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".huxservice.HUXSMS" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.mms.transaction.new_mail_notification" />
+                <action android:name="com.android.mms.transaction.pin_notification" />
+                <action android:name="com.android.mms.transaction.account_notification" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".huxservice.HuxManagerService" android:permission="com.htc.android.mail.permission.HUX_PROV" android:exported="true" />
+        <activity android:theme="@style/list_noTitleBar" android:label="@string/settings_label" android:icon="@drawable/mail" android:name=".huxservice.HuxSyncSettings" android:launchMode="singleTop" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="com.htc.android.mail.huxservice.SyncSettings" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name="ecNewAccount" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize" lable="New Account">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name="ecEditAccount" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize" label="Edit Account">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/mail-account" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/list_noTitleBar" android:label="@string/exchange_sync" android:icon="@drawable/icon_active_sync" android:name=".easclient.EASClient" android:taskAffinity="htc.android.EAS" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.htc.mail.eas.EAS_MAIN_PAGE" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/list_noTitleBar" android:name=".easclient.EASSetting" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name=".easclient.ExchangeSvrSetting" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name=".easclient.SynchronizationSetting" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <service android:name=".mailservice.MailService" android:permission="com.htc.android.mail.permission.ACCESS_MAIL_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SYNC" />
+                <data android:mimeType="vnd.android.cursor.item/mail-account" />
+            </intent-filter>
+        </service>
+        <service android:name=".mailservice.MailIntentService" android:exported="false" />
+        <service android:name=".mailservice.mailAuthenticator.MailAuthenticatorService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/mail_authenticator" />
+        </service>
+        <service android:name=".mailservice.syncAdapterService.MailSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_mail" />
+        </service>
+        <service android:name=".mailservice.syncAdapterService.YahooSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_huxmail_yahoo" />
+        </service>
+        <service android:name=".mailservice.syncAdapterService.MSNSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_huxmail_msn" />
+        </service>
+        <service android:name=".mailservice.syncAdapterService.GoogleSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_huxmail_google" />
+        </service>
+        <service android:name=".mailservice.syncAdapterService.AOLSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_huxmail_aol" />
+        </service>
+        <meta-data android:name="opensense" android:resource="@xml/supports" />
+        <service android:name=".eassvc.EASAppSvc" android:permission="com.htc.android.mail.permission.ACCESS_EAS_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.mail.eassvc.EASAppSvc" />
+                <action android:name="com.htc.android.mail.eassvc.EASAppSvc.bind" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.task.source" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <service android:name=".eassvc.adapter.ContactsSyncAdapterService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_eas_contacts" />
+        </service>
+        <service android:name=".mailservice.DirectPushService" android:exported="false" android:process=":directpush" />
+        <receiver android:name="com.htc.android.mail.mailservice.EASNotification" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.mail.cleanNotification" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.sendErrorNotification" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.newMailNotification" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.cleanSendErrorNotification" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CONTACT_DB_CORRUPT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.updateShortcut" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.new_mail_notification" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.sync_finish" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.account_last_update_time" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.force_default_account" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.reset_default_account" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.mail.boot_complete" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mailservice.EventReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mailservice.BootReceiver" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mailservice.OOBEDoneReceiver" android:permission="htc.permission.SETUP_WIZARD_FINISHED" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.SETUP_WIZARD_FINISHED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mailservice.CustomizationChangedReceiver" android:permission="htc.permission.CUSTOMIZATION_CHANGE" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_FORCE_CHANGE" />
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".eassvc.EASEventReceiver" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.SMART_WIFI_STATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="com.htc.cs.requestSchedule" />
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED" />
+                <action android:name="com.htc.task.permission.TaskSource.ACTION_GRANTED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ulog.MULogReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.mail.ulog.MAILCOUNT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mailservice.NotificationReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.wifi.SMART_WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/list_noTitleBar" android:label="@string/receive_send_title" android:name="ReceiveSendSettings" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/fetch_mail_type" android:name="FetchTypeSettings2" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/list_noTitleBar" android:label="@string/display_setting_title" android:name="MailFormatSettings" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/list_noTitleBar" android:label="@string/misc_title" android:name="MiscSettings" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AolSpamActivity" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FloatingDialogTheme" android:name=".easclient.EASChangePwdDialog" android:exported="false" android:launchMode="singleTask" />
+        <activity android:theme="@style/FloatingHideTheme" android:name=".easclient.EASPolicyConfirmDialog" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/FloatingHideTheme" android:name=".easclient.EASPolicyNotSufficientDialog" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".easclient.CleanPasswordActivity" android:exported="false" />
+        <activity android:theme="@style/list_noTitleBar" android:name=".easclient.PeakTimeSetting" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FloatingDialogTheme" android:name=".ContactGroupDialogPicker" android:exported="false" />
+        <activity android:theme="@style/FloatingDialogTheme" android:name=".AccountListDialogPicker" android:exported="false" />
+        <activity android:theme="@style/FloatingDialogTheme" android:name=".TagDialogPicker" android:exported="false" />
+        <activity android:theme="@style/list_noTitleBar" android:name=".dialog.StorageFullDialog" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ap_version_id" android:name="DebugActivity" android:exported="false" />
+        <activity android:name=".activity.HuxServerSettingSwitchActivity" />
+        <receiver android:label="@string/eas_device_admin" android:name=".eassvc.provision.EASDeviceAdmin" android:permission="android.permission.BIND_DEVICE_ADMIN" android:enabled="false" android:exported="false" android:description="@string/eas_device_admin_description">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/eas_device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="Eml viewer" android:name=".mimemessage.MimeViewer" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="message/rfc822" />
+            </intent-filter>
+        </activity>
+        <service android:name=".easdp.EASDirectpush" android:exported="false" android:process=":directpush">
+            <intent-filter>
+                <action android:name="com.htc.android.mail.easdp.EASDirectpush" />
+            </intent-filter>
+        </service>
+        <service android:name=".eassvc.EASScheduleService" android:exported="false" />
+        <activity android:theme="@style/no_window_content_overlay" android:name=".easclient.AccountNameSetting" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/FloatingDialogTheme" android:name="DownloadAttachmentSDFullDialog" android:launchMode="singleTask" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".activity.TipActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".YesCustomizationEventReceiver">
+            <intent-filter>
+                <action android:name="com.HtcYesID.ACCOUNTUDPATE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

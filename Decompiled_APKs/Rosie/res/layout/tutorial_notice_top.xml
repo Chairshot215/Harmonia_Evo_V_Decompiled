@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/control" android:paddingLeft="@dimen/first_use_hint_parent_up_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/bright_text_dark_focused" android:gravity="left|center" android:background="@drawable/message_no_arrow" android:paddingLeft="@dimen/first_use_hint_up_padding_left" android:layout_width="@dimen/first_use_hint_up_width" android:layout_height="wrap_content" android:minHeight="@dimen/first_use_hint_up_height" android:text="@string/tutorial_notice_top" android:layout_alignParentBottom="true" />
+</RelativeLayout>

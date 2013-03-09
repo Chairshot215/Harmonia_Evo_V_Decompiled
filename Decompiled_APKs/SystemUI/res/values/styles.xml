@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.StatusBar.Title" parent="@*android:style/TextAppearance.StatusBar">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.StatusBar.IntruderAlert" parent="@*android:style/TextAppearance.StatusBar" />
+    <style name="TextAppearance.StatusBar.SystemPanel" parent="@*android:style/TextAppearance.StatusBar">
+        <item name="android:textAppearance">?android:textAppearance</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff808080</item>
+    </style>
+    <style name="TextAppearance.StatusBar.TextButton" parent="@*android:style/TextAppearance.StatusBar">
+        <item name="android:textAppearance">?android:textAppearance</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="TextAppearance.StatusBar.Clock" parent="@*android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+    </style>
+    <style name="TextAppearance.StatusBar.Date" parent="@*android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/holo_blue_light</item>
+    </style>
+    <style name="Animation" />
+    <style name="Animation.ShirtPocketPanel" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@*android:anim/grow_fade_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@*android:anim/shrink_fade_out_from_bottom</item>
+    </style>
+    <style name="Animation.RecentPanel" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@*android:anim/grow_fade_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@*android:anim/shrink_fade_out_from_bottom</item>
+    </style>
+    <style name="Animation.StatusBar" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/status_bar_enter</item>
+        <item name="android:windowExitAnimation">@anim/status_bar_exit</item>
+    </style>
+    <style name="Animation.StatusBar.IntruderAlert" parent="@style/Animation.StatusBar">
+        <item name="android:windowEnterAnimation">@anim/priority_alert_enter</item>
+        <item name="android:windowExitAnimation">@anim/priority_alert_exit</item>
+    </style>
+    <style name="TextAppearance.StatusBar.PhoneTicker" parent="@*android:style/TextAppearance.StatusBar.Ticker">
+        <item name="android:textSize">14.0dip</item>
+    </style>
+</resources>

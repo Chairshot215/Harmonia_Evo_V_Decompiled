@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/additional_cdma_call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key_from_cdma" android:summary="@string/sum_fdn">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.FdnSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_cdma_cf_expand_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.HtcCdmaCallForwardOptions" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/additional_call_settings" android:key="button_more_expand_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.HtcCdmaAdditionalCallOptions" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/tty_mode_entries" android:title="@string/tty_mode_option_title" android:key="button_tty_mode_key" android:summary="@string/tty_mode_option_summary" android:entryValues="@array/tty_mode_values" />
+    <com.android.phone.CdmaDDTMCheckBoxPreference android:persistent="false" android:title="@string/ddtm_mode" android:key="button_ddtm_mode_key" android:summary="@string/ddtm_mode_summary" android:defaultValue="false" />
+    <com.android.phone.CdmaVoicePrivacyCheckBoxPreference android:persistent="false" android:title="@string/voice_privacy" android:key="button_voice_privacy_key" android:summary="@string/voice_privacy_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/auto_prepend_title" android:key="button_auto_prepend_key" android:summary="@string/auto_prepend_summary" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/plus_code_dialing_title" android:key="button_plus_code_dialing_key" android:summary="@string/plus_code_dialing_summary">
+        <com.htc.preference.HtcPreferenceCategory android:title="@string/plus_code_dialing_category" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/north_american_dialing" android:key="button_north_american_dialing_key" android:summaryOn="@string/north_american_dialing_summary_on" android:summaryOff="@string/north_american_dialing_summary_off" />
+        <com.android.phone.HtcCdmaEditNumberPreference android:persistent="false" android:singleLine="true" android:title="@string/international_dialing_code" android:key="international_dialing_code_key" android:summary="@string/international_dialing_code_summary" android:dialogTitle="@string/international_dialing_code" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/htc_labelNBPCD" android:key="button_cdma_nbpcd_key" android:summary="@string/htc_sum_cdma_call_setting">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nbpcd.NBPCDSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/voice_roaming_title" android:key="button_voice_roaming_key" />
+</com.htc.preference.HtcPreferenceScreen>

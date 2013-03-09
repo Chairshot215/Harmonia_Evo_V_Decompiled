@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="reboot_reason_abnormal">
+        <item>oem-97</item>
+        <item>oem-98</item>
+        <item>oem-99</item>
+        <item>oem-dd</item>
+    </string-array>
+    <string-array name="reboot_reason_normal">
+        <item></item>
+        <item>oem-42</item>
+        <item>oem-74</item>
+        <item>oem-76</item>
+        <item>oem-77</item>
+        <item>oem-78</item>
+        <item>oem-88</item>
+        <item>reboot</item>
+        <item>recovery</item>
+    </string-array>
+    <string-array name="normal_reboot_pattern">
+        <item>keyboard reset</item>
+        <item>androidboot.mode=offmode_charging</item>
+    </string-array>
+    <string-array name="poweroff_pattern">
+        <item>Power down</item>
+        <item>msm_pm_power_off:wakeup</item>
+    </string-array>
+    <string-array name="radio_crash_pattern">
+        <item>smem:DIAG</item>
+    </string-array>
+</resources>

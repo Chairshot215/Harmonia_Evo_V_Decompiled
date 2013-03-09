@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=no"/>
+  <link rel="stylesheet" href="file:///android_res/raw/styles2.css">
+  <style>
+    .initial-load {
+        /* 0x0 and 1x1 may be short-circuited by WebView */
+        width: 2px;
+        height: 2px;
+
+        -webkit-transform: translate3d(0, 0, 1px);
+        -webkit-animation-name: initial-load;
+        -webkit-animation-duration: 1ms;  /* doesn't matter */
+    }
+
+    /* Animating the z-position is fast and does not actually change anything in the default
+     * perspective.
+     */
+    @-webkit-keyframes initial-load {
+        from {
+            -webkit-transform: translate3d(0, 0, 1px);
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0);
+        }
+    }
+  </style>
+</head>
+<body>
+<div id="gm-conversation-header-spacer" style="height: %spx;"></div>
+<div id="message-container">

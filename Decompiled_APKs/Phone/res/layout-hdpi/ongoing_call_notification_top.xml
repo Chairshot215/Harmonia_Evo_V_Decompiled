@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/listview_listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="6.0px" android:layout_marginRight="14.0px">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notification_photo_shadow" android:layout_alignLeft="@id/photo" android:layout_alignBottom="@id/photo" />
+            <ImageView android:id="@id/photo" android:layout_width="@dimen/incall_notification_frame_size" android:layout_height="@dimen/incall_notification_frame_size" android:layout_marginLeft="7.0px" android:layout_marginTop="2.0px" android:layout_marginRight="3.0px" android:scaleType="fitXY" />
+            <ImageView android:id="@id/ref_photo" android:layout_width="@dimen/incall_notification_frame_size" android:layout_height="@dimen/incall_notification_reflection_height" android:scaleType="fitXY" android:layout_below="@id/photo" android:layout_alignLeft="@id/photo" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="6.0px" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-1.0px">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="38.0px" android:layout_height="38.0px" android:scaleType="fitXY" />
+                <TextView android:textSize="26.0px" android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/title_shadow" />
+            </LinearLayout>
+            <Chronometer android:textSize="20.0px" android:textColor="#ffcccccc" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:layout_marginTop="-4.0px" android:singleLine="true" style="@com.htc:style/title_shadow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/notification_end_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0px">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/notification_end_button" android:background="@drawable/notification_btn_endcall" android:layout_width="@dimen/notification_btn_width" android:layout_height="@dimen/notification_btn_height" android:src="@drawable/notification_btn_icon_call" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

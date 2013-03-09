@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.phone" android:versionCode="201350863" android:versionName="2.1.2213373242.350863" package="com.android.providers.telephony" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="htc.android.Rosie.ACTION_ITEM_CHANGE" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="com.htc.vvm.READ_VVM" />
+    <application android:label="@string/app_label" android:icon="@drawable/ic_launcher_phone" android:allowClearUserData="false" android:process="com.android.phone" android:killAfterRestore="false">
+        <provider android:name="TelephonyProvider" android:multiprocess="true" android:authorities="telephony" />
+        <provider android:name="GsmApnProvider" android:multiprocess="true" android:authorities="gsmapn" />
+        <provider android:name="CdmaApnProvider" android:multiprocess="true" android:authorities="cdmaapn" />
+        <provider android:name="SmsProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="sms" />
+        <provider android:name="MmsProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="mms">
+            <grant-uri-permission android:pathPrefix="/part/" />
+            <grant-uri-permission android:pathPrefix="/drm/" />
+        </provider>
+        <provider android:name="MmsSmsProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="mms-sms" />
+        <provider android:name="QTextProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="qtext" />
+        <provider android:name="SearchdbProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="search" />
+        <provider android:name="CBProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="cbchannels" />
+        <provider android:name="HtcMsgsProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="htcmsgs" />
+        <provider android:name="AllMessagesProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="allmessages" />
+        <provider android:name="MmsSmsV2Provider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="mms-sms-v2" />
+        <receiver android:name=".service.TelephonyReceiver">
+            <intent-filter>
+                <action android:name="com.android.mms.intent.ACTION_CHECK_DB_CORRUPT" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.TelephonyService" android:exported="false" />
+        <provider android:name="HtcCmasProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="htc-cmas" />
+    </application>
+</manifest>

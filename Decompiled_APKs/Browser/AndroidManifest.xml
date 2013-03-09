@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="14" android:versionName="4.0.1" package="com.android.browser"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.browser" />
+    <permission android:label="@string/permission_preload_label" android:name="com.android.browser.permission.PRELOAD" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <application android:label="@string/application_name" android:icon="@mipmap/ic_launcher_browser" android:name="Browser" android:taskAffinity="android.task.browser" android:backupAgent=".BrowserBackupAgent" android:hardwareAccelerated="true">
+        <provider android:name=".provider.BrowserProvider2" android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS" android:writePermission="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" android:multiprocess="true" android:authorities="com.android.browser;browser">
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:path="/bookmarks/search_suggest_query" />
+        </provider>
+        <activity android:theme="@style/BrowserTheme" android:label="@string/application_name" android:name="BrowserActivity" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="file" />
+                <data android:mimeType="application/x-webarchive-xml" />
+            </intent-filter>
+            <intent-filter android:priority="-101">
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:theme="@style/ShortcutTheme" android:label="@string/shortcut_bookmark" android:icon="@mipmap/ic_launcher_shortcut_browser_bookmark" android:name="ShortcutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/menu_preferences" android:name="BrowserPreferencesPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:label="@string/bookmarks_search" android:name="BookmarkSearch" android:stateNotNeeded="true" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/bookmarks_searchable" />
+        </activity>
+        <activity android:theme="@style/DialogWhenLarge" android:label="Save bookmark" android:name="AddBookmarkPage" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/bookmark" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ComboViewActivity" />
+        <receiver android:label="@string/bookmarks" android:name=".widget.BookmarkThumbnailWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.android.browser.BOOKMARK_APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bookmarkthumbnailwidget_info" />
+        </receiver>
+        <service android:name=".widget.BookmarkThumbnailWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" android:exported="false" />
+        <receiver android:name=".widget.BookmarkWidgetProxy" android:exported="false" />
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge" android:name=".widget.BookmarkWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.app.default_searchable" android:value=".BrowserActivity" />
+        <meta-data android:name="com.google.android.partnersetup.RLZ_ACCESS_POINT" android:value="@string/rlz_access_point" />
+        <receiver android:name=".OpenDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <provider android:name=".homepages.HomeProvider" android:readPermission="com.android.browser.permission.READ_HISTORY_BOOKMARKS" android:exported="false" android:authorities="com.android.browser.home" />
+        <receiver android:name=".AccountsChangedReceiver">
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".PreloadRequestReceiver" android:permission="com.android.browser.permission.PRELOAD">
+            <intent-filter>
+                <action android:name="android.intent.action.PRELOAD" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </receiver>
+        <provider android:name=".provider.SnapshotProvider" android:exported="false" android:authorities="com.android.browser.snapshots" />
+    </application>
+</manifest>

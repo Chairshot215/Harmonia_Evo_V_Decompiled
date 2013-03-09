@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.googlequicksearchbox.ui.LocalSuggestionView style="@style/Suggestion"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon1" android:layout_centerVertical="true" style="@style/SuggestionIcon1" />
+    <ImageView android:id="@id/icon2" android:visibility="gone" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/SuggestionIcon2" />
+    <TextView android:id="@id/text2" android:visibility="gone" android:singleLine="true" android:layout_toLeftOf="@id/icon2" android:layout_toRightOf="@id/icon1" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" style="@style/SuggestionText2" />
+    <RatingBar android:id="@id/rating" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="6.0dip" android:numStars="5" android:stepSize="0.5" android:layout_above="@id/text2" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="?android:attr/ratingBarStyleSmall" />
+    <TextView android:id="@id/text1" android:layout_toLeftOf="@id/rating" android:layout_toRightOf="@id/icon1" android:layout_above="@id/text2" style="@style/SuggestionText1" />
+</com.google.android.googlequicksearchbox.ui.LocalSuggestionView>

@@ -1,0 +1,202 @@
+PhoneticArtsFile Config
+Version 01
+
+# -----------------------------------------------------------------------------
+# HMM Configuration File for Run-time Stage of the Synthesis:
+# -----------------------------------------------------------------------------
+#
+# Note: This is a customization that should be reasonably suitable for embedded
+# devices. Major differences with the slower, better quality, version:
+#
+#    - Mel-LSP instead of Mcep.
+#    - No GV
+#    - With postfiltering
+#
+synthesis_method        "embedded_hmm" ;
+
+#
+# Speaking rate control (rho): 
+#
+#    Range  : [-7.0, 7.0] (slower -> faster)
+#    Default: 0.0 
+#
+hmms.dur_factor         0.0;
+
+#
+# Multiply F0:
+#
+#     Range: [0.0, 5.0]
+#   Default: 1.0
+#
+hmms.multiply_f0        1.0;
+
+#
+# Shift F0:
+#
+#     Range: [0.0, 100.0]
+#   Default: 0.0
+#
+hmms.add_f0             0.0;
+
+#
+# Scale the F0 variance:
+#
+#     Range: any (as it doesn't work very well)
+#   Default: 1.0 
+#
+hmms.varscale_f0        1.0;
+
+#
+# Postfiltering (post vocoding) coefficient:
+#
+#     Range: [-0.8, 0.8]
+#   Default: 0.4 for mcep, 0.6 (hardcoded) for LSP
+#
+hmms.postfilter_coef    0.80;
+
+#
+# Voiced/unvoiced threshold:
+#
+#     Range: [0.0, 1.0]
+#   Default: 0.5
+#
+hmms.uv_threshold 0.5;
+
+#
+# Duration in seconds (please double check!):
+#
+#     Range: [0.0, 30.0]
+#   Default: 0.0
+#
+hmms.total_length_secs 0.0;
+
+#
+# Use state alignments (Default: false)
+#
+hmms.use_state_align false;
+
+#
+# Use phone alignments (Default: false)
+#
+hmms.use_phone_align false;
+
+#
+# Use Global Variance (Default: false)
+#
+hmms.use_gv false;
+
+#
+# Global Variance: Maximum number of steps (Default: 25)
+#
+# Note: Minimal number of steps is 0.
+#
+hmms.gv_max_steps 2;
+
+#
+# Global Variance: weight for the MCEP (Default: 0.2)
+#
+# Note: Minimal number is 0
+#
+hmms.mcep_gvweight 0.9;
+
+#
+# Global Variance: weight for the ME (Default: 0.7)
+#
+# Note: Minimal number is 0
+#
+hmms.me_gvweight 0.7;
+
+#
+# Global Variance: weight for the LF0 (Default: 0.7)
+#
+# Note: Minimal number is 0
+#
+hmms.lf0_gvweight 0.7;
+
+#
+# Global Variance: Step size (Default: 0.25)
+#
+# Can't be <= 0.
+#
+hmms.gv_step_size 0.25;
+
+#
+# Start and end silences: duration (Default: 200.0)
+#
+# if < 0, then the silences duration are estimated using the HMM model.
+#
+hmms.sils_duration 50.0;
+
+#
+# Save generated parameter tracks (Default: false)
+#
+# If switched on (1), this will generate the cepstral (or LSP) and F0 tracks as
+# "p_mcp" and "p_f0" features on the utterance.
+# 
+hmms.save_gen_params false;
+
+#
+# Don't use the vocoder (Default: false)
+#
+hmms.no_vocoder false;
+
+#
+# Verbose mode (Default: false)
+#
+# Currently disabled. In general, switching this on should trigger the generation of
+# verbose synthesis information on the console.
+#
+hmms.verbose false;
+
+#
+# Type of excitation: "ap_server", "ap_embedded", "ap_embedded_pulses", "pulses"
+#
+hmms.excitation_type "pulses";
+
+#
+# Use warped lattice filter instead of MLSA for mel-cepstral coefficients.
+#
+hmms.mcep_wlf false;
+
+#
+# Warped lattice filter order.
+#
+hmms.wlf_filter_order 40;
+
+#
+# Warped lattice filter conversion FFT order. Conversion size
+# half of this number must be bigger than <wlf_filter_order>.
+#
+hmms.wlf_conversion_fft_order 128;
+
+#
+# Process silences:
+#
+hmms.process_silences true ;
+
+#
+# Scale the size of the output waveforms:
+#
+# It's been requested that the waveforms need to be louder, especially
+# for in-car navigation systems.
+#
+output_gain 4.0;
+
+#
+# Engine sample rate (global, not related to HMM synthesis):
+#
+engine_sample_rate 16000 ;
+
+#
+# Prosody modification: f0 emphasis
+#
+prosmod.f0emph.stress.init 0.05 ;
+prosmod.f0emph.stress.mid 0.2 ;
+prosmod.f0emph.stress.final 0.05 ;
+
+#
+# Prosody modification: duration emphasis
+#
+prosmod.duremph.stress.init 0.05 ;
+prosmod.duremph.stress.mid 0.2 ;
+prosmod.duremph.stress.final 0.05 ;

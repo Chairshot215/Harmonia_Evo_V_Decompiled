@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/compose_area_from" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/compose_area_recipients" />
+    </LinearLayout>
+    <com.google.android.gm.AttachmentsView android:orientation="vertical" android:id="@id/attachments" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/compose_body" />
+    <com.google.android.gm.QuotedTextView android:id="@id/quoted_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/composearea_tap_trap_bottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

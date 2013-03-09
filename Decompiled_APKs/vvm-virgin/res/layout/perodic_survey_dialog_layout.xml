@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="18.0sp" android:textColor="#ffcc6600" android:id="@id/option_one" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Did you understand the transcription message?" />
+    <RadioGroup android:orientation="vertical" android:id="@id/option_one_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/one" android:text="Yes, I rarely even listen to the audio" />
+        <RadioButton android:id="@id/two" android:text="So-so, but I understand the over all message" />
+        <RadioButton android:id="@id/three" android:text="Not so good, I usually have to listen to audio" />
+    </RadioGroup>
+</LinearLayout>

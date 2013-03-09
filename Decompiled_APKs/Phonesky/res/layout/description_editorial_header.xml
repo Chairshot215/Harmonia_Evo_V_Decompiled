@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.DescriptionEditorialHeader android:orientation="vertical" android:background="@drawable/details_bg_with_highlight" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_entry_large_size" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="left|center" android:id="@id/header" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/black" android:id="@id/subheader" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" />
+</com.google.android.finsky.layout.DescriptionEditorialHeader>

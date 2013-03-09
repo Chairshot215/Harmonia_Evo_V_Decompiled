@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/acu_detail_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <RelativeLayout android:id="@id/my_items_view__title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.htc.widget.HeaderBarShort android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+        </com.htc.widget.HeaderBarShort>
+    </RelativeLayout>
+    <com.htc.widget.HtcListView android:scrollbarStyle="outsideOverlay" android:id="@id/my_items_view__ItemsListView" android:background="@com.htc:color/listview_app_background" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/list_divider" />
+</RelativeLayout>

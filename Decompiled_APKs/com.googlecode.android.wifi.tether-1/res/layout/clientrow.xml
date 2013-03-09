@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ff000000" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:gravity="fill" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow>
+            <CheckBox android:gravity="left" android:layout_gravity="left" android:id="@id/checkBoxAllowed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TableLayout android:gravity="fill" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:layout_width="fill_parent">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:text="@string/clientrow_layout_macaddress" />
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/macaddress" android:paddingLeft="5.0px" android:layout_width="140.0dip" />
+                </TableRow>
+                <TableRow android:layout_width="fill_parent">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:text="@string/clientrow_layout_name" />
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/clientname" android:paddingLeft="5.0dip" android:layout_width="140.0dip" android:text="- Unknown -" />
+                </TableRow>
+                <TableRow android:layout_width="fill_parent">
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:text="@string/clientrow_layout_ipaddress" />
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/ipaddress" android:paddingLeft="5.0dip" android:layout_width="140.0dip" android:text="- Not connected -" />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

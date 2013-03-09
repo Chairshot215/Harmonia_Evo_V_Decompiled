@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <RelativeLayout android:id="@id/item_details_panel" android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="199.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/banner_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="135.0dip">
+            <View android:id="@id/top_banner_leading" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            <FrameLayout android:orientation="vertical" android:id="@id/top_banner" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <FrameLayout android:orientation="vertical" android:id="@id/pinstripe_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.finsky.layout.DecoratedTextView android:textSize="28.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/creator_title" android:background="@drawable/highlight_overlay" android:paddingLeft="8.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="63.0dip" android:layout_marginLeft="@dimen/details_content_margin" android:layout_marginRight="@dimen/details_content_margin" android:singleLine="true" android:drawablePadding="6.0dip" finsky:use_whitescale="true" />
+                </FrameLayout>
+            </FrameLayout>
+            <View android:background="@color/title_dark_background" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/thumbnail_container" android:background="@color/title_background" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="289.0dip" android:layout_height="142.0dip" android:layout_marginLeft="@dimen/details_content_margin" android:layout_alignParentBottom="true">
+            <include android:id="@id/creator_hero" android:layout_width="fill_parent" android:layout_height="134.0dip" layout="@layout/hero_graphic" />
+        </FrameLayout>
+        <com.google.android.finsky.layout.ExplorePanel android:id="@id/explorer_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginRight="@dimen/details_content_margin" android:layout_toRightOf="@id/thumbnail_container" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <include layout="@layout/explorer_layout" />
+        </com.google.android.finsky.layout.ExplorePanel>
+    </RelativeLayout>
+    <View android:id="@id/hero_separator" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <View android:background="@color/details_background" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <include android:id="@id/description_panel" layout="@layout/details_text_flat" />
+</merge>

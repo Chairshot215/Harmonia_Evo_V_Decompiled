@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_settings_title">
+        <CheckBoxPreference android:title="@string/use_24hr_title" android:key="prefs_use_24hr" android:defaultValue="false" android:summaryOn="@string/use_24hr_on" android:summaryOff="@string/use_24hr_off" />
+        <PreferenceScreen android:title="@string/weather_settings_title" android:summary="@string/weather_settings_summary">
+            <CheckBoxPreference android:title="@string/use_celsius_title" android:key="prefs_use_celsius" android:summary="@string/use_celsius_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/use_my_location_title" android:key="prefs_use_my_location" android:summary="@string/use_my_location_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/use_gps_title" android:key="prefs_use_gps" android:dependency="prefs_use_my_location" android:defaultValue="false" android:summaryOn="@string/use_gps_on" android:summaryOff="@string/use_gps_off" />
+            <Preference android:title="@string/set_location_title" android:key="prefs_location" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/refresh_settings_title" android:summary="@string/refresh_settings_summary">
+            <Preference android:enabled="false" android:title="@string/refresh_status_title" android:key="prefs_refresh_status" />
+            <Preference android:title="@string/refresh_now_title" android:key="prefs_refresh_now" />
+            <CheckBoxPreference android:title="@string/auto_refresh_title" android:key="prefs_auto_refresh" android:summary="@string/auto_refresh_summary" android:defaultValue="true" />
+            <ListPreference android:entries="@array/refresh_interval_entries" android:title="@string/refresh_interval_title" android:key="prefs_refresh_interval" android:dependency="prefs_auto_refresh" android:defaultValue="3" android:entryValues="@array/refresh_interval_values" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/information_title">
+        <Preference android:title="@string/aboutwc_title" android:key="prefs_about" android:summary="@string/aboutwc_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

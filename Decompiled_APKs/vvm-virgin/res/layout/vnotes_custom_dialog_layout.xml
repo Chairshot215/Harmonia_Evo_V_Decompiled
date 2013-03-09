@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:paddingLeft="14.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true">
+        <TextView android:id="@id/text" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/textAppearanceMedium" />
+    </ScrollView>
+    <RelativeLayout android:id="@id/middle_panel" android:paddingLeft="14.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <CheckBox android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:checked="false" android:layout_alignParentLeft="true" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:id="@id/checkboxText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/checkbox" android:layout_alignTop="@id/checkbox" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/checkboxText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/checkbox" android:layout_below="@id/checkboxText1" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_panel" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentBottom="true">
+        <com.coremobility.app.customui.CM_Button android:id="@id/button1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <com.coremobility.app.customui.CM_Button android:id="@id/button2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <com.coremobility.app.customui.CM_Button android:id="@id/button3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <com.coremobility.app.customui.CM_Button android:id="@id/button4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

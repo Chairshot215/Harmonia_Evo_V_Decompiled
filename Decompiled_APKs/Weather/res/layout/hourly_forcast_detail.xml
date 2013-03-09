@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hourly_detail" android:layout_width="@dimen/hourly_detail_width" android:layout_height="@dimen/hourly_detail_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/hour_time_font" android:textColor="@color/hour_time_color" android:gravity="center" android:id="@id/hour_time" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="@dimen/hour_time_height" style="@style/shadow_255" />
+    <ImageView android:layout_gravity="center" android:id="@id/hour_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hourly_detail_image_margin_top" />
+    <TextView android:textSize="@dimen/hour_temp_font" android:textColor="@color/hour_temp_color" android:gravity="center" android:id="@id/hour_temp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hourly_detail_temp_margin_top" />
+</LinearLayout>

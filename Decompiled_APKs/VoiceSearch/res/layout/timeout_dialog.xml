@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/timeout_dialog" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:layout_gravity="top|center" android:layout_width="fill_parent" android:layout_height="98.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/ic_dial_cd" android:scaleType="center" />
+    </FrameLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/action" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="3" />
+        <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-6.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/address_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/small_pin" android:paddingTop="1.0dip" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_map_ds" android:tint="#80ffffff" />
+            <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:layout_gravity="center_horizontal" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#80ffffff" android:layout_gravity="center_horizontal" android:id="@id/phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/header_footer_size" style="?android:attr/buttonBarStyle">
+        <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/timeout_cancel_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="0.0dip" android:minWidth="100.0dip" android:text="@string/cancel" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/timeout_go_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:minWidth="100.0dip" android:text="@string/go" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

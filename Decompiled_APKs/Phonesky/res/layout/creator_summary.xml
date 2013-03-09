@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/creator_hero" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+    <View android:id="@id/leading_strip" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/creator_tagline" android:background="@drawable/details_section_bg_no_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_entry_large_size" android:textColor="@color/black" android:ellipsize="end" android:gravity="bottom|left|center" android:id="@id/creator_title" android:background="@drawable/highlight_overlay" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="8.0dip" android:paddingRight="@dimen/details_content_margin" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" />
+        <include android:id="@id/description_panel" layout="@layout/details_text_flat" />
+    </LinearLayout>
+</merge>

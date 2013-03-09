@@ -1,0 +1,62 @@
+.class Lcom/htc/android/worldclock/SetAlarm$8;
+.super Ljava/lang/Object;
+.source "SetAlarm.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/htc/android/worldclock/SetAlarm;->initUI()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/htc/android/worldclock/SetAlarm;
+
+
+# direct methods
+.method constructor <init>(Lcom/htc/android/worldclock/SetAlarm;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 431
+    iput-object p1, p0, Lcom/htc/android/worldclock/SetAlarm$8;->this$0:Lcom/htc/android/worldclock/SetAlarm;
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 2
+    .parameter "v"
+
+    .prologue
+    .line 434
+    invoke-static {}, Lcom/htc/android/worldclock/htclog/HtcLog;->traceFunc()V
+
+    .line 435
+    iget-object v0, p0, Lcom/htc/android/worldclock/SetAlarm$8;->this$0:Lcom/htc/android/worldclock/SetAlarm;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/htc/android/worldclock/SetAlarm;->setResult(I)V
+
+    .line 436
+    iget-object v0, p0, Lcom/htc/android/worldclock/SetAlarm$8;->this$0:Lcom/htc/android/worldclock/SetAlarm;
+
+    invoke-virtual {v0}, Lcom/htc/android/worldclock/SetAlarm;->finish()V
+
+    .line 437
+    return-void
+.end method

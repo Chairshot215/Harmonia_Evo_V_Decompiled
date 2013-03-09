@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:key="keyboard_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_zhu_yin_settings_category_title" android:selectable="false" android:key="@string/keyboard_zhu_yin_settings_category_title" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_zhu_yin_settings_smart_title" android:key="@string/cp_keyboard_smart_zhuyin" android:summary="@string/keyboard_zhu_yin_settings_smart_summary" android:defaultValue="false" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_pin_yin_settings_category_title" android:selectable="false" android:key="@string/keyboard_pin_yin_settings_category_title" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_chinese_language_entries" android:title="@string/keyboard_handwriting_settings_mode_title" android:key="@string/cp_keyboard_pinyin_default_lang" android:defaultValue="0" android:entryValues="@array/keyboard_chinese_language_values" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_pin_yin_settings_fuzzy_pairs_category_title" android:key="@string/keyboard_ime_settings_title">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.PinYin" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_stroke_settings_category_title" android:selectable="false" android:key="@string/keyboard_stroke_settings_category_title" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_chinese_language_entries" android:title="@string/keyboard_handwriting_settings_mode_title" android:key="@string/cp_keyboard_stroke_default_lang" android:defaultValue="0" android:entryValues="@array/keyboard_chinese_language_values" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_handwriting_settings_mode_header" android:selectable="false" android:key="@string/keyboard_handwriting_settings_mode_header" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_handwriting_mode_entries" android:title="@string/keyboard_handwriting_settings_mode_title" android:key="@string/handwriting_settings_mode" android:defaultValue="0" android:entryValues="@array/keyboard_handwriting_mode_values" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_handwriting_add_pattern_word_mode_title" android:key="@string/handwriting_add_pattern_word_mode">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.util.HandwritePatternToWord" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_handwriting_color_entries" android:title="@string/keyboard_handwriting_settings_writing_stroke_color_title" android:key="@string/handwriting_settings_writing_stroke_color" android:defaultValue="7" android:entryValues="@array/keyboard_handwriting_color_values" />
+    <com.htc.android.htcime.settings.StrokeSeekBarPreference android:persistent="false" android:title="@string/keyboard_handwriting_settings_writing_stroke_width_title" android:key="@string/handwriting_settings_writing_stroke_width" android:summary="@string/keyboard_handwriting_settings_writing_stroke_width_summary" />
+    <com.htc.android.htcime.settings.SpeedSeekBarPreference android:persistent="false" android:title="@string/keyboard_handwriting_settings_writing_stroke_speed_title" android:key="@string/handwriting_settings_writing_stroke_speed" android:summary="@string/keyboard_handwriting_settings_writing_stroke_speed_summary" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_chinese_cmcc_use_qwerty_header" android:selectable="false" android:key="@string/keyboard_chinese_cmcc_use_qwerty_header_key" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_chinese_cmcc_use_qwerty_title" android:key="@string/keyboard_chinese_cmcc_use_qwerty_key" android:summary="@string/keyboard_chinese_cmcc_use_qwerty_summary" android:defaultValue="true" />
+</com.htc.preference.HtcPreferenceScreen>

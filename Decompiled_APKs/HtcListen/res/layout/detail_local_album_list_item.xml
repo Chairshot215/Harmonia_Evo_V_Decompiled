@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HtcListItem2LineText android:id="@id/track_name" />
+    <ImageView android:layout_gravity="right" android:id="@id/badge_now_playing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/music_icon_now_play" />
+    <ImageView android:layout_gravity="right" android:id="@id/badge_on_device" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/music_icon_track_option" />
+    <com.htc.widget.HtcListItemImageButton android:id="@id/track_option" />
+</com.htc.widget.HtcListItem>

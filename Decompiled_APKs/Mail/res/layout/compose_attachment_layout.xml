@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/attachment_layout" android:background="@com.htc:color/black" android:paddingTop="3.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mail="http://schemas.android.com/apk/res/com.htc.android.mail">
+    <com.htc.android.mail.widget.MailAttachmentSwitch android:id="@id/mailAttachmentSwitch" android:background="@com.htc:color/common_color_listview_listbackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" mail:topRoundCorner="true" />
+    <ImageView android:id="@id/attachmentDivider" android:visibility="gone" android:layout_below="@id/mailAttachmentSwitch" style="@style/pure_divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/attachlist" android:background="@color/list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/attachmentDivider" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/dropdown_frame" android:background="@drawable/note_dropdown_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="9.0px" />
+    <ImageView android:layout_gravity="left" android:id="@id/dropdown_arrow" android:layout_width="wrap_content" android:layout_height="20.0px" android:layout_marginLeft="18.0px" android:layout_marginRight="18.0px" android:src="@drawable/note_dropdown_arrow" />
+</FrameLayout>

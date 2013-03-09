@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HeaderBarMiddle android:id="@id/browser_title" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarImage android:id="@id/headerImgRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="right_panel" />
+    <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+</com.htc.widget.HeaderBarMiddle>

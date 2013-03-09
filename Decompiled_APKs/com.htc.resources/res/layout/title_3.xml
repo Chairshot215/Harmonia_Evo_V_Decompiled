@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/title_3" android:paddingLeft="@dimen/title_margin_medium" android:paddingRight="@dimen/title_margin_medium" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" style="?com.htc:titleBarBackgroundStyleSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/title_primary_m" android:textColor="@color/titleTextColor" android:ellipsize="end" android:id="@id/title_3_txt_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/title_text_shadow_style" />
+    <TextView android:textSize="@dimen/title_primary_xs" android:textColor="@color/titleTextColor" android:gravity="center_vertical" android:id="@id/title_3_txt_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/title_title_info_title_margin_down_information" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/title_text_shadow_style" />
+</RelativeLayout>

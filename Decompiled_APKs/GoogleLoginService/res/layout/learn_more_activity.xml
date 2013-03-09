@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:text="@string/plus_query_title" />
+        <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    </RelativeLayout>
+    <TextView android:id="@id/msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_area" style="@style/DescriptionText" />
+    <Button android:id="@id/back_button" android:text="@string/done" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Button" />
+</view>

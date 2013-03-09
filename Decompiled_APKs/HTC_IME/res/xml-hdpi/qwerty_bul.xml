@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard label="@string/qwerty_bul" width="53px" hgap="0px" vgap="0px" height="79px" keyTextSize="38px" popupTextSize="45px" totalRows="5" keyTextYOffset="0" topLabelTextSize="22px" topLabelTextYOffset="-2" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,8,5,6" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" splitKeyBackground="@drawable/qwerty_split_key" closeKeyBackground="@drawable/qwerty_close_key">
+    <row>
+        <key codes="0x044B" label="ы" xt9idx="0" hgap="5px" leftEdge="true" />
+        <key codes="0x0443" label="у" xt9idx="1" />
+        <key codes="0x0435" label="е" xt9idx="2" />
+        <key codes="0x0438" label="и" xt9idx="3" />
+        <key codes="0x0448" label="ш" xt9idx="4" />
+        <key codes="0x0449" label="щ" xt9idx="5" />
+        <key codes="0x043A" label="к" xt9idx="6" />
+        <key codes="0x0441" label="с" xt9idx="7" />
+        <key codes="0x0434" label="д" xt9idx="8" />
+        <key codes="0x0437" label="з" xt9idx="9" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="0x044C" label="ь" xt9idx="10" hgap="5px" leftEdge="true" />
+        <key codes="0x044F" label="я" xt9idx="11" />
+        <key codes="0x0430" label="а" xt9idx="12" />
+        <key codes="0x043E" label="о" xt9idx="13" />
+        <key codes="0x0436" label="ж" xt9idx="14" />
+        <key codes="0x0433" label="г" xt9idx="15" />
+        <key codes="0x0442" label="т" xt9idx="16" />
+        <key codes="0x043D" label="н" xt9idx="17" />
+        <key codes="0x0432" label="в" xt9idx="18" />
+        <key codes="0x043C" label="м" xt9idx="19" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="0x044E" label="ю" xt9idx="20" hgap="32px" leftEdge="true" />
+        <key codes="0x0439" label="й" xt9idx="21" />
+        <key codes="0x044A" label="ъ" xt9idx="22" />
+        <key codes="0x044D" label="э" xt9idx="23" />
+        <key codes="0x0444" label="ф" xt9idx="24" />
+        <key codes="0x0445" label="х" xt9idx="25" />
+        <key codes="0x043F" label="п" xt9idx="26" />
+        <key codes="0x0440" label="р" xt9idx="27" />
+        <key codes="0x043B" label="л" xt9idx="28" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-1" width="64px" modifier="true" hgap="6px" sticky="true" function="true" leftEdge="true" icon="@drawable/key_icon_shift_toggle" iconPreview="@drawable/sapphire_icon_shift_toggle" />
+        <key codes="0x045D" label="ѝ" xt9idx="30" width="57px" hgap="1px" />
+        <key codes="0x0021" label="!" xt9idx="31" width="57px" />
+        <key codes="0x003F" label="\?" xt9idx="32" width="57px" />
+        <key codes="0x002D" label="-" xt9idx="33" width="57px" />
+        <key codes="0x0446" label="ц" xt9idx="34" width="57px" />
+        <key codes="0x0447" label="ч" xt9idx="35" width="57px" />
+        <key codes="0x0431" label="б" xt9idx="36" width="57px" />
+        <key codes="0x0008" width="64px" function="true" hgap="1px" rightEdge="true" repeatable="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" xt9idx="37" />
+    </row>
+    <row>
+        <key codes="-4" width="74px" hgap="6px" function="true" leftEdge="true" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-16" width="64px" hgap="1px" function="true" grouped="1" />
+        <key codes="-23" hgap="-64px" width="64px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-64px" width="64px" function="true" label="" textScale="75%p" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="0x002C" label="," splitSet="1" xt9idx="40" />
+        <key codes="0x002F" label="/" hgap="-53px" splitSet="2" />
+        <key codes="0x0040" label="\@" hgap="-53px" splitSet="3" />
+        <key codes="0x0020" width="154px" repeatable="true" splitSet="1" icon="@drawable/key_icon_space" showPreview="false" iconPreview="@drawable/sapphire_icon_space" xt9idx="41" />
+        <key codes="-7" label=".com" hgap="-154px" width="78px" splitSet="2" splitLeft="true" textScale="80%p" popupCharacters="@string/alternates_for_dotcom" feedbackBG="1" accentType="1" alignIndex="1" />
+        <key codes="0x0020" hgap="-1px" repeatable="true" width="77px" splitSet="2" splitRight="true" feedbackBG="2" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" xt9idx="41" />
+        <key codes="-7" label=".com" hgap="-154px" width="78px" splitSet="3" splitLeft="true" textScale="80%p" popupCharacters="@string/alternates_for_dotcom" feedbackBG="1" accentType="1" alignIndex="1" />
+        <key codes="0x005F" label="_" hgap="-1px" width="77px" splitSet="3" splitRight="true" feedbackBG="2" />
+        <key codes="0x002E" label="." xt9idx="42" />
+        <key codes="-2" label="12#" hgap="1px" width="64px" textScale="80%p" function="true" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="0x000A" width="64px" hgap="1px" function="true" sticky="true" rightEdge="true" icon="@drawable/key_icon_enter_toggle" iconPreview="@drawable/sapphire_icon_enter_toggle" xt9idx="44" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="132" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

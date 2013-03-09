@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/htc_dock_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/htc_cardock_title">
+        <com.htc.preference.HtcListPreference android:entries="@array/display_mode_entries" android:title="@string/display_mode_title" android:key="display_mode" android:defaultValue="0" android:dialogTitle="@string/display_mode_title" android:entryValues="@array/display_mode_values" />
+        <com.android.settings.cardock.HtcAutoLaunchNaviPanelPreference />
+        <com.android.settings.cardock.HtcAutoConnectBluetoothPreference />
+        <com.android.settings.cardock.HtcPairedBluetoothDevicesListPreference />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

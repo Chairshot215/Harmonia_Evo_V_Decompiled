@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="4306" android:versionName="SZ_4.3.6" package="com.sprint.dsa"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <application android:label="@string/app_name" android:debuggable="false" android:anyDensity="true" android:hardwareAccelerated="false">
+        <activity android:label="@string/app_name" android:name=".DsaClient" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.sprint.dsa.DSA_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.sprint.dsa/vnd.sprint.dsa.main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="dss" />
+                <data android:host="SprintSelfService" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="com.sprint.permission.SPRINT4G" />
+    <uses-permission android:name="com.sprint.internal.permission.SLOT0" />
+    <uses-permission android:name="com.sprint.internal.permission.PLATFORM" />
+    <uses-permission android:name="com.sprint.internal.permission.CONNECTIONMANAGER" />
+    <uses-permission android:name="com.sprint.internal.permission.OMADM" />
+    <uses-permission android:name="com.sprint.internal.permission.SYSTEMPROPERTIES" />
+    <uses-permission android:name="com.sprint.permission.INSTALL_UPDATES" />
+    <uses-permission android:name="com.sprint.internal.permission.SYSTEMPROPERTIES_WRITE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

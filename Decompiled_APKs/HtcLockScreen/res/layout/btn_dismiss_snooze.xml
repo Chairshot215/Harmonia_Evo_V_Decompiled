@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/dismiss_snooze_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/btn_arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/arrow_icon_margintop" android:layout_marginRight="@dimen/arrow_icon_marginLeftRight" />
+        <RelativeLayout android:id="@id/snooze_button_Area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dismiss_snooze_marginBottom" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/snooze_button" android:paddingLeft="10.0px" android:paddingTop="10.0px" android:paddingRight="10.0px" android:paddingBottom="10.0px" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_dismiss_snooze" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/dismiss_snooze_textSize" android:gravity="center" android:id="@id/snooze_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dismiss_snooze_text_marginTop" android:text="@com.htc:string/dialog_button_ok" android:layout_centerHorizontal="true" style="@style/button_text_style" />
+            <TextView android:textSize="@dimen/dismiss_snooze_hint_textSize" android:textColor="@color/white" android:gravity="center" android:id="@id/snooze_button_hint" android:layout_width="@dimen/lockscreen_hint_text_maxWidth" android:layout_height="wrap_content" android:layout_marginTop="@dimen/lockscreen_hint_margin_top" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.1" android:layout_below="@id/snooze_button" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/dismiss_button_Area" android:visibility="gone" android:layout_width="0.0px" android:layout_height="0.0px">
+            <ImageView android:id="@id/dismiss_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@id/dismiss_button_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView android:id="@id/btn_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/arrow_icon_marginLeftRight" android:layout_marginTop="@dimen/arrow_icon_margintop" />
+    </LinearLayout>
+</RelativeLayout>

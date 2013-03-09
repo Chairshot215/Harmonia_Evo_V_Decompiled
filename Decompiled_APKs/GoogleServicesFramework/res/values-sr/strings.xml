@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Веб</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">непознато</string>
+    <string name="sharedUserLabel">Google услуге</string>
+    <string name="service_label">Програм за ажурирање система</string>
+    <string name="system_update_activity_name">Ажурирања система</string>
+    <string name="system_update_activity_title">Ажурирања система</string>
+    <string name="system_update_activity_battery_low_text">Није могуће инсталирати ажурирање система јер је ниво напуњености батерије сувише низак. Прикључите пуњач да бисте наставили.</string>
+    <string name="system_update_activity_battery_low_charging_text">Није могуће инсталирати ажурирање система јер је ниво напуњености батерије сувише низак. Сачекајте да се батерија довољно напуни.</string>
+    <string name="system_update_activity_roaming_text">Није могуће преузети ажурирања система у ромингу.</string>
+    <string name="system_update_requires_restart_status_text">Захтева поновно покретање</string>
+    <string name="system_update_downloading_status_text">Преузимање</string>
+    <string name="system_update_downloading_wifi_status2_text">Преко Wi-Fi-ја само до ^1</string>
+    <string name="system_update_verifying_status_text">Провера</string>
+    <string name="system_update_verification_failed_text">Верификација није успела.</string>
+    <string name="system_update_verified_status_text">Преузето и верификовано</string>
+    <string name="system_update_download_failed_status_text">Преузимање није успело</string>
+    <string name="system_update_download_retry_button_text">Поново покушај преузимање</string>
+    <string name="system_update_download_button_text">Преузми</string>
+    <string name="system_update_install_button_text">Поново покрени и инсталирај</string>
+    <string name="system_update_check_now_button_text">Провери одмах</string>
+    <string name="system_update_no_update_content_text">Систем је тренутно актуелан</string>
+    <string name="system_update_last_checkin">Последњи пут је проверено да ли има ажурирања ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Ажурирање система је доступно</string>
+    <string name="system_update_recommended_update_available_notification_message">Погледајте детаље о ажурирању.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Преузимање ажурирања система није успело.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Преузимање није успело. Покушајте поново.</string>
+    <string name="system_update_error_dialog_title">Грешка</string>
+    <string name="system_update_error_downloading_dialog_message">Дошло је до проблема приликом преузимања ажурирања.</string>
+    <string name="system_update_error_installing_dialog_message">Дошло је до проблема приликом инсталирања ажурирања.</string>
+    <string name="system_update_install_dialog_label">Ажурирање система</string>
+    <string name="system_update_install_dialog_message_nonphone">Ажурирање система је спремно за инсталацију. Android уређај ће се поново покренути и инсталирати ажурирање.</string>
+    <string name="system_update_install_dialog_message_phone">Ажурирање система је спремно за инсталацију. Android уређај ће се поново покренути и инсталирати ажурирање. Током инсталације нећете моћи да упућујете позиве, укључујући позиве за хитне случајеве.</string>
+    <string name="system_update_install_dialog_battery_low_message">Ажурирање система је спремно, али га није могуће инсталирати јер је ниво напуњености батерије сувише низак. Прикључите пуњач.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Ажурирање система је спремно, али га није могуће инсталирати јер је ниво напуњености батерије сувише низак. Сачекајте да се батерија довољно напуни.</string>
+    <string name="system_update_install_dialog_now_button">Инсталирај одмах</string>
+    <string name="system_update_install_dialog_later_button">Инсталирај касније</string>
+    <string name="system_update_install_dialog_info_button">Више информација…</string>
+    <string name="system_update_downloading_notification_title">Преузимање ажурирања система</string>
+    <string name="system_update_verifying_notification_title">Верификација ажурирања система</string>
+    <string name="system_update_download_dialog_label">Преузимање системског ажурирања</string>
+    <string name="system_update_download_dialog_message">Доступно је ажурирање система које ће побољшати ваш Android уређај. Ако га преузмете преко бежичне мреже, то ће бити додатно наплаћено.</string>
+    <string name="system_update_download_dialog_now_button">Преузми одмах</string>
+    <string name="system_update_download_dialog_later_button">Преузми касније</string>
+    <string name="system_update_download_dialog_cancel_button">Откажи</string>
+    <string name="system_update_countdown_complete">Поновно покретање...</string>
+    <string name="system_update_countdown_cancel_button">Откажи инсталацију</string>
+    <string name="system_update_complete_label">Ажурирање система</string>
+    <string name="system_update_complete_ok_button">Потврди</string>
+    <string name="provider_label">Пријаве за Push</string>
+    <string name="ro_perm_label">читање тренутних порука</string>
+    <string name="ro_perm_desc">Омогућава апликацијама да читају податке добављача Google Talk садржаја.</string>
+    <string name="wo_perm_label">писање тренутних порука</string>
+    <string name="wo_perm_desc">Омогућава апликацијама да уписују податке код добављача Google Talk садржаја.</string>
+    <string name="gsf_label">Оквир за Google услуге</string>
+    <string name="search_chats">"Претрага
+ термина „%1$s“ у ћаскањима"</string>
+    <string name="gtalkservice_label">Google размена порука</string>
+    <string name="c2dm_label">Услуга слања порука са сервера на уређај (Cloud to Device Messaging – C2DM)</string>
+    <string name="sendTalkMsg_perm_label">Размена порука и пријем обавештења о синхронизацији од Google сервера</string>
+    <string name="sendTalkMsg_perm_desc">Користи се за пренос порука са сервера на уређај и за обавештења о синхронизацији. Google Talk ову услугу користи за размену порука и синхронизацију статуса присутности. Злонамерна апликација може преко ове услуге да пренесе прекомерну количину података.</string>
+    <string name="perm_receive_data_message_label">пријем података са Интернета</string>
+    <string name="perm_receive_data_message_desc">Омогућава апликацијама да прихвате поруке послате са сервера на уређај путем услуге Cloud to Device Messaging (C2DM) за апликације. Коришћење ове услуге ће довести до коришћења података. Злонамерне апликације на тај начин могу да проузрокују прекомерно коришћење података.</string>
+    <string name="perm_data_msg_broadcast_label">Емитовање порука са подацима апликацијама.</string>
+    <string name="perm_data_msg_broadcast_desc">Може да емитује поруке са подацима примљене са Интернета апликацијама регистрованим да их слушају.</string>
+    <string name="perm_receive_xmpp_label">шаљи и примај XMPP поруке на и са Google сервера</string>
+    <string name="perm_receive_xmpp_desc">Омогућава Google апликацијама да шаљу и примају XMPP поруке на Google сервере и са њих.</string>
+    <string name="perm_xmpp_broadcast_label">Емитуј XMPP поруке апликацијама.</string>
+    <string name="perm_xmpp_broadcast_desc">Може да емитује XMPP поруке примљене са Google сервера апликацијама регистрованим да их слушају.</string>
+    <string name="perm_use_xmpp_endpoint_label">да шаљу и примају XMPP поруке на Google сервере и са њих.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Омогућава Google апликацијама да шаљу и примају XMPP поруке на Google сервере и са њих.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Емитуј XMPP поруке апликацијама.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Може да емитује XMPP поруке које су апликације примиле од Google сервера.</string>
+    <string name="permlab_intentVendingOnly">Слање емитовања на Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Може да шаље емитовања на Android Market и захтева инсталирање апликације и њено уклањање.</string>
+    <string name="permlab_heartbeat">Слање сигнала Google Talk серверу</string>
+    <string name="permdesc_heartbeat">Може да пошаље сигнални пакет Google Talk серверу ради утврђивања поуздане везе.</string>
+    <string name="group_chat">Групно ћаскање: %s</string>
+    <string name="default_decline_reason">Жао ми је, тренутно сам заузет/а.</string>
+    <string name="newMessages_label">Нова ћаскања</string>
+    <string name="notify_groupchat_label">Позивница за групно ћаскање</string>
+    <string name="num_unread_chats">Непрочитаних ћаскања: %s</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s до %s</string>
+    <string name="subscription_notify_text">%s жели да ћаска</string>
+    <string name="group_chat_invite_notify_text">Примили сте позивницу за групно ћаскање од корисника %s</string>
+    <string name="group_chat_invite_dialog_text">%s вас позива да се придружите групном ћаскању.</string>
+    <string name="message_too_long">Не можете да шаљете поруке дужине преко 2000 знакова.</string>
+    <string name="missed_video_chat_notification">Пропустили сте позив за видео ћаскање</string>
+    <string name="missed_voice_chat_notification">Пропустили сте позив за аудио ћаскање</string>
+    <string name="missed_video_chat_notification_no_wifi">Пропустили сте позив за видео ћаскање јер нисте били повезани са Wi-Fi мрежом</string>
+    <string name="missed_voice_chat_notification_no_wifi">Пропустили сте позив за аудио ћаскање јер нисте били повезани са Wi-Fi мрежом</string>
+    <string name="missed_video_chat_message">%1$s је покушао/ла да започне видео ћаскање са вама</string>
+    <string name="missed_voice_chat_message">%1$s је покушао/ла да започне аудио ћаскање са вама</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s је покушао/ла да започне видео ћаскање са вама док нисте били повезани са Wi-Fi мрежом</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s је покушао/ла да започне аудио ћаскање са вама док нисте били повезани са Wi-Fi мрежом</string>
+    <string name="end_cause_user_unavailable_video">%1$s није доступан/на за видео ћаскање.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s није доступан/на за аудио ћаскање.</string>
+    <string name="end_cause_sent_terminate_video">Завршили сте видео ћаскање са %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Завршили сте аудио ћаскање са корисником %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s је прекинуо/ла видео ћаскање.</string>
+    <string name="end_cause_received_terminate_voice">%1$s је завршио/ла аудио ћаскање.</string>
+    <string name="end_cause_network_problem_video">Жао нам је, видео ћаскање са корисником %1$s није успело због проблема са мрежом . Покушајте поново.</string>
+    <string name="end_cause_network_problem_voice">Жао нам је, аудио ћаскање са корисником %1$s није успело због проблема са мрежом . Покушајте поново.</string>
+    <string name="conn_auth_error_notify_ticker">Потврда идентитета за Google Talk није успела</string>
+    <string name="conn_auth_error_notify_title">Потврда идентитета за Google Talk није успела</string>
+    <string name="conn_auth_error_title">Грешка приликом потврде идентитета</string>
+    <string name="conn_auth_error_message">Пријављивање на Google Talk није успело. Ако је ово Google Apps налог, потврдите да је услуга ћаскања омогућена за овај налог.</string>
+    <string name="conn_auth_error_button_retry">Покушај поново</string>
+    <string name="conn_auth_error_button_cancel">Откажи</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Добро дошли у ^1</string>
+    <string name="setup_wizard_title">Чаробњак за подешавање</string>
+    <string name="error_dialog_title">Пажња</string>
+    <string name="next_button_label">Даље</string>
+    <string name="back_button_label">Назад</string>
+    <string name="sign_in_button_label">Пријави ме</string>
+    <string name="create_button_label">Отвори</string>
+    <string name="skip_button_label">Прескочи</string>
+    <string name="first_name">Име</string>
+    <string name="last_name">Презиме</string>
+    <string name="done">Потврди</string>
+    <string name="cancel_button_label">Откажи</string>
+    <string name="done_button_label">Заврши подешавање</string>
+    <string name="try_again_button_label">Покушај поново</string>
+    <string name="close_button_label">Затвори</string>
+    <string name="edit_text_help">Додирните било који оквир за текст да бисте започели са куцањем</string>
+    <string name="add_a_google_account">Додавање Google налога</string>
+    <string name="no_sim_setup_wireless">Немате уграђену SIM картицу па не можете да се повежете са мрежом за мобилне уређаје ради коришћења гласовних услуга или услуга преноса података. Без SIM картице можете да се повежете са Wi-Fi мрежом.</string>
+    <string name="setup_wifi_button_label">Повежи са Wi-Fi мрежом</string>
+    <string name="no_network">Немате мрежну везу.</string>
+    <string name="no_network_help">Ово би могао да буде привремени проблем или Android уређај није припремљен за услуге преноса података. Покушајте поново када се повежете са мобилном мрежом или Wi-Fi мрежом.</string>
+    <string name="server_error">Дошло је до проблема током комуникације са Google серверима.</string>
+    <string name="server_error_help">Покушајте поново касније.</string>
+    <string name="network_unreliable">Није могуће успоставити поуздану везу за пренос података са сервером.</string>
+    <string name="network_unreliable_help">Ово је можда привремени проблем или ваш Android уређај није припремљен за услугу преноса података. Ако се ово настави, позовите корисничку подршку.</string>
+    <string name="invalid_login_character">Неважећи знак. Дозвољени су само знакови 0-9, a-z, A-Z и тачке.</string>
+    <string name="invalid_password_character">Лозинка садржи неважећи знак.</string>
+    <string name="add_apn">Подешавања бежичне мреже</string>
+    <string name="setup_google_account_title">Подешавање Google налога</string>
+    <string name="setup_complete_title">Подешавање је довршено</string>
+    <string name="cant_be_blank">Поље не сме да буде празно.</string>
+    <string name="calendar">Google календар</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android уређај није повезан са услугама преноса података. Да бисте одмах видели ове информације, идите на адресу %s са било ког рачунара повезаног на Интернет.</string>
+    <string name="field_cant_be_blank">Ово поље не сме да буде празно</string>
+    <string name="field_invalid_domain">Ово није важећи назив домена</string>
+    <string name="field_invalid_user">Ово није важеће корисничко име</string>
+    <string name="field_invalid_user_domain">Унесите само корисничко име, не и адресу е-поште</string>
+    <string name="field_invalid_login">Ово није важећи назив налога</string>
+    <string name="about_accounts_message"><font size="17">"Android уређај се лако подешава! Све што вам је потребно је Google налог.
+"<font height="17">"
+"</font><b>Зашто бисте користили Google налог?</b>"
+"<font height="3">"
+"</font>"Помоћу Google налога, Google апликације се аутоматски синхронизују између Android уређаја и рачунара, без обзира на то где их ажурирате.
+"<font height="17">"
+"</font><b>Већ имате Google налог?</b>"
+"<font height="3">"
+"</font>"Онда сте спремни! Једноставно додирните ставку „Пријавите се“ на следећем екрану.
+"<font height="17">"
+"</font><b>Немате Google налог?</b>"
+"<font height="3">"
+"</font>"Нема проблема. Додирните ставку „Направи“ на следећем екрану и ми ћемо вам помоћи да га подесите.
+"<font height="17">"
+"</font><b>Додирните „Следеће“ да бисте започели!</b>"
+"</font></string>
+    <string name="fling_help_message">"Превлачите прст нагоре или надоле по екрану да бисте се померали.
+(Додирните ову поруку да бисте је одбацили.)"</string>
+    <string name="setup_device_title">Подешавање уређаја ^1</string>
+    <string name="dont_have_an_account">Немате Google налог?</string>
+    <string name="create_one_now">Отворите налог одмах – врло је једноставно!</string>
+    <string name="already_have_an_account">Већ имате Google налог?</string>
+    <string name="sign_in_with_google_account">Пријавите се помоћу Google налога који желите да повежете са овим Android уређајем.</string>
+    <string name="skip_message">Желите ли касније да подесите налог?</string>
+    <string name="touch_to_begin">Додирните android и почните.</string>
+    <string name="delayed_gaia_agreement">Ако наставите, прихватате <annotation id="google_privacy">Google-ову</annotation> и <annotation id="android_privacy">Додатну</annotation> политику приватности.</string>
+    <string name="open_keyboard_message">Отворите тастатуру да бисте започели.</string>
+    <string name="open_keyboard_message_to_continue">Отворите тастатуру да бисте наставили.</string>
+    <string name="emergency_dial">Хитан позив</string>
+    <string name="change_language">Промени језик</string>
+    <string name="signing_in">Пријављивање…</string>
+    <string name="close_keyboard_message">Затворите тастатуру да бисте наставили.</string>
+    <string name="communicating_message">Android уређај мора да успостави везу са Google серверима како би подесио налог. То може да потраје до пет минута.</string>
+    <string name="communicating_message_domain">Android уређај мора да успостави везу са Google серверима да би пронашао информације о домену. То може да потраје до пет минута.</string>
+    <string name="username">Корисничко име</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Лозинка</string>
+    <string name="sign_in_agreement">Ако се пријавите, прихватате <annotation id="google_privacy">Google-ову</annotation> и <annotation id="android_privacy">Додатну</annotation> политику приватности.</string>
+    <string name="create">Отвори</string>
+    <string name="create_message">Потребан вам је Google налог?</string>
+    <string name="now_signing_in">Пријављивање…</string>
+    <string name="now_verifying_domain">Проналажење домена…</string>
+    <string name="sign_in_with_google_account_short">Пријавите се помоћу Google налога:</string>
+    <string name="browser_sign_in_explanation">Користите овај екран ако имате посебне услове који захтевају коришћење веб прегледача.</string>
+    <string name="gls_browser_login_intro_message">Није могуће приступити Google налогу нити Google Apps налогу помоћу овог телефона. Потребно је поновно овлашћење.</string>
+    <string name="enter_domain_name">Унесите назив домена предузећа:</string>
+    <string name="enter_user_name">Унесите корисничко име и лозинку за ^1:</string>
+    <string name="inactive_domain">Овај налог није могуће користити зато што припада неактивном домену. Контактирајте администратора домена за <b>^1</b> или се пријавите помоћу другог налога.</string>
+    <string name="invalid_username">Унети текст није важеће корисничко име.</string>
+    <string name="web_login_error_title">Жао нам је...</string>
+    <string name="web_login_error_desc">"Дошло је до проблема приликом повезивања са серверима предузећа на домену ^1.
+
+Информације о грешци:
+"</string>
+    <string name="web_login_error_redirects">Страница за пријављивање на Веб је преусмерила превише пута</string>
+    <string name="web_login_error_http">HTTP грешка ^1 : ^2</string>
+    <string name="name_device_label">Дајте назив свом Android уређају:</string>
+    <string name="device_name_hint">Назив уређаја</string>
+    <string name="registering_device">Регистрација Android уређаја...</string>
+    <string name="error_account_disabled">"Овај налог је онемогућен. 
+
+(За детаљне информације посетите http://google.com/accounts/recovery на рачунару.)"</string>
+    <string name="error_login_failed">"Корисничко име и лозинка се не подударају. Покушајте поново. 
+
+(Да бисте поново добили информације о налогу, идите на адресу http://www.google.com/accounts/recovery на рачунару)."</string>
+    <string name="error_account_not_verified">"Овај налог није верификован. Проверите да ли сте примили поруку е-поште на рачунару и пратите везу да бисте верификовали овај налог. 
+
+(Да бисте поново добили информације о налогу, идите на адресу http://google.com/accounts на рачунару)."</string>
+    <string name="captcha_message_string">Потврда</string>
+    <string name="captcha_instructions">Унесите знакове које видите на слици. Слова не разликују мала и велика слова.</string>
+    <string name="create_google_account">Отварање новог Google налога</string>
+    <string name="example_usernames">нпр. PPetrovic, Petar.Petrovic</string>
+    <string name="create_account_agreement">Ако отворите овај налог, прихватате <annotation id="google_privacy">Google-ову</annotation> и <annotation id="android_privacy">Додатну</annotation> политику приватности.</string>
+    <string name="account_already_has_gmail">Налог већ садржи Gmail.</string>
+    <string name="creating_account">Отварање налога…</string>
+    <string name="checking_account">Провера доступности корисничког имена...</string>
+    <string name="try_a_different_username">Испробајте друго корисничко име</string>
+    <string name="is_not_available">Корисничко име <b>^1</b> је недоступно.</string>
+    <string name="hint_size"><b>^1</b> садржи мање од 6 или више од 30 знакова.</string>
+    <string name="hint_numbers_only"><b>^1</b> не садржи слова.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" може да садржи само слова,
+бројеве и тачке."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> не користи Gmail</string>
+    <string name="sign_in">Пријави ме</string>
+    <string name="sign_in_browser">Пријави ме преко прегледача</string>
+    <string name="here_are_alternatives">Ево неких решења:</string>
+    <string name="alternatives_list_title">Предложена имена</string>
+    <string name="choose_a_password"><b>"Унесите
+лозинку"</b></string>
+    <string name="confirm_password"><b>"Потврда
+лозинке"</b></string>
+    <string name="password_strength"><b>"Јачина
+лозинке"</b></string>
+    <string name="too_short">Прекратко</string>
+    <string name="security_question"><b>"Безбедносно
+питање"</b></string>
+    <string name="security_questions_title">Безбедносна питања</string>
+    <string name="answer"><b>Одговор</b></string>
+    <string name="password_mismatch">Лозинке се не подударају. Унесите их поново.</string>
+    <string name="your_account_was_created">Налог је отворен!</string>
+    <string name="eight_chars_min">(најмање 8 знакова)</string>
+    <string name="just_in_case">У случају да изгубите лозинку.</string>
+    <string name="verify_your_profile">Верификација профила</string>
+    <string name="signed_in">Пријављен/а!</string>
+    <string name="error_not_logged_in">Корисник није пријављен.</string>
+    <string name="error_username_unavailable">Корисничко име није доступно.</string>
+    <string name="error_bad_password">Лозинка је сувише слаба или садржи неважеће знакове. Покушајте поново.</string>
+    <string name="error_bad_username">Неважеће корисничко име.</string>
+    <string name="loading">Учитавање...</string>
+    <string name="submission_title">Жао нам је...</string>
+    <string name="submission_error_text">Дошло је до грешке. Покушајте поново.</string>
+    <string name="existing_account_error_title">Налог већ постоји</string>
+    <string name="existing_account_error_text">На овом Android уређају већ постоји налог ^1.</string>
+    <string name="account_linked_message"><font height="24">Google налог је сада повезан са овим Android уређајем.</font></string>
+    <string name="syncing_message"><font size="17">"Google апликације сада синхронизују податке. 
+"<font height="17">"
+"</font>"%i Када икона „синхронизовање“ нестане са статусне траке на врху екрана, преузимање је завршено.
+"<font height="17">"
+"</font><b>О статусној траци…</b>"
+"<font height="3">"
+"</font>"Сваки пут када примите нову поруку или друго обавештење, појављује се икона на статусној траци.
+"<font height="17">"
+"</font>Користите прст да бисте превукли статусну траку надоле и отворили таблу са обавештењима са детаљима о свим тренутним обавештењима.</font></string>
+    <string name="i_agree_next">Прихватам, Даље</string>
+    <string name="android_privacy_policy_title">Додатна политика приватности</string>
+    <string name="google_terms_of_service_title">Google услови коришћења услуге</string>
+    <string name="google_privacy_policy_title">Google политика приватности</string>
+    <string name="notification_update_title">Налог мора да се ажурира</string>
+    <string name="notification_update_message">Додирните овде да бисте поново покренули чаробњак за подешавање</string>
+    <string name="common_message">"Gmail, резервне копије и многе друге Android функције захтевају Google налог.
+
+Додирните дугме "<b>Даље</b>" да бисте се пријавили са постојећим Google налогом или креирајте нов Google налог одмах.
+
+Такође можете да додирнете дугме "<b>Прескочи</b> да бисте почели да користите свој Android. Касније можете да се пријавите на Google налог у менију Подешавања, ставка Налози и синхронизација.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Додавање налога</font>" 
+
+Можете да користите више Google налога (као што су кућни и пословни налози). Да бисте додали Google налог, довољно је само неколико корака. 
+
+Додирните „Следеће“ да бисте наставили или притисните дугме „Назад“ да бисте изашли."</string>
+    <string name="reactivate_account_message">"Морате да повежете Google Mail налог са овим Android уређајем. 
+
+Већ имате корисничко име за Google пошту ("<b>^1</b>") повезано са овим налогом, али оно тренутно није активно. 
+
+Додирните „Следеће“ да бисте поново активирали то корисничко име и могли да га користите. 
+
+Ако желите да користите други налог, притисните дугме Назад и пријавите се помоћу другог налога или отворите нови."</string>
+    <string name="reactivating_account">Поновно активирање налога…</string>
+    <string name="your_account_was_reactivated">Налог је активиран!</string>
+    <string name="account_recovery_info">Следеће информације ће вам помоћи да вратите лозинку ако је икада изгубите</string>
+    <string name="secondary_email_label"><b>"Секундарна
+адреса е-поште"</b></string>
+    <string name="invalid_email">"Унета адреса е-поште није важећа.
+ Пример: joe@example.com"</string>
+    <string name="invalid_email_primary">Секундарна адреса е-поште не може да буде иста као адреса коју отварате</string>
+    <string name="tutorial_intro_title">Сазнајте како да користите ^1</string>
+    <string name="begin_button_label">Започни</string>
+    <string name="tutorial_intro_message_generic">Постоје неке важне ствари које треба да знате да бисте искористили све погодности Android уређаја. <font size="17">"
+"</font>" 
+"<li>Коришћење тастатуре на екрану</li> <font size="17">"
+"</font>" 
+Додирните „Започни“ да бисте покренули водич и сазнали више."</string>
+    <string name="tutorial_intro_message_setupwizard">Постоје неке важне ствари које треба да знате да бисте искористили све погодности Android уређаја. <font size="17">"
+"</font>" 
+"<li>Коришћење тастатуре на екрану</li>" 
+"<li>Подешавање Google налога</li> <font size="17">"
+"</font>" 
+Додирните „Започни“ да бисте покренули водич и сазнали више или додирните „Прескочи“ да бисте га прескочили и наставили."</string>
+    <string name="keyboard_tutorial_title">Коришћење тастатуре на екрану</string>
+    <string name="keyboard_tutorial_message">Додирните било које поље за текст да бисте отворили тастатуру и започели унос. Испробајте овде!</string>
+    <string name="keyboard_tutorial_edittext_hint">Додирните овде да бисте почели да куцате</string>
+    <string name="done_typing_message">Завршили сте са куцањем? Притисните дугме „Назад“ на телефону да бисте затворили тастатуру.</string>
+    <string name="done_button_label_in_tutorial">Готово</string>
+    <string name="backup_consent_title">Прављење резервне копије подешавања</string>
+    <string name="backup_consent_message">Резервна копија подешавања (попут обележивача и Wi-Fi лозинки) може аутоматски да се направи на Google налогу. Ако набавите нови Android уређај (да бисте заменили изгубљени или ако извршите надоградњу), подешавања ће бити враћена на нови Android уређај.</string>
+    <string name="backup_consent_howto_disable_message">Подешавања резервних копија можете у било ком тренутку да промените у апликацији Подешавања, у одељку Приватност.</string>
+    <string name="backup_consent_yes_agree">Направи резервну копију подешавања у оквиру мог Google налога.</string>
+    <string name="restore_disable">Онемогући враћање</string>
+    <string name="restore_enable">Омогући враћање</string>
+    <string name="restore_enabled">Ако сте претходно направили резервну копију подешавања, она ће бити враћена.</string>
+    <string name="restore_disabled">Подешавања неће бити враћена из резервне копије.</string>
+    <string name="webview_progress_title">Повезивање са доменом...</string>
+    <string name="webview_progress_verbose_message">"Информације за пријављивање се шаљу са сервера вашег предузећа. То може да потраје неколико минута.
+Након тога ће се приказати страница за пријављивање вашег предузећа."</string>
+    <string name="enterprise_unmanaged_domain">Овај домен не користи Google Apps. Проверите назив домена и покушајте поново.</string>
+    <string name="use_location_for_services_agree">Прихватам</string>
+    <string name="use_location_for_services_disagree">Не прихватам</string>
+    <string name="use_location_for_services_title">Коришћење Моје локације</string>
+    <string name="use_location_for_services_text">Желите ли да дозволите Google-у да користи локацију за побољшане резултате претраге и друге услуге?</string>
+    <string name="permlab_readGsettings">Читање Google подешавања</string>
+    <string name="permdesc_readGsettings">Омогућава овој апликацији да чита Google подешавања.</string>
+    <string name="permlab_writeGsettings">Измена Google подешавања</string>
+    <string name="permdesc_writeGsettings">Омогућава овој апликацији да измени Google подешавања.</string>
+    <string name="permlab_readGservices">прочитајте конфигурацију Google услуга</string>
+    <string name="permdesc_readGservices">Омогућава овој апликацији да чита податке конфигурације Google услуге.</string>
+    <string name="permlab_writeGservices">Измена конфигурације Google услуга</string>
+    <string name="permdesc_writeGservices">Омогућава овој апликацији да измени податке конфигурације Google услуге.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">приступ лозинкама за Google налоге</string>
+    <string name="permdesc_googleAuthPassword">Омогућава апликацијама директан приступ лозинкама за Google налоге које сте конфигурисали.</string>
+    <string name="permlab_googleMailSwitch">изаберите Gmail или Google Mail брендирање</string>
+    <string name="permdesc_googleMailSwitch">Омогућава апликацијама да приказано име пребацују са брендирања „Gmail“ на „Google Mail“ и обрнуто.</string>
+    <string name="permlab_googleAuth">приказ конфигурисаних налога</string>
+    <string name="permdesc_googleAuth">Омогућава апликацијама да виде корисничка имена (адресе е-поште) Google налога које сте конфигурисали.</string>
+    <string name="permlab_googleAuth_ALL">приступ свим Google услугама</string>
+    <string name="permdesc_googleAuth_ALL">Омогућава апликацијама да се пријаве на СВЕ Google услуге помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_OTHER">приступ осталим Google услугама</string>
+    <string name="permdesc_googleAuth_OTHER">Омогућава апликацијама да се пријаве на ненаведене Google услуге помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Омогућава апликацијама да се пријаве на Google Mail услуге помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_cl">Google календар</string>
+    <string name="permdesc_googleAuth_cl">Омогућава апликацијама да се пријаве на Google календар помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_android">Android услуге</string>
+    <string name="permdesc_googleAuth_android">Омогућава апликацијама да се пријаве на Android услуге помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout налози</string>
+    <string name="permdesc_googleAuth_sierra">Омогућава апликацијама да се пријаве на Google Checkout (и евентуално изврше куповину) помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA налози</string>
+    <string name="permdesc_googleAuth_sierraqa">Омогућава апликацијама да се пријаве на Google Checkout QA помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandbox налози</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Омогућава апликацијама да се пријаве на Google Checkout Sandbox помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Омогућава апликацијама да се пријаве на YouTube помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Корисничка имена за YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Омогућава апликацијама да виде корисничка имена за YouTube повезана са Google налозима сачуваним на овом Android уређају.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Омогућава апликацијама да се пријаве на Google Talk помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_ig">iGoogle налози</string>
+    <string name="permdesc_googleAuth_ig">Омогућава апликацијама да се пријаве на iGoogle помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_lh2">Picasa веб албуми</string>
+    <string name="permdesc_googleAuth_lh2">Омогућава апликацијама да се пријаве на Picasa веб албуме помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_mobile">Google апликације за мобилне уређаје</string>
+    <string name="permdesc_googleAuth_mobile">Омогућава апликацијама да се пријаве на Google апликације за мобилне уређаје помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_cp">подаци о контактима на Google налозима</string>
+    <string name="permdesc_googleAuth_cp">Омогућава апликацијама да приступају информацијама о контактима и профилима на налозима сачуваним на овом Android уређају.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Омогућава апликацијама да се пријаве на Google AdSense помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Омогућава апликацијама да се пријаве на Google AdWords помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Омогућава апликацијама да се пријаве на Blogger помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Омогућава апликацијама да се пријаве на Dodgeball помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Омогућава апликацијама да се пријаве на Google Base помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_groups2">Google групе</string>
+    <string name="permdesc_googleAuth_groups2">Омогућава апликацијама да се пријаве на Google групе помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Омогућава апликацијама да се пријаве на Google Health помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Омогућава апликацијама да се пријаве на JotSpot помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Омогућава апликацијама да се пријаве на Knol помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_news">Google вести</string>
+    <string name="permdesc_googleAuth_news">Омогућава апликацијама да се пријаве на Google вести помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Омогућава апликацијама да се пријаве на Orkut помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_print">Google претрага књига</string>
+    <string name="permdesc_googleAuth_print">Омогућава апликацијама да се пријаве на Google претрагу књига помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_sitemaps">Google алатке за вебмастере</string>
+    <string name="permdesc_googleAuth_sitemaps">Омогућава апликацијама да се пријаве на Google алатке за вебмастере помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Омогућава апликацијама да се пријаве на Google WiFi помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_writely">Google документи</string>
+    <string name="permdesc_googleAuth_writely">Омогућава апликацијама да се пријаве на Google документе помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_wise">Google табеле</string>
+    <string name="permdesc_googleAuth_wise">Омогућава апликацијама да се пријаве на Google табеле помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Омогућава апликацијама да се пријаве на Google Finance помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_local">Google мапе</string>
+    <string name="permdesc_googleAuth_local">Омогућава апликацијама да се пријаве на Google мапе помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Омогућава апликацијама да се пријаве на Google App Engine помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_notebook">Google бележница</string>
+    <string name="permdesc_googleAuth_notebook">Омогућава апликацијама да се пријаве на Google бележницу помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Омогућава апликацијама да се пријаве на Google Voice помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Персонализовано препознавање говора</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Омогућава апликацијама да се пријаве на услугу персонализованог препознавања говора помоћу налога сачуваних на овом Android уређају.</string>
+    <string name="gls_notification_title">Пријављивање на налог</string>
+    <string name="gls_notification_new_account">Потребан је ^1 налог</string>
+    <string name="gls_notification_new_account_youtube">Потребан је YouTube налог</string>
+    <string name="gls_notification_login_error">Додирните да бисте се пријавили на налог.</string>
+    <string name="gls_ui_add_account_title">Подешавање налога</string>
+    <string name="gls_ui_google_account_subtitle">Google налог</string>
+    <string name="gls_ui_activity_title">Пријављивање на Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Пријављивање преко прегледача</string>
+    <string name="gls_ui_activity_title_enterprise">Пријављивање за предузећа</string>
+    <string name="gls_ui_activity_title_youtube">Пријављивање на YouTube</string>
+    <string name="gls_ui_activity_authenticating">Проверавање идентитета…</string>
+    <string name="gls_captcha_activity_message">Унесите знакове које видите на слици:</string>
+    <string name="gls_captcha_activity_ok_button">Готово</string>
+    <string name="gls_error_activity_message">Дошло је до мрежне грешке приликом покушаја пријављивања на <b>^1</b>. Покушајте поново одмах или притисните дугме „Назад“ да бисте отказали.</string>
+    <string name="gls_error_activity_retry_button">Покушај поново</string>
+    <string name="gls_dmagent_activity_message">" Домен захтева управљање мобилним уређајем. Инсталирајте апликацију са смерницама за Google Apps уређаје да бисте применили безбедносне смернице потребне за "<b>^1</b> налог.</string>
+    <string name="gls_dmagent_activity_retry_button">Преузми</string>
+    <string name="gls_login_activity_username_label">Корисничко име</string>
+    <string name="gls_login_activity_password_label">Лозинка</string>
+    <string name="gls_login_activity_ok_button">Пријави ме</string>
+    <string name="gls_login_activity_loginfail_text_both">Корисничко име или лозинка нису важећи. Потребан је <b>^1</b> налог. Покушајте поново.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Унели сте погрешну лозинку или је налог промењен. Поново унесите лозинку.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Унесите лозинку за овај налог.</string>
+    <string name="gls_enterprise_login_activity_msg">"Пријавите се на налог предузећа на домену ^1 ради потврде идентитета.
+Додирните „Пријави ме“ да бисте отворили страницу предузећа за пријављивање на Вебу."</string>
+    <string name="gls_login_activity_badaccount_text">Не можете да користите тај налог у овим околностима. Покушајте са другим налогом.</string>
+    <string name="gls_login_activity_newaccount_text">Пријавите се на <b>^1</b> налог.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Немате YouTube налог? Додирните <a href="http://www.youtube.com/signup">овде</a> да бисте га отворили.</string>
+    <string name="gls_settings_tos_activity_title">Google правне информације</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Нисте повезани са услугом преноса података. Да бисте одмах видели ове информације, посетите страницу %s са било ког рачунара повезаног на Интернет.</string>
+    <string name="gls_settings_contributors_activity_title">Сарадници</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Нисте повезани са услугом преноса података. Да бисте одмах видели ове информације, идите на адресу %s са било ког рачунара повезаног са Интернетом.</string>
+    <string name="gls_webview_progress_title">Повезивање са доменом...</string>
+    <string name="gls_webview_progress_verbose_message">"Сервери предузећа шаљу информације за пријављивање. То може да траје неколико минута.
+Страница за пријављивање предузећа ће се појавити када се ово заврши."</string>
+    <string name="gls_sign_in_button_label">Пријави ме</string>
+    <string name="gls_back_button_label">Назад</string>
+    <string name="gls_cancel_button_label">Откажи</string>
+    <string name="gls_exit_account_setup_button_label">Изађи из подешавања налога</string>
+    <string name="gls_reauthorize_button_label">Поново одобри</string>
+    <string name="gls_sign_in_message">Android уређај мора да успостави везу са Google серверима како би подесио налог. То може да потраје до пет минута.</string>
+    <string name="gls_sign_in_title">Пријављивање...</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/folderListItemRoot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:layout_gravity="center_vertical" android:id="@id/folderName" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:id="@id/numMessages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/folderName" android:layout_centerVertical="true" />
+    <RadioButton android:id="@id/selectedFolderButton" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

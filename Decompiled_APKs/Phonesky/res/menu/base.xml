@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/normal_grp">
+        <item android:icon="@drawable/ic_menu_market_redeem" android:id="@id/redeem_item" android:title="@string/redeem_gift_card" />
+        <item android:icon="@drawable/ic_menu_market_accounts" android:id="@id/accounts_item" android:title="@string/menu_switch_accounts" />
+        <item android:icon="@drawable/ic_menu_market_settings" android:id="@id/settings_menu_item" android:title="@string/settings" />
+        <item android:icon="@drawable/ic_menu_market_help" android:id="@id/help_info_menu_item" android:title="@string/help_and_info" />
+        <item android:icon="@drawable/ic_menu_market_help" android:id="@id/extra_item" android:visible="false" />
+    </group>
+    <group android:id="@id/debug_grp">
+        <item android:id="@id/debug_settings" android:visible="false" android:title="@string/menu_debug_settings" />
+        <item android:id="@id/launch_dcb_debug" android:visible="false" android:title="@string/launch_dcb_debugger" />
+    </group>
+</menu>

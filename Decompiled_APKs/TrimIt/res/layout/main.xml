@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+        <VideoView android:layout_gravity="center" android:id="@id/video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="384.0px" android:layout_marginTop="24.0px" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_image_view" android:layout_width="fill_parent" android:layout_height="384.0px" android:layout_marginTop="24.0px" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_image_view_reflection" android:paddingTop="1.0px" android:layout_width="fill_parent" android:layout_height="384.0px" />
+    </LinearLayout>
+    <com.muvee.video.trimer.view.ThumbView android:layout_gravity="top" android:id="@id/thumb_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="24.0px" />
+    <com.muvee.video.trimer.view.TrimBar android:id="@id/trim_bar" android:layout_width="fill_parent" android:layout_height="520.0px" />
+    <com.htc.widget.HtcFooter android:layout_gravity="bottom" android:id="@id/FrameLayout01" android:background="?com.htc:attr_common_main_panel_navbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:textSize="26.0px" android:textColor="@color/btn_text_color" android:layout_gravity="left|center" android:id="@id/btn_cancel" android:layout_height="120.0px" android:text="@string/txt_cancel" android:layout_weight="524.0" />
+        <com.htc.widget.HtcFooterButton android:enabled="false" android:layout_height="120.0px" android:layout_weight="232.0" />
+        <com.htc.widget.HtcFooterButton android:textSize="26.0px" android:textColor="@color/btn_text_color" android:layout_gravity="right|center" android:id="@id/btn_done" android:layout_height="120.0px" android:text="@string/txt_done" android:layout_weight="524.0" />
+    </com.htc.widget.HtcFooter>
+    <CheckBox android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/btn_play" android:background="@drawable/button_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0px" android:button="@drawable/button_play" />
+</FrameLayout>

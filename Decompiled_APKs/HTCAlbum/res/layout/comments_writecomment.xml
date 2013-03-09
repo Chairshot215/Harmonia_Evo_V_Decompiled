@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/write_comments_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/edit_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:gravity="top" android:layout_gravity="center" android:id="@id/edittext" android:background="?com.htc:attr_common_black_inputfield_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:capitalize="sentences" android:autoText="true" style="@com.htc:style/input_default_l" />
+    </RelativeLayout>
+</RelativeLayout>

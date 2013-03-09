@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+        <Button android:id="@id/btn_setup_call" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_setup_call" />
+        <Button android:id="@id/btn_promo" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_promo_call" />
+        <Button android:id="@id/btn_feature" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_feature_call" />
+        <Button android:id="@id/btn_navi" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_navi_call" />
+        <Button android:id="@id/btn_category" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_category_call" />
+        <Button android:id="@id/btn_item_list" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_item_list_call" />
+        <Button android:id="@id/btn_detail" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_detail_call" />
+        <Button android:id="@id/btn_ordered_history" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_ordered_history_call" />
+        <Button android:id="@id/btn_marked_item" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_marked_item_call" />
+        <Button android:id="@id/btn_purchase" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_purchase_call" />
+        <Button android:id="@id/btn_get_more" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_get_more" />
+        <Button android:id="@id/btn_go_to_detail" android:layout_width="fill_parent" android:layout_height="80.0px" android:text="@string/text_go_to_detail" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="170.0px">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0px">
+                <EditText android:id="@id/edit_text_productId" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="product id" android:layout_weight="1.0" />
+                <EditText android:id="@id/edit_text_skuId" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="sku id" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0px">
+                <Button android:id="@id/btn_mark_an_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/text_mark_an_item" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

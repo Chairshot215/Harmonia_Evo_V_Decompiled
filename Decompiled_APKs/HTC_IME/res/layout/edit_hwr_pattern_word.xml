@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top|left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_main" layout="@layout/titlebar_only" />
+    <include android:id="@id/footer" layout="@layout/footer" />
+    <com.htc.android.htcime.ui.ScrollViewNotScroll android:id="@id/handwriting_pattern_scroller" android:background="#ff000000" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:layout_above="@id/footer">
+        <LinearLayout android:gravity="top|left|center" android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.htc.android.htcime.ui.PatternStrokeView android:id="@id/patternGestures" android:background="@drawable/ime_p_bg_hwr_half_panel_rest" android:layout_width="wrap_content" android:layout_height="346.0px" android:layout_marginLeft="0.0px" android:layout_marginTop="-3.0px" android:layout_marginRight="0.0px" android:layout_marginBottom="1.0px" />
+            </LinearLayout>
+            <ImageView style="@style/trans_top_round_small" />
+            <Button android:textSize="26.0px" android:textColor="@com.htc:color/dark_text_bright_focused" android:id="@id/redrawbtn" android:background="?com.htc:attr_common_button_small" android:paddingLeft="15.0px" android:paddingTop="8.0px" android:paddingRight="15.0px" android:paddingBottom="8.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="3.0px" android:layout_marginRight="14.0px" android:maxHeight="-1.0px" android:minHeight="-1.0px" android:text="@string/redraw_hwr_pattern" />
+            <ImageView android:background="@com.htc:drawable/list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0px" />
+            <TextView android:textSize="@com.htc:dimen/list_primary_xs" android:textColor="@color/black" android:id="@id/patternTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0px" android:layout_marginBottom="-3.0px" android:text="@string/represent_hwr_pattern" />
+            <EditText android:textSize="@com.htc:dimen/list_primary_s" android:id="@id/pattern" android:background="?com.htc:attr_common_inputfield_light" android:paddingLeft="12.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="10.0px" android:layout_marginRight="14.0px" android:singleLine="true" android:maxLength="1" style="@com.htc:style/input_default_l" />
+            <ImageView android:layout_marginTop="6.0px" style="@style/trans_bottom_round_small" />
+        </LinearLayout>
+    </com.htc.android.htcime.ui.ScrollViewNotScroll>
+</RelativeLayout>

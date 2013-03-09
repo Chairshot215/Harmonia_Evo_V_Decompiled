@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="305358016" android:versionName="3.5.2214132963.358016" package="com.htc.CustomizationSetup"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <skip-erased />
+    <permission android:name="htc.permission.CUSTOMIZATION_CHANGE" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BACKUP_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="htc.permission.CUSTOMIZATION_CHANGE" />
+    <uses-permission android:name="htc.permission.weather.RECEIVER" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_CW_FOLDER" />
+    <uses-permission android:name="htc.permission.WRITE_CUSTOMIZATION_SETTINGS" />
+    <application android:label="@string/htc_private_app" android:process="com.htc.bg" android:hardwareAccelerated="false">
+        <service android:name=".SetupService" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".SIMChangedActivity" android:excludeFromRecents="true" android:configChanges="locale|mcc|mnc|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|fontScale" />
+        <receiver android:name="SIMStateChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".SIMStateChangeService" />
+        <receiver android:name="com.htc.sie.tool.COTAReceiver">
+            <intent-filter>
+                <action android:name="android.server.HTCCOTA.TRIGGER_INSTALL" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.htc.sie.tool.COTAActivity" android:excludeFromRecents="true" />
+        <provider android:name="AccountsProvider" android:permission="android.permission.GET_ACCOUNTS" android:multiprocess="false" android:authorities="com.htc.accounts" />
+    </application>
+</manifest>

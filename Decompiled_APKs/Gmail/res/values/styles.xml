@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ListViewWhiteCustom" parent="@*android:style/Widget.Holo.Light.ListView" />
+    <style name="LightNoTitleBarTheme" parent="@*android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewWhiteStyle">@*android:style/Widget.ListView.White</item>
+    </style>
+    <style name="Logo">
+        <item name="android:src">@drawable/logo</item>
+    </style>
+    <style name="LabelItemIcon">
+        <item name="android:layout_width">@dimen/label_list_label_color_width</item>
+        <item name="android:layout_height">@dimen/label_swatch_height</item>
+    </style>
+    <style name="ComposeHeading">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/compose_label_text</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ComposeFieldLinearLayout" parent="@*android:style/Widget.Holo.Light.EditText">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    <style name="PlainEditText" parent="@*android:style/Widget.EditText">
+        <item name="android:background">@*android:color/transparent</item>
+    </style>
+    <style name="ComposeTheme" parent="@*android:style/Theme.Holo.Light" />
+    <style name="EmailInput" parent="@*android:style/Widget.AutoCompleteTextView">
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:inputType">textMultiLine|textEmailAddress</item>
+        <item name="android:privateImeOptions">nm</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <style name="MinTimeAnimationStyle" parent="@*android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="MinTimeProgressDialog" parent="@*android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/MinTimeAnimationStyle</item>
+    </style>
+    <style name="MinTimeProgressView" parent="@*android:style/Widget.Holo.Light.ProgressBar" />
+    <style name="GmailActionBarStylePlain" parent="@*android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions"></item>
+    </style>
+    <style name="GmailHoloTheme" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:listViewWhiteStyle">@style/ListViewWhiteCustom</item>
+        <item name="android:actionBarStyle">@style/GmailActionBarStylePlain</item>
+    </style>
+    <style name="GmailLabelsHoloTheme" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:listViewWhiteStyle">@style/ListViewWhiteCustom</item>
+    </style>
+    <style name="conversation_undo_bar">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="HtmlConvNotificationBar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="newMessageNotificationText">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="conversation_scrollable">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/conversation_side_padding</item>
+        <item name="android:layout_marginRight">@dimen/conversation_side_padding</item>
+    </style>
+    <style name="super_collapsed_block">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/super_collapsed_height</item>
+    </style>
+    <style name="super_collapsed_label">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="super_collapsed_count">
+        <item name="android:textColor">@*android:color/white</item>
+    </style>
+    <style name="message_header_presence">
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/message_header_presence_top_margin</item>
+    </style>
+    <style name="message_sender_name">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/message_sender_name</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+    </style>
+    <style name="message_sender_email">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/message_sender_email</item>
+        <item name="android:layout_marginTop">-2.0dip</item>
+    </style>
+    <style name="message_header_small">
+        <item name="android:textColor">@color/conv_header_text_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="message_header_extra_small" parent="@style/message_header_small">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="message_header_date_text" parent="@style/message_header_small">
+        <item name="android:layout_marginRight">@dimen/message_details_header_date_margin_right</item>
+    </style>
+    <style name="message_details_item" parent="@style/message_header_small">
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style>
+    <style name="message_details_heading" parent="@style/message_details_item">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:maxWidth">60.0dip</item>
+    </style>
+    <style name="message_details_value" parent="@style/message_details_item">
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+    <style name="message_details_value_selectable" parent="@style/message_details_value">
+        <item name="android:textIsSelectable">true</item>
+    </style>
+    <style name="conversation_subject">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="conversation_hr">
+        <item name="android:background">@color/conv_subject_border</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="message_header_action_button" parent="@*android:style/Widget.Holo.Button.Borderless">
+        <item name="android:layout_width">@dimen/message_header_action_button_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="message_header_expander_minimized">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_menu_expander_minimized_holo_light</item>
+        <item name="android:contentDescription">@string/expand_recipient_details</item>
+    </style>
+    <style name="message_header_expander_maximized">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_menu_expander_maximized_holo_light</item>
+        <item name="android:contentDescription">@string/collapse_recipient_details</item>
+    </style>
+    <style name="message_attachment_button_base" parent="@*android:style/Widget.Holo.Button.Borderless">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff777777</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minHeight">0.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="message_attachment_button" parent="@style/message_attachment_button_base">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WaitActivityTitle" parent="@*android:style/Widget.Holo.TextView">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="Animation.ActionPopup" parent="@*android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/action_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/action_popup_exit</item>
+    </style>
+    <style name="ConversationListFade" parent="@*android:attr/listViewWhiteStyle">
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+    </style>
+    <style name="WidgetListStyle" />
+    <style name="AccountLabelSpinnerItem">
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="UndoText">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+    </style>
+    <style name="ShortcutWidgetTheme" parent="@*android:style/Theme.Holo.Light.DialogWhenLarge" />
+    <style name="InvisibleShortcutWidgetTheme" parent="@style/ShortcutWidgetTheme">
+        <item name="android:windowNoDisplay">true</item>
+    </style>
+    <style name="ShortcutNameWrapper">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="ShortcutNameStyle">
+        <item name="android:layout_marginTop">16.0dip</item>
+    </style>
+    <style name="PersonalIndicatorStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">10.0sp</item>
+    </style>
+    <style name="SendersStyle">
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">8.0sp</item>
+    </style>
+    <style name="CheckmarkStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">-4.0sp</item>
+    </style>
+    <style name="StarStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-4.0sp</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="SubjectStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/subject_text_color</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginTop">-4.0sp</item>
+        <item name="android:lines">2</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="SecondRowWrapper">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0sp</item>
+    </style>
+    <style name="QuotedTextHeaderStyle">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/quotedTextColor</item>
+    </style>
+    <style name="RespondInlineButtonStyle">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/quotedTextColor</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="SwipeSubjectStyle">
+        <item name="android:textSize">@dimen/subject_font_size</item>
+        <item name="android:layout_marginTop">-4.0sp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="WidgetTitle" parent="@*android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="WidgetSubtitle" parent="@*android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#ff777777</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="RecipientEditTextViewStyle" parent="@style/RecipientEditTextView">
+        <item name="android:gravity">bottom</item>
+        <item name="android:minHeight">42.0dip</item>
+    </style>
+    <style name="ComposeEditTextView">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">44.0dip</item>
+    </style>
+    <style name="RecipientComposeFieldSpacer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">4.0dip</item>
+    </style>
+    <style name="RecipientComposeHeading" parent="@style/ComposeHeading">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+    </style>
+    <style name="ComposeFieldLayout" parent="@*android:style/Widget.Holo.Light.EditText">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="RecipientComposeFieldLayout" parent="@style/ComposeFieldLayout">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="ComposeBodyStyle">
+        <item name="android:textColorHint">@color/compose_label_text</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">42.0dip</item>
+        <item name="android:inputType">textLongMessage|textCapSentences|textAutoCorrect|textMultiLine</item>
+        <item name="android:imeOptions">actionDone|flagNoFullscreen|flagNoEnterAction</item>
+    </style>
+    <style name="ComposeButtonColumn">
+        <item name="android:minWidth">100.0dip</item>
+    </style>
+    <style name="ComposeButton">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff777777</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:padding">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="attachment_container">
+        <item name="android:background">@drawable/attachment_bg_holo</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="attachment_name">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">32.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="attachment_size" parent="@style/attachment_name">
+        <item name="android:textColor">#ff555555</item>
+    </style>
+    <style name="attachment_thumbnail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+    </style>
+    <style name="unreadCount">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffbcbcbc</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="unreadCountActionBar" parent="@style/unreadCount">
+        <item name="android:textSize">36.0dip</item>
+        <item name="android:textColor">#ffbbbbbb</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="AccountSwitchSpinnerItem">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="AccountSpinnerDropdownTextPrimary">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+    <style name="AccountSpinnerDropdownTextSecondary">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="AccountSpinnerAnchorTextPrimary" parent="@*android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
+    <style name="AccountSpinnerAnchorTextSecondary" parent="@*android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/actionbar_secondary</item>
+    </style>
+    <style name="NotificationPrimaryText">
+        <item name="android:textColor">#ffcccccc</item>
+    </style>
+    <style name="NotificationSecondaryText" />
+    <style name="RecipientEditTextView" parent="@*android:attr/autoCompleteTextViewStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra</item>
+        <item name="android:inputType">textMultiLine|textEmailAddress</item>
+        <item name="android:imeOptions">actionNext|flagNoFullscreen</item>
+        <item name="android:dropDownHorizontalOffset">-16.0dip</item>
+        <item name="android:dropDownVerticalOffset">-6.0dip</item>
+    </style>
+</resources>

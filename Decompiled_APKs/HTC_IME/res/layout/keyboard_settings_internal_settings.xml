@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/keyboard_internal_settings_title" android:key="keyboard_internal_settings" android:summary="@string/keyboard_internal_settings_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard_internal_settings_title" android:selectable="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_internal_bias_correction_title" android:key="@string/keyboard_internal_bias_correction" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_internal_animation_hint_title" android:key="@string/keyboard_internal_animation_hint" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_internal_show_hint_title" android:key="@string/keyboard_internal_show_hint" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_internal_touch_movement_title" android:key="@string/keyboard_internal_touch_movement" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_internal_post_prediction_title" android:key="@string/keyboard_internal_post_prediction" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/keyboard_nonword_enable_title" android:key="@string/keyboard_nonword_enable" android:defaultValue="false" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_nonword_vibrate_times" android:title="@string/keyboard_nonword_times_title" android:key="@string/keyboard_nonword_times" android:defaultValue="2" android:entryValues="@array/keyboard_nonword_vibrate_times_values" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/keyboard_nonword_vibrate_period" android:title="@string/keyboard_nonword_period_title" android:key="@string/keyboard_nonword_period" android:defaultValue="2" android:entryValues="@array/keyboard_nonword_vibrate_period_values" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/kb_vibrate_keyup_title" android:key="@string/kb_vibrate_keyup" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/kb_vibrate_skip_title" android:key="@string/kb_vibrate_skip" android:defaultValue="true" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/kb_vibrate_skip_threshold" android:title="@string/kb_vibrate_skip_threshold_title" android:key="@string/kb_vibrate_skip_threshold" android:defaultValue="2" android:entryValues="@array/kb_vibrate_skip_threshold_values" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/kb_vibrate_times" android:title="@string/kb_vibrate_times_title" android:key="@string/kb_vibrate_times" android:defaultValue="3" android:entryValues="@array/kb_vibrate_times_values" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/kb_vibrate_period" android:title="@string/kb_vibrate_period_title" android:key="@string/kb_vibrate_period" android:defaultValue="0" android:entryValues="@array/kb_vibrate_period_values" />
+</com.htc.preference.HtcPreferenceScreen>

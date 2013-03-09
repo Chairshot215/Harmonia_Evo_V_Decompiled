@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@com.htc:drawable/section_divider_middle" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/htc_editor_listseperator_textsize" android:textColor="@color/list_separator_text" android:gravity="left|center" android:layout_gravity="left" android:id="@id/text" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/htc_editor_listseperator_textsize" android:textColor="@color/list_separator_text" android:gravity="right|center" android:layout_gravity="right" android:id="@id/status" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" />
+</LinearLayout>

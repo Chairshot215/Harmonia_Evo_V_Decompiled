@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/margin_fill" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/editorial_header" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:baselineAligned="false" android:weightSum="3.0" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_weight="1.0">
+            <View android:id="@id/bottom_strip_wide" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/hero_video" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+                    <include layout="@layout/details_plusone" />
+                    <include android:id="@id/body_of_work_panel" android:layout_marginTop="4.0dip" layout="@layout/details_pack_layout" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <com.google.android.finsky.layout.ObservableScrollView android:layout_width="0.0dip" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="2.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/details_section_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/episode_header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/description_editorial_header" />
+                    <include android:id="@id/description_panel" layout="@layout/details_text_flat" />
+                </LinearLayout>
+                <include android:id="@id/song_list" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/music_song_list" />
+            </LinearLayout>
+        </com.google.android.finsky.layout.ObservableScrollView>
+    </LinearLayout>
+</LinearLayout>

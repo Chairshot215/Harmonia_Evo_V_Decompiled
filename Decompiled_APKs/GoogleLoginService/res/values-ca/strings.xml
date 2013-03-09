@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_rlz">desconegut</string>
+    <string name="sharedUserLabel">Google Services</string>
+    <string name="app_label">Google Account Manager</string>
+    <string name="gls_label">Google</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Benvingut a ^1</string>
+    <string name="next_button_label">Següent</string>
+    <string name="back_button_label">Enrere</string>
+    <string name="sign_in_button_label">Inicia la sessió</string>
+    <string name="create_button_label">Obtén un compte</string>
+    <string name="not_now_button_label">Ara no</string>
+    <string name="skip_button_label">Omet</string>
+    <string name="new_button_label">Nou</string>
+    <string name="existing_button_label">Existent</string>
+    <string name="first_name">Nom</string>
+    <string name="last_name">Cognom</string>
+    <string name="done">"D'acord"</string>
+    <string name="cancel_button_label">Cancel·la</string>
+    <string name="try_again_button_label">Torna-ho a provar</string>
+    <string name="close_button_label">Tanca</string>
+    <string name="edit_text_help">Toqueu qualsevol quadre de text per començar a escriure</string>
+    <string name="add_a_google_account">"Addició d'un compte de Google"</string>
+    <string name="no_sim_setup_wireless">No tens cap targeta SIM instal.lada, així que no et pots connectar a cap xarxa mòbil per obtenir serveis de veu o de dades. Tot i això, et pots connectar a una xarxa Wi-Fi sense una targeta SIM.</string>
+    <string name="setup_wifi_button_label">"Connecta't a una xarxa Wi-fi"</string>
+    <string name="setup_wizard_title">Auxiliar de configuració</string>
+    <string name="captcha_title">Introducció de CAPTCHA</string>
+    <string name="choose_account_title">"Elecció d'un compte"</string>
+    <string name="show_error_title">"S'ha produït un error"</string>
+    <string name="close_and_launch_title">"S'està tancant l'assistent de configuració"</string>
+    <string name="server_error">"S'ha produït un problema en comunicar-se amb els servidors de Google."</string>
+    <string name="server_error_help">Torneu-ho a provar més tard.</string>
+    <string name="network_unreliable">No es pot establir una connexió fiable amb el servidor.</string>
+    <string name="network_unreliable_help">"Podria tractar-se d'un problema temporal o pot ser que el dispositiu Android no tingui serveis de dades. Si el problema continua, truca al servei d'atenció al client."</string>
+    <string name="invalid_login_character">Caràcter no vàlid. Només es permeten 0-9, a-z, A-Z i punts.</string>
+    <string name="invalid_password_character">Caràcter de contrasenya no vàlid.</string>
+    <string name="add_apn">Configuració sense fil</string>
+    <string name="setup_google_account_title">Configuració del Compte de Google</string>
+    <string name="setup_complete_title">Configuració completa</string>
+    <string name="cant_be_blank">El camp no pot estar en blanc.</string>
+    <string name="calendar">Google Calendar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">El dispositiu Android no està connectat a cap servei de dades. Per veure aquesta informació ara, vés a %s amb un navegador web.</string>
+    <string name="field_cant_be_blank">Aquest camp no pot estar en blanc</string>
+    <string name="field_invalid_domain">Aquest nom de domini no és vàlid</string>
+    <string name="field_invalid_user">"Aquest nom d'usuari no és vàlid"</string>
+    <string name="field_invalid_user_domain">"Introduïu només el nom d'usuari, no l'adreça electrònica"</string>
+    <string name="setup_device_title">"S'està configurant ^1"</string>
+    <string name="dont_have_an_account">No teniu un Compte de Google?</string>
+    <string name="create_one_now">Creeu-ne un ara. És fàcil.</string>
+    <string name="already_have_an_account">Ja tinc un compte.</string>
+    <string name="sign_in_with_google_account">Inicia la sessió amb un Compte de Google que vulguis utilitzar amb aquest dispositiu Android.</string>
+    <string name="skip_message">Voleu configurar un compte més endavant?</string>
+    <string name="delayed_gaia_agreement">" En continuar, acceptes les polítiques de privadesa de "<annotation id="google_privacy">Google</annotation> i les <annotation id="android_privacy">addicionals</annotation>.</string>
+    <string name="plus_query_title">Entra a Google+</string>
+    <string name="plus_query_text">"Google+ fa que compartir al web s'assembli més a compartir a la vida real."</string>
+    <string name="circles_subtitle">Cercles</string>
+    <string name="circles_text">"La manera més senzilla de compartir en línia tot allò que més t'importa."</string>
+    <string name="uploads_subtitle">Pujada instantània</string>
+    <string name="uploads_text">Sincronitza fàcilment totes les teves fotos de tots els teus dispositius.</string>
+    <string name="huddle_text">Missatgeria en grup per a totes les persones dels teus cercles.</string>
+    <string name="plus_declined_button_label">Ara no</string>
+    <string name="plus_accepted_button_label">Entra a Google+</string>
+    <string name="plus_name_check_title">"S'està contactant amb Google+..."</string>
+    <string name="plus_name_check_text">Això pot trigar uns quants minuts.</string>
+    <string name="plus_faq_title">Et donem la benvinguda a Google+</string>
+    <string name="plus_faq_text" formatted="false">"A Google+, tindràs un perfil públic per ajudar els teus amics a trobar-te en línia. Tothom que conegui la teva adreça electrònica pot cercar i veure el teu perfil.
+
+Pots fer servir els botons +1 a tot el web per recomanar coses al món. El teu perfil i els +1 apareixeran de manera pública a la cerca, als anuncis i al web.
+
+De moment, el teu perfil només mostrarà el nom (%s %s). Pots afegir una foto, informació biogràfica i altres detalls més endavant, quan comencis a fer servir Google+."</string>
+    <string name="dasher_warning">"L'administrador de %s és el propietari de totes les teves dades de Google+, les gestiona i pot suprimir o modificar el teu perfil sempre que ho vulgui sense el teu permís."</string>
+    <string name="picassa_info_title">Picasa i Google+</string>
+    <string name="picassa_info_text" formatted="false">"Les teves fotos i els teus vídeos d'Àlbums web de Picasa estaran disponibles a Google+ i els teus comentaris apareixeran amb el nom de: %s %s en lloc de: %s. Quan comparteixes fotos a Google+, els destinataris podran tornar a compartir-les amb qualsevol persona. La configuració de visibilitat dels teus àlbums no canvia i pots limitar-la perquè no es puguin compartir lliurement."</string>
+    <string name="name_title">El teu nom</string>
+    <string name="name_title_plus">El teu nom de Google+</string>
+    <string name="name_title_local">Aquest telèfon pertany a...</string>
+    <string name="name_text">El teu nom es fa servir per personalitzar el teu telèfon i els serveis de Google.</string>
+    <string name="name_text_local">El telèfon fa servir el teu nom per personalitzar aplicacions.</string>
+    <string name="bad_name_title">Vols fer servir aquest nom?</string>
+    <string name="invalid_name_title">No pots fer servir aquest nom</string>
+    <string name="bad_name_display">%1$s %2$s</string>
+    <string name="bad_name_text">"Si vols que aquest sigui el teu nom de Google+, el nostre equip haurà de revisar-lo. Si infringeix la nostra Política de noms, el teu perfil es podria suspendre. Aquest fet et limitaria la possibilitat d'utilitzar productes de Google que requereixin un perfil actiu.
+
+"<annotation id="learn_more">Més informació</annotation></string>
+    <string name="bad_name_text2">"Si vols que aquest sigui el teu nom de Google+, el nostre equip haurà de revisar-lo. Si incompleix la nostra Política de noms, és possible que se suspengui el teu perfil i que no puguis accedir completament a Google+ ni a d'altres serveis enllaçats amb el teu perfil.
+
+"<annotation id="learn_more">Més informació</annotation></string>
+    <string name="invalid_name_text">Aquest nom no es pot utilitzar amb Google+ perquè conté caràcters no vàlids.</string>
+    <string name="invalid_nickname_text">"Aquest nom no es pot utilitzar amb Google+ perquè conté caràcters no vàlids. Estàs provant d'utilitzar un àlies, un nom anterior o un títol? Pots afegir-los al teu perfil després d'unir-te."</string>
+    <string name="invalid_other_text">Aquest nom no es pot fer servir amb Google+.</string>
+    <string name="bad_name_agree_text">Ho entenc i vull fer servir aquest nom.</string>
+    <string name="bad_name_decline_button_label">"Nom de l'actualització"</string>
+    <string name="bad_name_agree_button_label">Envia el nom a revisió</string>
+    <string name="bad_name_skip_button_label">Omet Google+</string>
+    <string name="photo_title">La teva foto</string>
+    <string name="photo_text">"Aquesta foto s'utilitzarà en el teu registre de contacte. La pots canviar més tard a l'aplicació Contactes."</string>
+    <string name="photo_text_es">Fes una foto perquè la vegin els teus amics de Google+. Més tard en podràs triar una altra.</string>
+    <string name="photo_button_label">Fes la foto</string>
+    <string name="retake_photo_button_label">Torna a fer la foto</string>
+    <string name="photo_failure">No es pot iniciar la càmera</string>
+    <string name="crop_failure">No es pot retallar la foto</string>
+    <string name="open_keyboard_message">Obriu el teclat per començar.</string>
+    <string name="open_keyboard_message_to_continue">Obriu el teclat per continuar.</string>
+    <string name="emergency_dial">"Trucada d'emergència"</string>
+    <string name="change_language">"Canvia l'idioma"</string>
+    <string name="close_keyboard_message">Tanqueu el teclat per continuar.</string>
+    <string name="communicating_message">El telèfon està establint el contacte amb Google per desar informació al teu compte. Això pot trigar fins a 5 minuts.</string>
+    <string name="creating_account_title">"S'està desant el compte..."</string>
+    <string name="checking_username_message">"El telèfon està contactant amb Google per veure si el nom d'usuari que vols està disponible.
+
+Això pot trigar uns quants minuts."</string>
+    <string name="adding_account_title">"S'està desant el compte..."</string>
+    <string name="account_setup_network_failure_title">"No s'ha pogut accedir a Google"</string>
+    <string name="account_setup_network_failure_text">Torna-ho a provar o omet-ho per ara.</string>
+    <string name="plus_failure_title">Uneix-te a Google+ més tard</string>
+    <string name="plus_failure_new_account_text">"S'ha creat el teu Compte de Google, però la teva sol·licitud per unir-te a Google+ no s'ha completat correctament. Torna-ho a provar més tard des de qualsevol navegador web a plus.google.com."</string>
+    <string name="plus_failure_text">"La teva sol·licitud per unir-te a Google+ no s'ha completat correctament. Torna-ho a provar des de qualsevol navegador web a plus.google.com."</string>
+    <string name="login_title">Introdueix el correu electrònic i la contrasenya</string>
+    <string name="login_task_title">"S'està iniciant la sessió"</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Contrasenya</string>
+    <string name="sign_in_agreement">" Si inicies la sessió, acceptes les polítiques de privadesa de "<annotation id="google_privacy">Google</annotation>" i altres polítiques  "<annotation id="android_privacy">addicionals</annotation>.</string>
+    <string name="create_prompt">" No tens cap compte de Google? "<annotation id="create_account">"Crea'n un ara"</annotation>.</string>
+    <string name="create">Crea</string>
+    <string name="create_message">Necessiteu un Compte de Google?</string>
+    <string name="now_signing_in">"S'està iniciant la sessió…"</string>
+    <string name="now_verifying_domain">"S'està cercant el domini..."</string>
+    <string name="sign_in_with_google_account_short">"Dades d'inici de sessió del compte de Google:"</string>
+    <string name="browser_sign_in_explanation">"Utilitza aquesta pantalla si tens requisits especials d'inici de sessió que requereixen un navegador web."</string>
+    <string name="gls_browser_login_intro_message">Aquest dispositiu Android no pot accedir al teu compte de Google o de Google Apps. Cal que es torni a concedir una autorització.</string>
+    <string name="enter_domain_name">Introduïu el nom del domini de la vostra empresa:</string>
+    <string name="enter_user_name">"Introduïu el nom d'usuari i la contrasenya de ^1:"</string>
+    <string name="inactive_domain">" Aquest compte no es pot utilitzar perquè pertany a un domini inactiu. Contacta amb l'administrador del domini per "<b>^1</b> o bé inicia la sessió amb un altre compte.</string>
+    <string name="invalid_username">"El text introduït no és un nom d'usuari vàlid."</string>
+    <string name="web_login_error_title">Ho sentim...</string>
+    <string name="web_login_error_desc">"Hi ha un problema de connexió als servidors de la vostra empresa a ^1.
+
+Informació de l'error:
+"</string>
+    <string name="web_login_error_redirects">"La pàgina d'inici de sessió web t'ha redirigit massa vegades"</string>
+    <string name="web_login_error_http">"Error d'HTTP ^1 : ^2"</string>
+    <string name="captcha_instructions">Escriu el text que veus aquí:</string>
+    <string name="create_google_account">Crea una adreça electrònica</string>
+    <string name="example_usernames">p. ex., JGrau, Jordi.Grau</string>
+    <string name="create_account_agreement">En crear aquest compte, accepteu les polítiques de privadesa de <annotation id="google_privacy">Google</annotation> i altres polítiques de privadesa <annotation id="android_privacy">addicionals</annotation>.</string>
+    <string name="background_task_error">"El teu nou compte de Gmail s'ha creat correctament, però s'ha produït un problema en afegir-lo als comptes d'aquest dispositiu. Torna-ho a provar, prova d'iniciar la sessió manualment al compte nou, o omet la creació del compte per ara."</string>
+    <string name="retry_button_label">Torna-ho a provar</string>
+    <string name="login_button_label">Inicia la sessió manualment</string>
+    <string name="account_already_has_gmail">El compte ja té Gmail.</string>
+    <string name="error_account_disabled">"Aquest compte s'ha desactivat. 
+
+(Per veure'n els detalls, visita http://google.com/accounts des d'un navegador web.)"</string>
+    <string name="no_network">No teniu cap connexió de xarxa.</string>
+    <string name="no_network_help">"És possible que es tracti d'un problema temporal o bé que el dispositiu Android no disposi de serveis de dades. Torna-ho a provar quan estiguis connectat a una xarxa mòbil o bé connecta't a una xarxa Wi-Fi."</string>
+    <string name="no_network_help_wifi_only">"És possible que es tracti d'un problema temporal. Torna-ho a provar o connecta't a una altra xarxa Wi-Fi."</string>
+    <string name="error_login_failed">"El teu nom d'usuari i la contrasenya no coincideixen. Torna-ho a provar.
+
+Per recuperar la informació del compte, vés a google.com/accounts/recovery/."</string>
+    <string name="error_account_not_verified">"Aquest compte no s'ha verificat. Consulta el correu electrònic i segueix l'enllaç que conté per verificar-lo. 
+
+(Per recuperar la informació del compte, vés a http://www.google.com/accounts/recovery al teu equip.)"</string>
+    <string name="add_account_init">"S'està carregant la pàgina de creació del compte..."</string>
+    <string name="add_account_init_for_update_credentials">"S'està carregant la pàgina d'actualització de credencials..."</string>
+    <string name="add_account_init_for_add_account">"S'està carregant la pàgina d'addició de comptes..."</string>
+    <string name="add_account_pageload" />
+    <string name="add_account_final">"S'està creant un compte nou..."</string>
+    <string name="add_account_final_adding">"S'està afegint el compte..."</string>
+    <string name="add_account_final_updating">"S'estan actualitzant les credencials..."</string>
+    <string name="add_account_init_waiting_for_network">"S'està esperant que la xarxa estigui disponible..."</string>
+    <string name="exit_menu_item">"Surt de l'inici de sessió del navegador"</string>
+    <string name="creating_account">"S'està creant el compte..."</string>
+    <string name="creating_profile">"S'està creant el teu perfil…"</string>
+    <string name="name_check">"S'està comprovant el nom…"</string>
+    <string name="checking_account">"S'està comprovant la disponibilitat..."</string>
+    <string name="try_a_different_username">"Prova amb un altre nom d'usuari"</string>
+    <string name="is_not_available">"El nom d'usuari "<b>^1</b> no està disponible.</string>
+    <string name="suggestions_hint">Toca per obtenir suggeriments</string>
+    <string name="suggest_username_next_button_label">"Canvia el nom d'usuari"</string>
+    <string name="hint_size">" "<b>^1</b> conté menys de 6 o més de 30 caràcters.</string>
+    <string name="hint_numbers_only">" "<b>^1</b> no conté cap lletra.</string>
+    <string name="hint_illegal_chars">" "<b>^1</b>" només pot incloure lletres,
+números i punts."</string>
+    <string name="doesnt_use_gmail">" "<b>^1</b> no utilitza Gmail</string>
+    <string name="sign_in">Inicia la sessió</string>
+    <string name="sign_in_browser">Inici de sessió del navegador</string>
+    <string name="here_are_alternatives">Aquí teniu algunes alternatives:</string>
+    <string name="alternatives_list_title">"Noms d'usuari suggerits"</string>
+    <string name="alternatives_list_hint">Toca per obtenir suggeriments</string>
+    <string name="password_title">Crea una contrasenya</string>
+    <string name="choose_a_password">Contrasenya</string>
+    <string name="confirm_password">Torna a escriure la contrasenya</string>
+    <string name="too_short">Massa curta</string>
+    <string name="security_question">" "<b>"Pregunta de
+seguretat"</b></string>
+    <string name="security_questions_title">Preguntes de seguretat</string>
+    <string name="answer">" "<b>Resposta</b></string>
+    <string name="password_mismatch">Les contrasenyes no coincideixen. Torna a introduir-les.</string>
+    <string name="your_account_was_created">"S'ha creat el compte."</string>
+    <string name="eight_chars_min">(8 caràcters com a mínim)</string>
+    <string name="verify_your_profile">Verificació del perfil</string>
+    <string name="error_not_logged_in">"L'usuari no ha iniciat la sessió."</string>
+    <string name="error_username_unavailable">"El nom d'usuari no està disponible."</string>
+    <string name="error_bad_password">La contrasenya és massa dèbil o conté caràcters no vàlids. Torneu-ho a provar.</string>
+    <string name="error_bad_username">"Nom d'usuari no vàlid."</string>
+    <string name="loading">"S'està carregant..."</string>
+    <string name="existing_account_error_title">El compte ja existeix</string>
+    <string name="existing_account_error_text">Ja hi ha un compte ^1 en aquest dispositiu Android</string>
+    <string name="submission_title">Ho sentim...</string>
+    <string name="submission_error_text">"S'ha produït un error. Torneu-ho a provar."</string>
+    <string name="sync_intro_title">Sincronització del compte</string>
+    <string name="syncing_message">" "<font size="17">"En aquest moment, les aplicacions de Google estan sincronitzant les dades. 
+"<font height="17">"
+"</font>"%i A la barra d'estat, situada a la part superior de la pantalla, es mostra la icona de sincronització per indicar que s'estan sincronitzant dades del Compte de Google. La primera sincronització pot trigar una estona en funció del volum de contactes, de correu electrònic, d'esdeveniments del calendari i d'altres dades d'aplicacions de Google."</font></string>
+    <string name="account_tos_title">Finalització de la creació del compte</string>
+    <string name="account_tos_plus_title">Finalització de la unió a Google+</string>
+    <string name="account_tos_account_title">Finalització del compte</string>
+    <string name="account_tos_google_title">Finalització de la unió a Google</string>
+    <string name="i_accept">Accepto</string>
+    <string name="android_privacy_policy_title">Política de privadesa addicional</string>
+    <string name="google_terms_of_service_title">Finalització de la creació del compte</string>
+    <string name="google_privacy_policy_title">Política de privadesa de Google</string>
+    <string name="google_plus_privacy_policy_title">Política de privadesa de Google Plus</string>
+    <string name="allow_personalized_content">Permet que Google utilitzi la teva informació per personalitzar el contingut i els anuncis als llocs web que no siguin de Google.</string>
+    <string name="enable_web_history">Activa l’historial web.</string>
+    <string name="learn_more"><annotation id="learn_more">Més informació</annotation></string>
+    <string name="google_plus_tos_login">En crear un compte de Google+ acceptes la política de privadesa de <annotation id="google_plus_privacy">Google+</annotation>.</string>
+    <string name="google_plus_tos_signup">"Si toques l'opció "<b>Accepto</b> a continuació, acceptes les <annotation id="tos">"Condicions d'ús"</annotation> i les polítiques de privadesa de <annotation id="google_privacy">Google</annotation>, <annotation id="google_plus_privacy">Google+</annotation> i <annotation id="android_privacy">altres</annotation>.</string>
+    <string name="account_creation_tos">"Si toques l'opció "<b>Accepto</b> que apareix a continuació, acceptes les <annotation id="tos">"Condicions d'ús"</annotation> i les polítiques de privadesa de <annotation id="google_privacy">Google</annotation> i <annotation id="android_privacy">altres</annotation>.</string>
+    <string name="gender_prompt">Sexe</string>
+    <string name="gender_hint">Especifica el teu sexe</string>
+    <string name="account_intro_title">Compte de Google</string>
+    <string name="account_intro_required_title">Tecnologia de Google</string>
+    <string name="account_intro_recommended_title">Fes que sigui Google</string>
+    <string name="common_message">"Un Compte de Google et permet
+
+"<li><ul>Veure i organitzar tota la informació des de qualsevol lloc.</ul></li>"
+
+"<li><ul>Fer una còpia de seguretat automàtica de les teves dades.</ul></li>"
+
+"<li><ul>Fer servir els serveis de Google fàcilment des de qualsevol lloc.</ul></li></string>
+    <string name="add_account_message">" Pots fer servir més d'un Compte de Google (com ara els comptes de casa i de la feina). Toca "<b>Inicia la sessió</b> o <b>Crea un compte</b> per afegir un Compte de Google.</string>
+    <string name="account_intro_default_message">No perdis les teves coses mai més. Un Compte de Google fa que tot estigui segur.</string>
+    <string name="account_intro_custom_endtext">Tens %s? Inicia la sessió ara.</string>
+    <string name="account_intro_simple_message">Vols afegir un compte existent o crear-ne un de nou?</string>
+    <string name="learn_more_title"><annotation id="learn_more">Més informació</annotation></string>
+    <string name="learn_more_account_intro">"Un compte de Google et permet
+ "<ul> <li>Veure i organitzar tota la teva informació des de qualsevol lloc.</li> <li>Fer automàticament còpies de seguretat de dades, com ara correu electrònic, contactes, música i imatges.</li> <li>Utilitzar els serveis de Google amb facilitat des de qualsevol lloc—inclosos Contactes, Calendar, Maps, i molt més.</li> </ul></string>
+    <string name="learn_more_account_intro_title">Quant als comptes de Google</string>
+    <string name="learn_more_web_history">"L'historial web ajusta els resultats de la cerca en funció del que hagis cercat i dels llocs que hagis visitat per proporcionar-te una experiència de Google personalitzada.
+
+Per visualitzar i per gestionar el teu historial web, així com per activar-lo o per desactivar-lo, consulta http://www.google.com/history."</string>
+    <string name="learn_more_web_history_title">"Quant a l'historial web"</string>
+    <string name="learn_more_bad_name">"Google+ requereix que facis servir el teu nom comú. El teu perfil ha de representar una persona (ni una empresa, ni una organització, ni una família) i ha d'incloure el teu nom i el teu cognom en un sol idioma, sense títols professionals ni puntuació innecessària. Quan t'hagis inscrit, podràs incloure àlies o altres noms amb els quals se t'associï al camp \"Altres noms\" del teu perfil."</string>
+    <string name="learn_more_bad_name_title">Sobre la política de noms</string>
+    <string name="wait_for_device_country_title">Configuració del compte</string>
+    <string name="wait_for_device_country_msg">"S'està recopilant informació sobre el telèfon. Pot trigar fins a 30 segons."</string>
+    <string name="reactivate_account_message">" Has d'afegir un compte de Google Mail. 
+
+Ja tens un nom d'usuari de Google Mail,  ( "<b>^1</b>" ) , associat amb aquest compte, però no està actiu actualment. 
+
+Toca \"Següent\" per tornar a activar aquest nom d'usuari i utilitzar-lo. 
+
+O bé, si vols utilitzar un altre compte, prem el botó Enrere i inicia la sessió amb un altre compte o crea un compte nou."</string>
+    <string name="reactivating_account">"S'està reactivant el compte..."</string>
+    <string name="your_account_was_reactivated">"S'ha activat el compte."</string>
+    <string name="recovery_title">Informació per a la recuperació</string>
+    <string name="account_recovery_info">"Si mai perds la contrasenya, pots respondre una pregunta de seguretat i fer que s'enviï per correu electrònic un enllaç de restabliment a una adreça diferent."</string>
+    <string name="security_question_prompt">Tria una pregunta de seguretat</string>
+    <string name="secondary_email_label">Adreça electrònica de recuperació</string>
+    <string name="invalid_email">"L'adreça electrònica que heu introduït no és vàlida.
+ Exemple: jordi@example.com"</string>
+    <string name="invalid_email_primary">"L'adreça de recuperació no pot ser la mateixa que la que estàs creant"</string>
+    <string name="backup_consent_title">Fes una còpia de seguretat de la configuració</string>
+    <string name="backup_consent_message">"Fes servir el teu Compte de Google per fer una còpia de seguretat de les teves aplicacions, de la teva configuració (com ara marcadors i contrasenyes de Wi-Fi) i d'altres dades. Si ja has fet una còpia de seguretat del teu compte, pots restaurar-lo ara en aquest telèfon.
+
+Pots canviar la configuració de les còpies de seguretat en qualsevol moment a Configuració."</string>
+    <string name="backup_consent_message_no_restore">"Fes servir el teu Compte de Google per fer una còpia de seguretat de les teves aplicacions, de la teva configuració (com ara marcadors i contrasenyes de Wi-Fi) i d'altres dades.
+
+Pots canviar la configuració de les còpies de seguretat en qualsevol moment a Configuració."</string>
+    <string name="backup_consent_howto_disable_message">"Pots canviar la configuració de còpia de seguretat de les dades en qualsevol moment a l'aplicació Configuració, a Privadesa."</string>
+    <string name="backup_consent_yes_agree">Mantén aquest telèfon amb còpia de seguretat amb el meu Compte de Google</string>
+    <string name="restore_consent_yes_agree">Restaura des del meu Compte de Google a aquest telèfon</string>
+    <string name="restore_disable">Desactiva la restauració</string>
+    <string name="restore_enable">Activa la restauració</string>
+    <string name="restore_enabled">"Si has fet una còpia de seguretat de la configuració anteriorment, es
+ restaurarà."</string>
+    <string name="restore_disabled">"La configuració no es restaurarà des d'una còpia de seguretat."</string>
+    <string name="restoring_title">"S'està restaurant..."</string>
+    <string name="restoring_message">El telèfon està establint el contacte amb Google per restaurar el teu compte. Això pot trigar fins a 5 minuts.</string>
+    <string name="restored_title">Restaurades</string>
+    <string name="restored_message" />
+    <string name="webview_progress_title">"S'està connectant amb el domini..."</string>
+    <string name="webview_progress_verbose_message">"Els servidors de la teva empresa estan enviant la informació d'inici de sessió. Això pot trigar una estona.
+La pàgina d'inici de sessió de l'empresa apareixerà quan es completi aquest procés."</string>
+    <string name="enterprise_unmanaged_domain">Aquest domini no utilitza Google Apps. Comproveu el nom del domini i torneu-ho a provar.</string>
+    <string name="gls_notification_title">Inicieu la sessió al vostre compte</string>
+    <string name="gls_notification_new_account">Cal un compte de ^1</string>
+    <string name="gls_notification_new_account_youtube">Cal un compte de YouTube</string>
+    <string name="gls_notification_login_error">Toqueu per iniciar la sessió al compte.</string>
+    <string name="gls_ui_add_account_title">Configuració del compte</string>
+    <string name="gls_ui_google_account_subtitle">Compte de Google</string>
+    <string name="gls_ui_activity_title">Inici de sessió a Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Inici de sessió del navegador</string>
+    <string name="gls_ui_activity_title_enterprise">Inici de sessió empresarial</string>
+    <string name="gls_ui_activity_title_youtube">Inici de sessió a YouTube</string>
+    <string name="gls_ui_activity_title_checking_in">"S'està preparant..."</string>
+    <string name="gls_ui_activity_authenticating">"S'està autenticant…"</string>
+    <string name="gls_captcha_activity_message">Introdueix els caràcters que vegis a la imatge:</string>
+    <string name="gls_captcha_activity_ok_button">Fet</string>
+    <string name="gls_error_activity_message">" S'ha produït un error de xarxa en provar d'iniciar la sessió a  "<b>^1</b> . Torna-ho a provar ara o prem el botó Enrere per cancel·lar.</string>
+    <string name="gls_error_activity_retry_button">Torna-ho a provar</string>
+    <string name="gls_dmagent_activity_message">" El teu domini requereix gestió del dispositiu mòbil. Instal·la l'aplicació de la política de dispositius de Google Apps perquè s'apliquin les polítiques de seguretat exigides pel compte  "<b>^1</b> .</string>
+    <string name="gls_dmagent_activity_retry_button">Baixa</string>
+    <string name="gls_login_activity_username_label">"Nom d'usuari"</string>
+    <string name="gls_login_activity_password_label">Contrasenya</string>
+    <string name="gls_login_activity_ok_button">Inicia la sessió</string>
+    <string name="gls_login_activity_loginfail_text_both">" El nom d'usuari o la contrasenya no són vàlids. Cal tenir un compte de  "<b>^1</b> . Torna-ho a provar.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Heu introduït una contrasenya incorrecta o el compte ha canviat. Torneu a introduir la contrasenya.</string>
+    <string name="gls_invalid_two_factor">"Fes servir una contrasenya específica de l'aplicació en lloc de la contrasenya habitual del compte."</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">"Escriviu la contrasenya d'aquest compte."</string>
+    <string name="gls_enterprise_login_activity_msg">"Inicieu la sessió al vostre compte empresarial, a ^1, per fer l'autenticació.
+Toqueu Inicia la sessió per obrir la pàgina d'inici de sessió web de la vostra empresa."</string>
+    <string name="gls_login_activity_badaccount_text">No podeu utilitzar aquest compte en aquesta situació. Proveu-ho amb un altre compte.</string>
+    <string name="gls_login_activity_newaccount_text">" Inicia la sessió al teu compte de  "<b>^1</b> .</string>
+    <string name="gls_login_activity_create_youtube">" No tens cap compte de YouTube? Toca "<a href="http://www.youtube.com/signup">aquí</a> per crear-ne un.</string>
+    <string name="gls_webview_progress_title">"S'està connectant amb el domini..."</string>
+    <string name="gls_webview_progress_verbose_message">"Els servidors de la teva empresa estan enviant informació d'inici de sessió. Això pot trigar una estona.
+La pàgina d'inici de sessió de l'empresa apareixerà quan es completi aquest procés."</string>
+    <string name="gls_sign_in_button_label">Inicia la sessió</string>
+    <string name="gls_back_button_label">Enrere</string>
+    <string name="gls_cancel_button_label">Cancel·la</string>
+    <string name="gls_exit_account_setup_button_label">Surt de la configuració del compte</string>
+    <string name="gls_reauthorize_button_label">Torna a autoritzar</string>
+    <string name="permlab_googleAuthPassword">accedir a les contrasenyes dels comptes de Google</string>
+    <string name="permdesc_googleAuthPassword">Permet a les aplicacions accedir directament a les contrasenyes dels comptes de Google que hàgiu configurat.</string>
+    <string name="header_data_and_synchronization">Dades i sincronització</string>
+    <string name="permlab_googleMailSwitch">selecciona la marca Gmail o Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Permet que les aplicacions canviïn el nom de visualització entre les marques \"Gmail\" i \"Google Mail\".</string>
+    <string name="sync_item_title">Sincronitza %s</string>
+    <string name="grant_credentials_permission_message_header">Sol·licitud de permís</string>
+    <string name="grant_credentials_permission_message_footer">"S'està sol·licitant permís per:"</string>
+    <string name="grant_credentials_permission_message_app">"Aquestes aplicacions volen accés al teu compte de Google a partir d'ara:"</string>
+    <string name="grant_permissions_header_text">Sol·licitud de permís</string>
+    <string name="allow">"Permet l'accés"</string>
+    <string name="deny">No, gràcies</string>
+    <string name="permission_request_notification_title">Permís sol·licitat</string>
+    <string name="permission_request_notification_with_subtitle">"Permís sol·licitat
+per al compte %s"</string>
+    <string name="notification_title">"Error d'inici de sessió per a %1$s"</string>
+    <string name="account_setup_title">Compte de Google</string>
+    <string name="signed_in">Inici de sessió correcte</string>
+    <string name="account_linked_message">"S'ha iniciat la sessió a %s i s'estan sincronitzant les dades."</string>
+    <string name="account_created_message">"S'ha creat un compte nou: %s"</string>
+    <string name="done_button_label">Fet</string>
+    <string name="captcha_message_string">Massa intents incorrectes.</string>
+    <string name="login_activity_title">Inici de sessió</string>
+    <string name="show_error_activity_title">No es pot iniciar la sessió</string>
+    <string name="login_activity_task_title">"S'està iniciant la sessió..."</string>
+    <string name="sync_intro_activity_title_first_account">Còpia de seguretat i restauració</string>
+    <string name="sync_intro_activity_title_first_created_account">Còpia de seguretat</string>
+    <string name="sync_intro_activity_title">Inici de sessió correcte al compte</string>
+    <string name="username">Correu electrònic</string>
+    <string name="error_invalid_second_factor">"Fes servir una contrasenya específica de l'aplicació en lloc de la contrasenya habitual del compte."</string>
+    <string name="error_needs_browser">"Per accedir al teu compte, has d'iniciar la sessió a Internet. Toca \"Següent\" per començar l'inici de sessió al navegador."</string>
+    <string name="error_unknown">Error inesperat del servidor: %s</string>
+</resources>

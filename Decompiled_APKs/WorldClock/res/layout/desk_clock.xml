@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/desk_clock" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <RelativeLayout android:id="@id/common_body_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_bar" />
+    <include android:layout_width="@dimen/desk_clock_time_date_width" android:layout_height="@dimen/desk_clock_time_date_height" android:layout_marginLeft="@dimen/desk_clock_time_date_marginLeft" android:layout_marginTop="@dimen/desk_clock_time_date_marginTop" layout="@layout/desk_clock_time_date" />
+    <include android:visibility="gone" android:layout_width="@dimen/desk_clock_weather_width" android:layout_height="@dimen/desk_clock_weather_height" android:layout_marginLeft="@dimen/desk_clock_weather_marginLeft" android:layout_marginTop="@dimen/desk_clock_weather_marginTop" layout="@layout/desk_clock_weather" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@id/deskclock_noweatherdata" android:visibility="gone" android:layout_width="@dimen/desk_clock_weather_width" android:layout_height="@dimen/desk_clock_weather_height" android:layout_marginLeft="@dimen/desk_clock_weather_marginLeft" android:layout_marginTop="@dimen/desk_clock_weather_marginTop" android:text="@string/noweatherdatamsg" />
+    <include android:visibility="gone" android:layout_width="@dimen/desk_clock_weather_width" android:layout_height="@dimen/desk_clock_weather_height" android:layout_marginLeft="@dimen/desk_clock_weather_marginLeft" android:layout_marginTop="@dimen/desk_clock_weather_marginTop" layout="@layout/desk_clock_weather_disable" />
+    <ImageButton android:id="@id/dockmode_button" android:visibility="invisible" android:layout_width="@dimen/dockmode_button_width" android:layout_height="@dimen/dockmode_button_height" android:layout_marginLeft="@dimen/dockmode_button_marginLeft" android:layout_marginTop="@dimen/dockmode_button_marginTop" android:layout_marginRight="@dimen/dockmode_button_marginRight" android:layout_alignParentRight="@string/dockmode_button_alignParentRight" />
+    <TextView android:id="@id/battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/battery_marginLeft" android:layout_marginTop="@dimen/battery_marginTop" android:layout_marginRight="@dimen/battery_marginRight" android:layout_alignParentRight="@string/battery_alignParentRight" style="@style/batteryStyle" />
+</RelativeLayout>

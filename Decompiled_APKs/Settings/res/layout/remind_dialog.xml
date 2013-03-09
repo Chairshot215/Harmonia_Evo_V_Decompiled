@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_marginTop="@com.htc:dimen/htc_list_item_margin_top" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_marginBottom="@com.htc:dimen/htc_list_item_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="left" android:id="@id/remind_dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:text="@string/vzw_remind_dialog_message" style="@com.htc:style/list_primary_m" />
+    <CheckBox android:layout_gravity="left" android:id="@id/remind_dialog_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:text="@string/dont_remind_again" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+</LinearLayout>

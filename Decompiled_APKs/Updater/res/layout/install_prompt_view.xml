@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="#ff000000" android:id="@id/install_prompt" android:paddingLeft="8.0px" android:paddingTop="2.0px" android:paddingRight="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_install_prompt" />
+    <TextView android:textSize="@com.htc:dimen/list_secondary_xl" android:textColor="#ff000000" android:id="@id/install_info" android:paddingLeft="8.0px" android:paddingTop="2.0px" android:paddingRight="5.0px" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/message" />
+    <TextView android:textSize="@com.htc:dimen/list_secondary_xl" android:textColor="#ffff0000" android:id="@id/telephony_warning" android:paddingLeft="8.0px" android:paddingTop="6.0px" android:paddingRight="5.0px" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_telephony_warning" />
+    <TextView android:textSize="@com.htc:dimen/list_secondary_xl" android:textColor="#ffff0000" android:id="@id/install_warning" android:paddingLeft="8.0px" android:paddingTop="6.0px" android:paddingRight="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_install_warning" />
+    <TextView android:textSize="@com.htc:dimen/list_secondary_xl" android:textColor="#ff000000" android:id="@id/install_backup_warning" android:paddingLeft="8.0px" android:paddingTop="2.0px" android:paddingRight="5.0px" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_backup_warning" />
+    <View android:background="@*android:drawable/divider_horizontal_bright" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

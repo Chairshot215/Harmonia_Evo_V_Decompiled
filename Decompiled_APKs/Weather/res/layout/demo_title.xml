@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/main" android:background="@com.htc:drawable/common_titlebar_sublevel" android:layout_width="fill_parent" android:layout_height="@dimen/demo_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@com.htc:color/titleTextColor" android:ellipsize="marquee" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="0" style="@com.htc:style/title_secondary_l" />
+    <TextView android:textColor="@com.htc:color/titleTextColor" android:ellipsize="marquee" android:gravity="center" android:id="@id/condition" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:marqueeRepeatLimit="0" style="@com.htc:style/title_secondary_l" />
+</LinearLayout>

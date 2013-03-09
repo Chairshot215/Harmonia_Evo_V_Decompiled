@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/acu_detail_unit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/ace_detail_unit_relativelayout1" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <RelativeLayout android:gravity="center" android:id="@id/ace_detail_unit_relativelayout2" android:layout_width="@com.htc:dimen/htc_list_item_height" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/acu_detail_app_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView android:textSize="@com.htc:dimen/list_secondary_m" android:textColor="#ff000000" android:gravity="right|center" android:id="@id/acu_detail_app_status" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@com.htc:dimen/htc_list_item_height" android:maxLines="1" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_m" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/acu_detail_app_name" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_toLeftOf="@id/acu_detail_app_status" android:layout_toRightOf="@id/ace_detail_unit_relativelayout2" />
+    </RelativeLayout>
+    <TextView android:textSize="@com.htc:dimen/list_body_read_l" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/acu_detail_app_description" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ace_detail_unit_relativelayout1" />
+</RelativeLayout>

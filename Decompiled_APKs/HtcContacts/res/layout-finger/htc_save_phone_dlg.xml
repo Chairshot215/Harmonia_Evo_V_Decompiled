@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="@dimen/save_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/numberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_common_margin_left" android:layout_marginRight="@dimen/htc_common_margin_right" android:layout_marginBottom="@dimen/save_to_people_dlg_margin_bottom" android:text="@string/addContact_description" style="@com.htc:style/list_secondary_unread_xl" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_length_normal">
+            <Button android:gravity="center" android:id="@id/saveTo_new_button" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="@dimen/text_padding_height_dropdown" android:layout_marginLeft="@com.htc:dimen/htc_list_item_padding_medium" android:layout_marginRight="@com.htc:dimen/htc_list_item_padding_medium" android:text="@string/htc_save_to_new" style="@com.htc:style/list_primary_m" />
+        </LinearLayout>
+        <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_length_normal">
+            <Button android:gravity="center" android:id="@id/saveTo_exist_button" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="@dimen/text_padding_height_dropdown" android:layout_marginLeft="@com.htc:dimen/htc_list_item_padding_medium" android:layout_marginRight="@com.htc:dimen/htc_list_item_padding_medium" android:text="@string/htc_save_to_exist" style="@com.htc:style/list_primary_m" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

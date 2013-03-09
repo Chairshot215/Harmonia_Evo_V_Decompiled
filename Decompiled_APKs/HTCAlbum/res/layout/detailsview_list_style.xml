@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:id="@id/scroll_view" android:background="@com.htc:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/details_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/details_image_title_container" android:background="#ffe3e3e3" android:paddingLeft="@dimen/detail_dialog_image_title_container_padding_left" android:paddingRight="@dimen/detail_dialog_image_title_container_padding_right" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/details_thumbnail_image_frame" android:background="@com.htc:drawable/common_photo_frame" android:layout_width="@dimen/detail_dialog_thumbnail_image_frame_width" android:layout_height="@dimen/detail_dialog_thumbnail_image_frame_height" />
+                <ImageView android:layout_gravity="center" android:id="@id/details_thumbnail_image" android:layout_width="@dimen/detail_dialog_thumbnail_image_width" android:layout_height="@dimen/detail_dialog_thumbnail_image_height" />
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@id/details_image_title_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_dialog_image_title_text_margin_left" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+            <com.htc.widget.ButtonStyleEditText android:ellipsize="end" android:id="@id/details_image_title_edit" android:background="?com.htc:attr_common_inputfield_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/detail_dialog_image_title_text_margin_left" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/input_default_m" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/round_top" android:background="@drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="20.0dip" android:textColor="@color/list_item_primary_text" android:gravity="right|center" android:layout_gravity="top|left|center" android:id="@id/channel_freq" android:layout_width="55.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:singleLine="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/list_item_secondary_text" android:gravity="center_vertical" android:layout_gravity="top|left|center" android:id="@id/label_mhz" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginLeft="60.0dip" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_primary" android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="top|right|center" android:id="@id/channel_name" android:layout_width="160.0dip" android:layout_height="fill_parent" android:layout_marginRight="42.0dip" android:singleLine="true" android:selectAllOnFocus="true" android:marqueeRepeatLimit="marquee_forever" style="@style/text_style_secondary" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/delete_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/icon_nowplaying" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+</FrameLayout>

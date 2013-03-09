@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/comment_empty_layout" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/trans_topround" layout="@layout/htc_trans_topround" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <TextView android:gravity="center" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/comment_empty" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    </RelativeLayout>
+</RelativeLayout>

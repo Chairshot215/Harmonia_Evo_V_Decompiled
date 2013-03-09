@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/text" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_tool_message" />
+    </ScrollView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_tool_start_button" android:layout_weight="1.0" android:onClick="onClick" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:enabled="false" android:id="@id/delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_tool_delete_button" android:layout_weight="1.0" android:onClick="onClick" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*android:string/no" android:layout_weight="1.0" android:onClick="onClick" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

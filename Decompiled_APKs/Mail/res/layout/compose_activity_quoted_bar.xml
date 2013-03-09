@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/quoted_text_bar" android:background="@color/list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/quoted_text_trans_topround" android:background="@com.htc:drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/quoted_text_list_divider_top" android:layout_alignParentTop="true" style="@style/pure_divider" />
+    <ImageView android:id="@id/quoted_text_list_divider_bottom" android:layout_alignParentBottom="true" style="@style/pure_divider" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/quoted_text_trans_topround" android:layout_alignBottom="@id/quoted_text_list_divider_bottom">
+        <TextView android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:text="@string/compose_quoted_text_label" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@com.htc:style/list_primary_s" />
+        <ImageButton android:id="@id/quoted_text_delete" android:background="?com.htc:attr_common_close_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/compose_edit_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" />
+    <style name="Theme.Transparent" parent="@style/Theme">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.Dialog" parent="@*android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:listViewStyle">@style/ListView</item>
+    </style>
+    <style name="ListView" parent="@*android:style/Widget.AbsListView">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:divider">@drawable/common_divider_list</item>
+    </style>
+    <style name="toolbar_margin">
+        <item name="android:paddingLeft">@dimen/global_toolbar_margin</item>
+        <item name="android:paddingRight">@dimen/global_toolbar_margin</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">90.0px</item>
+    </style>
+    <style name="trans_top_round_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="trans_bottom_round_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="top_round_1">
+        <item name="android:background">@color/top_round_background</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="Theme.usb_to_pc" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="com.htc:fakescreenStyle">style_01</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="64.0dip" android:layout_height="64.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="44.0dip" android:layout_height="44.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+        <TextView android:ellipsize="marquee" android:id="@id/trackname" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/darklist_primary_m_bold" />
+        <TextView android:ellipsize="marquee" android:id="@id/artistalbum" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/darklist_secondary_m" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/playpausebtn" android:background="?com.htc:attr_common_b_button_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+</LinearLayout>

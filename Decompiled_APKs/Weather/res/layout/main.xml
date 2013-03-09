@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/floatView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0px">
+        <TextView android:textSize="@dimen/hint_textsize" android:textColor="@color/weather_deep_color" android:gravity="center" android:id="@id/download_weather_data_view" android:padding="@dimen/hint_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/today_height" />
+        <ViewSwitcher android:id="@id/view_switcher" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/no_city_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/nocity_btn_textsize" android:textColor="@color/weather_deep_color" android:gravity="center" android:id="@id/nocity_btn" android:background="@com.htc:drawable/common_b_button_small" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/nocity_btn_height" android:layout_margin="@dimen/nocity_btn_margin" />
+            <TextView android:textSize="@dimen/small_textsize" android:textColor="@color/weather_light_text_color" android:gravity="center" android:id="@id/nocity_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nocity_btn_margin" android:layout_marginRight="@dimen/nocity_btn_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/anim_panel" layout="@layout/anim_panel" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/sd_err_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/task_bar" android:layout_alignParentTop="true">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/sd_err_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_icon_glance_phone_storage" />
+        <TextView android:textSize="@dimen/textsize" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/sd_err_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/internal_memory_low" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/refresh_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_icon_action_sync" android:layout_toLeftOf="@id/latest_update_time" />
+        <TextView android:id="@id/latest_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100366587" android:versionName="1.0.2214273319.366587" package="com.redbend.vdmc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:theme="@style/Theme.DialogNoTitle" android:name="com.htc.omadm.gui.ext.BaseDialog" android:launchMode="singleTop" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme.DialogNoTitle" android:name="com.htc.omadm.gui.ext.BaseProgressBar" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme.DialogNoTitle" android:name="com.htc.omadm.gui.ext.ExistDialog" android:configChanges="orientation" />
+        <activity android:theme="@style/Theme.DialogNoTitle" android:name="com.htc.omadm.gui.DMGuiHFA" android:launchMode="singleTop" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.htc.omadm.core.NetworkNotifyReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <data android:mimeType="application/vnd.wap.connectivity-wbxml" />
+                <data android:mimeType="application/vnd.syncml.dm+wbxml" />
+                <data android:mimeType="application/vnd.syncml.notification" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.htc.omadm.core.DeviceNotifyReceiver">
+            <intent-filter>
+                <action android:name="com.htc.omadm.trigger" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.HFA_VERIFY_INTENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.htc.omadm.extinterface.ExtIntentReceiver">
+            <intent-filter>
+                <action android:name="com.htc.omadm.extinterface" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/DM" android:name="com.htc.omadm.test.TestMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/DM" android:name="com.htc.omadm.test.TestGUIActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/DM" android:name="com.htc.omadm.test.TestAPIActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/DM" android:name="com.htc.omadm.test.TestRoamingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.htc.omadm.core.DMService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.omadm.core.start" />
+                <action android:name="com.htc.omadm.core.init" />
+            </intent-filter>
+        </service>
+        <service android:name="com.htc.omadm.aidl.DmFutureDial" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.omadm.aidl.IDmFutureDial" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.htc.Manifest.permission.BROADCAST_KEYIN_EVENT" />
+    <uses-permission android:name="com.htc.Manifest.permission.BROADCAST_MOTION_EVENT" />
+    <uses-permission android:name="com.htc.Manifest.permission.BROADCAST_TRACKBALL_EVENT" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.HTC_FOTA_UPDATE" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.ACCESS_RECOVERY_FOLDER" />
+    <uses-permission android:name="com.sprint.internal.permission.CONNECTIONMANAGER" />
+    <uses-permission android:name="com.sprint.internal.permission.SYSTEMPROPERTIES_WRITE" />
+    <uses-permission android:name="com.sprint.internal.permission.SYSTEMPROPERTIES" />
+    <application />
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="display_style">
+        <item name="android:textSize">@dimen/lcd_text_size</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingTop">@dimen/lcd_layout_margin_top</item>
+        <item name="android:paddingBottom">0.0px</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="htc_fn_button_style">
+        <item name="android:background">@drawable/button_fn</item>
+        <item name="android:padding">0.0px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/fn_button_width</item>
+        <item name="android:layout_height">@dimen/fn_button_height</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="htc_number_button_style">
+        <item name="android:background">@drawable/button_number</item>
+        <item name="android:padding">0.0px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/number_button_width</item>
+        <item name="android:layout_height">@dimen/number_button_height</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="htc_clear_button_style">
+        <item name="android:textSize">@dimen/clear_button_text_size</item>
+        <item name="android:textColor">@color/clear_button_text_color</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:background">@drawable/button_fn</item>
+        <item name="android:paddingRight">@dimen/clear_button_padding_right</item>
+        <item name="android:paddingBottom">@dimen/clear_button_padding_bottom</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/clear_button_width</item>
+        <item name="android:layout_height">@dimen/clear_button_height</item>
+        <item name="android:text">@string/clear</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="htc_zero_button_style">
+        <item name="android:background">@drawable/button_number</item>
+        <item name="android:padding">0.0px</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/zero_button_width</item>
+        <item name="android:layout_height">@dimen/zero_button_height</item>
+        <item name="android:src">@drawable/no0</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="htc_equal_button_style">
+        <item name="android:background">@drawable/button_fn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">@dimen/equal_button_width</item>
+        <item name="android:layout_height">@dimen/equal_button_height</item>
+        <item name="android:src">@drawable/equal</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>

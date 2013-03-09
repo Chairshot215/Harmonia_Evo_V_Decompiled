@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="164.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/select_frame" android:layout_width="144.0px" android:layout_height="144.0px" android:layout_marginTop="8.0px" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <ImageView android:gravity="center_horizontal" android:id="@id/featureMusicImage" android:background="@drawable/music_song_nocover" android:layout_width="@dimen/feature_list_album_size" android:layout_height="@dimen/feature_list_album_size" android:layout_marginTop="25.0px" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <View android:gravity="center_horizontal" android:id="@id/albumCoverView" android:background="@drawable/music_song_cover" android:layout_width="144.0px" android:layout_height="144.0px" android:layout_marginTop="8.0px" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@com.htc:dimen/list_secondary_s" android:textColor="@color/black" android:ellipsize="none" android:gravity="center_horizontal" android:id="@id/featureMusicText" android:layout_width="144.0px" android:layout_height="fill_parent" android:maxLines="2" android:minLines="2" android:layout_below="@id/albumCoverView" android:layout_centerHorizontal="true" android:lineSpacingExtra="4.0px" />
+</RelativeLayout>

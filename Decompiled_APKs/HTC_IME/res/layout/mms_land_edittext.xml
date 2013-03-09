@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.android.htcime.ui.HTCExtractEditText android:gravity="top" android:id="@*android:id/inputExtractEditText" android:background="@*android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minLines="1" android:layout_toLeftOf="@id/land_mms_panel" android:layout_alignParentLeft="true" android:inputType="text" style="@com.htc:style/input_default_l" />
+        <LinearLayout android:gravity="top|right|center" android:orientation="vertical" android:id="@id/land_mms_panel" android:paddingTop="0.0px" android:paddingRight="@dimen/land_mms_layout_paddingRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:textSize="@dimen/land_mms_text_remain_size" android:textStyle="bold" android:textColor="#ff555555" android:gravity="bottom|right|center" android:id="@id/mms_text_remain" android:layout_width="@dimen/land_mms_btn_width" android:layout_height="@dimen/land_mms_text_remain_height" android:layout_marginTop="@dimen/land_mms_text_layout_marginTop" android:layout_marginRight="@dimen/land_mms_text_layout_marginRight" android:layout_marginBottom="@dimen/land_mms_text_layout_marginBottom" />
+            <include android:id="@id/mms_send_btn" android:layout_width="@dimen/land_mms_btn_width" android:layout_height="@dimen/land_mms_btn_height" android:layout_marginBottom="@dimen/btn_marginBottom" layout="@layout/ime_customize_btn" />
+            <include android:id="@id/mms_attach_btn" android:layout_width="@dimen/land_mms_btn_width" android:layout_height="@dimen/land_mms_btn_height" layout="@layout/ime_customize_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

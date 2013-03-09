@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.VideoFrame android:layout_width="0.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preview_image" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/preview_stub" android:layout="@layout/video_overlay" android:inflatedId="@id/preview_film_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/preview_flat_overlay" android:background="@color/metadata_overlay_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/accessibility_overlay" android:background="@drawable/highlight_overlay" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/play_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_movie_play_normal" />
+</com.google.android.finsky.layout.VideoFrame>

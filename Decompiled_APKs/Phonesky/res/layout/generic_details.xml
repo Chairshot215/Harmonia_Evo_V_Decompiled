@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/details_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/warning_message_panel" layout="@layout/details_warning_message" />
+    <FrameLayout android:id="@id/item_details_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.finsky.layout.ObservableScrollView android:id="@id/details_scroller" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <com.google.android.finsky.layout.DetailsContentLayout android:orientation="vertical" android:id="@id/details_scroller_container" android:background="@drawable/pinstripe_details_tile" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.finsky.layout.ObservableScrollView>
+</LinearLayout>

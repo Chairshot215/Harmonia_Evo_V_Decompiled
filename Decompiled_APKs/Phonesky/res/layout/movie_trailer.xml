@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.MovieTrailerView android:background="@color/screenshot_background" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/screenshots_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/hero_image" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/play_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_movie_play_normal" />
+    <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/grey" android:gravity="right|center" android:id="@id/curtain_caption" android:background="@color/hero_video_overlay" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <View android:id="@id/accessibility_overlay" android:background="@drawable/highlight_overlay" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/content_description_movie_trailer" />
+</com.google.android.finsky.layout.MovieTrailerView>

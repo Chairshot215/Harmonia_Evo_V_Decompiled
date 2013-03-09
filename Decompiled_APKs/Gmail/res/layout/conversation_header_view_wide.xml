@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/btn_check_on_normal_holo_light" />
+    <TextView android:textSize="@dimen/wide_senders_font_size" android:layout_gravity="center_vertical" android:id="@id/senders" android:layout_width="@dimen/senders_wide_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wide_senders_margin_top" android:text="@string/long_string" android:maxLines="2" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/personal_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ic_email_caret_single" />
+    <TextView android:textSize="@dimen/wide_subject_font_size" android:textColor="@color/subject_text_color_unread" android:layout_gravity="center_vertical" android:id="@id/subject" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0sp" android:layout_marginRight="@dimen/wide_subject_margin_right" android:text="@string/long_string" android:lines="2" android:layout_weight="0.7" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/labels_font_size" android:layout_gravity="top" android:id="@id/labels" android:paddingTop="2.0sp" android:layout_width="@dimen/max_total_label_width_wide" android:layout_height="wrap_content" android:text="@string/long_string" android:lines="1" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/paperclip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wide_attachment_margin_top" android:src="@drawable/ic_attachment_holo_light" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wide_date_margin_top" android:text="@string/date" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/btn_star_off_normal_gmail_holo_light" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/intruder_alert_content" android:background="@drawable/alert_bar_background" android:focusable="true" android:clickable="true" android:animationCache="false" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/alertIcon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="8.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.StatusBar.IntruderAlert" android:id="@id/alertText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

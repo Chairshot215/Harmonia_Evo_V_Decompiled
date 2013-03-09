@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_bar" android:paddingBottom="100.0px" android:focusable="true" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_plate" android:background="?attr_common_panel_input_base" android:paddingLeft="6.0px" android:paddingTop="8.0px" android:paddingRight="6.0px" android:paddingBottom="8.0px" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorPrimary" android:id="@id/search_badge" android:paddingLeft="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="0.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/search_edit_frame" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:baselineAligned="false">
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <view android:id="@id/search_src_text" android:paddingLeft="6.0px" android:paddingRight="25.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textAutoComplete" android:dropDownWidth="fill_parent" android:dropDownAnchor="@id/search_plate" class="android.app.HtcSearchDialog$SearchAutoComplete" style="?com.htc:searchInputFieldStyle" />
+                <ImageView android:layout_gravity="center" android:id="@id/search_close" android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_search" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <Button android:textSize="14.0sp" android:textStyle="normal" android:textColor="?android:textColorPrimary" android:id="@id/search_go_btn" android:layout_marginLeft="4.0px" style="?com.htc:titleBarButtonStyleSearch" />
+            <ImageButton android:id="@id/search_voice_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:src="@*android:drawable/ic_btn_speak_now" style="?com.htc:titleBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

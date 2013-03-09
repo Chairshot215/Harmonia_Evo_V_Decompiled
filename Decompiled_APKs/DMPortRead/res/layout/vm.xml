@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:layout_gravity="top" android:orientation="vertical" android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="30.0sp" android:gravity="left" android:id="@id/yes" android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/yes" />
+    <Button android:textSize="30.0sp" android:gravity="left" android:id="@id/no" android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="#ff9696c0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="30.0sp" android:gravity="left" android:id="@id/cancel" android:background="#ff9696c0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

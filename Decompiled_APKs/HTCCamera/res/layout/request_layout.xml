@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.rotate.RotateRelativeLayout android:id="@id/request_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/request_action_screen_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/capture_new" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_margin="@dimen/cmd_bar_two_btn_margin" android:text="@string/snapbooth_service_review_btn_redo" android:layout_weight="1.0" style="@com.htc:style/button_primary_m" />
+        <Button android:id="@id/select_this" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:text="@com.htc:string/done" android:layout_weight="1.0" style="@com.htc:style/button_primary_m" />
+    </LinearLayout>
+</com.android.camera.rotate.RotateRelativeLayout>

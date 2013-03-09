@@ -1,0 +1,234 @@
+* {
+    font-size: 14px;
+}
+
+.outboxDiv {
+    font-size: 20px;
+    color: #ff0000
+}
+
+.fromDiv {
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.presenceBgImg {
+    background: url("file:///android_asset/quickcontact_presence_bg.png") no-repeat;
+    vertical-align: bottom;
+    padding-right: 5px;
+    position: relative;
+    padding-bottom: 2px;
+    width: 18px;
+    z-index: 1
+}
+
+.presenceImg {
+    vertical-align: bottom;
+    width: 18px;
+    z-index: 3
+}
+
+.snippetDiv {
+/*
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    height:1.2em;
+    line-height:1em;
+*/  
+  
+/*
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1.2em;
+  line-height: 1em;
+*/
+}
+
+/*
+.addressDiv {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1.2em;
+  line-height: 1em;
+  width: 90%;
+  overflow: hidden;
+}
+*/
+
+.headerDiv {
+    position: relative;
+    margin-top: -10px;
+    border-width: 15 8 12 8;
+    -webkit-border-image:
+        url("file:///android_asset/ic_email_thread_open_top_default.9.png") 15
+        8 8 8;
+}
+
+.superCollapsedDiv {
+    position: relative;
+    margin-top: -5px;
+    border-width: 30 8 2 8;
+    background-color: #efefef;
+    line-height: 10px;
+    text-align: center;
+}
+
+.size1 {
+  -webkit-border-image:
+    url("file:///android_asset/ic_email_thread_supercompressed1.9.png") 9
+    8 0 8/ 9 8 0 9;
+}
+
+.size2 {
+    -webkit-border-image:
+        url("file:///android_asset/ic_email_thread_supercompressed2.9.png") 17
+        8 0 8/ 17 8 0 9;
+}
+
+.sizen {
+    -webkit-border-image:
+        url("file:///android_asset/ic_email_thread_supercompressed.9.png") 17
+        8 0 8/ 17 8 0 9;
+}
+
+.superCollapsedLabel {
+    padding-bottom: 10px;
+}
+
+.bodyDiv {
+    padding: 5px;
+}
+
+.bodyCell {
+    border-right: thin solid #999999;
+}
+
+.footerDiv {
+    border-width: 2 8 8 8;
+    -webkit-border-image:
+        url("file:///android_asset/email_button_bkg.9.png") 2 8 8 8;
+    margin-bottom: 12px;
+    padding-top: 6px;
+    text-align: center;
+}
+
+.conversationHeaderDiv {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 15px;
+}
+
+#labels {
+    padding-top: 5px;
+}
+
+.labelsDiv {
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-width: 2 2 2 2;
+    -webkit-border-image: url("file:///android_asset/label_background.png")
+        2 2 2 2; #
+    background-color: #57a1d0;
+    color: #ffffff;
+}
+
+.conversationFooterDiv {
+    -webkit-border-image: url("file:///android_asset/bottom_bar.png") 6 6 6 6;
+    margin-top: 6px;
+}
+
+.conversationFooterInnerDiv {
+    text-align: center;
+    padding-top: 2;
+    padding-left: 2;
+    padding-right: 4;
+    padding-bottom: 2;
+    max-width: 307px;
+}
+
+.messageFooterDiv1 {
+    -webkit-border-image: url("file:///android_asset/bg_noshadow_bottomcard.9.png") 2 4 7 4 / 2 4 7 4;
+}
+
+.messageFooterDiv2 {
+    -webkit-border-image: url("file:///android_asset/bg_shadow_bottomcard.9.png") 2 5 7 4 / 2 5 7 4;
+}
+
+button.footerButton {
+    padding: 10px 50px;
+    -webkit-border-radius: 2px 2px;
+    border: solid 1px rgb(153, 153, 153);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(255, 255, 255)), to(rgb(221, 221, 221)));
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 0px 1px 1px rgba(255,255,255,1);
+    line-height: 1;
+    font-size:24px;
+}
+
+.footerIconImg {
+    width: 32px;
+    height: 32px;
+    vertical-align:-20%;
+}
+
+.footerTextElementDiv {
+    display: inline;
+    font-size:12px;
+    color:#666666;
+}
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+button.attachment {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 120px;
+    height: 48px;
+}
+
+.draftDiv {
+    color: #ff0000;
+    font-size: 16px;
+}
+
+div.attachment {
+    width: 100%;
+    background-color: #efefef;
+    margin-bottom: 6px;
+}
+
+table.attachment {
+    table-layout: fixed;
+    width: 310px;
+}
+
+div.external {
+    width: 100%;
+    background-color: #efefef;
+}
+
+table.external {
+    width: 310px;
+}
+
+button.external {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
+    height: 48px;
+}

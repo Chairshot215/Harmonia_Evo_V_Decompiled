@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/message_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/trans_topround_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/trans_topround" layout="@layout/htc_trans_topround" />
+    </RelativeLayout>
+    <com.htc.widget.QuickContactBadge android:id="@id/avatar" android:layout_width="@dimen/extra_comments_quick_contact_badge_width" android:layout_height="@dimen/extra_comments_quick_contact_badge_height" android:layout_marginLeft="@dimen/extra_comments_contacts_padding_left" android:layout_marginTop="@dimen/extra_comments_contacts_padding_top" android:layout_marginRight="@dimen/extra_comments_contacts_padding_right" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/list_item_text_padding_top" android:paddingRight="@dimen/list_item_text_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar">
+        <TextView android:textColorLink="@com.htc:color/link_text" android:id="@id/content" android:paddingBottom="@dimen/list_item_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:bufferType="spannable" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@id/subcontent" android:paddingBottom="@dimen/list_item_text_second_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_m_italic" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/subcontent_text_white_focused" android:id="@id/replies" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:drawableLeft="@com.htc:drawable/common_icon_indicator_replies" android:drawablePadding="2.0dip" android:layout_below="@id/content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

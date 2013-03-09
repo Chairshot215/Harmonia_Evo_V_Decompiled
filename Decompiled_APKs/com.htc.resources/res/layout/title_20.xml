@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/title_20" android:layout_width="fill_parent" android:layout_height="76.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" />
+    <LinearLayout android:id="@id/title_20_layout_left" android:background="@drawable/common_titlebar_fullscreen_rest" android:paddingLeft="14.0px" android:duplicateParentState="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/title_20_img_1x1" android:background="@null" android:layout_width="37.0px" android:layout_height="37.0px" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/title_primary_m" android:textColor="@color/titleTextColor" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title_20_txt_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/title_secondary_m" android:textColor="@color/secondarytitleTextColor" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/title_20_txt_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/title_20_button_right" android:background="?attr_common_titlebar_fullscreen" android:layout_width="76.0px" android:layout_height="fill_parent" />
+</LinearLayout>

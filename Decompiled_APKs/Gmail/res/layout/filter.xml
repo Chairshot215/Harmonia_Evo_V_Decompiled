@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:showDividers="beginning" android:dividerPadding="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_label" />
+    <CheckBox android:id="@id/unread" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_unread" />
+    <CheckBox android:id="@id/attachment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/attachment" />
+    <CheckBox android:id="@id/star" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_starred" />
+    <CheckBox android:id="@id/chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat" />
+    <CheckBox android:id="@id/important" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/important" />
+</LinearLayout>

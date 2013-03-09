@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard label="@string/p20key_rus" width="106px" hgap="0px" vgap="0px" height="87px" keyTextSize="36px" popupTextSize="45px" totalRows="4" keyTextYOffset="0" topLabelTextSize="22px" topLabelTextYOffset="-2" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,5,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" splitKeyBackground="@drawable/qwerty_split_key" t9KeyBackground="@drawable/sapphire_1220key_t9" closeKeyBackground="@drawable/qwerty_close_key">
+    <row>
+        <key codes="0x0439,0x0446" label="йц" topLabel="!" hgap="5px" leftEdge="true" popupCharacters="@string/alternates_for_p20_йц" SplitLabel="true" accentType="0" alignIndex="0" xt9idx="0" />
+        <key codes="0x0443,0x043A" label="ук" topLabel="1" popupCharacters="@string/alternates_for_p20_ук" SplitLabel="true" accentType="0" alignIndex="2" xt9idx="1" />
+        <key codes="0x0435,0x043D" label="ен" topLabel="2" popupCharacters="@string/alternates_for_p20_ен" SplitLabel="true" accentType="0" alignIndex="2" xt9idx="2" />
+        <key codes="0x0433,0x0448,0x449" label="гшщ" topLabel="3" popupCharacters="@string/alternates_for_p20_гшщ" SplitLabel="true" accentType="0" alignIndex="3" xt9idx="3" />
+        <key codes="0x0437,0x0445,0x044A" label="зхъ" topLabel="+" rightEdge="true" popupCharacters="@string/alternates_for_p20_зхъ" SplitLabel="true" accentType="0" alignIndex="6" xt9idx="4" />
+    </row>
+    <row>
+        <key codes="0x0444,0x044B" label="фы" topLabel="\?" hgap="5px" leftEdge="true" popupCharacters="@string/alternates_for_p20_фы" SplitLabel="true" accentType="0" alignIndex="0" xt9idx="6" />
+        <key codes="0x0432,0x0430" label="ва" topLabel="4" popupCharacters="@string/alternates_for_p20_ва" SplitLabel="true" accentType="0" alignIndex="2" xt9idx="7" />
+        <key codes="0x043F,0x0440" label="пр" topLabel="5" popupCharacters="@string/alternates_for_p20_пр" SplitLabel="true" accentType="0" alignIndex="2" xt9idx="8" />
+        <key codes="0x043E,0x043B" label="ол" topLabel="6" popupCharacters="@string/alternates_for_p20_ол" SplitLabel="true" accentType="0" alignIndex="2" xt9idx="9" />
+        <key codes="0x0434,0x044F,0x044D" label="джэ" topLabel="-" rightEdge="true" popupCharacters="@string/alternates_for_p20_джэ" SplitLabel="true" accentType="0" alignIndex="6" xt9idx="10" />
+    </row>
+    <row>
+        <key codes="-8" width="66px" leftEdge="true" function="true" sticky="true" hgap="5px" iconPreview="@drawable/sapphire_icon_t9_toggle" />
+        <key codes="0x044F,0x0447" label="яч" topLabel="\@" width="99px" popupCharacters="@string/alternates_for_p20_яч" SplitLabel="true" accentType="0" alignIndex="0" xt9idx="12" />
+        <key codes="0x0441,0x043C" label="см" topLabel="7" width="100px" popupCharacters="@string/alternates_for_p20_см" SplitLabel="true" accentType="0" alignIndex="2" xt9idx="13" />
+        <key codes="0x0438,0x0442,0x044C" label="ить" topLabel="8" width="99px" popupCharacters="@string/alternates_for_p20_ить" SplitLabel="true" accentType="0" alignIndex="3" xt9idx="14" />
+        <key codes="0x0431,0x044E,0x0451" label="бюё" topLabel="9" width="100px" popupCharacters="@string/alternates_for_p20_бюё" SplitLabel="true" accentType="0" alignIndex="3" xt9idx="15" />
+        <key codes="0x0008" function="true" width="66px" rightEdge="true" repeatable="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" xt9idx="16" />
+    </row>
+    <row>
+        <key codes="-1" width="66px" modifier="true" hgap="5px" sticky="true" function="true" leftEdge="true" icon="@drawable/key_icon_shift_toggle" iconPreview="@drawable/sapphire_icon_shift_toggle" />
+        <key codes="-16" width="66px" function="true" grouped="1" />
+        <key codes="-23" hgap="-66px" width="66px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-66px" width="66px" function="true" label="" textScale="80%p" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="0x002C" label="," topLabel=";" width="54px" splitSet="1" popupCharacters="@string/alternates_for_p20_comma" accentType="0" alignIndex="0" labelOffsetY="-5" />
+        <key codes="0x002F" label="/" topLabel=";" width="54px" hgap="-54px" splitSet="2" popupCharacters="@string/alternates_for_p20_slash" accentType="0" alignIndex="0" />
+        <key codes="0x0040" label="\@" topLabel=";" width="54px" hgap="-54px" splitSet="3" popupCharacters="@string/alternates_for_p20_at" accentType="0" alignIndex="0" />
+        <key codes="0x0020" topLabel="0" width="158px" hgap="0px" splitSet="1" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space_with_zero" popupCharacters="@string/alternates_for_zero" accentType="0" alignIndex="0" xt9idx="20" />
+        <key codes="-7" label=".com" topLabel="0" hgap="-158px" width="80px" splitSet="2" splitLeft="true" textScale="85%p" popupCharacters="@string/alternates_for_dotcom_and_zero" feedbackBG="1" accentType="1" alignIndex="2" />
+        <key codes="0x0020" hgap="-1px" width="79px" splitSet="2" splitRight="true" feedbackBG="2" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" xt9idx="20" />
+        <key codes="-7" label=".com" topLabel="0" hgap="-158px" width="80px" splitSet="3" splitLeft="true" textScale="85%p" popupCharacters="@string/alternates_for_dotcom_and_zero" feedbackBG="1" accentType="1" alignIndex="2" />
+        <key codes="0x005F" label="_" hgap="-1px" width="79px" splitSet="3" splitRight="true" feedbackBG="2" />
+        <key codes="0x002E" label="." topLabel=":" width="54px" hgap="0px" popupCharacters="@string/alternates_for_p20_period" accentType="0" alignIndex="0" labelOffsetY="-5" splitSet="1" />
+        <key codes="0x002E" label="." topLabel=":" hgap="-54px" width="54px" popupCharacters="@string/alternates_for_p20_period" accentType="0" alignIndex="0" labelOffsetY="-5" splitSet="2" />
+        <key codes="0x002E" label="." topLabel=":" hgap="-54px" width="54px" popupCharacters="@string/alternates_for_p20_period" accentType="0" alignIndex="0" labelOffsetY="-5" splitSet="3" />
+        <key codes="0x002C" label="," topLabel=";" width="54px" hgap="-332px" splitSet="4" popupCharacters="@string/alternates_for_p20_comma" accentType="0" alignIndex="0" labelOffsetY="-5" />
+        <key codes="0x002F" label="/" topLabel=";" width="54px" hgap="-54px" splitSet="5" popupCharacters="@string/alternates_for_p20_slash" accentType="0" alignIndex="0" />
+        <key codes="0x0040" label="\@" topLabel=";" width="54px" hgap="-54px" splitSet="6" popupCharacters="@string/alternates_for_p20_at" accentType="0" alignIndex="0" />
+        <key codes="0x0020" topLabel="0" width="224px" hgap="0px" splitSet="4" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space_with_zero" popupCharacters="@string/alternates_for_zero" accentType="0" alignIndex="0" xt9idx="20" />
+        <key codes="-7" label=".com" topLabel="0" hgap="-224px" width="113px" splitSet="5" splitLeft="true" textScale="85%p" popupCharacters="@string/alternates_for_dotcom_and_zero" feedbackBG="1" accentType="1" alignIndex="2" />
+        <key codes="0x0020" hgap="-1px" width="112px" splitSet="5" splitRight="true" feedbackBG="2" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" xt9idx="20" />
+        <key codes="-7" label=".com" topLabel="0" hgap="-224px" width="113px" splitSet="6" splitLeft="true" textScale="85%p" popupCharacters="@string/alternates_for_dotcom_and_zero" feedbackBG="1" accentType="1" alignIndex="2" />
+        <key codes="0x005F" label="_" hgap="-1px" width="112px" splitSet="6" splitRight="true" feedbackBG="2" />
+        <key codes="0x002E" label="." topLabel=":" width="54px" popupCharacters="@string/alternates_for_p20_period" accentType="0" alignIndex="0" labelOffsetY="-5" splitSet="4" />
+        <key codes="0x002E" label="." topLabel=":" hgap="-54px" width="54px" popupCharacters="@string/alternates_for_p20_period" accentType="0" alignIndex="0" labelOffsetY="-5" splitSet="5" />
+        <key codes="0x002E" label="." topLabel=":" hgap="-54px" width="54px" popupCharacters="@string/alternates_for_p20_period" accentType="0" alignIndex="0" labelOffsetY="-5" splitSet="6" />
+        <key codes="-2" label="12#" width="66px" function="true" textScale="80%p" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="0x000A" width="66px" function="true" sticky="true" rightEdge="true" icon="@drawable/key_icon_enter_toggle" iconPreview="@drawable/sapphire_icon_enter_toggle" xt9idx="23" />
+    </row>
+</keyboard>

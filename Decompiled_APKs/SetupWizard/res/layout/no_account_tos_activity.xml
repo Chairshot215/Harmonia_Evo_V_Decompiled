@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.setupwizard.BaseActivity$ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:minHeight="@dimen/title_height" android:text="@string/tos_title" android:layout_alignParentTop="true" />
+    <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    <TextView android:textColorLink="?android:textColorPrimary" android:id="@id/tos_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/vertical_spacing" android:text="@string/tos_agreement_text" android:layout_below="@id/top_divider" style="@style/DescriptionText" />
+    <Button android:id="@id/back_button" android:layout_margin="5.0dip" android:text="@string/back_button_label" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/BackButton" />
+    <Button android:id="@id/next_button" android:layout_margin="5.0dip" android:text="@string/next_button_label" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+</view>

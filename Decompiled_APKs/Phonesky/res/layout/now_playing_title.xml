@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/now_playing_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/widget_title_icon" android:paddingBottom="@dimen/now_playing_icon_padding_bottom" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="marquee" android:id="@id/widget_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/widget_title_icon" android:layout_centerVertical="true" style="@style/WidgetTitleText" />
+    <include android:visibility="gone" layout="@layout/widget_accessibility_overlay" />
+</RelativeLayout>

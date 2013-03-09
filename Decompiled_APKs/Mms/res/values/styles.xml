@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="htc_listview_style" parent="@*android:style/Widget.AbsListView">
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:background">@com.htc:color/listview_app_background</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">@drawable/common_list_divider</item>
+    </style>
+    <style name="htc_vcard_listview_style" parent="@style/htc_listview_style">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">@drawable/common_list_divider</item>
+    </style>
+    <style name="message_text_editor_style_default">
+        <item name="android:textSize">@com.htc:dimen/input_default_m</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textColorHint">#ff999999</item>
+        <item name="android:gravity">start|top|center</item>
+        <item name="android:background">@drawable/l_msg_input_editor</item>
+        <item name="android:paddingLeft">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:paddingTop">@dimen/text_editor_padding_top</item>
+        <item name="android:paddingRight">@dimen/compose_bottom_editor_paddingRight</item>
+        <item name="android:paddingBottom">@dimen/text_editor_padding_bottom</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/compose_bottom_editor_minHeight</item>
+        <item name="android:capitalize">sentences</item>
+        <item name="android:autoText">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <style name="message_text_editor_style" parent="@style/message_text_editor_style_default" />
+    <style name="compose_text_counter_style">
+        <item name="android:textSize">@dimen/text_size_editor_count</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@com.htc:color/list_secondary</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">@dimen/compose_text_counter_padding_left</item>
+        <item name="android:paddingRight">@dimen/compose_text_counter_padding_right</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="compose_text_seg_counter_style" parent="@style/compose_text_counter_style">
+        <item name="android:gravity">bottom|right|center</item>
+        <item name="android:paddingTop">@dimen/compose_text_seg_padding_top</item>
+        <item name="android:paddingBottom">@dimen/compose_text_seg_padding_bottom</item>
+    </style>
+    <style name="attach_btn_text_primary">
+        <item name="android:textSize">@dimen/attach_btn_text_size_primary</item>
+        <item name="android:textColor">@color/primary_selected_color</item>
+    </style>
+    <style name="attach_btn_text_secondary">
+        <item name="android:textSize">@dimen/attach_btn_text_size_secondary</item>
+        <item name="android:textColor">@color/secondary_selected_color</item>
+    </style>
+    <style name="text_appearance_medium" parent="@*android:style/TextAppearance.Medium" />
+    <style name="screen_layout">
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="common_b2_bottom_panel_style">
+        <item name="android:background">@drawable/common_sub_panel_navbar</item>
+        <item name="android:paddingTop">@dimen/common_button_panel_margin_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_b2_bottom_panel_height</item>
+    </style>
+    <style name="common_b2_bottom_panel_btn_L" parent="@style/htc_navbar_button_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">@dimen/common_b2_bottom_btn_height</item>
+        <item name="android:layout_marginLeft">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="common_b2_bottom_panel_btn_R" parent="@style/htc_navbar_button_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">@dimen/common_b2_bottom_btn_height</item>
+        <item name="android:layout_marginLeft">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="app_theme">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="composer_window" />
+    <style name="recipients_subject_linear">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/common_panel_input_base</item>
+        <item name="android:paddingLeft">@dimen/compose_header_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/compose_header_paddingRight</item>
+        <item name="android:paddingBottom">@dimen/compose_header_paddingBottom</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/compose_header_minHeigh</item>
+    </style>
+    <style name="recipients_bar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/compose_recipient_panel_marginTop</item>
+    </style>
+    <style name="compose_recipients_editor">
+        <item name="android:layout">@layout/recipients_editor</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ngm_editor">
+        <item name="android:layout">@layout/ngm_group_message</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/ngm_group_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/compose_header_layout_interval</item>
+    </style>
+    <style name="compose_recipient_contact_picker" parent="@style/htc_button_style">
+        <item name="android:paddingRight">@dimen/compose_contactPicker_padding_right</item>
+        <item name="android:layout_width">@dimen/compose_contactPicker_height</item>
+        <item name="android:layout_height">@dimen/compose_contactPicker_height</item>
+        <item name="android:layout_marginLeft">@dimen/compose_header_paddingLeft</item>
+        <item name="android:src">@drawable/l_icon_contact_picker</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="compose_recipient_button_screen">
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="compose_subject_bar">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/compose_header_layout_interval</item>
+    </style>
+    <style name="fill_space">
+        <item name="android:background">@*android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/apn_settings" android:key="button_apn_key">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.ApnSettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcListPreference android:entries="@array/preferred_gsm_network_mode_choices" android:title="@string/preferred_network_mode_title" android:key="preferred_gsm_umts_network_mode_key" android:summary="@string/preferred_network_mode_summary" android:dialogTitle="@string/preferred_network_mode_dialogtitle" android:entryValues="@array/preferred_gsm_network_mode_values" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/networks" android:key="button_carrier_sel_key" android:summary="@string/sum_carrier_select">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.NetworkSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

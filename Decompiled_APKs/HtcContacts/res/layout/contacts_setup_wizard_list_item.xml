@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ViewRoot" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1" android:layout_marginLeft="10.0dip" android:maxWidth="@dimen/htc_group_name_max_width_remove" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+        <TextView android:gravity="center_vertical" android:id="@id/txt_2x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="@dimen/htc_group_name_max_width_remove" android:singleLine="false" style="@com.htc:style/list_secondary_m" />
+        <View android:id="@id/blankArea" android:layout_width="wrap_content" android:layout_height="@dimen/padding_large" />
+    </LinearLayout>
+    <CheckBox android:gravity="right|center" android:id="@id/chk_1x1" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+</LinearLayout>

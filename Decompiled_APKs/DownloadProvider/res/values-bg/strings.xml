@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Диспечер за изтегляне</string>
+    <string name="permlab_downloadManager">Достъп до диспечера за изтегляне.</string>
+    <string name="permdesc_downloadManager">Дава на приложението достъп до мениджъра на изтеглянията и му позволява да го използва за изтегляне на файлове. Злонамерените приложения могат да използват това за прекъсване на изтеглянията и за достъп до лична информация.</string>
+    <string name="permlab_downloadManagerAdvanced">Разширени функции на диспечера за изтегляне.</string>
+    <string name="permdesc_downloadManagerAdvanced">Разрешава на приложението достъп до разширените функции на мениджъра на изтеглянията. Злонамерените приложения могат да използват това за прекъсване на изтеглянията и за достъп до поверителна информация.</string>
+    <string name="permlab_downloadCompletedIntent">Изпращане на известявания за изтегляне.</string>
+    <string name="permdesc_downloadCompletedIntent">Разрешава на приложението да изпраща известия за завършени изтегляния. Злонамерените приложения могат да използват това, за да объркат други приложения, изтеглящи файлове.</string>
+    <string name="permlab_seeAllExternal">Виждай всички изтеглени файлове на SD картата</string>
+    <string name="permdesc_seeAllExternal">Разрешава на приложението да вижда всичко изтеглено на SD картата, независимо кое приложение го е изтеглило.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Резервирай място в кеш за изтегляния</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Разрешава на приложението да изтегля файлове в кеша, които не могат да се изтрият автоматично, когато мениджърът на изтеглянията се нуждае от още място.</string>
+    <string name="permlab_downloadWithoutNotification">изтегляне на файлове без известие</string>
+    <string name="permdesc_downloadWithoutNotification">Разрешава на приложението да изтегля файлове чрез мениджъра на изтеглянията без известие до потребителя.</string>
+    <string name="permlab_accessAllDownloads">Достъп до всички системни изтегляния</string>
+    <string name="permdesc_accessAllDownloads">Разрешава на приложението да преглежда и променя всички изтегляния, започнати от всяко приложение в системата.</string>
+    <string name="download_unknown_title">&lt;Без име></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" и още %d"</string>
+    <string name="notification_download_complete">Изтеглянето завърши.</string>
+    <string name="notification_download_failed">Изтеглянето е неуспешно.</string>
+    <string name="notification_need_wifi_for_size">Изисква се Wi-Fi.</string>
+    <string name="notification_paused_in_background">На пауза във фонов режим.</string>
+    <string name="wifi_required_title">Изтеглянето прекалено голямо за мрежата на оператора</string>
+    <string name="wifi_required_body" formatted="false">"Трябва да използвате Wi-Fi, за да завършите това изтегляне от %s . 
+
+Докоснете „%s “, за да започнете изтеглянето при следващото свързване с Wi-Fi мрежа."</string>
+    <string name="wifi_recommended_title">Изчакване за по-късно изтегляне?</string>
+    <string name="wifi_recommended_body" formatted="false">"Изтеглянето на %s  може да изхаби батерията и/или да причини прекомерно използване на мобилни данни и таксуване от оператора според плана ви.
+
+ Докоснете „%s“ за изтегляне при следващо свързване с Wi-Fi."</string>
+    <string name="button_queue_for_wifi">Изчакване</string>
+    <string name="button_cancel_download">Отказ</string>
+    <string name="button_start_now">Стартирай сега</string>
+    <string name="low_download_storage_view_title">Недостатъчна памет</string>
+    <string name="low_download_storage_view_text">Няма достатъчно свободна памет за това изтегляне.</string>
+    <string name="notification_paused_no_wifi">" (в пауза)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

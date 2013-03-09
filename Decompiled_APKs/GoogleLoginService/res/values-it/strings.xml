@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_rlz">sconosciuto</string>
+    <string name="sharedUserLabel">Servizi Google</string>
+    <string name="app_label">Google Account Manager</string>
+    <string name="gls_label">Google</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Benvenuto in ^1</string>
+    <string name="next_button_label">Avanti</string>
+    <string name="back_button_label">Indietro</string>
+    <string name="sign_in_button_label">Accedi</string>
+    <string name="create_button_label">Ottieni un account</string>
+    <string name="not_now_button_label">Non adesso</string>
+    <string name="skip_button_label">Salta</string>
+    <string name="new_button_label">Nuovo</string>
+    <string name="existing_button_label">Esistente</string>
+    <string name="first_name">Nome</string>
+    <string name="last_name">Cognome</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Annulla</string>
+    <string name="try_again_button_label">Riprova</string>
+    <string name="close_button_label">Chiudi</string>
+    <string name="edit_text_help">Tocca una casella di testo per iniziare a digitare</string>
+    <string name="add_a_google_account">Aggiungi un account Google</string>
+    <string name="no_sim_setup_wireless">Non essendo installata una scheda SIM, non è possibile connettersi a una rete cellulare per servizi dati o vocali. Puoi connetterti a una rete Wi-Fi senza scheda SIM.</string>
+    <string name="setup_wifi_button_label">Connessione a Wi-Fi</string>
+    <string name="setup_wizard_title">Configurazione guidata</string>
+    <string name="captcha_title">È necessario inserire CAPTCHA</string>
+    <string name="choose_account_title">Scegli account</string>
+    <string name="show_error_title">Errore riscontrato</string>
+    <string name="close_and_launch_title">Chiusura della configurazione guidata</string>
+    <string name="server_error">Errore durante la comunicazione con i server Google.</string>
+    <string name="server_error_help">Riprova più tardi.</string>
+    <string name="network_unreliable">Impossibile stabilire una connessione affidabile al server.</string>
+    <string name="network_unreliable_help">Potrebbe trattarsi di un problema temporaneo oppure il dispositivo Android potrebbe non essere adatto per i servizi di dati. Se il problema persiste, contatta il servizio clienti.</string>
+    <string name="invalid_login_character">Carattere non valido. Sono consentiti soltanto i caratteri 0-9, a-z, A-Z e punti.</string>
+    <string name="invalid_password_character">Carattere della password non valido.</string>
+    <string name="add_apn">Impostazioni wireless</string>
+    <string name="setup_google_account_title">Configura il tuo account Google</string>
+    <string name="setup_complete_title">Configuraz. completa</string>
+    <string name="cant_be_blank">Il campo non può essere vuoto.</string>
+    <string name="calendar">Google Calendar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Il dispositivo Android non è connesso a un servizio dati. Per visualizzare ora le informazioni, visita %s con un browser web.</string>
+    <string name="field_cant_be_blank">Questo campo non può essere vuoto</string>
+    <string name="field_invalid_domain">Questo nome di dominio non è valido</string>
+    <string name="field_invalid_user">Questo nome utente non è valido</string>
+    <string name="field_invalid_user_domain">"Inserisci solo il tuo nome utente, non l'indirizzo email"</string>
+    <string name="setup_device_title">Configurazione del tuo ^1</string>
+    <string name="dont_have_an_account">Non possiedi un account Google?</string>
+    <string name="create_one_now">Creane uno ora. È facile.</string>
+    <string name="already_have_an_account">Possiedi già un account Google?</string>
+    <string name="sign_in_with_google_account">"Esegui l'accesso all'account Google che desideri utilizzare con questo dispositivo Android."</string>
+    <string name="skip_message">"Configurare l'account in un secondo momento?"</string>
+    <string name="delayed_gaia_agreement">" Se continui, accetti le Norme sulla privacy di "<annotation id="google_privacy">Google</annotation> e <annotation id="android_privacy">aggiuntive</annotation>.</string>
+    <string name="plus_query_title">Registrati su Google+</string>
+    <string name="plus_query_text">Con Google+, condividere sul Web è quasi come condividere nella vita reale.</string>
+    <string name="circles_subtitle">Cerchie</string>
+    <string name="circles_text">Il modo più semplice per condividere online ciò che conta di più.</string>
+    <string name="uploads_subtitle">Caricam. istantaneo</string>
+    <string name="uploads_text">Sincronizza con facilità tutte le tue foto da tutti i dispositivi.</string>
+    <string name="huddle_text">Messaggi di gruppo per tutte le persone delle tue cerchie.</string>
+    <string name="plus_declined_button_label">Non adesso</string>
+    <string name="plus_accepted_button_label">Registrati su Google+</string>
+    <string name="plus_name_check_title">Contatto di Google+...</string>
+    <string name="plus_name_check_text">Questa operazione può richiedere alcuni minuti.</string>
+    <string name="plus_faq_title">Benvenuto in Google+</string>
+    <string name="plus_faq_text" formatted="false">"Su Google+ avrai un profilo pubblico che consentirà ai tuoi amici di trovarti online. Chi conosce il tuo indirizzo email potrà trovare e visualizzare il tuo profilo.
+
+Puoi utilizzare i pulsanti +1 disponibili sul Web per consigliare contenuti a tutti gli utenti. Il tuo profilo e i tuoi +1 verranno visualizzati pubblicamente nei risultati di ricerca, in annunci e sul Web.
+
+Per ora nel tuo profilo sarà visualizzato soltanto il tuo nome (%s %s). Potrai aggiungere una foto, informazioni biografiche e altri dettagli in un secondo momento quando inizierai a utilizzare Google+."</string>
+    <string name="dasher_warning">"L'amministratore di %s possiede e gestisce tutti i tuoi dati memorizzati su Google+ e può eliminare o modificare il tuo profilo in qualsiasi momento senza la tua autorizzazione."</string>
+    <string name="picassa_info_title">Picasa e Google+</string>
+    <string name="picassa_info_text" formatted="false">Le tue foto e i tuoi video pubblicati su Picasa Web Album saranno disponibili su Google+ e i tuoi commenti risulteranno essere di %s %s anziché di %s. Se condividi delle foto su Google+, i destinatari possono ricondividerle con chiunque altro. Le impostazioni relative alla visibilità dei tuoi album rimarranno invariate e puoi limitare le foto in qualsiasi momento per evitare che vengano condivise di nuovo liberamente.</string>
+    <string name="name_title">Il tuo nome</string>
+    <string name="name_title_plus">Il tuo nome Google+</string>
+    <string name="name_title_local">Questo telefono appartiene a...</string>
+    <string name="name_text">Il tuo nome viene utilizzato per personalizzare il tuo telefono e i servizi di Google.</string>
+    <string name="name_text_local">Sul telefono viene utilizzato il tuo nome per personalizzare alcune applicazioni.</string>
+    <string name="bad_name_title">Utilizzare questo nome?</string>
+    <string name="invalid_name_title">Impossibile utilizzare questo nome</string>
+    <string name="bad_name_display">%1$s %2$s</string>
+    <string name="bad_name_text">"Se desideri questo nome per Google+, il nostro team dovrà esaminarlo. Se vìola le nostre Norme sui nomi, il tuo profilo potrebbe essere sospeso. Ciò limiterebbe la tua possibilità di utilizzare i prodotti Google che richiedono un profilo attivo.
+
+"<annotation id="learn_more">Ulteriori informazioni</annotation></string>
+    <string name="bad_name_text2">"Se desideri utilizzare il nome specificato come nome Google+, il nostro team dovrà esaminarlo. Se il nome vìola le nostre norme sui nomi, il tuo profilo potrebbe essere sospeso e potresti perdere completamente l'accesso a Google+ e ad altri servizi associati al profilo.
+
+"<annotation id="learn_more">Ulteriori informazioni</annotation></string>
+    <string name="invalid_name_text">Questo nome non può essere utilizzato con Google+ perché contiene caratteri non validi.</string>
+    <string name="invalid_nickname_text">Questo nome non può essere utilizzato con Google+ perché contiene caratteri non validi. Stai cercando di utilizzare un nickname, un nome precedente o una qualifica? Puoi aggiungerli al tuo profilo dopo la registrazione.</string>
+    <string name="invalid_other_text">Non è possibile utilizzare questo nome con Google+.</string>
+    <string name="bad_name_agree_text">Comprendo e desidero utilizzare questo nome.</string>
+    <string name="bad_name_decline_button_label">Aggiorna il nome</string>
+    <string name="bad_name_agree_button_label">Invia nome per riesame</string>
+    <string name="bad_name_skip_button_label">Ignora Google+</string>
+    <string name="photo_title">La tua foto</string>
+    <string name="photo_text">"Questa foto verrà utilizzata nel tuo record dei contatti. Puoi modificarla successivamente nell'applicazione Persone."</string>
+    <string name="photo_text_es">Scatta una foto che verrà visualizzata dai tuoi amici su Google+. Puoi scegliere una nuova immagine in seguito.</string>
+    <string name="photo_button_label">Scatta foto</string>
+    <string name="retake_photo_button_label">Scatta foto di nuovo</string>
+    <string name="photo_failure">Impossibile avviare la fotocamera</string>
+    <string name="crop_failure">Impossibile ritagliare la foto</string>
+    <string name="open_keyboard_message">Per iniziare, accedi alla tastiera facendo scorrere lo schermo.</string>
+    <string name="open_keyboard_message_to_continue">Per continuare, accedi alla tastiera facendo scorrere lo schermo.</string>
+    <string name="emergency_dial">Chiamata di emergenza</string>
+    <string name="change_language">Cambia lingua</string>
+    <string name="close_keyboard_message">Per continuare, chiudi la tastiera facendola scorrere.</string>
+    <string name="communicating_message">"Il tuo telefono sta contattando Google per salvare informazioni nel tuo account. L'operazione può richiedere fino a cinque minuti."</string>
+    <string name="creating_account_title">Salvataggio account...</string>
+    <string name="checking_username_message">"Il telefono contatterà Google per controllare se il nome utente desiderato è disponibile.
+
+L'operazione potrebbe richiedere un paio di minuti."</string>
+    <string name="adding_account_title">Salvataggio account...</string>
+    <string name="account_setup_network_failure_title">Impossibile raggiungere Google</string>
+    <string name="account_setup_network_failure_text">Riprova o salta per ora.</string>
+    <string name="plus_failure_title">Entra in Google+ più avanti</string>
+    <string name="plus_failure_new_account_text">"Il tuo account Google è stato creato, ma la tua richiesta di registrazione a Google+ non è andata a buon fine. Riprova più tardi da qualsiasi browser web all'indirizzo plus.google.com."</string>
+    <string name="plus_failure_text">"La tua richiesta di registrazione a Google+ non è andata a buon fine. Riprova più tardi da qualsiasi browser web all'indirizzo plus.google.com."</string>
+    <string name="login_title">Inserisci email e password</string>
+    <string name="login_task_title">Accesso</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Password</string>
+    <string name="sign_in_agreement">" Eseguendo l'accesso accetti le Norme sulla privacy di "<annotation id="google_privacy">Google</annotation> e quelle <annotation id="android_privacy">aggiuntive</annotation>.</string>
+    <string name="create_prompt">" Non hai ancora un account Google? "<annotation id="create_account">Crea un account ora</annotation>.</string>
+    <string name="create">Crea</string>
+    <string name="create_message">Ti serve un account Google?</string>
+    <string name="now_signing_in">Accesso...</string>
+    <string name="now_verifying_domain">Ricerca del tuo dominio...</string>
+    <string name="sign_in_with_google_account_short">Accedi con il tuo account Google:</string>
+    <string name="browser_sign_in_explanation">Utilizza questa schermata se hai fattori di accesso speciali che richiedono un browser web.</string>
+    <string name="gls_browser_login_intro_message">Impossibile accedere al tuo account Google o Google Apps con questo dispositivo Android. È necessaria una nuova autorizzazione.</string>
+    <string name="enter_domain_name">Inserisci il nome di dominio della tua società:</string>
+    <string name="enter_user_name">Inserisci il tuo nome utente e la tua password per ^1:</string>
+    <string name="inactive_domain">" Impossibile utilizzare questo account perché appartiene a un dominio non attivo. Contatta l'amministratore del dominio "<b>^1</b> o accedi con un altro account.</string>
+    <string name="invalid_username">Il testo inserito non è un nome utente valido.</string>
+    <string name="web_login_error_title">Spiacenti...</string>
+    <string name="web_login_error_desc">"Si è verificato un problema durante la connessione ai server della società su ^1.
+
+Informazioni sull'errore:
+"</string>
+    <string name="web_login_error_redirects">La pagina web di accesso è stata reindirizzata troppe volte</string>
+    <string name="web_login_error_http">Errore HTTP ^1 : ^2</string>
+    <string name="captcha_instructions">Digita il testo visualizzato qui:</string>
+    <string name="create_google_account">Crea indirizzo email</string>
+    <string name="example_usernames">ad es. MRossi, Mario.Rossi</string>
+    <string name="create_account_agreement">"Creando l'account accetti le Norme sulla privacy di "<annotation id="android_privacy">Google</annotation> e quelle <annotation id="google_privacy">aggiuntive</annotation>.</string>
+    <string name="background_task_error">"Il tuo nuovo account Gmail è stato creato correttamente, ma si è verificato un problema durante l'aggiunta ai tuoi account su questo dispositivo. Puoi riprovare, provare ad accedere manualmente al nuovo account oppure saltare la creazione dell'account, per il momento."</string>
+    <string name="retry_button_label">Riprova</string>
+    <string name="login_button_label">Accedi manualmente</string>
+    <string name="account_already_has_gmail">"L'account supporta già Gmail."</string>
+    <string name="error_account_disabled">"Questo account è stato disabilitato. 
+
+Per informazioni dettagliate, visita http://google.com/accounts?hl=it con un browser web."</string>
+    <string name="no_network">Non disponi di una connessione di rete.</string>
+    <string name="no_network_help">Potrebbe trattarsi di un problema temporaneo oppure i servizi dati potrebbero non essere disponibili sul tuo telefono. Riprova quando sei connesso a una rete cellulare o connettiti a una rete Wi-Fi.</string>
+    <string name="no_network_help_wifi_only">"Potrebbe trattarsi di un problema temporaneo. Riprova o connettiti a un'altra rete Wi-Fi."</string>
+    <string name="error_login_failed">"Il tuo nome utente e la tua password non corrispondono. Riprova.
+
+Per recuperare le informazioni del tuo account, vai su google.com/accounts/recovery/."</string>
+    <string name="error_account_not_verified">"L'account non è stato verificato. Controlla la posta e segui il link incluso per verificare l'account. 
+
+Per recuperare le informazioni sull'account, visita il sito http://google.com/accounts/recovery?hl=it sul tuo computer."</string>
+    <string name="add_account_init">"Caricamento in corso della pagina di creazione dell'account..."</string>
+    <string name="add_account_init_for_update_credentials">Caricamento pagina aggiornamento credenziali...</string>
+    <string name="add_account_init_for_add_account">Caricamento pagina aggiunta account...</string>
+    <string name="add_account_pageload" />
+    <string name="add_account_final">Creazione nuovo account...</string>
+    <string name="add_account_final_adding">Aggiunta account...</string>
+    <string name="add_account_final_updating">Aggiornamento credenziali...</string>
+    <string name="add_account_init_waiting_for_network">In attesa della disponibilità della rete...</string>
+    <string name="exit_menu_item">Esci dalla procedura di accesso al browser</string>
+    <string name="creating_account">Creazione account...</string>
+    <string name="creating_profile">Creazione profilo...</string>
+    <string name="name_check">Controllo del nome...</string>
+    <string name="checking_account">Verifica disponibilità...</string>
+    <string name="try_a_different_username">Prova con un nome utente diverso.</string>
+    <string name="is_not_available">Il nome utente <b>^1</b> non è disponibile.</string>
+    <string name="suggestions_hint">Tocca per avere suggerimenti</string>
+    <string name="suggest_username_next_button_label">Modifica nome utente</string>
+    <string name="hint_size">" "<b>^1</b> contiene meno di 6 o più di 30 caratteri.</string>
+    <string name="hint_numbers_only">" "<b>^1</b> non contiene lettere.</string>
+    <string name="hint_illegal_chars">" "<b>^1</b>" può contenere soltanto lettere,
+numeri e punti."</string>
+    <string name="doesnt_use_gmail">" "<b>^1</b> non usa Gmail</string>
+    <string name="sign_in">Accedi</string>
+    <string name="sign_in_browser">Accesso browser</string>
+    <string name="here_are_alternatives">Ecco alcune alternative:</string>
+    <string name="alternatives_list_title">Nomi utente suggeriti</string>
+    <string name="alternatives_list_hint">Tocca per avere suggerimenti</string>
+    <string name="password_title">Crea password</string>
+    <string name="choose_a_password">Password</string>
+    <string name="confirm_password">Ridigita la password</string>
+    <string name="too_short">Troppo corta</string>
+    <string name="security_question">" "<b>"Domanda di
+sicurezza"</b></string>
+    <string name="security_questions_title">Domande di sicurezza</string>
+    <string name="answer">" "<b>Risposta</b></string>
+    <string name="password_mismatch">Le password non corrispondono. Inseriscile di nuovo.</string>
+    <string name="your_account_was_created">"L'account è stato creato."</string>
+    <string name="eight_chars_min">(Minimo 8 caratteri)</string>
+    <string name="verify_your_profile">Verifica il profilo</string>
+    <string name="error_not_logged_in">"L'utente non ha eseguito l'accesso."</string>
+    <string name="error_username_unavailable">Nome utente non disponibile.</string>
+    <string name="error_bad_password">La password non è sicura o contiene caratteri non validi. Riprova.</string>
+    <string name="error_bad_username">Nome utente non valido.</string>
+    <string name="loading">Caricamento...</string>
+    <string name="existing_account_error_title">Account già esistente</string>
+    <string name="existing_account_error_text">Esiste già un account ^1 su questo dispositivo Android</string>
+    <string name="submission_title">Spiacenti...</string>
+    <string name="submission_error_text">Si è verificato un errore. Riprova.</string>
+    <string name="sync_intro_title">Sincronizzazione account</string>
+    <string name="syncing_message">"       "<font size="17">" È in corso la sincronizzazione dei dati delle applicazioni Google. 
+"<font height="17">"
+"</font>"%i L'icona di sincronizzazione viene visualizzata nella barra di stato, nella parte superiore della schermata, per indicare che è in corso la sincronizzazione dei dati con l'account Google. La prima sincronizzazione potrebbe richiedere diversi minuti, in base al volume di contatti, email, eventi calendario e altri dati delle applicazioni Google. "</font></string>
+    <string name="account_tos_title">"Termina la creazione dell'account"</string>
+    <string name="account_tos_plus_title">Termina la registrazione a Google+</string>
+    <string name="account_tos_account_title">Termina account</string>
+    <string name="account_tos_google_title">Termina la registrazione a Google+</string>
+    <string name="i_accept">Accetto</string>
+    <string name="android_privacy_policy_title">Altre norme sulla privacy</string>
+    <string name="google_terms_of_service_title">"Termina la creazione dell'account"</string>
+    <string name="google_privacy_policy_title">Norme sulla privacy di Google</string>
+    <string name="google_plus_privacy_policy_title">Norme sulla privacy di Google+</string>
+    <string name="allow_personalized_content">Google può utilizzare i miei dati per personalizzare i miei contenuti e gli annunci su siti web non Google.</string>
+    <string name="enable_web_history">Attiva la Cronologia web.</string>
+    <string name="learn_more"><annotation id="learn_more">Informazioni</annotation></string>
+    <string name="google_plus_tos_login">Con la creazione di un account Google+ accetti le norme sulla privacy di <annotation id="google_plus_privacy">Google+</annotation>.</string>
+    <string name="google_plus_tos_signup">Se tocchi <b>Accetto</b> qui di seguito, accetti i <annotation id="tos">Termini di servizio</annotation> e le Norme sulla privacy di <annotation id="google_privacy">Google</annotation>, di <annotation id="google_plus_privacy">Google+</annotation> ed eventuali norme <annotation id="android_privacy">aggiuntive</annotation>.</string>
+    <string name="account_creation_tos">Se tocchi <b>Accetto</b> qui di seguito, accetti i <annotation id="tos">Termini di servizio</annotation> e le Norme sulla privacy di <annotation id="google_privacy">Google</annotation> ed eventuali norme <annotation id="android_privacy">aggiuntive</annotation>.</string>
+    <string name="gender_prompt">Sesso</string>
+    <string name="gender_hint">Specifica il sesso</string>
+    <string name="account_intro_title">Account Google</string>
+    <string name="account_intro_required_title">Powered by Google</string>
+    <string name="account_intro_recommended_title">Scegli Google</string>
+    <string name="common_message">"Un account Google ti consente di
+
+"<li><ul>Visualizzare e organizzare tutti i tuoi dati ovunque.</ul></li>"
+
+"<li><ul>Effettuare automaticamente il backup dei tuoi dati.</ul></li>"
+
+"<li><ul>Utilizzare i servizi Google ovunque con facilità.</ul></li></string>
+    <string name="add_account_message">" Puoi utilizzare più di un account Google (ad esempio gli account di casa e del lavoro). Tocca "<b>Accedi</b> o <b>Crea account</b> per aggiungere un account Google.</string>
+    <string name="account_intro_default_message">Non perdere mai più i tuoi dati. Un account Google tiene tutto al sicuro.</string>
+    <string name="account_intro_custom_endtext">"Usi già %s? Esegui subito l'accesso."</string>
+    <string name="account_intro_simple_message">Desideri aggiungere un account esistente o crearne uno nuovo?</string>
+    <string name="learn_more_title">Ulteriori informazioni</string>
+    <string name="learn_more_account_intro">"Un account Google ti consente di
+"<li><ul>Visualizzare e organizzare tutti i tuoi dati da qualsiasi posizione.<li>Eseguire automaticamente il backup dei dati, come email, contatti, musica e immagini.</li><li>Utilizzare facilmente i servizi di Google da qualsiasi posizione, inclusi Contatti, Calendario, Maps e altro ancora.</li></ul></li></string>
+    <string name="learn_more_account_intro_title">Informazioni sugli account Google</string>
+    <string name="learn_more_web_history">"La Cronologia web regola i risultati di ricerca in base a ciò che hai cercato e ai siti che hai visitato, offrendo un'esperienza Google personalizzata.
+
+Per visualizzare e gestire la Cronologia web, incluse l'attivazione e la disattivazione, visita http//www.google.com/history."</string>
+    <string name="learn_more_web_history_title">Informazioni su Cronologia web</string>
+    <string name="learn_more_bad_name">"Google+ richiede l'utilizzo di un nome comune. Il tuo profilo deve rappresentare una persona (non un'azienda, un'organizzazione o una famiglia) e deve contenere il tuo nome e cognome in un'unica lingua, senza qualifiche professionali o punteggiatura superflua. Dopo la registrazione potrai scegliere nickname o altri nomi a cui sei associato nel campo Altri nomi  del tuo profilo."</string>
+    <string name="learn_more_bad_name_title">Norme sui nomi</string>
+    <string name="wait_for_device_country_title">Impostazione account</string>
+    <string name="wait_for_device_country_msg">Raccolta di informazioni sul telefono. Potrebbe richiedere fino a 30 secondi.</string>
+    <string name="reactivate_account_message">" Devi aggiungere un account Google Mail. 
+
+Possiedi già un nome utente Google Mail  ( "<b>^1</b>" ) associato all'account, ma al momento non è attivo. 
+
+Tocca \"Avanti\" per riattivare il nome utente e utilizzarlo. 
+
+Se invece desideri usare un altro account, premi \"Indietro\" e accedi con tale account oppure creane uno nuovo."</string>
+    <string name="reactivating_account">Riattivazione account...</string>
+    <string name="your_account_was_reactivated">"L'account è stato attivato."</string>
+    <string name="recovery_title">Informazioni di recupero</string>
+    <string name="account_recovery_info">Se ti capitasse di non ricordare la password, potresti rispondere a una domanda di sicurezza e farti inviare un link per la reimpostazione a un altro indirizzo.</string>
+    <string name="security_question_prompt">Scegli una domanda di sicurezza</string>
+    <string name="secondary_email_label">Indirizzo email di recupero</string>
+    <string name="invalid_email">"L'indirizzo email inserito non è valido.
+ Esempio: luca@example.com"</string>
+    <string name="invalid_email_primary">"L'indirizzo di ripristino non può corrispondere all'indirizzo in fase di creazione."</string>
+    <string name="backup_consent_title">Backup impostazioni</string>
+    <string name="backup_consent_message">"Utilizza il tuo account Google per effettuare il backup delle tue applicazioni, delle tue impostazioni (ad esempio segnalibri e password Wi-Fi) e di altri dati. Se hai effettuato un backup precedente del tuo account, ora potrai ripristinarlo su questo telefono.
+
+Puoi modificare le impostazioni di backup in qualsiasi momento in Impostazioni."</string>
+    <string name="backup_consent_message_no_restore">"Utilizza il tuo account Google per effettuare il backup delle tue applicazioni, delle tue impostazioni (ad esempio segnalibri e password Wi-Fi) e di altri dati.
+
+Puoi modificare le impostazioni di backup in qualsiasi momento in Impostazioni."</string>
+    <string name="backup_consent_howto_disable_message">Puoi modificare le impostazioni di backup dei tuoi dati nella sezione \"Impostazioni\", sotto \"Privacy\".</string>
+    <string name="backup_consent_yes_agree">Mantieni attivo backup telefono con mio account Google</string>
+    <string name="restore_consent_yes_agree">Ripristina dal mio account Google su questo telefono</string>
+    <string name="restore_disable">Disattiva ripristino</string>
+    <string name="restore_enable">Attiva ripristino</string>
+    <string name="restore_enabled">"Se in precedenza hai effettuato il backup delle tue impostazioni, queste verranno
+ ripristinate."</string>
+    <string name="restore_disabled">Le tue impostazioni non verranno ripristinate dal backup.</string>
+    <string name="restoring_title">Ripristino...</string>
+    <string name="restoring_message">"Il tuo telefono sta contattando Google per ripristinare il tuo account. L'operazione può richiedere fino a 5 minuti."</string>
+    <string name="restored_title">Ripristinati</string>
+    <string name="restored_message" />
+    <string name="webview_progress_title">Connessione al dominio...</string>
+    <string name="webview_progress_verbose_message">"I server della tua società stanno inviando informazioni di accesso. L'operazione potrebbe richiedere alcuni minuti.
+La pagina di accesso della società verrà visualizzata al termine dell'operazione."</string>
+    <string name="enterprise_unmanaged_domain">Questo dominio non utilizza Google Apps. Controlla il nome di dominio e riprova.</string>
+    <string name="gls_notification_title">Accedi al tuo account</string>
+    <string name="gls_notification_new_account">Occorre un account ^1</string>
+    <string name="gls_notification_new_account_youtube">Occorre un account YouTube</string>
+    <string name="gls_notification_login_error">Tocca per accedere al tuo account.</string>
+    <string name="gls_ui_add_account_title">Impostazione account</string>
+    <string name="gls_ui_google_account_subtitle">Account Google</string>
+    <string name="gls_ui_activity_title">Accesso a Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Accesso browser</string>
+    <string name="gls_ui_activity_title_enterprise">Accesso account aziendale</string>
+    <string name="gls_ui_activity_title_youtube">Accesso a YouTube</string>
+    <string name="gls_ui_activity_title_checking_in">Preparazione...</string>
+    <string name="gls_ui_activity_authenticating">Autenticazione...</string>
+    <string name="gls_captcha_activity_message">"Immetti i caratteri che vedi nell'immagine:"</string>
+    <string name="gls_captcha_activity_ok_button">Fine</string>
+    <string name="gls_error_activity_message">" Errore di rete durante il tentativo di accesso a  "<b>^1</b> . Riprova o premi Indietro per annullare.</string>
+    <string name="gls_error_activity_retry_button">Riprova</string>
+    <string name="gls_dmagent_activity_message">" Il tuo dominio richiede la gestione del dispositivo mobile. Installa l'applicazione Google Apps Device Policy per applicare le norme di sicurezza richieste dall'account  "<b>^1</b> .</string>
+    <string name="gls_dmagent_activity_retry_button">Scarica</string>
+    <string name="gls_login_activity_username_label">Nome utente</string>
+    <string name="gls_login_activity_password_label">Password</string>
+    <string name="gls_login_activity_ok_button">Accedi</string>
+    <string name="gls_login_activity_loginfail_text_both">" Password o nome utente non valido. Occorre un account  "<b>^1</b> . Riprova.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Hai inserito la password sbagliata o il tuo account è stato modificato. Inserisci nuovamente la password.</string>
+    <string name="gls_invalid_two_factor">"Utilizza una password specifica per l'applicazione anziché la password normale dell'account."</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">"Digita la password dell'account."</string>
+    <string name="gls_enterprise_login_activity_msg">"Accedi al tuo account aziendale all'indirizzo ^1 per l'autenticazione.
+Tocca Accedi per aprire la pagina di accesso basata sul Web della società."</string>
+    <string name="gls_login_activity_badaccount_text">In questo caso non puoi usare tale account. Prova a usarne un altro.</string>
+    <string name="gls_login_activity_newaccount_text">" Accedi al tuo account  "<b>^1</b> .</string>
+    <string name="gls_login_activity_create_youtube">" Non possiedi un account YouTube? Tocca "<a href="http://www.youtube.com/signup">qui</a> per crearne uno.</string>
+    <string name="gls_webview_progress_title">Connessione al dominio...</string>
+    <string name="gls_webview_progress_verbose_message">"I server della tua società stanno inviando informazioni di accesso. L'operazione potrebbe richiedere alcuni minuti.
+La pagina di accesso della società verrà visualizzata al termine dell'operazione."</string>
+    <string name="gls_sign_in_button_label">Accedi</string>
+    <string name="gls_back_button_label">Indietro</string>
+    <string name="gls_cancel_button_label">Annulla</string>
+    <string name="gls_exit_account_setup_button_label">Esci da impostazione</string>
+    <string name="gls_reauthorize_button_label">Autorizza di nuovo</string>
+    <string name="permlab_googleAuthPassword">accedere a password di account Google</string>
+    <string name="permdesc_googleAuthPassword">"Consente l'accesso diretto delle applicazioni alle password degli account Google configurati."</string>
+    <string name="header_data_and_synchronization">Dati e sincronizzazione</string>
+    <string name="permlab_googleMailSwitch">selezionare branding Gmail o Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Consente alle applicazioni di cambiare il nome visualizzato dal branding \"Gmail\" a \"Google Mail\" e viceversa.</string>
+    <string name="sync_item_title">Sincronizza %s</string>
+    <string name="grant_credentials_permission_message_header">Richiesta di autorizzazione</string>
+    <string name="grant_credentials_permission_message_footer">"Chiedono l'autorizzazione per:"</string>
+    <string name="grant_credentials_permission_message_app">"Queste applicazioni vogliono accedere al tuo account Google d'ora in poi:"</string>
+    <string name="grant_permissions_header_text">Richiesta di autorizzazione</string>
+    <string name="allow">Consenti accesso</string>
+    <string name="deny">No grazie</string>
+    <string name="permission_request_notification_title">Autorizzazione richiesta</string>
+    <string name="permission_request_notification_with_subtitle">"Autorizzazione richiesta
+per l'account %s"</string>
+    <string name="notification_title">Errore di accesso per %1$s</string>
+    <string name="account_setup_title">Account Google</string>
+    <string name="signed_in">Accesso eseguito</string>
+    <string name="account_linked_message">Accesso a %s eseguito e sincronizzazione dei dati in corso.</string>
+    <string name="account_created_message">Nuovo account creato: %s</string>
+    <string name="done_button_label">Fine</string>
+    <string name="captcha_message_string">Troppi tentativi falsi.</string>
+    <string name="login_activity_title">Accedi</string>
+    <string name="show_error_activity_title">Accesso non riuscito</string>
+    <string name="login_activity_task_title">Accesso...</string>
+    <string name="sync_intro_activity_title_first_account">Backup e ripristino</string>
+    <string name="sync_intro_activity_title_first_created_account">Backup</string>
+    <string name="sync_intro_activity_title">"Accesso all'account eseguito"</string>
+    <string name="username">Email</string>
+    <string name="error_invalid_second_factor">"Utilizza una password specifica per l'applicazione anziché la password normale dell'account."</string>
+    <string name="error_needs_browser">"Per accedere al tuo account, devi accedere sul Web. Tocca Avanti per iniziare l'accesso in Browser."</string>
+    <string name="error_unknown">Errore imprevisto del server: %s</string>
+</resources>

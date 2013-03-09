@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DetailsPage_ContentText">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/details_content_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">5.0sp</item>
+    </style>
+    <style name="FinskyTheme" parent="@*android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/loading_background</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="FinskyDarkTheme" parent="@*android:style/Theme.Holo">
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyDarkTheme" />
+</resources>

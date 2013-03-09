@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:gravity="top|center" android:layout_gravity="center_horizontal" android:id="@id/name" android:paddingLeft="4.0px" android:paddingTop="@dimen/carousel_boxed_padding_top" android:paddingRight="4.0px" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:maxLines="1" android:drawablePadding="@dimen/carousel_boxed_drawable_padding" style="@style/label_title_secondary_xs" />
+    <include android:layout_gravity="bottom|center" android:id="@id/text_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/carousel_switch_count_offset" android:layout_marginBottom="@dimen/carousel_switch_count_margin_bottom" layout="@com.htc:layout/carousel_switch_count" />
+</FrameLayout>

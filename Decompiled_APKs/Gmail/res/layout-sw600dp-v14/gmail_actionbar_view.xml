@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gm.GmailActionBar android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:gm="http://schemas.android.com/apk/res/com.google.android.gm">
+    <com.google.android.gm.AccountRecentLabelSpinner android:id="@id/account_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" gm:dropDownWidth="@dimen/account_dropdown_dropdownwidth" />
+    <include layout="@layout/gmail_actionbar_label" />
+    <include layout="@layout/gmail_actionbar_subject" />
+</com.google.android.gm.GmailActionBar>

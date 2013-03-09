@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu" android:showAsAction="ifRoom">
+        <menu>
+            <item android:icon="@*android:drawable/ic_menu_add" android:id="@id/data_commit_change" android:title="@string/commit_change" />
+            <item android:icon="@*android:drawable/ic_notification_clear_all" android:id="@id/data_restore" android:title="@string/data_restore" />
+        </menu>
+    </item>
+</menu>

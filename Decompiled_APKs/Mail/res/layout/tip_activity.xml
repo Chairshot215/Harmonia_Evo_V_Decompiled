@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bg_and_content_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/tip_bubble_marginRight">
+        <ImageView android:id="@id/background_img" android:background="@drawable/bubble_rest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/tip_bubble" android:layout_alignBottom="@id/tip_bubble" />
+        <RelativeLayout android:id="@id/tip_bubble" android:paddingRight="@dimen/tip_bubble_paddingRight" android:paddingBottom="@dimen/tip_bubble_paddingBottom" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@drawable/text_color" android:id="@id/tip_message" android:paddingLeft="@dimen/message_bubble_content_marginLeft" android:paddingTop="@dimen/message_bubble_content_marginTop" android:paddingRight="@dimen/message_bubble_content_marginRight" android:paddingBottom="@dimen/message_bubble_content_marginBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@com.htc:style/darklist_primary_xs" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_rest" />
+</RelativeLayout>

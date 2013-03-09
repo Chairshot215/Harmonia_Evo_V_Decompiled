@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <TextView android:textSize="@dimen/summary_title_size" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/creator_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_medium_size" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/creator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="6.0dip" finsky:use_whitescale="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/more_arrow" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_creator_arrow" />
+    </LinearLayout>
+    <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tipper_sticker" android:paddingLeft="4.0dip" android:paddingTop="1.0dip" android:paddingRight="4.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" finsky:use_whitescale="true" />
+</merge>

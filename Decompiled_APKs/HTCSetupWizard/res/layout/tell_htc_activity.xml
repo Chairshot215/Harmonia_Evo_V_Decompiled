@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/tell_htc_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/layout_generic">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/tell_htc_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tell_htc_desc" style="@style/textAppearance_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0px">
+                <CheckBox android:id="@id/tell_htc_allow_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tell_htc_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:text="@string/tell_htc_yes_agree_msg" style="@style/textAppearance_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

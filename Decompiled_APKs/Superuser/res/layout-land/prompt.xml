@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/popup_background" android:layout_width="432.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/prompt_icon" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_launcher" android:layout_weight="1.0" android:contentDescription="logo" />
+        <View android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/prompt_separator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip">
+        <View android:background="@drawable/separator_left" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@drawable/separator_right" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="6.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="@string/superuser_request_from" android:singleLine="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffff0000" android:gravity="right" android:layout_gravity="top|right|center" android:id="@id/prompt_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ffc0c0c0" android:gravity="center" android:id="@id/prompt_app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffc0c0c0" android:gravity="center" android:id="@id/prompt_app_package" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/superuser_request_uid" android:singleLine="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffc0c0c0" android:gravity="center" android:id="@id/prompt_uid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/superuser_request_command" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffc0c0c0" android:gravity="center" android:id="@id/prompt_command" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+    <CheckBox android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/prompt_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/superuser_prompt_again" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="@string/generic_deny" android:layout_weight="1.0" android:onClick="onDeny" />
+        <Button android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="@string/generic_grant" android:layout_weight="1.0" android:onClick="onGrant" />
+    </LinearLayout>
+</LinearLayout>

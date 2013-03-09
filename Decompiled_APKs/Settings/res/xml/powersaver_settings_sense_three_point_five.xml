@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/powersaver_settings_title" android:key="powersaver_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/powermode_settings_title" android:key="powermode_settings_title" android:order="50" />
+    <com.htc.preference.HtcListPreference android:entries="@array/powermode_list" android:title="@string/powermode_settings_title" android:key="powermode" android:order="51" android:defaultValue="0" android:dialogTitle="@string/powermode_settings_title" android:entryValues="@array/powermode_value" />
+    <com.htc.preference.HtcListPreference android:entries="@array/powersaver_setschedule_list" android:title="@string/powersaver_set_schedule" android:key="powersaver_set_schedule" android:order="52" android:dialogTitle="@string/powersaver_set_schedule_dialogtitle" android:entryValues="@array/powersaver_setschedule_value" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/economy_mode_setting_text" android:key="powersaver_setting_text" android:summary="@string/economy_mode_setting_summary" android:order="53">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.PowersaverListActivity" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/quick_boot_category_text" android:key="quick_boot_category_text" android:order="101" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/enable_fastboot" android:key="enable_fastboot" android:order="102" android:summaryOn="@string/summary_disable_fastboot" android:summaryOff="@string/summary_disable_fastboot" />
+</com.htc.preference.HtcPreferenceScreen>

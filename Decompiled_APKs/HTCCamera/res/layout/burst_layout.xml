@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/burst_review_screen_view" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/review_screen_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/common_action_screen_review_bar_button_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/burst_review_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/burst_review" android:background="#ffff0000" android:layout_width="@dimen/burst_review_frame_width_wide" android:layout_height="@dimen/burst_review_frame_height_wide" android:scaleType="fitXY" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item_burst_thumb_bar" android:background="@drawable/camera_panel" android:padding="@dimen/burst_thumb_container_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/thumb_item_01_container" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_margin="@dimen/burst_thumb_item_margin">
+                    <com.android.camera.widget.ImageCheckBox android:id="@id/thumb_item_01" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/thumb_item_02_container" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_margin="@dimen/burst_thumb_item_margin">
+                    <com.android.camera.widget.ImageCheckBox android:id="@id/thumb_item_02" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/thumb_item_03_container" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_margin="@dimen/burst_thumb_item_margin">
+                    <com.android.camera.widget.ImageCheckBox android:id="@id/thumb_item_03" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/thumb_item_04_container" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_margin="@dimen/burst_thumb_item_margin">
+                    <com.android.camera.widget.ImageCheckBox android:id="@id/thumb_item_04" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/thumb_item_05_container" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_margin="@dimen/burst_thumb_item_margin">
+                    <com.android.camera.widget.ImageCheckBox android:id="@id/thumb_item_05" android:layout_width="@dimen/burst_thumb_item_height" android:layout_height="@dimen/burst_thumb_item_width_wide" android:layout_weight="1.0" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

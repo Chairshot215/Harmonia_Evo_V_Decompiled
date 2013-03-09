@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100337226" android:versionName="1.0.2213201157.337226" package="com.htc.omadm.tool"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <application android:label="@string/app_name">
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="OMADMTool" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="EntryOMADMToolInfo" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.htc.omadm.util.DMAgentConnector" />
+        <activity android:name="com.htc.omadm.util.DMConfig" />
+        <activity android:name="com.htc.omadm.util.Utility" />
+        <activity android:name="com.htc.omadm.util.Encrypt" />
+        <activity android:name="com.htc.omadm.util.Dmdcmd" />
+        <activity android:name="OMADMActivity" />
+        <activity android:label="@string/app_name" android:name="SUCHeroSetting" android:configChanges="orientation" />
+        <activity android:name="SetGetMenuActivity" />
+        <activity android:label="@string/app_name" android:name="SetInfoActivity" android:configChanges="orientation" />
+        <activity android:label="@string/app_name" android:name="GetInfoActivity" android:configChanges="orientation" />
+        <activity android:name="GroupTable" />
+        <receiver android:name="ClientBroadcaseReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="cdma66236" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

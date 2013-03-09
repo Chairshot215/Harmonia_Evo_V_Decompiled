@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Wavuti</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">hajulikani</string>
+    <string name="sharedUserLabel">Huduma za Google</string>
+    <string name="service_label">Kisasishi cha Mfumo</string>
+    <string name="system_update_activity_name">Sasishi za mfumo</string>
+    <string name="system_update_activity_title">Sasishi za mfumo</string>
+    <string name="system_update_activity_battery_low_text">Betri iko chini kwa kusakinisha sasishi ya mfumo. tafadhali unganisha chaja ili kuendelea.</string>
+    <string name="system_update_activity_battery_low_charging_text">Betri iko chini zaidi kwa kusakinisha sasishi za mfumo. Tafadhali subiri betri ichaji kikamilifu.</string>
+    <string name="system_update_activity_roaming_text">Sasishi za mfumo haziwezi kupakuliwa zikinguruma.</string>
+    <string name="system_update_requires_restart_status_text">Inahitaji kuwezeshwa upya</string>
+    <string name="system_update_downloading_status_text">Inapakua</string>
+    <string name="system_update_downloading_wifi_status2_text">Kupitia mtandao wa Wi-Fi tu mpaka ^ 1</string>
+    <string name="system_update_verifying_status_text">Inathibitisha</string>
+    <string name="system_update_verification_failed_text">Uthibitishaji umeshindikana</string>
+    <string name="system_update_verified_status_text">Imepakuliwa na kuthibitishwa</string>
+    <string name="system_update_download_failed_status_text">Upakuaji umeshindwa</string>
+    <string name="system_update_download_retry_button_text">Jaribu tena kupakua</string>
+    <string name="system_update_download_button_text">Pakua</string>
+    <string name="system_update_install_button_text">Anza upya &amp; kusakinisha</string>
+    <string name="system_update_check_now_button_text">Kagua sasa</string>
+    <string name="system_update_no_update_content_text">Mfumo wako umesasishwa kwa sasa</string>
+    <string name="system_update_last_checkin">Mara ya mwisho kukagua kisasisho ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Usasishi wa mfumo unapatikana</string>
+    <string name="system_update_recommended_update_available_notification_message">Muonekano wa maelezo ya usasishi.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Kupakua kwa sasishi ya mfumo wako hakukufanikiwa.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Kupakua hakukufanikiwa, tafadhali jaribu tena.</string>
+    <string name="system_update_error_dialog_title">Hitilafu</string>
+    <string name="system_update_error_downloading_dialog_message">Kulikuwa na tatizo la upakuaji wa sasishi.</string>
+    <string name="system_update_error_installing_dialog_message">Kulikuwa na tatizo la usakinishaji wa sasishi.</string>
+    <string name="system_update_install_dialog_label">Sasishi ya mfumo</string>
+    <string name="system_update_install_dialog_message_nonphone">Kisasisho cha mfumo kiko tayari kusakinisha. Kifaa chako cha Android kitaanzishwa upya na kusakinishwa.</string>
+    <string name="system_update_install_dialog_message_phone">Kisasisho cha mfumo kiko tayari kusakinishwa. Kifaa chako cha Android kitaanzishwa upya na kusakinisha kisasisho. Hutaweza kupiga simu zozote, pamoja na simu za dharura, wakati wa usakinishaji.</string>
+    <string name="system_update_install_dialog_battery_low_message">Usasishi wa mfumo uko tayari, lakini betri iko chini zaidi kwa kuisakinisha. Tafadhali unganisha chaja.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Usasishi wa mfumo iko tayari, lakini betri iko chini zaidi kwa kuisakinisha. tafadhali subiri betri ichaji kikamilifu.</string>
+    <string name="system_update_install_dialog_now_button">Sakanisha sasa</string>
+    <string name="system_update_install_dialog_later_button">Sakinisha baadaye</string>
+    <string name="system_update_install_dialog_info_button">Maelezo zaidi…</string>
+    <string name="system_update_downloading_notification_title">Upakuaji wa sasishi ya mfumo</string>
+    <string name="system_update_verifying_notification_title">Thibitisha usasishi wa mfumo</string>
+    <string name="system_update_download_dialog_label">Kupakua sasishi ya mfumo</string>
+    <string name="system_update_download_dialog_message">Kisasisho cha mfumo kinapatikana ambacho kitaboresha kifaa chako cha Android. Kama ulikipakua kwenye mtandao usiotumia waya, huenda gharama zikatumika.</string>
+    <string name="system_update_download_dialog_now_button">Pakua sasa</string>
+    <string name="system_update_download_dialog_later_button">Pakua baadaye</string>
+    <string name="system_update_download_dialog_cancel_button">Ghairi</string>
+    <string name="system_update_countdown_complete">Inawezesha upya sasa...</string>
+    <string name="system_update_countdown_cancel_button">Ghairi kusakinisha</string>
+    <string name="system_update_complete_label">Sasisho la mfumo</string>
+    <string name="system_update_complete_ok_button">Sawa</string>
+    <string name="provider_label">Sukuma Usajili</string>
+    <string name="ro_perm_label">soma ujumbe wa papo hapo</string>
+    <string name="ro_perm_desc">Huruhusu programu kusoma data kutoka kwa mtoaji huduma wa maudhui ya Mazungumzo ya Google.</string>
+    <string name="wo_perm_label">andika ujumbe wa papo hapo</string>
+    <string name="wo_perm_desc">Huruhusu programu kuandika data kwa mtoaji huduma wa maudhui ya Mazungumzo ya Google.</string>
+    <string name="gsf_label">Huduma za Google za Eneo kazi</string>
+    <string name="search_chats">"Tafuta maongezi
+ ya %1$s"</string>
+    <string name="gtalkservice_label">Google Huduma ya Utumaji ujumbe</string>
+    <string name="c2dm_label">Wingu kwa Huduma ya Kifaa cha Utumaji ujumbe</string>
+    <string name="sendTalkMsg_perm_label">Inabadilisha ujumbe na kupokea taarifa zilizosawazishwa kutoka kwa seva za Google</string>
+    <string name="sendTalkMsg_perm_desc">Ilitumika kwa seva ya wingu kwa ujumbe wa kifaa na kusawazisha taarifa. Mazungumzo ya Google hutumia huduma hizi kubadilisha ujumbe na hakuna upatanifu wa hali ya sasa. Programu hasidi hutumia huduma hii ili kuingiza data ya kupindukia.</string>
+    <string name="perm_receive_data_message_label">pokea data kutoka Mtandaoni</string>
+    <string name="perm_receive_data_message_desc">Huruhusu programu kwa kukubali wingu kwa ujumbe wa kifaa uliotumwa na huduma ya programu. Kwa kutumia huduma kutatekeleza matumizi ya data. programu hasidi zinaweza kusababisha matumizi ya data kupindukia.</string>
+    <string name="perm_data_msg_broadcast_label">Peperusha ujumbe wa data kwa programu.</string>
+    <string name="perm_data_msg_broadcast_desc">Piga simu kwa ujumbe wa data ya kupeperushwa iliyopokelewa kutoka mtandao kwa programu zilizosajiliwa kwa kusiskiza.</string>
+    <string name="perm_receive_xmpp_label">Tuma na pokea ujumbe wa XMPP kwa na kutoka kwa seva za Google</string>
+    <string name="perm_receive_xmpp_desc">Huruhusu programu za Google kutuma na kupokea ujumbe wa XMPP kwa na kutoka seva za Google.</string>
+    <string name="perm_xmpp_broadcast_label">Tangaza ujumbe wa XMPP kwa programu.</string>
+    <string name="perm_xmpp_broadcast_desc">Inaweza kutangaza ujumbe wa XMPP uliopokewa kutoka kwa seva za Google kwa programu zilizosajiliwa kuzisikiliza.</string>
+    <string name="perm_use_xmpp_endpoint_label">tuma na kupokea ujumbe XMPP kwa na kutoka kwenye seva za Google.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Inaruhusu programu za Google kutuma na kupokea ujumbe wa XMPP kwa na kutoka kwenye seva za Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Tangaza ujumbe wa XMPP kwa programu.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Inaweza kutangaza ujumbe uliopokewa wa XMPP kutoka seva za Google hadi kwa programu.</string>
+    <string name="permlab_intentVendingOnly">Tuma vipeperusho kwa Soko la Android.</string>
+    <string name="permdesc_intentVendingOnly">Inaweza kutuma matangazo kwa Soko la Android kwa kuomba usakinisho wa programu na kuondolewa.</string>
+    <string name="permlab_heartbeat">Tuma mpigo wa moyo kwa seva ya Mazungumzo ya Google</string>
+    <string name="permdesc_heartbeat">Inaweza kutuma pakiti ya mpigo chapu kwa seva ya Mazungumzo ya Google kwa kuhakikisha afya ya muunganisho.</string>
+    <string name="group_chat">Kikundi cha kupiga gumzo: %s</string>
+    <string name="default_decline_reason">Samahani, nashughulika sasa hivi.</string>
+    <string name="newMessages_label">Kusogoa kupya</string>
+    <string name="notify_groupchat_label">Mwaliko wa kikundi cha kupiga gumzo</string>
+    <string name="num_unread_chats">Kodsogoa kusikosomwa%s</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s kwa %s</string>
+    <string name="subscription_notify_text">%s Inataka kuweza kupiga gumzo</string>
+    <string name="group_chat_invite_notify_text">Umepokea mwaliko wa kosogoa kwa kikundi kutoka %s</string>
+    <string name="group_chat_invite_dialog_text">%s anakualika kujinga na Gumzo la kikundi.</string>
+    <string name="message_too_long">Hauwezi kutuma ujumbe wa zaidi ya vibambo 200 kwa urefu.</string>
+    <string name="missed_video_chat_notification">Ulikosa mwaliko wa kusogoa kwa video</string>
+    <string name="missed_voice_chat_notification">Ulikosa mwaliko wa kupiga gumzo kwa video</string>
+    <string name="missed_video_chat_notification_no_wifi">Umekosa mwaliko wa Gumzo la video kwa sababu hukuwa umeunganishwa kwenye mtandao-hewa</string>
+    <string name="missed_voice_chat_notification_no_wifi">Umekosa mwaliko wa Gumzo la sauti kwa sababu hukuwa umeunganishwa kwenye mtandao-hewa</string>
+    <string name="missed_video_chat_message">Alijaribu kusogoa kwa video na wewe%1$s</string>
+    <string name="missed_voice_chat_message">%1$s alijaribu kuanza kusogoa kwa sauti nawe</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s alijaribu kuanzisha Gumzo la video na wewe wakati hukuwa umeunganishwa kwenye mtandao-hewa</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s alijaribu kuanzisha Gumzo la sauti na wewe wakati hukuwa umeunganishwa kwenye mtandao-hewa</string>
+    <string name="end_cause_user_unavailable_video">%1$s hakupatikana kwa Gumzo la video.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s hakupatikana kwa Gumzo la sauti.</string>
+    <string name="end_cause_sent_terminate_video">Umemaliza Gumzo la video na %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Ulimaliza Gumzo la sauti na %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s amemaliza Gumzo la video.</string>
+    <string name="end_cause_received_terminate_voice">%1$s alimaliza Gumzo la sauti.</string>
+    <string name="end_cause_network_problem_video">Samahani! Gumzo la video na %1$s limeshindwa kwa sababu ya tatizo la mtandao</string>
+    <string name="end_cause_network_problem_voice">Samahani! Gumzo la sauti na %1$s ilishindwa kwa sababu ya tatizo la mtandao . Tafadhali jaribu tena.</string>
+    <string name="conn_auth_error_notify_ticker">Uthibitishaji wa Mazungumzo ya Google yameshindikana</string>
+    <string name="conn_auth_error_notify_title">Uthibitishaji wa Mazungumzo ya Google yameshindikana</string>
+    <string name="conn_auth_error_title">Hitilafu ya Uthibitishaji</string>
+    <string name="conn_auth_error_message">Kuingia ndani kwa Mazungumzo ya Google kulishindikana. Ikiwa hii ni akunti ya Google Programu, thibitisha huduma ile ya Kusogoa imewezeshwa na akaunti hii.</string>
+    <string name="conn_auth_error_button_retry">Jaribu tena</string>
+    <string name="conn_auth_error_button_cancel">Ghairi</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Karibu kwa ^1</string>
+    <string name="setup_wizard_title">Panga kisakura</string>
+    <string name="error_dialog_title">Zingatia</string>
+    <string name="next_button_label">Ifuatayo</string>
+    <string name="back_button_label">Nyuma</string>
+    <string name="sign_in_button_label">Ingia</string>
+    <string name="create_button_label">Unda</string>
+    <string name="skip_button_label">Ruka</string>
+    <string name="first_name">Jina la kwanza</string>
+    <string name="last_name">Jina la mwisho</string>
+    <string name="done">Sawa</string>
+    <string name="cancel_button_label">Ghairi</string>
+    <string name="done_button_label">Maliza kupanga</string>
+    <string name="try_again_button_label">Jaribu tena</string>
+    <string name="close_button_label">Funga</string>
+    <string name="edit_text_help">Guza kisanduku chochote cha maandishi ili kuanza uchapishaji</string>
+    <string name="add_a_google_account">Ongeza Akaunti ya Google</string>
+    <string name="no_sim_setup_wireless">Huna kadi ya SM iliyosakinishwa, huwezi kuunganisha kwenye mtandao wa simu ya mkononi kwa huduma ya sauti au data. Huwezi kuunganisha mtandao-hewa bila SIM.</string>
+    <string name="setup_wifi_button_label">Unganisha kwa Wi-Fi</string>
+    <string name="no_network">Huna muunganisho wa mtandao.</string>
+    <string name="no_network_help">Huenda hii ni tatizo la muda au huenda kifaa chako cha Android hakijawezeshwa huduma za data. Tafadhali jaribu tena wakati umeunganishwa kwa mtandao wa simu ya mkononi, au unganisha kwenye mtandao-hewa.</string>
+    <string name="server_error">Tatizo lilitokea ulipokuwa ukiwasiliana na seva ya Google.</string>
+    <string name="server_error_help">Tafadhali jaribu tena baadaye.</string>
+    <string name="network_unreliable">haiwezi kuzindua muunganisho wa data inayoaminika kwa seva.</string>
+    <string name="network_unreliable_help">Huenda hii ikawa tatizo la muda au huenda kifaa chako cha Android hakijawezeshwa huduma za data. Ikiendelea, pigia simu Huduma kwa Wateja.</string>
+    <string name="invalid_login_character">Kibambo batili. 0-9 Pekee, a-z, A-Z, na vitone vinaruhusiwa.</string>
+    <string name="invalid_password_character">Kibambo batili cha nenosiri.</string>
+    <string name="add_apn">Mipangilio pasiwaya</string>
+    <string name="setup_google_account_title">Unda Akaundi yako ya Google</string>
+    <string name="setup_complete_title">Kupanga Kumekamilika</string>
+    <string name="cant_be_blank">uga hauwezi kuwa mtupu.</string>
+    <string name="calendar">Kalenda ya Google</string>
+    <string name="talk">Mazungumzo ya Google</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Kifaa chako cha Android hakijaunganishwa kwenye huduma ya data. Ili kuona maelezo haya sasa, nenda kwa %s kutoka kwa kompyuta yoyote iliyounganishwa kwenye mtandao.</string>
+    <string name="field_cant_be_blank">Sehemu hii haiwezi kuachwa tupu</string>
+    <string name="field_invalid_domain">Hili sio jina halali la kikoa</string>
+    <string name="field_invalid_user">Jina hili la mtumiaji sio halali</string>
+    <string name="field_invalid_user_domain">Ingiza jina lako la mtumiaji pekee, sio anwani yako ya barua pepe</string>
+    <string name="field_invalid_login">Hili sio jina halali la akaunti</string>
+    <string name="about_accounts_message"><font size="17">"Ni rahisi kusanidi kifaa chako cha Android! Unachohitaji tu ni Akaunti ya Google.
+"<font height="17">"
+"</font><b>Kwa nini utumie Akaunti ya Google?</b>"
+"<font height="3">"
+"</font>"Ukiwa na Akaunti ya Google, programu za Google husawazishwa kiotomati kati ya kifaa chako cha Android na kompyuta yako, haijalishi mahali unapofanyia usasishaji.
+"<font height="17">"
+"</font><b>Tayari una Akaunti ya Google?</b>"
+"<font height="3">"
+"</font>"Basi uko tayari! Gusa tu \"Ingia\" kwenye skrini inayofuata.
+"<font height="17">"
+"</font><b>Huna akaunti ya Google?</b>"
+"<font height="3">"
+"</font>"Hakuna shida. Gusa \"Unda\" kwenye ukurasa unaofuata na tutakusaidia kufungua akaunti.
+"<font height="17">"
+"</font><b>Gusa \"Ifuatayo\" ili kuanza!</b>"
+"</font></string>
+    <string name="fling_help_message">"Slaidi kidole chako juu au chini ya skrini ili kuzungusha.
+(Gusa ujumbe huu ili kuuondoa.)"</string>
+    <string name="setup_device_title">Mpangilio wako wa ^1</string>
+    <string name="dont_have_an_account">Huna Akaunti ya Google?</string>
+    <string name="create_one_now">Unda moja sasa! Ni rahisi.</string>
+    <string name="already_have_an_account">" Tayari una Akaunti ya Google?"</string>
+    <string name="sign_in_with_google_account">Ingia na Akaunti ya Google ambayo unataka iunganishwe kwenye kifaa hiki cha Android.</string>
+    <string name="skip_message">Unataka kuweka akaunti baadaye?</string>
+    <string name="touch_to_begin">Gusa android kwa kuanza</string>
+    <string name="delayed_gaia_agreement">Kwa kuendelea, unakubali kwa <annotation id="google_privacy">Google</annotation> na <annotation id="android_privacy">Sera za Ufaragha wa Ziada</annotation>.</string>
+    <string name="open_keyboard_message">Slaidi baobonye kufungua kwa kuendelea.</string>
+    <string name="open_keyboard_message_to_continue">Slaidi baobonye kufungua ili kuendelea.</string>
+    <string name="emergency_dial">Kupiga simu ya dharura</string>
+    <string name="change_language">Badilisha lugha</string>
+    <string name="signing_in">Unaingia katika akaunti...…</string>
+    <string name="close_keyboard_message">Slaidi baobonye nyuma kwa kuendelea.</string>
+    <string name="communicating_message">Kifaa chako cha Android kinahitaji kuwasiliana na seva za Google ili kuiweka akaunti yako. Huenda ikachukua hadi dakika tano.</string>
+    <string name="communicating_message_domain">Kifaa chako cha Android kinahitaji kuwasiliana na seva za Google ili kupata maelezo ya kikoa chako. Huenda hii ikachukua hadi dakika tano.</string>
+    <string name="username">Jina la mtumiaji</string>
+    <string name="domain_name">mfano.com</string>
+    <string name="password">Nenosiri</string>
+    <string name="sign_in_agreement">Kwa kuingia ndani, unakubali ku<annotation id="google_privacy">Google</annotation> na <annotation id="android_privacy">Sera za ziada za Faragha</annotation> .</string>
+    <string name="create">Unda</string>
+    <string name="create_message">Unahitaji Akaunti ya Google?</string>
+    <string name="now_signing_in">Unaingia katika akaunti...…</string>
+    <string name="now_verifying_domain">upataji wa kikoa chako...</string>
+    <string name="sign_in_with_google_account_short">" Ingia ndani kwa kutumia Akaunti yako ya Google"</string>
+    <string name="browser_sign_in_explanation">Tumia skrini hii kama unazingatiomaalum la kuingia ndani ambalo linahitaji Kivinjari cha Wavuti.</string>
+    <string name="gls_browser_login_intro_message">Haiwezi kufikia akaunti yako ya Google au Google Apps. Uidhinishaji upya unahitajika.</string>
+    <string name="enter_domain_name">Ingiza jina la kikoa cha kampuni yako:</string>
+    <string name="enter_user_name">Ingiza jina lako la mtumiaji na nenosiri la ^1:</string>
+    <string name="inactive_domain">Akaunti hii haiwezi kutumiwa kwa sababu ni ya kikoa kisichotumiwa. Tafadhali wasiliana na msimamizi wa akaunti kwa <b>^1</b> au ingia na akaunti nyingine.</string>
+    <string name="invalid_username">Maandishi yaliyoingizwa sio jina halali la mtumiaji.</string>
+    <string name="web_login_error_title">Samahani...</string>
+    <string name="web_login_error_desc">"Kuna tatizo la kujiunga kwa seva zako za kampuni katika ^1.
+
+Maelezo ya hitilafu:
+"</string>
+    <string name="web_login_error_redirects">Ukurasa wa kuinga kwa wavuti umeelekezwa upya mara nyingi sana</string>
+    <string name="web_login_error_http">HTTP hitilafu ^1 : ^2</string>
+    <string name="name_device_label">Ipe jina kifaa chako cha Android:</string>
+    <string name="device_name_hint">Jina la kifaa</string>
+    <string name="registering_device">Inasajili kifaa cha Android...</string>
+    <string name="error_account_disabled">"Akaunti hii imelemazwa. 
+
+(Kwa maelezo, nenda kwenye kompyuta yako http://google.com/accounts/recovery.)"</string>
+    <string name="error_login_failed">"Jina lako la mtumiaji na nenosiri hazilingani. Tafadhali jaribu tena.
+
+(ili kuokoa maelezo ya akaunti yako, tembelea http://www.google.com/accounts/recovery on your computer.)"</string>
+    <string name="error_account_not_verified">"Akaunti hii haijathibitishwa. Tafadhali kagua barua pepe yako kwenye kompyuta na ufuate kiungo ili kuthibitisha akaunti hii. 
+
+(Ili kuokoa maelezo ya akaunti yako, nenda kwa http://www.google.com/accounts/recovery on your computer.)"</string>
+    <string name="captcha_message_string">Uthibitisho</string>
+    <string name="captcha_instructions">Ingiza vibambo unavyoviona kwenye picha. Herufi haziwekwi kwa ukubwa au udogo.</string>
+    <string name="create_google_account">Unda Akaunti ya Google</string>
+    <string name="example_usernames">k.v., JSmith, John.Smith</string>
+    <string name="create_account_agreement">Kwa kuunda akaunti hii, unakubali kwa <annotation id="google_privacy">Google</annotation> na <annotation id="android_privacy">Sera za Ufaragha wa Ziada</annotation>.</string>
+    <string name="account_already_has_gmail">Akaunti tayari ina Gmail</string>
+    <string name="creating_account">Inaunda akaunti yako…</string>
+    <string name="checking_account">Inakagua kupatikana kwa jina la mtumiaji...</string>
+    <string name="try_a_different_username">Jaribu jina la mtumiaji tofauti</string>
+    <string name="is_not_available"><b>^1</b> haipatikani.</string>
+    <string name="hint_size">" inajumlisha zaidi kuliko 6 au kuliko vibambo 30."</string>
+    <string name="hint_numbers_only"><b>^1</b> haijumlishi herufi zozote.</string>
+    <string name="hint_illegal_chars"><b>^1</b>"inaweza kujumlisha tu herufi,
+namba, na vituo."</string>
+    <string name="doesnt_use_gmail">" haitumii Gmail"</string>
+    <string name="sign_in">Ingia</string>
+    <string name="sign_in_browser">Ingia ndani ya kivinjari</string>
+    <string name="here_are_alternatives">Haka kunazo baadhi ya mibadala:</string>
+    <string name="alternatives_list_title">Majina ya watumiaji yaliyopendekezwa</string>
+    <string name="choose_a_password"><b>"Chapisha
+nenosiri"</b></string>
+    <string name="confirm_password"><b>"Thibitisha
+nenosiri"</b></string>
+    <string name="password_strength"><b>"
+Uthabiti wa nenosiri"</b></string>
+    <string name="too_short">" Fupi sana"</string>
+    <string name="security_question"><b>"Swali la 
+usalama"</b></string>
+    <string name="security_questions_title">Maswali ya usalama</string>
+    <string name="answer"><b>Jibu</b></string>
+    <string name="password_mismatch">Nenosiri lako halilingani. Tafadhali chapisha upya tena.</string>
+    <string name="your_account_was_created">Akaunti yako imeundwa!</string>
+    <string name="eight_chars_min">(Kiwango cha chini cha vibambo 8)</string>
+    <string name="just_in_case">Ikiwa utapoteza nenosiri lako.</string>
+    <string name="verify_your_profile">Thibitisha maelezo yako mafupi</string>
+    <string name="signed_in">Umeingia ndani!</string>
+    <string name="error_not_logged_in">Mtumiaji hajaingia ndani.</string>
+    <string name="error_username_unavailable">Jina la mtumiaji halipatikani.</string>
+    <string name="error_bad_password">Nenosiri ni dhaifu mno au linajumlisha vibambo batili. tafadhali jaribu tena.</string>
+    <string name="error_bad_username">Jina batili la mtumiaji.</string>
+    <string name="loading">Inapakia...</string>
+    <string name="submission_title">Samahani...</string>
+    <string name="submission_error_text">Hitilafu ilitokea. Tafadhali jaribu tena.</string>
+    <string name="existing_account_error_title">Akaunti tayari ipo</string>
+    <string name="existing_account_error_text">Tayari kuna akaunti ya ^1 kwenye kifaa hiki cha Android.</string>
+    <string name="account_linked_message"><font height="24">Akaunti yako ya Google imeunganishwa sasa kwenye kifaa hiki cha Android.</font></string>
+    <string name="syncing_message"><font size="17">"Programu za Google zinasawazisha data sasa. 
+"<font height="17">"
+"</font>"%i Wakati ”sawazisha” ikoni inapotea kutoka mwamba hali katika juu ya skrini yako, kupakua kumekamilika.
+"<font height="17">"
+"</font><b> Kuhusu mwamba hali…</b>"
+"<font height="3">"
+"</font>"Kila unapo pokea ujumbe mpya au taarifa nyingine, ikoni inaonekana katika mwambaa hali.
+"<font height="17">"
+"</font>tumia kidole chako kwa kukokota chini mwamba hali kwa kufungua paneli ya Taarifa, kwa maelezo kuhusu tarifa zako zote.</font></string>
+    <string name="i_agree_next">Nakubali, Ifuatayo</string>
+    <string name="android_privacy_policy_title">Sera ya Ziada ya Faragha</string>
+    <string name="google_terms_of_service_title">Masharti ya Huduma ya Google</string>
+    <string name="google_privacy_policy_title">Sera ya Faragha ya Google</string>
+    <string name="notification_update_title">Lazima akaunti yako isasishwe</string>
+    <string name="notification_update_message">Gusa hapa kwa kuendesha upya Kuweka Kisakura</string>
+    <string name="common_message">"Gmail, chelezo, na vipengele vingine vingi vya Android vinahitaji Akaunti ya Google.
+
+Gusa "<b>Ifuatayo</b>" ili kuingia kwa kutumia Akaunti ya Google iliyopo au fungua Akaunti mpya ya Google sasa.
+
+Au gusa"<b>Ruka</b> ili kuanza kutumia Android yako. Unaweza kuingia kwenye Akaunti ya Google baadaye katika Mipangilio, chini ya Akaunti na Usawazishaji.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Kuongeza akaunti</font>" 
+
+Unaweza kutumia zaidi ya Akaunti moja ya Google (kama vile akaunti yako ya nyumbani na ya kazini). Kuongeza Akaunti ya Google huchukua hatua chache tu. 
+
+Gusa \"Ifuatayo\" ili kuendelea au bonyeza kitufe cha Nyuma ili kuondoka."</string>
+    <string name="reactivate_account_message">"Unahitaji kuunganisha akaunti ya barua ya Google na kifaa hiki cha Android. 
+
+Tayari una jina la mtumiaji la barua ya Google ("<b>^1</b>") lililohusishwa na akaunti hii, lakini halitumiki kwa sasa. 
+
+Gusa “Ifuatayo” ili kuanzisha upya jina hili la mtumiaji na kulitumia. 
+
+Au, kama unataka kutumia akaunti tofauti, bonyeza kitufe cha Nyuma na uingize na au uunde akaunti tofauti."</string>
+    <string name="reactivating_account">Inaamilisha upya akaunti yako...</string>
+    <string name="your_account_was_reactivated">Akaunti yako imewezeshwa!</string>
+    <string name="account_recovery_info">Maelezo yafuatayo yatakusaidia kufufua nenosiri lako ikiwa limepotea kabisa</string>
+    <string name="secondary_email_label"><b>"Barua pepe ya
+Pili"</b></string>
+    <string name="invalid_email">"Anwani ya barua pepe iliyoingizwa sio halali.
+ Kwa mfano: joe@example.com"</string>
+    <string name="invalid_email_primary">Anwani za barua pepe ya za sekondari haziwezi kuwa sawa kama zile unazoziunda</string>
+    <string name="tutorial_intro_title">Jifunze jinsi ya kutumia ^1 yako</string>
+    <string name="begin_button_label">Anza</string>
+    <string name="tutorial_intro_message_generic">Kuna mambo muhimu ya kuelewa ili kupata mengi kutoka kwa kifaa chako cha Android. <font size="17">"
+"</font>" 
+"<li>Kutumia kibodi kwenye skrini</li> <font size="17">"
+"</font>" 
+Gusa \"Anza\" ili kuanza mafunzo na kujua mengi."</string>
+    <string name="tutorial_intro_message_setupwizard">Kuna mambo muhimu ya kuelewa ili kupata mengi kutoka kwa kifaa chako cha Android. <font size="17">"
+"</font>" 
+"<li>Kutumia kibodi kwenye skrini</li>" 
+"<li>Kusanidi Akaunti ya Google</li> <font size="17">"
+"</font>" 
+Gusa \"Anza\" ili kuanza mafunzo na kujua mengi au gusa \"Ruka\" ili kuruka mafunzo haya na kuendelea."</string>
+    <string name="keyboard_tutorial_title">Utumiaji wa baobonye lililo kwenye skrini</string>
+    <string name="keyboard_tutorial_message">Gusa uga wowote wa maandishi ili kufungua baobonye na anza uchapishaji. Ijaribu hapa!</string>
+    <string name="keyboard_tutorial_edittext_hint">Gusa hapa kwa kuanza uchapishaji</string>
+    <string name="done_typing_message">Umemaliza kuchapa? Bonyeza kitufe cha Nyuma ili kufunga kibodi.</string>
+    <string name="done_button_label_in_tutorial">Kwisha</string>
+    <string name="backup_consent_title">Cheleza mipangilio yangu</string>
+    <string name="backup_consent_message">Mipangilio yako (kama vile alamisho na manenosiri ya mtandao-hewa) yanaweza kuchelezwa kiotomatiki kwenye Akaunti yako ya Google. Ukipata kifaa kipya cha Android (ili kubadilisha iliyopotea au ukipandisha gredi), mipangilio yako hurejeshwa kwenye kifaa chako kipya cha Android.</string>
+    <string name="backup_consent_howto_disable_message">Unaweza kubadilisha chelezo ya mipangilio yako kwa wakati wowote kwenye programu ya Mipangilio, chini ya Faragha.</string>
+    <string name="backup_consent_yes_agree">Cheleza mipangilio kwa Akaunti yangu ya Google.</string>
+    <string name="restore_disable">Lumeza kurejesha</string>
+    <string name="restore_enable">Wezesha kurejesha</string>
+    <string name="restore_enabled">Ikiwa hapo awali ulicheleza mipangilio yako, itarejeshwa.</string>
+    <string name="restore_disabled">Mipangilio yako haitarejeshwa kutoka kwa chelezo.</string>
+    <string name="webview_progress_title">Inaunganisha kwa kikoa...</string>
+    <string name="webview_progress_verbose_message">"Seva za kampuni yako zinatuma maelezo ya kuingia. Hii huenda ikachukua dakika chache.
+Ukurasa wa kuingia wa kampuni yako utatokea wakati hii inapokamilika."</string>
+    <string name="enterprise_unmanaged_domain">Kikoa hiki hakitumii Google Programu. Tafadhali angalia jina la kikoa na jaribu tena.</string>
+    <string name="use_location_for_services_agree">Kubali</string>
+    <string name="use_location_for_services_disagree">Kutokubaliana</string>
+    <string name="use_location_for_services_title">Tumia Eneo Langu</string>
+    <string name="use_location_for_services_text">Unataka kuruhusu Google kwa kutumia eneo kwa matokeo ya utafiti maarufu na huduma nyingine?</string>
+    <string name="permlab_readGsettings">Soma mipangilio ya Google</string>
+    <string name="permdesc_readGsettings">Huruhusu programu hii kusoma mipangilio ya Google.</string>
+    <string name="permlab_writeGsettings">Rekebisha mipangilio ya Google</string>
+    <string name="permdesc_writeGsettings">Huruhusu programu hii kurekebisha mipangilio ya Google.</string>
+    <string name="permlab_readGservices">soma huduma ya usanidi wa Google</string>
+    <string name="permdesc_readGservices">Huruhusu programu hii kusoma huduma ya usanidi wa data ya Google.</string>
+    <string name="permlab_writeGservices">Rekebisha usanidi wa huduma ya Google</string>
+    <string name="permdesc_writeGservices">Huruhusu programu hii kurekebisha huduma ya usanidi wa data ya Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Programu</string>
+    <string name="permlab_googleAuthPassword">fikia kwa nenosiri la akaunti za Google</string>
+    <string name="permdesc_googleAuthPassword">Huruhusu programu za ufikio wa moja kwa moja kwa manenosiri ya akaunti ya google uliyoisanidi.</string>
+    <string name="permlab_googleMailSwitch">chagua uwekaji brandi wa Gmail au Barua ya Google</string>
+    <string name="permdesc_googleMailSwitch">Huruhusu programu kubadilisha jina lililoonyeshwa kati ya chapa ya \"Gmail\" na \"Google Mail\".</string>
+    <string name="permlab_googleAuth">muonekano wa akaunti zilizosanidiwa</string>
+    <string name="permdesc_googleAuth">Huruhusu programu kutazama majina ya watumiaji ( anwani za barua pepe) ya akaunti ya Google uliyoisanidi</string>
+    <string name="permlab_googleAuth_ALL">fikia huduma zote za Google</string>
+    <string name="permdesc_googleAuth_ALL">Huruhusu programu kuingia kwenye Google services ZOTE kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_OTHER">fikia huduma nyingine za Google</string>
+    <string name="permdesc_googleAuth_OTHER">Huruhusu programu kuingia kwenye Google services zisizobainishwa kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_mail">Barua ya Google</string>
+    <string name="permdesc_googleAuth_mail">Huruhusu programu kuingia kwenye huduma za barua za Google kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_cl">Kalenda ya Google</string>
+    <string name="permdesc_googleAuth_cl">Huruhusu programu kuingia kwenye Google Calendar kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_android">Huduma za android</string>
+    <string name="permdesc_googleAuth_android">Huruhusu programu kuingia kwenye huduma za Android kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_sierra">Akaunti za Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Huruhusu programu kuingia kwenye Google Checkout (na kuweza kufanya ununuzi) kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_sierraqa">Ukaguzi wa akaunti QA za Google</string>
+    <string name="permdesc_googleAuth_sierraqa">Huruhusu programu kuingia kwenye Google Checkout QA kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Akaunti za Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Huruhusu programu kuingia kwenye Google Checkout Sandbox kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Huruhusu programu kuingia kwenye YouTube kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Majina ya watumiaji ya YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Huruhusu programu kuona jina la mtumiaji la YouTube linalohusishwa na akaunti ya Google lililohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_talk">Mazungumzo ya Google</string>
+    <string name="permdesc_googleAuth_talk">Huruhusu programu kuingia kwenye Google Talk kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_ig">Akaunti za iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Huruhusu programu kuingia kwenye iGoogle kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_lh2">Albamu za Wavuti wa Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Huruhusu programu kuingia kwenye Albamu Wavuti za Picasa kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_mobile">Google programu za simu</string>
+    <string name="permdesc_googleAuth_mobile">Huruhusu programu kuingia kwenye programu za Google mobile kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_cp">Data ya mawasiliano katika akaunti za Google</string>
+    <string name="permdesc_googleAuth_cp">Huruhusu programu kufikia anwani na taarifa ya maelezo mafupi ya akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Huruhusu programu kuingia kwenye Google AdSense kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Huruhusu programu kuingia kwenye Google AdWords kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Huruhusu programu kuingia kwenye Blogger kwa kutumia akaunti zilizohifadhiwa kwenye simu hii.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Huruhusu programu kuingia kwenye Dodgeball kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Makao</string>
+    <string name="permdesc_googleAuth_gbase">Huruhusu programu kuingia kwenye Google Base kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_groups2">Vikundi vya Google</string>
+    <string name="permdesc_googleAuth_groups2">Huruhusu programu kuingia kwenye Google Groups kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_health">Google Afya</string>
+    <string name="permdesc_googleAuth_health">Huruhusu programu kuingia kwenye Google Health kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Huruhusu programu kuingia kwenye JotSpot kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Huruhusu programu kuingia kwenye Knol kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_news">Habari mpya ya Google.</string>
+    <string name="permdesc_googleAuth_news">Huruhusu programu kuingia kwenye Google News kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Huruhusu programu kuingia kwenye Orkut kwa kutumia akaunti zilizohifadhiwa kwenye simu hii.</string>
+    <string name="permlab_googleAuth_print">Google Book Search</string>
+    <string name="permdesc_googleAuth_print">Huruhusu programu kuingia kwenye Utafutaji wa Vitabu kutoka Google kwa kutumia akaunti zilizohifadhiwa kwenye simu hii.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Webmaster Tools</string>
+    <string name="permdesc_googleAuth_sitemaps">Huruhusu programu kuingia kwenye Zana za Google Webmaster kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Huruhusu programu kuingia kwenye Google WiFi kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">Huruhusu programu kuingia kwenye Google Docs kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_wise">Lohojedwali za Google</string>
+    <string name="permdesc_googleAuth_wise">Huruhusu programu kuingia kwenye Google Spreadsheets kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Huruhusu programu kuingia kwenye Google Finance kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Huruhusu programu kuingia kwenye Google Maps kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_ah">Ingini ya Google App</string>
+    <string name="permdesc_googleAuth_ah">Huruhusu programu kuingia kwenye Mtambo wa Google App kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_notebook">Google Notebook</string>
+    <string name="permdesc_googleAuth_notebook">Huruhusu programu kuingia kwenye Google Notebook kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Huruhusu programu kuingia kwenye Google Voice kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Utambuzi wa matamshi uliogeuzwa ili kukufaa</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Huruhusu programu kuingia kwenye huduma Iliyobinafsishwa ya Kutambua Usemi kwa kutumia akaunti zilizohifadhiwa kwenye kifaa hiki cha Android.</string>
+    <string name="gls_notification_title">Ingia ndani kwa akaunti yako</string>
+    <string name="gls_notification_new_account">Akaunti inahitajika^1</string>
+    <string name="gls_notification_new_account_youtube">Akaunti ya YouTube inahitajika</string>
+    <string name="gls_notification_login_error">Gusa ili kuingia kwenye akaunti yako.</string>
+    <string name="gls_ui_add_account_title">Weka akaunti</string>
+    <string name="gls_ui_google_account_subtitle">Akaunti ya Google</string>
+    <string name="gls_ui_activity_title">Ingia ndani ya Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Ingia ndani ya kivinjari</string>
+    <string name="gls_ui_activity_title_enterprise">Kuingia ndani kwa shughuli za biashara</string>
+    <string name="gls_ui_activity_title_youtube">Kuingia ndani kwenye YouTube</string>
+    <string name="gls_ui_activity_authenticating">Inahalalisha...</string>
+    <string name="gls_captcha_activity_message">Tafadhali chapisha vibambo unavyoviona katika picha:</string>
+    <string name="gls_captcha_activity_ok_button">Kwisha</string>
+    <string name="gls_error_activity_message">Kulikuwa na hitilafu ya mtandao ulipokuwa ukijaribu kuingia ndani kwa <b>^1</b>jaribu sasa au bonyeza kichupo cha Nyuma ili kughairi.</string>
+    <string name="gls_error_activity_retry_button">Jaribu tena</string>
+    <string name="gls_dmagent_activity_message">" Kikoa chako kinahitaji usimamiaji wa kifaa cha simu ya mkononi. Tafadhali sakinisha programu ya Sera ya Kifaa ya Google Apps ili kutekeleza sera za usalama zinazohitajika na akaunti ya "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Pakua</string>
+    <string name="gls_login_activity_username_label">Jina la mtumiaji</string>
+    <string name="gls_login_activity_password_label">Nenosiri</string>
+    <string name="gls_login_activity_ok_button">Ingia</string>
+    <string name="gls_login_activity_loginfail_text_both">Jina lamtumiaji au nenosiri sia halali. Akaunti ya <b>^1</b> inahitajika. tafadhali jaribu tena.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Uliingiza nenosiri batili au akaunti yako imebadilika. Tafadhali ingiza upya nenosiri</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Chapisha nenosiri la akaunti hii</string>
+    <string name="gls_enterprise_login_activity_msg">"Tafadhali ingia kwenye akaunti yako ua shughuli za biashara katika ^1 kwa uhalalishaji.
+Gusa Kuingia ndani ili kufungua ukurasa wa kuingia kwa wavuti."</string>
+    <string name="gls_login_activity_badaccount_text">Hauwezi kutumia akaunti hiyo ka katika hali hii. Tafadhali jaribu akaunti tofauti.</string>
+    <string name="gls_login_activity_newaccount_text">Ingia ndani kwa akaunti yako <b>^1</b></string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Hauna akaunti y YouTube? Gusa <a href="http://www.youtube.com/signup">hapa</a> ili kuunda moja.</string>
+    <string name="gls_settings_tos_activity_title">Google sheria</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Hujaunganishwa kwenye huduma ya data. Ili kuona maelezo haya sasa, nenda kwa %s kutoka kwa kompyuta yoyote iliyounganishwa kwenye mtandao.</string>
+    <string name="gls_settings_contributors_activity_title">Wachangiaji</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Hujaunganishwa kwa huduma ya data. Ili kuona maelezo haya sasa, nenda kwa %s kutoka kwa kompyuta yoyote iliyounganishwa kwenye mtandao.</string>
+    <string name="gls_webview_progress_title">Inaunganisha kwa kikoa...</string>
+    <string name="gls_webview_progress_verbose_message">"Seva za kampuni yako zinatuma maelezo ya kuingia. Hii huenda ikachukua dakika chache.
+Ukurasa wa kuingia wa kampuni yako utatokea wakati hii inapokamilika."</string>
+    <string name="gls_sign_in_button_label">Ingia</string>
+    <string name="gls_back_button_label">Nyuma</string>
+    <string name="gls_cancel_button_label">Ghairi</string>
+    <string name="gls_exit_account_setup_button_label">Ondoa kupanga kwa akaunti</string>
+    <string name="gls_reauthorize_button_label">Idhinisha upya</string>
+    <string name="gls_sign_in_message">Kifaa chako cha Android kinahitaji kuwasiliana na seva za Google ili kuweka akaunti yako. Hii huenda ikachukua hadi dakika tano.</string>
+    <string name="gls_sign_in_title">Unaingia katika akaunti......</string>
+</resources>

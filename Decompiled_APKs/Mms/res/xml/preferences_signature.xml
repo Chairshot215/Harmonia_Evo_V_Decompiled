@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_signature_settings_title">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/pref_title_signature_text" android:key="pref_key_signature_enabled" android:summary="@string/pref_summary_signature_enabled" android:defaultValue="false" />
+        <com.htc.preference.HtcEditTextPreference android:persistent="true" android:title="@string/pref_signature_settings_title" android:key="pref_key_signature_text" android:summary="@string/pref_summary_signature_text" android:dependency="pref_key_signature_enabled" android:defaultValue="@string/pref_default_signature_text" android:dialogTitle="@string/pref_summary_signature_text" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

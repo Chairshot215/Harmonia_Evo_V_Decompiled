@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="layout_panel">
+        <item name="android:background">@*android:drawable/bottom_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/cmd_bar_height</item>
+    </style>
+    <style name="FullyTransparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="google_title_divider">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/green_divider</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+    </style>
+    <style name="google_title_text" parent="@style/google_title_divider">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textColor">#ffbab3a3</item>
+        <item name="android:gravity">bottom|left|center</item>
+        <item name="android:layout_gravity">bottom|left|center</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="button">
+        <item name="android:textSize">@com.htc:dimen/button_primary_m</item>
+        <item name="android:textColor">@color/black_text_white_focused</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:layout_width">@dimen/normal_button_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/normal_button_margin</item>
+        <item name="android:layout_marginTop">@dimen/border_margin</item>
+        <item name="android:layout_marginRight">@dimen/normal_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/border_margin</item>
+    </style>
+    <style name="bottom_button" parent="@style/button">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/bottom_button_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/bottom_button_marginBottom</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="small_button">
+        <item name="android:textSize">@com.htc:dimen/button_secondary_l</item>
+        <item name="android:textColor">@color/black_text_white_focused</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:layout_width">@dimen/small_button_width</item>
+        <item name="android:layout_height">@dimen/small_button_height</item>
+    </style>
+    <style name="row_dot">
+        <item name="android:gravity">top</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_marginTop">@dimen/dot_top_margin</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+        <item name="android:src">@drawable/myhtc_both_icon_dot</item>
+    </style>
+    <style name="table_row">
+        <item name="android:gravity">top</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+    </style>
+    <style name="default_input" parent="@com.htc:style/input_default_m">
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:paddingLeft">@dimen/textfield_padding</item>
+        <item name="android:paddingRight">@dimen/textfield_padding</item>
+    </style>
+    <style name="input_password" parent="@style/default_input">
+        <item name="android:password">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:capitalize">none</item>
+        <item name="android:autoText">false</item>
+    </style>
+    <style name="check_box" parent="@com.htc:style/list_primary_m">
+        <item name="android:textColor">@color/secondary_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/checkbox_margin_left</item>
+        <item name="android:checkMark">?com.htc:attr_common_checkbox</item>
+    </style>
+    <style name="check_box_htcnewsletter" parent="@com.htc:style/darklist_primary_s">
+        <item name="android:layout_marginLeft">@dimen/checkbox_margin_left</item>
+        <item name="android:checkMark">?com.htc:attr_common_checkbox</item>
+    </style>
+    <style name="auto_complete_text" parent="@style/default_input">
+        <item name="android:capitalize">none</item>
+        <item name="android:autoText">false</item>
+    </style>
+    <style name="remotelock_call_number" parent="@com.htc:style/darklist_secondary_xl">
+        <item name="android:textColor">#ffcccccc</item>
+    </style>
+    <style name="disable_forwarding_button" parent="@com.htc:style/button_primary_m">
+        <item name="android:background">?com.htc:attr_common_b_button</item>
+    </style>
+</resources>

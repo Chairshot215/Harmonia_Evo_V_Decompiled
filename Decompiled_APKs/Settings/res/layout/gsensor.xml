@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_calibration_title" android:background="@drawable/g_sensor_bag" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="26.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/calibration_title" android:layout_width="fill_parent" android:layout_height="29.0px" android:layout_marginTop="22.0px" android:text="@string/calibration_title" />
+    <com.htc.widget.HtcFooter android:id="@id/bottomPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/button_calibration" android:text="@string/calibration" />
+    </com.htc.widget.HtcFooter>
+    <TextView android:textSize="18.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_calibration_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="63.0px" android:text="@string/calibration_prompt" />
+    <ImageView android:id="@id/img_cylinder_h" android:layout_width="270.0px" android:layout_height="267.0px" android:layout_marginLeft="105.0px" android:layout_marginTop="117.0px" android:src="@drawable/g_sensor_h_ring" />
+    <ImageView android:id="@id/img_level_upper" android:layout_width="228.0px" android:layout_height="61.0px" android:layout_marginLeft="125.0px" android:layout_marginTop="222.0px" android:src="@drawable/g_sensor_h_level" />
+    <ImageView android:id="@id/img_bubble_h" android:layout_width="191.0px" android:layout_height="40.0px" android:layout_marginLeft="144.0px" android:layout_marginTop="233.0px" android:src="@drawable/g_sensor_h_bubble" />
+    <ImageView android:id="@id/img_blk_lines_upper" android:layout_width="228.0px" android:layout_height="61.0px" android:layout_marginLeft="125.0px" android:layout_marginTop="232.0px" android:src="@drawable/g_sensor_h_marker" />
+    <ImageView android:id="@id/img_cylinder_v" android:layout_width="270.0px" android:layout_height="267.0px" android:layout_marginLeft="105.0px" android:layout_marginTop="398.0px" android:src="@drawable/g_sensor_s_ring" />
+    <ImageView android:id="@id/img_level_lower" android:layout_width="61.0px" android:layout_height="228.0px" android:layout_marginLeft="209.0px" android:layout_marginTop="421.0px" android:src="@drawable/g_sensor_s_level" />
+    <ImageView android:id="@id/img_bubble_v" android:layout_width="40.0px" android:layout_height="192.0px" android:layout_marginLeft="219.0px" android:layout_marginTop="438.0px" android:src="@drawable/g_sensor_s_bubble" />
+    <ImageView android:id="@id/img_blk_lines_lower" android:layout_width="61.0px" android:layout_height="228.0px" android:layout_marginLeft="209.0px" android:layout_marginTop="421.0px" android:src="@drawable/g_sensor_s_marker" />
+</RelativeLayout>

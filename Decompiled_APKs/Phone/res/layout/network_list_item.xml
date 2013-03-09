@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="fill" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <include layout="@com.htc:layout/htc_list_item_1text" />
+    </LinearLayout>
+</FrameLayout>

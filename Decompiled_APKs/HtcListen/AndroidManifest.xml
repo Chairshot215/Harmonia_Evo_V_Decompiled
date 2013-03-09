@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.music.uid.shared" android:versionCode="305305764" android:versionName="3.5.2212262667.305764" package="com.htc.music"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="com.htc.permission.WRITE_ULOG" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.htc.permission.MEDIA_ACCOUNT" />
+    <uses-permission android:name="com.htc.music.permission.ENHANCER_SERVICE" />
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+    <uses-permission android:name="com.android.beats.permission.UPDATE_NOTIFICATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_WRITE_OMA_DRM" />
+    <uses-permission android:name="com.htc.vmm.service.permission.VMMEngineService" />
+    <application android:theme="@style/Theme.CommonBackgroundNoTitle" android:label="@string/mediaplaybacklabel_music" android:icon="@drawable/app_music" android:taskAffinity="android.task.music" android:description="@com.htc:string/htc_about_company_name" android:allowTaskReparenting="true" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="com.htc.sunny2" />
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:label="@string/mediaplaybacklabel_music" android:name="HtcMusic" android:excludeFromRecents="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.app.default_searchable" android:value="*" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="htcdrm" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/awb" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.PLAYBACK_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.PLAYBACK_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Transparent" android:name="QueueListActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <meta-data android:name="opensense" android:resource="@xml/supports" />
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.MusicBrowserTabActivity" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.BROWSE_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.BROWSE_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/album" />
+                <data android:mimeType="com.htc.media/track" />
+                <data android:mimeType="com.htc.media/purchased" />
+                <data android:mimeType="com.htc.media/dlna" />
+                <data android:mimeType="com.htc.media/markeditem" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.AddPlaylistTabActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.ListenBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.listenpage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineAlbumBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.album_chart" />
+                <action android:name="com.htc.music.new_releases_albums" />
+                <action android:name="com.htc.music.similar_album" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineTrackBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.singles_chart" />
+                <action android:name="com.htc.music.new_releases_singles" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineGenreBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.genre_album" />
+                <action android:name="com.htc.music.genre_singles" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineArtistBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.similar_artist" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.ArtistBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/artistalbum" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/artistalbum" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.AlbumBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/album" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/album" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:label="@string/mediaplaybacklabel_music" android:name=".browserlayer.PlaylistBrowserActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/playlist" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/playlist" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.add_to_playlist" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.TrackBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/track" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/track" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.GenreBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/genre" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.ComposerBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/composer" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.DlnaBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/dlna" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.AlbumTrackBrowserActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/albumtrack" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.EditPlaylistActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.DmsDetailBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/dmsdetail" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.DmsDetailBrowserActivityExp">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/dmsdetailexp" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:label="@string/musicshortcutlabel" android:icon="@drawable/icon_music_playlist" android:name="PlaylistShortcutActivity" android:targetActivity=".browserlayer.PlaylistBrowserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity-alias>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:label="@string/music_picker_title" android:name="MusicPicker" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="vnd.android.cursor.dir/audio" />
+            </intent-filter>
+        </activity>
+        <activity android:name="PropertyListActivity" />
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name="PluginPropertyListActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.PluginPropertyListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name="DRMActionActivity" />
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name="MediaPlaybackErrorActivity" android:excludeFromRecents="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.app.default_searchable" android:value="*" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="DeleteItemsActivity" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:name="ScanningProgressActivity" />
+        <service android:name="MediaPlaybackService" android:exported="true" android:process=":mediaplaybackservice">
+            <intent-filter>
+                <action android:name="com.htc.music.IMediaPlaybackService" />
+                <action android:name="com.htc.service.music.IHtcMediaPlaybackService" />
+            </intent-filter>
+        </service>
+        <service android:name="DMPMusicPlaybackService" android:exported="true" android:process=":mediaplaybackservice">
+            <intent-filter>
+                <action android:name="com.htc.music.DMPMusicPlaybackService" />
+                <action android:name="com.htc.music.IDmpUiPlaybackService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="DRMActionActivity$DRMActionActivityBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="MediaButtonIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.bluetooth.avrcp.intent.action.AVRCP_PANEL_OPERATION" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.ArtistBrowserActivityExp" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.dir/artistalbumexp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/artistalbumexp" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.GenreBrowserActivityExp" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/genreexp" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.ComposerBrowserActivityExp" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/composerexp" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.DlnaBrowserActivityExp">
+            <intent-filter>
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/dlnaexp" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name="QueryBrowserActivity" android:exported="true" android:taskAffinity="com.htc.music.query" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.query_browser_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.LocalMusicSearchActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.htc.music.intent.action.LOCALSEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineMusicSearchActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.htc.music.intent.action.ONLINESEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Dialog.Alert" android:name="AudioPreview" android:exported="true" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="content" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.StoreSplashScreen">
+            <intent-filter>
+                <action android:name="com.htc.music.online.storesplashscreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.StoreFrontActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.online.strorefont" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.PurchasedListActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.PurchaseReceiptActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".browserlayer.AlbumDetailActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/albumtrack" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineArtistDetailActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.store.DETAIL_VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/artist" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name=".online.OnlineAlbumDetailActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.store.DETAIL_VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.media/album" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".payment.PaymentActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".payment.PaymentCardSettingActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authentication.AccountWelcomeActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action.start_account_welcome_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authentication.AccountOptionActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action.start_account_option_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authentication.AccountCreateActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action.start_account_create_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authentication.AccountLoginActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action.start_account_login_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".authentication.AccountEditActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action.start_account_edit_activity" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Transparent" android:name=".authentication.EulaActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action.start_eula_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".payment.PaymentMethodListActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.CommonBackgroundNoTitle" android:name="DownloadListActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/SettingTheme" android:name=".setting.online.ListenOnlineSetting" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.music.settings.Listen_Online_Setting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".online.DownloadReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_added" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_cancelled" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_finished" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_paused" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_started" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_updated" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.music.action_download_error" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:minHeight="@dimen/title_height" android:text="@string/photo_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_field_vmargins" android:layout_below="@id/top_divider">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/photo" android:layout_width="@dimen/photo_width" android:layout_height="@dimen/photo_width" android:layout_marginRight="@dimen/photo_margin_top" android:src="@drawable/empty_photo" android:scaleType="fitCenter" android:layout_alignParentTop="true" />
+            <Button android:id="@id/photo_button" android:layout_width="@dimen/photo_width" android:text="@string/photo_button_label" android:layout_below="@id/photo" android:layout_centerHorizontal="true" style="@style/Button" />
+        </RelativeLayout>
+        <TextView android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/photo_text" android:layout_weight="1.0" style="@style/DescriptionText" />
+    </LinearLayout>
+    <Button android:id="@id/next_button" android:text="@string/skip_button_label" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/NextButton" />
+    <Button android:id="@id/back_button" android:text="@string/back_button_label" android:layout_toLeftOf="@id/next_button" android:layout_alignParentBottom="true" style="@style/BackButton" />
+</view>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.store.module.view.TileImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_list_item_icon_margin_left" android:layout_marginRight="@dimen/htc_list_item_icon_margin_right" android:scaleType="center" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_marginRight="@dimen/htc_list_item_stamp_margin_right" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <TextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comment_item_margin_gap" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+            <TextView android:id="@id/stamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_m" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/comment_layout" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+            <ImageView android:id="@id/icon_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comment_item_margin_gap" android:src="@com.htc:drawable/common_icon_indicator_replies" />
+            <ImageView android:id="@id/icon_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comment_item_margin_gap" android:src="@drawable/common_icon_indicator_downloads" />
+            <TextView android:ellipsize="end" android:id="@id/count_comment_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/comment_item_margin_gap" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+            <ImageView android:id="@id/icon_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/comment_item_margin_gap" android:layout_marginRight="@dimen/comment_item_margin_gap" android:src="@com.htc:drawable/common_icon_indicator_likes" />
+            <TextView android:ellipsize="end" android:id="@id/count_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

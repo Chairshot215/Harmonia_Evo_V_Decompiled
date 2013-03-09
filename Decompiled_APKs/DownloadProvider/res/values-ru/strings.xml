@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Диспетчер загрузки</string>
+    <string name="permlab_downloadManager">Открывать диспетчер загрузок.</string>
+    <string name="permdesc_downloadManager">Приложение получит доступ к диспетчеру загрузок и сможет загружать файлы через него. Вредоносные программы смогут таким образом прерывать загрузки и просматривать личную информацию.</string>
+    <string name="permlab_downloadManagerAdvanced">Дополнительные функции диспетчера загрузок.</string>
+    <string name="permdesc_downloadManagerAdvanced">Приложение получит доступ к расширенным функциям диспетчера загрузок. Вредоносные программы смогут таким образом прерывать загрузки и просматривать личную информацию.</string>
+    <string name="permlab_downloadCompletedIntent">Отправлять уведомления о загрузках.</string>
+    <string name="permdesc_downloadCompletedIntent">Приложение сможет отправлять оповещения о завершенных загрузках. Вредоносные программы смогут таким образом мешать работе приложений, загружающих файлы.</string>
+    <string name="permlab_seeAllExternal">Просмотреть все загрузки на SD-карту</string>
+    <string name="permdesc_seeAllExternal">Приложение получит доступ ко всем загрузкам на SD-карте независимо от того, через какое ПО они были загружены.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Резервировать место в кэше загрузки</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Приложение сможет загружать файлы в кэш загрузки (который не может быть автоматически очищен), если менеджеру загрузки потребуется больше места.</string>
+    <string name="permlab_downloadWithoutNotification">Загружать файлы без оповещения</string>
+    <string name="permdesc_downloadWithoutNotification">Приложение сможет загружать файлы через диспетчер загрузок без уведомления пользователя.</string>
+    <string name="permlab_accessAllDownloads">Доступ ко всем загрузкам</string>
+    <string name="permdesc_accessAllDownloads">Приложение сможет открывать и изменять загрузки независимо от того, через какое ПО они были загружены.</string>
+    <string name="download_unknown_title">&lt;Без названия></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" и еще %d"</string>
+    <string name="notification_download_complete">Загрузка завершена.</string>
+    <string name="notification_download_failed">Не удалось загрузить файл.</string>
+    <string name="notification_need_wifi_for_size">Загрузка только по Wi-Fi</string>
+    <string name="notification_paused_in_background">Загрузка приостановлена</string>
+    <string name="wifi_required_title">Слишком большой файл для сети оператора</string>
+    <string name="wifi_required_body" formatted="false">"Для завершения загрузки файла размером %s необходимо подключение к сети Wi-Fi.
+
+Чтобы продолжить загрузку позже через Wi-Fi, нажмите %s ."</string>
+    <string name="wifi_recommended_title">Поставить в очередь на загрузку позже?</string>
+    <string name="wifi_recommended_body" formatted="false">"Если загрузить %s сейчас, батарея может быстро разрядиться. Также не исключено превышение трафика и, как результат, увеличение расходов на связь.
+
+Чтобы выполнить загрузку позже через Wi-Fi, нажмите %s."</string>
+    <string name="button_queue_for_wifi">Добавить в очередь</string>
+    <string name="button_cancel_download">Отмена</string>
+    <string name="button_start_now">Запустить</string>
+    <string name="low_download_storage_view_title">Недостаточно места в памяти</string>
+    <string name="low_download_storage_view_text">Для загрузки недостаточно места в памяти.</string>
+    <string name="notification_paused_no_wifi">" (приостановлено)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

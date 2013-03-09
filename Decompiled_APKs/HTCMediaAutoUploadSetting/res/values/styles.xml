@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomizationListBackground">
+        <item name="android:background">@*android:color/white</item>
+    </style>
+    <style name="CustomizationBackground">
+        <item name="android:background">@*android:color/white</item>
+    </style>
+    <style name="text_style_primary">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/list_item_primary_text</item>
+    </style>
+    <style name="text_style_secondary">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/list_item_secondary_text</item>
+    </style>
+    <style name="text_style_tertiary">
+        <item name="android:textSize">@dimen/text_size_tertiary</item>
+        <item name="android:textColor">@color/list_item_tertiary_text</item>
+    </style>
+    <style name="SkinChange">
+        <item name="android:colorForeground">@*android:color/white</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textColorPrimary">@com.htc:color/list_item_primary_text</item>
+        <item name="android:textColorSecondary">@com.htc:color/list_item_secondary_text</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorForegroundInverse">@*android:color/white</item>
+        <item name="com.htc:fakescreenStyle">style_02</item>
+    </style>
+</resources>

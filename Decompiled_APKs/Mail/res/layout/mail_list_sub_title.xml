@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mail_list_sub_title" android:background="@com.htc:color/top_round_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/mail_list_item_separator" android:background="@com.htc:drawable/section_divider_top" android:layout_width="fill_parent" android:layout_height="@dimen/mail_list_sub_title_height">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/TitleDateTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/leftTitle" android:layout_width="@dimen/mail_list_title_width" android:layout_height="@com.htc:dimen/mail_list_title_height">
+                <ImageView android:layout_gravity="left|center" android:id="@id/refresh_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mail_list_sub_title_margin" android:src="@drawable/refresh_anim" />
+                <TextView android:gravity="left|center" android:id="@id/updateLable" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" style="@com.htc:style/info_primary_s" />
+                <TextView android:gravity="center" android:id="@id/UpdateTime" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_right" android:maxLines="1" style="@com.htc:style/info_primary_s" />
+                <TextView android:gravity="left|center" android:id="@id/progressSubject" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" style="@com.htc:style/info_primary_s" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/centerTitle" android:layout_width="0.0px" android:layout_height="@com.htc:dimen/mail_list_title_height" android:layout_marginTop="@dimen/mail_list_sub_title_folder_name_margin_top" android:layout_weight="1.0">
+                <TextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/folderName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" style="@com.htc:style/info_primary_m" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/rightTitle" android:layout_width="@com.htc:dimen/mail_list_title_width" android:layout_height="@com.htc:dimen/mail_list_title_height" android:layout_marginRight="@dimen/mail_list_sub_title_margin">
+                <TextView android:gravity="center" android:id="@id/sortLable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@com.htc:style/info_primary_s" />
+                <TextView android:gravity="center" android:id="@id/sortMethod" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/mail_list_sub_title_sort_method_margin_top" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:singleLine="true" style="@com.htc:style/info_primary_s" />
+                <ImageView android:layout_gravity="center" android:id="@id/ascDescImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mail_list_sub_title_image_margin_top" android:src="@drawable/mail_sort_down" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DetailsPage_Button">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/buy_button</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/details_page_regular_button</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">@dimen/details_button_minwidth</item>
+        <item name="android:minHeight">@dimen/details_button_minheight</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DetailsPage_BuyButton" parent="@style/DetailsPage_Button">
+        <item name="android:background">@drawable/details_page_buy_button</item>
+    </style>
+    <style name="DetailsPage_EditorialBuyButton" parent="@style/DetailsPage_BuyButton" />
+    <style name="PurchasePage_RedeemFooterText" parent="@style/PurchasePage_InstrumentFooterText">
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="SetupWizardContentWidth">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">0.8</item>
+    </style>
+    <style name="SetupWizardStackedButtons">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WarmWelcomeButton">
+        <item name="android:textSize">@dimen/content_generic_medium_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/details_page_regular_button</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/details_content_margin_no_glow</item>
+        <item name="android:layout_marginRight">@dimen/details_content_margin_no_glow</item>
+        <item name="android:minWidth">300.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="DialogWhenLarge" parent="@style/FinskyDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+    </style>
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyDarkDialogTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+    </style>
+</resources>

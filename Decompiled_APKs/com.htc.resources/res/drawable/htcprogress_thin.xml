@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@*android:id/background">
+        <bitmap android:src="@drawable/common_progress_track" />
+    </item>
+    <item android:id="@*android:id/secondaryProgress">
+        <bitmap android:src="@drawable/common_progress_secondary_track" />
+    </item>
+    <item android:id="@*android:id/progress">
+        <clip android:drawable="@drawable/common_downloading_progress_track_full" />
+    </item>
+</layer-list>

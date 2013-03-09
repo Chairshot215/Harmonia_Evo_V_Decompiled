@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="@dimen/list_view_width" android:layout_height="@dimen/list_view_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:SubButton="http://schemas.android.com/apk/res/com.android.htcdialer.carhome">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/LL_Pic" android:layout_width="@dimen/list_view_width" android:layout_height="@dimen/list_view_height" android:layout_centerHorizontal="true">
+        <com.android.htcdialer.carhome.SubButton android:id="@id/favorites_photo" android:layout_width="@dimen/contact_fav_photo_width" android:layout_height="@dimen/contact_fav_photo_height" android:layout_marginLeft="@dimen/contact_fav_photo_marginLeft" android:layout_marginTop="@dimen/contact_fav_photo_marginTop" android:scaleType="fitXY" />
+        <com.android.htcdialer.carhome.SubButton android:id="@id/favorites_photo_btn" android:background="@drawable/people_photo_selector2" android:layout_width="@dimen/contact_fav_photo_btn_width" android:layout_height="@dimen/contact_fav_photo_btn_height" android:layout_marginLeft="@dimen/contact_fav_photo_btn_marginLeft" android:layout_marginTop="@dimen/contact_fav_photo_btn_marginTop" />
+        <TextView android:textSize="@dimen/carhome_fav_name_font_size" android:textColor="@color/car_home_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/favorites_name" android:layout_width="@dimen/list_view_width" android:layout_height="@dimen/contact_fav_name_height" android:layout_marginTop="@dimen/contact_fav_name_marginTop" android:singleLine="true" android:layout_below="@id/favorites_photo_btn" />
+    </RelativeLayout>
+    <ImageView android:id="@id/action_image" android:background="@com.htc:drawable/common_app_people_button" android:layout_width="@dimen/contact_action_size" android:layout_height="@dimen/contact_action_size" android:layout_marginLeft="@dimen/contact_action_marginLeft" android:layout_marginTop="@dimen/contact_action_marginTop" android:scaleType="centerInside" />
+    <ImageView android:id="@id/recent_calls_image" android:layout_width="@dimen/contact_recent_calls_size" android:layout_height="@dimen/contact_recent_calls_size" android:layout_marginLeft="@dimen/contact_recent_calls_marginLeft" android:layout_marginTop="@dimen/contact_recent_calls_marginTop" android:scaleType="centerInside" />
+</merge>

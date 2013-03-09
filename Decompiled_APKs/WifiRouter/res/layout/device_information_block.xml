@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:layout_marginBottom="@com.htc:dimen/alert_dialog_content_margin_bottom">
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/device_mac" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/device_mac_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mac_addr" android:singleLine="true" style="@com.htc:style/list_secondary_unread_xl" />
+            <TextView android:gravity="left|center" android:layout_gravity="left" android:id="@id/device_mac_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_margin_left" android:singleLine="true" style="@com.htc:style/list_secondary_unread_xl" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

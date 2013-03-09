@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.SongList android:orientation="vertical" android:id="@id/song_list" android:background="@drawable/details_section_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/song_list_header" android:background="@drawable/highlight_overlay" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/details_section_header_height">
+        <com.google.android.finsky.layout.PlaylistControlButtons android:textSize="@dimen/content_generic_small_size" android:textColor="@color/music_play_all" android:gravity="left|center" android:id="@id/song_list_control" android:paddingRight="@dimen/details_content_margin" android:layout_width="wrap_content" android:layout_height="@dimen/details_section_header_height" android:text="@string/play_all" android:drawableRight="@drawable/btn_music_playall" android:drawablePadding="4.0dip" android:layout_alignParentRight="true" />
+        <com.google.android.finsky.layout.AccessibleTextView android:id="@id/header" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/song_list_control" android:layout_alignBaseline="@id/song_list_control" android:layout_alignParentLeft="true" style="@style/DetailsPage_HeaderText" />
+        <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/darkgrey" android:id="@id/subheader" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="2.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/songs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.google.android.finsky.layout.SongList>

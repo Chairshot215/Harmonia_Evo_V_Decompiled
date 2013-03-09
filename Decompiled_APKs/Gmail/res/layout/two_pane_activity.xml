@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:orientation="horizontal" android:id="@id/two_pane_activity" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="true" class="com.google.android.gm.TriStateSplitLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/labels_pane" android:layout_width="@dimen/label_list_pane_width" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/conversation_column_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/conversation_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/content_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/conversation_pane_container" android:background="@*android:color/white" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/conversation_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/conversation_overlay" android:background="@*android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/conversation_error" android:background="@*android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_conversations" />
+    </FrameLayout>
+</view>

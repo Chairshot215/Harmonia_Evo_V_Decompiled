@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/tag_list_item" layout="@layout/tag_list_item" />
+    <ImageView android:id="@id/roundcorner_down" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/trans_bottomround" android:scaleType="fitXY" android:layout_alignBottom="@id/tag_list_item" />
+    <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@com.htc:drawable/section_divider_top" android:paddingLeft="@dimen/textView_paddingLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tags" android:layout_below="@id/roundcorner_down" style="@com.htc:style/info_primary_s" />
+</RelativeLayout>

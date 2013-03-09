@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/taskbar_2" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height" style="?com.htc:attr/commandBarBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/task_bar_imgbtn_1" android:background="?attr_taskbar_button_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/task_bar_common_margin" android:scaleType="center" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageButton android:id="@id/task_bar_imgbtn_2" android:background="?attr_common_mainnav_center_left" android:padding="0.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/task_bar_common_btn_margin" android:scaleType="center" />
+        <ImageButton android:id="@id/task_bar_imgbtn_3" android:background="?attr_common_mainnav_center_right" android:padding="0.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/task_bar_common_btn_margin" android:scaleType="center" />
+    </LinearLayout>
+    <ImageButton android:id="@id/task_bar_imgbtn_4" android:background="?attr_taskbar_button_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/task_bar_common_margin" android:scaleType="center" android:layout_alignParentRight="true" />
+</RelativeLayout>

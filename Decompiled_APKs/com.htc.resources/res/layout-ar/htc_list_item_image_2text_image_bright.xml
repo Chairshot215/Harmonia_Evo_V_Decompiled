@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/htc_dark_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left" android:id="@id/img_indicator" android:layout_width="@dimen/htc_list_item_height" android:layout_height="@dimen/htc_list_item_height" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="fill" android:layout_width="fill_parent" android:layout_height="@dimen/htc_dark_list_item_height">
+        <ImageView android:layout_gravity="right|center" android:id="@id/img_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_list_item_margin_right" android:layout_marginRight="2.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/htc_list_item_margin_right" android:paddingTop="@dimen/htc_list_item_margin_top" android:paddingRight="@dimen/htc_list_item_margin_left" android:paddingBottom="@dimen/htc_list_item_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_primary" android:textColor="@color/bright_text_dark_focused" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/txt_1x1" android:paddingLeft="6.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            <TextView android:textSize="@dimen/text_size_secondary" android:textColor="@color/bright_text_dark_focused_1" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/txt_2x1" android:paddingLeft="6.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="left|center" android:id="@id/img_1x1" android:layout_width="@dimen/htc_list_item_height" android:layout_height="@dimen/htc_list_item_height" android:scaleType="fitXY" />
+    </LinearLayout>
+    <ImageView android:id="@id/htc_list_item_top_round" android:background="@drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/htc_list_item_bottom_round" android:background="@drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/headerBar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarText android:id="@id/headerBarTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <ViewStub android:id="@id/vs_port" android:layout="@layout/landing_navigation_port_stub" android:inflatedId="@id/vs_port_inflated_Id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" />
+    <ViewStub android:id="@id/vs_land" android:layout="@layout/landing_navigation_land_stub" android:inflatedId="@id/vs_land_inflated_Id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" />
+</RelativeLayout>

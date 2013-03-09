@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/title" android:paddingLeft="@com.htc:dimen/title_margin_medium" android:paddingRight="@com.htc:dimen/title_margin_medium" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/title_1line_height" style="?com.htc:titleBarBackgroundStyleSmall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@com.htc:dimen/title_primary_m" android:textColor="@com.htc:color/titleTextColor" android:ellipsize="end" android:id="@id/title_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@com.htc:style/title_text_shadow_style" />
+    <TextView android:textSize="@com.htc:dimen/title_primary_xs" android:textColor="@com.htc:color/titleTextColor" android:gravity="center_vertical" android:id="@id/title_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/title_title_info_title_margin_down_information" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@com.htc:style/title_text_shadow_style" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/common_glance_bkg" android:scaleType="center" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/condition_panel" android:layout_width="@dimen/demo_condition_panel_width" android:layout_height="@dimen/demo_condition_panel_height" android:layout_marginLeft="@dimen/demo_condition_panel_left" android:layout_marginTop="@dimen/demo_condition_panel_top">
+            <TextView android:textSize="@dimen/demo_condition_textsize" android:textColor="@color/weather_text_color" android:gravity="center" android:id="@id/condition_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView android:layout_width="@dimen/demo_arrow_width" android:layout_height="@dimen/demo_arrow_height" android:layout_marginLeft="@dimen/demo_arrow_left" android:layout_marginTop="@dimen/demo_arrow_top" android:src="@drawable/weather_arrow" android:scaleType="center" android:layout_toRightOf="@id/condition_panel" />
+        <TextView android:textSize="@dimen/index_textsize" android:textColor="@color/weather_index_color" android:id="@id/index_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/demo_index_top" android:layout_marginRight="@dimen/demo_index_right" android:singleLine="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/demo_margin_top" />
+    </RelativeLayout>
+    <include android:id="@id/title_block" layout="@com.htc:layout/title_1" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/original" android:layout_width="@dimen/scene_selector_gallery_item_width" android:layout_height="@dimen/scene_selector_gallery_item_height" android:scaleType="fitXY" />
+    <ImageView android:id="@id/reflection" android:layout_width="@dimen/scene_selector_gallery_item_width" android:layout_height="@dimen/scene_selector_gallery_item_reflection_height" android:layout_marginTop="1.0px" android:scaleType="fitXY" />
+</LinearLayout>

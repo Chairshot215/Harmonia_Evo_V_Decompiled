@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="53px" hgap="0px" vgap="0px" height="87px" keyTextSize="36px" popupTextSize="45px" totalRows="4" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,5,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" CJKeyBackground="@drawable/sapphire_qwe_cangjei_mode" closeKeyBackground="@drawable/qwerty_close_key">
+    <row>
+        <key codes="113" label="手" hgap="5px" leftEdge="true" />
+        <key codes="119" label="田" />
+        <key codes="101" label="水" />
+        <key codes="114" label="口" />
+        <key codes="116" label="廿" />
+        <key codes="121" label="卜" />
+        <key codes="117" label="山" />
+        <key codes="105" label="戈" />
+        <key codes="111" label="人" />
+        <key codes="112" label="心" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="97" label="日" hgap="31px" leftEdge="true" />
+        <key codes="115" label="尸" />
+        <key codes="100" label="木" />
+        <key codes="102" label="火" />
+        <key codes="103" label="土" />
+        <key codes="104" label="竹" />
+        <key codes="106" label="十" />
+        <key codes="107" label="大" />
+        <key codes="108" label="中" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-56" hgap="6px" width="64px" vgap="1px" height="84px" sticky="true" function="ture" leftEdge="true" iconPreview="@drawable/sapphire_icon_cj2sc_toggle" />
+        <key codes="0x2026" label="…" topLabel="  、" width="57px" popupCharacters="@string/alternates_for_cp_changjei_ex3" accentType="0" alignIndex="0" />
+        <key codes="120" label="難" width="57px" />
+        <key codes="99" label="金" width="57px" />
+        <key codes="118" label="女" width="57px" />
+        <key codes="98" label="月" width="57px" />
+        <key codes="110" label="弓" width="57px" />
+        <key codes="109" label="一" width="57px" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" hgap="1px" width="64px" function="true" rightEdge="true" repeatable="true" />
+    </row>
+    <row>
+        <key codes="-4" width="74px" hgap="6px" function="true" leftEdge="true" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-16" width="64px" hgap="1px" function="true" label="" textScale="90%p" grouped="1" />
+        <key codes="-23" hgap="-64px" width="64px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-64px" width="64px" function="true" label="" textScale="80%p" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="65292" label="，" topLabel="！" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_cp_changjei_ex1" accentType="0" alignIndex="0" />
+        <key codes="32" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" width="153px" xt9idx="30" />
+        <key codes="12290" label="   。" topLabel="？" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_cp_changjei_ex2" accentType="0" alignIndex="0" />
+        <key codes="-2" label="12#" textScale="80%p" width="64px" function="true" hgap="1px" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="10" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" hgap="1px" width="64px" function="true" rightEdge="true" xt9idx="33" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="132" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="133" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

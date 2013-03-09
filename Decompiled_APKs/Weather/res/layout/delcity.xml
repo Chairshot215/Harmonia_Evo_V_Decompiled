@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/title_block" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/title_rearrange" android:layout_width="fill_parent" android:layout_height="wrap_content" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <com.htc.widget.HtcFooter android:id="@id/command_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/rearrange_btn_cancel" />
+        <com.htc.widget.HtcFooterButton android:id="@id/rearrange_btn_done" />
+    </com.htc.widget.HtcFooter>
+    <com.htc.widget.HtcReorderListView android:id="@id/list" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="@com.htc:drawable/common_list_divider" android:layout_above="@id/command_bar" android:layout_below="@id/title_block" />
+</RelativeLayout>

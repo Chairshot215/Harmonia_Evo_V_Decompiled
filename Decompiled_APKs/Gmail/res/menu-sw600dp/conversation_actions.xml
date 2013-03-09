@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_compose_normal_holo_light" android:id="@id/compose" android:title="@string/menu_compose" android:alphabeticShortcut="@string/trigger_compose_char" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_search_holo_light" android:id="@id/search" android:title="@string/menu_search" android:showAsAction="ifRoom|collapseActionView" android:actionLayout="@layout/gmail_actionbar_searchview" />
+    <item android:icon="@drawable/archive" android:id="@id/y_button" android:title="@string/archive" android:alphabeticShortcut="@string/trigger_y_char" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/trash" android:id="@id/delete" android:title="@string/delete" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_labels_holo_light" android:id="@id/change_labels" android:title="@string/menu_change_labels" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_mark_unread_holo_light" android:id="@id/inside_conversation_unread" android:title="@string/mark_unread" android:showAsAction="never" />
+    <item android:id="@id/mark_important" android:title="@string/mark_important" android:showAsAction="never" />
+    <item android:id="@id/mark_not_important" android:title="@string/mark_not_important" android:showAsAction="never" />
+    <item android:id="@id/mute" android:title="@string/mute" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_spam_normal_holo_light" android:id="@id/report_spam" android:title="@string/report_spam" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_refresh_holo_light" android:id="@id/refresh" android:title="@string/refresh" android:alphabeticShortcut="@string/trigger_refresh_char" android:showAsAction="never" />
+    <item android:id="@id/label_options" android:title="@string/menu_manage_labels" android:showAsAction="never" />
+    <item android:icon="@*android:drawable/ic_menu_preferences" android:id="@id/preferences" android:title="@string/menu_preferences" android:showAsAction="never" />
+    <item android:icon="@*android:drawable/ic_menu_help" android:id="@id/help_info_menu_item" android:title="@string/help_and_info" android:showAsAction="never" />
+    <item android:icon="@*android:drawable/ic_menu_send" android:id="@id/feedback_menu_item" android:title="@string/feedback" android:showAsAction="never" />
+</menu>

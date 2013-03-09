@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ss:speechstrategy xmlns:ss="http://www.google.android.marvin.talkback.com/speechstrategy"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.google.android.marvin.talkback.com/speechstrategy speechstrategy.xsd" >
+
+  <!-- Notification shade for Donut -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.server.status.StatusBarService$ExpandedDialog</ss:className>
+    </ss:filter>
+    <ss:metadata>
+      <ss:customVibration>@id/patterns_window_state</ss:customVibration>
+      <ss:customEarcon>@id/sounds_window_state</ss:customEarcon>
+      <ss:queuing>UNINTERRUPTIBLE</ss:queuing>
+    </ss:metadata>
+    <ss:formatter>
+      <ss:template>@string/value_notification_shade_opened</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+</ss:speechstrategy>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="400369464" android:versionName="4.0.2214312727.369464" package="com.htc.htcmailwidgets"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="com.htc.android.mail.permission.READ_ACCOUNT" />    <uses-permission android:name="com.htc.android.mail.permission.WRITE_ACCOUNT" />
+    <uses-permission android:name="com.htc.android.mail.permission.READ_MAIL" />
+    <uses-permission android:name="com.htc.android.mail.permission.WRITE_MAIL" />
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+    <uses-permission android:name="com.htc.android.mail.permission.ACCESS_MAIL_SERVICE" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:description="@com.htc:string/htc_about_company_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <receiver android:label="@string/default_label" android:icon="@drawable/icon" android:name="com.htc.htcmailwidgets.WidgetReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/widget" />
+        </receiver>
+        <uses-library android:name="com.htc.fusion.fx" />
+        <uses-feature android:name="com.htc.android.rosie.widget" />
+        <activity android:theme="@style/no_window_content_overlay" android:name=".MailAccountOption" android:exported="true" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="AccountOption" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.htcmailwidgets/open" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

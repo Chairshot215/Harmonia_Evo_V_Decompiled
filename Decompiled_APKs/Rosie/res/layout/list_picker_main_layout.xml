@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/list_picker_button_bar_container" android:layout_width="fill_parent" android:layout_height="@dimen/choose_sences_button_bar_height" android:layout_alignParentBottom="true">
+        <include android:id="@id/list_picker_button_bar" layout="@com.htc:layout/cmd_bar_2" />
+        <include android:id="@id/list_picker_button_bar_one_button" android:visibility="gone" layout="@com.htc:layout/cmd_bar_1" />
+    </RelativeLayout>
+    <com.htc.widget.HtcListView android:id="@id/picker_list" android:background="#fff2f2f2" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:cacheColorHint="@null" android:divider="@com.htc:drawable/common_divider_items" android:layout_above="@id/list_picker_button_bar_container" android:layout_alignParentTop="true" />
+    <include android:id="@id/list_picker_title_bar" android:layout_alignParentTop="true" layout="@com.htc:layout/title_1" />
+</RelativeLayout>

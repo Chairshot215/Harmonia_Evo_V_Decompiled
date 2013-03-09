@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" parent="@*android:style/Theme" />
+    <style name="Theme.Transparent" parent="@style/Theme">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.Dialog" parent="@*android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.PreloadDialog" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme.DialogNoTitle" parent="@style/Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TextColorWhite" parent="@style/Theme">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Theme.TextColorBlack" parent="@style/Theme">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+</resources>

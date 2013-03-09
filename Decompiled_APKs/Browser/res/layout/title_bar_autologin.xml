@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.browser.AutologinBar android:gravity="center_vertical" android:orientation="vertical" android:background="#fffbf0a0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@*android:color/primary_text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autologin_bar_text" />
+        <Spinner android:id="@id/autologin_account" android:paddingLeft="8.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Light.Spinner" />
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/autologin_close" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/autologin_bar_hide_text" android:layout_weight="1.0" style="@android:style/Widget.Holo.Light.Button" />
+        <ProgressBar android:id="@id/autologin_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" />
+        <Button android:id="@id/autologin_login" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/autologin_bar_login_text" android:layout_weight="1.0" style="@android:style/Widget.Holo.Light.Button" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffdd6826" android:id="@id/autologin_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autologin_bar_error" />
+</com.android.browser.AutologinBar>

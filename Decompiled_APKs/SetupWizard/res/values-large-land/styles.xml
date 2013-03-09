@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WelcomeImageLinearLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="WelcomeImageLandscapeFrame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WelcomeImagePortraitFrame">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WelcomeImageLandscape">
+        <item name="android:visibility">visible</item>
+    </style>
+    <style name="WelcomeImagePortrait">
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

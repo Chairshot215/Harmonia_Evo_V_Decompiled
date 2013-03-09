@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/image" android:layout_width="44.0px" android:layout_height="44.0px" android:layout_marginTop="6.0px" android:layout_centerHorizontal="true" />
+    <TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/label" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0px" android:singleLine="true" android:layout_below="@id/image" android:layout_centerHorizontal="true" style="@com.htc:style/label_title_secondary_xs" />
+</merge>

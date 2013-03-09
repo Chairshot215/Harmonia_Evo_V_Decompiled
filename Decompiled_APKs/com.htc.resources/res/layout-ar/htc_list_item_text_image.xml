@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/txt_1x1" android:paddingLeft="@dimen/htc_list_item_margin_left" android:paddingRight="@dimen/htc_list_item_margin_left" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/list_primary_m" />
+    <ImageView android:id="@id/img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</LinearLayout>

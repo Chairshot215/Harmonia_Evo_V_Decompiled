@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mail="http://schemas.android.com/apk/res/com.htc.android.mail">
+    <ViewStub android:id="@id/stub_land_compose_bar" android:layout="@layout/land_compose_bar" android:inflatedId="@id/land_compose_bar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <com.htc.android.mail.widget.MailFooterBar4Btn android:id="@id/composeFooterBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/land_compose_bar" android:layout_alignParentBottom="true" />
+    <com.htc.android.mail.ReadScreenScrollView android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/composeMain" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_toLeftOf="@id/land_compose_bar" android:layout_above="@id/composeFooterBar">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/contents" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/compose_recipient_block" android:background="@com.htc:drawable/common_app_bkg" layout="@layout/compose_recipient_block" />
+            <ViewStub android:id="@id/compose_attachment_layout" android:layout="@layout/compose_attachment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/compose_activity_meeting" android:layout="@layout/compose_activity_meeting" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <EditText android:textSize="@com.htc:dimen/list_body_unread_l" android:gravity="top|left|center" android:id="@id/body_text" android:paddingLeft="@dimen/edit_text_padding_compose_body_horizontal" android:paddingTop="@dimen/edit_text_padding_compose_body_vertical" android:paddingRight="@dimen/edit_text_padding_compose_body_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/compose_body_text_height" android:autoText="true" android:textCursorDrawable="@null" style="@com.htc:style/list_primary_s" />
+            <ViewStub android:id="@id/compose_activity_quoted_bar" android:layout="@layout/compose_activity_quoted_bar" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" />
+            <ViewStub android:id="@id/compose_activity_quoted_text" android:layout="@layout/compose_activity_quoted_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/compose_activity_webview_container" android:layout="@layout/compose_activity_webview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.htc.android.mail.ReadScreenScrollView>
+</RelativeLayout>

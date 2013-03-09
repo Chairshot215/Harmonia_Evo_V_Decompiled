@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/name_entry" android:nextFocusUp="@id/cvc_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/name" android:singleLine="true" android:inputType="textPersonName|textCapWords" />
+    <EditText android:id="@id/first_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/first_name" android:singleLine="true" android:inputType="textPersonName|textCapWords" />
+    <EditText android:id="@id/last_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/last_name" android:singleLine="true" android:inputType="textPersonName|textCapWords" />
+    <Spinner android:id="@id/country" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+    <include android:id="@id/address_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" layout="@layout/address_layout" />
+    <EditText android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/phone_number" android:singleLine="true" android:inputType="phone" />
+    <EditText android:id="@id/email_address" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/email_address" android:singleLine="true" android:inputType="textEmailAddress" />
+</merge>

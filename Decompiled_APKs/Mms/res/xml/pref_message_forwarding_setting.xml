@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_msg_forward_category" android:key="pref_key_msg_forwarding">
+        <com.android.mms.util.CForwardPreference android:persistent="true" android:title="@string/pref_msg_forward_phone" android:key="pref_key_msg_forwarding_phone" />
+        <com.android.mms.util.CForwardPreference android:persistent="true" android:title="@string/pref_msg_forward_email" android:key="pref_key_msg_forwarding_email" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

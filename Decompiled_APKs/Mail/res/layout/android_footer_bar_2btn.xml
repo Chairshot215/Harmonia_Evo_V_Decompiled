@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/android_footer_bar_2btn" android:background="@*android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@com.htc:dimen/button_primary_m" android:textColor="@com.htc:color/black_text_white_focused" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/footer_bar_btn_1" android:background="?com.htc:attr_common_button_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/cmd_bar_two_btn_margin" android:singleLine="true" android:layout_weight="2.0" />
+    <Button android:textSize="@com.htc:dimen/button_primary_m" android:textColor="@com.htc:color/black_text_white_focused" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/footer_bar_btn_2" android:background="?com.htc:attr_common_button_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/cmd_bar_two_btn_margin" android:layout_marginRight="@com.htc:dimen/cmd_bar_two_btn_margin" android:singleLine="true" android:layout_weight="2.0" />
+</LinearLayout>

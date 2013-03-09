@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.HtcListView" parent="@*android:style/Widget.AbsListView">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@*android:color/white</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">@com.htc:drawable/common_divider_items</item>
+    </style>
+    <style name="ListViewStyle" parent="@*android:style/Widget.AbsListView">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@*android:color/white</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">@com.htc:drawable/common_divider_items</item>
+    </style>
+    <style name="Preview" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Activity</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="shining_title_bar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="htc_standard_button_style">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@com.htc:color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@com.htc:drawable/common_b_button</item>
+        <item name="android:layout_width">148.0px</item>
+        <item name="android:layout_height">68.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@com.htc:color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="Alert" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

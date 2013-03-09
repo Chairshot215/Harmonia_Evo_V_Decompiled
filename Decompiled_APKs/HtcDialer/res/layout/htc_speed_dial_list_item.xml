@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <FrameLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="@dimen/list_view_asset_size" android:layout_height="@dimen/list_view_asset_size" android:layout_marginLeft="@com.htc:dimen/htc_list_item_image_icon_left_margin" android:layout_marginRight="@dimen/list_view_photo_margin_right">
+        <TextView android:textColor="@com.htc:color/primary_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_loc" android:layout_width="@dimen/list_view_asset_size" android:layout_height="@dimen/list_view_asset_size" style="@com.htc:style/list_primary_xl" />
+    </FrameLayout>
+    <com.android.htcdialer.widget.DialerListItem2LineText android:id="@com.htc:id/text_view" />
+</com.htc.widget.HtcListItem>

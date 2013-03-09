@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/self_timer_indicator_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/self_timer_indicator_top_margin" android:layout_marginRight="@dimen/self_timer_indicator_right_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/self_timer_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/record_without_audio_indicator_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/record_without_audio_indicator_top_margin" android:layout_marginRight="@dimen/record_without_audio_indicator_right_margin" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/record_without_audio_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/remaining_counter_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/remaining_counter_right_margin" android:layout_marginBottom="@dimen/remaining_counter_bottom_margin" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/remaining_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/text_style_remaining_counter_text" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

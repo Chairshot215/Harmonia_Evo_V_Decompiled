@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/guided_tours_basic_setup" android:key="basic_setup">
+        <com.htc.android.htcsetupwizard.activity.VideoPreference android:key="device_navigation" />
+        <com.htc.android.htcsetupwizard.activity.VideoPreference android:key="calling_messaging" />
+        <com.htc.android.htcsetupwizard.activity.VideoPreference android:key="email_setup" />
+        <com.htc.android.htcsetupwizard.activity.VideoPreference android:key="wifi_bluetooth" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/preview_item_decorflow_image_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/decorflow_item_image" android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="@dimen/preview_item_decorflow_image_height" android:scaleType="fitXY" />
+    <TextView android:gravity="center" android:id="@id/item_loading_text" android:background="@drawable/htchub_default_panel_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/preview_item_decorflow_image_height" android:text="@string/text_loading" style="@style/preview_empty_text" />
+    <ImageView android:gravity="center" android:id="@id/decorflow_item_image_mirror" android:background="@*android:color/black" android:layout_width="fill_parent" android:layout_height="@dimen/preview_item_decorflow_image_mirror_height" android:scaleType="fitXY" />
+</LinearLayout>

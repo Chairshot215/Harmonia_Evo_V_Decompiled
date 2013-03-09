@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/download_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/download" style="@style/DetailsPage_Button" />
+    <Button android:id="@id/uninstall_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/uninstall" style="@style/DetailsPage_Button" />
+    <Button android:id="@id/update_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/update" style="@style/DetailsPage_Button" />
+    <Button android:id="@id/launch_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/open" style="@style/DetailsPage_Button" />
+    <Button android:id="@id/try_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/sample" style="@style/DetailsPage_Button" />
+    <Button android:id="@id/buy_button2" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/buy" style="@style/DetailsPage_BuyButton" />
+    <Button android:id="@id/buy_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginRight="0.0dip" android:minWidth="@dimen/details_button_minwidth" android:text="@string/buy" style="@style/DetailsPage_BuyButton" />
+</merge>

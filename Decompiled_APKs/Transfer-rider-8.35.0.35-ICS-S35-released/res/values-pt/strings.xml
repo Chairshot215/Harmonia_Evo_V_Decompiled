@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">A limpar dados...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">A desligar Bluetooth...</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"Poderá ter de desemparelhar este telefone de %s. 
+Prima OK para sair e tentar novamente mais tarde."</string>
+    <string name="UI_MSGBOX_BTN_BACK">Anterior</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">Cancelar</string>
+    <string name="UI_MSGBOX_BTN_NO">Não</string>
+    <string name="UI_MSGBOX_BTN_OK">OK</string>
+    <string name="UI_MSGBOX_BTN_QUIT">Sair</string>
+    <string name="UI_MSGBOX_BTN_RESUME">Retomar</string>
+    <string name="UI_MSGBOX_BTN_SETTING">Definição</string>
+    <string name="UI_MSGBOX_BTN_YES">Sim</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">Transferir não pode ligar Bluetooth, consulte as definições sem fios.</string>
+    <string name="UI_MSGBOX_CONN_FAILED">Prima para Retomar ou tentar novamente ou Cancelar para sair.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">Dados em duplicado</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">Já importou %1$s de %2$s. Podem ser gerados registos em duplicado.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">Se o seu telefone antigo não for encontrado, certifique-se que está detectável.</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">Todo o tipo de dados de disponível em %s foi importado.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"Para permitir a transferência de dados, desactive a encriptação/palavra-passe no seu blackberry e depois toque em “OK”.
+O caminho típico é Opções>Opções de segurança>Encriptação/Palavra-passe"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">Tem a certeza que deseja sair?</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">Os dados importados de %s serão limpos. Tem a certeza que deseja sair?</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">Para importar novamente de %s, primeiro seleccione e limpe os dados deste telefone.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">Todos os dados do tipo seleccionado serão eliminados deste telefone, excepto contactos Gmail e Exchange.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">Todos os dados do tipo seleccionado serão eliminados deste tablet, excepto contactos Gmail e Exchange.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">Para importar novamente de %s, primeiro seleccione e limpe os dados deste tablet.</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">Tem de reiniciar %s ententar novamente mais tarde.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">Poderá ter de reiniciar este telefone e o seu telefone antigo e tentar novamente mais tarde.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">Poderá ter de reiniciar este tablet e o seu telefone antigo e tentar novamente mais tarde.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">Falhou a transferência</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">Falhou a ligação</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">Eliminar</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">Falhou o emparelhamento</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">Falhou o pedido</string>
+    <string name="ANDROID_TIPS_1">"1. Seleccione \"menu\" > \"Definições\" > \"Sem fios e redes\"
+
+2. Marque \"Bluetooth\"
+
+3. Seleccione \"Definições Bluetooth\" 
+
+4. Marque \"Visível\""</string>
+    <string name="ANDROID_TIPS_2">"1. Aceda ao Ecrã de Aplicações > “Definições” > “Sem fios e redes”
+
+2. Seleccione “Definições de Bluetooth”
+
+3. Marque “Bluetooth”
+
+4. Marque “Visível”"</string>
+    <string name="ANDROID_TIPS_3">"1. Aceda ao Ecrã de Aplicações > \"Definições\" > \"Sem fios e redes\"
+
+2. Seleccione \"Definições de Bluetooth\" 
+
+3. Marque “Bluetooth”
+
+4. Marque \"Visível\""</string>
+    <string name="APP_TIPS_1">"1. Seleccione Menu > Definições do telefone > Geral.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Fique no ecrã de definições Bluetooth."</string>
+    <string name="HTC_TIPS_1">"1. Aceda ao ecrã Principal.
+
+2. Toque em Iniciar > Definições > Conectividade.
+
+3. Seleccione Bluetooth.
+
+4. Seleccione o separador Modo.
+
+5. Ligar Bluetooth.
+
+6. Seleccione Tornar este dispositivo visível a outros dispositivos."</string>
+    <string name="HTC_TIPS_2">"1. Aceda ao ecrã Principal.
+
+2. Toque em Iniciar > Definições > Conectividade > Bluetooth.
+
+3. Seleccione Bluetooth.
+
+4. Ligar Bluetooth.
+
+5. Defina Visibilidade como Ligado."</string>
+    <string name="HTC_TIPS_3">"1. Aceda ao ecrã Principal.
+
+2. Toque em Iniciar > Definições > Conectividade > Bluetooth.
+
+3. Seleccione Bluetooth.
+
+4. Ligar Bluetooth.
+
+5. Defina Visibilidade como Ligado."</string>
+    <string name="HTC_TIPS_4">"1. Aceda ao ecrã Principal.
+
+2. Toque em Iniciar > Definições > Controlos sem fios.
+
+3. Ligar Bluetooth.
+
+4. Toque na parte esquerda do botão Bluetooth.
+
+5. Toque em Avançado.
+
+6. Seleccione o separador Modo.
+
+7. Seleccione Tornar este dispositivo visível a outros dispositivos."</string>
+    <string name="HTC_TIPS_5">"1. Seleccione \"Iniciar\" > \"Ferramentas\" > \"Definições\" 
+
+2. Seleccione \"Controlos sem fios\" > \"Bluetooth\"
+
+3. Seleccione \"Advançado\"
+
+4. Seleccione o separador \"Modo\"
+
+5. Marque \"Ligar Bluetooth\" e \"Tornar este dispositivo visível para outros dispositivos\""</string>
+    <string name="HTC_TIPS_6">"1. Seleccione \"Iniciar\" > \"Definições\" > \"Menu\" > \"Todas as Definições\"
+
+2. Seleccione \"Bluetooth\" e ligue-o
+
+3. Seleccione o separador de rodas dentadas
+
+4. Seleccione o ícone telescópio > “Sempre visível\""</string>
+    <string name="HTC_TIPS_7">"1. No ecrã Iniciar, toque em \"→\".
+
+2. Toque em Definições > Bluetooth.
+
+3. Ligar Bluetooth."</string>
+    <string name="HTC_TIPS_8">"1. Seleccione \"Iniciar\" > \"Ferramentas\" > \"Definições\"
+
+2. Clique em \"Menu\" > \"Todas as Definições\"
+
+3. Seleccione Bluetooth
+
+4. Seleccione o separador \"Modo\"
+
+5. Ligue Bluetooth
+
+6. Marque \"Tornar este dispositivo visível a outros dispositivos\""</string>
+    <string name="KYO_TIPS_1">"1. Select Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Select On/Off \"On Visible\"
+
+3. Select \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Select BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. Seleccione Menu > Definições > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Seleccione Definições.
+
+5. Defina a Visibilidade do meu telefone como Visível a todos."</string>
+    <string name="LGG_TIPS_2">"%s1. Select Menu > \"Settings\" > \"Connectivity\" 
+
+2. Select \"Bluetooth\"
+
+3. Select Bluetooth \"on\"
+
+4. Select \"Bluetooth settings\" 
+
+5. Select My visibility \"show\""</string>
+    <string name="LGG_TIPS_3">"%s1. Seleccione Menu > Definições > Bluetooth.
+
+2. Ligue o Bluetooth.
+
+3. Defina Visibilidade como Sempre Visível."</string>
+    <string name="LGG_TIPS_4">"%s1. Seleccione Menu e clique no último separador.
+
+2. Seleccione Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Seleccione Definições.
+
+5. Defina a Visibilidade do meu dispositivo como Visível."</string>
+    <string name="LGG_TIPS_5">"1. Seleccione Menu > Definições e ferramentas > Menu Bluetooth.
+
+2. Defina Bluetooth como Ligar.
+
+3. Seleccione Opções > Modo de visibilidade > Ligado."</string>
+    <string name="MOT_TIPS_1">"%s1. Seleccione Menu > Definições/ferramentas> Definições.
+
+2. Marque Bluetooth.
+
+3. Seleccione Energia Bluetooth.
+
+4. Ligue.
+
+5. Seleccione Definir visibilidade.
+
+6. Seleccione sempre."</string>
+    <string name="MOT_TIPS_10">"1. Seleccione Menu principal > Bluetooth.
+
+2. Seleccione Configurar.
+
+3. Defina Alterar Energia como ligado.
+
+4. Seleccione Anterior.
+
+5. Seleccione Encontrar-me > detectável: 3 minutos."</string>
+    <string name="MOT_TIPS_11">"%s1. Seleccione Menu > “Definições” > “Ligação”.
+
+2. Seleccione “Ligação Bluetooth”.
+
+3. Seleccione “Configurar”.
+
+4. Defina “Alterar Energia” como ligada.
+
+5. Seleccione “Anterior”.
+
+6. Seleccione “Encontrar-me” > “Visível:3 minutos”."</string>
+    <string name="MOT_TIPS_12">"%s1. Seleccione Menu > “Definições”
+
+2. Seleccione “Ligações”
+
+3. Seleccione “Bluetooth”
+
+4. Seleccione \"Opção\" > \"Gerir\" > \"Configurar Bluetooth\"
+
+5. Seleccione Energia Bluetooth “ligada”
+
+6. Seleccione “Anterior”
+
+7. Seleccione a “Opção\" > Visível: Ligada durante 3 minutos"</string>
+    <string name="MOT_TIPS_2">"%s1. Seleccione Menu > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth."</string>
+    <string name="MOT_TIPS_3">"%s1. Seleccione Menu principal > Definições.
+
+2. Seleccione Ligação Bluetooth.
+
+3. Seleccione Configurar.
+
+4. Defina Alterar Energia como ligado.
+
+5. Seleccione Anterior.
+
+6. Seleccione Encontrar-me > detectável: 3 minutos."</string>
+    <string name="MOT_TIPS_4">"%s1. Seleccione Menu principal > Definições e Ferramentas.
+
+2. Seleccione Bluetooth.
+
+3. Defina Configurar como Ligado.
+
+4. Defina Modo de visibilidade como Ligado.
+
+5. Seleccione Detectável em 3 minutos."</string>
+    <string name="MOT_TIPS_5">"1. Seleccione Menu > DEFINIÇÕES E FERRAMENTAS.
+
+2. Seleccione Menu Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Seleccione Opções.
+
+5. Defina Modo de visibilidade como Ligado."</string>
+    <string name="MOT_TIPS_6">"1. Select Tools >Bluetooth
+
+2. Select Options>Settings
+
+3. Select Bluetooth Power \"on\"
+
+4. Select Device Visibility \"Always Visible\""</string>
+    <string name="MOT_TIPS_7">"1. Select Menu >\"Settings &amp; Tools\"
+
+2. Select \"Bluetooth\"
+
+3. Select \"On\"
+
+4. Select \"Settings\" > \"Discovery Mode\"
+
+5. Select \"On\""</string>
+    <string name="MOT_TIPS_8">"1. Seleccione Menu > DEFINIÇÕES E FERRAMENTAS.
+
+2. Seleccione Menu Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Seleccione Definições.
+
+5. Defina Modo de visibilidade como Ligado."</string>
+    <string name="MOT_TIPS_9">"1. Select Menu > \"Settings\"
+
+2. Select \"Connection\"
+
+2. Select \"Bluetooth Link\"
+
+2. Select \"Setup\"
+
+3. Select Change Power \"On\"
+
+4. Select \"Back\"
+
+5. Select \"Find Me\" Discoverable:3 Minutes"</string>
+    <string name="NOK_TIPS_1">"1. Seleccione Menu > Definições > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Defina a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_10">"1. Seleccione Menu > Definições.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Seleccione a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_11">"1. Seleccione Menu > Ferramentas > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Defina a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_12">"1. Seleccione Menu > Painel de controlo > Ligar.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Defina a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_13">"1. Select Menu > \"Settings\" > \"Settings\" > \"Connection\"
+
+ 2. Select \"Bluetooth\"
+
+3. Select Bluetooth \"On\"
+
+4. Select My phone's visibility \"Shown to all\""</string>
+    <string name="NOK_TIPS_14">"1. Seleccione Menu > “Definições” > “Ligação”.
+
+2. Seleccione “Bluetooth”.
+
+3. Ligue o Bluetooth.
+
+4. Defina \"Visibilidade do dispositivo\" como \"Sempre Visível\"."</string>
+    <string name="NOK_TIPS_15">"1. Seleccione \"Menu\" > \"Definições\" > \"Conectividade\".
+
+2. Seleccione “Bluetooth”.
+
+3. Ligue o Bluetooth.
+
+4. Defina \"Visibilidade do dispositivo\" como \"Mostrar a todos\"."</string>
+    <string name="NOK_TIPS_2">"1. Seleccione Menu > Ferramentas.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Defina a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_4">"1. Seleccione Menu > Definições > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Defina a Visibilidade do meu telefone como Permanentemente visível."</string>
+    <string name="NOK_TIPS_5">"1. Seleccione Menu > Ligar.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Seleccione a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_51">"%s1. Seleccione Menu > Ligar.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Seleccione a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_6">"1. Select Menu > \"Settings\" > \"Connectivity\" 
+
+2. Select \"Bluetooth\"
+
+3. Select Bluetooth \"On\"
+
+4. Select My phone's visibility \"Permanent visibil...\""</string>
+    <string name="NOK_TIPS_7">"1. Select Menu > \"Settings\" > \"Connectivity\" 
+
+2. Select \"Bluetooth\"
+
+3. Select Bluetooth \"On\"
+
+4. Select My phone's visibility \"Permanent visibil.\""</string>
+    <string name="NOK_TIPS_8">"1. Seleccione Menu > Definições > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Seleccione Definições de Bluetooth.
+
+5. Defina a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="NOK_TIPS_9">"1. Seleccione Menu > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Ligue o Bluetooth.
+
+4. Defina a Visibilidade do meu telefone como Mostrar a todos."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">Outros</string>
+    <string name="OTHER_PHONE_General">"Pode activar o Bluetooth no seu telefone não suportado:
+
+1. Aceda ao ecrã principal
+
+2. Seleccione menu > definições
+
+3. Seleccione ligação > Definição Bluetooth
+
+4. Ligar Bluetooth
+
+5. Seleccione Visibilidade/Visível > Mostrar a todos
+
+6. Fique no ecrã de definições Bluetooth"</string>
+    <string name="RIM_TIPS_1">"1. Seleccione Definições > Opções > Bluetooth.
+
+2. Clique em Menu.
+
+3. Seleccione Activar Bluetooth.
+
+4. Clique novamente em Menu.
+
+5. Seleccione Opções.
+
+6. Defina Visível como Sim."</string>
+    <string name="RIM_TIPS_2">"1. Seleccione Menu > Gerir Ligações.
+
+2. Marque Bluetooth.
+
+3. Seleccione Opções Bluetooth.
+
+4. Clique novamente em Menu.
+
+5. Seleccione Opções.
+
+6. Defina Visível como Sim."</string>
+    <string name="RIM_TIPS_3">"1. Aceda ao ecrã Todas as aplicações.
+
+2. Seleccione \"Gerir ligações\".
+
+3. Marque “Bluetooth”.
+
+4. Seleccione \"Gerir ligações\".
+
+5. Defina Bluetooth como \"Ligado\".
+
+6. Defina Visível como \"Sim\"."</string>
+    <string name="RIM_TIPS_4">"1. Aceda ao ecrã Todas as aplicações.
+
+2. Seleccione \"Gerir ligações\".
+
+3. Marque “Bluetooth”.
+
+4. Selecione \"Redes e ligações\".
+
+5. Seleccione \"Gerir ligações\".
+
+6. Defina Bluetooth como \"Ligado\".
+
+7. Defina Visível como \"Sim\"."</string>
+    <string name="SAM_TIPS_1">"%s1. Seleccione Menu > Bluetooth.
+
+2. Defina Activação como Ligado.
+
+3. Seleccione a Visibilidade do meu telefone como Ligada."</string>
+    <string name="SAM_TIPS_10">"%s1. Seleccione \"Menu\" > \"Definições\" > \"Definições de rede\" > \"Bluetooth\"
+
+2. Defina Activação como “Ligada”
+
+3. Defina \"Visibilidade do meu telefone\" como \"Ligada\""</string>
+    <string name="SAM_TIPS_11">"%s1. Seleccione \"Menu\" > \"Aplicações\"
+
+2. Seleccione “Bluetooth”
+
+3. Defina \"Activação Bluetooth\"
+
+4. Seleccione “Definições”
+
+5. Defina \"Visibilidade do meu telefone\" como \"Ligada\" e clique em “Guardar”
+
+6. Aceda ao ecrã “Principal”"</string>
+    <string name="SAM_TIPS_12">"%s1. Aceda ao ecrã Principal
+
+2. Seleccione “Definições” > “Conectividade” > “Bluetooth”.
+
+3. Defina Activação como “Ligada”.
+
+4. Defina a Visibilidade do meu telefone como \"ligada\"."</string>
+    <string name="SAM_TIPS_2">"%s1. Seleccione Menu > Aplicações > Bluetooth.
+
+2. Defina Activação como Ligado.
+
+3. Defina a Visibilidade do meu telefone como Ligada."</string>
+    <string name="SAM_TIPS_3">"1. Seleccione Menu > Definições e ferramentas > Menu Bluetooth.
+
+2. Defina Bluetooth como Ligar.
+
+3. Seleccione Opções > Modo de visibilidade > Ligado."</string>
+    <string name="SAM_TIPS_4">"%s1. Seleccione Menu principal > Definições > Bluetooth.
+
+2. Ligue o Bluetooth.
+
+3. Defina Visibilidade como Sempre Visível."</string>
+    <string name="SAM_TIPS_5">"%s1. Seleccione Menu > Definições/ferramentas > Menu Bluetooth.
+
+2. Defina Configurar como Ligado.
+
+3. Defina Configurar modo de visibilidade como Ligado."</string>
+    <string name="SAM_TIPS_6">"%s1. Seleccione Menu > Definições.
+
+2. Seleccione Bluetooth.
+
+3. Defina Bluetooth como Ligar Bluetooth.
+
+4. Defina a Minha visibilidade como Ligado."</string>
+    <string name="SAM_TIPS_7">"%s1. Seleccione Menu > Definições.
+
+2. Seleccione Bluetooth.
+
+3. Defina Activação como Ligado.
+
+4. Defina a Visibilidade do meu telefone como Ligada."</string>
+    <string name="SAM_TIPS_8">"%s1. Seleccione Menu > Ferramentas/Utilitários > Bluetooth.
+
+2. Seleccione Definições de Bluetooth.
+
+3. Seleccione Activar.
+
+4. Defina Modo de visibilidade como Ligado."</string>
+    <string name="SAM_TIPS_9">"%s1. Seleccione Menu > Definições.
+
+2. Seleccione Bluetooth.
+
+3. Defina Activação como Ligado.
+
+4. Defina a Visibilidade do meu telefone como Ligada."</string>
+    <string name="SAN_TIPS_1">"1. Seleccione Menu > Ferramentas > Bluetooth.
+
+2. Seleccione Mais… > Definições > Ligar.
+
+3. Defina Visibilidade como Sempre Visível."</string>
+    <string name="SE_TIPS_1">"%s1. Seleccione Menu > Definições > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Defina Visibilidade como Mostrar telefone."</string>
+    <string name="SE_TIPS_2">"%s1. Seleccione Menu > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Seleccione Opções.
+
+5. Defina Visibilidade como Mostrar telefone."</string>
+    <string name="SE_TIPS_3">"%s1. Seleccione Menu > Ligar.
+
+2. Seleccione Bluetooth.
+
+3. Seleccione Bluetooth como Ligado.
+
+4. Defina Visibilidade como Mostrar telefone."</string>
+    <string name="SE_TIPS_4">"%s1. Seleccione Menu > Definições > Conectividade.
+
+2. Seleccione Bluetooth.
+
+3. Defina Bluetooth como Ligado.
+
+4. Seleccione Opções.
+
+5. Defina Visibilidade como Mostrar telefone."</string>
+    <string name="SE_TIPS_5">"1. Aceda ao ecrã \"Principal\".
+
+2. Toque em \"Iniciar\" > \"Definições\" > \"Bluetooth\".
+
+3. Seleccione o separador Modo.
+
+4. Ligar Bluetooth.
+
+5. Seleccione \"Tornar este dispositivo visível a outros dispositivos.\""</string>
+    <string name="SE_TIPS_6">"%s1. Aceda ao Ecrã de Aplicações > “Definições” > “Conectividade”.
+
+2. Seleccione “Bluetooth”.
+
+3. Defina Bluetooth como \"Ligado\".
+
+4. Defina a visibilidade do telefone como \"Visível\""</string>
+    <string name="SHP_TIPS_1">"%s1. Seleccione \"Menu\" > \"Definições\"
+
+2. Seleccione “Conectividade” > “Bluetooth”
+
+3. Defina Ligar/desligar como \"Ligado\"
+
+4. Seleccione a Visibilidade > “Mostrar o meu telefone”
+
+5. Certifique-se que Bluetooth está Ligado e aceda ao ecrã de espera"</string>
+    <string name="SIM_TIPS">Se apenas tiver um cartão SIM, pode removê-lo deste telefone, insira-o no seu telefone antigo e depois arranque os dois telefones ao mesmo tempo.</string>
+    <string name="app_icon_name">Transferir</string>
+    <string name="app_name">Transferir as minhas coisas</string>
+    <string name="UI_About_Platform">por Android</string>
+    <string name="UI_About_Version">Versão:</string>
+    <string name="UI_BTN_Done">Concluído</string>
+    <string name="UI_BTN_Next">Seg.</string>
+    <string name="UI_BTN_ReScan">Nov. pes.</string>
+    <string name="UI_BTN_Stop">Parar</string>
+    <string name="UI_ERROR_TRY_AGAIN">Erros encontrados.</string>
+    <string name="UI_IMPORTED">importados</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">Importar para conta</string>
+    <string name="UI_IMPORT_PHONE">Importar para este telefone</string>
+    <string name="UI_INSERT_SD_CARD">Introduza um cartão SD</string>
+    <string name="UI_Menu_BTN_About">Acerca de</string>
+    <string name="UI_MOD_BOOKMARK">Marcador</string>
+    <string name="UI_MOD_CALENDAR">Calendário</string>
+    <string name="UI_MOD_PHONEBOOK">Contactos</string>
+    <string name="UI_MOD_PHOTO">Capturas da câmara</string>
+    <string name="UI_MOD_SMS">SMS</string>
+    <string name="UI_MOD_TASK">Tarefa</string>
+    <string name="UI_MOUNT_SD_CARD">Monte o armazenamento USB</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">telefone de origem</string>
+    <string name="UI_OPENOPORT_TEXT">"Verifique %s. 
+Tem de autorizar a ligação."</string>
+    <string name="UI_PHOTO_DESCRIPTION">Ficheiros apenas no telefone</string>
+    <string name="UI_TEXT_AND">e</string>
+    <string name="UI_TEXT_BM_IMPORTED">Marcador importado</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">Marcadores importados</string>
+    <string name="UI_TEXT_CAL_IMPORTED">Entradas de calendário importadas</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">Entradas de calendário importadas</string>
+    <string name="UI_TEXT_DATA">Dados</string>
+    <string name="UI_TEXT_FAQ_PAGE">Visite a página de FAQ.</string>
+    <string name="UI_TEXT_PB_IMPORTED">Contactos importados</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">Contactos importados</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">Captura da câmara importada</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">Capturas da câmara importadas</string>
+    <string name="UI_TEXT_SMS_IMPORTED">SMS importadas</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">SMS importadas</string>
+    <string name="UI_TEXT_TASK_IMPORTED">Tarefa importada</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">Tarefas importadas</string>
+    <string name="UI_TIP_ACCOUNT">Conta</string>
+    <string name="UI_TIP_CONFIRM">Confirme que o código é %1$s em %2$s</string>
+    <string name="UI_TIP_Co_1">Acabou de importar os seus dados de %s para este telefone.</string>
+    <string name="UI_TIP_Co_1_TABLET">Acabou de importar os seus dados de %s para este tablet.</string>
+    <string name="UI_TIP_Co_TBD">"
+Foram armazenados campos de contacto extra no campo notas."</string>
+    <string name="UI_TIP_ImDa_1">Consoante as capacidades do seu antigo telefone, poderá ser possível mover contactos, SMS e eventos do calendário para o seu novo telefone HTC através de Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">Consoante as capacidades do seu antigo telefone, poderá ser possível mover contactos, SMS e eventos do calendário para o seu novo tablet HTC através de Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">Consoante as capacidades do seu antigo telefone, poderá ser possível mover contactos e eventos do calendário para o seu novo telefone HTC através de Bluetooth.</string>
+    <string name="UI_TIP_ImDa_2">Toque em \"Seguinte\" para começar.</string>
+    <string name="UI_TIP_ImDa_35">Consoante as capacidades do seu antigo telefone, poderá ser possível mover contactos e outros dados para o seu novo telefone HTC através de Bluetooth.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">Consoante as capacidades do seu antigo telefone, poderá ser possível mover contactos e outros dados para o seu novo tablet HTC através de Bluetooth.</string>
+    <string name="UI_TIP_Info_1">Foram encontrados erros nos %s. Tente novamente mais tarde.</string>
+    <string name="UI_TIP_Info_2">Tente novamente mais tarde.</string>
+    <string name="UI_TIP_Info_UnMatchPhone">Encontrados erros em %s porque o modelo de telefone não foi encontrado.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">Embora outros telefones %s não estejam na lista suportada, Transferir pode tentar detectar o seu telefone antigo e testá-lo para ver se os dados podem ser transferidos.</string>
+    <string name="UI_TIP_Language">PTG</string>
+    <string name="UI_TIP_NoSuMo_1">%s não é suportado. Não foi possível importar dados.</string>
+    <string name="UI_TIP_NoSuMo_2">Prima \"Concluído\" para sair.</string>
+    <string name="UI_TIP_ON">Em %s:</string>
+    <string name="UI_TIP_PaWi">Introduza %1$s em %2$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">%s guardado na sua conta será sincronizado quando iniciar a sessão no serviço.</string>
+    <string name="UI_TIP_Re_TodoNotSupport">Não são importados eventos a fazer e tarefas.</string>
+    <string name="UI_TIP_SelDT_2">Alguns campos poderão não ser transferidos de %s devido à falta de suporte total Bluetooth.</string>
+    <string name="UI_TIP_TUONBL">Ligar Bluetooth</string>
+    <string name="UI_TIP_TuOnBl_2">Toque em \"Seguinte\" quando tiver ligado o Bluetooth.</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">Limpar dados neste telefone</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">Limpar dados neste tablet</string>
+    <string name="UI_TITLE_CONGRADULATIONS">Parabéns</string>
+    <string name="UI_TITLE_CONN_WITH">A ligar com %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">Activar Bluetooth em %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">Activar o Bluetooth no seu telefone antigo</string>
+    <string name="UI_TITLE_IMPORTING">A transferir %s</string>
+    <string name="UI_TITLE_INFO">Informação</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">Outros telefones %s</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">A carregar configuração do telefone</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">Modelo não suportado</string>
+    <string name="UI_TITLE_PAIRING">A emparelhar...</string>
+    <string name="UI_TITLE_PAIRING_WITH">A emparelhar com %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">A inquirir modelo do telefone</string>
+    <string name="UI_TITLE_SCANNING">A pesquisar...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">A pesquisar telefones</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">Seleccione os tipos de dados a importar</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">Seleccione o seu telefone antigo</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">Seleccione o modelo</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">Seleccione o seu telefone</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">Outros telefones %s não são suportados. Toque em \"Concluído\" para sair.</string>
+</resources>

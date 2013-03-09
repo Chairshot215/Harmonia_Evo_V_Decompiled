@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">إدارة التنزيل</string>
+    <string name="permlab_downloadManager">الوصول إلى إدارة التنزيل.</string>
+    <string name="permdesc_downloadManager">للسماح للتطبيق بالدخول إلى إدارة التنزيل واستخدامها لتنزيل الملفات. يمكن للتطبيقات الضارة استخدام هذا لتعطيل التنزيلات والدخول إلى المعلومات الخاصة.</string>
+    <string name="permlab_downloadManagerAdvanced">الوظائف المتقدمة لإدارة التنزيل.</string>
+    <string name="permdesc_downloadManagerAdvanced">للسماح للتطبيق بالدخول إلى وظائف إدارة التنزيل المتقدمة. يمكن للتطبيقات الضارة استخدام هذا لتعطيل التنزيلات والدخول إلى المعلومات الخاصة.</string>
+    <string name="permlab_downloadCompletedIntent">إرسال إخطارات التنزيل.</string>
+    <string name="permdesc_downloadCompletedIntent">للسماح للتطبيق بإرسال تنبيهات عن التنزيلات المكتملة. يمكن للتطبيقات الضارة استخدام هذا لإرباك التطبيقات الأخرى التي تنزل الملفات.</string>
+    <string name="permlab_seeAllExternal">عرض كل التنزيلات الموجودة على بطاقة SD</string>
+    <string name="permdesc_seeAllExternal">للسماح للتطبيق بمشاهدة جميع التنزيلات على بطاقة SD، بغض النظر عن التطبيق الذي نزلها.</string>
+    <string name="permlab_downloadCacheNonPurgeable">حجز مساحة في التخزين المؤقت للتنزيل</string>
+    <string name="permdesc_downloadCacheNonPurgeable">للسماح للتطبيق بتنزيل الملفات إلى ذاكرة التخزين المؤقت للتنزيل والتي لا يمكن حذفها تلقائيًا عندما تكون إدارة التنزيل في حاجة إلى مساحة أكبر.</string>
+    <string name="permlab_downloadWithoutNotification">تنزيل الملفات دون إخطار</string>
+    <string name="permdesc_downloadWithoutNotification">للسماح للتطبيق بتنزيل ملفات من خلال إدارة التنزيل بدون عرض أية تنبيهات للمستخدم.</string>
+    <string name="permlab_accessAllDownloads">الوصول إلى كل تنزيلات النظام</string>
+    <string name="permdesc_accessAllDownloads">للسماح للتطبيق بعرض وتعديل جميع التنزيلات التي بدأت من خلال أي تطبيق على النظام.</string>
+    <string name="download_unknown_title">&lt;بدون عنوان></string>
+    <string name="notification_filename_separator">"، "</string>
+    <string name="notification_filename_extras">" و%d تنزيلات إضافية"</string>
+    <string name="notification_download_complete">اكتمل التنزيل.</string>
+    <string name="notification_download_failed">أخفق التنزيل.</string>
+    <string name="notification_need_wifi_for_size">يتطلب حجم التنزيل شبكة Wi-Fi.</string>
+    <string name="notification_paused_in_background">متوقف مؤقتًا في الخلفية.</string>
+    <string name="wifi_required_title">عملية التنزيل كبيرة جدًا على شبكة المحمول</string>
+    <string name="wifi_required_body" formatted="false">"يجب استخدام Wi-Fi لإكمال هذا التنزيل البالغ حجمه %s  . 
+
+المس %s  لبدء هذا التنزيل في المرة القادمة التي تتصل فيها بشبكة Wi-Fi."</string>
+    <string name="wifi_recommended_title">هل تريد وضعه في قائمة الانتظار للتنزيل لاحقًا؟</string>
+    <string name="wifi_recommended_body" formatted="false">"قد يؤدي بدء هذا التنزيل البالغ حجمه %s  الآن إلى إنقاص عمر البطارية و/أو ينتج عنه استخدام زائد لاتصال بيانات الجوال، وهو ما يمكنه أن يؤدي إلى تحصيل مشغّل شبكة الجوال بعض الرسوم بناء على خطة البيانات الخاصة بك.
+
+ المس %s لبدء هذا التنزيل في المرة القادمة التي تتصل فيها بشبكة WiFi."</string>
+    <string name="button_queue_for_wifi">قائمة انتظار</string>
+    <string name="button_cancel_download">إلغاء</string>
+    <string name="button_start_now">البدء الآن</string>
+    <string name="low_download_storage_view_title">سعة تخزين غير كافية</string>
+    <string name="low_download_storage_view_text">لا توجد مساحة تخزين كافية للتنزيل.</string>
+    <string name="notification_paused_no_wifi">" (توقف مؤقت)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

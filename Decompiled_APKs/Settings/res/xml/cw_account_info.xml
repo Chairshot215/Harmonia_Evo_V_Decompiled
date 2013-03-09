@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/cw_account_info_titlebar" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreference android:title="@string/cw_account_name_title" android:key="mac_address" android:summary="@string/cw_account_name_summary" style="@style/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreference android:title="@string/cw_account_server_title" android:key="mac_address" android:summary="@string/cw_account_server_summary" style="@style/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreference android:title="@string/cw_account_port_title" android:key="mac_address" android:summary="@string/cw_account_port_summary" style="@style/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreference android:title="@string/cw_account_proxy_server_title" android:key="mac_address" android:summary="@string/cw_account_proxy_server_summary" style="@style/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreference android:title="@string/cw_account_proxy_port_title" android:key="mac_address" android:summary="@string/cw_account_proxy_port_summary" style="@style/preferenceInformationStyle" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/wag_info_titlebar" android:key="wag_ip_title" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/user_defined_ip_title" android:key="user_defined_ip" />
+    <com.htc.preference.HtcEditTextPreference android:title="@string/wag_ip_title" android:key="wag_ip" android:summary="@string/wag_ip_summary" android:dependency="user_defined_ip" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="setupWizardOuterFrame">
+        <item name="android:paddingLeft">@dimen/screen_margin_sides</item>
+        <item name="android:paddingTop">@dimen/screen_margin_top</item>
+        <item name="android:paddingRight">@dimen/screen_margin_sides</item>
+        <item name="android:paddingBottom">@dimen/screen_margin_bottom</item>
+    </style>
+    <style name="WelcomeOuterFrame" parent="@style/setupWizardOuterFrame">
+        <item name="android:paddingTop">@dimen/welcome_screen_margin_top</item>
+    </style>
+    <style name="WelcomeTitle">
+        <item name="android:textSize">40.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+    <style name="Title">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+    </style>
+    <style name="DescriptionText">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/description_margin_sides</item>
+        <item name="android:layout_marginTop">@dimen/description_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/description_margin_sides</item>
+    </style>
+    <style name="Button">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:minWidth">208.0dip</item>
+    </style>
+    <style name="TopDivider">
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">3.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:layout_marginBottom">7.0dip</item>
+    </style>
+    <style name="PreferenceDivider" parent="@style/TopDivider">
+        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+    </style>
+    <style name="BottomDivider" parent="@style/TopDivider">
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+    </style>
+    <style name="Spinner" parent="@*android:style/Widget.Holo.Spinner">
+        <item name="android:gravity">left|center</item>
+    </style>
+</resources>

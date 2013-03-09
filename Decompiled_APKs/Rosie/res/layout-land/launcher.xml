@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.launcher.DragLayer android:id="@id/drag_layer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.htc.launcher">
+    <com.htc.android.rosie.home.fxcontrol.FxWorkspace android:id="@id/fx_workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.htc.launcher.Workspace android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:defaultScreen="3" launcher:cellCountX="@integer/workspace_screen_cl_short_axis_cells" launcher:cellCountY="@integer/workspace_screen_cl_long_axis_cells">
+        <include android:id="@id/cell1" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell2" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell3" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell4" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell5" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell6" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell7" layout="@layout/workspace_screen" />
+        <include android:id="@id/cell8" layout="@layout/workspace_screen" />
+    </com.htc.launcher.Workspace>
+    <com.htc.launcher.widget.FunctionBar android:layout_gravity="right|center" android:id="@id/bottombar" android:layout_width="@dimen/launcher_control_height" android:layout_height="fill_parent" />
+    <com.htc.launcher.widget.SlidingDrawer android:id="@id/drawer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:bottomOffset="@dimen/launcher_sd_bottom_offset" android:topOffset="@dimen/launcher_sd_top_offset" android:handle="@id/all_apps" android:content="@id/all_apps_view">
+        <include android:id="@id/all_apps" layout="@com.htc:layout/title_1" />
+        <include android:id="@id/all_apps_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/all_apps_view" />
+    </com.htc.launcher.widget.SlidingDrawer>
+    <include android:layout_gravity="top|center" android:id="@id/search_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/searchbar_height" android:layout_marginTop="@dimen/launcher_sd_top_offset" layout="@com.htc:layout/title_15" />
+    <include android:id="@id/drag_hint_area" layout="@layout/drag_hint" />
+</com.htc.launcher.DragLayer>

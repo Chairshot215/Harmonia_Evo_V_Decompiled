@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="94px" hgap="-1px" vgap="0px" height="76px" totalRows="1" keyTextSize="36px" topLabelTextSize="20px" popupTextSize="40px" keyboardBackground="@drawable/sapphire_land_hwr_background" keyboardPadding="0,6,8,4" functionKeyBackground="@drawable/sapphire_landscape_function_key" commonKeyBackground="@drawable/sapphire_landscape_common_key" closeKeyBackground="@drawable/qwerty_land_close_key">
+    <row>
+        <key codes="-4" icon="@drawable/key_icon_close_sip" hgap="6px" width="105px" iconPreview="@drawable/sapphire_icon_close_sip" function="true" leftEdge="true" />
+        <key codes="-16" function="true" label="" grouped="1" />
+        <key codes="-23" hgap="-94px" width="94px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-94px" width="94px" function="true" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="0xFF0C" label="，" topLabel="！" width="94px" splitSet="1" popupCharacters="！ ，" accentType="0" alignIndex="0" labelOffsetY="-6" />
+        <key codes="0x002C" label="," topLabel="!" width="94px" hgap="-94px" splitSet="2" popupCharacters="! ," accentType="0" alignIndex="0" labelOffsetY="-6" />
+        <key codes="0x002C" label="," topLabel="!" width="94px" hgap="-94px" splitSet="3" popupCharacters="! ," accentType="0" alignIndex="0" labelOffsetY="-6" />
+        <key codes="32" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" showPreview="false" width="194px" xt9idx="3" repeatable="true" />
+        <key codes="0x3002" label="   。" topLabel="？" width="94px" splitSet="1" popupCharacters="？ 。" accentType="0" alignIndex="0" labelOffsetY="-6" />
+        <key codes="0x002E" label="." topLabel="\?" width="94px" hgap="-94px" splitSet="2" popupCharacters="\? ." accentType="0" alignIndex="0" labelOffsetY="-6" />
+        <key codes="0x002E" label="." topLabel="\?" width="94px" hgap="-94px" splitSet="3" popupCharacters="\? ." accentType="0" alignIndex="0" labelOffsetY="-6" />
+        <key codes="-59" iconsource="@string/alternates_for_hwr_multiple_icon" splitSet="1" function="true" iconPreviewsource="@string/alternates_for_hwr_multiple_previewicon" />
+        <key codes="-59" icon="@drawable/key_icon_english" splitSet="2" hgap="-94px" function="true" iconPreview="@drawable/sapphire_icon_english" />
+        <key codes="-59" icon="@drawable/key_icon_number" splitSet="3" hgap="-94px" function="true" iconPreview="@drawable/sapphire_icon_number" />
+        <key codes="-2" label="12#" function="true" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" function="true" xt9idx="5" repeatable="true" />
+        <key codes="10" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" function="true" xt9idx="6" rightEdge="true" />
+    </row>
+    <row height="58px">
+        <key codes="-18" hgap="5px" width="236" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" leftEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_up" iconPreview="@drawable/key_icon_arrow_key_up" />
+        <key codes="-19" hgap="1px" width="237" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_down" iconPreview="@drawable/key_icon_arrow_key_down" />
+        <key codes="-20" hgap="1px" width="237" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" showPreview="false" icon="@drawable/key_icon_arrow_key_left" iconPreview="@drawable/key_icon_arrow_key_left" />
+        <key codes="-21" hgap="1px" width="237" function="true" KeyBG="@drawable/sapphire_keys_dpad_bg_up" rightEdge="true" showPreview="false" icon="@drawable/key_icon_arrow_key_right" iconPreview="@drawable/key_icon_arrow_key_right" />
+    </row>
+</keyboard>

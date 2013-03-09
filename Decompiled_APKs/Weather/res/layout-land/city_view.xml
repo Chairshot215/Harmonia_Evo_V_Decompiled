@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:TodayCondition="http://schemas.android.com/apk/res/com.htc.Weather"
+  xmlns:ForecastDetail="http://schemas.android.com/apk/res/com.htc.Weather">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.Weather.widget.TodayCondition android:id="@id/today_condition" android:visibility="invisible" android:layout_width="@dimen/today_width" android:layout_height="@dimen/today_height" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/hint_textsize" android:textColor="@color/weather_deep_color" android:gravity="center" android:id="@id/no_weather_data_view" android:padding="@dimen/hint_margin" android:visibility="gone" android:layout_width="@dimen/today_width" android:layout_height="@dimen/today_height" android:text="@string/nodatamsg" />
+    <TextView android:textSize="@dimen/hint_textsize" android:textColor="@color/weather_deep_color" android:gravity="center" android:id="@id/download_weather_data_view" android:padding="@dimen/hint_margin" android:visibility="gone" android:layout_width="@dimen/today_width" android:layout_height="@dimen/today_height" android:text="@string/download_data" />
+</merge>

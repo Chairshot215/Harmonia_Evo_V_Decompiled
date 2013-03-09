@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginTop="16.0dip" android:text="@string/invite_instruction" />
+    <MultiAutoCompleteTextView android:state_focused="true" android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="16.0dip" android:minHeight="48.0dip" android:hint="@string/invite_hint" android:minLines="1" android:inputType="textMultiLine|textEmailAddress" />
+</LinearLayout>

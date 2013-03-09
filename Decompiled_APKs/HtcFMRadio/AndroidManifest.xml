@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="200338504" android:versionName="2.0.2213202047.338504" package="com.htc.fm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" />
+    <permission android:name="com.htc.fm.permission.FMRadioService" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="android.permission.ACCESS_FM_RECEIVER" />
+    <uses-permission android:name="com.htc.fm.permission.FMRadioService" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application android:label="@string/fm_app_name" android:icon="@drawable/fm_radio" android:taskAffinity="android.task.fmradio" android:description="@com.htc:string/htc_about_company_name" android:allowTaskReparenting="true" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="fmradioif" android:required="false" />
+        <receiver android:name="MediaButtonIntentReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.bluetooth.avrcp.intent.action.AVRCP_PANEL_OPERATION" />
+            </intent-filter>
+        </receiver>
+        <service android:name="FMRadioService" android:permission="com.htc.fm.permission.FMRadioService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.fm.IFMRadioService" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Launch" android:label="@string/fm_app_name" android:icon="@drawable/fm_radio" android:name="FMRadio" android:taskAffinity="android.task.fmradio" android:launchMode="singleTask" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="htcfm" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.fm.TUNNER_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/fm_app_name" android:name="FMPresetBrowserActivity" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/FMEditTheme" android:label="@string/fm_app_name" android:name="FMPresetEditActivity" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="FMReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

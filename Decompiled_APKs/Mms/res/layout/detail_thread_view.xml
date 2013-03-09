@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/detail_header_bar" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadingLayout" android:background="@*android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@*android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/compose_progressbar_marginRight" style="?android:attr/progressBarStyleSmallInverse" />
+            <TextView android:textSize="@dimen/text_size_primary" android:textColor="#ff000000" android:id="@id/loadingText" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@com.htc:string/common_string_loading" />
+        </LinearLayout>
+        <view android:id="@id/history" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0px" class="com.android.mms.ui.MessageListView" style="@style/htc_listview_style" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/attachment_editor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/detail_header_bar" android:background="@drawable/common_panel_input_base" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/top_contact_bar" layout="@layout/title_5" />
+        <LinearLayout android:id="@id/recipients_subject_linear" android:paddingLeft="@dimen/compose_header_paddingLeft" android:paddingRight="@dimen/compose_header_paddingRight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/subject_bar" android:visibility="gone" android:layout_marginTop="@dimen/compose_header_layout_interval" android:layout_marginBottom="@dimen/compose_header_paddingBottom" style="@style/compose_subject_bar">
+                <com.android.mms.ui.SubjectEditor android:gravity="center_vertical" android:id="@id/subject" android:paddingLeft="@dimen/editor_padding_left" android:paddingTop="@dimen/editor_padding_top" android:paddingRight="@dimen/editor_padding_right" android:paddingBottom="@dimen/editor_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/htc_subject_hint" android:singleLine="true" android:capitalize="sentences" android:autoText="true" style="@com.htc:style/input_default_m" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

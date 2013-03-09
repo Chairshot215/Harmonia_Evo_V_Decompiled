@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/text_item_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/preview_item_label_margin_bottom" android:singleLine="true" style="@style/preview_item_label_text" />
+    <TextView android:gravity="center" android:id="@id/text_item_status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/preview_item_status_text" />
+</LinearLayout>

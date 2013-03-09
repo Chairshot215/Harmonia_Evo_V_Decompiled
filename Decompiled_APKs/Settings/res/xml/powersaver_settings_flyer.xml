@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/powersaver_settings_title" android:key="powersaver_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/powersaver_settings" android:key="powersaver_settings" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/power_efficiency_checkbox_title" android:key="enable_power_efficiency" android:summaryOn="@string/power_efficiency_checkbox_summary" android:summaryOff="@string/power_efficiency_checkbox_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_enable" android:key="powersaver_enable" android:summaryOn="@string/powersaver_enable_summary" android:summaryOff="@string/powersaver_enable_summary" />
+    <com.htc.preference.HtcListPreference android:entries="@array/powersaver_setschedule_list" android:title="@string/powersaver_set_schedule" android:key="powersaver_set_schedule" android:dependency="powersaver_enable" android:dialogTitle="@string/powersaver_set_schedule_dialogtitle" android:entryValues="@array/powersaver_setschedule_value" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_notification" android:key="powersaver_notification" android:dependency="powersaver_enable" android:summaryOn="@string/powersaver_notification_summary" android:summaryOff="@string/powersaver_notification_summary" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/powersaver_setting_text" android:key="powersaver_setting_text" android:summary="@string/powersaver_setting_text_summary" android:dependency="powersaver_enable" android:fragment="com.android.settings.PowersaverListActivity" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/quick_boot_category_text" android:key="quick_boot_category_text" android:order="101" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/enable_fastboot" android:key="enable_fastboot" android:order="102" android:summaryOn="@string/summary_disable_fastboot" android:summaryOff="@string/summary_disable_fastboot" />
+</com.htc.preference.HtcPreferenceScreen>

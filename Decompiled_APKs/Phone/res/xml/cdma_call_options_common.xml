@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/additional_cdma_call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/auto_prepend_title" android:key="button_auto_prepend_key" android:summary="@string/auto_prepend_summary" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/plus_code_dialing_title" android:key="button_plus_code_dialing_key" android:summary="@string/plus_code_dialing_summary">
+        <com.htc.preference.HtcPreferenceCategory android:title="@string/plus_code_dialing_category" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/north_american_dialing" android:key="button_north_american_dialing_key" android:summaryOn="@string/north_american_dialing_summary_on" android:summaryOff="@string/north_american_dialing_summary_off" />
+        <com.android.phone.HtcCdmaEditNumberPreference android:persistent="false" android:singleLine="true" android:title="@string/international_dialing_code" android:key="international_dialing_code_key" android:summary="@string/international_dialing_code_summary" android:dialogTitle="@string/international_dialing_code" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

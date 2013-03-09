@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/chatscreen_container" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:orientation="vertical" android:id="@id/switcher_root" android:background="@drawable/panel_bg_gray_holo_light" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_toLeftOf="@id/message_bar" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true">
+            <view android:id="@id/cv1" android:tag="cv1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.talk.ChatView" />
+            <view android:id="@id/cv2" android:tag="cv2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.talk.ChatView" />
+        </FrameLayout>
+        <include layout="@layout/input_field" />
+    </RelativeLayout>
+</FrameLayout>

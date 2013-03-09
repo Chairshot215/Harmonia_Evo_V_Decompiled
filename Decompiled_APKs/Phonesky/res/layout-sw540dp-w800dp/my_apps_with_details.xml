@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/framed_details_top_banner_height">
+            <com.google.android.finsky.layout.AccountSelectorView android:textSize="@dimen/content_generic_medium_size" android:textColor="@color/white" android:gravity="bottom|left|center" android:layout_gravity="bottom" android:id="@id/account_name" android:background="@drawable/highlight_overlay" android:visibility="gone" finsky:multi_account_drawable="@drawable/spinner_ab_default_holo_dark_single" style="@style/AccountSelector" />
+        </FrameLayout>
+        <View android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        <FrameLayout android:id="@id/list_content" android:background="@color/main_background" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.google.android.finsky.activities.myapps.DocumentView android:id="@id/details_content" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <include layout="@layout/document_view" />
+    </com.google.android.finsky.activities.myapps.DocumentView>
+</LinearLayout>

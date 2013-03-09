@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_dark_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@drawable/white_text_white_focused" android:id="@id/locale" android:paddingLeft="14.0px" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <RadioButton android:id="@id/select" android:paddingRight="8.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

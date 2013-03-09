@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/labelGSMMore"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key" android:summary="@string/sum_fdn">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.FdnSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/tty_mode_title" android:key="button_tty_key" android:defaultValue="false" android:summaryOn="@string/sum_tty_enabled" android:summaryOff="@string/sum_tty_disabled" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_cf_expand_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.GsmUmtsCallForwardOptions" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/call_barring_settings" android:key="button_cb_expand_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.HtcGsmUmtsCallBarringOptions" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.android.phone.CLIRListPreference android:persistent="false" android:entries="@array/clir_display_values" android:title="@string/labelCallerId" android:key="button_clir_key" android:defaultValue="DEFAULT" android:dialogTitle="@string/labelCallerId" android:entryValues="@array/clir_values" />
+    <com.android.phone.CallWaitingCheckBoxPreference android:persistent="false" android:title="@string/labelCW" android:key="button_cw_key" android:summaryOn="@string/sum_cw_enabled" android:summaryOff="@string/sum_cw_disabled" />
+    <com.android.phone.CustomizeCheckBoxPreference android:title="@string/pref_title_cb_enable" android:key="pref_key_cb_enable" android:summaryOn="@string/pref_summary_cb_enable" android:summaryOff="@string/pref_summary_cb_disable" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/pref_title_cb_setting" android:key="pref_key_cb_setting" android:summary="@string/pref_summary_cb_setting">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CellBroadcastSettings" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

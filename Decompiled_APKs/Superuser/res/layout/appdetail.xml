@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/popup_background" android:layout_width="320.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/appdetail_app_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip">
+        <View android:background="@drawable/separator_left" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@drawable/separator_right" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="12.0dip">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0px" android:text="@string/appdetail_access" android:layout_weight="35.0" android:inputType="text" />
+                <View android:layout_width="16.0dip" android:layout_height="fill_parent" />
+                <Spinner android:id="@id/appdetail_access" android:layout_width="0.0px" android:layout_weight="65.0" android:spinnerMode="dialog" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0px" android:text="@string/appdetail_notification" android:layout_weight="35.0" android:inputType="text" />
+                <View android:layout_width="16.0dip" android:layout_height="fill_parent" />
+                <Spinner android:id="@id/appdetail_notifications" android:layout_width="0.0px" android:layout_weight="65.0" android:spinnerMode="dialog" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0px" android:text="@string/appdetail_logging" android:layout_weight="35.0" android:inputType="text" />
+                <View android:layout_width="16.0dip" android:layout_height="fill_parent" />
+                <Spinner android:id="@id/appdetail_logging" android:layout_width="0.0px" android:layout_weight="65.0" android:spinnerMode="dialog" />
+            </TableRow>
+            <TableRow>
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="0.0px" android:text="@string/appdetail_force_user" android:layout_weight="35.0" android:inputType="text" />
+                <View android:layout_width="16.0dip" android:layout_height="fill_parent" />
+                <Spinner android:id="@id/appdetail_force_user" android:layout_width="0.0px" android:layout_weight="65.0" android:spinnerMode="dialog" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="@string/generic_cancel" android:layout_weight="1.0" android:inputType="text" android:onClick="onCancel" />
+        <Button android:textSize="16.0sp" android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="@string/generic_forget" android:layout_weight="1.0" android:inputType="text" android:onClick="onForget" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:layout_width="96.0dip" android:layout_height="48.0dip" android:text="@string/generic_save" android:layout_weight="1.0" android:inputType="text" android:onClick="onSave" />
+    </LinearLayout>
+</LinearLayout>

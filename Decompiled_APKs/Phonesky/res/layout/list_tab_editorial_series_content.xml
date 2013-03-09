@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/main_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.EditorialPageHeader android:orientation="vertical" android:id="@id/header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/content_generic_medium_size" android:ellipsize="end" android:id="@id/header" android:singleLine="true" style="@style/AntennaHeaderText" />
+        <TextView android:textSize="@dimen/content_generic_small_size" android:id="@id/subheader" android:layout_marginTop="-4.0dip" style="@style/AntennaHeaderText" />
+        <View android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        <View android:id="@id/bottom_strip" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    </com.google.android.finsky.layout.EditorialPageHeader>
+    <ListView android:id="@id/bucket_list_view" android:background="@color/main_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@color/main_background" android:divider="@null" android:layout_weight="1.0" />
+</LinearLayout>

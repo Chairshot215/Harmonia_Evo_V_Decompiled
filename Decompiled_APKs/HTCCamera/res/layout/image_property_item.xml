@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/child_view" android:layout_width="fill_parent" android:layout_height="@dimen/image_property_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/icon_title_left_margin" android:layout_marginTop="@dimen/icon_title_top_margin">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_left_margin" style="@style/image_adj_text_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/minus_button_left_margin" android:layout_marginTop="@dimen/button_degree_top_margin">
+        <ImageButton android:id="@id/button_minus" android:layout_width="@dimen/image_property_button_size" android:layout_height="@dimen/image_property_button_size" android:src="@drawable/camera_slider_level_down_rest" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/degree_left_margin">
+            <ImageView android:id="@id/degree" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/index_column" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/image_property_degree_width" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_m2" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/level_m1_left_margin" android:text="@string/property_level_m1" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="center" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/level_0_left_margin" android:text="@string/property_level_0" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="right" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="@dimen/level_p1_right_margin" android:text="@string/property_level_p1" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="right" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_p2" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:id="@id/button_plus" android:layout_width="@dimen/image_property_button_size" android:layout_height="@dimen/image_property_button_size" android:layout_marginLeft="@dimen/degree_left_margin" android:src="@drawable/camera_slider_level_up_rest" />
+    </LinearLayout>
+</LinearLayout>

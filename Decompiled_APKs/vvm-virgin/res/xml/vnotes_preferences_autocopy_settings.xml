@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/preference_carboncopy_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/preference_autocopy_text" android:key="preference_autofwd" android:defaultValue="false" android:summaryOn="@string/preference_autocopy_text_summary_on" android:summaryOff="@string/preference_autocopy_text_summary_off" />
+    <Preference android:title="@string/preference_autocopy_email_address_title" android:key="preference_autofwd_email_address" android:summary="@string/preference_autocopy_email_address_summary" android:dependency="preference_autofwd" />
+    <CheckBoxPreference android:title="@string/preference_audiofile_text" android:key="preference_autofwd_audio" android:dependency="preference_autofwd" android:defaultValue="true" android:summaryOn="@string/preference_audiofile_text_summary_on" android:summaryOff="@string/preference_audiofile_text_summary_off" />
+    <CheckBoxPreference android:title="@string/preference_transcription_text" android:key="preference_autofwd_text" android:dependency="preference_autofwd" android:defaultValue="true" android:summaryOn="@string/preference_transcription_text_summary_on" android:summaryOff="@string/preference_transcription_text_summary_off" />
+</PreferenceScreen>

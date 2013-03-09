@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="26.0px" android:textColor="#ffffffff" android:id="@id/guide_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0px" android:text="@string/calibration_tool_guide_message" />
+        <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/calibration_text" android:background="@drawable/floatwcl_frame_dark" android:paddingLeft="25.0px" android:paddingTop="10.0px" android:paddingRight="25.0px" android:paddingBottom="15.0px" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0px" android:text="@string/pangram" />
+    </LinearLayout>
+    <com.htc.android.htcime.tools.CalibrationView android:id="@id/calibration_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/restart" android:paddingLeft="13.0px" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/calibration_view">
+        <Button android:textSize="26.0px" android:id="@id/restart_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="131.0px" android:minHeight="63.0px" android:text="@com.htc:string/global_action_restart" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

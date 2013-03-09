@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_generic_large_size" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/explorer_button" android:background="@drawable/title_with_highlight" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/explore_artists" android:drawableLeft="@drawable/music_explore" android:drawablePadding="@dimen/explore_button_padding" />
+    <View android:id="@id/explorer_wifi_required" android:background="@color/title_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:alpha="0.7" />
+</merge>

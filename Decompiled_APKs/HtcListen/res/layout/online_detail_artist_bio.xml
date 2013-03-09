@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/listItem_h" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <TextView android:gravity="fill_horizontal" android:id="@id/artist_summary_bio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/artist_summary_bio_marginLeft" android:layout_marginTop="@dimen/artist_summary_bio_marginTop" android:layout_marginRight="@dimen/artist_summary_bio_marginRight" android:layout_marginBottom="@dimen/artist_summary_bio_marginBottom" style="@com.htc:style/list_primary_xs" />
+    <TextView android:gravity="right" android:id="@id/artist_summary_bio_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/artist_summary_bio_marginRight" android:layout_marginBottom="@dimen/artist_summary_bio_marginBottom" android:text="@string/more_text" style="@com.htc:style/list_primary_xs" />
+</LinearLayout>

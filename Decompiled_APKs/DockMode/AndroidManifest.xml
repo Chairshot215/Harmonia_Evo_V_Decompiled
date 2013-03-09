@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="300324741" android:versionName="3.0.2213152066.324741" package="com.htc.dockmode"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BIND_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+    <permission android:name="htc.permission.dockmode.NEXT_ALARM" android:protectionLevel="signature" />
+    <application android:label="@string/app_name" android:icon="@drawable/dock" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/Theme.NoTitleBar" android:label="@string/app_name" android:icon="@drawable/dock" android:name=".DeskDock" android:taskAffinity=":DeskDock" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="unspecified" android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize">
+            <meta-data android:name="android.dock_home" android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.htc.intent.action.DESK_MAIN" />
+                <action android:name="com.htc.intent.ACTION_SET_WALLPAPER_DOCKMODE" />
+                <action android:name="com.htc.intent.ACTION_SET_LIVEWALLPAPER_DOCKMODE" />
+                <category android:name="android.intent.category.DESK_DOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Wallpaper.NoTitleBar" android:label="@string/app_name" android:icon="@drawable/dock" android:name=".DeskDockActivity" android:excludeFromRecents="true" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.htc.intent.action.DESK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeskDockSettings" android:excludeFromRecents="true" android:configChanges="orientation" />
+        <activity android:theme="@style/Alert" android:label="@string/pick_wallpaper" android:name=".wallpaper.WallpaperChooserDialog" />
+        <receiver android:name=".clock.NextAlarmReceiver" android:permission="htc.permission.dockmode.NEXT_ALARM">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.next_alarm" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".bluetooth.DeskDockService" />
+        <activity android:theme="@style/Theme.Dialog" android:name="bluetooth.HtcBuletoothConfirm" android:launchMode="singleTask" />
+        <activity android:theme="@style/shining_title_bar" android:name=".shortcut.ShortcutSetting" android:excludeFromRecents="true" />
+        <activity android:theme="@style/shining_title_bar" android:name=".shortcut.SelectAppActivity" android:exported="true" android:excludeFromRecents="true" />
+        <service android:name=".shortcut.ShortcutDBService" />
+        <activity android:theme="@style/Theme.Dialog" android:name=".bluetooth.HtcBuletoothConfirm" android:launchMode="singleTask" />
+    </application>
+</manifest>

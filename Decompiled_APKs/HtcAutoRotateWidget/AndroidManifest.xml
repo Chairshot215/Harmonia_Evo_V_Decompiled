@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="300254239" android:versionName="3.0.2211142523.254239" package="com.htc.autorotatewidget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/manage_app_name" android:icon="@drawable/widget_icon_auto_rotate" android:description="@string/company" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="com.htc.fusion.fx" />
+        <uses-feature android:name="com.htc.android.rosie.widget" />
+        <receiver android:label="@string/widget_provider_label" android:icon="@drawable/widget_icon_auto_rotate" android:name="com.htc.autorotatewidget.AutoRotateWidgetProvider" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/autorotatewidget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+    </application>
+</manifest>

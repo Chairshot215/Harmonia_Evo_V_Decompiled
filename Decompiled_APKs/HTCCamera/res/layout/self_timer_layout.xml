@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/self_timer_background" android:background="@drawable/camera_time_code_base" android:visibility="gone" android:layout_width="@dimen/self_timer_container_width" android:layout_height="@dimen/self_timer_container_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.android.camera.rotate.RotateRelativeLayout android:id="@id/self_timer_container" android:layout_width="@dimen/self_timer_width" android:layout_height="@dimen/self_timer_height" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <TextView android:id="@id/self_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/text_style_self_timer_text" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

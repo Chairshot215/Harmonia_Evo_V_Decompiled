@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/slide_show_repeat" android:key="slide_show_repeat_setting_dock_mode" android:dependency="" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/slide_show_shuffle" android:key="slide_show_shuffle_setting_dock_mode" android:dependency="" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/slide_show_music_title" android:key="slide_show_music_enable_setting_dock_mode" android:dependency="" android:defaultValue="false" />
+    <com.htc.preference.HtcPreference android:persistent="true" android:title="@string/slide_show_music_title" android:key="slide_show_music_picker_setting_dock_mode" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/slide_show_orientation_option_list" android:title="@string/slide_show_orientation" android:key="slide_show_orientation_setting_dock_mode" android:defaultValue="0" android:dialogTitle="@string/slide_show_orientation_title" android:entryValues="@array/slide_show_orientation_option_value" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/slide_show_transition_option_list" android:title="@string/slide_show_transition" android:key="slide_show_transition_setting_dock_mode" android:defaultValue="7" android:dialogTitle="@string/slide_show_transition_title" android:entryValues="@array/slide_show_transition_option_value" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/slide_show_duration_option_list" android:title="@string/playback_speed" android:key="slide_show_duration_setting_dock_mode" android:defaultValue="3" android:dialogTitle="@string/slide_show_druation_title" android:entryValues="@array/slide_show_duration_option_value" />
+    <com.htc.preference.HtcPreference android:persistent="true" android:title="@string/slide_show_folder_picker" android:key="slide_show_folder_picker_setting_dock_mode" />
+</com.htc.preference.HtcPreferenceScreen>

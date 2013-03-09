@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.dockmode.widget.InterceptTouchView android:id="@id/dock_mode_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wallpaper_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/dock_mode_docks" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <include layout="@layout/dock_clock" />
+        <include layout="@layout/dock_weather" />
+        <include layout="@layout/dock_music" />
+        <include layout="@layout/dock_button" />
+    </RelativeLayout>
+</com.htc.dockmode.widget.InterceptTouchView>

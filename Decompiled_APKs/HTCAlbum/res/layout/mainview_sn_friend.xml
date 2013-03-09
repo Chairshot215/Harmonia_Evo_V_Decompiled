@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/wifi_disconnect_view" android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <include android:id="@id/sn_login_view" android:visibility="gone" layout="@layout/page_login_1button_1text" />
+    <include android:id="@id/empty" layout="@layout/page_1line_centered_progress_text" />
+</RelativeLayout>

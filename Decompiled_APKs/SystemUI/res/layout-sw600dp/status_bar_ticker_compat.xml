@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/large_icon" android:visibility="gone" android:layout_width="@*android:dimen/notification_large_icon_width" android:layout_height="@*android:dimen/notification_large_icon_height" android:scaleType="center" />
+    <LinearLayout android:background="@drawable/status_bar_ticker_background" android:layout_width="wrap_content" android:layout_height="@*android:dimen/status_bar_height" android:layout_weight="1.0">
+        <ImageView android:id="@id/left_icon" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="fill_parent" android:scaleType="center" />
+        <TextView android:textAppearance="@*android:style/TextAppearance.StatusBar.Ticker" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:maxLines="2" />
+        <ImageView android:id="@id/right_icon" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="fill_parent" android:scaleType="center" />
+    </LinearLayout>
+</LinearLayout>

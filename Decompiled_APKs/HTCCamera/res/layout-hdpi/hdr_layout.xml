@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateImageView android:id="@id/hdr_review_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hdr_indicator_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hdr_indicator_margin_top_portrait" android:layout_marginRight="@dimen/hdr_indicator_margin_right_portrait" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <View android:id="@id/hdr_indicator_top_padding" android:visibility="gone" android:layout_width="1.0px" android:layout_height="@dimen/hdr_indicator_margin_top_padding_portrait" />
+        <com.android.camera.rotate.RotateImageView android:id="@id/hdr_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator_hdr" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="?android:expandableListPreferredItemPaddingLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height_1"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:paddingLeft="@dimen/customize_expandlistview_textView_left_padding" android:paddingTop="@com.htc:dimen/htc_list_item_margin_top" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="@com.htc:dimen/htc_list_item_margin_top" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:id="@*android:id/text1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_style_primary" />
+            <TextView android:id="@*android:id/text2" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@*android:id/text1" android:layout_alignLeft="@*android:id/text1" style="@style/text_style_secondary" />
+        </RelativeLayout>
+        <CheckBox android:gravity="center_vertical" android:orientation="vertical" android:id="@*android:id/checkbox" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_editor_entry_name_right_small_margin" />
+    </LinearLayout>
+    <ImageView android:id="@com.htc:id/htc_list_item_top_round" android:background="@com.htc:drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@com.htc:id/htc_list_item_bottom_round" android:background="@com.htc:drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</FrameLayout>

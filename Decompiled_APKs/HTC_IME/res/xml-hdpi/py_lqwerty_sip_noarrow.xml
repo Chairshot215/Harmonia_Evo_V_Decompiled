@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="95px" hgap="0px" vgap="0px" height="78px" keyTextSize="36px" popupTextSize="45px" keyboardBackground="@drawable/sapphire_land_background" keyboardPadding="0,6,5,2" functionKeyBackground="@drawable/sapphire_landscape_function_key" commonKeyBackground="@drawable/sapphire_landscape_common_key" closeKeyBackground="@drawable/qwerty_land_close_key">
+    <row>
+        <key codes="113" label="q" hgap="5px" leftEdge="true" />
+        <key codes="119" label="w" />
+        <key codes="101" label="e" />
+        <key codes="114" label="r" />
+        <key codes="116" label="t" />
+        <key codes="121" label="y" />
+        <key codes="117" label="u" />
+        <key codes="105" label="i" />
+        <key codes="111" label="o" />
+        <key codes="112" label="p" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="97" label="a" hgap="53px" leftEdge="true" />
+        <key codes="115" label="s" />
+        <key codes="100" label="d" />
+        <key codes="102" label="f" />
+        <key codes="103" label="g" />
+        <key codes="104" label="h" />
+        <key codes="106" label="j" />
+        <key codes="107" label="k" />
+        <key codes="108" label="l" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="239" label="'" hgap="100px" leftEdge="true" />
+        <key codes="122" label="z" />
+        <key codes="120" label="x" />
+        <key codes="99" label="c" />
+        <key codes="118" label="v" />
+        <key codes="98" label="b" />
+        <key codes="110" label="n" />
+        <key codes="109" label="m" />
+        <key codes="0x0008" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" width="92px" hgap="2px" function="true" repeatable="true" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-4" width="102px" hgap="7px" function="true" leftEdge="true" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-16" width="92px" hgap="3px" function="true" label="" textScale="90%p" grouped="1" />
+        <key codes="-23" hgap="-92px" width="92px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-92px" width="92px" function="true" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="65292" label="，" topLabel="！" hgap="1px" popupCharacters="@string/alternates_for_cp_changjei_ex1" accentType="0" alignIndex="0" />
+        <key codes="32" icon="@drawable/key_icon_space" iconPreview="@drawable/sapphire_icon_space" showPreview="false" width="370px" xt9idx="30" />
+        <key codes="12290" label="   。" topLabel="？" popupCharacters="@string/alternates_for_cp_changjei_ex2" accentType="0" alignIndex="0" />
+        <key codes="-2" label="12#" textScale="75%p" hgap="2px" width="92px" function="true" popup="@layout/port_accent_window" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="10" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" hgap="3px" width="92px" function="true" xt9idx="33" rightEdge="true" />
+    </row>
+</keyboard>

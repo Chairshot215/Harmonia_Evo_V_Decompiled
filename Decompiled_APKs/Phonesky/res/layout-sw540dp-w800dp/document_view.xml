@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/my_downloads_item_header" android:background="@drawable/title_with_highlight" android:paddingLeft="@dimen/details_right_column_margin" android:paddingRight="@dimen/details_right_column_margin" android:paddingBottom="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/screenshots_height">
+        <include layout="@layout/details_summary_header_text" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.finsky.layout.DocImageView android:id="@id/thumbnail" android:clickable="false" android:layout_width="@dimen/my_apps_thumbnail_size" android:layout_height="@dimen/my_apps_thumbnail_size" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_vm_thumbnail_big_apps" android:scaleType="centerInside" />
+            <LinearLayout android:gravity="bottom|right|center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/button_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:id="@id/launch_button" android:text="@string/open" style="@style/DetailsPage_Button" />
+                <Button android:id="@id/update_button" android:text="@string/update" style="@style/DetailsPage_Button" />
+                <Button android:id="@id/uninstall_button" android:text="@string/uninstall" style="@style/DetailsPage_Button" />
+                <Button android:id="@id/refund_button" android:text="@string/refund" style="@style/DetailsPage_Button" />
+                <Button android:id="@id/install_button" android:text="@string/install" style="@style/DetailsPage_Button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/leading_strip" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <com.google.android.finsky.layout.ObservableScrollView android:id="@id/details_scroller_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/subscriptions_section" layout="@layout/subscriptions_section" />
+            <include android:id="@id/warning_message_panel" layout="@layout/details_warning_message" />
+            <include android:layout_marginLeft="4.0dip" layout="@layout/auto_update_checkbox" />
+            <com.google.android.finsky.layout.AppSecurityPermissions android:orientation="vertical" android:id="@id/my_downloads_permissions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" />
+        </LinearLayout>
+    </com.google.android.finsky.layout.ObservableScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@com.htc:drawable/common_list_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@*android:dimen/htc_dark_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@*android:attr/theme" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@*android:attr/theme" android:layout_width="16.0dip" android:layout_height="16.0dip">
+            <ImageView android:id="@*android:attr/label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0sp" android:layout_marginTop="6.0sp" android:layout_marginRight="6.0sp" android:layout_marginBottom="6.0sp">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@com.htc:dimen/darklist_primary_l" android:id="@*android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@com.htc:dimen/darklist_secondary_m" android:id="@*android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@*android:id/title" android:layout_alignLeft="@*android:id/title" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RadioButton android:layout_gravity="center_vertical" android:id="@*android:attr/icon" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

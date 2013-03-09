@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/PHONE_MENU">
+        <item android:id="@id/dial_context_menu_id" android:title="@string/contextmenu_dial_dot" />
+        <item android:id="@id/sms_context_menu_id" android:title="@string/contextmenu_sms_dot" />
+        <item android:id="@id/add_contact_context_menu_id" android:title="@string/contextmenu_add_contact" />
+        <item android:id="@id/copy_phone_context_menu_id" android:title="@string/contextmenu_copy" />
+    </group>
+    <group android:id="@id/EMAIL_MENU">
+        <item android:id="@id/email_context_menu_id" android:title="@string/contextmenu_send_mail" />
+        <item android:id="@id/copy_mail_context_menu_id" android:title="@string/contextmenu_copy" />
+    </group>
+    <group android:id="@id/GEO_MENU">
+        <item android:id="@id/map_context_menu_id" android:title="@string/contextmenu_map" />
+        <item android:id="@id/copy_geo_context_menu_id" android:title="@string/contextmenu_copy" />
+    </group>
+    <group android:id="@id/ANCHOR_MENU">
+        <item android:id="@id/open_context_menu_id" android:title="@string/contextmenu_openlink" />
+        <item android:id="@id/copy_link_context_menu_id" android:title="@string/contextmenu_copylink" />
+        <item android:id="@id/share_link_context_menu_id" android:title="@string/contextmenu_sharelink" />
+    </group>
+    <group android:id="@id/HELP_FEEDBACK_GROUP">
+        <item android:icon="@*android:drawable/ic_menu_help" android:id="@id/help_info_menu_item" android:title="@string/contextmenu_help" />
+        <item android:icon="@*android:drawable/ic_menu_send" android:id="@id/feedback_menu_item" android:title="@string/contextmenu_feedback" />
+    </group>
+</menu>

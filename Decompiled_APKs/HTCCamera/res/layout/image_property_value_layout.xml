@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/index_column" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/index_column" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/settings_list_width" android:layout_height="@dimen/edge_space">
+        <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_m2" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_m1" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:paddingLeft="4.0px" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_0" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_p1" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/settings_summary" android:gravity="left" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/property_level_p2" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

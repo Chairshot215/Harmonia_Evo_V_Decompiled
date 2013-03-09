@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">正在清除数据...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">正在关闭蓝牙</string>
+    <string name="UI_ALERT_MSG_UNPAIR">您可能需要在%s上取消此电话的配对。按确定退出，然后再重试。</string>
+    <string name="UI_MSGBOX_BTN_BACK">上一步</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">取消</string>
+    <string name="UI_MSGBOX_BTN_NO">否</string>
+    <string name="UI_MSGBOX_BTN_OK">确定</string>
+    <string name="UI_MSGBOX_BTN_QUIT">退出</string>
+    <string name="UI_MSGBOX_BTN_RESUME">继续</string>
+    <string name="UI_MSGBOX_BTN_SETTING">设置</string>
+    <string name="UI_MSGBOX_BTN_YES">是</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">传输数据无法开启蓝牙，请检查无线设置。</string>
+    <string name="UI_MSGBOX_CONN_FAILED">按继续重试，或按取消退出。</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">复制数据</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">您已从%2$s导入%1$s。可能创建复制记录。</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">如果未找到您的旧电话，请确认它已设置为可发现。</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">%s上的所有可用数据类型均已导入。</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"要允许传输数据，请禁用 Blackberry 上的加密/密码，然后点按“确认”。
+典型路径为：选项>安全选项>加密/密码"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">是否确定退出？</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">导入的%s数据将被清除。是否确定退出？</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">要再次从%s导入，请先选择并清除本电话上的数据。</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">除Exchange联系人外，本电话上选定类型的所有数据将被删除。</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">除Exchange联系人外，本平板电脑上选定类型的所有数据将被删除。</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">要再次从%s导入，请先选择并清除本平板电脑上的数据。</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">您需要重启%s，稍后再重试。</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">您可能需要重启本电话和旧电话，然后重试。</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">您可能需要重启本平板电脑和旧电话，然后重试。</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">传输失败</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">连接失败</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">删除</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">配对失败</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">查询失败</string>
+    <string name="HTC_Desire">渴望(Desire)</string>
+    <string name="HTC_Wildfire">野火(Wildfire)</string>
+    <string name="HTC_Qilin">T8388 麒麟</string>
+    <string name="HTC_A3360">野火 A3360</string>
+    <string name="HTC_A3380">野火 A3380</string>
+    <string name="HTC_A9188">天玺 A9188</string>
+    <string name="HTC_T9188">天玺 T9188</string>
+    <string name="HTC_T9199">双擎 T9199</string>
+    <string name="HTC_A6388">天姿 A6388</string>
+    <string name="HTC_Desire_HD">渴望 HD</string>
+    <string name="HTC_T5588">T5588 天享</string>
+    <string name="HTC_HD2">T8588 HD2</string>
+    <string name="HTC_Desire_S">渴望 S</string>
+    <string name="HTC_Wildfire_S">野火 S</string>
+    <string name="HTC_Incredible_S">惊艳 S710e</string>
+    <string name="HTC_S710d">惊艳 S710d</string>
+    <string name="HTC_A315c">野火 A315c</string>
+    <string name="HTC_Sensation">灵感</string>
+    <string name="HTC_Z710t">灵感(移动版)</string>
+    <string name="HTC_Oboe_Android">双擎S</string>
+    <string name="HTC_Salsa">微客</string>
+    <string name="HTC_EVO_3D">夺目3D</string>
+    <string name="HTC_EVO_4G">EVO</string>
+    <string name="HTC_EVO_Shift_4G">EVO Shift</string>
+    <string name="HTC_S715e">惊艳 S715e</string>
+    <string name="HTC_Rhyme">倾心</string>
+    <string name="HTC_Sensation_XE">灵感 XE</string>
+    <string name="HTC_Explorer_A310e">达人</string>
+    <string name="Samsung_Galaxy_SII">I9100</string>
+    <string name="Sony_Ericsson_Xperia_mini_pro">SK17i</string>
+    <string name="Samsung_Galaxy_SL">I9003</string>
+    <string name="Samsung_Infuse_4G">Infuse 4G(I997)</string>
+    <string name="ANDROID_TIPS_1">"1. 选择\"菜单\" > \"设置\" > \"无线和网络\"
+
+2. 勾选\"蓝牙\"
+
+3. 选择\"蓝牙设置\" 
+
+4. 勾选\"可发现\""</string>
+    <string name="ANDROID_TIPS_2">"1. 转至应用程序屏幕 > “设置” > “无线和网络”
+
+2. 选择“蓝牙设置”
+
+3. 勾选“蓝牙”
+
+4. 勾选“可见”"</string>
+    <string name="ANDROID_TIPS_3">"1. 转至应用程序屏幕 >“设置”>“无线和网络”
+
+2. 选择“蓝牙设置”
+
+3. 勾选“蓝牙”
+
+4. 勾选“可发现”"</string>
+    <string name="APP_TIPS_1">"1. 按主画面按钮 > 设置 > 通用。
+
+2. 选择蓝牙。
+
+3. 打开 Bluetooth。
+
+4. 保留蓝牙设置页面。"</string>
+    <string name="HTC_TIPS_1">"1. 转到主页面。
+
+2. 点按开始 > 设置 > 数据连接。
+
+3. 选择蓝牙。
+
+4. 选择模式选项卡。
+
+5. 打开蓝牙。
+
+6. 选择使此设备对其他设备可见。"</string>
+    <string name="HTC_TIPS_2">"1. 转到主页面。
+
+2. 点按开始 > 设置 > 连接 > Bluetooth。
+
+3. 选择蓝牙 > 菜单。 
+
+4. 打开蓝牙。
+
+5. 将公开性设为开。"</string>
+    <string name="HTC_TIPS_3">"1. 转到主页面。
+
+2. 点按开始 > 设置 > 连接 > Bluetooth。
+
+3. 选择蓝牙 > 菜单。 
+
+4. 打开蓝牙。
+
+5. 将公开性设为开。"</string>
+    <string name="HTC_TIPS_4">"1. 转到主页面。
+
+2. 点按开始 > 设置 > 无线控件。
+
+3. 打开蓝牙。
+
+4. 点按蓝牙按钮的左边部分。
+
+5. 点按高级。
+
+6. 选择模式选项卡。
+
+7. 选择使此设备对其他设备可见。"</string>
+    <string name="HTC_TIPS_5">"1. 选择\"开始\" > \"工具\" > \"设置\" 
+
+2. 选择\"无线控件\" > \"蓝牙\"
+
+3. 选择\"高级\"
+
+4. 选择\"模式\"选项卡
+
+5. 勾选\"打开蓝牙\"和\"使此设备对其他设备可见\""</string>
+    <string name="HTC_TIPS_6">"1. 选择\"开始\" > \"设置\" > \"菜单\" > \"所有设置\"
+
+2. 选择\"蓝牙\"并开启蓝牙
+
+3. 选择 gear 选项卡
+
+4. 选择望远镜图标 > \"始终可见\""</string>
+    <string name="HTC_TIPS_7">"1. 在启动屏幕中，点按 \"→\"。
+
+2. 点按 设置 > 蓝牙。
+
+3. 打开蓝牙。"</string>
+    <string name="HTC_TIPS_8">"1. 选择“开始”>“工具”>“设置”
+
+2. 点击“菜单”>“所有设置”
+
+3. 选择蓝牙
+
+4. 选择“模式”选项卡
+
+5. 开启蓝牙
+
+6. 勾选“使此设备对其他设备可见”"</string>
+    <string name="KYO_TIPS_1">"1. Select Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Select On/Off \"On Visible\"
+
+3. Select \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Select BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. 选择菜单 > 设定 > 连接性。
+
+2. 选择蓝牙。
+
+3. 将蓝牙设为打开。
+
+4. 选择设定。 
+
+5. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="LGG_TIPS_2">"%s1. 选择菜单 > 设定 > 连接性。
+
+2. 选择蓝牙。
+
+3. 将蓝牙设为打开。
+
+4. 选择蓝牙设置。
+
+5. 选将公开性设为显示手机。"</string>
+    <string name="LGG_TIPS_3">"%s1. 选择菜单 > 设定 > 蓝牙。
+
+2. 开启蓝牙。
+
+3. 将可见性设为始终可见。"</string>
+    <string name="LGG_TIPS_4">"%s1. 选择菜单，点击最后一个选项卡。
+
+2. 选择蓝牙。
+
+3. 将蓝牙设为打开。
+
+4. 选择设定。
+
+5. 将我的设备可见性设为可见。"</string>
+    <string name="LGG_TIPS_5">"1. 选择菜单 > 设置和工具 > 蓝牙菜单。 
+
+2. 将蓝牙设为开启。
+
+3. 选择选项 > 发现模式 > 开。"</string>
+    <string name="MOT_TIPS_1">"%s1. 选择菜单 > 设置/工具 > 设置。
+
+2. 选择蓝牙。
+
+3. 选择蓝牙电源。
+
+4. 打开。
+
+5. 选择设置可发现。
+
+6. 选择始终。"</string>
+    <string name="MOT_TIPS_10">"1. 选择主菜单 > 蓝牙。
+
+2. 选择设置。
+
+3. 将更改电源设为开启。
+
+4. 选择返回
+
+5. 选择查找本机 > 可发现：3 分钟。"</string>
+    <string name="MOT_TIPS_11">"%s1. 选择主菜单 > 设置 > 连接。
+
+2. 选择蓝牙链接。
+
+3. 选择设置。
+
+4. 将更改电源设为开启。
+
+5. 选择返回
+
+6. 选择查找本机 > 可发现：3 分钟。"</string>
+    <string name="MOT_TIPS_12">"%s1. 选择“菜单” > “设置”
+
+2. 选择“连接”
+
+3. 选择“蓝牙”
+
+4. 选择“选项” > “管理” > “设置蓝牙”
+
+5. 选择蓝牙电源“开”
+
+6. 选择“返回”
+
+7. 选择“选项” > 可发现: 开启 3 分钟"</string>
+    <string name="MOT_TIPS_2">"%s1. 选择菜单 > 数据连接。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。"</string>
+    <string name="MOT_TIPS_3">"%s1. 选择主菜单 > 设置。
+
+2. 选择蓝牙链接。
+
+3. 选择设置。
+
+4. 将更改电源设为开启。
+
+5. 选择返回
+
+6. 选择查找本机 > 可发现：3 分钟。"</string>
+    <string name="MOT_TIPS_4">"%s1. 选择主菜单 > 设置和工具。
+
+2. 选择蓝牙。
+
+3. 将设置设为开。
+
+4. 将发现模式设为开启。
+
+ 5. 选择可发现开启 3 分钟。"</string>
+    <string name="MOT_TIPS_5">"1. 选择菜单 > 设置和工具。
+
+2. 选择蓝牙菜单。
+
+3. 将蓝牙设为开启。
+
+4. 选择选项。 
+
+5. 将发现模式设为开启。"</string>
+    <string name="MOT_TIPS_6">"1. 选择功能表 >工具。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 将可见性设为始终可见。"</string>
+    <string name="MOT_TIPS_7">"1. 选择菜单 > 设置和工具。
+
+2. 选择蓝牙。
+
+3. 将蓝牙设为开启。
+
+4. 选择设置。 
+
+5. 将发现模式设为开启。"</string>
+    <string name="MOT_TIPS_8">"1. 选择菜单 > 设置和工具。
+
+2. 选择蓝牙菜单。
+
+3. 将蓝牙设为开启。
+
+4. 选择设置。 
+
+5. 将发现模式设为开启。"</string>
+    <string name="MOT_TIPS_9">"1. 选择主菜单 > 设置 > 连接。
+
+2. 选择蓝牙链接。
+
+3. 选择设置。
+
+4. 将更改电源设为开启。
+
+5. 选择返回
+
+6. 选择查找本机 > 可发现：3 分钟。"</string>
+    <string name="NOK_TIPS_1">"1. 选择功能表 > 设置 > 数据连接。 
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_10">"1. 选择功能表 > 设置。 
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_11">"1. 选择功能表 >工具 > 连接性。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_12">"1. 选择功能表 > 控制面板 > 连接。
+
+ 2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_13">"1. 选择主菜单 > 设置 > 连接。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_14">"1. 选择菜单>“设置”>“连接”。
+
+2. 选择“蓝牙”。
+
+3. 打开蓝牙。
+
+4. 设置“设备可见”为“始终可见”。"</string>
+    <string name="NOK_TIPS_15">"1. 选择“菜单”>“设置”>“连通性”。
+
+2. 选择“蓝牙”。
+
+3. 打开蓝牙。
+
+4. 设置“设备可见”为“显示所有”"</string>
+    <string name="NOK_TIPS_2">"1. 选择功能表 >工具。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_4">"1. 选择功能表 > 设置 > 数据连接。 
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为持续可见。"</string>
+    <string name="NOK_TIPS_5">"1. 选择功能表 > 连接。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_51">"%s1. 选择功能表 > 连接。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_6">"1. 选择功能表 > 设置 > 数据连接。 
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为持续可见。"</string>
+    <string name="NOK_TIPS_7">"1. 选择功能表 > 设置 > 数据连接。 
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为持续可见。"</string>
+    <string name="NOK_TIPS_8">"1. 选择功能表 > 设置 > 数据连接。
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择蓝牙设置
+
+5. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="NOK_TIPS_9">"1. 选择功能表 > 数据连接。 
+
+2. 选择蓝牙。
+
+3. 开启蓝牙。
+
+4. 选择我的电话可见性为对所有人显示。"</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">其他</string>
+    <string name="OTHER_PHONE_General">"您可以在不支持的电话上启用蓝牙：
+
+1. 进入主画面
+
+2. 选择菜单 > 设置
+
+3. 选择连接 > 蓝牙设置
+
+4. 打开蓝牙
+
+5. 选择可见/可发现 > 对所有人显示
+
+6. 保留蓝牙设置页面"</string>
+    <string name="RIM_TIPS_1">"1. 选择菜单 > 选项 > 蓝牙。
+
+2. 点击菜单。
+
+3. 选择启用蓝牙。
+
+4. 再次点击菜单
+
+5. 选择选项。
+
+6. 将可发现设为是。"</string>
+    <string name="RIM_TIPS_2">"1. 选择菜单 > 管理连接。
+
+2. 选择蓝牙。
+
+3. 选择蓝牙选项。
+
+4. 再次点击菜单
+
+5. 选择选项。
+
+6. 将可发现设为是。"</string>
+    <string name="RIM_TIPS_3">"1.进入所有应用程序屏幕。
+
+2. 选择“管理连接”。
+
+3. 勾选“蓝牙”。
+
+4. 选择“蓝牙连接”。
+
+5. 将蓝牙设置为“开”
+
+6. 将可发现设置为“是”。"</string>
+    <string name="RIM_TIPS_4">"1. 进入所有应用程序屏幕。
+
+2. 选择“管理连接”。
+
+3. 勾选“蓝牙”。
+
+4. 选择“网络和连接”。
+
+5. 选择“蓝牙连接”。
+
+6. 将蓝牙设置为“开”
+
+7. 将可发现设置为“是”。"</string>
+    <string name="SAM_TIPS_1">"%s1. 选择菜单 > 蓝牙。 
+
+2. 将激活设为开。
+
+3. 选择我的电话可见性为开。"</string>
+    <string name="SAM_TIPS_10">"%s1. 选择“菜单” > “设置” > “网络设置” > “蓝牙”
+
+2. 将“激活”设置为“开”
+
+3. 将“我的手机可见性”设置为“开”"</string>
+    <string name="SAM_TIPS_11">"%s1. 选择“菜单” > “应用程序”
+
+2. 选择“蓝牙”
+
+3. 设置“蓝牙激活”
+
+4. 选择“设置”
+
+5. 将“我的手机可见性”设置为“开”，然后单击“保存”
+
+6. 转到“主页面”"</string>
+    <string name="SAM_TIPS_12">"%s1. 转到主页面。
+
+2. 选择“设置” > “连接性” > “蓝牙”。
+
+3. 将“激活”设置为“开”。
+
+4. 将“我的手机可见性”设置为“开”。"</string>
+    <string name="SAM_TIPS_2">"%s1. 选择菜单 > 应用程序 > 蓝牙。
+
+2. 将激活设为开。
+
+3. 将我的电话可见性设为开。"</string>
+    <string name="SAM_TIPS_3">"1. 选择菜单 > 设置和工具 > 蓝牙菜单。 
+
+2. 将蓝牙设为开启。
+
+3. 选择选项 > 发现模式 > 开。"</string>
+    <string name="SAM_TIPS_4">"%s1. 选择主菜单 > 设置 > 蓝牙。
+
+2. 开启蓝牙。
+
+3. 将可见性设为始终可见。"</string>
+    <string name="SAM_TIPS_5">"%s1. 选择菜单 > 设置/工具 > 蓝牙菜单。
+
+2. 将设置设为开。
+
+3. 将设置发现模式设为开。"</string>
+    <string name="SAM_TIPS_6">"%s1. 选择菜单 > 设置。
+
+2. 选择蓝牙。
+
+3. 将蓝牙设为开启蓝牙。
+
+4. 将我的可见性设为开。"</string>
+    <string name="SAM_TIPS_7">"%s1. 选择菜单 > 设置。
+
+2. 选择蓝牙。
+
+3. 将激活设为开。
+
+4. 将我的电话可见性设为开。"</string>
+    <string name="SAM_TIPS_8">"%s1. 选择菜单>工具/实用程序 > 蓝牙。
+
+2. 选择蓝牙设置。
+
+3. 选择启用。
+
+4. 将发现模式设为开启。"</string>
+    <string name="SAM_TIPS_9">"%s1. 选择菜单 > 设置。
+
+2. 选择蓝牙。
+
+3. 将激活设为开。
+
+4. 将我的电话可见性设为开。"</string>
+    <string name="SAN_TIPS_1">"1. 选择菜单 > 工具 > 蓝牙。 
+
+2. 选择更多… > 设置 > 开。
+
+3. 将可见性设为始终可见。"</string>
+    <string name="SE_TIPS_1">"%s1. 选择菜单 > 手机设定 > 连接性。
+
+2. 选择蓝牙。
+
+3. 将 Bluetooth 设为打开。
+
+4. 将公开性设为显示手机。"</string>
+    <string name="SE_TIPS_2">"%s1. 选择菜单 > 连接性。 
+
+2. 选择蓝牙。
+
+3. 将 Bluetooth 设为打开。
+
+4. 选择选项。
+
+5. 将公开性设为显示手机。"</string>
+    <string name="SE_TIPS_3">"%s1. 选择菜单 > 连接。 
+
+2. 选择蓝牙。
+
+3. 将 Bluetooth 设为打开。
+
+4. 将公开性设为显示手机。"</string>
+    <string name="SE_TIPS_4">"%s1. 选择菜单 > 手机设定 > 连接性。
+
+2. 选择蓝牙。
+
+3. 将 Bluetooth 设为打开。
+
+4. 选择选项。
+
+5. 将公开性设为显示手机。"</string>
+    <string name="SE_TIPS_5">"1. 转到\"主页面\"。
+
+2. 点按\"开始\" > \"设置\" > \"蓝牙\"。
+
+3. 选择“模式”选项卡。
+
+4. 开启蓝牙。
+
+5. 选择\"使此设备对其他设备可见。\""</string>
+    <string name="SE_TIPS_6">"%s1. 进入 应用程序屏幕 > “设置” > “连接”。
+
+2. 选择“蓝牙”。
+
+3. 将蓝牙设置为“开”
+
+4. 将电话可见性设置为“可见”"</string>
+    <string name="SHP_TIPS_1">"%s1. 选择“菜单” > “设置”
+
+2. 选择“连接性” > “蓝牙”
+
+3. 将“打开/关闭”设置为“开”
+
+4. 选择可见性 > “显示我的手机”
+
+5. 请检查手机蓝牙是否为“开”，然后转至备用屏幕"</string>
+    <string name="SIM_TIPS">如果只有一张 SIM 卡，可将其从本电话中取出，插入旧电话中，然后同时启动两部电话。</string>
+    <string name="app_icon_name">传输数据</string>
+    <string name="app_name">传输我的资料</string>
+    <string name="UI_About_Platform">对于 Android</string>
+    <string name="UI_About_Version">版本：</string>
+    <string name="UI_BTN_Done">完成</string>
+    <string name="UI_BTN_Next">下一步</string>
+    <string name="UI_BTN_ReScan">重新扫描</string>
+    <string name="UI_BTN_Stop">停止</string>
+    <string name="UI_ERROR_TRY_AGAIN">出现错误。</string>
+    <string name="UI_IMPORTED">导入</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">导入到帐户</string>
+    <string name="UI_IMPORT_PHONE">导入到此电话</string>
+    <string name="UI_INSERT_SD_CARD">请插入存储卡</string>
+    <string name="UI_Menu_BTN_About">关于</string>
+    <string name="UI_MOD_BOOKMARK">书签</string>
+    <string name="UI_MOD_CALENDAR">日历</string>
+    <string name="UI_MOD_PHONEBOOK">联系人</string>
+    <string name="UI_MOD_PHOTO">相机拍摄</string>
+    <string name="UI_MOD_SMS">短信</string>
+    <string name="UI_MOD_TASK">任务</string>
+    <string name="UI_MOUNT_SD_CARD">请安装 USB 存储器</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">来源电话</string>
+    <string name="UI_OPENOPORT_TEXT">"请检查%s。
+您可能需要对连接进行授权。"</string>
+    <string name="UI_PHOTO_DESCRIPTION">仅电话中的文件</string>
+    <string name="UI_TEXT_AND">和</string>
+    <string name="UI_TEXT_BM_IMPORTED">书签已导入</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">书签已导入</string>
+    <string name="UI_TEXT_CAL_IMPORTED">个日历条目已导入</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">个日历条目已导入</string>
+    <string name="UI_TEXT_DATA">数据</string>
+    <string name="UI_TEXT_FAQ_PAGE">访问“常见问题”页面。</string>
+    <string name="UI_TEXT_PB_IMPORTED">个联系人已导入</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">个联系人已导入</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">摄像已导入</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">摄像已导入</string>
+    <string name="UI_TEXT_SMS_IMPORTED">条短信已导入</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">条短信已导入</string>
+    <string name="UI_TEXT_TASK_IMPORTED">导入的任务</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">导入的任务</string>
+    <string name="UI_TIP_ACCOUNT">账户</string>
+    <string name="UI_TIP_CONFIRM">请在%2$s上确认密码为%1$s</string>
+    <string name="UI_TIP_Co_1">您已将%s上的数据导入到本电话上。</string>
+    <string name="UI_TIP_Co_1_TABLET">您已将 %s 上的数据导入到本平板电脑上。</string>
+    <string name="UI_TIP_Co_TBD">"
+其他联系人字段存储在备注字段中。"</string>
+    <string name="UI_TIP_ImDa_1">根据旧手机的功能，您也许能够将联系人、短信和日历事件通过蓝牙移动到新的 HTC 手机。</string>
+    <string name="UI_TIP_ImDa_1_TABLET">根据旧手机的功能，您也许能够将联系人、短信和日历事件通过蓝牙移动到新的 HTC 平板电脑。</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">根据旧手机的功能，您也许能够将联系人和日历事件通过蓝牙移动到新的 HTC 电话。</string>
+    <string name="UI_TIP_ImDa_2">点按\"下一步\"开始。</string>
+    <string name="UI_TIP_ImDa_35">根据旧电话的功能，您也许能够将联系人和其他数据通过蓝牙移动到新的 HTC 电话。</string>
+    <string name="UI_TIP_ImDa_35_TABLET">根据旧电话的功能，您也许能够将联系人和其他数据通过蓝牙移动到新的 HTC 平板电脑。</string>
+    <string name="UI_TIP_Info_1">%s出现错误。请稍后再试。</string>
+    <string name="UI_TIP_Info_2">请稍后再试。</string>
+    <string name="UI_TIP_Info_UnMatchPhone">电话型号不匹配，%s出现错误。</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">虽然其它%s电话不在支持列表中，但“传输数据”会尝试检测您的旧电话并测试是否支持该电话。</string>
+    <string name="UI_TIP_Language">CHS</string>
+    <string name="UI_TIP_NoSuMo_1">不支持%s。 无法导入数据。</string>
+    <string name="UI_TIP_NoSuMo_2">请按 \"完成\" 退出。</string>
+    <string name="UI_TIP_ON">在%s上：</string>
+    <string name="UI_TIP_PaWi">请在%2$s上输入%1$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">您账户项下保存的 %s 将在您登录服务时同步。</string>
+    <string name="UI_TIP_Re_TodoNotSupport">待办事项和任务事件未导入。</string>
+    <string name="UI_TIP_SelDT_2">没有充分的蓝牙支持，部分字段可能无法从%s传输。</string>
+    <string name="UI_TIP_TUONBL">打开蓝牙</string>
+    <string name="UI_TIP_TuOnBl_2">成功开启蓝牙后，点按\"下一步\"。</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">清除本电话上的数据</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">清除本平板电脑上的数据</string>
+    <string name="UI_TITLE_CONGRADULATIONS">恭喜您</string>
+    <string name="UI_TITLE_CONN_WITH">和%s连接</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">在%s上启用蓝牙</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">在旧电话上启用蓝牙</string>
+    <string name="UI_TITLE_IMPORTING">传输%s</string>
+    <string name="UI_TITLE_INFO">信息</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">其它%s电话</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">正在加载电话配置</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">不支持的型号</string>
+    <string name="UI_TITLE_PAIRING">正在配对...</string>
+    <string name="UI_TITLE_PAIRING_WITH">正在与%s配对</string>
+    <string name="UI_TITLE_QUERYING_PHONE">正在查询电话型号</string>
+    <string name="UI_TITLE_SCANNING">正在扫描...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">正在扫描电话</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">选择要导入的数据类型</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">选择您的旧电话</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">选择型号</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">选择您的电话</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">不支持其它%s电话。 按“完成”退出。</string>
+</resources>

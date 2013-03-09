@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/gtalk_general_settings">
+        <CheckBoxPreference android:persistent="false" android:title="@string/mobile_indicator_title" android:key="gtalk-mobile-indicator" android:summary="@string/mobile_indicator_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/show_away_on_idle_title" android:key="gtalk-show-away-on-idle" android:summary="@string/show_away_on_idle_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/friend_invite_notification_title" android:key="gtalk-show-friend-notifications" android:summary="@string/friend_invite_notification_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_group_title" android:key="text_notification_group">
+        <com.google.android.talk.DependentListPreference android:persistent="false" android:entries="@array/prefEntries_text_notifications" android:title="@string/notification_enabled_title" android:key="gtalk-enable-notifications" android:defaultValue="@string/prefDefault_text_notificationPopup" android:dialogTitle="@string/prefDialogTitle_textNotifications" android:entryValues="@array/prefValues_text_notifications" />
+        <com.google.android.talk.ImRingtonePreference android:persistent="false" android:title="@string/notification_ringtone_title" android:key="gtalk-text-ringtone" android:dependency="gtalk-enable-notifications" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+        <ListPreference android:persistent="false" android:entries="@array/prefEntries_vibrateWhen" android:title="@string/notification_vibrateWhen_title" android:key="gtalk-vibrate-when" android:summary="@string/notification_vibrateWhen_summary_always" android:dependency="gtalk-enable-notifications" android:defaultValue="@string/prefDefault_vibrateWhen" android:dialogTitle="@string/prefDialogTitle_vibrateWhen" android:entryValues="@array/prefValues_vibrateWhen" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/video_chat_group_title" android:key="video_notification_group">
+        <ListPreference android:persistent="false" android:entries="@array/prefEntries_video_notifications" android:title="@string/video_notification_enabled_title" android:key="gtalk-video-enable-notifications" android:defaultValue="@string/prefDefault_video_notificationPopup" android:dialogTitle="@string/prefDialogTitle_videoNotifications" android:entryValues="@array/prefValues_video_notifications" />
+        <com.google.android.talk.ImRingtonePreference android:persistent="false" android:title="@string/videochat_ringtone_title" android:key="gtalk-video-ringtone" android:dependency="gtalk-video-enable-notifications" android:ringtoneType="ringtone" />
+        <ListPreference android:persistent="false" android:entries="@array/prefEntries_vibrateWhen" android:title="@string/notification_vibrateWhen_title" android:key="gtalk-video-vibrate-when" android:summary="@string/notification_vibrateWhen_summary_always" android:dependency="gtalk-video-enable-notifications" android:defaultValue="@string/prefDefault_vibrateWhen" android:dialogTitle="@string/prefDialogTitle_vibrateWhen" android:entryValues="@array/prefValues_vibrateWhen" />
+        <ListPreference android:persistent="false" android:entries="@array/prefEntries_image_stabilization_entries" android:title="@string/image_stabilization_title" android:key="gtalk-video-image-image-stabilization" android:summary="@string/image_stabilization_summary_medium" android:dependency="gtalk-video-enable-notifications" android:defaultValue="@string/image_stabilization_summary_medium" android:dialogTitle="@string/prefDialogTitle_image_stabilization" android:entryValues="@array/prefEntries_image_stabilization_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_account">
+        <PreferenceScreen android:title="@string/pref_gtalk_blocked_buddies_title" android:key="pref_gtalk_blocked_buddies_key" android:fragment="com.google.android.talk.fragments.BlockedListFragment" />
+        <Preference android:title="@string/pref_gtalk_clear_search_history_title" android:key="pref_gtalk_clear_history_key" android:summary="@string/pref_gtalk_clear_search_history_summary" />
+        <Preference android:title="@string/pref_gtalk_manage_account_title" android:key="pref_gtalk_manage_account_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_about">
+        <Preference android:title="@string/preferences_terms_title" android:key="gtalk-terms-key" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/bottom_info_height" android:layout_marginBottom="@dimen/bottom_info_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/bottom_vender_info" android:paddingLeft="@dimen/bottom_info_padding_left" android:paddingBottom="@dimen/bottom_info_margin_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/bottom_info_accu_icon" android:layout_width="@dimen/bottom_info_accu_icon_width" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/bottom_info_more_online_font" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/bottom_info_more_online" android:paddingTop="@dimen/bottom_info_update_margin_top" android:paddingRight="@dimen/bottom_info_update_padding_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/more_details_online_text" android:singleLine="true" style="@style/shadow_today_condition" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:paddingBottom="@dimen/bottom_info_margin_bottom" android:layout_width="@dimen/bottom_info_update_width" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bottom_info_update_margin_right" android:layout_toRightOf="@id/bottom_info_more_online" android:layout_alignTop="@id/bottom_info_more_online" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/update_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/bottom_update_time_font" android:textColor="@color/white" android:gravity="right|center" android:id="@id/update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bottom_info_update_time_margin_left" android:singleLine="true" style="@style/shadow_today_condition" />
+        <TextView android:textSize="@dimen/bottom_update_time_font" android:textColor="@color/white" android:gravity="left|center" android:id="@id/anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/bottom_info_update_time_margin_left" android:singleLine="true" style="@style/shadow_today_condition" />
+    </LinearLayout>
+</RelativeLayout>

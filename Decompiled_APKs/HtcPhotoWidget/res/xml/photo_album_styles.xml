@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rosie-widget
+  xmlns:rosie="http://schemas.android.com/apk/res/com.htc">
+    <style rosie:id="photo_frame" rosie:label="@string/album" rosie:description="@string/album_description" rosie:preview="@drawable/preview_photo_album" rosie:date="@string/rosie_widget_release_date" rosie:name=".album.PhotoAlbumWidget3D" rosie:configure=".album.PhotoAlbumWidgetActivity" rosie:span_x="4" rosie:span_y="4" />
+    <style rosie:id="2x2_photo_frame" rosie:label="@string/single" rosie:description="@string/frame_description" rosie:preview="@drawable/preview_photo_frame" rosie:date="@string/rosie_widget_release_date" rosie:name=".frame.PhotoFrameWidget3D" rosie:configure=".frame.PhotoPickerOption" rosie:span_x="2" rosie:span_y="2" />
+    <style rosie:id="PhotoGrid3d" rosie:label="@string/app_name" rosie:description="@string/album_description" rosie:preview="@drawable/preview_photo_3dgrid" rosie:date="@string/rosie_widget_release_date" rosie:name=".grid.PhotoGridWidget3D" rosie:configure=".grid.PhotoGridWidget3DActivity" rosie:span_x="4" rosie:span_y="4" />
+</rosie-widget>

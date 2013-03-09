@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="accessibility_settings_title" android:key="sense_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/homescreen" android:key="sensecat2">
+        <com.htc.preference.HtcListPreference android:entries="@array/pref_rosie_smooth_entries" android:title="@string/smooth_rosie_tweaks" android:key="pref_rosie_smooth" android:defaultValue="0" android:entryValues="@array/pref_rosie_smooth_values" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/enable_unlock_animation" android:key="enable_unlock_animation" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/hide_navbar_labels" android:key="hide_lbl" android:summary="@string/hide_navbar_labels_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/transp_navbar" android:key="nav_trans" android:summary="@string/transp_navbar_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/app_drawer" android:key="sensecat3">
+        <com.htc.preference.HtcPreference android:title="@string/rosie_hideapps" android:key="rosie_hideapps" android:summary="@string/rosie_hideapps_summary">
+            <intent android:targetPackage="com.m0narx.tweaks" android:action="android.intent.action.MAIN" android:targetClass="com.m0narx.tweaks.RosieHideApps" />
+        </com.htc.preference.HtcPreference>
+        <com.htc.preference.HtcPreference android:title="@string/appdrawer_columns" android:key="appdrawer_columns" android:summary="@string/appdrawer_columns_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/paginated_app_drawer" android:key="paginated_apps" android:summary="@string/paginated_app_drawer_summary" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/rosie_bgcolor" android:key="rosie_bgcolor_pref" android:summary="@string/rosie_bgcolor_summary" android:defaultValue="@integer/default_rosie_color" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/rosie_custombg" android:key="rosie_custombg" android:summary="@string/rosie_custombg_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

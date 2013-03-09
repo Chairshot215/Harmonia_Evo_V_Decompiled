@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/whole_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/header_img_add" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="right_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <com.htc.widget.HtcReorderListView android:id="@*android:id/list" android:background="@color/listview_bg_color" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_divider_items" android:layout_weight="1.0" android:layout_below="@id/header_bar" />
+    <include layout="@layout/common_button_bar" />
+</LinearLayout>

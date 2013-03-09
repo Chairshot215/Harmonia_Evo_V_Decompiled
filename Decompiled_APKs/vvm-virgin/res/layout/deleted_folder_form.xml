@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/TitleSection" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/vnotes_title_bar" />
+    </RelativeLayout>
+    <ListView android:id="@*android:id/list" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fastScrollEnabled="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="top|center" android:layout_gravity="center_horizontal" android:id="@id/deletedFolderEmpty" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:text="@string/deleted_folder_empty" />
+</LinearLayout>

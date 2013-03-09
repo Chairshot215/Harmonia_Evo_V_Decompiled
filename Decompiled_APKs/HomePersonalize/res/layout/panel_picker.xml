@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/panel_picker_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.DeckControlView android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/reflection_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/home_picker_mask" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/panelview_btmlabel_container" android:paddingTop="@dimen/panel_view_name_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ProgressBar android:id="@id/panelview_btmlabel_lcursor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/panel_loading_progress_margintop" android:layout_marginRight="@dimen/panel_loading_progress_marginright" style="?android:attr/progressBarStyleSmall" />
+        <TextView android:id="@id/panel_item_label" android:paddingLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:paddingRight="@com.htc:dimen/htc_list_item_text_left_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/darklist_primary_m" />
+    </LinearLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/panel_picker_name" android:paddingLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:paddingTop="@dimen/panel_view_description_padding_top" android:paddingRight="@com.htc:dimen/htc_list_item_text_left_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" style="@com.htc:style/darklist_secondary_m" />
+</RelativeLayout>

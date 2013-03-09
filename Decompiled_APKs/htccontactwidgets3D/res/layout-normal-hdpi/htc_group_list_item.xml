@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="86.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="fill" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="86.0px">
+        <ImageView android:gravity="center" android:layout_gravity="left|center" android:id="@id/GroupPhoto" android:background="@com.htc:drawable/common_photo_frame" android:padding="3.0px" android:layout_width="77.0px" android:layout_height="77.0px" android:layout_marginLeft="14.0px" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/GroupName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="22.0px" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+        <TextView android:gravity="center_vertical" android:id="@id/GroupMemberCount" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0px" android:layout_marginRight="8.0px" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+</FrameLayout>

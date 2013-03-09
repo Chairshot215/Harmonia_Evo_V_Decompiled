@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeGray">
+        <item name="android:windowBackground">@com.htc:drawable/common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="ThemePreview" parent="@style/ThemeGray">
+        <item name="com.htc:fakescreenStyle">style_04</item>
+    </style>
+    <style name="ThemeDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="amPmStyle" parent="@com.htc:style/darklist_primary_xl" />
+    <style name="dateStyle" parent="@com.htc:style/darklist_primary_xs" />
+    <style name="nextAlarmStyle" parent="@com.htc:style/darklist_primary_xs">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="weatherLocationStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#c0000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="weatherInformationStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#c0000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="weatherTemperatureStyle" parent="@style/shadowStyle">
+        <item name="android:textSize">66.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:lineSpacingMultiplier">0.8</item>
+    </style>
+    <style name="highStyle" parent="@style/shadowStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/temp_label_color</item>
+    </style>
+    <style name="weatherHighTemperatureStyle" parent="@style/shadowStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lowStyle" parent="@style/shadowStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/temp_label_color</item>
+    </style>
+    <style name="weatherLowTemperatureStyle" parent="@style/shadowStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="batteryStyle">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#c0000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:drawablePadding">4.0dip</item>
+    </style>
+    <style name="ListView" parent="@*android:style/Widget.AbsListView" />
+    <style name="buttonTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceInverse</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="timerTextStyle">
+        <item name="android:textSize">18.0px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/timer_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="oriNavbarButtonStyle">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@com.htc:drawable/common_b_button</item>
+        <item name="android:layout_width">186.0px</item>
+        <item name="android:layout_height">68.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="navbarButtonStyle">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@com.htc:drawable/common_panel_navbar_button</item>
+        <item name="android:layout_width">222.0px</item>
+        <item name="android:layout_height">75.0px</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="startButtonStyle">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">194.0px</item>
+        <item name="android:layout_height">78.0px</item>
+        <item name="android:layout_marginTop">2.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/shadow1_color</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="titleBarStyle">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52.0px</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="titleBarShadowStyle">
+        <item name="android:textSize">27.0px</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52.0px</item>
+        <item name="android:layout_marginRight">3.0px</item>
+        <item name="android:layout_marginBottom">3.0px</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="commandButtonBarStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@com.htc:dimen/cmd_bar_height</item>
+    </style>
+    <style name="digitalClockTimeStyle">
+        <item name="android:textSize">48.0px</item>
+    </style>
+    <style name="digitalClockAmPmStyle">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:layout_marginTop">13.0px</item>
+    </style>
+    <style name="digitalClockDayStyle">
+        <item name="android:textSize">15.0px</item>
+    </style>
+    <style name="shadowStyle">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="setAlarmStyle">
+        <item name="android:background">@color/listview_bg_color</item>
+    </style>
+</resources>

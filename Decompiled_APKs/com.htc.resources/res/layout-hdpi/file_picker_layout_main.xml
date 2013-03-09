@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.SearchBoxView android:id="@id/search_bar" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.widget.HeaderBarMiddle android:id="@id/headerbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="left_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <FrameLayout android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-10.0px" android:layout_weight="1.0">
+        <com.htc.widget.MoreExpandableHtcListView android:id="@id/list" android:background="#fff2f2f2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/list_divider" />
+        <com.htc.app.FilePickerListView android:id="@id/file_picker_list_view" android:background="#fff2f2f2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@drawable/list_divider" />
+        <TextView android:textSize="26.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/no_file_view" android:background="@drawable/common_glance_bkg" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/no_sdcard" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/common_icon_fullscreen_no_sd" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/warning_text" android:padding="16.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_string_no_SD_card" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/bottom_bar" android:background="?attr_common_sub_panel_navbar" android:layout_width="fill_parent" android:layout_height="90.0px">
+        <Button android:textSize="28.0px" android:textColor="@color/white" android:id="@id/done_button" android:background="?attr_command_bar_btn" android:layout_width="224.0px" android:layout_height="76.0px" android:text="@string/done" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

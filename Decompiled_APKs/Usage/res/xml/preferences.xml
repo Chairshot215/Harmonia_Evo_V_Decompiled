@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings.framework.activity.powersaver">
+    <com.htc.preference.HtcSwitchPreference android:title="@string/data_usage_enable_mobile" android:key="enable_mobile_data" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/data_usage_limit_editor_title" android:key="enable_mobile_usage_limit" />
+    <com.htc.preference.HtcListPreference android:title="@string/data_usage_cycle" android:key="mobile_usage_cycle_list" />
+    <com.htc.preference.HtcSwitchPreference android:title="@string/data_usage_enable_mobile" android:key="enable_mobile4g_data" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/data_usage_limit_editor_title" android:key="enable_mobile4g_usage_limit" />
+    <com.htc.preference.HtcListPreference android:title="@string/data_usage_cycle" android:key="mobile4g_usage_cycle_list" />
+    <com.htc.preference.HtcListPreference android:title="@string/data_usage_cycle" android:key="wifi_usage_cycle_list" />
+    <com.htc.preference.HtcListPreference android:title="@string/data_usage_cycle" android:key="ethernet_usage_cycle_list" />
+</com.htc.preference.HtcPreferenceScreen>

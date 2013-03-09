@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Менеджер завантажень</string>
+    <string name="permlab_downloadManager">Отримати доступ до менеджера завантажень.</string>
+    <string name="permdesc_downloadManager">Дозволяє програмі отримувати доступ до менеджера завантажень і використовувати його для завантаження файлів. Шкідливі програми можуть використовувати це для переривання завантажень і доступу до особистої інформації.</string>
+    <string name="permlab_downloadManagerAdvanced">Розширені функції менеджера завантажень</string>
+    <string name="permdesc_downloadManagerAdvanced">Дозволяє програмі отримувати доступ до розширених функцій менеджера завантажень. Шкідливі програми можуть використовувати це для переривання завантажень і доступу до особистої інформації.</string>
+    <string name="permlab_downloadCompletedIntent">Надсилати сповіщення про завантаження.</string>
+    <string name="permdesc_downloadCompletedIntent">Дозволяє програмі надсилати сповіщення про завершені завантаження. Шкідливі програми можуть використовувати це для перешкоджання роботі інших програм, які завантажують файли.</string>
+    <string name="permlab_seeAllExternal">"Дивитися всі завантаження на карті пам'яті"</string>
+    <string name="permdesc_seeAllExternal">"Дозволяє програмі бачити всі завантаження на карту пам'яті, незалежно від програми, що їх завантажила."</string>
+    <string name="permlab_downloadCacheNonPurgeable">Резерв місця в кеші завантаження</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Дозволяє програмі завантажувати файли в кеш завантажень, який неможливо автоматично видалити, якщо менеджеру завантажень потрібно більше місця.</string>
+    <string name="permlab_downloadWithoutNotification">Завантажувати файли без сповіщення</string>
+    <string name="permdesc_downloadWithoutNotification">Дозволяє програмі завантажувати файли за допомогою менеджера завантажень без показу сповіщень користувачеві.</string>
+    <string name="permlab_accessAllDownloads">Доступ до всіх системних завантажень</string>
+    <string name="permdesc_accessAllDownloads">Дозволяє програмі переглядати та змінювати всі завантаження, ініційовані будь-якою програмою в системі.</string>
+    <string name="download_unknown_title">&lt;Без заголовка></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" та %d інші"</string>
+    <string name="notification_download_complete">Завантаження завершено.</string>
+    <string name="notification_download_failed">Завантаження не виконано.</string>
+    <string name="notification_need_wifi_for_size">Для завант. потріб. Wi-Fi</string>
+    <string name="notification_paused_in_background">Призуп. у фонов. реж.</string>
+    <string name="wifi_required_title">Завантаження занадто велике для мережі оператора</string>
+    <string name="wifi_required_body" formatted="false">"Для завершення цього завантаження розміром %s  потрібне з’єднання з Wi-Fi. 
+
+Торкніться параметра %s , щоб запустити це завантаження під час наступного з’єднання з мережею Wi-Fi."</string>
+    <string name="wifi_recommended_title">Поставити в чергу, щоб завантажити пізніше?</string>
+    <string name="wifi_recommended_body" formatted="false">"Зараз це завантаж. %s  може зменш. заряд акумул. і/чи сприч. надмірне мобіл. передав. даних, за що оператор може стягув. плату залежно від тариф. плану.
+
+ Виберіть %s, щоб завант., коли з’яв. з’єдн. Wi-Fi."</string>
+    <string name="button_queue_for_wifi">Поставити в чергу</string>
+    <string name="button_cancel_download">Скасувати</string>
+    <string name="button_start_now">Запустити зараз</string>
+    <string name="low_download_storage_view_title">"Недостатньо пам'яті"</string>
+    <string name="low_download_storage_view_text">Залишилося недостатньо вільного місця для завантаження.</string>
+    <string name="notification_paused_no_wifi">" (призупинено)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

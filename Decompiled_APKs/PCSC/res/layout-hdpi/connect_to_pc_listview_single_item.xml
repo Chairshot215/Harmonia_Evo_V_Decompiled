@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ToggleButton android:textColor="#ff000000" android:id="@id/toggle" android:background="?com.htc:attr_common_radiobutton" android:focusable="false" android:clickable="false" android:layout_width="50.0px" android:layout_height="50.0px" android:layout_marginRight="10.0px" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="72.0px" android:layout_toLeftOf="@id/toggle" android:layout_toRightOf="@id/icon">
+        <TextView android:ellipsize="marquee" android:id="@id/listitem" android:paddingLeft="10.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/list_primary_m" />
+        <TextView android:ellipsize="marquee" android:id="@id/notes" android:paddingLeft="10.0px" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/list_secondary_m" />
+    </LinearLayout>
+</RelativeLayout>

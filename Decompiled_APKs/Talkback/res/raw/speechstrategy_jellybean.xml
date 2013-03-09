@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <ss:speechstrategy xmlns:ss="http://www.google.android.marvin.talkback.com/speechstrategy"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.google.android.marvin.talkback.com/speechstrategy speechstrategy.xsd">
+
+  <!-- TYPE_VIEW_FOCUSED -->
+
+  <!-- Special case for FOCUSED, we usually only want ACCESSIBILITY_FOCUS -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED||TYPE_VIEW_HOVER_ENTER</ss:eventType>
+      <ss:platformSdk>&gt;=16</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:custom>com.google.android.marvin.talkback.formatter.FallbackFormatter</ss:custom>
+    </ss:formatter>
+  </ss:rule>
+
+</ss:speechstrategy>

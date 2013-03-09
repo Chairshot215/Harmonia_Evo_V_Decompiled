@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_layout" android:padding="0.0dip" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="@dimen/title_height_1" android:baselineAligned="false">
+        <TextView android:gravity="center" android:id="@id/title_text" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/text_style_title_browse" />
+        <ProgressBar android:gravity="right" android:layout_gravity="center_vertical" android:id="@*android:id/progress" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/FilterTextLayout" android:background="@com.htc:drawable/common_panel_input_base" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/FilterText" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/htc_company_directory_search_hint" android:singleLine="true" style="@style/input_style_search_box" />
+        <ImageButton android:gravity="center" android:id="@id/btn_search" android:visibility="gone" android:layout_width="@dimen/title_height_1" android:layout_height="@dimen/title_height_1" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/ic_btn_search" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/contact_list_switch" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height">
+        <ImageView android:layout_width="@dimen/list_item_row_height" android:layout_height="@dimen/list_item_row_height" android:src="@com.htc:drawable/common_icon_default_devicecontact" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/title_fontSize_1" android:textColor="@*android:color/primary_text_light" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/contact_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/htc_local_contacts" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/groupcontact_switch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height">
+        <ImageView android:layout_width="@dimen/list_item_row_height" android:layout_height="@dimen/list_item_row_height" android:src="@com.htc:drawable/common_icon_default_group" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/title_fontSize_1" android:textColor="@*android:color/primary_text_light" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/groupcontact_title" android:layout_width="fill_parent" android:layout_height="@dimen/title_height_1" android:layout_marginLeft="12.0dip" android:text="@string/htc_contact_picker_group_switch" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/divid" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.htc.widget.HtcListView android:id="@*android:id/list" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/customize_listView_marginTop" android:drawSelectorOnTop="false" android:cacheColorHint="@*android:color/transparent" android:divider="@*android:drawable/divider_horizontal_bright" android:layout_weight="1.0" style="@style/CustomizationListBackground" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/empty_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/htc_company_directory_empty" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/emptyText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/noContacts" android:layout_weight="1.0" />
+    <com.android.htccontacts.widget.HtcButtonFrameLayout android:layout_gravity="bottom" android:id="@id/toolbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" htccontacts:buttonStyle="save_cancel"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+</LinearLayout>

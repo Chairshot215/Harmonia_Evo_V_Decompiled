@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pluginpackage certification="0F00" version="0" xsi:schemaLocation="http://www.htc.com/opensense plugin.xsd " xmlns:htcsense="http://www.htc.com/opensense"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <plugin version="1">
+        <feature>album_tab</feature>
+        <class>com.htc.album.TabPluginDevice.TabPluginDevice</class>
+    </plugin>
+    <plugin version="1">
+        <feature>album_tab</feature>
+        <class>com.htc.album.TabPluginFacebook.TabPluginFacebook</class>
+    </plugin>
+    <plugin version="1">
+        <feature>album_tab</feature>
+        <class>com.htc.album.TabPluginFlickr.TabPluginFlickr</class>
+    </plugin>
+    <plugin version="1">
+        <feature>album_tab</feature>
+        <class>com.htc.album.TabPluginDLNA.TabPluginDLNA</class>
+    </plugin>
+    <plugin version="0">
+        <feature>AddAlbumOnlineAlbum</feature>
+        <class>com.htc.album.ListPluginAlbums.GridAlbumSocialNetwork</class>
+    </plugin>
+    <plugin version="0">
+        <feature>AddContactAlbum</feature>
+        <class>com.htc.album.ListPluginAlbums.ListAlbumsFacebook</class>
+    </plugin>
+    <plugin version="0">
+        <feature>AddContactAlbum</feature>
+        <class>com.htc.album.ListPluginAlbums.ListAlbumsFlickr</class>
+    </plugin>
+</pluginpackage>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gm.SuperCollapsedBlock android:id="@id/super_collapsed_block" android:paddingBottom="@dimen/message_header_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/super_collapsed_background" android:paddingRight="@dimen/message_header_padding_right" style="@style/super_collapsed_block">
+        <View android:id="@id/super_collapsed_icon" android:background="@drawable/super_collapsed_icon" android:layout_width="@dimen/contact_photo_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/message_sender_name" android:id="@id/super_collapsed_label" android:paddingLeft="@dimen/message_header_inner_side_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_messages_read" android:layout_toRightOf="@id/super_collapsed_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/message_sender_name" android:gravity="center_horizontal" android:id="@id/super_collapsed_count" android:layout_width="@dimen/message_header_action_button_width" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.google.android.gm.SuperCollapsedBlock>

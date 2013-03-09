@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/now_forecast_item_width" android:layout_height="@dimen/now_forecast_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/now_con_icon" android:layout_width="@dimen/now_icon_width" android:layout_height="@dimen/now_icon_height" android:layout_marginRight="@dimen/now_con_icon_margin_right" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/now_day_text_font" android:textColor="@color/black" android:gravity="left" android:id="@id/now_day_txt" android:paddingLeft="@dimen/now_day_txt_padding_left" android:paddingTop="@dimen/now_day_text_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/now_date_text_font" android:textColor="@color/now_day_date_color" android:gravity="left" android:id="@id/now_date" android:paddingLeft="@dimen/now_day_txt_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/now_day_txt" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="@dimen/now_temp_info_height" android:layout_marginLeft="@dimen/now_day_txt_padding_left" android:layout_below="@id/now_date" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/now_hl_label_font" android:textColor="#ff404040" android:id="@id/now_hl_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/now_curtemp_font" android:textColor="@color/black" android:id="@id/now_curtemp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0px" android:layout_toRightOf="@id/now_hl_label" />
+    </RelativeLayout>
+</RelativeLayout>

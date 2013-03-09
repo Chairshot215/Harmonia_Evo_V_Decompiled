@@ -1,0 +1,272 @@
+PhoneticArtsFile Config
+Version 01
+
+# -----------------------------------------------------------------------------
+# Common definitions for British English accent:
+# -----------------------------------------------------------------------------
+
+accent "RP" ;
+language "en_gb" ;
+
+###### Phone definitions  ######
+phone_defs.all		{ "sil" "a" "aa" "aax" "ai" "au" "ax" "b" "ch" "d" "dh" "e" "eax" "ei" "f" "g" "h" "i" "iax" "ii" "jh" "k" "l" "m" "n" "ng" "o" "oi" "oo" "ou" "p" "r" "s" "sh" "t" "th" "u" "uax" "uh" "uu" "v" "w" "y" "z" "zh" };
+phone_defs.all_with_stress { "sil" "a1" "a2" "aa1" "aa2" "aax1" "aax2" "ai1" "ai2" "au1" "au2" "ax0" "b" "ch" "d" "dh" "e1" "e2" "eax1" "eax2" "ei1" "ei2" "f" "g" "h" "i1" "i2" "iax1" "iax2" "ii1" "ii2" "jh" "k" "l" "m" "n" "ng" "o1" "o2" "oi1" "oi2" "oo1" "oo2" "ou1" "ou2" "p" "r" "s" "sh" "t" "th" "u1" "u2" "uax1" "uax2" "uh1" "uh2" "uu1" "uu2" "v" "w" "y" "z" "zh" };
+
+## phonetic description
+phone_defs.vowel	{ "a" "aa" "au" "ax" "e" "i" "ii" "oo" "ou" "u" "uu" "uh" "ai" "ei" "oi" "eax" "uax" "aax" "iax" "o" } ;
+phone_defs.consonant    { "m" "p" "b" "f" "v" "th" "dh" "n" "s" "z" "t" "d" "l" "r" "ch" "jh" "sh" "zh" "y" "k" "g" "ng" "w" "h" } ;
+phone_defs.diphthong    { "au" "ou" "ai" "ei" "oi" "eax" "uax" "aax" "iax" } ;
+
+#rounding
+phone_defs.rounded      { "au"  "oo" "ou" "u" "uu" "uh" "oi" "uax"  "o" "w" } ;
+phone_defs.unrounded    { "a" "aa" "ax" "e" "i" "ii" "ai" "ei" "eax" "aax" "iax" "m" "p" "b" "f" "v" "th" "dh" "n" "s" "z" "t" "d" "l" "r" "ch" "jh" "sh" "zh" "y" "k" "g" "ng" "h" } ;
+
+#voicing
+phone_defs.unvoiced     { "p" "t" "k" "f" "th" "s" "sh" "ch" "h" } ;
+phone_defs.voiced       { "b" "d" "g" "v" "dh" "z" "zh" "jh" "n" "m" "ng" "l" "w" "y" "j" "r" "a" "aa" "au" "ax" "e" "i" "ii" "oo" "ou" "u" "uu" "uh" "ai" "ei" "oi" "eax" "uax" "aax" "iax" "o" } ;
+
+#height
+phone_defs.close        { "ii" "uu" } ;
+phone_defs.nearclose    { "DUMMY" } ;
+phone_defs.closemid     { "i" "iax" "u" "uax" } ;
+phone_defs.mid          { "eax" "ax" "aax" "e" "ei" "ou" "o" } ;
+phone_defs.openmid      { "oo" "oi" } ;
+phone_defs.nearopen     { "a" "aa" "uh" } ;
+phone_defs.open         { "au" "ai" } ;
+
+#vowel position
+phone_defs.front        { "a" "ii" "ei" "e" "eax" } ;
+phone_defs.nearfront    { "i" "iax" "ai" } ;
+phone_defs.central      { "ou" "au" "ax" "aax" "uh" } ;
+phone_defs.nearback     { "u" "uax" "uu" } ; 
+phone_defs.back         { "aa" "oo" "o" "oi" } ;
+
+#height (diphthong target vowel)
+phone_defs.target_closemid   { "au" "ou" "oi" "ei" "ai" } ;
+phone_defs.target_mid	     { "eax" "uax" "aax" "iax" } ;
+
+#position (diphthong target vowel)
+phone_defs.target_nearfront  { "ai" "ei" "oi" } ;
+phone_defs.target_central    { "eax" "uax" "aax" "iax" } ;
+phone_defs.target_nearback   { "ou" "au" } ;
+
+#rounding (diphthong target vowel)
+phone_defs.target_rounded    { "au" "ou" } ;
+phone_defs.target_unrounded  { "oi" "ai" "ei" "eax" "uax" "aax" "iax" } ;
+
+#place of articulation
+phone_defs.labial       { "m" "p" "b" "f" "v" } ;
+phone_defs.dental       { "th" "dh" } ;
+phone_defs.alveolar     { "n" "s" "z" "t" "d" "l" "r" } ;
+phone_defs.postalveolar { "ch" "jh" "sh" "zh" } ;
+phone_defs.palatal      { "y" } ;
+phone_defs.velar        { "k" "g" "ng" "w" } ;
+phone_defs.glottal      { "h" } ;
+
+#manner of articulation
+phone_defs.approximant     { "r" "w" "y" } ;
+phone_defs.lateral         { "l" } ;
+phone_defs.nasal           { "n" "m" "ng" } ;
+phone_defs.affricate       { "ch" "jh" } ;
+phone_defs.stop            { "p" "t" "k" "b" "d" "g" } ;
+phone_defs.fricative       { "f" "th" "s" "sh" "v" "dh" "z" "sh" "zh" "h" } ;
+
+#quantity
+phone_defs.short        { "a" "ax" "e" "u" "uh" "i" "o" } ;
+phone_defs.long		{ "aa" "ai" "au" "ei" "ii" "oi" "oo" "ou" "uu" "eax" "uax" "aax" "iax" } ;
+
+#manner groups
+phone_defs.obstruent  { "b" "d" "g" "v" "dh" "z" "zh" "jh" "p" "t" "k" "f" "th" "s" "sh" "ch" "h" } ;
+phone_defs.sonorant   { "a" "aa" "au" "ax" "e" "i" "ii" "oo" "ou" "u" "uu" "uh" "ai" "ei" "oi" "eax" "uax" "aax" "iax" "o" "n" "m" "ng" "r" "w" "y" "l" } ;
+
+
+##################################################
+
+phonotactics.approximant  { "r" "w" "y" "l" } ;
+phonotactics.stop         { "p" "t" "k" "b" "d" "g" } ;
+phonotactics.vowel        { "a" "aa" "au" "ax" "e" "i" "ii" "oo" "ou" "u" "uu" "uh" "ai" "ei" "oi" "eax" "uax" "aax" "iax" "o" } ;
+phonotactics.onset_consonant    { "m" "p" "b" "f" "v" "th" "dh" "n" "s" "z" "t" "d" "l" "r" "ch" "jh" "sh" "zh" "y" "k" "g" "w" "h" } ;
+phonotactics.coda_consonant    { "m" "p" "b" "f" "v" "th" "dh" "n" "s" "z" "t" "d" "l" "ch" "jh" "sh" "zh" "k" "g" "ng" } ;
+
+#phonotactics.def.two_initial three_initial;
+
+phonotactics.def.stress { "0" "1" "2" } ;
+
+phonotactics.def.open_syllable_vowel { "aa" "ai" "au" "ei" "ii" "oi" "oo" "ou" "uu" "eax" "uax" "aax" "iax" "ax" } ;
+phonotactics.def.closed_syllable_vowel { "a" "e" "u" "uh" "i" "o" } ;
+phonotactics.def.one_initial { "b" "ch" "d" "dh" "f" "g" "h" "jh" "k" "l" "m" "n" "p" "r" "s" "sh" "t" "th" "v" "w" "y" "z" "zh" };
+phonotactics.def.ptknmlrwf { "f" "k" "l" "m" "n" "p" "r" "t" "w" };
+phonotactics.def.pbkfhvmng { "b" "f" "g" "h" "k" "m" "n" "p" "v" };
+phonotactics.def.pbkgfv { "b" "f" "g" "k" "p" "v" };
+phonotactics.def.tdthshk { "d" "k" "sh" "t" "th" };
+phonotactics.def.three_initial { "k" "p" "t" };
+phonotactics.def.rwy { "r" "w" "y" };
+phonotactics.def.lry { "l" "r" "y" };
+phonotactics.def.lwy { "l" "w" "y" };
+phonotactics.def.szl { "l" "s" "z" };
+phonotactics.def.tk { "k" "t" };
+phonotactics.def.wr { "r" "w" };
+phonotactics.def.mn { "m" "n" };
+phonotactics.def.lr { "l" "r" };
+phonotactics.def.ssh { "s" "sh" };
+phonotactics.def.y { "y" };
+phonotactics.def.r { "r" };
+phonotactics.def.p { "p" };
+phonotactics.def.t { "t" };
+phonotactics.def.v { "v" };
+phonotactics.def.k { "k" };
+phonotactics.def.g { "g" };
+phonotactics.def.w { "w" };
+
+phonotactics.def.one_final { "b" "ch" "d" "dh" "f" "g" "jh" "k" "l" "m" "n" "ng" "p" "s" "sh" "t" "th" "v" "z" "zh" };
+phonotactics.def.bddhglmnngv { "b" "d" "dh" "g" "l" "m" "n" "ng" "v" };
+phonotactics.def.fkptth { "f" "k" "p" "t" "th" };
+phonotactics.def.z { "z" };
+phonotactics.def.s { "s" };
+phonotactics.def.d { "d" };
+phonotactics.def.t { "t" };
+phonotactics.def.bdhgjhlmnngvzzh { "b" "dh" "g" "jh" "l" "m" "n" "ng" "v" "z" "zh" } ;
+phonotactics.def.chfkpsshthnl { "ch" "f" "k" "p" "s" "sh" "th" "n" "l" };
+phonotactics.def.fkptthn { "f" "k" "p" "t" "th" "n" };
+phonotactics.def.tdchjhthzh { "t" "d" "ch" "jh" "th" "zh" };
+phonotactics.def.l { "l" };
+phonotactics.def.n { "n" };
+phonotactics.def.m { "m" };
+phonotactics.def.pbftthz { "p" "b" "f" "t" "th" "z" };
+
+phonotactics.def.bdngkpt { "b" "d" "k" "p" "ng" "t" };
+phonotactics.def.ptk { "k" "p" "t" };
+phonotactics.def.kth { "k" "th" };
+phonotactics.def.fp { "f" "p" };
+phonotactics.def.dm { "d" "m" };
+phonotactics.def.st { "s" "t" };
+phonotactics.def.kp { "k" "p" };
+phonotactics.def.pd { "d" "p" };
+phonotactics.def.tth { "t" "th" };
+phonotactics.def.ls { "l" "s" };
+phonotactics.def.ng { "ng" };
+phonotactics.def.f { "f" };
+phonotactics.def.b { "b" };
+phonotactics.def.th { "th" };
+phonotactics.def.bddhgjhmnvz { "b" "d" "dh" "g" "jh" "m" "n" "v" "z" } ;
+phonotactics.def.fkptth { "f" "k" "p" "t" "th" } ;
+phonotactics.def.bddhgjhmnv { "b" "d" "dh" "g" "jh" "m" "n" "v" } ;
+phonotactics.def.chfkpsshth { "ch" "f" "k" "p" "s" "sh" "th" } ;
+phonotactics.def.fklsnp { "f" "k" "l" "s" "n" "p" } ;
+phonotactics.def.pnng { "p" "n" "ng" } ;
+phonotactics.def.jhz { "jh" "z" };
+phonotactics.def.tth { "t" "th" };
+phonotactics.def.chs { "ch" "s" };
+phonotactics.def.td { "t" "d" };
+phonotactics.def.ngl { "ng" "l" };
+phonotactics.def.kt { "k" "t" };
+phonotactics.def.kgth { "k" "g" "th" };
+phonotactics.def.fpdt { "f" "p" "d" "t" };
+
+phonotactics.max_onset 3 ;
+phonotactics.max_coda  4 ;
+
+phonotactics.onset.1.1 { "one_initial" } ;
+
+phonotactics.onset.2.1 { "pbkfhvmng" "y" } ;
+phonotactics.onset.2.2 { "pbkgfv" "lr" } ;
+phonotactics.onset.2.3 { "szl" "y" } ;
+phonotactics.onset.2.4 { "ssh" "v" } ;
+phonotactics.onset.2.5 { "g" "wr" } ;
+phonotactics.onset.2.6 { "tdthshk" "rwy" } ;
+phonotactics.onset.2.7 { "s" "ptknmlrwf" } ;
+phonotactics.onset.2.8 { "p" "w" } ;
+
+phonotactics.onset.3.1 { "ssh" "p" "y" } ;
+phonotactics.onset.3.2 { "ssh" "t" "r" } ;
+phonotactics.onset.3.3 { "ssh" "t" "y" } ;
+phonotactics.onset.3.4 { "ssh" "k" "rwy" } ;
+phonotactics.onset.3.5 { "ssh" "k" "lr" } ;
+phonotactics.onset.3.6 { "ssh" "p" "lry" } ;
+
+phonotactics.coda.1.1 { "one_final" };
+
+phonotactics.coda.2.1 { "bddhglmnngv"  "z" };
+phonotactics.coda.2.2 { "fkptthn" "s" };
+phonotactics.coda.2.3 { "bdhgjhlmnngvzzh" "d" };
+phonotactics.coda.2.4 { "chfkpsshthnl" "t" };
+phonotactics.coda.2.5 { "n" "tdchjhthzh" };
+phonotactics.coda.2.6 { "l" "one_final" };
+phonotactics.coda.2.7 { "m" "pbftthz" } ;
+phonotactics.coda.2.8 { "ng" "kgth" } ;
+phonotactics.coda.2.9 { "fpdt" "th" } ;
+phonotactics.coda.2.10 { "s" "th" } ;
+phonotactics.coda.2.11 { "s" "kp" } ;
+
+phonotactics.coda.3.1 { "m" "p" "f" } ;
+phonotactics.coda.3.2 { "ng" "k" "st" };
+phonotactics.coda.3.3 { "n" "k" "t" };
+phonotactics.coda.3.4 { "l" "p" "t" };
+phonotactics.coda.3.5 { "n" "d" "th" };
+phonotactics.coda.3.6 { "bdngkpt" "s" "t" };
+phonotactics.coda.3.7 { "td" "th" "s" };
+phonotactics.coda.3.8 { "k" "s" "th" };
+phonotactics.coda.3.9 { "l" "f" "th" };
+phonotactics.coda.3.10 { "mn" "s" "k" };
+phonotactics.coda.3.11 { "f" "th" "s" };
+phonotactics.coda.3.12 { "m" "p" "st" };
+phonotactics.coda.3.13 { "l" "bddhgjhmnv" "z" } ;
+phonotactics.coda.3.14 { "l" "fkptth" "s" } ;
+phonotactics.coda.3.15 { "n" "d" "z" } ;
+phonotactics.coda.3.16 { "fklsnp" "t" "s" } ;
+phonotactics.coda.3.17 { "s" "kp" "st" } ;
+phonotactics.coda.3.18 { "l" "bddhgjhmnvz" "d" } ;
+phonotactics.coda.3.19 { "l" "chfkpsshth" "t" } ;
+phonotactics.coda.3.20 { "pnng" "th" "s" } ;
+phonotactics.coda.3.21 { "n" "jhz" "d" } ;
+phonotactics.coda.3.22 { "n" "chs" "t" } ; 
+phonotactics.coda.3.23 { "m" "f" "st" } ;
+phonotactics.coda.3.24 { "m" "th" "s" };
+phonotactics.coda.3.25 { "z" "d" "z" };
+
+phonotactics.coda.4.1 { "ng" "k" "t" "s" };
+phonotactics.coda.4.2 { "k" "s" "t" "th" } ;
+phonotactics.coda.4.3 { "l" "fp" "tth" "s" } ;
+phonotactics.coda.4.4 { "k" "s" "tth" "s" } ;
+phonotactics.coda.4.5 { "ngl" "kt" "s" "t" } ;
+phonotactics.coda.4.6 { "m" "p" "t" "s" } ;
+phonotactics.coda.4.7 { "m" "p" "s" "t" } ;
+phonotactics.coda.4.8 { "ng" "s" "t" "s" };
+
+phonotactics.rhyme1 { "short_vowel" "coda" } ;
+phonotactics.rhyme2 { "long_diph_vowel" "coda" } ;
+phonotactics.rhyme3 { "long_diph_vowel" } ;
+
+phonotactics.coda11 { "coda_consonant"} ;
+phonotactics.coda21 { "coda_consonant" "coda_consonant" } ;
+phonotactics.coda22 { "coda_consonant" "coda_consonant" } ;
+phonotactics.coda23 { "coda_consonant" "coda_consonant" } ;
+phonotactics.coda31 { "coda_consonant" "coda_consonant" "coda_consonant" } ;
+phonotactics.coda32 { "coda_consonant" "coda_consonant" "coda_consonant" } ;
+phonotactics.coda33 { "coda_consonant" "coda_consonant" "coda_consonant" } ;
+
+phonotactics.wordid_definition "[a-z]+-?'?[a-z]*_?[a-z0-9]*" ;
+
+#phonotactics.onset1 { "stop" "approximant" "vowel" "consonant" } ;
+#phonotactics.onset2 { "stop" "vowel" "consonant" } ;
+#phonotactics.onset2 { "stop" "vowel" } ;
+#phonotactics.onset3 { "approximant" "vowel" "consonant" } ;
+
+
+
+## list of function words and special words
+#
+#  Note: "sil" and "content" are special words
+#
+
+phone_defs.word_type { "a's_letter" "a_determiner" "a_letter" "am" "an" "and" "are" "as" "at" "b's_letter" "b_letter" "because" "been" "but" "by" "c's_letter" "c_letter" "can_vrb" "cause_cnj" "cos_cnj" "could" "could've" "coulda" "couldn't" "d's_letter" "d_letter" "de" "des_de" "des_fr" "do" "does" "doesn't" "e's_letter" "e_letter" "f's_letter" "f_letter" "for" "from" "g's_letter" "g_letter" "h's_letter" "h_letter" "had" "has" "have" "he" "he'd" "he'll" "he's" "her" "him" "his" "huh" "i'd" "i'll" "i'm" "i's_letter" "i_letter" "i_pronoun" "in" "j's_letter" "j_letter" "k's_letter" "k_letter" "l's_letter" "l_letter" "la" "le" "m's_letter" "m_letter" "n's_letter" "n_letter" "o's_letter" "o_letter" "of" "or" "p's_letter" "p_letter" "per" "q's_letter" "q_letter" "r's_letter" "r_letter" "s's_letter" "s_letter" "se" "shall" "she'd" "she'll" "she's" "sil" "sir" "so" "some" "t's_letter" "t_letter" "than" "that" "that's" "the" "their" "them" "there" "there'll" "there's" "there've" "they'd" "they'll" "they're" "this" "this'll" "to" "twas" "u's_letter" "u_letter" "uh" "us" "v's_letter" "v_letter" "w's_letter" "w_letter" "was" "we" "we'd" "we'll" "we're" "we've" "were" "what" "what's" "where" "where'd" "where're" "where's" "will" "would" "would've" "wouldn't" "x's_letter" "x_letter" "y's_letter" "y_letter" "you" "you'd" "you'll" "you're" "you've" "your" "z's_letter" "z_letter" };
+
+###### Word types ######
+## So far, used during phone align diagnostics
+word_type.function { "a_determiner" "am" "an" "and" "are" "as" "at" "because" "been" "but" "by" "can_vrb" "cause_cnj" "cos_cnj" "could" "could've" "coulda" "couldn't" "de" "des_de" "des_fr" "do" "does" "doesn't" "for" "from" "had" "has" "have" "he" "he'd" "he'll" "he's" "her" "him" "his" "huh" "i'd" "i'll" "i'm" "i_pronoun" "in" "la" "le" "of" "or" "per" "se" "shall" "she'd" "she'll" "she's" "sil" "sir" "so" "some" "than" "that" "that's" "the" "their" "them" "there" "there'll" "there's" "there've" "they'd" "they'll" "they're" "this" "this'll" "to" "twas" "uh" "us" "was" "we" "we'd" "we'll" "we're" "we've" "were" "what" "what's" "where" "where'd" "where're" "where's" "will" "would" "would've" "wouldn't" "you" "you'd" "you'll" "you're" "you've" "your" };
+
+word_type.letter { "a's_letter" "a_letter" "b's_letter" "b_letter" "c's_letter" "c_letter" "d's_letter" "d_letter" "e's_letter" "e_letter" "f's_letter" "f_letter" "g's_letter" "g_letter" "h's_letter" "h_letter" "i's_letter" "i_letter" "j's_letter" "j_letter" "k's_letter" "k_letter" "l's_letter" "l_letter" "m's_letter" "m_letter" "n's_letter" "n_letter" "o's_letter" "o_letter" "p's_letter" "p_letter" "q's_letter" "q_letter" "r's_letter" "r_letter" "s's_letter" "s_letter" "t's_letter" "t_letter" "u's_letter" "u_letter" "v's_letter" "v_letter" "w's_letter" "w_letter" "x's_letter" "x_letter" "y's_letter" "y_letter" "z's_letter" "z_letter" };
+
+word_type.digit    { "zero" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" };
+
+features.stress 		{ "sil" "0" "1" "2" } 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/list_bg" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@dimen/readscreen_get_unfinished_margin_bottom" android:paddingRight="@com.htc:dimen/htc_list_item_margin_left" android:paddingBottom="@dimen/readscreen_get_unfinished_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="center" android:id="@id/getunfinishedBtn" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="0.0dip" android:minHeight="0.0dip" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    <ImageView android:id="@id/getunfinishedAnimation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

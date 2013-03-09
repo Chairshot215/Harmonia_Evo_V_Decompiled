@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu" android:showAsAction="ifRoom">
+        <menu>
+            <item android:icon="@*android:drawable/ic_notification_clear_all" android:id="@id/ref_reset" android:title="@string/rtn_reset" />
+            <item android:id="@id/ref_cancel" android:title="@string/rtn_cancel" />
+        </menu>
+    </item>
+</menu>

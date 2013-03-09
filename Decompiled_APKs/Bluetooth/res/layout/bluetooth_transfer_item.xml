@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/transfer_icon" android:layout_width="@com.htc:dimen/htc_list_item_size_icon" android:layout_height="@com.htc:dimen/htc_list_item_size_icon" android:layout_marginRight="5.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/transfer_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/transfer_icon" android:layout_alignParentTop="true" style="@com.htc:style/darklist_primary_m" />
+    <TextView android:id="@id/targetdevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/transfer_icon" android:layout_below="@id/transfer_title" style="@com.htc:style/darklist_secondary_m" />
+    <TextView android:id="@id/complete_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/targetdevice" android:layout_alignParentRight="true" style="@com.htc:style/darklist_secondary_m" />
+    <TextView android:id="@id/complete_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/complete_date" android:layout_toRightOf="@id/transfer_icon" android:layout_below="@id/targetdevice" style="@com.htc:style/darklist_secondary_m" />
+</RelativeLayout>

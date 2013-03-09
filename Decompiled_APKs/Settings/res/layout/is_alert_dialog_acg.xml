@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0px" android:textColor="@com.htc:color/white" android:id="@id/message" android:paddingLeft="15.0px" android:paddingTop="13.0px" android:paddingRight="15.0px" android:paddingBottom="13.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/is_dialog_acg" />
+    <CheckBox android:id="@id/is_checkBox_acg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dont_remind_again" />
+</LinearLayout>

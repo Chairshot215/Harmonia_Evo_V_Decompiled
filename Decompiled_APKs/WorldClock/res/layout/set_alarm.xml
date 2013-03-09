@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.htc.widget.HeaderBarMiddle android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.htc.widget.HeaderBarText android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+        </com.htc.widget.HeaderBarMiddle>
+        <RelativeLayout android:id="@id/common_body_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_bar" />
+        <com.htc.android.worldclock.widget.MyScrollView android:id="@id/myscrollview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_below="@id/header_bar">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/alarm_timerPicker_layout" android:layout_width="wrap_content" android:layout_height="@dimen/alarm_timerPicker_layout_height">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/timerPickerTitle" android:layout_width="@dimen/alarm_timerPickerTitle_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alarm_timerPickerTitle_marginTop" android:layout_centerHorizontal="true">
+                        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="@dimen/alarm_timerPickerTitle_text_width" android:layout_height="wrap_content" android:text="@string/timer_hour" style="@style/timerTextStyle" />
+                        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="@dimen/alarm_timerPickerTitle_text_width" android:layout_height="wrap_content" android:text="@string/timer_minute" style="@style/timerTextStyle" />
+                        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:layout_width="@dimen/alarm_timerPickerTitle_text_width" android:layout_height="wrap_content" style="@style/timerTextStyle" />
+                    </LinearLayout>
+                    <com.htc.widget.HtcTimePicker android:gravity="center_horizontal" android:id="@id/timerPicker" android:layout_width="@dimen/alarm_timerPicker_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alarm_timerPicker_marginTop" android:layout_centerHorizontal="true" android:selectable="false" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/alarm_detail_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/setAlarmStyle">
+                    <LinearLayout android:orientation="vertical" android:id="@id/alarm_description" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_description_height">
+                        <TextView android:id="@id/des_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" android:layout_marginTop="@dimen/alarm_des_layout_marginTop" android:text="@string/alarm_description" android:includeFontPadding="false" style="@com.htc:style/list_primary_m" />
+                        <EditText android:id="@id/description" android:background="@com.htc:drawable/common_inputfield_light" android:paddingLeft="@dimen/edit_text_padding" android:paddingRight="@dimen/edit_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" android:layout_marginTop="@dimen/alarm_description_marginTop" android:layout_marginRight="@dimen/list_item_text_padding" android:singleLine="true" android:capitalize="sentences" android:layout_below="@id/des_layout" style="@com.htc:style/input_default_m" />
+                    </LinearLayout>
+                    <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/alarm_ringtone" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_common_list_height">
+                        <TextView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" android:layout_marginTop="@dimen/alarm_2text_marginTop" android:text="@string/alarm_ringtone" android:includeFontPadding="false" style="@com.htc:style/list_primary_m" />
+                        <TextView android:id="@id/ringtone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" style="@com.htc:style/list_secondary_m" />
+                    </LinearLayout>
+                    <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/alarm_repeat" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_common_list_height">
+                        <TextView android:enabled="true" android:focusable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" android:layout_marginTop="@dimen/alarm_2text_marginTop" android:text="@string/alarm_repeat" android:includeFontPadding="false" style="@com.htc:style/list_primary_m" />
+                        <TextView android:id="@id/repeat" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+                    </LinearLayout>
+                    <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/alarm_vibrate" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/alarm_common_list_height">
+                        <TextView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_text_padding" android:text="@string/alarm_vibrate" android:layout_centerVertical="true" style="@com.htc:style/list_primary_m" />
+                        <CheckBox android:id="@id/vibrate" android:focusable="false" android:layout_width="@dimen/check_box_icon_width" android:layout_height="@dimen/check_box_icon_width" android:layout_marginRight="@dimen/list_item_icon_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.htc.android.worldclock.widget.MyScrollView>
+    </RelativeLayout>
+    <include layout="@layout/common_button_bar" />
+</LinearLayout>

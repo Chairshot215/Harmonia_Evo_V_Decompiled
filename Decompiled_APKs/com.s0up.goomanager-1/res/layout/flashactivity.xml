@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/flashListView" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btnOrder" />
+    <Button android:id="@id/btnOrder" android:layout_width="160.0dip" android:layout_height="60.0dip" android:text="Order &amp; flash selected" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/btnAddZip" android:layout_width="160.0dip" android:layout_height="60.0dip" android:text="Add zip from another location" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

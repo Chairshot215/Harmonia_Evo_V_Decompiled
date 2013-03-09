@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/catagory_guard_domestic" android:key="domestic_guard_group" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_voice" android:key="button_roaming_guard_voice_domestic" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_data" android:key="button_roaming_guard_data_domestic" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/catagory_guard_international" android:key="international_guard_group" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_voice" android:key="button_roaming_guard_voice_international" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_data" android:key="button_roaming_guard_data_international" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_sms" android:key="button_roaming_guard_sms_international" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/catagory_guard_gsm" android:key="gsm_guard_group" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_voice" android:key="button_gsm_roaming_guard_voice" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_data" android:key="button_gsm_roaming_guard_data" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/roaming_guard_sms" android:key="button_roaming_guard_sms" />
+</com.htc.preference.HtcPreferenceScreen>

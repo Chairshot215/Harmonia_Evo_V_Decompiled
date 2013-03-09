@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lock_screen_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/wallpaper_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/wallpaper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/lock_screen_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/lock_screen_arc_background" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/lock_screen_arc_top" android:layout_width="fill_parent" android:layout_height="@dimen/lock_screen_arc_top_height" android:layout_marginBottom="@dimen/lock_screen_arc_top_marginBottom" android:src="@drawable/lockscreen_arcglass_top" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/lock_screen_arc_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/lock_screen_arc_bottom_marginBottom" android:src="@drawable/lockscreen_arcglass_bottom" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/lock_screen_arc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/lock_screen_arc_marginBottom" android:src="@drawable/lockscreen_arc_incall" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

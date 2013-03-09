@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@com.htc:string/dl_settings">
+        <com.android.mms.ui.ManagePasswordPreference android:title="@string/pref_title_manage_password" android:key="pref_key_manage_password" android:summary="@string/pref_summary_manage_password" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_sms_storage_title" android:key="pref_key_storage_settings">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_auto_delete" android:key="pref_key_auto_delete" android:summary="@string/pref_summary_auto_delete" android:defaultValue="false" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/pref_title_sms_delete" android:key="pref_key_sms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+        <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/pref_title_mms_delete" android:key="pref_key_mms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_sms_settings_title" android:key="pref_key_sms_preference_category">
+        <com.android.mms.ui.SmsCenterPreference android:persistent="false" android:title="@string/htc_pref_title_sms_center" android:key="pref_key_sms_center" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_sms_priority" android:title="@string/htc_setting_priority" android:key="pref_key_sms_priority" android:defaultValue="normal" android:entryValues="@array/pref_entry_values_sms_priority" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_sms_send_callback" android:key="pref_key_sms_send_callback" android:summary="@string/pref_title_sms_send_callback" android:defaultValue="true" />
+        <com.htc.preference.HtcEditTextPreference android:persistent="true" android:title="@string/htc_pref_title_sms_set_callback" android:key="pref_key_sms_set_callback" android:dependency="pref_key_sms_send_callback" />
+        <com.android.mms.ui.ManageSimPreference android:title="@string/cust_pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" android:summary="@string/cust_pref_summary_manage_sim_messages" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_greek_encoding" android:title="@string/pref_greek_encoding_title" android:key="pref_key_greek_encoding" android:summary="@string/pref_greek_encoding_7bit" android:defaultValue="7bit" android:entryValues="@array/pref_entry_values_greek_encoding" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_mms_settings_title" android:key="pref_key_mms_preference_category">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_delivery_reports" android:key="pref_key_mms_delivery_reports" android:summary="@string/pref_summary_mms_delivery_reports" android:defaultValue="false" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_read_reports" android:key="pref_key_mms_read_reports" android:summary="@string/pref_summary_mms_read_reports" android:defaultValue="false" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval" android:summary="@string/pref_summary_mms_auto_retrieval" android:defaultValue="true" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_mms_priority" android:title="@string/htc_setting_priority" android:key="pref_key_mms_priority" android:defaultValue="medium" android:entryValues="@array/pref_entry_values_mms_priority" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/htc_pref_entries_mms_max_size" android:title="@string/htc_setting_message_size_limit" android:key="pref_key_mms_max_size" android:defaultValue="3" android:entryValues="@array/htc_pref_entry_values_mms_max_size" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_attachment_storage_labels" android:title="@string/attachment_storage" android:key="pref_key_attachment_storage_setting" android:summary="@string/phone_storage" android:defaultValue="0" android:entryValues="@array/pref_entries_attachment_storage_values" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/htc_cdma_mms_connections_setting" android:key="pref_key_htc_cdma_mms_connections_settings_setting">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.VIEW" android:targetClass="com.htc.messaging.ui.HtcCdmaMmsConnEditor" />
+        </com.htc.preference.HtcPreferenceScreen>
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_received_notification_settings_title">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_received_notification_enabled" android:key="pref_key_enable_received_notifications" android:summary="@string/pref_summary_received_notification_enabled" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_play_notification" android:key="pref_key_play_received_notifications" android:dependency="pref_key_enable_received_notifications" android:defaultValue="true" />
+        <com.android.mms.ui.MmsRingtonePreference android:title="@string/htc_pref_title_notification_ringtone" android:key="pref_key_received_ringtone" android:summary="@string/pref_summary_notification_ringtone" android:dependency="pref_key_play_received_notifications" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" android:showDefault="true" android:showSilent="false" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_notification_vibrate" android:key="pref_key_vibrate_received_notifications" android:summary="@string/pref_summary_received_notification_vibrate" android:dependency="pref_key_enable_received_notifications" android:defaultValue="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_sent_notification_settings_title">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_sent_notification_enabled" android:key="pref_key_enable_sent_notifications" android:summary="@string/pref_summary_sent_notification_enabled" android:defaultValue="false" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_send_failure_notification" android:key="pref_key_enable_sent_failure_notifications" android:summary="@string/pref_summary_sent_failure_notifications" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_play_notification" android:key="pref_key_play_sent_notifications" android:defaultValue="true" />
+        <com.android.mms.ui.MmsRingtonePreference android:title="@string/htc_pref_title_notification_ringtone" android:key="pref_key_sent_ringtone" android:summary="@string/pref_summary_notification_ringtone" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" android:showDefault="true" android:showSilent="false" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_notification_vibrate" android:key="pref_key_vibrate_sent_notifications" android:summary="@string/pref_summary_sent_notification_vibrate" android:defaultValue="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

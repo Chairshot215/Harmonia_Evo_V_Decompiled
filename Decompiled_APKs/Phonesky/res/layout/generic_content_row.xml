@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.GenericContentRow android:orientation="horizontal" android:id="@id/permission_row" android:background="@drawable/content_row_background" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="13.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/content_generic_large_size" android:textColor="@color/black" android:id="@id/header" android:lineSpacingExtra="0.0sp" style="@style/GenericContentRow" />
+        <TextView android:id="@id/new_content" android:paddingBottom="6.0dip" android:visibility="gone" android:lineSpacingExtra="1.0sp" style="@style/GenericContentNewBadge" />
+        <TextView android:id="@id/content" android:lineSpacingExtra="1.0sp" style="@style/GenericContentRow" />
+    </LinearLayout>
+    <ImageView android:id="@id/arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_arrow_large_gray" />
+</com.google.android.finsky.layout.GenericContentRow>

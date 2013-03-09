@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="left|center" android:id="@id/ngm_group_select" android:background="?com.htc:attr_common_b_pulldown" android:paddingLeft="14.0px" android:layout_width="wrap_content" android:layout_height="@dimen/compose_contactPicker_height" android:layout_weight="1.0" style="@style/htc_button_style" />
+    <ImageButton android:id="@id/ngm_help" android:layout_width="@dimen/compose_contactPicker_height" android:layout_height="@dimen/compose_contactPicker_height" android:layout_marginLeft="@dimen/common_margin_left" android:src="@drawable/common_icon_glance_detail_rest" style="@style/htc_button_style" />
+</LinearLayout>

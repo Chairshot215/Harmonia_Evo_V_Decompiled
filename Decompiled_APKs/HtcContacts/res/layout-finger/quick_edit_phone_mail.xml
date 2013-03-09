@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.htccontacts.widget.title.GenericHeaderBar android:id="@id/headerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+    <View android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@com.htc:layout/htc_list_item_separator" />
+    </LinearLayout>
+    <include layout="@layout/list_item_edit_text_with_label" />
+    <View android:id="@id/blankList" android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+    <com.android.htccontacts.widget.HtcButtonFrameLayout android:id="@id/ButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" htccontacts:buttonStyle="save_cancel"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+</LinearLayout>

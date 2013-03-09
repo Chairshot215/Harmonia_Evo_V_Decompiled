@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/about_dialog_layout" android:paddingLeft="9.0px" android:paddingTop="35.0px" android:paddingRight="9.0px" android:paddingBottom="21.0px" android:layout_width="320.0px" android:layout_height="455.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AbsoluteLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="302.0px" android:layout_height="399.0px" android:layout_x="0.0px" android:layout_y="0.0px">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/head_block" android:layout_width="302.0px" android:layout_height="238.0px" android:layout_x="0.0px" android:layout_y="63.0px">
+            <TextView android:textSize="30.0px" android:typeface="sans" android:textColor="#ffffffff" android:gravity="center" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0px" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/dev_env" android:paddingTop="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0px" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/version" android:paddingTop="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <ScrollView android:id="@id/body_block" android:paddingLeft="2.0px" android:paddingTop="18.0px" android:paddingRight="2.0px" android:paddingBottom="18.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_x="0.0px" android:layout_y="132.0px">
+                <TextView android:textSize="10.0px" android:typeface="sans" android:textColor="#ffffffff" android:gravity="center" android:id="@id/about_dialog_content" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" />
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_x="0.0px" android:layout_y="301.0px">
+            <ImageView android:id="@id/company_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/htc_alogo" />
+            <TextView android:textSize="8.0px" android:typeface="sans" android:textColor="#ff919191" android:id="@id/copyright" android:paddingTop="3.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="8.0px" android:typeface="sans" android:textColor="#ff919191" android:id="@id/company_name" android:paddingTop="2.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="8.0px" android:typeface="sans" android:textColor="#ff919191" android:id="@id/reserved" android:paddingTop="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        </LinearLayout>
+    </AbsoluteLayout>
+</FrameLayout>

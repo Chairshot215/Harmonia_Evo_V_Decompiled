@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/local_ip_title" android:key="local_ip">
+        <com.htc.preference.HtcEditTextPreference android:persistent="false" android:singleLine="true" android:title="@string/ip_addr" android:key="ip_addr" />
+        <com.htc.preference.HtcEditTextPreference android:persistent="false" android:singleLine="true" android:title="@string/subnet_mask" android:key="subnet_mask" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/local_dhcp_title" android:key="local_dhcp">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/dhcp" android:key="dhcp" android:defaultValue="true" />
+        <com.htc.preference.HtcEditTextPreference android:persistent="false" android:singleLine="true" android:title="@string/starting_ip" android:key="starting_ip" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/others_title" android:key="others">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/reset_to_default" android:key="reset_to_default" android:summary="" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

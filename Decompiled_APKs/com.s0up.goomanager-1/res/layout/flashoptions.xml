@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/flashOrderListView" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/flashOptionsTextView" />
+    <CheckBox android:id="@id/cacheCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Wipe cache/dalvik cache partition" android:layout_above="@id/backupCheckBox" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <CheckBox android:id="@id/backupCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Create backup" android:layout_above="@id/dataCheckBox" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <CheckBox android:id="@id/dataCheckBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Wipe data (factory reset)" android:layout_above="@id/btnFlash" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="18.0sp" android:id="@id/flashOptionsTextView" android:background="@color/dark" android:paddingLeft="3.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Wipe options:" android:layout_above="@id/cacheCheckBox" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/btnFlash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flash" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

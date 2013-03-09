@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="201310305" android:versionName="2.1.2212313061.310305" package="com.htc.WifiRouter"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:description="@string/license" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/no_window_content_overlay" android:name="Intro" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/no_window_content_overlay" android:name="Guild" android:exported="false" android:launchMode="singleTask" />
+        <activity android:theme="@style/no_window_content_overlay" android:name="WifiRouter" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/list3" android:name="AdvancedSetting" android:exported="false" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" lable="Advanced Setting" />
+        <activity android:theme="@style/no_window_content_overlay" android:name="UserManagement" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.net.hotspot.management_wifi_client" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

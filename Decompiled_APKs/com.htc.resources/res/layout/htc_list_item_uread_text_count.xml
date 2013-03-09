@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/framelayout_1x1" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/img_1x2" android:layout_width="@dimen/htc_list_item_width_unread_img" android:layout_height="fill_parent" android:src="@drawable/common_unread_indicator" android:scaleType="fitXY" />
+            </LinearLayout>
+            <View android:id="@id/divider1" android:background="@drawable/common_list_divider_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <FrameLayout android:orientation="vertical" android:id="@id/framelayout_1x2" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="40.0px" android:layout_height="fill_parent">
+                <CheckBox android:layout_gravity="top|center" android:id="@id/chk_1x1" android:background="?attr_common_mail_checkbox" android:focusable="false" android:clickable="true" android:duplicateParentState="true" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginTop="6.0px" android:button="@null" android:textOn="" android:textOff="" android:lines="0" />
+                <ImageView android:layout_gravity="top|left|center" android:id="@id/account_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_marginTop="7.0px" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/reply_icon" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="1.0px" android:layout_marginTop="40.0px" android:src="@drawable/mail_indicator_reply" />
+            </FrameLayout>
+            <View android:id="@id/divider2" android:background="@drawable/common_list_divider_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/list_primary_s" android:textColor="@color/list_item_primary_text" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/txt_1x1" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginLeft="14.0px" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/list_primary_s" android:textStyle="bold" android:gravity="right|center" android:layout_gravity="right|center" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:maxLines="1" style="@style/text_style_secondary" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center" android:id="@id/expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <ImageView android:id="@id/htc_list_item_top_round" android:background="@drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/htc_list_item_bottom_round" android:background="@drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+        <FrameLayout android:layout_gravity="left" android:id="@id/framelayout_1x4" android:focusable="false" android:clickable="true" android:layout_width="72.0px" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/framelayout_read_unread" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/htc_list_item_margin_right">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linearlayout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/img_1x1" android:layout_width="@dimen/htc_list_item_width_unread_img" android:layout_height="fill_parent" android:src="@drawable/common_unread_indicator" android:scaleType="fitXY" />
+                </LinearLayout>
+                <View android:id="@id/divider1" android:background="@drawable/common_list_divider_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+                <FrameLayout android:orientation="vertical" android:id="@id/framelayout_1x2" android:paddingTop="6.0px" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="40.0px" android:layout_height="fill_parent">
+                    <CheckBox android:layout_gravity="top|center" android:id="@id/chk_1x1" android:background="?attr_common_mail_checkbox" android:focusable="false" android:clickable="true" android:duplicateParentState="true" android:layout_width="23.0dip" android:layout_height="23.0dip" android:button="@null" android:textOn="" android:textOff="" android:lines="0" />
+                    <ImageView android:layout_gravity="top|left|center" android:id="@id/account_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_marginTop="7.0px" />
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/reply_icon" android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginLeft="1.0px" android:layout_marginTop="31.0px" android:src="@drawable/mail_indicator_reply" />
+                </FrameLayout>
+                <View android:id="@id/divider2" android:background="@drawable/common_list_divider_vertical" android:layout_width="2.0px" android:layout_height="fill_parent" />
+                <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:id="@id/linearlayout_1x2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="horizontal" android:paddingLeft="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textStyle="bold" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/txt_1x1" android:paddingTop="1.0px" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="-3.0px" android:singleLine="true" android:layout_weight="1.0" style="@style/list_primary_m" />
+                        <ImageView android:layout_gravity="left|center" android:id="@id/img_1x2" android:visibility="gone" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:src="@drawable/mail_indicator_reply" />
+                        <ImageView android:layout_gravity="left|center" android:id="@id/img_1x3" android:visibility="gone" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:src="@drawable/mail_indicator_forward" />
+                        <ImageView android:layout_gravity="center" android:id="@id/img_1x4" android:visibility="gone" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:src="@drawable/mail_indicator_calendar" />
+                        <ImageView android:layout_gravity="center" android:id="@id/img_1x5" android:visibility="gone" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:src="@drawable/mail_indicator_lowpriority" />
+                        <ImageView android:layout_gravity="center" android:id="@id/img_1x6" android:visibility="gone" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:src="@drawable/mail_indicator_highpriority" />
+                        <ImageView android:layout_gravity="right|center" android:id="@id/img_1x7" android:visibility="gone" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:src="@drawable/mail_indicator_attachment" />
+                        <ToggleButton android:layout_gravity="center_vertical" android:id="@id/togglebutton_1x1" android:background="@drawable/flag_button" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/htc_list_item_size_icon" android:layout_height="@dimen/htc_list_item_size_icon" android:textOn="" android:textOff="" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-6.0px">
+                        <TextView android:gravity="bottom|left|center" android:layout_gravity="bottom|left|center" android:id="@id/txt_2x1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="-3.0px" android:singleLine="true" android:layout_weight="1.0" style="@style/list_secondary_m" />
+                        <TextView android:gravity="bottom|right|center" android:layout_gravity="bottom|right|center" android:id="@id/date" android:layout_width="@dimen/htc_list_item_width_stamp" android:layout_height="fill_parent" android:singleLine="true" android:layout_alignParentRight="true" style="@style/list_secondary_m" />
+                    </LinearLayout>
+                </LinearLayout>
+                <CheckBox android:layout_gravity="center" android:id="@id/togglebutton_1x2" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/htc_list_item_unread_checkbox" android:layout_height="@dimen/htc_list_item_unread_checkbox" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="left" android:id="@id/framelayout_1x4" android:focusable="false" android:clickable="true" android:layout_width="72.0px" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_gravity="right" android:id="@id/framelayout_1x3" android:focusable="false" android:clickable="true" android:layout_width="72.0px" android:layout_height="@dimen/htc_list_item_height" />
+        <ImageView android:id="@id/htc_list_item_top_round" android:background="@drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/htc_list_item_bottom_round" android:background="@drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    </FrameLayout>
+</FrameLayout>

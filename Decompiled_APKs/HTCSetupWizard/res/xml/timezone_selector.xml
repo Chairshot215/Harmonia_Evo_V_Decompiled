@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.android.htcsetupwizard.activity.DescriptionPreference android:persistent="false" android:title="@string/timezone_summary" android:selectable="false" android:key="timezone_description" />
+    <com.htc.android.htcsetupwizard.activity.DialogPreference android:key="select_date" />
+    <com.htc.preference.HtcPreferenceScreen android:key="select_city" />
+    <com.htc.android.htcsetupwizard.activity.DialogPreference android:key="select_time" />
+</com.htc.preference.HtcPreferenceScreen>

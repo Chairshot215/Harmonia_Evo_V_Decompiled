@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cmd_bar_9" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height" android:layout_alignParentBottom="true" style="?com.htc:commandBarBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" />
+    <Button android:id="@id/cmd_bar_btn_1" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_weight="2.0" style="?com.htc:commandBarButtonStyle" />
+    <Button android:id="@id/cmd_bar_btn_2" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_weight="3.0" style="?com.htc:commandBarButtonStyle" />
+    <Button android:id="@id/cmd_bar_btn_3" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cmd_bar_two_btn_margin" android:layout_marginRight="@dimen/cmd_bar_two_btn_margin" android:layout_weight="2.0" style="?com.htc:commandBarButtonStyle" />
+</LinearLayout>

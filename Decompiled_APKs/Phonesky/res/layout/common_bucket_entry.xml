@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/artist_bucket_stub" android:layout="@layout/artist_bucket_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/magazine_bucket_stub" android:layout="@layout/magazine_bucket_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/bucket_entry_height" layout="@layout/overview_bucket_entry" />
+</FrameLayout>

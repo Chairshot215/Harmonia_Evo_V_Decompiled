@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/seekBar" android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" style="@style/VoicemailSeekBar" />
+    <TextView android:textColor="#ffffffff" android:id="@id/playTimeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="0:00" android:shadowColor="#bb000000" android:shadowRadius="2.75" android:layout_above="@id/seekBar" />
+    <TextView android:textColor="#ffffffff" android:id="@id/totalTimeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="2:00" android:shadowColor="#bb000000" android:shadowRadius="2.75" android:layout_above="@id/seekBar" android:layout_alignRight="@id/seekBar" />
+    <ImageButton android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/playPauseBtn" android:layout_width="105.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ic_camera_play" android:layout_toRightOf="@id/seekBar" android:layout_centerVertical="true" />
+</RelativeLayout>

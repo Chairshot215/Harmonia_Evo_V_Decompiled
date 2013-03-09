@@ -1,0 +1,72 @@
+.class Lcom/htc/home/personalize/catechooser/CategoryChooser$4;
+.super Ljava/lang/Object;
+.source "CategoryChooser.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/htc/home/personalize/catechooser/CategoryChooser;->reloadList()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/htc/home/personalize/catechooser/CategoryChooser;
+
+
+# direct methods
+.method constructor <init>(Lcom/htc/home/personalize/catechooser/CategoryChooser;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 420
+    iput-object p1, p0, Lcom/htc/home/personalize/catechooser/CategoryChooser$4;->this$0:Lcom/htc/home/personalize/catechooser/CategoryChooser;
+
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .prologue
+    .line 422
+    iget-object v0, p0, Lcom/htc/home/personalize/catechooser/CategoryChooser$4;->this$0:Lcom/htc/home/personalize/catechooser/CategoryChooser;
+
+    const v1, 0x7f0b002b
+
+    invoke-virtual {v0, v1}, Lcom/htc/home/personalize/catechooser/CategoryChooser;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 423
+    iget-object v0, p0, Lcom/htc/home/personalize/catechooser/CategoryChooser$4;->this$0:Lcom/htc/home/personalize/catechooser/CategoryChooser;
+
+    const v1, 0x7f0b0029
+
+    invoke-virtual {v0, v1}, Lcom/htc/home/personalize/catechooser/CategoryChooser;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 424
+    return-void
+.end method

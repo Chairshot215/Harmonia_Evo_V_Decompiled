@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/carrier_billing_edit" android:background="@color/billing_form_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="insideInset" android:orientation="vertical" android:id="@id/scroll_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/edit_section" android:paddingLeft="@dimen/addinstrument_content_padding" android:paddingRight="@dimen/addinstrument_content_padding" android:nextFocusDown="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/enter_your_billing_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/enter_your_address_sentence" style="@style/AddInstrumentBodyTextPrimary" />
+            <TextView android:id="@id/phone_number_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:text="@string/phone_number" />
+            <EditText android:id="@id/phone_number_edit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:hint="@string/phone_number" android:singleLine="true" android:inputType="phone" />
+            <EditText android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:hint="@string/name_label" android:singleLine="true" android:inputType="textPersonName|textCapWords" />
+            <include android:id="@id/address_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/address_layout" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/buttons_bar" layout="@layout/billing_addinstrument_buttonbar" />
+</LinearLayout>

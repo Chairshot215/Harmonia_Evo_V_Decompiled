@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.widget.SlidingPanel android:id="@id/effect_panel" android:background="@drawable/camera_enhancer_preset_bg" android:paddingTop="@dimen/effect_list_padding_top" android:layout_width="fill_parent" android:layout_height="@dimen/effect_list_layout_height" android:layout_alignParentTop="true">
+        <com.android.camera.rotate.RotateRelativeLayout android:id="@id/effect_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ListView android:id="@id/effect_list" android:scrollbars="none" android:layout_width="@dimen/effect_item_height" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+    </com.android.camera.widget.SlidingPanel>
+    <com.android.camera.widget.OffsetRelativeLayout android:id="@id/effect_panel_button_container" android:layout_width="@dimen/effect_panel_button_width" android:layout_height="@dimen/effect_panel_button_height" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <Button android:id="@id/effect_panel_button" android:background="@drawable/effect_panel_button_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.android.camera.rotate.RotateRelativeLayout android:id="@id/effect_panel_button_content_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/effect_panel_button_content_margin_left" android:layout_marginTop="@dimen/effect_panel_button_content_margin_top" android:layout_marginRight="@dimen/effect_panel_button_content_margin_right" android:layout_marginBottom="@dimen/effect_panel_button_content_margin_bottom">
+            <com.android.camera.widget.ImageTextView android:orientation="vertical" android:id="@id/effect_panel_button_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_photo_effects" android:text="@string/on_screen_btn_effects" android:layout_centerInParent="true" style="@style/text_style_effect_panel_button_text" />
+        </com.android.camera.rotate.RotateRelativeLayout>
+    </com.android.camera.widget.OffsetRelativeLayout>
+</RelativeLayout>

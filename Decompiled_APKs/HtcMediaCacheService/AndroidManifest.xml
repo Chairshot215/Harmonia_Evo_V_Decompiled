@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100253890" android:versionName="1.0.2211152314.253890" package="com.htc.MediaCacheService"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="HtcMediaCacheService" android:icon="@drawable/icon" android:debuggable="false" android:hardwareAccelerated="false">
+        <service android:name="com.htc.MediaCacheService.main.MediaCacheService" android:exported="true" />
+        <receiver android:name="com.htc.MediaCacheService.main.MediaCacheReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

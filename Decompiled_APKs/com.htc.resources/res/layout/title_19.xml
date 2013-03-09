@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_19" android:background="@drawable/common_title_thick_btn_rest" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="@dimen/title_2line_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" />
+    <FrameLayout android:layout_gravity="center_vertical" android:background="?attr_common_select_photo" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/photo" android:background="?attr_command_bar_btn" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:longClickable="false" android:layout_width="@dimen/detail_title_image_frame_width" android:layout_height="@dimen/detail_title_image_frame_height" android:selectable="false" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/title_button_text_size" android:textColor="@color/bright_text_dark_focused" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/edit_name" android:background="?attr_common_b_pulldown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:singleLine="true" android:layout_weight="1.0" style="@style/button_secondary_rest_m" />
+    </FrameLayout>
+</LinearLayout>

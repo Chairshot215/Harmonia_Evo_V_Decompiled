@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_short" />
+    <ScrollView android:id="@com.htc:id/scroll" android:background="@drawable/listview_listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/separator" layout="@com.htc:layout/htc_list_item_separator" />
+            <LinearLayout android:orientation="vertical" android:background="@color/list_item_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/number" layout="@layout/htc_list_item_text_dropdown" />
+                <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/location" layout="@layout/htc_list_item_text_dropdown" />
+                <View android:background="@com.htc:drawable/common_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@com.htc:drawable/bottomround_v1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:background="@*android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:src="@com.htc:drawable/trans_bottomround" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+            <View android:background="@com.htc:drawable/section_divider_middle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_section_divider_height" />
+        </LinearLayout>
+    </ScrollView>
+    <com.android.htcdialer.widget.ButtonGroup android:id="@id/cmd_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</LinearLayout>

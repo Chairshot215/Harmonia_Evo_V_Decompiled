@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:padding="3.0mm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="0,1" android:shrinkColumns="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <TextView android:text="@string/session" style="@style/label" />
+        <TextView android:id="@id/session" style="@style/value" />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/duration" style="@style/label" />
+        <TextView android:id="@id/duration" style="@style/value" />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/data_transmitted" style="@style/label" />
+        <TextView android:id="@id/data_transmitted" style="@style/value" />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="@string/data_received" style="@style/label" />
+        <TextView android:id="@id/data_received" style="@style/value" />
+    </TableRow>
+</TableLayout>

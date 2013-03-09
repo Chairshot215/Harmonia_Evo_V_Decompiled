@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ViewRoot" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/Photo" android:layout_width="@dimen/list_item_height_1" android:layout_height="@dimen/list_item_height_1" android:scaleType="centerCrop" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/item_fontSize_large" android:textColor="@color/list_item_primary_text" android:gravity="center_vertical" android:id="@id/Name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/text_margin_left_photo" android:singleLine="true" android:layout_weight="1.0" />
+    <CheckBox android:gravity="center_vertical" android:id="@id/selectedIcon" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+</LinearLayout>

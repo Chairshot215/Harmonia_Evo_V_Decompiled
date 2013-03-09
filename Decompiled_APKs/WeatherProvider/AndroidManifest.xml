@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="100355980" android:versionName="1.0.2214132711.355980" package="com.htc.provider.weather"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:process="com.htc.bgp" android:description="@string/htc_company_short_name" android:hardwareAccelerated="false">
+        <provider android:name=".WeatherProvider" android:permission="htc.permission.weather.USE_DATA" android:authorities="com.htc.provider.weather" />
+        <receiver android:name="CustomizeReceiver" android:permission="htc.permission.weather.RECEIVER">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_FORCE_CHANGE" />
+                <action android:name="com.android.settings.wifi.wifi_connected" />
+            </intent-filter>
+        </receiver>
+        <service android:name="PreloadWeatherDataService" />
+    </application>
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+    <uses-permission android:name="htc.permission.weather.RECEIVER" />
+</manifest>

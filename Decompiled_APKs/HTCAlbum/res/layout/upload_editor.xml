@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainView_glance" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mainView_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include android:gravity="center_horizontal" android:id="@id/uploadEditor" android:visibility="gone" android:layout_above="@id/control_commandbar" android:layout_below="@id/control_titlebar" layout="@layout/upload_editor_ui" />
+</RelativeLayout>

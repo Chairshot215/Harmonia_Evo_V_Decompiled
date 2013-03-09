@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Gestionnaire de téléchargement</string>
+    <string name="permlab_downloadManager">Accéder au gestionnaire de téléchargement.</string>
+    <string name="permdesc_downloadManager">"Permet à l'application d'accéder au gestionnaire de téléchargement et de l'utiliser pour télécharger des fichiers. Les applications malveillantes peuvent utiliser cette fonctionnalité pour perturber les téléchargements et accéder à des informations confidentielles."</string>
+    <string name="permlab_downloadManagerAdvanced">Fonctions avancées du gestionnaire de téléchargement.</string>
+    <string name="permdesc_downloadManagerAdvanced">"Permet à l'application d'accéder aux fonctions avancées du gestionnaire de téléchargement. Les applications malveillantes peuvent utiliser cette fonctionnalité pour perturber les téléchargements et accéder à des informations confidentielles."</string>
+    <string name="permlab_downloadCompletedIntent">Envoyer des notifications de téléchargement.</string>
+    <string name="permdesc_downloadCompletedIntent">"Permet à l'application d'envoyer des notifications relatives aux téléchargements terminés. Les applications malveillantes peuvent utiliser cette fonctionnalité pour induire en erreur d'autres applications pouvant télécharger des fichiers."</string>
+    <string name="permlab_seeAllExternal">Voir tous les téléchargements effectués sur la carte SD</string>
+    <string name="permdesc_seeAllExternal">"Permet à l'application de voir tous les téléchargements sur la carte SD, quelle que soit l'application utilisée pour les télécharger."</string>
+    <string name="permlab_downloadCacheNonPurgeable">Réserver un espace dans le cache de téléchargement</string>
+    <string name="permdesc_downloadCacheNonPurgeable">"Permet à l'application de télécharger des fichiers dans le cache de téléchargement et empêche leur suppression automatique par le gestionnaire de téléchargement."</string>
+    <string name="permlab_downloadWithoutNotification">"télécharger les fichiers sans m'avertir"</string>
+    <string name="permdesc_downloadWithoutNotification">"Permet à l'application de télécharger des fichiers via le gestionnaire de téléchargement sans afficher de notification à l'attention de l'utilisateur."</string>
+    <string name="permlab_accessAllDownloads">Accéder à tous les téléchargements système</string>
+    <string name="permdesc_accessAllDownloads">"Permet à l'application d'afficher et de modifier tous les téléchargements initiés par n'importe quelle application du système."</string>
+    <string name="download_unknown_title">&lt;Sans_titre></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" et %d autres"</string>
+    <string name="notification_download_complete">Téléchargement terminé.</string>
+    <string name="notification_download_failed">Échec du téléchargement.</string>
+    <string name="notification_need_wifi_for_size">Taille du fichier requiert Wi-Fi.</string>
+    <string name="notification_paused_in_background">Interrompu en arr.-plan.</string>
+    <string name="wifi_required_title">"Téléchargement trop volumineux pour l'opérateur"</string>
+    <string name="wifi_required_body" formatted="false">"Vous devez utiliser le Wi-Fi pour finaliser ce téléchargement de %s . 
+
+Appuyez sur %s  pour le lancer lors de votre prochaine connexion à un réseau Wi-Fi."</string>
+    <string name="wifi_recommended_title">"Ajouter à la file d'attente des téléchargements ?"</string>
+    <string name="wifi_recommended_body" formatted="false">"Ce téléchargement (%s ) risque de décharger votre batterie et/ou d'entraîner une consommation excessive de votre connexion Internet mobile. Des frais supplémentaires peuvent être facturés par votre opérateur en fonction de votre forfait.
+
+Appuyez sur %s pour le lancer lors de votre prochaine connexion au Wi-Fi."</string>
+    <string name="button_queue_for_wifi">"File d'attente"</string>
+    <string name="button_cancel_download">Annuler</string>
+    <string name="button_start_now">Commencer</string>
+    <string name="low_download_storage_view_title">Mémoire insuffisante</string>
+    <string name="low_download_storage_view_text">Espace mémoire insuffisant pour votre téléchargement.</string>
+    <string name="notification_paused_no_wifi">" (en pause)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@*android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/customize_listView_marginTop"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@com.htc:dimen/list_primary_m" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/emptyText" android:background="#ff1e1e1e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@com.htc:style/list_primary_m" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadingLayout" android:background="#ff1e1e1e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@*android:id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0px" style="?android:attr/progressBarStyleSmallInverse" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_m" android:textColor="@*android:color/white" android:id="@id/loadingText" android:background="#ff1e1e1e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/content_loading" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+        <View android:background="@com.htc:drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@com.htc:drawable/trans_bottomround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="#ff1e1e1e" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+    </LinearLayout>
+</FrameLayout>

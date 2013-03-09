@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:windowContentOverlay="@null" android:orientation="vertical" android:id="@id/title_15" android:background="@drawable/common_title_thick_btn_rest" android:paddingLeft="0.0px" android:paddingRight="0.0px" android:layout_width="fill_parent" android:layout_height="@dimen/title_search_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/title_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" android:layout_marginTop="-1.0px" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/title_15_txt_1x1_shadow" style="@style/titleBarShadowStyle" />
+            <TextView android:id="@id/title_15_txt_1x1" style="@style/titleBarStyle" />
+        </RelativeLayout>
+        <ProgressBar android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/title_15_pbar_1x1" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0" android:layout_alignParentRight="true" style="?android:attr/progressBarStyleSmallTitle" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/search_box_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/title_15_img_1x1" android:visibility="gone" android:layout_width="60.0px" android:layout_height="60.0px" android:layout_marginLeft="8.0px" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <com.htc.widget.SearchBoxView android:id="@id/title_15_searchboxview_1x1" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/search_go_btn" android:visibility="gone" android:layout_width="@dimen/title_search_atuotv_size" android:layout_height="@dimen/title_search_atuotv_size" android:layout_marginRight="8.0dip" android:drawableLeft="@drawable/common_icon_search" style="?com.htc:titleBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

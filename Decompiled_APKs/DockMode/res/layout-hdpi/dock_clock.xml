@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/clock_view" android:layout_width="@dimen/desk_clock_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/desk_clock_margin_left" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/flip_digital_clock" />
+    <TextView android:textSize="22.0px" android:textColor="#ffffffff" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/desk_clock_time_date_margin_left" android:layout_marginTop="@dimen/desk_clock_time_date_marginTop" android:layout_alignParentTop="true" style="@style/shadowStyle" />
+    <ImageView android:id="@id/clock_ic_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alarm_icon_marginTop" android:layout_marginRight="@dimen/alarm_icon_marginRight" android:layout_alignParentRight="true" />
+    <TextView android:textSize="22.0px" android:textColor="#ffffffff" android:id="@id/clock_next_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/next_alarm_marginTop" android:layout_marginRight="@dimen/next_alarm_marginRight" android:layout_toLeftOf="@id/clock_ic_alarm" style="@style/shadowStyle" /> />
+</RelativeLayout>

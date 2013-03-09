@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/scrollViewUpdate" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:paddingLeft="15.0px" android:paddingTop="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/update_layout_line1" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:textColor="#ffffffaa" android:autoLink="web" android:id="@id/updateMessage" android:paddingLeft="15.0px" android:paddingTop="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/updateNowText" android:paddingLeft="15.0px" android:paddingTop="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/update_layout_line2" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:textMailHeaderBar="http://schemas.android.com/apk/res/com.htc.android.mail">
+    <com.htc.android.mail.widget.TextMailHeaderBar1 android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent" textMailHeaderBar:headerbar_text1="@string/synchronization_setting" />
+    <com.htc.android.mail.widget.MailFooterBar2Btn android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/htc_footer_height" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/subtitle_selec_data" layout="@layout/list_item_separator_1text" />
+            <com.htc.widget.HtcListView android:id="@*android:id/list" android:background="@color/list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/list_bg" android:scaleType="fitXY" android:divider="@com.htc:drawable/common_list_divider" />
+            <include android:id="@id/subtitle_update_schedule" layout="@layout/list_item_separator_1text" />
+            <com.htc.widget.HtcListView android:id="@id/list_schedule" android:background="@color/list_bg" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/list_bg" android:scaleType="fitXY" android:divider="@com.htc:drawable/common_list_divider" android:layout_weight="1.0" />
+            <ImageView android:id="@id/scrollBottomShadow" style="@style/bottomround_v1" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/main_bar_view_ds" android:layout="@layout/main_bar_layout_ds" android:inflatedId="@id/main_bar_stub_ds" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ViewStub android:id="@id/btn_thumbnail_view_ds" android:layout="@layout/btn_thumbnail_layout_ds" android:inflatedId="@id/btn_thumbnail_stub_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/arrow_hint_view" android:layout="@layout/arrow_hint_layout" android:inflatedId="@id/arrow_hint_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/capture_btn_combine" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/capture_btn_background" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <Button android:id="@id/btn_capture_ds" android:background="@drawable/camera_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

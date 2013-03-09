@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionButton">
+        <item name="android:textAppearance">@style/TextAppearance.ActionButton</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance" parent="@*android:style/TextAppearance" />
+    <style name="TextAppearance.ActionButton" parent="@style/TextAppearance">
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="SIPOverlayWindow">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+    </style>
+    <style name="Animation" />
+    <style name="Animation.HintDownUpCenter" parent="@style/Animation">
+        <item name="android:windowExitAnimation">@anim/hint_fade_out_from_center</item>
+    </style>
+    <style name="PQwertyDefault">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PQwertySpace">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PQwertyDotCom">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PQwertySym">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="PSymDefault">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PSymPage">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="LQwertyDefault">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="LSymDefault">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="LSymWhite">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="P20Default">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="P20Space">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="P20DotCom">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="P12Default">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="PPDefault">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="KeyboardDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/keyboard_panel_background</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+    <style name="compose_text_counter_style">
+        <item name="android:textSize">12.0px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#88000000</item>
+        <item name="android:paddingLeft">3.0px</item>
+        <item name="android:paddingTop">1.0px</item>
+        <item name="android:paddingRight">3.0px</item>
+        <item name="android:paddingBottom">1.0px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="trans_bottom_round_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@com.htc:drawable/trans_bottomround</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="trans_top_round_small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@com.htc:drawable/trans_topround</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="pattern_field">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">@com.htc:color/primary_text_color</item>
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AddWordDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Dialog</item>
+    </style>
+    <style name="screen_layout" />
+</resources>

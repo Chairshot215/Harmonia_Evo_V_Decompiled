@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/title_12" android:paddingLeft="8.0px" android:paddingRight="8.0px" android:layout_width="fill_parent" android:layout_height="@dimen/title_search_height" style="?com.htc:titleBarBackgroundStyleLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <EditText android:textSize="@dimen/title_inputfield_text_size" android:id="@id/title_12_inputfield_1x1" android:background="@drawable/common_b_inputfield" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:selectAllOnFocus="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/title_12_imgbtn_1x1" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_icon_clear_input_rest" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/pbar" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/title_12_imgbtn_1x1" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmallTitle" />
+    </RelativeLayout>
+</RelativeLayout>

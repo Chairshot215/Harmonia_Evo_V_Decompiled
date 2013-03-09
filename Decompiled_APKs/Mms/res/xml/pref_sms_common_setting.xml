@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_sms_settings_title" android:key="pref_key_sms_preference_category">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_mms_delivery_reports" android:key="pref_key_sms_delivery_reports" android:summary="@string/pref_summary_mms_delivery_reports" android:defaultValue="false" />
+        <com.android.mms.ui.SmsCenterPreference android:persistent="false" android:title="@string/htc_pref_title_sms_center" android:key="pref_key_sms_center" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_sms_priority" android:title="@string/htc_setting_priority" android:key="pref_key_sms_priority" android:defaultValue="normal" android:entryValues="@array/pref_entry_values_sms_priority" />
+        <com.android.mms.ui.ManageSimPreference android:title="@string/cust_pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" android:summary="@string/cust_pref_summary_manage_sim_messages" />
+        <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_greek_encoding" android:title="@string/pref_greek_encoding_title" android:key="pref_key_greek_encoding" android:summary="@string/pref_greek_encoding_7bit" android:defaultValue="7bit" android:entryValues="@array/pref_entry_values_greek_encoding" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_sms_message_preview" android:key="pref_key_sms_message_preview" android:summary="@string/pref_summary_sms_message_preview" android:defaultValue="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

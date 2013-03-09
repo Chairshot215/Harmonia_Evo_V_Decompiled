@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_im_logo_gtalk_splash" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <ListView android:layout_gravity="center_horizontal" android:id="@*android:id/list" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:fadingEdgeLength="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:drawSelectorOnTop="false" android:headerDividersEnabled="true" />
+    <TextView android:gravity="center_vertical" android:id="@id/progress_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signing_in_wait" />
+</LinearLayout>

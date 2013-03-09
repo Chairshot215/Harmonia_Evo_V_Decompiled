@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/facebook_account" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:src="@drawable/setup_facebook" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/facebook_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0px" android:layout_marginTop="15.0px" android:layout_marginRight="7.0px" android:text="@string/facebook_account_instruction" />
+            <Button android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@color/black_text_white_focused" android:id="@id/facebook_setup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="5.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="1.0px" android:minWidth="150.0px" android:text="@string/facebook_account_setup_account" />
+            <Button android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@color/black_text_white_focused" android:id="@id/facebook_authorize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="5.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="1.0px" android:minWidth="150.0px" android:text="@string/ok" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

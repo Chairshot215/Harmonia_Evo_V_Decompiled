@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="305364669" android:versionName="3.5.2214232152.364669" package="com.htc.android.worldclock"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <skip-erased />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BACKUP_DATA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_DRM" />
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+    <uses-permission android:name="htc.permission.dockmode.NEXT_ALARM" />
+    <application android:theme="@style/ThemeGray" android:label="@string/htc_private_app" android:icon="@drawable/world_clock" android:description="@string/htc_company_short_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <provider android:name="AlarmProvider" android:authorities="com.htc.android.alarmclock" />
+        <provider android:name="StopwatchProvider" android:authorities="com.htc.android.worldclock.StopwatchProvider" />
+        <provider android:name="TimerProvider" android:authorities="com.htc.android.worldclock.TimerProvider" />
+        <provider android:name="TabCarouselProvider" android:authorities="com.htc.android.worldclock.TabCarouselProvider" />
+        <meta-data android:name="android.app.default_searchable" android:value="*" />
+        <activity android:theme="@style/ThemePreview" android:label="@string/htc_private_app" android:icon="@drawable/world_clock" android:name="WorldClockTabControl" android:clearTaskOnLaunch="true" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ReLaunch" android:launchMode="singleTask" />
+        <receiver android:name="WorldClockBREventReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.android.pcsync.START_BACKUP" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.android.pcsync.START_RESTORE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="WorldClockBRAgentService" />
+        <service android:name="AlarmInitService" />
+        <service android:name="HomeInitService" />
+        <service android:name="AlarmService" />
+        <service android:name="TimerService" />
+        <activity android:name="DeskClock" android:screenOrientation="nosensor" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="WorldClock" android:screenOrientation="nosensor" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="TimeZonePicker" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="com.htc.android.worldclock.action.TIMEZONEPICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="DeleteTimeZone" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="RearrangeTimeZone" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="AlarmClock" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.htc.android.worldclock.action.ALARMCLOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SetAlarm" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="DeleteAlarm" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDialog" android:name="AlarmAlert" android:taskAffinity=":AlarmAlert" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDialog" android:name="OffAlarmAlert" android:taskAffinity=":OffAlarmAlert" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name="HandleSetAlarm" android:permission="com.android.alarm.permission.SET_ALARM" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.htc.android.worldclock.ALARM_ALERT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="AlarmInitReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="Stopwatch" android:screenOrientation="nosensor" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:name="Timer" android:screenOrientation="nosensor" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/ThemeDialog" android:label="" android:name="TimerAlert" android:taskAffinity=":TimerAlert" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <receiver android:name="TimerReceiver">
+            <intent-filter>
+                <action android:name="com.htc.android.worldclock.TIMER_ALERT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="HomeInitReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.SETUP_WIZARD_FINISHED" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/ListView" android:label="@string/settings" android:name="SettingsActivity" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ListView" android:name="SoundSelect" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="FotaReceiver">
+            <intent-filter>
+                <action android:name="com.htc.providers.media.DB_UPGRADE_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="FotaService" />
+    </application>
+</manifest>

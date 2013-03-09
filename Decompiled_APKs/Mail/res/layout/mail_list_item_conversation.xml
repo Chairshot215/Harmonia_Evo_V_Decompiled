@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/framelayout_1x1" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/img_1x2" android:layout_width="@com.htc:dimen/htc_list_item_width_unread_img" android:layout_height="fill_parent" android:src="@com.htc:drawable/common_unread_indicator" android:scaleType="fitXY" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:orientation="vertical" android:id="@id/framelayout_1x2" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/mail_list_item_checkbox_layout_margin_left" android:layout_marginRight="@dimen/mail_list_item_checkbox_layout_margin_right">
+                <CheckBox android:layout_gravity="center" android:id="@id/chk_1x1" android:background="@drawable/mail_checkbox_no_on_press" android:focusable="false" android:clickable="true" android:duplicateParentState="true" android:layout_width="@dimen/mail_list_item_checkbox_size" android:layout_height="@dimen/mail_list_item_checkbox_size" android:layout_marginLeft="@dimen/mail_list_item_checkbox_margin_left" android:layout_marginRight="@dimen/mail_list_item_checkbox_margin_right" android:button="@null" android:textOn="" android:textOff="" android:lines="0" />
+                <ImageView android:layout_gravity="top|left|center" android:id="@id/account_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0px" android:layout_marginTop="7.0px" />
+                <ImageView android:layout_gravity="bottom|center" android:id="@id/reply_icon" android:visibility="gone" android:layout_width="@dimen/mail_list_item_reply_icon_size" android:layout_height="@dimen/mail_list_item_reply_icon_size" android:layout_marginLeft="1.0px" android:layout_marginTop="@dimen/mail_list_item_reply_icon_margin_top" android:src="@com.htc:drawable/common_icon_indicator_reply" />
+            </FrameLayout>
+            <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/list_item_primary_text" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/txt_1x1" android:layout_width="0.0px" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/unread_bubble" android:background="@com.htc:drawable/common_notification_on" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:visibility="gone" android:layout_width="@dimen/mail_list_item_conversation_uread_bubble_size" android:layout_height="@dimen/mail_list_item_conversation_uread_bubble_size" android:maxLines="1" style="@com.htc:style/notification_info_primary_l" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/expand" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@com.htc:id/htc_list_item_top_round" android:background="@com.htc:drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <ImageView android:id="@com.htc:id/htc_list_item_bottom_round" android:background="@com.htc:drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+        <FrameLayout android:layout_gravity="left" android:id="@id/framelayout_1x4" android:focusable="false" android:clickable="true" android:layout_width="72.0px" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <include android:id="@id/framelayout_read_unread" layout="@layout/mail_list_item" />
+</FrameLayout>

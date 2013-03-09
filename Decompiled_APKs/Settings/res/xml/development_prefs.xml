@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/development_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/enable_adb" android:key="enable_adb" android:summary="@string/enable_adb_summary" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/verifier_device_identifier" android:key="verifier_device_identifier" android:summary="@string/verifier_device_identifier_not_available" style="?android:attr/preferenceInformationStyle" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/keep_screen_on" android:key="keep_screen_on" android:summary="@string/keep_screen_on_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/allow_mock_location" android:key="allow_mock_location" android:summary="@string/allow_mock_location_summary" />
+    <com.htc.preference.HtcListPreference android:entries="@array/hdcp_checking_titles" android:title="@string/hdcp_checking_title" android:key="hdcp_checking" android:dialogTitle="@string/hdcp_checking_dialog_title" android:entryValues="@array/hdcp_checking_values" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/local_backup_password_title" android:key="local_backup_password" android:summary="@string/local_backup_password_summary_none">
+        <intent android:targetPackage="com.android.settings" android:action="android.settings.privacy.SET_FULL_BACKUP_PASSWORD" android:targetClass="com.android.settings.SetFullBackupPassword" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/debug_ui_category" android:key="debug_ui_category">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/strict_mode" android:key="strict_mode" android:summary="@string/strict_mode_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/pointer_location" android:key="pointer_location" android:summary="@string/pointer_location_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/show_touches" android:key="show_touches" android:summary="@string/show_touches_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/show_screen_updates" android:key="show_screen_updates" android:summary="@string/show_screen_updates_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/show_cpu_usage" android:key="show_cpu_usage" android:summary="@string/show_cpu_usage_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/force_hw_ui" android:key="force_hw_ui" android:summary="@string/force_hw_ui_summary" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/window_animation_scale_entries" android:title="@string/window_animation_scale_title" android:key="window_animation_scale" android:entryValues="@array/window_animation_scale_values" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/transition_animation_scale_entries" android:title="@string/transition_animation_scale_title" android:key="transition_animation_scale" android:entryValues="@array/transition_animation_scale_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/debug_applications_category" android:key="debug_applications_category">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/immediately_destroy_activities" android:key="immediately_destroy_activities" android:summary="@string/immediately_destroy_activities_summary" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/app_process_limit_entries" android:title="@string/app_process_limit_title" android:key="app_process_limit" android:entryValues="@array/app_process_limit_values" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/show_all_anrs" android:key="show_all_anrs" android:summary="@string/show_all_anrs_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

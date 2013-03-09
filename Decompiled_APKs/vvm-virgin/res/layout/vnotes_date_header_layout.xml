@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dateCell" android:background="@color/bgcolor" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topCell"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/dateText" android:paddingLeft="6.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/lockIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ic_lock" android:layout_alignTop="@id/dateText" android:layout_alignParentRight="true" />
+</RelativeLayout>

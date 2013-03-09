@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/list_dialer_item_width" android:layout_height="@dimen/list_item_length_normal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.QuickContactBadge android:id="@id/photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/call_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialer_margin_indicator_left" android:layout_marginTop="@dimen/dialer_margin_indicator_top" />
+</RelativeLayout>

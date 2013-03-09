@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#000000ff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <include android:id="@id/help_init_spinny" layout="@layout/spinny" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/help_dialog" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/help_dialog_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <ImageButton android:id="@id/help_left_arrow" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/left_hp" style="@style/square_button" />
+            <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/help_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/help_header" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/help_right_arrow" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/right_hp" style="@style/square_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/help_action_area" android:background="@drawable/help_bubble" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0">
+            <TextSwitcher android:gravity="center" android:layout_gravity="center" android:id="@id/help_action_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/in_right" android:outAnimation="@anim/out_left" android:layout_weight="1.0">
+                <TextView android:textSize="19.0dip" android:textColor="@color/help_dialog_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/help_dummy_text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="3" android:lineSpacingExtra="2.0dip" />
+                <TextView android:textSize="19.0dip" android:textColor="@color/help_dialog_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/help_dummy_text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="3" android:lineSpacingExtra="2.0dip" />
+            </TextSwitcher>
+            <Button android:textSize="19.0dip" android:layout_gravity="center" android:id="@id/help_video_link" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/help_watch_video_capitalized" android:drawableLeft="@drawable/play_button" android:drawablePadding="14.0dip" style="@style/watch_video_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/help_content_for_portrait" android:layout_width="fill_parent" android:layout_height="@dimen/help_gallery_height" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <FrameLayout android:id="@id/help_gallery_container" android:background="@color/help_gallery_background" android:layoutAnimation="@anim/layout_row_slide_left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Gallery android:id="@id/help_actions_gallery" android:padding="3.0dip" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="6.0dip" android:unselectedAlpha="0.6" />
+            </FrameLayout>
+        </LinearLayout>
+        <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/header_footer_size" style="?android:attr/buttonBarStyle">
+            <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/help_cancel_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="0.0dip" android:text="@string/cancel" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/help_speak_again_button" android:paddingRight="5.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:text="@string/speak_now" android:singleLine="true" android:drawableRight="@drawable/ic_mic_ds" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

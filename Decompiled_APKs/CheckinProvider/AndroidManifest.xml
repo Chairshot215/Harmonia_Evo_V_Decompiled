@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="305360734" android:versionName="3.5.2214162535.360734" package="com.android.providers.htcCheckin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="android.permission.HTC_APP_UPDATE" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/htc_private_app" android:process="system" android:description="@string/htc_company_name" android:hardwareAccelerated="false">
+        <provider android:name="htcCheckinProvider" android:multiprocess="false" android:authorities="android.server.htcCheckin" />
+        <service android:name="htcCheckinService" />
+        <receiver android:name="UpdateReceiver$DownloadCompletedBroadcastReceiver" android:exported="true" />
+        <receiver android:name="RunAppUpdateReceiver$ApkDownloadCompletedReceiver" android:permission="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" android:exported="true" />
+        <receiver android:name="SecretCodeReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="682" />
+                <data android:scheme="android_secret_code" android:host="682364" />
+                <data android:scheme="android_secret_code" android:host="682226" />
+                <data android:scheme="android_secret_code" android:host="682668" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_RECOVERY_FOLDER" />
+</manifest>

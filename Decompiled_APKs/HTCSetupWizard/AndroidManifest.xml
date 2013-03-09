@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="305366390" android:versionName="3.5.2214273323.366390" package="com.htc.android.htcsetupwizard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="htc.permission.SETUP_WIZARD_FINISHED" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.android.providers.htccdma.Specific" />
+    <uses-permission android:name="com.htc.VzWBackupAssistantClient.PROVISION" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="com.orange.pushmail.Z7.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="htc.permission.SETUP_WIZARD_FINISHED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.htc.vmm.service.permission.VMMForOOBEService" />
+    <uses-permission android:name="htc.permission.WRITE_CUSTOMIZATION_SETTINGS" />
+    <uses-permission android:name="com.carrieriq.tmobile.permission.IPC" />
+    <application android:label="@string/stupwizard_app_name" android:icon="@drawable/htc_setup_wizard" android:taskAffinity="" android:description="@string/htc_company_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="@string/stupwizard_app_name" android:name=".MainActivity" android:taskAffinity="android.task.htcsetupwizard" android:screenOrientation="nosensor" android:configChanges="locale|mcc|mnc|keyboardHidden|orientation">
+            <intent-filter android:priority="9">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/stupwizard_app_name" android:name=".PostSetup" android:exported="false" android:taskAffinity="android.task.htcsetupwizard" android:screenOrientation="portrait" android:configChanges="locale">
+            <intent-filter android:priority="8">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.InsertSIMCardActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.GoogleLoginActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.BackupWithVerizonActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.BackupWithVerizonSnapshotActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:label="@string/guided_tours_title" android:icon="@drawable/guided_tour" android:name=".activity.GuidedToursActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.GuidedToursBasicSetupActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.SetupCompleteActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.FacebookAccountSetupActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.SIPIntroActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.SocialNetworkSetupActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.AccountSetupActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.DataSyncActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".SetupWizardActivity" android:screenOrientation="portrait" android:configChanges="locale|mcc|mnc|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.CollectDiagnosticsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.TimezoneActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:icon="@drawable/add_account_icon" android:name=".activity.SetupAdditionalAccountsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:icon="@drawable/add_account_icon" android:name=".activity.SetupMailSocialNetworkActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:icon="@drawable/add_account_icon" android:name=".activity.TinySetupMailActivity" android:screenOrientation="portrait" />
+        <activity android:label="@string/header_add_an_account" android:icon="@drawable/add_account_icon" android:name=".activity.TinySetupMailVzwActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.LocationConsentActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.LocationConsentVzwActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.SyncDataActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.InternetConnectionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.ConnectionAndSyncActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.BackupOptionVzwActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.WiFiNetworksDetectedActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name=".activity.CustomizationActivity" android:screenOrientation="portrait" android:configChanges="locale|mcc|mnc|keyboardHidden|orientation" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.OtaActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.OtaVzwActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.BackUpActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.TransferDataActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.HtcAccountActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.TellHtcActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.CustomizationPickerActivity" android:excludeFromRecents="true" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".activity.TellHtcPrivacyStatementActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="oobe_tell_htc" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.PrivacyCautionActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.WelcomeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".activity.RestoreYourMediaActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/NoTitleBar" android:name=".csl.CslSelectionActivity" android:exported="true" android:screenOrientation="portrait" />
+        <service android:name=".WIFIScanAPService" />
+        <service android:name=".tmo.TmoClientService" />
+        <service android:name=".AutoRestoreService" />
+    </application>
+</manifest>

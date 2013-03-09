@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/dream_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.DreamComponentPreference android:persistent="false" android:title="@string/dream_component_title" android:key="dream_component" />
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/dream_timeout_entries" android:title="@string/dream_timeout_title" android:key="dream_timeout" android:summary="@string/dream_timeout_summary" android:entryValues="@array/dream_timeout_values" />
+    <com.android.settings.DreamTesterPreference android:persistent="false" android:title="@string/dream_test" android:key="dream_test" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/popup_background" android:layout_width="480.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pin_title" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip">
+        <View android:background="@drawable/separator_left" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@drawable/separator_right" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="18.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_1" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_2" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="2" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_3" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="3" android:layout_weight="1.0" android:onClick="onPIN" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_4" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="4" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_5" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="5" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_6" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="6" android:layout_weight="1.0" android:onClick="onPIN" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_7" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="7" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_8" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="8" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_9" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="9" android:layout_weight="1.0" android:onClick="onPIN" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="72.0dip">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_clear" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="@string/generic_clear" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_0" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="0" android:layout_weight="1.0" android:onClick="onPIN" />
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pin_code_ok" android:clickable="true" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="@string/generic_ok" android:layout_weight="1.0" android:onClick="onPIN" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

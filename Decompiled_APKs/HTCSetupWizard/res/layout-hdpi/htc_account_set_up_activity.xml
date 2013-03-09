@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/htc_account_set_up_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0px" android:text="@string/htc_account_set_up_content" style="@style/layout_generic" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="10.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/ic_text_dot" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@color/text_htc_account_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/htc_account_set_up_description_05" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="10.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/ic_text_dot" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@color/text_htc_account_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/htc_account_set_up_description_01" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="10.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/ic_text_dot" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@color/text_htc_account_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/htc_account_set_up_description_02" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="10.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/ic_text_dot" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@color/text_htc_account_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/htc_account_set_up_description_03" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="10.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:src="@drawable/ic_text_dot" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@color/text_htc_account_summary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/htc_account_set_up_description_04" />
+            </LinearLayout>
+            <Button android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="@color/black_text_white_focused" android:id="@id/set_up_account_button" android:layout_width="220.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginTop="45.0px" android:text="@string/htc_account_set_up_button_message" style="@style/layout_generic" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/bt_next" android:text="@string/skip" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

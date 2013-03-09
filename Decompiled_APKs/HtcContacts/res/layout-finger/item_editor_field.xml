@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/edit_contact_item_editor_field_bottom_gap_height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edit_contact_item_editor_field_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/editor" android:layout_width="fill_parent" android:layout_height="@dimen/editEntry_height" android:layout_marginTop="@dimen/edit_contact_item_editor_field_marginTop" android:layout_marginRight="@dimen/editor_deletion_interval" android:singleLine="true" style="@style/EditTextStyle" />
+</LinearLayout>

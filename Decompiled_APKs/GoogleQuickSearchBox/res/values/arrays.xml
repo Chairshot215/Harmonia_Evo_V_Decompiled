@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="google_search_paths">
+        <item>/search</item>
+        <item>/m/search</item>
+        <item>/webhp</item>
+    </string-array>
+    <array name="default_sources" />
+    <string-array name="default_source_suggest_uris">
+        <item>content://applications/search_suggest_query</item>
+        <item>content://browser/bookmarks/search_suggest_query</item>
+        <item>content://com.android.contacts/search_suggest_query</item>
+        <item>content://com.google.android.videos/search_suggest_query</item>
+        <item>content://com.google.android.music.MusicContent/search/search_suggest_query</item>
+        <item>content://com.google.android.apps.books/search_suggest_query</item>
+    </string-array>
+    <string-array name="zero_query_sources">
+        <item>com.google.android.googlequicksearchbox/.QsbNotificationsSource</item>
+    </string-array>
+    <string-array name="zero_query_source_suggest_uris">
+        <item>content://com.android.contacts/search_suggest_query</item>
+        <item>content://com.google.android.videos/search_suggest_query</item>
+        <item>content://com.google.android.music.MusicContent/search/search_suggest_query</item>
+        <item>content://com.google.android.apps.books/search_suggest_query</item>
+        <item>content://browser/bookmarks/search_suggest_query</item>
+    </string-array>
+    <string-array name="never_shortcut_sources">
+        <item>com.google.android.googlequicksearchbox/.QsbNotificationsSource</item>
+    </string-array>
+    <string-array name="never_shortcut_source_uris">
+        <item>content://com.android.contacts/search_suggest_query</item>
+        <item>content://com.google.android.videos/search_suggest_query</item>
+        <item>content://com.google.android.music.MusicContent/search/search_suggest_query</item>
+        <item>content://com.google.android.apps.books/search_suggest_query</item>
+        <item>content://browser/bookmarks/search_suggest_query</item>
+    </string-array>
+    <array name="ignored_until_used_zero_query_sources" />
+    <string-array name="ignored_until_used_zero_query_source_uris">
+        <item>content://com.google.android.music.MusicContent/search/search_suggest_query</item>
+    </string-array>
+    <string-array name="trusted_sources">
+        <item>com.android.mms/.ui.SearchActivity</item>
+        <item>com.google.android.music/com.android.music.activitymanagement.TopLevelActivity</item>
+    </string-array>
+    <string-array name="trusted_source_suggest_uris">
+        <item>content://applications/search_suggest_query</item>
+        <item>content://browser/bookmarks/search_suggest_query</item>
+        <item>content://com.android.contacts/search_suggest_query</item>
+        <item>content://com.google.android.videos/search_suggest_query</item>
+        <item>content://com.google.android.apps.books/search_suggest_query</item>
+    </string-array>
+    <string-array name="source_icon_overrides">
+        <item>android.resource://com.android.browser/drawable/ic_search_category_bookmark</item>
+        <item>android.resource://com.google.android.googlequicksearchbox/drawable/ic_star</item>
+        <item>android.resource://com.android.browser/drawable/ic_bookmark_off_holo_dark</item>
+        <item>android.resource://com.google.android.googlequicksearchbox/drawable/ic_star</item>
+        <item>android.resource://com.android.browser/drawable/ic_search_category_history</item>
+        <item>android.resource://com.google.android.googlequicksearchbox/drawable/ic_browser_history</item>
+    </string-array>
+    <string-array name="single_line_source_uris">
+        <item>content://applications/search_suggest_query</item>
+    </string-array>
+    <array name="ignore_icon1_source_uris" />
+    <string-array name="ignored_sources">
+        <item>com.google.android.voicesearch/.Shortcuts</item>
+    </string-array>
+    <string-array name="web_history_packages">
+        <item>com.google.android.voicesearch</item>
+    </string-array>
+    <string-array name="countrycode_domain_overrides">
+        <item>cn</item>
+        <item>.google.com.hk</item>
+    </string-array>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/ota_title_need_ota" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/textAppearance_content" android:id="@id/ota_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ota_description_need_ota" style="@style/layout_generic" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/emergency_dial" android:text="@string/emergency_dial" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/activate" android:text="@string/activate" android:layout_alignParentRight="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:visibility="gone" android:text="@string/start_setup" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

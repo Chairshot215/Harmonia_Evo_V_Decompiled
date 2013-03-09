@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <ImageView android:id="@id/img_menu_photo" android:layout_width="@dimen/img_menu_size" android:layout_height="@dimen/img_menu_size" android:layout_marginLeft="@com.htc:dimen/htc_list_item_image_icon_left_margin" />
+    <com.htc.widget.HtcListItem2LineText android:id="@id/txt_menu" htc:textMode="darklist" />
+</com.htc.widget.HtcListItem>

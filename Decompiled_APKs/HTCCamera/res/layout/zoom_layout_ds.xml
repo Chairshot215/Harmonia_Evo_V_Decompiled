@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zoom_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/zoom_track_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_zoom_track" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+    <com.android.camera.rotate.RotateRelativeLayout android:id="@id/zoom_container_ds" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/zoom_bar_out_ds" android:background="@drawable/camera_icon_zoom_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.android.camera.widget.ZoomBar_ds android:id="@id/zoom_bar_track_ds" android:layout_width="545.0px" android:layout_height="70.0px" android:src="@drawable/camera_icon_zoom_btn" android:layout_weight="0.0" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/zoom_bar_in_ds" android:background="@drawable/camera_icon_zoom_up" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.android.camera.rotate.RotateRelativeLayout>
+</RelativeLayout>

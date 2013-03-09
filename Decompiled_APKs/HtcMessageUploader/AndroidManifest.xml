@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="305264380" android:versionName="3.5.2211293225.264380" package="com.htc.htcMessageUploader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/htc_private_app" android:description="@string/htc_company_name" android:hardwareAccelerated="false">
+        <service android:name="UploadMessageService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.providers.UploadMessageService" />
+                <action android:name="android.server.checkin.FOTA_SCHEDULE_COMMAND" />
+                <action android:name="android.server.checkin.FOTA_SEND_UPLOAD_MESSAGE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="UploadMessageReceiver" android:permission="android.permission.HTC_FOTA_UPDATE">
+            <intent-filter>
+                <action android:name="android.server.checkin.FOTA_VERIFY_COMPLETE" />
+                <action android:name="android.server.checkin.FOTA_INSTALL_COMPLETE" />
+                <action android:name="android.server.checkin.FOTA_UPLOAD_MESSAGE" />
+                <action android:name="android.server.checkin.FOTA_FIRST_SUCCESS_CHECKIN" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.server.checkin.APP_RUNUPDATE" />
+                <action android:name="android.server.checkin.APPUPDATE_FAIL" />
+                <action android:name="android.server.checkin.APPUPDATE_SUCCESS" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+</manifest>

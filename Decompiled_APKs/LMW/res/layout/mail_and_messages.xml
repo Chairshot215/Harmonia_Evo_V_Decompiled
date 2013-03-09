@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HtcListView android:id="@id/mails_and_messaging_settings_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:divider="@com.htc:drawable/common_list_divider" android:layout_weight="1.0" android:layout_above="@id/cmd_bar" android:layout_alignParentTop="true" style="@com.htc:style/htc_listview_style" />
+    <com.htc.widget.HeaderBarShort android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.widget.HtcFooter android:id="@id/cmd_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_1" android:text="@string/back" />
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_2" android:text="@string/finish" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

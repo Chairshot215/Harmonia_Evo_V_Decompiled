@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/subscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" style="@style/check_box_htcnewsletter" />
+    <TextView android:id="@id/tv_newsletter_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginTop="@dimen/dialog_margin" android:layout_marginRight="@dimen/border_margin" android:layout_marginBottom="@dimen/dialog_margin" style="@com.htc:style/list_secondary_unread_xl" />
+</LinearLayout>

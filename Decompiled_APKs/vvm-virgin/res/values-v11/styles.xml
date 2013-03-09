@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.NoBackground" parent="@*android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/titlebar</item>
+    </style>
+    <style name="NoTitleBar" parent="@*android:style/Theme.Holo">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="TitleBar" parent="@*android:style/Theme.Holo">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="VoicemailSeekBar" />
+    <style name="SubscribeButton" parent="@*android:style/Widget.Holo.Button" />
+    <style name="TitleButtonStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/inbox_button_background</item>
+        <item name="android:shadowColor">@color/shadowTitleColor</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <style name="AlertDialogListTitle">
+        <item name="android:textAppearance">?android:textAppearanceLargeInverse</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="AlertDialogListDesciption">
+        <item name="android:textAppearance">?android:textAppearanceMediumInverse</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="AlertDialogListDesciptionSmall">
+        <item name="android:textAppearance">?android:textAppearanceSmallInverse</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlRootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/textViewTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0px" android:text="@string/app_title" android:singleLine="true" android:layout_centerHorizontal="true" style="@com.htc:style/darklist_primary_m" />
+    <TextView android:gravity="center" android:id="@id/textViewDescription" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46.0px" android:layout_marginTop="63.0px" android:layout_marginRight="46.0px" android:text="@string/app_description" android:layout_centerHorizontal="true" style="@com.htc:style/darklist_secondary_read_s" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_marginTop="159.0px" android:layout_marginRight="50.0px">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_music" android:focusable="true" android:clickable="true" android:layout_width="194.0px" android:layout_height="150.0px" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center" android:id="@id/text_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="156.0px" android:singleLine="true" android:layout_centerHorizontal="true" style="@com.htc:style/darklist_primary_m" />
+        </RelativeLayout>
+        <View android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_photo" android:focusable="true" android:clickable="true" android:layout_width="194.0px" android:layout_height="150.0px" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center" android:id="@id/text_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="156.0px" android:singleLine="true" android:layout_centerHorizontal="true" style="@com.htc:style/darklist_primary_m" />
+        </RelativeLayout>
+        <View android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/icon_video" android:focusable="true" android:clickable="true" android:layout_width="194.0px" android:layout_height="150.0px" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+            <TextView android:gravity="center" android:id="@id/text_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="156.0px" android:singleLine="true" android:layout_centerHorizontal="true" style="@com.htc:style/darklist_primary_m" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

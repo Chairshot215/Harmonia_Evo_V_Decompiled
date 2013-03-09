@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/title_usermanagement" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <com.htc.widget.HtcFooter android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@id/button_done" android:text="@string/done" />
+    </com.htc.widget.HtcFooter>
+    <LinearLayout android:background="@com.htc:drawable/listview_listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:layout_above="@id/footer" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@com.htc:dimen/margin_top_with_title" android:layout_above="@id/footer">
+        <LinearLayout android:orientation="vertical" android:background="@color/scroller_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height">
+                <com.htc.widget.HtcListItem android:id="@id/allow_users_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.htc.widget.HtcListItem2LineText android:id="@id/allow_users_label" />
+                    <com.htc.widget.HtcListItemCheckBox android:id="@id/allow_users_btn" />
+                </com.htc.widget.HtcListItem>
+                <ImageView android:layout_alignParentTop="true" style="@style/trans_top_round_small" />
+                <ImageView android:layout_alignParentBottom="true" style="@style/trans_bottom_round_small" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/section_divider" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height">
+                <ImageView android:layout_alignParentTop="true" style="@style/trans_top_round_small" />
+                <TextView android:layout_gravity="top|left|center" android:id="@id/max_connection" android:layout_marginTop="@dimen/max_connection_label_margin_top" style="@style/sub_label_text" />
+                <com.htc.widget.HtcSpinner android:id="@id/max_count" android:prompt="@string/max_connection" android:layout_below="@id/max_connection" style="@style/spinner_field" />
+                <ImageView android:layout_below="@id/max_count" android:layout_alignParentBottom="true" style="@style/trans_bottom_round_small" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/device_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.htc.widget.HtcListView android:id="@id/device_list_container" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="180.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/request_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.htc.widget.HtcListView android:id="@id/request_list_container" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="180.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/white_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.htc.widget.HtcListView android:id="@id/white_list_container" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="180.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/black_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.htc.widget.HtcListView android:id="@id/black_list_container" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="180.0px" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

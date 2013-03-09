@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100338729" android:versionName="1.0.2213373248.338729" package="com.android.providers.htcmessage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="com.android.providers.htcmessage.permission.LBS" />
+    <permission android:name="com.android.providers.htcmessage.permission.LBS" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/app_label" android:process="android.process.htcmessage">
+        <provider android:name="HtcMessageProvider" android:multiprocess="true" android:authorities="htcmessageutil" />
+        <provider android:name="LbsProvider" android:permission="com.android.providers.htcmessage.permission.LBS" android:multiprocess="true" android:authorities="lbssms2" />
+        <provider android:name="CBsettingProvider" android:multiprocess="true" android:authorities="cbsetting" />
+        <provider android:name="HtcMsgGeneralProvider" android:multiprocess="true" android:authorities="htcmsggeneral" />
+        <provider android:name="HtcSmsProvider" android:readPermission="android.permission.READ_SMS" android:writePermission="android.permission.WRITE_SMS" android:multiprocess="true" android:authorities="htc-sms" />
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/cc_box" android:nextFocusDown="@id/expiration_date_entry_1st" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:hint="@string/card_number" android:singleLine="true" android:inputType="number" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <EditText android:id="@id/expiration_date_entry_1st" android:nextFocusUp="@id/cc_box" android:nextFocusDown="@id/expiration_date_entry_2nd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+        <TextView android:id="@id/expiration_date_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <EditText android:id="@id/expiration_date_entry_2nd" android:nextFocusUp="@id/expiration_date_entry_1st" android:nextFocusDown="@id/cvc_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="2" android:layout_weight="1.0" android:inputType="number" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <EditText android:id="@id/cvc_entry" android:nextFocusUp="@id/expiration_date_entry_2nd" android:nextFocusDown="@id/name_entry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/cvc_code" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+        <ImageView android:id="@id/cvc_image" android:background="@drawable/highlight_overlay" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/cvc_hint" />
+    </LinearLayout>
+    <com.google.android.finsky.layout.BillingAddress android:orientation="vertical" android:id="@id/billing_address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/billing_addcreditcard_privacy_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/addcreditcard_privacy_footer" />
+</LinearLayout>

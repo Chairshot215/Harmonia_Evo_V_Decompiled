@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.EditorialBucketEntry android:id="@id/editorial_entry" android:background="@drawable/highlight_overlay" android:paddingTop="8.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.SimpleMarginBox android:layout_width="fill_parent" android:layout_height="wrap_content" finsky:max_content_width="@dimen/editorial_app_cell_width">
+        <com.google.android.finsky.layout.EditorialAppBucketContent android:id="@id/editorial_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.finsky.layout.DocImageView android:id="@id/li_thumbnail" android:layout_width="fill_parent" android:layout_height="@dimen/editorial_cell_promo_height" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" finsky:placeholder_type="promo" />
+            <Button android:id="@id/buy_button" android:layout_marginRight="0.0dip" android:layout_below="@id/li_thumbnail" android:layout_alignParentRight="true" style="@style/DetailsPage_EditorialBuyButton" />
+            <TextView android:textSize="@dimen/content_generic_large_size" android:textStyle="bold" android:id="@id/li_title" android:paddingLeft="0.0dip" android:layout_toLeftOf="@id/buy_button" android:layout_below="@id/li_thumbnail" android:layout_alignParentLeft="true" style="@style/ContentEntryTitle" />
+            <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_large_size" android:id="@id/li_creator" android:paddingLeft="0.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="@dimen/bucket_entry_margin_left_right" android:drawablePadding="4.0dip" android:layout_toRightOf="@id/li_thumbnail" android:layout_below="@id/li_title" android:layout_alignParentLeft="true" style="@style/ContentEntrySubtitle" />
+            <TextView android:textSize="@dimen/content_generic_medium_size" android:textColor="@color/black" android:id="@id/li_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@id/li_creator" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+        </com.google.android.finsky.layout.EditorialAppBucketContent>
+    </com.google.android.finsky.layout.SimpleMarginBox>
+</com.google.android.finsky.layout.EditorialBucketEntry>

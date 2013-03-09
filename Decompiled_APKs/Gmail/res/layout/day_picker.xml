@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <NumberPicker android:id="@id/day_picker" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/day" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" />
+</LinearLayout>

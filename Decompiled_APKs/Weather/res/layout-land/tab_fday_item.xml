@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/day_forecast_item_width" android:layout_height="@dimen/day_forecast_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/con_icon" android:layout_width="@dimen/now_icon_width" android:layout_height="@dimen/now_icon_height" android:layout_marginRight="@dimen/fday_con_icon_margin_right" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/now_day_text_font" android:textColor="@color/black" android:gravity="left" android:id="@id/day_title" android:paddingLeft="@dimen/f_day_temp_padding_left" android:paddingTop="@dimen/f_day_text_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/now_today_text" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/fday_date_font" android:textColor="@color/fday_date_color" android:gravity="left" android:id="@id/date" android:paddingLeft="@dimen/f_day_temp_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/day_title" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="@dimen/fdays_temp_font" android:textColor="@color/black" android:gravity="left" android:id="@id/temp" android:paddingLeft="@dimen/f_day_temp_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/date" android:layout_alignParentLeft="true" />
+</RelativeLayout>

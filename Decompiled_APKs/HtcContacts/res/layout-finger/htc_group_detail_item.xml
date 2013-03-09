@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/Icon" android:background="@com.htc:drawable/common_button_small_rest" android:layout_width="@dimen/information_icon_border_dimen" android:layout_height="@dimen/information_icon_border_dimen" android:layout_marginLeft="8.0px" android:scaleType="center" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/Label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_photo" android:singleLine="true" style="@style/text_style_primary" />
+</LinearLayout>

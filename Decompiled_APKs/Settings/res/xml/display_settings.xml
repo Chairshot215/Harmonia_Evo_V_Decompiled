@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/display_settings" android:order="0" />
+    <com.android.settings.framework.preference.display.HtcBrightnessPreference android:order="4" />
+    <com.android.settings.framework.preference.display.HtcScreenTimeoutListPreference android:order="5" />
+    <com.android.settings.framework.preference.display.HtcScreenAlignmentCalibrationPreference android:order="6" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/notification_flash_settings" android:key="notification_flash_settings" android:summary="@string/notify_flash_settings_summary2" android:order="7" android:fragment="com.android.settings.NotificationFlashSettings" />
+    <com.android.settings.framework.preference.display.HtcTVOutPreference android:order="8" />
+    <com.htc.preference.HtcListPreference android:entries="@array/entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:order="9" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" android:order="10" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/video_out_settings_category" android:key="video_out_group" android:order="11">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/display_resolution_title" android:key="display_resolution_entry" android:summary="" android:order="12" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/gsensor_settings" android:key="gsensor_group" android:order="13" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/gsensor_settings_title" android:order="14">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.GSensorCalibration" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

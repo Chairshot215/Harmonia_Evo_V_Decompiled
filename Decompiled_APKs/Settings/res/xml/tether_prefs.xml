@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/internet_sharing_title" android:key="toggle_netsharing" android:summary="@string/internet_sharing_summary" android:defaultValue="false" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/is_type_title" android:key="toggle_netsharing_type" android:summary="@string/is_type_windows" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/internet_sharing_title_incredible" android:key="toggle_modemlink" android:summary="@string/modemlink_summary" android:defaultValue="false" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/modemlink_type_title" android:key="toggle_modemlink_type" android:summary="@string/modemlink_type_usb" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/hotspot_toggle_preference_title" android:key="enable_wifi_ap" android:summary="@string/hotspot_toggle_preference_summery" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/hotspot_settings_preference_title" android:key="hotspot_settings" android:summary="@string/hotspot_settings_preference_summery">
+        <intent android:targetPackage="com.htc.WifiRouter" android:action="android.intent.action.MAIN" android:targetClass="com.htc.WifiRouter.Intro" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/bluetooth_tether_checkbox_text" android:key="enable_bluetooth_tethering" />
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/tethering_help_button_text" android:key="tethering_help" />
+</com.htc.preference.HtcPreferenceScreen>

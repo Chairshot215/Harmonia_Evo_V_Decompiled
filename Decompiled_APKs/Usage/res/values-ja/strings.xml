@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">データ使用量</string>
+    <string name="process_kernel_label">Android OS</string>
+    <string name="roaming_warning">データ ローミングを許可しますか? ローミングにより高額な通信料が発生することがあります。</string>
+    <string name="roaming_reenable_title">注意</string>
+    <string name="display_order_text">並べ替え:</string>
+    <string name="app_name_label">アプリケーション</string>
+    <string name="launch_count_label">回数</string>
+    <string name="usage_time_label">使用時間</string>
+    <string name="tether_settings_title_usb">USB テザリング</string>
+    <string name="tether_settings_title_wifi">ポータブルアクセスポイント</string>
+    <string name="tether_settings_title_bluetooth">Bluetooth テザリング</string>
+    <string name="tether_settings_title_usb_bluetooth">テザリング</string>
+    <string name="tether_settings_title_all">テザリングとポータブルアクセスポイント</string>
+    <string name="data_usage_summary_title">データ使用量</string>
+    <string name="data_usage_cycle">データ使用量サイクル</string>
+    <string name="data_usage_menu_roaming">データ ローミング</string>
+    <string name="data_usage_menu_restrict_background">バックグラウンドデータを制限</string>
+    <string name="data_usage_menu_split_4g">4G 使用量を分ける</string>
+    <string name="data_usage_menu_show_wifi">Wi-Fi 使用量を表示</string>
+    <string name="data_usage_menu_show_ethernet">イーサネット使用量を表示</string>
+    <string name="data_usage_change_cycle">サイクルを変更…</string>
+    <string name="data_usage_pick_cycle_day">毎月この日にデータ使用量サイクルをリセットする:</string>
+    <string name="data_usage_empty">この期間内はデータを使用したアプリはありません。</string>
+    <string name="data_usage_label_foreground">フォアグラウンド</string>
+    <string name="data_usage_label_background">バックグラウンド</string>
+    <string name="data_usage_disclaimer">この電話機で測定します。通信会社が測定するデータ使用量とは異なる場合があります。</string>
+    <string name="data_usage_disable_mobile">モバイルデータを無効にしますか?</string>
+    <string name="data_usage_disable_mobile_limit">モバイルデータ制限を設定</string>
+    <string name="data_usage_disable_4g_limit">4G データ制限を設定</string>
+    <string name="data_usage_disable_3g_limit">2G-3G データ制限を設定</string>
+    <string name="data_usage_disable_wifi_limit">Wi-Fi データの上限を設定</string>
+    <string name="data_usage_tab_wifi">Wi-Fi</string>
+    <string name="data_usage_tab_ethernet">イーサネット</string>
+    <string name="data_usage_tab_mobile">モバイル</string>
+    <string name="data_usage_tab_4g">4G</string>
+    <string name="data_usage_tab_3g">2G-3G</string>
+    <string name="data_usage_list_mobile">モバイル</string>
+    <string name="data_usage_list_none">なし</string>
+    <string name="data_usage_enable_mobile">モバイル データ</string>
+    <string name="data_usage_enable_3g">2G-3G データ</string>
+    <string name="data_usage_enable_4g">4G データ</string>
+    <string name="data_usage_app_settings">アプリの設定を表示</string>
+    <string name="data_usage_app_restrict_background">バックグラウンドデータを制限</string>
+    <string name="data_usage_app_restrict_background_summary">モバイルデータ ネットワークのみでバックグラウンドデータを無効にします。Wi-Fi が使用可能なときには、Wi-Fi を使用します。</string>
+    <string name="data_usage_app_restrict_background_summary_disabled">このアプリにバックグラウンドデータを制限を設定するには、まずモバイルデータ制限を設定してください。</string>
+    <string name="data_usage_app_restrict_dialog_title">バックグラウンドデータを制限?</string>
+    <string name="data_usage_app_restrict_dialog">"この機能は Wi-Fi に接続しなければバックグラウンドデータに依存するアプリを停止させる場合があります。
+
+アプリ内からより適切なデータ使用コントロールを設定できます。"</string>
+    <string name="data_usage_restrict_denied_dialog">バックグラウンドデータの制限は、モバイルデータの制限を設定した場合にのみ可能となります。</string>
+    <string name="data_usage_cycle_editor_title">使用サイクル リセット日</string>
+    <string name="data_usage_cycle_editor_subtitle">毎月のこの日:</string>
+    <string name="data_usage_cycle_editor_positive">設定</string>
+    <string name="data_usage_warning_editor_title">データ使用量の警告を設定</string>
+    <string name="data_usage_limit_editor_title">データ使用量の上限を設定</string>
+    <string name="data_usage_limit_dialog_title">データ使用量を制限する</string>
+    <string name="data_usage_limit_dialog">"%1$s データ接続は、指定した上限に達すると解除されます。
+
+データ使用量は電話で測定されますので、通信会社が測定する使用量とは異なる場合があります。上限値は控えめに設定しておいてください。"</string>
+    <string name="data_usage_restrict_background_title">バックグラウンドデータを制限?</string>
+    <string name="data_usage_restrict_background">バックグラウンドのモバイルデータを制限すると、Wi-Fi ネットワークに接続しなければ一部のアプリやサービスが機能しない場合があります。</string>
+    <string name="data_usage_sweep_warning"><font size="21">^1</font> <font size="9">^2</font>"
+"<font size="12">警告</font></string>
+    <string name="data_usage_sweep_limit"><font size="21">^1</font> <font size="9">^2</font>"
+"<font size="12">上限</font></string>
+    <string name="data_usage_uninstalled_apps">削除済みアプリケーション</string>
+    <string name="data_usage_received_sent">%1$s 受信、 %2$s 送信</string>
+    <string name="data_usage_total_during_range">%2$s: 約 %1$s 使用</string>
+    <string name="usage_stats_label">使用統計情報</string>
+    <string name="on">オン</string>
+    <string name="off">オフ</string>
+    <string name="advanced">詳細設定</string>
+    <string name="usage_settings">データ使用量設定</string>
+    <string name="reset_data_count">データ カウントをリセット</string>
+    <string name="on_day_of_each_month">各月の %1$s 日</string>
+    <string name="dialog_title_attention">注意</string>
+    <string name="dialog_content_cancel_limit">データ使用制限をOFFにすると、バックグラウンドデータ制限設定もすべてオOFFなります。</string>
+</resources>

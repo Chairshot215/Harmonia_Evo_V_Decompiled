@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">パッケージインストーラ</string>
+    <string name="install">インストール</string>
+    <string name="done">完了</string>
+    <string name="security_settings_desc">このアプリケーションに許可する権限:</string>
+    <string name="cancel">キャンセル</string>
+    <string name="unknown">不明</string>
+    <string name="installing">インストール中...</string>
+    <string name="install_done">アプリケーションをインストールしました</string>
+    <string name="install_confirm_question">このアプリケーションをインストールしますか？</string>
+    <string name="install_failed">インストールされていません</string>
+    <string name="install_failed_invalid_apk">パッケージが破損しているようです。</string>
+    <string name="install_failed_inconsistent_certificates">名前が同じで、署名が競合するパッケージが既にインストールされています。</string>
+    <string name="install_failed_older_sdk">このパッケージは新しいバージョンのAndroidでのみ機能します。</string>
+    <string name="install_failed_cpu_abi_incompatible">このアプリケーションはこの携帯端末のCPUと互換性がありません。</string>
+    <string name="install_failed_file_not_found">インストールが完了する前に指定されたパッケージが削除されました。</string>
+    <string name="install_failed_verify_failed">パッケージの検証に失敗したため、インストールできませんでした。</string>
+    <string name="install_failed_verify_timeout">このパッケージを検証している間にタイムアウトが発生しました。後で再度インストールしてください。</string>
+    <string name="install_failed_msg">%1$sはこの端末にインストールできません。</string>
+    <string name="launch">開く</string>
+    <string name="unknown_apps_dlg_title">インストールはブロックされました</string>
+    <string name="unknown_apps_dlg_text">セキュリティ保護のため、お使いの携帯端末はPlayストア以外から提供されたアプリケーションのインストールをブロックするよう設定されています。</string>
+    <string name="ok">OK</string>
+    <string name="settings">設定</string>
+    <string name="allow_source_dlg_title">アプリのために新しいソースを許可しますか？</string>
+    <string name="allow_source_dlg_text">"%1$sが他のアプリをインストールしようとしています。
+
+今後この操作を許可しますか？"</string>
+    <string name="manage_applications">管理アプリケーション</string>
+    <string name="dlg_app_replacement_title">アプリケーションを更新</string>
+    <string name="dlg_app_replacement_statement">"このアプリケーションをインストールすると別のアプリケーションが上書きされます。
+
+過去のユーザーデータはすべて保存されます。"</string>
+    <string name="dlg_sys_app_replacement_statement">"これはシステムアプリケーションです。本当に上書きしてもよろしいですか？
+
+過去のユーザーデータはすべて保存されます。"</string>
+    <string name="out_of_space_dlg_title">容量不足です</string>
+    <string name="out_of_space_dlg_text">%1$sをインストールできませんでした。空き容量を増やしてもう一度お試しください。</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">アプリケーションが見つかりません</string>
+    <string name="app_not_found_dlg_text">インストール済みアプリケーションのリストに、このアプリケーションはありません。</string>
+    <string name="uninstall_application_title">アプリケーションのアンインストール</string>
+    <string name="uninstall_update_title">アップデートのアンインストール</string>
+    <string name="uninstall_activity_text">%1$sは次のアプリケーションの一部です:</string>
+    <string name="uninstall_application_text">このアプリケーションをアンインストールします。</string>
+    <string name="uninstall_update_text">アプリケーションは出荷時の状態にリセットされます。</string>
+    <string name="uninstalling">アンインストール中...</string>
+    <string name="uninstall_done">アンインストールが完了しました。</string>
+    <string name="uninstall_failed">アンインストールできませんでした</string>
+    <string name="uninstall_failed_device_policy_manager">アンインストールできません: このパッケージは現在デバイスを管理しています。</string>
+    <string name="manage_device_administrators">デバイス管理者を管理</string>
+    <string name="uninstall_failed_msg">%1$sをアンインストールできませんでした</string>
+    <string name="Parse_error_dlg_title">解析エラー</string>
+    <string name="Parse_error_dlg_text">パッケージの解析中に問題が発生しました。</string>
+</resources>

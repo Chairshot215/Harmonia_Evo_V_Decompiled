@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ss:speechstrategy xmlns:ss="http://www.google.android.marvin.talkback.com/speechstrategy"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.google.android.marvin.talkback.com/speechstrategy speechstrategy.xsd" >
+
+  <!-- Notification shade for Froyo -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_WINDOW_STATE_CHANGED</ss:eventType>
+      <ss:className>com.android.server.status.StatusBarService$ExpandedDialog</ss:className>
+    </ss:filter>
+    <ss:metadata>
+      <ss:customVibration>@id/patterns_window_state</ss:customVibration>
+      <ss:customEarcon>@id/sounds_window_state</ss:customEarcon>
+      <ss:queuing>UNINTERRUPTIBLE</ss:queuing>
+    </ss:metadata>
+    <ss:formatter>
+      <ss:template>@string/value_notification_shade_opened</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Launcher - Announce drag state for icons-->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_LONG_CLICKED</ss:eventType>
+      <ss:className>com.android.launcher2.BubbleTextView</ss:className>
+      <ss:packageName>com.android.launcher</ss:packageName>
+      <ss:platformSdk>8</ss:platformSdk>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_dragging_icon</ss:template>
+      <ss:property>text</ss:property>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Google Quick Search Box widget -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.google.android.googlequicksearchbox</ss:packageName>
+      <ss:currentItemIndex>0||1</ss:currentItemIndex>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_change_search_category</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.TextView</ss:className>
+      <ss:packageName>com.google.android.googlequicksearchbox</ss:packageName>
+      <ss:currentItemIndex>1||2</ss:currentItemIndex>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_search_box</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.ImageButton</ss:className>
+      <ss:packageName>com.google.android.googlequicksearchbox</ss:packageName>
+      <ss:currentItemIndex>2||3</ss:currentItemIndex>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/template_voice_search</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Time picker -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>0</ss:currentItemIndex>
+      <ss:itemCount>11</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_increment_hours</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>4</ss:currentItemIndex>
+      <ss:itemCount>11</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_increment_minutes</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>2</ss:currentItemIndex>
+      <ss:itemCount>11</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_decrement_hours</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>6</ss:currentItemIndex>
+      <ss:itemCount>11</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_decrement_minutes</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <!-- Date picker -->
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>0</ss:currentItemIndex>
+      <ss:itemCount>14</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_increment_month</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>4</ss:currentItemIndex>
+      <ss:itemCount>14</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_increment_day</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>8</ss:currentItemIndex>
+      <ss:itemCount>14</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_increment_year</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>2</ss:currentItemIndex>
+      <ss:itemCount>14</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_decrement_month</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>6</ss:currentItemIndex>
+      <ss:itemCount>14</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_decrement_day</ss:template>
+    </ss:formatter>
+  </ss:rule>
+
+  <ss:rule>
+    <ss:filter>
+      <ss:eventType>TYPE_VIEW_FOCUSED</ss:eventType>
+      <ss:className>android.widget.NumberPickerButton</ss:className>
+      <ss:currentItemIndex>10</ss:currentItemIndex>
+      <ss:itemCount>14</ss:itemCount>
+      <ss:platformSdk>8</ss:platformSdk>
+      <ss:text></ss:text>
+      <ss:contentDescription></ss:contentDescription>
+    </ss:filter>
+    <ss:formatter>
+      <ss:template>@string/value_decrement_year</ss:template>
+    </ss:formatter>
+  </ss:rule>
+</ss:speechstrategy>

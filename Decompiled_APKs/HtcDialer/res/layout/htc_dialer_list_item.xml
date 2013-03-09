@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialer_item_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@com.htc:id/htc_list_item_separator_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@com.htc:layout/htc_list_item_separator" />
+    <include android:id="@com.htc:id/htc_list_item_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@com.htc:layout/htc_list_item_separator_middle" />
+    <com.android.htcdialer.search.DialerItem android:id="@id/dialer_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+        <com.htc.widget.HtcListItemQuickContactBadge android:id="@com.htc:id/photo" htc:imageMode="indicator" />
+        <com.android.htcdialer.widget.DialerListItem2LineText android:id="@id/name_number" htc:isMarquee="false" />
+        <com.htc.widget.HtcListItem2LineStamp android:id="@id/date_time" />
+        <com.htc.widget.HtcListItemImageButton android:id="@id/action_button" />
+    </com.android.htcdialer.search.DialerItem>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <AbsoluteLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/LayoutRound" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:paddingTop="22.0px" android:layout_width="wrap_content" android:layout_height="428.0px" android:src="@drawable/no_wifi" />
+                    <TextView android:textColor="@*android:color/black" android:gravity="center_horizontal" android:paddingLeft="14.0px" android:paddingTop="14.0px" android:paddingRight="14.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_wifi_1" android:singleLine="false" />
+                    <TextView android:textColor="@*android:color/black" android:gravity="center_horizontal" android:paddingLeft="14.0px" android:paddingTop="14.0px" android:paddingRight="14.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_wifi_2" android:singleLine="false" />
+                    <TextView android:textColor="@*android:color/black" android:gravity="center_horizontal" android:padding="14.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_wifi_3" android:singleLine="false" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/cell1" layout="@layout/button_bottom" />
+        </LinearLayout>
+    </AbsoluteLayout>
+</LinearLayout>

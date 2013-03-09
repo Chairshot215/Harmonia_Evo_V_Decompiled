@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/preference_screen_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/preference_transcription_font_entries" android:title="@string/preference_transcription_font" android:key="preference_transcription_font" android:defaultValue="@string/preference_font_normal" android:dialogTitle="@string/preference_transcription_font" android:positiveButtonText="@string/dialog_button_ok" android:negativeButtonText="@string/dialog_button_cancel" android:entryValues="@array/preference_transcription_font_values" />
+    <CheckBoxPreference android:title="@string/preference_title_show_text_transcription" android:key="preference_show_transcriptions" android:summary="@string/preference_summary_on_displayed_transcriptions" android:defaultValue="true" />
+</PreferenceScreen>

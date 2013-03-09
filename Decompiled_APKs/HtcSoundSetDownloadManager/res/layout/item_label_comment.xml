@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@com.htc:drawable/section_divider_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_item_label_margin_left" android:layout_marginRight="@dimen/app_info_friends_margin_right" android:text="@string/text_friends" style="@com.htc:style/darklist_secondary_l" />
+    <TextView android:id="@id/commentlabel" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/darklist_secondary_l" />
+</LinearLayout>

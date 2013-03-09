@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/list_conversation_wide_unread_focused_holo" />
+    <item android:drawable="@drawable/list_conversation_wide_unread_pressed_holo" android:state_activated="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/list_conversation_wide_unread_pressed_holo" />
+    <item android:state_selected="true" android:drawable="@drawable/list_conversation_wide_unread_selected_holo" />
+    <item android:state_selected="true" android:drawable="@drawable/list_conversation_wide_unread_selected_holo" android:state_activated="true" />
+    <item android:drawable="@drawable/list_conversation_wide_unread_normal_holo" />
+</selector>

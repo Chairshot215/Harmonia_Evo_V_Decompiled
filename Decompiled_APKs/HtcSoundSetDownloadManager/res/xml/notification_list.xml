@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/notification_title1" android:key="sound_group">
+        <com.htc.preference.HtcPreference android:title="@string/def_notify" android:key="default" android:summary="@string/def_notify_des" />
+        <com.htc.preference.HtcPreference android:title="@string/notice_message" android:key="message" android:summary="@string/notice_message_des" />
+        <com.htc.preference.HtcPreference android:title="@string/notice_calendar" android:key="calendar" android:summary="@string/notice_calendar_des" />
+        <com.htc.preference.HtcPreference android:title="@string/notice_email" android:key="email" android:summary="@string/notice_email_des" />
+        <com.htc.preference.HtcPreference android:title="@string/notice_task" android:key="task" android:summary="@string/notice_task_des" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="15" android:versionName="4.0.3-eng.sk.20120426.183743" package="com.htc.android.epst"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="com.htc.Manifest.permission.BLOCK_KEYBOARD_EVENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.htc.Manifest.permission.BLOCK_INPUT_EVENTS" />
+    <uses-permission android:name="com.htc.streamplayer.permission.PROXY_SETTING" />
+    <uses-permission android:name="com.android.settings.permission.ACCESS_SETTINGS" />
+    <uses-permission android:name="com.android.mms.permission.EDIT_CDMA_CONNECTION_SETTING" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.providers.htccdma.Specific" />
+    <application android:label="@string/app_name" android:description="@string/htc_company_short_name">
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="EPST" android:exported="false" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="MeidDialog" android:configChanges="orientation" />
+        <receiver android:name="EpstBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="*" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".LPMReceiver" android:permission="android.permission.WRITE_SECURE_SETTINGS">
+            <intent-filter>
+                <action android:name="com.android.internal.telephony.enter_lpm" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="EntryEPSTInfo" android:exported="false" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/group_list" android:name="HtcGroupEPST" android:configChanges="orientation" />
+        <activity android:label="@string/group_list" android:name="HtcEPST" android:configChanges="orientation" />
+        <activity android:label="@string/item_list" android:name="ListItemsActivity" android:configChanges="orientation" />
+        <activity android:label="@string/app_name" android:name="FileBrowserActivity" android:configChanges="orientation" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name="shutDownDevice" android:configChanges="orientation" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="HtcNAM" android:configChanges="orientation" />
+    </application>
+</manifest>

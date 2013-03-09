@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="@dimen/message_header_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/message_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <QuickContactBadge android:id="@id/photo" android:layout_width="@dimen/contact_photo_width" android:layout_height="@dimen/contact_photo_width" android:scaleType="centerCrop" android:contentDescription="@string/contact_info_string" />
+    <ImageView android:id="@id/draft" android:visibility="gone" android:layout_width="@dimen/message_header_height" android:layout_height="fill_parent" android:src="@drawable/ic_gmail_draft" android:scaleType="center" />
+    <include layout="@layout/conversation_message_upper_header_text" />
+    <include layout="@layout/conversation_message_upper_header_actions" />
+</LinearLayout>

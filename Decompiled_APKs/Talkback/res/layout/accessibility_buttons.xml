@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/skip_button" android:text="@string/accessibility_tutorial_skip" android:layout_alignParentLeft="true" style="@style/AccessibilityTutorialButton" />
+    <Button android:id="@id/back_button" android:visibility="gone" android:text="@string/accessibility_tutorial_back" android:layout_alignParentLeft="true" style="@style/AccessibilityTutorialButton" />
+    <Button android:id="@id/next_button" android:text="@string/accessibility_tutorial_next" android:layout_alignParentRight="true" style="@style/AccessibilityTutorialButton" />
+    <Button android:id="@id/finish_button" android:visibility="gone" android:text="@string/accessibility_tutorial_finish" android:layout_alignParentRight="true" style="@style/AccessibilityTutorialButton" />
+</RelativeLayout>

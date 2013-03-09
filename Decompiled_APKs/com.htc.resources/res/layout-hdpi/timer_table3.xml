@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/hour_coat" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <TextView android:textColor="#ffb4b4b4" android:gravity="center_horizontal" android:id="@id/hour_label" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="-2.0px" android:text="@string/label_hour" style="@com.htc:style/darklist_secondary_unread_xs" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/hour_table_view" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/minute_coat" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textColor="#ffb4b4b4" android:gravity="center_horizontal" android:id="@id/minute_label" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="-2.0px" android:text="@string/label_minute" style="@com.htc:style/darklist_secondary_unread_xs" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/minute_table_view" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/second_coat" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textColor="#ffb4b4b4" android:gravity="center_horizontal" android:id="@id/second_label" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="-2.0px" android:text="@string/label_second" style="@com.htc:style/darklist_secondary_unread_xs" />
+        <com.htc.widget.HtcNumberPicker android:id="@id/second_table_view" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:selectable="false" />
+    </RelativeLayout>
+    <com.htc.widget.HtcNumberPicker android:id="@id/ampm_table_view" android:focusable="false" android:layout_width="144.0px" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="-15.0px" android:layout_alignParentRight="true" android:selectable="false" />
+</merge>

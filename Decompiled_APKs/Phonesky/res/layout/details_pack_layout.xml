@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/details_section_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/details_pack_header" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/details_content_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/details_pack_header" />
+    <View android:id="@id/details_pack_separator" android:background="@color/details_panel_separator" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <FrameLayout android:id="@id/listing_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/listing_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/fullscreen_loading_indicator" />
+        <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/error_indicator" />
+    </FrameLayout>
+</LinearLayout>

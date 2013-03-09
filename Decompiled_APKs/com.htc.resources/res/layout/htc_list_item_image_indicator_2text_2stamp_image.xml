@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="fill" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height">
+        <include layout="@layout/htc_common_photo_ball_frame" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/htc_list_item_margin_top" android:paddingRight="@dimen/htc_list_item_margin_right" android:paddingBottom="@dimen/htc_list_item_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_1x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:ellipsize="marquee" android:gravity="left|center" android:id="@id/txt_1x1" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/list_primary_m" />
+                <TextView android:id="@id/txt_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/list_secondary_m" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_2x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:gravity="left|center" android:id="@id/txt_2x1" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/list_secondary_m" />
+                <TextView android:gravity="right|center" android:layout_gravity="bottom|right|center" android:id="@id/txt_2x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/list_secondary_m" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/img_1x3" android:background="?attr_common_button_xsmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/phone_icon_contactcard_right_action" android:scaleType="center" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/htc_list_item_top_round" android:background="@drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/htc_list_item_bottom_round" android:background="@drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</FrameLayout>

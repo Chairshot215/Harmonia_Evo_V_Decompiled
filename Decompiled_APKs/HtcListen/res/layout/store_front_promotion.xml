@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/promotionItemLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HtcListItemTileImage android:id="@id/promotionImage" />
+        <com.htc.widget.HtcListItem2LineText android:id="@id/promotionInfo" />
+        <com.htc.widget.HtcListItem2LineStamp android:id="@id/promotionFee" />
+        <com.htc.widget.HtcListItemImageButton android:id="@id/promotionBuy" android:background="?com.htc:attr_common_button_small" />
+    </com.htc.widget.HtcListItem>
+</LinearLayout>

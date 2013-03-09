@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">Đang xóa dữ liệu…</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">Đang tắt Bluetooth…</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"Bạn có thể cần phải bỏ ghép điện thoại này trên %s. 
+Bấm OK để thoát và thử lại sau"</string>
+    <string name="UI_MSGBOX_BTN_BACK">Quay lại</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">Hủy</string>
+    <string name="UI_MSGBOX_BTN_NO">Không</string>
+    <string name="UI_MSGBOX_BTN_OK">OK</string>
+    <string name="UI_MSGBOX_BTN_QUIT">Thoát</string>
+    <string name="UI_MSGBOX_BTN_RESUME">Khôi phục lại</string>
+    <string name="UI_MSGBOX_BTN_SETTING">Cài đặt</string>
+    <string name="UI_MSGBOX_BTN_YES">Đồng ý</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">Ứng dụng Chuyển dữ liệu không thể mở Bluetooth, vui lòng kiểm tra cài đặt không dây.</string>
+    <string name="UI_MSGBOX_CONN_FAILED">Bấm \"Khôi phục lại\" để thử lại hoặc \"Hủy\" để thoát.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">Dữ liệu bản sao</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">Bạn đã nhập %1$s từ %2$s. Có thể tạo ra các bản sao.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">Nếu như điện thoại cũ của bạn không được tìm thấy, vui lòng chắc rằng bạn đã chỉnh cho phép tìm thấy trên máy.</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">Mọi loại dữ liệu sẵn sàng trên %s đã được nhập vào.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"Để cho phép chuyển dữ liệu, vui lòng tắt mã hóa/mật khẩu trên máy Blackberry của bạn và sau đó chạm \"OK\";.
+Phần tùy chọn điển hình là Options>Security options>Encryption/Password"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">Bạn có chắc mình muốn thoát?</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">Nội dung đã nhập vào trên %s sẽ bị xóa. Bạn có chắc mình muốn thoát?</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">Để nhập lại từ %s, vui lòng chọn và xóa dữ liệu từ điện thoại này trước</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">Ngoại trừ danh bạ trên Gmail và Exchange mail, tất cả dữ liệu của loại đã chọn sẽ bị xóa khỏi điện thoại này.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">Ngoại trừ danh bạ trên Gmail và Exchange mail, tất cả dữ liệu của loại đã chọn sẽ bị xóa khỏi máy tính bảng này.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">Để nhập lại từ %s, vui lòng chọn và xóa dữ liệu từ máy tính bảng này trước</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">Bạn có thể cần phải khởi động lại %s và thử lại sau.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">Bạn có thể cần phải khởi động lại điện thoại này và điện thoại cũ của bạn, và thử lại sau đó.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">Bạn có thể cần phải khởi động lại máy tính bảng này và điện thoại cũ của bạn, và thử lại sau đó.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">Chuyển không thành công</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">Kết nối không thành công</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">Xóa</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">Ghép không thành công</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">Truy vấn không thành công</string>
+    <string name="ANDROID_TIPS_1">"1.Chọn \"menu\" > \"Cài đặt\" > \"Không dây &amp; Mạng\"
+
+2.Đánh dấu chọn vào \"Bluetooth\"
+
+3.Chọn \"Cài đặt Bluetooth\"
+
+4.Đánh dấu chọn \"Cho phép tìm thấy\""</string>
+    <string name="ANDROID_TIPS_2">"1. Vào Màn Hình Ứng Dụng > \"Cài đặt\" > \"không dây và mạng\"
+
+2. Chọn \"Cài đặt Bluetooth\"
+
+3. Đánh dấu chọn \"Bluetooth\"
+
+4. Đánh dấu chọn \"Hiển thị\""</string>
+    <string name="ANDROID_TIPS_3">"1. Vào Màn Hình Ứng Dụng > \"Cài đặt\" > \"Không dây và mạng\"
+
+2. Chọn \"Cài đặt Bluetooth\" 
+
+3. Đánh dấu chọn \"Bluetooth\"
+
+4. Đánh dấu chọn \"Cho phép tìm thấy\""</string>
+    <string name="APP_TIPS_1">"1.Bấm \"phím Home\" > \"Settings\" > \"General\" 
+
+2.Chọn \"Bluetooth\"
+
+3.Bật Bluetooth lên.
+
+4.Vẫn giữ ở màn hình cài đặt Bluetooth."</string>
+    <string name="HTC_TIPS_1">"1.Đi đến màn hình chính \"Home\"
+
+2.Bấm phím \"Start\" > \"Settings\" > \"Connections\"
+
+3.Chọn Bluetooth.
+
+4.Chọn sang tab Mode (Chế độ)
+
+5.Bật Bluetooth lên.
+
+6.Đánh dấu vào mục \"Make this device visible to other devices\""</string>
+    <string name="HTC_TIPS_2">"1.Đi đến màn hình chính \"Home\"
+
+2.Bấm phím \"Start\" > \"Settings\" > \"Connections\" > \"Bluetooth\"
+
+3.Chọn Bluetooth > Menu
+
+4.Bật Bluetooth lên.
+
+5.Bật \"On\" cho mục \"Visibility\""</string>
+    <string name="HTC_TIPS_3">"1.Đi đến màn hình chính \"Home\"
+
+2.Bấm phím \"Start\" > \"Settings\" > \"Connections\" > \"Bluetooth\"
+
+3.Chọn Bluetooth > Menu
+
+4.Bật Bluetooth lên.
+
+5.Bật \"On\" cho mục \"Visibility\""</string>
+    <string name="HTC_TIPS_4">"1.Đi đến màn hình chính \"Home\".
+
+2.Bấm phím \"Start\" > \"Settings\" > \"Wireless controls\".
+
+3.Bật Bluetooth lên.
+
+4.Chạm vào phần bên trái của phím Bluetooth.
+
+5.Chạm \"Advanced\"
+
+6.Chọn sang tab Mode.
+
+7.Đánh dấu vào mục \"Make this device visible to other devices\""</string>
+    <string name="HTC_TIPS_5">"1.Chọn \"Start\" > \"Tools\" > \"Settings\"
+
+2.Chọn \"Wireless controls\" > \"Bluetooth\"
+
+3.Chọn \"Advanced\"
+
+4.Chọn tab \"Mode\"
+
+5.Chọn vào \"Turn on Bluetooth\" và \"Make this device visible to other devices\""</string>
+    <string name="HTC_TIPS_6">"1.Chọn \"Start\" > \"Settings\" > \"Menu\" > \"All Settings\"
+
+2.Chọn \"Bluetooth\" và bật Bluetooth lên.
+
+3.Chọn tab khớp kế bên.
+
+4.Chọn vào biểu tượng kính thiên văn > \"Always visible\""</string>
+    <string name="HTC_TIPS_7">"1. Trên màn hình Bắt đầu, gõ vào \"→\".
+
+2. Gõ vào Cài đặt > Bluetooth.
+
+3. Mở Bluetooth."</string>
+    <string name="HTC_TIPS_8">"1. Chọn \"Bắt đầu\" > \"Công cụ\" > \"Cài đặt\"
+
+2. Nhấp \"Menu\" > \"Tất cả Cài Đặt\"
+
+3. Chọn Bluetooth
+
+4. Chọn tab \"Chế độ\"
+
+5. Mở Bluetooth
+
+6. Đánh dấu chọn \"Cho các thiết bị khác nhìn thấy thiết bị này\""</string>
+    <string name="KYO_TIPS_1">"1. Chọn Menu > \"Settings\" > \"Bluetooth\" 
+
+2. Chọn Tắt/Mở \"On Visible\"
+
+3. Chọn \"Settings\" > \"Visible Duration\" > \"Always\"
+
+4. Chọn BEEX Authentication \"Disabled\""</string>
+    <string name="LGG_TIPS_1">"%s1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\"
+
+2. Chọn \"Bluetooth\".
+
+3. Bật \"Bluetooth\" sang \"On\".
+
+4. Chọn \"Settings\".
+
+5. Chỉnh \"My handset's visibility\" sang \"Shown to all\"."</string>
+    <string name="LGG_TIPS_2">"%s1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\"
+
+2. Chọn \"Bluetooth\".
+
+3. Bật \"Bluetooth\" sang \"On\".
+
+4. Chọn \"Settings settings\".
+
+5. Chỉnh \"My visibility\" sang \"Show\"."</string>
+    <string name="LGG_TIPS_3">"%s1. Chọn \"Menu\" > \"Settings\" > \"Bluetooth\" 
+
+2. Bật \"Bluetooth\" sang \"On\".
+
+3. Chỉnh \"Visibility\" sang \"Always visible\"."</string>
+    <string name="LGG_TIPS_4">"%s1. Chọn \"Menu\" và chọn sang tab cuối cùng
+
+2. Chọn \"Bluetooth\".
+
+3. Bật \"Bluetooth\" sang \"Turn on\".
+
+4. Chọn \"Settings\".
+
+5. Chỉnh \"My device visibility\" sang \"Visible\"."</string>
+    <string name="LGG_TIPS_5">"1.Chọn Menu > \"Settings &amp; Tools \" > \"Bluetooth Menu\".
+
+2.Chỉnh Bluetooth sang \"Turn On\".
+
+3.Chọn \"Options\" > \"Discovery Mode\" > \"On\"."</string>
+    <string name="MOT_TIPS_1">"%s1. Chọn \"Menu\" > \"Settings/tools\" > \"Settings\".
+
+2. Đánh dấu chọn \"Bluetooth\".
+
+3. Chọn \"Bluetooth power\".
+
+4. Bật lên.
+
+5. Chọn \"Set discoverable\".
+
+6. Chọn \"always\"."</string>
+    <string name="MOT_TIPS_10">"1. Chọn Menu>\"Bluetooth\".
+
+2. Chọn \"Setup\".
+
+3. Chỉnh Change Power sang \"on\"
+
+4. Chọn \"Back\"
+
+5. Chọn Find Me > Discoverable:3 minutes"</string>
+    <string name="MOT_TIPS_11">"%s1. Chọn \"Menu\" > \"Settings\" > \"Connection\".
+
+2. Chọn \"Bluetooth link\".
+
+3. Chọn \"Setup\".
+
+4. Chỉnh \"Change Power\" sang On.
+
+5. Chọn \"Back\".
+
+6. Chọn \"Find Me\" > \"Discoverable:3 minutes\"."</string>
+    <string name="MOT_TIPS_12">"%s1. Chọn \"Menu\" > \"Settings\".
+
+2. Chọn \"Connections\".
+
+3. Chọn \"Bluetooth\".
+
+4. Chọn \"Option\" > \"Manage\" > \"Setup Bluetooth\".
+
+5. Chọn Bluetooth Power sang \"on\".
+
+6. Chọn \"Back\".
+
+7. Chọn \"Option\" Discoverable:On for 3 minutes"</string>
+    <string name="MOT_TIPS_2">"%s1. Chọn \"Menu\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên."</string>
+    <string name="MOT_TIPS_3">"%s1. Chọn \"Main Menu\" > \"Settings\".
+
+2. Chọn \"Bluetooth link\".
+
+3. Chọn \"Setup\".
+
+4. Chỉnh \"Change Power\" sang \"on\".
+
+5. Chọn \"Back\".
+
+6. Chọn \"Five Me\" > \"Discoverable:3 minutes\"."</string>
+    <string name="MOT_TIPS_4">"%s1. Chọn \"Main Menu\" > \"Settings &amp; Tools\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh \"Setup\" sang \"on\".
+
+4. Chỉnh \"Discovery mode\" sang \"on\".
+
+5. Chọn \"Discoverable on 3 minutes\"."</string>
+    <string name="MOT_TIPS_5">"1. Chọn \"Menu\" > \"SETTINGS &amp; TOOLS\".
+
+2. Chọn \"Bluetooth Menu\".
+
+3. Chỉnh \"Bluetooth\" sang \"Turn on\".
+
+4. Chọn \"Options\".
+
+5. Chỉnh \"Discovery Mode\" sang \"On\"."</string>
+    <string name="MOT_TIPS_6">"1. Chọn \"Menu\" > \"Tools\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"visibility\" sang \"Always visible\"."</string>
+    <string name="MOT_TIPS_7">"1. Chọn Menu >\"Settings &amp; Tools\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh Bluetooth sang \"On\".
+
+4. Chọn \"Settings\"
+
+5. Chỉnh \"Discovery Mode\" sang \"On\""</string>
+    <string name="MOT_TIPS_8">"1. Chọn Menu >\"Settings &amp; Tools\".
+
+2. Chọn \"Bluetooth Menu\".
+
+3. Chỉnh Bluetooth sang \"Turn On\".
+
+4. Chọn \"Settings\"
+
+5. Chỉnh \"Discovery Mode\" sang \"On\""</string>
+    <string name="MOT_TIPS_9">"1. Chọn Menu > \"Settings\" > \"Connection\".
+
+2. Chọn \"Bluetooth link\".
+
+3. Chọn \"Setup\".
+
+4. Chỉnh \"Change Power\" sang \"on\".
+
+5. Chọn \"Back\".
+
+6. Chọn \"Find Me\" > \"Discoverable:3 minutes\"."</string>
+    <string name="NOK_TIPS_1">"1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_10">"1. Chọn \"Menu\" > \"Settings\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chọn \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_11">"1. Chọn \"Menu\" > \"Tools\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_12">"1. Chọn \"Menu\" > \"Ctrl. panel\" > \"Connect\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_13">"1. Chọn Menu > \"Settings\" > \"Connection\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_14">"1. Chọn Menu > \"Cài đặt\" > \"Kết nối\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth.
+
+4. Đặt \"Khả năng phát hiện thiết bị\" là \"Luôn có thể nhìn thấy\"."</string>
+    <string name="NOK_TIPS_15">"1. Chọn \"Menu\" > \"Cài đặt\" > \"Kết nối\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth.
+
+4. Đặt \"Tầm nhìn thiết bị\" là \"Hiển thị cho tất cả\""</string>
+    <string name="NOK_TIPS_2">"1. Chọn \"Menu\" > \"Tools\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_4">"1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Permanent visibility\"."</string>
+    <string name="NOK_TIPS_5">"1. Chọn \"Menu\" > \"Connect\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chọn \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_51">"%s1. Chọn \"Menu\" > \"Connect\". 
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chọn \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_6">"1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Permanent visibility\"."</string>
+    <string name="NOK_TIPS_7">"1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Permanent visibility\"."</string>
+    <string name="NOK_TIPS_8">"1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chọn \"Bluetooth settings\". 5. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="NOK_TIPS_9">"1. Chọn \"Menu\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Bật Bluetooth lên.
+
+4. Chỉnh \"My phone's visibility\" sang \"Shown to all\"."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">Các hãng khác</string>
+    <string name="OTHER_PHONE_General">"Bạn có thể bật Bluetooth trên điện thoại chưa được hỗ trợ của bạn bằng cách:
+
+1. Vào màn hình chính.
+
+2. Chọn Menu > settings > connection > Bluetooth setting.
+
+3. Bật Bluetooth lên.
+
+4. Chọn Visibility > Show to all.
+
+5. Vẫn giữ ở màn hình cài đặt Bluetooth"</string>
+    <string name="RIM_TIPS_1">"1. Chọn \"Menu\" > \"Options\" > \"Bluetooth\".
+
+2. Click chọn \"Menu\".
+
+3. Chọn \"Enable Bluetooth\".
+
+4. Click chọn \"Menu\" lần nữa.
+
+5. Chọn Options.
+
+6. Chỉnh \"Discoverable\" sang \"Yes\"."</string>
+    <string name="RIM_TIPS_2">"1. Chọn \"Menu\" > \"Manage Connections\".
+
+2. Đánh dấu chọn \"Bluetooth\".
+
+3. Chọn \"Bluetooth Options\".
+
+4. Click chọn \"Menu\" lần nữa.
+
+5. Chọn Options.
+
+6. Chỉnh \"Discoverable\" sang \"Yes\"."</string>
+    <string name="RIM_TIPS_3">"1. Vào màn hình Tất cả ứng dụng.
+
+2. Chọn \"Quản lý kết nối\".
+
+3. Đánh dấu chọn \"Bluetooth\".
+
+4. Chọn \"Kết nối Bluetooth\".
+
+5. Đặt Bluetooth là \"Bật\".
+
+6. Đặt Có thể phát hiện là \"Có\"."</string>
+    <string name="RIM_TIPS_4">"1. Vào màn hình Tất cả ứng dụng.
+
+2. Chọn \"Quản lý kết nối\".
+
+3. Đánh dấu chọn \"Bluetooth\".
+
+4. Chọn \"Mạng và kết nối\".
+
+5. Chọn \"Kết nối Bluetooth\".
+
+6. Đặt Bluetooth là \"Bật\".
+
+7. Đặt Cho phép tìm thấy là \"Có\"."</string>
+    <string name="SAM_TIPS_1">"%s1. Chọn \"Menu\" > \"Bluetooth\".
+
+2. Chỉnh \"Activation\" sang \"On\".
+
+3. Chọn \"My phone’s visibility\" sang \"On\"."</string>
+    <string name="SAM_TIPS_10">"%s1. Chọn \"Menu\" > \"Settings\" > \"Network setting\" > \"Bluetooth\".
+
+2. Chỉnh \"Activation\" sang \"On\".
+
+3. Chỉnh \"My phone’s visibility\" sang \"On\"."</string>
+    <string name="SAM_TIPS_11">"%s1.Chọn \"Menu\" >\"Applications\"
+
+2.Chọn \"Bluetooth\"
+
+3.Chỉnh \"Bluetooth activation\"
+
+4.Chọn \"Settings\"
+
+5.Chỉnh \"My phone's visibility\" \"On\" và chọn \"Save\""</string>
+    <string name="SAM_TIPS_12">"%s1.Vào màn hình chính.
+
+2.Chọn \"Settings\" > \"Connectivity\" > \"Bluetooth\".
+
+3.Chỉnh Activiation sang \"on\".
+
+4.Chỉnh \"My phone's visibility\" sang \"on\""</string>
+    <string name="SAM_TIPS_2">"%s1.Chọn \"Menu\" > \"Applications\" > \"Bluetooth\".
+
+2.Chỉnh Activiation sang \"on\".
+
+3.Chỉnh \"My phone's visibility\" sang \"on\""</string>
+    <string name="SAM_TIPS_3">"1.Chọn \"Menu\" > \"Settings &amp; Tools\" > \"Bluetooth Menu\".
+
+2.Chỉnh \"Bluetooth\" sang \"Turn on\".
+
+3.Chọn \"Options\" > \"Discovery Mode\" > \"On\""</string>
+    <string name="SAM_TIPS_4">"%s1. Chọn \"Main menu\" > \"Settings\" > \"Bluetooth\".
+
+2. BâBluetooth on.
+
+3. Set \"Visibility\" as \"Always Visible\"."</string>
+    <string name="SAM_TIPS_5">"%s1. Chọn \"Menu\" > \"Settings/tools\" > \"Bluetooth Menu\".
+
+2. Chỉnh \"Setup\" sang \"set on\".
+
+3. Chỉnh \"Setup discovery mode\" sang \"On\"."</string>
+    <string name="SAM_TIPS_6">"%s1. Chọn \"Menu\" > \"Settings\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh \"Bluetooth\" sang \"Turn Bluetooth on\".
+
+4. Chỉnh \"My visibility\" sang \"On\"."</string>
+    <string name="SAM_TIPS_7">"%s1. Chọn \"Menu\" > \"Settings\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh Activation sang \"on\".
+
+4. Chỉnh \"My phone's visibility\" sang \"On\"."</string>
+    <string name="SAM_TIPS_8">"%s1. Chọn \"Menu\" > \"Tools/Utilities\" > \"Bluetooth\".
+
+2. Chọn \"Bluetooth settings\".
+
+3. Chọn \"Enable\".
+
+4. Chỉnh \"Discovery Mode\" sang \"on\"."</string>
+    <string name="SAM_TIPS_9">"%s1. Chọn \"Menu\" > \"Settings\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh Activation sang \"on\".
+
+4. Chỉnh \"My phone's visibility\" sang \"On\"."</string>
+    <string name="SAN_TIPS_1">"1. Chọn \"Menu\" > \"Tools\" > \"Bluetooth\".
+
+2. Chọn \"More…\" > \"Settings\" > \"On\".
+
+3. Chỉnh \"Visibility\" sang \"Always Visible\"."</string>
+    <string name="SE_TIPS_1">"%s1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh \"Bluetooth\" sang \"Turn on\".
+
+4. Chỉnh \"Visibility\" sang \"Show phone\"."</string>
+    <string name="SE_TIPS_2">"%s1. Chọn \"Menu\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh \"Bluetooth\" sang \"Turn on\".
+
+4. Chọn \"Options\"
+
+5. Chỉnh \"Visibility\" sang \"Show phone\"."</string>
+    <string name="SE_TIPS_3">"%s1. Chọn \"Menu\" > \"Connect\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh \"Bluetooth\" sang \"Turn on\".
+
+4. Chỉnh \"Visibility\" sang \"Show phone\"."</string>
+    <string name="SE_TIPS_4">"%s1. Chọn \"Menu\" > \"Settings\" > \"Connectivity\".
+
+2. Chọn \"Bluetooth\".
+
+3. Chỉnh \"Bluetooth\" sang \"Turn on\".
+
+4. Chọn \"Options\"
+
+5. Chỉnh \"Visibility\" sang \"Show phone\"."</string>
+    <string name="SE_TIPS_5">"1. Vào màn hình chính.
+
+2. Chạm \"Start\" > \"Settings\" > \"Bluetooth\".
+
+3. Chọn sang tab Mode.
+
+4. Bật Bluetooth lên.
+
+5. Đánh dấu \"Make this device visible to other devices.\""</string>
+    <string name="SE_TIPS_6">"%s1. Vào Màn Hình Ứng Dụng > \"Cài đặt\" > \"Kết nối\".
+
+2. Chọn \"Bluetooth\".
+
+3. Đặt Bluetooth là \"Bật\".
+
+4. Đặt Khả năng phát hiện điện thoại là \"Có thể nhìn thấy\""</string>
+    <string name="SHP_TIPS_1">"%s1. Chọn \"Menu\" > \"Settings\".
+
+2. Chọn \"Connections\" > \"Bluetooth\".
+
+3. Chỉnh Switch On/Off sang \"On\".
+
+4. Chỉnh \"Visibility\" sang \"Show My Phone\".
+
+5. Vui lòng kiểm tra Bluetooth trên máy đã được mở On và đi đến màn hình chờ."</string>
+    <string name="SIM_TIPS">Nếu bạn chỉ có một thẻ SIM, bạn có thể gỡ bỏ khỏi điện thoại này, lắp nó lại vào điện thoại cũ của bạn, và sau đó khởi động cả 2 điện thoại cùng lúc.</string>
+    <string name="app_icon_name">Chuyển dữ liệu</string>
+    <string name="app_name">Chuyển dữ liệu của bạn</string>
+    <string name="UI_About_Platform">dành cho HTC Android</string>
+    <string name="UI_About_Version">Phiên bản:</string>
+    <string name="UI_BTN_Done">Hoàn tất</string>
+    <string name="UI_BTN_Next">Tiếp tục</string>
+    <string name="UI_BTN_ReScan">Dò tìm lại</string>
+    <string name="UI_BTN_Stop">Dừng</string>
+    <string name="UI_ERROR_TRY_AGAIN">Có lỗi xảy ra</string>
+    <string name="UI_IMPORTED">Đã nhập vào</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">Nhập vào tài khoản</string>
+    <string name="UI_IMPORT_PHONE">Nhập vào điện thoại này</string>
+    <string name="UI_INSERT_SD_CARD">Hãy lắp thẻ nhớ</string>
+    <string name="UI_Menu_BTN_About">Thông tin thêm</string>
+    <string name="UI_MOD_BOOKMARK">Bookmark</string>
+    <string name="UI_MOD_CALENDAR">Lịch hẹn</string>
+    <string name="UI_MOD_PHONEBOOK">Danh bạ</string>
+    <string name="UI_MOD_PHOTO">ẢẢnh chụp</string>
+    <string name="UI_MOD_SMS">Tin nhắn SMS</string>
+    <string name="UI_MOD_TASK">Tác vụ</string>
+    <string name="UI_MOUNT_SD_CARD">Hãy kết nối lưu trữ USB</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">điện thoại nguồn</string>
+    <string name="UI_OPENOPORT_TEXT">"Vui lòng kiểm tra %s.
+Bạn có thể cần phải xác nhận kết nối."</string>
+    <string name="UI_PHOTO_DESCRIPTION">Chỉ các tập tin trên điện thoại</string>
+    <string name="UI_TEXT_AND">và</string>
+    <string name="UI_TEXT_BM_IMPORTED">Bookmark đã nhập vào</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">Bookmark đã nhập vào</string>
+    <string name="UI_TEXT_CAL_IMPORTED">Sự kiện lịch hẹn đã nhập vào</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">Sự kiện lịch hẹn đã nhập vào</string>
+    <string name="UI_TEXT_DATA">Data</string>
+    <string name="UI_TEXT_FAQ_PAGE">Tham khảo website FAQ</string>
+    <string name="UI_TEXT_PB_IMPORTED">Số liên lạc đã nhập vào</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">Số liên lạc đã nhập vào</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">Ảnh chụp được nhập</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">Các ảnh chụp được nhập</string>
+    <string name="UI_TEXT_SMS_IMPORTED">Tin nhắn SMS đã nhập vào</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">Tin nhắn SMS đã nhập vào</string>
+    <string name="UI_TEXT_TASK_IMPORTED">Tác vụ đã được nhập</string>
+    <string name="UI_TEXT_TASK_IMPORTED_M">Các tác vụ đã được nhập</string>
+    <string name="UI_TIP_ACCOUNT">Tài khoản</string>
+    <string name="UI_TIP_CONFIRM">Vui lòng xác nhận mã khóa là %1$s trên %2$s</string>
+    <string name="UI_TIP_Co_1">Bạn đã hoàn tất nhập dữ liệu từ %s sang điện thoại này</string>
+    <string name="UI_TIP_Co_1_TABLET">Bạn đã hoàn tất nhập dữ liệu từ %s sang máy tính bảng này</string>
+    <string name="UI_TIP_Co_TBD">"
+Các trường thêm cho số liên lạc sẽ được lưu trong trường ghi chú."</string>
+    <string name="UI_TIP_ImDa_1">Tùy thuộc vào khả năng điện thoại cũ của bạn, bạn có thể di chuyển liên lạc, tin nhắn SMS và các sự kiện lịch sang điện thoại HTC mới của bạn qua Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">Tùy thuộc vào khả năng điện thoại cũ của bạn, bạn có thể di chuyển liên lạc, tin nhắn SMS và các sự kiện lịch sang máy tính bảng HTC mới của bạn qua Bluetooth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">Tùy thuộc vào khả năng điện thoại cũ của bạn, bạn có thể di chuyển liên lạc và các sự kiện lịch sang điện thoại HTC mới của bạn qua Bluetooth.</string>
+    <string name="UI_TIP_ImDa_2">Chạm \"Tiếp tục\" để bắt đầu</string>
+    <string name="UI_TIP_ImDa_35">Tùy thuộc vào khả năng điện thoại cũ của bạn, bạn có thể di chuyển liên lạc và các dữ liệu khác vào điện thoại HTC mới thông qua Bluetooth.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">Tùy thuộc vào khả năng điện thoại cũ của bạn, bạn có thể di chuyển liên lạc và các dữ liệu khác vào máy tính bảng HTC mới thông qua Bluetooth.</string>
+    <string name="UI_TIP_Info_1">Có lỗi xảy ra trên %s. Vui lòng thử lại sau.</string>
+    <string name="UI_TIP_Info_2">Vui lòng thử lại sau</string>
+    <string name="UI_TIP_Info_UnMatchPhone">Có lỗi xảy ra trên %s do model điện thoại không trùng khớp.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">Mặc dù điện thoại %s chưa được hỗ trợ trong danh sách, ứng dụng Chuyển dữ liệu vẫn có thể dò tìm điện thoại cũ của bạn và kiểm tra thử xem dữ liệu có thể chuyển sang được hay không.</string>
+    <string name="UI_TIP_Language">VNM</string>
+    <string name="UI_TIP_NoSuMo_1">%s chưa được hỗ trợ. Không có dữ liệu nào có thể nhập được từ điện thoại này.</string>
+    <string name="UI_TIP_NoSuMo_2">Vui lòng bấm \"Hoàn tất\" để thoát.</string>
+    <string name="UI_TIP_ON">Trên %s:</string>
+    <string name="UI_TIP_PaWi">Vui lòng nhập %1$s trên %2$s</string>
+    <string name="UI_TIP_REPORT_ACCOUNT">%s lưu dưới tài khoản của bạn sẽ được đồng bộ khi bạn đăng nhập vào dịch vụ.</string>
+    <string name="UI_TIP_Re_TodoNotSupport">Danh sách các việc cần làm (To-do list) và tác vụ (Task) không được nhập vào</string>
+    <string name="UI_TIP_SelDT_2">Một vài trường có thể không được chuyển từ %s do thiếu hỗ trợ Bluetooth đầy đủ trên máy</string>
+    <string name="UI_TIP_TUONBL">Mở Bluetooth</string>
+    <string name="UI_TIP_TuOnBl_2">Chạm \"Tiếp tục\" khi bạn đã mở Bluetooth thành công.</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">Xóa dữ liệu trên điện thoại này</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">Xóa dữ liệu trên máy tính bảng này</string>
+    <string name="UI_TITLE_CONGRADULATIONS">Chúc mừng Bạn</string>
+    <string name="UI_TITLE_CONN_WITH">Đang kết nối với %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">Mở Bluetooth trên %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">Mở Bluetooth trên điện thoại cũ</string>
+    <string name="UI_TITLE_IMPORTING">Đang chuyển dữ liệu trên %s</string>
+    <string name="UI_TITLE_INFO">Thông tin</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">Điện thoại %s khác</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">Đang mở thiết lập điện thoại</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">Model chưa được hỗ trợ</string>
+    <string name="UI_TITLE_PAIRING">Đang kết nối...</string>
+    <string name="UI_TITLE_PAIRING_WITH">Đang ghép với %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">Đang truy vấn model máy</string>
+    <string name="UI_TITLE_SCANNING">Đang quét...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">Đang dò tìm điện thoại</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">Chọn loại dữ liệu muốn nhập vào</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">Chọn loại điện thoại cũ của bạn</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">Chọn model máy</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">Chọn điện thoại của bạn</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">Điện thoại %s khác chưa được hỗ trợ. Vui lòng chạm \"Hoàn tất\" để thoát</string>
+</resources>

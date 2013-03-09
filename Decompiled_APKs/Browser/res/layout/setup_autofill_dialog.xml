@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="3.0dip" android:paddingTop="9.0dip" android:paddingRight="1.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autofill_setup_dialog_message" />
+    <CheckBox android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/setup_autofill_dialog_disable_autofill" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disable_autofill" />
+</LinearLayout>

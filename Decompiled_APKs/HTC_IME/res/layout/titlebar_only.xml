@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/margin_top_with_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HeaderBarShort android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+</LinearLayout>

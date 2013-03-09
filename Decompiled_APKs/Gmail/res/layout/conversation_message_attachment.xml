@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gm.MessageHeaderAttachment android:orientation="vertical" android:background="@drawable/attachment_bg_holo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:divider="?android:dividerHorizontal" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/attachment_icon" android:background="#ffe5e5e5" android:layout_width="48.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/attachment_icon">
+            <TextView android:id="@id/attachment_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:id="@id/attachment_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/attachment_title" />
+            <ProgressBar android:id="@id/attachment_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="false" android:layout_below="@id/attachment_title" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/attachment_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="8.0dip">
+        <include layout="@layout/conversation_message_attachment_buttons" />
+    </LinearLayout>
+</com.google.android.gm.MessageHeaderAttachment>

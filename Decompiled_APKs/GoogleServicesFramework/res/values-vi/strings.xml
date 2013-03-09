@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-Android-google</string>
+    <string name="def_rlz">không xác định</string>
+    <string name="sharedUserLabel">Dịch vụ của Google</string>
+    <string name="service_label">Trình cập nhật Hệ thống</string>
+    <string name="system_update_activity_name">Bản cập nhật hệ thống</string>
+    <string name="system_update_activity_title">Bản cập nhật hệ thống</string>
+    <string name="system_update_activity_battery_low_text">Pin quá yếu để có thể cài đặt bản cập nhật hệ thống. Vui lòng kết nối bộ sạc để tiếp tục.</string>
+    <string name="system_update_activity_battery_low_charging_text">Pin quá yếu để có thể cài đặt bản cập nhật hệ thống. Vui lòng đợi pin sạc đầy.</string>
+    <string name="system_update_activity_roaming_text">Không thể tải xuống bản cập nhật hệ thống trong khi chuyển vùng.</string>
+    <string name="system_update_requires_restart_status_text">Yêu cầu khởi động lại</string>
+    <string name="system_update_downloading_status_text">Đang tải xuống</string>
+    <string name="system_update_downloading_wifi_status2_text">Chỉ qua Wi-Fi cho tới ^1</string>
+    <string name="system_update_verifying_status_text">Đang xác minh</string>
+    <string name="system_update_verification_failed_text">Xác minh không thành công</string>
+    <string name="system_update_verified_status_text">Đã tải xuống và xác minh</string>
+    <string name="system_update_download_failed_status_text">Tải xuống không thành công</string>
+    <string name="system_update_download_retry_button_text">Thử lại tải xuống</string>
+    <string name="system_update_download_button_text">Tải xuống</string>
+    <string name="system_update_install_button_text">Khởi động lại &amp; cài đặt</string>
+    <string name="system_update_check_now_button_text">Kiểm tra ngay</string>
+    <string name="system_update_no_update_content_text">Hệ thống của bạn hiện đã được cập nhật</string>
+    <string name="system_update_last_checkin">Kiểm tra cập nhật lần cuối ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Hiện có bản cập nhật hệ thống</string>
+    <string name="system_update_recommended_update_available_notification_message">Xem chi tiết cập nhật.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Tải xuống bản cập nhật hệ thống không thành công.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Tải xuống không thành công, vui lòng thử lại.</string>
+    <string name="system_update_error_dialog_title">Lỗi</string>
+    <string name="system_update_error_downloading_dialog_message">Đã xảy ra sự cố khi tải xuống bản cập nhật.</string>
+    <string name="system_update_error_installing_dialog_message">Đã xảy ra sự cố khi cài đặt bản cập nhật.</string>
+    <string name="system_update_install_dialog_label">Bản cập nhật hệ thống</string>
+    <string name="system_update_install_dialog_message_nonphone">Bản cập nhật hệ thống đã sẵn sàng cài đặt. Điện thoại Android của bạn sẽ khởi động lại và cài đặt bản cập nhật.</string>
+    <string name="system_update_install_dialog_message_phone">Bản cập nhật hệ thống đã sẵn sàng cài đặt. Điện thoại Android của bạn sẽ khởi động lại và cài đặt bản cập nhật. Bạn sẽ không thể thực hiện bất kỳ cuộc gọi nào, kể cả cuộc gọi khẩn cấp, trong khi cài đặt.</string>
+    <string name="system_update_install_dialog_battery_low_message">Bản cập nhật hệ thống đã sẵn sàng nhưng pin quá yếu để có thể cài đặt bản cập nhật. Vui lòng kết nối bộ sạc.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Bản cập nhật hệ thống đã sẵn sàng nhưng pin quá yếu để có thể cài đặt bản cập nhật. Vui lòng đợi pin sạc đầy.</string>
+    <string name="system_update_install_dialog_now_button">Cài đặt ngay bây giờ</string>
+    <string name="system_update_install_dialog_later_button">Cài đặt sau</string>
+    <string name="system_update_install_dialog_info_button">Thông tin khác...</string>
+    <string name="system_update_downloading_notification_title">Đang tải xuống bản cập nhật hệ thống</string>
+    <string name="system_update_verifying_notification_title">Đang xác minh cập nhật hệ thống</string>
+    <string name="system_update_download_dialog_label">Bản tải xuống cập nhật hệ thống</string>
+    <string name="system_update_download_dialog_message">Cập nhật hệ thống hiện có sẽ nâng cao điện thoại Android của bạn. Nếu bạn tải xuống qua mạng không dây, bạn có thể bị tính phí.</string>
+    <string name="system_update_download_dialog_now_button">Tải xuống ngay bây giờ</string>
+    <string name="system_update_download_dialog_later_button">Tải xuống sau</string>
+    <string name="system_update_download_dialog_cancel_button">Hủy</string>
+    <string name="system_update_countdown_complete">Khởi động lại ngay bây giờ…</string>
+    <string name="system_update_countdown_cancel_button">Hủy cài đặt</string>
+    <string name="system_update_complete_label">Cập nhật hệ thống</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Đăng ký dịch vụ đẩy</string>
+    <string name="ro_perm_label">đọc tin nhắn nhanh</string>
+    <string name="ro_perm_desc">Cho phép ứng dụng đọc dữ liệu từ nhà cung cấp nội dung Google Talk.</string>
+    <string name="wo_perm_label">soạn tin nhắn nhanh</string>
+    <string name="wo_perm_desc">Cho phép ứng dụng ghi dữ liệu cho nhà cung cấp nội dung Google Talk.</string>
+    <string name="gsf_label">Khung Dịch vụ của Google</string>
+    <string name="search_chats">"Tìm kiếm cuộc trò chuyện
+cho '%1$s'"</string>
+    <string name="gtalkservice_label">Dịch vụ Nhắn tin của Google</string>
+    <string name="c2dm_label">Dịch vụ Gửi thông báo Chuyển sang Thiết bị</string>
+    <string name="sendTalkMsg_perm_label">Trao đổi tin nhắn và nhận thông báo đồng bộ hóa từ các máy chủ Google</string>
+    <string name="sendTalkMsg_perm_desc">Được sử dụng cho thông báo chuyển sang thiết bị và cho thông báo đồng bộ hóa của máy chủ. Google Talk sử dụng dịch vụ này để trao đổi thông báo và để đồng bộ hóa trạng thái hiện diện. Ứng dụng độc hại có thể sử dụng dịch vụ này để chuyển dữ liệu quá mức.</string>
+    <string name="perm_receive_data_message_label">nhận dữ liệu từ Internet</string>
+    <string name="perm_receive_data_message_desc">Cho phép ứng dụng chấp nhận thông báo chuyển sang thiết bị được gửi bởi dịch vụ của ứng dụng. Sử dụng dịch vụ này sẽ phát sinh việc sử dụng dữ liệu. Các ứng dụng độc hại có thể dẫn đến việc sử dụng dữ liệu quá mức.</string>
+    <string name="perm_data_msg_broadcast_label">Phát thông báo dữ liệu tới các ứng dụng</string>
+    <string name="perm_data_msg_broadcast_desc">Có thể phát thông báo dữ liệu nhận được từ internet tới các ứng dụng đã đăng ký để nghe thông báo.</string>
+    <string name="perm_receive_xmpp_label">gửi nhận thông báo XMPP đến và từ máy chủ Google</string>
+    <string name="perm_receive_xmpp_desc">Cho phép các ứng dụng của Google gửi và nhận thông báo XMPP đến và từ máy chủ Google.</string>
+    <string name="perm_xmpp_broadcast_label">Truyền thông báo XMPP đến các ứng dụng.</string>
+    <string name="perm_xmpp_broadcast_desc">Có thể truyền thông báo XMPP nhận được từ máy chủ Google đến ứng dụng đã đăng ký để nghe thông báo.</string>
+    <string name="perm_use_xmpp_endpoint_label">gửi và nhận thông báo XMPP đến và từ máy chủ Google</string>
+    <string name="perm_use_xmpp_endpoint_desc">Cho phép các ứng dụng của Google gửi và nhận thông báo XMPP đến và từ máy chủ Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Truyền phát thông báo XMPP đến các ứng dụng.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Có thể truyền phát thông báo XMPP nhận được từ máy chủ Google đến các ứng dụng.</string>
+    <string name="permlab_intentVendingOnly">Gửi thông báo tới Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Có thể gửi thông báo tới Android Market yêu cầu cài đặt và xóa ứng dụng.</string>
+    <string name="permlab_heartbeat">Gửi gói heartbeat tới máy chủ Google Talk</string>
+    <string name="permdesc_heartbeat">Có thể gửi gói heartbeat tới máy chủ Google Talk để đảm bảo kết nối tốt.</string>
+    <string name="group_chat">Trò chuyện theo nhóm: %s</string>
+    <string name="default_decline_reason">Xin lỗi, tôi đang bận.</string>
+    <string name="newMessages_label">Cuộc trò chuyện mới</string>
+    <string name="notify_groupchat_label">Thư mời trò chuyện theo nhóm</string>
+    <string name="num_unread_chats">%s cuộc trò chuyện chưa đọc</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s đến %s</string>
+    <string name="subscription_notify_text">%s muốn có thể trò chuyện</string>
+    <string name="group_chat_invite_notify_text">Bạn đã nhận được thư mời trò chuyện theo nhóm từ %s</string>
+    <string name="group_chat_invite_dialog_text">%s mời bạn tham gia trò chuyện nhóm.</string>
+    <string name="message_too_long">Bạn không thể gửi tin nhắn có độ dài quá 2000 ký tự.</string>
+    <string name="missed_video_chat_notification">Bạn bỏ lỡ lời mời cuộc trò chuyện video</string>
+    <string name="missed_voice_chat_notification">Bạn bỏ lỡ lời mời trò chuyện thoại</string>
+    <string name="missed_video_chat_notification_no_wifi">Bạn đã bỏ lỡ lời mời cuộc trò chuyện video vì bạn chưa được kết nối với Wi-Fi</string>
+    <string name="missed_voice_chat_notification_no_wifi">Bạn đã bỏ lỡ lời mời trò chuyện thoại vì bạn chưa được kết nối với Wi-Fi</string>
+    <string name="missed_video_chat_message">%1$s đã cố thực hiện cuộc trò chuyện video với bạn</string>
+    <string name="missed_voice_chat_message">%1$s đã cố thực hiện cuộc trò chuyện thoại với bạn</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s đã cố bắt đầu cuộc trò chuyện video với bạn trong khi bạn chưa được kết nối với Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s đã cố bắt đầu cuộc trò chuyện thoại với bạn trong khi bạn chưa được kết nối với Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">%1$s không có mặt để trò chuyện qua video.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s không có mặt để trò chuyện thoại.</string>
+    <string name="end_cause_sent_terminate_video">Bạn đã kết thúc cuộc trò chuyện video với %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Bạn đã kết thúc cuộc trò chuyện thoại với %1$s.</string>
+    <string name="end_cause_received_terminate_video">%1$s đã kết thúc cuộc trò chuyện video.</string>
+    <string name="end_cause_received_terminate_voice">%1$s đã kết thúc cuộc trò chuyện thoại.</string>
+    <string name="end_cause_network_problem_video">Rất tiếc! Cuộc trò chuyện video với %1$s không thành công do sự cố mạng . Vui lòng thử lại.</string>
+    <string name="end_cause_network_problem_voice">Rất tiếc! Trò chuyện thoại với %1$s không thành công do sự cố mạng . Vui lòng thử lại.</string>
+    <string name="conn_auth_error_notify_ticker">Xác thực Google Talk không thành công</string>
+    <string name="conn_auth_error_notify_title">Xác thực Google Talk không thành công</string>
+    <string name="conn_auth_error_title">Lỗi Xác thực</string>
+    <string name="conn_auth_error_message">Không thể đăng nhập Google Talk. Nếu đây là tài khoản Google Apps, hãy xác nhận rằng dịch vụ Trò chuyện đã được bật cho tài khoản này.</string>
+    <string name="conn_auth_error_button_retry">Thử lại</string>
+    <string name="conn_auth_error_button_cancel">Hủy</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Chào mừng bạn đến với ^1</string>
+    <string name="setup_wizard_title">Trình hướng dẫn Cài đặt</string>
+    <string name="error_dialog_title">Chú ý</string>
+    <string name="next_button_label">Tiếp theo</string>
+    <string name="back_button_label">Quay lại</string>
+    <string name="sign_in_button_label">Đăng nhập</string>
+    <string name="create_button_label">Tạo</string>
+    <string name="skip_button_label">Bỏ qua</string>
+    <string name="first_name">Tên</string>
+    <string name="last_name">Họ</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Hủy</string>
+    <string name="done_button_label">Hoàn tất thiết lập</string>
+    <string name="try_again_button_label">Thử lại</string>
+    <string name="close_button_label">Đóng</string>
+    <string name="edit_text_help">Chạm vào bất kỳ hộp văn bản nào để bắt đầu nhập</string>
+    <string name="add_a_google_account">Thêm Tài khoản Google</string>
+    <string name="no_sim_setup_wireless">Bạn chưa lắp thẻ SIM, vì vậy, bạn không thể kết nối với mạng di động cho các dịch vụ thoại hoặc dữ liệu. Bạn có thể kết nối với mạng Wi-Fi mà không cần SIM.</string>
+    <string name="setup_wifi_button_label">Kết nối với Wi-Fi</string>
+    <string name="no_network">Bạn không có kết nối mạng.</string>
+    <string name="no_network_help">Đây có thể là sự cố tạm thời hoặc thiết bị Android của bạn có thể không được cấp quyền đối với dịch vụ dữ liệu. Hãy thử lại khi được kết nối với mạng di động hoặc kết nối với mạng Wi-Fi.</string>
+    <string name="server_error">Đã xảy ra sự cố khi giao tiếp với các máy chủ Google.</string>
+    <string name="server_error_help">Vui lòng thử lại sau.</string>
+    <string name="network_unreliable">Không thể thiết lập kết nối dữ liệu đáng tin cậy tới máy chủ.</string>
+    <string name="network_unreliable_help">Đây có thể là sự cố tạm thời hoặc có thể thiết bị Android của bạn không được cấp quyền cho dịch vụ dữ liệu. Nếu sự cố vẫn tiếp diễn, hãy gọi Trung tâm chăm sóc khách hàng.</string>
+    <string name="invalid_login_character">Ký tự không hợp lệ. Chỉ cho phép 0-9, a-z, A-Z và dấu chấm câu.</string>
+    <string name="invalid_password_character">Ký tự mật khẩu không hợp lệ.</string>
+    <string name="add_apn">Cài đặt không dây</string>
+    <string name="setup_google_account_title">Thiết lập Tài khoản Google của bạn</string>
+    <string name="setup_complete_title">Hoàn tất thiết lập</string>
+    <string name="cant_be_blank">Không được để trống trường.</string>
+    <string name="calendar">Lịch Google</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Điện thoại Android của bạn không được kết nối với dịch vụ dữ liệu. Để xem thông tin này ngay, hãy truy cập %s từ bất kỳ máy tính nào đã kết nối Internet.</string>
+    <string name="field_cant_be_blank">Không được để trống trường này.</string>
+    <string name="field_invalid_domain">Đây không phải là tên miền hợp lệ</string>
+    <string name="field_invalid_user">Đây không phải tên người dùng hợp lệ.</string>
+    <string name="field_invalid_user_domain">Chỉ nhập tên người dùng của bạn không phải địa chỉ email</string>
+    <string name="field_invalid_login">Đây không phải là tên tài khoản hợp lệ</string>
+    <string name="about_accounts_message"><font size="17">"Thiết lập thiết bị Android thật dễ dàng! Bạn chỉ cần tài khoản Google.
+"<font height="17">"
+"</font><b>Tại sao lại sử dụng tài khoản Google?</b>"
+"<font height="3">"
+"</font>"Với tài khoản Google, các ứng dụng của Google được tự động đồng bộ hóa giữa thiết bị Android và máy tính của bạn, bất kể bạn thực hiện cập nhật tại đâu.
+"<font height="17">"
+"</font><b>Bạn đã có tài khoản Google?</b>"
+"<font height="3">"
+"</font>"Bạn gần như đã hoàn tất cài đặt! Chỉ cần chạm vào \"Đăng nhập\" trên màn hình tiếp theo.
+"<font height="17">"
+"</font><b>Bạn chưa có tài khoản Google?</b>"
+"<font height="3">"
+"</font>"Không sao. Hãy chạm vào \"Tạo\" ở màn hình tiếp theo và chúng tôi sẽ giúp bạn thiết lập tài khoản.
+"<font height="17">"
+"</font><b>Chạm vào \"Tiếp theo\" để bắt đầu!</b>"
+"</font></string>
+    <string name="fling_help_message">"Trượt ngón tay lên hoặc xuống màn hình để cuộn.
+(Chạm vào tin nhắn này để loại bỏ tin nhắn đó)."</string>
+    <string name="setup_device_title">Thiết lập ^1 của bạn</string>
+    <string name="dont_have_an_account">Bạn chưa có Tài khoản Google?</string>
+    <string name="create_one_now">Tạo ngay một tài khoản! Thật dễ dàng!</string>
+    <string name="already_have_an_account">Bạn đã có tài khoản Google?</string>
+    <string name="sign_in_with_google_account">Đăng nhập bằng Tài khoản Google mà bạn muốn liên kết với thiết bị Android này.</string>
+    <string name="skip_message">Bạn muốn thiết lập tài khoản sau?</string>
+    <string name="touch_to_begin">Chạm vào android để bắt đầu.</string>
+    <string name="delayed_gaia_agreement">Bằng cách tiếp tục, bạn đã đồng ý với Chính sách Bảo mật của <annotation id="google_privacy">Google</annotation> và Chính sách Bảo mật <annotation id="android_privacy">Bổ sung</annotation>.</string>
+    <string name="open_keyboard_message">Trượt bàn phím mở để bắt đầu.</string>
+    <string name="open_keyboard_message_to_continue">Trượt bàn phím mở để tiếp tục.</string>
+    <string name="emergency_dial">Quay số khẩn cấp</string>
+    <string name="change_language">Thay đổi ngôn ngữ</string>
+    <string name="signing_in">Đang đăng nhập...</string>
+    <string name="close_keyboard_message">Trượt bàn phím trở lại để tiếp tục.</string>
+    <string name="communicating_message">Thiết bị Android của bạn cần liên lạc với máy chủ Google để thiết lập tài khoản của bạn. Quá trình này có thể mất tối đa năm phút.</string>
+    <string name="communicating_message_domain">Thiết bị Android của bạn cần liên lạc với máy chủ Google để tìm thông tin về miền của bạn. Quá trình này có thể mất tối đa năm phút.</string>
+    <string name="username">Tên người dùng</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Mật khẩu</string>
+    <string name="sign_in_agreement">Bằng cách đăng nhập, bạn đã đồng ý với Chính sách Bảo mật của <annotation id="google_privacy">Google</annotation> và Chính sách Bảo mật <annotation id="android_privacy">Bổ sung</annotation>.</string>
+    <string name="create">Tạo</string>
+    <string name="create_message">Bạn cần một Tài khoản Google?</string>
+    <string name="now_signing_in">Đang đăng nhập...</string>
+    <string name="now_verifying_domain">Đang tìm tên miền của bạn…</string>
+    <string name="sign_in_with_google_account_short">Đăng nhập bằng tài khoản Google của bạn:</string>
+    <string name="browser_sign_in_explanation">Sử dụng màn hình này nếu bạn xem xét đăng nhập đặc biệt yêu cầu trình duyệt Web.</string>
+    <string name="gls_browser_login_intro_message">Không thể truy cập vào tài khoản Google hoặc Google Apps của bạn. Cấp quyền lại là bắt buộc.</string>
+    <string name="enter_domain_name">Nhập tên miền của công ty bạn:</string>
+    <string name="enter_user_name">Nhập tên người dùng và mật khẩu cho ^1:</string>
+    <string name="inactive_domain">Bạn không thể sử dụng tài khoản này vì tài khoản này thuộc về tên miền không hoạt động. Vui lòng liên hệ với quản trị viên tên miền cho <b>^1</b> hoặc đăng nhập bằng tài khoản khác.</string>
+    <string name="invalid_username">Văn bản đã nhập không phải tên người dùng hợp lệ.</string>
+    <string name="web_login_error_title">Rất tiếc...</string>
+    <string name="web_login_error_desc">"Đã xảy ra sự cố khi kết nối với máy chủ của công ty bạn tại ^1.
+
+Thông tin lỗi:
+"</string>
+    <string name="web_login_error_redirects">Trang đăng nhập web đã chuyển hướng quá nhiều lần</string>
+    <string name="web_login_error_http">Lỗi HTTP ^1 : ^2</string>
+    <string name="name_device_label">Đặt tên cho thiết bị Android của bạn:</string>
+    <string name="device_name_hint">Tên thiết bị</string>
+    <string name="registering_device">Đang đăng ký thiết bị Android…</string>
+    <string name="error_account_disabled">"Tài khoản này đã bị vô hiệu hóa. 
+
+(Để biết chi tiết, hãy truy cập http://google.com/accounts/recovery trên máy tính của bạn)."</string>
+    <string name="error_login_failed">"Tên người dùng và mật khẩu không khớp. Vui lòng thử lại. 
+
+(Để khôi phục thông tin tài khoản của bạn, hãy truy cập http://www.google.com/accounts/recovery trên máy tính của bạn)."</string>
+    <string name="error_account_not_verified">"Tài khoản này chưa được xác minh. Hãy kiểm tra email của bạn trên máy tính và nhấp vào liên kết để xác minh tài khoản này. 
+
+(Để khôi phục thông tin tài khoản của bạn, hãy truy cập http://www.google.com/accounts/recovery trên máy tính của bạn)."</string>
+    <string name="captcha_message_string">Xác minh</string>
+    <string name="captcha_instructions">Nhập ký tự bạn thấy trong ảnh. Các chữ cái không phân biệt chữ hoa/chữ thường.</string>
+    <string name="create_google_account">Tạo Tài khoản Google mới</string>
+    <string name="example_usernames">ví dụ: JSmith, John.Smith</string>
+    <string name="create_account_agreement">Bằng cách tạo tài khoản này, bạn đã đồng ý với Chính sách Bảo mật của <annotation id="google_privacy">Google</annotation> và Chính sách Bảo mật <annotation id="android_privacy">Bổ sung</annotation>.</string>
+    <string name="account_already_has_gmail">Tài khoản đã có Gmail.</string>
+    <string name="creating_account">Đang tạo tài khoản của bạn...</string>
+    <string name="checking_account">Đang kiểm tra tính sẵn có của tên người dùng…</string>
+    <string name="try_a_different_username">Thử tên người dùng khác</string>
+    <string name="is_not_available"><b>^1</b> hiện không sẵn có.</string>
+    <string name="hint_size"><b>^1</b> chứa ít hơn 6 hoặc nhiều hơn 30 ký tự.</string>
+    <string name="hint_numbers_only"><b>^1</b> không chứa bất kỳ chữ cái nào.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" có thể chỉ chứa các chữ cái,
+số và dấu chấm câu."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> không sử dụng Gmail</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_in_browser">Đăng nhập trình duyệt</string>
+    <string name="here_are_alternatives">Dưới đây là một số tên người dùng thay thế:</string>
+    <string name="alternatives_list_title">Tên người dùng được đề xuất</string>
+    <string name="choose_a_password"><b>"Nhập 
+mật khẩu"</b></string>
+    <string name="confirm_password"><b>"Xác nhận
+mật khẩu"</b></string>
+    <string name="password_strength"><b>"Độ mạnh
+mật khẩu"</b></string>
+    <string name="too_short">Quá ngắn</string>
+    <string name="security_question"><b>"Câu hỏi về
+bảo mật"</b></string>
+    <string name="security_questions_title">Câu hỏi bảo mật</string>
+    <string name="answer"><b>Trả lời</b></string>
+    <string name="password_mismatch">Mật khẩu của bạn không khớp. Vui lòng nhập lại mật khẩu.</string>
+    <string name="your_account_was_created">Tài khoản của bạn đã được tạo!</string>
+    <string name="eight_chars_min">(tối thiểu 8 ký tự)</string>
+    <string name="just_in_case">Trong trường hợp bạn mất mật khẩu của mình.</string>
+    <string name="verify_your_profile">Xác minh tiểu sử của bạn</string>
+    <string name="signed_in">Đã đăng nhập!</string>
+    <string name="error_not_logged_in">Người dùng chưa đăng nhập.</string>
+    <string name="error_username_unavailable">Tên người dùng không khả dụng.</string>
+    <string name="error_bad_password">Mật khẩu quá yếu hoặc chứa ký tự không hợp lệ. Vui lòng thử lại.</string>
+    <string name="error_bad_username">Tên người dùng không hợp lệ.</string>
+    <string name="loading">Đang tải...</string>
+    <string name="submission_title">Rất tiếc…</string>
+    <string name="submission_error_text">Đã xảy ra lỗi. Vui lòng thử lại.</string>
+    <string name="existing_account_error_title">Tài khoản đã tồn tại</string>
+    <string name="existing_account_error_text">Đã có tài khoản ^1 trên thiết bị Android này.</string>
+    <string name="account_linked_message"><font height="24">Tài khoản Google của bạn hiện được liên kết với thiết bị Android này.</font></string>
+    <string name="syncing_message"><font size="17">"Các ứng dụng của Google hiện đang đồng bộ hóa dữ liệu. 
+"<font height="17">"
+"</font>"%i Khi biểu tượng ”đồng bộ hóa” biến mất khỏi thanh trạng thái ở đầu màn hình của bạn, quá trình tải xuống đã hoàn tất.
+"<font height="17">"
+"</font><b>Giới thiệu về thanh trạng thái…</b>"
+"<font height="3">"
+"</font>"Bất cứ khi nào bạn nhận được tin nhắn mới hoặc thông báo khác, một biểu tượng sẽ xuất hiện trên thanh trạng thái.
+"<font height="17">"
+"</font>Sử dụng ngón tay của bạn để kéo xuống thanh trạng thái để mở bảng điều khiển Thông báo có chi tiết về tất cả Thông báo hiện tại của bạn.</font></string>
+    <string name="i_agree_next">Tôi đồng ý, Tiếp theo</string>
+    <string name="android_privacy_policy_title">Chính sách Bảo mật Bổ sung</string>
+    <string name="google_terms_of_service_title">Điều khoản dịch vụ của Google</string>
+    <string name="google_privacy_policy_title">Chính sách Bảo mật của Google</string>
+    <string name="notification_update_title">Tài khoản của bạn phải được cập nhật</string>
+    <string name="notification_update_message">Chạm vào đây để chạy lại Trình hướng dẫn Cài đặt</string>
+    <string name="common_message">"Gmail, sao lưu và nhiều tính năng khác của Android yêu cầu Tài khoản Google.
+
+Chạm "<b>Tiếp theo</b>" để đăng nhập bằng Tài khoản Google hiện có hoặc tạo Tài khoản Google mới ngay bây giờ.
+
+Hoặc chạm "<b>Bỏ qua</b> để đơn giản là bắt đầu sử dụng điện thoại Adroid của bạn. Bạn có thể đăng nhập vào Tài khoản Google sau trong Cài đặt, trong Tài khoản &amp; Đồng bộ hóa.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Thêm tài khoản</font>" 
+
+Bạn có thể sử dụng nhiều tài khoản Google (như tài khoản ở nhà và ở cơ quan của bạn). Việc thêm tài khoản Google chỉ cần vài bước. 
+
+Chạm vào “Tiếp theo” để tiếp tục hoặc nhấn nút Quay lại để thoát."</string>
+    <string name="reactivate_account_message">"Bạn cần liên kết tài khoản Gmail với thiết bị Android này. 
+
+Bạn đã có tên người dùng Gmail ("<b>^1</b>") được liên kết với tài khoản này nhưng hiện chưa hoạt động. 
+
+Chạm vào “Tiếp theo” để kích hoạt lại tên người dùng này và sử dụng tên người dùng đó. 
+
+Hoặc, nếu bạn muốn sử dụng tài khoản khác, hãy nhấn nút Quay lại và đăng nhập bằng hoặc tạo tài khoản khác."</string>
+    <string name="reactivating_account">Đang kích hoạt lại tài khoản của bạn...</string>
+    <string name="your_account_was_reactivated">Tài khoản của bạn đã được kích hoạt!</string>
+    <string name="account_recovery_info">Thông tin sau sẽ giúp bạn khôi phục mật khẩu của mình nếu bị mất</string>
+    <string name="secondary_email_label"><b>"Email
+Phụ"</b></string>
+    <string name="invalid_email">"Địa chỉ email đã nhập không hợp lệ.
+ Ví dụ: joe@example.com"</string>
+    <string name="invalid_email_primary">Địa chỉ email phụ không được giống với địa chỉ email bạn đang tạo</string>
+    <string name="tutorial_intro_title">Tìm hiểu cách sử dụng ^1 của bạn</string>
+    <string name="begin_button_label">Bắt đầu</string>
+    <string name="tutorial_intro_message_generic">Có một số điều quan trọng cần hiểu rõ để sử dụng điện thoại Android của bạn ở mức tối ưu. <font size="17">"
+"</font>" 
+"<li>Sử dụng bàn phím ảo</li> <font size="17">"
+"</font>" 
+Chạm vào \"Bắt đầu\" để khởi động hướng dẫn và tìm hiểu thêm."</string>
+    <string name="tutorial_intro_message_setupwizard">Có một số điều quan trọng cần hiểu rõ để sử dụng điện thoại Android của bạn ở mức tối ưu. <font size="17">"
+"</font>" 
+"<li>Sử dụng bàn phím ảo</li>" 
+"<li>Thiết lập Tài khoản Google</li> <font size="17">"
+"</font>" 
+Chạm vào “Bắt đầu” để khởi động hướng dẫn và tìm hiểu thêm hoặc chạm vào “Bỏ qua” để bỏ qua phần hướng dẫn này và tiếp tục."</string>
+    <string name="keyboard_tutorial_title">Sử dụng bàn phím ảo</string>
+    <string name="keyboard_tutorial_message">Chạm vào bất kỳ trường văn bản nào để mở bàn phím và bắt đầu nhập. Hãy thử tại đây!</string>
+    <string name="keyboard_tutorial_edittext_hint">Chạm vào đây để bắt đầu nhập</string>
+    <string name="done_typing_message">Đã nhập xong? Hãy nhấn vào nút Quay lại để đóng bàn phím.</string>
+    <string name="done_button_label_in_tutorial">Xong</string>
+    <string name="backup_consent_title">Sao lưu cài đặt của tôi</string>
+    <string name="backup_consent_message">Cài đặt của bạn (như dấu trang và mật khẩu Wi-Fi) có thể được sao lưu tự động vào Tài khoản Google của bạn. Nếu bạn có thiết bị Android mới (để thay thế điện thoại bị mất hoặc nếu bạn nâng cấp), cài đặt của bạn sẽ được khôi phục trên thiết bị Android mới.</string>
+    <string name="backup_consent_howto_disable_message">Bạn có thể thay đổi cài đặt sao lưu của mình bất kỳ lúc nào trong ứng ứng Cài đặt, trong Bảo mật.</string>
+    <string name="backup_consent_yes_agree">Sao lưu cài đặt vào Tài khoản Google của tôi.</string>
+    <string name="restore_disable">Vô hiệu hóa khôi phục</string>
+    <string name="restore_enable">bật khôi phục</string>
+    <string name="restore_enabled">Nếu trước đó bạn đã sao lưu cài đặt của mình, cài đặt đó sẽ được khôi phục.</string>
+    <string name="restore_disabled">Cài đặt của bạn sẽ không được khôi phục từ sao lưu.</string>
+    <string name="webview_progress_title">Đang kết nối với tên miền...</string>
+    <string name="webview_progress_verbose_message">"Máy chủ của công ty bạn đang gửi thông tin đăng nhập. Quá trình này có thể mất vài phút.
+Trang đăng nhập của công ty bạn sẽ hiển thị khi hoàn tất."</string>
+    <string name="enterprise_unmanaged_domain">Tên miền này hiện không sử dụng Google Apps. Vui lòng kiểm tra tên miền và thử lại.</string>
+    <string name="use_location_for_services_agree">Đồng ý</string>
+    <string name="use_location_for_services_disagree">Không đồng ý</string>
+    <string name="use_location_for_services_title">Sử dụng Vị trí của tôi</string>
+    <string name="use_location_for_services_text">Bạn có muốn cho phép Google sử dụng vị trí để có kết quả tìm kiếm cải thiện và các dịch vụ khác không?</string>
+    <string name="permlab_readGsettings">Đọc cài đặt Google</string>
+    <string name="permdesc_readGsettings">Cho phép ứng dụng này đọc cài đặt của Google.</string>
+    <string name="permlab_writeGsettings">Sửa đổi cài đặt Google</string>
+    <string name="permdesc_writeGsettings">Cho phép ứng dụng này sửa đổi cài đặt của Google.</string>
+    <string name="permlab_readGservices">đọc cấu hình dịch vụ của Google</string>
+    <string name="permdesc_readGservices">Cho phép ứng dụng này đọc dữ liệu cấu hình dịch vụ của Google.</string>
+    <string name="permlab_writeGservices">Sửa đổi cấu hình dịch vụ của Google</string>
+    <string name="permdesc_writeGservices">Cho phép ứng dụng này sửa đổi dữ liệu cấu hình dịch vụ của Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">truy cập vào mật khẩu cho tài khoản Google</string>
+    <string name="permdesc_googleAuthPassword">Cho phép ứng dụng truy cập trực tiếp vào mật khẩu đối với (các) tài khoản Google bạn đã định cấu hình.</string>
+    <string name="permlab_googleMailSwitch">chọn nhãn hiệu Gmail hoặc Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Cho phép các ứng dụng chuyển đổi tên hiển thị giữa nhãn hiệu \"Gmail\" và \"Google Mail\".</string>
+    <string name="permlab_googleAuth">xem tài khoản được định cấu hình</string>
+    <string name="permdesc_googleAuth">Cho phép ứng dụng xem tên người dùng (địa chỉ email) của tài khoản Google bạn đã định cấu hình.</string>
+    <string name="permlab_googleAuth_ALL">truy cập tất cả dịch vụ của Google</string>
+    <string name="permdesc_googleAuth_ALL">Cho phép các ứng dụng đăng nhập vào TẤT CẢ các dịch vụ của Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_OTHER">truy cập các dịch vụ khác của Google</string>
+    <string name="permdesc_googleAuth_OTHER">Cho phép ứng dụng đăng nhập vào các dịch vụ không xác định của Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_mail">Gmail</string>
+    <string name="permdesc_googleAuth_mail">Cho phép các ứng dụng đăng nhập vào dịch vụ Gmail bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_cl">Lịch Google</string>
+    <string name="permdesc_googleAuth_cl">Cho phép các ứng dụng đăng nhập vào Lịch Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_android">Các dịch vụ của Android</string>
+    <string name="permdesc_googleAuth_android">Cho phép ứng dụng đăng nhập vào các dịch vụ Android bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_sierra">Tài khoản Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Cho phép các ứng dụng đăng nhập vào Google Checkout (và có thể mua hàng) bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_sierraqa">Tài khoản Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Cho phép các ứng dụng đăng nhập vào Google Checkout QA bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Tài khoản Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Cho phép các ứng dụng đăng nhập vào Google Checkout Sandbox bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Cho phép các ứng dụng đăng nhập vào YouTube bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Tên người dùng YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Cho phép ứng dụng xem tên người dùng YouTube được liên kết với tài khoản Google được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Cho phép các ứng dụng đăng nhập vào Google Talk bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_ig">Tài khoản iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Cho phép các ứng dụng đăng nhập vào iGoogle bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_lh2">Album Web Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Cho phép các ứng dụng đăng nhập vào Album Web Picasa bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_mobile">Các ứng dụng dành cho điện thoại di động của Google</string>
+    <string name="permdesc_googleAuth_mobile">Cho phép ứng dụng đăng nhập vào các ứng dụng dành cho điện thoại di động của Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_cp">dữ liệu danh bạ trong tài khoản Google</string>
+    <string name="permdesc_googleAuth_cp">Cho phép các ứng dụng truy cập danh bạ và thông tin tiểu sử của tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Cho phép các ứng dụng đăng nhập vào Google AdSense bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Cho phép các ứng dụng đăng nhập vào Google AdWords bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Cho phép các ứng dụng đăng nhập vào Blogger bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Cho phép các ứng dụng đăng nhập vào Dodgeball bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Cho phép các ứng dụng đăng nhập vào Google Base bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_groups2">Google Groups</string>
+    <string name="permdesc_googleAuth_groups2">Cho phép các ứng dụng đăng nhập vào Google Groups bằng tài khoản được lưu trữ trên thiết bị Android này</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Cho phép các ứng dụng đăng nhập vào Google Health bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Cho phép các ứng dụng đăng nhập vào JotSpot bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Cho phép các ứng dụng đăng nhập vào Knol bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_news">Google Tin tức</string>
+    <string name="permdesc_googleAuth_news">Cho phép các ứng dụng đăng nhập vào Google Tin tức bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Cho phép các ứng dụng đăng nhập vào Orkut bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_print">Tìm kiếm Sách của Google</string>
+    <string name="permdesc_googleAuth_print">Cho phép các ứng dụng đăng nhập vào Tìm kiếm sách của Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_sitemaps">Công cụ Quản trị Trang web của Google</string>
+    <string name="permdesc_googleAuth_sitemaps">Cho phép các ứng dụng đăng nhập vào Công cụ quản trị trang web của Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Cho phép các ứng dụng đăng nhập vào Google WiFi bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_writely">Google Documents</string>
+    <string name="permdesc_googleAuth_writely">Cho phép các ứng dụng đăng nhập vào Google Documents bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_wise">Bảng tính Google</string>
+    <string name="permdesc_googleAuth_wise">Cho phép các ứng dụng đăng nhập vào Bảng tính Google bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Cho phép các ứng dụng đăng nhập vào Google Finance bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Cho phép các ứng dụng đăng nhập vào Google Maps bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Cho phép các ứng dụng đăng nhập vào Google App Engine bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_notebook">Google Notebook</string>
+    <string name="permdesc_googleAuth_notebook">Cho phép các ứng dụng đăng nhập vào Google Notebook bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Cho phép các ứng dụng đăng nhập vào Google Voice bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Nhận dạng giọng nói được cá nhân hóa</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Cho phép các ứng dụng đăng nhập vào dịch vụ Nhận dạng giọng nói được cá nhân hóa bằng tài khoản được lưu trữ trên thiết bị Android này.</string>
+    <string name="gls_notification_title">Đăng nhập vào tài khoản của bạn</string>
+    <string name="gls_notification_new_account">Cần tài khoản ^1</string>
+    <string name="gls_notification_new_account_youtube">Tài khoản YouTube là bắt buộc</string>
+    <string name="gls_notification_login_error">Chạm để đăng nhập vào tài khoản của bạn.</string>
+    <string name="gls_ui_add_account_title">Thiết lập tài khoản</string>
+    <string name="gls_ui_google_account_subtitle">Tài khoản Google</string>
+    <string name="gls_ui_activity_title">Đăng nhập Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Đăng nhập trình duyệt</string>
+    <string name="gls_ui_activity_title_enterprise">Đăng nhập tài khoản doanh nghiệp</string>
+    <string name="gls_ui_activity_title_youtube">Đăng nhập YouTube</string>
+    <string name="gls_ui_activity_authenticating">Đang xác thực…</string>
+    <string name="gls_captcha_activity_message">Vui lòng nhập ký tự mà bạn thấy trong ảnh:</string>
+    <string name="gls_captcha_activity_ok_button">Xong</string>
+    <string name="gls_error_activity_message">Đã xảy ra lỗi mạng khi cố đăng nhập vào <b>^1</b>. Thử lại ngay bây giờ hoặc nhấn nút Quay lại để hủy.</string>
+    <string name="gls_error_activity_retry_button">Thử lại</string>
+    <string name="gls_dmagent_activity_message">" Miền của bạn yêu cầu quản lý thiết bị di động. Vui lòng cài đặt ứng dụng Chính sách thiết bị của Google Apps để thực thi những chính sách bảo mật do tài khoản "<b>^1</b> yêu cầu.</string>
+    <string name="gls_dmagent_activity_retry_button">Tải xuống</string>
+    <string name="gls_login_activity_username_label">Tên người dùng</string>
+    <string name="gls_login_activity_password_label">Mật khẩu</string>
+    <string name="gls_login_activity_ok_button">Đăng nhập</string>
+    <string name="gls_login_activity_loginfail_text_both">Tên người dùng hoặc mật khẩu không hợp lệ. Tài khoản <b>^1</b> là bắt buộc. Vui lòng thử lại.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Bạn đã nhập sai mật khẩu hoặc tài khoản của bạn đã thay đổi. Vui lòng nhập lại mật khẩu.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Nhập mật khẩu cho tài khoản này.</string>
+    <string name="gls_enterprise_login_activity_msg">"Vui lòng đăng nhập vào tài khoản doanh nghiệp của bạn tại ^1 để xác thực.
+Chạm vào Đăng nhập để mở trang đăng nhập dựa trên web của công ty bạn."</string>
+    <string name="gls_login_activity_badaccount_text">Bạn không thể sử dụng tài khoản đó trong trường hợp này. Vui lòng thử tài khoản khác.</string>
+    <string name="gls_login_activity_newaccount_text">Đăng nhập vào tài khoản <b>^1</b> của bạn.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Bạn chưa có tài khoản YouTube? Hãy chạm <a href="http://www.youtube.com/signup">vào đây</a> để tạo một tài khoản.</string>
+    <string name="gls_settings_tos_activity_title">Chính sách pháp lý của Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Bạn chưa được kết nối với dịch vụ dữ liệu. Để xem thông tin này ngay, hãy truy cập %s từ bất kỳ máy tính nào đã kết nối Internet.</string>
+    <string name="gls_settings_contributors_activity_title">Người đóng góp</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Bạn chưa được kết nối với dịch vụ dữ liệu. Để xem thông tin này ngay, hãy truy cập %s từ bất kỳ máy tính nào đã kết nối Internet.</string>
+    <string name="gls_webview_progress_title">Đang kết nối với tên miền...</string>
+    <string name="gls_webview_progress_verbose_message">"Máy chủ của công ty bạn đang gửi thông tin đăng nhập. Điều này có thể mất vài phút.
+Trang đăng nhập của công ty bạn sẽ xuất hiện khi hoàn tất."</string>
+    <string name="gls_sign_in_button_label">Đăng nhập</string>
+    <string name="gls_back_button_label">Quay lại</string>
+    <string name="gls_cancel_button_label">Hủy</string>
+    <string name="gls_exit_account_setup_button_label">Thoát khỏi th.lập t.khoản</string>
+    <string name="gls_reauthorize_button_label">Cấp quyền lại</string>
+    <string name="gls_sign_in_message">Điện thoại Android của bạn cần liên lạc với máy chủ Google để thiết lập tài khoản của bạn. Quá trình này có thể mất tối đa năm phút.</string>
+    <string name="gls_sign_in_title">Đang đăng nhập...</string>
+</resources>

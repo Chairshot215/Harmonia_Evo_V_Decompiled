@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/htc_cdma_mms_connections_setting" />
+    <com.htc.preference.HtcEditTextPreference android:singleLine="true" android:title="@string/htc_cdma_mms_connections_name" android:key="htc_cdma_mms_connections_name" android:dialogTitle="@string/htc_cdma_mms_connections_name" />
+    <com.htc.preference.HtcEditTextPreference android:singleLine="true" android:title="@string/htc_cdma_mms_mmsc" android:key="htc_cdma_mms_mmsc" android:dialogTitle="@string/htc_cdma_mms_mmsc" android:inputType="textUri" />
+    <com.htc.preference.HtcEditTextPreference android:singleLine="true" android:title="@string/htc_cdma_mms_proxy" android:key="htc_cdma_mms_proxy" android:dialogTitle="@string/htc_cdma_mms_proxy" android:inputType="textUri" />
+    <com.htc.preference.HtcEditTextPreference android:singleLine="true" android:title="@string/htc_cdma_mms_port" android:key="htc_cdma_mms_port" android:dialogTitle="@string/htc_cdma_mms_port" android:inputType="phone" />
+    <com.htc.preference.HtcListPreference android:entries="@array/htc_cdma_mms_connection_type_entries" android:title="@string/htc_cdma_mms_connection_type" android:key="htc_cdma_mms_connection_type" android:entryValues="@array/htc_cdma_mms_connection_type_values" />
+</com.htc.preference.HtcPreferenceScreen>

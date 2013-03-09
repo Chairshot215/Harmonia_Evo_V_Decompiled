@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/allapps_handle_background" android:layout_width="fill_parent" android:layout_height="@dimen/allapps_handle_height" />
+    <com.htc.widget.HeaderBarMiddle android:id="@id/allapps_handle_headerbar" android:layout_width="fill_parent" android:layout_height="@dimen/allapps_handle_height">
+        <com.htc.widget.HeaderBarImage android:id="@id/button_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.widget.HeaderBarImage android:id="@id/button_play_store" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.widget.HeaderBarMiddle>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/sound_settings" android:key="sound_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/sound_category_sound_title" android:key="sound_group" />
+    <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/profile_item_list" android:title="@string/silent_list_title" android:key="silentlist" android:summary="@string/silent_mode_summary" android:dialogTitle="@string/profiles_dialog_title" android:entryValues="@array/animations_values" />
+    <com.android.settings.RingerVolumePreference android:persistent="false" android:title="@string/all_volume_title" android:key="ring_volume" android:summary="@string/volume_setting_summary" android:dialogTitle="@string/all_volume_title" android:streamType="ring" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/vibrate_title" android:key="vibrate" android:summary="@string/vibrate_summary" android:dependency="silentlist" android:defaultValue="true" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/sound_category_calls_title" android:key="sound_category_calls">
+        <com.android.settings.DefaultRingtonePreference android:persistent="true" android:title="@string/ringtone_title" android:key="ringtone" android:summary="@string/ringtone_summary" android:dependency="silentlist" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" android:showDefault="false" android:showSilent="false" />
+        <com.android.settings.framework.preference.sound.HtcBePolitePreference android:dependency="silentlist" />
+        <com.android.settings.framework.preference.sound.HtcPocketModePreference android:dependency="silentlist" />
+        <com.android.settings.framework.preference.sound.HtcFlipToSpeakerPreference android:dependency="silentlist" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/sound_category_notification_title" />
+    <com.android.settings.DefaultRingtonePreference android:persistent="true" android:title="@string/htc_notification_sound_title" android:key="notification_sound" android:summary="@string/htc_notification_sound_summary" android:dependency="silentlist" android:dialogTitle="@string/htc_notification_sound_dialog_title" android:ringtoneType="notification" android:showDefault="false" android:showSilent="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" android:summary="@string/notification_pulse_summary" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/sound_category_feedback_title" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="dtmf_tone" android:defaultValue="true" android:summaryOn="@string/dtmf_tone_enable_summary_on" android:summaryOff="@string/dtmf_tone_enable_summary_off" />
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/htc_cdma_dtmf_tone_entries" android:title="@string/dtmf_tone_enable_title" android:key="htc_cdma_dtmf_tone" android:dependency="silentlist" android:defaultValue="0" android:entryValues="@array/htc_cdma_dtmf_tone_values" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="sound_effects" android:defaultValue="true" android:summaryOn="@string/sound_effects_enable_summary_on" android:summaryOff="@string/sound_effects_enable_summary_off" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="lock_sounds" android:defaultValue="true" android:summaryOn="@string/lock_sounds_enable_summary_on" android:summaryOff="@string/lock_sounds_enable_summary_off" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" android:defaultValue="true" android:summaryOn="@string/haptic_feedback_enable_summary_on" android:summaryOff="@string/haptic_feedback_enable_summary_off" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/roaming_ringtone_title" android:key="button_roaming_ringtone" android:summary="@string/roaming_ringtone_summary" android:dependency="silentlist" android:defaultValue="false" />
+    <com.htc.preference.HtcListPreference android:entries="@array/emergency_tone_entries" android:title="@string/emergency_tone_title" android:key="emergency_tone" android:summary="@string/emergency_tone_summary" android:entryValues="@array/emergency_tone_values" />
+</com.htc.preference.HtcPreferenceScreen>

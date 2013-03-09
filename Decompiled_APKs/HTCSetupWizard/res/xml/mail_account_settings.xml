@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.android.htcsetupwizard.activity.DescriptionPreference android:persistent="false" android:title="@string/mail_account_description" android:selectable="false" android:key="mail_description" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/mail_account_title" android:key="mail_accounts">
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/orange_mail" android:key="orange_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/orange_3rd_party_mail" android:key="orange_3rd_party_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/tmo_mail" android:key="tmo_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/o2_mail" android:key="o2_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/my_mail" android:key="my_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/bell_net_mail" android:key="bell_net_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/aol_mail" android:key="aol_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/yahoo_mail" android:key="yahoo_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/mail_1und1" android:key="1und1_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/rus_mts_mail" android:key="rus_mts_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/ru_mail" android:key="ru_mail_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/google" android:key="google_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/aab" android:key="aab_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/exchange" android:key="exchange_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/community" android:key="community_login" android:summary="@string/logout_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/sympatico_ca_mail" android:key="sympatico_ca_login" android:summary="@string/logout_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/other" android:key="mail_login" android:summary="@string/logout_summary" />
+</com.htc.preference.HtcPreferenceScreen>

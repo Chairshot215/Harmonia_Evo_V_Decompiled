@@ -1,0 +1,176 @@
+PhoneticArtsFile Config
+Version 01
+
+## -----------------------------------------------------------------------------
+## Configuration for building the HMM voice based on MCEP SWOP, AP, MSD
+## -----------------------------------------------------------------------------
+#
+# Vocal tract
+#  
+#    MCEP: conventional mel-cepstral
+#    MCEP SWOP: mel-cepstral from SWOP spectral envelope
+#    LSP: Linear Spectral Pairs
+#    LSP SWOP: mel-cepstral from SWOP spectral envelope
+#
+# Mixed excitation
+#
+#    VS: voicing strenghts
+#    AP: aperiodicity
+#
+# F0
+#
+#    MSD: Multi Space Distrubution
+#    GTD: Global Tied Distribution
+#
+
+synthesis_method        "hmm" ;
+unit_type               "phone" ;
+hmm_quinphone_context   false ;
+
+## -----------------------------------------------------------------------------
+## HTS-specific:
+## -----------------------------------------------------------------------------
+
+#
+# Compression:
+#
+#     0: No compression (HTS)
+#     1: Compress PDFs into shorts
+#     2: Compress PDFs into bytes
+#     3: Memory mapped binary HMM voice
+#
+hmm_compression 3 ;
+
+##
+## DSP-specific:
+##
+
+#
+# Voice type: 
+#
+#     0: MCEP + log(F0), 
+#     1: LSP + Mixed Excitation + log(F0)
+#     2: MCEP + Mixed Excitation + log(F0)
+#     3: STR + MCEP + log(F0)
+#     4: STR + LSP + log(F0)
+#     5: STR + AP + MCEP + log(F0)
+#     6: AP + MCEP + log(F0)
+#     7: AP + LSP + log(F0)
+#     8: MCEP + Mixed Excitation + log(F0)+GTD
+#
+hmm_voice_type 7 ;
+
+# sampling rate (Hz)
+hmm_sample_rate 16000 ;
+
+# frame period (in points)
+hmm_frame_period 80 ;
+
+# frequency warping factor
+hmm_freq_warp 0.42 ;
+
+# Mel-generalized gamma
+hmm_stage 1.0 ;
+
+##
+## HMM:
+##
+
+# number of states in an HMM
+hmm_num_states 5 ;
+
+# maximal number of EM iterations
+hmm_max_em_steps 5 ;
+
+# mixture weight flooring scale
+hmm_mixture_weight_floor_scale 3.0 ;
+
+#
+# values per-acoustic or mmf stream type:
+#
+# streams: ME-LSP, LF0, DUR
+# note: negative value means ``don't care''
+#
+
+# minimal state occupancy:
+hmm_min_state_occupancy { 10.0 10.0 10.0 5.0 } ;
+
+# MDL stopping criteria for clustering:
+hmm_mdl_lambda { 1.0 1.0 1.0 1.0 } ;
+
+# statistics load threshold (R0 command):
+hmm_stats_gamma { 0.0 0.0 0.0 0.0 } ;
+
+# stream name
+hmm_stream_name { "mcp" "me" "lf0" "dur" } ;
+
+# start index of each HMM stream
+hmm_stream_start { 1 2 3 1 } ;
+
+# end index of each HMM stream
+hmm_stream_end { 1 2 5 5 } ;
+
+# whether the stream is MSD
+hmm_stream_msd { 0 0 1 -1 } ;
+
+# stream weights
+hmm_stream_weights { 1.0 1.0 1.0 -1.0 } ;
+
+# static feature order
+hmm_static_order { 25 5 1 -1 } ;
+
+# number of dynamic windows
+hmm_dynamic_windows { 3 3 3 -1 } ;
+
+# variance floor (vocal tract, me, lf0 x 3)
+hmm_variance_floor { 0.01 0.01 0.01 0.01 0.01 } ;
+
+
+## -----------------------------------------------------------------------------
+## Linguistic (Label Generation Specific Parameters):
+## -----------------------------------------------------------------------------
+
+###### Definition of possible feature values (used for fast unit selection features and hts) ]################
+features.sonorant_pollution     { "0" "v" "n" "m" "ng" "l" "r" "y" "w" } ;
+features.stress                 { "sil" "0" "1" "2" } ;
+features.phrasing               { "sil" "mid" "p-final" "s-final" "s-final-q" } ;
+features.phon_pos               { "i11" "i12" "i13" "i22" "i23" "i33" "v" "f11" "f12" "f13" "f22" "f23" "f33" "#i11" "#i12" "#i13" "#v" "v#" "#v#" "f11#" "f22#" "f33#" "sil" "#sil#" } ;
+features.height                 { "close" "nearclose" "closemid" "mid" "openmid" "nearopen" "open" "sil" "none" } ;
+features.vpos                   { "front" "nearfront" "central" "nearback" "back" "sil" "none" } ;
+features.rounding               { "rounded" "unrounded" "sil" } ;
+features.voicing                { "voiced" "unvoiced" "sil" } ;
+features.poa                    { "labial" "dental" "alveolar" "postalveolar" "palatal" "velar" "glottal" "sil" "none" } ;
+features.manner                 { "approximant" "lateral" "nasal" "affricate" "stop" "fricative" "sil" "none" };
+features.tar_height             { "close" "nearclose" "closemid" "mid" "openmid" "nearopen" "open" "sil" "none" } ;
+features.tar_vpos               { "front" "nearfront" "central" "nearback" "back" "sil" "none" } ;
+features.tar_rounding           { "rounded" "unrounded" "sil" } ;
+features.name                   { "*" } ;
+
+## repeat of phone_defs.word_type - make sure these are the same.
+features.word_type    $phone_defs.word_type
+
+## mapping of feature names to hts parameters
+hts_features.name                "A" ;
+hts_features.phon_pos            "B" ;
+hts_features.sonorant_pollution  "C" ;
+hts_features.stress              "D" ;
+hts_features.phrasing            "E" ;
+hts_features.word_type           "F" ;
+hts_features.height              "phone_defs" ;
+hts_features.tar_height          "phone_defs" ;
+hts_features.vpos                "phone_defs" ;
+hts_features.tar_vpos            "phone_defs" ;
+hts_features.rounding            "phone_defs" ;
+hts_features.tar_rounding        "phone_defs" ;
+hts_features.voicing             "phone_defs" ;
+hts_features.poa                 "phone_defs" ;
+hts_features.manner              "phone_defs" ;
+
+###### Definition of specification ##################
+## These are the features used in the model target
+## cost calculation and for HTS.
+specification.segment.this { "name" "phon_pos" "stress" "word_type" "phrasing" "sonorant_pollution" "voicing" "poa" "manner" "tar_height" "tar_vpos" "tar_rounding" "height" "vpos" "rounding" } ;
+specification.segment.prev { "name" "voicing" "poa" "manner" "tar_height" "tar_vpos" "tar_rounding" "phrasing" "stress" "word_type" } ;
+specification.segment.next { "name" "voicing" "poa" "manner" "phrasing" "stress" "word_type" "height" "vpos" "rounding" "sonorant_pollution" } ;
+specification.syllable.prev  { "stress" } ;
+specification.syllable.next  { "stress" } ;

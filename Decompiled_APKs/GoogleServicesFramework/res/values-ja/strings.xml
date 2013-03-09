@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">ウェブ</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">不明</string>
+    <string name="sharedUserLabel">Googleサービス</string>
+    <string name="service_label">システム更新ツール</string>
+    <string name="system_update_activity_name">システムアップデート</string>
+    <string name="system_update_activity_title">システムアップデート</string>
+    <string name="system_update_activity_battery_low_text">システムアップデートをインストールするための電池残量が不足しています。続行する場合は充電してください。</string>
+    <string name="system_update_activity_battery_low_charging_text">システムアップデートをインストールための電池残量が不足しています。十分に充電されるまでお待ちください。</string>
+    <string name="system_update_activity_roaming_text">ローミング中はシステムアップデートをダウンロードできません。</string>
+    <string name="system_update_requires_restart_status_text">再起動が必要です</string>
+    <string name="system_update_downloading_status_text">ダウンロード中</string>
+    <string name="system_update_downloading_wifi_status2_text">^1までWi-Fi専用</string>
+    <string name="system_update_verifying_status_text">確認中</string>
+    <string name="system_update_verification_failed_text">確認できませんでした</string>
+    <string name="system_update_verified_status_text">ダウンロードと確認が完了しました</string>
+    <string name="system_update_download_failed_status_text">ダウンロードに失敗しました</string>
+    <string name="system_update_download_retry_button_text">ダウンロードを再試行</string>
+    <string name="system_update_download_button_text">ダウンロード</string>
+    <string name="system_update_install_button_text">再起動してインストール</string>
+    <string name="system_update_check_now_button_text">今すぐ確認</string>
+    <string name="system_update_no_update_content_text">お使いのシステムは最新の状態です</string>
+    <string name="system_update_last_checkin">アップデートの最終確認: ^1</string>
+    <string name="system_update_recommended_update_available_notification_title">システムアップデートがあります</string>
+    <string name="system_update_recommended_update_available_notification_message">アップデートの詳細を表示します。</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">システムアップデートをダウンロードできませんでした。</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">ダウンロードできませんでした。しばらくしてからもう一度お試しください。</string>
+    <string name="system_update_error_dialog_title">エラー</string>
+    <string name="system_update_error_downloading_dialog_message">アップデートのダウンロード中にエラーが発生しました。</string>
+    <string name="system_update_error_installing_dialog_message">アップデートのインストール中に問題が発生しました。</string>
+    <string name="system_update_install_dialog_label">システムアップデート</string>
+    <string name="system_update_install_dialog_message_nonphone">システムアップデートをインストールする準備ができました。Android搭載端末を再起動して、アップデートをインストールします。</string>
+    <string name="system_update_install_dialog_message_phone">システムアップデートをインストールする準備ができました。Android搭載端末を再起動して、アップデートをインストールします。インストール中は緊急通報を含めて、電話をかけることができません。</string>
+    <string name="system_update_install_dialog_battery_low_message">システムアップデートの準備ができましたが、インストールするための電池残量が不足しています。続行する場合は充電してください。</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">システムアップデートの準備ができましたが、インストールするための電池残量が不足しています。十分に充電されるまでお待ちください。</string>
+    <string name="system_update_install_dialog_now_button">今すぐインストール</string>
+    <string name="system_update_install_dialog_later_button">後でインストール</string>
+    <string name="system_update_install_dialog_info_button">詳細...</string>
+    <string name="system_update_downloading_notification_title">システムアップデートのダウンロード中</string>
+    <string name="system_update_verifying_notification_title">システムアップデートの確認中</string>
+    <string name="system_update_download_dialog_label">システムアップデートのダウンロード</string>
+    <string name="system_update_download_dialog_message">お使いのAndroid搭載端末の機能を拡張するシステムアップデートを利用できます。無線ネットワーク経由でダウンロードすると通信料が発生する場合があります。</string>
+    <string name="system_update_download_dialog_now_button">今すぐダウンロード</string>
+    <string name="system_update_download_dialog_later_button">後でダウンロード</string>
+    <string name="system_update_download_dialog_cancel_button">キャンセル</string>
+    <string name="system_update_countdown_complete">再起動しています...</string>
+    <string name="system_update_countdown_cancel_button">インストールをキャンセル</string>
+    <string name="system_update_complete_label">システムアップデート</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">プッシュ型登録</string>
+    <string name="ro_perm_label">インスタントメッセージを表示する</string>
+    <string name="ro_perm_desc">Googleトークコンテンツプロバイダからのデータの読み取りをアプリケーションに許可します。</string>
+    <string name="wo_perm_label">インスタントメッセージを作成</string>
+    <string name="wo_perm_desc">Googleトークコンテンツプロバイダへのデータの書き込みをアプリケーションに許可します。</string>
+    <string name="gsf_label">Googleサービスフレームワーク</string>
+    <string name="search_chats">"チャットを検索:
+「%1$s」"</string>
+    <string name="gtalkservice_label">Google メッセージ サービス</string>
+    <string name="c2dm_label">クラウド-デバイスメッセージサービス</string>
+    <string name="sendTalkMsg_perm_label">Googleサーバーとのメッセージの交換や同期通知の受信を行う</string>
+    <string name="sendTalkMsg_perm_desc">サーバーのクラウド-デバイスメッセージと同期通知に使用します。Googleトークでは、このサービスを使用してメッセージの交換やステータスの同期を行います。悪意のあるアプリケーションが、このサービスを使って余分なデータを送信する可能性があります。</string>
+    <string name="perm_receive_data_message_label">インターネットからデータを受信する</string>
+    <string name="perm_receive_data_message_desc">アプリケーションのサービスから送信されるクラウド-デバイスメッセージの受信をアプリケーションに許可します。このサービスを利用するとデータ通信が発生します。悪意のあるアプリケーションにより過剰なデータ通信が発生する恐れがあります。</string>
+    <string name="perm_data_msg_broadcast_label">データメッセージをアプリケーションに配信する。</string>
+    <string name="perm_data_msg_broadcast_desc">インターネットからデータメッセージを受信して、これをリッスンするように登録されたアプリケーションに配信できます。</string>
+    <string name="perm_receive_xmpp_label">GoogleサーバーとのXMPPメッセージの送受信</string>
+    <string name="perm_receive_xmpp_desc">Googleサーバーとの間でXMPPメッセージを送受信することをGoogleアプリケーションに許可します。</string>
+    <string name="perm_xmpp_broadcast_label">XMPPメッセージをアプリケーションに配信</string>
+    <string name="perm_xmpp_broadcast_desc">GoogleサーバーからXMPPメッセージを受信して、これをリッスンするように登録されたアプリケーションに配信できるようにします。</string>
+    <string name="perm_use_xmpp_endpoint_label">GoogleサーバーとのXMPPメッセージの送受信</string>
+    <string name="perm_use_xmpp_endpoint_desc">Googleサーバーとの間でXMPPメッセージを送受信することをGoogleアプリケーションに許可します。</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">XMPPメッセージをアプリケーションに配信。</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Googleサーバーから受信したXMPPメッセージをアプリケーションに配信できます。</string>
+    <string name="permlab_intentVendingOnly">Androidマーケットにブロードキャストを送信する</string>
+    <string name="permdesc_intentVendingOnly">Androidマーケットにブロードキャストを送信して、アプリケーションのインストールや削除をリクエストできます。</string>
+    <string name="permlab_heartbeat">Googleトークサーバーにハートビートを送信する</string>
+    <string name="permdesc_heartbeat">Googleトークサーバーにハートビートパケットを送信して接続の状態を確認できます。</string>
+    <string name="group_chat">グループチャット: %s</string>
+    <string name="default_decline_reason">現在取り込み中です。</string>
+    <string name="newMessages_label">新規チャット</string>
+    <string name="notify_groupchat_label">グループチャットへの招待</string>
+    <string name="num_unread_chats">%s件の未読のチャット</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%sから%s</string>
+    <string name="subscription_notify_text">%sさんからチャットに招待されました</string>
+    <string name="group_chat_invite_notify_text">%sさんからグループチャットに招待されました</string>
+    <string name="group_chat_invite_dialog_text">%sさんがグループチャットに招待しています。</string>
+    <string name="message_too_long">2,000文字を超えるメッセージは送信できません。</string>
+    <string name="missed_video_chat_notification">ビデオチャットの招待がありました</string>
+    <string name="missed_voice_chat_notification">ボイスチャットの招待がありました</string>
+    <string name="missed_video_chat_notification_no_wifi">Wi-Fiに接続していないときにビデオチャットの招待がありました</string>
+    <string name="missed_voice_chat_notification_no_wifi">Wi-Fiに接続していないときにボイスチャットの招待がありました</string>
+    <string name="missed_video_chat_message">%1$sさんからビデオチャットがありました</string>
+    <string name="missed_voice_chat_message">%1$sさんからボイスチャットがありました</string>
+    <string name="missed_video_chat_message_no_wifi">Wi-Fiに接続していないときに%1$sさんからビデオチャットがありました</string>
+    <string name="missed_voice_chat_message_no_wifi">Wi-Fiに接続していないときに%1$sさんからボイスチャットがありました</string>
+    <string name="end_cause_user_unavailable_video">%1$sさんはビデオチャットを利用できませんでした。</string>
+    <string name="end_cause_user_unavailable_voice">%1$sさんはボイスチャットを利用できませんでした。</string>
+    <string name="end_cause_sent_terminate_video">%1$sさんとのビデオチャットを終了しました。</string>
+    <string name="end_cause_sent_terminate_voice">%1$sさんとのボイスチャットを終了しました。</string>
+    <string name="end_cause_received_terminate_video">%1$sさんがビデオチャットを終了しました。</string>
+    <string name="end_cause_received_terminate_voice">%1$sさんがボイスチャットを終了しました。</string>
+    <string name="end_cause_network_problem_video">ネットワークに問題が発生したため%1$sさんとのビデオチャットに失敗しました。もう一度お試しください。</string>
+    <string name="end_cause_network_problem_voice">ネットワークに問題が発生したため%1$sさんとのボイスチャットに失敗しました。もう一度お試しください。</string>
+    <string name="conn_auth_error_notify_ticker">Googleトークの認証に失敗しました</string>
+    <string name="conn_auth_error_notify_title">Googleトークの認証に失敗しました</string>
+    <string name="conn_auth_error_title">認証エラー</string>
+    <string name="conn_auth_error_message">Googleトークのログインに失敗しました。Google Appsアカウントの場合は、チャットサービスがこのアカウントで有効になっていることを確認してください。</string>
+    <string name="conn_auth_error_button_retry">再試行</string>
+    <string name="conn_auth_error_button_cancel">キャンセル</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">^1へようこそ</string>
+    <string name="setup_wizard_title">セットアップウィザード</string>
+    <string name="error_dialog_title">注意</string>
+    <string name="next_button_label">次へ</string>
+    <string name="back_button_label">戻る</string>
+    <string name="sign_in_button_label">ログイン</string>
+    <string name="create_button_label">作成</string>
+    <string name="skip_button_label">スキップ</string>
+    <string name="first_name">名</string>
+    <string name="last_name">姓</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">キャンセル</string>
+    <string name="done_button_label">セットアップを完了</string>
+    <string name="try_again_button_label">再試行</string>
+    <string name="close_button_label">閉じる</string>
+    <string name="edit_text_help">文字入力エリアをタップして入力します</string>
+    <string name="add_a_google_account">Googleアカウントを追加</string>
+    <string name="no_sim_setup_wireless">SIMカードが挿入されていないため、通話やデータサービスを提供するモバイルネットワークに接続できません。Wi-FiネットワークにはSIMカードなしで接続できます。</string>
+    <string name="setup_wifi_button_label">Wi-Fiに接続</string>
+    <string name="no_network">ネットワークに接続していません。</string>
+    <string name="no_network_help">一時的な問題か、Android搭載端末がデータサービスに対応していない可能性があります。モバイルネットワークに接続された状態でもう一度試すか、Wi-Fiネットワークに接続してください。</string>
+    <string name="server_error">Googleサーバーとの通信中に問題が発生しました。</string>
+    <string name="server_error_help">しばらくしてからもう一度お試しください。</string>
+    <string name="network_unreliable">サーバーへの安定したデータ接続を確立できません。</string>
+    <string name="network_unreliable_help">一時的な問題か、Android搭載端末がデータサービスに対応していない可能性があります。引き続き問題が発生する場合は、お客様サポートにお問い合わせください。</string>
+    <string name="invalid_login_character">無効な文字です。使用できるのは0～9、a～z、A～Z、ピリオドのみです。</string>
+    <string name="invalid_password_character">パスワードの文字が無効です。</string>
+    <string name="add_apn">ワイヤレス設定</string>
+    <string name="setup_google_account_title">Googleアカウントの設定</string>
+    <string name="setup_complete_title">セットアップ完了</string>
+    <string name="cant_be_blank">フィールドは空にできません。</string>
+    <string name="calendar">Googleカレンダー</string>
+    <string name="talk">Googleトーク</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android搭載携帯がデータサービスに接続されていません。この情報を表示するには、インターネットに接続されているパソコンから %s にアクセスしてください。</string>
+    <string name="field_cant_be_blank">このフィールドは必須です。</string>
+    <string name="field_invalid_domain">無効なドメイン名です</string>
+    <string name="field_invalid_user">無効なユーザー名です</string>
+    <string name="field_invalid_user_domain">メールアドレスではなく、ユーザー名のみ入力してください</string>
+    <string name="field_invalid_login">無効なアカウント名です</string>
+    <string name="about_accounts_message"><font size="17">"GoogleアカウントがあればAndroid搭載携帯を簡単に設定できます。
+"<font height="17">"
+"</font><b>Googleアカウントを使用する理由:</b>"
+"<font height="3">"
+"</font>"Googleアプリケーションが自動的に同期するため、端末とパソコンから同じデータにアクセスできます。
+"<font height="17">"
+"</font><b>既にGoogleアカウントをお持ちの場合: </b>"
+"<font height="3">"
+"</font>"次の画面でログインしてください。
+"<font height="17">"
+"</font><b>Googleアカウントをお持ちでない場合: </b>"
+"<font height="3">"
+"</font>"次の画面で今すぐ作成できます。
+"<font height="17">"
+"</font><b>[次へ]をタップすると次の画面に進みます。</b>"
+"</font></string>
+    <string name="fling_help_message">"画面を指先で上下にドラッグするとスクロールできます。
+（このメッセージをタップすると今後表示されません）"</string>
+    <string name="setup_device_title">^1のセットアップ</string>
+    <string name="dont_have_an_account">Googleアカウントをお持ちでない場合</string>
+    <string name="create_one_now">作成は簡単。今すぐ作成しよう。</string>
+    <string name="already_have_an_account">Googleアカウントをお持ちの場合</string>
+    <string name="sign_in_with_google_account">このAndroid搭載端末に登録するGoogleアカウントでログインしてください。</string>
+    <string name="skip_message">後でアカウントを作成する場合</string>
+    <string name="touch_to_begin">Androidをタップしてスタート</string>
+    <string name="delayed_gaia_agreement">次に進むことにより、<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>と<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="open_keyboard_message">開始するにはキーボードをスライドして開きます。</string>
+    <string name="open_keyboard_message_to_continue">続行するにはキーボードをスライドして開きます。</string>
+    <string name="emergency_dial">緊急通報</string>
+    <string name="change_language">言語を変更</string>
+    <string name="signing_in">ログイン中...</string>
+    <string name="close_keyboard_message">続行するにはキーボードをスライドして閉じます。</string>
+    <string name="communicating_message">Googleサーバーと通信してアカウントを設定する必要があります。最大で5分ほどかかることがあります。</string>
+    <string name="communicating_message_domain">Googleサーバーと通信してドメイン情報を探す必要があります。最大で5分ほどかかることがあります。</string>
+    <string name="username">ユーザー名</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">パスワード</string>
+    <string name="sign_in_agreement">ログインすることにより、<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>と<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="create">作成</string>
+    <string name="create_message">Googleアカウントをお持ちでない場合</string>
+    <string name="now_signing_in">ログイン中...</string>
+    <string name="now_verifying_domain">ドメインを探しています...</string>
+    <string name="sign_in_with_google_account_short">Googleアカウントでログイン:</string>
+    <string name="browser_sign_in_explanation">ウェブブラウザを必要とする特別なログインにはこの画面を使用してください。</string>
+    <string name="gls_browser_login_intro_message">GoogleまたはGoogle Appsアカウントにアクセスできません。再承認が必要です。</string>
+    <string name="enter_domain_name">会社のドメイン名を入力してください:</string>
+    <string name="enter_user_name">^1のユーザー名とパスワードを入力します:</string>
+    <string name="inactive_domain">このアカウントは無効なドメインに属しているため使用できません。<b>^1</b>のドメイン管理者に問い合わせるか、別のアカウントでログインしてください。</string>
+    <string name="invalid_username">入力したユーザー名は無効です。</string>
+    <string name="web_login_error_title">申し訳ありません...</string>
+    <string name="web_login_error_desc">"^1にある会社のサーバーへの接続に問題が発生しました。
+
+エラー情報:
+"</string>
+    <string name="web_login_error_redirects">ウェブログインページのリダイレクトが多すぎます</string>
+    <string name="web_login_error_http">HTTPエラー^1: ^2</string>
+    <string name="name_device_label">Android搭載携帯に名前を付けます:</string>
+    <string name="device_name_hint">端末名</string>
+    <string name="registering_device">Android搭載携帯を登録中...</string>
+    <string name="error_account_disabled">"このアカウントは無効になっています。
+
+（詳しくはパソコンで http://google.co.jp/accounts/recovery にアクセスしてください。）"</string>
+    <string name="error_login_failed">"ユーザー名とパスワードが一致しません。もう一度お試しください。
+
+（アカウント情報を忘れた場合は、パソコンで http://www.google.co.jp/accounts/recovery にアクセスしてください。）"</string>
+    <string name="error_account_not_verified">"このアカウントは確認されていません。パソコンでメールを確認し、メールに記載されているリンク先にアクセスしてこのアカウントを確認してください。
+
+（アカウント情報を忘れた場合は、パソコンで http://www.google.co.jp/accounts/recovery にアクセスしてください。）"</string>
+    <string name="captcha_message_string">確認</string>
+    <string name="captcha_instructions">画像に表示されている文字を入力してください。大文字と小文字は区別されません。</string>
+    <string name="create_google_account">新しいGoogleアカウントを作成する</string>
+    <string name="example_usernames">例: JSmith、John.Smith</string>
+    <string name="create_account_agreement">アカウントを作成することにより、<annotation id="google_privacy">Googleのプライバシーポリシー</annotation>と<annotation id="android_privacy">追加規約</annotation>に同意したことになります。</string>
+    <string name="account_already_has_gmail">このアカウントでは既にGmailを使用しています。</string>
+    <string name="creating_account">ユーザーアカウントを作成中...</string>
+    <string name="checking_account">このユーザー名を使用できるか確認しています...</string>
+    <string name="try_a_different_username">別のユーザー名をお試しください</string>
+    <string name="is_not_available"><b>^1</b>は使用できません。</string>
+    <string name="hint_size"><b>^1</b>が6文字未満か30文字を超えています。</string>
+    <string name="hint_numbers_only"><b>^1</b>に文字が含まれていません。</string>
+    <string name="hint_illegal_chars"><b>^1</b>"に使用できるのは、文字、数字、ピリオド
+のみです。"</string>
+    <string name="doesnt_use_gmail"><b>^1</b>ではGmailを使用していません</string>
+    <string name="sign_in">ログイン</string>
+    <string name="sign_in_browser">ブラウザログイン</string>
+    <string name="here_are_alternatives">ユーザー名の候補:</string>
+    <string name="alternatives_list_title">ユーザー名候補</string>
+    <string name="choose_a_password"><b>"パスワード
+を入力"</b></string>
+    <string name="confirm_password"><b>"パスワード
+の確認"</b></string>
+    <string name="password_strength"><b>"パスワード
+の安全度"</b></string>
+    <string name="too_short">短すぎます</string>
+    <string name="security_question"><b>"セキュリティ
+保護用の質問"</b></string>
+    <string name="security_questions_title">セキュリティ保護用の質問</string>
+    <string name="answer"><b>答え</b></string>
+    <string name="password_mismatch">パスワードが一致しません。再入力してください。</string>
+    <string name="your_account_was_created">アカウントが作成されました。</string>
+    <string name="eight_chars_min">（8文字以上）</string>
+    <string name="just_in_case">パスワードを忘れたときに使用します。</string>
+    <string name="verify_your_profile">プロフィールの確認</string>
+    <string name="signed_in">ログインしています</string>
+    <string name="error_not_logged_in">ユーザーがログインしていません。</string>
+    <string name="error_username_unavailable">このユーザー名は使用できません。</string>
+    <string name="error_bad_password">パスワードの安全性が低いか無効な文字が含まれています。別のパスワードをお試しください。</string>
+    <string name="error_bad_username">ユーザー名が無効です。</string>
+    <string name="loading">読み込み中...</string>
+    <string name="submission_title">申し訳ありません...</string>
+    <string name="submission_error_text">エラーが発生しました。もう一度お試しください。</string>
+    <string name="existing_account_error_title">アカウントが既に存在します</string>
+    <string name="existing_account_error_text">アカウント^1は既にこのAndroid搭載携帯に追加されています。</string>
+    <string name="account_linked_message"><font height="24">これでGoogleアカウントがこのAndroid搭載携帯に登録されました。</font></string>
+    <string name="syncing_message"><font size="17">"Googleアプリケーションのデータを同期中です。
+"<font height="17">"
+"</font>"%i画面の上部のステータスバーから同期中のアイコンが消えると、ダウンロードは終了です。
+"<font height="17">"
+"</font><b>ステータスバーについて...</b>"
+"<font height="3">"
+"</font>"新しいメッセージや通知を受信すると、ステータスバーにアイコンが表示されます。
+"<font height="17">"
+"</font>各通知の詳細を確認するには、指でステータスバーを下にドラッグして[通知]パネルを表示します。</font></string>
+    <string name="i_agree_next">同意して次へ</string>
+    <string name="android_privacy_policy_title">プライバシーポリシーの続き</string>
+    <string name="google_terms_of_service_title">Google利用規約</string>
+    <string name="google_privacy_policy_title">Googleプライバシーポリシー</string>
+    <string name="notification_update_title">アカウントを更新する必要があります</string>
+    <string name="notification_update_message">セットアップウィザードを再実行するにはここをタップしてください</string>
+    <string name="common_message">"Gmail、バックアップなど、多くのAndroid機能ではGoogleアカウントが必要になります。
+
+["<b>次へ</b>"]をタップして既存のGoogleアカウントでログインするか、今すぐ新しいアカウントを作成してください。
+
+または、["<b>スキップ</b>]をタップして今すぐAndroidを使用し、後から[アカウントと同期]の[設定]でGoogleアカウントにログインすることもできます。</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">アカウントの追加</font>"
+
+複数のGoogleアカウントを使用できます（自宅のアカウントや勤務先のアカウントなど）。アカウントは簡単に追加できます。
+
+[次へ]をタップして先に進むか、[戻る]ボタンを押して終了します。"</string>
+    <string name="reactivate_account_message">"Google MailアカウントをAndroid搭載端末に登録する必要があります。
+
+Google Mailユーザー名("<b>^1</b>")が既にこのアカウントに関連付けられていますが、このユーザー名は現在有効ではありません。
+
+このユーザー名を再度有効にする場合は[次へ]をタップしてください。
+
+別のアカウントを使用する場合は[戻る]ボタンを押して、別のアカウントでログインするか、別のアカウントを作成してください。"</string>
+    <string name="reactivating_account">アカウントを有効にしています...</string>
+    <string name="your_account_was_reactivated">アカウントが有効になりました。</string>
+    <string name="account_recovery_info">次の情報はパスワードを忘れたときに使用します</string>
+    <string name="secondary_email_label"><b>"予備の
+メール"</b></string>
+    <string name="invalid_email">"入力したメールアドレスが無効です。
+例: joe@example.com"</string>
+    <string name="invalid_email_primary">作成中のメールアドレスと同じものを予備のアドレスに指定することはできません</string>
+    <string name="tutorial_intro_title">^1の使い方</string>
+    <string name="begin_button_label">開始</string>
+    <string name="tutorial_intro_message_generic">使い方ガイド - はじめに<font size="17">"
+"</font>"
+"<li>画面キーボードの使い方</li><font size="17">"
+"</font>"
+[開始]で使い方ガイドに進みます。"</string>
+    <string name="tutorial_intro_message_setupwizard">使い方ガイド - はじめに<font size="17">"
+"</font>"
+"<li>画面キーボードの使い方</li>"
+"<li>Googleアカウントの設定</li> <font size="17">"
+"</font>"
+[開始]で使い方ガイドに進みます。[スキップ]で使い方ガイドを終了します。"</string>
+    <string name="keyboard_tutorial_title">画面キーボードの使い方</string>
+    <string name="keyboard_tutorial_message">テキストフィールドをタップするとキーボードが表示されます。ここに入力してみてください。</string>
+    <string name="keyboard_tutorial_edittext_hint">ここをタップして入力します</string>
+    <string name="done_typing_message">[戻る]ボタンを押すとキーボードを閉じることができます。</string>
+    <string name="done_button_label_in_tutorial">完了</string>
+    <string name="backup_consent_title">設定のバックアップ</string>
+    <string name="backup_consent_message">設定（ブックマーク、Wi-Fiのパスワードなど）をGoogleアカウントに自動的にバックアップできます。紛失や機種変更で新しいAndroid搭載携帯に変更した場合でも設定を復元できます。</string>
+    <string name="backup_consent_howto_disable_message">バックアップ設定は、[設定]アプリケーションの[プライバシー]でいつでも変更できます。</string>
+    <string name="backup_consent_yes_agree">Googleアカウントに設定をバックアップする。</string>
+    <string name="restore_disable">復元を無効にする</string>
+    <string name="restore_enable">復元を有効にする</string>
+    <string name="restore_enabled">以前にバックアップした設定があれば、復元されます。</string>
+    <string name="restore_disabled">バックアップから設定が復元されません。</string>
+    <string name="webview_progress_title">ドメインに接続中...</string>
+    <string name="webview_progress_verbose_message">"会社のサーバーからログイン情報を受信しています。この処理には数分かかることがあります。
+完了すると、会社のログインページが表示されます。"</string>
+    <string name="enterprise_unmanaged_domain">このドメインではGoogle Appsを使用していません。ドメイン名を確認して、入力し直してください。</string>
+    <string name="use_location_for_services_agree">同意する</string>
+    <string name="use_location_for_services_disagree">同意しない</string>
+    <string name="use_location_for_services_title">現在地を使用</string>
+    <string name="use_location_for_services_text">検索結果やサービスの品質向上にGoogleが位置情報を使用することを許可しますか？</string>
+    <string name="permlab_readGsettings">Google設定を読み取る</string>
+    <string name="permdesc_readGsettings">Googleの設定の読み取りをこのアプリケーションに許可します。</string>
+    <string name="permlab_writeGsettings">Google設定を変更する</string>
+    <string name="permdesc_writeGsettings">Googleの設定の変更をこのアプリケーションに許可します。</string>
+    <string name="permlab_readGservices">Googleサービス設定を読み取る</string>
+    <string name="permdesc_readGservices">Googleサービス設定データの読み取りをこのアプリケーションに許可します。</string>
+    <string name="permlab_writeGservices">Googleサービス設定を変更する</string>
+    <string name="permdesc_writeGservices">Googleサービス設定データの変更をこのアプリケーションに許可します。</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">Googleアカウントのパスワードにアクセスする</string>
+    <string name="permdesc_googleAuthPassword">設定したGoogleアカウントのパスワードに直接アクセスすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleMailSwitch">GmailまたはGoogle Mailを選択してください</string>
+    <string name="permdesc_googleMailSwitch">「Gmail」と「Google Mail」の表示名の切り替えをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth">設定したアカウントを表示する</string>
+    <string name="permdesc_googleAuth">設定したGoogleアカウントのユーザー名（メールアドレス）にアクセスすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_ALL">すべてのGoogleサービスにアクセスする</string>
+    <string name="permdesc_googleAuth_ALL">このAndroid搭載携帯に保存されているアカウントですべてのGoogleサービスにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_OTHER">他のGoogleサービスにアクセスする</string>
+    <string name="permdesc_googleAuth_OTHER">このAndroid搭載携帯に保存されているアカウントで不特定のGoogleサービスにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">このAndroid搭載携帯に保存されているアカウントでGoogleメールサービスにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_cl">Googleカレンダー</string>
+    <string name="permdesc_googleAuth_cl">このAndroid搭載携帯に保存されているアカウントでGoogleカレンダーにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_android">Androidサービス</string>
+    <string name="permdesc_googleAuth_android">このAndroid搭載携帯に保存されているアカウントでAndroidサービスにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_sierra">Google Checkoutアカウント</string>
+    <string name="permdesc_googleAuth_sierra">このAndroid搭載携帯に保存されているアカウントでGoogle Checkoutにログインすることをアプリケーションに許可します（これにより買い物が可能になります）。</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QAアカウント</string>
+    <string name="permdesc_googleAuth_sierraqa">このAndroid搭載携帯に保存されているアカウントでGoogle Checkout QAにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandboxアカウント</string>
+    <string name="permdesc_googleAuth_sierrasandbox">このAndroid搭載携帯に保存されているアカウントでGoogle Checkout Sandboxにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">このAndroid搭載携帯に保存されているアカウントでYouTubeにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTubeユーザー名</string>
+    <string name="permdesc_googleAuth_YouTubeUser">このAndroid搭載携帯に保存されているGoogleアカウントに関連付けられているYouTubeユーザー名にアクセスすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_talk">Googleトーク</string>
+    <string name="permdesc_googleAuth_talk">このAndroid搭載携帯に保存されているアカウントでGoogleトークにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_ig">iGoogleアカウント</string>
+    <string name="permdesc_googleAuth_ig">このAndroid搭載携帯に保存されているアカウントでiGoogleにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_lh2">Picasaウェブアルバム</string>
+    <string name="permdesc_googleAuth_lh2">このAndroid搭載携帯に保存されているアカウントでPicasaウェブアルバムにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_mobile">Googleモバイルアプリケーション</string>
+    <string name="permdesc_googleAuth_mobile">このAndroid搭載携帯に保存されているアカウントでGoogleモバイルアプリケーションにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_cp">Googleアカウント内の連絡先データ</string>
+    <string name="permdesc_googleAuth_cp">このAndroid搭載携帯に保存されているアカウントの連絡先とプロフィールにアクセスすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">このAndroid搭載携帯に保存されているアカウントでGoogle AdSenseにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">このAndroid搭載携帯に保存されているアカウントでGoogle AdWordsにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">このAndroid搭載携帯に保存されているアカウントでBloggerにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">このAndroid搭載携帯に保存されているアカウントでDodgeballにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">このAndroid搭載携帯に保存されているアカウントでGoogle Baseにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_groups2">Googleグループ</string>
+    <string name="permdesc_googleAuth_groups2">このAndroid搭載携帯に保存されているアカウントでGoogleグループにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">このAndroid搭載携帯に保存されているアカウントでGoogle Healthにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">このAndroid搭載携帯に保存されているアカウントでJotSpotにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">このAndroid搭載携帯に保存されているアカウントでKnolにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_news">Googleニュース</string>
+    <string name="permdesc_googleAuth_news">このAndroid搭載携帯に保存されているアカウントでGoogleニュースにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_orkut">orkut</string>
+    <string name="permdesc_googleAuth_orkut">このAndroid搭載携帯に保存されているアカウントでorkutにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_print">Googleブックス</string>
+    <string name="permdesc_googleAuth_print">このAndroid搭載携帯に保存されているアカウントでGoogleブックスにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_sitemaps">Googleウェブマスターツール</string>
+    <string name="permdesc_googleAuth_sitemaps">このAndroid搭載携帯に保存されているアカウントでGoogleウェブマスターツールにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">このAndroid搭載携帯に保存されているアカウントでGoogle WiFiにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_writely">Googleドキュメント</string>
+    <string name="permdesc_googleAuth_writely">このAndroid搭載携帯に保存されているアカウントでGoogleドキュメントにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_wise">Googleスプレッドシート</string>
+    <string name="permdesc_googleAuth_wise">このAndroid搭載携帯に保存されているアカウントでGoogleドキュメントにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">このAndroid搭載携帯に保存されているアカウントでGoogle Financeにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_local">Googleマップ</string>
+    <string name="permdesc_googleAuth_local">このAndroid搭載携帯に保存されているアカウントでGoogleマップにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">このAndroid搭載携帯に保存されているアカウントでGoogle App Engineにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_notebook">Googleノートブック</string>
+    <string name="permdesc_googleAuth_notebook">このAndroid搭載携帯に保存されているアカウントでGoogleノートブックにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">このAndroid搭載携帯に保存されているアカウントでGoogle Voiceにログインすることをアプリケーションに許可します。</string>
+    <string name="permlab_googleAuth_speechpersonalization">音声認識のカスタマイズ</string>
+    <string name="permdesc_googleAuth_speechpersonalization">このAndroid搭載携帯に保存されているアカウントで音声認識のカスタマイズサービスにログインすることをアプリケーションに許可します。</string>
+    <string name="gls_notification_title">アカウントにログインしてください</string>
+    <string name="gls_notification_new_account">^1アカウントが必要です</string>
+    <string name="gls_notification_new_account_youtube">YouTubeアカウントが必要です</string>
+    <string name="gls_notification_login_error">タップしてアカウントにログインしてください。</string>
+    <string name="gls_ui_add_account_title">アカウント設定</string>
+    <string name="gls_ui_google_account_subtitle">Googleアカウント</string>
+    <string name="gls_ui_activity_title">Googleにログイン</string>
+    <string name="gls_ui_activity_title_browser_signin">ブラウザログイン</string>
+    <string name="gls_ui_activity_title_enterprise">エンタープライズにログイン</string>
+    <string name="gls_ui_activity_title_youtube">YouTubeにログイン</string>
+    <string name="gls_ui_activity_authenticating">認証中...</string>
+    <string name="gls_captcha_activity_message">画像に表示されている文字を入力してください:</string>
+    <string name="gls_captcha_activity_ok_button">完了</string>
+    <string name="gls_error_activity_message"><b>^1</b>へのログイン中にネットワークエラーが発生しました。今すぐ再試行するか、[戻る]ボタンを押してキャンセルしてください。</string>
+    <string name="gls_error_activity_retry_button">再試行</string>
+    <string name="gls_dmagent_activity_message">" このドメインでは携帯端末管理が必要です。Google Apps端末ポリシーアプリケーションをインストールして、アカウント"<b>^1</b>に必要なセキュリティポリシーを適用してください。</string>
+    <string name="gls_dmagent_activity_retry_button">ダウンロード</string>
+    <string name="gls_login_activity_username_label">ユーザー名</string>
+    <string name="gls_login_activity_password_label">パスワード</string>
+    <string name="gls_login_activity_ok_button">ログイン</string>
+    <string name="gls_login_activity_loginfail_text_both">ユーザー名またはパスワードが無効です。<b>^1</b>アカウントが必要です。もう一度お試しください。</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">入力したパスワードが間違っているかアカウントが変更されています。パスワードを再入力してください。</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">このアカウントのパスワードを入力してください。</string>
+    <string name="gls_enterprise_login_activity_msg">"認証のため^1のエンタープライズアカウントにログインしてください。
+[ログイン]にタップすると、会社のウェブベースのログインページが開きます。"</string>
+    <string name="gls_login_activity_badaccount_text">そのアカウントは対応していないため使用できません。別のアカウントをお試しください。</string>
+    <string name="gls_login_activity_newaccount_text"><b>^1</b>アカウントにログインします。</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">YouTubeアカウントをお持ちでない場合は、<a href="http://www.youtube.com/signup">ここ</a>をタップして作成してください。</string>
+    <string name="gls_settings_tos_activity_title">Google利用規約</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">データサービスに接続されていません。この情報を表示するにはインターネットに接続されたパソコンから %s にアクセスしてください。</string>
+    <string name="gls_settings_contributors_activity_title">貢献/連携パートナー</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">データサービスに接続されていません。この情報を表示するにはインターネットに接続されたパソコンから %s にアクセスしてください。</string>
+    <string name="gls_webview_progress_title">ドメインに接続中...</string>
+    <string name="gls_webview_progress_verbose_message">"会社のサーバーからログイン情報を受信しています。この処理には数分かかることがあります。
+完了すると会社のログインページが表示されます。"</string>
+    <string name="gls_sign_in_button_label">ログイン</string>
+    <string name="gls_back_button_label">戻る</string>
+    <string name="gls_cancel_button_label">キャンセル</string>
+    <string name="gls_exit_account_setup_button_label">アカウント設定を終了</string>
+    <string name="gls_reauthorize_button_label">再承認</string>
+    <string name="gls_sign_in_message">Googleサーバーと通信してアカウントを設定する必要があります。最大で5分ほどかかることがあります。</string>
+    <string name="gls_sign_in_title">ログイン中...</string>
+</resources>

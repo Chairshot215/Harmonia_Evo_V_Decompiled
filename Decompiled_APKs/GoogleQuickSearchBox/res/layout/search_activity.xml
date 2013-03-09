@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.googlequicksearchbox.ui.SearchActivityViewPhone android:id="@id/search_activity_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.googlequicksearchbox.ui.SuggestionsView android:id="@id/suggestions" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:layout_below="@id/search_plate_frame" android:layout_alignParentLeft="true" style="@style/SuggestionsList" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_plate_frame" android:background="@drawable/bg_search_plate_frame" android:paddingRight="@dimen/searchactivity_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/search_plate_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <include layout="@layout/progress_spinner" />
+        <include layout="@layout/search_plate" />
+        <include android:layout_gravity="center" android:paddingTop="5.0dip" android:layout_width="@dimen/suggestion_icon_size" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/menu_button_margin_left" android:layout_marginRight="@dimen/menu_button_margin_right" layout="@layout/menu_button" />
+    </LinearLayout>
+    <View android:id="@id/search_plate_fade" android:layout_width="fill_parent" android:layout_height="@dimen/search_plate_fade_height" android:layout_below="@id/search_plate_frame" />
+    <View android:background="@drawable/bg_bottom_fade" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_fade_height" android:layout_alignParentBottom="true" />
+    <ViewStub android:id="@id/first_run_overlay_stub" android:layout="@layout/first_run_overlay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_alignLeft="@id/suggestions" android:layout_alignRight="@id/suggestions" android:layout_alignParentTop="true" />
+</com.google.android.googlequicksearchbox.ui.SearchActivityViewPhone>

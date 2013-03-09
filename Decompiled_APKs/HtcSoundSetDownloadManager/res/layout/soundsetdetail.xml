@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/headerbar" android:layout_width="fill_parent" android:layout_height="fill_parent" htcfooter:bubble_visibility="invisible" htcfooter:progress_visibility="invisible">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" htcfooter:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <com.htc.widget.HtcListView android:id="@id/detail_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@com.htc:drawable/common_list_divider" android:layout_weight="1.0" style="@style/HtcListStyle" />
+    <com.htc.widget.HtcFooter android:id="@id/footer_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:id="@id/main_1btn" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

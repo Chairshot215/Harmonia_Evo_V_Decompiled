@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/htc_labelAssistedDialing" android:key="button_cdma_assissted_dialing_key" android:summary="@string/htc_sum_cdma_AssistedDialing">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.nbpcd.AssistedDialingSetting" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

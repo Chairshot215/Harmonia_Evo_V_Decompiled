@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/restore_your_media_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:paddingLeft="@dimen/layout_margin_left" android:paddingRight="@dimen/layout_margin_right" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:paddingBottom="@dimen/layout_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_your_media_text" style="@style/textAppearance_primary" />
+            <CheckBox android:id="@id/restore_your_media_allow_check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_top" android:layout_marginBottom="@dimen/layout_margin_bottom" android:text="@string/restore_your_media_allow" />
+            <ImageView android:id="@id/divider" android:background="@drawable/divider_horizontal_dark_opaque" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0px" android:layout_marginBottom="22.0px" />
+            <TextView android:paddingBottom="@dimen/layout_margin_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restore_your_media_connect_msg" style="@style/textAppearance_primary" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/progressbar_layout" layout="@layout/progressbar" />
+    <RelativeLayout style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

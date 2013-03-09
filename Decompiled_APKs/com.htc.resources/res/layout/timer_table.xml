@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.NumberTableView android:id="@id/hour_table_view" android:focusable="false" android:layout_width="102.0px" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:selectable="false" />
+    <com.htc.widget.NumberTableView android:id="@id/minute_table_view" android:focusable="false" android:layout_width="102.0px" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:selectable="false" />
+    <com.htc.widget.NumberTableView android:id="@id/second_table_view" android:focusable="false" android:layout_width="102.0px" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:selectable="false" />
+    <com.htc.widget.NumberTableView android:id="@id/ampm_table_view" android:focusable="false" android:layout_width="102.0px" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:selectable="false" />
+</merge>

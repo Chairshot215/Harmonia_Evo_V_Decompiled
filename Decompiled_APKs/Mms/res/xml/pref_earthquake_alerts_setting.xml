@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/pref_earthquake_alert_settings_title" android:key="pref_earthquake_alert_setting_preferenceScreen_key">
+        <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_earthquake_alert_settings_title" android:key="pref_earthquake_alert_setting_category_key">
+            <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:enabled="true" android:title="@string/pref_earthquake_alert_title" android:key="pref_earthquake_alert_key" android:summary="@string/pref_earthquake_alert_summary" android:defaultValue="true" />
+        </com.htc.preference.HtcPreferenceCategory>
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

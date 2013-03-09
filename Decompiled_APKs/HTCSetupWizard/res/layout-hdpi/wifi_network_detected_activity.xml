@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/wifi_networks_detected_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_networks_detected_message" style="@style/layout_generic" />
+            <ImageView android:id="@id/divider" android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0px" android:layout_below="@id/message" />
+            <CheckBox android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:id="@id/detected_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginTop="15.0px" android:layout_below="@id/divider" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:id="@id/detected_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginTop="35.0px" android:text="@string/wifi_networks_detected_checkbox_message" android:layout_toRightOf="@id/detected_check" android:layout_below="@id/divider" />
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/bt_next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

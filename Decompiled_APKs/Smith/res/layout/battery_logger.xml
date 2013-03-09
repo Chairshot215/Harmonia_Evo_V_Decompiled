@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffc0c000" android:gravity="left" android:id="@id/text_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+        <RadioGroup android:id="@id/radio_group" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:checkedButton="@id/radio_option1">
+            <RadioButton android:id="@id/radio_option1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty" />
+            <RadioButton android:id="@id/radio_option2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty" />
+            <RadioButton android:id="@id/radio_option3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty" />
+        </RadioGroup>
+        <CheckBox android:gravity="center_vertical" android:id="@id/check_option" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:gravity="center_vertical" android:id="@id/check_option2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:gravity="center_vertical" android:id="@id/check_option3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textStyle="bold" android:gravity="left" android:id="@id/text_log_prompt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bl_log_time" />
+            <EditText android:id="@id/edit_log_time" android:visibility="gone" android:layout_width="88.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:singleLine="true" android:capitalize="sentences" />
+            <Button android:id="@id/button_log_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textStyle="bold" android:gravity="left" android:id="@id/text_log_prompt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bl_seconds" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="#ffc0c000" android:gravity="left" android:id="@id/text_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bl_hint" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <Button android:id="@id/button_start" android:paddingLeft="40.0dip" android:paddingTop="20.0dip" android:paddingRight="40.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start" />
+            <Button android:id="@id/button_stop" android:paddingLeft="40.0dip" android:paddingTop="20.0dip" android:paddingRight="40.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffc0c000" android:gravity="left" android:id="@id/text_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <TextView android:textSize="16.0dip" android:typeface="monospace" android:textStyle="bold" android:textColor="#ffc0c0c0" android:gravity="left" android:id="@id/text_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    </LinearLayout>
+</ScrollView>

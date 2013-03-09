@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="305267145" android:versionName="3.5.2211233124.267145" package="com.htc.providers.uploads"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <skip-erased />
+    <uses-library android:name="com.htc.framework" />
+    <permission android:label="@string/permlab_uploadManager" android:name="android.permission.ACCESS_UPLOAD_MANAGER" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_uploadManager" />
+    <permission android:label="@string/permlab_uploadData" android:name="android.permission.ACCESS_UPLOAD_DATA" android:protectionLevel="signature" android:description="@string/permdesc_uploadData" />
+    <permission android:label="@string/permlab_uploadCompletedIntent" android:name="android.permission.SEND_UPLOAD_COMPLETED_INTENTS" android:protectionLevel="signature" android:description="@string/permdesc_uploadCompletedIntent" />
+    <permission android:name="com.htc.providers.uploads.RECEIVER_INTENT" android:protectionLevel="signature" />
+    <uses-permission android:name="com.htc.socialnetwork.permission.useprovider" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_UPLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.SEND_UPLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_UPLOAD_DATA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.htc.providers.uploads.RECEIVER_INTENT" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <application android:label="@string/app_name" android:description="@string/htc" android:hardwareAccelerated="false" allowSkinChange="true">
+        <provider android:name=".UploadProvider" android:permission="android.permission.ACCESS_UPLOAD_MANAGER" android:process="com.htc.bg" android:authorities="com.htc.providers.uploads" />
+        <service android:name=".UploadService" android:permission="android.permission.ACCESS_UPLOAD_MANAGER" android:process="com.htc.bg" />
+        <service android:name=".AutoUploadService" android:permission="android.permission.ACCESS_UPLOAD_MANAGER" android:process="com.htc.bg">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".UploadReceiver" android:exported="false" android:process="com.htc.bg">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/MyTheme" android:name=".uploadUI.UploadsObserver" android:permission="com.htc.providers.uploads.RECEIVER_INTENT" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="user" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="UploadsObserver" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MyTheme" android:name=".uploadUI.FileDetailActivity" />
+    </application>
+</manifest>

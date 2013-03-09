@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<features version="0" xsi:schemaLocation="http://www.htc.com/opensense feature.xsd " xmlns:opensense="http://www.htc.com/opensense"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <feature name="album_tab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plugin a tab into album</description>
+    </feature>
+    <feature name="activity_control">
+        <type>com.htc.opensense.plugin.CtrlPlugin</type>
+        <description>A control (list item) to display people status(activity)</description>
+    </feature>
+    <feature name="AddBrowseLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plugin a tab into People browse layer</description>
+    </feature>
+    <feature name="AddPeopleGroupLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plugin a tab into People group layer</description>
+    </feature>
+    <feature name="AddPeopleMyContactLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plugin a tab into People my contact card layer</description>
+    </feature>
+    <feature name="AddDetailLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plugin a tab into People detail layer</description>
+    </feature>
+    <feature name="AddContactActivity">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug a update ExteriorListAdapter into People detail
+			layer</description>
+    </feature>
+    <feature name="AddContactAction">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug an action ExteriorListAdapter into People detail layer</description>
+    </feature>
+    <feature name="AddMyContactAction">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug an action ExteriorListAdapter into People - My contact detail layer</description>
+    </feature>
+    <feature name="AddContactAlbum">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug an album ExteriorListAdapter into People detail
+			layer</description>
+    </feature>
+    <feature name="AddFriendStreamStatusesAdapter">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug a Status Updates ExteriorListAdapter into
+			FriendStream</description>
+    </feature>
+    <feature name="AddFriendStreamPhotosAdapter">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug a Photos/Videos ExteriorListAdapter into
+			FriendStream</description>
+    </feature>
+    <feature name="AddFriendStreamLinksAdapter">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug a Links ExteriorListAdapter into FriendStream</description>
+    </feature>
+    <feature name="AddFriendStreamAdapter">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug an ExteriorListAdapter into FriendStream</description>
+    </feature>
+    <feature name="AddAlbumOnlineAlbum">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>Plug an ExteriorListAdapter into Album</description>
+    </feature>
+    <feature name="AddMusicPluginServices">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plug a tab into Music Library</description>
+    </feature>
+    <feature name="AddMusicBrowseLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plug a tab into Music browse layer</description>
+    </feature>
+    <feature name="AddExtraMusicBrowseLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plug a tab into Music browse layer</description>
+    </feature>
+    <feature name="AddMusicSecondBrowseLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>Plug a tab into Music second browse layer</description>
+    </feature>
+    <feature name="htcconnectedservice">
+        <type>com.htc.cscore.plugin.CSSyncAdapter</type>
+        <description>Provides sync feature of HTC Connected service</description>
+    </feature>
+    <feature name="htcconnectedservicetester">
+        <type>com.htc.cscore.plugin.test.CSFakeCloudPlugin</type>
+        <description>Provides sync feature of HTC Connected service</description>
+    </feature>
+    <feature name="PenProperties">
+        <type>com.htc.painting.tool.pen.PenConfigAdapter</type>
+        <description>For third-party to add, replace, or remove pens</description>
+    </feature>
+    <feature name="TaskSource">
+        <type>com.htc.tasklib.source.ITaskSourceProxy</type>
+        <description>Account source for Task, it may be exchange, google task, or others.</description>
+    </feature>
+    <feature name="SupportGallery">
+        <type>com.htc.opensense.social.ISocialService</type>
+        <description>The service has this feature must support base functions
+			used in Gallery like getFriends , getAlbumsOf and getMedia. The
+			meta_data tag must defined the
+			account type of this service</description>
+    </feature>
+    <feature name="SupportContact">
+        <type>com.htc.opensense.social.ISocialService</type>
+        <description>The service has this feature must support base functions
+			used in Contact like getFriends. The meta_data tag must defined the
+			account type of this service</description>
+    </feature>
+    <feature name="FriendStreamGroupAdapter">
+        <type>com.htc.opensense.plugin.ExteriorListAdapter</type>
+        <description>supports group</description>
+    </feature>
+    <feature name="SupportStreamHost">
+        <type>	android.app.ActivityGroup</type>
+        <description>supports stream host</description>
+    </feature>
+    <feature name="FriendStreamTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>For third-party to add tab in friendstream</description>
+    </feature>
+    <feature name="AddMsgMainLayerTab">
+        <type>com.htc.opensense.plugin.TabPlugin</type>
+        <description>For third-party to plugin a tab to Message AP</description>
+    </feature>
+    <feature name="FriendStreamDataPlugin">
+        <type>com.htc.opensense.social.SocialPlugin</type>
+        <description>supports stream plugin</description>
+    </feature>
+</features>

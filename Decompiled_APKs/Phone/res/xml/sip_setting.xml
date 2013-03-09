@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/sip_accounts"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/sip_receive_calls" android:key="sip_receive_calls_key" android:summary="@string/sip_receive_calls_summary" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/sip_account_list" android:key="sip_account_list" />
+</com.htc.preference.HtcPreferenceScreen>

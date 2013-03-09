@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/layout_padding_left" android:paddingTop="@dimen/layout_padding_top" android:paddingRight="@dimen/layout_padding_right" android:paddingBottom="@dimen/layout_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="4.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="marquee" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/darklist_primary_m" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#ffc4c4c4" android:ellipsize="marquee" android:id="@id/text" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@com.htc:style/darklist_secondary_m" />
+                <TextView android:textColor="#ffc4c4c4" android:id="@id/time" android:paddingRight="14.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:singleLine="true" style="@com.htc:style/darklist_secondary_m" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/notification_end_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_vertical" android:id="@id/notification_end_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0px" android:minWidth="-1.0px" android:minHeight="-1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

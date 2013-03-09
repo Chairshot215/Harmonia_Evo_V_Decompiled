@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.finsky.layout.ScreenshotGallery android:background="@color/screenshot_background" android:layout_width="fill_parent" android:layout_height="@dimen/screenshots_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <com.google.android.finsky.layout.HorizontalStrip android:id="@id/strip" android:visibility="gone" android:fadingEdge="horizontal" android:fadingEdgeLength="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" finsky:childBackgroundDrawable="@null" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/page_loading_indicator" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/error_indicator" />
+</com.google.android.finsky.layout.ScreenshotGallery>

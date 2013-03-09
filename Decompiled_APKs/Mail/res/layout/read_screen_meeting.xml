@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/meeting_detail_layout" android:background="#fff2f2f2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/meetingLayout_date" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_label_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_margin_left" android:text="@string/mail_date" android:singleLine="false" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mail_date" android:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/meetingLayout_when" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/meetingLayout_date">
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_label_when" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searchMail_period_label_text" android:singleLine="false" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_when" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/searchMail_period_label_text" android:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/meetingLayout_start_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/edit_text_padding_compose_body_vertical" android:layout_below="@id/meetingLayout_when">
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_label_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_margin_left" android:text="@string/meeting_start_time" android:singleLine="false" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_start_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/download_html_img" android:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/meetingLayout_end_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/meetingLayout_start_time">
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_label_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_margin_left" android:text="@string/meeting_end_time" android:singleLine="false" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_end_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/meeting_location" android:singleLine="false" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/meetingLayout_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/meetingLayout_end_time">
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_label_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/global_margin_left" android:text="@string/meeting_location" android:singleLine="false" />
+        <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textColor="@com.htc:color/black" android:id="@id/meeting_location" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/edit_text_padding_compose_body_vertical" android:text="@string/meeting_location" android:singleLine="false" />
+    </LinearLayout>
+</RelativeLayout>

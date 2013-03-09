@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/screen_title" android:layout_marginTop="@dimen/border_margin" android:layout_marginBottom="@dimen/border_margin" style="@style/google_title_text" />
+    <ImageView android:id="@id/screen_title_divider" android:layout_marginBottom="@dimen/border_margin" style="@style/google_title_divider" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/almost_done_statement" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:layout_marginRight="@dimen/border_margin" android:layout_marginBottom="@dimen/row_spacing" style="@com.htc:style/darklist_primary_m" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/cmd_bar_1" />
+</LinearLayout>

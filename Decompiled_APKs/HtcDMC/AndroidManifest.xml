@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="305358183" android:versionName="3.5.2214162062.358183" package="com.htc.dmc"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <application android:label="@string/app_name" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/Theme.NoBackgroundNoTitle" android:name="HtcDMC" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.NoBackgroundNoTitle" android:name="HtcDMCAlbum" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/htc_settings" android:name=".DmcSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Transparent" android:name=".DmrListActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.dmc/dmr" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Transparent" android:name="QueueListActivity" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" />
+    </application>
+</manifest>

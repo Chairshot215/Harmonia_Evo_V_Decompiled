@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/settings_preferences" android:title="Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/preferences_update_names" android:title="Rom update check frequency" android:key="update_timing" android:entryValues="@array/preferences_update_values" />
+    <Preference android:title="Download Path" android:key="download_path" />
+</PreferenceScreen>

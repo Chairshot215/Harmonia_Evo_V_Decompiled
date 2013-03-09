@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="no_window_content_overlay">
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@*android:color/transparent</item>
+    </style>
+    <style name="HtcListStyle">
+        <item name="android:background">@color/list_view_item_color</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@color/white</item>
+    </style>
+    <style name="Widget.HtcListView" parent="@*android:style/Widget.AbsListView">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:background">@color/list_view_item_color</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_marginTop">-12.0px</item>
+        <item name="android:cacheColorHint">@*android:color/transparent</item>
+        <item name="android:divider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="common_black_button">
+        <item name="android:background">?com.htc:attr_common_b_button_small</item>
+        <item name="android:layout_marginTop">@dimen/app_info_command_button_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/app_info_command_button_margin_top_bottom</item>
+    </style>
+    <style name="black_shadow_top_left">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="list_text_style_primary">
+        <item name="android:textSize">@dimen/list_text_size_primary</item>
+        <item name="android:textColor">@color/list_text_primary</item>
+    </style>
+    <style name="list_text_style_secondary">
+        <item name="android:textSize">@dimen/list_text_size_secondary</item>
+        <item name="android:textColor">@color/list_text_secondary</item>
+    </style>
+    <style name="list_text_style_datetime">
+        <item name="android:textSize">@dimen/list_text_size_datetime</item>
+        <item name="android:textColor">@color/list_text_secondary</item>
+    </style>
+    <style name="Theme.Dialog" parent="@*android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

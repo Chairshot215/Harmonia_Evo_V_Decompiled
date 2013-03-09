@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/htc_list_item_separator" android:background="@drawable/section_divider_top" android:layout_width="wrap_content" android:layout_height="@dimen/htc_list_item_section_divider_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:id="@id/txt_1x1" android:paddingLeft="@dimen/htc_list_item_margin_left_add_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/info_primary_s" />
+    <TextView android:ellipsize="marquee" android:id="@id/txt_1x2" android:paddingRight="@dimen/htc_list_item_margin_left_add_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/info_primary_s" />
+    <ImageView android:id="@id/img_1x1" android:background="@drawable/refresh_anim" android:paddingRight="@dimen/htc_list_item_margin_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/txt_1x2" android:layout_centerVertical="true" />
+    <TextView android:ellipsize="marquee" android:id="@id/txt_1x3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" style="@style/info_primary_m" />
+</RelativeLayout>

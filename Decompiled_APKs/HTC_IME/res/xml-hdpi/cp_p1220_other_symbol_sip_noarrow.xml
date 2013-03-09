@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard width="117px" hgap="0px" vgap="0px" height="87px" keyTextSize="38px" popupTextSize="48px" accentPage="4" totalRows="4" keyTextYOffset="0" topLabelTextSize="15px" topLabelTextYOffset="0" keyboardBackground="@drawable/sapphire_port_background" keyboardPadding="0,7,7,5" functionKeyBackground="@drawable/qwerty_function_key" commonKeyBackground="@drawable/qwerty_common_key" pageKeyBackground="@drawable/sapphire_sym_page_toggle" spellKeyBackground="@drawable/sapphire_spell_mode">
+    <row>
+        <key codes="-52" labelsource="@string/alternates_for_cp_12key_sym_math" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x03B1,0x203B,0x00AE" label="α" />
+        <key codes="0x03B2,0x25CB,0x25CE" label="β" />
+        <key codes="0x03B3,0x25CF,0x2299" label="γ" />
+        <key codes="-12" label="1/4" textScale="80%p" function="true" height="176px" width="86px" hgap="2px" showPreview="false" rightEdge="true" />
+    </row>
+    <row>
+        <key codes="-61" labelsource="@string/alternates_for_cp_12key_sym_punctuation" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x03B4,0x25B3,0x2640" label="δ" />
+        <key codes="0x03B5,0x25B2,0x2642" label="ε" />
+        <key codes="0x03B8,0x2606" label="θ" />
+    </row>
+    <row>
+        <key codes="-53" label="表情" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x03BB,0x2605" label="λ" />
+        <key codes="0x03BC,0x25A1" label="μ" />
+        <key codes="0x03C0,0x25A0" label="π" />
+        <key codes="0x0008" function="true" width="88px" hgap="1px" rightEdge="true" repeatable="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" />
+    </row>
+    <row>
+        <key codes="-54" label="其他" sticky="true" function="true" width="87px" hgap="6px" leftEdge="true" />
+        <key codes="0x03C4,0x32A3" label="τ" />
+        <key codes="0x03C9,0x00A9" label="ω" />
+        <key codes="-11" labelsource="@string/alternates_for_cp_sym_back" width="117px" hgap="0px" function="true" textScale="90%p" />
+        <key codes="0x0a" function="true" rightEdge="true" width="88px" hgap="1px" icon="@drawable/key_icon_enter" iconPreview="@drawable/sapphire_icon_enter" />
+    </row>
+</keyboard>

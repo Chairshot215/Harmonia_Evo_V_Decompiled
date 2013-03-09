@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="17.0sp" android:ellipsize="marquee" android:gravity="bottom|right|center" android:id="@id/carrier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:singleLine="true" android:drawablePadding="4.0dip" />
+        <com.htc.lockscreen.app.widget.DigitalClock android:id="@id/time" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="55.0sp" android:ellipsize="none" android:id="@id/timeDisplay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:singleLine="true" android:shadowColor="#c0000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="17.0sp" android:ellipsize="none" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:shadowColor="#c0000000" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="3.0" android:layout_toRightOf="@id/timeDisplay" android:layout_alignBaseline="@id/timeDisplay" />
+        </com.htc.lockscreen.app.widget.DigitalClock>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/time" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="17.0sp" android:id="@id/statusSep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="17.0sp" android:id="@id/status2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="4.0dip" android:layout_alignParentTop="true" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/footer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+            <RelativeLayout android:gravity="left" android:id="@id/footerNormal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@com.htc:dimen/cmd_bar_btn_fontsize" android:id="@id/emergencyCallAlone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@com.htc:dimen/cmd_bar_btn_width" android:text="@*android:string/lockscreen_emergency_call" android:drawablePadding="8.0dip" style="@*android:style/Widget.Button.Transparent" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/footerForgotPattern" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@com.htc:dimen/cmd_bar_btn_fontsize" android:id="@id/forgotPattern" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@*android:style/Widget.Button.Transparent" />
+                <Button android:textSize="@com.htc:dimen/cmd_bar_btn_fontsize" android:id="@id/emergencyCallTogether" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@*android:string/lockscreen_emergency_call" android:drawablePadding="8.0dip" style="@*android:style/Widget.Button.Transparent" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <com.htc.lockscreen.view.HtcLockPatternView android:id="@id/lockPattern" style="@style/lock_pattern_style_small" />
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

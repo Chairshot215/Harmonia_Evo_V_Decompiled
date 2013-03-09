@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100345952" android:versionName="1.0.2214162526.345952" package="com.htc.htcsprintservice"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.htc.htcsprintservice" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="com.sprint.internal.permission.SYSTEMPROPERTIES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="HtcSprintService">
+        <service android:name=".HtcSprintService">
+            <intent-filter>
+                <action android:name="com.sprint.internal.htcsprintservice.IHtcSprintService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

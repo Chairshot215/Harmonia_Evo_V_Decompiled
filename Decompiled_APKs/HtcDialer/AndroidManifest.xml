@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.shared" android:versionCode="305363585" android:versionName="3.5.2214222838.363585" package="com.android.htcdialer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.providers.htccdma.Specific" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <supports-screens android:anyDensity="true" />
+    <application android:theme="@style/HTCSkin" android:label="@string/app_label" android:icon="@drawable/dialer" android:name="DialerApp" android:persistent="true" android:process="android.process.acore" android:taskAffinity="android.task.HtcDialer" android:configChanges="locale" android:description="@string/htc_corp" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@style/HTCSkin.Fake03" android:label="@string/dialerIconLabel" android:icon="@drawable/dialer" android:name="Dialer" android:persistent="true" android:taskAffinity="" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="DialerService" android:exported="true" android:configChanges="locale">
+            <intent-filter>
+                <action android:name="com.android.htcdialer.DialerService" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/HTCSkin.Fake01" android:name="SpeedDialListActivity" android:screenOrientation="nosensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data android:mimeType="vnd.android.cursor.dir/contact_speed_dial" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/HTCSkin.Fake03" android:name="com.android.htcdialer.EditSpeedDialEntryActivity" android:screenOrientation="nosensor" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/contact_speed_dial" />
+                <data android:mimeType="vnd.android.cursor.item/contact_dpeed_dial-location" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.htccontacts.action.EDIT_SPEED_DIAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/person" android:host="contacts" />
+                <data android:mimeType="vnd.android.cursor.item/contact" android:host="com.android.contacts" />
+                <data android:mimeType="vnd.android.cursor.item/raw_contact" android:host="com.android.contacts" />
+                <data android:mimeType="vnd.android.cursor.item/contacts_sim" android:host="com.android.htccontacts" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.htcdialer.carhome.carhome" android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.android.htcdialer/carhome_makecall" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.htcdialer.carhome.MakecallSelectPeopleActivity" android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.android.htcdialer/carhome_makecall" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/HTCSkin.Fake01" android:name="HtcIpDialActivity" android:screenOrientation="nosensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+                <action android:name="android.intent.action.DELETE" />
+                <data android:mimeType="vnd.android.cursor.dir/contact_ip_dial" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.HomeDialing" android:name="HomeDialingActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/HTCSkin.Fake01" android:name=".HtcCountryCodePicker" android:screenOrientation="nosensor" />
+        <receiver android:name=".customization.CustomizationReceiver">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE_FAKE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

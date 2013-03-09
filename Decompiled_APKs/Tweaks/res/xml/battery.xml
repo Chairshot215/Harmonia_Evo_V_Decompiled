@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/battery_options" android:key="battery_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/battery_options">
+        <com.htc.preference.HtcListPreference android:entries="@array/battery_text_display_entries" android:title="@string/battery_text_style" android:key="battery_text_style_pref" android:defaultValue="3" android:entryValues="@array/battery_text_display_values" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/show_miui_battery_bar" android:key="show_miui" />
+        <com.htc.preference.HtcSeekBarPreference android:max="40" android:title="@string/miui_battery_bar_height" android:key="barheight" android:defaultValue="1" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/battery_text_color_settings">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/automatically_color" android:key="battery_automatically_color_pref" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/static_battery_color" android:key="battery_color_pref" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_charging_color" android:key="battery_color_auto_charging" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_regular_color" android:key="battery_color_auto_regular" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_medium_level_color" android:key="battery_color_auto_medium" android:summary="@string/auto_medium_level_color_summary" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_low_level_color" android:key="battery_color_auto_low" android:summary="@string/auto_low_level_color_summary" android:defaultValue="@integer/COLOR_WHITE" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/miui_battery_bar_color_settings">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/automatically_color" android:key="batterybar_automatically_color_pref" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/static_battery_color" android:key="batterybar_color_pref" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_charging_color" android:key="batterybar_color_auto_charging" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_regular_color" android:key="batterybar_color_auto_regular" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_medium_level_color" android:key="batterybar_color_auto_medium" android:summary="@string/auto_medium_level_color_summary" android:defaultValue="@integer/COLOR_WHITE" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/auto_low_level_color" android:key="batterybar_color_auto_low" android:summary="@string/auto_low_level_color_summary" android:defaultValue="@integer/COLOR_WHITE" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

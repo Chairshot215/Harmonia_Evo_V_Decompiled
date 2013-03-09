@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/title_area" android:background="@drawable/title_bar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/application_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="5.0dip" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/application_report" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/app_name" android:singleLine="true" style="@com.htc:style/darklist_primary_l" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/application_name" android:layout_width="fill_parent" android:layout_height="24.0dip" android:singleLine="true" android:layout_below="@id/application_report" style="@com.htc:style/darklist_secondary_m" />
+    </RelativeLayout>
+</LinearLayout>

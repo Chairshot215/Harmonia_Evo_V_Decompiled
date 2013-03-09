@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_1" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/fill_4round" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0px" android:layout_weight="1.0">
+        <AutoCompleteTextView android:textSize="@dimen/input_default_m" android:id="@id/et_email" android:background="?attr_common_inputfield_light" android:paddingLeft="12.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="17.0px" android:layout_marginRight="14.0px" android:singleLine="true" />
+        <EditText android:textSize="@dimen/input_default_m" android:id="@id/et_password" android:background="?attr_common_inputfield_light" android:paddingLeft="12.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="10.0px" android:layout_marginRight="14.0px" android:hint="@string/tv_password" android:password="true" android:singleLine="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-6.0px">
+            <CheckBox android:textSize="@dimen/input_default_m" android:textColor="@color/primary_text_color" android:id="@id/show_password_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:text="@string/show_password" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <Button android:textColor="@color/dark_text_bright_focused" android:id="@id/bt_login" android:background="?attr_common_button_small" android:paddingLeft="15.0px" android:paddingTop="8.0px" android:paddingRight="15.0px" android:paddingBottom="8.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:layout_marginRight="14.0px" android:text="@string/bt_login_str" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <CheckBox android:textSize="@dimen/input_default_m" android:textColor="@color/primary_text_color" android:id="@id/usessl_checkbox" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:layout_marginTop="-24.0px" android:text="@string/use_ssl" android:layout_below="@id/show_password_checkbox" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

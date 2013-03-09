@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainview_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mainView_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/section_divider">
+        <RelativeLayout android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include android:id="@id/section_divider" layout="@layout/htc_section_divider" />
+    <include android:id="@id/trans_bottomround" layout="@layout/htc_trans_bottomround" />
+</RelativeLayout>

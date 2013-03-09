@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:paddingTop="@com.htc:dimen/alert_dialog_content_margin_top" android:paddingRight="@com.htc:dimen/alert_dialog_content_margin_right" android:paddingBottom="@com.htc:dimen/alert_dialog_content_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:id="@id/ipt_alertmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/PSMsg" style="@com.htc:style/list_primary_m" />
+            <CheckBox android:id="@id/ipt_chk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:button="?com.htc:attr_common_checkbox" android:text="@string/PSDontshow" style="@com.htc:style/list_primary_m" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/weather_setting" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/sync_when_open" android:key="sync_when_opened" android:summary="@string/summary_sync_when_open" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/auto_sync" android:key="auto_sync_enabled" android:summary="@string/auto_sync_disable" android:defaultValue="false" />
+    <com.htc.preference.HtcListPreference android:entries="@array/update_interval_list" android:title="@com.htc:string/common_string_update_schedule_title" android:key="check_frequency" android:dialogTitle="@com.htc:string/common_string_update_schedule_title" android:entryValues="@array/update_interval_values" />
+    <com.htc.preference.HtcListPreference android:entries="@array/temperature_unit_list" android:title="@string/tepmp_scale" android:key="temperature_unit" android:dialogTitle="@string/tepmp_scale" android:entryValues="@array/temperature_unit_values" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/setting_sound_effect" android:key="sound_effects_enabled" android:summary="@string/summary_sound_effect" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/setting_monitor_my_location" android:key="monitor_my_location_enabled" android:summary="@string/summary_monitor_my_location" android:defaultValue="false" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/setting_weather_alerts" android:key="weather_alerts_enabled" android:summary="@string/summary_weather_alerts" android:defaultValue="true" />
+</com.htc.preference.HtcPreferenceScreen>

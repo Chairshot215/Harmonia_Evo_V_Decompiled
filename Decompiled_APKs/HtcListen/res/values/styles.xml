@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SettingTheme" />
+    <style name="payment_list_view">
+        <item name="android:background">#fff2f2f2</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+    <style name="divider">
+        <item name="android:background">@com.htc:drawable/common_list_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2.0dip</item>
+    </style>
+    <style name="divider_padding">
+        <item name="android:background">@com.htc:drawable/common_list_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="card_form_padding">
+        <item name="android:textSize">@com.htc:dimen/list_primary_s</item>
+        <item name="android:textColor">@com.htc:color/primary_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_marginTop">5.0px</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+    </style>
+    <style name="auth.textview_account_info" parent="@style/auth">
+        <item name="android:textSize">@com.htc:dimen/list_primary_s</item>
+        <item name="android:textColor">@com.htc:color/primary_text_color</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_marginTop">5.0px</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+    </style>
+    <style name="sectionbottom">
+        <item name="android:background">@com.htc:drawable/trans_bottomround</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="edittext">
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/input_field_height</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_marginTop">@dimen/input_field_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+        <item name="android:layout_marginBottom">@dimen/input_field_margin_bottom</item>
+    </style>
+    <style name="auth.edittext" parent="@style/auth">
+        <item name="android:background">?com.htc:attr_common_inputfield_light</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/input_field_height</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginRight">@dimen/border_margin</item>
+        <item name="android:layout_marginBottom">10.0dip</item>
+    </style>
+    <style name="card_header_text_on_non_trans" parent="@com.htc:style/info_primary_s">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@com.htc:drawable/section_divider_top</item>
+        <item name="android:paddingLeft">@com.htc:dimen/htc_list_item_margin_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@com.htc:dimen/htc_list_item_section_divider_height</item>
+    </style>
+    <style name="section_body">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+    </style>
+    <style name="account_body" parent="@style/section_body">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="auth">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="auth.container" parent="@style/auth">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">0.0dip</item>
+    </style>
+    <style name="auth.checkbox" parent="@style/auth">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">@com.htc:color/primary_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/border_margin</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Theme.Launch" parent="@style/Theme">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="LableInfoStyle">
+        <item name="android:textSize">18.0px</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="HtcListStyle">
+        <item name="android:background">@com.htc:color/listview_app_background</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="HtcListBlackStyle">
+        <item name="android:background">@color/black</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@*android:drawable/divider_horizontal_dark_opaque</item>
+    </style>
+    <style name="Theme.Music" parent="@style/Theme">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Translucent" parent="@*android:style/Theme.Translucent">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@drawable/music_translucent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="@*android:style/Theme">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowBackground">@drawable/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Theme" />
+    <style name="Theme.Black" parent="@style/Theme">
+        <item name="android:windowBackground">@com.htc:drawable/common_glance_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.NoBackgroundNoTitle" parent="@style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MusicDefaultNoTitle" parent="@style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="com.htc:fakescreenStyle">style_04</item>
+    </style>
+    <style name="Theme.CommonBackgroundNoTitle" parent="@style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Dialog.Alert" parent="@*android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+    </style>
+</resources>

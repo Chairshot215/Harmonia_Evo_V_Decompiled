@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" android:versionCode="100313435" android:versionName="1.0.2212322644.313435" package="com.android.providers.drm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_accessDrm" android:name="android.permission.ACCESS_DRM" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_accessDrm" />
+    <permission android:label="@string/permlab_installDrm" android:name="android.permission.INSTALL_DRM" android:protectionLevel="normal" android:description="@string/permdesc_installDrm" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_WRITE_OMA_DRM" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application android:label="@string/app_label" android:process="android.process.media" android:allowBackup="false">
+        <provider android:name=".DrmProvider" android:multiprocess="false" android:authorities="drm" />
+        <receiver android:name=".DrmPushReceiver" android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+                <data android:mimeType="application/vnd.oma.drm.rights+xml" />
+                <data android:mimeType="application/vnd.oma.drm.rights+wbxml" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="DrmScannerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NETWORK_SET_TIME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.NETWORK_SET_TIMEZONE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.provider.drm.intent.action.ACTION_INTERNET_SET_TIMEZONE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.provider.drm.intent.action.ACTION_INTERNET_SET_TIME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.provider.drm.intent.action.ACTION_INSTALL_SINGLE_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".DrmIntentService" />
+    </application>
+</manifest>

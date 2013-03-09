@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@*android:id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pref_dialog_editphonenumber_textview_margin_top" android:layout_marginBottom="@dimen/pref_dialog_editphonenumber_textview_margin_bottom" />
+        <LinearLayout android:gravity="center" android:id="@id/number_field" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/pref_dialog_editphonenumber_margin_bottom" android:baselineAligned="false" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/edit_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/voicemail_setting_contact_picker_margin_right" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/select_contact" android:background="?com.htc:attr_common_b_button_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/voicemail_setting_contact_picker_margin_left" android:layout_marginRight="@dimen/voicemail_setting_contact_picker_margin_right" android:src="@com.htc:drawable/common_icon_action_people" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/time_field" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:layout_weight="1.0">
+            <TextView android:id="@id/time_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/CFNRy_timeout" style="@com.htc:style/list_primary_m" />
+            <com.htc.widget.HtcSpinner android:textColor="?android:textColorPrimaryInverse" android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:prompt="@string/CFNRy_timeout" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

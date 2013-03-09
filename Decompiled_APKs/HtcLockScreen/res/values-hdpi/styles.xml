@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layout_style_phone_keypad">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">0.0px</item>
+        <item name="android:paddingTop">5.0px</item>
+        <item name="android:paddingRight">0.0px</item>
+        <item name="android:paddingBottom">0.0px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">356.0px</item>
+    </style>
+    <style name="keyboard_size_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="lock_title_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/list_primary_m</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="lock_title_s_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/title_primary_s</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lock_footer_text_appearance">
+        <item name="android:textSize">@com.htc:dimen/text_size_secondary</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="lock_pattern_style_small">
+        <item name="android:layout_width">544.0px</item>
+        <item name="android:layout_height">544.0px</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+        <item name="com.htc:lock_btn_default">@drawable/btn_code_lock_default</item>
+        <item name="com.htc:lock_btn_touch">@drawable/btn_code_lock_touched</item>
+        <item name="com.htc:lock_circle_default">@drawable/pattern_btn_off</item>
+        <item name="com.htc:lock_circle_green">@drawable/pattern_btn_on</item>
+        <item name="com.htc:lock_circle_red">@drawable/pattern_btn_red</item>
+    </style>
+    <style name="lock_pattern_layout_style">
+        <item name="android:layout_width">544.0px</item>
+        <item name="android:layout_height">544.0px</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginBottom">8.0px</item>
+    </style>
+    <style name="lock_pattern_footbar_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:layout_marginLeft">0.0px</item>
+        <item name="android:layout_marginBottom">0.0px</item>
+    </style>
+</resources>

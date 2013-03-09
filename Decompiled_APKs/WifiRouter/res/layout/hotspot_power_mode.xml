@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" android:layout_marginRight="@com.htc:dimen/alert_dialog_content_margin_right" android:layout_marginBottom="@com.htc:dimen/alert_dialog_content_margin_bottom">
+        <TextView android:layout_gravity="left" android:id="@id/vzw_wifi_hotspot_power_mode_mesasge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/vzw_wifi_hotspot_power_mode_message" style="@com.htc:style/list_secondary_unread_xl" />
+        <TextView android:layout_gravity="left" android:id="@id/power_mode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" android:text="@string/vzw_wifi_hotspot_power_setting_title" style="@com.htc:style/list_secondary_unread_xl" />
+        <com.htc.widget.HtcSpinner android:entries="@array/power_mode_entries" android:id="@id/power_mode_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_s" />
+        <CheckBox android:textSize="@com.htc:dimen/list_secondary_read_l" android:textColor="@color/black" android:layout_gravity="left" android:id="@id/remind_dialog_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" android:text="@string/vzw_wifi_hotspot_remind_message" />
+    </LinearLayout>
+</ScrollView>

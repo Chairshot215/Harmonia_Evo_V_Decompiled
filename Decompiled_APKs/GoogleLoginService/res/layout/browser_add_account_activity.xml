@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/title_height">
+        <TextView android:textAppearance="@style/Title" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:minHeight="@dimen/title_height" android:text="@string/sign_in_with_google_account_short" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <View android:id="@id/top_divider" android:layout_height="3.0dip" android:layout_below="@id/title" style="@style/TopDivider" />
+    </LinearLayout>
+    <com.google.android.gsf.login.CustomWebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/imePreferences"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_category">
+        <CheckBoxPreference android:title="@string/prefTitle_profanityFilter" android:key="profanityFilter" android:summary="@string/prefSummary_ime_profanityFilter" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

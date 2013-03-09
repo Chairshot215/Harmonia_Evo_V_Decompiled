@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/setupWizardTitle" android:gravity="center" android:id="@id/close_keyboard_message_title_label" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="11.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@*android:drawable/bottom_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/close_emergency_dial" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/emergency_dial" android:drawableLeft="@drawable/ic_btn_emergency" android:drawablePadding="3.0dip" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/close_change_language" android:visibility="invisible" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/change_language" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

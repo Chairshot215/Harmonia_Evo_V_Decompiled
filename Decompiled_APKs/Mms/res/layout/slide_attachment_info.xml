@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="fill" android:orientation="horizontal" android:id="@id/slide_attachment_info" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/slideshow_attachment_panel_height" android:layout_marginLeft="@dimen/slideshow_attachment_offset" android:layout_marginTop="@dimen/slideshow_attachment_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background" android:background="?com.htc:attr_common_button" android:layout_width="fill_parent" android:layout_height="@dimen/slideshow_attachment_panel_height" />
+    <FrameLayout android:id="@id/image_panel" android:layout_width="@dimen/slideshow_attachment_width" android:layout_height="@dimen/slideshow_attachment_height" android:layout_marginLeft="@dimen/slideshow_attachment_margin_left" android:layout_marginTop="@dimen/slideshow_attachment_margin_top">
+        <ImageView android:layout_gravity="center" android:id="@id/info_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/info_panel" android:paddingLeft="@dimen/common_list_item_margin_large" android:paddingRight="@dimen/common_layout_margin_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/info_action_button" android:layout_toRightOf="@id/image_panel">
+        <TextView android:ellipsize="marquee" android:id="@id/info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+        <TextView android:ellipsize="marquee" android:id="@id/info_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_secondary_m" />
+    </LinearLayout>
+    <ImageView android:id="@id/info_action_button" android:padding="@dimen/more_button_padding_in_attachment_info" android:visibility="visible" android:layout_width="@dimen/more_button_width" android:layout_height="@dimen/more_button_height" android:layout_marginTop="@dimen/more_button_margin_attachment_top" android:layout_marginRight="@dimen/more_button_margin_attachment_right" android:src="@drawable/common_more_rest" android:layout_alignParentRight="true" />
+</RelativeLayout>

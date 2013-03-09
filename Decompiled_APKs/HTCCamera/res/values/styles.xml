@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BrowserTheme" parent="@*android:style/Theme.Black">
+        <item name="android:colorBackground">#ffffffff</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+    </style>
+    <style name="AutoCompleteTextView">
+        <item name="android:textAppearance">?android:textAppearanceLargeInverse</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:completionHintView">@*android:layout/simple_dropdown_item_1line</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@*android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@*android:drawable/editbox_dropdown_dark_frame</item>
+    </style>
+    <style name="cmd_bar_btn_text_1">
+        <item name="android:textSize">@dimen/cmd_bar_btn_fontsize</item>
+        <item name="android:textColor">@color/cmd_bar_btn_font_color</item>
+        <item name="android:shadowColor">@color/cmd_bar_btn_shadow_color</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_settings_title">
+        <item name="android:textSize">@dimen/settings_textSize_title</item>
+        <item name="android:textColor">@color/list_item_secondary_text</item>
+    </style>
+    <style name="text_style_settings_subtitle">
+        <item name="android:textSize">@dimen/settings_textSize_subtitle</item>
+        <item name="android:textColor">@color/list_item_secondary_text</item>
+    </style>
+    <style name="text_style_primary">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/list_item_primary_text</item>
+    </style>
+    <style name="text_style_secondary">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/list_item_secondary_text</item>
+    </style>
+    <style name="selfportrait_hint_style" parent="@com.htc:style/darklist_primary_m" />
+    <style name="image_adj_text_style" parent="@com.htc:style/darklist_secondary_m" />
+    <style name="image_adj_value_style" parent="@com.htc:style/darklist_secondary_s" />
+    <style name="mainbar_ds_style" parent="@com.htc:style/darklist_secondary_unread_s" />
+    <style name="_window">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Camera_window" parent="@style/_window">
+        <item name="android:windowBackground">@drawable/camera_patch</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="Camcorder_window" parent="@style/_window">
+        <item name="android:windowBackground">@drawable/camcorder_patch</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="mirror_window" parent="@style/_window">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+    <style name="text_style_remaining_counter_text">
+        <item name="android:textSize">48.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_self_timer_text">
+        <item name="android:textSize">48.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_main_bar_button_text">
+        <item name="android:textSize">22.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_effect_panel_button_text">
+        <item name="android:textSize">22.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_effect_item_name">
+        <item name="android:textSize">18.0px</item>
+        <item name="android:textColor">#ffd0d0d0</item>
+        <item name="android:shadowColor">@color/cmd_bar_btn_shadow_color</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="text_style_switch_item_text">
+        <item name="android:textSize">22.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+</resources>

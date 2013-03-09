@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="vertical" android:id="@id/setting_options" android:layout_width="wrap_content" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RadioButton android:id="@id/option_mode_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_view" />
+        <RadioButton android:id="@id/option_mode_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_edit" />
+        <RadioButton android:id="@id/option_mode_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode_cancel" />
+    </RadioGroup>
+    <Button android:id="@id/mode_select_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@*android:string/ok" />
+</LinearLayout>

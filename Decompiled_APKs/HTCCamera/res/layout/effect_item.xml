@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.rotate.RotateLinearLayout android:gravity="center" android:id="@id/effect_item_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/effect_item_width" android:layout_height="@dimen/effect_item_height">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/effect_item_padding_top" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/icon" android:background="@drawable/photo_preset_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <ImageView android:id="@id/icon_cover" android:layout_width="@dimen/effect_preset_cover_width" android:layout_height="@dimen/effect_preset_cover_height" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" style="@style/text_style_effect_item_name" />
+    </RelativeLayout>
+</com.android.camera.rotate.RotateLinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.htccontacts.ui.widget.ContactEditorView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/edit_read_only" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/edit_read_only" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+        <include android:id="@id/separator_info" layout="@com.htc:layout/htc_list_item_separator" />
+        <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sect_others_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/sect_general_container" android:layout_alignWithParentIfMissing="true">
+        <include android:id="@id/separator_others" layout="@com.htc:layout/htc_list_item_separator" />
+        <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_others" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+            <include android:id="@id/add_more" layout="@layout/item_static_popup" />
+        </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="@dimen/editEntry_sect_button_layout_height" />
+    </LinearLayout>
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/kind_title" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/head_secondary" android:background="@color/sect_secondary" android:paddingLeft="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:text="@string/edit_secondary_collapse" android:singleLine="true" android:drawablePadding="10.0dip" android:layout_below="@id/sect_others_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sect_secondary" android:background="@color/sect_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/head_secondary" />
+</com.android.htccontacts.ui.widget.ContactEditorView>

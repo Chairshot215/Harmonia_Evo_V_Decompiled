@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/header_easc_home" />
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="false" android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TextView android:gravity="center_vertical" android:id="@id/sync_error_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sync_failed" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/android_footer_bar_2btn" />
+</LinearLayout>

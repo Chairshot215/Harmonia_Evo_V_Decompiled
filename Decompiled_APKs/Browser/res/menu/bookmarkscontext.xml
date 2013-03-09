@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/BOOKMARK_CONTEXT_MENU" android:visible="false">
+        <item android:id="@id/open_context_menu_id" android:title="@string/open_bookmark" />
+        <item android:id="@id/new_window_context_menu_id" android:title="@string/contextmenu_openlink_newwindow" />
+        <item android:id="@id/edit_context_menu_id" android:title="@string/edit_bookmark" />
+        <item android:id="@id/shortcut_context_menu_id" android:title="@string/create_shortcut_bookmark" />
+        <item android:id="@id/share_link_context_menu_id" android:title="@string/contextmenu_sharelink" />
+        <item android:id="@id/copy_url_context_menu_id" android:title="@string/contextmenu_copylink" />
+        <item android:id="@id/delete_context_menu_id" android:title="@string/remove_bookmark" />
+        <item android:id="@id/homepage_context_menu_id" android:title="@string/set_as_homepage" />
+    </group>
+    <group android:id="@id/FOLDER_CONTEXT_MENU" android:visible="false">
+        <item android:id="@id/new_window_context_menu_id" android:title="@string/open_all_in_new_window" />
+        <item android:id="@id/edit_context_menu_id" android:title="@string/edit_folder" />
+        <item android:id="@id/delete_context_menu_id" android:title="@string/delete_folder" />
+    </group>
+</menu>

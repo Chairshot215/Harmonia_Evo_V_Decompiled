@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/picasa_album_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:hint="@string/album_title_hint" android:singleLine="true" android:capitalize="sentences" />
+            <RadioGroup android:id="@id/picasa_access" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <RadioButton android:id="@id/picasa_public_access" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/public_album" />
+                <RadioButton android:id="@id/picasa_private_access" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unlisted_album" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="@*android:drawable/bottom_bar" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <Button android:id="@id/picasa_create" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create" android:layout_weight="1.0" />
+        <Button android:id="@id/picasa_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

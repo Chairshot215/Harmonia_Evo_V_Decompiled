@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/glider" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/glance_background" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/rotate_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_bottom" android:layout_width="fill_parent" android:layout_height="306.0px" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/play_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/song_panel" android:background="@drawable/music_p_info_background" android:layout_width="fill_parent" android:layout_height="85.0px">
+                    <LinearLayout android:orientation="vertical" android:id="@id/song_info" android:layout_width="288.0px" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_weight="1.0">
+                        <TextView android:id="@id/track_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0px" android:singleLine="true" style="@com.htc:style/darklist_primary_l" />
+                        <TextView android:id="@id/album_artist_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0px" android:singleLine="true" style="@com.htc:style/darklist_secondary_m" />
+                    </LinearLayout>
+                    <Button android:layout_gravity="right|center" android:id="@id/track_option" android:layout_width="50.0px" android:layout_height="50.0px" android:layout_marginRight="14.0px" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress_layout" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="129.0px">
+                    <RelativeLayout android:layout_width="70.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:id="@id/currenttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@com.htc:style/darklist_secondary_xs" />
+                    </RelativeLayout>
+                    <com.htc.widget.HtcSeekBar android:id="@id/seek" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="375.0px" android:layout_height="36.0px" />
+                    <RelativeLayout android:layout_width="70.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:id="@id/totaltime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" style="@com.htc:style/darklist_secondary_xs" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/control_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="194.0px">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/shuffle" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.htc.widget.RepeatingImageButton android:id="@id/prev" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageButton android:id="@id/play" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <com.htc.widget.RepeatingImageButton android:id="@id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageButton android:id="@id/repeat" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <ViewStub android:id="@id/hit_layout_stub_import" android:layout="@layout/hit_panel" android:inflatedId="@id/hit_layout_import" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <include layout="@layout/player_title" />
+    </RelativeLayout>
+</RelativeLayout>

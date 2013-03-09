@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_1" />
+    <ScrollView android:orientation="vertical" android:id="@id/scrollview" android:background="@com.htc:drawable/fill_topround" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_margin_to_title" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top|left|center" android:orientation="vertical" android:id="@id/mainScreen" android:padding="@dimen/border_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <AutoCompleteTextView android:id="@id/edt_email_addr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/border_margin" android:hint="@string/edtxt_email_hint" style="@style/auto_complete_text" />
+            <EditText android:id="@id/edt_phonenumber_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/border_margin" android:hint="@string/edtxt_phonenumber_hint" style="@style/default_input" />
+            <CheckBox android:id="@id/chkbx_marketing" android:layout_width="wrap_content" android:layout_height="@dimen/small_button_height" android:layout_marginLeft="@dimen/boarder_padding_medium" android:layout_marginRight="@dimen/boarder_padding_medium" android:text="@string/title_newsletter" style="@style/check_box" />
+            <TextView android:textColor="@color/secondary_text_color" android:id="@id/tv_marketing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/boarder_padding_news" android:layout_marginRight="@dimen/boarder_padding_medium" android:text="@string/newsletter_detail" style="@com.htc:style/list_primary_s" />
+            <Button android:id="@id/bt_email_phone" android:visibility="gone" android:text="@string/bt_cs_next" style="@style/small_button" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/bottombar" android:background="@com.htc:drawable/trans_bottomround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/cmd_bar_2" />
+</LinearLayout>

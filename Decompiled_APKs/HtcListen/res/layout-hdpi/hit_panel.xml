@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/hint_layout_land" android:paddingBottom="50.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@com.htc:dimen/title_primary_xs" android:textColor="@color/textColorPlaybackPrimary" android:layout_gravity="left" android:id="@id/hint_toast_library" android:background="@drawable/music_tooltips_left" android:paddingLeft="35.0px" android:paddingTop="20.0px" android:layout_width="165.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="@com.htc:dimen/title_primary_xs" android:textColor="@color/textColorPlaybackPrimary" android:layout_gravity="right" android:id="@id/hint_toast_playlisy" android:background="@drawable/music_tooltips_right" android:paddingLeft="35.0px" android:paddingTop="20.0px" android:layout_width="165.0dip" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MessageListItem android:orientation="horizontal" android:id="@id/msg_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/line_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/text_margin_left_no_photo" android:layout_centerVertical="true" style="@com.htc:style/list_primary_m" />
+    <com.htc.widget.HtcListItemQuickContactBadge android:id="@id/photo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:gravity="right|center" android:id="@id/check" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@com.htc:dimen/htc_list_item_text_right_margin" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/listitembody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@com.htc:dimen/htc_list_item_text_right_margin" android:layout_weight="1.0" android:layout_toLeftOf="@id/check" android:layout_toRightOf="@id/photo_icon">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/message_view_text_marginTop">
+            <TextView android:textColorLink="@com.htc:color/link_text" android:autoLink="all" android:linksClickable="false" android:id="@id/text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+            <ImageView android:layout_gravity="top" android:id="@id/right_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="center" />
+            <ImageView android:layout_gravity="top" android:id="@id/second_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="centerInside" android:layout_toLeftOf="@id/right_status_indicator" />
+            <ImageView android:layout_gravity="top" android:id="@id/third_status_indicator" android:visibility="gone" android:layout_width="@dimen/common_list_item_indicator_width" android:layout_height="@dimen/common_list_item_indicator_width" android:scaleType="center" android:layout_toLeftOf="@id/second_status_indicator" />
+        </LinearLayout>
+        <ViewStub android:id="@id/mms_layout_view_stub" android:layout="@layout/mms_layout_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/message_view_viewstub_marginBottom" android:layout_marginBottom="@dimen/message_view_viewstub_marginBottom" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/radioline_status_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <TextView android:id="@id/sent_time_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/htc_list_item_bottom_body_text_bottom_margin" style="@com.htc:style/list_secondary_m" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.mms.ui.MessageListItem>

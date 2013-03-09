@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="206253737" android:versionName="2.6.2211202266.253737" package="com.htc.csengine"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_csengine" android:name="com.htc.csengine.readwrite.database" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_csengine" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.htc.csengine.readwrite.database" />
+    <uses-permission android:name="com.htc.cs.readwrite.database" />
+    <application android:label="CS Engine" android:allowClearUserData="false" android:hardwareAccelerated="false">
+        <service android:name=".service.CSEngineService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.csengine.csEngineService.start" />
+                <action android:name="com.htc.csengine.csEngineService.forcestart" />
+                <action android:name="com.htc.csengine.getConfig" />
+            </intent-filter>
+        </service>
+        <provider android:name=".provider.CSEngineProvider" android:readPermission="com.htc.csengine.readwrite.database" android:writePermission="com.htc.csengine.readwrite.database" android:multiprocess="true" android:authorities="com.htc.csengine.csprovider" android:syncable="true" />
+        <receiver android:name=".receiver.CSEngineReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.csengine.startservice" />
+                <action android:name="android.server.checkin.FOTA_INSTALL_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name=".activity.main">
+            <intent-filter />
+        </activity>
+    </application>
+</manifest>

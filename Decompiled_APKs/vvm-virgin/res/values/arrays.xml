@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nab_status_check_freq_dialog_items">
+        <item>3 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+        <item>2 days</item>
+    </string-array>
+    <string-array name="preference_notifications_entries">
+        <item>Immediate</item>
+        <item>After both and text transcriptions are available</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>Immediate</item>
+        <item>Both once</item>
+    </string-array>
+    <string-array name="preference_sortorder_entries">
+        <item>Newest to oldest</item>
+        <item>Oldest to Newest</item>
+        <item>Sender</item>
+        <item>Unheard vs heard</item>
+    </string-array>
+    <integer-array name="nab_status_check_freq_dialog_ms_values">
+        <item>10800</item>
+        <item>43200</item>
+        <item>86400</item>
+        <item>172800</item>
+    </integer-array>
+    <string-array name="repeat_notification_entries">
+        <item>No repeat</item>
+        <item>Repeat once</item>
+        <item>Every 5 minutes</item>
+        <item>Every 10 minutes</item>
+        <item>Every 15 minutes</item>
+        <item>Every 30 minutes</item>
+        <item>Every 60 minutes</item>
+    </string-array>
+    <string-array name="repeat_notification_entryvalues">
+        <item>-1</item>
+        <item>1</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+    </string-array>
+    <string-array name="repeat_notification_summary">
+        <item>Notification will not repeat</item>
+        <item>Notification will repeat once</item>
+        <item>Notification will repeat every 5 minutes</item>
+        <item>Notification will repeat every 10 minutes</item>
+        <item>Notification will repeat every 15 minutes</item>
+        <item>Notification will repeat every 30 minutes</item>
+        <item>Notification will repeat every 60 minutes</item>
+    </string-array>
+    <string-array name="subscription_choice_headers">
+        <item>Monthly subscription</item>
+        <item>24 Hour Day Pass</item>
+    </string-array>
+    <integer-array name="subscription_choice_header_values">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="subscription_choice_descriptions">
+        <item>Subscribe and have all future voicemail messages transcribed for $1.99/mo.</item>
+        <item>Subscribe for a 24 hour period and have all future voicemail messages transcribed for 0.99.</item>
+    </string-array>
+    <string-array name="notification_preference_titles">
+        <item>Immediate notification</item>
+        <item>Audio and Text Available</item>
+    </string-array>
+    <integer-array name="notification_preference_title_values">
+        <item>1</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="notification_preference_descriptions">
+        <item>Notify me as soon as the audio message is received</item>
+        <item>Notify me when both audio and text transcription are available</item>
+    </string-array>
+    <string-array name="compose_message_entries">
+        <item>Audio message</item>
+        <item>Transcribe to SMS</item>
+        <item>Transcribe to Email</item>
+        <item>Transcribe to Facebook</item>
+        <item>Transcribe to Twitter</item>
+    </string-array>
+    <string-array name="forward_message_entries">
+        <item>To Facebook wall</item>
+        <item>To Twitter</item>
+        <item>To contact</item>
+        <item>Via email</item>
+        <item>Via SMS</item>
+    </string-array>
+    <string-array name="forward_message_entries_with_dsiabled_voicetox">
+        <item>To contact</item>
+        <item>Via email</item>
+        <item>Via SMS</item>
+    </string-array>
+    <string-array name="preference_inbox_sortorder_entries">
+        <item>@string/sort_order_newest_first</item>
+        <item>@string/sort_order_oldest_first</item>
+        <item>@string/sort_order_unread_first</item>
+        <item>@string/sort_order_read_first</item>
+        <item>@string/sort_order_alphabetical</item>
+    </string-array>
+    <string-array name="preference_inbox_sortorder_values">
+        <item>@string/id_sort_order_newest_first</item>
+        <item>@string/id_sort_order_oldest_first</item>
+        <item>@string/id_sort_order_unread_first</item>
+        <item>@string/id_sort_order_read_first</item>
+        <item>@string/id_sort_order_alphabetical</item>
+    </string-array>
+    <string-array name="vnotes_directory_name_list">
+        <item>@string/id_directory_name_inbox</item>
+        <item>@string/id_directory_name_outbox</item>
+        <item>@string/id_directory_name_deleted</item>
+        <item>@string/id_directory_name_saved</item>
+    </string-array>
+    <array name="vnotes_directory_id_list">
+        <item>@id/id_directory_inbox</item>
+        <item>@id/id_directory_outbox</item>
+        <item>@id/id_directory_deleted</item>
+        <item>@id/id_directory_saved</item>
+    </array>
+    <string-array name="preference_transcription_font_entries">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="preference_transcription_font_values">
+        <item>SMALLEST</item>
+        <item>SMALLER</item>
+        <item>NORMAL</item>
+        <item>LARGER</item>
+        <item>LARGEST</item>
+    </string-array>
+</resources>

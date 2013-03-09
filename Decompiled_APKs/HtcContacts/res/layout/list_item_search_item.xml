@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@drawable/list_background_grey_top" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height_1">
+        <com.htc.widget.SearchBoxView android:id="@id/search_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.0px" android:layout_weight="1.0" />
+        <ViewStub android:id="@id/search_box_button" android:layout="@layout/search_box_button_layout" android:inflatedId="@id/search_box_button_instance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.0px" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/search_go_btn" android:background="?com.htc:attr_common_button_xsmall" android:layout_width="@dimen/information_icon_border_dimen" android:layout_height="@dimen/information_icon_border_dimen" android:layout_marginRight="@dimen/dialer_action_icon_marginRight" android:src="@drawable/common_detail_icon_voice" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <ImageView android:id="@com.htc:id/htc_list_item_top_round" android:background="@com.htc:drawable/trans_topround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    <ImageView android:id="@com.htc:id/htc_list_item_bottom_round" android:background="@com.htc:drawable/trans_bottomround" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height" android:layout_alignParentBottom="true" />
+</FrameLayout>

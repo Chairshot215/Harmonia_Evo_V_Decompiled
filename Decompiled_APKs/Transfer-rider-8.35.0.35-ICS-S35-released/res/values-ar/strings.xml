@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UI_ALERT_MSG_CLEARING_DATA">جاري مسح البيانات...</string>
+    <string name="UI_ALERT_MSG_CLOSE_BT">جاري إيقاف تشغيل Bluetooth...</string>
+    <string name="UI_ALERT_MSG_UNPAIR">"ربما تحتاج إلى إلغاء اقتران هذا الهاتف على %s. 
+اضغط موافق للخروج والمحاولة مرة أخرى لاحقاً"</string>
+    <string name="UI_MSGBOX_BTN_BACK">السابق</string>
+    <string name="UI_MSGBOX_BTN_CANCEL">إلغاء</string>
+    <string name="UI_MSGBOX_BTN_NO">لا</string>
+    <string name="UI_MSGBOX_BTN_OK">موافق</string>
+    <string name="UI_MSGBOX_BTN_QUIT">خروج</string>
+    <string name="UI_MSGBOX_BTN_RESUME">استئناف</string>
+    <string name="UI_MSGBOX_BTN_SETTING">إعداد</string>
+    <string name="UI_MSGBOX_BTN_YES">نعم</string>
+    <string name="UI_MSGBOX_CANNOT_TURNON_BT_V2">يتعذر على برنامج نقل البيانات تشغيل Bluetooth, الرجاء التحقق من إعدادات الشبكة اللاسلكية.</string>
+    <string name="UI_MSGBOX_CONN_FAILED">اضغط \"استئناف\" للمحاولة مرة أخرى أو اضغط \"إلغاء\" للخروج.</string>
+    <string name="UI_MSGBOX_CONTENT_TITLE">بيانات مكررة</string>
+    <string name="UI_MSGBOX_RETRY_CONTENT">لقد قمت بالفعل باستيراد %1$s من %2$s. قد يتم إنشاء سجلات مكررة.</string>
+    <string name="UI_MSGBOX_SET_OLDPHONE_VISIBLE">إذا لم تجد هاتفك القديم, الرجاء التحقق من أنه قد تم تعيين الوضع \"يمكن اكتشافه\".</string>
+    <string name="UI_MSGBOX_TEXT_ALL_IMPORTED">تم استيراد كل أنواع البيانات المتوفرة على %s.</string>
+    <string name="UI_MSGBOX_TEXT_BLACKBERRY_REMOVE_PWD">"للسماح بنقل البيانات, الرجاء تعطيل التشفير/كلمة المرور على جهاز blackberry والضغط على \"موافق\".
+المسار النموذجي هو خيارات>خيارات الأمان>التشفير/كلمة المرور"</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_PAIR">هل تريد بالتأكيد الخروج؟</string>
+    <string name="UI_MSGBOX_TEXT_CANCEL_RW">سيتم مسح البيانات التي تم استيرادها من %s. هل تريد بالتأكيد الخروج؟</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA">للاستيراد من %s مرة أخرى, الرجاء تحديد البيانات ومسحها من هذا الجهاز أولاً.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM">سيتم حذف كل أنواع البيانات المحددة من الهاتف, ما عدا جهات اتصال Gmail و Exchange</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_CONFIRM_TABLET">سيتم حذف كل أنواع البيانات المحددة من الكمبيوتر اللوحي، ما عدا جهات اتصال Gmail وExchange.</string>
+    <string name="UI_MSGBOX_TEXT_CLEAR_DATA_TABLET">للاستيراد من %s مرة أخرى، الرجاء تحديد البيانات ومسحها من الكمبيوتر اللوحي أولاً.</string>
+    <string name="UI_MSGBOX_TEXT_PAIRING_FAILED">ربما تحتاج إلى إعادة تشغيل %s والمحاولة مرة أخرى لاحقاً.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART">ربما تحتاج إلى إعادة تشغيل هذا الهاتف وهاتفك القديم, والمحاولة مرة أخرى لاحقاً.</string>
+    <string name="UI_MSGBOX_TEXT_RESTART_TABLET">ربما تحتاج إلى إعادة تشغيل الكمبيوتر اللوحي وهاتفك القديم، والمحاولة مرة أخرى لاحقًا.</string>
+    <string name="UI_MSGBOX_TITLE_BLACKBERRY_REMOVE_PWD">فشل النقل</string>
+    <string name="UI_MSGBOX_TITLE_CONN_FAILED">فشل الاتصال</string>
+    <string name="UI_MSGBOX_TITLE_DELETE">حذف</string>
+    <string name="UI_MSGBOX_TITLE_PAIRING_FAILED">فشل الاقتران</string>
+    <string name="UI_MSGBOX_TITLE_QUERY_FAILED">فشل الاستعلام</string>
+    <string name="ANDROID_TIPS_1">"1. اضغط \"menu\" > \"الإعدادات\" > \"الشبكة اللاسلكية والشبكات\"
+
+2. حدد \"Bluetooth\"
+
+3. اضغط \"إعدادات Bluetooth \" 
+
+4. حدد \"يمكن اكتشافه\""</string>
+    <string name="ANDROID_TIPS_2">"1. انتقل إلى شاشة \"التطبيقات\" > \"إعدادات\" > \"الشبكة اللاسلكية والشبكات\"
+
+2. حدد \"إعدادات بلوتوث\" 
+
+3. حدد خيار \"بلوتوث\"
+
+4. حدد خيار \"مرئي\""</string>
+    <string name="APP_TIPS_1">"1. اضغط \"الزر الرئيسي\" > \"إعدادات\" > \"عام\".
+
+2. حدد \"Bluetooth\".
+
+3. قم بتفعيل Bluetooth.
+
+4. ابقى في شاشة إعدادات Bluetooth ."</string>
+    <string name="HTC_TIPS_1">"1. انتقل إلى الشاشة \"الرئيسية\".
+
+2. اضغط \"ابدأ\" > \"إعدادات\" > \"اتصالات\".
+
+3. حدد Bluetooth.
+
+4. حدد علامة التبويب \"النمط\".
+
+5. قم بتفعيل Bluetooth.
+
+6. حدد \"اجعل هذا الجهاز مرئي للأجهزة الأخرى\"."</string>
+    <string name="HTC_TIPS_2">"1. انتقل إلى الشاشة \"الرئيسية\".
+
+2. اضغط \"ابدأ\" > \"إعدادات\" > \"اتصالات\". > \"Bluetooth\".
+
+3. حدد Bluetooth > قائمة.
+
+4. قم بتفعيل Bluetooth.
+
+5. قم بتعيين \"الرؤية\" كـ \"فعالة\"."</string>
+    <string name="HTC_TIPS_3">"1. انتقل إلى الشاشة \"الرئيسية\".
+
+2. اضغط \"ابدأ\" > \"إعدادات\" > \"اتصالات\". > \"Bluetooth\".
+
+3. حدد Bluetooth > قائمة.
+
+4. قم بتفعيل Bluetooth.
+
+5. قم بتعيين \"الرؤية\" كـ \"فعالة\"."</string>
+    <string name="HTC_TIPS_4">"1. انتقل إلى الشاشة \"الرئيسية\".
+
+2. اضغط \"ابدأ\" > \"إعدادات\" > \"عناصر التحكم اللاسلكية\".
+
+3. قم بتفعيل Bluetooth.
+
+4. اضغط الجزء الأيسر من الزر Bluetooth.
+
+5. اضغط \"متقدم\".
+
+6. حدد علامة التبويب \"النمط\".
+
+7. حدد\"اجعل هذا الجهاز مرئي للأجهزة الأخرى\"."</string>
+    <string name="HTC_TIPS_5">"1. اضغط \"ابدأ\" > \"أدوات\" > \"إعدادات\"
+
+2. اضغط \"عناصر التحكم اللاسلكية\" > \"Bluetooth\"
+
+3. اضغط \"متقدم\"
+
+4. حدد علامة التبويب \"النمط\"
+
+5. حدد \"تشغيل Bluetooth\" و \"اجعل هذا الجهاز مرئي للأجهزة الأخرى\""</string>
+    <string name="HTC_TIPS_6">"1. اضغط \"ابدأ\" > \"إعدادات\" > \"القائمة\" > \"كافة الإعدادات\"
+
+2. حدد \"Bluetooth\" وقم بتفعيله
+
+3. احدد علامة التبويب \"الترس\"
+
+4. حدد رمز التليسكوب > \"مرئي دائماً\""</string>
+    <string name="HTC_TIPS_7">"1. من شاشة \"البدء\"، اضغط على \"→\".
+
+2. اضغط على \"إعدادات\" > \"بلوتوث\".
+
+3. قم بتشغيل بلوتوث."</string>
+    <string name="KYO_TIPS_1">"1. اضغط \"القائمة\" > \"إعدادات\" > \"Bluetooth\"
+
+2. حدد تفعيل/إلغاء التفعيل \"في مرئي \"
+
+3. اضغط \"إعدادات\" > \"مدة الرؤية\" > \"دائماً\"
+
+4. حدد مصادقة BEEX \"معطلة\""</string>
+    <string name="LGG_TIPS_1">"%s1. اضغط \"القائمة\" > \"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+4. اضغط \"إعدادات\".
+
+5. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\"."</string>
+    <string name="LGG_TIPS_2">"%s1. اضغط \"القائمة\" > \"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+4. حدد \"إعدادات Bluetooth\".
+
+5. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار\"."</string>
+    <string name="LGG_TIPS_3">"%s1. اضغط \"القائمة\" > \"إعدادات\" > \"Bluetooth\".
+
+2. قم بتفعيل Bluetooth.
+
+3. قم بتعيين \"الرؤية\" كـ \"مرئي دائماً\"."</string>
+    <string name="LGG_TIPS_4">"%s1. اضغط \"القائمة\" > ثم اضغط علامة الجدولة الأخيرة.
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+4. اضغط \"إعدادات \".
+
+5. قم بتعيين \"رؤية الجهاز\" كـ \"مرئي\"."</string>
+    <string name="LGG_TIPS_5">"1. اضغط القائمة > \"إعدادات وأدوات \" > \"قائمة Bluetooth\".
+
+2. قم بتعيين Bluetooth كـ \"فعال\".
+
+3. حدد \"خيارات\" > \"وضع الاكتشاف\" > \"فعال\"."</string>
+    <string name="MOT_TIPS_1">"%s1. اضغط \"القائمة\" > \"إعدادات/أدوات\" > \"إعدادات\"..
+
+2. حدد \"Bluetooth\".
+
+3. اضغط \"طاقة Bluetooth\".
+
+4. قم بتفعيله.
+
+5. اضغط \"تعيينه قابل للاكتشاف\".
+
+6. حدد \"دائماً\"."</string>
+    <string name="MOT_TIPS_10">"1. اضغط القائمة>\"Bluetooth\".
+
+2. اضغط \"إعداد\".
+
+3. قم بتعيين الطاقة كـ \"فعال\"
+
+4. اضغط \"السابق\"
+
+5. حدد العثور على الجهاز >قابل للاكتشاف:3 دقائق"</string>
+    <string name="MOT_TIPS_11">"%s1. اضغط القائمة > \"إعدادات\" > \"اتصال\".
+
+2. اضغط \"اتصال Bluetooth\".
+
+3. اضغط \"إعداد\".
+
+4. قم بتعيين \"تغيير الطاقة\" كفعال.
+
+5. اضغط \"السابق\".
+
+6.حدد \"العثور على الجهاز\" >قابل للاكتشاف:3 دقائق\"."</string>
+    <string name="MOT_TIPS_12">"%s1.اضغط القائمة >\"إعدادات\"
+
+2.اضغط \"إتصالات\"
+
+3.اضغط \"Bluetooth\"
+
+4.اضغط \"خيارات\" > \"إدارة\">\"إعداد Bluetooth\"
+
+5.اضغط طاقة Bluetooth كـ \"فعال\"
+
+6.اضغط \"السابق\"
+
+7.اضغط \"خيارات\" قابل للاكتشاف: فعال لمدة 3 دقائق"</string>
+    <string name="MOT_TIPS_2">"%s1. اضغط \"القائمة\" > \"الاتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتفعيل Bluetooth ."</string>
+    <string name="MOT_TIPS_3">"%s1. اضغط \"القائمة الرئيسية\" >\"إعدادات\".
+
+2. اضغط \"اتصال Bluetooth\".
+
+3. اضغط \"إعداد\".
+
+4. قم بتعيين \"تغيير الطاقة\" كفعال.
+
+5. اضغط \"السابق\".
+
+6. حدد \"العثور على الجهاز\" >قابل للاكتشاف:3 دقائق\"."</string>
+    <string name="MOT_TIPS_4">"%s1. اضغط \"القائمة الرئيسية\" > \"إعدادات وأدوات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"إعداد\" كـ \"فعال\".
+
+4. قم بتعيين \"وضع الاكتشاف\" كـ \"فعال\".
+
+5. حدد قابل للاكتشاف في 3 دقائق."</string>
+    <string name="MOT_TIPS_5">"1. اضغط \"القائمة\" > \"إعدادات وأدوات\".
+
+2. اضغط \"قائمة Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+4. اضغط \"خيارات\".
+
+5. قم بتعيين \"وضع الاكتشاف\" كـ \"فعال\"."</string>
+    <string name="MOT_TIPS_6">"1. اضغط \"القائمة\" > \"أدوات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين الرؤية كـ \"مرئي دائماً\"."</string>
+    <string name="MOT_TIPS_7">"1. اضغط القائمة >\"إعدادات وأدوات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كـ \"فعال\".
+
+4. اضغط\"إعدادات\"
+
+5. قم بتعيين > وضع الاكتشاف كـ \"فعال\""</string>
+    <string name="MOT_TIPS_8">"1. اضغط القائمة >\"إعدادات وأدوات\".
+
+2. اضغط \"قائمة Bluetooth\".
+
+3. قم بتعيين Bluetooth كـ \"فعال\".
+
+4. اضغط\"إعدادات\"
+
+5. قم بتعيين > وضع الاكتشاف كـ \"فعال\""</string>
+    <string name="MOT_TIPS_9">"1. اضغط القائمة >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"اتصال Bluetooth\".
+
+3. اضغط \"إعداد\".
+
+4. قم بتعيين \"تغيير الطاقة\" كـفعال.
+
+5. اضغط \"السابق\".
+
+6.حدد \"العثور على الجهاز\" >قابل للاكتشاف:3 دقائق\"."</string>
+    <string name="NOK_TIPS_1">"1. اضغط \"القائمة\" >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_10">"1. اضغط \"القائمة\" >\"إعدادات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. اضغط \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_11">"1. اضغط \"القائمة\" > \"أدوات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_12">"1. اضغط \"القائمة\" > \"لوحة التحكم\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_13">"1. اضغط القائمة >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_2">"1. اضغط \"القائمة\" > \"أدوات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_4">"1. اضغط \"القائمة\" >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"رؤية دائمة\"."</string>
+    <string name="NOK_TIPS_5">"1. اضغط \"القائمة\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. حدد \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_51">"%s1. اضغط \"القائمة\" > \"اتصال\". 
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. حدد \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_6">"1. اضغط \"القائمة\" >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"رؤية دائمة\"."</string>
+    <string name="NOK_TIPS_7">"1. اضغط \"القائمة\" >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"رؤية دائمة\"."</string>
+    <string name="NOK_TIPS_8">"1. اضغط \"القائمة\" >\"إعدادات\" > \"اتصال\". 
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. اضغط \"إعدادات Bluetooth\".
+
+5. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="NOK_TIPS_9">"1. اضغط \"القائمة\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كفعال.
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"إظهار للكل\" ."</string>
+    <string name="OTHER_PHONE_BRAND_MODEL">أخرى</string>
+    <string name="OTHER_PHONE_General">"يمكنك تمكين Bluetooth على هاتفك الغير مدعم:
+
+1. انتقل إلى الشاشة الرئيسية.
+
+2. اضغط القائمة > إعدادات> اتصال >إعدادات Bluetooth.
+
+3. قم بتشغيل Bluetooth.
+
+4. حدد الرؤية > إظهار للكل.
+
+5. ابقى في شاشة إعدادات Bluetooth"</string>
+    <string name="RIM_TIPS_1">"1. اضغط \"القائمة\" > \"خيارات\" > \"Bluetooth\".
+
+2. اضغط \"القائمة\".
+
+3. اضغط \"تمكين Bluetooth\".
+
+4. اضغط \"القائمة\" مرة أخرى.
+
+5. اضغط خيارات.
+
+6. قم بتعيين \"قابل للاكتشاف\" كـ \"نعم\"."</string>
+    <string name="RIM_TIPS_2">"1. اضغط \"القائمة\" > \"إدارة الاتصالات\".
+
+2. حدد \"Bluetooth\".
+
+3. اضغط \"خيارات Bluetooth\".
+
+4. اضغط \"القائمة\" مرة أخرى.
+
+5. اضغط \"خيارات\".
+
+6. قم بتعيين \"قابل للاكتشاف\" كـ \"نعم\"."</string>
+    <string name="RIM_TIPS_3">"1. انتقل إلى شاشة \"كل التطبيقات\".
+
+2. حدد \"إدارة الاتصالات\".
+
+3. حدد خيار \"بلوتوث\".
+
+4. حدد \"اتصالات بلوتوث\".
+
+5. قم بتعيين بلوتوث على الوضع \"فعال\".
+
+6. قم بتعيين خيار \"يمكن اكتشافه\" على الوضع \"نعم\"."</string>
+    <string name="SAM_TIPS_1">"%s1. اضغط \"القائمة\" > \"Bluetooth\".
+
+2. قم بتعيين \"التنشيط\" كـ \"فعال\".
+
+3. حدد \"رؤية الجهاز\" كـ \"فعال\"."</string>
+    <string name="SAM_TIPS_10">"%s1. اضغط \"القائمة\" >\"إعدادات\" > \"إعدادات الشبكة\" > \"Bluetooth\"
+
+2. قم بتعيين التنشيط كـ \"فعال\"
+
+3. قم بتعيين \"رؤية الجهاز\" كـ \"فعال\""</string>
+    <string name="SAM_TIPS_11">"%s1.اضغط \"القائمة\" >\"التطبيقات\"
+
+2.اضغط \"Bluetooth\"
+
+3.قم بتعيين \"تنشيط Bluetooth\"
+
+4.اضغط\"إعدادات\"
+
+5.قم بتعيين \"رؤية الجهاز\" كـ \"فعال\" ثم اضغط \"حفظ\""</string>
+    <string name="SAM_TIPS_12">"%s1.انتقل إلى الشاشة الرئيسية.
+
+2.اضغط\"إعدادات\" > \"اتصال\" > \"Bluetooth\".
+
+3.قم بتعيين التنشيط كـ \"فعال\".
+
+4.قم بتعيين رؤية الجهاز كـ \"فعال\""</string>
+    <string name="SAM_TIPS_2">"%s1. اضغط \"القائمة\" > \"التطبيقات\" > \"Bluetooth\".
+
+2. قم بتعيين \"التنشيط\" كـ \"فعال\".
+
+3. قم بتعيين \"رؤية الجهاز\" كـ \"فعال\"."</string>
+    <string name="SAM_TIPS_3">"1. اضغط \"القائمة\" > \"إعدادات وأدوات\" > \"قائمة Bluetooth\".
+
+2. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+3. اضغط \"خيارات\" > \"وضع الاكتشاف\" > \"فعال\"."</string>
+    <string name="SAM_TIPS_4">"%s1. اضغط \"القائمة الرئيسية\" >\"إعدادات\" > \"Bluetooth\".
+
+2. قم بتعيين Bluetooth كفعال.
+
+3. قم بتعيين \"الرؤية\" كـ \"مرئي دائماً\"."</string>
+    <string name="SAM_TIPS_5">"%s1. اضغط \"القائمة\" > \"إعدادات/أدوات\" > \"قائمة Bluetooth\".
+
+2. قم بتعيين \"إعداد\" كـ \"فعال\".
+
+3. قم بتعيين \"إعداد وضع الاكتشاف\" كـ \"فعال\"."</string>
+    <string name="SAM_TIPS_6">"%s1. اضغط \"القائمة\" >\"إعدادات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"تشغيل Bluetooth\".
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"فعال\"."</string>
+    <string name="SAM_TIPS_7">"%s1. اضغط القائمة >\"إعدادات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين التنشيط كـ \"فعال\".
+
+4. قم بتعيين رؤية الجهاز كـ \"فعال\"."</string>
+    <string name="SAM_TIPS_8">"%s1. اضغط \"القائمة\" > \"أدوات/أدوات مساعدة\" > \"Bluetooth\".
+
+2. اضغط \"إعدادات Bluetooth\".
+
+3. اضغط \"تمكين\".
+
+4. قم بتعيين \"وضع الاكتشاف\" كـ \"فعال\"."</string>
+    <string name="SAM_TIPS_9">"%s1. اضغط \"القائمة\" >\"إعدادات\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"التنشيط\" كـ \"فعال\".
+
+4. قم بتعيين \"رؤية الجهاز\" كـ \"فعال\"."</string>
+    <string name="SAN_TIPS_1">"1. اضغط \"القائمة\" > \"أدوات\" > \"Bluetooth\".
+
+2. اضغط \"المزيد…\" >\"إعدادات\" > \"فعال\".
+
+3. قم بتعيين \"الرؤية\" كـ \"مرئي دائماً\"."</string>
+    <string name="SE_TIPS_1">"%s1. اضغط \"القائمة\" >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+4. قم بتعيين \"الرؤية\" كـ \"إظهار الهاتف\"."</string>
+    <string name="SE_TIPS_2">"%s1. اضغط \"القائمة\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين \"Bluetooth\" كـ \"فعال\".
+
+4. اضغط \"خيارات\".
+
+5. قم بتعيين \"الرؤية\" كـ \"إظهار الهاتف\"."</string>
+    <string name="SE_TIPS_3">"%s1. اضغط \"القائمة\" > \"اتصال\". 
+
+2. اضغط \"Bluetooth\".
+
+3. حدد \"Bluetooth\" كـ \"فعال\".
+
+4. قم بتعيين \"الرؤية\" كـ \"إظهار الهاتف\"."</string>
+    <string name="SE_TIPS_4">"%s1. اضغط Menu >\"إعدادات\" > \"اتصال\".
+
+2. اضغط \"Bluetooth\".
+
+3. قم بتعيين Bluetooth كـ \"فعال\".
+
+4. اضغط \"خيارات\".
+
+5. قم بتعيين الرؤية \"إظهار الهاتف\""</string>
+    <string name="SE_TIPS_5">"1. انتقل إلى الشاشة الرئيسية.
+
+2. اضغط \"ابدأ\" >\"إعدادات\" > \"Bluetooth\".
+
+3. حدد علامة التبويب \"النمط\".
+
+4. قم بتفعيل Bluetooth.
+
+5. حدد \"اجعل هذا الجهاز مرئي للأجهزة الأخرى\"."</string>
+    <string name="SE_TIPS_6">"%s1. انتقل إلى شاشة \"التطبيقات\" > \"إعدادات\" > \"الاتصال\"
+
+2. حدد \"بلوتوث\".
+
+3. قم بتعيين بلوتوث على الوضع \"فعال\".
+
+4. قم بتعيين إمكانية رؤية الهاتف على الوضع \"مرئي\""</string>
+    <string name="SHP_TIPS_1">"%s1.اضغط \"القائمة\" >\"إعدادات\"
+
+2.اضغط \"اتصال\" > \"Bluetooth\"
+
+3.قم بتعيين فعال/غير فعال كـ \"فعال\"
+
+4حدد الرؤية \"إظهار الهاتف\"
+
+5.الرجاء التحقق من أن سماعة Bluetooth في وضع التشغيل ثم انتقل إلى شاشة الوضع الاحتياطي"</string>
+    <string name="SIM_TIPS">إذا كانت لديك بطاقة SIM واحدة , يمكنك إزالتها من هذا الهاتف, وإدراجها في هاتفك القديم , وبعد ذلك قم بتمهيد الهاتفين في نفس الوقت .</string>
+    <string name="app_icon_name">نقل البيانات</string>
+    <string name="app_name">نقل بياناتي</string>
+    <string name="UI_About_Platform">لـ Android</string>
+    <string name="UI_About_Version">الإصدار :</string>
+    <string name="UI_BTN_Done">تم</string>
+    <string name="UI_BTN_Next">التالي</string>
+    <string name="UI_BTN_ReScan">إعادة المسح</string>
+    <string name="UI_BTN_Stop">إيقاف</string>
+    <string name="UI_ERROR_TRY_AGAIN">توجد أخطاء.</string>
+    <string name="UI_IMPORTED">تم استيراد</string>
+    <string name="UI_IMPORTED_TO_ACCOUNT">استيراد إلى حساب</string>
+    <string name="UI_IMPORT_PHONE">استيراد إلى هذا الهاتف</string>
+    <string name="UI_INSERT_SD_CARD">الرجاء إدراج بطاقة SD</string>
+    <string name="UI_Menu_BTN_About">حول</string>
+    <string name="UI_MOD_BOOKMARK">إشارة مرجعية</string>
+    <string name="UI_MOD_CALENDAR">التقويم</string>
+    <string name="UI_MOD_PHONEBOOK">جهات الاتصال</string>
+    <string name="UI_MOD_PHOTO">لقطات الكاميرا</string>
+    <string name="UI_MOD_SMS">رسائل قصيرة \"SMS\"</string>
+    <string name="UI_MOUNT_SD_CARD">الرجاء تحميل وحدة تخزين USB</string>
+    <string name="UI_OPENOPORT_SOURCEPHONE">الهاتف المصدر</string>
+    <string name="UI_OPENOPORT_TEXT">"الرجاء التحقق من %s.
+ربما تحتاج تصريح اتصال."</string>
+    <string name="UI_PHOTO_DESCRIPTION">الملفات الموجودة على الهاتف فقط</string>
+    <string name="UI_TEXT_AND">و</string>
+    <string name="UI_TEXT_BM_IMPORTED">تم استيراد إشارة مرجعية</string>
+    <string name="UI_TEXT_BM_IMPORTED_M">تم استيراد إشارات مرجعية</string>
+    <string name="UI_TEXT_CAL_IMPORTED">تم استيراد عنصر التقويم</string>
+    <string name="UI_TEXT_CAL_IMPORTED_M">تم استيراد عناصر التقويم</string>
+    <string name="UI_TEXT_FAQ_PAGE">قم بزيارة موقع الأسئلة المتكررة \"FAQ\".</string>
+    <string name="UI_TEXT_PB_IMPORTED">تم استيراد جهة اتصال</string>
+    <string name="UI_TEXT_PB_IMPORTED_M">تم استيراد جهات الاتصال</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED">تم استيراد لقطة الكاميرا</string>
+    <string name="UI_TEXT_PHOTO_IMPORTED_M">تم استيراد لقطات الكاميرا</string>
+    <string name="UI_TEXT_SMS_IMPORTED">تم استيراد الرسائل القصيرة \"SMS\"</string>
+    <string name="UI_TEXT_SMS_IMPORTED_M">تم استيراد الرسائل القصيرة \"SMS\"</string>
+    <string name="UI_TIP_CONFIRM">الرجاء تأكيد مفتاح المرور %1$s على %2$s</string>
+    <string name="UI_TIP_Co_1">تم الانتهاء من استيراد بياناتك من %s إلى هذا الهاتف.</string>
+    <string name="UI_TIP_Co_1_TABLET">تم الانتهاء من استيراد بياناتك من %s إلى الكمبيوتر اللوحي.</string>
+    <string name="UI_TIP_Co_TBD">"
+تم تخزين الحقول الإضافية لجهة الاتصال في حقل \"ملاحظات\"."</string>
+    <string name="UI_TIP_ImDa_1">يمكنك نقل جهات الاتصال والرسائل القصيرةإعتمادًا على قدرات هاتفك القديم, يمكنك نقل جهات الاتصال والرسائل القصيرة SMS وأحداث التقويم إلى هاتف HTC الجديد عبر Bluetoohth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET">إعتمادًا على قدرات هاتفك القديم, يمكنك نقل جهات الاتصال والرسائل القصيرة SMS وأحداث التقويم إلى جهاز HTC اللوحي الجديد عبر Bluetoohth.</string>
+    <string name="UI_TIP_ImDa_1_TABLET_WIFI">يمكنك نقل جهات الاتصال والرسائل القصيرة SMS وأحداث التقويم من هاتفك القديم إلى جهاز HTC اللوحي عبر Bluetoohth.</string>
+    <string name="UI_TIP_ImDa_2">اضغط \"التالي\" للبدء.</string>
+    <string name="UI_TIP_ImDa_35">حسب إمكانيات هاتفك القديم، قد تتمكن من نقل جهات الاتصال والبيانات الأخرى إلى هاتف HTC الجديد من خلال بلوتوث.</string>
+    <string name="UI_TIP_ImDa_35_TABLET">حسب إمكانيات هاتفك القديم، قد تتمكن من نقل جهات الاتصال والبيانات الأخرى إلى كمبيوتر HTC اللوحي الجديد من خلال بلوتوث.</string>
+    <string name="UI_TIP_Info_1">توجد أخطاء في %s . يرجى المحاولة مرة أخرى لاحقاً.</string>
+    <string name="UI_TIP_Info_2">الرجاء المحاولة مرة أخرى لاحقاً</string>
+    <string name="UI_TIP_Info_UnMatchPhone">توجد أخطاء في %s نتيجة عدم تطابق طراز الهاتف.</string>
+    <string name="UI_TIP_IsMyOldPhone_NotInList">رغم أن هواتف %s الأخرى غير مدعمة, يستطيع برنامج نقل البيانات القيام بمحاولة اكتشاف جهازك القديم واختبار إمكانية نقل البيانات.</string>
+    <string name="UI_TIP_Language">ARA</string>
+    <string name="UI_TIP_NoSuMo_1">الجهاز %s غير مدعم. يتعذر استيراد بيانات منه.</string>
+    <string name="UI_TIP_NoSuMo_2">الرجاء الضغط على \"تم\" للخروج.</string>
+    <string name="UI_TIP_ON">على %s:</string>
+    <string name="UI_TIP_PaWi">الرجاء إدخال %1$s على %2$s</string>
+    <string name="UI_TIP_Re_TodoNotSupport">يتعذر استيراد To-do وأحداث المهام.</string>
+    <string name="UI_TIP_SelDT_2">ربما يتعذر نقل بعض الحقول من %s بسبب نقص الدعم الكلي لـ Bluetooth.</string>
+    <string name="UI_TIP_TUONBL">تشغيل بلوتوث</string>
+    <string name="UI_TIP_TuOnBl_2">اضغط \"التالي\" عند تشغيل Bluetooth بنجاح.</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_PHONE">مسح البيانات على هذا الجهاز</string>
+    <string name="UI_TITLE_CLEAR_DATA_ON_THIS_TABLET">مسح البيانات الموجودة على الكمبيوتر اللوحي</string>
+    <string name="UI_TITLE_CONGRADULATIONS">تهانينا</string>
+    <string name="UI_TITLE_CONN_WITH">جاري الاتصال مع %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT">تمكين Bluetooth على %s</string>
+    <string name="UI_TITLE_HOW_TO_ENABLE_BT_OTHER">تمكين Bluetooth على هاتفك القديم</string>
+    <string name="UI_TITLE_IMPORTING">جاري نقل %s</string>
+    <string name="UI_TITLE_INFO">معلومات</string>
+    <string name="UI_TITLE_IsMyOldPhone_OtherModel">هواتف %s الأخرى</string>
+    <string name="UI_TITLE_LOADING_PHONE_CONFIG">جاري تحميل تكوين الهاتف</string>
+    <string name="UI_TITLE_NOT_SUPPORTED_MODEL">طراز غير مدعوم</string>
+    <string name="UI_TITLE_PAIRING">جاري الاقتران...</string>
+    <string name="UI_TITLE_PAIRING_WITH">جاري الاقتران مع %s</string>
+    <string name="UI_TITLE_QUERYING_PHONE">جاري الاستعلام عن طراز الهاتف</string>
+    <string name="UI_TITLE_SCANNING">جاري البحث...</string>
+    <string name="UI_TITLE_SCANNING_FOR_PHONES">جاري المسح البحثي عن هواتف</string>
+    <string name="UI_TITLE_SELECT_DATA_TYPES">حدد أنواع البيانات المراد استيرادها</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MAKER">حدد هاتفك القديم</string>
+    <string name="UI_TITLE_SELECT_OLD_PHONE_MODEL">حدد الطراز</string>
+    <string name="UI_TITLE_SELECT_YOUR_PHONE">حدد هاتفك</string>
+    <string name="UI_TITLE_TIPS_UNSUPPORTED">هواتف %s الأخرى غير مدعومة. الرجاء الضغط على \"تم\" للخروج.</string>
+</resources>

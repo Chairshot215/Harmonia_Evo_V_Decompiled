@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="200302326" android:versionName="2.0.2212262911.302326" package="com.htc.photowidget3d"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:label="@string/htc_private_app" android:icon="@drawable/icon" android:description="@string/htc_corp" android:hardwareAccelerated="false" allowSkinChange="true">
+        <intent-filter>
+            <action android:name="OpenOption" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:mimeType="com.htc.photo.widgets/open" />
+        </intent-filter>
+        <receiver android:label="@string/album" android:icon="@drawable/icon" android:name=".album.PhotoAlbumWidgetProvider" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/photo_album_styles" />
+        </receiver>
+        <activity android:theme="@*android:style/Theme.DeviceDefault.NoActionBar" android:name=".frame.PhotoPickerOption" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="PhotoPickerOption" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.photowidget3d.frame/open" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.DeviceDefault.NoActionBar" android:name=".album.PhotoAlbumWidgetActivity" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="PhotoAlbumWidgetActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.photowidget3d.album/open" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.DeviceDefault.NoActionBar" android:name=".grid.PhotoGridWidget3DActivity" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="PhotoGridWidget3DActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.photowidget3d.grid/open" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

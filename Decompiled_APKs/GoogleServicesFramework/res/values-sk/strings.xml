@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">neznáme</string>
+    <string name="sharedUserLabel">Služby spoločnosti Google</string>
+    <string name="service_label">System Updater</string>
+    <string name="system_update_activity_name">Aktualizácie systému</string>
+    <string name="system_update_activity_title">Aktualizácie systému</string>
+    <string name="system_update_activity_battery_low_text">Aktualizáciu systému nie je možné nainštalovať kvôli slabej batérii. Ak chcete pokračovať, pripojte nabíjačku.</string>
+    <string name="system_update_activity_battery_low_charging_text">Aktualizáciu systému nie je možné nainštalovať, pretože batéria je príliš slabá. Počkajte, kým sa batéria dostatočne dobije.</string>
+    <string name="system_update_activity_roaming_text">V roamingu nie je možné prevziať aktualizácie systému.</string>
+    <string name="system_update_requires_restart_status_text">Vyžaduje reštartovanie</string>
+    <string name="system_update_downloading_status_text">Preberanie</string>
+    <string name="system_update_downloading_wifi_status2_text">Prostredníctvom Wi-Fi len do ^1</string>
+    <string name="system_update_verifying_status_text">Overuje sa</string>
+    <string name="system_update_verification_failed_text">Verifikácia zlyhala</string>
+    <string name="system_update_verified_status_text">Prevzaté a overené</string>
+    <string name="system_update_download_failed_status_text">Prevzatie zlyhalo</string>
+    <string name="system_update_download_retry_button_text">Opakovať prevzatie</string>
+    <string name="system_update_download_button_text">Prevziať</string>
+    <string name="system_update_install_button_text">Reštartovať a nainštalovať</string>
+    <string name="system_update_check_now_button_text">Skontrolovať</string>
+    <string name="system_update_no_update_content_text">Systém je v súčasnosti aktuálny</string>
+    <string name="system_update_last_checkin">Posledná kontrola aktualizácií ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">K dispozícii je aktualizácia systému</string>
+    <string name="system_update_recommended_update_available_notification_message">Zobraziť podrobnosti o aktualizácii.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Prevzatie aktualizácie systému zlyhalo.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Prevzatie zlyhalo. Skúste to znova.</string>
+    <string name="system_update_error_dialog_title">Chyba</string>
+    <string name="system_update_error_downloading_dialog_message">Pri preberaní aktualizácie sa vyskytol problém.</string>
+    <string name="system_update_error_installing_dialog_message">Pri inštalácii aktualizácie sa vyskytol problém.</string>
+    <string name="system_update_install_dialog_label">Aktualizácia systému</string>
+    <string name="system_update_install_dialog_message_nonphone">Aktualizácia systému je pripravená na inštaláciu. Zariadenie so systémom Android sa reštartuje a nainštaluje aktualizáciu.</string>
+    <string name="system_update_install_dialog_message_phone">Aktualizácia systému je pripravená na inštaláciu. Zariadenie so systémom Android sa reštartuje a nainštaluje aktualizáciu. Počas inštalácie nie je možné uskutočniť žiadny hovor ani tiesňové volanie.</string>
+    <string name="system_update_install_dialog_battery_low_message">K dispozícii je aktualizácia systému, batéria je však príliš slabá. Ak chcete aktualizáciu nainštalovať, pripojte nabíjačku.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">K dispozícii je aktualizácia systému, batéria je však príliš slabá. Ak chcete aktualizáciu nainštalovať, počkajte, kým sa batéria dostatočne dobije.</string>
+    <string name="system_update_install_dialog_now_button">Inštalovať</string>
+    <string name="system_update_install_dialog_later_button">Nainštalovať neskôr</string>
+    <string name="system_update_install_dialog_info_button">Ďalšie informácie...</string>
+    <string name="system_update_downloading_notification_title">Prebieha preberanie aktualizácie systému</string>
+    <string name="system_update_verifying_notification_title">Prebieha overovanie aktualizácie systému</string>
+    <string name="system_update_download_dialog_label">Prevzatie aktualizácie systému</string>
+    <string name="system_update_download_dialog_message">K dispozícii je aktualizácia systému, ktorá zlepší funkcie zariadenia so systémom Android. Prevzatie tejto aktualizácie prostredníctvom bezdrôtovej siete môže byť spoplatnené.</string>
+    <string name="system_update_download_dialog_now_button">Prevziať teraz</string>
+    <string name="system_update_download_dialog_later_button">Prevziať neskôr</string>
+    <string name="system_update_download_dialog_cancel_button">Zrušiť</string>
+    <string name="system_update_countdown_complete">Prebieha reštartovanie...</string>
+    <string name="system_update_countdown_cancel_button">Zrušiť inštaláciu</string>
+    <string name="system_update_complete_label">Aktualizácia systému</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Zobraziť odbery</string>
+    <string name="ro_perm_label">čítanie okamžitých správ</string>
+    <string name="ro_perm_desc">Povoľuje aplikáciám čítať údaje od poskytovateľa obsahu služby Google Talk.</string>
+    <string name="wo_perm_label">písanie okamžitých správ</string>
+    <string name="wo_perm_desc">Povoľuje aplikáciám zapisovať údaje poskytovateľovi obsahu služby Google Talk.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"Hľadať v rozhovoroch 
+výraz „%1$s“"</string>
+    <string name="gtalkservice_label">Služby odosielania SMS a MMS Google</string>
+    <string name="c2dm_label">Služba správ z oblaku do zariadenia</string>
+    <string name="sendTalkMsg_perm_label">Odosiela a prijíma správy a prijíma upozornenia o synchronizácii zo serverov Google</string>
+    <string name="sendTalkMsg_perm_desc">Použité pre správy z oblaku servera do zariadenia a na upozornenia synchronizácie. Služba Google Talk používa túto službu na posielanie a prijímanie správ a synchronizáciu aktuálneho stavu. Škodlivá aplikácia môže túto službu použiť na prenos nadmerného množstva údajov.</string>
+    <string name="perm_receive_data_message_label">prijímať údaje z Internetu</string>
+    <string name="perm_receive_data_message_desc">Povoľuje aplikáciám prijímať správy z oblaku do zariadenia poslané službou aplikácie. Použitie tejto služby zvýši množstvo prenesených údajov. Škodlivé aplikácie môžu spôsobiť nadmerné množstvo prenesených údajov.</string>
+    <string name="perm_data_msg_broadcast_label">Vysielať dátové správy do aplikácií.</string>
+    <string name="perm_data_msg_broadcast_desc">Môže odosielať dátové správy prijaté zo siete Internet aplikáciám prihláseným na ich príjem.</string>
+    <string name="perm_receive_xmpp_label">komunikovať so servermi Google pomocou správ XMPP</string>
+    <string name="perm_receive_xmpp_desc">Umožňuje aplikáciám Google komunikovať so servermi Google prostredníctvom správ XMPP.</string>
+    <string name="perm_xmpp_broadcast_label">Vysielať do aplikácií správy XMPP.</string>
+    <string name="perm_xmpp_broadcast_desc">Môže vysielať správy XMPP prijaté zo serverov Google do aplikácií registrovaných na ich príjem.</string>
+    <string name="perm_use_xmpp_endpoint_label">komunikovať so servermi Google pomocou správ XMPP.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Umožňuje aplikáciám Google komunikovať so servermi Google prostredníctvom správ XMPP.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Vysielať do aplikácií správy XMPP.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Môže vysielať správy XMPP prijaté zo serverov Google do aplikácií.</string>
+    <string name="permlab_intentVendingOnly">Odosielať vysielania do služby Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Umožňuje odosielať vysielania službe Android Market so žiadosťou o inštaláciu a odstránenie aplikácií.</string>
+    <string name="permlab_heartbeat">Odosielať pakety heartbeat serveru Google Talk</string>
+    <string name="permdesc_heartbeat">Môže odosielať pakety heartbeat serveru Google Talk s cieľom zaistenia dobrého stavu pripojenia.</string>
+    <string name="group_chat">Skupinový rozhovor: %s</string>
+    <string name="default_decline_reason">Ospravedlňujem sa, momentálne nemám čas.</string>
+    <string name="newMessages_label">Nové rozhovory</string>
+    <string name="notify_groupchat_label">Pozvánka na skupinový rozhovor</string>
+    <string name="num_unread_chats">Neprečítané rozhovory: %s</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s – %s</string>
+    <string name="subscription_notify_text">Používateľ %s sa chce zhovárať</string>
+    <string name="group_chat_invite_notify_text">Dostali ste pozvánku na skupinový rozhovor od používateľa %s</string>
+    <string name="group_chat_invite_dialog_text">Používateľ %s vás pozval pripojiť sa ku skupinovému rozhovoru.</string>
+    <string name="message_too_long">Nie je možné odoslať správy dlhšie ako 2 000 znakov.</string>
+    <string name="missed_video_chat_notification">Zmeškali ste pozvánku na videorozhovor</string>
+    <string name="missed_voice_chat_notification">Zmeškali ste pozvánku na hlasový rozhovor</string>
+    <string name="missed_video_chat_notification_no_wifi">Zmeškali ste pozvánku na videorozhovor, pretože ste neboli pripojení k sieti Wi-Fi.</string>
+    <string name="missed_voice_chat_notification_no_wifi">Zmeškali ste pozvánku na hlasový rozhovor, pretože ste neboli pripojení do siete Wi-Fi.</string>
+    <string name="missed_video_chat_message">Používateľ %1$s sa s vami pokúsil nadviazať videorozhovor.</string>
+    <string name="missed_voice_chat_message">Používateľ %1$s sa s vami pokúsil nadviazať hlasový rozhovor.</string>
+    <string name="missed_video_chat_message_no_wifi">Počas doby, kedy ste neboli pripojení do siete Wi-Fi, sa s vami používateľ %1$s pokúšal nadviazať videorozhovor.</string>
+    <string name="missed_voice_chat_message_no_wifi">Počas doby, kedy ste neboli pripojení do siete Wi-Fi, sa s vami používateľ %1$s pokúšal nadviazať hlasový rozhovor.</string>
+    <string name="end_cause_user_unavailable_video">Používateľ %1$s nebol k dispozícii pre videorozhovor.</string>
+    <string name="end_cause_user_unavailable_voice">Používateľ %1$s nebol k dispozícii pre hlasový rozhovor.</string>
+    <string name="end_cause_sent_terminate_video">Ukončili ste videorozhovor s používateľom %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Ukončili ste hlasový rozhovor s používateľom %1$s.</string>
+    <string name="end_cause_received_terminate_video">Používateľ %1$s videorozhovor ukončil.</string>
+    <string name="end_cause_received_terminate_voice">Používateľ %1$s ukončil hlasový hovor.</string>
+    <string name="end_cause_network_problem_video">Je nám ľúto. Videorozhovor s používateľom %1$s zlyhal kvôli problémom so sieťou. Skúste to znova.</string>
+    <string name="end_cause_network_problem_voice">Je nám ľúto. Hlasový rozhovor s používateľom %1$s zlyhal kvôli problémom so sieťou. Skúste to znova.</string>
+    <string name="conn_auth_error_notify_ticker">Overenie služby Google Talk zlyhalo</string>
+    <string name="conn_auth_error_notify_title">Overenie služby Google Talk zlyhalo</string>
+    <string name="conn_auth_error_title">Chyba overenia</string>
+    <string name="conn_auth_error_message">Prihlásenie do služby Google Talk zlyhalo. Ak je toto účet Aplikácií Google, overte, či bola pre tento účet aktivovaná služba Chat.</string>
+    <string name="conn_auth_error_button_retry">Skúsiť znova</string>
+    <string name="conn_auth_error_button_cancel">Zrušiť</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Vitajte v službe ^1</string>
+    <string name="setup_wizard_title">Sprievodca nastavením</string>
+    <string name="error_dialog_title">Pozor</string>
+    <string name="next_button_label">Ďalej</string>
+    <string name="back_button_label">Späť</string>
+    <string name="sign_in_button_label">Prihlásiť sa</string>
+    <string name="create_button_label">Vytvoriť</string>
+    <string name="skip_button_label">Preskočiť</string>
+    <string name="first_name">Meno</string>
+    <string name="last_name">Priezvisko</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Zrušiť</string>
+    <string name="done_button_label">Dokončiť nastavenie</string>
+    <string name="try_again_button_label">Skúsiť znova</string>
+    <string name="close_button_label">Zavrieť</string>
+    <string name="edit_text_help">Ak chcete začať písať, dotknite sa ľubovoľného textového poľa.</string>
+    <string name="add_a_google_account">Pridať účet Google</string>
+    <string name="no_sim_setup_wireless">Nemáte nainštalovanú kartu SIM, takže sa nemôžete pripojiť k mobilnej sieti a používať hlasové a dátové služby. K sieti Wi-Fi sa však môžete pripojiť aj bez karty SIM.</string>
+    <string name="setup_wifi_button_label">Pripojiť k sieti Wi-Fi</string>
+    <string name="no_network">Nie je k dispozícii pripojenie k sieti.</string>
+    <string name="no_network_help">Môže to byť dočasný problém alebo vaše zariadenie so systémom Android nemá aktivované dátové služby. Skúste to znova po pripojení k mobilnej sieti, alebo k sieti Wi-Fi.</string>
+    <string name="server_error">Pri komunikácii so servermi Google došlo k chybe.</string>
+    <string name="server_error_help">Skúste to znova neskôr.</string>
+    <string name="network_unreliable">Nie je možné nadviazať spoľahlivé dátové pripojenie k serveru.</string>
+    <string name="network_unreliable_help">Môže ísť o dočasný problém alebo pre vaše zariadenie so systémom Android nie sú aktivované dátové služby. Ak problém pretrváva, zavolajte podporu pre zákazníkov.</string>
+    <string name="invalid_login_character">Neplatný znak. Povolené znaky sú 0 – 9, a – z, A – Z a bodky.</string>
+    <string name="invalid_password_character">Heslo obsahuje neplatný znak.</string>
+    <string name="add_apn">Nastavenia bezdrôtovej siete</string>
+    <string name="setup_google_account_title">Nastavte svoj účet Google</string>
+    <string name="setup_complete_title">Nastavenie dokončené</string>
+    <string name="cant_be_blank">Pole nesmie byť prázdne.</string>
+    <string name="calendar">Kalendár Google</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Vaše zariadenie so systémom Android nie je pripojené k dátovej službe. Ak chcete zobraziť tieto informácie, prejdite v ľubovoľnom počítači s pripojením do Internetu na adresu %s.</string>
+    <string name="field_cant_be_blank">Toto pole nesmie byť prázdne</string>
+    <string name="field_invalid_domain">Toto nie je platný názov domény</string>
+    <string name="field_invalid_user">Toto nie je platné používateľské meno</string>
+    <string name="field_invalid_user_domain">Zadajte iba svoje používateľské meno, nie e-mailovú adresu.</string>
+    <string name="field_invalid_login">Toto nie je platný názov účtu</string>
+    <string name="about_accounts_message"><font size="17">"Nastavenie zariadenia so systémom Android je jednoduché. Jediné, čo potrebujete, je účet Google.
+"<font height="17">"
+"</font><b>Prečo používať účet Google?</b>"
+"<font height="3">"
+"</font>"S účtom Google sú aplikácie Google v zariadení so systémom Android automaticky synchronizované s aplikáciami v počítači bez ohľadu na to, odkiaľ vykonávate aktualizáciu.
+"<font height="17">"
+"</font><b>Už máte účet Google?</b>"
+"<font height="3">"
+"</font>"Potom ste pripravený/-á a na nasledujúcej obrazovke sa stačí dotknúť možnosti Prihlásiť sa.
+"<font height="17">"
+"</font><b>Nemáte účet Google?</b>"
+"<font height="3">"
+"</font>"Žiadny problém. Na nasledujúcej obrazovke sa dotknite možnosti Vytvoriť a my vám pomôžeme s jeho vytvorením.
+"<font height="17">"
+"</font><b>Ak chcete začať, dotknite sa položky Ďalej.</b>"
+"</font></string>
+    <string name="fling_help_message">"Ťahom prsta po obrazovke nahor alebo nadol posuniete zobrazenie.
+(Dotknutím túto správu skryjete.)"</string>
+    <string name="setup_device_title">Nastavenie vášho ^1</string>
+    <string name="dont_have_an_account">Nemáte účet Google?</string>
+    <string name="create_one_now">Vytvorte si ho teraz. Je to jednoduché.</string>
+    <string name="already_have_an_account">Máte už účet Google?</string>
+    <string name="sign_in_with_google_account">Prihláste sa pomocou účtu Google, ktorý chcete prepojiť s týmto zariadením so systémom Android.</string>
+    <string name="skip_message">Chcete účet nastaviť neskôr?</string>
+    <string name="touch_to_begin">Začnite dotykom androida.</string>
+    <string name="delayed_gaia_agreement">Ak sa rozhodnete pokračovať, vyjadrujete tým súhlas s <annotation id="google_privacy">Pravidlami ochrany osobných údajov spoločnosti Google</annotation> a <annotation id="android_privacy">Ďalšími pravidlami ochrany osobných údajov</annotation>.</string>
+    <string name="open_keyboard_message">Ak chcete začať, vysuňte klávesnicu.</string>
+    <string name="open_keyboard_message_to_continue">Ak chcete pokračovať, vysuňte klávesnicu.</string>
+    <string name="emergency_dial">Tiesňové vytáčanie</string>
+    <string name="change_language">Zmeniť jazyk</string>
+    <string name="signing_in">Prebieha prihlásenie…</string>
+    <string name="close_keyboard_message">Ak chcete pokračovať, zasuňte klávesnicu.</string>
+    <string name="communicating_message">Nastavenie účtu vyžaduje, aby zariadenie so systémom Android nadviazalo komunikáciu so servermi Google. Táto akcia môže trvať až päť minút.</string>
+    <string name="communicating_message_domain">Aby vaše zariadenie so systémom Android vyhľadalo informácie o doméne, musí komunikovať so servermi Google. Vyhľadanie informácií môže trvať až päť minút.</string>
+    <string name="username">Používateľské meno</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Heslo</string>
+    <string name="sign_in_agreement">Prihlásením vyjadrujete súhlas s <annotation id="google_privacy">Pravidlami ochrany osobných údajov spoločnosti Google</annotation> a <annotation id="android_privacy">Ďalšími pravidlami ochrany osobných údajov</annotation>.</string>
+    <string name="create">Vytvoriť</string>
+    <string name="create_message">Potrebujete účet Google?</string>
+    <string name="now_signing_in">Prebieha prihlásenie…</string>
+    <string name="now_verifying_domain">Prebieha hľadanie domény...</string>
+    <string name="sign_in_with_google_account_short">Prihláste sa pomocou svojho účtu Google:</string>
+    <string name="browser_sign_in_explanation">Ak je na prihlásenie z mimoriadnych dôvodov nevyhnutný webový prehliadač, použite túto obrazovku.</string>
+    <string name="gls_browser_login_intro_message">Nie je možné získať prístup k účtu Google alebo účtu služby Google Apps. Vyžaduje sa opätovná autorizácia.</string>
+    <string name="enter_domain_name">Zadajte doménu vašej spoločnosti:</string>
+    <string name="enter_user_name">Zadajte svoje používateľské meno a heslo pre doménu ^1:</string>
+    <string name="inactive_domain">Tento účet nie je možné použiť, pretože patrí do domény, ktorá nie je aktívna. Kontaktujte správcu domény pre <b>^1</b> alebo sa prihláste pomocou iného účtu.</string>
+    <string name="invalid_username">Zadaný text nie je platné používateľské meno.</string>
+    <string name="web_login_error_title">Je nám ľúto...</string>
+    <string name="web_login_error_desc">"Pri pokuse o pripojenie k firemným serverom v doméne ^1 sa vyskytol problém.
+
+Informácie o chybe:
+"</string>
+    <string name="web_login_error_redirects">Webová prihlasovacia stránka vykonala príliš mnoho presmerovaní</string>
+    <string name="web_login_error_http">Chyba HTTP ^1 : ^2</string>
+    <string name="name_device_label">Pomenujte svoje zariadenie so systémom Android:</string>
+    <string name="device_name_hint">Názov zariadenia</string>
+    <string name="registering_device">Registrácia zariadenia so systémom Android...</string>
+    <string name="error_account_disabled">"Tento účet bol zakázaný. 
+
+(Podrobnosti môžete vyhľadať z počítača na stránke http://google.com/accounts/recovery.)"</string>
+    <string name="error_login_failed">"Používateľské meno a heslo si nezodpovedajú. Skúste to znova. 
+
+(Ak chcete obnoviť informácie o svojom účte, prejdite v počítači na stránku http://www.google.com/accounts/recovery.)"</string>
+    <string name="error_account_not_verified">"Tento účet nebol overený. Skontrolujte svoju e-mailovú schránku v počítači a kliknutím na uvedený odkaz overte tento účet. 
+
+(Ak chcete znova získať informácie o svojom účte, prejdite v počítači na stránku http://www.google.com/accounts/recovery.)"</string>
+    <string name="captcha_message_string">Verifikácia</string>
+    <string name="captcha_instructions">Zadajte znaky, ktoré vidíte na obrázku. Nerozlišujú sa veľké a malé písmená.</string>
+    <string name="create_google_account">Vytvoriť nový účet Google</string>
+    <string name="example_usernames">napr. JKovac, Jan.Kovac</string>
+    <string name="create_account_agreement">Vytvorením tohto účtu vyjadrujete súhlas s <annotation id="google_privacy">Pravidlami ochrany osobných údajov spoločnosti Google</annotation> a <annotation id="android_privacy">Ďalšími pravidlami ochrany osobných údajov</annotation>.</string>
+    <string name="account_already_has_gmail">Účet už službu Gmail obsahuje.</string>
+    <string name="creating_account">Prebieha vytvorenie účtu...</string>
+    <string name="checking_account">Prebieha kontrola dostupnosti používateľského mena...</string>
+    <string name="try_a_different_username">Skúste iné používateľské meno</string>
+    <string name="is_not_available"><b>^1</b> nie je k dispozícii.</string>
+    <string name="hint_size"><b>^1</b> obsahuje menej než 6 alebo viac než 30 znakov.</string>
+    <string name="hint_numbers_only"><b>^1</b> neobsahuje žiadne písmená.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" môže obsahovať iba písmená,
+číslice a bodky."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> nepoužíva službu Gmail</string>
+    <string name="sign_in">Prihlásiť sa</string>
+    <string name="sign_in_browser">Prihlásenie pomocou prehliadača</string>
+    <string name="here_are_alternatives">Ďalšie možnosti:</string>
+    <string name="alternatives_list_title">Navrhované používateľské mená</string>
+    <string name="choose_a_password"><b>"Zadajte
+heslo"</b></string>
+    <string name="confirm_password"><b>"Potvrdenie
+hesla"</b></string>
+    <string name="password_strength"><b>"Sila
+hesla"</b></string>
+    <string name="too_short">Príliš krátke</string>
+    <string name="security_question"><b>"Bezpečnostná
+otázka"</b></string>
+    <string name="security_questions_title">Bezpečnostné otázky</string>
+    <string name="answer"><b>Odpoveď</b></string>
+    <string name="password_mismatch">Heslá sa nezhodujú. Zadajte ich znova.</string>
+    <string name="your_account_was_created">Váš účet bol vytvorený.</string>
+    <string name="eight_chars_min">(minimálne 8 znakov)</string>
+    <string name="just_in_case">V prípade, že svoje heslo stratíte.</string>
+    <string name="verify_your_profile">Overte svoj profil.</string>
+    <string name="signed_in">Ste prihlásení.</string>
+    <string name="error_not_logged_in">Používateľ nie je prihlásený.</string>
+    <string name="error_username_unavailable">Používateľské meno nie je k dispozícii.</string>
+    <string name="error_bad_password">Heslo je príliš slabé alebo obsahuje neplatné znaky. Skúste to znova.</string>
+    <string name="error_bad_username">Neplatné používateľské meno.</string>
+    <string name="loading">Prebieha načítavanie...</string>
+    <string name="submission_title">Je nám ľúto...</string>
+    <string name="submission_error_text">Vyskytla sa chyba. Skúste to znova.</string>
+    <string name="existing_account_error_title">Účet už existuje</string>
+    <string name="existing_account_error_text">V tomto zariadení so systémom Android existuje účet ^1.</string>
+    <string name="account_linked_message"><font height="24">Váš účet Google je teraz prepojený s týmto zariadením so systémom Android.</font></string>
+    <string name="syncing_message"><font size="17">"Aplikácie Google práve vykonávajú synchronizáciu údajov. 
+"<font height="17">"
+"</font>"%i Až bude preberanie dokončené, ikona „synchronizácia“ v stavovom riadku v hornej časti obrazovky zmizne.
+"<font height="17">"
+"</font><b>O stavovom riadku…</b>"
+"<font height="3">"
+"</font>"Ak dostanete novú správu alebo iné upozornenie, zobrazí sa v stavovom riadku ikona.
+"<font height="17">"
+"</font>Ak chcete zobraziť podrobnosti o všetkých aktuálnych upozorneniach, roztiahnite prstom stavový riadok. Zobrazí sa panel Upozornenia.</font></string>
+    <string name="i_agree_next">Súhlasím. Ďalej</string>
+    <string name="android_privacy_policy_title">Ďalšie pravidlá ochrany osobných údajov</string>
+    <string name="google_terms_of_service_title">Zmluvné podmienky Google</string>
+    <string name="google_privacy_policy_title">Pravidlá ochrany osobných údajov Google</string>
+    <string name="notification_update_title">Váš účet je potrebné aktualizovať</string>
+    <string name="notification_update_message">Ak chcete Sprievodcu nastavením spustiť znova, dotknite sa tu</string>
+    <string name="common_message">"Gmail, zálohovanie a mnoho ďalších funkcií systému Android vyžadujú účet Google.
+
+Dotknite sa tlačidla "<b>Ďalej</b>" a prihláste sa pomocou existujúceho účtu Google alebo si vytvorte nový účet Google.
+
+Alebo sa môžete dotknúť tlačidla "<b>Preskočiť</b> a začať systém Android rovno používať. Do účtu Google sa môžete prihlásiť neskôr v Nastaveniach v časti Účty a synchronizácia.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Pridanie účtu</font>" 
+
+Môžete používať niekoľko účtov Google (napr. svoj osobný a pracovný účet). Postup pridania účtu Google pozostáva len z niekoľkých krokov. 
+
+Ak chcete pokračovať, dotknite sa tlačidla Ďalej. Ak chcete sprievodcu ukončiť, stlačte tlačidlo Späť."</string>
+    <string name="reactivate_account_message">"Účet služby Google Mail je potrebné prepojiť s týmto zariadením so systémom Android. 
+
+K tomuto účtu už je priradený účet služby Google Mail s používateľským menom ("<b>^1</b>"), momentálne však nie je aktívny. 
+
+Ak chcete toto používateľské meno znova aktivovať a použiť pre svoje zariadenie, dotknite sa tlačidla „Ďalej“. 
+
+Ak chcete použiť iný účet, stlačte tlačidlo Späť a prihláste sa pomocou iného účtu, prípadne vytvorte iný účet."</string>
+    <string name="reactivating_account">Prebieha opätovná aktivácia účtu...</string>
+    <string name="your_account_was_reactivated">Váš účet bol aktivovaný.</string>
+    <string name="account_recovery_info">Nasledujúce informácie vám pomôžu znova získať heslo, ak ho zabudnete.</string>
+    <string name="secondary_email_label"><b>"Sekundárny
+e-mail"</b></string>
+    <string name="invalid_email">"Zadaná e-mailová adresa nie je platná.
+ Platná adresa je napríklad peter@example.com."</string>
+    <string name="invalid_email_primary">Sekundárna e-mailová adresa nemôže byť rovnaká ako adresa, ktorú vytvárate.</string>
+    <string name="tutorial_intro_title">Informácie o používaní zariadenia ^1</string>
+    <string name="begin_button_label">Začať</string>
+    <string name="tutorial_intro_message_generic">Ak chcete zariadenie so systémom Android využívať čo najefektívnejšie, je dobré vedieť o niekoľkých dôležitých veciach. <font size="17">"
+"</font>" 
+"<li>Používanie klávesnice na obrazovke</li> <font size="17">"
+"</font>" 
+Ak sa dotknete tlačidla „Začať“, spustíte príručku, v ktorej sa dozviete viac informácií."</string>
+    <string name="tutorial_intro_message_setupwizard">Ak chcete zariadenie so systémom Android využívať čo najefektívnejšie, je dobré vedieť o niekoľkých dôležitých veciach. <font size="17">"
+"</font>" 
+"<li>Používanie klávesnice na obrazovke</li>" 
+"<li>Vytvorenie účtu Google</li> <font size="17">"
+"</font>" 
+Dotykom tlačidla „Začať“ spustíte príručku, v ktorej sa dozviete viac informácií. Ak chcete túto príručku preskočiť a pokračovať, dotknite sa tlačidla „Preskočiť“."</string>
+    <string name="keyboard_tutorial_title">Používanie klávesnice na obrazovke</string>
+    <string name="keyboard_tutorial_message">Dotykom na ľubovoľné textové pole otvoríte klávesnicu a začnete písať. Skúste to tu.</string>
+    <string name="keyboard_tutorial_edittext_hint">Dotknite sa tu a začnite písať</string>
+    <string name="done_typing_message">Dopísali ste? Stlačením tlačidla Späť klávesnicu zavriete.</string>
+    <string name="done_button_label_in_tutorial">Hotovo</string>
+    <string name="backup_consent_title">Zálohovať moje nastavenia</string>
+    <string name="backup_consent_message">Vaše nastavenia (ako sú záložky a heslá do sietí Wi-Fi) je možné automaticky zálohovať do účtu Google. V prípade zakúpenia nového zariadenia so systémom Android (či už z dôvodu straty predchádzajúceho alebo prechodu na lepší model) budú na novom zariadení obnovené vaše nastavenia.</string>
+    <string name="backup_consent_howto_disable_message">Nastavenia zálohovania môžete kedykoľvek zmeniť v aplikácii Nastavenia v časti Ochrana osobných údajov.</string>
+    <string name="backup_consent_yes_agree">Zálohovať nastavenia do môjho účtu Google.</string>
+    <string name="restore_disable">Zakázať obnovenie</string>
+    <string name="restore_enable">Povoliť obnovenie</string>
+    <string name="restore_enabled">Ak ste svoje nastavenia predtým zálohovali, budú obnovené.</string>
+    <string name="restore_disabled">Vaše nastavenia nebudú obnovené zo zálohy.</string>
+    <string name="webview_progress_title">Prebieha pripájanie k doméne...</string>
+    <string name="webview_progress_verbose_message">"Firemné servery posielajú informácie potrebné na prihlásenie. Môže to trvať niekoľko minút.
+Po dokončení tejto akcie sa zobrazí prihlasovacia stránka vašej firmy."</string>
+    <string name="enterprise_unmanaged_domain">Táto doména nepoužíva Aplikácie Google. Skontrolujte názov domény a skúste to znova.</string>
+    <string name="use_location_for_services_agree">Súhlasím</string>
+    <string name="use_location_for_services_disagree">Nesúhlasím</string>
+    <string name="use_location_for_services_title">Používať funkciu Moja poloha</string>
+    <string name="use_location_for_services_text">Chcete spoločnosti Google povoliť využívať informácie o polohe na poskytovanie presnejších výsledkov vyhľadávania a ďalších služieb?</string>
+    <string name="permlab_readGsettings">Čítať nastavenia Google</string>
+    <string name="permdesc_readGsettings">Povoľuje tejto aplikácii čítať nastavenia Google.</string>
+    <string name="permlab_writeGsettings">Upraviť nastavenia Google</string>
+    <string name="permdesc_writeGsettings">Povolí tejto aplikácii upraviť nastavenia Google.</string>
+    <string name="permlab_readGservices">čítať konfiguráciu služieb Google</string>
+    <string name="permdesc_readGservices">Povoľuje tejto aplikácii čítať údaje konfigurácie služieb Google.</string>
+    <string name="permlab_writeGservices">Upraviť konfiguráciu služieb Google</string>
+    <string name="permdesc_writeGservices">Povoľuje tejto aplikácii upraviť údaje konfigurácie služieb Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Aplikácie Google</string>
+    <string name="permlab_googleAuthPassword">prístup k heslám účtov Google</string>
+    <string name="permdesc_googleAuthPassword">Povoľuje aplikáciám priamy prístup k heslám účtov Google, ktoré ste nakonfigurovali.</string>
+    <string name="permlab_googleMailSwitch">výber služby Gmail alebo Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Umožňuje aplikáciám prepnúť zobrazený názov medzi značkami Gmail a Google Mail.</string>
+    <string name="permlab_googleAuth">zobrazenie konfigurovaných účtov</string>
+    <string name="permdesc_googleAuth">Povoľuje aplikáciám prístup k používateľským menám (e-mailovým adresám) nakonfigurovaných účtov Google.</string>
+    <string name="permlab_googleAuth_ALL">prístup do všetkých služieb Google</string>
+    <string name="permdesc_googleAuth_ALL">Umožňuje aplikáciám prihlásiť sa do VŠETKÝCH služieb Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_OTHER">prístup do ďalších služieb Google</string>
+    <string name="permdesc_googleAuth_OTHER">Umožňuje aplikáciám prihlásiť sa do bližšie neurčených služieb Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Umožňuje aplikáciám prihlásiť sa do poštových služieb Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_cl">Kalendár Google</string>
+    <string name="permdesc_googleAuth_cl">Umožňuje aplikáciám prihlásiť sa do služby Kalendár Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_android">Služby systému Android</string>
+    <string name="permdesc_googleAuth_android">Umožňuje aplikáciám prihlásiť sa do služieb Android pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_sierra">Účty služby Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Umožňuje aplikáciám prihlásiť sa do služby Google Checkout (a potenciálne nakupovať) pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_sierraqa">Účty služby Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Umožňuje aplikáciám prihlásiť sa do služby Google Checkout QA pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Účty služby Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Umožňuje aplikáciám prihlásiť sa do služby Google Checkout Sandbox pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Umožňuje aplikáciám prihlásiť sa do služby YouTube pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">Používateľské mená YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Umožňuje aplikáciám zobraziť používateľské mená služby YouTube združené s účtami Google, ktoré sú uložené v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Umožňuje aplikáciám prihlásiť sa do služby Google Talk pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_ig">Účty služby iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Umožňuje aplikáciám prihlásiť sa na stránku iGoogle pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_lh2">Webové albumy programu Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Umožňuje aplikáciám prihlásiť sa do Webových albumov programu Picasa pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_mobile">Mobilné aplikácie Google</string>
+    <string name="permdesc_googleAuth_mobile">Umožňuje aplikáciám prihlásiť sa k mobilným aplikáciám Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_cp">údaje o kontaktoch účtov Google</string>
+    <string name="permdesc_googleAuth_cp">Umožňuje aplikáciám pristupovať ku kontaktom a informáciám profilov účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Umožňuje aplikáciám prihlásiť sa do služby Google AdSense pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Umožňuje aplikáciám prihlásiť sa do služby Google AdWords pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Umožňuje aplikáciám prihlásiť sa do služby Blogger pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Umožňuje aplikáciám prihlásiť sa do služby Dodgeball pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Umožňuje aplikáciám prihlásiť sa do služby Google Base pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_groups2">Skupiny Google</string>
+    <string name="permdesc_googleAuth_groups2">Umožňuje aplikáciám prihlásiť sa do Skupín Google pomocou účtov uložených v tomto zariadení so systémom Android</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Umožňuje aplikáciám prihlásiť sa do služby Google Health pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Umožňuje aplikáciám prihlásiť sa do služby JotSpot pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Umožňuje aplikáciám prihlásiť sa do služby Knol pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_news">Google News</string>
+    <string name="permdesc_googleAuth_news">Umožňuje aplikáciám prihlásiť sa do služby Google News pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Umožňuje aplikáciám prihlásiť sa do služby Orkut pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_print">Vyhľadávanie kníh Google</string>
+    <string name="permdesc_googleAuth_print">Umožňuje aplikáciám prihlásiť sa do služby Knihy Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_sitemaps">Nástroje správcu webu Google</string>
+    <string name="permdesc_googleAuth_sitemaps">Umožňuje aplikáciám prihlásiť sa do Nástrojov správcu webu Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Umožňuje aplikáciám prihlásiť sa do služby Google WiFi pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_writely">Dokumenty Google</string>
+    <string name="permdesc_googleAuth_writely">Umožňuje aplikáciám prihlásiť sa do Dokumentov Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_wise">Tabuľky Google</string>
+    <string name="permdesc_googleAuth_wise">Umožňuje aplikáciám prihlásiť sa do služby Tabuľky Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Umožňuje aplikáciám prihlásiť sa do služby Google Finance pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_local">Mapy Google</string>
+    <string name="permdesc_googleAuth_local">Umožňuje aplikáciám prihlásiť sa do služby Mapy Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Umožňuje aplikáciám prihlásiť sa do služby Google App Engine pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_notebook">Zápisník Google</string>
+    <string name="permdesc_googleAuth_notebook">Umožňuje aplikáciám prihlásiť sa do služby Zápisník Google pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Umožňuje aplikáciám prihlásiť do služby Google Voice pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Prispôsobené rozpoznávanie reči</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Umožňuje aplikáciám prihlásiť sa do služby Prispôsobeného rozpoznávania reči pomocou účtov uložených v tomto zariadení so systémom Android.</string>
+    <string name="gls_notification_title">Prihláste sa do svojho účtu</string>
+    <string name="gls_notification_new_account">Je potrebný účet ^1</string>
+    <string name="gls_notification_new_account_youtube">Je potrebný účet YouTube</string>
+    <string name="gls_notification_login_error">Po dotknutí sa môžete prihlásiť do účtu.</string>
+    <string name="gls_ui_add_account_title">Nastavenie účtu</string>
+    <string name="gls_ui_google_account_subtitle">Účet Google</string>
+    <string name="gls_ui_activity_title">Prihlásenie do služby Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Prihlásenie pomocou prehliadača</string>
+    <string name="gls_ui_activity_title_enterprise">Prihlásenie do firemnej siete</string>
+    <string name="gls_ui_activity_title_youtube">Prihlásenie do služby YouTube</string>
+    <string name="gls_ui_activity_authenticating">Prebieha overovanie…</string>
+    <string name="gls_captcha_activity_message">Zadajte znaky zobrazené na obrázku:</string>
+    <string name="gls_captcha_activity_ok_button">Hotovo</string>
+    <string name="gls_error_activity_message">Pri pokuse o prihlásenie do účtu <b>^1</b> sa vyskytla chyba. Skúste sa prihlásiť znova alebo akciu zrušte stlačením tlačidla Späť.</string>
+    <string name="gls_error_activity_retry_button">Skúsiť znova</string>
+    <string name="gls_dmagent_activity_message">" Doména vyžaduje správu mobilného zariadenia. Nainštalujte aplikáciu Google Apps Device Policy, ktorá zaistí dodržiavanie pravidiel zabezpečenia vyžadovaných účtom "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Prevziať</string>
+    <string name="gls_login_activity_username_label">Používateľské meno</string>
+    <string name="gls_login_activity_password_label">Heslo</string>
+    <string name="gls_login_activity_ok_button">Prihlásiť sa</string>
+    <string name="gls_login_activity_loginfail_text_both">Používateľské meno alebo heslo nie je platné. Vyžaduje sa účet služby <b>^1</b>. Skúste to znova.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Zadali ste chybné heslo alebo sa zmenil váš účet. Zadajte heslo znova.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Zadajte heslo účtu.</string>
+    <string name="gls_enterprise_login_activity_msg">"Pre overenie je nevyhnutné, aby ste sa prihlásili do svojho firemného účtu v doméne ^1.
+Ak chcete otvoriť webovú prihlasovaciu stránku svojej firmy, dotknite sa položky Prihlásiť sa."</string>
+    <string name="gls_login_activity_badaccount_text">Účet nie je možné v tejto situácii použiť. Skúste iný účet.</string>
+    <string name="gls_login_activity_newaccount_text">Prihláste sa do svojho účtu <b>^1</b>.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Nemáte účet YouTube? Vytvorte ho dotykom <a href="http://www.youtube.com/signup">tu</a>.</string>
+    <string name="gls_settings_tos_activity_title">Právne informácie spoločnosti Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Bez pripojenia k dátovej službe. Ak chcete zobraziť tieto informácie, prejdite v ktoromkoľvek počítači s internetovým pripojením na adresu %s.</string>
+    <string name="gls_settings_contributors_activity_title">Prispievatelia</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Bez pripojenia k dátovej službe. Ak chcete zobraziť tieto informácie, prejdite v ktoromkoľvek počítači pripojenom k Internetu na adresu %s.</string>
+    <string name="gls_webview_progress_title">Prebieha pripájanie k doméne...</string>
+    <string name="gls_webview_progress_verbose_message">"Servery vašej spoločnosti posielajú prihlasovacie informácie. Môže to trvať niekoľko minút.
+Po dokončení sa zobrazí prihlasovacia stránka vašej spoločnosti."</string>
+    <string name="gls_sign_in_button_label">Prihlásiť sa</string>
+    <string name="gls_back_button_label">Späť</string>
+    <string name="gls_cancel_button_label">Zrušiť</string>
+    <string name="gls_exit_account_setup_button_label">Ukonč. nastav. účtu</string>
+    <string name="gls_reauthorize_button_label">Znova overiť</string>
+    <string name="gls_sign_in_message">Nastavenie účtu vyžaduje, aby zariadenie so systémom Android nadviazalo komunikáciu so servermi Google. Táto akcia môže trvať až päť minút.</string>
+    <string name="gls_sign_in_title">Prebieha prihlasovanie...</string>
+</resources>

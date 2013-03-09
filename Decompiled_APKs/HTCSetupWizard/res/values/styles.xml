@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="layout_panel">
+        <item name="android:background">@*android:drawable/bottom_bar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/layout_panel_layout_height</item>
+    </style>
+    <style name="generic_button">
+        <item name="android:textSize">@dimen/bottom_button_textSize</item>
+        <item name="android:textColor">@*android:color/background_dark</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+    </style>
+    <style name="normal_button" parent="@style/generic_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_left</item>
+        <item name="android:layout_marginTop">@dimen/layout_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/layout_margin_bottom</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+    </style>
+    <style name="bottom_button" parent="@style/generic_button">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">@dimen/bottom_button_layout_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/bottom_button_layout_marginLeft</item>
+        <item name="android:layout_marginTop">@dimen/bottom_button_layout_marginTop</item>
+        <item name="android:layout_marginRight">@dimen/bottom_button_layout_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/bottom_button_layout_marginBottom</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="layout_progressbar_body">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="NoTitleBar" parent="@*android:style/Theme.DeviceDefault">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

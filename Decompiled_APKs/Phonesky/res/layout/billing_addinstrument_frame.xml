@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/billing_form_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/action_bar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" style="@style/SetupWizardContentWidth">
+            <TextView android:gravity="bottom" android:id="@id/addinstrument_title" android:paddingLeft="@dimen/setup_wizard_screen_margin_sides" android:paddingTop="2.0dip" android:paddingRight="@dimen/setup_wizard_screen_margin_sides" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:text="@string/setup_wizard_market_setup_title" style="@style/SetupWizardTitle" />
+            <LinearLayout android:orientation="vertical" android:paddingBottom="16.0dip" android:layout_width="fill_parent" style="@style/SetupWizardContentHeight">
+                <FrameLayout android:id="@id/addinstrument_dividerandprogress" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/addinstrument_divider" style="@style/SetupWizardDivider" />
+                    <ProgressBar android:id="@id/addinstrument_progress" android:visibility="invisible" android:layout_width="fill_parent" android:indeterminate="true" style="@style/SetupWizardProgressBar" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@id/placeholder_loading" android:visibility="gone" layout="@layout/page_loading_indicator" />
+                    <include android:id="@id/placeholder_error" android:visibility="gone" layout="@layout/page_error_indicator" />
+                </FrameLayout>
+            </LinearLayout>
+            <View android:visibility="invisible" android:layout_width="fill_parent" style="@style/SetupWizardBottomMargin" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

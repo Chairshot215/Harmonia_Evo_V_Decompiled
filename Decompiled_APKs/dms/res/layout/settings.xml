@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LayoutSettings" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="#22ffffff" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@*android:color/white" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/separator_programname" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/LayoutRound1" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/LayoutRound1" android:background="#ffffffff" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkbox_sharing" />
+                    <TextView android:textSize="12.0dip" android:textColor="@*android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/checkbox_press_sharing" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:textColor="@*android:color/black" android:id="@id/CheckBoxSharing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#22ffffff" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@*android:color/white" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/separator_friendlyname" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/LayoutRound2" android:background="#ffffffff" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textColor="@*android:color/black" android:id="@id/EditTextFriendlyName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/edittext_friendlyname" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:background="#22ffffff" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@*android:color/white" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/separator_sharemediatype" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/LayoutRound3" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/textview_music" android:paddingLeft="8.0dip" android:paddingRight="50.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/checkbox_music" />
+                    <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:id="@id/CheckBoxMusic" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/list_divider" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/textview_picture" android:paddingLeft="8.0dip" android:paddingRight="50.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/checkbox_picture" />
+                    <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:id="@id/CheckBoxPicture" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/list_divider" android:scaleType="fitXY" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/textview_video" android:paddingLeft="8.0dip" android:paddingRight="50.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/checkbox_video" />
+                    <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <CheckBox android:id="@id/CheckBoxVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#22ffffff" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@*android:color/white" android:gravity="center_vertical" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/separator_sharefolders" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/LayoutRound4" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textColor="@*android:color/black" android:id="@id/ButtonShareFolder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_sharefolder" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="accessibility_settings_title" android:key="misc_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/different_tweaks" android:key="misccat">
+        <com.htc.preference.HtcPreference android:title="@string/phone_info" android:key="pref_phone_info" android:summary="@string/phone_info_summary">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.RadioInfo" />
+        </com.htc.preference.HtcPreference>
+        <com.htc.preference.HtcListPreference android:entries="@array/pref_overscrollcolor_entries" android:title="@string/overscroll_glow_color" android:key="pref_overscrollcolor" android:summary="@string/overscroll_glow_color_summary" android:defaultValue="-1" android:entryValues="@array/pref_overscrollcolor_values" />
+        <com.htc.preference.HtcListPreference android:entries="@array/pref_autobrightness_entries" android:title="@string/autobacklight_brightness" android:key="pref_brighntess" android:summary="@string/autobacklight_brightness_summary" android:defaultValue="0" android:entryValues="@array/pref_autobrightness_values" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/mms_screen_on_summary" android:key="sms_screenon" android:summary="@string/mms_screen_on_summary" />
+        <com.htc.preference.HtcPreference android:title="@string/apm_items" android:key="apm_items" android:summary="@string/apm_items_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/keyboard" android:key="keyboard">
+        <com.htc.preference.HtcListPreference android:entries="@array/pref_volume_entries" android:title="@string/volume_steps" android:key="pref_volumesteps" android:summary="@string/volume_steps_summary" android:defaultValue="0" android:entryValues="@array/pref_volume_values" />
+        <com.htc.preference.HtcListPreference android:entries="@array/pref_capacitive_backlight_entries" android:title="@string/capacitive_backlight" android:key="pref_capacitive_backlight" android:summary="@string/capacitive_backlight_summary" android:defaultValue="0" android:entryValues="@array/pref_capacitive_backlight_values" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/hide_arrows" android:key="pref_hide_arrows" android:summary="@string/hide_arrows_summary" android:defaultValue="0" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

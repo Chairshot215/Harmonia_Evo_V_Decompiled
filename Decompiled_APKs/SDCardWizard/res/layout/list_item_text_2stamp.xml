@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <com.htc.widget.HtcListItem2LineText android:id="@id/line_text" />
+        <com.htc.widget.HtcListItem2LineStamp android:id="@id/line_stamp" android:layout_width="wrap_content" />
+    </com.htc.widget.HtcListItem>
+</LinearLayout>

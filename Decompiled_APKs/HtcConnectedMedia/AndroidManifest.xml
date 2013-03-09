@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100254225" android:versionName="1.0.2211142562.254225" package="com.htc.connectedMedia"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/connected_media" android:hardwareAccelerated="false" allowSkinChange="true">
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="@string/app_name" android:name=".ConnectedMedia">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

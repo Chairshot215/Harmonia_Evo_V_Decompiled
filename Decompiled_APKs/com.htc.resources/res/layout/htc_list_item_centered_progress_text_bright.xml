@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:gravity="center" android:id="@id/progress_bar_1x1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallInverse" />
+        <TextView android:gravity="center_vertical" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_marginLeft="12.0px" android:layout_weight="1.0" style="@com.htc:style/text_style_primary" />
+    </LinearLayout>
+</LinearLayout>

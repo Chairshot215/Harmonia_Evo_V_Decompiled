@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <FrameLayout android:id="@id/content_container" android:background="@color/listview_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:orientation="vertical" android:id="@id/createScrollViewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/login_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_userid" android:hint="@string/login_activity_username_label" android:inputType="textEmailAddress" style="@style/auth.edittext" />
+                <View style="@style/divider" />
+                <EditText android:textSize="@com.htc:dimen/input_default_m" android:id="@id/login_password" android:hint="@string/login_activity_password_label" android:inputType="textPassword" style="@style/auth.edittext" />
+                <View style="@style/divider" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/border_margin" style="@style/auth">
+                    <CheckBox android:id="@id/auth_showpassword" android:text="@string/auth_showpassword" style="@style/auth.checkbox" />
+                    <Button android:textSize="@com.htc:dimen/button_secondary_m" android:id="@id/auth_button_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:text="@string/auth_button_login" style="com.htc:style/button_secondary_m" />
+                </LinearLayout>
+                <View style="@style/divider" />
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/border_margin" style="@style/auth">
+                    <TextView android:id="@id/auth_forgotpassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:text="@string/auth_forgotpassword" android:layout_weight="1.0" style="@com.htc:style/list_primary_s" />
+                    <Button android:textSize="@com.htc:dimen/button_secondary_m" android:id="@id/auth_button_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:text="@string/help_title" android:layout_alignParentRight="true" style="com.htc:style/button_secondary_m" />
+                </LinearLayout>
+                <View style="@style/divider" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

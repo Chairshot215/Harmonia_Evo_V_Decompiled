@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htcfooter="com.htc.R.drawable.common_app_fmradio_btn_power">
+    <ScrollView android:id="@id/scrollView" android:background="#ffffffff" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/trans_topround" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:id="@id/mainScreen" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@com.htc:dimen/list_primary_xs" android:textColor="#ff000000" android:layout_gravity="top|left|center" android:id="@id/edit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:text="@string/fm_preset_edit_title" android:singleLine="true" />
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/list_primary_s" android:layout_gravity="bottom|left|center" android:id="@id/preset_name" android:background="?com.htc:attr_common_inputfield_light" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_marginTop="12.0px" android:layout_marginRight="14.0px" android:scrollHorizontally="true" android:singleLine="true" android:capitalize="none" android:autoText="false" android:inputType="textAutoComplete" style="@com.htc:style/input_default_m" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_2" />
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_1" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

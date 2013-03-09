@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/photo_btn_padding_horizontal" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@com.htc:dimen/button_primary_s" android:textColor="@com.htc:drawable/button_text_selector" android:gravity="center" android:id="@id/from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/button_text_shadow_color" android:shadowDx="1.0" android:shadowDy="2.0" android:shadowRadius="1.0" android:layout_toRightOf="@id/photo" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</merge>

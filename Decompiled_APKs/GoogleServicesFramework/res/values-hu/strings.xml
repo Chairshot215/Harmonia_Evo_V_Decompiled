@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Internet</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">ismeretlen</string>
+    <string name="sharedUserLabel">Google-szolgáltatások</string>
+    <string name="service_label">Rendszerfrissítés</string>
+    <string name="system_update_activity_name">Rendszerfrissítések</string>
+    <string name="system_update_activity_title">Rendszerfrissítések</string>
+    <string name="system_update_activity_battery_low_text">A rendszerfrissítés telepítéséhez nincs kellőképpen feltöltve az akkumulátor. A folytatáshoz csatlakoztassa a töltőt.</string>
+    <string name="system_update_activity_battery_low_charging_text">Az akkumulátor nincs kellőképpen feltöltve a rendszerfrissítés telepítéséhez. Várjon, amíg az akkumulátor eléggé fel nem töltődik.</string>
+    <string name="system_update_activity_roaming_text">A rendszerfrissítések nem tölthetők le barangolás közben.</string>
+    <string name="system_update_requires_restart_status_text">Újraindítást igényel</string>
+    <string name="system_update_downloading_status_text">Letöltés</string>
+    <string name="system_update_downloading_wifi_status2_text">Wi-Fin keresztül eddig: ^1</string>
+    <string name="system_update_verifying_status_text">Ellenőrzés alatt</string>
+    <string name="system_update_verification_failed_text">Az ellenőrzés sikertelen</string>
+    <string name="system_update_verified_status_text">Letöltve és ellenőrizve</string>
+    <string name="system_update_download_failed_status_text">A letöltés nem sikerült</string>
+    <string name="system_update_download_retry_button_text">Letöltés megpróbálása újra</string>
+    <string name="system_update_download_button_text">Letöltés</string>
+    <string name="system_update_install_button_text">Újraindítás és telepítés</string>
+    <string name="system_update_check_now_button_text">Ellenőrzés most</string>
+    <string name="system_update_no_update_content_text">Az Ön által használt rendszer naprakész</string>
+    <string name="system_update_last_checkin">Frissítés céljából legutóbb ellenőrizve: ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Megjelent egy rendszerfrissítés</string>
+    <string name="system_update_recommended_update_available_notification_message">A frissítés részleteinek megtekintése.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Nem sikerült letölteni a rendszerfrissítést.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">A letöltés nem sikerült, kérjük, próbálja újra.</string>
+    <string name="system_update_error_dialog_title">Hiba</string>
+    <string name="system_update_error_downloading_dialog_message">Gond volt a frissítés letöltésével.</string>
+    <string name="system_update_error_installing_dialog_message">Gond volt a frissítés telepítésével.</string>
+    <string name="system_update_install_dialog_label">Rendszerfrissítés</string>
+    <string name="system_update_install_dialog_message_nonphone">Egy rendszerfrissítés készen áll a telepítésre. Android eszköze újraindul és telepíti azt.</string>
+    <string name="system_update_install_dialog_message_phone">Egy rendszerfrissítés készen áll a telepítésre. Android eszköze újraindul és telepíti a frissítést. A telepítés alatt nem tud hívást lebonyolítani (még segélyhívást sem).</string>
+    <string name="system_update_install_dialog_battery_low_message">Készen áll egy rendszerfrissítés, de az akkumulátor nincs kellőképpen feltöltve a telepítéshez. Csatlakoztassa a töltőt.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Készen áll egy rendszerfrissítés, de az akkumulátor nincs kellőképpen feltöltve a telepítéshez. Várjon, amíg az akkumulátor eléggé fel nem töltődik.</string>
+    <string name="system_update_install_dialog_now_button">Telepítés most</string>
+    <string name="system_update_install_dialog_later_button">Telepítés később</string>
+    <string name="system_update_install_dialog_info_button">További információ…</string>
+    <string name="system_update_downloading_notification_title">Rendszerfrissítés letöltése</string>
+    <string name="system_update_verifying_notification_title">A rendszerfrissítés ellenőrzése</string>
+    <string name="system_update_download_dialog_label">Rendszerfrissítés letöltése</string>
+    <string name="system_update_download_dialog_message">Megjelent egy rendszerfrissítés, amely még tovább javítja Android készülékének működését. Ha a vezeték nélküli hálózaton keresztül tölti le, a szolgáltatója díjat számíthat fel.</string>
+    <string name="system_update_download_dialog_now_button">Letöltés most</string>
+    <string name="system_update_download_dialog_later_button">Letöltés később</string>
+    <string name="system_update_download_dialog_cancel_button">Mégse</string>
+    <string name="system_update_countdown_complete">Újraindítás most...</string>
+    <string name="system_update_countdown_cancel_button">Telepítés megszakítása</string>
+    <string name="system_update_complete_label">Rendszerfrissítés</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Feliratkozások továbbítása</string>
+    <string name="ro_perm_label">azonnali üzenetek olvasása</string>
+    <string name="ro_perm_desc">Lehetővé teszi az alkalmazások számára, hogy adatokat olvassanak be a Google Csevegő tartalomszolgáltatóból.</string>
+    <string name="wo_perm_label">azonnali üzenetek írása</string>
+    <string name="wo_perm_desc">Lehetővé teszi az alkalmazások számára, hogy adatokat írjanak a Google Csevegő tartalomszolgáltatóba.</string>
+    <string name="gsf_label">Google Szolgáltatások keretrendszer</string>
+    <string name="search_chats">"Keresés a csevegésekben
+a következőre: '%1$s'"</string>
+    <string name="gtalkservice_label">Google üzenetküldő szolgáltatás</string>
+    <string name="c2dm_label">Felhő és eszköz közötti üzenetszolgáltatás</string>
+    <string name="sendTalkMsg_perm_label">Üzeneteket vált és fogadja a szinkronizálási értesítéseket a Google szervereitől</string>
+    <string name="sendTalkMsg_perm_desc">A szerverfelhőből az eszköznek küldött üzeneteknél és a szinkronizálási értesítéseknél használatos. A Google Csevegő üzenetváltásra és a jelenléti állapot szinkronizálására használja ezt a szolgáltatást. Rosszindulatú alkalmazások túl sok adat átvitelére használhatják.</string>
+    <string name="perm_receive_data_message_label">adatok fogadása az internetről</string>
+    <string name="perm_receive_data_message_desc">Lehetővé teszi az alkalmazások számára, hogy fogadják a szolgáltatás által a felhőből az eszköznek küldött üzeneteket. A szolgáltatás használata nagyobb adathasználatot eredményez. A rosszindulatú alkalmazások túlzott mértékű adathasználatot okozhatnak.</string>
+    <string name="perm_data_msg_broadcast_label">Adatüzenetek szórása az alkalmazásoknak.</string>
+    <string name="perm_data_msg_broadcast_desc">Az internetről kapott adatokat továbbíthatja azoknak a regisztrált alkalmazásoknak, amelyeknek szükségük van ezekre.</string>
+    <string name="perm_receive_xmpp_label">XMPP-üzenetek váltása a Google szervereivel</string>
+    <string name="perm_receive_xmpp_desc">Lehetővé teszi a Google alkalmazásai számára XMPP-üzenetek váltását a Google szervereivel.</string>
+    <string name="perm_xmpp_broadcast_label">XMPP-üzenetek küldése alkalmazásoknak.</string>
+    <string name="perm_xmpp_broadcast_desc">A Google szervereitől kapott XMPP-adatokat továbbíthatja a regisztrált fogadó alkalmazásoknak.</string>
+    <string name="perm_use_xmpp_endpoint_label">XMPP-üzenetek váltása a Google szervereivel.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Lehetővé teszi a Google alkalmazásai számára XMPP-üzenetek váltását a Google szervereivel.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">XMPP-üzenetek küldése alkalmazásoknak.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">A Google szervereitől kapott XMPP-adatokat továbbíthatja az alkalmazásoknak.</string>
+    <string name="permlab_intentVendingOnly">Adatszórás az Android Market felé.</string>
+    <string name="permdesc_intentVendingOnly">Adatokat szórhat az Android Market felé, alkalmazások telepítését és eltávolítását kérve.</string>
+    <string name="permlab_heartbeat">Szívverés küldése a Google Csevegő szerverének</string>
+    <string name="permdesc_heartbeat">A kapcsolat egészségének biztosítása érdekében szívveréscsomagot küldhet a Google Csevegő szerverének.</string>
+    <string name="group_chat">Csoportos csevegés: %s</string>
+    <string name="default_decline_reason">Sajnálom, jelenleg nem érek rá.</string>
+    <string name="newMessages_label">Új csevegések</string>
+    <string name="notify_groupchat_label">Meghívás csoportos csevegésre</string>
+    <string name="num_unread_chats">%s olvasatlan csevegés</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s -> %s</string>
+    <string name="subscription_notify_text">%s szeretne csevegni</string>
+    <string name="group_chat_invite_notify_text">Meghívást kapott csoportos csevegésre %s felhasználótól</string>
+    <string name="group_chat_invite_dialog_text">%s meghívja Önt egy csoportos csevegésre.</string>
+    <string name="message_too_long">Nem küldhet 2000 karakternél hosszabb üzenetet.</string>
+    <string name="missed_video_chat_notification">Elmulasztott egy videocsevegést</string>
+    <string name="missed_voice_chat_notification">Elmulasztott egy audiocsevegést</string>
+    <string name="missed_video_chat_notification_no_wifi">Elmulasztott egy meghívást videocsevegésre, mert nem Wi-Fi hálózathoz csatlakozott</string>
+    <string name="missed_voice_chat_notification_no_wifi">Elmulasztott egy meghívást audiocsevegésre, mert nem Wi-Fi hálózathoz csatlakozott</string>
+    <string name="missed_video_chat_message">%1$s videocsevegést próbált kezdeményezni Önnel</string>
+    <string name="missed_voice_chat_message">%1$s audiocsevegést próbált kezdeményezni Önnel</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s megpróbált videocsevegést kezdeményezni Önnel, amíg Ön nem Wi-Fi hálózathoz csatlakozott</string>
+    <string name="missed_voice_chat_message_no_wifi">%1$s megpróbált audiocsevegést kezdeményezni Önnel, amíg Ön nem Wi-Fi hálózathoz csatlakozott</string>
+    <string name="end_cause_user_unavailable_video">%1$s nem volt elérhető videocsevegésre.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s nem volt elérhető audiocsevegésre.</string>
+    <string name="end_cause_sent_terminate_video">Befejezte a videocsevegést %1$s felhasználóval.</string>
+    <string name="end_cause_sent_terminate_voice">Befejezte az audiocsevegést %1$s felhasználóval.</string>
+    <string name="end_cause_received_terminate_video">%1$s befejezte a videocsevegést.</string>
+    <string name="end_cause_received_terminate_voice">%1$s befejezte az audiocsevegést.</string>
+    <string name="end_cause_network_problem_video">Sajnáljuk, a videocsevegés %1$s felhasználóval hálózati hiba miatt megszakadt. Próbálkozzon újra.</string>
+    <string name="end_cause_network_problem_voice">Sajnáljuk, az audiocsevegés %1$s felhasználóval hálózati hiba miatt megszakadt. Próbálkozzon újra.</string>
+    <string name="conn_auth_error_notify_ticker">Nem sikerült az azonosítás a Google Csevegőben</string>
+    <string name="conn_auth_error_notify_title">Nem sikerült az azonosítás a Google Csevegőben</string>
+    <string name="conn_auth_error_title">Hitelesítési hiba</string>
+    <string name="conn_auth_error_message">Nem sikerült a bejelentkezés a Google Csevegőbe. Ha ez egy Google Apps-fiók, győződjön meg róla, hogy a Csevegés szolgáltatás be van-e kapcsolva ennél a fióknál.</string>
+    <string name="conn_auth_error_button_retry">Újra</string>
+    <string name="conn_auth_error_button_cancel">Mégse</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Üdvözli a(z) ^1!</string>
+    <string name="setup_wizard_title">Beállításvarázsló</string>
+    <string name="error_dialog_title">Figyelem</string>
+    <string name="next_button_label">Tovább</string>
+    <string name="back_button_label">Vissza</string>
+    <string name="sign_in_button_label">Bejelentkezés</string>
+    <string name="create_button_label">Létrehozás</string>
+    <string name="skip_button_label">Átugrás</string>
+    <string name="first_name">Utónév</string>
+    <string name="last_name">Vezetéknév</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Mégse</string>
+    <string name="done_button_label">A beállítás befejezése</string>
+    <string name="try_again_button_label">Próbálkozzon újra</string>
+    <string name="close_button_label">Bezárás</string>
+    <string name="edit_text_help">A gépelés elkezdéséhez érintse meg a szövegmezőt</string>
+    <string name="add_a_google_account">Google Fiók hozzáadása</string>
+    <string name="no_sim_setup_wireless">Nincsen SIM-kártya a telefonban, így nem tud csatlakozni a mobil hálózathoz beszéd- vagy adatszolgáltatások céljából. SIM-kártya nélkül Wi-Fi hálózatokhoz tud kapcsolódni.</string>
+    <string name="setup_wifi_button_label">Kapcsolódás vezeték nélküli hálózathoz</string>
+    <string name="no_network">Nincs hálózati kapcsolat.</string>
+    <string name="no_network_help">Ez lehet ideiglenes probléma, vagy lehet, hogy Android készülékén nem érhető el adatszolgáltatás. Kérjük, próbálja újra, amikor csatlakozik egy mobil vagy Wi-Fi hálózathoz.</string>
+    <string name="server_error">Hiba történt a Google szervereivel folytatott kommunikáció során.</string>
+    <string name="server_error_help">Próbálkozzon újra később.</string>
+    <string name="network_unreliable">Nem lehet megbízható adatkapcsolatot létrehozni a szerverrel.</string>
+    <string name="network_unreliable_help">Ez lehet ideiglenes probléma, de lehet, hogy Android eszközén nem érhető el adatszolgáltatás. Ha a probléma továbbra is fennáll, hívja az ügyfélszolgálatot.</string>
+    <string name="invalid_login_character">Érvénytelen karakter. Csak a következők engedélyezettek: 0-9, a-z, A-Z és pont (.).</string>
+    <string name="invalid_password_character">Érvénytelen karakter a jelszóban.</string>
+    <string name="add_apn">Vezeték nélküli beállítások</string>
+    <string name="setup_google_account_title">Saját Google Fiók beállítása</string>
+    <string name="setup_complete_title">A telepítés kész</string>
+    <string name="cant_be_blank">A mező nem lehet üres.</string>
+    <string name="calendar">Google Naptár</string>
+    <string name="talk">Google Csevegő</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android készüléke nem csatlakozik adatszolgáltatáshoz. Ha meg szeretné tekinteni ezt az információt, keresse fel a %s webhelyet egy olyan számítógépről, amely kapcsolódik az internethez.</string>
+    <string name="field_cant_be_blank">Ez a mező nem lehet üres</string>
+    <string name="field_invalid_domain">Ez a domainnév nem érvényes</string>
+    <string name="field_invalid_user">Ez nem egy érvényes felhasználónév</string>
+    <string name="field_invalid_user_domain">Csak a felhasználónevét írja be, ne az e-mail címét</string>
+    <string name="field_invalid_login">Ez a fióknév nem érvényes</string>
+    <string name="about_accounts_message"><font size="17">"Android készülékét könnyen beállíthatja! Csupán egy Google Fiókra van szüksége.
+"<font height="17">"
+"</font><b>Miért érdemes Google Fiókot használni?</b>"
+"<font height="3">"
+"</font>"Google Fiók használatával a Google-alkalmazások automatikusan szinkronizálva lesznek Android készüléke és számítógépe között, függetlenül attól, hogy hol hajt végre frissítést.
+"<font height="17">"
+"</font><b>Már van Google Fiókja?</b>"
+"<font height="3">"
+"</font>"Akkor minden készen áll! Egyszerűen érintse meg a \"Bejelentkezés\" gombot a következő képernyőn.
+"<font height="17">"
+"</font><b>Nincs Google Fiókja?</b>"
+"<font height="3">"
+"</font>"Semmi gond. Érintse meg a \"Létrehozás\" gombot a következő képernyőn, és mi segítünk beállítani egyet.
+"<font height="17">"
+"</font><b>Érintse meg a \"Tovább\" gombot a kezdéshez!</b>"
+"</font></string>
+    <string name="fling_help_message">"Ujját a képernyőn fel-le csúsztatva görgethet.
+(Érintse meg ezt az üzenetet az eltüntetéséhez.)"</string>
+    <string name="setup_device_title">^1 beállítása</string>
+    <string name="dont_have_an_account">Nincs Google Fiókja?</string>
+    <string name="create_one_now">Hozzon létre egyet! Könnyű.</string>
+    <string name="already_have_an_account">Van már Google Fiókja?</string>
+    <string name="sign_in_with_google_account">Jelentkezzen be abba a Google Fiókjába, amelyet szeretne összekapcsolni ezzel az Android eszközzel.</string>
+    <string name="skip_message">Később kíván beállítani fiókot?</string>
+    <string name="touch_to_begin">Érintse meg a készüléket.</string>
+    <string name="delayed_gaia_agreement">A folytatással Ön elfogadja a <annotation id="google_privacy">Google</annotation> adatvédelmi irányelveit és a <annotation id="android_privacy">kiegészítő</annotation> adatvédelmi irányelveket.</string>
+    <string name="open_keyboard_message">A kezdéshez nyissa ki a billentyűzetet.</string>
+    <string name="open_keyboard_message_to_continue">A folytatáshoz nyissa ki a billentyűzetet.</string>
+    <string name="emergency_dial">Segélyhívás</string>
+    <string name="change_language">Nyelv megváltoztatása</string>
+    <string name="signing_in">Bejelentkezés…</string>
+    <string name="close_keyboard_message">A folytatáshoz csukja be a billentyűzetet.</string>
+    <string name="communicating_message">A fiók létrehozása érdekében Android eszközének kommunikálnia kell a Google szervereivel. Ez akár 5 percig is eltarthat.</string>
+    <string name="communicating_message_domain">A domainjével kapcsolatos információk felkutatása érdekében Android eszközének kommunikálnia kell a Google szervereivel. Ez akár 5 percig is eltarthat.</string>
+    <string name="username">Felhasználónév</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Jelszó</string>
+    <string name="sign_in_agreement">A bejelentkezéssel elfogadja a <annotation id="google_privacy">Google</annotation> adatvédelmi irányelveit és a <annotation id="android_privacy">kiegészítő</annotation> adatvédelmi irányelveket.</string>
+    <string name="create">Létrehozás</string>
+    <string name="create_message">Google Fiókra van szüksége?</string>
+    <string name="now_signing_in">Bejelentkezés…</string>
+    <string name="now_verifying_domain">Domain keresése...</string>
+    <string name="sign_in_with_google_account_short">Jelentkezzen be Google Fiókjával:</string>
+    <string name="browser_sign_in_explanation">Használja ezt a képernyőt, ha böngészőt igénylő speciális bejelentkezésre van szüksége.</string>
+    <string name="gls_browser_login_intro_message">Nem érhető el a Google vagy a Google Apps-fiók. Újra be kell jelentkezni.</string>
+    <string name="enter_domain_name">Adja meg vállalata domainnevét:</string>
+    <string name="enter_user_name">Adja meg a(z) ^1 domainhez tartozó felhasználónevét és jelszavát:</string>
+    <string name="inactive_domain">Ez a fiók nem használható, mert egy inaktív domainbe tartozik. Kérjük, forduljon a domain rendszergazdájához <b>^1</b> vagy jelentkezzen be egy másik fiókkal.</string>
+    <string name="invalid_username">A beírt szöveg nem érvényes felhasználónév.</string>
+    <string name="web_login_error_title">Sajnáljuk...</string>
+    <string name="web_login_error_desc">"Gond van a csatlakozással a(z) ^1 domainben lévő vállalati szerverekhez.
+
+Információ a hibáról:
+"</string>
+    <string name="web_login_error_redirects">A webes bejelentkező oldal túl gyakran irányított át</string>
+    <string name="web_login_error_http">HTTP hiba ^1 : ^2</string>
+    <string name="name_device_label">Adjon meg egy nevet Android készüléke számára:</string>
+    <string name="device_name_hint">Eszköz neve</string>
+    <string name="registering_device">Android készülék regisztrálása...</string>
+    <string name="error_account_disabled">"Ez a fiók le van tiltva. 
+
+(A részletekért keresse fel a http://google.com/accounts/recovery webhelyet a számítógépén.)"</string>
+    <string name="error_login_failed">"A felhasználónév és a jelszó nem egyezik. Kérjük, próbálja újra. 
+
+(A fiókadatok helyreállításához keresse fel számítógépén a http://www.google.com/accounts/recovery webhelyet.)"</string>
+    <string name="error_account_not_verified">"Ez a fiók még nincs ellenőrizve. Kérjük, nyissa meg az e-mailt egy számítógépen, majd kattintson a linkre a fiók ellenőrzéséhez. 
+
+(A fiókadatok visszaállításához keresse fel a http://www.google.com/accounts/recovery webhelyet a számítógépén.)"</string>
+    <string name="captcha_message_string">Ellenőrzés</string>
+    <string name="captcha_instructions">Írja be a képen látható karaktereket. A kis- és nagybetűk nincsenek megkülönböztetve.</string>
+    <string name="create_google_account">Google Fiók létrehozása</string>
+    <string name="example_usernames">pl. KovácsJ, Kovács.János</string>
+    <string name="create_account_agreement">A fiók létrehozásával elfogadja a <annotation id="google_privacy">Google</annotation> adatvédelmi irányelveit és a <annotation id="android_privacy">kiegészítő</annotation> adatvédelmi irányelveket.</string>
+    <string name="account_already_has_gmail">Ennél a fióknál már be van állítva a Gmail</string>
+    <string name="creating_account">Fiók létrehozása…</string>
+    <string name="checking_account">A felhasználónév ellenőrzése...</string>
+    <string name="try_a_different_username">Próbálkozzon másik felhasználónévvel</string>
+    <string name="is_not_available"><b>^1</b> nem érhető el.</string>
+    <string name="hint_size"><b>^1</b> 6-nál kevesebb vagy 30-nál több karakterből áll.</string>
+    <string name="hint_numbers_only"><b>^1</b> nem tartalmaz betűket</string>
+    <string name="hint_illegal_chars"><b>^1</b>" csak betűket,
+számokat és pontokat tartalmazhat."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> nem használ Gmailt</string>
+    <string name="sign_in">Bejelentkezés</string>
+    <string name="sign_in_browser">Bejelentkezés böngészőn keresztül</string>
+    <string name="here_are_alternatives">Íme, néhány alternatíva:</string>
+    <string name="alternatives_list_title">Javasolt felhasználónevek</string>
+    <string name="choose_a_password"><b>"Írjon be egy 
+jelszót"</b></string>
+    <string name="confirm_password"><b>"Jelszó
+megerősítése"</b></string>
+    <string name="password_strength"><b>"Jelszó
+erőssége"</b></string>
+    <string name="too_short">Túl rövid</string>
+    <string name="security_question"><b>"Biztonsági
+kérdés"</b></string>
+    <string name="security_questions_title">Biztonsági kérdések</string>
+    <string name="answer"><b>Hívás fogadása</b></string>
+    <string name="password_mismatch">A jelszavak nem egyeznek. Kérjük, írja be őket újra.</string>
+    <string name="your_account_was_created">A fiók elkészült!</string>
+    <string name="eight_chars_min">(minimum 8 karakter)</string>
+    <string name="just_in_case">Arra az esetre, ha elfelejtené jelszavát.</string>
+    <string name="verify_your_profile">Profil ellenőrzése</string>
+    <string name="signed_in">Bejelentkezve!</string>
+    <string name="error_not_logged_in">A felhasználó nincs bejelentkezve.</string>
+    <string name="error_username_unavailable">A felhasználónév nem érhető el.</string>
+    <string name="error_bad_password">A jelszó túl gyenge, vagy érvénytelen karaktereket tartalmaz. Kérjük, próbálja újra.</string>
+    <string name="error_bad_username">Érvénytelen felhasználónév.</string>
+    <string name="loading">Betöltés...</string>
+    <string name="submission_title">Sajnáljuk…</string>
+    <string name="submission_error_text">Hiba történt. Kérjük, próbáld újra később.</string>
+    <string name="existing_account_error_title">A fiók már létezik</string>
+    <string name="existing_account_error_text">Már létezik egy ^1 fiók ezen az Android készüléken.</string>
+    <string name="account_linked_message"><font height="24">Google Fiókja most már össze van kapcsolva ezzel az Android készülékkel.</font></string>
+    <string name="syncing_message"><font size="17">"A Google-alkalmazások most az adatokat szinkronizálják. 
+"<font height="17">"
+"</font>"%i A letöltés befejezését a képernyő tetején lévő állapotsoron lévő \"szinkronizálás\" ikon eltűnése jelzi.
+"<font height="17">"
+"</font><b>Az állapotsorról…</b>"
+"<font height="3">"
+"</font>"Amikor új üzenetet vagy más értesítést kap, egy ikon jelenik meg az állapotsoron.
+"<font height="17">"
+"</font>Az aktuális értesítések részleteit megjelenítő Értesítések panelt az állapotsor lehúzásával nyithatja meg.</font></string>
+    <string name="i_agree_next">Elfogadom; tovább</string>
+    <string name="android_privacy_policy_title">További adatvédelmi irányelvek</string>
+    <string name="google_terms_of_service_title">Google Általános Szerződési Feltételek</string>
+    <string name="google_privacy_policy_title">A Google adatvédelmi irányelvei</string>
+    <string name="notification_update_title">Fiókját frissíteni kell</string>
+    <string name="notification_update_message">Itt megérintve futtathatja újra a Beállításvarázslót</string>
+    <string name="common_message">"A Gmailhez, a biztonsági mentésekhez és sok más Android-funkcióhoz Google Fiókra van szükség.
+
+A "<b>Tovább</b>" gomb megérintésével bejelentkezhet egy meglévő Google Fiókba, vagy létrehozhat egy újat.
+
+A "<b>Kihagyás</b> gomb megérintésével folytathatja az Android használatát. Google Fiókjába később is bejelentkezhet, a Beállítások Fiókok és szinkronizálás menüpontja alatt.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Fiók hozzáadása</font>" 
+
+Több Google Fiókot is használhat (például otthoni és munkahelyi fiókjait). A Google Fiók hozzáadása mindössze pár lépésben elvégezhető. 
+
+A folytatáshoz érintse meg a \"Tovább\" lehetőséget, a kilépéshez pedig nyomja meg a Vissza gombot."</string>
+    <string name="reactivate_account_message">"Össze kell kapcsolnia egy Google e-mail fiókot ezzel az Android eszközzel. 
+
+Ön már hozzákapcsolt egy Google e-mail felhasználónevet ehhez a fiókhoz (("<b>^1</b>")), de ez jelenleg nem aktív. 
+
+A felhasználónév újraaktiválásához és a telefonnal történő használatához érintse meg a \"Tovább\" gombot. 
+
+Ha azonban másik fiókot szeretne használni, nyomja meg a Vissza gombot, és jelentkezzen be a másikkal fiókkal, vagy hozzon létre egy újat."</string>
+    <string name="reactivating_account">A fiók újraaktiválása</string>
+    <string name="your_account_was_reactivated">Fiókját aktiváltuk.</string>
+    <string name="account_recovery_info">A következő információk segíteni fognak a jelszó visszaállításában, ha egyszer elfelejtené azt</string>
+    <string name="secondary_email_label"><b>"Másodlagos
+e-mail cím"</b></string>
+    <string name="invalid_email">"A megadott e-mail cím érvénytelen.
+ Példa: joco@example.com"</string>
+    <string name="invalid_email_primary">A másodlagos e-mail cím nem lehet ugyanaz, mint az éppen létrehozott</string>
+    <string name="tutorial_intro_title">Ismerje meg, hogyan használhatja ^1 készülékét</string>
+    <string name="begin_button_label">Indítás</string>
+    <string name="tutorial_intro_message_generic">Van néhány fontos dolog, amelyet érdemes megismernie, hogy Android eszközéből a legtöbbet hozhassa ki. <font size="17">"
+"</font>" 
+"<li>A képernyő-billentyűzet használata</li> <font size="17">"
+"</font>" 
+Az útmutató elkezdéséhez érintse meg az \"Indítás\" gombot."</string>
+    <string name="tutorial_intro_message_setupwizard">Van néhány fontos dolog, amelyről érdemes tudnia, hogy a legtöbbet hozhassa ki Android eszközéből. <font size="17">"
+"</font>" 
+"<li>A képernyő-billentyűzet használata</li>" 
+"<li>Google Fiók létrehozása</li> <font size="17">"
+"</font>" 
+Az útmutató elkezdéséhez érintse meg az \"Indítás\" gombot, az útmutató kihagyásához és a folytatáshoz pedig érintse meg az \"Átugrás\" lehetőséget."</string>
+    <string name="keyboard_tutorial_title">A képernyőn megjelenő billentyűzet használatával</string>
+    <string name="keyboard_tutorial_message">A billentyűzet megjelenítéséhez érintse meg bármelyik szövegmezőt, és kezdjen el gépelni. Próbálja ki itt.</string>
+    <string name="keyboard_tutorial_edittext_hint">Érintse meg itt a gépelés megkezdéséhez</string>
+    <string name="done_typing_message">Befejezte a gépelést? Nyomja meg a Vissza gombot a billentyűzet bezárásához.</string>
+    <string name="done_button_label_in_tutorial">Kész</string>
+    <string name="backup_consent_title">Biztonsági másolat készítése a beállításaimról</string>
+    <string name="backup_consent_message">A beállításairól (így a könyvjelzőkről és a Wi-Fi jelszavakról) automatikus biztonsági mentést készíthet Google Fiókjába. Ha új Android készülékhez jut (mert elveszítette, vagy mert újabbat szerzett be), a beállításokat visszaállíthatja új Android készüléken.</string>
+    <string name="backup_consent_howto_disable_message">A biztonsági mentéssel kapcsolatos beállításokat bármikor módosíthatja a Beállítások alkalmazás Adatvédelem szekciójában.</string>
+    <string name="backup_consent_yes_agree">Biztonsági másolat készítése a beállításaimról a Google Fiókomban.</string>
+    <string name="restore_disable">Helyreállítás kikapcsolása</string>
+    <string name="restore_enable">Helyreállítás engedélyezése</string>
+    <string name="restore_enabled">Ha korábban készített biztonsági másolatot beállításairól, azokat a rendszer visszaállítja.</string>
+    <string name="restore_disabled">Beállításai nem kerülnek visszaállításra a biztonsági másolatból.</string>
+    <string name="webview_progress_title">Kapcsolódás a domainhez...</string>
+    <string name="webview_progress_verbose_message">"A vállalati szerverek elküldik a bejelentkezési adatokat. Ez eltarthat néhány percig.
+Amint ez befejeződött, megjelenik a vállalat bejelentkezési oldala."</string>
+    <string name="enterprise_unmanaged_domain">Ez a domain nem használja a Google Appset. Kérjük, ellenőrizze a domainnevet és próbálja újra.</string>
+    <string name="use_location_for_services_agree">Elfogadom</string>
+    <string name="use_location_for_services_disagree">Elutasítás</string>
+    <string name="use_location_for_services_title">Saját pozíció használata</string>
+    <string name="use_location_for_services_text">Engedélyezi a Google számára, hogy a jobb keresési eredmények érdekében, valamint más szolgáltatásokhoz felhasználja a helyadatokat?</string>
+    <string name="permlab_readGsettings">Google-beállítások olvasása</string>
+    <string name="permdesc_readGsettings">Lehetővé teszi az alkalmazás számára a Google-beállítások beolvasását.</string>
+    <string name="permlab_writeGsettings">Google-beállítások módosítása</string>
+    <string name="permdesc_writeGsettings">Lehetővé teszi az alkalmazás számára a Google-beállítások módosítását.</string>
+    <string name="permlab_readGservices">Google-szolgáltatások konfigurációjának beolvasása</string>
+    <string name="permdesc_readGservices">Lehetővé teszi az alkalmazás számára, hogy beolvassa a Google-szolgáltatás konfigurációs adatait.</string>
+    <string name="permlab_writeGservices">Google-szolgáltatások konfigurációjának módosítása</string>
+    <string name="permdesc_writeGservices">Lehetővé teszi az alkalmazás számára, hogy módosítsa a Google-szolgáltatás konfigurációs adatait.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">hozzáférés a Google Fiókok jelszavaihoz</string>
+    <string name="permdesc_googleAuthPassword">Lehetővé teszi az alkalmazások számára, hogy közvetlenül férjenek hozzá a beállított Google Fiók(ok) jelszavához.</string>
+    <string name="permlab_googleMailSwitch">Gmail vagy Google Mail márka kiválasztása</string>
+    <string name="permdesc_googleMailSwitch">Lehetővé teszi az alkalmazások számára, hogy váltsák a megjelenített nevet a \"Gmail\" és a \"Google Mail\" márkajelzés között.</string>
+    <string name="permlab_googleAuth">a konfigurált fiókok megtekintése</string>
+    <string name="permdesc_googleAuth">Lehetővé teszi az alkalmazások számára, hogy lássák a beállított Google Fiók(ok) felhasználónevét (e-mail címét).</string>
+    <string name="permlab_googleAuth_ALL">hozzáférés minden Google-szolgáltatáshoz</string>
+    <string name="permdesc_googleAuth_ALL">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek az ÖSSZES Google-szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_OTHER">hozzáférés egyéb Google-szolgáltatásokhoz</string>
+    <string name="permdesc_googleAuth_OTHER">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek meghatározatlan Google-szolgáltatásokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_mail">Google Mail</string>
+    <string name="permdesc_googleAuth_mail">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google e-mail szolgáltatásaiba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_cl">Google Naptár</string>
+    <string name="permdesc_googleAuth_cl">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Naptárba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_android">Android-szolgáltatások</string>
+    <string name="permdesc_googleAuth_android">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek Android-szolgáltatásokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout-fiókok</string>
+    <string name="permdesc_googleAuth_sierra">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Checkoutba (és esetleg vásárlást hajtsanak végre) az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA-fiókok</string>
+    <string name="permdesc_googleAuth_sierraqa">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Checkout QA-ba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandbox fiókok</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Checkout Sandboxba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a YouTube-ra az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube-felhasználónevek</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Lehetővé teszi az alkalmazások számára, hogy lássák az ezen az Android készüléken tárolt Google Fiók(ok)hoz társított YouTube-felhasználóneveket.</string>
+    <string name="permlab_googleAuth_talk">Google Csevegő</string>
+    <string name="permdesc_googleAuth_talk">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Csevegőbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_ig">iGoogle-fiókok</string>
+    <string name="permdesc_googleAuth_ig">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek az iGoogle-ba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_lh2">Picasa Webalbumok</string>
+    <string name="permdesc_googleAuth_lh2">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Picasa Webalbumokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_mobile">Google mobilalkalmazások</string>
+    <string name="permdesc_googleAuth_mobile">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google mobilalkalmazásokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_cp">névjegyadatok a Google Fiókokban</string>
+    <string name="permdesc_googleAuth_cp">Lehetővé teszi az alkalmazások számára, hogy elérjék az ezen az Android készüléken tárolt fiók(ok) kapcsolatait és profiladatait.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google AdSense szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google AdWords szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Bloggerbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Dodgeballba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Base szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_groups2">Google Csoportok</string>
+    <string name="permdesc_googleAuth_groups2">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Csoportokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Health szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a JotSpotba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Knolba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_news">Google Hírek</string>
+    <string name="permdesc_googleAuth_news">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Hírekbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek az Orkutba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_print">Google Könyvkereső</string>
+    <string name="permdesc_googleAuth_print">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Könyvkeresőbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Webmestereszközök</string>
+    <string name="permdesc_googleAuth_sitemaps">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Webmestereszközökbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google WiFibe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_writely">Google Dokumentumok</string>
+    <string name="permdesc_googleAuth_writely">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Dokumentumokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_wise">Google Táblázatok</string>
+    <string name="permdesc_googleAuth_wise">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Táblázatokba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Finance szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_local">Google Térkép</string>
+    <string name="permdesc_googleAuth_local">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Térképbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google App Engine-be az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_notebook">Google Jegyzetfüzet</string>
+    <string name="permdesc_googleAuth_notebook">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Jegyzetfüzetbe az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Google Voice szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Személyre szabott szövegfelismerés</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Lehetővé teszi az alkalmazások számára, hogy bejelentkezzenek a Personalized Speech Recognition szolgáltatásba az ezen az Android készüléken tárolt fiók(ok) használatával.</string>
+    <string name="gls_notification_title">Jelentkezzen be a fiókjába</string>
+    <string name="gls_notification_new_account">^1-fiókra van szükség</string>
+    <string name="gls_notification_new_account_youtube">YouTube-fiókra van szükség</string>
+    <string name="gls_notification_login_error">Érintse meg, hogy bejelentkezzen fiókjába.</string>
+    <string name="gls_ui_add_account_title">Fiók beállítása</string>
+    <string name="gls_ui_google_account_subtitle">Google Fiók</string>
+    <string name="gls_ui_activity_title">Bejelentkezés a Google Fiókba</string>
+    <string name="gls_ui_activity_title_browser_signin">Bejelentkezés böngészőn keresztül</string>
+    <string name="gls_ui_activity_title_enterprise">Vállalati bejelentkezés</string>
+    <string name="gls_ui_activity_title_youtube">Bejelentkezés a YouTube-ra</string>
+    <string name="gls_ui_activity_authenticating">Hitelesítés...</string>
+    <string name="gls_captcha_activity_message">Írja be a képen látható karaktereket:</string>
+    <string name="gls_captcha_activity_ok_button">Kész</string>
+    <string name="gls_error_activity_message">Hálózati hiba történt a(z) <b>^1</b> fiókba történő bejelentkezés során. Próbálja újra, vagy nyomja meg a Vissza gombot a megszakításhoz.</string>
+    <string name="gls_error_activity_retry_button">Próbálkozzon újra</string>
+    <string name="gls_dmagent_activity_message">" Domainjén a mobil eszközök kezelésének lehetőségére van szükség. Kérjük, telepítse a Google Apps Device Policy alkalmazást a(z) "<b>^1</b> fiók használatához szükséges biztonsági irányelvek betartatására.</string>
+    <string name="gls_dmagent_activity_retry_button">Letöltés</string>
+    <string name="gls_login_activity_username_label">Felhasználónév</string>
+    <string name="gls_login_activity_password_label">Jelszó</string>
+    <string name="gls_login_activity_ok_button">Bejelentkezés</string>
+    <string name="gls_login_activity_loginfail_text_both">A felhasználónév vagy a jelszó nem érvényes. <b>^1</b> fiókra van szükség. Kérjük, próbálja újra.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Rossz jelszót adott meg vagy fiókja megváltozott. Kérjük, adja meg újra jelszavát.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Írja be a fiók jelszavát.</string>
+    <string name="gls_enterprise_login_activity_msg">"Kérjük, a hitelesítéshez jelentkezzen be vállalati fiókjába a(z) ^1 domainben.
+Érintse meg a Bejelentkezés lehetőséget a vállalat webes bejelentkezési oldalának megnyitásához."</string>
+    <string name="gls_login_activity_badaccount_text">Ebben a helyzetben nem használhatja ezt a fiókot. Kérjük, próbálkozzon másik fiókkal.</string>
+    <string name="gls_login_activity_newaccount_text">Jelentkezzen be <b>^1</b> fiókjába.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Nincs YouTube-fiókja? Érintse meg <a href="http://www.youtube.com/signup">itt</a> új fiók létrehozásához.</string>
+    <string name="gls_settings_tos_activity_title">Google - jogi szabályozás</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Nem kapcsolódik adatszolgáltatáshoz. Ha meg szeretné tekinteni ezt az információt, látogasson el a %s webhelyre egy olyan számítógépről, amely kapcsolódik az internethez.</string>
+    <string name="gls_settings_contributors_activity_title">Közreműködők</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Nem kapcsolódik adatszolgáltatáshoz. Ha meg szeretné tekinteni ezt az információt, látogasson el a %s webhelyre egy olyan számítógépről, amely kapcsolódik az internethez.</string>
+    <string name="gls_webview_progress_title">Kapcsolódás a domainhez...</string>
+    <string name="gls_webview_progress_verbose_message">"A vállalat szervere elküldi a bejelentkezési adatokat. Ez eltarthat néhány percig.
+Ha befejeződik, megjelenik a vállalat bejelentkezési oldala."</string>
+    <string name="gls_sign_in_button_label">Bejelentkezés</string>
+    <string name="gls_back_button_label">Vissza</string>
+    <string name="gls_cancel_button_label">Mégse</string>
+    <string name="gls_exit_account_setup_button_label">Kilépés</string>
+    <string name="gls_reauthorize_button_label">Újrahitelesítés</string>
+    <string name="gls_sign_in_message">A fiók létrehozása érdekében Android eszközének kommunikálnia kell a Google szervereivel. Ez akár 5 percig is eltarthat.</string>
+    <string name="gls_sign_in_title">Bejelentkezés...</string>
+</resources>

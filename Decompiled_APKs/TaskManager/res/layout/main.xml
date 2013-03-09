@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/body" android:background="@*android:drawable/screen_background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cmd_bar" android:layout_below="@id/header_bar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/summary_pane_height">
+            <ImageView android:id="@id/taskmanager_logo" android:layout_width="@dimen/logo_width" android:layout_height="@dimen/logo_height" android:layout_marginLeft="@dimen/logo_margin_left" android:layout_marginTop="@dimen/logo_margin_top" android:layout_marginRight="@dimen/logo_margin_right" android:src="@drawable/logo" android:scaleType="fitXY" />
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:id="@id/total_memory_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/total_memory_label_margin_top" android:text="@string/total_memory" style="@com.htc:style/darklist_primary_read_m" />
+                <TextView android:id="@id/total_memory_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/total_memory_value_margin_top" android:layout_below="@id/total_memory_label" style="@com.htc:style/darklist_info_xl" />
+                <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/total_memory_value">
+                    <ImageView android:id="@id/bullet_memory_used" android:layout_width="@dimen/bullet_memory_side" android:layout_height="@dimen/bullet_memory_side" android:layout_marginLeft="@dimen/bullet_memory_used_margin_left" android:layout_marginTop="@dimen/bullet_memory_used_margin_top" android:layout_marginRight="@dimen/bullet_memory_used_margin_right" />
+                    <TextView android:layout_gravity="top" android:id="@id/used_memory_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/used_memory_value_margin_top" style="@com.htc:style/darklist_secondary_xs" />
+                    <ImageView android:id="@id/bullet_memory_free" android:layout_width="@dimen/bullet_memory_side" android:layout_height="@dimen/bullet_memory_side" android:layout_marginLeft="@dimen/bullet_memory_free_margin_left" android:layout_marginTop="@dimen/bullet_memory_free_margin_top" android:layout_marginRight="@dimen/bullet_memory_free_margin_right" android:src="@drawable/radio_btn_rest" />
+                    <TextView android:layout_gravity="top" android:id="@id/free_memory_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.0px" android:layout_marginTop="@dimen/used_memory_value_margin_top" style="@com.htc:style/darklist_secondary_xs" />
+                </LinearLayout>
+                <com.htc.taskmanager.ReflectionProgressBar android:id="@id/overall_memory_bar" android:layout_width="@dimen/overall_memory_bar_width" android:layout_height="@dimen/overall_memory_bar_height" android:layout_marginTop="125.0px" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/overall_memory_progress_bar" />
+                <ImageView android:id="@id/overall_memory_bar_reflection" android:layout_width="@dimen/overall_memory_bar_width" android:layout_height="@dimen/overall_memory_bar_height" android:layout_below="@id/overall_memory_bar" />
+            </RelativeLayout>
+        </LinearLayout>
+        <include android:id="@id/all_apps_header" layout="@com.htc:layout/htc_list_item_separator" />
+        <com.htc.widget.HtcListView android:id="@id/task_list" android:background="@com.htc:color/common_color_listview_listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@*android:color/transparent" android:divider="@com.htc:drawable/common_list_divider" />
+    </LinearLayout>
+    <com.htc.widget.HeaderBarShort android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.htc.widget.HtcFooter android:id="@id/cmd_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_1" android:text="@string/refresh_button_text" />
+        <com.htc.widget.HtcFooterButton android:id="@com.htc:id/cmd_bar_btn_2" android:text="@string/kill_all_button_text" />
+    </com.htc.widget.HtcFooter>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionName="@string/app_version_name" package="com.htc.syncagent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/psc_app_label" android:icon="@drawable/app_icon" android:allowClearUserData="true" android:debuggable="false" android:allowBackup="false">
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:label="@string/sync_settings" android:name=".activity.HTCStatusActivity" android:excludeFromRecents="false" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/sync_settings" android:name=".activity.HTCMainActivity" android:finishOnTaskLaunch="true" android:excludeFromRecents="false" android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <service android:name=".svc.HTCSyncService">
+            <intent-filter>
+                <action android:name="android.intent.action.htc.service" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".svc.HTCSyncBroadcastReceiver">
+            <intent-filter>
+                <action android:name="action.start.test" />
+                <action android:name="action.startPCTool" />
+                <action android:name="action.stopPCTool" />
+                <action android:name="com.fd.httpd.syncend" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

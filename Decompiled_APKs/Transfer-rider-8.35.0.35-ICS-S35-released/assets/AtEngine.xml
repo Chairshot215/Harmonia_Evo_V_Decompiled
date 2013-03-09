@@ -1,0 +1,1959 @@
+﻿<Config>
+<Policy key="se_sms">
+  <ParseSolution>
+    <SolutionName>RegexSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <RecordsProcSolution>se_sms_combine</RecordsProcSolution>
+  <EntryRegEx>\+[CM]MGL: (.*?(?:(&#xD;&#xA;)+).*?)&#xD;&#xA;</EntryRegEx>
+  <!-- mot data \r\n+MMGL: 4404,2,,15\r\n\r\n01801100038196F60000FF05A866AA5906\r\n-->
+  <!-- se data \r\n+CMGL: 1,2,,22\r\n0891683108200105F0110000810008FF0E54AF54AF54AF54AF54AF54AF54AF\r\n -->
+  
+  <Fields>
+    <!-- ExeID:EXE中字段值 -->
+    <!-- DataIndex:在AT数据中的位置 -->
+    <Field InnerID="600002" ATIndex="2" name="sate and box type"/>    
+     <CombineField ProcType ="se_pdu_sms_info"  name ="">
+      <InnerID>600002</InnerID>
+      <Result>
+        <ExeID name="state">1</ExeID>
+        <ExeID name="box type">2</ExeID>
+      </Result>
+      </CombineField>
+    
+    
+    <Field InnerID ="600001" ATIndex="4" name ="pdu"/>
+    <CombineField ProcType ="se_pdu_sms"  name ="pdu">
+      <InnerID>600001</InnerID>
+      <Result>
+        <ExeID name="number">3</ExeID>
+        <ExeID name="time">5</ExeID>
+        <ExeID name="lsms_id">999001</ExeID>
+        <ExeID name="lsms_index">999002</ExeID>  
+        <ExeID name="lsms_slices_count">999003</ExeID>      
+        <ExeID name="slices_cotent">7</ExeID>
+      </Result>
+    </CombineField>    
+  </Fields>
+</Policy>
+
+ <!--SAMSUNG D900-->
+  <Policy key="samsung_sms_d900_read">
+    <ParseSolution>
+      <SolutionName>SAMD900SMSSpliter</SolutionName>
+      <SolutionParameter>****</SolutionParameter>
+    </ParseSolution>
+    <RecordsProcSolution>sam_sms_combine</RecordsProcSolution>
+    <EntryRegEx>\+CMGR: (.*)&#xD;&#xA;&#xD;&#xA;</EntryRegEx>
+    <Fields size="0">
+     <Field InnerID="600004" ATIndex="1" name="sate and box type">
+     	<Content  InColon="true"/>
+     </Field>    
+     <Field ExeID ="3" ATIndex="2" name="number">
+        <Content  InColon="true"/>
+      </Field>
+      <Field ExeID ="5" ATIndex="4" name="time">
+        <Content  ProcType ="sam_p520_sms_datetime" InColon="true"/>
+      </Field>
+      <Field InnerID ="600001" ATIndex="6" name="encodetype"/>
+       <Field InnerID ="600003" ATIndex="11" name="contentlen"/>
+        <Field InnerID ="600002" ATIndex="12" name="content">      
+        <Content  Encode="utf8"/>
+      </Field>
+
+      <CombineField ProcType ="sam_g600pdu_sms"  name ="pdu">	      
+	      <InnerID>600002</InnerID>
+	      <InnerID>600003</InnerID>
+	      <InnerID>600001</InnerID>
+	      <Result>
+	        <ExeID name="lsms_id">999001</ExeID>
+	        <ExeID name="lsms_index">999002</ExeID>  
+	        <ExeID name="lsms_slices_count">999003</ExeID>      
+	        <ExeID name="slices_cotent">7</ExeID>
+	      </Result>
+      </CombineField>
+
+     <CombineField ProcType ="moto_p2k_sms_info"  name ="">
+      <InnerID>600004</InnerID>
+      <Result>
+        <ExeID name="state">1</ExeID>
+        <ExeID name="box type">2</ExeID>
+      </Result>
+      </CombineField>
+
+    </Fields>
+  </Policy>
+
+	<Policy key="samsung_sms_J708I_read">
+    <ParseSolution>
+      <SolutionName>SAMJ708ISMSSpliter</SolutionName>
+      <SolutionParameter>****</SolutionParameter>
+    </ParseSolution>
+    <RecordsProcSolution>sam_sms_combine</RecordsProcSolution>
+    <EntryRegEx>\+CMGR: (.*)&#xD;&#xA;&#xD;&#xA;</EntryRegEx>
+    <Fields size="0">
+     <Field ExeID ="1" ATIndex="1" name="status">
+    
+    
+        <Content  ProcType="sam_p520_sms_status"   InColon="true"/>
+      </Field>
+      <Field ExeID ="3" ATIndex="2" name="number">
+        <Content  InColon="true"/>
+      </Field>
+      <Field ExeID ="5" ATIndex="4" name="time">
+        <Content  ProcType ="sam_p520_sms_datetime" InColon="true"/>
+      </Field>
+      <Field InnerID ="600001" ATIndex="6" name="encodetype"/>
+      <Field InnerID ="600003" ATIndex="11" name="contentlen"/>
+      <Field InnerID ="600002" ATIndex="12" name="content">
+        <Content  Encode="utf8"/>
+      </Field>
+      <CombineField ProcType ="sam_g600pdu_sms"  name ="pdu">	      
+	      <InnerID>600002</InnerID>
+	      <InnerID>600003</InnerID>
+	      <InnerID>600001</InnerID>
+	      <Result>
+	        <ExeID name="lsms_id">999001</ExeID>
+	        <ExeID name="lsms_index">999002</ExeID>  
+	        <ExeID name="lsms_slices_count">999003</ExeID>      
+	        <ExeID name="slices_cotent">7</ExeID>
+	      </Result>
+      </CombineField>
+
+      <Field ExeID ="2" ATIndex="13" name="sms_box">
+        <Content ProcType="sam_p520_smsbox_map"/>
+      </Field>
+    </Fields>
+  </Policy>
+  
+<!--SAMSUNG P520-->
+  <!--data protocol :..+SPBR: 1,"1111111111","2222222222","33333333","44444444444","55555555555"-->
+  <!--,"d magj@admg.ad","10,First name","9,last name",1900,1,1,"5,notes","0,"..OK.. --> 
+  <Policy key="samsung_mem_pb_1L">
+    <ParseSolution>
+      <SolutionName>LinearSpliter1</SolutionName>
+      <SolutionParameter>7,8,12,13</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+SPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="14">
+      <InitValueForWrite>0:0;1:"";2:"";3:"";4:"";5:"";6:"";7:"0,";8:"0,";9:1900;10:01;11:01;12:"0,";13:"0,"</InitValueForWrite>
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="mobile">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="3" name="home">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="4" name="work">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="5" name="fax">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="6" name="other">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="1000" ATIndex="7" name="email" >
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="1" ATIndex="8" name="firstname">
+        <Content Encode="utf8" ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="2" ATIndex="9" name="lastname">
+        <Content Encode="utf8" ProcType="sam_len_val" InColon="true" ></Content>
+      </Field>
+      <Field InnerID ="600001" ATIndex="10" name ="year">
+        <Content ></Content>
+      </Field>
+      <Field InnerID ="600002" ATIndex="11" name ="month">
+        <Content></Content>
+      </Field>
+      <Field InnerID ="600003" ATIndex="12" name ="day">
+        <Content ></Content>
+      </Field>
+      <CombineField ProcType ="sam_build_date"  name ="birthday">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600003</InnerID>
+        <Result>
+          <ExeID>4003</ExeID>
+        </Result>
+      </CombineField>
+      <CombineWrite ProcType="sam_parse_date">
+        <ExeID>4003</ExeID>
+        <Result>
+          <InnerID>600001</InnerID>
+          <InnerID>600002</InnerID>
+          <InnerID>600003</InnerID>
+        </Result>
+      </CombineWrite>
+      <Field ExeID="3002" ATIndex="13" name="note" >
+        <Content  Encode="utf8" ProcType="sam_len_val" InColon="true" ></Content>
+      </Field>
+    </Fields>
+  </Policy>
+
+  <!--SAMSUNG E570-->
+  <!--data struct :+SPBR: 1,"1111111","2222222","3333333","4444444","5555555","ad@adjm.ad","10,First name","9,Last name","5,Notes","0,"..OK..-->
+  <Policy key="samsung_mem_pb_12L">
+    <ParseSolution>
+      <SolutionName>LinearSpliter1</SolutionName>
+      <SolutionParameter>7,8,9,10</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+SPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="11">
+      <InitValueForWrite>0:0;1:"";2:"";3:"";4:"";5:"";6:"";7:"0,";8:"0,";9:"0,";10:"0,"</InitValueForWrite>
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="mobile">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="3" name="home">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="4" name="work">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="5" name="fax">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="6" name="other">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="1000" ATIndex="7" name="email" >
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="1" ATIndex="8" name="firstname">
+        <Content Encode="utf8" ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="2" ATIndex="9" name="lastname">
+        <Content Encode="utf8" ProcType="sam_len_val" InColon="true" ></Content>
+      </Field>
+      <Field ExeID="3002" ATIndex="10" name="note" >
+        <Content  Encode="utf8" ProcType="sam_len_val" InColon="true" ></Content>
+      </Field>
+    </Fields>
+  </Policy>
+  
+  <!--SAMSUNG P520-->
+  <Policy key="samsung_sim_pb_1L">
+    <ParseSolution>
+      <SolutionName>LinearSpliter1</SolutionName>
+      <SolutionParameter>7,8,12,13</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+SPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="14">
+      <InitValueForWrite>0:0;1:"";2:"";3:"";4:"";5:"";6:"";7:"0,";8:"0,";9:1900;10:01;11:01;12:"0,";13:"0,"</InitValueForWrite>
+      <Field ExeID ="9004" ATIndex="1" name="ID"/>
+      <Field ExeID ="208" ATIndex="2" name="num">
+      	<Content InColon="true"/>
+      </Field>
+      <Field ExeID ="5" ATIndex="8" name="name">
+        <Content  Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+    </Fields>
+  </Policy>
+  <!--SAMSUNG P520-->
+  <Policy key="samsung_cal_SSH_read">
+    <ParseSolution>
+      <SolutionName>LinearSpliter1</SolutionName>
+      <SolutionParameter>1,2,3</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+SSHR:(.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields>
+      <Field ExeID ="1" ATIndex="1" name="cal_type">
+        <Content  ProcType="add_type_event" />
+      </Field>
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="11" ATIndex="2" name="Description">
+        <Content Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="12" ATIndex="3" name="body">
+        <Content Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="13" ATIndex="4" name="location">
+        <Content Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field InnerID ="600001" ATIndex="5" name ="start_date_year"/>
+      <Field InnerID ="600002" ATIndex="6" name ="start_date_month"/>
+      <Field InnerID ="600003" ATIndex="7" name ="start_date_day"/>
+      <Field InnerID ="600004" ATIndex="8" name ="end_date_year"/>
+      <Field InnerID ="600005" ATIndex="9" name ="end_date_month"/>
+      <Field InnerID ="600006" ATIndex="10" name ="end_date_day"/>
+      <Field InnerID ="600007" ATIndex="11" name ="start_time_hour"/>
+      <Field InnerID ="600008" ATIndex="12" name ="start_time_minu"/>
+      <Field InnerID ="600009" ATIndex="13" name ="end_time_hour"/>
+      <Field InnerID ="600010" ATIndex="14" name ="end_time_minu"/>
+      <CombineField ProcType="sam_build_datetime" name="start_time">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600003</InnerID>
+        <InnerID>600007</InnerID>
+        <InnerID>600008</InnerID>
+        <Result>
+          <ExeID>101</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_datetime" name="end_time">
+        <InnerID>600004</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <InnerID>600009</InnerID>
+        <InnerID>600010</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <Field InnerID ="600011" ATIndex="15" name ="alarm_unit"/>
+      <Field InnerID ="600012" ATIndex="16" name ="alarm_val"/>
+      <CombineField ProcType="sam_build_rmdminu">
+        <InnerID>600011</InnerID>
+        <InnerID>600012</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID ="220" ATIndex="17" name="ring_id"/>
+      <Field ExeID ="211" ATIndex="18" name="recurtype">
+        <Content ProcType="sam_ssh_recurtype" />
+      </Field>
+      <Field InnerID ="600013" ATIndex="19" name ="recur_end_year"/>
+      <Field InnerID ="600014" ATIndex="20" name ="recur_end_month"/>
+      <Field InnerID ="600015" ATIndex="21" name ="recur_end_day"/>
+      <CombineField ProcType="sam_build_date" name="recur_end_date">
+        <InnerID>600013</InnerID>
+        <InnerID>600014</InnerID>
+        <InnerID>600015</InnerID>
+        <Result>
+          <ExeID>104</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID="206" ATIndex="22" name="priority">
+        <Content ProcType="sam_priority_012_210"/>
+      </Field>
+      <Field ExeID="202" ATIndex="23" name="done"/>
+    </Fields>
+  </Policy>
+  
+  <!--SAMSUNG P520 task-->
+  <!--data protocol :..+SSHR:1,"4,Task","","",1,2013,10,29,1,2013,10,30,,,,,,,,,,,,0,0..OK..-->
+  <Policy key="samsung_task_SSH_read">
+    <ParseSolution>
+      <SolutionName>LinearSpliter1</SolutionName>
+      <SolutionParameter>1,2,3</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+SSHR:(.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields>
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="11" ATIndex="2" name="Description">
+        <Content Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="12" ATIndex="3" name="body">
+        <Content Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="13" ATIndex="4" name="location">
+        <Content Encode="utf8"  ProcType="sam_len_val" InColon="true"></Content>
+      </Field>
+      <Field InnerID ="600001" ATIndex="6" name ="start_date_year"/>
+      <Field InnerID ="600002" ATIndex="7" name ="start_date_month"/>
+      <Field InnerID ="600003" ATIndex="8" name ="start_date_day"/>
+      <Field InnerID ="600004" ATIndex="10" name ="end_date_year"/>
+      <Field InnerID ="600005" ATIndex="11" name ="end_date_month"/>
+      <Field InnerID ="600006" ATIndex="12" name ="end_date_day"/>
+      <CombineField ProcType="sam_build_date" name="start_time">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600003</InnerID>
+        <Result>
+          <ExeID>101</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_date" name="end_time">
+        <InnerID>600004</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID="206" ATIndex="24" name="priority">
+        <Content ProcType="sam_priority_012_210"/>
+      </Field>
+      <Field ExeID="202" ATIndex="25" name="done"/>
+    </Fields>
+  </Policy>
+ 
+
+  <!--SAMSUNG P520-->
+  <Policy key="samsung_sms_p520_read">
+    <ParseSolution>
+      <SolutionName>SAMP520SMSSpliter</SolutionName>
+      <SolutionParameter>15</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+CMGR:(.*)&#xD;&#xA;&#xD;&#xA;</EntryRegEx>
+    <Fields size="0">
+      <Field ExeID ="1" ATIndex="1" name="status">
+        <Content  ProcType="sam_p520_sms_status"   InColon="true"/>
+      </Field>
+      <Field ExeID ="3" ATIndex="2" name="number">
+        <Content  InColon="true"/>
+      </Field>
+      <Field ExeID ="5" ATIndex="6" name="time">
+        <Content  ProcType ="sam_p520_sms_datetime" InColon="true"/>
+      </Field>
+      <Field InnerID ="600003" ATIndex="10" name="codec"/>
+      <Field ExeID ="10" ATIndex="13" name="lsms_id"/>
+      <Field ExeID ="11" ATIndex="14" name="lsms_index"/>
+      <Field InnerID ="600001" ATIndex="15" name="lsms_slices_count"/>
+      <Field InnerID ="600002" ATIndex="16" name="content">
+        <Content  Encode="utf8"/>
+      </Field>
+      <CombineField ProcType="sam_p520_sms_content">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600003</InnerID>
+        <Result>
+          <ExeID>12</ExeID>
+          <ExeID>7</ExeID>
+          <ExeID name="lsms_id">999001</ExeID>
+        </Result>        
+      </CombineField>
+      <Field ExeID ="2" ATIndex="17" name="sms_box">
+        <Content ProcType="sam_p520_smsbox_map"/>        
+      </Field>     
+    </Fields>
+  </Policy>
+  
+  <!-- samsung_sms_e570_read 是从 samsung_sms_p520_read拷过来的，为了修改信箱类型不对的问题 
+  	   samsung_sms_p520_read是取返回数据中第17个字段解析信箱类型，e570所有的短信得最后三个字段内容都是539181583,1,0,无法解析出信箱类型
+  	   所以使用moto_p2k_sms_info，根据第一个字段解析信箱类型和短信状态
+  	   e570的outbox得短信返回得类型也是STO UNSENT所以被写到草稿箱 
+  	   -->
+  <Policy key="samsung_sms_e570_read">
+    <ParseSolution>
+      <SolutionName>SAMP520SMSSpliter</SolutionName>
+      <SolutionParameter>15</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+CMGR:(.*)&#xD;&#xA;&#xD;&#xA;</EntryRegEx>
+    <Fields size="0">
+     <Field InnerID="600004" ATIndex="1" name="sate and box type">
+     	<Content  InColon="true"/>
+     </Field>    
+      <Field ExeID ="3" ATIndex="2" name="number">
+        <Content  InColon="true"/>
+      </Field>
+      <Field ExeID ="5" ATIndex="6" name="time">
+        <Content  ProcType ="sam_p520_sms_datetime" InColon="true"/>
+      </Field>
+      <Field InnerID ="600003" ATIndex="10" name="codec"/>
+      <Field ExeID ="10" ATIndex="13" name="lsms_id"/>
+      <Field ExeID ="11" ATIndex="14" name="lsms_index"/>
+      <Field InnerID ="600001" ATIndex="15" name="lsms_slices_count"/>
+      <Field InnerID ="600002" ATIndex="16" name="content">
+        <Content  Encode="utf8"/>
+      </Field>
+      <CombineField ProcType="sam_p520_sms_content">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600003</InnerID>
+        <Result>
+          <ExeID>12</ExeID>
+          <ExeID>7</ExeID>
+          <ExeID name="lsms_id">999001</ExeID>
+        </Result>        
+      </CombineField>
+     <CombineField ProcType ="moto_p2k_sms_info"  name ="">
+      <InnerID>600004</InnerID>
+      <Result>
+        <ExeID name="state">1</ExeID>
+        <ExeID name="box type">2</ExeID>
+      </Result>
+      </CombineField>
+     </Fields>
+  </Policy>
+  
+  <!--SAMSUNG D900-->
+  <Policy key="samsung_mem_pb_1R">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields Size="23">
+      <InitValueForWrite>0:65535;16:0;17:65535;18:255;19:255;20:65535</InitValueForWrite>
+      <!--下标0开始-->
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="num1">
+        <Limit ATIndex="3">4</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="2" name="num1">
+        <Limit ATIndex="3">6</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="2" name="num1">
+        <Limit ATIndex="3">7</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="2" name="num1">
+        <Limit ATIndex="3">2</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="2" name="num1">
+        <Limit ATIndex="3">5</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="num1">
+        <Limit ATIndex="3">145</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="num1">
+        <Limit ATIndex="3">129</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+       <Field ExeID ="104" ATIndex="2" name="num1 default 104">       
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="2" ATIndex="4" name="lastname">
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="1" ATIndex="5" name="firstname">
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="6" name="num2">
+        <Limit ATIndex="7">4</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="6" name="num2">
+        <Limit ATIndex="7">6</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="6" name="num2">
+        <Limit ATIndex="7">7</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="6" name="num2">
+        <Limit ATIndex="7">2</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="6" name="num2">
+        <Limit ATIndex="7">5</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="6" name="num2">
+        <Limit ATIndex="7">145</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="6" name="num2">
+        <Limit ATIndex="7">129</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="6" name="num2 default 102">        
+        <Content InColon="true"></Content>
+      </Field>
+
+      <Field ExeID ="104" ATIndex="8" name="num3">
+        <Limit ATIndex="9">4</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="8" name="num3">
+        <Limit ATIndex="9">6</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="8" name="num3">
+        <Limit ATIndex="9">7</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="8" name="num3">
+        <Limit ATIndex="9">2</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="8" name="num3">
+        <Limit ATIndex="9">5</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="8" name="num3">
+        <Limit ATIndex="9">145</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="8" name="num3">
+        <Limit ATIndex="9">129</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+       <Field ExeID ="100" ATIndex="8" name="num3 default 100">        
+        <Content InColon="true"></Content>
+      </Field>
+
+      <Field ExeID ="104" ATIndex="10" name="num4">
+        <Limit ATIndex="11">4</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="10" name="num4">
+        <Limit ATIndex="11">6</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="10" name="num4">
+        <Limit ATIndex="11">7</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="10" name="num4">
+        <Limit ATIndex="11">2</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="10" name="num4">
+        <Limit ATIndex="11">5</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="10" name="num4">
+        <Limit ATIndex="11">145</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="10" name="num4">
+        <Limit ATIndex="11">129</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="10" name="num4 default 110">       
+        <Content InColon="true"></Content>
+      </Field>
+
+      <Field ExeID ="104" ATIndex="12" name="num5">
+        <Limit ATIndex="13">4</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="12" name="num5">
+        <Limit ATIndex="13">6</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="12" name="num5">
+        <Limit ATIndex="13">7</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="12" name="num5">
+        <Limit ATIndex="13">2</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="12" name="num5">
+        <Limit ATIndex="13">5</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="12" name="num5">
+        <Limit ATIndex="13">145</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="12" name="num5">
+        <Limit ATIndex="13">129</Limit>
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="108" ATIndex="12" name="num5 default 108">      
+        <Content InColon="true"></Content>
+      </Field>
+
+      <Field ExeID="1000" ATIndex="14" name="email" >
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="3002" ATIndex="16" name="note" >
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+    </Fields>
+  </Policy>
+
+  <!--SAMSUNG D900-->
+  <Policy key="samsung_sim_pb_1R">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields Size="4">
+      <InitValueForWrite>2:255</InitValueForWrite>
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="208" ATIndex="2" name="num">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="5" ATIndex="4" name="name">
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+    </Fields>
+  </Policy>
+
+  <!--SAMSUNG D900-->
+  <Policy key="samsung_cal_ORG_read">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+ORGR:(.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields>
+      <Field ExeID ="1" ATIndex="1" name="cal_type">
+        <Content  ProcType="add_type_event" />
+      </Field>
+      <Field ExeID ="9004" ATIndex="1" name="ID"/>
+      <Field InnerID="600001" ATIndex="2"  name="type"/>
+      <CombineField ProcType="sam_from_org_type">
+        <InnerID>600001</InnerID>
+        <Result>
+          <ExeID>1</ExeID>
+          <ExeID>2</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID ="11" ATIndex="3" name="Description">
+        <Content Encode="utf8"  ProcType="sam_0x02_0x03" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="12" ATIndex="4" name="body">
+        <Content Encode="utf8"  ProcType="sam_0x02_0x03" InColon="true"></Content>
+      </Field>
+      <Field InnerID ="600002" ATIndex="5" name ="start_date_day"/>
+      <Field InnerID ="600003" ATIndex="6" name ="start_date_month"/>
+      <Field InnerID ="600004" ATIndex="7" name ="start_date_year"/>
+      <Field InnerID ="600005" ATIndex="8" name ="start_time_hour"/>
+      <Field InnerID ="600006" ATIndex="9" name ="start_time_minu"/>
+      <CombineField ProcType="sam_build_datetime" name="start_time">
+        <InnerID>600004</InnerID>
+        <InnerID>600003</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>101</ExeID>
+        </Result>
+      </CombineField>
+      <Field InnerID ="600007" ATIndex="10" name ="end_date_day"/>
+      <Field InnerID ="600008" ATIndex="11" name ="end_date_month"/>
+      <Field InnerID ="600009" ATIndex="12" name ="end_date_year"/>
+      <Field InnerID ="600010" ATIndex="13" name ="end_time_hour"/>
+      <Field InnerID ="600011" ATIndex="14" name ="end_time_minu"/>
+      <CombineField ProcType="sam_build_datetime" name="end_time">
+        <InnerID>600009</InnerID>
+        <InnerID>600008</InnerID>
+        <InnerID>600007</InnerID>
+        <InnerID>600010</InnerID>
+        <InnerID>600011</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID ="13" ATIndex="15" name="location">
+        <Content Encode="utf8"  ProcType="sam_0x02_0x03" InColon="true"></Content>
+      </Field>
+
+      <Field InnerID ="600012" ATIndex="17" name ="alarm_val"/>
+      <Field InnerID ="600013" ATIndex="18" name ="alarm_unit"/>
+      <CombineField ProcType="sam_build_rmdminu">
+        <Limit ATIndex="16">1</Limit>
+        <InnerID>600012</InnerID>
+        <InnerID>600013</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID ="211" ATIndex="19" name="recurtype">
+        <Content  />
+      </Field>
+      <Field ExeID="206" ATIndex="20" name="priority">
+        <Content ProcType="sam_priority_012_321"/>
+      </Field>
+      <Field ExeID="202" ATIndex="21" name="done"/>
+      <Field InnerID ="600014" ATIndex="22" name ="recur_end_day"/>
+      <Field InnerID ="600015" ATIndex="23" name ="recur_end_month"/>
+      <Field InnerID ="600016" ATIndex="24" name ="recur_end_year"/>
+      <CombineField ProcType="sam_build_date" name="recur_end_date">
+        <InnerID>600016</InnerID>
+        <InnerID>600015</InnerID>
+        <InnerID>600014</InnerID>
+        <Result>
+          <ExeID>104</ExeID>
+        </Result>
+      </CombineField>
+    </Fields>
+  </Policy>
+  
+  <Policy key="samsung_cal_ORG_notime">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+ORGR:(.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields>
+      <Field ExeID ="1" ATIndex="1" name="cal_type">
+        <Content  ProcType="add_type_event" />
+      </Field>
+      <Field ExeID ="9004" ATIndex="1" name="ID"/>
+      <Field InnerID="600001" ATIndex="2"  name="type"/>
+      <CombineField ProcType="sam_from_org_type">
+        <InnerID>600001</InnerID>
+        <Result>
+          <ExeID>1</ExeID>
+          <ExeID>2</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID ="11" ATIndex="3" name="Description">
+        <Content Encode="utf8"  ProcType="sam_0x02_0x03" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="12" ATIndex="4" name="body">
+        <Content Encode="utf8"  ProcType="sam_0x02_0x03" InColon="true"></Content>
+      </Field>
+      <Field InnerID ="600002" ATIndex="5" name ="start_date_day"/>
+      <Field InnerID ="600003" ATIndex="6" name ="start_date_month"/>
+      <Field InnerID ="600004" ATIndex="7" name ="start_date_year"/>
+      <Field InnerID ="600005" ATIndex="8" name ="start_time_hour"/>
+      <Field InnerID ="600006" ATIndex="9" name ="start_time_minu"/>
+      <CombineField ProcType="sam_build_datetime" name="start_time">
+        <InnerID>600004</InnerID>
+        <InnerID>600003</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>101</ExeID>
+        </Result>
+      </CombineField>
+      <Field InnerID ="600007" ATIndex="10" name ="end_date_day"/>
+      <Field InnerID ="600008" ATIndex="11" name ="end_date_month"/>
+      <Field InnerID ="600009" ATIndex="12" name ="end_date_year"/>
+      <Field InnerID ="600010" ATIndex="13" name ="end_time_hour"/>
+      <Field InnerID ="600011" ATIndex="14" name ="end_time_minu"/>
+      <CombineField ProcType="sam_build_datetime" name="end_time">
+      <!-- 1: Appointment -->
+        <Limit ATIndex="2">1</Limit>
+        <InnerID>600009</InnerID>
+        <InnerID>600008</InnerID>
+        <InnerID>600007</InnerID>
+        <InnerID>600010</InnerID>
+        <InnerID>600011</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_datetime" name="end_time">
+      <!-- 4: Miscellaneous -->
+      	<Limit ATIndex="2">4</Limit>
+        <InnerID>600009</InnerID>
+        <InnerID>600008</InnerID>
+        <InnerID>600007</InnerID>
+        <InnerID>600010</InnerID>
+        <InnerID>600011</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_datetime" name="end_time">
+      <!-- 2: Anniversary -->
+        <Limit ATIndex="2">2</Limit>
+        <InnerID>600009</InnerID>
+        <InnerID>600008</InnerID>
+        <InnerID>600007</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_datetime" name="end_time">
+      <!--3: event->task -->
+      	<Limit ATIndex="2">3</Limit>
+        <InnerID>600009</InnerID>
+        <InnerID>600008</InnerID>
+        <InnerID>600007</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField>
+      <Field ExeID ="13" ATIndex="15" name="location">
+        <Content Encode="utf8"  ProcType="sam_0x02_0x03" InColon="true"></Content>
+      </Field>
+
+      <Field InnerID ="600012" ATIndex="17" name ="alarm_unit"/>
+      <Field InnerID ="600013" ATIndex="18" name ="alarm_val"/>
+      <!-- Appointment、Miscellaneous  -->
+      <CombineField ProcType="sam_build_rmdminu">
+        <Limit ATIndex="16">1</Limit>
+        <InnerID>600012</InnerID>
+        <InnerID>600013</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+      <!--
+      <CombineField ProcType="sam_build_rmdminu">
+        <Limit ATIndex="16">1</Limit>
+        <Limit ATIndex="2">4</Limit>
+        <InnerID>600012</InnerID>
+        <InnerID>600013</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_rmdminu">
+        <Limit ATIndex="16">1</Limit>
+        <Limit ATIndex="2">2</Limit>
+        <InnerID>600012</InnerID>
+        <InnerID>600013</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+      <CombineField ProcType="sam_build_rmdminu">
+        <Limit ATIndex="16">1</Limit>
+        <Limit ATIndex="2">3</Limit>
+        <InnerID>600012</InnerID>
+        <InnerID>600013</InnerID>
+        <InnerID>600005</InnerID>
+        <InnerID>600006</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+      -->
+      <Field ExeID ="211" ATIndex="19" name="recurtype">
+        <Content  />
+      </Field>
+      <Field ExeID="206" ATIndex="20" name="priority">
+        <Content ProcType="sam_priority_012_321"/>
+      </Field>
+      <Field ExeID="202" ATIndex="21" name="done"/>
+      <Field InnerID ="600014" ATIndex="22" name ="recur_end_day"/>
+      <Field InnerID ="600015" ATIndex="23" name ="recur_end_month"/>
+      <Field InnerID ="600016" ATIndex="24" name ="recur_end_year"/>
+      <CombineField ProcType="sam_build_date" name="recur_end_date">
+        <InnerID>600016</InnerID>
+        <InnerID>600015</InnerID>
+        <InnerID>600014</InnerID>
+        <Result>
+          <ExeID>104</ExeID>
+        </Result>
+      </CombineField>
+    </Fields>
+  </Policy>
+  
+  <!--SAMSUNG D828-->
+  <!--Data struct :+CPBR: 2,"1111111111",129,".last name.",".First name.","2222222222",129,"3333333333"-->
+  <!--,129,"4444444444",129,"5555555555",129,"email@adjgmp.jn","",".Note.",0,65535,255,255,65535,"",""....OK..-->
+  <Policy key="samsung_mem_pb_2R">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields Size="23">
+      <InitValueForWrite>0:65535;16:0;17:65535;18:255;19:255;20:65535</InitValueForWrite>
+      <!--下标0开始-->
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="num1"> 
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="2" ATIndex="4" name="lastname">
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+      <Field ExeID ="1" ATIndex="5" name="firstname">
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+
+      <Field ExeID ="102" ATIndex="6" name="num2">
+        <Content InColon="true"></Content>
+      </Field>      
+
+      <Field ExeID ="100" ATIndex="8" name="num3">
+        <Content InColon="true"></Content>
+      </Field>      
+
+      <Field ExeID ="110" ATIndex="10" name="num4">
+        <!--<Limit ATIndex="11">129</Limit>-->
+        <Content InColon="true"></Content>
+      </Field>    
+
+      <Field ExeID ="108" ATIndex="12" name="num5">
+        <Content InColon="true"></Content>
+      </Field>     
+      <Field ExeID="1000" ATIndex="14" name="email" >
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="3002" ATIndex="16" name="note" >
+        <Content ProcType="sam_0x02_0x03" Encode="utf8" InColon="true"></Content>
+      </Field>
+    </Fields>
+  </Policy> 
+  
+  
+<!--LG KF600-->
+  <Policy key="LGKF_mem_pb_1">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="16">      
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="5" ATIndex="3" name="fullname">
+        <Content Encode="base64"  InColon="true"></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="5" name="mobile">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="7" name="home">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="9" name="work">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="13" name="fax">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="1000" ATIndex="11" name="email" >
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="3002" ATIndex="15" name="note" >
+        <Content  Encode="base64"  InColon="true" ></Content>
+      </Field>
+    </Fields>
+  </Policy>
+  
+    <Policy key="LGKF_sim_pb_1">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="16">      
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="5" ATIndex="3" name="fullname">
+        <Content Encode="base64"  InColon="true"></Content>
+      </Field>
+      <Field ExeID ="208" ATIndex="5" name="other">
+        <Content InColon="true"></Content>
+      </Field>      
+    </Fields>
+  </Policy>
+  
+ <!--lg kg800-->
+  <Policy key="LGKG_mem_pb_1">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="16">      
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="104" ATIndex="2" name="mobile">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="5" ATIndex="4" name="fullname">
+        <Content Encode="base64"  InColon="true"></Content>
+      </Field>
+      <Field ExeID ="102" ATIndex="6" name="home">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="100" ATIndex="9" name="work">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID="1000" ATIndex="12" name="email" >
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="110" ATIndex="13" name="fax">
+        <Content InColon="true"></Content>
+      </Field>
+    </Fields>
+  </Policy>
+    <Policy key="LGKG_sim_pb_1">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>&#xD;&#xA;\+CPBR: (.*?)(?=(?:&#xD;&#xA;))</EntryRegEx>
+    <Fields Size="16">      
+      <!-- ExeID:EXE中字段值 -->
+      <!-- ATIndex:在AT数据中的位置 -->
+      <Field ExeID ="9004" ATIndex="1" name="ID">
+        <Content></Content>
+      </Field>
+      <Field ExeID ="208" ATIndex="2" name="other">
+        <Content InColon="true"></Content>
+      </Field>
+      <Field ExeID ="5" ATIndex="4" name="fullname">
+        <Content Encode="base64"  InColon="true"></Content>
+      </Field>      
+    </Fields>
+  </Policy>
+  
+  <!--LG_KG800-->
+  <!--+SSCR:.1,0,"dABtAGoAYQAAAA==",2006-6-11,9:0:0,2,2,2009-6-8,23:59:0,2006-6-11,8:45:0,2006-6-8,1:24:0,2006-6-8,1:24:0......OK..-->
+  <Policy key="LGKG_cal_SSC_read">
+    <ParseSolution>
+      <SolutionName>RegexBase64Spliter</SolutionName>
+      <SolutionParameter>LCg/ISg/OlteAgNdfAMoPyEiKXwoPzwhIikCKSo/AyIp</SolutionParameter>
+    </ParseSolution>
+    <EntryRegEx>\+SSCR:(.*?)&#xD;&#xA;</EntryRegEx>
+    <Fields>
+      <Field ExeID ="1" ATIndex="1" name="cal_type">
+        <Content  ProcType="add_type_event" />
+      </Field>
+      <Field ExeID ="9004" ATIndex="2" name="ID"/>
+      <Field ExeID ="11" ATIndex="3" name="Description">
+        <Content Encode="base64" InColon="true"></Content>
+      </Field>
+      <Field InnerID ="600001" ATIndex="4" name ="start_date"/>
+      <Field InnerID ="600002" ATIndex="5" name ="start_time"/>
+      <CombineField ProcType="lg_build_datetime" name="start_datetime">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <Result>
+          <ExeID>101</ExeID>
+        </Result>
+      </CombineField>
+      <Field InnerID ="600004" ATIndex="6" name ="alarm_type"/>
+      <Field InnerID ="600005" ATIndex="7" name ="recurtype"/>
+      <CombineField ProcType="lg_build_recurtype" name="recur_type">
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>
+        <InnerID>600005</InnerID>    
+        <Result>
+          <ExeID>211</ExeID>
+          <ExeID>212</ExeID>
+        </Result>
+      </CombineField>             
+      <Field InnerID ="600006" ATIndex="8" name ="recur_end_date"/>
+      <Field InnerID ="600007" ATIndex="9" name ="end_time"/>
+      <CombineField ProcType="lg_build_datetime" name="recur_end_date">
+        <InnerID>600006</InnerID>
+        <InnerID>600007</InnerID>
+        <Result>
+          <ExeID>104</ExeID>
+        </Result>
+      </CombineField>      
+     <CombineField ProcType="lg_build_datetime" name="end_datetime">        
+        <InnerID>600001</InnerID>
+        <InnerID>600007</InnerID>
+        <Result>
+          <ExeID>102</ExeID>
+        </Result>
+      </CombineField> 
+      <Field InnerID ="600008" ATIndex="11" name ="alarm_date"/>
+      <Field InnerID ="600009" ATIndex="12" name ="alarm_time"/>    
+      <CombineField ProcType="lg_build_rmdminu">        
+        <InnerID>600004</InnerID>
+        <InnerID>600001</InnerID>
+        <InnerID>600002</InnerID>        
+        <InnerID>600008</InnerID>
+        <InnerID>600009</InnerID>
+        <Result>
+          <ExeID>201</ExeID>
+        </Result>
+      </CombineField>
+    </Fields>
+  </Policy>
+  
+  <Policy key="moto_p2k_pb_read">
+  <ParseSolution>
+    <SolutionName>RegexSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <EntryRegEx>&#xD;&#xA;\+MPBRE: (.*?)&#xD;&#xA;</EntryRegEx>
+  <Skip condition="moto_p2k_bored_repeat">5,13,14,24,25,27</Skip>
+  <RecordsProcSolution>moto_p2k_combine</RecordsProcSolution>  
+  <Fields>
+    <Field ExeID = "999001" ATIndex="1" name="group id"/>
+    <Field InnerID ="600001" ATIndex="5" name ="name">
+      <Content Encode="ucshex"/>
+    </Field>
+    <Field InnerID ="600002" ATIndex="13" name ="name_format"/>
+    <Field InnerID ="600003" ATIndex="14" name ="splite_pos"/>
+    <CombineField ProcType="moto_p2k_name" name="proc name">
+      <InnerID>600001</InnerID>
+      <InnerID>600002</InnerID>
+      <InnerID>600003</InnerID>
+      <Result>
+        <ExeID name="first name">1</ExeID>
+        <ExeID name="last name">2</ExeID>
+      </Result>
+    </CombineField>
+    <Field ExeID ="100" ATIndex="3" name="work phone">
+      <Limit ATIndex="6">0</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="102" ATIndex="3" name="home phone">
+      <Limit ATIndex="6">1</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="104" ATIndex="3" name ="mobile">
+      <Limit ATIndex="6">3</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="106" ATIndex="3" name ="pager">
+      <Limit ATIndex="6">5</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="tel other">
+      <Limit ATIndex="6">11</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="main phone number">
+      <Limit ATIndex="6">2</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="110" ATIndex="3" name ="fax">
+      <Limit ATIndex="6">4</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="1000" ATIndex="3" name ="home email">
+      <Limit ATIndex="6">12</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="1001" ATIndex="3" name="work email">
+      <Limit ATIndex="6">13</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="1002" ATIndex="3" name ="other email">
+      <Limit ATIndex="6">14</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="1500" ATIndex="3" name ="url">
+      <Limit ATIndex="6">18</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="4005" ATIndex="24" name ="nickname">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="4003" ATIndex="25" name ="birthday">
+      <Content ProcType="moto_p2k_date" InColon="true"/>
+    </Field>
+    <Field ExeID ="3002" ATIndex="27" name ="note">
+      <Content  Encode="ucshex"/>
+    </Field>
+    
+    <Field ExeID ="5100" ATIndex="3" name ="home address">
+      <Limit ATIndex="6">15</Limit>
+      <Content Encode="ucshex" ProcType="moto_p2k_home_address"></Content>
+    </Field>
+    <Field ExeID ="5101" ATIndex="3" name ="work address">
+      <Limit ATIndex="6">16</Limit>
+      <Content Encode="ucshex" ProcType="moto_p2k_work_address"></Content>
+    </Field>
+    <Field ExeID ="5102" ATIndex="3" name ="other address">
+      <Limit ATIndex="6">17</Limit>
+      <Content Encode="ucshex" ProcType="moto_p2k_other_address"></Content>
+    </Field>
+  </Fields>
+</Policy>
+<Policy key="moto_p2k_sms_read">
+  <ParseSolution>
+    <SolutionName>MotoP2kSMSSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <EntryRegEx>\+CMG[LR]: (.*?[^\"])&#xD;&#xA;</EntryRegEx>
+  
+  <Fields>
+    <!-- ExeID:EXE中字段值 -->
+    <!-- DataIndex:在AT数据中的位置 -->
+     <Field InnerID="600002" ATIndex="1" name="sate and box type">
+     	<Content  InColon="true"/>
+     </Field>    
+     <CombineField ProcType ="moto_p2k_sms_info"  name ="">
+      <InnerID>600002</InnerID>
+      <Result>
+        <ExeID name="state">1</ExeID>
+        <ExeID name="box type">2</ExeID>
+      </Result>
+      </CombineField>
+    
+    <Field ExeID ="3" ATIndex="2" name ="tel">
+      <Content InColon="true"></Content>
+    </Field>
+    
+    <Field InnerID="600001" ATIndex="3" name="number_content"/>
+    <CombineField ProcType ="moto_p2k_sms_time_content">
+      <InnerID>600001</InnerID>
+      <Result>
+        <ExeID name="time">5</ExeID> 
+        <ExeID name="cotent">7</ExeID>
+        <ExeID name="lsms_id">999001</ExeID>
+      </Result>
+    </CombineField>  
+  </Fields>
+</Policy>
+<Policy key="moto_p2k_cal_read">
+	<ParseSolution>
+		<SolutionName>RegexSpliter</SolutionName>
+		<SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+	</ParseSolution>
+	<EntryRegEx>&#xD;&#xA;\+MDBR: (.*?)&#xD;&#xA;</EntryRegEx>
+	<Fields>
+		<!-- ExeID:EXE中字段值 -->
+		<!-- DataIndex:在AT数据中的位置 -->
+		<Field ExeID="1" ATIndex="1" name="calendar category">
+			<Content ProcType="add_type_event"></Content>
+		</Field>
+		<Field ExeID="11" ATIndex="2" name="subject">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		<Field ExeID="205" ATIndex="3" name="is_all_day_event">
+			<Content ProcType="moto_p2k_cal_isalldayevent"></Content>
+		</Field>
+
+
+		<Field InnerID="600001" ATIndex="5" name="start time">
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600002" ATIndex="6" name="start date">
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_datetime" name="start datetime">
+			<InnerID>600001</InnerID>
+			<InnerID>600002</InnerID>
+			<Result>
+				<ExeID name="start datetime">101</ExeID>
+			</Result>
+		</CombineField>
+
+		<Field InnerID="600003" ATIndex="8" name="alarm time">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600004" ATIndex="9" name="alarm date">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_reminder">
+			<InnerID>600003</InnerID>
+			<InnerID>600004</InnerID>
+			<Result>
+				<ExeID name="alarm datetime">201</ExeID>
+			</Result>
+		</CombineField>
+
+
+
+
+		<Field InnerID="600111" ATIndex="10" name="repeat"/>
+	    <Field InnerID="600007" ATIndex="19" name="repeatmask"/>
+
+		<CombineField ProcType="moto_p2k_cal_repeat">
+			<InnerID>600111</InnerID>
+			<InnerID>600002</InnerID>
+			<InnerID>600007</InnerID>
+			<Result>
+				<ExeID name="repeat">211</ExeID>
+			</Result>
+		</CombineField>
+
+
+		<Field InnerID="600005" ATIndex="11" name="end time">
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600006" ATIndex="12" name="end date">
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_datetime" name="end datetime">
+			<InnerID>600005</InnerID>
+			<InnerID>600006</InnerID>
+			<Result>
+				<ExeID name="end datetime">102</ExeID>
+			</Result>
+		</CombineField>
+
+
+		<Field ExeID="13" ATIndex="15" name="location">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		<Field ExeID="12" ATIndex="16" name="note">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		<Field ExeID="213" ATIndex="18" name="interval"/>
+		
+		<Field ExeID="104" ATIndex="21" name="repeat occurrences (date)">
+			<Content ProcType="moto_p2k_repeat_enddate" InColon="true" />
+		</Field>
+	</Fields>
+</Policy>
+
+<Policy key="moto_p2k_cal_v3xx">
+	<ParseSolution>
+		<SolutionName>RegexSpliter</SolutionName>
+		<SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+	</ParseSolution>
+	<EntryRegEx>&#xD;&#xA;\+MDBR: (.*?)&#xD;&#xA;</EntryRegEx>
+	<Fields>
+		<!-- ExeID:EXE中字段值 -->
+		<!-- DataIndex:在AT数据中的位置 -->
+		<Field ExeID="1" ATIndex="1" name="calendar category">
+			<Content ProcType="add_type_event"></Content>
+		</Field>
+		<Field ExeID="11" ATIndex="2" name="subject">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		<Field ExeID="205" ATIndex="3" name="is_all_day_event">
+			<Content ProcType="moto_p2k_cal_isalldayevent"></Content>
+		</Field>
+
+
+		<Field InnerID="600001" ATIndex="5" name="start time">
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600002" ATIndex="6" name="start date">
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_datetime" name="start datetime">
+			<InnerID>600001</InnerID>
+			<InnerID>600002</InnerID>
+			<Result>
+				<ExeID name="start datetime">101</ExeID>
+			</Result>
+		</CombineField>
+
+		<Field InnerID="600003" ATIndex="8" name="alarm time">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600004" ATIndex="9" name="alarm date">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_reminder">
+			<InnerID>600003</InnerID>
+			<InnerID>600004</InnerID>
+			<Result>
+				<ExeID name="alarm datetime">201</ExeID>
+			</Result>
+		</CombineField>
+
+		<Field InnerID="600005" ATIndex="11" name="end time">
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600006" ATIndex="12" name="end date">
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_datetime" name="end datetime">
+			<InnerID>600005</InnerID>
+			<InnerID>600006</InnerID>
+			<Result>
+				<ExeID name="end datetime">102</ExeID>
+			</Result>
+		</CombineField>
+
+		<Field ExeID="13" ATIndex="15" name="location">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		<Field ExeID="12" ATIndex="16" name="note">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		
+		<Field InnerID="600111" ATIndex="10" name="repeat-type"/>
+		<Field InnerID="600112" ATIndex="18" name="repeat-interval"/>		
+	    <Field InnerID="600113" ATIndex="19" name="repeat-weekmask"/>
+		<CombineField ProcType="moto_p2k_cal_repeat_v3xx">
+			<InnerID>600002</InnerID>
+			<InnerID>600111</InnerID>			
+			<InnerID>600112</InnerID>
+			<InnerID>600113</InnerID>
+			<Result>
+				<ExeID name="repeat">211</ExeID>
+			</Result>
+		</CombineField>
+				
+		<Field ExeID="104" ATIndex="21" name="repeat occurrences (date)">
+			<Content ProcType="moto_p2k_repeat_enddate" InColon="true" />
+		</Field>
+	</Fields>
+</Policy>
+
+<Policy key="moto_v3m_pb_read">
+  <ParseSolution>
+    <SolutionName>RegexSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <EntryRegEx>&#xD;&#xA;\+MPBRE: (.*?)&#xD;&#xA;</EntryRegEx>
+  <Skip condition="moto_p2k_bored_repeat">5,13,14,24,25,27</Skip>
+  <RecordsProcSolution>moto_p2k_combine_byname</RecordsProcSolution>
+  <MergeContactsByName>true</MergeContactsByName>  
+  <Fields>
+    <Field ExeID = "999001" InnerID ="600001" ATIndex="5" name ="name">
+      <Content Encode="ucshex"/>
+    </Field>
+    <Field InnerID ="600002" ATIndex="13" name ="name_format"/>
+    <Field InnerID ="600003" ATIndex="14" name ="splite_pos"/>
+    <CombineField ProcType="moto_p2k_name" name="proc name">
+      <InnerID>600001</InnerID>
+      <InnerID>600002</InnerID>
+      <InnerID>600003</InnerID>
+      <Result>
+        <ExeID name="first name">1</ExeID>
+        <ExeID name="last name">2</ExeID>
+      </Result>
+    </CombineField>
+    <Field ExeID ="100" ATIndex="3" name="work phone">
+      <Limit ATIndex="6">0</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="102" ATIndex="3" name="home phone">
+      <Limit ATIndex="6">1</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="104" ATIndex="3" name ="mobile">
+      <Limit ATIndex="6">3</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="105" ATIndex="3" name ="home mobile">
+      <Limit ATIndex="6">8</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="106" ATIndex="3" name ="pager">
+      <Limit ATIndex="6">5</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="tel other">
+      <Limit ATIndex="6">10</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="main phone number">
+      <Limit ATIndex="6">2</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="110" ATIndex="3" name ="fax">
+      <Limit ATIndex="6">4</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    
+    <!-- email -->
+    <Field ExeID ="1000" ATIndex="3" name ="home email">
+      <Limit ATIndex="6">6</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="1001" ATIndex="3" name="work email">
+      <Limit ATIndex="6">9</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="1500" ATIndex="3" name="web">
+      <Limit ATIndex="6">11</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="3002" ATIndex="3" name="Note">
+      <Limit ATIndex="6">12</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    
+  </Fields>
+</Policy>
+
+<Policy key="moto_v3m_cal_read">
+	<ParseSolution>
+		<SolutionName>RegexSpliter</SolutionName>
+		<SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+	</ParseSolution>
+	<EntryRegEx>&#xD;&#xA;\+MDBR: (.*?)&#xD;&#xA;</EntryRegEx>
+	<Fields>
+		<!-- ExeID:EXE中字段值 -->
+		<!-- DataIndex:在AT数据中的位置 -->
+		<Field ExeID="1" ATIndex="1" name="calendar category">
+			<Content ProcType="add_type_event"></Content>
+		</Field>
+		<Field ExeID="11" ATIndex="2" name="subject">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		
+		<!-- ATIndex="3"表示是否有开始日期, ATIndex="4"表示是否有闹钟 -->
+
+
+		<Field InnerID="600001" ATIndex="5" name="start time">
+			<Limit ATIndex="3">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600002" ATIndex="6" name="start date">
+			<Limit ATIndex="3">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_datetime" name="start datetime">
+			<Limit ATIndex="3">1</Limit>
+			<InnerID>600001</InnerID>
+			<InnerID>600002</InnerID>
+			<Result>
+				<ExeID name="start datetime">101</ExeID>
+			</Result>
+		</CombineField>
+		
+		<Field InnerID="600005" ATIndex="7" name="duration">
+		</Field>
+		<CombineField ProcType="moto_v3m_cal_enddatetime" name="end datetime">
+			<Limit ATIndex="3">1</Limit>
+			<InnerID>600001</InnerID>
+			<InnerID>600002</InnerID>
+			<InnerID>600005</InnerID>
+			<Result>
+				<ExeID name="end datetime">102</ExeID>
+			</Result>
+		</CombineField>
+		
+
+		<Field InnerID="600003" ATIndex="8" name="alarm time">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600004" ATIndex="9" name="alarm date">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_reminder">
+			<Limit ATIndex="4">1</Limit>
+			<InnerID>600003</InnerID>
+			<InnerID>600004</InnerID>
+			<Result>
+				<ExeID name="alarm datetime">201</ExeID>
+			</Result>
+		</CombineField>
+
+
+		<Field InnerID="600111" ATIndex="10" name="repeat"/>
+		<CombineField ProcType="moto_v3m_cal_repeat">
+			<InnerID>600111</InnerID>
+			<Result>
+				<ExeID name="repeat">211</ExeID>
+			</Result>
+		</CombineField>
+	</Fields>
+</Policy>
+
+<Policy key="moto_v3s_pb_read">
+  <ParseSolution>
+    <SolutionName>RegexSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <EntryRegEx>&#xD;&#xA;\+MPBRE: (.*?)&#xD;&#xA;</EntryRegEx>
+  <Skip condition="moto_p2k_bored_repeat">5,13,14,24,25,27</Skip> 
+  <Fields>
+    <Field ExeID = "999001" ATIndex="1" name="group id"/>
+    <Field InnerID ="600001" ATIndex="5" name ="name">
+      <Content Encode="ucshex"/>
+    </Field>
+    <Field InnerID ="600002" ATIndex="13" name ="name_format"/>
+    <Field InnerID ="600003" ATIndex="14" name ="splite_pos"/>
+    <CombineField ProcType="moto_p2k_name" name="proc name">
+      <InnerID>600001</InnerID>
+      <InnerID>600002</InnerID>
+      <InnerID>600003</InnerID>
+      <Result>
+        <ExeID name="first name">1</ExeID>
+        <ExeID name="last name">2</ExeID>
+      </Result>
+    </CombineField>
+    <Field ExeID ="100" ATIndex="3" name="work phone">
+      <Limit ATIndex="6">0</Limit>
+      <Content  Encode="utf8"></Content>
+    </Field>
+    <Field ExeID ="102" ATIndex="3" name="home phone">
+      <Limit ATIndex="6">1</Limit>
+      <Content Encode="utf8"></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="main phone number">
+      <Limit ATIndex="6">2</Limit>
+      <Content  Encode="utf8"></Content>
+    </Field>
+    <Field ExeID ="104" ATIndex="3" name ="mobile">
+      <Limit ATIndex="6">3</Limit>
+      <Content  Encode="utf8"></Content>
+    </Field>
+    <Field ExeID ="110" ATIndex="3" name ="fax">
+      <Limit ATIndex="6">4</Limit>
+      <Content Encode="utf8"></Content>
+    </Field>
+    <Field ExeID ="106" ATIndex="3" name ="pager">
+      <Limit ATIndex="6">5</Limit>
+      <Content Encode="utf8"></Content>
+    </Field>
+    <Field ExeID ="1002" ATIndex="3" name ="other email">
+      <Limit ATIndex="6">6</Limit>
+      <Content Encode="utf8"></Content>
+    </Field>
+  </Fields>
+</Policy>
+
+<Policy key="moto_l6_pb_read">
+  <ParseSolution>
+    <SolutionName>RegexSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <EntryRegEx>&#xD;&#xA;\+MPBRE: (.*?)&#xD;&#xA;</EntryRegEx>
+  <Skip condition="moto_p2k_bored_repeat">5,13,14,24,25,27</Skip>
+  <MergeContactsByName>false</MergeContactsByName>  
+  <Fields>
+  	<!-- name -->
+    <Field ExeID = "999001" ATIndex="1" name="group id"/>
+    <Field InnerID ="600001" ATIndex="5" name ="name">	
+      <Content Encode="ucshex"/>
+    </Field>
+    <Field InnerID ="600002" ATIndex="13" name ="name_format"/>
+    <Field InnerID ="600003" ATIndex="14" name ="splite_pos"/>
+    <CombineField ProcType="moto_p2k_name" name="proc name">
+      <InnerID>600001</InnerID>
+      <InnerID>600002</InnerID>
+      <InnerID>600003</InnerID>
+      <Result>
+        <ExeID name="first name">1</ExeID>
+        <ExeID name="last name">2</ExeID>
+      </Result>
+    </CombineField>
+    <!-- number -->
+    <Field ExeID ="100" ATIndex="3" name="work phone">
+      <Limit ATIndex="6">0</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="102" ATIndex="3" name="home phone">
+      <Limit ATIndex="6">1</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="104" ATIndex="3" name ="mobile">
+      <Limit ATIndex="6">3</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="106" ATIndex="3" name ="pager">
+      <Limit ATIndex="6">5</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="tel other">
+      <Limit ATIndex="6">10</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="main phone number">
+      <Limit ATIndex="6">2</Limit>
+      <Content  Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <Field ExeID ="110" ATIndex="3" name ="fax">
+      <Limit ATIndex="6">4</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    <!-- email -->
+    <Field ExeID ="1002" ATIndex="3" name ="other email">
+      <Limit ATIndex="6">6</Limit>
+      <Content Encode="utf8" InColon="true" ></Content>
+    </Field>
+    
+    <!-- address -->
+    <Field InnerID ="600004" ATIndex="18" name ="street2">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field InnerID ="600005" ATIndex="19" name ="street1">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field InnerID ="600006" ATIndex="20" name ="city">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field InnerID ="600007" ATIndex="21" name ="state">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field InnerID ="600008" ATIndex="22" name ="zip">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field InnerID ="600009" ATIndex="23" name ="country">
+       <Content Encode="ucshex"></Content>
+    </Field>
+    <CombineField ProcType="moto_l6_other_address" name="proc other address">
+      <InnerID>600005</InnerID>
+      <InnerID>600004</InnerID>
+      <InnerID>600006</InnerID>
+      <InnerID>600007</InnerID>
+      <InnerID>600008</InnerID>
+      <InnerID>600009</InnerID>
+      <Result>
+        <ExeID name="other address">5102</ExeID>
+      </Result>
+    </CombineField>
+    
+    <!-- nickname -->
+    <Field ExeID ="4005" ATIndex="24" name ="nickname">
+      <Content Encode="ucshex"></Content>
+    </Field>
+    
+    <!-- birthday -->
+    <Field ExeID ="4003" ATIndex="25" name ="birthday">
+      <Content ProcType="moto_p2k_date" InColon="true"/>
+    </Field>  
+  </Fields>
+</Policy>
+
+<Policy key="moto_z6c_pb_read">
+  <ParseSolution>
+    <SolutionName>RegexSpliter</SolutionName>
+    <SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+  </ParseSolution>
+  <EntryRegEx>&#xD;&#xA;\+MPBRE: (.*?)&#xD;&#xA;</EntryRegEx>
+  <Skip condition="moto_p2k_bored_repeat">5,13,14,24,25,27</Skip>
+  <RecordsProcSolution>moto_p2k_combine</RecordsProcSolution>
+  <MergeContactsByName>false</MergeContactsByName>  
+  <Fields>
+    <Field ExeID = "999001" ATIndex="1" name="group id"/>
+    <Field InnerID ="600001" ATIndex="5" name ="name">
+      <Content Encode="ucshex"/>
+    </Field>
+    <Field InnerID ="600002" ATIndex="13" name ="name_format"/>
+    <Field InnerID ="600003" ATIndex="14" name ="splite_pos"/>
+    <CombineField ProcType="moto_p2k_name" name="proc name">
+      <InnerID>600001</InnerID>
+      <InnerID>600002</InnerID>
+      <InnerID>600003</InnerID>
+      <Result>
+        <ExeID name="first name">1</ExeID>
+        <ExeID name="last name">2</ExeID>
+      </Result>
+    </CombineField>
+    <Field ExeID ="100" ATIndex="3" name="work phone">
+      <Limit ATIndex="6">0</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="102" ATIndex="3" name="home phone">
+      <Limit ATIndex="6">1</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="104" ATIndex="3" name ="mobile">
+      <Limit ATIndex="6">3</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="105" ATIndex="3" name ="home mobile">
+      <Limit ATIndex="6">8</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="106" ATIndex="3" name ="pager">
+      <Limit ATIndex="6">5</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="tel other">
+      <Limit ATIndex="6">10</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="108" ATIndex="3" name="main phone number">
+      <Limit ATIndex="6">2</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="110" ATIndex="3" name ="fax">
+      <Limit ATIndex="6">4</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    
+    <!-- email -->
+    <Field ExeID ="1000" ATIndex="3" name ="home email">
+      <Limit ATIndex="6">6</Limit>
+      <Content Encode="ucshex"></Content>
+    </Field>
+    <Field ExeID ="1001" ATIndex="3" name="work email">
+      <Limit ATIndex="6">9</Limit>
+      <Content  Encode="ucshex"></Content>
+    </Field>
+    
+  </Fields>
+</Policy>
+
+<Policy key="moto_z6c_cal_read">
+	<ParseSolution>
+		<SolutionName>RegexSpliter</SolutionName>
+		<SolutionParameter>,(?=(?:[^\"]*\"[^\"]*\")*(?![^\"]*\"))</SolutionParameter>
+	</ParseSolution>
+	<EntryRegEx>&#xD;&#xA;\+MDBR: (.*?)&#xD;&#xA;</EntryRegEx>
+	<Fields>
+		<!-- ExeID:EXE中字段值 -->
+		<!-- DataIndex:在AT数据中的位置 -->
+		<Field ExeID="1" ATIndex="1" name="calendar category">
+			<Content ProcType="add_type_event"></Content>
+		</Field>
+		<Field ExeID="11" ATIndex="2" name="subject">
+			<Content Encode="ucshex"></Content>
+		</Field>
+		
+		<!-- ATIndex="3"表示是否有开始日期, ATIndex="4"表示是否有闹钟 -->
+
+
+		<Field InnerID="600001" ATIndex="5" name="start time">
+			<Limit ATIndex="3">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600002" ATIndex="6" name="start date">
+			<Limit ATIndex="3">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_datetime" name="start datetime">
+			<Limit ATIndex="3">1</Limit>
+			<InnerID>600001</InnerID>
+			<InnerID>600002</InnerID>
+			<Result>
+				<ExeID name="start datetime">101</ExeID>
+			</Result>
+		</CombineField>
+		
+		<Field InnerID="600005" ATIndex="7" name="duration">
+		</Field>
+		<CombineField ProcType="moto_v3m_cal_enddatetime" name="end datetime">
+			<Limit ATIndex="3">1</Limit>
+			<InnerID>600001</InnerID>
+			<InnerID>600002</InnerID>
+			<InnerID>600005</InnerID>
+			<Result>
+				<ExeID name="end datetime">102</ExeID>
+			</Result>
+		</CombineField>
+		
+
+		<Field InnerID="600003" ATIndex="8" name="alarm time">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<Field InnerID="600004" ATIndex="9" name="alarm date">
+			<Limit ATIndex="4">1</Limit>
+			<Content InColon="true" />
+		</Field>
+		<CombineField ProcType="moto_p2k_cal_reminder">
+			<Limit ATIndex="4">1</Limit>
+			<InnerID>600003</InnerID>
+			<InnerID>600004</InnerID>
+			<Result>
+				<ExeID name="alarm datetime">201</ExeID>
+			</Result>
+		</CombineField>
+
+
+		<Field InnerID="600111" ATIndex="10" name="repeat"/>
+		<Field InnerID="600112" ATIndex="19" name="repeat_interval"/>
+		<Field InnerID="600113" ATIndex="20" name="repeat_weekmask"/>
+		<CombineField ProcType="moto_z6c_cal_repeat">
+			<InnerID>600002</InnerID>
+			<InnerID>600111</InnerID>
+			<InnerID>600112</InnerID>
+			<InnerID>600113</InnerID>
+			<Result>
+				<ExeID name="repeat">211</ExeID>
+			</Result>
+		</CombineField>
+	</Fields>
+</Policy>
+
+</Config>

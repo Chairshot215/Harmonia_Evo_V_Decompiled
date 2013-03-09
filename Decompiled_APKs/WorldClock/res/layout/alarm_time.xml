@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/listview_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/alarm_time_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/time_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.htc.android.worldclock.DigitalClock android:orientation="horizontal" android:id="@id/digitalClock" android:layout_width="@dimen/digital_clock_width" android:layout_height="@dimen/digital_clock_height" android:layout_marginLeft="@dimen/digital_clock_marginLeft" android:layout_centerVertical="true">
+            <LinearLayout android:layout_gravity="right|center" android:layout_width="@dimen/digital_time_display_width" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:gravity="right|center" android:id="@id/timeDisplay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" style="@style/digitalClockTimeStyle" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/detail" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/digital_detail_marginLeft">
+                <TextView android:textColor="@color/light_grey" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/digital_am_pm_marginTop" android:text="@string/am" android:includeFontPadding="false" android:layout_alignParentTop="true" style="@style/digitalClockAmPmStyle" />
+                <TextView android:textColor="@color/light_grey" android:id="@id/day" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/digital_day_marginTop" android:includeFontPadding="false" style="@style/digitalClockDayStyle" />
+            </RelativeLayout>
+        </com.htc.android.worldclock.DigitalClock>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="vertical" android:id="@id/alarm_time_description_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alarm_time_description_layout_marginLeft" android:layout_weight="1.0">
+            <TextView android:textColor="@color/dark_text_bright_focused" android:ellipsize="marquee" android:id="@id/description" android:layout_width="@dimen/alarm_time_description" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/list_primary_m" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/days_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/days_layout_marginTop">
+                <TextView android:id="@id/sun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/days_marginRight" style="@com.htc:style/list_secondary_s" />
+                <TextView android:id="@id/mon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/days_marginRight" style="@com.htc:style/list_secondary_s" />
+                <TextView android:id="@id/tue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/days_marginRight" style="@com.htc:style/list_secondary_s" />
+                <TextView android:id="@id/wed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/days_marginRight" style="@com.htc:style/list_secondary_s" />
+                <TextView android:id="@id/thu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/days_marginRight" style="@com.htc:style/list_secondary_s" />
+                <TextView android:id="@id/fri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/days_marginRight" style="@com.htc:style/list_secondary_s" />
+                <TextView android:id="@id/sat" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_s" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right|center" android:id="@id/function_layout" android:paddingRight="@dimen/list_item_icon_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+        <CheckBox android:layout_gravity="center" android:id="@id/function_delete" android:focusable="false" android:layout_width="@dimen/delete_icon_width" android:layout_height="@dimen/delete_icon_height" />
+    </LinearLayout>
+</LinearLayout>

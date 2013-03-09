@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="430" android:versionName="4.3.0" package="com.m0narx.tweaks"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-library android:name="com.htc.fusion.fx" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" allowSkinChange="true">
+        <activity android:label="@string/app_name" android:name=".main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="About" android:name=".about">
+            <intent-filter>
+                <action android:name="com.m0narx.tweaks.about" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="SystemUI" android:name=".systemui">
+            <intent-filter>
+                <action android:name="com.m0narx.tweaks.systemui" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Rosie" android:name=".rosie">
+            <intent-filter>
+                <action android:name="com.m0narx.tweaks.rosie" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="lockscreen" android:name=".lockscreen">
+            <intent-filter>
+                <action android:name="com.m0narx.tweaks.lockscreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="misc" android:name=".misc">
+            <intent-filter>
+                <action android:name="com.m0narx.tweaks.misc" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="carrierlabel" android:name=".StatusBarCaption">
+            <intent-filter>
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="battery_settings" android:name=".battery_settings">
+            <intent-filter>
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="clock_settings" android:name=".clock_settings">
+            <intent-filter>
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:label="settings" android:name=".settings">
+            <intent-filter>
+                <category android:name="android.intent.category.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="DeleteAndRearrangeQS" android:screenOrientation="behind" />
+        <activity android:name="RosieHideApps" android:screenOrientation="behind" />
+        <provider android:name="com.m0narx.tweaks.MyProvider" android:authorities="com.m0narx.tweaks.MyProvider" />
+        <receiver android:name=".TweaksBroadcastReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

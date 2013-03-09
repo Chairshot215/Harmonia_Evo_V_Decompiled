@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/grey" android:gravity="right" android:id="@id/account_name" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/RedeemGiftCardText" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/balance_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/details_content_margin" android:layout_marginRight="@dimen/details_content_margin" android:layout_marginBottom="20.0dip" android:layout_below="@id/account_name">
+        <TextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/current_play_balance_label" android:layout_width="0.0dip" android:text="@string/balance_label" android:singleLine="true" android:layout_weight="1.0" style="@style/RedeemGiftCardText" />
+        <ProgressBar android:layout_gravity="right|center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="@style/FinskyProgressSmallInverse" />
+        <TextView android:textSize="@dimen/content_entry_large_size" android:textColor="@color/white" android:gravity="right" android:id="@id/balance" android:layout_width="wrap_content" style="@style/RedeemGiftCardText" />
+    </LinearLayout>
+    <EditText android:id="@id/pin_entry" android:layout_marginBottom="10.0dip" android:hint="@string/gift_card_code_hint" android:lines="1" android:maxLength="30" android:layout_below="@id/balance_row" android:inputType="textCapCharacters|textNoSuggestions" android:textCursorDrawable="@null" style="@style/RedeemGiftCardEditText" />
+    <TextView android:textSize="@dimen/content_generic_small_size" android:textColor="@color/grey" android:gravity="left" android:id="@id/user_message" android:paddingLeft="@dimen/details_content_margin" android:paddingRight="@dimen/content_generic_small_size" android:focusable="false" android:visibility="gone" android:layout_marginRight="@dimen/details_content_margin" android:layout_marginBottom="20.0dip" android:layout_below="@id/pin_entry" style="@style/RedeemGiftCardText" />
+</merge>

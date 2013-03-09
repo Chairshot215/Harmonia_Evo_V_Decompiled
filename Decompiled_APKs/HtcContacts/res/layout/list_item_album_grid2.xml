@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/two_column" android:paddingLeft="@dimen/gallery_margin_left_right" android:paddingTop="@com.htc:dimen/htc_list_item_padding_medium" android:paddingRight="@dimen/gallery_margin_left_right" android:paddingBottom="@com.htc:dimen/htc_list_item_padding_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/right_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

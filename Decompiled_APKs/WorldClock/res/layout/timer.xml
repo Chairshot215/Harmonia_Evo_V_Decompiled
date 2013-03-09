@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/header_text" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <RelativeLayout android:id="@id/common_body_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HtcTimePicker android:id="@id/timerPicker" android:layout_width="@dimen/timerPicker_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timerPicker_marginLeft" android:layout_marginTop="@dimen/timerPicker_marginTop" android:selectable="false" />
+        <LinearLayout android:id="@id/timerPickerTitle" android:layout_width="@dimen/timerPickerTitle_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timerPickerTitle_marginLeft" android:layout_marginTop="@dimen/timerPickerTitle_marginTop">
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/timerHourTitle" android:layout_width="@dimen/timerPicker_text_width" android:layout_height="wrap_content" android:text="@string/timer_hour" style="@style/timerTextStyle" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/timerMinuteTitle" android:layout_width="@dimen/timerPicker_text_width" android:layout_height="wrap_content" android:text="@string/timer_minute" style="@style/timerTextStyle" />
+            <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/timerSecondTitle" android:layout_width="@dimen/timerPicker_text_width" android:layout_height="wrap_content" android:text="@string/timer_second" style="@style/timerTextStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/alert_layout" android:focusable="true" android:layout_width="@dimen/alert_layout_width" android:layout_height="@dimen/alert_layout_height" android:layout_marginLeft="@dimen/alert_layout_marginLeft" android:layout_marginTop="@dimen/alert_layout_marginTop">
+        <View android:id="@id/alert_view" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:ellipsize="marquee" android:focusable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alert_sound_marginLeft" android:layout_marginTop="@dimen/alert_sound_marginTop" android:layout_marginRight="@dimen/alert_sound_marginRight" android:text="@string/alert_sound" android:singleLine="true" style="@com.htc:style/darklist_primary_m" />
+        <TextView android:ellipsize="marquee" android:id="@id/alert_uri" android:focusable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alert_uri_marginLeft" android:layout_marginTop="@dimen/alert_uri_marginTop" android:layout_marginRight="@dimen/alert_uri_marginRight" android:singleLine="true" style="@com.htc:style/darklist_secondary_m" />
+        <ImageButton android:id="@id/alert" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/alert_button_marginRight" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/btn" android:layout_width="@dimen/timer_btn_width" android:layout_height="@dimen/timer_btn_height" android:layout_marginLeft="@dimen/timer_btn_marginLeft" android:layout_marginTop="@dimen/timer_btn_marginTop">
+        <Button android:id="@id/btn1" android:layout_width="@dimen/timer_btn1_width" android:layout_height="@dimen/timer_btn1_height" android:layout_marginLeft="@dimen/timer_btn1_marginLeft" android:text="@string/start" style="@com.htc:style/darklist_primary_l" />
+        <Button android:id="@id/btn2" android:background="@com.htc:drawable/common_b_button" android:layout_width="@dimen/timer_btn2_width" android:layout_height="@dimen/timer_btn2_height" android:layout_marginLeft="@dimen/timer_btn2_marginLeft" android:layout_marginTop="@dimen/timer_btn2_marginTop" android:text="@string/reset" android:layout_toRightOf="@id/btn1" style="@com.htc:style/darklist_primary_l" />
+    </RelativeLayout>
+</RelativeLayout>

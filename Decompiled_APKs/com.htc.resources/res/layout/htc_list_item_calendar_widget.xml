@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0px" android:layout_marginLeft="3.0px" android:layout_marginTop="2.0px" android:layout_marginRight="3.0px" android:layout_marginBottom="2.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vertical_stripe" android:layout_width="8.0px" android:layout_height="44.0px" android:layout_marginTop="3.0px" android:layout_marginRight="4.0px" android:layout_marginBottom="3.0px" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:layout_weight="1.0">
+        <TextView android:textSize="16.0px" android:textStyle="normal" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/when" android:layout_width="233.0px" android:layout_height="21.0px" android:layout_marginTop="3.0px" android:singleLine="true" style="@style/item_shadow" />
+        <TextView android:textSize="14.0px" android:textStyle="normal" android:textColor="#ffb2b2b2" android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/item_title" android:layout_width="233.0px" android:layout_height="20.0px" android:singleLine="true" android:layout_below="@id/when" style="@style/item_shadow" />
+    </RelativeLayout>
+</LinearLayout>

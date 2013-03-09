@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/now_forecast_item_width" android:layout_height="@dimen/now_forecast_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/now_con_icon" android:layout_width="@dimen/now_icon_width" android:layout_height="@dimen/now_icon_height" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/now_day_text_font" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="center" android:id="@id/now_day_txt" android:paddingTop="@dimen/now_day_text_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:marqueeRepeatLimit="0" />
+    <TextView android:textSize="@dimen/now_date_text_font" android:textColor="@color/now_day_date_color" android:gravity="center" android:id="@id/now_date" android:paddingTop="@dimen/now_date_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/now_temp_info_height" android:layout_marginBottom="@dimen/now_curtemp_margin_bottom" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/now_hl_label_font" android:textColor="#ff404040" android:gravity="top" android:id="@id/now_hl_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/now_curtemp_font" android:textColor="@color/black" android:gravity="top" android:id="@id/now_curtemp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0px" android:layout_toRightOf="@id/now_hl_label" />
+    </RelativeLayout>
+</RelativeLayout>

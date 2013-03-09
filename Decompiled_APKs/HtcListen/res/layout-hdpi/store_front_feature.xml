@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.htc.music.widget.HotGallery android:gravity="top" android:id="@id/featuredMusic" android:visibility="visible" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="208.0px" />
+        <ViewStub android:id="@id/message_stub_import" android:layout="@layout/no_paymentmethod" android:inflatedId="@id/message_inflate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/advanced_setting_title" android:key="PreferenceCategory_title">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/hidden_ssid_title" android:key="hidden_ssid" android:summary="@string/hidden_ssid_summary" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/wifi_channel_entries" android:title="@string/wifi_channel" android:key="wifi_channel" android:entryValues="@array/wifi_channel_values" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/lan_settings" android:key="lan_settings" />
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/power_mode_entries" android:title="@string/power_mode" android:key="power_mode" android:entryValues="@array/power_mode_values" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

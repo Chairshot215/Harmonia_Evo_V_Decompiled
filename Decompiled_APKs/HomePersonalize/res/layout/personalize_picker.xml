@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/headerBar" layout="@layout/headerbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerBar">
+        <include android:id="@id/panel_picker" layout="@layout/panel_picker" />
+    </RelativeLayout>
+    <include android:id="@id/footerBar" layout="@layout/footerbar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footerBar" android:layout_below="@id/headerBar">
+        <include android:id="@id/list_picker" android:visibility="gone" layout="@layout/list_picker" />
+        <include android:id="@id/grid_picker" android:visibility="gone" layout="@layout/grid_picker" />
+        <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/panel_picker_nodata_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/olrespicker_nodata_mesg" android:layout_above="@id/picker_cmd_bar" />
+        <TextView android:textSize="@com.htc:dimen/info_primary_xl" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/loading_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/olrespicker_load_title" android:layout_above="@id/picker_cmd_bar" />
+    </RelativeLayout>
+</RelativeLayout>

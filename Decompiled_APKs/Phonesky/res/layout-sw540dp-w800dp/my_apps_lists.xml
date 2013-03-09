@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/margin_fill" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <include layout="@layout/details_banner" />
+    <com.google.android.finsky.layout.SimpleMarginBox android:layout_width="fill_parent" android:layout_height="fill_parent" finsky:max_content_width="@dimen/framed_content_max_width">
+        <include layout="@layout/my_apps_with_details" />
+        <include layout="@layout/empty_myapps_view" />
+    </com.google.android.finsky.layout.SimpleMarginBox>
+</FrameLayout>

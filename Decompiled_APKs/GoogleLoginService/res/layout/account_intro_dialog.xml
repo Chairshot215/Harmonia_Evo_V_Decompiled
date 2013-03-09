@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.gsf.login.ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:layout_marginRight="@dimen/title_indent" android:text="@string/add_a_google_account" />
+        <View android:id="@id/top_divider" android:layout_below="@id/title" style="@style/TopDivider" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/StackButtonedContent">
+        <TextView android:id="@id/simple_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/account_intro_simple_message" android:layout_alignParentTop="true" style="@style/DescriptionText" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/buttons" style="@style/StackedButtons">
+        <Button android:id="@id/next_button" android:layout_width="fill_parent" android:text="@string/existing_button_label" style="@style/Button" />
+        <Button android:id="@id/create_button" android:layout_width="fill_parent" android:layout_marginTop="@dimen/button_vertical_spacing" android:text="@string/new_button_label" style="@style/Button" />
+        <Button android:id="@id/skip_button" android:layout_width="fill_parent" android:layout_marginTop="@dimen/button_vertical_spacing" android:text="@string/not_now_button_label" style="@style/Button" />
+    </LinearLayout>
+</view>

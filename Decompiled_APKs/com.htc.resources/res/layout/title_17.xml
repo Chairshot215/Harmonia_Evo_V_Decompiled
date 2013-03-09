@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_17" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/title17_receiverList" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/compose_edit_margin_vertical" android:layout_marginBottom="@dimen/compose_edit_margin_vertical">
+        <IMEAutoCompleteTextView android:textSize="@dimen/title_inputfield_text_size" android:gravity="left|center" android:id="@id/title_17_inputfield_1x1" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0px" android:layout_height="@dimen/title_search_atuotv_size" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:layout_marginRight="@dimen/compose_edit_margin_right" android:singleLine="true" android:layout_weight="1.0" android:dropDownVerticalOffset="6.0dip" style="?com.htc:searchInputFieldStyle" />
+        <ImageButton android:id="@id/img_1x1" android:padding="0.0px" android:layout_width="@dimen/title_search_atuotv_size" android:layout_height="@dimen/title_search_atuotv_size" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:scaleType="center" style="?com.htc:titleBarButtonStyle" />
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/title17_toBtnListMainScroll" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:layout_marginRight="@dimen/compose_edit_margin_right" android:layout_marginBottom="@dimen/compose_edit_margin_vertical">
+        <LinearLayout android:orientation="vertical" android:id="@id/title17_toBtnListMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title17_toBtnList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title17_toBtnList2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title17_toBtnList3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/title17_receiverList_cc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/compose_edit_margin_vertical">
+        <IMEAutoCompleteTextView android:textSize="@dimen/title_inputfield_text_size" android:gravity="left|center" android:id="@id/title_17_inputfield_2x1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:layout_marginRight="@dimen/compose_edit_margin_right" android:singleLine="true" android:layout_weight="1.0" android:dropDownVerticalOffset="6.0dip" style="?com.htc:searchInputFieldStyle" />
+        <ImageButton android:id="@id/img_1x2" android:padding="0.0px" android:layout_width="@dimen/title_search_atuotv_size" android:layout_height="@dimen/title_search_atuotv_size" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:scaleType="center" style="?com.htc:titleBarButtonStyle" />
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/title17_ccBtnListMainScroll" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:layout_marginRight="@dimen/compose_edit_margin_right" android:layout_marginBottom="@dimen/compose_edit_margin_vertical">
+        <LinearLayout android:orientation="vertical" android:id="@id/title17_ccBtnListMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title17_ccBtnList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title17_ccBtnList2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title17_ccBtnList3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/title17_receiverList_bcc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/compose_edit_margin_vertical">
+        <IMEAutoCompleteTextView android:textSize="@dimen/title_inputfield_text_size" android:gravity="left|center" android:id="@id/title_17_inputfield_3x1" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:layout_marginRight="@dimen/compose_edit_margin_right" android:singleLine="true" android:layout_weight="1.0" android:dropDownVerticalOffset="6.0dip" style="?com.htc:searchInputFieldStyle" />
+        <ImageButton android:id="@id/img_1x3" android:padding="0.0px" android:layout_width="@dimen/title_search_atuotv_size" android:layout_height="@dimen/title_search_atuotv_size" android:layout_marginRight="@dimen/htc_list_item_margin_right" android:scaleType="center" style="?com.htc:titleBarButtonStyle" />
+    </LinearLayout>
+    <ScrollView android:orientation="vertical" android:id="@id/title17_bccBtnListMainScroll" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/compose_edit_margin_left" android:layout_marginRight="@dimen/compose_edit_margin_right" android:layout_marginBottom="@dimen/compose_edit_margin_vertical">
+        <LinearLayout android:orientation="vertical" android:id="@id/title17_bccBtnListMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title17_bccBtnList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title17_bccBtnList2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/title17_bccBtnList3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

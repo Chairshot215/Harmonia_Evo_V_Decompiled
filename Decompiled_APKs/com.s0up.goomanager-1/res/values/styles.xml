@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LightTheme" parent="@*android:style/Theme.Light" />
+    <style name="BlackTheme" parent="@*android:style/Theme.Black" />
+    <style name="CustomTheme" parent="@*android:style/Theme.Light">
+        <item name="android:colorBackground">@color/custom_theme_color</item>
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+    </style>
+    <style name="ButtonText">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5.0dip</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="ApplicationTheme" parent="@*android:style/Theme" />
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/photo" android:background="@drawable/btn_contact_picture" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/picture_unknown" android:layout_alignWithParentIfMissing="true" style="?android:attr/imageWellStyle" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/nameCell" android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/photo">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Name" android:singleLine="true" android:layout_weight="0.0" />
+        <ImageView android:layout_gravity="left|center" android:id="@id/contactTypeIcon" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_weight="0.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/addressCell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/photo" android:layout_below="@id/nameCell">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" android:singleLine="true" />
+    </RelativeLayout>
+</RelativeLayout>

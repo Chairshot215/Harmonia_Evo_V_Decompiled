@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="184.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <ImageView android:id="@id/album_art" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="20.0px" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginTop="14.0px">
+        <TextView android:ellipsize="marquee" android:id="@id/album_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/darklist_primary_m" />
+        <TextView android:ellipsize="marquee" android:id="@id/album_artist_name" android:layout_width="fill_parent" android:layout_height="0.0px" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/darklist_secondary_m" />
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0px" android:layout_marginBottom="25.0px">
+            <ImageButton android:id="@id/play_all" android:background="@drawable/common_detail_btn_left" android:layout_width="160.0px" android:layout_height="fill_parent" android:src="@com.htc:drawable/common_detail_icon_preview_on" />
+            <ImageButton android:id="@id/share_on" android:background="@drawable/common_detail_btn_right" android:layout_width="160.0px" android:layout_height="fill_parent" android:src="@com.htc:drawable/common_detail_icon_share_on" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

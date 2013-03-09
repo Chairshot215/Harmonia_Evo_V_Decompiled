@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/browser_header_short_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <ScrollView android:orientation="vertical" android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_weight="1.0">
+            <TextView android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_margin" android:text="@string/auth_splash_text" style="@com.htc:style/darklist_primary_m" />
+        </ScrollView>
+    </RelativeLayout>
+    <include layout="@layout/payment_footer_layout" />
+</LinearLayout>

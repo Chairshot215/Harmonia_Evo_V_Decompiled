@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/location_sharing_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px">
+            <TextView android:textColor="@color/white_text_white_focused" android:id="@id/location_sharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="14.0px" android:layout_marginRight="14.0px" android:layout_marginBottom="14.0px" android:text="@string/location_sharing_message" android:layout_alignParentLeft="true" style="@style/textAppearance_content" />
+            <TextView android:textColor="@color/white_text_white_focused" android:id="@id/location_disable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="14.0px" android:layout_marginRight="14.0px" android:layout_marginBottom="14.0px" android:text="@string/location_disable_message" android:layout_below="@id/location_sharing" style="@style/textAppearance_content" />
+            <ImageView android:id="@id/divider" android:background="@*android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0px" android:layout_below="@id/location_disable" />
+            <CheckBox android:id="@id/allow_location_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginTop="8.0px" android:layout_below="@id/divider" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/yes_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginTop="14.0px" android:layout_marginRight="8.0px" android:text="@string/yes_agree" android:layout_toRightOf="@id/allow_location_check" android:layout_below="@id/divider" style="@style/textAppearance_secondary" />
+            <CheckBox android:id="@id/allow_privacy_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginTop="8.0px" android:layout_below="@id/yes_agree" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/privacy_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginTop="14.0px" android:layout_marginRight="8.0px" android:text="@string/privacy_agree" android:layout_toRightOf="@id/allow_privacy_check" android:layout_below="@id/yes_agree" style="@style/textAppearance_secondary" />
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

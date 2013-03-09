@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_view_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/skinicon" android:visibility="visible" android:layout_width="@dimen/list_item_icon_width" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+    <TextView android:id="@id/skin_name_listview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_name_left" android:layout_centerVertical="true" style="@com.htc:style/list_primary_m" />
+    <LinearLayout android:orientation="vertical" android:id="@id/skin_name_and_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/skin_name_listview_deletemode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_name_left" android:layout_marginTop="@dimen/list_item_name_top" style="@com.htc:style/list_primary_xl" />
+        <TextView android:id="@id/list_item_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_name_left" android:layout_marginTop="@dimen/list_item_download_state_top" android:text="@string/warn_cannot_delete_appliedskin" android:layout_below="@id/skin_name_listview" style="@com.htc:style/list_secondary_l" />
+    </LinearLayout>
+    <RadioButton android:id="@id/radio_button" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_padding_right" android:layout_weight="0.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/check_box" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/list_item_padding_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

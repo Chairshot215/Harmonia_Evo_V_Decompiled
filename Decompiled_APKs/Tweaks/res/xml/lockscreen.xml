@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="accessibility_settings_title" android:key="lockscreen_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/appearance">
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/aosp_lockscreen" android:key="asop_lockscreen" android:summary="@string/aosp_lockscreen_summary" />
+        <com.htc.preference.HtcEditTextPreference android:title="@string/carrier_caption" android:key="pref_lockscreen_caption" android:summary="@string/carrier_caption_summary" android:dialogTitle="@string/carrier_caption" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/lockscreen_hide_opname" android:key="hide_opname" android:summary="@string/lockscreen_hide_opname_summary" />
+        <com.htc.preference.HtcPreference android:title="@string/lockscreen_hide_datetime" android:key="lockscreen_hide_datetime" android:summary="@string/lockscreen_hide_datetime_summary" />
+        <com.htc.preference.HtcPreference android:title="@string/lockscreen_shortcuts" android:key="lockscreen_shortcuts" android:summary="@string/lockscreen_shortcuts_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/lockscreen_hide_navbar" android:key="lockscreen_hide_navbar" android:summary="@string/lockscreen_hide_navbar_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/other">
+        <com.htc.preference.HtcListPreference android:entries="@array/use_media_entries" android:title="@string/use_media" android:key="use_media" android:summary="@string/use_media_summary" android:defaultValue="0" android:entryValues="@array/use_media_values" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/volume_wake" android:key="use_volume" android:summary="@string/volume_wake_summary" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/menu_unlock" android:key="use_menuunlock" android:summary="@string/menu_unlock_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

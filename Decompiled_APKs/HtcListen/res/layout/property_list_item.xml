@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LL_property_item" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingTop="@com.htc:dimen/htc_list_item_margin_top" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:paddingBottom="@com.htc:dimen/htc_list_item_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left|center" android:layout_gravity="top|left|center" android:id="@id/property_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+    <TextView android:gravity="left|center" android:layout_gravity="bottom|left|center" android:id="@id/property_item_value" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_m" />
+</LinearLayout>

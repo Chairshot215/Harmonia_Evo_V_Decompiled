@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/preferences_priority_inbox" android:key="priority-inbox-key" android:summary="@string/preferences_priority_inbox_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_notifications_enable" android:key="enable-notifications" android:summary="@string/preferences_notifications_summary" android:defaultValue="true" />
+    <PreferenceScreen android:layout="?android:preferenceLayoutChild" android:title="@string/preferences_manage_inbox_label_title" android:key="inbox-settings" android:dependency="enable-notifications" />
+    <EditTextPreference android:singleLine="false" android:title="@string/preferences_signature_title" android:key="signature" android:summary="@string/preferences_signature_summary" android:dialogTitle="@string/preferences_signature_dialog_title" />
+    <PreferenceCategory android:title="@string/account_settings_data_usage">
+        <PreferenceScreen android:title="@string/preferences_sync_status" android:key="sync_status" android:summary="@string/preferences_sync_summary" />
+        <com.google.android.gm.preference.IntegerPickerPreference android:title="@string/settings_number_of_days" android:key="number-picker" />
+        <PreferenceScreen android:title="@string/preferences_manage_labels_title" android:key="manage-labels" android:summary="@string/preferences_manage_labels_summary" />
+        <CheckBoxPreference android:title="@string/preference_prefetch_attachments_title" android:key="prefetch-attachments" android:summary="@string/preference_prefetch_attachments_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

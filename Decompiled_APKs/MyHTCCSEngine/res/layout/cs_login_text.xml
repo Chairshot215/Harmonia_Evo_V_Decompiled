@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txtv_baseURL" />
+    <EditText android:id="@id/edt_baseProv_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/edtxt_baseProv_hint" />
+    <Button android:id="@id/startservice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start" />
+    <ScrollView android:id="@id/logScroll" android:background="#ffffffff" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="#ff000000" android:id="@id/logText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" />
+    </ScrollView>
+</LinearLayout>

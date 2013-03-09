@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/image_property_title_view" android:layout="@layout/image_property_title_layout" android:inflatedId="@id/image_property_title_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.camera.rotate.RotateLinearLayout android:id="@id/image_property_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.camera.widget.ModifiedScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/title_space" android:visibility="gone" android:layout_width="@dimen/title_space" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="vertical" android:id="@id/wheel_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true">
+                    <View android:id="@id/edge_space_brightness" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/edge_space" />
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/title_layout_brightness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:layout_marginBottom="3.0px">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_brightness" />
+                            <TextView android:ellipsize="marquee" android:id="@id/text_brightness" android:paddingLeft="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/brightness_level_tile" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+                        </LinearLayout>
+                        <com.android.camera.widget.LeveledScrollWheel android:gravity="center_vertical" android:id="@id/scroll_wheel_brightness" android:background="@drawable/tumbler_base" android:scrollbars="none" android:fadingEdge="none" android:nextFocusLeft="@id/scroll_wheel_brightness" android:nextFocusRight="@id/scroll_wheel_brightness" android:layout_width="@dimen/tumbler_base_width" android:layout_height="@dimen/tumbler_base_height" />
+                    </LinearLayout>
+                    <View android:id="@id/line_space_brightness" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/line_space" />
+                    <ViewStub android:id="@id/value_brightness_view" android:layout="@layout/image_property_value_layout" android:inflatedId="@id/value_brightness_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape" android:layout_marginTop="5.0px" />
+                    <ImageView android:id="@id/divider_brightness" android:layout_width="fill_parent" android:layout_height="4.0px" android:src="@drawable/menu_divider" />
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/title_layout_contrast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:layout_marginBottom="3.0px">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_contrast" />
+                            <TextView android:ellipsize="marquee" android:id="@id/text_contrast" android:paddingLeft="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_contrast" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+                        </LinearLayout>
+                        <com.android.camera.widget.LeveledScrollWheel android:gravity="center_vertical" android:id="@id/scroll_wheel_contrast" android:background="@drawable/tumbler_base" android:scrollbars="none" android:fadingEdge="none" android:nextFocusLeft="@id/scroll_wheel_contrast" android:nextFocusRight="@id/scroll_wheel_contrast" android:layout_width="@dimen/tumbler_base_width" android:layout_height="@dimen/tumbler_base_height" />
+                    </LinearLayout>
+                    <View android:id="@id/line_space_contrast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/line_space" />
+                    <ViewStub android:id="@id/value_contrast_view" android:layout="@layout/image_property_value_layout" android:inflatedId="@id/value_contrast_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape" android:layout_marginTop="5.0px" />
+                    <ImageView android:id="@id/divider_contrast" android:layout_width="fill_parent" android:layout_height="4.0px" android:src="@drawable/menu_divider" />
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/title_layout_saturation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:layout_marginBottom="3.0px">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_saturation" />
+                            <TextView android:ellipsize="marquee" android:id="@id/text_saturation" android:paddingLeft="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_saturation" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+                        </LinearLayout>
+                        <com.android.camera.widget.LeveledScrollWheel android:gravity="center_vertical" android:id="@id/scroll_wheel_saturation" android:background="@drawable/tumbler_base" android:scrollbars="none" android:fadingEdge="none" android:nextFocusLeft="@id/scroll_wheel_saturation" android:nextFocusRight="@id/scroll_wheel_saturation" android:layout_width="@dimen/tumbler_base_width" android:layout_height="@dimen/tumbler_base_height" />
+                    </LinearLayout>
+                    <View android:id="@id/line_space_saturation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/line_space" />
+                    <ViewStub android:id="@id/value_saturation_view" android:layout="@layout/image_property_value_layout" android:inflatedId="@id/value_saturation_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape" android:layout_marginTop="5.0px" />
+                    <ImageView android:id="@id/divider_saturation" android:layout_width="fill_parent" android:layout_height="4.0px" android:src="@drawable/menu_divider" />
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/title_layout_sharpness" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:layout_marginBottom="3.0px">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_sharpness" />
+                            <TextView android:ellipsize="marquee" android:id="@id/text_sharpness" android:paddingLeft="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_sharpness" android:singleLine="true" android:marqueeRepeatLimit="1" style="@style/text_style_settings_subtitle" />
+                        </LinearLayout>
+                        <com.android.camera.widget.LeveledScrollWheel android:gravity="center_vertical" android:id="@id/scroll_wheel_sharpness" android:background="@drawable/tumbler_base" android:scrollbars="none" android:fadingEdge="none" android:nextFocusLeft="@id/scroll_wheel_sharpness" android:nextFocusRight="@id/scroll_wheel_sharpness" android:layout_width="@dimen/tumbler_base_width" android:layout_height="@dimen/tumbler_base_height" />
+                    </LinearLayout>
+                    <View android:id="@id/edge_space_sharpness" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/edge_space" />
+                    <ViewStub android:id="@id/value_sharpness_view" android:layout="@layout/image_property_value_layout" android:inflatedId="@id/value_sharpness_stub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/image_property_left_margin_landscape" android:layout_marginTop="5.0px" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.android.camera.widget.ModifiedScrollView>
+    </com.android.camera.rotate.RotateLinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="400320114" android:versionName="4.0.2212343258.320114" package="com.htc.fusion.htcbookmarkwidget"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.ACCESS_CW_FOLDER" />
+    <application android:theme="@*android:style/Theme.Light.NoTitleBar" android:label="@string/app_name" android:icon="@drawable/icon" android:description="@string/htc_corp" android:hardwareAccelerated="false" allowSkinChange="true">
+        <receiver android:label="@string/default_label" android:icon="@drawable/icon" android:name="com.htc.fusion.htcbookmarkwidget.WidgetReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/widget" />
+        </receiver>
+        <activity android:theme="@style/HtcActivityTheme" android:name=".setting.WidgetSetting" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="OpenSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="com.htc.fusion.htcbookmarkwidget/opensetting" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

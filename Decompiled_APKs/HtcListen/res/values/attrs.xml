@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="resolution">
+        <enum name="hvga" value="0" />
+        <enum name="qvga" value="1" />
+        <enum name="wvga" value="2" />
+        <enum name="wqvga" value="3" />
+    </attr>
+    <attr name="max" format="integer" />
+    <attr name="progress" format="integer" />
+    <attr name="progressDrawable" format="reference" />
+    <attr name="minHeight" format="dimension" />
+    <attr name="maxHeight" format="dimension" />
+    <attr name="thumb" format="reference" />
+    <attr name="thumbOffset" format="dimension" />
+    <attr name="pressed_progressDrawable" format="reference" />
+    <attr name="pressed_minHeight" format="dimension" />
+    <attr name="pressed_maxHeight" format="dimension" />
+    <attr name="pressed_thumb" format="reference" />
+    <attr name="pressed_thumbOffset" format="dimension" />
+    <attr name="topBorderHeight" format="dimension" />
+    <attr name="bottomBorderHeight" format="dimension" />
+    <attr name="shouldFillEmpty" format="boolean" />
+    <attr name="topDrawable" format="reference" />
+    <attr name="bottomDrawable" format="reference" />
+    <attr name="middleDrawable" format="reference" />
+    <attr name="topBorderDrawable" format="reference" />
+</resources>

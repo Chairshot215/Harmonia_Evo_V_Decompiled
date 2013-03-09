@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HtcListItemColorBar android:id="@id/colorbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.htc.widget.HtcListItemColorIcon android:id="@id/icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.htc.widget.HtcListItem2LineText android:id="@id/text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.htc.android.mail.widget.MailListItemGreenBubbleStamp android:id="@id/bubble" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

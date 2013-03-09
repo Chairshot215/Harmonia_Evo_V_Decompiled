@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1514" android:versionName="1.5.14" package="com.google.android.apps.uploader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/application_name" android:name="UploaderApplication">
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge.NoActionBar" android:name=".clients.youtube.YouTubeSettingsActivity" android:enabled="false" android:excludeFromRecents="true" android:screenOrientation="user" android:windowSoftInputMode="stateHidden">
+            <intent-filter android:label="@string/yt_app_name" android:icon="@drawable/youtube_main">
+                <data android:mimeType="video/*" />
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge.NoActionBar" android:name=".clients.picasa.PicasaSettingsActivity" android:excludeFromRecents="true" android:screenOrientation="user">
+            <intent-filter android:label="@string/picasa_app_name" android:icon="@drawable/picasa_main">
+                <data android:mimeType="image/*" />
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog" android:label="@string/new_album_label" android:name=".clients.picasa.NewAlbumActivity" android:excludeFromRecents="true" android:screenOrientation="user" />
+        <activity android:theme="@*android:style/Theme.Holo.DialogWhenLarge.NoActionBar" android:name="ManagerActivity" android:excludeFromRecents="true" android:launchMode="singleInstance" android:screenOrientation="user">
+            <intent-filter>
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <action android:name="com.google.android.apps.uploader.action.UPLOAD" />
+                <action android:name="com.google.android.apps.uploader.action.UPLOAD_MULTILPE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="UploadService">
+            <intent-filter>
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <action android:name="com.google.android.apps.uploader.action.UPLOAD" />
+                <action android:name="com.google.android.apps.uploader.action.UPLOAD_MULTILPE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        <provider android:name="UploadsContentProvider" android:authorities="com.google.android.apps.uploader" />
+        <provider android:name=".clients.picasa.AlbumProvider" android:authorities="com.google.photos.provider.Album" />
+        <receiver android:name="ConnectivityBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.lh2" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.youtube" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.panoramio" />
+</manifest>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="networkAttributes">
+        <item>wifi,1,1,4,wan,0</item>
+        <item>wimax,6,6,3,wan,0</item>
+        <item>mobile,0,0,0,wan,0</item>
+        <item>usbnet,15,15,5,wan,0</item>
+        <item>mobile_mms,2,0,6,apn,420</item>
+        <item>mobile_supl,3,0,6,apn,0</item>
+        <item>mobile_dun,4,0,1,apn,60</item>
+        <item>mobile_hipri,5,0,7,apn,60</item>
+        <item>mobile_wapgateway,10,0,6,apn,0</item>
+        <item>mobile_httpproxy,11,0,6,apn,0</item>
+        <item>mobile_fota,12,0,6,apn,infinite</item>
+        <item>mobile_admin,13,0,8,apn,600</item>
+        <item>mobile_internet,16,0,5,apn,0</item>
+        <item>mobile_mobilemarket,17,0,6,apn,0</item>
+        <item>mobile_cmmail,18,0,6,apn,infinite</item>
+        <item>mobile_vzwapp,19,0,6,apn,infinite</item>
+        <item>mobile_ims,20,0,6,apn,infinite</item>
+        <item>mobile_cmail,21,0,7,apn,600</item>
+    </string-array>
+    <string-array name="radioAttributes">
+        <item>1,1</item>
+        <item>0,1</item>
+        <item>6,1</item>
+        <item>15,1</item>
+    </string-array>
+    <string-array name="config_tether_usb_regexs">
+        <item>usb0</item>
+    </string-array>
+    <string-array name="config_tether_wifi_regexs">
+        <item>wl0.1</item>
+        <item>tiap0</item>
+    </string-array>
+    <array name="config_tether_dhcp_range" />
+    <string-array name="config_tether_upstream_regexs">
+        <item>eth0</item>
+        <item>wimax0</item>
+        <item>rmnet[0-9]</item>
+        <item>rmnet_sdio[0-9]</item>
+        <item>gprs</item>
+        <item>ppp[0-9]</item>
+    </string-array>
+    <string-array name="status_bar_icon_order">
+        <item>clock</item>
+        <item>alarm_clock</item>
+        <item>battery</item>
+        <item>phone_signal</item>
+        <item>phone_evdo_signal</item>
+        <item>data_connection</item>
+        <item>cdma_eri</item>
+        <item>tty</item>
+        <item>volume</item>
+        <item>mute</item>
+        <item>speakerphone</item>
+        <item>wifi</item>
+        <item>hotspot</item>
+        <item>tty</item>
+        <item>bluetooth</item>
+        <item>wimax</item>
+        <item>gpsone</item>
+        <item>gps</item>
+        <item>sync_active</item>
+        <item>sync_failing</item>
+        <item>ime</item>
+        <item>headset_plug</item>
+        <item>hac</item>
+        <item>hw_meta_fn</item>
+        <item>hw_meta_caps</item>
+    </string-array>
+    <string-array name="htc_phoneTypes">
+        <item>Home</item>
+        <item>Mobile</item>
+        <item>Work</item>
+        <item>Work Fax</item>
+        <item>Home Fax</item>
+        <item>Pager</item>
+        <item>Other</item>
+        <item>Radio</item>
+        <item>Car</item>
+        <item>Company</item>
+        <item>Assistant</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="exchange_mailTypes">
+        <item>Email</item>
+        <item>Email 2</item>
+        <item>Email 3</item>
+    </string-array>
+    <string-array name="quick_text">
+        <item>What are you up to?</item>
+        <item>Just checking in...</item>
+        <item>Where are you?</item>
+        <item>Check this out!</item>
+        <item>"I'll be right there."</item>
+        <item>"I'm running late."</item>
+        <item>"I'll get back to you."</item>
+        <item>Urgent! Please reply...</item>
+        <item>"Let's catch up soon."</item>
+    </string-array>
+    <string-array name="quick_predefine_text">
+        <item>What are you up to?</item>
+        <item>Just checking in...</item>
+        <item>Where are you?</item>
+        <item>Check this out!</item>
+        <item>"I'll be right there."</item>
+        <item>"I'm running late."</item>
+        <item>"I'll get back to you."</item>
+        <item>Urgent! Please reply...</item>
+        <item>"Let's catch up soon."</item>
+    </string-array>
+    <string-array name="localized_opertator_name">
+        <item>45412,CMCC PEOPLES</item>
+        <item>46000,CMCC</item>
+        <item>46001,China Unicom</item>
+        <item>46002,CMCC</item>
+        <item>46003,China Telcom</item>
+        <item>46007,CMCC</item>
+        <item>46601,Far EasTone</item>
+        <item>46605,APBW</item>
+        <item>46606,TUNTEX</item>
+        <item>46668,ACeS</item>
+        <item>46688,KGT-Online</item>
+        <item>46689,VIBO</item>
+        <item>46692,Chunghwa</item>
+        <item>46693,MOBITAI</item>
+        <item>46697,TW Mobile</item>
+        <item>46699,TransAsia</item>
+    </string-array>
+    <string-array name="sort_list">
+        <item>@string/sortby_name_a_z</item>
+        <item>@string/sortby_name_z_a</item>
+        <item>@string/sortby_date_old_new</item>
+        <item>@string/sortby_date_new_old</item>
+    </string-array>
+    <string-array name="htc_weather_conditions">
+        <item>Sunny</item>
+        <item>Mostly Sunny</item>
+        <item>Partly Sunny</item>
+        <item>Intermittent Clouds</item>
+        <item>Hazy Sunshine</item>
+        <item>Mostly Cloudy</item>
+        <item>Cloudy</item>
+        <item>Dreary</item>
+        <item>Fog</item>
+        <item>Showers</item>
+        <item>Mostly Cloudy with Showers</item>
+        <item>Partly Sunny with Showers</item>
+        <item>Thunderstorms</item>
+        <item>Mostly Cloudy with Thunder Showers</item>
+        <item>Partly Sunny with Thunder Showers</item>
+        <item>Rain</item>
+        <item>Flurries</item>
+        <item>Mostly Cloudy with Flurries</item>
+        <item>Partly Sunny with Flurries</item>
+        <item>Snow</item>
+        <item>Mostly Cloudy with Snow</item>
+        <item>Ice</item>
+        <item>Sleet</item>
+        <item>Freezing Rain</item>
+        <item>Rain and Snow Mixed</item>
+        <item>Hot</item>
+        <item>Cold</item>
+        <item>Windy</item>
+        <item>Clear</item>
+        <item>Mostly Clear</item>
+        <item>Partly Cloudy</item>
+        <item>Intermittent Clouds</item>
+        <item>Hazy</item>
+        <item>Mostly Cloudy</item>
+        <item>Partly Cloudy with Showers</item>
+        <item>Mostly Cloudy with Showers</item>
+        <item>Partly Cloudy with Thunder Showers</item>
+        <item>Mostly Cloudy with Thunder Showers</item>
+        <item>Partly Cloudy with Flurries</item>
+        <item>Mostly Cloudy with Flurries</item>
+        <item>Thunderstorms with sleet</item>
+        <item>Sand</item>
+        <item>Dust</item>
+        <item>Tornado</item>
+    </string-array>
+    <string-array name="htc_weather_icons">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+    </string-array>
+    <string-array name="shareOrederlist">
+        <item>com.android.mms</item>
+        <item>com.htc.android.mail</item>
+        <item>com.htc.socialnetwork.facebook</item>
+        <item>com.google.android.gm</item>
+        <item>com.htc.htctwitter</item>
+        <item>com.android.bluetooth</item>
+        <item>com.htc.socialnetwork.flickr</item>
+        <item>com.google.android.apps.uploader</item>
+    </string-array>
+    <integer-array name="config_autoBrightnessLcdBacklightValues_lower">
+        <item>44</item>
+        <item>44</item>
+        <item>44</item>
+        <item>80</item>
+        <item>100</item>
+        <item>135</item>
+        <item>170</item>
+        <item>190</item>
+        <item>220</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLcdBacklightValues_lowest">
+        <item>30</item>
+        <item>40</item>
+        <item>55</item>
+        <item>70</item>
+        <item>95</item>
+        <item>117</item>
+        <item>130</item>
+        <item>165</item>
+        <item>200</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>56</item>
+        <item>56</item>
+        <item>56</item>
+        <item>90</item>
+        <item>117</item>
+        <item>142</item>
+        <item>170</item>
+        <item>198</item>
+        <item>227</item>
+        <item>255</item>
+    </integer-array>
+    <array name="config_autoBrightnessLcdBacklightValuesUp" />
+    <array name="config_autoBrightnessLcdBacklightValuesDown" />
+    <integer-array name="config_autoBrightnessButtonBacklightValues">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues_low">
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues_adaptive">
+        <item>255</item>
+        <item>255</item>
+        <item>200</item>
+        <item>150</item>
+        <item>150</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>-1</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues_alwaysoff">
+        <item>-1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues_alwayson">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>-1</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues_alwayshalf">
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>-1</item>
+    </integer-array>
+</resources>

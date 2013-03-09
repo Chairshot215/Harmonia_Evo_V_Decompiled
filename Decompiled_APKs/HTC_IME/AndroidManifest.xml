@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.android.htcime.uid.shared" android:versionCode="415343787" android:versionName="4.15.2213262828.343787" package="com.htc.android.htcime" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <skip-erased />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.BACKUP_DATA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.htc.permission.WRITE_ULOG" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.htc.permission.ACCESS_HTCIME_DATA" />
+    <permission android:name="com.htc.permission.ACCESS_HTCIME_DATA" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/keyboard_internal_settings_title" android:icon="@drawable/ic_touchinput" android:description="@string/keyboard_internal_settings_summary" android:backupAgent=".util.BackupAgent" android:killAfterRestore="false" android:hardwareAccelerated="false" allowSkinChange="true">
+        <service android:label="@string/keyboard_internal_settings_title" android:name="HTCIMEService" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+        <service android:label="@string/keyboard_internal_settings_title" android:name=".spellcheck.HTCSpellCheckerService" android:permission="android.permission.BIND_TEXT_SERVICE" android:process=":provider_latin">
+            <intent-filter>
+                <action android:name="android.service.textservice.SpellCheckerService" />
+            </intent-filter>
+            <meta-data android:name="android.view.textservice.scs" android:resource="@xml/spellchecker" />
+        </service>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name=".ui.AddWord" android:screenOrientation="user" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:theme="@style/AddWordDialog" android:name=".ui.AddWordDialog" android:excludeFromRecents="true" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".util.UDBEditor" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.htc.android.htcime.util.IMEWithListViewActivity.DeleteMode" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.HandwritePatternToWord" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.htc.android.htcime.util.IMEWithListViewActivity.DeleteMode" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.AddHandwritePatternWord" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:label="Insert Article" android:name=".ui.ScanForCustomWordTest" />
+        <activity android:theme="@style/screen_layout" android:label="" android:name=".settings.KeyboardSettings" android:process=":settings" android:excludeFromRecents="true" android:screenOrientation="user" android:configChanges="keyboard|keyboardHidden" />
+        <activity android:theme="@style/screen_layout" android:label="@string/keyboard_ime_settings_summary" android:name=".settings.KeyboardSettingsIMESettings" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:theme="@style/screen_layout" android:label="@string/keyboard_sipswitch_settings_summary" android:name=".settings.KeyboardSettingsSSSettings" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:label="@string/keyboard_internal_bias_correction_title" android:name=".settings.KeyboardSettingsInternalSettings" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:theme="@style/screen_layout" android:label="@string/keyboard_ss_settings_chinese" android:name=".settings.KeyboardSettingsCP" android:process=":settings" android:screenOrientation="behind" android:configChanges="keyboard|keyboardHidden" />
+        <activity android:label="@string/keyboard_ss_settings_chinese" android:name=".settings.PinYin" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:label="@string/trace_keyboard_settings_trace_prediction_title" android:name=".settings.KeyboardSettingsTraceKeyboard" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:theme="@style/screen_layout" android:label="@string/keyboard_ime_settings_udb_editor_title_summary" android:name=".settings.KeyboardSettingsUserDictionary" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:label="@string/user_dictionary_sync_backup_title" android:name=".settings.KeyboardSettingsUserDictionarySync" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:theme="@style/screen_layout" android:label="@string/keyboard_hwkb_settings_summary" android:name=".settings.KeyboardSettingsHWKBSettings" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:label="@string/keyboard_hwkb_chinese_input_summary" android:name=".settings.KeyboardSettingsHWKBSSSettings" android:process=":settings" android:screenOrientation="behind" />
+        <activity android:label="HTCIMEFactoryMode" android:name=".settings.HTCIMEFactoryMode" android:process=":settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/screen_layout" android:label="@string/kb_tutorial_rc_title" android:name=".tutorial.RegionalCorrection" android:process=":tutorial" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:label="@string/kb_tutorial_rc_title" android:name=".tutorial.LongPress" android:process=":tutorial" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:label="@string/kb_tutorial_rc_title" android:name=".tutorial.MoreRegionalCorrection" android:process=":tutorial" android:configChanges="keyboard|keyboardHidden" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name=".settings.DAMDemo" android:screenOrientation="portrait" />
+        <activity android:name=".util.DAMStaticalChartActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/screen_layout" android:label="@string/calibration_tool_complete_message" android:name=".tools.Calibration" android:screenOrientation="portrait" />
+        <activity android:label="IME Test" android:name=".tools.HTC_IME_Test" android:process=":imetest" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.TEST" />
+            </intent-filter>
+        </activity>
+        <activity android:label="01. SIP recorder" android:name=".tools.SipRecorder" android:exported="false" android:process=":imetest" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:label="02. Touch Player" android:name=".tools.TouchPlayer" android:exported="false" android:process=":imetest" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:label="03. Vibrator Test" android:name=".tools.VibratorTest" android:exported="false" android:process=":imetest" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:label="04. Input Type Tester" android:name=".tools.InputTypeTest" android:exported="false" android:process=":imetest" android:screenOrientation="behind" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:label="05. SIP Touch Position Recorder" android:name=".tools.SipTouchPositionRecorder" android:exported="false" android:process=":imetest" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:label="A01. First Auto Comp Word Test" android:name=".tools.First_Auto_Comp_Word_Test" android:exported="false" android:process=":imetest" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:label="A02. Touch Input Scoring Index" android:name=".tools.Touch_Input_Scoring_Index" android:exported="false" android:process=":imetest" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="htc.intent.category.HTC_IME_Test" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".tools.Touch_Input_Scoring_Statistic_Activity" android:process=":imetest" android:screenOrientation="portrait" />
+        <provider android:name=".provider.HTCIMEProvider" android:permission="com.htc.permission.ACCESS_HTCIME_DATA" android:multiprocess="false" android:authorities="htc_ime" android:syncable="false" />
+        <provider android:name=".provider.HTCCIMEProvider" android:process=":provider" android:multiprocess="false" android:authorities="htc_cime" android:syncable="false" />
+        <provider android:name=".provider.HTCPPIMEProvider" android:multiprocess="false" android:authorities="htc_ppime" android:syncable="false" />
+        <provider android:name=".provider.HTCIMEProviderLatin" android:process=":provider_latin" android:multiprocess="false" android:authorities="htc_ime_latin" android:syncable="false" />
+    </application>
+</manifest>

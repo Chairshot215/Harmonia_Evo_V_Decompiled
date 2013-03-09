@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cmd_bar_8" android:layout_width="fill_parent" android:layout_height="60.0dip" style="?com.htc:commandBarBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/cmd_bar_imgbtn_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/task_bar_common_margin" android:layout_alignParentLeft="true" style="?com.htc:commandBarImageButtonStyle" />
+    <ImageButton android:id="@id/cmd_bar_imgbtn_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/task_bar_common_margin" android:layout_alignParentRight="true" style="?com.htc:commandBarImageButtonStyle" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/contact_entry_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/contact_entry_height"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:gravity="left|center" android:id="@id/label" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_editor_entry_name_left_margin" android:layout_marginTop="6.0px" style="@com.htc:style/list_primary_s" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_editor_entry_name_left_margin" android:layout_marginRight="@dimen/htc_editor_entry_name_right_margin" android:layout_marginBottom="6.0px" android:baselineAligned="false">
+            <Button android:textSize="@dimen/htc_editor_list_buttonitem_textsize" android:ellipsize="end" android:gravity="left|center" android:id="@id/data" android:background="?com.htc:attr_common_pulldown" android:paddingLeft="@dimen/text_padding_left_dropdown" android:paddingRight="@dimen/text_padding_right_dropdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:singleLine="true" style="@style/drop_down_box" />
+        </LinearLayout>
+        <View android:background="@com.htc:drawable/common_list_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

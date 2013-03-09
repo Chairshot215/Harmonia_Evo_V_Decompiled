@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/htc_list_item_margin_left" android:layout_weight="1.0">
+        <TextView android:layout_gravity="top|left|center" android:id="@id/txt_1x1" android:paddingTop="3.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/list_primary_m" />
+        <TextView android:layout_gravity="bottom|left|center" android:id="@id/txt_2x1" android:paddingBottom="3.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/list_secondary_m" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/txt_1x2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="14.0px" style="@style/list_primary_m" />
+    <FrameLayout android:gravity="right|center" android:layout_width="@dimen/htc_list_item_stock_right_img_width" android:layout_height="fill_parent" android:layout_marginRight="@dimen/htc_list_item_stock_margin_right">
+        <ImageView android:layout_gravity="right|center" android:id="@id/img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="right|center" android:orientation="vertical" android:paddingTop="5.0px" android:paddingRight="5.0px" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/txt_1x3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/info_primary_s" />
+            <TextView android:id="@id/txt_2x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/info_primary_s" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.browser.view.BookmarkContainer android:orientation="vertical" android:background="@drawable/bookmark_thumb_selector" android:padding="@dimen/combo_horizontalSpacing" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumb" android:background="@drawable/border_thumb_bookmarks_widget_holo" android:layout_width="@dimen/bookmarkThumbnailWidth" android:layout_height="@dimen/bookmarkThumbnailHeight" android:src="@drawable/browser_thumbnail" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/divider" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginTop="12.0dip" android:src="?android:dividerVertical" android:scaleType="fitXY" android:layout_below="@id/thumb" android:layout_alignLeft="@id/thumb" />
+    <TextView android:textSize="14.0sp" android:typeface="sans" android:textColor="#ffaaaaaa" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/label" android:paddingLeft="8.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toRightOf="@id/divider" android:layout_alignTop="@id/divider" android:layout_alignRight="@id/thumb" android:layout_alignBottom="@id/divider" />
+</com.android.browser.view.BookmarkContainer>

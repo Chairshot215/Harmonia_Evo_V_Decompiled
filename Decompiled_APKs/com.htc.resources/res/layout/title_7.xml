@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/title_7" android:layout_width="fill_parent" android:layout_height="@dimen/title_2line_height" style="?com.htc:titleBarBackgroundStyleLarge"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/title_7_img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/title_7_txt_1x1_shadow" style="@style/titleBarShadowStyle" />
+    <TextView android:id="@id/title_7_txt_1x1" style="@style/titleBarStyle" />
+    <Button android:id="@id/btn_search" android:visibility="gone" android:layout_marginRight="@dimen/title_margin_small" style="?com.htc:titleBarButtonStyleSearch" />
+</RelativeLayout>

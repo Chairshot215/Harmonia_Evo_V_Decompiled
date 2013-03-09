@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/detail_info_list_header" />
+    <include android:id="@id/description_label" layout="@layout/detail_info_list_label" />
+    <RelativeLayout android:id="@id/description_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height">
+        <TextView android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:layout_marginRight="@com.htc:dimen/htc_list_item_text_right_margin" android:text="@string/text_description" android:layout_centerVertical="true" style="@style/detail_info_list_item_text_primary" />
+        <View android:background="@com.htc:drawable/common_divider_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <include android:id="@id/preview_label" android:visibility="gone" layout="@layout/detail_info_list_label" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/preview_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:visibility="gone" layout="@layout/detail_info_list_empty" />
+        <View android:id="@id/divider_bottom" android:background="@com.htc:drawable/common_divider_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@*android:attr/hasCode" android:paddingLeft="@dimen/layout_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@*android:attr/label" android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_left">
+        <TextView android:id="@*android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textAppearance_primary" />
+        <TextView android:id="@*android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/textAppearance_secondary" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@*android:id/widget_frame" android:paddingTop="18.0px" android:paddingRight="?android:scrollbarSize" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.android.htcsetupwizard.activity.DescriptionPreference android:persistent="false" android:title="@string/social_network_description" android:selectable="false" android:key="social_network_description" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/social_netowrk_title" android:key="social_network_accounts">
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/facebook" android:key="facebook_login" android:summary="@string/facebook_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/flickr" android:key="flickr_login" android:summary="@string/flickr_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/plurk" android:key="plurk_login" android:summary="@string/plurk_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/twitter" android:key="twitter_login" android:summary="@string/twitter_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/kaixin001_title" android:key="kaixin001" android:summary="@string/kaixin001_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/sinaweibo_title" android:key="sinaweibo" android:summary="@string/sinaweibo_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/jiepang_title" android:key="jiepang" android:summary="@string/jiepang_summary" />
+        <com.htc.android.htcsetupwizard.activity.AccountPreference android:persistent="false" android:title="@string/renren_title" android:key="renren" android:summary="@string/renren_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

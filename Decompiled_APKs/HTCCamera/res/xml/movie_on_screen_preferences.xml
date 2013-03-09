@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@com.htc:string/menu_settings" android:key="group">
+        <CheckBoxPreference android:persistent="true" android:title="@string/camera_switch" android:key="pref_camera_switch" android:defaultValue="false" android:summaryOn="@string/switch_secondary" android:summaryOff="@string/switch_main" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/camera_3D_status" android:key="pref_camera_3D_status" android:defaultValue="false" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <ListPreference android:entries="@array/pref_scene_text_sense_3_0" android:title="@string/scene" android:key="pref_video_scene" android:defaultValue="auto" android:dialogTitle="@string/scene" android:entryValues="@array/pref_scene_values_sense_3_0" />
+        <com.android.camera.widget.CustomPreference android:title="@string/image_adjustment" android:key="pref_camera_image_property" />
+        <ListPreference android:title="@string/white_balance" android:key="pref_set_white_balance" android:dialogTitle="@string/white_balance" />
+        <ListPreference android:title="@string/video_quality" android:key="pref_set_resolution" android:dialogTitle="@string/video_quality" />
+        <ListPreference android:entries="@array/pref_effect_choices" android:title="@string/effect" android:key="pref_video_effect" android:defaultValue="none" android:dialogTitle="@string/effect" android:entryValues="@array/pref_effect_values" />
+        <ListPreference android:entries="@array/pref_review_duration_choices" android:title="@string/review_duration" android:key="pref_camera_review_duration" android:defaultValue="3s" android:dialogTitle="@string/review_duration" android:entryValues="@array/pref_review_duration_values" />
+        <ListPreference android:entries="@array/pref_video_file_format_choices" android:title="@string/file_format" android:key="pref_camera_video_file_format" android:defaultValue="3gpp" android:dialogTitle="@string/file_format" android:entryValues="@array/pref_video_file_format_values" />
+        <ListPreference android:entries="@array/pref_storage_choices" android:title="@string/storage" android:key="pref_camera_storage_location" android:defaultValue="sdcard" android:dialogTitle="@string/storage" android:entryValues="@array/pref_storage_values" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/stereo_recording" android:key="pref_stereo_recording" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/front_camera_mode" android:key="pref_front_camera_mode" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/record_with_audio" android:key="pref_camera_record_with_audio" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/fast_frame_recording" android:key="pref_fast_fps" android:defaultValue="false" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/shutter_sound" android:key="pref_play_shutter_sound" android:defaultValue="true" android:summaryOn="@string/on_capital" android:summaryOff="@string/off_capital" />
+        <Preference android:title="@string/set_default" android:key="pref_set_default" />
+    </PreferenceCategory>
+</PreferenceScreen>

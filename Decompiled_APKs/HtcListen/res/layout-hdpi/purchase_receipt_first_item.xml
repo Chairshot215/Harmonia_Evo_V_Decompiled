@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="128.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <ImageView android:id="@id/albumArtImage" android:background="@drawable/music_song_nocover" android:layout_width="98.0px" android:layout_height="98.0px" android:layout_marginLeft="15.0px" android:layout_marginTop="16.0px" />
+    <View android:background="@drawable/music_notification_album_cover" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginLeft="14.0px" android:layout_marginTop="15.0px" />
+    <TextView android:id="@id/primaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0px" android:layout_marginTop="5.0px" android:layout_toRightOf="@id/albumArtImage" style="@com.htc:style/list_primary_m" />
+    <TextView android:id="@id/secondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0px" android:layout_toRightOf="@id/albumArtImage" android:layout_below="@id/primaryText" style="@com.htc:style/list_secondary_m" />
+</RelativeLayout>

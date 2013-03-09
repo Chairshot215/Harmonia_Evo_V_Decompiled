@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/all" android:background="@com.htc:drawable/common_glance_bkg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/titleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/skype_title_bar" />
+        <RelativeLayout android:id="@id/mainFrame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/titleBar">
+            <include android:id="@id/person_info_layout" layout="@layout/call_card_person_info" />
+            <com.android.phone.widget.HtcLockScreenControl android:id="@id/htcLockScreenControl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/divider_general" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="16.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/account_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/active_slots" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/slot_view_footer" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <HorizontalScrollView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" android:requiresFadingEdge="horizontal">
+                <LinearLayout android:orientation="horizontal" android:id="@id/inactive_slots" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

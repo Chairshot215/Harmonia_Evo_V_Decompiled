@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.htccontacts.ui.widget.ContactEditorView2 android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_contact_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_contact_type" layout="@com.htc:layout/htc_list_item_separator_middle" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_contact_type" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_phone" layout="@com.htc:layout/htc_list_item_separator_middle" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_phone" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_email" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_email" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_email" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_sip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_sip" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_sip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_sip" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_group" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_group" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_event" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_event" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_event" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_event" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_im" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_im" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_im" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_im" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_postal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_postal" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_postal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_postal" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_organization" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_organization" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_organization" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_organization" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_note" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_note" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_note" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_nickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_nickname" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_nickname" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_nickname" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sect_general_container_website" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true">
+            <include android:id="@id/separator_info_website" layout="@com.htc:layout/htc_list_item_separator" />
+            <com.android.htccontacts.ui.widget.KindSectionGroupContainerView android:orientation="vertical" android:id="@id/sect_general_website" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/CustomizationListBackground">
+                <include android:id="@id/add_website" layout="@layout/edit_contact_item_add" />
+            </com.android.htccontacts.ui.widget.KindSectionGroupContainerView>
+        </LinearLayout>
+    </LinearLayout>
+</com.android.htccontacts.ui.widget.ContactEditorView2>

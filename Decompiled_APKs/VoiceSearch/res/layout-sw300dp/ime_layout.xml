@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.5" />
+    <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/ime_listening" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.5" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/center_image_container" android:layout_width="100.0dip" android:layout_height="100.0dip">
+        <ImageView android:id="@id/image_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.google.android.voicesearch.ui.IndicatorView android:id="@id/sound_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/waiting_results" android:layout_width="40.0dip" android:layout_height="10.0dip" android:layout_marginTop="8.0dip" android:indeterminateOnly="true" android:indeterminateDuration="1000" android:indeterminateBehavior="cycle" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+        <Button android:textSize="14.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ime_listening_done" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.google.android.voicesearch.ime.view.LanguageSpinner android:id="@id/language_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textSize="14.0sp" android:id="@id/done" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

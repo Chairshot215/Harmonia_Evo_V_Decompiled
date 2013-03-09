@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/dmc_timeout_option_list" android:title="@string/dmc_timeout_title" android:key="dmc_timeout_setting" android:summary="@string/dmc_timeout_desc" android:defaultValue="10" android:dialogTitle="@string/dmc_timeout_title" android:entryValues="@array/dmc_timeout_option_value" />
+</com.htc.preference.HtcPreferenceScreen>

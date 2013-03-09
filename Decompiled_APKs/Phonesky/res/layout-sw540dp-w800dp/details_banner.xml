@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/details_banner" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_banner" android:layout_width="fill_parent" android:layout_height="@dimen/framed_details_top_banner_height">
+        <View android:id="@id/top_banner_leading" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+        <View android:id="@id/pinstripe_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+</LinearLayout>

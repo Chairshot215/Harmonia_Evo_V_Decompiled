@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/disambig_dialog" android:background="#000000ff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/header_footer_size">
+        <TextView android:textSize="@dimen/dialog_text_size" android:textColor="@*android:color/white" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="@string/did_you_mean" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/disambig_mic_button" android:layout_width="@dimen/header_footer_size" android:layout_height="@dimen/header_footer_size" android:src="@drawable/ic_mic_ds" style="@style/square_button" />
+        <ImageButton android:id="@id/disambig_settings" android:layout_width="@dimen/header_footer_size" android:layout_height="@dimen/header_footer_size" android:layout_marginRight="8.0dip" android:src="@drawable/ic_settings_ds" android:contentDescription="@string/settings_button" style="@style/square_button" />
+    </LinearLayout>
+    <View android:background="@color/divider_general" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" />
+    <ListView android:id="@id/disambig_list" style="@style/disambig_dialog_content" />
+    <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/header_footer_size" style="?android:attr/buttonBarStyle">
+        <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/disambig_cancel_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="0.0dip" android:text="@string/cancel" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:textSize="@dimen/dialog_text_size" android:layout_gravity="center_horizontal" android:id="@id/disambig_help_button" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" android:text="@string/help" android:singleLine="true" android:layout_weight="0.5" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/htc_list_item_photo_frame_width" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.QuickContactBadge android:gravity="left" android:layout_gravity="left|center" android:id="@id/photo" android:padding="3.0px" android:visibility="gone" android:layout_width="66.0px" android:layout_height="66.0px" android:layout_marginLeft="12.0px" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/htc_list_item_notification_text_size" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/ball" android:visibility="gone" android:layout_width="@dimen/htc_list_item_notification_ball_dimen" android:layout_height="@dimen/htc_list_item_notification_ball_dimen" android:singleLine="true" style="?com.htc:notificationBubbleStyleShadow" />
+</FrameLayout>

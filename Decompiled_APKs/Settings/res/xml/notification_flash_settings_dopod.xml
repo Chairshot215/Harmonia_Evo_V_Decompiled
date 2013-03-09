@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/notification_flash_title" android:key="notification_flash_category">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/missed_call_title" android:key="missed_call_title" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/incoming_message_title" android:key="incoming_message_title" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/incoming_email_title" android:key="incoming_email_title" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/incoming_voice_mail_title" android:key="incoming_voice_mail_title" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/reminider_title" android:key="reminider_title" android:defaultValue="true" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/alarm_title" android:key="alarm_title" android:defaultValue="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

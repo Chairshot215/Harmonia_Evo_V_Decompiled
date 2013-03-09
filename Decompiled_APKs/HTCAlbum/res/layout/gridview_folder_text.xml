@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@com.htc:dimen/title_secondary_s" android:textColor="@com.htc:color/titleTextColor" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/folder_name_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <TextView android:textSize="@com.htc:dimen/darklist_secondary_s" android:textColor="@com.htc:color/secondarytitleTextColor" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/folder_datetime_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+</LinearLayout>

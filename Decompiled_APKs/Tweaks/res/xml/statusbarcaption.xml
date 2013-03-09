@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/statusbarcaption_options" android:key="battery_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/statusbarcaption_options_summary">
+        <com.htc.preference.HtcEditTextPreference android:title="@string/notificationbar_caption" android:key="pref_statusbar_caption" android:summary="@string/notificationbar_caption_summary" android:defaultValue="" android:dialogTitle="@string/notificationbar_caption" />
+        <com.htc.preference.HtcListPreference android:entries="@array/extended_statusbartext_entries" android:title="@string/extended_statusbartext" android:key="extended_statusbartext" android:summary="@string/extended_statusbartext_summary" android:defaultValue="0" android:entryValues="@array/extended_statusbartext_values" />
+        <com.m0narx.tweaks.colorpicker.ColorPickerPreference android:title="@string/extended_statusbartext_color" android:key="extended_statusbartext_color" android:summary="@string/extended_statusbartext_color_summary" android:defaultValue="@integer/default_extended_statusbartext_color" />
+        <com.htc.preference.HtcCheckBoxPreference android:title="@string/extended_statusbartext_showicon" android:key="extended_statusbartext_showicon" android:summary="@string/extended_statusbartext_showicon_summary" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/htc_tos" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" style="?android:style/Widget.ProgressBar" />
+        <TextView android:gravity="center_vertical" android:id="@id/loading_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@com.htc:string/common_string_loading" android:layout_toRightOf="@id/loading_progress" style="@com.htc:style/darklist_primary_m" />
+    </LinearLayout>
+    <view android:id="@id/tos_page" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.htc.feedback.PrivacyPageActivity$FeedbackWebView" />
+</RelativeLayout>

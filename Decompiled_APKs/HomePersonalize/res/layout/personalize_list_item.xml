@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <LinearLayout android:gravity="center_vertical" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <ImageView android:layout_gravity="center" android:id="@id/list_image_left" android:layout_width="@com.htc:dimen/htc_list_item_color_icon_size" android:layout_height="@com.htc:dimen/htc_list_item_color_icon_size" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <com.htc.widget.HtcListItem2LineText android:id="@id/list_2line_text" htc:textMode="darklist" />
+    <LinearLayout android:gravity="center_vertical" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_width="wrap_content" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/list_image_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    </LinearLayout>
+</com.htc.widget.HtcListItem>

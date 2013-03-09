@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@*android:id/icon" android:layout_width="64.0dip" android:layout_height="fill_parent" android:scaleType="center" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+        <TextView android:ellipsize="marquee" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/darklist_primary_m_bold" />
+        <TextView android:ellipsize="marquee" android:id="@id/text" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/darklist_secondary_m" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:id="@id/notification_end_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_vertical" android:id="@id/notification_end_button" android:background="?com.htc:attr_common_b_button_small" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginRight="6.0dip" style="@com.htc:style/darklist_primary_m" />
+    </LinearLayout>
+</LinearLayout>

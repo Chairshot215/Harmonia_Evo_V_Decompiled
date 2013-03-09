@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/center_btn" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/center_text1_textsize" android:textColor="@color/weather_deep_color" android:gravity="center" android:id="@id/center_uptext" android:layout_width="fill_parent" android:layout_height="@dimen/center_text1_height" style="@style/shadow_0_ul" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/refresh_small" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@com.htc:drawable/common_icon_menu_sync" android:scaleType="center" />
+        <TextView android:textSize="@dimen/center_text2_textsize" android:textColor="@color/weather_light_text_color" android:gravity="center_vertical" android:id="@id/center_downtext" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/refresh_small" style="@style/shadow_0_ul" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="308347055" android:versionName="3.8.2213323257.347055" package="com.android.providers.calendar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.cl" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.htc.permission.ACCESS_NOTES" />
+    <application android:label="@string/calendar_storage" android:icon="@drawable/app_icon" android:process="com.htc.bgp">
+        <uses-library android:name="android.test.runner" />
+        <provider android:label="@string/provider_label" android:name="HtcCalendarProvider" android:readPermission="android.permission.READ_CALENDAR" android:writePermission="android.permission.WRITE_CALENDAR" android:multiprocess="false" android:authorities="com.android.calendar">
+            <path-permission android:readPermission="android.permission.GLOBAL_SEARCH" android:pathPrefix="/suggestion/search_suggest_query" />
+        </provider>
+        <service android:name=".EmptyService" />
+        <service android:name=".CalendarReceiver$RemoveScheduledAlarmsEmptyService" />
+        <activity android:label="Calendar Content Provider" android:name="CalendarContentProviderTests" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.UNIT_TEST" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="CalendarReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="MediaProviderUpgradeReciever">
+            <intent-filter>
+                <action android:name="com.htc.providers.media.DB_UPGRADE_COMPLETE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.providers.media.ID_UPDATE_RESPONSE" />
+                <category android:name="com.android.providers.calendar" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.Holo.Dialog" android:label="@string/calendar_info" android:name="CalendarDebugActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="CalendarUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="CalendarProviderBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.providers.calendar.intent.CalendarProvider2" />
+                <category android:name="com.android.providers.calendar" />
+            </intent-filter>
+        </receiver>
+        <service android:name="CalendarProviderIntentService" />
+    </application>
+</manifest>

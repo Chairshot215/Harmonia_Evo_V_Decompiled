@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/action_screen" android:visibility="invisible" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="106.0px" android:layout_weight="1.0" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/action_screen_fourth" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/action_screen_fourth_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_fourth_ds" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/view_fourth_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_set" />
+                    <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                    <TextView android:id="@id/text_fourth_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_btn_setas" style="@style/mainbar_ds_style" />
+                </LinearLayout>
+            </com.android.camera.rotate.RotateRelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/action_screen_send" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/action_screen_send_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_send_ds" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/view_send_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_share" />
+                    <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                    <TextView android:id="@id/text_send_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_btn_share" style="@style/mainbar_ds_style" />
+                </LinearLayout>
+            </com.android.camera.rotate.RotateRelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/action_screen_delete" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/action_screen_delete_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_delete_ds" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/view_delete_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_delete" />
+                    <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                    <TextView android:id="@id/text_delete_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_btn_delete" style="@style/mainbar_ds_style" />
+                </LinearLayout>
+            </com.android.camera.rotate.RotateRelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/action_screen_camera" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.android.camera.rotate.RotateRelativeLayout android:id="@id/action_screen_camera_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_camera_ds" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/view_camera_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_icon_capture" />
+                    <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                    <TextView android:id="@id/text_camera_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/review_btn_capture" style="@style/mainbar_ds_style" />
+                </LinearLayout>
+            </com.android.camera.rotate.RotateRelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

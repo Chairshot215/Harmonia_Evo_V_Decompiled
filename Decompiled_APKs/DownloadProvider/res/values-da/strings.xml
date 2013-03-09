@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Downloadadministrator</string>
+    <string name="permlab_downloadManager">Få adgang til downloadadministrator.</string>
+    <string name="permdesc_downloadManager">Tillader, at appen kan få adgang til downloadadministratoren og til at bruge den til at downloade filer. Ondsindede apps kan bruge dette til at afbryde downloads og få adgang til personlige oplysninger.</string>
+    <string name="permlab_downloadManagerAdvanced">Avancerede funktioner for downloadadministrator.</string>
+    <string name="permdesc_downloadManagerAdvanced">Tillader, at appen kan få adgang til downloadadministrators avancerede funktioner. Ondsindede apps kan bruge dette til at afbryde downloads og få adgang til personlige oplysninger.</string>
+    <string name="permlab_downloadCompletedIntent">Send downloadmeddelelser.</string>
+    <string name="permdesc_downloadCompletedIntent">Tillader, at appen kan sende meddelelser om fuldførte downloads. Ondsindede apps kan bruge dette til at forvirre andre apps, der downloader filer.</string>
+    <string name="permlab_seeAllExternal">Se alle downloads til SD-kort</string>
+    <string name="permdesc_seeAllExternal">Tillader, at appen kan se alle downloads på SD-kortet, uanset hvilken app der har downloadet dem.</string>
+    <string name="permlab_downloadCacheNonPurgeable">Reserver plads i downloadcache</string>
+    <string name="permdesc_downloadCacheNonPurgeable">Tillader, at appen kan downloade filer til downloadcachen, som ikke automatisk kan slettes, når downloadadministratoren har brug for mere plads.</string>
+    <string name="permlab_downloadWithoutNotification">download filer uden at underrette</string>
+    <string name="permdesc_downloadWithoutNotification">Tillader, at appen kan downloade filer via downloadadministratoren, uden at brugeren får besked.</string>
+    <string name="permlab_accessAllDownloads">Adgang til alle systemdownloads</string>
+    <string name="permdesc_accessAllDownloads">Tillader, at appen kan se og ændre alle downloads, der igangsættes af en app i systemet.</string>
+    <string name="download_unknown_title">&lt;Uden titel></string>
+    <string name="notification_filename_separator">", "</string>
+    <string name="notification_filename_extras">" og %d mere"</string>
+    <string name="notification_download_complete">Downloaden er fuldført.</string>
+    <string name="notification_download_failed">Downloaden mislykkedes.</string>
+    <string name="notification_need_wifi_for_size">Downloaden kræver Wi-Fi.</string>
+    <string name="notification_paused_in_background">Standset i baggrunden.</string>
+    <string name="wifi_required_title">Downloadfilen er for stor til mobilnetværk</string>
+    <string name="wifi_required_body" formatted="false">"Du skal bruge Wi-Fi for at fuldføre denne download på %s . 
+
+Tryk på %s  for at starte denne download, næste gang du får forbindelse til et Wi-Fi-netværk."</string>
+    <string name="wifi_recommended_title">Sæt i kø til senere download?</string>
+    <string name="wifi_recommended_body" formatted="false">"Hvis downloaden på %s  startes nu, kan batteriets levetid forkortes og/eller medføre overdreven brug af din mobildata, som kan koste ekstra hos dit mobilselskab afhængigt af dit dataabonnement.
+
+ Tryk på %s for at starte downloaden ved næste forbindelse til Wi-Fi."</string>
+    <string name="button_queue_for_wifi">I kø</string>
+    <string name="button_cancel_download">Annuller</string>
+    <string name="button_start_now">Begynd nu</string>
+    <string name="low_download_storage_view_title">Utilstrækkelig lagerplads</string>
+    <string name="low_download_storage_view_text">Der er ikke nok lagerplads til din overførsel.</string>
+    <string name="notification_paused_no_wifi">" (midlertidigt afbrudt)"</string>
+    <string name="download_percent">%d%%</string>
+</resources>

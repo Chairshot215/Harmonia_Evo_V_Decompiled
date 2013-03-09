@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/setupWizardOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/title_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="@style/Title" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:text="@string/gls_ui_activity_title_checking_in" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/top_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <TextView android:id="@id/verbose_message" android:text="@string/wait_for_device_country_msg" android:layout_below="@id/top_divider" android:layout_centerHorizontal="true" style="@style/DescriptionText" />
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/verbose_message" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:id="@id/bottom_divider" style="@style/BottomDivider" />
+        <Button android:id="@id/cancel_button" android:text="@string/cancel_button_label" style="@style/Button" />
+    </LinearLayout>
+</RelativeLayout>

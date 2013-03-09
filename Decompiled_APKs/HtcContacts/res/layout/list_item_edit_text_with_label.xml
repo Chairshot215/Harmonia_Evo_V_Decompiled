@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/labelEditTextListItem" android:layout_width="fill_parent" android:layout_height="@dimen/contact_entry_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="left|center" android:id="@id/label_edit_text" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/input_field_label_height" android:layout_marginLeft="@dimen/input_field_label_common_margin_left" android:layout_marginRight="@dimen/input_field_label_common_margin_right" android:layout_alignParentTop="true" style="@com.htc:style/list_primary_xs" />
+    <EditText android:textSize="@com.htc:dimen/list_primary_s" android:id="@id/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/input_field_common_margin_left" android:layout_marginRight="@dimen/input_field_common_margin_right" android:layout_marginBottom="@dimen/input_field_common_margin_bottom" android:singleLine="true" android:layout_below="@id/label_edit_text" style="@style/EditTextStyle" />
+    <View android:id="@id/bottom_round" android:background="@com.htc:drawable/trans_bottomround" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <View android:id="@id/top_round" android:background="@com.htc:drawable/trans_topround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+</RelativeLayout>

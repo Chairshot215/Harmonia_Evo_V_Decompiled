@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/title_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/setupWizardTitle" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_indent" android:layout_marginTop="11.0dip" android:text="@string/welcome_message" />
+                <ImageView android:layout_gravity="center" android:paddingTop="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@color/divider_color" />
+            </LinearLayout>
+            <TextView android:id="@id/reactivate_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reactivate_account_message" style="@style/DescriptionText" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:background="@*android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/back_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/back_button_label" android:drawableLeft="@drawable/ic_btn_back" android:drawablePadding="3.0dip" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/next_button" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/next_button_label" android:drawableRight="@drawable/ic_btn_next" android:drawablePadding="10.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

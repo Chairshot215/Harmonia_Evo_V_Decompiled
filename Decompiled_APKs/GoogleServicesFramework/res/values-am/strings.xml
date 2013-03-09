@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">ድረ</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">ያልታወቀ</string>
+    <string name="sharedUserLabel">Google አገልግሎቶች</string>
+    <string name="service_label">ስርዓት አዘማኝ</string>
+    <string name="system_update_activity_name">የስርዓት ዝምናዎች</string>
+    <string name="system_update_activity_title">የስርዓት ዝምናዎች</string>
+    <string name="system_update_activity_battery_low_text">የስርዓት አዘምንን ለመጫን ባትሪ በጣም ትንሽ ነው። እባክዎ ለመቀጠል ቻርጀሩን ያያይዙ።</string>
+    <string name="system_update_activity_battery_low_charging_text">የስርዓት ዝመና ለመጫን ባትሪ በጣም አነስተኛ ነው። እባክዎ ባትሪ በበቂ ቻርጅ እንዲያደርግ ይጠብቁ።</string>
+    <string name="system_update_activity_roaming_text">" የስርዓት ማዘመኛ በእንቅስቃሴ ላይ መውረድ አይችልም።"</string>
+    <string name="system_update_requires_restart_status_text">ዳግም አስጀምር ይጠይቃል</string>
+    <string name="system_update_downloading_status_text">በማውረድ ላይ</string>
+    <string name="system_update_downloading_wifi_status2_text">"በWi-Fi በኩል ብቻ እስከ  ^1"</string>
+    <string name="system_update_verifying_status_text">በማጣራት ላይ</string>
+    <string name="system_update_verification_failed_text">ማረጋገጥ አልተሳካም</string>
+    <string name="system_update_verified_status_text">ወርዷል እና ተጣርቷል</string>
+    <string name="system_update_download_failed_status_text">አውርድ ተስኗል</string>
+    <string name="system_update_download_retry_button_text">አውርድ እንደገና ሞክር</string>
+    <string name="system_update_download_button_text">አውርድ</string>
+    <string name="system_update_install_button_text">ዳግም አስጀምር &amp; ጫን</string>
+    <string name="system_update_check_now_button_text">አሁን ተመልከት</string>
+    <string name="system_update_no_update_content_text">ስርዓትዎ በአሁኑ ጊዜ ጊዜውን የጠበቀ ነው።</string>
+    <string name="system_update_last_checkin">ለ ^1 መጨረሻ ታይቷል።</string>
+    <string name="system_update_recommended_update_available_notification_title">የስርዓት ዝመና አለ</string>
+    <string name="system_update_recommended_update_available_notification_message">የማዘመን ዝርዝሮችን እይ።</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">የስርዓት አዘምን አውርድ የተሳካ አልነበረም።</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">አውርድ የተሳካ አልነበረም፣ እባክዎ እንደገና ይሞክሩ።</string>
+    <string name="system_update_error_dialog_title">ስህተት</string>
+    <string name="system_update_error_downloading_dialog_message">ማዘመኛውን ለማውረድ ችግር ነበር።</string>
+    <string name="system_update_error_installing_dialog_message">ማዘመኛውን ለመጫን ችግር ነበር።</string>
+    <string name="system_update_install_dialog_label">የስርዓት ዝመና</string>
+    <string name="system_update_install_dialog_message_nonphone">ስርዓት አዘምንለመጫን ዝግጁ ነው። የAndroid መሣሪያዎ ድጋሚ ይጀምር እና አዘምኑን ይጭናል።</string>
+    <string name="system_update_install_dialog_message_phone">የስርዓት ማዘመኛ ለመጫን ዝግጁ ነው። የAndroid መሣሪያዎ እንደገና ይጀምር እና ማዘመኛውን ይጭናል።በመጫን ጊዜየአደጋ ጊዜ ጥሪን አካቶማንኛውም ጥሪዎችማድረግአይቻልም።</string>
+    <string name="system_update_install_dialog_battery_low_message">የስርዓት ዝመና ለመጫን ዝግጁ ነው። ነገር ግንየባትሪው ኃይልለመጫን በጣም አነስተኛ ነው። እባክዎ ቻርጀር ያያይዙ።</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">የስርዓት ዝመና ለመጫን ዝግጁ ነው። ነገር ግን ባትሪው ለመጫን በጣም አነስተኛ ነው። እባክዎ ባትሪ በበቂ ቻርጅ እስኪያደርግ ይጠብቁ።</string>
+    <string name="system_update_install_dialog_now_button">አሁንጫን</string>
+    <string name="system_update_install_dialog_later_button">ኋላ ጫን</string>
+    <string name="system_update_install_dialog_info_button">የበለጠ መረጃ…</string>
+    <string name="system_update_downloading_notification_title">የስርዓት አዘምን በማውረድ ላይ</string>
+    <string name="system_update_verifying_notification_title">የስርዓት ማዘመን ማጣራት</string>
+    <string name="system_update_download_dialog_label">የስርዓት ዝመና አውርድ</string>
+    <string name="system_update_download_dialog_message">"የAndroid  መሣሪያዎን የሚያሻሽልየስርዓት ዝመናአለ።በገመድ አልባ አውታረመረብ ካወረዱት፣ ክፍያ ሊታከልበት ይችላል።"</string>
+    <string name="system_update_download_dialog_now_button">አሁን አውርድ</string>
+    <string name="system_update_download_dialog_later_button">ኋላ አውርድ</string>
+    <string name="system_update_download_dialog_cancel_button">ይቅር</string>
+    <string name="system_update_countdown_complete">አሁን ዳግም በማስነሳት ላይ...</string>
+    <string name="system_update_countdown_cancel_button">ጫን ይቅር</string>
+    <string name="system_update_complete_label">የስርዓት ዝመና</string>
+    <string name="system_update_complete_ok_button">እሺ</string>
+    <string name="provider_label">ተጫኝ ምዝገባዎች</string>
+    <string name="ro_perm_label">ፈጣን መልዕክቶችን አንብብ</string>
+    <string name="ro_perm_desc">ትግበራዎች ከGoogle Talk አቅራቢ ውሂብ ለማንበብ ይፈቅዳሉ።</string>
+    <string name="wo_perm_label">ፈጣን መልዕክቶች ፃፍ</string>
+    <string name="wo_perm_desc">ትግበራዎች ወደ Google Talk ይዘት አቅራቢ ውሂብ ለመፃፍ ይፈቅዳሉ።</string>
+    <string name="gsf_label">Google አገልግሎቶች መዋቅር</string>
+    <string name="search_chats">"ውይይቶች 
+ለ'%1$s' ፈልግ"</string>
+    <string name="gtalkservice_label">Google መልዕክት አገልግሎት</string>
+    <string name="c2dm_label">አጭር የመልዕክት ፅሁፍ አገልግሎት</string>
+    <string name="sendTalkMsg_perm_label">ከGoogle አገልጋዮች የአሳምር ማሳወቂያዎች ተቀበሉ እና መልዕክቶች ተለዋወጡ</string>
+    <string name="sendTalkMsg_perm_desc">ለአጭር የመልዕክት ፅሁፍ እና ማሳወቂያዎችን ለማሳመር ይጠቅማል።Google Talk ይህን አገልግሎት መልዕክት ለመለዋወጥ እና የመኖር ኹነታን ለማሳመር ይጠቀምበታል። ተንኮል አዘል ትግበራ ተጨማሪ የውሂብ አጠቃቀም ሊያስከትል ይችላል።</string>
+    <string name="perm_receive_data_message_label">ከበይነ መረብ ውሂብ ተቀበል</string>
+    <string name="perm_receive_data_message_desc">ትግበራ ከትግበራ አገልግሎት አጭር የመልዕክት ፅሁፍ አለመቀበል ይፈቅዳል። ይህን አገልግሎት መጠቀም የውሂብ አጠቃቀም ይጨምራል። ተንኮል አዘል ትግበራዎች ተጨማሪ የውሂብ አጠቃቀም ሊያስከትሉ ይችላሉ።</string>
+    <string name="perm_data_msg_broadcast_label">የውሂብ መልዕክቶችን ወደ ትግበራዎች አሰራጭ</string>
+    <string name="perm_data_msg_broadcast_desc">"ከበይነመረብ የተቀበሉዋቸውን የውሂብ መልዕክቶችን ለማዳመጥ  ወደ ተመዘገቡ ትግበራዎች ማሰራጨት ይችላሉ።"</string>
+    <string name="perm_receive_xmpp_label">"የXMPP መልዕክቶችን ከGoogle  አገልጋዮች ተቀበል እና ወደGoogle  አገልጋዮች ላክ"</string>
+    <string name="perm_receive_xmpp_desc">የGoogle ትግበራዎች የXMPP መልዕክቶችን ከGoogle አገልጋዮች ለመላክ እናለመቀበል ይፈቅዳሉ።</string>
+    <string name="perm_xmpp_broadcast_label">የXMPP መልዕክቶችን ወደ ትግበራዎች አሰራጭ</string>
+    <string name="perm_xmpp_broadcast_desc">"ከGoogle አገልጋዮች ለ ትግበራዎችየደረሱ የXMPP መልዕክቶች  ማሰራጨት ይቻላል።"</string>
+    <string name="perm_use_xmpp_endpoint_label">የXMPP መልዕክቶች ከGoogle አገልጋዮች ላክ እናተቀበል።</string>
+    <string name="perm_use_xmpp_endpoint_desc">የGoogle ትግበራዎች የXMPP መልዕክቶችን ከGoogle አገልጋዮች ለመላክ እናለመቀበል ይፈቅዳሉ።</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">"የXMPP  መልዕክቶችን ወደ ትግበራዎች አሰራጭ"</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">"ከGoogle አገልጋዮች ለ ትግበራዎችየደረሱ የXMPP መልዕክቶች  ማሰራጨት ይቻላል።"</string>
+    <string name="permlab_intentVendingOnly">ለAndroid ገበያ ስርጭቶች ላክ።</string>
+    <string name="permdesc_intentVendingOnly">ወደ Android ገበያ ትግበራ መጫን እና ማስወገድ ለመጠየቅ ስርጭቶችን መላክ ይቻላል።</string>
+    <string name="permlab_heartbeat">"ወደ  Google Talk አገልጋይ ልብ ምት ላክ"</string>
+    <string name="permdesc_heartbeat">የGoogle Talk አገልጋይ ተያያዥነትን ጤንነት ለማረጋገጥ የልብ ምት ጥቅል መላክ ይቻላል።</string>
+    <string name="group_chat">የቡድን ውይይት: %s</string>
+    <string name="default_decline_reason">ይቅርታ፣ አሁን በሥራ ላይ።</string>
+    <string name="newMessages_label">አዲስ ውይይቶች</string>
+    <string name="notify_groupchat_label">የቡድን ውይይት ግብዣ</string>
+    <string name="num_unread_chats">%s ያልተነበቡ ጨዋታዎች</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%sለ %s</string>
+    <string name="subscription_notify_text">%s መጫወት ለመቻል ይፈልጋል</string>
+    <string name="group_chat_invite_notify_text">ከ%s የቡድን ውይይት ግብዣ ተቀብለዋል።</string>
+    <string name="group_chat_invite_dialog_text">%s ወደ ቡድን ውይይት እንዲቀላቀሉ ጋብዝዎታል።</string>
+    <string name="message_too_long">ከ2000 ቁምፊዎች ርዝመት በላይ ያላቸውን መልዕክቶች መላክ አይቻልም።</string>
+    <string name="missed_video_chat_notification">የቪዲዮ ውይይ ግብዣ አመለጥዎ።</string>
+    <string name="missed_voice_chat_notification">የድምፅ ውይይ ግብዣ አመለጥዎ።</string>
+    <string name="missed_video_chat_notification_no_wifi">ከWi-Fi ጋር ተያይዘው ስላልነበረየቪዲዮ ውይይት አምልጥዎታል</string>
+    <string name="missed_voice_chat_notification_no_wifi">ከWi-Fi ጋር ተያይዘው ስላልነበረየድምፅ ውይይት አምልጥዎታል</string>
+    <string name="missed_video_chat_message">%1$s ከእርስዎ ጋር የቪዲዮ ውይይት ለማነሳሳት ሞክሯል</string>
+    <string name="missed_voice_chat_message">%1$s ከእርስዎ ጋር የቪዲዮ ውይይት ለማነሳሳት ሞክሯል</string>
+    <string name="missed_video_chat_message_no_wifi">Wi-Fi ላይ ሳይያያዙ %1$s ከእርስዎ ጋር የቪዲዮ ውይይት ለመጀመር ሞክረዋል</string>
+    <string name="missed_voice_chat_message_no_wifi">Wi-Fi ላይ ሳይያያዙ%1$s ከእርስዎ ጋር የቪዲዮ ውይይት ለመጀመር ሞክረዋል</string>
+    <string name="end_cause_user_unavailable_video">%1$s ለቪዲዮ ውይይቶች አልተገኙም።</string>
+    <string name="end_cause_user_unavailable_voice">%1$s ለድምፅ ውይይቶች አልተገኙም።</string>
+    <string name="end_cause_sent_terminate_video">ከ%1$s ጋርየቪዲዮ ውይይት ጨርሰዋል።</string>
+    <string name="end_cause_sent_terminate_voice">ከ%1$s ጋርየቪዲዮ ውይይት ጨርሰዋል።</string>
+    <string name="end_cause_received_terminate_video">%1$s የቪዲዮ ውይይት ጨርስዋል።</string>
+    <string name="end_cause_received_terminate_voice">%1$s የድምፅ ውይይትጨረስዋል።</string>
+    <string name="end_cause_network_problem_video">"ይቅርታ፣በ አውታረ መረብ ችግር ምክንያት  ከ%1$sጋር ያለው የቪዲዮ ውይይት ተስኗል። እባክዎ እንደገና ይሞክሩ።"</string>
+    <string name="end_cause_network_problem_voice">"ይቅርታ፣በ%1$sአውታረ መረብ ችግር ምክንያት  ከጋር ያለው የቪዲዮ ውይይት ተስኗል። እባክዎ እንደገና ይሞክሩ።"</string>
+    <string name="conn_auth_error_notify_ticker">የGoogle Talk ማረጋገጫ አልተሳካም</string>
+    <string name="conn_auth_error_notify_title">የGoogle Talk ማረጋገጫ አልተሳካም</string>
+    <string name="conn_auth_error_title">የማረጋገጥ ስህተት</string>
+    <string name="conn_auth_error_message">"Google Talk ለመግባት አልተሳካም። ይህ የGoogle ትግበራ መለያ ከሆነ፣ለዚህ መለያ  የውይይት አገልግሎት መንቃቱን አረጋግጥ።"</string>
+    <string name="conn_auth_error_button_retry">እንደገና ሞክር</string>
+    <string name="conn_auth_error_button_cancel">ይቅር</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">ወደ ^1 እንኳን በደህና መጡ</string>
+    <string name="setup_wizard_title">የመጫን አዋቂ</string>
+    <string name="error_dialog_title">ትኩረት</string>
+    <string name="next_button_label">ቀጥሎ</string>
+    <string name="back_button_label">ተመለስ</string>
+    <string name="sign_in_button_label">ግባ</string>
+    <string name="create_button_label">ፍጠር</string>
+    <string name="skip_button_label">ዝለል</string>
+    <string name="first_name">" መጠሪያ ስም"</string>
+    <string name="last_name">" የአባት ስም"</string>
+    <string name="done">እሺ</string>
+    <string name="cancel_button_label">ይቅር</string>
+    <string name="done_button_label">መጫን ጨርስ</string>
+    <string name="try_again_button_label">እንደገና ሞክር</string>
+    <string name="close_button_label">ዝጋ</string>
+    <string name="edit_text_help">መፃፍ ለመጀመር ማንኛውም የፅሁፍ ሣጥን ንካ</string>
+    <string name="add_a_google_account">የGoogle Account አክል</string>
+    <string name="no_sim_setup_wireless">"የተጫነ SIM ካርድ የልዎትም፣ ስለዚህ ለድምፅ ወይም ውሂብ አገልግሎቶች ወደ ተንቀሳቃሽ አውታረ መረብ ለመያያዝ አይቻልም።የWi-Fi አውታረ መረብ ያለSIM  ማያያዝ ይችላሉ።"</string>
+    <string name="setup_wifi_button_label">ወደ Wi-Fi አያይዝ</string>
+    <string name="no_network">የአውታረ መረብ ተያያዥ የልዎትም።</string>
+    <string name="no_network_help">ይህ ጊዜያዊ ችግር ሊሆን ይችላል ወይም የAndroid መሣሪያዎለውሂብ አገልግሎቶች ደንብ አልተካተተ ሊሆን ይችላል። እባክዎ ወደ ተንቀሳቃሽ አውታረ መረብ ወይም ወደ Wi-Fi አውታረ መረብ ሲያያዝ እንደገና ይሞክሩ።</string>
+    <string name="server_error">ከGoogle አገልጋዮች ጋር ሲያያዝ ችግር ተከስቷል።</string>
+    <string name="server_error_help">እባክዎ እንደገና ይሞክሩ።</string>
+    <string name="network_unreliable">ከአገልጋዩ ጋር አስተማማኝ ውሂብ ትይይዝ ለመመስረት አይቻልም።</string>
+    <string name="network_unreliable_help">ይህ ጊዜያዊ ችግር ነው ወይምAndroid መሣሪያዎ ለውሂብ አገልግሎቶች ደንብ አልተካተተ ሊሆን ይችላል። ከቀጠለ ወደ ደንበኞች አገልግሎት ይደውሉ።</string>
+    <string name="invalid_login_character">ትክክል ያልሆነ ቁምፊ። 0-9, a-z, A-Z, እና ነጥብ ብቻ ይፈቀዳል።</string>
+    <string name="invalid_password_character">ትክክል ያልሆነ የይለፍ ቃል ቁምፊ።</string>
+    <string name="add_apn">የገመድ አልባ ቅንብሮች</string>
+    <string name="setup_google_account_title">የGoogle Accountዎን ይጫኑ</string>
+    <string name="setup_complete_title">ጫን ተጠናቋል</string>
+    <string name="cant_be_blank">መስክ ባዶ መሆን አይችልም።</string>
+    <string name="calendar">የGoogle Calendar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google ኢሜይል</string>
+    <string name="url_load_unsuccessful_message">የAndroid መሣሪያዎ ለውሂብ አገልግሎት አልተገናኘም። ይህን መረጃ አሁን ለማየት፣ለበይነመረብ ከተያያዘ ማንኛውም ኮምፒዩተርወደ %s ይሂዱ።</string>
+    <string name="field_cant_be_blank">ይህ መስክ ባዶ መሆን አይችልም።</string>
+    <string name="field_invalid_domain">ይህ ትክክለኛ የጎራ ስም አይደለም</string>
+    <string name="field_invalid_user">ይህ ትክክለኛ ተጠቃሚ ስም አይደለም</string>
+    <string name="field_invalid_user_domain">የኢመይል አድራሻዎን አይደለም የተጠቃሚ ስምዎን ያስገቡ።</string>
+    <string name="field_invalid_login">ይህ ትክክለኛ የመለያ ስም አይደለም</string>
+    <string name="about_accounts_message"><font size="17">"የAndroid  መሣሪያዎን ለማዘጋጀት ቀላል ነው!  የሚያስፈልግዎ የGoogle መለያ ነው።
+"<font height="17">"
+"</font><b>"የGoogle  መለያ ለምን ይጠቀማሉ?"</b>"
+"<font height="3">"
+"</font>"ዝመናውን በGoogle መለያከየትም ሆነው ያድርጉ ፣የGoogle  ትግበራዎች  ከAndroid መሣሪያዎ እና ኮምፒዩተርዎ ጋርበራስ ሰር አስምር።
+"<font height="17">"
+"</font><b>የGoogle መለያ አልዎ?</b>"
+"<font height="3">"
+"</font>"ታዲያ እርስዎ ተዘጋጅተዋል! በቀጣዩማያ ላይ“ግባ” ን ይንኩ። 
+"<font height="17">"
+"</font><b>የGoogle መለያ የልዎትም?</b>"
+"<font height="3">"
+"</font>" ችግር የለም በቀጣዩ ማያ “ፍጠር” ን ይንኩ እና እኛ አንድ ለማዘጋጀት እንረዳዎታል።  
+"<font height="17">"
+"</font><b> ለማስጀመር “ቀጥሎ” ን ይንኩ!</b>"
+"</font></string>
+    <string name="fling_help_message">"ለመሸብለል በማያው ላይ ጣትዎን ወደ ላይ እና ታች ስላይድ። 
+ (ለማስወገድ ይህን መልዕክት ንካ።)"</string>
+    <string name="setup_device_title">የእርስዎን ^1 መጫን</string>
+    <string name="dont_have_an_account">" የGoogle Account የልዎትም?"</string>
+    <string name="create_one_now">አሁን አንድ ፍጠር!ቀላል ነው።</string>
+    <string name="already_have_an_account">" የGoogle Account አለህ?"</string>
+    <string name="sign_in_with_google_account">ለማያያዝ በፈለጉትበዚህየAndroid መሣሪያበGoogle መለያዎ ይግቡ።</string>
+    <string name="skip_message">መለያ ኋላ ለመጫን ይፈልጋሉ?</string>
+    <string name="touch_to_begin">Android እንዲጀምር ንካ።</string>
+    <string name="delayed_gaia_agreement">በመቀጠል፣ <annotation id="google_privacy">ለGoogle</annotation> እና<annotation id="android_privacy"> ተጨማሪ</annotation> ብሕታዊነት ፖሊሲዎች ተስማምተዋል።</string>
+    <string name="open_keyboard_message">ለመጀመር ቁልፍ ሰሌዳ ስላይድ ክፈት።</string>
+    <string name="open_keyboard_message_to_continue">" ለመቀጠል ቁልፍ ሰሌዳ ስላይድ ክፈት።"</string>
+    <string name="emergency_dial">የአደጋ ጊዜ ድወላ</string>
+    <string name="change_language">ቋንቋ ቀይር</string>
+    <string name="signing_in">በመግባት ላይ…</string>
+    <string name="close_keyboard_message">ስላይድ ቁልፍ ሰሌዳ ለመቀጠል መልስ።</string>
+    <string name="communicating_message">መለያዎን ለማዘጋጀት የAndroid መሣሪያዎከGoogle አገልጋዮች ጋር መገናኘት ያስፈልገዋል።ይህ እስከ አምስት ደቂቃ ሊወስድ ይችላል።</string>
+    <string name="communicating_message_domain">የጎራ መረጃዎን ለማግኘት የAndroid መሣሪያዎከGoogle አገልጋዮች ጋር መገናኘት ያስፈልገዋል።ይህ እስከ አምስት ደቂቃ ሊወስድ ይችላል።</string>
+    <string name="username">የተጠቃሚ ስም</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">" የይለፍ ቃል፡"</string>
+    <string name="sign_in_agreement">በመግባት፣ <annotation id="google_privacy">ለGoogle</annotation> እና <annotation id="android_privacy">ተጨማሪ</annotation> ብሕታዊነት ፖሊሲዎች ተስማምተዋል።</string>
+    <string name="create">ፍጠር</string>
+    <string name="create_message">የGoogle Account ይፈልጋሉ?</string>
+    <string name="now_signing_in">በመግባት ላይ…</string>
+    <string name="now_verifying_domain">የእርስዎን ጎራ ማግኘት....</string>
+    <string name="sign_in_with_google_account_short">" በGoogle Account ይግቡ"</string>
+    <string name="browser_sign_in_explanation">የድህረ አስስ የሚጠይቅ ልዩ መግቢያ ካልዎ ይህን ማያ ይጠቀሙ።</string>
+    <string name="gls_browser_login_intro_message">የGoogle ወይም Google Apps መለያዎን መድረስ አልተቻለም። ድጋሚ ፍቃድ ይጠየቃል።</string>
+    <string name="enter_domain_name">የኩባንያዎን ስም ያስገቡ።</string>
+    <string name="enter_user_name">ለ^1 የእርስዎን የተጠቃሚ ስም እና የይለፍ ቃል ያስገቡ፡</string>
+    <string name="inactive_domain">"ይህ መለያ መጠቀም አይቻልም ምክንያቱም  ያልተመረጠ ጎራ ውስጥ ይመደባል።እባክዎ የጎራ አስተዳደሩን ለ"<b>^1</b> ያግኙት ወይም በሌላ መለያ ይግቡ።</string>
+    <string name="invalid_username">የገባው ፅሁፍ የትክክለኛ ተጠቃሚ ስም አይደለም።</string>
+    <string name="web_login_error_title">ይቅርታ...</string>
+    <string name="web_login_error_desc">"ከኩባንያዎ አገልጋዮች በ^1  ለማያያዝ ችግር አለ።
+የስህተት መረጃ፡
+
+"</string>
+    <string name="web_login_error_redirects">የድረ ግባ ገፅ ለብዙ ጊዜያት ተዟዙሯል።</string>
+    <string name="web_login_error_http">HTTP ስህተት ^1 : ^2</string>
+    <string name="name_device_label">ለAndroid መሣሪያዎ ስም ይስጡ፡</string>
+    <string name="device_name_hint">የመሣሪያ ስም</string>
+    <string name="registering_device">የAndroid መሣሪያ በመመዝገብ ላይ…</string>
+    <string name="error_account_disabled">"ይህ መለያ ቦዝኗል።
+
+(ለዝርዝሩ፣ወደ http://google.com/accounts/recovery  ኮምፒዩተርዎ ይሂዱ።)"</string>
+    <string name="error_login_failed">"የተጠቃሚ ስምዎ እና የይለፍ ቃልዎ አይዛመዱም። እባክዎ እንደገና ይሞክሩ። 
+
+ (የመለያ መረጃዎን እነበረበት ለመመለስ፣ በ ኮምፒዩተርዎ ወደ http://www.google.com/accounts/recovery ላይ ይሂዱ።)"</string>
+    <string name="error_account_not_verified">"ይህ መለያ ተጣርቷል።እባክዎ ኢሜይልዎን ይመልከቱ እና ይህን መለያ ለማጣራት የተካተተውን አገናኝ ይከተሉ።
+
+(የጠፋውንየመለያ መረጃዎን ለማግኘት፣ ወደhttp://www.google.com/accounts/recovery ኮምፒዩተርዎ ይሂዱ።)"</string>
+    <string name="captcha_message_string">ማረጋገጫ፡</string>
+    <string name="captcha_instructions">በምስሉ ላይ የሚያዩትን ቁምፊዎች ያስገቡ።</string>
+    <string name="create_google_account">አዲስ የGoogle Account ይፍጠሩ</string>
+    <string name="example_usernames">ለምሳሌ፣ ጥላሁን ገሠሠ</string>
+    <string name="create_account_agreement">ይህን መለያ በመፍጠር <annotation id="google_privacy">ለGoogle</annotation> እና<annotation id="android_privacy"> ተጨማሪ</annotation>ብሕታዊነት ፖሊሲዎች ተስማምተዋል።</string>
+    <string name="account_already_has_gmail">መለያ አስቀድሞ Gmail አለው።</string>
+    <string name="creating_account">መለያዎን መፍጠር…</string>
+    <string name="checking_account">የተጠቃሚ ስም መኖር በመመለከት ላይ...</string>
+    <string name="try_a_different_username">የተለየ ተጠቃሚ ስም ሞክር</string>
+    <string name="is_not_available"><b>^1</b> አልተገኘም።</string>
+    <string name="hint_size"><b>^1</b> ከ6 ያነሰ ወይም ከ30 የበለጠ ቁምፊዎች ይይዛል።</string>
+    <string name="hint_numbers_only"><b>^1</b> ማንኛውም ፊደሎችን አይዝም።</string>
+    <string name="hint_illegal_chars"><b>^1</b>" ፊደሎችን ብቻ መያዝ ይችላል፣
+ ቁጥሮች፣ እና አራት ነጥብ።"</string>
+    <string name="doesnt_use_gmail"><b>^1</b> ጂሜይል አይዝም</string>
+    <string name="sign_in">ግባ</string>
+    <string name="sign_in_browser">አሳሽ መግቢያ</string>
+    <string name="here_are_alternatives">እነዚህ አንዳንድ አማራጮች ናቸው፡</string>
+    <string name="alternatives_list_title">የሚመከሩ ተጠቃሚ ስሞች</string>
+    <string name="choose_a_password"><b>"የይለፍ ቃል
+ተይብ"</b></string>
+    <string name="confirm_password"><b>"የይለፍ ቃል
+ አረጋግጥ"</b></string>
+    <string name="password_strength"><b>"የይለፍ ቃል
+  ጥንካሬ"</b></string>
+    <string name="too_short">" በጣም አጭር"</string>
+    <string name="security_question"><b>" የቁጥጥር 
+ጥያቄ"</b></string>
+    <string name="security_questions_title">የጥበቃ ጥያቄዎች</string>
+    <string name="answer"><b>መልስ</b></string>
+    <string name="password_mismatch">የይለፍ ቃልዎ አይዛመድም። እባክዎ ድጋሚ ይተይቧቸው።</string>
+    <string name="your_account_was_created">መለያዎ ተፈጥሯል!</string>
+    <string name="eight_chars_min">(ዝቅተኛ 8 ቁምፊዎች)</string>
+    <string name="just_in_case">ድንገት የይለፍ ቃልዎ ቢጠፋ</string>
+    <string name="verify_your_profile">መግለጫዎን ያጣሩ</string>
+    <string name="signed_in">ገብቷል!</string>
+    <string name="error_not_logged_in">ተጠቃሚ አልገባም።</string>
+    <string name="error_username_unavailable">የተጠቃሚ ስም የለም።</string>
+    <string name="error_bad_password">የይለፍ ቃሉ በጣም ደካማ ወይም ትክክል ያልሆኑ ቁምፊዎች ይዟል። እባክዎ እንደገና ይሞክሩ።</string>
+    <string name="error_bad_username">የማያገለግል የተጠቃሚ ስም፡፡</string>
+    <string name="loading">በመስቀል ላይ...</string>
+    <string name="submission_title">ይቅርታ...</string>
+    <string name="submission_error_text">ስህተት ተከስቷል። እባክዎ እንደገና ይሞክሩ፡፡</string>
+    <string name="existing_account_error_title">መለያ አስቀድሞ አለ</string>
+    <string name="existing_account_error_text">በዚህ Android መሣሪያ ላይ ^1 መለያ አስቀድሞ አለ</string>
+    <string name="account_linked_message"><font height="24">የGoogle መለያዎ ለዚህየAndroid መሣሪያ ተጣምሯል።</font></string>
+    <string name="syncing_message"><font size="17">"የGoogle ትግበራዎችአሁን ውሂብ \"እያሳመሩ\"ነው።
+"<font height="17">"
+"</font>"%iከማያዎ ኹነት አሞሌ በ ላይ የአሳምር አዶ ሲጠፋ አውርዱ ጨርሷል።
+"<font height="17">"
+"</font><b>ስለ ኹነት አሞሌው...</b>"
+"<font height="3">"
+"</font>"አዲስ መል ዕክትወይም ማሳወቂያ በተቀበሉ ቁጥር አዶ በኹነት አሞሌው ውስጥ ብቅ ትላለች።
+"<font height="17">"
+"</font>ስለአሁኑ የማሳወቂያ ዝርዝሮች ጋር፣የኹነት አሞሌው የማሳወቄያውን ውስን ቦታ ለመክፈት ጣትዎን ይጠቀሙ።</font></string>
+    <string name="i_agree_next">እስማማለሁ፣ ቀጥሎ</string>
+    <string name="android_privacy_policy_title">ተጨማሪ የብሕትውነት ፖሊሲ</string>
+    <string name="google_terms_of_service_title">"የGoogle  የአግልግሎት ውሎች ስምምነት"</string>
+    <string name="google_privacy_policy_title">Google የብሕታዊነት መግለጫ</string>
+    <string name="notification_update_title">መለያዎ መዘመን አለበት</string>
+    <string name="notification_update_message">"ድጋሚ  ለማሄድ የጫን አዋቂ እዚህ ንካ"</string>
+    <string name="common_message">"Gmail፣ያስጠብቃል፣ እና ሌላ ብዙ የAndroid ገፅታዎችየGoogle መለያይጠይቃሉ። 
+
+በነበረ የGoogle መለያለመግባት ወይም አዲስ የGoogle መለያ አሁን ለመፍጠር"<b>ቀጥሎ</b>" ይንኩ።
+
+ወይም Android በቀላሉ መጠቀም ለመጀመር"<b>ዝለል</b> ይንኩ።</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">መለያ ማከል</font>"
+
+ በስልክዎ ላይ(ለምሳሌ መነሻዎ አና የሥራ መለያዎች) ከአንድ በላይ የGoogle መለያ መጠቀም ይችላሉ። የGoogle መለያ ማከል ጥቂት ሂደቶችን ይወስዳል።
+
+ ለመቀጠል \"ቀጥል\"  ይንኩ ወይም ለመውጣት የስልክዎን ተመለስ አዘራር ይጫኑ።"</string>
+    <string name="reactivate_account_message">"የGoogle ደብዳቤ መለያከዚህAndroid መሣሪያ ጋር ማያያዝ ያስፈልግዎታል። 
+
+ከዚህ መለያ ጋር የተጎዳኘ፣ የGoogle መልዕክት ተጠቃሚ ስም አስቀድሞ አልዎ("<b>^1</b>")ነገር ግን ገባሪ አይደለም።
+
+ይህን ተጠቃሚስም ድጋሚ- ለማስገበርእና ከስልክዎ ጋር ለመጠቀም “ቀጥል” ን ይንኩ። 
+
+ወይም የተለየ መለያ ለመጠቀም ከፈለጉ፣የተመለስ አዝራርን ይጫኑ እና ይግቡ ወይም የተለየ መለያ ይፍጠሩ።"</string>
+    <string name="reactivating_account">መለያዎን ዳግም በማግበር ላይ...</string>
+    <string name="your_account_was_reactivated">አሁን መለያዎ አግብሯል።</string>
+    <string name="account_recovery_info">"የሚከተለው መረጃ የይለፍ ቃልዎ እስከ መጨረሻው ከጠፋ  መልሶ ለማግኘት ያግዛል።"</string>
+    <string name="secondary_email_label"><b>"ሁለተኛ 
+ኢሜይል"</b></string>
+    <string name="invalid_email">"የገባው የኢሜይል አድራሻ ትክክል አይደለም።
+ለምሳሌ፡ mamowudneh@example.com"</string>
+    <string name="invalid_email_primary">ሁለተኛ የኢሜይል አድራሻ አሁን እየፈጠሩ ካሉት ጋር ተመሳሳይ መሆን አይችልም።</string>
+    <string name="tutorial_intro_title">የእርስዎን ^1 እንዴት እንደሚጠቀሙበት ይረዱ</string>
+    <string name="begin_button_label">ጀምር</string>
+    <string name="tutorial_intro_message_generic">"ከAndroid  መሣሪያዎ የበለጠ ለማግኘት አንዳንድ በጣም  አስፈላጊነገሮች መረዳት አለብዎ።"<font size="17">"
+"</font>"
+"<li>በማያላይ ባለ ቁልፍሰሌዳ በመጠቀም</li><font size="17">"
+"</font>"
+   አጋዥ ሥልጠና ለመጀመር እና የበለጠ ለማወቅ “ጀምር”ን ይንኩ።"</string>
+    <string name="tutorial_intro_message_setupwizard">"ከAndroid  መሣሪያዎ የበለጠ ለማግኘት አንዳንድ በጣም  አስፈላጊነገሮች መረዳት አለብዎ።"<font size="17">"
+"</font>"
+"<li>በማያላይ ባለ ቁልፍሰሌዳ በመጠቀም</li>"
+"<li>የGoogle መለያ ያቀናብሩ</li><font size="17">"
+"</font>"
+አጋዥ ሥልጠና ለመጀመር እና የበለጠ ለማወቅ “ጀምር”ንወይም ይህን አጋዥ ስልጠናለማዘለል እና ለመቀጠል “ ዝለል”ን ይንኩ።"</string>
+    <string name="keyboard_tutorial_title">የማያ ላይ ቁልፍ ሰሌዳ መጠቀም</string>
+    <string name="keyboard_tutorial_message">የቁልፍ ሰሌዳውን ለመክፈት ማንኛውም የፅሁፍ መስክ ክፈት እና መፃፍ ጀምር።እዚህ ጀምር!</string>
+    <string name="keyboard_tutorial_edittext_hint">ትየባ ለመጀመር እዚህ ንካ</string>
+    <string name="done_typing_message">ትየባ ተከናውኗል? የቁልፍሰሌዳውን ለመዝጋት የተመለስ አዝራሩን ተጫን።</string>
+    <string name="done_button_label_in_tutorial">ተከናውኗል</string>
+    <string name="backup_consent_title">የኔን ቅንብሮች መጠባበቂያ</string>
+    <string name="backup_consent_message">ቅንብሮችዎ(እንደ ዕልባቶችዎ እና Wi-Fi ይለፍ ቃልዎችዎ) በGoogle መለያ በራስ ሰር ተተኪ ማኖር ይችላሉ። አዲስ የAndroid መሣሪያካገኙ(የጠፋብዎን ለመተካት ወይም ካላቁ) ቅንብሮችዎ ወደ ወደ አዲሱ Android መሣሪያዎ እነበሩበት ይመለሳሉ።</string>
+    <string name="backup_consent_howto_disable_message">በማንኛውም ጊዜ በቅንብሮች ትግበራ፣ በብሕትውነት ስርየመጠባበቂያ ቅንብሮችዎንመለወጥ ይችላሉ።</string>
+    <string name="backup_consent_yes_agree">ቅንብሮችን ወደ Google Account መጠባበቂያ።</string>
+    <string name="restore_disable">እነበረበጽ መልስ አቦዝን</string>
+    <string name="restore_enable">እነበረበት መልስ አንቃ</string>
+    <string name="restore_enabled">ቅንብሮችዎን ቀደም ብለው ካስጠበቁ፣ እነበሩበት ይመለሳሉ</string>
+    <string name="restore_disabled">ቅንብሮችዎ ከመጠባበቂያ እነበረበት አይመለስም።</string>
+    <string name="webview_progress_title">ወደ ጎራ በማያየዝ ላይ....</string>
+    <string name="webview_progress_verbose_message">"የኩባንያዎ አገልጋዮች የግባ መረጃ እየላኩ ነው።ይህ ትንሽ ደቂቃ ሊወስድ ይችላል።
+የኩባንያዎ ግባ ገፅ ይህ ሲጠናቀቅ ብቅ ይላል።"</string>
+    <string name="enterprise_unmanaged_domain">ይህ ጎራ የGoogle ትግበራዎችን እየተጠቀመ አይደለም። እባክዎ የጎራ ስም ይመልከቱ እና እንደገና ይሞክሩ።</string>
+    <string name="use_location_for_services_agree">እስማማለሁ</string>
+    <string name="use_location_for_services_disagree">ችላ በለው</string>
+    <string name="use_location_for_services_title">የኔን ሥፍራ ተጠቀም</string>
+    <string name="use_location_for_services_text">Google ሥፍራን ለተሻለ ፍለጋ ውጤቶች እና ሌላ አገልግሎቶች እንዲጠቀም ለመፍቀድ ይፈልጋሉ?</string>
+    <string name="permlab_readGsettings">የGoogle ቅንብሮችን አንብብ</string>
+    <string name="permdesc_readGsettings">ይህ ትግበራ የGoogle ቅንብሮችን ለማንበብ ይፈቅዳል።</string>
+    <string name="permlab_writeGsettings">የGoogle ቅንብሮችን ቀይር</string>
+    <string name="permdesc_writeGsettings">ይህ ትግበራ የGoogle ቅንብሮችን ለመቀየር ይፈቅዳል።</string>
+    <string name="permlab_readGservices">የGoogle አገልግሎት አዋቅርን አንብብ</string>
+    <string name="permdesc_readGservices">ይህ ትግበራ የGoogle ውሂብ አዋቅር አገልግሎትን ለማንበብ ይፈቅዳል</string>
+    <string name="permlab_writeGservices">የGoogle አገልግሎት ውቅር ቀይር</string>
+    <string name="permdesc_writeGservices">"ይህ ትግበራ የGoogle  ውሂብ አዋቅር አገልግሎትን ለመቀየር ይፈቅዳል።"</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google ትግበራዎች</string>
+    <string name="permlab_googleAuthPassword">ወደGoogle Accountዎች ይለፍ ቃላትመድረስ</string>
+    <string name="permdesc_googleAuthPassword">ትግበራዎች እርስዎ ለGoogle Account(ዎች) ያዋቀሩዋቸው የይለፍ ቃላት ቀጥታ ለመድረስ ይፈቅዳሉ።</string>
+    <string name="permlab_googleMailSwitch">የGmail ወይም Google ደብዳቤ መታወቂያ ምልክት ምረጥ</string>
+    <string name="permdesc_googleMailSwitch">"ትግበራዎችበ\"Gmail\" እና \"Google Mail\" መታወቂያ መካከል የሚታየውን ስም ለመቀያየር  ይፈቅዳሉ።"</string>
+    <string name="permlab_googleAuth">የተዋቀሩ መለያዎችን እይ</string>
+    <string name="permdesc_googleAuth">ትግበራዎች እርስዎ የGoogle Account(ዎች) ያዋቀሩዋቸው ተጠቃሚ ስም(ኢሜይል አድራሻዎች) ለማየት ይፈቅዳሉ።</string>
+    <string name="permlab_googleAuth_ALL">ሁሉንም የGoogle አገልግሎቶች ድረስ</string>
+    <string name="permdesc_googleAuth_ALL">"በዚህAndroid  መሣሪያላይ በተከማቸው መለያ(ዎች) በመጠቀም ትግበራዎች ወደ ሁሉም የGoogle አገልግሎቶች እንዲገቡ ይፈቅዳል።"</string>
+    <string name="permlab_googleAuth_OTHER">ሌላ የGoogle አገልግሎቶች ድረስ</string>
+    <string name="permdesc_googleAuth_OTHER">ትግበራዎች ወደ ያልተገለፁ የGoogle አገልግሎቶች ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_mail">Google ደብዳቤ</string>
+    <string name="permdesc_googleAuth_mail">ትግበራዎች ወደ Google ደብዳቤ አገልግሎቶች ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_cl">የGoogle Calendar</string>
+    <string name="permdesc_googleAuth_cl">ትግበራዎች ወደ Google ቀን መቁጠሪያ ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳሉ።</string>
+    <string name="permlab_googleAuth_android">Android አገልግሎቶች</string>
+    <string name="permdesc_googleAuth_android">"በዚህAndroid  መሣሪያ ላይ በተከማቸው መለያ(ዎች) በመጠቀም ትግበራዎች ወደ ሁሉም የGoogle አገልግሎቶች እንዲገቡ ይፈቅዳል።"</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout መለያዎች</string>
+    <string name="permdesc_googleAuth_sierra">ትግበራዎች ወደ Google Checkout (እና ወደ ፊት ግዢዎችማድረግ) ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout ጥያቄ እና መልስ መለያዎች</string>
+    <string name="permdesc_googleAuth_sierraqa">ትግበራዎች ወደ Google Checkout ጥያቄና መልስ ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandbox መለያዎች</string>
+    <string name="permdesc_googleAuth_sierrasandbox">"ትግበራዎች ወደ Google Checkout Sandbox  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">ትግበራዎች ወደ YouTube ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_YouTubeUser">የYouTube ተጠቃሚስሞች</string>
+    <string name="permdesc_googleAuth_YouTubeUser">"ትግበራዎች ከGoogle መለያ(ኦች) ጋር ተያይዘው በዚህ Android መሣሪያ ላይ የተከማቹትን የYouTube  ተጠቃሚ ስም(ኦች) ለማየት ይፈቅዳሉ።"</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">"ትግበራዎች ወደ Google Talk  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_ig">iGoogle መለያ</string>
+    <string name="permdesc_googleAuth_ig">"ትግበራዎች ወደ iGoogle  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_lh2">Picasa Web Albums</string>
+    <string name="permdesc_googleAuth_lh2">ትግበራዎች ወደ ፒካሳ ድረ አልበሞች ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_mobile">Google ተንቀሳቃሽ ስልክ ትግበራዎች</string>
+    <string name="permdesc_googleAuth_mobile">ትግበራዎች ወደ Google ተንቀሳቃሽስልክ ትግበራዎች ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_cp">በGoogle መለያዎች ውስጥ የዕውቂያዎች ውሂብ</string>
+    <string name="permdesc_googleAuth_cp">መተግበሪያዎች በዚህ Android መሣሪያላይ የተከማቹትን መለያ(ዎች) መገለጫ መረጃ እናዕውቂያዎችለመድረስ ይፈቅዳል።</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">ትግበራዎች ወደ Google AdSense ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳሉ።</string>
+    <string name="permlab_googleAuth_adwords">አድወርድስ</string>
+    <string name="permdesc_googleAuth_adwords">"ትግበራዎች ወደ Google AdWords  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳሉ።"</string>
+    <string name="permlab_googleAuth_blogger">ጦማሪ</string>
+    <string name="permdesc_googleAuth_blogger">"ትግበራ በዚህ Android  መሣሪያ ላይ በተከማቸው መለያ(ዎች) በመጠቀም ወደ ጦማሪ እንዲገቡ ይፈቅዳል።"</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">"ትግበራ በዚህ Android  መሣሪያ ላይ በተከማቸው መለያ(ዎች) በመጠቀም ወደ Dodgeball እንዲገቡ ይፈቅዳል።"</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">ትግበራዎች ወደ Google Base ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳሉ።</string>
+    <string name="permlab_googleAuth_groups2">Google ቡድኖች</string>
+    <string name="permdesc_googleAuth_groups2">"ትግበራዎች ወደ Google ቡድኖች  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_health">Google ጤና</string>
+    <string name="permdesc_googleAuth_health">"ትግበራዎች ወደ Google  ጤና ለመግባት በዚህAndroid መሣሪያ ላይ የተከማቸው(ቹት)ን መለያ(ዎች)  መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">"ትግበራዎች ወደJotSpot  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">ትግበራዎች ወደ Knol ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_news">የGoogle ዜና</string>
+    <string name="permdesc_googleAuth_news">"ትግበራዎች ወደ Google  ዜና  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">ትግበራዎች ወደOrkut ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_print">Google መፅሀፍ ፍለጋ</string>
+    <string name="permdesc_googleAuth_print">ትግበራዎች ወደ Google መፅሐፍ ፍለጋ ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳሉ።</string>
+    <string name="permlab_googleAuth_sitemaps">Google Webmaster መሣሪያዎች</string>
+    <string name="permdesc_googleAuth_sitemaps">ትግበራዎች ወደ Google ድረጌታ መሣሪያዎችለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">"ትግበራዎች ወደ Google WiFi  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_writely">Google ሰነዶች</string>
+    <string name="permdesc_googleAuth_writely">"ትግበራዎች ወደ Google  ሰነዶች ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_wise">Google Spreadsheets</string>
+    <string name="permdesc_googleAuth_wise">ትግበራዎች ወደ Google ዝርግ ተመን ሉህ ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_finance">Google ፋይናንስ</string>
+    <string name="permdesc_googleAuth_finance">ትግበራዎች ወደ Google ፋይናንስለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_local">Google ካርታ</string>
+    <string name="permdesc_googleAuth_local">ትግበራዎች ወደ Google ካርታዎች ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_ah">Google ትግበራ አንቀሳቃሽ</string>
+    <string name="permdesc_googleAuth_ah">ትግበራዎች ወደ Google App አንቀሳቃሽ ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳሉ።</string>
+    <string name="permlab_googleAuth_notebook">Google Notebook</string>
+    <string name="permdesc_googleAuth_notebook">ትግበራዎች ወደ Google ማስታወሻ ደብተር ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">"ትግበራዎች ወደ Google Voice  ለመግባት በዚህAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።"</string>
+    <string name="permlab_googleAuth_speechpersonalization">የንግግርለይቶ ማወቂያ</string>
+    <string name="permdesc_googleAuth_speechpersonalization">ትግበራዎች ወደግል ንግግር ለይቶ ማወቂያለመግባት በዚህየAndroid መሣሪያላይየተከማቸው(ቹት)ን መለያ(ዎች) መጠቀም ይፈቅዳል(ሉ)።</string>
+    <string name="gls_notification_title">ወደ መለያዎ ይግቡ</string>
+    <string name="gls_notification_new_account">^1 መለያ ፈልጓል</string>
+    <string name="gls_notification_new_account_youtube">የYouTube መለያ ያስፈልጋል</string>
+    <string name="gls_notification_login_error">ወደ መለያዎ ለመግባት ይንኩ።</string>
+    <string name="gls_ui_add_account_title">የመለያ መጫኛ</string>
+    <string name="gls_ui_google_account_subtitle">የGoogle Account</string>
+    <string name="gls_ui_activity_title">Google መግቢያ</string>
+    <string name="gls_ui_activity_title_browser_signin">አሳሽ መግቢያ</string>
+    <string name="gls_ui_activity_title_enterprise">የኢንተርፕራይዝ መግቢያ</string>
+    <string name="gls_ui_activity_title_youtube">YouTube ግባ</string>
+    <string name="gls_ui_activity_authenticating">በማረጋገጥ ላይ....</string>
+    <string name="gls_captcha_activity_message">እባክዎ ፎቶው ላይ የሚታዩትን ቁምፊዎች ያስገቡ፡</string>
+    <string name="gls_captcha_activity_ok_button">ተከናውኗል</string>
+    <string name="gls_error_activity_message">ወደ <b>^1</b>ለመግባት ሲሞከር የአውታረ መረብ ስህተት ነበር። ድጋሚ ይሞክሩ ወይም ይቅር ለማለት የተመለስ አዝራርን ይጫኑ።</string>
+    <string name="gls_error_activity_retry_button">እንደገና ሞክር</string>
+    <string name="gls_dmagent_activity_message">" ጎራዎ የተንቀሳቃሽ መሣሪያ አደረጃጀት ይጠይቃል። እባክዎበ"<b>^1</b> መለያ የሚጠየቀውን የደህንነት ፖሊሲ ለማስፈፀምየGoogle Appsን መሣሪያ ፖሊሲ ትግበራ ይጫኑ።</string>
+    <string name="gls_dmagent_activity_retry_button">አውርድ</string>
+    <string name="gls_login_activity_username_label">የተጠቃሚ ስም</string>
+    <string name="gls_login_activity_password_label">" የይለፍ ቃል፡"</string>
+    <string name="gls_login_activity_ok_button">ግባ</string>
+    <string name="gls_login_activity_loginfail_text_both">የተጠቃሚ ስም ወይም የይለፍ ቃሉ ትክክል አይደለም። <b>^1</b> መለያ ይጠየቃል። እባክዎ እንደገና ይሞክሩ።</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">የተሳሳተ ይለፍ ቃል አስገብተዋል ወይም መለያዎ ተለውጧል። እባክዎ የይለፍ ቃልዎን ድጋሚ ያስገቡ።</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">ለዚህ መለያ የይለፍ ቃሉን ተይብ</string>
+    <string name="gls_enterprise_login_activity_msg">"እባክዎ ለማራገጥ ወደ ኢንተርፕራይዝ መለያዎ በ^1 ይግቡ።  በድረ-መሠረት የኩባንያዎ ይግቡ ገፅ ለመክፈት
+ ይንኩ።"</string>
+    <string name="gls_login_activity_badaccount_text">ያንን መለያ በዚህ ሁኔታ መጠቀም አይችሉም።እባክዎ የተለየ መለያ ይሞክሩ።</string>
+    <string name="gls_login_activity_newaccount_text">ወደ <b>^1</b> መለያዎ ይግቡ።</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google ኢሜይል</string>
+    <string name="gls_login_activity_create_youtube">የYouTube መለያ የልዎትም?አንድ ለመፍጠር<a href="http://www.youtube.com/signup">እዚህ</a> ይንኩ።</string>
+    <string name="gls_settings_tos_activity_title">የGoogle ህጋዊ</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">ለውሂብ አገልግሎት አልተያያዙም። ይህን መረጃ አሁን ለማየት፣ ከማንኛውም በይነ መረብ ከተያያዘ ኮምፒዩተር ወደ%s ይሂዱ።</string>
+    <string name="gls_settings_contributors_activity_title">አዋጮች</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">ለውሂብ አገልግሎት አልተያያዙም። ይህን መረጃ አሁን ለማየት፣ ከማንኛውም በይነ መረብ ከተያያዘ ኮምፒዩተር ወደ %s ይሂዱ።</string>
+    <string name="gls_webview_progress_title">ወደ ጎራ በማያየዝ ላይ....</string>
+    <string name="gls_webview_progress_verbose_message">"የኩባንያዎ አገልጋዮች የግባ መረጃ እየላኩ ነው።ይህ ትንሽ ደቂቃ ሊወስድ ይችላል።
+ የኩባንያዎ ግባ ገፅ ይህ ሲጠናቀቅ ብቅ ይላል።"</string>
+    <string name="gls_sign_in_button_label">ግባ</string>
+    <string name="gls_back_button_label">ተመለስ</string>
+    <string name="gls_cancel_button_label">ይቅር</string>
+    <string name="gls_exit_account_setup_button_label">የመለያ መጫኛ ውጣ</string>
+    <string name="gls_reauthorize_button_label">ዳግም ፍቀድ</string>
+    <string name="gls_sign_in_message">መለያዎን ለማዘጋጀት የAndroid መሣሪያዎከGoogle አገልጋዮች ጋር መገናኘት ያስፈልገዋል።ይህ እስከ አምስት ደቂቃ ሊወስድ ይችላል።</string>
+    <string name="gls_sign_in_title">በመግባት ላይ…</string>
+</resources>

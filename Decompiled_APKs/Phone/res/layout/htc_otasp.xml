@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:orientation="vertical" android:id="@id/ll" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="34.0px" android:text="@string/htc_ota_init_screen_title" android:layout_x="10.0px" android:layout_y="15.0px" style="@style/google_title_text" />
+    <ImageView android:layout_y="75.0px" style="@style/google_title_divider" />
+    <TextView android:textSize="30.0px" android:id="@id/tvOTANoti1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/htc_ota_init_screen_content" android:layout_x="10.0px" android:layout_y="100.0px" />
+    <Button android:textSize="36.0px" android:id="@id/btnActivate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_ota_init_screen_activate" android:layout_x="100.0px" android:layout_y="200.0px" />
+    <Button android:textSize="36.0px" android:id="@id/btnEmgcall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/htc_ota_init_screen_emgcall" android:drawableLeft="@drawable/picture_emergency25x25" android:layout_y="690.0px" android:layout_alignParentLeft="true" />
+</AbsoluteLayout>

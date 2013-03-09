@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:text="@string/htc_account_signed_in_title" style="@style/google_title_text" />
+    <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginBottom="0.0px" android:layout_weight="1.0" style="@style/layout_generic">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htc_account_signed_in_description_01" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:id="@id/htc_sense_signed_in_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htc_account_signed_in_link" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@com.htc:dimen/darklist_primary_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/htc_account_signed_in_description_02" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout android:id="@id/button_panel" style="@style/layout_panel">
+        <Button android:id="@id/bt_back" android:text="@string/back" android:drawableLeft="@drawable/ic_btn_back" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/bt_next" android:text="@string/next" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

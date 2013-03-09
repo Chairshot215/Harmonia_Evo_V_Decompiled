@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CustomizationListBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.htccontacts.widget.title.BrowseHeaderBar android:id="@id/headerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/input_layout" android:paddingLeft="14.0px" android:paddingTop="@dimen/list_view_top_border_height" android:paddingRight="14.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/show_pwd_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/new_toolbar_margin" android:layout_marginRight="@dimen/new_toolbar_margin" android:layout_below="@id/input_layout">
+            <ToggleButton android:id="@id/show_pwd" android:background="?com.htc:attr_common_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" />
+            <TextView android:id="@id/checkBox_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/new_toolbar_margin" android:text="@string/htc_show_password_hint" style="@style/common_checkbox_text" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/topround_v1" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_top_border_height" />
+            <View android:background="@com.htc:drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@com.htc:drawable/trans_bottomround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@com.htc:drawable/section_divider" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_bottom_border_height" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.android.htccontacts.widget.HtcButtonFrameLayout android:layout_gravity="bottom" android:id="@id/ButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" htccontacts:buttonStyle="ok_cancel"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+</LinearLayout>

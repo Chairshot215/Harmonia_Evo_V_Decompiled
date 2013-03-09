@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="201253824" android:versionName="2.1.2211142760.253824" package="com.htc.android.fusion.calculator"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <receiver android:label="@string/text_calculator" android:icon="@drawable/icon" android:name="com.htc.android.fusion.calculator.RosieIntentReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/calculator_widget" />
+        </receiver>
+        <uses-library android:name="com.htc.fusion.fx" />
+        <uses-feature android:name="com.htc.android.rosie.widget" />
+    </application>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" />
+</manifest>

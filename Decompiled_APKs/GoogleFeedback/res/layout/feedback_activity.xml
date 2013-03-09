@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/view_chooser" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/feedback_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:fillViewport="true" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <EditText android:gravity="top" android:id="@id/feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:hint="@string/optional_description" android:minLines="3" android:scrollHorizontally="false" android:capitalize="sentences" android:autoText="true" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+                    </FrameLayout>
+                    <TableLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:stretchColumns="0" android:shrinkColumns="0" android:showDividers="middle|beginning">
+                        <TableRow android:id="@id/privacy_row" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding">
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/privacy_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_information" />
+                                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/how_is_my_info_stored" />
+                            </LinearLayout>
+                        </TableRow>
+                        <TableRow android:id="@id/system_logs_option" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding">
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/include_system_data" />
+                                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/this_will_help" />
+                            </LinearLayout>
+                            <CheckBox android:gravity="left" android:layout_gravity="clip_horizontal" android:id="@id/send_system_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/twice_padding" android:checked="true" android:contentDescription="@string/include_system_data" />
+                        </TableRow>
+                        <TableRow android:id="@id/screenshot_option" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/padding" android:paddingBottom="@dimen/padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding">
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/include_screenshot" />
+                                <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/this_will_help_screenshot" />
+                            </LinearLayout>
+                            <CheckBox android:gravity="left" android:layout_gravity="clip_horizontal" android:id="@id/send_screenshot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding" android:layout_marginRight="@dimen/twice_padding" android:checked="true" android:contentDescription="@string/include_screenshot" />
+                        </TableRow>
+                    </TableLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/account_option" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/user_account" style="@style/SectionHeader" />
+                        <Spinner android:gravity="left" android:id="@id/account_spinner" android:paddingRight="@dimen/twice_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:prompt="@string/choose_an_account" android:contentDescription="@string/choose_an_account" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <View android:background="?android:dividerHorizontal" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <include layout="@layout/button_bar" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="@*android:dimen/app_icon_size" android:layout_height="@*android:dimen/app_icon_size" style="?android:attr/progressBarStyleLarge" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/settings">
+        <com.htc.HtcNaviPanel.settings.HtcAutoLaunchNaviPanelPreference />
+        <com.htc.HtcNaviPanel.settings.HtcAutoConnectBluetoothPreference />
+        <com.htc.HtcNaviPanel.settings.HtcPairedBluetoothDevicesListPreference />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

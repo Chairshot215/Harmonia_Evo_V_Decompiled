@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="7.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.ButtonStyleEditText android:textSize="@com.htc:dimen/title_inputfield_text_size" android:gravity="left|center" android:id="@com.htc:id/search_text" android:paddingLeft="11.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="1" android:singleLine="true" android:maxLength="50" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="textAutoComplete" style="?com.htc:searchInputFieldStyle" />
+        <ImageView android:layout_gravity="center" android:id="@com.htc:id/search_close" android:paddingLeft="3.0dip" android:paddingRight="2.0px" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@com.htc:drawable/close_search" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

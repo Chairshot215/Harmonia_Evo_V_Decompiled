@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_frame" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/redeem_gift_card_main_content" />
+            <Button android:id="@id/redeem_gift_card_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="160.0dip" android:text="@string/redeem_gift_card" style="@style/DetailsPage_MainBuyButton" />
+            <Button android:id="@id/continue_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="160.0dip" android:text="@string/continue_text" style="@style/DetailsPage_MainBuyButton" />
+            <LinearLayout android:orientation="vertical" android:id="@id/footers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gplay_graphic" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:visibility="gone" layout="@layout/page_loading_indicator_no_text" />
+</FrameLayout>

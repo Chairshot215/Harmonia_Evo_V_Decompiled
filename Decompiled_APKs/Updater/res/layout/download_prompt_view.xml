@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@com.htc:dimen/darklist_primary_m" android:textColor="#ff4c4c4c" android:id="@id/download_prompt" android:paddingLeft="8.0px" android:paddingTop="2.0px" android:paddingRight="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_download_prompt" />
+    <TextView android:textSize="@com.htc:dimen/list_secondary_xl" android:textColor="#ff000000" android:id="@id/download_info" android:paddingLeft="8.0px" android:paddingTop="2.0px" android:paddingRight="5.0px" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm_message" />
+    <View android:background="@*android:drawable/divider_horizontal_bright" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_1" />
+    <ScrollView android:orientation="vertical" android:id="@id/scrollview" android:background="@com.htc:drawable/fill_topround" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_margin_to_title" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top|right|center" android:orientation="vertical" android:padding="@dimen/border_margin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText android:id="@id/edt_phonenumber_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/border_margin" android:hint="@string/edtxt_phonenumber_hint" style="@style/auto_complete_text" /> /> <Button android:id="@id/bt_signin" android:visibility="gone" android:text="@string/bt_cs_sign_in_button" style="@style/small_button" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/bottombar" android:background="@com.htc:drawable/trans_bottomround" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include layout="@layout/cmd_bar_2" />
+</LinearLayout>

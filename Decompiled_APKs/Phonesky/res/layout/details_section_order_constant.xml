@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/subscriptions_section" layout="@layout/subscriptions_section" />
+    <View android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <include android:id="@id/screenshots_panel" layout="@layout/details_screenshots" />
+    <include android:id="@id/movie_trailer" layout="@layout/movie_trailer" />
+    <include android:id="@id/summary_byline_panel" layout="@layout/details_summary_byline" />
+    <include layout="@layout/details_badges" />
+    <include layout="@layout/details_plusone" />
+    <include android:id="@id/owned_actions_panel" layout="@layout/details_owned_actions" />
+    <View android:id="@id/constant_delimiter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+</merge>

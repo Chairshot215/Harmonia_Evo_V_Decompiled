@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_style_dialer_button_center" parent="@style/text_style_dialer_button_number">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">0.0px</item>
+    </style>
+    <style name="image_style_dialer_button_symbol_center" parent="@style/image_style_dialer_button_symbol">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">0.0px</item>
+    </style>
+    <style name="text_style_dialer_b_button_center" parent="@com.htc:style/title_primary_xl">
+        <item name="android:textSize">@dimen/phone_button_primary</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="layout_style_dialer_keypad" parent="@style/layout_style_phone_keypad" />
+    <style name="image_style_dialer_button" parent="@style/image_style_phone_button" />
+    <style name="text_style_dialer_button_number" parent="@style/text_style_phone_button_number" />
+    <style name="text_style_dialer_button_phonetic_alphabet" parent="@style/text_style_phone_button_phonetic_alphabet" />
+    <style name="text_style_dialer_button_alphabet" parent="@style/text_style_phone_button_alphabet" />
+    <style name="text_style_dialer_button_zero_number" parent="@style/text_style_phone_button_zero_number" />
+    <style name="image_style_dialer_button_symbol" parent="@style/image_style_phone_button_symbol" />
+    <style name="image_style_dialer_button_symbol_plus" parent="@style/image_style_phone_button_symbol_plus" />
+    <style name="image_style_dialer_button_symbol_voicemail" parent="@style/image_style_phone_button_symbol_voicemail" />
+    <style name="image_style_dialer_button_symbol_ip" parent="@style/image_style_dialer_button_symbol_plus" />
+    <style name="image_style_phone_button" />
+    <style name="text_style_phone_button_number" />
+    <style name="text_style_phone_button_phonetic_alphabet" />
+    <style name="text_style_phone_button_alphabet" />
+    <style name="text_style_phone_button_zero_number" />
+    <style name="image_style_phone_button_symbol" />
+    <style name="image_style_phone_button_symbol_plus" />
+    <style name="image_style_phone_button_symbol_voicemail" />
+    <style name="HTCSkin">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="HTCSkin.Fake01" parent="@style/HTCSkin">
+        <item name="com.htc:fakescreenStyle">style_01</item>
+    </style>
+    <style name="HTCSkin.Fake02" parent="@style/HTCSkin">
+        <item name="com.htc:fakescreenStyle">style_02</item>
+    </style>
+    <style name="HTCSkin.Fake03" parent="@style/HTCSkin">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="com.htc:fakescreenStyle">style_03</item>
+    </style>
+    <style name="Theme.HTCBlack" parent="@*android:style/Theme">
+        <item name="android:colorForeground">@color/bright_foreground_light</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textAppearance">@style/text_style_primary</item>
+        <item name="android:textColorPrimary">@color/list_item_primary_text</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/title_font_color</item>
+        <item name="android:textColorSecondary">@color/list_item_secondary_text</item>
+        <item name="android:textColorPrimaryInverse">@color/title_font_color</item>
+        <item name="android:textColorSecondaryInverse">@color/title_font_color</item>
+        <item name="android:textColorPrimaryNoDisable">@color/title_font_color</item>
+        <item name="android:textColorSecondaryNoDisable">@color/title_font_color</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/title_font_color</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/title_font_color</item>
+        <item name="android:textColorHintInverse">@color/title_font_color</item>
+        <item name="android:listPreferredItemHeight">@dimen/list_item_row_height</item>
+        <item name="android:windowBackground">@*android:drawable/screen_background_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">?android:listViewWhiteStyle</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+        <item name="android:textColorHint">#ffc2c2c2</item>
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:itemBackground">@drawable/list_selector</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_light_inverse</item>
+        <item name="android:textColorTertiary">@color/list_item_tertiary_text</item>
+        <item name="android:textColorTertiaryInverse">@color/title_font_color</item>
+        <item name="android:listDivider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="ThemeLaunchBackground" parent="@style/Theme.HTCBlack">
+        <item name="android:colorBackground">#ffffffff</item>
+        <item name="android:textColorPrimary">#ff000000</item>
+        <item name="android:textColorSecondary">#ff333333</item>
+    </style>
+    <style name="text_style_title_browse_normal">
+        <item name="android:textSize">@dimen/text_size_title_browse</item>
+        <item name="android:textColor">@color/__browse_title_bar_text_normal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="text_style_title_browse_shadow">
+        <item name="android:textSize">@dimen/text_size_title_browse</item>
+        <item name="android:textColor">@color/__browse_title_bar_text_shadow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginRight">@dimen/__browse_title_shadow_offset_x</item>
+        <item name="android:layout_marginBottom">@dimen/__browse_title_shadow_offset_y</item>
+    </style>
+    <style name="Theme" parent="@*android:style/Theme" />
+    <style name="Dialog" parent="@*android:style/Theme.Dialog.Alert">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+    <style name="Widget.HeroButton" parent="@*android:style/Widget.Button">
+        <item name="android:background">@com.htc:drawable/btn_normal_small</item>
+    </style>
+    <style name="Widget.HeroImageButton" parent="@*android:style/Widget.ImageButton">
+        <item name="android:background">@com.htc:drawable/btn_normal_small</item>
+    </style>
+    <style name="Widget.HeroButton_b" parent="@*android:style/Widget.Button">
+        <item name="android:background">@com.htc:drawable/common_b_button_small</item>
+    </style>
+    <style name="Widget.HeroImageButton_b" parent="@*android:style/Widget.ImageButton">
+        <item name="android:background">@com.htc:drawable/common_b_button_small</item>
+    </style>
+    <style name="Theme.Hero" parent="@style/Theme">
+        <item name="android:colorForeground">@color/bright_foreground_light</item>
+        <item name="android:colorBackground">@*android:color/background_light</item>
+        <item name="android:textAppearance">@style/text_style_primary</item>
+        <item name="android:textColorPrimary">@color/list_item_primary_text</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/title_font_color</item>
+        <item name="android:textColorSecondary">@color/list_item_secondary_text</item>
+        <item name="android:textColorPrimaryInverse">@color/title_font_color</item>
+        <item name="android:textColorSecondaryInverse">@color/title_font_color</item>
+        <item name="android:textColorPrimaryNoDisable">@color/title_font_color</item>
+        <item name="android:textColorSecondaryNoDisable">@color/title_font_color</item>
+        <item name="android:textColorPrimaryInverseNoDisable">@color/title_font_color</item>
+        <item name="android:textColorSecondaryInverseNoDisable">@color/title_font_color</item>
+        <item name="android:textColorHintInverse">@color/title_font_color</item>
+        <item name="android:buttonStyle">@style/Widget.HeroButton_b</item>
+        <item name="android:listPreferredItemHeight">@dimen/list_item_row_height</item>
+        <item name="android:windowBackground">@*android:drawable/screen_background_light</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:absListViewStyle">@style/testAbsListViewStyle</item>
+        <item name="android:imageButtonStyle">@style/Widget.HeroImageButton_b</item>
+        <item name="android:listViewStyle">@style/testAbsListViewStyle</item>
+        <item name="android:listViewWhiteStyle">@style/testAbsListViewStyle</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+        <item name="android:textColorHint">@color/color_194_194_194</item>
+        <item name="android:listSelector">@drawable/list_selector</item>
+        <item name="android:itemBackground">@drawable/list_selector</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_light_inverse</item>
+        <item name="android:textColorTertiary">@color/list_item_tertiary_text</item>
+        <item name="android:textColorTertiaryInverse">@color/title_font_color</item>
+        <item name="android:listDivider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="testAbsListViewStyle">
+        <item name="android:divider">@com.htc:drawable/common_list_divider</item>
+    </style>
+    <style name="toolbar_margin">
+        <item name="android:paddingLeft">@dimen/htc_margin_left</item>
+        <item name="android:paddingRight">@dimen/htc_margin_right</item>
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+    </style>
+    <style name="toolbar_button1">
+        <item name="android:textSize">@dimen/item_fontSize_large</item>
+        <item name="android:textColor">@*android:color/primary_text_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@com.htc:drawable/btn_normal_small</item>
+        <item name="android:layout_width">@dimen/button_action_width</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+        <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="mail_ap_panel_text_color">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="text_style_primary">
+        <item name="android:textSize">@com.htc:dimen/text_size_primary</item>
+        <item name="android:textColor">@color/list_item_primary_text</item>
+    </style>
+    <style name="text_style_secondary">
+        <item name="android:textSize">@com.htc:dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/list_item_secondary_text</item>
+    </style>
+    <style name="text_style_tertiary">
+        <item name="android:textSize">@com.htc:dimen/text_size_tertiary</item>
+        <item name="android:textColor">@color/list_item_tertiary_text</item>
+    </style>
+    <style name="text_style_title_browse">
+        <item name="android:textSize">@dimen/text_size_title_browse</item>
+        <item name="android:textColor">@color/color_255_255_255</item>
+    </style>
+    <style name="text_style_title_detail_primary">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/color_255_255_255</item>
+    </style>
+    <style name="text_style_title_detail_primary_shadow">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="text_style_title_detail_secondary">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/color_255_255_255</item>
+    </style>
+    <style name="text_style_title_detail_secondary_shadow">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="input_style_search_box">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/color_0_0_0</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:background">@com.htc:drawable/common_black_inputfield_view</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="text_style_empty_view">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/color_0_0_0</item>
+    </style>
+    <style name="drop_down_box">
+        <item name="android:textColor">@color/color_76_76_76</item>
+    </style>
+    <style name="htcDialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+    </style>
+    <style name="Theme.SmartSearch" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+    <style name="style_content_edit_speed_dial">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_content_edit_speed_dial_textview" parent="@com.htc:style/list_primary_s">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_content_edit_speed_dial_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@com.htc:dimen/htc_list_item_margin_left</item>
+        <item name="android:layout_marginRight">@com.htc:dimen/htc_list_item_margin_right</item>
+        <item name="android:layout_marginBottom">@com.htc:dimen/htc_list_item_margin_top</item>
+    </style>
+    <style name="Theme.HomeDialing" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="title_primary_rest_m" parent="@com.htc:style/title_primary_m">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="style_accumulator">
+        <item name="android:background">@drawable/phone_accumulator_bg</item>
+    </style>
+    <style name="style_accumulator_left_button" parent="@style/style_accumulator_button">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/htc_btn_dial_delete</item>
+        <item name="android:layout_marginLeft">@dimen/task_bar_center_margin_left_right</item>
+    </style>
+    <style name="style_accumulator_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="style_hint1" parent="@com.htc:style/list_primary_l" />
+    <style name="style_hint2" parent="@com.htc:style/darklist_secondary_xl">
+        <item name="android:text">@string/smartSearchHint1</item>
+    </style>
+</resources>

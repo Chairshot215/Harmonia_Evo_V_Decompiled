@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/CenterImage" android:paddingTop="@dimen/Image_paddingTop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/transfer_data" />
+    <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/TextViewTips1" android:paddingTop="@dimen/Content_Padding_Top" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sty_Content_Text" />
+    <TableLayout android:id="@id/reportTable" android:paddingTop="@dimen/Text_Line_Padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shrinkColumns="1" />
+    <TextView android:gravity="left" android:layout_gravity="left" android:id="@id/TextViewTips2" android:paddingTop="@dimen/Text_Padding_Top" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Sty_Content_Text" />
+</LinearLayout>

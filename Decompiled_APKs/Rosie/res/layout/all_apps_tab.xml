@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.CarouselHost android:id="@*android:id/tabhost" android:padding="@dimen/tabbar_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@*android:id/tabcontent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/carousel_tab_background" android:layout_width="fill_parent" android:layout_height="@dimen/carousel_tab_height" />
+    <com.htc.widget.CarouselWidget android:id="@*android:id/tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.htc.widget.CarouselHost>

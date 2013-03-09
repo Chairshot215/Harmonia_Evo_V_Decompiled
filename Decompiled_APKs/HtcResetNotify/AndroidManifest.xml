@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:minSdkVersion="8" android:versionCode="2" android:versionName="2.0" package="com.htc.resetnotify"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DUMP" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application android:label="ResetNotify">
+        <receiver android:name="BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="ResetNotifyService">
+            <intent-filter>
+                <action android:name="com.htc.resetnotify.resetnotifyservice" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

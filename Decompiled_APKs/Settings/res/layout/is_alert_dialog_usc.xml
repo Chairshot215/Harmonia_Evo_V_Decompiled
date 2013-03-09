@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/scrollView" android:paddingLeft="21.0px" android:paddingTop="3.0px" android:paddingRight="15.0px" android:paddingBottom="18.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@com.htc:dimen/text_size_primary" android:textColor="@com.htc:color/black" android:layout_gravity="left" android:id="@id/message" android:padding="7.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

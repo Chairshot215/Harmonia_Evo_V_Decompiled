@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="305320087" android:versionName="3.5.2212343018.320087" package="com.htc.home.personalize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.htc.launcher.permission.SCAN_WIDGETS" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.launcher.permission.READ_FX_WIDGETS" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.launcher.permission.WRITE_FX_WIDGETS" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.home.personalize.permission.INSTALL_ONLINE_RESOURCE" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.home.personalize.permission.READ_SCENES" android:protectionLevel="signatureOrSystem" />
+    <permission android:name="com.htc.home.personalize.permission.WRITE_SCENES" android:protectionLevel="signatureOrSystem" />
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_WORKSPACE_INFO" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_PERSONALIZE_INFO" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_DESKTOP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BIND_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="com.htc.permission.POWER_CONTROL" />
+    <uses-permission android:name="com.htc.cs.readwrite.database" />
+    <uses-permission android:name="com.htc.csengine.readwrite.database" />
+    <uses-permission android:name="android.permission.ACCESS_CW_FOLDER" />
+    <application android:theme="@style/NoActionBar" android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false" allowSkinChange="true">
+        <uses-library android:name="com.htc.android.rosie" />
+        <uses-library android:name="com.htc.htcSceneManager" />
+        <activity android:theme="@style/shining_title_bar" android:label="@string/app_name" android:name="PersonalizeCarousel" android:excludeFromRecents="false" android:launchMode="singleTop" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.htc.personalize.carousel" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.personalize.ACTION_HOMEPERSONALIZE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:label="@string/app_name" android:name="PersonalizeMain" android:excludeFromRecents="true" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.htc.personalize.ACTION_HOMEPERSONALIZE_MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".PersonalizeSummaryReceiver">
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_SCENE_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_WALLPAPER_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_SKIN_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_ADD_TO_HOME_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_SOUND_SET_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_RINGTONE_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_NOTIFICATION_SOUNDS_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_ALARM_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_ADD_WIDGET_TO_HOME_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_ADD_APP_TO_HOME_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_ADD_SHORTCUT_TO_HOME_CHANGED" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_ADD_FOLDER_TO_HOME_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".storedatamanager.storeActionReceiver">
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETITEMLIST" />
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETSUBCATEGORYLIST" />
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETDOWNLOADURL" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Alert" android:label="@string/pick_wallpaper" android:icon="@drawable/wallpaper" android:name="WallpaperChooserDialog" android:exported="true" android:excludeFromRecents="true" android:configChanges="mcc|mnc|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER_DIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:label="@string/pick_wallpaper" android:icon="@drawable/wallpaper" android:name="WallpaperPicker" android:taskAffinity=":WallpaperPicker" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:label="@string/live_wallpapers" android:icon="@drawable/live_wallpaper" android:name="WallpaperLivePicker" android:taskAffinity=":WallpaperLivePicker" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.LIVE_WALLPAPER_CHOOSER" />
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_IDLESCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_LIVEWALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:name="WallpaperPreview" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="nosensor" />
+        <activity android:theme="@style/Preview" android:icon="@drawable/live_wallpaper" android:name="LiveWallpaperPreview" android:excludeFromRecents="true" android:screenOrientation="nosensor" />
+        <activity android:theme="@style/Preview" android:icon="@drawable/live_wallpaper" android:name="IdleScreenPreview" android:excludeFromRecents="true" android:screenOrientation="nosensor" />
+        <receiver android:name=".SetWallpaperComponent" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.rosie.ACTION_SET_WALLPAPER_COMPONENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".localresource.DownloadDelegant">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETED" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="file" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_NOFS" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTABLE" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".olrespicker.StatusSyncer">
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.localresource.LocalResource.action.notification" />
+                <action android:name="com.htc.home.personalize.localresource.LocalResource.action.requestLoadWallpaper" />
+                <action android:name="com.htc.launcher.scene.ACTION_DOWNLOAD_SCENE_SAVED" />
+                <action android:name="com.htc.launcher.scene.ACTION_ASPECT_CHANGED" />
+                <action android:name="com.htc.store.action.NOTIFY_OAD" />
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETITEMLIST_RESPONSE" />
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETDOWNLOADURL_RESPONSE" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/shining_title_bar" android:name=".olrespicker.OnlineResPicker" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.htc.personalizer.action.ONLINERESPICKER_SCENE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.personalize.action.ONLINERESPICKER_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.ACTION_HUB_SCENE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".HtcWidgetScanner" android:permission="com.htc.launcher.permission.SCAN_WIDGETS">
+            <intent-filter>
+                <action android:name="com.htc.rosie.ACTION_START_SCAN_HTC_WIDGET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.rosie.ACTION_START_UPDATE_HTC_WIDGET" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".HtcWidgetScannerService" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="Widget Picker" android:name=".widgetpicker.WidgetPicker" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="Fusion Style Chooser" android:name=".fusionwidget.StyleChooser" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="portrait" />
+        <activity android:theme="@style/shining_title_bar" android:label="Category Chooser" android:name=".catechooser.CategoryChooser" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.htc.personalize.action.ONLINE_WALLPAPER_CATEGORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.ACTION_HUB_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name="LauncherAppWidgetBinder" android:permission="com.htc.launcher.permission.WRITE_SETTINGS" android:exported="true" android:excludeFromRecents="true" android:screenOrientation="nosensor" />
+        <provider android:name=".fusionwidget.FxWidgetProvider" android:readPermission="com.htc.launcher.permission.READ_FX_WIDGETS" android:writePermission="com.htc.launcher.permission.WRITE_FX_WIDGETS" android:authorities="com.htc.home.personalize.fusionwidget.FxWidgetProvider" />
+        <service android:name=".olrespicker.DownloadService" />
+        <activity android:theme="@style/shining_title_bar" android:name=".idlescreen.shortcut.ShortcutSettingList" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.htc.personalize.shortcut.settinglist" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:name=".idlescreen.shortcut.ShortcutSetting" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.htc.personalize.shortcut.setting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:name=".idlescreen.shortcut.SelectAppActivity" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.htc.personalize.shortcut.selectapp" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:label="@string/app_name" android:name=".SkinPicker" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_ONLINE_GOTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_SKIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.intent.OAD_SKIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_NOTIFICATION_SKINPICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:label="@string/app_name" android:name=".onlineskin.OnlineSkin" android:excludeFromRecents="true" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.htc.skinpicker.action.ONLINESKIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.skinpicker.action.ONLINESKINFROMSKINPICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.ACTION_HUB_SKIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".onlineskinmanager.OnlineSkinReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETED" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+                <action android:name="com.htc.intent.OAD_SKIN" />
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETITEMLIST_RESPONSE" />
+                <action android:name="com.htc.home.personalize.storedatamanager.ACTION_GETDOWNLOADURL_RESPONSE" />
+                <action android:name="com.htc.store.action.NOTIFY_OAD" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".onlineskinmanager.SkinCustomizeReceive" android:permission="htc.permission.CUSTOMIZATION_CHANGE">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".onlineskinmanager.SkinCustomizeService" />
+        <activity android:theme="@style/shining_title_bar" android:label="@string/personalize_list_scene" android:icon="@drawable/scene" android:name="com.htc.home.personalize.scene.ScenePicker" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc">
+            <intent-filter>
+                <action android:name="com.htc.launcher.ThemeChooser.action.theme_change" />
+                <category android:name="com.htc.launcher.category.PERSONALIZE_ITEM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.intent.ACTION_PERSONALIZE_SCENE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/shining_title_bar" android:name="com.htc.home.personalize.scene.NewSceneActivity" android:exported="false" android:excludeFromRecents="true" android:screenOrientation="nosensor" android:configChanges="mcc|mnc|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.htc.launcher.NewSceneActivity.action.new_scene" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".scene.SceneModeChangeReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.launcher.scene.ACTION_ASPECT_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SceneProvider.DownloadSceneReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.launcher.scene.ACTION_DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.htc.home.personalize.PersonalizeCarouselProvider" android:exported="false" android:authorities="com.htc.home.personalize.PersonalizeCarouselProvider" />
+        <provider android:name=".SceneProvider.SceneProvider" android:readPermission="com.htc.home.personalize.permission.READ_SCENES" android:writePermission="com.htc.home.personalize.permission.WRITE_SCENES" android:authorities="com.htc.home.personalize.SceneProvider.SceneProvider" />
+        <receiver android:name=".SceneProvider.SaveHomeWallpaper">
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.initWallpaper" />
+                <action android:name="com.htc.home.personalize.copyFile" />
+                <action android:name="android.intent.action.WALLPAPER_CHANGED" />
+                <action android:name="com.htc.home.personalize.initFinish" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SceneProvider.UpdateSceneReceiver">
+            <intent-filter>
+                <action android:name="com.htc.home.personalize.SceneProvider.ACTION_SCENE_CHANGED" />
+                <action android:name="com.htc.home.personalize.init_translateId" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".scene.BuilderSceneDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".SceneProvider.SaveHomeWallpaperService" android:exported="false" />
+        <service android:name=".storedatamanager.storeIntentService" android:exported="false" />
+        <receiver android:name=".scene.SceneCustomizeReceiver" android:permission="htc.permission.CUSTOMIZATION_CHANGE">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".scene.SceneManagerReceiver">
+            <intent-filter>
+                <action android:name="android.htc.intent.action.CUSTOMIZATION_CHANGE_SCENE_GB2ICS" />
+                <action android:name="com.htc.android.rosie.scene.ACTION_SCENE_INIT" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".scene.SceneCustomizeService" android:exported="false" />
+    </application>
+</manifest>

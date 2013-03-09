@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingLeft="0.0px" android:paddingTop="289.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/message_container" android:background="@drawable/l_lockscreen_arcglass" android:paddingLeft="25.0px" android:paddingTop="15.0px" android:layout_width="fill_parent" android:layout_height="163.0px">
+            <TextView android:textSize="18.0px" android:textColor="#aaffffff" android:ellipsize="marquee" android:gravity="left" android:id="@id/message_title" android:layout_width="@dimen/lock_preview_maxwidth" android:layout_height="wrap_content" android:singleLine="true" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.2" />
+            <TextView android:textSize="20.0px" android:textColor="#ffffffff" android:gravity="left" android:id="@id/message_body" android:layout_width="@dimen/lock_preview_maxwidth" android:layout_height="wrap_content" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.2" />
+        </LinearLayout>
+        <TextView android:textSize="24.0px" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left" android:id="@id/message_subject" android:paddingLeft="25.0px" android:paddingTop="60.0px" android:layout_width="@dimen/lock_preview_maxwidth" android:layout_height="wrap_content" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.2" />
+        <ImageView android:gravity="center" android:id="@id/message_attachment" android:paddingLeft="420.0px" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/l_preview_indicator_attachment" />
+    </FrameLayout>
+    <ImageView android:id="@id/preview_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/l_notifications_icon_message" android:layout_centerHorizontal="true" />
+</FrameLayout>

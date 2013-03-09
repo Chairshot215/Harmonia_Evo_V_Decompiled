@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.google.uid.shared" android:versionCode="15" android:versionName="4.0.4-292727" android:sharedUserLabel="@string/sharedUserLabel" package="com.google.android.gsf.login"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_googleMailSwitch" android:name="com.google.android.googleapps.permission.GOOGLE_MAIL_SWITCH" android:protectionLevel="signature" android:description="@string/permdesc_googleMailSwitch" />
+    <permission android:label="@string/permlab_googleAuthPassword" android:name="com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD" android:protectionLevel="signature" android:description="@string/permdesc_googleAuthPassword" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DUMP" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />
+    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.android.vending.INTENT_VENDING_ONLY" />
+    <uses-permission android:name="com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.mail" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.youtube" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_MAIL_SWITCH" />
+    <uses-permission android:name="com.google.android.gtalkservice.permission.GTALK_SERVICE" />
+    <uses-permission android:name="com.google.android.gtalkservice.permission.SEND_HEARTBEAT" />
+    <uses-permission android:name="com.google.android.permission.BROADCAST_DATA_MESSAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.WRITE_GSERVICES" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.READ_GSETTINGS" />
+    <uses-permission android:name="com.google.android.providers.settings.permission.WRITE_GSETTINGS" />
+    <uses-permission android:name="com.google.android.providers.talk.permission.READ_ONLY" />
+    <uses-permission android:name="com.google.android.providers.talk.permission.WRITE_ONLY" />
+    <uses-permission android:name="com.android.vending.billing.BILLING_ACCOUNT_SERVICE" />
+    <uses-permission android:name="com.android.vending.billing.ADD_CREDIT_CARD" />
+    <uses-permission android:name="com.android.vending.billing.IBillingAccountService.BIND2" />
+    <application android:label="@string/app_label" android:hardwareAccelerated="true">
+        <activity android:theme="@style/InvisibleCustomTitle" android:label="@string/account_intro_title" android:name="AccountIntroActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.accounts.AccountIntro" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AccountIntroActivity" android:label="@string/account_intro_title" android:name="AccountIntroUIActivity" />
+        <activity android:theme="@style/PlusQueryActivity" android:label="@string/plus_query_title" android:name=".PlusQueryActivity" />
+        <activity android:theme="@style/PlusFaqActivity" android:label="@string/plus_faq_title" android:name=".PlusFaqActivity" />
+        <activity android:theme="@style/NameActivity" android:label="@string/name_title" android:name=".NameActivity" android:exported="true" />
+        <activity android:theme="@style/BadNameActivity" android:label="@string/bad_name_title" android:name=".BadNameActivity" />
+        <activity android:theme="@style/PhotoActivity" android:label="@string/photo_title" android:name=".PhotoActivity" android:exported="true" />
+        <activity android:theme="@style/LearnMoreActivity" android:label="@string/learn_more_title" android:name=".LearnMoreActivity" />
+        <activity android:theme="@style/WaitForDeviceCountryActivity" android:label="@string/wait_for_device_country_title" android:name=".WaitForDeviceCountryActivity" />
+        <activity android:theme="@style/CaptchaActivity" android:label="@string/captcha_title" android:name=".CaptchaActivity" android:exported="true" />
+        <activity android:theme="@style/CustomTitle" android:label="@string/setup_wizard_title" android:name=".SetupWirelessIntroActivity" />
+        <activity android:theme="@style/CustomTitle" android:label="@string/setup_wizard_title" android:name=".SetupWirelessActivity" />
+        <activity android:theme="@style/InvisibleCustomTitle" android:label="@string/login_title" android:name=".LoginActivity" android:exported="true" />
+        <activity android:theme="@style/LoginActivity" android:label="@string/login_title" android:name=".UsernamePasswordActivity" />
+        <activity android:theme="@style/LoginActivityTask" android:label="@string/login_task_title" android:name=".LoginActivityTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/NoTitleInXL" android:label="@string/show_error_title" android:name=".ShowErrorActivity" android:exported="true" />
+        <activity android:theme="@style/NoTitleInXL" android:label="@string/sync_intro_title" android:name=".SyncIntroActivity" />
+        <activity android:theme="@style/InvisibleCustomTitle" android:label="@string/setup_wizard_title" android:name=".CreateAccountActivity" />
+        <activity android:theme="@style/InvisibleCustomTitle" android:name=".PlusActivity" android:exported="true" />
+        <activity android:theme="@style/LoginActivityTask" android:label="@string/setup_wizard_title" android:name=".PlusCheckTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LoginActivity" android:label="@string/setup_wizard_title" android:name=".UsernameActivity" />
+        <activity android:theme="@style/LoginActivityTask" android:label="@string/setup_wizard_title" android:name=".CreateAccountTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LoginActivityTask" android:label="@string/setup_wizard_title" android:name=".ProfileTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LoginActivityTask" android:label="@string/setup_wizard_title" android:name=".NameCheckTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/LoginActivityTask" android:label="@string/setup_wizard_title" android:name=".CheckAvailTask" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/LoginActivity" android:label="@string/setup_wizard_title" android:name=".SuggestUsernameActivity" />
+        <activity android:theme="@style/CustomTitle" android:label="@string/setup_wizard_title" android:name=".VerifyProfileActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/LoginActivity" android:label="@string/setup_wizard_title" android:name=".ChoosePasswordActivity" />
+        <activity android:theme="@style/LoginActivity" android:label="@string/setup_wizard_title" android:name=".AccountSecurityActivity" android:exported="true" />
+        <activity android:theme="@style/NoTitleInXL" android:label="@string/setup_wizard_title" android:name=".PicassaInfoActivity" />
+        <activity android:theme="@style/LoginActivity" android:label="@string/setup_wizard_title" android:name=".TermsOfServiceActivity" />
+        <activity android:theme="@style/BrowserTheme" android:label="@string/gls_ui_add_account_title" android:icon="@drawable/ic_launcher_settings" android:name=".BrowserActivity" android:exported="true" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <service android:name="com.google.android.gsf.loginservice.GoogleLoginService" android:exported="true">
+            <intent-filter android:priority="-105">
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gsf.action.GET_GLS" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+            <meta-data android:name="android.accounts.AccountAuthenticator.customTokens" android:value="1" />
+        </service>
+        <service android:name="com.google.android.gsf.loginservice.TokenService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.login.GetToken" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.android.gsf.loginservice.TestService" android:permission="com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.login.GetTokenInternal" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/GrantCredentialsPermissionActivity" android:name="com.google.android.gsf.loginservice.GrantCredentialsPermissionActivity" android:exported="true" android:excludeFromRecents="true" />
+        <activity android:name="com.google.android.gsf.loginservice.TestActivity" />
+    </application>
+</manifest>

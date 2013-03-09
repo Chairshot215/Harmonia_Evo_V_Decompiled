@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="184.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <ImageView android:id="@id/album_art" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="20.0px" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginTop="14.0px">
+        <TextView android:ellipsize="marquee" android:id="@id/album_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/darklist_primary_m" />
+        <TextView android:ellipsize="marquee" android:id="@id/artist_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0px" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/darklist_secondary_m" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="-3.0px" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:id="@id/number_of_tracks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@com.htc:style/darklist_secondary_m" />
+            <TextView android:gravity="right" android:id="@id/price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="14.0px" style="@com.htc:style/darklist_secondary_m" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0px" android:layout_marginRight="14.0px" android:layout_marginBottom="24.0px">
+            <ImageButton android:id="@id/preview_all" android:background="@drawable/common_detail_btn_left" android:layout_width="0.0px" android:layout_height="fill_parent" android:src="@drawable/common_detail_icon_preview" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/share" android:background="@drawable/common_detail_btn_center" android:layout_width="0.0px" android:layout_height="fill_parent" android:src="@drawable/common_detail_icon_share" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/buy" android:background="@drawable/common_detail_btn_right" android:layout_width="0.0px" android:layout_height="fill_parent" android:src="@drawable/common_detail_icon_buy" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atcommand>
+<!--    =====================SEN  BEGIN==========================  -->
+	<policy name="SMS" id="AT_SMS_SEN_3" info="K610i">
+		<init>
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="at" result="false">AT+CMGF=0\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser
+			</cmd>
+			<cmd property="at" result="true">AT+CPMS="ME"\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="1000">
+				<cmd property="read" result="false" timeout="600000" startidx="4"
+					step="0">AT+CMGL=</cmd>
+			</operation>
+		</syncstart>
+
+	 	 <syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!--    =====================SEN  END==========================  -->
+<!--    =====================Mot  BEGIN==========================  -->
+	<policy name="SMS" id="AT_SMS_MOT_1" info="Mot syncml">
+		<init>
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="at" result="false">AT+CMGF=0\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser
+			</cmd>
+			<cmd property="at" result="true">AT+CPMS="ME"\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="1000">
+				<cmd property="read" result="false" timeout="600000" startidx="4"
+					step="0">AT+MMGL=</cmd>
+			</operation>
+		</syncstart>
+
+	 	 <syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!--    =====================Mot  END==========================  -->
+
+   <!--    =====================SAMSUNG J708i BEGIN==========================  -->
+   	<policy name="SMS" id="AT_SMS_SAM_3" info="J708i">
+		<init>
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,\r\n> ,ERROR\r\n,\r\n+CMS ERROR:</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at" reg_match="\+CPMS:(.*?)\r\n\r\n" reg_split=","
+				capacity_phonemem="1" used_phonemem="0">AT+CPMS="ME"\r</cmd>
+			<!--
+				data protocol +CMGR: "STO
+				UNSENT","","x..1\..0@#","09/01/01,00:54:12+0",0,1,0,241,"+8613800250500",66,6..Ajmdjt,1,0....OK..
+			-->
+			<!--
+				..+CMGR: "STO
+				SENT","13951777343","...1\..0@#","09/01/01,19:08:00+0",129,1,0,241
+				,"+8613800250500",66,12..This istest,3,0....OK.
+			-->
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<cmd property="at" result="true">AT+CPMS="ME"\r</cmd>
+			<cmd property="at">AT+CSDH=1\r</cmd>
+			<cmd property="at">AT+CMGF=1\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="Q:used_phonemem">
+				<cmd property="read" result="false" startidx="1" step="1">AT+CMGR=</cmd>
+			</operation>
+		</syncstart>
+		
+ 	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	
+	<policy name="phonebook" id="AT_SAM_PB_CPMEMNOMOVE_1" info="J708i">
+		<params>
+			<waitparser>1</waitparser>
+		</params>
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n,\r\n+CME ERROR:</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBS: (.*)\r\n\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_phonemem="1" capacity_phonemem="2">AT+CPBS?\r\n</cmd>
+			<cmd property="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)"
+				reg_split="" result="true" phonemem_startidx="0">AT+CPBR=?\r\n</cmd>
+			<!--
+				data
+				protocol:+CPBR:.1,"11111111",4,".Last.name.",".First.name.","22222222",6,"33333333",7,"44444444",2,"2562356",5,"adg@ajmd.adm","",".Note.",0,65535,255,255,65535,"",""....OK..
+			-->
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_phonemem" usedcapacity="Q:used_phonemem">
+				<cmd property="read" result="true" startidx="phonemem_startidx" step="1">AT+CPBR=</cmd>
+			</operation>
+		</syncstart>
+
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	
+	<policy name="phonebook" id="AT_SAM_PB_CPMEMNOMOVE_F268" info="F268">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="1" timeout="3000">ATZ\r\n</cmd>
+			<cmd property="at" count="1" timeout="3000">ATE1V1\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBS: (.*)\r\n\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_phonemem="1" capacity_phonemem="2">AT+CPBS?\r\n</cmd>
+			<cmd property="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)"
+				reg_split="" result="true" phonemem_startidx="0">AT+CPBR=?\r\n</cmd>
+			<!--
+				data
+				protocol:+CPBR:.1,"11111111",4,".Last.name.",".First.name.","22222222",6,"33333333",7,"44444444",2,"2562356",5,"adg@ajmd.adm","",".Note.",0,65535,255,255,65535,"",""....OK..
+			-->
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_phonemem" usedcapacity="Q:used_phonemem">
+				<cmd property="read" result="true" startidx="Q:phonemem_startidx" step="1">AT+CPBR=</cmd>
+			</operation>
+		</syncstart>
+
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	      <cmd property="sleep">3000</cmd>
+	    </syncend> 
+	</policy>
+
+	<policy name="calendar" id="AT_SAM_CAL_ORG_1" info="J708i">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,ERROR\r\n,\r\n+CME ERROR:</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+ORGI:(.*)\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_cal="0" capacity_cal="1">AT+ORGI?\r\n</cmd>
+			<!--
+				data protocol
+				:..+ORGR:.245,3,,".todo.",5,11,2009,0,0,5,11,2009,,,,0,0,0,0,1,0,,,....OK..
+			-->
+			<!--
+				data protocol
+				:..+ORGR:.243,2,,".anniversary.",5,11,2009,13,55,,,,,,,1,3,0,0,,,,,..
+				..OK..
+			-->
+			<!--
+				data
+				protocol:..+ORGR:.241,1,".appointment.",".description.",20,7,2009,6,0,20,7,2009,6,0,".lcotion.",0,0,0,0,,,0,0,1971....OK..
+			-->
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_cal" usedcapacity="Q:used_cal">
+				<cmd property="read" startidx="0" step="1">AT+ORGR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>
+	<policy name="calendar" id="AT_SAM_CAL_ORG_F268" info="F268">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="1" timeout="3000">ATZ\r\n</cmd>
+			<cmd property="at" count="1" timeout="3000">ATE1V1\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+ORGI:(.*)\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_cal="0" capacity_cal="1">AT+ORGI?\r\n</cmd>
+			<!--
+				data protocol
+				:..+ORGR:.245,3,,".todo.",5,11,2009,0,0,5,11,2009,,,,0,0,0,0,1,0,,,....OK..
+			-->
+			<!--
+				data protocol
+				:..+ORGR:.243,2,,".anniversary.",5,11,2009,13,55,,,,,,,1,3,0,0,,,,,..
+				..OK..
+			-->
+			<!--
+				data
+				protocol:..+ORGR:.241,1,".appointment.",".description.",20,7,2009,6,0,20,7,2009,6,0,".lcotion.",0,0,0,0,,,0,0,1971....OK..
+			-->
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_cal"
+				usedcapacity="Q:used_cal">
+				<cmd property="read" startidx="0" step="1">AT+ORGR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+			<cmd property="sleep">3000</cmd>
+		</syncend>
+	</policy>
+   <!--    =====================SAMSUNG J708i END==========================  -->
+   <!--    =====================SAMSUNG P520 BEGIN==========================  -->
+	<policy name="phonebook" id="AT_SAM_PB_SPMEMNOMOVE_4">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBS:(.*)\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_phonemem="1" capacity_phonemem="2">AT+CPBS?\r\n</cmd>
+			<cmd property="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)"
+				reg_split="" result="true" phonemem_startidx="0">AT+CPBR=?\r\n</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<cmd property="at" result="false">AT+CUSE=1,1\r\n</cmd>
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_phonemem"
+				usedcapacity="Q:used_phonemem">
+				<cmd property="read" result="true" startidx="Q:phonemem_startidx"
+					step="10">AT+SPBR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>
+
+	<policy name="calendar" id="AT_SAM_CAL_SSH_3" info="SGH-P520,">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<queryinfo caletype="0" cateid="1" catename="Appointment">
+			<!--reg result index :based 0-->
+			<cmd property="at">AT+SSHT=1\r\n</cmd>
+			<cmd property="at" reg_match="\+SSHR:(.*)\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_cal_cate1="7" capacity_cal_cate1="0">AT+SSHR=?\r\n</cmd>
+		</queryinfo>
+		<queryinfo caletype="0" cateid="12" catename="Anniversary">
+			<cmd property="at">AT+SSHT=2\r\n</cmd>
+			<cmd property="at" reg_match="\+SSHR:(.*)\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_cal_cate12="7" capacity_cal_cate12="0">AT+SSHR=?\r\n</cmd>
+		</queryinfo>
+		<queryinfo caletype="0" cateid="16" catename="Todo">
+			<cmd property="at">AT+SSHT=3\r\n</cmd>
+			<cmd property="at" reg_match="\+SSHR:(.*)\r\n"
+				reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true"
+				used_cal_cate16="7" capacity_cal_cate16="0">AT+SSHR=?\r\n</cmd>
+		</queryinfo>
+		<syncstart caletype="0" cateid="1" catename="Appointment">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+SSHT=1\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_cal_cate1"
+				usedcapacity="Q:used_cal_cate1">
+				<cmd property="read" startidx="0" step="0">AT+SSHR=</cmd>
+			</operation>
+		</syncstart>
+		<syncstart caletype="0" cateid="12" catename="Anniversary">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+SSHT=2\r\n</cmd>
+			<operation name="read" totalcapacity="Q:capacity_cal_cate12"
+				usedcapacity="Q:used_cal_cate12">
+				<cmd property="read" startidx="0" step="0">AT+SSHR=</cmd>
+			</operation>
+		</syncstart>
+		<!-- modified  caletype="1" to caletype="0", for P520, they all are event -->
+		<syncstart caletype="0" cateid="16" catename="Todo">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+SSHT=3\r\n</cmd>
+			<operation name="read" totalcapacity="Q:capacity_cal_cate16"
+				usedcapacity="Q:used_cal_cate16">
+				<cmd property="read" startidx="0" step="0">AT+SSHR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>
+
+	<policy name="sms" id="AT_SMS_SAM_1">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,\r\n> ,ERROR\r\n,\r\n+CMS ERROR:</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPMS:(.*?)\r" reg_split=","
+				capacity_phonemem="2" used_phonemem="1">AT+CPMS="ME","ME","ME"\r</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+CSDH=1\r</cmd>
+			<cmd property="at">AT+CMGF=1\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="Q:used_phonemem">
+				<cmd property="read" timeout="60000" startidx="1" step="1">AT+CMGR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy> 
+	<policy name="sms" id="AT_SMS_SAM_T539">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,\r\n> ,ERROR\r\n,\r\n+CMS ERROR:</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="sleep">500</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPMS:(.*?)\r" reg_split=","
+				capacity_phonemem="2" used_phonemem="1">AT+CPMS="ME","ME","ME"\r</cmd>
+			<cmd property="sleep">500</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+CSDH=1\r</cmd>
+			<cmd property="at">AT+CMGF=1\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="Q:used_phonemem">
+				<cmd property="read" timeout="20000" startidx="1" step="1">AT+CMGR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy> 
+   <!--    =====================SAMSUNG P520 END==========================  -->
+   <!--    =====================LG KG800 BEGIN==========================  -->
+	<policy name="phonebook" id="AT_LGKG_PB_6">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,+CME ERROR,ERROR\r\n</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="5000" result="false">AT\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000" result="false">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="at" >AT+SSLP=1000\r\n</cmd>
+			<cmd property="at">AT+SBEG\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<cmd property="at">AT+CPBS="PM"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)"
+				reg_split="" result="true" phonemem_startidx="0" capacity_phonemem="1">AT+CPBR=?\r\n
+			</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+CSCS="SYNC"\r\n</cmd>
+			<cmd property="at">AT+CPBS="PM"\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_phonemem"
+				usedcapacity="Q:capacity_phonemem">
+				<cmd property="read" result="false" startidx="Q:phonemem_startidx"
+					step="1" count="1">AT+CPBR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="at">AT+SEND\r\n</cmd>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>
+   <!--    =====================LG KG800 END==========================  -->
+
+   <!--    =====================LG KG77 BEGIN==========================  -->
+	<policy name="phonebook" id="AT_LGKG77_PB" info="LGKG77,LGKG70">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,+CME ERROR,ERROR\r\n</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="5000" result="false">AT\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000" result="false">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="at" >AT+PABEG\r\n</cmd>
+			<cmd property="at">AT+SBEG\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<cmd property="at">AT+CPBS="PM"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)"
+				reg_split="" result="true" phonemem_startidx="0" capacity_phonemem="1">AT+CPBR=?\r\n
+			</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+CSCS="Base64"\r\n</cmd>
+			<cmd property="at">AT+CPBS="PM"\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="Q:capacity_phonemem"
+				usedcapacity="Q:capacity_phonemem">
+				<cmd property="read" result="false" startidx="Q:phonemem_startidx"
+					step="1" count="1">AT+CPBR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="at">AT+SEND\r\n</cmd>
+			<cmd property="at">AT+PAEND\r\n</cmd>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>
+	
+	<policy name="SMS" id="AT_LGKG77_SMS" info="LGKG77,LGKG70,LGCU515">
+		<init>
+		<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory" info="ALL">
+			<!-- ..+CPMS: 1,300,1,340,1,340..    ..OK.. -->
+			<cmd property="at" reg_match="\+CPMS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="0" capacity_phonemem="1">AT+CPMS="ME"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" timeout="600000"  result="true" startidx="4" step="0">AT+CMGL=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+   <!--    =====================LG KG77 END==========================  -->
+
+   <!--    =====================LG KF510 BEGIN==========================  -->
+	<policy name="phonebook" id="AT_LGKF510_PB">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="callback">OK\r\n,+CME ERROR,ERROR\r\n</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="5000" result="false">AT\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000" result="false">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="at" >AT+PABEG\r\n</cmd>
+			<cmd property="at">AT+SBEG\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at">AT+CSCS="Base64"\r\n</cmd>
+			<cmd property="at">AT+CPBS="PM"\r\n</cmd>
+			<!--capacity: 500 or used_phonemem ,-->
+			<operation name="read" totalcapacity="1000" usedcapacity="1000">
+				<cmd property="read" startidx="1" step="1000">AT+CPBR=</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="at">AT+SEND\r\n</cmd>
+			<cmd property="at">AT+PAEND\r\n</cmd>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>	
+	<policy name="SMS" id="AT_LGKF510_SMS" info="LGKF510">
+		<init>
+		<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">AT\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="at">AT+PABEG\r\n</cmd>
+			<cmd property="at">AT+SBEG\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory" info="ALL">
+			<cmd property="at">AT+CMGF=0\r\n</cmd>
+			<!-- ..+CPMS: 1,300,1,340,1,340..    ..OK.. -->
+			<cmd property="at" reg_match="\+CPMS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="0" capacity_phonemem="1">AT+CPMS="ME"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" timeout="600000"  result="true" startidx="4" step="0">AT+CMGL=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	
+   <!--    =====================LG KF510 END==========================  -->
+
+
+   <!--    =====================SAMSUNG D900 BEGIN==========================  -->
+   <!-- D900其它模块与J708共享 -->
+	<policy id="AT_SMS_SAM_2" info="D900">
+		<init>
+			<cmd property="callback">OK\r\n,\r\n> ,ERROR\r\n,\r\n+CMS ERROR:</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="operation">Sleep:100</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<cmd property="at" reg_match="\+CPMS:(.*?)\r" reg_split=","
+				capacity_phonemem="1" used_phonemem="0">AT+CPMS="ME"\r</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<!--
+				data protocol
+				..+CMGR:."STO.UNSENT","",".",0,1,0,241,"+8613800210500",255,4..Cotnent,1....OK..
+			-->
+			<!--
+				+CMGR: "REC
+				UNREAD","+8613951777343","#q...","09/11/30,09:58:24+32",145,4,0,0,"+8613800250500",145,25..This
+				is test a a a a aa ,0..
+			-->
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at" result="true">AT+CPMS="ME"\r</cmd>
+			<cmd property="at">AT+CSDH=1\r</cmd>
+			<cmd property="at">AT+CMGF=1\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="used_phonemem">
+				<cmd property="read" result="false" startidx="1" step="1">AT+CMGR=
+				</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+		</syncend>
+	</policy>
+	<policy id="AT_SMS_SAM_F268" info="F268">
+		<init>
+			<cmd property="callback">OK\r\n,\r\n> ,ERROR\r\n,\r\n+CMS ERROR:</cmd>
+			<cmd property="operation">PortOpen</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="1" timeout="3000">ATZ\r\n</cmd>
+			<cmd property="at" count="1" timeout="3000">ATE1V1\r\n</cmd>
+			<cmd property="at" result="false">AT+INFO\r\n</cmd>
+			<cmd property="at" result="false">AT+GMM\r\n</cmd>
+			<cmd property="operation">Sleep:100</cmd>
+		</init>
+		<queryinfo location="phonememory">
+			<cmd property="at" reg_match="\+CPMS:(.*?)\r" reg_split=","
+				capacity_phonemem="1" used_phonemem="0">AT+CPMS="ME"\r</cmd>
+		</queryinfo>
+		<syncstart location="phonememory">
+			<!--
+				data protocol
+				..+CMGR:."STO.UNSENT","",".",0,1,0,241,"+8613800210500",255,4..Cotnent,1....OK..
+			-->
+			<!--
+				+CMGR: "REC
+				UNREAD","+8613951777343","#q...","09/11/30,09:58:24+32",145,4,0,0,"+8613800250500",145,25..This
+				is test a a a a aa ,0..
+			-->
+			<cmd property="parser" policy="">com.futureidal.CATParser</cmd>
+			<cmd property="at" result="true">AT+CPMS="ME"\r</cmd>
+			<cmd property="at">AT+CSDH=1\r</cmd>
+			<cmd property="at">AT+CMGF=1\r</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="used_phonemem">
+				<cmd property="read" result="false" startidx="1" step="1">AT+CMGR=
+				</cmd>
+			</operation>
+		</syncstart>
+		<syncend>
+			<cmd property="operation">PortClose</cmd>
+			<cmd property="sleep">3000</cmd>
+		</syncend>
+	</policy>
+   <!--    =====================SAMSUNG D900 END==========================  -->
+   <!--POLICY2 D828 -->
+   <policy id="AT_SAM_PB_CPMEMRANDOMMOVE_22">
+     <init>
+       <!--callback must be the first position -->
+       <cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+       <cmd property="operation">PortOpen</cmd>
+       <cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+       <cmd property="at" result="false">AT+INFO\r\n</cmd>
+       <cmd property="at">AT+GMM\r\n</cmd>
+       <cmd property="operation">Sleep:100</cmd>
+     </init>
+    <queryinfo location="phonememory">
+      <cmd property="at">AT+CPBS="ME"\r\n</cmd>		
+      <!--reg result index :based 0-->		
+      <cmd property ="at" reg_match="\+CPBS:(.*)\r\n" reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true" used_phonemem="1" capacity_phonemem="2" >AT+CPBS?\r\n</cmd>
+      <cmd property ="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)" reg_split="" result="true" phonemem_startidx="0">AT+CPBR=?\r\n</cmd>           
+    </queryinfo>     
+    <syncstart location="phonememory" >
+      <!--data protocol:+CPBR:.1,"11111111",129,".Last.name.",".First.name.","22222222",129,"33333333"-->
+      <!--,129,"44444444",129,"2562356",129,"adg@ajmd.adm","",".Note.",0,65535,255,255,65535,"",""....OK..-->
+      <cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>     
+      <cmd property ="at">AT+CPBS="ME"\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem" >      
+        <cmd property="read" result="true" startidx="phonemem_startidx" step="1">AT+CPBR=</cmd>        
+      </operation>        
+    </syncstart>
+    <syncend>
+      <cmd property ="operation">PortClose</cmd>
+    </syncend>
+   </policy>        
+   <!--POLICY4 E570 -->
+   <policy id="AT_SAM_PB_SPMEMNOMOVE_41">
+     <init>
+       <!--callback must be the first position -->
+       <cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+       <cmd property="operation">PortOpen</cmd>
+       <cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+       <cmd property="at" result="false">AT+INFO\r\n</cmd>
+       <cmd property="at">AT+GMM\r\n</cmd>
+       <cmd property="operation">Sleep:200</cmd>      
+    </init>
+    <queryinfo location="phonememory">
+      <cmd property="at">AT+CPBS="ME"\r\n</cmd>		
+      <!--reg result index :based 0-->		
+      <cmd property ="at" reg_match="\+CPBS:(.*)\r\n" reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true" used_phonemem="1" capacity_phonemem="2" >AT+CPBS?\r\n</cmd>
+      <cmd property="sleep">200</cmd>
+      <cmd property ="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)" reg_split="" result="true" phonemem_startidx="0">AT+CPBR=?\r\n</cmd>           
+      <cmd property="sleep">200</cmd>
+    </queryinfo>    
+    <syncstart location="phonememory" >
+     <!--data struct :+SPBR: 1,"1111111","2222222","3333333","4444444","5555555","ad@adjm.ad","10,First name","9,Last name","5,Notes","0,"..OK..-->
+      <cmd property="at" result="false">AT+CUSE=1,1\r\n</cmd>
+      <cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>     
+      <cmd property ="at">AT+CPBS="ME"\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem" >      
+        <cmd property="read" result="true" startidx="phonemem_startidx" step="1">AT+SPBR=</cmd>        
+      </operation>       
+    </syncstart>
+    <syncend>
+      <cmd property="at" result="false">AT+CUSE=0,1\r\n</cmd>
+      <cmd property ="operation">PortClose</cmd>
+    </syncend>
+   </policy>   
+      <!--POLICY5 LGKF600 -->
+   <policy id="AT_LGKF_PB_5">
+     <init>
+       <!--callback must be the first position -->
+       <cmd property="callback">OK\r\n,+CME ERROR,ERROR\r\n</cmd>
+       <cmd property="operation">PortOpen</cmd>
+       <cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>      
+       <cmd property="at">AT+GMM\r\n</cmd>
+       <cmd property="operation">Sleep:100</cmd>      
+    </init>
+    <queryinfo location="phonememory">
+      <cmd property="at">AT+CPBS="PM"\r\n</cmd>		
+      <!--reg result index :based 0-->      
+      <cmd property ="at" reg_match="\+CPBR: *\((\d+)-(\d+)\)" reg_split="" result="true" phonemem_startidx="0" capacity_phonemem="1">AT+CPBR=?\r\n</cmd>           
+    </queryinfo>
+    <syncstart location="phonememory" >
+      <cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>    
+      <cmd property ="at">AT+CMEE=1\r\n</cmd> 
+      <cmd property ="at">AT+PABEG\r\n</cmd> 
+      <cmd property ="at">AT+SBEG\r\n</cmd> 
+      <cmd property ="at">AT+CSCS="Base64"\r\n</cmd> 
+      <cmd property ="at">AT+CPBS="PM"\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_phonemem" usedcapacity="capacity_phonemem" >      
+        <cmd property="read" result="true" startidx="phonemem_startidx" step="1">AT+CPBR=</cmd>        
+      </operation>
+    </syncstart>
+    <syncend>
+      <cmd property ="at">AT+SEND\r\n</cmd> 
+      <cmd property ="at">AT+PAEND\r\n</cmd> 
+      <cmd property ="operation">PortClose</cmd>
+    </syncend>
+   </policy>      
+
+      <!--POLICY5 LGKF300 -->
+   <policy id="AT_LGKF300_PB">
+     <init>
+       <!--callback must be the first position -->
+       <cmd property="callback">OK\r\n,+CME ERROR,ERROR\r\n</cmd>
+       <cmd property="operation">PortOpen</cmd>
+       <cmd property="at" count="5" timeout="3000" result="false">AT\r\n</cmd>
+       <cmd property="at" count="5" timeout="3000" result="false">ATE0\r\n</cmd>      
+       <cmd property="at">AT+GMM\r\n</cmd>
+       <cmd property="operation">Sleep:100</cmd>      
+      <cmd property ="at">AT+PABEG\r\n</cmd>  
+      <cmd property ="at">AT+SBEG\r\n</cmd> 
+    </init>
+    <syncstart location="phonememory" >
+      <cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>  
+      <cmd property ="at">AT+CSCS="UTF-8"\r\n</cmd> 
+      <cmd property ="at">AT+CPBS="ME"\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="1000" usedcapacity="1000" >      
+        <cmd property="read" result="true" startidx="1" step="1">AT+CPBR=</cmd>        
+      </operation>
+    </syncstart>
+    <syncend>
+      <cmd property ="at">AT+SEND\r\n</cmd> 
+      <cmd property ="at">AT+PAEND\r\n</cmd> 
+      <cmd property ="operation">PortClose</cmd>
+    </syncend>
+   </policy>    
+   
+   
+  <!--=======================================================================================================================
+Calendar types:
+PHONE_EVENT_TYPE - 0, 	PHONE_TODO_TYPE - 1
+==========================================================================================================================-->
+<!--======================================================================================================================
+Calendar Categeoris: cateid-
+CATE_MISCELLANEOUS-0,CATE_APPOINTMENT-1,CATE_BUSINESS-2,CATE_EDUCATION-3,CATE_HOLIDAY-4,CATE_MEETING-5,
+CATE_PERSONAL-6,CATE_PHONECALL-7,CATE_SICKDAY-8,CATE_TRAVEL-9,CATE_VACATION-10,CATE_MEMO-11,
+CATE_ANNIVERSARY-12,CATE_REMINDER-13,CATE_BIRTHDAY-14,CATE_EVENT-15,CATE_TODO-16,CATE_GIFT-17,CATE_IDEA-18,CATE_SHOPPINGLIST-19,
+CATE_VOICEMEMO-20,CATE_DATE-21,CATE_MESSAGE-22,CATE_ENTERTAINMENT-23,CATE_BREAKFAST-24,CATE_LUNCH-25,CATE_DINNER-26,CATE_PARTY-27,
+CATE_PRESENTATION-28,	CATE_FLIGHT-29,CATE_MEDICAL-30,CATE_IMPORTANT-31,CATE_MUSTATTEND-32,CATE_PREPARATION-33,CATE_SPECIALOCCASION-34,
+CATE_GOAL-35,CATE_ACCOUNTING-36,
+============================================================================================================================== -->   
+    <!--Calendar policy_31 E570-->
+   <policy id="AT_SAM_CAL_SSH_31">
+    <init>
+       <!--callback must be the first position -->
+       <cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+       <cmd property="operation">PortOpen</cmd>
+       <cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+       <cmd property="at" result="false">AT+INFO\r\n</cmd>
+       <cmd property="at">AT+GMM\r\n</cmd>
+       <cmd property="operation">Sleep:100</cmd>
+    </init> 
+    <syncstart caletype="0" cateid="1" catename="Appointment">
+      <!--data struct:+SSHR:1,"7,subject","6,Detail","8,Location",2000,1,3,2000,1,3,8,0,8,59,1,5,0,3,2000,1,6..OK..-->
+      <cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>      
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="100" usedcapacity="100" >      
+        <cmd property="read" startidx="1" step="1">AT+SSHR=</cmd>        
+      </operation>        
+    </syncstart>
+    <syncend>
+      <cmd property ="operation">PortClose</cmd>
+    </syncend>
+   </policy>   
+   
+      <!--Calendar policy_32 T539-->
+   <policy id="AT_SAM_CAL_SSH_32">
+     <init>
+       <!--callback must be the first position -->
+       <cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+       <cmd property="operation">PortOpen</cmd>
+       <cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+       <cmd property="at" result="false">AT+INFO\r\n</cmd>
+       <cmd property="at">AT+GMM\r\n</cmd>
+       <cmd property="at" result="false">AT+CUSE=1,2\r\n</cmd>
+       <cmd property="operation">Sleep:100</cmd>
+    </init>
+    <queryinfo caletype="0" cateid="1" catename="Appointment">      
+      <!--reg result index :based 0-->		  
+         <cmd property ="at"  >AT+SSHT=1\r\n</cmd>
+         <cmd property ="at" reg_match="\+SSHR:(.*)\r\n" reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true" used_cal_cate1="7" capacity_cal_cate1="0">AT+SSHR=?\r\n</cmd>      
+    	 <cmd property="sleep">300</cmd>
+    </queryinfo>        
+    <queryinfo caletype="0" cateid="12" catename="Anniversary">
+         <cmd property ="at"  >AT+SSHT=2\r\n</cmd>
+         <cmd property ="at" reg_match="\+SSHR:(.*)\r\n" reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true" used_cal_cate12="7" capacity_cal_cate12="0">AT+SSHR=?\r\n</cmd>      
+    	 <cmd property="sleep">300</cmd>
+    </queryinfo>
+    <queryinfo caletype="1" cateid="16" catename="Todo">
+         <cmd property ="at"  >AT+SSHT=3\r\n</cmd>
+         <cmd property ="at" reg_match="\+SSHR:(.*)\r\n" reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true" used_cal_cate16="7" capacity_cal_cate16="0">AT+SSHR=?\r\n</cmd>      
+    	 <cmd property="sleep">300</cmd>
+    </queryinfo>  
+    <queryinfo caletype="0" cateid="0" catename="Miscellaneous">
+         <cmd property ="at" >AT+SSHT=4\r\n</cmd>
+         <cmd property ="at" reg_match="\+SSHR:(.*)\r\n" reg_split=",(?=(?:[^\&quot;]*\&quot;[^\&quot;]*\&quot;)*)" result="true" used_cal_cate0="7" capacity_cal_cate0="0">AT+SSHR=?\r\n</cmd>      
+    	 <cmd property="sleep">300</cmd>
+    </queryinfo> 
+    <syncstart caletype="0" cateid="1" catename="Appointment">
+      <cmd property="parser" id="samsung_cal_SSH_read">com.futuredial.atengine.CATParser</cmd>      
+      <cmd property="at">AT+SSHT=1\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_cal_cate1" usedcapacity="used_cal_cate1" >      
+        <cmd property="read" startidx="0" step="1">AT+SSHR=</cmd>        
+      </operation>        
+    </syncstart>
+     <syncstart caletype="0" cateid="12" catename="Anniversary">
+      <cmd property="parser" id="samsung_cal_SSH_read">com.futuredial.atengine.CATParser</cmd>      
+      <cmd property="at">AT+SSHT=2\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_cal_cate12" usedcapacity="used_cal_cate12" >      
+        <cmd property="read" startidx="0" step="1">AT+SSHR=</cmd>        
+      </operation>       
+    </syncstart>
+    <syncstart caletype="0" cateid="0" catename="Miscellaneous">
+     <cmd property="parser" id="samsung_cal_SSH_read">com.futuredial.atengine.CATParser</cmd>      
+     <cmd property="at">AT+SSHT=4\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_cal_cate0" usedcapacity="used_cal_cate0" >      
+        <cmd property="read" startidx="0" step="1">AT+SSHR=</cmd>        
+      </operation>           
+    </syncstart>
+    <syncstart caletype="1" cateid="16" catename="Todo">
+      <!--data protocol :..+SSHR:1,"4,Task","","",1,2013,10,29,1,2013,10,30,,,,,,,,,,,,0,0..OK..-->
+     <cmd property="parser" id="samsung_task_SSH_read">com.futuredial.atengine.CATParser</cmd>      
+     <cmd property="at">AT+SSHT=3\r\n</cmd>
+      <!--capacity: 500 or used_phonemem ,-->  
+      <operation name="read" totalcapacity="capacity_cal_cate16" usedcapacity="used_cal_cate16" >      
+        <cmd property="read" startidx="0" step="1">AT+SSHR=</cmd>        
+      </operation>           
+    </syncstart>
+    <syncend>
+    <cmd property="at" result="false">AT+CUSE=0,2\r\n</cmd>
+      <cmd property ="operation">PortClose</cmd>
+    </syncend>
+   </policy>   
+      
+   <!-- MOTO PHONES -->
+   	<policy name="phonebook" id="AT_MOTO_PB_TYPE1" info="MOTOV3XX,Z9">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="at">AT+MSYN=1\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="1" capacity_phonemem="2">AT+CPBS?\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<cmd property="at">AT+MODE=0\r\n</cmd>
+			<operation name="read" totalcapacity="2000" usedcapacity="2000">
+				<cmd property="read" result="true" timeout="60000" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+
+	 	<syncend>
+	 	  <cmd property="at">AT+MSYN=0\r\n</cmd>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	
+   	<policy name="phonebook" id="AT_MOTO_PB_W490" info="W490">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="at">AT+MSYN=1\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<!--reg result index :based 0-->
+			<cmd property="at" reg_match="\+CPBS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="1" capacity_phonemem="2">AT+CPBS?\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<cmd property="at">AT+MODE=0\r\n</cmd>
+			<operation name="read" totalcapacity="1500" usedcapacity="1500">
+				<cmd property="read" result="true" timeout="60000" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+
+	 	<syncend>
+	 	  <cmd property="at">AT+MSYN=0\r\n</cmd>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+
+   	<policy name="SMS" id="AT_MOTO_SMS_TYPE1" info="MOTOV3XX,V3,W490,MOTOZ9">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="at">AT+MSYN=1\r\n</cmd>
+			<cmd property="at">AT+MODE=0\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory" info="all box">
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+CMGF=1\r\n</cmd>
+			<cmd property="at" reg_match="\+CPMS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="0" capacity_phonemem="1">AT+CPMS="ME"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<cmd property="at" lst_match="\+MMGL: (\d+),.*?" result = "true"
+				list="indexname">AT+MMGL="HEADER ONLY"\r\n</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" timeout="600000"  result="true" startidx="indexname" step="0">AT+CMGR=</cmd>
+			</operation>
+		</syncstart>
+		
+		<!-- syncstart location="phonememory" info="Draft">
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+CMGF=1\r\n</cmd>
+			<cmd property="at">AT+CPMS="DM"\r\n</cmd>
+			<cmd property="at" reg_match="\+CPMS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="0" capacity_phonemem="1">AT+CPMS="DM"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" timeout="600000"  result="true" startidx="" step="0">AT+CMGL="ALL"</cmd>
+			</operation>
+		</syncstart>
+		<syncstart location="phonememory" info="Outbox">
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+CMGF=1\r\n</cmd>
+			<cmd property="at">AT+CPMS="OM"\r\n</cmd>
+			<cmd property="at" reg_match="\+CPMS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="0" capacity_phonemem="1">AT+CPMS="OM"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" timeout="600000"  result="true" startidx="" step="0">AT+CMGL="ALL"</cmd>
+			</operation>
+		</syncstart>
+		<syncstart location="phonememory" info="Inbox">
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+CMGF=1\r\n</cmd>
+			<cmd property="at">AT+CPMS="IM"\r\n</cmd>
+			<cmd property="at" reg_match="\+CPMS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="0" capacity_phonemem="1">AT+CPMS="IM"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" timeout="600000"  result="true" startidx="" step="0">AT+CMGL="ALL"</cmd>
+			</operation>
+		</syncstart-->
+	 	<syncend>
+	 	  <cmd property="at">AT+MSYN=0\r\n</cmd>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+   	<policy name="CALENDAR" id="AT_MOTO_CALENDAR_TYPE1" info="MOTOV3XX,W490,MOTOZ9">
+		<init>
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="at">AT+MSYN=1\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=0\r\n</cmd>
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at" reg_match="\+MDBR: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="1" capacity_phonemem="0">AT+MDBR=?\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" result="true" startidx="0" step="1">AT+MDBR=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	 	  <cmd property="at">AT+MSYN=0\r\n</cmd>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!-- V3 -->
+	 <policy name="phonebook" id="AT_MOTOV3_PB_TYPE1" info="V3">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=0\r\n</cmd>
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+CSCS?\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="1200" usedcapacity="1200">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!-- VE20 -->
+	<policy name="phonebook" id="AT_MOTOVE20_PB_TYPE1" info="VE20">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+CPBS="ME"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="665" usedcapacity="665">
+				<cmd property="read" result="true" startidx="1" step="665">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!-- V3C  -->
+	<!-- Do not support SMS. Because SMS is unstable.(Refer to RMS Spec)  -->
+	<policy name="phonebook" id="AT_MOTOV3C_PB_TYPE1" info="V3C">
+		<init>
+		<!-- Protocol: +MPBRE: 1,0,"14791892524874073",129,"123456789012345678901234",0,0,255,0,0,1,255,255,0,
+		                       "",0,0,"","","","","","","","",""
+		  -->
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,OK\r\n\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE1V1\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at" timeout="3000">AT+MODE=2\r\n</cmd>
+			<cmd property="at" count = "5" timeout="3000">AT\r\n</cmd>
+			<cmd property="at" timeout="3000">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at" timeout="3000">AT+CPBS="ME"\r\n</cmd>
+			<cmd property="at" reg_match="\+CPBS: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="1" capacity_phonemem="2">AT+CPBS?\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<policy name="CALENDAR" id="AT_MOTOV3C_CAL_TYPE1" info="V3C">
+		<!-- 
+		Protocol: +MDBR: 1,"AaAaAa  CcEeEeEeEeIiIiOo  UuUu y",1,0,"12:04","01-19-2007",60,
+		           "00:00","00-00-2000",5,0,"20:25","09-07-2080","13:57","03-14-2059","000",,"0"
+		 -->
+		<init>
+			<cmd property="portopen" />
+			<cmd property="callback">OK\r\n,OK\r\n\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE1V1\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at" timeout="3000">AT+MODE=2\r\n</cmd>
+			<cmd property="at" count = "5" timeout="3000">AT\r\n</cmd>
+			<cmd property="at" timeout="3000">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+MDBL=1\r\n</cmd>
+			<cmd property="at">AT+CMEE=1\r\n</cmd>
+			<cmd property="at" reg_match="\+MDBR: (.*)\r\n\r\n"
+				reg_split="," result="true"
+				used_phonemem="1" capacity_phonemem="0">AT+MDBR=?\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="used_phonemem">
+				<cmd property="read" result="true" startidx="0" step="1">AT+MDBR=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!-- Moto V3m Sprint -->
+	<policy name="phonebook" id="AT_MOTOV3M_SPRINT_PHONEBOOK" info="V3MSprint, Z6CVerizon">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at">AT+CPBS="AD"\r\n</cmd>
+			<cmd property="at" reg_match="\+MPBR: (\d+-\d+),\r\n\r\n"
+				reg_split="-" result="true"
+				startindex="0" capacity_phonemem="1">AT+MPBR=?\r\n</cmd>
+			
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="capacity_phonemem" usedcapacity="capacity_phonemem">
+				<cmd property="read" result="true" startidx="startindex" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<policy name="calendar" id="AT_MOTOV3M_SPRINT_CALENDAR" info="V3MSprint,V3SMetroPCS">
+		<init>
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="10000">ATE0\r\n</cmd>
+			<cmd property="at">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at">AT+MDBL=1\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="500" usedcapacity="500">
+				<cmd property="read" result="true" startidx="0" step="1">AT+MDBR=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	<!-- Moto V3s MetroPCS -->
+	<policy name="phonebook" id="AT_MOTOV3S_METROPCS_PHONEBOOK" info="V3SMetroPCS">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="499" usedcapacity="499">
+				<cmd property="read" result="true" startidx="2" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	
+	<!-- Moto Z6m MetroPCS -->
+	<policy name="phonebook" id="AT_MOTOZ6M_METROPCS_PHONEBOOK" info="Z6MMetroPCS">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at">AT+CPBS="AD"\r\n</cmd>
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="2000" usedcapacity="2000">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+
+	<!-- Moto L9 -->
+	<policy name="phonebook" id="AT_MOTOL9_PHONEBOOK" info="L9, Z3">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=0\r\n</cmd>
+			<cmd property="at">AT+CPBS="AD"\r\n</cmd>
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="1500" usedcapacity="1500">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>	
+	<!-- Moto L6 -->
+	<policy name="phonebook" id="AT_MOTOL6_PHONEBOOK" info="L6">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="500" usedcapacity="500">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+	
+	<!-- Moto L7c Verizon -->
+	<policy name="phonebook" id="AT_MOTOL7C_VERIZON_PHONEBOOK" info="L7CVerizon">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="1000">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+
+	<!-- Moto V9M Sprint -->
+	<policy name="phonebook" id="AT_MOTOV9M_SPRINT_PHONEBOOK" info="V9MSprint">
+		<init>
+			<!--callback must be the first position -->
+			<cmd property="portopen" />
+			<cmd property="callback">\r\nOK\r\n\r\n,OK\r\n,ERROR\r\n</cmd>
+			<cmd property="at" count="5" timeout="3000">ATE0\r\n</cmd>
+			<cmd property="at" count="2">AT+GMM\r\n</cmd>
+			<cmd property="sleep">100</cmd>
+		</init>
+		<syncstart location="phonememory">
+			<cmd property="at">AT+MODE=2\r\n</cmd>
+			<cmd property="at" count="5">AT+CSCS="UCS2"\r\n</cmd>
+			<cmd property="at" count="5">AT+CPBS="ME"\r\n</cmd>
+			<cmd property="parser" policy="">com.futuredial.atengine.CATParser</cmd>
+			<operation name="read" totalcapacity="1000" usedcapacity="1000">
+				<cmd property="read" result="true" startidx="1" step="1">AT+MPBRE=</cmd>
+			</operation>
+		</syncstart>
+	 	<syncend>
+	      <cmd property ="operation">PortClose</cmd>
+	    </syncend> 
+	</policy>
+
+	
+</atcommand>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:textMailHeaderBar="http://schemas.android.com/apk/res/com.htc.android.mail">
+    <com.htc.android.mail.widget.TextMailHeaderBar1 android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent" textMailHeaderBar:headerbar_text1="@string/newAccount" />
+    <com.htc.android.mail.widget.MailFooterBar2Btn android:id="@id/footerBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/scrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/htc_footer_height" android:layout_below="@id/header">
+        <LinearLayout android:orientation="vertical" android:id="@id/mainScreenlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/scrolltopShadow" style="@style/topround_v1" />
+            <FrameLayout android:id="@id/trans_background" android:background="@color/list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/mainScreen" android:background="@com.htc:drawable/trans_4round" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_account_name" android:layout_marginTop="@dimen/ec_margin_top_vertical_s" android:text="@string/ec_account_name" style="@style/ec_account_label" />
+                    <EditText android:id="@id/edt_account_name" android:layout_marginBottom="@dimen/ec_margin_top_vertical" android:hint="@string/ec_account_name_hint" android:capitalize="none" android:autoText="false" android:textCursorDrawable="@null" style="@style/ec_account_field" />
+                </LinearLayout>
+            </FrameLayout>
+            <ImageView android:id="@id/scrollBottomShadow" style="@style/bottomround_v1" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

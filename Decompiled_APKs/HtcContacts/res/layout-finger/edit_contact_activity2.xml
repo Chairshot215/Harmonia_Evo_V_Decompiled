@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/panel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.htccontacts.ui.widget.PhoneNameEditableHeaderView android:id="@id/photo_name_editable_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/titleLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.htccontacts.widget.title.DetailHeaderBar android:id="@id/headerLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+    </LinearLayout>
+    <com.android.htccontacts.widget.ScrollStatusScrollView android:scrollbarStyle="insideInset" android:orientation="vertical" android:id="@id/scroller" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0" style="@style/CustomizationListBackground">
+        <LinearLayout android:orientation="vertical" android:id="@id/panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/editors" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" layout="@layout/item_contact_editor2" />
+            <View android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <View android:layout_gravity="bottom" android:background="@color/color_blank_area" android:layout_width="fill_parent" android:layout_height="@dimen/list_view_blank_interval" />
+        </LinearLayout>
+    </com.android.htccontacts.widget.ScrollStatusScrollView>
+    <com.android.htccontacts.widget.HtcButtonFrameLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/ButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" htccontacts:buttonStyle="save_cancel"
+      xmlns:htccontacts="http://schemas.android.com/apk/res/com.android.htccontacts" />
+</LinearLayout>

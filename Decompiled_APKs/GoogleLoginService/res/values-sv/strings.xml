@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Webb</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_rlz">okänt</string>
+    <string name="sharedUserLabel">Google-tjänster</string>
+    <string name="app_label">Google Account Manager</string>
+    <string name="gls_label">Google</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Välkommen till ^1</string>
+    <string name="next_button_label">Nästa</string>
+    <string name="back_button_label">Tillbaka</string>
+    <string name="sign_in_button_label">Logga in</string>
+    <string name="create_button_label">Skaffa ett konto</string>
+    <string name="not_now_button_label">Inte nu</string>
+    <string name="skip_button_label">Hoppa över</string>
+    <string name="new_button_label">Nytt</string>
+    <string name="existing_button_label">Befintligt</string>
+    <string name="first_name">Förnamn</string>
+    <string name="last_name">Efternamn</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Avbryt</string>
+    <string name="try_again_button_label">Försök igen</string>
+    <string name="close_button_label">Stäng</string>
+    <string name="edit_text_help">Tryck på en textruta om du vill börja skriva</string>
+    <string name="add_a_google_account">Lägg till ett Google-konto</string>
+    <string name="no_sim_setup_wireless">Inget SIM-kort har installerats så det går inte att ansluta enheten till ett mobilt nätverk för röst- och datatjänster. Du kan ansluta enheten till ett Wi-Fi-nätverk utan SIM-kort.</string>
+    <string name="setup_wifi_button_label">Anslut till WiFi</string>
+    <string name="setup_wizard_title">Installationsguide</string>
+    <string name="captcha_title">CAPTCHA måste anges</string>
+    <string name="choose_account_title">Välj konto</string>
+    <string name="show_error_title">Hittat fel</string>
+    <string name="close_and_launch_title">SetupWizard stängs</string>
+    <string name="server_error">Ett problem inträffade när du kommunicerade med Googles servrar.</string>
+    <string name="server_error_help">Försök igen senare.</string>
+    <string name="network_unreliable">Det går inte att upprätta en tillförlitlig anslutning till servern.</string>
+    <string name="network_unreliable_help">Det kan bero på ett tillfälligt fel eller så är Android-enheten inte anpassad för datatjänster. Ring kundtjänst om problemet kvarstår.</string>
+    <string name="invalid_login_character">Ogiltiga tecken. Endast 0-9, a-z, A-Z och punkter tillåts.</string>
+    <string name="invalid_password_character">Ogiltigt tecken i lösenordet.</string>
+    <string name="add_apn">Trådlösa inställningar</string>
+    <string name="setup_google_account_title">Skapa ditt Google-konto</string>
+    <string name="setup_complete_title">Konfiguration klar</string>
+    <string name="cant_be_blank">Fältet får inte vara tomt.</string>
+    <string name="calendar">Google Kalender</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android-enheten är inte ansluten till en datatjänst. Besök %s från en webbläsare om du vill visa informationen nu.</string>
+    <string name="field_cant_be_blank">Fältet får inte vara tomt.</string>
+    <string name="field_invalid_domain">Detta är inte ett giltigt domännamn</string>
+    <string name="field_invalid_user">Detta är inte ett giltigt användarnamn</string>
+    <string name="field_invalid_user_domain">Ange endast användarnamn, inte e-postadress</string>
+    <string name="setup_device_title">Registrera din ^1</string>
+    <string name="dont_have_an_account">Har du inget Google-konto?</string>
+    <string name="create_one_now">Skapa ett nu! Det är enkelt.</string>
+    <string name="already_have_an_account">Har du redan ett Google-konto?</string>
+    <string name="sign_in_with_google_account">Logga in med ett Google-konto som du vill använda på den här Android-enheten.</string>
+    <string name="skip_message">Vill du registrera ett konto senare?</string>
+    <string name="delayed_gaia_agreement">" Genom att fortsätta godkänner du "<annotation id="google_privacy">Googles sekretesspolicy</annotation> och <annotation id="android_privacy">ytterligare</annotation> sekretesspolicyer.</string>
+    <string name="plus_query_title">Gå med i Google+</string>
+    <string name="plus_query_text">Med Google+ blir det lika enkelt att umgås på webben som i verkliga livet.</string>
+    <string name="circles_subtitle">Cirklar</string>
+    <string name="circles_text">Det enklaste sättet att dela det viktigaste på nätet.</string>
+    <string name="uploads_subtitle">Direktöverföring</string>
+    <string name="uploads_text">Synkronisera enkelt alla bilder från alla dina enheter.</string>
+    <string name="huddle_text">Gruppmeddelanden till alla i dina cirklar.</string>
+    <string name="plus_declined_button_label">Inte nu</string>
+    <string name="plus_accepted_button_label">Gå med i Google+</string>
+    <string name="plus_name_check_title">Kontaktar Google+ ...</string>
+    <string name="plus_name_check_text">Detta kan ta några minuter.</string>
+    <string name="plus_faq_title">Välkommen till Google+!</string>
+    <string name="plus_faq_text" formatted="false">"På Google+ har du en offentlig profil som gör det enkelt för dina vänner att hitta dig på webben. Alla som känner till din e-postadress kan hitta och visa din profil.
+
+Du kan använda +1-knappar på webben om du vill rekommendera saker för andra. Din profil och dina +1:or kommer att visas offentligt i sökningar, i annonser och på webben.
+
+Tillsvidare visas bara ditt namn i profilen (%s %s). Du kan lägga till ett foto, personliga uppgifter och annan information senare när du börjar använda Google+."</string>
+    <string name="dasher_warning">Administratören på %s äger och hanterar alla dina data på Google+ och kan ta bort eller ändra din profil när som helst utan din tillåtelse.</string>
+    <string name="picassa_info_title">Picasa och Google+</string>
+    <string name="picassa_info_text" formatted="false">"Dina bilder och videor i Picasa webbalbum  blir tillgängliga på Google+ och dina kommentarer görs under namnet %s %s istället för %s. När du delar bilder på Google+ kan mottagarna dela dem vidare med vem som helst. Dina albums synlighetsinställningar ändras inte och du kan begränsa dem när som helst så att de inte kan delas vidare hur som helst."</string>
+    <string name="name_title">Ditt namn</string>
+    <string name="name_title_plus">Ditt namn i Google+</string>
+    <string name="name_title_local">Den här mobilen tillhör ...</string>
+    <string name="name_text">Ditt namn används för att anpassa mobilen och Googles tjänster.</string>
+    <string name="name_text_local">Ditt namn används för att anpassa vissa appar i mobilen.</string>
+    <string name="bad_name_title">Vill du använda detta namn?</string>
+    <string name="invalid_name_title">Det går inte att använda detta namn</string>
+    <string name="bad_name_display">%1$s %2$s</string>
+    <string name="bad_name_text">"Om du vill använda det här namnet i Google+ måste vårt team granska det. Om det bryter mot vår namnpolicy kan din profil stängas av. Det begränsar dina möjligheter att använda produkter från Google som kräver en aktiv profil.
+
+"<annotation id="learn_more">Läs mer</annotation></string>
+    <string name="bad_name_text2">"Om du vill använda det här som ditt namn på Google+ måste vårt team granska det. Om det bryter mot vår namnpolicy kan din profil spärras och du kan förlora åtkomsten till Google+ och till andra tjänster som är kopplade till din profil.
+
+"<annotation id="learn_more">Läs mer</annotation></string>
+    <string name="invalid_name_text">Du får inte använda namnet i Google+ eftersom det innehåller ogiltiga tecken.</string>
+    <string name="invalid_nickname_text">Du får inte använda namnet i Google+ eftersom det innehåller ogiltiga tecken. Vill du använda ett smeknamn, tidigare namn eller en titel? Du kan lägga till dem i din profil när du har gått med.</string>
+    <string name="invalid_other_text">Namnet får inte användas i Google+.</string>
+    <string name="bad_name_agree_text">Jag har läst villkoren och vill använda det här namnet.</string>
+    <string name="bad_name_decline_button_label">Uppdatera namn</string>
+    <string name="bad_name_agree_button_label">Skicka namn för granskning</string>
+    <string name="bad_name_skip_button_label">Hoppa över Google+</string>
+    <string name="photo_title">Din bild</string>
+    <string name="photo_text">Den här bilden kommer att användas i dina kontaktuppgifter. Du kan ändra den senare i appen Personer.</string>
+    <string name="photo_text_es">Ta en bild som visas för dina vänner på Google+. Du kan välja en ny bild senare.</string>
+    <string name="photo_button_label">Ta en bild</string>
+    <string name="retake_photo_button_label">Ta en ny bild</string>
+    <string name="photo_failure">Det gick inte att starta kameran</string>
+    <string name="crop_failure">Det gick inte att beskära fotot</string>
+    <string name="open_keyboard_message">Öppna tangentbordet när du vill börja.</string>
+    <string name="open_keyboard_message_to_continue">Öppna tangentbordet för att fortsätta.</string>
+    <string name="emergency_dial">Nödsamtal</string>
+    <string name="change_language">Byt språk</string>
+    <string name="close_keyboard_message">Skjut tillbaka tangentbordet när du vill fortsätta.</string>
+    <string name="communicating_message">Mobilen kontaktar Google för att spara information på ditt konto. Det kan ta upp till 5 minuter.</string>
+    <string name="creating_account_title">Kontot sparas ...</string>
+    <string name="checking_username_message">"Mobilen kontaktar Google för att se om det användarnamn du vill ha är ledigt.
+
+Det kan ta några minuter."</string>
+    <string name="adding_account_title">Kontot sparas ...</string>
+    <string name="account_setup_network_failure_title">Det gick inte att nå Google</string>
+    <string name="account_setup_network_failure_text">Försök igen eller hoppa över tills vidare.</string>
+    <string name="plus_failure_title">Börja använda Google+ senare</string>
+    <string name="plus_failure_new_account_text">Ditt Google-konto har skapats, men registreringen för Google+ godkändes inte. Försök igen senare från valfri webbläsare på plus.google.com.</string>
+    <string name="plus_failure_text">Din förfrågan om att gå med i Google+ gick inte igenom. Försök igen senare i en webbläsare på plus.google.com.</string>
+    <string name="login_title">Ange e-post och lösenord</string>
+    <string name="login_task_title">Loggar in</string>
+    <string name="domain_name">exempel.se</string>
+    <string name="password">Lösenord</string>
+    <string name="sign_in_agreement">" Genom att logga in godkänner du "<annotation id="google_privacy">Googles sekretesspolicy</annotation> och <annotation id="android_privacy">ytterligare</annotation> sekretesspolicyer.</string>
+    <string name="create_prompt">" Har du inget Google-konto? "<annotation id="create_account">Skapa ett konto nu</annotation>.</string>
+    <string name="create">Skapa</string>
+    <string name="create_message">Behöver du ett Google-konto?</string>
+    <string name="now_signing_in">Loggar in…</string>
+    <string name="now_verifying_domain">Letar efter din domän…</string>
+    <string name="sign_in_with_google_account_short">Logga in med ditt Google-konto:</string>
+    <string name="browser_sign_in_explanation">Använd den här skärmen om du har särskilda inloggningsskäl som kräver en webbläsare.</string>
+    <string name="gls_browser_login_intro_message">Android-enheten har ingen åtkomst till ditt Google- eller Google Apps-konto. Ny auktorisering krävs.</string>
+    <string name="enter_domain_name">Ange ditt företags domännamn:</string>
+    <string name="enter_user_name">Ange användarnamn och lösenord för ^1:</string>
+    <string name="inactive_domain">" Kontot kan inte användas eftersom det tillhör en inaktiv domän. Kontakta domänadministratören för "<b>^1</b> eller logga in med ett annat konto.</string>
+    <string name="invalid_username">Texten du angav är inte ett giltigt användarnamn.</string>
+    <string name="web_login_error_title">Tyvärr...</string>
+    <string name="web_login_error_desc">"Det gick inte att ansluta till ditt företags servrar på ^1.
+
+Felbeskrivning:
+"</string>
+    <string name="web_login_error_redirects">Sidan för webbinloggning har omdirigerats för många gånger</string>
+    <string name="web_login_error_http">HTTP-fel ^1 : ^2</string>
+    <string name="captcha_instructions">Skriv texten du ser här:</string>
+    <string name="create_google_account">Skapa e-postadress</string>
+    <string name="example_usernames">t.ex. JSvensson, Johan.Svensson</string>
+    <string name="create_account_agreement">När du skapar kontot godkänner du <annotation id="google_privacy">Googles sekretesspolicy</annotation> och <annotation id="android_privacy">ytterligare</annotation> sekretesspolicyer.</string>
+    <string name="background_task_error">Ditt nya Gmail-konto har skapats, men det uppstod ett problem med att lägga till dina konton på enheten. Försök igen, försök att logga in på det nya kontot manuellt eller hoppa över att skapa konto för tillfället.</string>
+    <string name="retry_button_label">Försök igen</string>
+    <string name="login_button_label">Logga in manuellt</string>
+    <string name="account_already_has_gmail">Kontot har redan Gmail.</string>
+    <string name="error_account_disabled">"Det här kontot har inaktiverats. 
+
+(Besök http://google.com/accounts i en webbläsare om du vill ha mer information.)"</string>
+    <string name="no_network">Du har ingen nätverksanslutning.</string>
+    <string name="no_network_help">Det kan bero på ett tillfälligt fel eller så är Android-enheten inte anpassad för datatjänster. Försök igen när enheten är ansluten till ett mobilt nätverk eller ett WiFi-nätverk.</string>
+    <string name="no_network_help_wifi_only">Det här kan vara ett tillfälligt problem. Försök igen eller anslut till ett annat Wi-Fi-nätverk.</string>
+    <string name="error_login_failed">"Användarnamnet och lösenordet stämmer inte överens. Försök igen.
+
+Om du vill återställa kontouppgifterna besöker du google.com/accounts/recovery/."</string>
+    <string name="error_account_not_verified">"Kontot har inte verifierats. Öppna din e-post och följ länken för att verifiera kontot. 
+
+(Besök http://www.google.com/accounts/recovery på datorn om du vill återställa din kontoinformation.)"</string>
+    <string name="add_account_init">Hämtar sidan för att öppna konto...</string>
+    <string name="add_account_init_for_update_credentials">Sidan för uppdatering av autentiseringsuppgifter hämtas...</string>
+    <string name="add_account_init_for_add_account">Sidan där du kan lägga till konton hämtas...</string>
+    <string name="add_account_pageload" />
+    <string name="add_account_final">Skapa nytt konto</string>
+    <string name="add_account_final_adding">Kontot läggs till...</string>
+    <string name="add_account_final_updating">Autentiseringsuppgifterna uppdateras...</string>
+    <string name="add_account_init_waiting_for_network">Väntar på att nätverket ska bli tillgängligt...</string>
+    <string name="exit_menu_item">Stäng webbläsarinloggning</string>
+    <string name="creating_account">Skapar ditt konto…</string>
+    <string name="creating_profile">Skapar profilen…</string>
+    <string name="name_check">Kontrollerar namnet ...</string>
+    <string name="checking_account">Tillgängligheten kontrolleras ...</string>
+    <string name="try_a_different_username">Försök med ett annat användarnamn</string>
+    <string name="is_not_available">Användarnamnet <b>^1</b> är inte tillgängligt.</string>
+    <string name="suggestions_hint">Tryck om du vill ha förslag</string>
+    <string name="suggest_username_next_button_label">Byt användarnamn</string>
+    <string name="hint_size">" "<b>^1</b> innehåller färre än 6 eller fler än 30 tecken.</string>
+    <string name="hint_numbers_only">" "<b>^1</b> innehåller inga bokstäver.</string>
+    <string name="hint_illegal_chars">" "<b>^1</b>" får bara innehålla bokstäver,
+siffror och punkter."</string>
+    <string name="doesnt_use_gmail">" "<b>^1</b> använder inte Gmail</string>
+    <string name="sign_in">Logga in</string>
+    <string name="sign_in_browser">Webbläsarinloggning</string>
+    <string name="here_are_alternatives">Här är några alternativ:</string>
+    <string name="alternatives_list_title">Förslag på användarnamn</string>
+    <string name="alternatives_list_hint">Tryck om du vill ha förslag</string>
+    <string name="password_title">Skapa lösenord</string>
+    <string name="choose_a_password">Lösenord</string>
+    <string name="confirm_password">Ange lösenordet igen</string>
+    <string name="too_short">För kort</string>
+    <string name="security_question">" "<b>"Säkerhets-
+fråga"</b></string>
+    <string name="security_questions_title">Säkerhetsfrågor</string>
+    <string name="answer">" "<b>Svar</b></string>
+    <string name="password_mismatch">Dina lösenord matchar inte. Ange dem igen.</string>
+    <string name="your_account_was_created">Ditt konto har skapats.</string>
+    <string name="eight_chars_min">(minst 8 tecken)</string>
+    <string name="verify_your_profile">Verifiera din profil</string>
+    <string name="error_not_logged_in">Användaren är inte inloggad.</string>
+    <string name="error_username_unavailable">Användarnamnet är inte tillgängligt.</string>
+    <string name="error_bad_password">Lösenordet är för svagt eller innehåller ogiltiga tecken. Försök igen.</string>
+    <string name="error_bad_username">Ogiltigt användarnamn.</string>
+    <string name="loading">Läser in...</string>
+    <string name="existing_account_error_title">Kontot finns redan</string>
+    <string name="existing_account_error_text">Det finns redan ett ^1-konto på Android-enheten</string>
+    <string name="submission_title">Tyvärr…</string>
+    <string name="submission_error_text">Ett fel inträffade. Försök igen.</string>
+    <string name="sync_intro_title">Kontosynkronisering</string>
+    <string name="syncing_message">" "<font size="17">"Googles appar synkroniserar data nu. 
+ "<font height="17">"
+"</font>%i Ikonen Synkronisering visas i statusfältet högst upp på skärmen medan data synkroniseras från Google-kontot. Den första synkroniseringen kan ta flera minuter, beroende på mängden kontakter, e-post, kalenderhändelser och andra data som finns i Googles appar.</font></string>
+    <string name="account_tos_title">Skapa kontot</string>
+    <string name="account_tos_plus_title">Slutför registreringen på Google+</string>
+    <string name="account_tos_account_title">Avsluta kontot</string>
+    <string name="account_tos_google_title">Slutför registreringen på Google</string>
+    <string name="i_accept">Jag godkänner</string>
+    <string name="android_privacy_policy_title">Ytterligare sekretesspolicy</string>
+    <string name="google_terms_of_service_title">Skapa kontot</string>
+    <string name="google_privacy_policy_title">Googles sekretesspolicy</string>
+    <string name="google_plus_privacy_policy_title">Sekretesspolicy för Google Plus</string>
+    <string name="allow_personalized_content">Låter Google använda din information för att anpassa innehåll och annonser på webbplatser utanför Google.</string>
+    <string name="enable_web_history">Aktivera webbhistorik</string>
+    <string name="learn_more"><annotation id="learn_more">Läs mer</annotation></string>
+    <string name="google_plus_tos_login">När du skapar ett konto i Google+ godkänner du sekretesspolicyn för <annotation id="google_plus_privacy">Google+</annotation>.</string>
+    <string name="google_plus_tos_signup">När du trycker på <b>Jag godkänner</b> nedan godkänner du <annotation id="tos">användarvillkoren</annotation> samt sekretesspolicyn för <annotation id="google_privacy">Google</annotation>, <annotation id="google_plus_privacy">Google+</annotation> och <annotation id="android_privacy">övriga appar</annotation>.</string>
+    <string name="account_creation_tos">När du trycker på <b>Jag godkänner</b> nedan godkänner du <annotation id="tos">användarvillkoren</annotation> samt sekretesspolicyn för <annotation id="google_privacy">Google</annotation> och <annotation id="android_privacy">övriga appar</annotation>.</string>
+    <string name="gender_prompt">Kön</string>
+    <string name="gender_hint">Ange kön</string>
+    <string name="account_intro_title">Google-konto</string>
+    <string name="account_intro_required_title">Drivs av Google</string>
+    <string name="account_intro_recommended_title">Slå ihop med Google</string>
+    <string name="common_message">"Med ett Google-konto kan du:
+
+"<li><ul>se och ordna all din information var du än befinner dig</ul></li>"
+
+"<li><ul>automatiskt säkerhetskopiera information</ul></li>"
+
+"<li><ul>enkelt använda Googles tjänster var du än befinner dig.</ul></li></string>
+    <string name="add_account_message">" Du kan använda fler än ett Google-konto (till exempel ett privatkonto och ett jobbkonto). Tryck på "<b>Logga in</b> eller <b>Skapa konto</b> om du vill lägga till ett Google-konto</string>
+    <string name="account_intro_default_message">Tappa aldrig bort dina grejer igen. Med ett Google-konto har du allt på ett säkert ställe.</string>
+    <string name="account_intro_custom_endtext">Har du %s? Logga in nu.</string>
+    <string name="account_intro_simple_message">Vill du lägga till ett befintligt konto eller skapa ett nytt?</string>
+    <string name="learn_more_title"><annotation id="learn_more">Läs mer</annotation></string>
+    <string name="learn_more_account_intro">"Med ett Google-konto kan du
+"<li><ul>Se och organisera all din information var du än befinner dig.<li>Automatiskt säkerhetskopiera data, t.ex. e-post, kontakter, musik och bilder.</li><li>Enkelt använda Googles tjänster var du än befinner dig, som Kontakter, Kalender, Maps med mera.</li></ul></li></string>
+    <string name="learn_more_account_intro_title">Om Google-konton</string>
+    <string name="learn_more_web_history">"I Webbhistorik justeras sökresultaten utifrån vad du har sökt efter och vilka webbplatser du har besökt så att du får en anpassad upplevelse från Google.
+
+Om du vill visa och hantera webbhistoriken, t.ex. aktivera eller inaktivera den, öppnar du http//www.google.com/history."</string>
+    <string name="learn_more_web_history_title">Om Webbhistorik</string>
+    <string name="learn_more_bad_name">Du måste använda ditt vanliga namn på Google+. Din profil ska representera en person, inte ett företag, en organisation eller en familj. Du måste ange ditt förnamn och efternamn på ett enda språk utan yrkestitlar eller onödiga skiljetecken. När du har registrerat dig kan du ange smeknamn eller andra namn som är kopplade till dig i fältet Andra namn i din profil.</string>
+    <string name="learn_more_bad_name_title">Om riktlinjerna för namn</string>
+    <string name="wait_for_device_country_title">Kontoinställningar</string>
+    <string name="wait_for_device_country_msg">Samlar info om din telefon. Det kan ta upp till 30 s.</string>
+    <string name="reactivate_account_message">" Du måste lägga till ett Google Mail-konto. 
+
+Det finns redan ett användarnamn för Google Mail  ( "<b>^1</b>" ) som är kopplat till det här kontot men det är inte aktivt för närvarande. 
+
+Tryck på Nästa om du vill aktivera användarnamnet igen och använda det. 
+
+Om du vill använda ett annat konto trycker du på Tillbaka och loggar in med ett annat konto eller skapar ett nytt."</string>
+    <string name="reactivating_account">Aktivera ditt konto igen…</string>
+    <string name="your_account_was_reactivated">Ditt konto har aktiverats.</string>
+    <string name="recovery_title">Återställningsinformation</string>
+    <string name="account_recovery_info">Om du glömmer ditt lösenord kan du besvara en säkerhetsfråga och få en återställningslänk skickad till en annan adress.</string>
+    <string name="security_question_prompt">Välj en säkerhetsfråga</string>
+    <string name="secondary_email_label">Återställningsadress</string>
+    <string name="invalid_email">"E-postadressen som har angetts är inte giltig. 
+ Exempel: kalle@exempel.se"</string>
+    <string name="invalid_email_primary">Återställningsadressen kan inte vara samma som den du skapar</string>
+    <string name="backup_consent_title">Säkerhetskopiera mina inställningar</string>
+    <string name="backup_consent_message">"Använd ditt Google-konto för att säkerhetskopiera appar, inställningar (till exempel bokmärken och Wi-Fi-lösenord) och andra data. Om du tidigare har säkerhetskopierat ditt konto kan du återställa det till den här mobilen nu.
+
+Du kan ändra dina inställningar för säkerhetskopiering när som helst i inställningarna."</string>
+    <string name="backup_consent_message_no_restore">"Använd ditt Google-konto för att säkerhetskopiera appar, inställningar (till exempel bokmärken och Wi-Fi-lösenord) och andra data.
+
+Du kan ändra dina inställningar för säkerhetskopiering när som helst i inställningarna."</string>
+    <string name="backup_consent_howto_disable_message">Du kan när som helst ändra dina inställningar för säkerhetskopiering av data i Inställningar under Sekretess.</string>
+    <string name="backup_consent_yes_agree">Säkerhetskopiera mobilens innehåll till mitt Google-konto</string>
+    <string name="restore_consent_yes_agree">Återställ innehållet i Google-kontot till den här mobilen</string>
+    <string name="restore_disable">Inaktivera återställning</string>
+    <string name="restore_enable">Aktivera återställning</string>
+    <string name="restore_enabled">"Om du har säkerhetskopierat dina inställningar tidigare
+kommer de att återställas."</string>
+    <string name="restore_disabled">Dina inställningar kommer inte att återställas från säkerhetskopian.</string>
+    <string name="restoring_title">Återställning pågår ...</string>
+    <string name="restoring_message">Mobilen kontaktar Google för att återställa ditt konto. Det kan ta upp till 5 minuter.</string>
+    <string name="restored_title">Återställt</string>
+    <string name="restored_message" />
+    <string name="webview_progress_title">Ansluter till domän...</string>
+    <string name="webview_progress_verbose_message">"Ditt företags servrar skickar inloggningsuppgifterna. Det kan ta några minuter.
+Sedan visas företagets inloggningssida."</string>
+    <string name="enterprise_unmanaged_domain">Den här domänen använder inte Google Apps. Kontrollera domännamnet och försök igen.</string>
+    <string name="gls_notification_title">Logga in på ditt konto</string>
+    <string name="gls_notification_new_account">Du behöver ett ^1-konto</string>
+    <string name="gls_notification_new_account_youtube">Du behöver ett YouTube-konto</string>
+    <string name="gls_notification_login_error">Tryck här om du vill logga in på ditt konto.</string>
+    <string name="gls_ui_add_account_title">Kontoinställningar</string>
+    <string name="gls_ui_google_account_subtitle">Google-konto</string>
+    <string name="gls_ui_activity_title">Inloggning för Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Webbläsarinloggning</string>
+    <string name="gls_ui_activity_title_enterprise">Inloggning för företag</string>
+    <string name="gls_ui_activity_title_youtube">Inloggning för YouTube</string>
+    <string name="gls_ui_activity_title_checking_in">Förbereder ...</string>
+    <string name="gls_ui_activity_authenticating">Autentiserar…</string>
+    <string name="gls_captcha_activity_message">Ange tecknen du ser i bilden:</string>
+    <string name="gls_captcha_activity_ok_button">Klar</string>
+    <string name="gls_error_activity_message">" Ett nätverksfel uppstod när du försökte logga in på  "<b>^1</b> . Försök igen eller klicka på knappen Bakåt om du vill avbryta.</string>
+    <string name="gls_error_activity_retry_button">Försök igen</string>
+    <string name="gls_dmagent_activity_message">" Din domän måste hanteras på en mobil enhet. Installera appen Google Apps Device Policy för att tillämpa de säkerhetspolicyer som krävs för kontot  "<b>^1</b> .</string>
+    <string name="gls_dmagent_activity_retry_button">Hämta</string>
+    <string name="gls_login_activity_username_label">Användarnamn</string>
+    <string name="gls_login_activity_password_label">Lösenord</string>
+    <string name="gls_login_activity_ok_button">Logga in</string>
+    <string name="gls_login_activity_loginfail_text_both">" Användarnamnet eller lösenordet är ogiltigt. Du måste ha ett  "<b>^1</b> -konto. Försök igen.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Du angav fel lösenord eller så har kontot ändrats. Ange lösenordet igen.</string>
+    <string name="gls_invalid_two_factor">Använd ett appspecifikt lösenord istället för det vanliga lösenordet till kontot.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Ange kontots lösenord.</string>
+    <string name="gls_enterprise_login_activity_msg">"Logga in på ditt företagskonto på ^1 för autentisering.
+ Tryck på Logga in om du vill öppna företagets webbaserade inloggningssida."</string>
+    <string name="gls_login_activity_badaccount_text">Du kan inte använda kontot i detta sammanhang. Försök med ett annat konto.</string>
+    <string name="gls_login_activity_newaccount_text">" Logga in på  "<b>^1</b> -kontot.</string>
+    <string name="gls_login_activity_create_youtube">" Har du inget YouTube-konto? Tryck "<a href="http://www.youtube.com/signup">här</a> om du vill skapa ett.</string>
+    <string name="gls_webview_progress_title">Ansluter till domän...</string>
+    <string name="gls_webview_progress_verbose_message">"Inloggningsuppgifterna skickas från företagets servrar. Det kan ta några minuter.
+Sedan visas företagets inloggningssida."</string>
+    <string name="gls_sign_in_button_label">Logga in</string>
+    <string name="gls_back_button_label">Tillbaka</string>
+    <string name="gls_cancel_button_label">Avbryt</string>
+    <string name="gls_exit_account_setup_button_label">Avsluta kontoinst.</string>
+    <string name="gls_reauthorize_button_label">Auktorisera igen</string>
+    <string name="permlab_googleAuthPassword">åtkomst till lösenord till Google-konton</string>
+    <string name="permdesc_googleAuthPassword">Ger ett program direktåtkomst till lösenorden till de Google-konton som du har konfigurerat.</string>
+    <string name="header_data_and_synchronization">Data och synkronisering</string>
+    <string name="permlab_googleMailSwitch">välj varumärket Gmail eller Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Tillåter att appar växlar mellan varumärkena Gmail och Google Mail.</string>
+    <string name="sync_item_title">Synkronisera %s</string>
+    <string name="grant_credentials_permission_message_header">Begärd behörighet</string>
+    <string name="grant_credentials_permission_message_footer">De begär tillstånd att:</string>
+    <string name="grant_credentials_permission_message_app">De här apparna vill ha åtkomst till ditt Google-konto från och med nu:</string>
+    <string name="grant_permissions_header_text">Begärd behörighet</string>
+    <string name="allow">Tillåt åtkomst</string>
+    <string name="deny">Nej tack</string>
+    <string name="permission_request_notification_title">Begärd behörighet</string>
+    <string name="permission_request_notification_with_subtitle">"Begärd behörighet
+för kontot %s"</string>
+    <string name="notification_title">Inloggningsfel för %1$s</string>
+    <string name="account_setup_title">Google-konto</string>
+    <string name="signed_in">Inloggning genomförd</string>
+    <string name="account_linked_message">Du har loggats in på %s och data synkroniseras.</string>
+    <string name="account_created_message">Ett nytt konto har skapats: %s</string>
+    <string name="done_button_label">Klar</string>
+    <string name="captcha_message_string">För många felaktiga försök.</string>
+    <string name="login_activity_title">Logga in</string>
+    <string name="show_error_activity_title">Det gick inte att logga in</string>
+    <string name="login_activity_task_title">Loggar in...</string>
+    <string name="sync_intro_activity_title_first_account">Säkerhetskopiera och återställ</string>
+    <string name="sync_intro_activity_title_first_created_account">Säkerhetskopiera</string>
+    <string name="sync_intro_activity_title">Kontoinloggning lyckades</string>
+    <string name="username">E-post</string>
+    <string name="error_invalid_second_factor">Använd ett programspecifikt lösenord istället för det vanliga lösenordet till kontot.</string>
+    <string name="error_needs_browser">Om du vill öppna ditt konto måste du logga in på webben. Tryck på Nästa om du vill logga in i webbläsaren.</string>
+    <string name="error_unknown">Oväntat serverfel: %s</string>
+</resources>

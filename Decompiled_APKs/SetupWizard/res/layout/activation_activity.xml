@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.google.android.setupwizard.BaseActivity$ProportionalOuterFrame"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/Title" android:gravity="bottom" android:id="@id/activation_title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/content_margin_left" android:minHeight="@dimen/title_height" android:text="@string/activation_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/top_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/activation_title">
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/network_notifier" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/top_divider" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/network_bars" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/content" android:layout_width="@dimen/preference_width" android:layout_height="wrap_content" android:layout_above="@id/buttons" android:layout_below="@id/top_divider" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="top|left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/activation_text" android:text="@string/activation_text" style="@style/DescriptionText" />
+            <TextView android:id="@id/skip_confirmation" android:visibility="gone" android:text="@string/activation_skip_confirmation" style="@style/DescriptionText" />
+            <TextView android:id="@id/shutdown_countdown" android:visibility="gone" android:layout_alignLeft="@id/progress_bar" style="@style/DescriptionText" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@id/content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <View android:layout_above="@id/buttons" style="@style/BottomDivider" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/cancel_button" android:layout_marginLeft="@dimen/button_horizontal_margin" android:text="@string/cancel_button_label" style="@style/Button" />
+            <Button android:id="@id/skip_button_for_standalone" android:layout_marginLeft="@dimen/button_horizontal_margin" android:text="@string/cancel_button_label" style="@style/Button" />
+            <Button android:id="@id/next_button" android:layout_marginLeft="@dimen/button_horizontal_margin" android:text="@string/next_button_label" style="@style/Button" />
+            <Button android:id="@id/skip_button" android:layout_marginLeft="@dimen/button_horizontal_margin" android:text="@string/skip_button_label" style="@style/Button" />
+            <Button android:id="@id/continue_skip_button" android:visibility="gone" android:layout_marginLeft="@dimen/button_horizontal_margin" android:text="@string/activation_continue_skip_label" style="@style/Button" />
+        </LinearLayout>
+    </LinearLayout>
+</view>

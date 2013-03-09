@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="404" android:versionName="@string/ap_version_id" package="com.android.smith"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:label="@string/htc_private_app" android:icon="@drawable/icon_smith">
+        <receiver android:name="BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="SystemLoggersReceiver">
+            <intent-filter>
+                <action android:name="com.android.smith.SystemLoggers.CONTROLLER" />
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="BatteryLoggerReceiver">
+            <intent-filter>
+                <action android:name="com.android.smith.BatteryLogger.CONTROLLER" />
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="LoggerControllerReceiver" android:exported="true">
+            <intent-filter>
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="PackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="SecretCodeReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="76484" />
+                <data android:scheme="android_secret_code" android:host="cdma564" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="MediaMountReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="NotificationReceiver">
+            <intent-filter>
+                <action android:name="com.android.smith.SYSTEMLOGGERS_STATUS" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@*android:style/Theme.NoTitleBar" android:label="@string/htc_private_app" android:icon="@drawable/icon_smith" android:name="MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/label_logger_controller" android:name="LoggerController" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.category.SMITH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/label_collect_logs" android:name="CollectLogs" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.category.SMITH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/label_snapshot_report" android:name="SnapshotReport" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.category.SMITH" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/label_system_loggers" android:name="SystemLoggers" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.category.SMITH" />
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/label_battery_logger" android:name="BatteryLogger" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.category.SMITH" />
+                <category android:name="com.android.category.SMITH.CONTROLLER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

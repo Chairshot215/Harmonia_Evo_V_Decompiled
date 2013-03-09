@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/crypt_keeper_settings_title" android:key="security_category">
+        <com.htc.preference.HtcPreference android:title="@string/crypt_keeper_encrypt_title" android:summary="@string/crypt_keeper_encrypted_summary" style="?android:preferenceInformationStyle" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Suggestion">
+        <item name="android:background">@drawable/bg_suggestion</item>
+        <item name="android:paddingLeft">@dimen/suggestions_padding_left</item>
+        <item name="android:paddingRight">@dimen/suggestions_padding_right</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/suggestion_view_height</item>
+    </style>
+    <style name="Suggestion.WebSearch" parent="@style/Suggestion">
+        <item name="android:background">@color/web_suggestion_background</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_height">@dimen/suggestion_web_view_height</item>
+    </style>
+    <style name="SuggestionDebugText">
+        <item name="android:textSize">8.0sp</item>
+        <item name="android:textColor">@color/primary_text_inverse</item>
+        <item name="android:background">@color/debug_suggestion_background</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="Suggestion.WebSearch.Placeholder" parent="@style/Suggestion.WebSearch">
+        <item name="android:focusable">false</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="SuggestionText1">
+        <item name="android:textAppearance">@style/SuggestionText1Appearance</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/suggestion_text_left_padding</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="SuggestionText1.Web" parent="@style/SuggestionText1">
+        <item name="android:textAppearance">@style/SuggestionText1Appearance.Web</item>
+        <item name="android:ellipsize">start</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="SuggestionText1.Placeholder" parent="@style/SuggestionText1">
+        <item name="android:textAppearance">@style/SuggestionText1Appearance.Placeholder</item>
+    </style>
+    <style name="SuggestionText2">
+        <item name="android:textAppearance">@style/SuggestionText2Appearance</item>
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:paddingLeft">@dimen/suggestion_text_left_padding</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/suggestion_text2_height</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SuggestionText2.Url" parent="@style/SuggestionText2">
+        <item name="android:textColor">@color/secondary_text_suggest</item>
+    </style>
+    <style name="SuggestionIcon1">
+        <item name="android:paddingLeft">@dimen/suggestion_icon1_left_padding</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">@dimen/suggestion_icon_size</item>
+        <item name="android:layout_height">@dimen/suggestion_view_height</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="SuggestionIcon1.Web" parent="@style/SuggestionIcon1">
+        <item name="android:contentDescription">@string/accessibility_search_history</item>
+    </style>
+    <style name="SuggestionIcon2">
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">@dimen/suggestion_icon_size</item>
+        <item name="android:layout_height">@dimen/suggestion_view_height</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="SuggestionIcon2.Spinner" parent="@style/SuggestionIcon2">
+        <item name="android:padding">8.0dip</item>
+        <item name="android:layout_height">@dimen/suggestion_icon_size</item>
+    </style>
+    <style name="SuggestionIcon2.Frame" parent="@style/SuggestionIcon2">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="SuggestionIcon2.Button" parent="@style/SuggestionIcon2">
+        <item name="android:background">@drawable/bg_suggestion</item>
+        <item name="android:focusable">true</item>
+        <item name="android:duplicateParentState">false</item>
+    </style>
+    <style name="SuggestionText1Appearance">
+        <item name="android:textSize">@dimen/suggestion_text1_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text_suggest</item>
+    </style>
+    <style name="SuggestionText1Appearance.Query" parent="@style/SuggestionText1Appearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondary_text_suggest</item>
+    </style>
+    <style name="SuggestionText1Appearance.Suggested" parent="@style/SuggestionText1Appearance" />
+    <style name="SuggestionText1Appearance.Web" parent="@style/SuggestionText1Appearance">
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="SuggestionText1Appearance.Placeholder" parent="@style/SuggestionText1Appearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondary_text_suggest</item>
+    </style>
+    <style name="SuggestionText2Appearance">
+        <item name="android:textSize">@dimen/suggestion_text2_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/secondary_text_suggest</item>
+    </style>
+    <style name="Separator">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/separator_height_plus1</item>
+    </style>
+    <style name="Separator.Web" parent="@style/Separator">
+        <item name="android:background">@drawable/bg_separator_web</item>
+    </style>
+    <style name="Separator.Summons" parent="@style/Separator">
+        <item name="android:background">@drawable/bg_separator_summons</item>
+    </style>
+    <style name="Separator.StartOfGroup" parent="@style/Separator">
+        <item name="android:background">@*android:color/transparent</item>
+        <item name="android:layout_height">@dimen/suggestion_group_spacing</item>
+    </style>
+    <style name="Separator.WithinGroup" parent="@style/Separator">
+        <item name="android:background">@drawable/bg_separator_inset</item>
+    </style>
+    <style name="Separator.First" parent="@style/Separator">
+        <item name="android:layout_height">@dimen/suggestions_first_separator_height</item>
+    </style>
+    <style name="SuggestionsList">
+        <item name="android:background">@color/summons_pane_background</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:childDivider">@*android:color/transparent</item>
+        <item name="android:divider">@*android:color/transparent</item>
+        <item name="android:dividerHeight">0.0px</item>
+    </style>
+    <style name="SuggestionsList.Web" parent="@style/SuggestionsList" />
+    <style name="SuggestionsList.Summons" parent="@style/SuggestionsList">
+        <item name="android:background">@color/summons_pane_background</item>
+    </style>
+    <style name="Theme.QuickSearchBox" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="Theme.QuickSearchBox.Search" parent="@style/Theme.QuickSearchBox">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowSoftInputMode">stateUnchanged|adjustResize</item>
+    </style>
+</resources>

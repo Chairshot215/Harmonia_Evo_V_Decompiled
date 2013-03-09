@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@com.htc:dimen/title_margin_small" android:paddingTop="@dimen/number_picker_dialog_padding_top" android:paddingRight="@com.htc:dimen/title_margin_small" android:paddingBottom="@dimen/number_picker_dialog_padding_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@com.htc:dimen/title_margin_small" style="@com.htc:style/list_primary_s" />
+    <EditText android:gravity="left|center" android:id="@id/input" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="9" style="@com.htc:style/input_default_m" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.Title1 android:orientation="vertical" android:id="@id/title_1" android:layout_width="fill_parent" android:layout_height="@dimen/title_1line_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_1_layout" android:background="@drawable/common_titlebar_btn_rest" android:paddingLeft="12.0px" android:paddingRight="12.0px" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zero_dummy_asset" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_primary_m" android:textColor="@color/titleTextColor" android:gravity="center_vertical" android:id="@id/title_1_txt_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/title_primary_xs" android:textColor="@color/titleTextColor" android:gravity="center_vertical" android:id="@id/title_1_txt_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.htc.widget.Title1>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left|center" android:id="@id/scene_list_title_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" style="@style/CustomStyle_common_add" />
+    <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:textSize="@dimen/choose_sences_item_text_size" android:textColor="@com.htc:color/dark_text_bright_focused" android:gravity="center_vertical" android:id="@id/scene_list_title_name" android:layout_width="fill_parent" android:layout_height="@dimen/addtohome_listed_tv_layout_height" android:layout_marginLeft="5.0dip" android:minHeight="?android:listPreferredItemHeight" />
+</LinearLayout>

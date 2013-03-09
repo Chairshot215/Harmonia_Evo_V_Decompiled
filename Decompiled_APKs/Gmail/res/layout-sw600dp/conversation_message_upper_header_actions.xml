@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/edit_draft" android:visibility="gone" android:src="@drawable/ic_edit_holo_dark" android:contentDescription="@string/resume_draft" style="@style/message_header_action_button" />
+    <ImageView android:id="@id/reply" android:src="@drawable/ic_reply_holo_dark" android:contentDescription="@string/reply" style="@style/message_header_action_button" />
+    <ImageView android:id="@id/reply_all" android:src="@drawable/ic_reply_all_holo_dark" android:contentDescription="@string/reply_all" style="@style/message_header_action_button" />
+    <ImageView android:id="@id/forward" android:src="@drawable/ic_forward_holo_dark" android:contentDescription="@string/forward" style="@style/message_header_action_button" />
+    <ImageView android:id="@id/star" android:src="@drawable/message_header_star" android:contentDescription="@string/star" style="@style/message_header_action_button" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/button_1x1" android:background="@drawable/common_add" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_list_item_margin_left_add_icon" />
+    <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="@dimen/htc_list_item_height" android:layout_marginLeft="@dimen/htc_list_item_margin_left_add_text" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/list_primary_m" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.widget.CalendarEventPanel android:id="@id/calendar_event_panel" android:background="@*android:color/white" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_panel_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calandar_event_panel_min_height">
+        <ImageView android:background="@com.htc:drawable/trans_topround" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textStyle="bold" android:id="@id/title" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <TextView android:textSize="@com.htc:dimen/list_secondary_m" android:id="@id/time" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_xs" />
+        <TextView android:id="@id/date" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_secondary_m" />
+        <LinearLayout android:orientation="vertical" android:id="@id/location" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="9.0px" />
+            <TextView android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_location" style="@com.htc:style/list_secondary_m" />
+            <TextView android:id="@id/location_txt" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@com.htc:drawable/common_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0px" android:layout_marginBottom="9.0px" />
+            <TextView android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_description" style="@com.htc:style/list_secondary_m" />
+            <TextView android:textSize="@com.htc:dimen/list_secondary_m" android:id="@id/description_txt" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/list_primary_xs" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+        <ImageView android:background="@com.htc:drawable/trans_bottomround" android:layout_width="fill_parent" android:layout_height="@dimen/calandar_event_bottom_dummy_view_height" />
+    </LinearLayout>
+</com.android.phone.widget.CalendarEventPanel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cmd_bar_4" android:layout_width="fill_parent" android:layout_height="@dimen/dock_button_cmd_bar_button_layout_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_linear" android:paddingLeft="@dimen/dock_button_cmd_bar_button_padding_left" android:paddingTop="@dimen/dock_button_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.dockmode.shortcut.ShortcutSettingIcon android:id="@id/btn01" android:layout_width="@dimen/idle_shortcut_setting_width" android:layout_height="wrap_content" />
+        <com.htc.dockmode.shortcut.ShortcutSettingIcon android:id="@id/btn02" android:layout_width="@dimen/idle_shortcut_setting_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/idle_shortcut_margin_left" />
+        <com.htc.dockmode.shortcut.ShortcutSettingIcon android:id="@id/btn03" android:layout_width="@dimen/idle_shortcut_setting_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/idle_shortcut_margin_left" />
+    </LinearLayout>
+    <Button android:id="@id/cmd_bar_btn_1" android:background="@drawable/dock_mode_btn_left" android:paddingTop="10.0px" android:paddingRight="10.0px" android:layout_width="@dimen/dock_button_bottom_width" android:layout_height="@dimen/dock_button_bottom_height" android:drawableTop="@drawable/icon_exit_rest" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/clock_night_mode" android:background="@drawable/dock_mode_btn_right" android:paddingLeft="10.0px" android:paddingTop="10.0px" android:layout_width="@dimen/dock_button_bottom_width" android:layout_height="@dimen/dock_button_bottom_height" android:drawableTop="@drawable/icon_brightness" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

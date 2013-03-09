@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <com.android.phone.HtcCdmaGlobalRoamingPreference android:entries="@array/global_roaming_select_choices" android:title="@string/roaming" android:key="button_global_roaming_option_key" android:summary="@string/roaming_enable" android:defaultValue="0" android:dialogTitle="@string/roaming" android:entryValues="@array/global_roaming_select_values" />
+</com.htc.preference.HtcPreferenceScreen>

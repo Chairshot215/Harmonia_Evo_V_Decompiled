@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100264380" android:versionName="1.0.2211293229.264380" package="com.htc.htcCOTAClient"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/htc_private_app" android:description="@string/htc_company_name" android:hardwareAccelerated="false">
+        <receiver android:name="COTAReceiver" android:permission="android.permission.HTC_APP_UPDATE">
+            <intent-filter>
+                <action android:name="android.server.HTCCOTA.CHECKIN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="DownloadReceiver" android:permission="android.permission.HTC_APP_UPDATE">
+            <intent-filter>
+                <action android:name="android.server.HTCCOTA.TRIGGER_DOWNLOAD" />
+                <data android:scheme="http" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="DownloadReceiver$CWPkgDownloadCompletedReceiver" android:exported="true" />
+        <receiver android:name="DownloadReceiver$CancelInstallReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.server.HTCCOTA.CANCEL_EXTRACT" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.ACCESS_CW_FOLDER" />
+</manifest>

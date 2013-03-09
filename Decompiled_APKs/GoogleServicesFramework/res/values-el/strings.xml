@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Ιστός</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">άγνωστο</string>
+    <string name="sharedUserLabel">Υπηρεσίες Google</string>
+    <string name="service_label">Πρόγραμμα ενημέρωσης συστήματος</string>
+    <string name="system_update_activity_name">Ενημερώσεις συστήματος</string>
+    <string name="system_update_activity_title">Ενημερώσεις συστήματος</string>
+    <string name="system_update_activity_battery_low_text">Η ισχύς της μπαταρίας είναι πολύ χαμηλή και δεν επαρκεί για την εγκατάσταση της ενημέρωσης συστήματος. Συνδέστε το φορτιστή για να συνεχίσετε.</string>
+    <string name="system_update_activity_battery_low_charging_text">Η ισχύς της μπαταρίας είναι πολύ χαμηλή και δεν επαρκεί για την εγκατάσταση της ενημέρωσης συστήματος. Περιμένετε έως ότου η μπαταρία φορτίσει επαρκώς.</string>
+    <string name="system_update_activity_roaming_text">Δεν είναι δυνατή η λήψη ενημερώσεων συστήματος κατά την περιαγωγή.</string>
+    <string name="system_update_requires_restart_status_text">Απαιτείται επανεκκίνηση</string>
+    <string name="system_update_downloading_status_text">Λήψη</string>
+    <string name="system_update_downloading_wifi_status2_text">Μέσω Wi-Fi μόνο μέχρι ^1</string>
+    <string name="system_update_verifying_status_text">Γίνεται επιβεβαίωση</string>
+    <string name="system_update_verification_failed_text">Η επαλήθευση απέτυχε</string>
+    <string name="system_update_verified_status_text">Έγινε λήψη και επαλήθευση</string>
+    <string name="system_update_download_failed_status_text">Η λήψη απέτυχε</string>
+    <string name="system_update_download_retry_button_text">Επανάληψη λήψης</string>
+    <string name="system_update_download_button_text">Λήψη</string>
+    <string name="system_update_install_button_text">Επανεκκίνηση &amp; εγκατάσταση</string>
+    <string name="system_update_check_now_button_text">Έλεγχος τώρα</string>
+    <string name="system_update_no_update_content_text">Το σύστημά σας είναι ενημερωμένο</string>
+    <string name="system_update_last_checkin">Τελευταίος έλεγχος για την ενημέρωση ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Υπάρχει μια διαθέσιμη ενημέρωση συστήματος</string>
+    <string name="system_update_recommended_update_available_notification_message">Προβολή λεπτομερειών ενημέρωσης.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Η λήψη της ενημέρωσης συστήματος δεν ήταν επιτυχής.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Η λήψη δεν ήταν επιτυχής, δοκιμάστε ξανά.</string>
+    <string name="system_update_error_dialog_title">Σφάλμα</string>
+    <string name="system_update_error_downloading_dialog_message">Παρουσιάστηκε ένα πρόβλημα κατά τη λήψη της ενημέρωσης.</string>
+    <string name="system_update_error_installing_dialog_message">Παρουσιάστηκε ένα πρόβλημα κατά την εγκατάσταση της ενημέρωσης.</string>
+    <string name="system_update_install_dialog_label">Ενημέρωση συστήματος</string>
+    <string name="system_update_install_dialog_message_nonphone">Μια ενημέρωση συστήματος είναι έτοιμη για εγκατάσταση. Η συσκευή Android θα πραγματοποιήσει επανεκκίνηση και θα εγκαταστήσει την ενημέρωση.</string>
+    <string name="system_update_install_dialog_message_phone">Μια ενημέρωση συστήματος είναι έτοιμη για εγκατάσταση. Η συσκευή Android θα πραγματοποιήσει επανεκκίνηση και θα εγκαταστήσει την ενημέρωση. Κατά τη διάρκεια της εγκατάστασης, δεν θα είστε σε θέση να πραγματοποιήσετε κλήσεις, συμπεριλαμβανομένων και των κλήσεων έκτακτης ανάγκης.</string>
+    <string name="system_update_install_dialog_battery_low_message">Μια ενημέρωση συστήματος είναι έτοιμη, αλλά η ισχύς της μπαταρίας είναι πολύ χαμηλή και δεν επαρκεί για την πραγματοποίηση της εγκατάστασης. Συνδέστε το φορτιστή.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Μια ενημέρωση συστήματος είναι έτοιμη, αλλά η ισχύς της μπαταρίας είναι πολύ χαμηλή και δεν επαρκεί για την πραγματοποίηση της εγκατάστασης. Περιμένετε έως ότου η μπαταρία φορτίσει επαρκώς.</string>
+    <string name="system_update_install_dialog_now_button">Εγκατάσταση τώρα</string>
+    <string name="system_update_install_dialog_later_button">Εγκατάσταση αργότερα</string>
+    <string name="system_update_install_dialog_info_button">Περισσότερες πληροφορίες...</string>
+    <string name="system_update_downloading_notification_title">Λήψη ενημέρωσης συστήματος</string>
+    <string name="system_update_verifying_notification_title">Επαλήθευση ενημέρωσης συστήματος</string>
+    <string name="system_update_download_dialog_label">Λήψη ενημέρωσης συστήματος</string>
+    <string name="system_update_download_dialog_message">Διατίθεται ενημέρωση συστήματος που θα βελτιώσει τη συσκευή Android. Αν τη λάβετε από ασύρματο δίκτυο, μπορεί να υπάρξουν χρεώσεις.</string>
+    <string name="system_update_download_dialog_now_button">Λήψη τώρα</string>
+    <string name="system_update_download_dialog_later_button">Λήψη αργότερα</string>
+    <string name="system_update_download_dialog_cancel_button">Ακύρωση</string>
+    <string name="system_update_countdown_complete">Επανεκκίνηση τώρα…</string>
+    <string name="system_update_countdown_cancel_button">Ακύρωση εγκατάστασης</string>
+    <string name="system_update_complete_label">Ενημέρωση συστήματος</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Προώθηση συνδρομών</string>
+    <string name="ro_perm_label">ανάγνωση άμεσων μηνυμάτων</string>
+    <string name="ro_perm_desc">Επιτρέπει στις εφαρμογές την ανάγνωση δεδομένων από τον πάροχο περιεχομένου Google Talk.</string>
+    <string name="wo_perm_label">εγγραφή άμεσων μηνυμάτων</string>
+    <string name="wo_perm_desc">Επιτρέπει στις εφαρμογές την εγγραφή δεδομένων στον πάροχο περιεχομένου Google Talk.</string>
+    <string name="gsf_label">Πλαίσιο Υπηρεσιών Google</string>
+    <string name="search_chats">"Αναζήτηση συζητήσεων
+για τον όρο '%1$s'"</string>
+    <string name="gtalkservice_label">Υπηρεσία ανταλλαγής μηνυμάτων Google</string>
+    <string name="c2dm_label">Υπηρεσία ανταλλαγγής μηνυμάτων \"Νέφος προς συσκευή\"</string>
+    <string name="sendTalkMsg_perm_label">Ανταλλάσσει μηνύματα και λαμβάνει ειδοποιήσεις συγχρονισμού από τους διακομιστές της Google</string>
+    <string name="sendTalkMsg_perm_desc">Χρησιμοποιείται για την προώθηση μηνυμάτων διακομιστή από το νέφος προς την συσκευή και για το συγχρονισμό ειδοποιήσεων. Το Google Talk χρησιμοποιεί αυτή την υπηρεσία για την ανταλλαγή μηνυμάτων και το συγχρονισμό της κατάστασης παρουσίας. Μια κακόβουλη εφαρμογή θα μπορούσε να χρησιμοποιήσει αυτή την υπηρεσία για τη μετάδοση υπερβολικού αριθμού δεδομένων.</string>
+    <string name="perm_receive_data_message_label">λήψη δεδομένων από το Διαδίκτυο</string>
+    <string name="perm_receive_data_message_desc">Επιτρέπει στις εφαρμογές να λαμβάνουν μηνύματα από το νέφος προς την συσκευή που αποστέλλονται από την υπηρεσία της εφαρμογής. Η χρήση της υπηρεσίας αυτής θα επιφέρει χρήση δεδομένων. Κακόβουλες εφαρμογές ενδέχεται να προκαλέσουν υπερβολική χρήση δεδομένων.</string>
+    <string name="perm_data_msg_broadcast_label">Μετάδοση μηνυμάτων δεδομένων σε εφαρμογές.</string>
+    <string name="perm_data_msg_broadcast_desc">Μπορεί να μεταδώσει μηνύματα δεδομένων από το διαδίκτυο στις εφαρμογές που έχουν καταχωρηθεί να τα λαμβάνουν.</string>
+    <string name="perm_receive_xmpp_label">αποστολή/λήψη μηνυμ. XMPP από/προς διακομ. Google</string>
+    <string name="perm_receive_xmpp_desc">Επιτρέπει στις εφαρμογές Google την αποστολή και λήψη μηνυμάτων XMPP από/προς διακομιστές Google.</string>
+    <string name="perm_xmpp_broadcast_label">Μετάδοση μηνυμάτων XMPP σε εφαρμογές.</string>
+    <string name="perm_xmpp_broadcast_desc">Δυνατότητα μετάδοσης μηνυμάτων XMPP από διακομιστές Google σε εφαρμογές καταχωρισμένες για λήψη.</string>
+    <string name="perm_use_xmpp_endpoint_label">αποστολή/λήψη μηνυμ. XMPP από/προς διακομ. Google</string>
+    <string name="perm_use_xmpp_endpoint_desc">Επιτρέπει στις εφαρμογές Google την αποστολή και λήψη μηνυμάτων XMPP από/προς διακομιστές Google.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Μετάδοση μηνυμάτων XMPP σε εφαρμογές.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Δυνατότητα μετάδοσης μηνυμάτων XMPP που έχουν ληφθεί από διακομιστές Google σε εφαρμογές.</string>
+    <string name="permlab_intentVendingOnly">Αποστολή εκπομπών στο Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Αποστέλλει εκπομπές προς το Android Market με αιτήματα για την εγκατάσταση ή την κατάργηση εγκατάστασης των εφαρμογών.</string>
+    <string name="permlab_heartbeat">Αποστολή παλμού στο διακομιστή Google Talk</string>
+    <string name="permdesc_heartbeat">Μπορεί να στείλει ένα πακέτο παλμού στο διακομιστή Google Talk, για να εξασφαλίσει την καλή κατάσταση της σύνδεσης.</string>
+    <string name="group_chat">Ομαδική συζήτηση: %s</string>
+    <string name="default_decline_reason">Λυπάμαι, είμαι απασχολημένος αυτή τη στιγμή.</string>
+    <string name="newMessages_label">Νέες συζητήσεις</string>
+    <string name="notify_groupchat_label">Πρόσκληση σε ομαδική συζήτηση</string>
+    <string name="num_unread_chats">%s μη αναγνωσμένες συζητήσεις</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s σε %s</string>
+    <string name="subscription_notify_text">Ο χρήστης %s θέλει να μπορεί να συζητήσετε</string>
+    <string name="group_chat_invite_notify_text">Λάβατε μια πρόσκληση σε ομαδική συζήτηση από το χρήστη %s</string>
+    <string name="group_chat_invite_dialog_text">Ο χρήστης %s σας προσκάλεσε να συμμετέχετε σε μια ομαδική συζήτηση.</string>
+    <string name="message_too_long">Δεν μπορείτε να στείλετε μηνύματα με μήκος μεγαλύτερο από 2000 χαρακτήρες.</string>
+    <string name="missed_video_chat_notification">Δεν έχετε απαντήσει σε μια πρόσκληση συνομιλίας μέσω βίντεο</string>
+    <string name="missed_voice_chat_notification">Δεν έχετε απαντήσει σε μια πρόσκληση φωνητικής συνομιλίας</string>
+    <string name="missed_video_chat_notification_no_wifi">Δεν έχετε απαντήσει σε μια πρόσκληση συνομιλίας μέσω βίντεο επειδή δεν ήσασταν συνδεδεμένοι σε Wi-Fi</string>
+    <string name="missed_voice_chat_notification_no_wifi">Δεν έχετε απαντήσει σε μια πρόσκληση φωνητικής συνομιλίας επειδή δεν ήσασταν συνδεδεμένοι σε Wi-Fi</string>
+    <string name="missed_video_chat_message">Ο χρήστης %1$s επιχείρησε να ξεκινήσει μια συνομιλία μέσω βίντεο μαζί σας</string>
+    <string name="missed_voice_chat_message">Ο χρήστης %1$s επιχείρησε να ξεκινήσει μια φωνητική συνομιλία μαζί σας</string>
+    <string name="missed_video_chat_message_no_wifi">Ο χρήστης %1$s προσπάθησε να ξεκινήσει με εσάς μια συνομιλία μέσω βίντεο, τη στιγμή που εσείς δεν ήσασταν συνδεδεμένοι σε Wi-Fi</string>
+    <string name="missed_voice_chat_message_no_wifi">Ο χρήστης %1$s προσπάθησε να ξεκινήσει με εσάς μια φωνητική συνομιλία, τη στιγμή που εσείς δεν ήσασταν συνδεδεμένοι σε Wi-Fi</string>
+    <string name="end_cause_user_unavailable_video">Ο χρήστης %1$s δεν ήταν διαθέσιμος για συνομιλία μέσω βίντεο.</string>
+    <string name="end_cause_user_unavailable_voice">Ο χρήστης %1$s δεν ήταν διαθέσιμος για φωνητική συνομιλία.</string>
+    <string name="end_cause_sent_terminate_video">Τερματίσατε τη συνομιλία μέσω βίντεο με το χρήστη %1$s.</string>
+    <string name="end_cause_sent_terminate_voice">Τερματίσατε τη φωνητική συνομιλία με το χρήστη %1$s.</string>
+    <string name="end_cause_received_terminate_video">Ο χρήστης %1$s τερμάτισε τη συνομιλία μέσω βίντεο.</string>
+    <string name="end_cause_received_terminate_voice">Ο χρήστης %1$s τερμάτισε τη φωνητική συνομιλία.</string>
+    <string name="end_cause_network_problem_video">Λυπούμαστε! Η συνομιλία μέσω βίντεο με τον χρήστη %1$s απέτυχε λόγω προβλήματος με το δίκτυο. Προσπαθήστε ξανά.</string>
+    <string name="end_cause_network_problem_voice">Λυπούμαστε! Η φωνητική συνομιλία με τον/την %1$s απέτυχε λόγω προβλήματος δικτύου. Προσπαθήστε ξανά.</string>
+    <string name="conn_auth_error_notify_ticker">Ο έλεγχος ταυτότητας στο Google Talk απέτυχε</string>
+    <string name="conn_auth_error_notify_title">Ο έλεγχος ταυτότητας στο Google Talk απέτυχε</string>
+    <string name="conn_auth_error_title">Σφάλμα ελέγχου ταυτότητας</string>
+    <string name="conn_auth_error_message">Το Google Talk απέτυχε να συνδεθεί. Εάν πρόκειται για λογαριασμό Εφαρμογών Google, επιβεβαιώστε ότι η υπηρεσία συζήτησης είναι ενεργοποιημένη για αυτόν το λογαριασμό.</string>
+    <string name="conn_auth_error_button_retry">Επανάληψη</string>
+    <string name="conn_auth_error_button_cancel">Ακύρωση</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Καλώς ορίσατε στο ^1</string>
+    <string name="setup_wizard_title">Οδηγός ρύθμισης</string>
+    <string name="error_dialog_title">Προσοχή</string>
+    <string name="next_button_label">Επόμενο</string>
+    <string name="back_button_label">Πίσω</string>
+    <string name="sign_in_button_label">Σύνδεση</string>
+    <string name="create_button_label">Δημιουργία</string>
+    <string name="skip_button_label">Παράλειψη</string>
+    <string name="first_name">Όνομα</string>
+    <string name="last_name">Επώνυμο</string>
+    <string name="done">ΟΚ</string>
+    <string name="cancel_button_label">Ακύρωση</string>
+    <string name="done_button_label">Ολοκλήρωση ρύθμισης</string>
+    <string name="try_again_button_label">Δοκιμάστε ξανά</string>
+    <string name="close_button_label">Κλείσιμο</string>
+    <string name="edit_text_help">Αγγίξτε ένα πλαίσιο κειμένου για να ξεκινήσετε την πληκτρολόγηση</string>
+    <string name="add_a_google_account">Προσθήκη Λογαριασμού Google</string>
+    <string name="no_sim_setup_wireless">Δεν έχετε τοποθετήσει κάρτα SIM και συνεπώς δεν είναι δυνατή η σύνδεση σε κάποιο δίκτυο κινητής τηλεφωνίας για υπηρεσίες φωνής ή δεδομένων. Μπορείτε να συνδεθείτε σε ένα δίκτυο Wi-Fi χωρίς κάρτα SIM.</string>
+    <string name="setup_wifi_button_label">Σύνδεση σε δίκτυο Wi-Fi</string>
+    <string name="no_network">Δεν διαθέτετε σύνδεση δικτύου.</string>
+    <string name="no_network_help">Αυτό ενδέχεται να είναι ένα προσωρινό πρόβλημα ή η συσκευή σας Android ενδεχομένως να μην υποστηρίζει υπηρεσίες δεδομένων. Δοκιμάστε ξανά όταν είστε συνδεδεμένοι σε ένα δίκτυο κινητής τηλεφωνίας ή σε δίκτυο Wi-Fi.</string>
+    <string name="server_error">Παρουσιάστηκε ένα πρόβλημα κατά την επικοινωνία με τους διακομιστές της Google.</string>
+    <string name="server_error_help">Δοκιμάστε ξανά αργότερα.</string>
+    <string name="network_unreliable">Δεν είναι δυνατή η δημιουργία αξιόπιστης σύνδεσης δεδομένων σε αυτόν το διακομιστή.</string>
+    <string name="network_unreliable_help">Αυτό ενδέχεται να είναι ένα προσωρινό πρόβλημα ή η συσκευή Android δεν υποστηρίζει υπηρεσίες δεδομένων. Εάν δεν επιλυθεί το πρόβλημα, επικοινωνήστε με την Εξυπηρέτηση πελατών.</string>
+    <string name="invalid_login_character">Μη έγκυρος χαρακτήρας. Επιτρέπονται μόνο οι χαρακτήρες 0-9, a-z, A-Z και οι τελείες.</string>
+    <string name="invalid_password_character">Μη έγκυρος χαρακτήρας κωδικού πρόσβασης.</string>
+    <string name="add_apn">Ασύρματες ρυθμίσεις</string>
+    <string name="setup_google_account_title">Ρύθμιση του Λογαριασμού σας Google</string>
+    <string name="setup_complete_title">Ολοκλήρωση ρύθμισης</string>
+    <string name="cant_be_blank">Το πεδίο δεν μπορεί να είναι κενό.</string>
+    <string name="calendar">Ημερολόγιο Google</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Η συσκευή σας Android δεν είναι συνδεδεμένη σε υπηρεσία δεδομένων. Για να προβάλετε τώρα αυτές τις πληροφορίες, μεταβείτε στη διεύθυνση %s από οποιονδήποτε υπολογιστή που είναι συνδεδεμένος στο Διαδίκτυο.</string>
+    <string name="field_cant_be_blank">Αυτό το πεδίο δεν μπορεί να είναι κενό</string>
+    <string name="field_invalid_domain">Αυτό δεν είναι ένα έγκυρο όνομα τομέα διαδικτύου</string>
+    <string name="field_invalid_user">Αυτό δεν είναι ένα έγκυρο όνομα χρήστη</string>
+    <string name="field_invalid_user_domain">Εισαγάγετε μόνο το όνομα χρήστη, όχι τη διεύθυνση ηλεκτρονικού ταχυδρομείου</string>
+    <string name="field_invalid_login">Αυτό δεν είναι ένα έγκυρο όνομα λογαριασμού</string>
+    <string name="about_accounts_message"><font size="17">"Η ρύθμιση της συσκευής σας Android είναι εύκολη! Το μόνο που χρειάζεστε είναι ένας Λογαριασμός Google.
+"<font height="17">"
+"</font><b>Γιατί να χρησιμοποιήσετε ένα Λογαριασμό Google;</b>"
+"<font height="3">"
+"</font>"Με ένα Λογαριασμό Google, οι εφαρμογές Google συγχρονίζονται αυτόματα ανάμεσα στη συσκευή Android και τον υπολογιστή σας, ανεξάρτητα από το πού πραγματοποιείτε κάποια ενημέρωση.
+"<font height="17">"
+"</font><b>Διαθέτετε ήδη Λογαριασμό Google;</b>"
+"<font height="3">"
+"</font>"Τότε είστε έτοιμοι! Απλώς αγγίξτε την ένδειξη “Σύνδεση” στην επόμενη οθόνη.
+"<font height="17">"
+"</font><b>Δεν διαθέτετε Λογαριασμό Google;</b>"
+"<font height="3">"
+"</font>"Κανένα πρόβλημα. Αγγίξτε την ένδειξη “Δημιουργία” στην επόμενη οθόνη και θα σας βοηθήσουμε να δημιουργήσετε ένα λογαριασμό.
+"<font height="17">"
+"</font><b>Αγγίξτε την ένδειξη “Επόμενο” για να ξεκινήσετε!</b>"
+"</font></string>
+    <string name="fling_help_message">"Μετακινήστε το δάχτυλό σας προς τα επάνω ή προς τα κάτω στην οθόνη για κύλιση.
+(Αγγίξτε αυτό το μήνυμα για να εξαφανιστεί)."</string>
+    <string name="setup_device_title">Ρύθμιση του ^1</string>
+    <string name="dont_have_an_account">Δεν έχετε Λογαριασμό Google;</string>
+    <string name="create_one_now">Δημιουργήστε έναν τώρα! Είναι εύκολο.</string>
+    <string name="already_have_an_account">Διαθέτετε ήδη Λογαριασμό στο Google;</string>
+    <string name="sign_in_with_google_account">Συνδεθείτε με το Λογαριασμό Google που θέλετε να συνδέσετε σε αυτήν τη συσκευή Android.</string>
+    <string name="skip_message">Θέλετε να δημιουργήσετε ένα λογαριασμό αργότερα;</string>
+    <string name="touch_to_begin">Αγγίξτε το android για να ξεκινήσετε.</string>
+    <string name="delayed_gaia_agreement">Εάν συνεχίσετε, αποδέχεστε την Πολιτική Απορρήτου της <annotation id="google_privacy">Google</annotation> και την <annotation id="android_privacy">Επιπρόσθετη</annotation> Πολιτική Απορρήτου.</string>
+    <string name="open_keyboard_message">Ανοίξτε το πληκτρολόγιο για να ξεκινήσετε.</string>
+    <string name="open_keyboard_message_to_continue">Ανοίξτε το πληκτρολόγιο για να συνεχίσετε.</string>
+    <string name="emergency_dial">Κλήση έκτακτης ανάγκης</string>
+    <string name="change_language">Αλλαγή γλώσσας</string>
+    <string name="signing_in">Σύνδεση...</string>
+    <string name="close_keyboard_message">Κλείστε το πληκτρολόγιο για να συνεχίσετε.</string>
+    <string name="communicating_message">Η συσκευή Android πρέπει να επικοινωνήσει με τους διακομιστές της Google για τη ρύθμιση του λογαριασμού σας. Η διαδικασία αυτή ενδέχεται να διαρκέσει έως πέντε λεπτά.</string>
+    <string name="communicating_message_domain">Η συσκευή Android πρέπει να επικοινωνήσει με τους διακομιστές της Google για τον εντοπισμό των στοιχείων του τομέα διαδικτύου σας. Η διαδικασία αυτή ενδέχεται να διαρκέσει έως πέντε λεπτά.</string>
+    <string name="username">Όνομα χρήστη</string>
+    <string name="domain_name">paradeigma.gr</string>
+    <string name="password">Κωδικός πρόσβασης</string>
+    <string name="sign_in_agreement">Εάν συνδεθείτε, αποδέχεστε την Πολιτική Απορρήτου της <annotation id="google_privacy">Google</annotation> και την <annotation id="android_privacy">Επιπρόσθετη</annotation> Πολιτική Απορρήτου.</string>
+    <string name="create">Δημιουργία</string>
+    <string name="create_message">Χρειάζεστε ένα Λογαριασμό Google;</string>
+    <string name="now_signing_in">Σύνδεση...</string>
+    <string name="now_verifying_domain">Εύρεση του τομέα διαδικτύου σας…</string>
+    <string name="sign_in_with_google_account_short">Συνδεθείτε με το Λογαριασμό σας Google:</string>
+    <string name="browser_sign_in_explanation">Χρησιμοποιήστε αυτή την οθόνη εάν έχετε ειδικές παραμέτρους σύνδεσης που απαιτούν ένα πρόγραμμα περιήγησης ιστού.</string>
+    <string name="gls_browser_login_intro_message">Δεν είναι δυνατή η πρόσβαση στον λογαριασμό σας Google ή στον λογαριασμό σας Google Apps. Απαιτείται εκ νέου εξουσιοδότηση.</string>
+    <string name="enter_domain_name">Εισαγάγετε το όνομα τομέα διαδικτύου της εταιρείας σας:</string>
+    <string name="enter_user_name">Εισαγάγετε το όνομα χρήστη και τον κωδικό πρόσβασης για τον τομέα ^1:</string>
+    <string name="inactive_domain">Δεν είναι δυνατή η χρήση αυτού του λογαριασμού, επειδή ανήκει σε ανενεργό τομέα. Επικοινωνήστε με το διαχειριστή του τομέα <b>^1</b> ή συνδεθείτε με άλλο λογαριασμό.</string>
+    <string name="invalid_username">Το κείμενο που εισαγάγατε δεν είναι έγκυρο όνομα χρήστη.</string>
+    <string name="web_login_error_title">Λυπούμαστε...</string>
+    <string name="web_login_error_desc">"Υπάρχει πρόβλημα με τη σύνδεση στους διακομιστές της εταιρείας σας στον τομέα ^1.
+
+Στοιχεία σφάλματος:
+"</string>
+    <string name="web_login_error_redirects">Η ανακατεύθυνση της σελίδας σύνδεσης ιστού πραγματοποιήθηκε πάρα πολλές φορές</string>
+    <string name="web_login_error_http">Σφάλμα HTTP ^1 : ^2</string>
+    <string name="name_device_label">Δώστε στη συσκευή σας Android ένα όνομα:</string>
+    <string name="device_name_hint">Όνομα συσκευής</string>
+    <string name="registering_device">Εγγραφή συσκευής Android...</string>
+    <string name="error_account_disabled">"Αυτός ο λογαριασμός έχει απενεργοποιηθεί. 
+
+(Για λεπτομέρειες, μεταβείτε στη διεύθυνση http://google.com/accounts/recovery στον υπολογιστή σας.)"</string>
+    <string name="error_login_failed">"Το όνομα χρήστη και ο κωδικός πρόσβασης δεν ταιριάζουν. Δοκιμάστε ξανά. 
+
+(Για να ανακτήσετε τα στοιχεία του λογαριασμού σας, μεταβείτε στη διεύθυνση http://www.google.com/accounts/recovery στον υπολογιστή σας.)"</string>
+    <string name="error_account_not_verified">"Δεν έχει γίνει επαλήθευση αυτού του λογαριασμού. Ελέγξτε το λογαριασμό ηλεκτρονικού ταχυδρομείου σας σε έναν υπολογιστή και ακολουθήστε το σύνδεσμο για να επαληθεύσετε το λογαριασμό. 
+
+(Για να ανακτήσετε τα στοιχεία του λογαριασμού σας, μεταβείτε στη διεύθυνση http://www.google.com/accounts/recovery στον υπολογιστή σας.)"</string>
+    <string name="captcha_message_string">Επαλήθευση</string>
+    <string name="captcha_instructions">Εισαγάγετε τους χαρακτήρες που βλέπετε στην εικόνα. Για τα γράμματα δεν γίνεται διάκριση πεζών-κεφαλαίων.</string>
+    <string name="create_google_account">Δημιουργία νέου Λογαριασμού Google</string>
+    <string name="example_usernames">π.χ., JSmith, John.Smith</string>
+    <string name="create_account_agreement">Δημιουργώντας αυτό το λογαριασμό, αποδέχεστε την Πολιτική Απορρήτου της <annotation id="google_privacy">Google</annotation> και την <annotation id="android_privacy">Επιπρόσθετη</annotation> Πολιτική Απορρήτου.</string>
+    <string name="account_already_has_gmail">Ο λογαριασμός διαθέτει ήδη Gmail.</string>
+    <string name="creating_account">Δημιουργία του λογαριασμού σας...</string>
+    <string name="checking_account">Έλεγχος διαθεσιμότητας ονόματος χρήστη...</string>
+    <string name="try_a_different_username">Δοκιμάστε ένα άλλο όνομα χρήστη</string>
+    <string name="is_not_available"><b>^1</b> δεν είναι διαθέσιμο.</string>
+    <string name="hint_size"><b>^1</b> περιέχει λιγότερους από 6 ή περισσότερους από 30 χαρακτήρες.</string>
+    <string name="hint_numbers_only"><b>^1</b> δεν περιέχει γράμματα.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" μπορεί να περιέχει μόνο γράμματα,
+αριθμούς και τελείες."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> δεν χρησιμοποιεί το Gmail</string>
+    <string name="sign_in">Σύνδεση</string>
+    <string name="sign_in_browser">Σύνδεση στο πρόγραμμα περιήγησης</string>
+    <string name="here_are_alternatives">Ακολουθούν ορισμένες εναλλακτικές προτάσεις:</string>
+    <string name="alternatives_list_title">Προτεινόμενα ονόματα χρήστη</string>
+    <string name="choose_a_password"><b>"Πληκτρολογήστε έναν
+κωδικό πρόσβασης"</b></string>
+    <string name="confirm_password"><b>"Επιβεβαίωση
+κωδικού πρόσβασης"</b></string>
+    <string name="password_strength"><b>"Ισχύς
+κωδικού πρόσβασης"</b></string>
+    <string name="too_short">Πολύ μικρό</string>
+    <string name="security_question"><b>"Ερώτηση
+ασφάλειας"</b></string>
+    <string name="security_questions_title">Ερωτήσεις ασφάλειας</string>
+    <string name="answer"><b>Απάντηση</b></string>
+    <string name="password_mismatch">Οι κωδικοί πρόσβασης δεν ταιριάζουν. Πληκτρολογήστε τους ξανά.</string>
+    <string name="your_account_was_created">Ο λογαριασμός σας δημιουργήθηκε!</string>
+    <string name="eight_chars_min">(τουλάχιστον 8 χαρακτήρες)</string>
+    <string name="just_in_case">Σε περίπτωση που χάσετε τον κωδικό πρόσβασης.</string>
+    <string name="verify_your_profile">Επαλήθευση του προφίλ σας</string>
+    <string name="signed_in">Η σύνδεση πραγματοποιήθηκε!</string>
+    <string name="error_not_logged_in">Ο χρήστης δεν έχει συνδεθεί.</string>
+    <string name="error_username_unavailable">Το όνομα χρήστη δεν είναι διαθέσιμο.</string>
+    <string name="error_bad_password">Ο κωδικός πρόσβασης είναι πολύ αδύναμος ή περιέχει μη έγκυρους χαρακτήρες. Δοκιμάστε ξανά.</string>
+    <string name="error_bad_username">Μη έγκυρο όνομα χρήστη.</string>
+    <string name="loading">Φόρτωση...</string>
+    <string name="submission_title">Λυπούμαστε...</string>
+    <string name="submission_error_text">Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά.</string>
+    <string name="existing_account_error_title">Ο λογαριασμός υπάρχει ήδη</string>
+    <string name="existing_account_error_text">Υπάρχει ήδη ένας λογαριασμός ^1 σε αυτήν τη συσκευή Android.</string>
+    <string name="account_linked_message"><font height="24">Ο Λογαριασμός σας Google είναι πλέον συνδεδεμένος με αυτήν τη συσκευή Android.</font></string>
+    <string name="syncing_message"><font size="17">"Αυτή τη στιγμή πραγματοποιείται συγχρονισμός δεδομένων από τις εφαρμογές Google. 
+"<font height="17">"
+"</font>"%i Όταν το εικονίδιο \"συγχρονισμού\" εξαφανιστεί από τη γραμμή κατάστασης στην κορυφή της οθόνης, αυτό σημαίνει πως η λήψη έχει ολοκληρωθεί.
+"<font height="17">"
+"</font><b>Σχετικά με τη γραμμή κατάστασης…</b>"
+"<font height="3">"
+"</font>"Όταν λαμβάνετε ένα νέο μήνυμα ή άλλη ειδοποίηση, στη γραμμή κατάστασης εμφανίζεται ένα εικονίδιο.
+"<font height="17">"
+"</font>Με το δάχτυλό σας σύρετε τη γραμμή κατάστασης για να ανοίξετε τον πίνακα Ειδοποιήσεων, εάν θέλετε να δείτε λεπτομέρειες για όλες τις τρέχουσες ειδοποιήσεις σας.</font></string>
+    <string name="i_agree_next">Συμφωνώ, Επόμενο</string>
+    <string name="android_privacy_policy_title">Επιπρόσθετη Πολιτική Απορρήτου</string>
+    <string name="google_terms_of_service_title">Όροι Παροχής Υπηρεσιών της Google</string>
+    <string name="google_privacy_policy_title">Πολιτική Απορρήτου της Google</string>
+    <string name="notification_update_title">Πρέπει να γίνει ενημέρωση του λογαριασμού σας</string>
+    <string name="notification_update_message">Αγγίξτε εδώ για να εκτελέσετε ξανά τον Οδηγό ρύθμισης</string>
+    <string name="common_message">"Το Gmail, η δημιουργία αντιγράφων ασφαλείας και πολλές άλλες λειτουργίες του Android απαιτούν έναν Λογαριασμό Google.
+
+Αγγίξτε την επιλογή "<b>Επόμενο</b>" για να συνδεθείτε σε έναν τρέχοντα Λογαριασμό Google ή για να δημιουργήσετε έναν νέο.
+
+Εναλλακτικά, αγγίξτε την επιλογή "<b>Παράβλεψη</b> για να ξεκινήσετε τη χρήση του Android σας. Μπορείτε αργότερα να συνδεθείτε σε ένα Λογαριασμό Google από τις Ρυθμίσεις, στην επιλογή Λογαριασμοί και συγχρονισμός.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Προσθήκη λογαριασμού</font>" 
+
+Μπορείτε να χρησιμοποιήσετε περισσότερους από ένα Λογαριασμούς Google (όπως για παράδειγμα τους λογαριασμούς σπιτιού και εργασίας σας). Η προσθήκη ενός Λογαριασμού Google απαιτεί λίγα μόνο βήματα. 
+
+Αγγίξτε το στοιχείο \"Επόμενο\" για να συνεχίσετε ή πατήστε το πλήκτρο \"Πίσω\" για έξοδο."</string>
+    <string name="reactivate_account_message">"Πρέπει να συνδέσετε ένα Λογαριασμό Google Mail με αυτήν τη συσκευή Android. 
+
+Διαθέτετε ήδη ένα όνομα χρήστη Google Μail ("<b>^1</b>") που σχετίζεται με αυτό το λογαριασμό, όμως αυτήν τη στιγμή δεν είναι ενεργό. 
+
+Αγγίξτε το στοιχείο \"Επόμενο\" για να ενεργοποιήσετε ξανά το όνομα χρήστη και να το χρησιμοποιήσετε. 
+
+Εναλλακτικά, εάν θέλετε να χρησιμοποιήσετε έναν άλλο λογαριασμό, πατήστε το κουμπί Πίσω και συνδεθείτε ή δημιουργήστε έναν άλλο λογαριασμό."</string>
+    <string name="reactivating_account">Εκ νέου ενεργοποίηση του λογαριασμού σας...</string>
+    <string name="your_account_was_reactivated">Ο λογαριασμός σας ενεργοποιήθηκε!</string>
+    <string name="account_recovery_info">Οι ακόλουθες πληροφορίες θα σας βοηθήσουν να ανακτήσετε τον κωδικό πρόσβασής σας εάν ποτέ τον χάσετε</string>
+    <string name="secondary_email_label"><b>"Δευτερεύων
+λογαριασμός ηλεκτρονικού ταχυδρομείου"</b></string>
+    <string name="invalid_email">"Η διεύθυνση ηλεκτρονικού ταχυδρομείου που πληκτρολογήσατε δεν είναι έγκυρη.
+ Παράδειγμα: giannis@paradeigma.gr"</string>
+    <string name="invalid_email_primary">Οι δευτερεύουσες διευθύνσεις ηλεκτρονικού ταχυδρομείου δεν μπορούν να είναι ίδιες με τη διεύθυνση που δημιουργείτε</string>
+    <string name="tutorial_intro_title">Μάθετε να χρησιμοποιείτε το ^1</string>
+    <string name="begin_button_label">Έναρξη</string>
+    <string name="tutorial_intro_message_generic">Υπάρχουν ορισμένα σημαντικά πράγματα που θα σας βοηθήσουν να αξιοποιήσετε στο έπακρο τις δυνατότητες της συσκευής Android. <font size="17">"
+"</font>" 
+"<li>Χρήση του πληκτρολογίου οθόνης</li> <font size="17">"
+"</font>" 
+Αγγίξτε το στοιχείο \"Έναρξη\" για να ξεκινήσει ο οδηγός και να μάθετε περισσότερα."</string>
+    <string name="tutorial_intro_message_setupwizard">Υπάρχουν ορισμένα σημαντικά πράγματα που θα σας βοηθήσουν να αξιοποιήσετε στο έπακρο τις δυνατότητες της συσκευής Android. <font size="17">"
+"</font>" 
+"<li>Χρήση του πληκτρολογίου οθόνης</li>" 
+"<li>Δημιουργία Λογαριασμού Google</li> <font size="17">"
+"</font>" 
+Αγγίξτε το στοιχείο \"Έναρξη\" για να ξεκινήσει ο οδηγός και να μάθετε περισσότερα ή αγγίξτε το στοιχείο \"Παράλειψη\" για να παραλείψετε τον οδηγό και να συνεχίσετε."</string>
+    <string name="keyboard_tutorial_title">Χρήση του πληκτρολογίου οθόνης</string>
+    <string name="keyboard_tutorial_message">Αγγίξτε οποιοδήποτε πεδίο κειμένου για να ανοίξετε το πληκτρολόγιο και να ξεκινήσετε την πληκτρολόγηση. Δοκιμάστε εδώ!</string>
+    <string name="keyboard_tutorial_edittext_hint">Αγγίξτε εδώ για να ξεκινήσετε την πληκτρολόγηση</string>
+    <string name="done_typing_message">Ολοκληρώσατε την πληκτρολόγηση; Πατήστε το κουμπί \"Πίσω\" για να κλείσετε το πληκτρολόγιο.</string>
+    <string name="done_button_label_in_tutorial">Τέλος</string>
+    <string name="backup_consent_title">Δημιουργία αντιγράφων ασφαλείας για τις ρυθμίσεις μου</string>
+    <string name="backup_consent_message">Μπορούν να δημιουργηθούν αυτόματα αντίγραφα ασφαλείας των ρυθμίσεών σας (όπως σελιδοδείκτες και κωδικοί πρόσβασης Wi-Fi) στον Λογαριασμό σας Google. Αν αποκτήσετε νέα συσκευή Android (για να αντικαταστήσετε αυτό που χάσατε ή σε περίπτωση αναβάθμισης), θα γίνει επαναφορά των ρυθμίσεών σας στη νέα σας συσκευή Android.</string>
+    <string name="backup_consent_howto_disable_message">Μπορείτε να αλλάξετε τις ρυθμίσεις αντιγράφων ασφαλείας οποιαδήποτε στιγμή στην εφαρμογή Ρυθμίσεις, στην επιλογή Απόρρητο.</string>
+    <string name="backup_consent_yes_agree">Δημιουργία αντιγράφων ασφαλείας των ρυθμίσεων στο Λογαριασμό μου Google.</string>
+    <string name="restore_disable">Απενεργοποίηση επαναφοράς</string>
+    <string name="restore_enable">Ενεργοποίηση επαναφοράς</string>
+    <string name="restore_enabled">Θα πραγματοποιηθεί επαναφορά των ρυθμίσεών σας, εάν κατά το παρελθόν δημιουργήσατε αντίγραφα ασφαλείας τους.</string>
+    <string name="restore_disabled">Δεν θα πραγματοποιηθεί επαναφορά των ρυθμίσεών σας από το αντίγραφο ασφαλείας.</string>
+    <string name="webview_progress_title">Σύνδεση στον τομέα διαδικτύου...</string>
+    <string name="webview_progress_verbose_message">"Οι διακομιστές της εταιρείας σας αποστέλλουν στοιχεία σύνδεσης. Η διαδικασία αυτή ενδέχεται να διαρκέσει μερικά λεπτά.
+Η σελίδα σύνδεσης της εταιρείας σας θα εμφανιστεί όταν ολοκληρωθεί η διαδικασία."</string>
+    <string name="enterprise_unmanaged_domain">Αυτός ο τομέας διαδικτύου δεν χρησιμοποιεί τις Εφαρμογές Google. Ελέγξτε το όνομα του τομέα και δοκιμάστε ξανά.</string>
+    <string name="use_location_for_services_agree">Συμφωνώ</string>
+    <string name="use_location_for_services_disagree">Διαφωνώ</string>
+    <string name="use_location_for_services_title">Χρήση της τοποθεσίας μου</string>
+    <string name="use_location_for_services_text">Θέλετε να επιτρέψετε στο Google να χρησιμοποιεί πληροφορίες τοποθεσίας για καλύτερα αποτελέσματα αναζήτησης και άλλες υπηρεσίες;</string>
+    <string name="permlab_readGsettings">Ανάγνωση των ρυθμίσεων του Google</string>
+    <string name="permdesc_readGsettings">Επιτρέπει σε αυτή την εφαρμογή την ανάγνωση των ρυθμίσεων του Google.</string>
+    <string name="permlab_writeGsettings">Τροποποίηση των ρυθμίσεων του Google</string>
+    <string name="permdesc_writeGsettings">Επιτρέπει σε αυτή την εφαρμογή την τροποποίηση των ρυθμίσεων του Google.</string>
+    <string name="permlab_readGservices">ανάγνωση διαμόρφωσης υπηρεσιών Google</string>
+    <string name="permdesc_readGservices">Να επιτρέπεται σε αυτή την εφαρμογή η ανάγνωση των δεδομένων διαμόρφωσης των υπηρεσιών Google.</string>
+    <string name="permlab_writeGservices">Τροποποίηση της διαμόρφωσης των υπηρεσιών Google</string>
+    <string name="permdesc_writeGservices">Να επιτρέπεται σε αυτή την εφαρμογή η τροποποίηση των δεδομένων διαμόρφωσης των υπηρεσιών Google.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Εφαρμογές Google</string>
+    <string name="permlab_googleAuthPassword">πρόσβαση στους κωδικούς πρόσβασης για τους λογαριασμούς Google</string>
+    <string name="permdesc_googleAuthPassword">Επιτρέπει στις εφαρμογές την άμεση πρόσβαση στους κωδικούς χρήστη ενός ή περισσοτέρων λογαριασμών Google που έχετε ορίσει.</string>
+    <string name="permlab_googleMailSwitch">επιλέξτε την επωνυμία Gmail ή Google Mail</string>
+    <string name="permdesc_googleMailSwitch">Επιτρέπει στις εφαρμογές την εναλλαγή του εμφανιζόμενου ονόματος μεταξύ της επωνυμίας \"Gmail\" και \"Google Mail\".</string>
+    <string name="permlab_googleAuth">προβολή διαμορφωμένων λογαριασμών</string>
+    <string name="permdesc_googleAuth">Επιτρέπει στις εφαρμογές να δουν τα ονόματα χρήστη (διευθύνσεις ηλεκτρονικού ταχυδρομείου) ενός ή περισσοτέρων λογαριασμών Google που είναι αποθηκευμένοι σε αυτό το τηλέφωνο.</string>
+    <string name="permlab_googleAuth_ALL">πρόσβαση σε όλες τις υπηρεσίες Google</string>
+    <string name="permdesc_googleAuth_ALL">Επιτρέπει στις εφαρμογές τη σύνδεση σε ΟΛΕΣ τις υπηρεσίες Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_OTHER">πρόσβαση σε άλλες υπηρεσίες Google</string>
+    <string name="permdesc_googleAuth_OTHER">Επιτρέπει στις εφαρμογές τη σύνδεση σε απροσδιόριστες υπηρεσίες της Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_mail">Google mail</string>
+    <string name="permdesc_googleAuth_mail">Επιτρέπει στις εφαρμογές τη σύνδεση στις υπηρεσίες Google Mail, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_cl">Ημερολόγιο Google</string>
+    <string name="permdesc_googleAuth_cl">Επιτρέπει στις εφαρμογές τη σύνδεση στο Ημερολόγιο Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_android">Υπηρεσίες Android</string>
+    <string name="permdesc_googleAuth_android">Επιτρέπει στις εφαρμογές τη σύνδεση στις υπηρεσίες Android, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_sierra">Λογαριασμοί Google Checkout</string>
+    <string name="permdesc_googleAuth_sierra">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Checkout (και πιθανώς την πραγματοποίηση αγορών), χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_sierraqa">Λογαριασμοί Google Checkout QA</string>
+    <string name="permdesc_googleAuth_sierraqa">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Checkout QA, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Λογαριασμοί Google Checkout Sandbox</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Checkout Sandbox, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Επιτρέπει στις εφαρμογές τη σύνδεση στο YouTube, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_YouTubeUser">oνόματα χρήστη YouTube</string>
+    <string name="permdesc_googleAuth_YouTubeUser">"Επιτρέπει στις εφαρμογές την προβολή των ονομάτων χρήστη YouTube που σχετίζονται με τους  λογαριασμούς Google, που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android."</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Talk, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_ig">Λογαριασμοί iGoogle</string>
+    <string name="permdesc_googleAuth_ig">Επιτρέπει στις εφαρμογές τη σύνδεση στο iGoogle, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_lh2">Λευκώματα Ιστού Picasa</string>
+    <string name="permdesc_googleAuth_lh2">Επιτρέπει στις εφαρμογές τη σύνδεση στα Λευκώματα Ιστού Picasa, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_mobile">Εφαρμογές Google για κινητά</string>
+    <string name="permdesc_googleAuth_mobile">Επιτρέπει στις εφαρμογές τη σύνδεση στις εφαρμογές Google για κινητά, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_cp">δεδομένα επαφών στους λογαριασμούς Google</string>
+    <string name="permdesc_googleAuth_cp">Επιτρέπει στις εφαρμογές να έχουν πρόσβαση στις επαφές και τα στοιχεία προφίλ των λογαριασμών που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google AdSense, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google AdWords, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Επιτρέπει στις εφαρμογές τη σύνδεση στο Blogger, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Επιτρέπει στις εφαρμογές τη σύνδεση στο Dodgeball, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Base, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_groups2">Ομάδες Google</string>
+    <string name="permdesc_googleAuth_groups2">Επιτρέπει στις εφαρμογές τη σύνδεση στις Ομάδες Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Health, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Επιτρέπει στις εφαρμογές τη σύνδεση στο JotSpot, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Επιτρέπει στις εφαρμογές τη σύνδεση στο Knol, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_news">Ειδήσεις Google</string>
+    <string name="permdesc_googleAuth_news">Επιτρέπει στις εφαρμογές τη σύνδεση στις Ειδήσεις Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Επιτρέπει στις εφαρμογές τη σύνδεση στο Orkut, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_print">Αναζήτηση Βιβλίων Google</string>
+    <string name="permdesc_googleAuth_print">Επιτρέπει στις εφαρμογές τη σύνδεση στην Αναζήτηση βιβλίων Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_sitemaps">Εργαλεία για Webmasters Google</string>
+    <string name="permdesc_googleAuth_sitemaps">Επιτρέπει στις εφαρμογές τη σύνδεση στα Εργαλεία για Webmasters Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google WiFi, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_writely">Έγγραφα Google</string>
+    <string name="permdesc_googleAuth_writely">Επιτρέπει στις εφαρμογές τη σύνδεση στα Έγγραφα Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_wise">Υπολογιστικά φύλλα Google</string>
+    <string name="permdesc_googleAuth_wise">Επιτρέπει στις εφαρμογές τη σύνδεση στα Υπολογιστικά φύλλα Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Finance, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_local">Χάρτες Google</string>
+    <string name="permdesc_googleAuth_local">Επιτρέπει στις εφαρμογές τη σύνδεση στους Χάρτες Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google App Engine, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_notebook">Σημειωματάριο Google</string>
+    <string name="permdesc_googleAuth_notebook">Επιτρέπει στις εφαρμογές τη σύνδεση στο Σημειωματάριο Google, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Επιτρέπει στις εφαρμογές τη σύνδεση στο Google Voice, χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Εξατομικευμένη αναγνώριση ομιλίας</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Επιτρέπει στις εφαρμογές τη σύνδεση στην υπηρεσία \"Εξατομικευμένη αναγνώριση ομιλίας\", χρησιμοποιώντας τους λογαριασμούς που έχουν αποθηκευτεί σε αυτήν τη συσκευή Android.</string>
+    <string name="gls_notification_title">Συνδεθείτε στο λογαριασμό σας</string>
+    <string name="gls_notification_new_account">Απαιτείται λογαριασμός ^1</string>
+    <string name="gls_notification_new_account_youtube">Απαιτείται λογαριασμός YouTube</string>
+    <string name="gls_notification_login_error">Αγγίξτε για να συνδεθείτε στο λογαριασμό σας.</string>
+    <string name="gls_ui_add_account_title">Ρύθμιση λογαριασμού</string>
+    <string name="gls_ui_google_account_subtitle">Λογαριασμός Google</string>
+    <string name="gls_ui_activity_title">Σύνδεση στο Google</string>
+    <string name="gls_ui_activity_title_browser_signin">Σύνδεση στο πρόγραμμα περιήγησης</string>
+    <string name="gls_ui_activity_title_enterprise">Επιχειρηματική σύνδεση</string>
+    <string name="gls_ui_activity_title_youtube">Σύνδεση στο YouTube</string>
+    <string name="gls_ui_activity_authenticating">Έλεγχος ταυτότητας...</string>
+    <string name="gls_captcha_activity_message">Πληκτρολογήστε τους χαρακτήρες που βλέπετε στην εικόνα:</string>
+    <string name="gls_captcha_activity_ok_button">Τέλος</string>
+    <string name="gls_error_activity_message">Παρουσιάστηκε σφάλμα δικτύου κατά την προσπάθεια σύνδεσης στον <b>^1</b>. Δοκιμάστε ξανά ή πατήστε το κουμπί Πίσω για ακύρωση.</string>
+    <string name="gls_error_activity_retry_button">Δοκιμάστε ξανά</string>
+    <string name="gls_dmagent_activity_message">" Ο τομέας σας απαιτεί διαχείριση της κινητής συσκευής. Εγκαταστήστε την εφαρμογή Πολιτική συσκευών των Εφαρμογών Google για την επιβολή πολιτικών ασφαλείας που απαιτούνται από τον λογαριασμό "<b>^1</b>.</string>
+    <string name="gls_dmagent_activity_retry_button">Λήψη</string>
+    <string name="gls_login_activity_username_label">Όνομα χρήστη</string>
+    <string name="gls_login_activity_password_label">Κωδικός πρόσβασης</string>
+    <string name="gls_login_activity_ok_button">Σύνδεση</string>
+    <string name="gls_login_activity_loginfail_text_both">Το όνομα χρήστη ή ο κωδικός πρόσβασης δεν είναι έγκυρα. Απαιτείται λογαριασμός <b>^1</b>. Δοκιμάστε ξανά.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Εισαγάγατε εσφαλμένο κωδικό πρόσβασης ή ο λογαριασμός σας έχει αλλάξει. Εισαγάγετε ξανά τον κωδικό πρόσβασης.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Πληκτρολογήστε τον κωδικό πρόσβασης για αυτόν το λογαριασμό.</string>
+    <string name="gls_enterprise_login_activity_msg">"Συνδεθείτε στο λογαριασμό της επιχείρησής σας στο ^1 για έλεγχο ταυτότητας.
+Αγγίξτε την επιλογή Σύνδεση για να ανοίξετε τη σελίδα σύνδεσης της εταιρείας σας στον ιστό."</string>
+    <string name="gls_login_activity_badaccount_text">Δεν είναι δυνατή η χρήση αυτού του λογαριασμού σε αυτή την περίπτωση. Δοκιμάστε έναν άλλο λογαριασμό.</string>
+    <string name="gls_login_activity_newaccount_text">Συνδεθείτε στο λογαριασμό σας <b>^1</b>.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Δεν έχετε λογαριασμό στο YouTube; Κάντε κλικ <a href="http://www.youtube.com/signup">εδώ</a> για να δημιουργήσετε ένα λογαριασμό.</string>
+    <string name="gls_settings_tos_activity_title">Νομικές πληροφορίες Google</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Δεν είστε συνδεδεμένοι σε υπηρεσία δεδομένων. Για να προβάλετε αυτές τις πληροφορίες τώρα, μεταβείτε στη διεύθυνση %s, από οποιονδήποτε υπολογιστή με σύνδεση στο Διαδίκτυο.</string>
+    <string name="gls_settings_contributors_activity_title">Συνεργάτες</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Δεν είστε συνδεδεμένοι σε υπηρεσία δεδομένων. Για να προβάλετε αυτές τις πληροφορίες τώρα, μεταβείτε στη διεύθυνση %s, από οποιονδήποτε υπολογιστή με σύνδεση στο Διαδίκτυο.</string>
+    <string name="gls_webview_progress_title">Σύνδεση στον τομέα διαδικτύου...</string>
+    <string name="gls_webview_progress_verbose_message">"Οι διακομιστές της εταιρείας σας αποστέλλουν στοιχεία σύνδεσης. Η διαδικασία αυτή ενδέχεται να διαρκέσει μερικά λεπτά.
+H σελίδα σύνδεσης της εταιρείας σας θα εμφανιστεί όταν ολοκληρωθεί η διαδικασία."</string>
+    <string name="gls_sign_in_button_label">Σύνδεση</string>
+    <string name="gls_back_button_label">Πίσω</string>
+    <string name="gls_cancel_button_label">Ακύρωση</string>
+    <string name="gls_exit_account_setup_button_label">Έξοδ. από ρύθμ. λογ.</string>
+    <string name="gls_reauthorize_button_label">Εκ νέου εξουσιοδότηση</string>
+    <string name="gls_sign_in_message">Η συσκευή Android πρέπει να επικοινωνήσει με τους διακομιστές της Google για τη ρύθμιση του λογαριασμού σας. Η διαδικασία αυτή ενδέχεται να διαρκέσει έως πέντε λεπτά.</string>
+    <string name="gls_sign_in_title">Σύνδεση...</string>
+</resources>

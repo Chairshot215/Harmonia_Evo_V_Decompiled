@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="102344861" android:versionName="1.2.2213262252.344861" package="com.htc" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:label="@string/permlab_blockkey" android:name="com.htc.Manifest.permission.BLOCK_KEYBOARD_EVENT" android:protectionLevel="signature" android:description="@string/permdesc_blockkey" />
+    <permission android:label="@string/permlab_receiveWapPush" android:name="com.htc.permission.RECEIVE_SYNC_DM_NOTIFICATION" android:protectionLevel="dangerous" android:permissionGroup="android.permission-group.MESSAGES" android:description="@string/permdesc_receiveWapPush" />
+    <permission android:label="@string/htc_permlab_fotaUpdate" android:name="android.permission.HTC_FOTA_UPDATE" android:protectionLevel="signatureOrSystem" android:description="@string/htc_permdesc_fotaUpdate" />
+    <permission android:label="@string/permission_label_dsa_omadm" android:name="com.sprint.internal.permission.OMADM" android:protectionLevel="normal" android:description="@string/permission_description_dsa_omadm" />
+    <permission android:label="@string/permission_label_dsa_connectionmannager" android:name="com.sprint.internal.permission.CONNECTIONMANAGER" android:protectionLevel="normal" android:description="@string/permission_description_dsa_connectionmannager" />
+    <permission android:label="@string/permission_label_dsa_sysprop_getstring" android:name="com.sprint.internal.permission.SYSTEMPROPERTIES" android:protectionLevel="normal" android:description="@string/permission_description_dsa_sysprop_getstring" />
+    <permission android:label="@string/permission_label_dsa_sysprop_write" android:name="com.sprint.internal.permission.SYSTEMPROPERTIES_WRITE" android:protectionLevel="normal" android:description="@string/permission_description_dsa_sysprop_write" />
+    <permission android:label="@string/permission_label_dsa_sysprop_slot0" android:name="com.sprint.internal.permission.SLOT0" android:protectionLevel="normal" android:description="@string/permission_description_dsa_sysprop_slot0" />
+    <permission android:label="@string/permission_label_dsa_platform" android:name="com.sprint.internal.permission.PLATFORM" android:protectionLevel="normal" android:description="@string/permission_description_dsa_platform" />
+    <permission android:label="@string/permlab_broadcastkey" android:name="com.htc.Manifest.permission.BROADCAST_KEYIN_EVENT" android:protectionLevel="signature" android:description="@string/permdesc_broadcastkey" />
+    <permission android:label="@string/permlab_broadcastmotion" android:name="com.htc.Manifest.permission.BROADCAST_MOTION_EVENT" android:protectionLevel="signature" android:description="@string/permdesc_broadcastmotion" />
+    <permission android:label="@string/permlab_broadcasttrackball" android:name="com.htc.Manifest.permission.BROADCAST_TRACKBALL_EVENT" android:protectionLevel="signature" android:description="@string/permdesc_broadcasttrackball" />
+    <permission android:label="@string/permlab_blockinputevent" android:name="com.htc.Manifest.permission.BLOCK_INPUT_EVENTS" android:protectionLevel="signature" android:description="@string/permdesc_blockinputevent" />
+    <permission android:label="@string/permission_label_disable_hdmi" android:name="com.sprint.android.permission.DISABLE_HDMI" android:protectionLevel="normal" android:description="@string/permission_description_disable_hdmi" />
+    <permission android:label="@string/permlab_htc_app_pmem" android:name="com.htc.internal.permission.HTC_APP_PMEM" android:protectionLevel="signatureOrSystem" android:description="@string/permdesc_htc_app_pmem" />
+    <permission android:name="com.htc.permission.UBLS_WRITE_POLICY" android:protectionLevel="signature" />
+    <permission android:name="com.htc.permission.UBLS_WRITE_LOG" android:protectionLevel="signature" />
+    <permission android:name="com.htc.permission.UBLS_PROTECTED_USAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:hasCode="false" allowSkinChange="true">
+        <activity android:theme="@style/HtcAlert" android:name="com.htc.app.HtcRingtonePickerActivity" android:multiprocess="true" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.RINGTONE_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ShareTheme_Trans_NoTitle" android:name="com.htc.app.ShareListActivity" android:excludeFromRecents="true" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.htc.app.SHARE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name="com.htc.app.HtcDisableDeskModeActivity" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.DISABLE_DESK_MODE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

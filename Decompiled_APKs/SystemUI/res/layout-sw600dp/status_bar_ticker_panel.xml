@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/status_bar_ticker_background" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@*android:dimen/status_bar_height" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/large_icon" android:visibility="gone" android:layout_width="@*android:dimen/notification_large_icon_height" android:layout_height="@*android:dimen/notification_large_icon_width" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/ticker_expanded" android:layout_width="fill_parent" android:layout_height="@*android:dimen/status_bar_height" android:layout_weight="1.0" android:layout_toRightOf="@id/large_icon" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" />
+</RelativeLayout>

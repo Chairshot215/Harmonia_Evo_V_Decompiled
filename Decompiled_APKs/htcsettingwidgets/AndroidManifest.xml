@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.rosie.uid.shared" android:versionCode="100365450" android:versionName="1.0.2214262862.365450" package="com.htc.htcsettingwidgets"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.htc.connect_to_pc.permission.INTENT" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false">
+        <receiver android:label="@string/airmode_label_full" android:icon="@drawable/widget_icon_airplane" android:name="com.htc.htcsettingwidgets.AirplaneWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/airplane_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <receiver android:label="@string/bluetooth_label" android:icon="@drawable/widget_icon_bluetooth_on" android:name="com.htc.htcsettingwidgets.BTWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/bt_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <receiver android:label="@string/gps_label" android:icon="@drawable/widget_icon_gps_on" android:name="com.htc.htcsettingwidgets.GPSWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/gps_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <receiver android:label="@string/wifi_router_label_full" android:icon="@drawable/widget_icon_hotspot" android:name="com.htc.htcsettingwidgets.HotspotWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/hotspot_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <receiver android:label="@string/mobile_label_full" android:icon="@drawable/widget_icon_mobile_network" android:name="com.htc.htcsettingwidgets.MobileNetworkWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/mobilenetwork_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <receiver android:label="@string/wifi_label" android:icon="@drawable/widget_icon_wireless" android:name="com.htc.htcsettingwidgets.WiFiWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/wifi_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <receiver android:label="@string/wimax_label" android:icon="@drawable/widget_icon_wimax" android:name="com.htc.htcsettingwidgets.WimaxWidget" android:exported="true">
+            <intent-filter>
+                <action android:name="com.htc.android.rosie.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <meta-data android:name="com.htc.android.rosie.widget.provider" android:resource="@xml/wimax_widget" />
+            <meta-data android:name="com.htc.android.rosie.widget.category" android:value="settings" />
+        </receiver>
+        <activity android:label="@string/app_name" android:name=".htcsettingwidgets" android:exported="true" />
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/personalize_list_item_height_wvga_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/list_image_left_layout" android:paddingLeft="@com.htc:dimen/htc_list_item_margin_left" android:layout_width="wrap_content" android:layout_height="@dimen/personalize_list_item_height_wvga_large" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center" android:id="@id/list_image_left" android:layout_width="@com.htc:dimen/htc_list_item_color_icon_size" android:layout_height="@com.htc:dimen/htc_list_item_color_icon_size" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/list_image_right_layout" android:paddingRight="@com.htc:dimen/htc_list_item_margin_right" android:layout_width="wrap_content" android:layout_height="@dimen/personalize_list_item_height_wvga_large" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/list_image_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/list_check_box" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/list_2line_text" android:paddingLeft="@com.htc:dimen/htc_list_item_text_left_margin" android:paddingRight="@com.htc:dimen/htc_list_item_text_right_margin" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/personalize_list_item_height_wvga_large" android:layout_toLeftOf="@id/list_image_right_layout" android:layout_toRightOf="@id/list_image_left_layout">
+        <TextView android:ellipsize="marquee" android:id="@id/list_2line_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@com.htc:style/darklist_primary_m" />
+        <TextView android:ellipsize="marquee" android:id="@id/list_2line_secondary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/list_2line_primary_text" style="@com.htc:style/darklist_secondary_m" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/delete_marked_items" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc">
+    <include layout="@layout/list_common_header_middle" />
+    <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HtcFooterButton android:enabled="true" android:id="@id/cmd_bar_btn_1" android:text="@string/text_cancel" />
+        <com.htc.widget.HtcFooterButton android:enabled="false" android:id="@id/cmd_bar_btn_2" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

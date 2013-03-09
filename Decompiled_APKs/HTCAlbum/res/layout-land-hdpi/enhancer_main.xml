@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc"
+  xmlns:htcfooter="http://schemas.android.com/apk/res/com.htc">
+    <ImageView android:id="@id/image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/view1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <com.htc.widget.HeaderBarMiddle android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" htcfooter:panel_gravity="center_panel" />
+        <com.htc.widget.HeaderBarImage android:id="@id/framesLabel" android:layout_width="fill_parent" android:layout_height="fill_parent" htcfooter:panel_gravity="right_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llayout_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.htc.widget.HtcFooter android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="wrap_content" htcfooter:enable_transparent="true">
+            <com.htc.widget.HtcFooterButton android:id="@id/foot_button_2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.htc.widget.HtcFooterButton android:id="@id/foot_button_1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.htc.widget.HtcFooter>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/mRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llayout_btn" android:layout_below="@id/header">
+        <com.htc.album.addons.photoenhancer.TwoWayGallery android:gravity="center_horizontal" android:id="@id/myGallery1" android:background="@drawable/gallery_enhancer_preset_bg" android:fadingEdge="none" android:layout_width="142.0px" android:layout_height="fill_parent" android:spacing="0.0px" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

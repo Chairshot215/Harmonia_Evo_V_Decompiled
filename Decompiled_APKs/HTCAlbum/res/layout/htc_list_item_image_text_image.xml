@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left" android:id="@id/img_indicator" android:layout_width="@com.htc:dimen/htc_list_item_height" android:layout_height="@com.htc:dimen/htc_list_item_height" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="fill" android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+        <ImageView android:layout_gravity="left|center" android:id="@id/img_1x1" android:background="@com.htc:drawable/common_photo_frame" android:padding="3.0px" android:visibility="gone" android:layout_width="66.0px" android:layout_height="66.0px" android:layout_marginLeft="12.0px" android:scaleType="center" />
+        <include layout="@com.htc:layout/htc_list_item_1text" />
+        <ImageView android:id="@id/img_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0px" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:src="@com.htc:drawable/common_rearrange_rest" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</FrameLayout>

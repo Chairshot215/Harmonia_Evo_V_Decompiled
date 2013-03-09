@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.browser.AutologinBar android:gravity="center_vertical" android:background="#fffbf0a0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@*android:color/primary_text_light" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autologin_bar_text" />
+    <Spinner android:id="@id/autologin_account" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.Holo.Light.Spinner" />
+    <Button android:id="@id/autologin_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/autologin_bar_login_text" style="@android:style/Widget.Holo.Light.Button" />
+    <ProgressBar android:id="@id/autologin_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffdd6826" android:id="@id/autologin_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autologin_bar_error" />
+    <View android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/autologin_close" android:background="@null" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@*android:drawable/btn_close" />
+</com.android.browser.AutologinBar>

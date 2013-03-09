@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FinskyRatingBarLarge" parent="@*android:style/Widget.Holo.Light.RatingBar" />
+    <style name="AddInstrumentBodyTextPrimary">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AddInstrumentBodyTextSecondary">
+        <item name="android:textSize">@dimen/content_generic_small_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AddInstrumentBodyTextAddressSnippet" parent="@style/AddInstrumentBodyTextPrimary">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SetupWizardProgressBar" parent="@*android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SetupWizardNextButton" parent="@style/SetupWizardButton">
+        <item name="android:background">@drawable/btn_dir_next_holo_dark</item>
+    </style>
+    <style name="FinskyProgressSmallInverse" parent="@*android:style/Widget.Holo.Light.ProgressBar.Small.Inverse" />
+    <style name="ButtonBarDefaultStyle" parent="@*android:style/ButtonBar" />
+    <style name="RedeemGiftCardEditText" parent="@*android:style/Widget.Holo.EditText">
+        <item name="android:textSize">@dimen/content_generic_large_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/details_content_margin</item>
+        <item name="android:layout_marginRight">@dimen/details_content_margin</item>
+    </style>
+    <style name="FinskyTheme" parent="@*android:style/Theme.Holo">
+        <item name="android:windowBackground">@color/loading_background</item>
+        <item name="android:ratingBarStyleSmall">@style/FinskyRatingBarSmall</item>
+        <item name="android:actionBarStyle">@style/FinskyActionBarStyle</item>
+        <item name="android:actionMenuTextColor">@color/action_bar_menu_color</item>
+        <item name="finskyButtonBarStyle">@style/ButtonBarDefaultStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="InstrumentTheme" parent="@*android:style/Theme.Holo" />
+    <style name="ExternalAddCreditCardTheme" parent="@*android:style/Theme.Holo.NoActionBar" />
+    <style name="FinskyBaseDialogTheme" parent="@*android:style/Theme.Holo.Light.Dialog" />
+    <style name="FinskyDialogTheme" parent="@style/FinskyBaseDialogTheme">
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="FinskyDarkDialogTheme" parent="@*android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="finskyButtonBarStyle">?android:buttonBarStyle</item>
+        <item name="finskyButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+    </style>
+    <style name="SettingsTheme" parent="@*android:style/Theme.Holo" />
+    <style name="DialogWhenLarge" parent="@style/FinskyTheme" />
+    <style name="DialogDarkWhenLarge" parent="@style/FinskyTheme" />
+    <style name="Fullscreen" parent="@*android:style/Theme.Holo.NoActionBar.Fullscreen" />
+    <style name="LightWidgetTheme" parent="@*android:style/Theme.Holo.Light" />
+    <style name="TrampolineTheme" parent="@*android:style/Theme.Holo.Panel" />
+    <style name="FinskyActionBarStyle" parent="@*android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/pinstripe_actionbar_tile</item>
+        <item name="android:titleTextStyle">@style/FinskyActionBarTitleTextStyle</item>
+    </style>
+    <style name="FinskyActionBarTitleTextStyle" parent="@*android:style/TextAppearance.Large">
+        <item name="android:textSize">@dimen/action_bar_font_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

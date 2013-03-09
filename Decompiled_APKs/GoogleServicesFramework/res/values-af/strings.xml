@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Web</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">onbekend</string>
+    <string name="sharedUserLabel">Google-dienste</string>
+    <string name="service_label">Stelselopdateerder</string>
+    <string name="system_update_activity_name">Stelselopdaterings</string>
+    <string name="system_update_activity_title">Stelselopdaterings</string>
+    <string name="system_update_activity_battery_low_text">Battery te laag om stelselopdatering te installeer. Prop asseblief herlaaier in om voort te gaan.</string>
+    <string name="system_update_activity_battery_low_charging_text">Battery te laag om stelselopdatering te installeer. Wag asseblief tot battery genoeg gelaai het.</string>
+    <string name="system_update_activity_roaming_text">Stelselopdaterings kan nie afgelaai word terwyl jy swerf nie.</string>
+    <string name="system_update_requires_restart_status_text">"Vereis 'n herbegin"</string>
+    <string name="system_update_downloading_status_text">Aflaaiing</string>
+    <string name="system_update_downloading_wifi_status2_text">Net via Wi-Fi tot ^ 1</string>
+    <string name="system_update_verifying_status_text">Verifieer</string>
+    <string name="system_update_verification_failed_text">Verifiëring het misluk</string>
+    <string name="system_update_verified_status_text">Afgelaai en geverifieer</string>
+    <string name="system_update_download_failed_status_text">Aflaai het misluk</string>
+    <string name="system_update_download_retry_button_text">Probeer weer aflaai</string>
+    <string name="system_update_download_button_text">Laai af</string>
+    <string name="system_update_install_button_text">Herbegin en installeer</string>
+    <string name="system_update_check_now_button_text">Kontroleer nou</string>
+    <string name="system_update_no_update_content_text">Jou stelsel is tans op datum</string>
+    <string name="system_update_last_checkin">Laas vir opdatering ^1 gekontroleer.</string>
+    <string name="system_update_recommended_update_available_notification_title">Stelselopdatering beskikbaar</string>
+    <string name="system_update_recommended_update_available_notification_message">Sien opdateerdetails.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Kon nie stelselopdatering aflaai nie.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Aflaai was onsuksesvol, probeer asseblief weer.</string>
+    <string name="system_update_error_dialog_title">Fout</string>
+    <string name="system_update_error_downloading_dialog_message">Kon nie die opdatering aflaai nie.</string>
+    <string name="system_update_error_installing_dialog_message">Kon nie die opdatering installeer nie.</string>
+    <string name="system_update_install_dialog_label">Stelselopdatering</string>
+    <string name="system_update_install_dialog_message_nonphone">"'n Stelselopdatering is gereed om geïnstalleer te word. Jou Android-toestel sal herbegin en die opdatering installeer."</string>
+    <string name="system_update_install_dialog_message_phone">"'n Stelselopdatering is gereed om geïnstalleer te word. Jou Android-toestel sal herbegin en die opdatering installeer. Jy sal tydens die installering nie enige oproepe kan maak nie, selfs nie eens noodoproepe nie."</string>
+    <string name="system_update_install_dialog_battery_low_message">"'n Stelselopdatering is gereed, maar die battery het te min krag om dit te installeer. Koppel asseblief die laaier."</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">"'n Stelselopdatering is gereed, maar die battery is te laag om dit te installeer. Wag asseblief vir die battery om genoeg te laai."</string>
+    <string name="system_update_install_dialog_now_button">Installeer nou</string>
+    <string name="system_update_install_dialog_later_button">Installeer later</string>
+    <string name="system_update_install_dialog_info_button">Meer inligting…</string>
+    <string name="system_update_downloading_notification_title">Laai stelselopdatering af</string>
+    <string name="system_update_verifying_notification_title">Verifieer stelselopdatering</string>
+    <string name="system_update_download_dialog_label">Stelselopdatering-aflaaisel</string>
+    <string name="system_update_download_dialog_message">"'n Stelselopdatering is beskikbaar wat jou Android-toestel sal verbeter. As jy dit oor 'n draadlose netwerk aflaai, kan dit geld kos."</string>
+    <string name="system_update_download_dialog_now_button">Laai nou af</string>
+    <string name="system_update_download_dialog_later_button">Laai later af</string>
+    <string name="system_update_download_dialog_cancel_button">Kanselleer</string>
+    <string name="system_update_countdown_complete">Herselflaai nou…</string>
+    <string name="system_update_countdown_cancel_button">Kanselleer installering</string>
+    <string name="system_update_complete_label">Stelselopdatering</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Stootpos-intekeninge</string>
+    <string name="ro_perm_label">lees kitsboodskappe</string>
+    <string name="ro_perm_desc">Laat programme toe om data te lees van die Google Talk-inhoudverskaffer.</string>
+    <string name="wo_perm_label">skryf kitsboodskappe</string>
+    <string name="wo_perm_desc">Laat programme toe om data te skryf na die Google Talk-inhoudverskaffer.</string>
+    <string name="gsf_label">Google-diensraamwerk</string>
+    <string name="search_chats">"Deursoek kletse
+vir '%1$s'"</string>
+    <string name="gtalkservice_label">Google-boodskapdiens</string>
+    <string name="c2dm_label">Wolk-na-toestel-boodskapdiens</string>
+    <string name="sendTalkMsg_perm_label">Ruil boodskappe en kry sinkroniseringskennisgewings van die Google-bedieners</string>
+    <string name="sendTalkMsg_perm_desc">"Gebruik vir bediener-wolk-na-toestel-boodskappe en vir sinkroniseringskennisgewings. Google Talk gebruik hierdie diens om boodskappe te stuur en ontvang en teenwoordigheidstatus te sinkroniseer. 'n Kwaadwillige program kan hierdie diens gebruik om oordadig data te versend."</string>
+    <string name="perm_receive_data_message_label">ontvang data vanaf die internet</string>
+    <string name="perm_receive_data_message_desc">Laat die programme toe om wolk-na-toestel-boodskappe te ontvang wat deur die programdiens gestuur is. Dié diens vereis dataverbruik. Kwaadwillige programme kan oordadige dataverbruik veroorsaak.</string>
+    <string name="perm_data_msg_broadcast_label">Saai databoodskappe uit na programme.</string>
+    <string name="perm_data_msg_broadcast_desc">Kan databoodskappe uitsaai wat van die internet ontvang is na toepassings wat geregistreer is om daarna te luister.</string>
+    <string name="perm_receive_xmpp_label">stuur en ontvang XMPP-boodskappe na en van Google-bedieners</string>
+    <string name="perm_receive_xmpp_desc">Laat Google-programme toe om XMPP-boodskappe na en van Google-bedieners te stuur en ontvang.</string>
+    <string name="perm_xmpp_broadcast_label">Saai XMPP-boodskappe uit na programme.</string>
+    <string name="perm_xmpp_broadcast_desc">Kan XMPP-boodskappe, wat vanaf die Google-bedieners ontvang is, uitsaai na programme wat geregistreer is om daarna te luister.</string>
+    <string name="perm_use_xmpp_endpoint_label">stuur en ontvang XMPP-boodskappe na en van Google-bedieners.</string>
+    <string name="perm_use_xmpp_endpoint_desc">Laat Google-programme toe om XMPP-boodskappe na en van Google-bedieners te stuur en ontvang.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">Saai XMPP-boodskappe uit na programme.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Kan XMPP-boodskappe wat van die Google-bedieners ontvang is, na programme uitsaai.</string>
+    <string name="permlab_intentVendingOnly">Stuur uitsendings na Android Market.</string>
+    <string name="permdesc_intentVendingOnly">Kan uitsendings stuur na Android Market om installasie en verwydering van toepassing te versoek.</string>
+    <string name="permlab_heartbeat">Stuur hartklop na Google Talk-bediener</string>
+    <string name="permdesc_heartbeat">"Kan 'n hartkloppakkie na die Google Talk-bediener stuur om 'n goeie verbinding te verseker."</string>
+    <string name="group_chat">Groepklets: %s</string>
+    <string name="default_decline_reason">Jammer, ek is tans besig.</string>
+    <string name="newMessages_label">Nuwe kletse</string>
+    <string name="notify_groupchat_label">Groepkletsuitnodiging</string>
+    <string name="num_unread_chats">%s ongeleesde kletse</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s aan %s</string>
+    <string name="subscription_notify_text">%s wil graag kan klets</string>
+    <string name="group_chat_invite_notify_text">"Jy het 'n groepkletsuitnodiging gekry van %s"</string>
+    <string name="group_chat_invite_dialog_text">"%s nooi jou na 'n groepklets."</string>
+    <string name="message_too_long">Jy kan nie boodskappe van langer as 2000 karakters stuur nie.</string>
+    <string name="missed_video_chat_notification">"Jy het 'n videoklets-uitnodiging misgeloop"</string>
+    <string name="missed_voice_chat_notification">"Jy het 'n stemkletsuitnodiging misgeloop"</string>
+    <string name="missed_video_chat_notification_no_wifi">"Jy het 'n videokletsuitnodiging misgeloop, want jy was nie aan Wi-Fi gekoppel nie"</string>
+    <string name="missed_voice_chat_notification_no_wifi">"Jy het 'n stemkletsuitnodiging misgeloop, want jy was nie aan Wi-Fi gekoppel nie"</string>
+    <string name="missed_video_chat_message">"%1$s het 'n videoklets met jou probeer begin"</string>
+    <string name="missed_voice_chat_message">%1$s het stemklets met jou probeer begin</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s het probeer om met jou te videoklets toe jy nie aan Wi-Fi gekoppel was nie</string>
+    <string name="missed_voice_chat_message_no_wifi">"%1$s het 'n stemklets met jou probeer begin toe jy nie aan Wi-Fi gekoppel was nie"</string>
+    <string name="end_cause_user_unavailable_video">%1$s was nie beskikbaar vir videoklets nie.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s was nie beskikbaar vir stemklets nie.</string>
+    <string name="end_cause_sent_terminate_video">Jy het videoklets met %1$s beëindig.</string>
+    <string name="end_cause_sent_terminate_voice">Jy het stemklets met %1$s beëindig.</string>
+    <string name="end_cause_received_terminate_video">%1$s het die videoklets beëindig.</string>
+    <string name="end_cause_received_terminate_voice">%1$s het stemklets beëindig.</string>
+    <string name="end_cause_network_problem_video">"Jammer! Die videoklets met %1$s het misluk vanweë 'n netwerk-probleem. Probeer later weer."</string>
+    <string name="end_cause_network_problem_voice">"Jammer! Die stemklets met %1$s het misluk vanweë 'n netwerk-probleem. Probeer later weer."</string>
+    <string name="conn_auth_error_notify_ticker">Google Talk se stawing het misluk</string>
+    <string name="conn_auth_error_notify_title">Google Talk se stawing het misluk</string>
+    <string name="conn_auth_error_title">Stawingsfout</string>
+    <string name="conn_auth_error_message">"Google Talk kon nie aanmeld nie. As hierdie rekening 'n Google Apps-rekening is, bevestig dat Klets vir die rekening geaktiveer is."</string>
+    <string name="conn_auth_error_button_retry">Probeer weer</string>
+    <string name="conn_auth_error_button_cancel">Kanselleer</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Welkom by ^1</string>
+    <string name="setup_wizard_title">Opstellingsassistent</string>
+    <string name="error_dialog_title">Aandag</string>
+    <string name="next_button_label">Volgende</string>
+    <string name="back_button_label">Terug</string>
+    <string name="sign_in_button_label">Meld aan</string>
+    <string name="create_button_label">Skep</string>
+    <string name="skip_button_label">Slaan oor</string>
+    <string name="first_name">Voornaam</string>
+    <string name="last_name">Van</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Kanselleer</string>
+    <string name="done_button_label">Voltooi opstelling</string>
+    <string name="try_again_button_label">Probeer weer</string>
+    <string name="close_button_label">Sluit</string>
+    <string name="edit_text_help">Raak enige tekskassie om te begin tik</string>
+    <string name="add_a_google_account">"Voeg 'n Google-rekening by"</string>
+    <string name="no_sim_setup_wireless">"Jy het nie 'n SIM-kaart wat geïnstalleer is nie, so jy kan nie aan 'n mobiele netwerk koppel vir stem- of datadienste nie. Jy kan sonder 'n SIM aan 'n Wi-Fi-netwerk koppel."</string>
+    <string name="setup_wifi_button_label">Koppel aan Wi-Fi</string>
+    <string name="no_network">"Jy het nie 'n netwerkverbinding nie."</string>
+    <string name="no_network_help">"Dit kan 'n tydelike probleem wees, of jou Android-toestel maak dalk nie voorsiening vir datadienste nie. Probeer asseblief weer wanneer jy aan 'n mobiele netwerk gekoppel is, of koppel aan 'n Wi-Fi-netwerk."</string>
+    <string name="server_error">Kon nie met die Google-bedieners kommunikeer nie.</string>
+    <string name="server_error_help">Probeer asseblief later weer.</string>
+    <string name="network_unreliable">"Kan nie 'n betroubare dataverbinding met die bediener skep nie."</string>
+    <string name="network_unreliable_help">"Dit kan 'n tydelike probleem wees, of jou Android-toestel maak dalk nie voorsiening vir datadienste nie. As dit voortduur, bel die kliëntediens."</string>
+    <string name="invalid_login_character">Ongeldige karakter. Net 0-9, a-z, A-Z en punte word toegelaat.</string>
+    <string name="invalid_password_character">Ongeldige wagwoordkarakter.</string>
+    <string name="add_apn">Draadlose instellings</string>
+    <string name="setup_google_account_title">Stel jou Google-rekening op</string>
+    <string name="setup_complete_title">Opstelling afgehandel</string>
+    <string name="cant_be_blank">Veld kan nie leeg wees nie.</string>
+    <string name="calendar">Google Calendar</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">"Jou Android-toestel is nie aan 'n datadiens gekoppel nie. Om hierdie inligting nou te sien, gaan na %s met enige rekenaar wat aan die internet gekoppel is."</string>
+    <string name="field_cant_be_blank">Hierdie veld kan nie leeg wees nie</string>
+    <string name="field_invalid_domain">"Dit is nie 'n geldige domeinnaam nie"</string>
+    <string name="field_invalid_user">"Dit is nie 'n geldige gebruikernaam nie"</string>
+    <string name="field_invalid_user_domain">Voer net jou gebruikernaam in, nie jou e-posadres nie</string>
+    <string name="field_invalid_login">"Hierdie is nie 'n geldige rekeningnaam nie"</string>
+    <string name="about_accounts_message"><font size="17">"Dis maklik om jou Android-toestel op te stel! Al wat jy kort, is 'n Google-rekening.
+"<font height="17">"
+"</font><b>"Hoekom 'n Google-rekening gebruik?"</b>"
+"<font height="3">"
+"</font>"Met 'n Google-rekening word Google-programme outomaties tussen jou Android-toestel en jou rekenaar gesinkroniseer, ongeag wáár jy iets opdateer.
+"<font height="17">"
+"</font><b>"Het jy reeds 'n Google-rekening?"</b>"
+"<font height="3">"
+"</font>"Dan is jy slaggereed! Raak eenvoudig \"Meld aan\" op die volgende skerm.
+"<font height="17">"
+"</font><b>"Het jy nie 'n Google-rekening nie?"</b>"
+"<font height="3">"
+"</font>"Geen probleem nie. Raak \"Skep\" op die volgende skerm en ons sal jou help om een op te stel.
+"<font height="17">"
+"</font><b>Raak \"Volgende\" om te begin!</b>"
+"</font></string>
+    <string name="fling_help_message">"Gly jou vinger op die skerm om op of af te blaai.
+(Raak hierdie boodskap om dit te sluit.)"</string>
+    <string name="setup_device_title">Stel jou ^1 op</string>
+    <string name="dont_have_an_account">"Het jy nie 'n Google-rekening nie?"</string>
+    <string name="create_one_now">Skep nou een! Dis maklik.</string>
+    <string name="already_have_an_account">"Het jy reeds 'n Google-rekening?"</string>
+    <string name="sign_in_with_google_account">Meld aan met die Google-rekening wat jy met hierdie Android-toestel gekoppel wil hê.</string>
+    <string name="skip_message">"Wil jy later 'n rekening opstel?"</string>
+    <string name="touch_to_begin">Raak die androïed om te begin.</string>
+    <string name="delayed_gaia_agreement">Deur voort te gaan, stem jy in tot <annotation id="google_privacy">Google</annotation> se en <annotation id="android_privacy">bykomende</annotation> privaatheidsbeleide.</string>
+    <string name="open_keyboard_message">Gly sleutelbord oop om te begin.</string>
+    <string name="open_keyboard_message_to_continue">Gly sleutelbord oop om voort te gaan.</string>
+    <string name="emergency_dial">Noodnommer</string>
+    <string name="change_language">Verander taal</string>
+    <string name="signing_in">Teken tans in…</string>
+    <string name="close_keyboard_message">Gly sleutelbord terug om voort te gaan.</string>
+    <string name="communicating_message">Jou Android-toestel moet met Google se bedieners kommunikeer om jou rekening op te stel. Dit kan tot vyf minute neem.</string>
+    <string name="communicating_message_domain">Jou Android-toestel moet met Google se bedieners kommunikeer om jou domeininligting te kry. Dit kan tot vyf minute neem.</string>
+    <string name="username">Gebruikernaam</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Wagwoord</string>
+    <string name="sign_in_agreement">Deur aan te meld, stem jy in tot <annotation id="google_privacy">Google</annotation> se en <annotation id="android_privacy">bykomende</annotation> privaatheidsbeleide.</string>
+    <string name="create">Skep</string>
+    <string name="create_message">"Het jy 'n Google-rekening nodig?"</string>
+    <string name="now_signing_in">Teken tans in…</string>
+    <string name="now_verifying_domain">Vind tans jou domein…</string>
+    <string name="sign_in_with_google_account_short">Meld aan met jou Google-rekening:</string>
+    <string name="browser_sign_in_explanation">"Gebruik hierdie skerm as jy spesiale aantekenbehoeftes het wat 'n webblaaier vereis."</string>
+    <string name="gls_browser_login_intro_message">Kan nie by jou Google- of Google Apps-rekening ingaan nie. Hermagtiging word vereis.</string>
+    <string name="enter_domain_name">Voer jou maatskappy se domeinnaam in:</string>
+    <string name="enter_user_name">Voer jou gebruikernaam en wagwoord vir ^1 in:</string>
+    <string name="inactive_domain">"Hierdie rekening kan nie op die foon gebruik word nie, want dit behoort aan 'n onaktiewe domein. Kontak asseblief die domeinadministrateur vir "<b>^1</b>" of meld aan met 'n ander rekening."</string>
+    <string name="invalid_username">"Die ingevoerde teks is nie 'n geldige gebruikernaam nie."</string>
+    <string name="web_login_error_title">Jammer...</string>
+    <string name="web_login_error_desc">"Daar is 'n probleem om aan jou maatskappy se bedieners by ^1 te koppel.
+
+Foutinligting:
+"</string>
+    <string name="web_login_error_redirects">Die web-aanmeldbladsy het te veel keer herlei</string>
+    <string name="web_login_error_http">HTTP-fout ^1 : ^2</string>
+    <string name="name_device_label">"Gee jou Android-toestel 'n naam:"</string>
+    <string name="device_name_hint">Toestelnaam</string>
+    <string name="registering_device">Registreer tans Android-toestel…</string>
+    <string name="error_account_disabled">"Hierdie rekening is gedeaktiveer. 
+
+(Vir details, gaan met jou rekenaar na http://google.com/accounts/recovery.)"</string>
+    <string name="error_login_failed">"Jou gebruikernaam en wagwoord pas nie by mekaar nie. Probeer later weer. 
+
+(Om jou rekeninginligting terug te kry, gaan met jou rekenaar na http://www.google.com/accounts/recovery.)"</string>
+    <string name="error_account_not_verified">"Hierdie rekening is nog nie geverifieer nie. Lees asseblief jou e-pos op 'n rekenaar en volg die skakel om hierdie rekening te verifieer. 
+
+(Om jou rekeninginligting terug te kry, gaan met jou rekenaar na http://www.google.com/accounts/recovery.)"</string>
+    <string name="captcha_message_string">Verifiëring</string>
+    <string name="captcha_instructions">Voer die karakters in wat jy op die prentjie sien. Letters is nie kassensitief nie.</string>
+    <string name="create_google_account">"Skep 'n nuwe Google-rekening"</string>
+    <string name="example_usernames">bv. JSpies, Jan.Spies</string>
+    <string name="create_account_agreement">Deur hierdie rekening te skep, stem jy in tot <annotation id="google_privacy">Google</annotation> se en <annotation id="android_privacy">bykomende</annotation> privaatheidsbeleide.</string>
+    <string name="account_already_has_gmail">Rekening het reeds Gmail.</string>
+    <string name="creating_account">Skep tans jou rekening…</string>
+    <string name="checking_account">Kontroleer tans beskikbaarheid van gebruikernaam…</string>
+    <string name="try_a_different_username">"Probeer 'n ander gebruikernaam"</string>
+    <string name="is_not_available"><b>^1</b> is nie beskikbaar nie.</string>
+    <string name="hint_size"><b>^1</b> bevat minder as 6 of meer as 30 karakters.</string>
+    <string name="hint_numbers_only"><b>^1</b> bevat geen letters nie.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" kan net letters,
+syfers, en punte bevat."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> gebruik nie Gmail nie</string>
+    <string name="sign_in">Meld aan</string>
+    <string name="sign_in_browser">Blaaier-aanmelding</string>
+    <string name="here_are_alternatives">"Hier is 'n paar alternatiewe:"</string>
+    <string name="alternatives_list_title">Voorgestelde gebruikername</string>
+    <string name="choose_a_password"><b>"Voer 'n
+wagwoord"</b>in</string>
+    <string name="confirm_password"><b>"Bevestig
+wagwoord"</b></string>
+    <string name="password_strength"><b>"Wagwoord-
+sterkte"</b></string>
+    <string name="too_short">Te kort</string>
+    <string name="security_question"><b>"Sekuriteit-
+vraag"</b></string>
+    <string name="security_questions_title">Sekuriteitsvrae</string>
+    <string name="answer"><b>Antwoord</b></string>
+    <string name="password_mismatch">Jou wagwoorde stem nie ooreen nie. Voer hulle asseblief weer in.</string>
+    <string name="your_account_was_created">Jou rekening is geskep!</string>
+    <string name="eight_chars_min">(8 karakters minimum)</string>
+    <string name="just_in_case">Indien jy jou wagwoord verloor.</string>
+    <string name="verify_your_profile">Verifieer jou profiel</string>
+    <string name="signed_in">Aangemeld!</string>
+    <string name="error_not_logged_in">Gebruiker nie aangemeld nie.</string>
+    <string name="error_username_unavailable">Gebruikernaam nie beskikbaar nie.</string>
+    <string name="error_bad_password">Die wagwoord is te swak of bevat ongeldige karakters. Probeer asseblief weer.</string>
+    <string name="error_bad_username">Ongeldige gebruikernaam.</string>
+    <string name="loading">Laai tans...</string>
+    <string name="submission_title">Jammer…</string>
+    <string name="submission_error_text">"'n Fout het voorgekom. Probeer asseblief weer."</string>
+    <string name="existing_account_error_title">Rekening bestaan reeds</string>
+    <string name="existing_account_error_text">"Daar is reeds 'n ^1 rekening op hierdie Android-toestel."</string>
+    <string name="account_linked_message"><font height="24">Jou Google-rekening is nou met hierdie Android-toestel gekoppel.</font></string>
+    <string name="syncing_message"><font size="17">"Google-programme sinkroniseer nou data. 
+"<font height="17">"
+"</font>"%i Wanneer die sinkroniseer-ikoon van die statusbalk bo-aan jou skerm verdwyn, is die aflaai afgehandel. 
+"<font height="17">"
+"</font><b>Meer oor die statusbalk…</b>"
+"<font height="3">"
+"</font>"Wanneer jy 'n nuwe boodskap of ander kennisgewing ontvang, verskyn 'n ikoon in die statusbalk.
+"<font height="17">"
+"</font>Gebruik jou vinger om die statusbalk af te trek om die kennisgewingspaneel te open, wat details bevat oor al jou huidige kennisgewings.</font></string>
+    <string name="i_agree_next">Ek stem in, volgende</string>
+    <string name="android_privacy_policy_title">Bykomende privaatheidsbeleid</string>
+    <string name="google_terms_of_service_title">Google se diensbepalings</string>
+    <string name="google_privacy_policy_title">Google se privaatheidsbeleid</string>
+    <string name="notification_update_title">Jou rekening moet opgedateer word</string>
+    <string name="notification_update_message">Raak hier om die opstelassistent van voor af te laat loop</string>
+    <string name="common_message">"Gmail, rugsteun, en baie ander Android-kenmerke vereis 'n Google-rekening.
+
+Raak "<b>Volgende</b>" om met 'n bestaande Google-rekening aan te meld, of skep 'n nuwe Google-rekening.
+
+Of raak "<b>Slaan oor</b>" om dadelik jou Android te begin gebruik. Jy kan later by 'n Google-rekening aanmeld in Instellings, onder \"Rekeninge en sinkronisering\"."</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">"Voeg 'n rekening by"</font>" 
+
+Jy kan meer as een Google-rekening gebruik (byvoorbeeld jou huis- en werkrekeninge). Om 'n Google-rekening by te voeg neem net 'n paar stappe. 
+
+Raak \"Volgende\" om voort te gaan of druk die Terug-knoppie om af te sluit."</string>
+    <string name="reactivate_account_message">"Jy moet 'n Google-e-posrekening met hierdie Android-toestel koppel. 
+
+Jy het reeds 'n Google-posgebruikernaam ("<b>^1</b>") wat met hierdie rekening geassosieer word, maar dit is nie tans aktief nie. 
+
+Raak \"Volgende\" om hierdie gebruikernaam te heraktiveer en dit te gebruik. 
+
+As jy liewers 'n ander rekening wil gebruik, druk die Terug-knoppie en skep 'n ander rekening, of meld met een aan."</string>
+    <string name="reactivating_account">Heraktiveer tans jou rekening…</string>
+    <string name="your_account_was_reactivated">Jou rekening is geaktiveer!</string>
+    <string name="account_recovery_info">Die volgende inligting sal jou help om jou wagwoord terug te kry as dit ooit verlore raak</string>
+    <string name="secondary_email_label"><b>"Sekondêre
+e-pos"</b></string>
+    <string name="invalid_email">"Die e-posadres wat jy ingevoer het, is ongeldig.
+ Voorbeeld: joe@example.com"</string>
+    <string name="invalid_email_primary">Sekondêre e-posadresse kan nie dieselfde wees as die een wat jy besig is om te skep nie</string>
+    <string name="tutorial_intro_title">Leer hoe om jou ^1 te gebruik</string>
+    <string name="begin_button_label">Begin</string>
+    <string name="tutorial_intro_message_generic">"Daar is 'n paar belangrike dinge wat jy moet verstaan om die beste uit jou Android-toestel te haal"<font size="17">"
+"</font>" 
+"<li> Gebruik die skermsleutelbord  </li> <font size="17">"
+"</font>" 
+Raak \"Begin\" om die tutoriaal te begin en meer te wete te kom."</string>
+    <string name="tutorial_intro_message_setupwizard">"Daar is 'n paar belangrike dinge wat jy moet verstaan om die beste uit jou Android-toestel te haal. "<font size="17">"
+"</font>" 
+"<li>Gebruik die skermsleutelbord</li>" 
+"<li>"Stel 'n Google-rekening op"</li> <font size="17">"
+"</font>" 
+Raak \"Begin\" om die tutoriaal te begin en meer uit te vind, of raak \"Slaan oor\" om hierdie tutoriaal oor te slaan en voort te gaan."</string>
+    <string name="keyboard_tutorial_title">Gebruik die skermsleutelbord</string>
+    <string name="keyboard_tutorial_message">Raak enige teksveld om die sleutelbord te open en te begin tik. Probeer dit hier!</string>
+    <string name="keyboard_tutorial_edittext_hint">Raak hier om te begin tik</string>
+    <string name="done_typing_message">Klaar getik? Druk die Terug-knoppie om die sleutelbord te sluit.</string>
+    <string name="done_button_label_in_tutorial">Klaar</string>
+    <string name="backup_consent_title">Rugsteun my instellings</string>
+    <string name="backup_consent_message">"Jou instellings (soos boekmerke en Wi-Fi-wagwoorde) kan outomaties na jou Google-rekening gerugsteun word. As jy 'n nuwe Android-toestel kry (om 'n verlore een te vervang of wanneer jy opgradeer), word jou instellings op jou nuwe Android-toestel teruggelaai."</string>
+    <string name="backup_consent_howto_disable_message">Jy kan jou rugsteuninstellings op enige stadium verander in die instellingsprogram, in Privaatheid.</string>
+    <string name="backup_consent_yes_agree">Rugsteun instellings na my Google-rekening.</string>
+    <string name="restore_disable">Deaktiveer teruglaai</string>
+    <string name="restore_enable">Aktiveer teruglaai</string>
+    <string name="restore_enabled">As jy jou instellings voorheen gerugsteun het, sal hulle teruggelaai word.</string>
+    <string name="restore_disabled">Jou instellings sal nie van die rugsteun af teruggelaai word nie.</string>
+    <string name="webview_progress_title">Koppel tans aan domein...</string>
+    <string name="webview_progress_verbose_message">"Jou maatskappy se bedieners stuur nou aanmeldinligting. Dit kan 'n rukkie duur.
+Jou maatskappy se aanmeldbladsy sal verskyn wanneer dit klaar is."</string>
+    <string name="enterprise_unmanaged_domain">Hierdie domein gebruik nie Google Apps nie. Kontroleer asseblief die domeinnaam en probeer weer.</string>
+    <string name="use_location_for_services_agree">Stem in</string>
+    <string name="use_location_for_services_disagree">Stem nie in nie</string>
+    <string name="use_location_for_services_title">Gebruik my ligging</string>
+    <string name="use_location_for_services_text">Wil jy Google toelaat om ligging te gebruik vir verbeterde soekresultate en ander dienste?</string>
+    <string name="permlab_readGsettings">Lees Google-instellings</string>
+    <string name="permdesc_readGsettings">Laat hierdie program toe om Google-instellings te lees.</string>
+    <string name="permlab_writeGsettings">Wysig Google-instellings</string>
+    <string name="permdesc_writeGsettings">Laat hierdie program toe om Google-instellings te verander.</string>
+    <string name="permlab_readGservices">lees Google se diensopstelling</string>
+    <string name="permdesc_readGservices">Laat hierdie program toe om Google se diensopstellingsdata te lees.</string>
+    <string name="permlab_writeGservices">Wysig Google se diensopstelling</string>
+    <string name="permdesc_writeGservices">Laat hierdie program toe om Google se diensopstelling-data te wysig.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google Apps</string>
+    <string name="permlab_googleAuthPassword">toegang tot wagwoorde vir Google-rekeninge</string>
+    <string name="permdesc_googleAuthPassword">Gee programme direk toegang tot die wagwoorde van die Google-rekening(e) wat jy opgestel het.</string>
+    <string name="permlab_googleMailSwitch">kies Gmail- of Google Mail-handelsmerk</string>
+    <string name="permdesc_googleMailSwitch">Laat programme toe om tussen \"Gmail\"- en \"Google Mail\"-handelsmerke te wissel.</string>
+    <string name="permlab_googleAuth">sien ingestelde rekeninge</string>
+    <string name="permdesc_googleAuth">Laat program toe om die gebruikername (e-posadresse) te sien van die Google-rekening(e) wat jy opgestel het.</string>
+    <string name="permlab_googleAuth_ALL">kry toegang tot alle Google-dienste</string>
+    <string name="permdesc_googleAuth_ALL">Laat programme toe om by ALLE Google-dienste aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_OTHER">kry toegang tot ander Google-dienste</string>
+    <string name="permdesc_googleAuth_OTHER">Laat programme toe om by ongespesifiseerde Google-dienste aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_mail">Google-pos</string>
+    <string name="permdesc_googleAuth_mail">Laat programme toe om by Google-posdienste aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_cl">Google Calendar</string>
+    <string name="permdesc_googleAuth_cl">Laat programme toe om by Google Calendar aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_android">Android-dienste</string>
+    <string name="permdesc_googleAuth_android">Laat programme toe om by Android-dienste aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout-rekeninge</string>
+    <string name="permdesc_googleAuth_sierra">Laat programme toe om by Google Checkout aan te meld (en potensieel aankope te doen) met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA-rekeninge</string>
+    <string name="permdesc_googleAuth_sierraqa">Laat programme toe om by Google Checkout QA aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout-sandputrekeninge</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Laat programme toe om by Google Checkout se sandput aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Laat programme toe om by YouTube aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube-gebruikername</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Laat programme toe om die YouTube-gebruikernaam(e) te sien wat geassosieer word met die Google-rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_talk">Google Praat</string>
+    <string name="permdesc_googleAuth_talk">Laat programme toe om by Google Talk aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_ig">iGoogle-rekeninge</string>
+    <string name="permdesc_googleAuth_ig">Laat programme toe om by iGoogle aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_lh2">Picasa Web Albums</string>
+    <string name="permdesc_googleAuth_lh2">Laat programme toe om by Picasa Webalbums aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_mobile">Google se mobiele programme</string>
+    <string name="permdesc_googleAuth_mobile">Laat programme toe om by Google se mobiele programme aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_cp">kontaktedata in Google-rekeninge</string>
+    <string name="permdesc_googleAuth_cp">Laat programme toe om die kontakte en profielinligting te lees van die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Laat programme toe om by Google AdSense aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Laat programme toe om by Google AdWords aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Laat programme toe om by Blogger aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Laat programme toe om by Dodgeball aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Laat programme toe om by Google Base aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_groups2">Google Groups</string>
+    <string name="permdesc_googleAuth_groups2">Laat programme toe om by Google Groups aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Laat programme toe om by Google Health aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Laat programme toe om by JotSpot aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Laat programme toe om by Knol aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_news">Google News</string>
+    <string name="permdesc_googleAuth_news">Laat programme toe om by Google News aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Laat programme toe om by Orkut aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_print">Google Book Search</string>
+    <string name="permdesc_googleAuth_print">Laat programme toe om by Google Book Search aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_sitemaps">Google Webmaster Tools</string>
+    <string name="permdesc_googleAuth_sitemaps">Laat programme toe om by Google Webmaster Tools aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Laat programme toe om by Google Wi-Fi aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_writely">Google Docs</string>
+    <string name="permdesc_googleAuth_writely">Laat programme toe om by Google Docs aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_wise">Google Spreadsheets</string>
+    <string name="permdesc_googleAuth_wise">Laat programme toe om by Google Spreadsheets aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Laat programme toe om by Google Finance aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Laat programme toe om by Google Maps aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Laat programme toe om by Google App Engine aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_notebook">Google Notebook</string>
+    <string name="permdesc_googleAuth_notebook">Laat programme toe om by Google Notebook aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Laat programme toe om by Google Voice aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Verpersoonlikte stemherkenning</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Laat programme toe om by die verpersoonlikte stemherkenningsdiens aan te meld met die rekening(e) wat op hierdie Android-toestel gestoor is.</string>
+    <string name="gls_notification_title">Meld aan by jou rekening</string>
+    <string name="gls_notification_new_account">^1 rekening benodig</string>
+    <string name="gls_notification_new_account_youtube">YouTube-rekening benodig</string>
+    <string name="gls_notification_login_error">Raak om by jou rekening aan te meld.</string>
+    <string name="gls_ui_add_account_title">Rekening-opstelling</string>
+    <string name="gls_ui_google_account_subtitle">Google-rekening</string>
+    <string name="gls_ui_activity_title">Google-aanmeld</string>
+    <string name="gls_ui_activity_title_browser_signin">Blaaier-aanmelding</string>
+    <string name="gls_ui_activity_title_enterprise">Ondernemingsaanmelding</string>
+    <string name="gls_ui_activity_title_youtube">YouTube-aanmeld</string>
+    <string name="gls_ui_activity_authenticating">Staaf tans…</string>
+    <string name="gls_captcha_activity_message">Voer die karakters in wat jy in die prentjie sien:</string>
+    <string name="gls_captcha_activity_ok_button">Klaar</string>
+    <string name="gls_error_activity_message">"Daar was 'n netwerkfout toe daar by "<b>^1</b> aangemeld is. Probeer nou weer of druk die Terug-knoppie om te kanselleer.</string>
+    <string name="gls_error_activity_retry_button">Probeer weer</string>
+    <string name="gls_dmagent_activity_message">" Jou domein vereis mobiele toestelbestuur. Installeer asseblief die Google Apps-beleidsprogram om die veiligheidsbeleide wat deur die "<b>^1</b> rekening vereis word, af te dwing.</string>
+    <string name="gls_dmagent_activity_retry_button">Laai af</string>
+    <string name="gls_login_activity_username_label">Gebruikernaam</string>
+    <string name="gls_login_activity_password_label">Wagwoord</string>
+    <string name="gls_login_activity_ok_button">Meld aan</string>
+    <string name="gls_login_activity_loginfail_text_both">"Die gebruikernaam of wagwoord is ongeldig. 'n "<b>^1</b> rekening word benodig. Probeer asseblief weer.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Verkeerde wagwoord, of jou rekening het verander. Voer asseblief weer jou wagwoord in.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Voer die wagwoord vir hierdie rekening in.</string>
+    <string name="gls_enterprise_login_activity_msg">"Meld asseblief aan by jou ondernemingsrekening by ^1 vir stawing.
+Raak \"Meld aan\" om jou maatskappy se webgebaseerde aanmeldbladsy te open."</string>
+    <string name="gls_login_activity_badaccount_text">"Jy kan nie daardie rekening in hierdie situasie gebruik nie. Probeer 'n ander rekening."</string>
+    <string name="gls_login_activity_newaccount_text">Meld aan by jou <b>^1</b> rekening.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">"Het jy nie 'n YouTube-rekening nie? Raak "<a href="http://www.youtube.com/signup">hier</a> om een te skep.</string>
+    <string name="gls_settings_tos_activity_title">Google-regsafdeling</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">"Jy is nie aan 'n datadiens gekoppel nie. Om hierdie inligting nou te sien, gaan na %s met enige rekenaar wat aan die internet gekoppel is."</string>
+    <string name="gls_settings_contributors_activity_title">Medewerkers</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">"Jy is nie aan 'n datadiens gekoppel nie. Om hierdie inligting nou te sien, gaan na %s met enige rekenaar wat aan die internet gekoppel is."</string>
+    <string name="gls_webview_progress_title">Koppel tans aan domein...</string>
+    <string name="gls_webview_progress_verbose_message">"Jou maatskappy se bedieners stuur nou aanmeldinligting. Dit kan 'n rukkie duur.
+Jou maatskappy se aanmeldbladsy sal verskyn wanneer dit klaar is."</string>
+    <string name="gls_sign_in_button_label">Meld aan</string>
+    <string name="gls_back_button_label">Terug</string>
+    <string name="gls_cancel_button_label">Kanselleer</string>
+    <string name="gls_exit_account_setup_button_label">Verlaat rekeningopstelling</string>
+    <string name="gls_reauthorize_button_label">Hermagtig</string>
+    <string name="gls_sign_in_message">Jou Android-toestel moet met Google se bedieners kommunikeer om jou rekening op te stel. Dit kan tot vyf minute neem.</string>
+    <string name="gls_sign_in_title">Meld tans aan...</string>
+</resources>

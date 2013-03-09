@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/control_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_layout_margin_left" android:layout_marginBottom="@dimen/incall_control_layout_margin_bottom" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_layout_padding_left">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_control_button_width" android:layout_height="wrap_content">
+            <com.android.phone.widget.ControlButton android:id="@id/control_end_held_call" android:background="@drawable/phone_btn_contorl_left" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_button_height" android:button="@drawable/phone_icon_end_held_call" android:scaleType="center" />
+            <TextView android:gravity="center" android:id="@id/text_end_held_call" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_text_layout_height" android:text="@string/menu_endHeldCall" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_control_button_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_button_margin_left">
+            <com.android.phone.widget.ControlButton android:id="@id/control_merge_calls" android:background="@drawable/phone_btn_contorl_right" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_button_height" android:button="@drawable/phone_icon_merge_calls" android:scaleType="center" />
+            <TextView android:gravity="center" android:id="@id/text_merge_calls" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_text_layout_height" android:text="@string/menu_mergeCalls" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_layout_padding_left">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_control_button_width" android:layout_height="wrap_content">
+            <com.android.phone.widget.ControlButton android:id="@id/control_add_call" android:background="@drawable/phone_btn_contorl_left" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_button_height" android:button="@drawable/phone_icon_add_call" android:scaleType="center" />
+            <TextView android:gravity="center" android:id="@id/text_add_call" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_text_layout_height" android:text="@string/menu_addCall" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_control_button_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_button_margin_left">
+            <com.android.phone.widget.ControlButton android:id="@id/control_hold" android:background="@drawable/phone_btn_contorl_right" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_button_height" android:button="@drawable/phone_icon_hold" />
+            <TextView android:gravity="center" android:id="@id/text_hold" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_text_layout_height" android:text="@string/menu_hold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_layout_padding_left">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_control_button_width" android:layout_height="wrap_content">
+            <com.android.phone.widget.ControlButton android:id="@id/control_mute" android:background="@drawable/phone_btn_contorl_left" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_button_height" android:button="@drawable/phone_icon_mute" />
+            <TextView android:gravity="center" android:id="@id/text_mute" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_text_layout_height" android:text="@string/menu_mute" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/incall_control_button_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/incall_control_button_margin_left">
+            <com.android.phone.widget.ControlButton android:id="@id/control_speaker" android:background="@drawable/phone_btn_contorl_right" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_button_height" android:button="@drawable/phone_icon_speaker" />
+            <TextView android:gravity="center" android:id="@id/text_speaker" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/incall_control_text_layout_height" android:text="@string/menu_speaker" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

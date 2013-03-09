@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/voiceSearchPreferences"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/emptyArray" android:title="@string/prefTitle_language" android:key="language" android:dialogTitle="@string/prefDialogTitle_language" android:entryValues="@array/emptyArray" />
+    <ListPreference android:entries="@array/prefEntries_safeSearch" android:title="@string/prefTitle_safeSearch" android:key="safeSearch" android:defaultValue="@string/prefDefault_safeSearch" android:dialogTitle="@string/prefDialogTitle_safeSearch" android:entryValues="@array/prefValues_safeSearch" />
+    <CheckBoxPreference android:title="@string/prefTitle_profanityFilter" android:key="profanityFilter" android:summary="@string/prefSummary_profanityFilter" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/personalization_header" android:key="personalizedResults" android:summary="@string/personalization_settings_message" android:defaultValue="false" />
+    <PreferenceScreen android:title="@string/manage_personalization" android:key="managePersonalization" android:summary="@string/manage_personalization_message" />
+</PreferenceScreen>

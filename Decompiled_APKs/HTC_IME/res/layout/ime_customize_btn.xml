@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.android.htcime.ui.IMECustomizeButton android:id="@id/ime_customize_btn"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/mms_land_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    <TextView android:id="@id/text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_toRightOf="@id/image" android:layout_centerInParent="true" />
+</com.htc.android.htcime.ui.IMECustomizeButton>

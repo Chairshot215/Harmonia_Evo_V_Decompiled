@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:minWidth="@dimen/label_list_popup_width" style="@style/ShortcutNameWrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:layout_gravity="center" android:id="@id/label_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:inputType="textCapSentences|textAutoCorrect|textImeMultiLine" android:imeOptions="actionDone" style="@style/ShortcutNameStyle" />
+    <include layout="@layout/two_button_button_bar" />
+</LinearLayout>

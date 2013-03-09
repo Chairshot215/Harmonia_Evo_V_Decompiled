@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gm.HybridHtmlConversationView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/hybrid_html_conversation_inner" />
+    <include android:id="@id/new_message_notification" layout="@layout/new_message_notification" />
+    <com.google.android.gm.UndoBarView android:id="@id/undo_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginBottom="20.0dip" style="@style/conversation_undo_bar">
+        <include layout="@layout/undo_bar" />
+    </com.google.android.gm.UndoBarView>
+    <View android:id="@id/web_view_scrim" android:background="@color/fadedWebView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:id="@id/background_view" android:background="@*android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/info_view" android:paddingLeft="8.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0sp" android:layout_marginLeft="@dimen/info_view_margin" android:layout_marginRight="@dimen/info_view_margin">
+            <ProgressBar android:id="@id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:indeterminate="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/progress_bar" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/senders_font_size" android:id="@id/senders_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" />
+                <TextView android:id="@id/subject_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/senders_view" style="@style/SwipeSubjectStyle" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.google.android.gm.MinTimeProgressView android:layout_gravity="center" android:id="@id/loading_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateBehavior="repeat" style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+</com.google.android.gm.HybridHtmlConversationView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="@dimen/htc_editor_list_buttonitem_labelsize" android:gravity="left|center" android:id="@id/name" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_editor_entry_name_left_margin" android:layout_marginTop="6.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_editor_label_button_left_margin" android:layout_marginRight="@dimen/htc_editor_entry_name_right_margin" android:layout_marginBottom="6.0px" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/item_fontSize_small" android:textColor="@color/button_text" android:ellipsize="marquee" android:gravity="center" android:id="@id/label" android:fadingEdge="none" android:layout_width="@dimen/button_editEntry_width" android:layout_height="@dimen/button_editEntry_height" android:singleLine="true" style="?attr/EditEntry_Button_Style" />
+            <EditText android:textSize="@dimen/htc_editor_editortext_size" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/data" android:background="?com.htc:attr_common_inputfield_light" android:layout_width="0.0dip" android:layout_height="@dimen/htc_editor_edittext_height" android:layout_marginLeft="@dimen/contact_editor_entry_label_interval" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/delete" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/htc_editor_edittext_close_icon_height" android:src="?com.htc:attr_common_close_view" />
+        </LinearLayout>
+        <View android:background="@*android:drawable/divider_horizontal_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/advanced_settings_kddi"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/kddi_settings_enabled" android:key="button_enable_settings_key" android:disableDependentsState="false" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/id_pwd_setting" android:key="manual_nai_setup_key" />
+    <com.htc.preference.HtcPreferenceScreen android:persistent="false" android:title="@string/cpa_proxy_settings" android:key="proxy_settings_key" />
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?android:dividerVertical" android:showDividers="middle" android:dividerPadding="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/cancel" style="@style/AddBuddyCustomActionButton">
+        <ImageView android:src="@drawable/ic_menu_cancel_holo_dark" style="@style/AddBuddyCustomActionButtonImage" />
+        <TextView android:text="@string/invite_label_cancel" style="@style/AddBuddyCustomActionButtonText" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/invite" style="@style/AddBuddyCustomActionButton">
+        <ImageView android:src="@drawable/ic_menu_done_holo_dark" style="@style/AddBuddyCustomActionButtonImage" />
+        <TextView android:id="@id/invite_button_text" android:text="@string/invite_label" style="@style/AddBuddyCustomActionButtonText" />
+    </LinearLayout>
+</LinearLayout>

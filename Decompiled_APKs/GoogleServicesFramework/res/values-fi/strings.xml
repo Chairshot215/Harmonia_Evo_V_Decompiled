@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">Verkko</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_shopper_client_id">shopper-android-google</string>
+    <string name="def_wallet_client_id">wallet-android-google</string>
+    <string name="def_rlz">tuntematon</string>
+    <string name="sharedUserLabel">Googlen palvelut</string>
+    <string name="service_label">System Updater</string>
+    <string name="system_update_activity_name">Järjestelmäpäivitykset</string>
+    <string name="system_update_activity_title">Järjestelmäpäivitykset</string>
+    <string name="system_update_activity_battery_low_text">Akun varaus ei riitä järjestelmäpäivityksen asentamiseen. Kytke laturi puhelimeen.</string>
+    <string name="system_update_activity_battery_low_charging_text">Akun varaus ei riitä järjestelmäpäivityksen asentamiseen. Odota, että akku on latautunut riittävästi.</string>
+    <string name="system_update_activity_roaming_text">Järjestelmäpäivityksiä ei voi ladata roaming-tilassa.</string>
+    <string name="system_update_requires_restart_status_text">Edellyttää uudelleenkäynnistystä</string>
+    <string name="system_update_downloading_status_text">Ladataan</string>
+    <string name="system_update_downloading_wifi_status2_text">Vain wifi-yhteyden kautta ^1 asti</string>
+    <string name="system_update_verifying_status_text">Tarkistetaan</string>
+    <string name="system_update_verification_failed_text">Vahvistus epäonnistui.</string>
+    <string name="system_update_verified_status_text">Ladattu ja varmistettu</string>
+    <string name="system_update_download_failed_status_text">Lataus epäonnistui</string>
+    <string name="system_update_download_retry_button_text">Yritä latausta uudelleen</string>
+    <string name="system_update_download_button_text">Lataa</string>
+    <string name="system_update_install_button_text">Käynnistä uudelleen ja asenna</string>
+    <string name="system_update_check_now_button_text">Tarkista nyt</string>
+    <string name="system_update_no_update_content_text">Ohjelmisto on ajan tasalla</string>
+    <string name="system_update_last_checkin">Päivitykset tarkistettu viimeksi ^1.</string>
+    <string name="system_update_recommended_update_available_notification_title">Järjestelmäpäivitys saatavilla</string>
+    <string name="system_update_recommended_update_available_notification_message">Näytä päivityksen tiedot.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_title">Järjestelmäpäivityksen lataaminen epäonnistui.</string>
+    <string name="system_update_nonmandatory_update_download_failure_notification_message">Lataus epäonnistui, yritä myöhemmin uudelleen.</string>
+    <string name="system_update_error_dialog_title">Virhe</string>
+    <string name="system_update_error_downloading_dialog_message">Päivityksen lataamisessa tapahtui virhe.</string>
+    <string name="system_update_error_installing_dialog_message">Päivityksen asennuksessa tapahtui virhe.</string>
+    <string name="system_update_install_dialog_label">Järjestelmäpäivitys</string>
+    <string name="system_update_install_dialog_message_nonphone">Järjestelmäpäivitys odottaa asennusta. Android-laitteesi käynnistyy uudelleen ja asentaa päivityksen.</string>
+    <string name="system_update_install_dialog_message_phone">Järjestelmäpäivitys odottaa asennusta. Android-laitteesi käynnistyy uudelleen ja asentaa päivityksen. Et voi soittaa tavallisia puheluita tai hätäpuheluita asennuksen aikana.</string>
+    <string name="system_update_install_dialog_battery_low_message">Järjestelmäpäivitys odottaa, mutta akun varaus ei riitä sen asentamiseen. Kytke laturi puhelimeen.</string>
+    <string name="system_update_install_dialog_battery_low_charging_message">Järjestelmäpäivitys odottaa, mutta akun varaus ei riitä sen asentamiseen. Odota, että akku on latautunut riittävästi.</string>
+    <string name="system_update_install_dialog_now_button">Asenna nyt</string>
+    <string name="system_update_install_dialog_later_button">Asenna myöhemmin</string>
+    <string name="system_update_install_dialog_info_button">Lisätietoja…</string>
+    <string name="system_update_downloading_notification_title">Ladataan järjestelmäpäivitystä</string>
+    <string name="system_update_verifying_notification_title">Vahvistetaan järjestelmäpäivitystä</string>
+    <string name="system_update_download_dialog_label">Järjestelmäpäivityksen lataus</string>
+    <string name="system_update_download_dialog_message">Saatavilla on järjestelmäpäivitys, joka parantaa Android-laitteesi toimintaa. Jos lataat sen langattoman verkon kautta, operaattori voi veloittaa tiedonsiirrosta.</string>
+    <string name="system_update_download_dialog_now_button">Lataa nyt</string>
+    <string name="system_update_download_dialog_later_button">Lataa myöhemmin</string>
+    <string name="system_update_download_dialog_cancel_button">Peruuta</string>
+    <string name="system_update_countdown_complete">Käynnistetään uudelleen…</string>
+    <string name="system_update_countdown_cancel_button">Peruuta asennus</string>
+    <string name="system_update_complete_label">Järjestelmäpäivitys</string>
+    <string name="system_update_complete_ok_button">OK</string>
+    <string name="provider_label">Push-palvelut</string>
+    <string name="ro_perm_label">pikaviestien lukeminen</string>
+    <string name="ro_perm_desc">Sallii sovellusten lukea tietoja Google Talk -sisällöntarjoajalta.</string>
+    <string name="wo_perm_label">pikaviestien kirjoittaminen</string>
+    <string name="wo_perm_desc">Sallii sovellusten kirjoittaa tietoja Google Talk -sisällöntarjoajaan.</string>
+    <string name="gsf_label">Google Services Framework</string>
+    <string name="search_chats">"Hae keskusteluista 
+lausekkeella \"%1$s\""</string>
+    <string name="gtalkservice_label">Google Messaging Service</string>
+    <string name="c2dm_label">Cloud to Device Messaging Service</string>
+    <string name="sendTalkMsg_perm_label">Välittää viestejä ja vastaanottaa synkronointi-ilmoituksia Googlen palvelimilta</string>
+    <string name="sendTalkMsg_perm_desc">Palvelinpilvi käyttää palvelua laiteviestien ja synkronointi-ilmoitusten välittämiseen. Google Talk käyttää palvelua viestien välittämiseen ja tilatiedon synkronoimiseen. Haittasovellukset voivat käyttää palvelua liialliseen tiedonsiirtoon.</string>
+    <string name="perm_receive_data_message_label">hae tietoja internetistä</string>
+    <string name="perm_receive_data_message_desc">Sallii sovellusten palveluiden lähettää viestejä pilvestä laitteeseen. Palvelun käyttöön tarvitaan tiedonsiirtoa. Haittasovellukset voivat saada aikaan liiallista tiedonsiirtoa.</string>
+    <string name="perm_data_msg_broadcast_label">Dataviestien lähettäminen sovelluksille.</string>
+    <string name="perm_data_msg_broadcast_desc">Voi lähettää internetistä vastaanotettuja dataviestejä sovelluksille, jotka on rekisteröity kuuntelemaan niitä.</string>
+    <string name="perm_receive_xmpp_label">lähetä XMPP-viestejä Googlen palvelimille ja vastaanota viestejä palvelimilta</string>
+    <string name="perm_receive_xmpp_desc">Antaa Googlen sovelluksien lähettää XMPP-viestejä Googlen palvelimille ja vastaanottaa viestejä palvelimilta.</string>
+    <string name="perm_xmpp_broadcast_label">Lähetä XMPP-viestejä sovelluksille.</string>
+    <string name="perm_xmpp_broadcast_desc">Voi lähettää XMPP-viesti vastaanotettu -ilmoituksia Googlen palvelimilta ilmoituksia kuunteleville sovelluksille.</string>
+    <string name="perm_use_xmpp_endpoint_label">XMPP-viestien lähettäminen Googlen palvelimille ja viestien vastaanottaminen palvelimilta</string>
+    <string name="perm_use_xmpp_endpoint_desc">Antaa Googlen sovelluksien lähettää XMPP-viestejä Googlen palvelimille ja vastaanottaa viestejä palvelimilta.</string>
+    <string name="perm_xmpp_endpoint_broadcast_label">XMPP-viestien lähettäminen sovelluksille.</string>
+    <string name="perm_xmpp_endpoint_broadcast_desc">Voi lähettää Googlen palvelimilta vastaanotettuja XMPP-viestejä sovelluksille.</string>
+    <string name="permlab_intentVendingOnly">Lähetä ilmoituksia Android Marketiin.</string>
+    <string name="permdesc_intentVendingOnly">Voi lähettää ilmoituksia Android Marketiin ja pyytää sovellusten asennusta ja poistoa.</string>
+    <string name="permlab_heartbeat">Yhteysvarmistuksen lähettäminen Google Talkin palvelimelle</string>
+    <string name="permdesc_heartbeat">Voi varmistaa yhteyden kunnon ottamalla yhteyden Google Talkin palvelimeen.</string>
+    <string name="group_chat">Ryhmäkeskustelu: %s</string>
+    <string name="default_decline_reason">Valitettavasti olen juuri nyt varattu.</string>
+    <string name="newMessages_label">Uusia keskusteluja</string>
+    <string name="notify_groupchat_label">Ryhmäkeskustelukutsu</string>
+    <string name="num_unread_chats">%s lukematonta keskustelua</string>
+    <string name="notification_format" formatted="false">%s: %s</string>
+    <string name="multi_account_format" formatted="false">%s - %s</string>
+    <string name="subscription_notify_text">%s haluaa keskustella</string>
+    <string name="group_chat_invite_notify_text">Olet saanut ryhmäkeskustelukutsun käyttäjältä %s</string>
+    <string name="group_chat_invite_dialog_text">%s kutsuu sinut liittymään ryhmäkeskusteluun.</string>
+    <string name="message_too_long">Voit lähettää enintään 2 000 merkin pituisia viestejä.</string>
+    <string name="missed_video_chat_notification">Et saanut videokeskustelukutsua</string>
+    <string name="missed_voice_chat_notification">Et saanut äänikeskustelukutsua</string>
+    <string name="missed_video_chat_notification_no_wifi">Et saanut videokeskustelukutsua, koska wifi-yhteys ei ollut käytössä.</string>
+    <string name="missed_voice_chat_notification_no_wifi">Et saanut äänikeskustelukutsua, koska wifi-yhteytesi ei ollut käytössä.</string>
+    <string name="missed_video_chat_message">%1$s yritti aloittaa videokeskustelun kanssasi</string>
+    <string name="missed_voice_chat_message">%1$s yritti aloittaa äänikeskustelun kanssasi</string>
+    <string name="missed_video_chat_message_no_wifi">%1$s yritti aloittaa kanssasi videokeskustelun, kun wifi-yhteytesi ei ollut käytössä</string>
+    <string name="missed_voice_chat_message_no_wifi">\ufffc%1$s yritti aloittaa kanssasi äänikeskustelun, kun wifi-yhteytesi ei ollut käytössä</string>
+    <string name="end_cause_user_unavailable_video">%1$s ei voinut liittyä videokeskusteluun.</string>
+    <string name="end_cause_user_unavailable_voice">%1$s ei voinut liittyä äänikeskusteluun.</string>
+    <string name="end_cause_sent_terminate_video">Lopetit videokeskustelun henkilön %1$s kanssa.</string>
+    <string name="end_cause_sent_terminate_voice">Lopetit äänikeskustelun henkilön %1$s kanssa.</string>
+    <string name="end_cause_received_terminate_video">%1$s lopetti videokeskustelun.</string>
+    <string name="end_cause_received_terminate_voice">%1$s lopetti äänikeskustelun.</string>
+    <string name="end_cause_network_problem_video">"Videokeskustelu käyttäjän %1$s kanssa epäonnistui verkkoon  liittyvän ongelman takia. Yritä uudelleen."</string>
+    <string name="end_cause_network_problem_voice">"Äänikeskustelu käyttäjän %1$s kanssa epäonnistui verkkoon  liittyvän ongelman takia. Yritä uudelleen."</string>
+    <string name="conn_auth_error_notify_ticker">Google Talk -todennus epäonnistui</string>
+    <string name="conn_auth_error_notify_title">Google Talk -todennus epäonnistui</string>
+    <string name="conn_auth_error_title">Todennusvirhe</string>
+    <string name="conn_auth_error_message">Kirjautuminen Google Talkiin epäonnistui. Jos tämä on Google-sovellusten tili, varmista, että tilillä on käytössä keskustelupalvelu.</string>
+    <string name="conn_auth_error_button_retry">Yritä uudelleen</string>
+    <string name="conn_auth_error_button_cancel">Peruuta</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">Tervetuloa palveluun ^1</string>
+    <string name="setup_wizard_title">Ohjattu asetustoiminto</string>
+    <string name="error_dialog_title">Huomio</string>
+    <string name="next_button_label">Seuraava</string>
+    <string name="back_button_label">Takaisin</string>
+    <string name="sign_in_button_label">Kirjaudu sisään</string>
+    <string name="create_button_label">Luo</string>
+    <string name="skip_button_label">Ohita</string>
+    <string name="first_name">Etunimi</string>
+    <string name="last_name">Sukunimi</string>
+    <string name="done">OK</string>
+    <string name="cancel_button_label">Peruuta</string>
+    <string name="done_button_label">Valmis</string>
+    <string name="try_again_button_label">Yritä uudelleen</string>
+    <string name="close_button_label">Sulje</string>
+    <string name="edit_text_help">Ala kirjoittaa koskettamalla tekstiruutua</string>
+    <string name="add_a_google_account">Lisää Google-tili</string>
+    <string name="no_sim_setup_wireless">Et ole asettanut laitteeseen SIM-korttia, joten et voi muodostaa yhteyttä mobiiliverkkoon käyttääksesi ääni- tai tiedonsiirtopalveluita. Voit muodostaa yhteyden wifi-verkkoon myös ilman SIM-korttia.</string>
+    <string name="setup_wifi_button_label">Yhdistä wifi-verkkoon</string>
+    <string name="no_network">Ei verkkoyhteyttä.</string>
+    <string name="no_network_help">Tämä voi olla väliaikainen ongelma tai Android-laitteelle ei ole määritetty tiedonsiirtoyhteyttä. Yritä uudelleen, kun olet muodostanut yhteyden mobiili- tai wifi-verkkoon.</string>
+    <string name="server_error">Tiedonsiirrossa Googlen palvelinten kanssa ilmeni ongelma.</string>
+    <string name="server_error_help">Yritä myöhemmin uudelleen.</string>
+    <string name="network_unreliable">Luotettavaa palvelinyhteyttä ei voi muodostaa.</string>
+    <string name="network_unreliable_help">Tämä voi olla tilapäinen ongelma, tai tiedonsiirtopalvelut eivät ole käytössä Android-laitteessasi. Jos ongelma jatkuu, ota yhteyttä asiakastukeen.</string>
+    <string name="invalid_login_character">Kielletty merkki. Sallittuja merkkejä ovat seuraavat: 0–9, a–z, A–Z sekä pisteet.</string>
+    <string name="invalid_password_character">Kielletty salasanamerkki.</string>
+    <string name="add_apn">Langattoman yhteyden asetukset</string>
+    <string name="setup_google_account_title">Määritä Google-tilisi</string>
+    <string name="setup_complete_title">Asetukset valmiit</string>
+    <string name="cant_be_blank">Kenttä ei voi olla tyhjä.</string>
+    <string name="calendar">Google-kalenteri</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">Android-laitteellasi ei ole yhteyttä tiedonsiirtopalveluun. Jos haluat lukea nämä tiedot nyt, siirry osoitteeseen %s internetiin yhdistetyllä tietokoneella.</string>
+    <string name="field_cant_be_blank">Kenttä ei voi olla tyhjä</string>
+    <string name="field_invalid_domain">Verkkotunnus ei kelpaa</string>
+    <string name="field_invalid_user">Virheellinen käyttäjänimi</string>
+    <string name="field_invalid_user_domain">Kirjoita vain käyttäjänimesi, älä sähköpostiosoitetta</string>
+    <string name="field_invalid_login">Tilin nimi ei kelpaa</string>
+    <string name="about_accounts_message"><font size="17">"Android-laitteen asetusten määrittäminen on helppoa: tarvitset vain Google-tilin.
+"<font height="17">"
+"</font><b>Miksi minun tulee käyttää Google-tiliä?</b>"
+"<font height="3">"
+"</font>"Googlen sovellukset synkronoidaan Google-tilin avulla automaattisesti Android-laitteesi ja tietokoneesi välillä huolimatta siitä, missä päivityksen teet.
+"<font height="17">"
+"</font><b>Onko sinulla jo Google-tili?</b>"
+"<font height="3">"
+"</font>"Sitten olet valmis! Kosketa seuraavassa ruudussa Kirjaudu sisään.
+"<font height="17">"
+"</font><b>Eikö sinulla ole Google-tiliä?</b>"
+"<font height="3">"
+"</font>"Ei hätää. Kosketa seuraavassa ruudussa Luo, ja autamme sinua luomaan tilin.
+"<font height="17">"
+"</font><b>Aloita koskettamalla Seuraava!</b>"
+"</font></string>
+    <string name="fling_help_message">"Vieritä liu'uttamalla sormeasi näytöllä.
+(Voit hylätä tämän viestin koskettamalla sitä.)"</string>
+    <string name="setup_device_title">Tilin hallinta: ^1</string>
+    <string name="dont_have_an_account">Eikö sinulla ole Google-tiliä?</string>
+    <string name="create_one_now">Luo tili nyt – se on helppoa.</string>
+    <string name="already_have_an_account">Onko sinulla jo Google-tili?</string>
+    <string name="sign_in_with_google_account">Kirjaudu sisään Google-tilillä, jonka haluat liittää tähän puhelimeen.</string>
+    <string name="skip_message">Haluatko luoda tilin myöhemmin?</string>
+    <string name="touch_to_begin">Aloita koskettamalla androidia.</string>
+    <string name="delayed_gaia_agreement">Jatkamalla hyväksyt <annotation id="google_privacy">Googlen tietosuojakäytännön</annotation> sekä <annotation id="android_privacy">tietosuojalisäkäytännön</annotation>.</string>
+    <string name="open_keyboard_message">"Aloita liu'uttamalla näppäimistö auki."</string>
+    <string name="open_keyboard_message_to_continue">"Jatka liu'uttamalla näppäimistö auki."</string>
+    <string name="emergency_dial">Hätäpuhelu</string>
+    <string name="change_language">Vaihda kieltä</string>
+    <string name="signing_in">Kirjaudutaan sisään…</string>
+    <string name="close_keyboard_message">"Jatka liu'uttamalla näppäimistö kiinni."</string>
+    <string name="communicating_message">Android-laitteesi on otettava tilin luomisen aikana yhteys Googlen palvelimiin. Tässä voi kestää viisi minuuttia.</string>
+    <string name="communicating_message_domain">Android-laitteen on otettava yhteys Googlen palvelimiin verkkotunnustietojen etsimisen aikana. Tässä voi kestää viisi minuuttia.</string>
+    <string name="username">Käyttäjänimi</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">Salasana</string>
+    <string name="sign_in_agreement">Kirjautumalla sisään hyväksyt <annotation id="google_privacy">Googlen tietosuojakäytännön</annotation> sekä <annotation id="android_privacy">tietosuojalisäkäytännön</annotation>.</string>
+    <string name="create">Luo</string>
+    <string name="create_message">Tarvitsetko Google-tilin?</string>
+    <string name="now_signing_in">Kirjaudutaan sisään…</string>
+    <string name="now_verifying_domain">Etsitään verkkotunnusta…</string>
+    <string name="sign_in_with_google_account_short">Kirjaudu sisään Google-tililläsi:</string>
+    <string name="browser_sign_in_explanation">Käytä tätä ruutua, jos kirjautumisesi vaatii verkkoselaimen.</string>
+    <string name="gls_browser_login_intro_message">Google- tai Google Apps -tiliäsi ei voi käyttää. Vahvista tili uudelleen.</string>
+    <string name="enter_domain_name">Anna yrityksesi verkkotunnus:</string>
+    <string name="enter_user_name">Kirjoita verkkotunnuksen ^1 käyttäjänimi ja salasana:</string>
+    <string name="inactive_domain">Tätä tiliä ei voi käyttää, koska se kuuluu ei-aktiiviseen verkkotunnukseen. Ota yhteyttä verkkotunnuksen <b>^1</b> järjestelmänvalvojaan tai kirjaudu sisään toiseen tiliin.</string>
+    <string name="invalid_username">Käyttäjänimi ei kelpaa.</string>
+    <string name="web_login_error_title">Pahoittelemme…</string>
+    <string name="web_login_error_desc">"Virhe muodostettaessa yhteyttä yrityksen palvelimiin osoitteeseen ^1.
+
+Virheen tiedot:
+"</string>
+    <string name="web_login_error_redirects">Kirjautumissivu on uudelleenohjautunut liian monta kertaa</string>
+    <string name="web_login_error_http">HTTP-virhe ^1 : ^2</string>
+    <string name="name_device_label">Nimeä Android-laitteesi:</string>
+    <string name="device_name_hint">Laitteen nimi</string>
+    <string name="registering_device">Rekisteröidään Android-laitetta...</string>
+    <string name="error_account_disabled">"Tämä tili on poistettu käytöstä. 
+
+(Saat lisätietoja siirtymällä tietokoneellasi osoitteeseen http://google.com/accounts.)"</string>
+    <string name="error_login_failed">"Käyttäjänimi tai salasana väärin. Yritä uudelleen. 
+
+(Voit palauttaa tilitietosi tietokoneella osoitteessa http://www.google.com/accounts/recovery.)"</string>
+    <string name="error_account_not_verified">"Tätä tiliä ei ole vahvistettu. Vahvista tili avaamalla sähköpostiosoitteeseesi lähetetty vahvistuslinkki tietokoneella. 
+
+(Voit palauttaa tilitietosi tietokoneella osoitteessa http://www.google.com/accounts/recovery.)"</string>
+    <string name="captcha_message_string">Vahvistus</string>
+    <string name="captcha_instructions">Anna kuvassa näkyvät kirjaimet. Isoilla ja pienillä kirjaimilla ei ole eroa.</string>
+    <string name="create_google_account">Luo uusi Google-tili</string>
+    <string name="example_usernames">esim. MMeikalainen, Matti.Meikalainen</string>
+    <string name="create_account_agreement">Luomalla tämän tilin hyväksyt <annotation id="google_privacy">Googlen tietosuojakäytännön</annotation> sekä <annotation id="android_privacy">tietosuojalisäkäytännön</annotation>.</string>
+    <string name="account_already_has_gmail">Gmail on jo käytössä tilillä.</string>
+    <string name="creating_account">Tilin luominen…</string>
+    <string name="checking_account">Tarkistetaan, onko käyttäjänimi vapaa…</string>
+    <string name="try_a_different_username">Kokeile eri käyttäjänimeä</string>
+    <string name="is_not_available"><b>^1</b> ei ole käytettävissä.</string>
+    <string name="hint_size"><b>^1</b> sisältää alle 6 tai yli 30 merkkiä.</string>
+    <string name="hint_numbers_only"><b>^1</b> ei sisällä merkkejä.</string>
+    <string name="hint_illegal_chars"><b>^1</b>" voi sisältää vain kirjaimia,
+numeroita ja pisteitä."</string>
+    <string name="doesnt_use_gmail"><b>^1</b> ei käytä Gmailia</string>
+    <string name="sign_in">Kirjaudu sisään</string>
+    <string name="sign_in_browser">Kirjautuminen selaimella</string>
+    <string name="here_are_alternatives">Tässä on joitakin vaihtoehtoja:</string>
+    <string name="alternatives_list_title">Käyttäjänimiehdotuksia</string>
+    <string name="choose_a_password"><b>"Kirjoita
+salasana"</b></string>
+    <string name="confirm_password"><b>"Vahvista
+salasana"</b></string>
+    <string name="password_strength"><b>"Salasanan
+vahvuus"</b></string>
+    <string name="too_short">Liian lyhyt</string>
+    <string name="security_question"><b>"Turvakysymys
+"</b></string>
+    <string name="security_questions_title">Turvallisuuskysymykset</string>
+    <string name="answer"><b>Vastaus</b></string>
+    <string name="password_mismatch">Salasanat eivät täsmää. Kirjoita ne uudelleen.</string>
+    <string name="your_account_was_created">Tilisi on luotu</string>
+    <string name="eight_chars_min">(vähintään 8 merkkiä)</string>
+    <string name="just_in_case">Siltä varalta, että unohdat salasanasi.</string>
+    <string name="verify_your_profile">Vahvista profiilisi</string>
+    <string name="signed_in">Kirjautuminen onnistui</string>
+    <string name="error_not_logged_in">Käyttäjä ei ole kirjautunut sisään.</string>
+    <string name="error_username_unavailable">Käyttäjänimi on jo käytössä.</string>
+    <string name="error_bad_password">Salasana on liian heikko, tai se sisältää kiellettyjä merkkejä. Yritä uudelleen.</string>
+    <string name="error_bad_username">Virheellinen käyttäjänimi.</string>
+    <string name="loading">Ladataan...</string>
+    <string name="submission_title">Pahoittelemme…</string>
+    <string name="submission_error_text">Tapahtui virhe. Yritä uudelleen.</string>
+    <string name="existing_account_error_title">Tili on jo olemassa</string>
+    <string name="existing_account_error_text">Tällä Android-laitteella on jo tili ^1.</string>
+    <string name="account_linked_message"><font height="24">Google-tilisi on nyt liitetty tähän Android-laitteeseen.</font></string>
+    <string name="syncing_message"><font size="17">"Google-sovellukset synkronoivat tietoja. 
+"<font height="17">"
+"</font>"%i Lataus on valmis, kun synkronointikuvaketta ei enää näy tilarivillä näytön yläosassa.
+"<font height="17">"
+"</font><b>Tietoja tilarivistä…</b>"
+"<font height="3">"
+"</font>"Kun saat uuden viestin tai muun ilmoituksen, tilariville tulee näkyviin kuvake.
+"<font height="17">"
+"</font>Saat tietoja ilmoituksista vetämällä tilarivin sormella alas, jolloin ilmoituspaneeli avautuu.</font></string>
+    <string name="i_agree_next">Hyväksyn, seuraava</string>
+    <string name="android_privacy_policy_title">Tietosuojalisäkäytäntö</string>
+    <string name="google_terms_of_service_title">Googlen käyttöehdot</string>
+    <string name="google_privacy_policy_title">Googlen tietosuojakäytäntö</string>
+    <string name="notification_update_title">Tilisi on päivitettävä</string>
+    <string name="notification_update_message">Suorita ohjattu asennustoiminto koskettamalla tätä</string>
+    <string name="common_message">"Gmail, varmuuskopiot ja muut Android-ominaisuudet edellyttävät Google-tilin käyttöä.
+
+Kosketa "<b>Seuraava</b>" kirjautuaksesi sisään olemassa olevalla Google-tilillä tai luo uusi Google-tili nyt.
+
+Tai kosketa "<b>Ohita</b>, jos haluat aloittaa Android-laitteen käytön. Voit kirjautua sisään Google-tiliin myöhemmin Asetuksien kohdassa Tilit &amp; Synkronointi.</string>
+    <string name="add_account_message"><font fgcolor="#ffffffff">Tilin lisääminen</font>" 
+
+Voit käyttää puhelimellasi useampia kuin yhtä Google-tiliä (esimerkiksi koti- ja työtiliäsi). Google-tilin lisääminen käy nopeasti. 
+
+Jatka koskettamalla Seuraava tai poistu painamalla Takaisin-painiketta."</string>
+    <string name="reactivate_account_message">"Sinun täytyy yhdistää tähän Android-laitteeseen Google-sähköpostitili. 
+
+Sinulla on jo tähän tiliin yhdistetty Google-sähköpostin käyttäjänimi (("<b>^1</b>")), mutta se ei ole aktiivinen. 
+
+Voit aktivoida käyttäjänimen ja käyttää sitä puhelimellasi koskettamalla Seuraava. 
+
+Jos haluat käyttää eri tiliä, paina Takaisin-painiketta ja kirjaudu sisään toisen tilin avulla tai luo uusi tili."</string>
+    <string name="reactivating_account">Aktivoidaan tiliä…</string>
+    <string name="your_account_was_reactivated">Tilisi on aktivoitu</string>
+    <string name="account_recovery_info">Jos unohdat salasanasi, voit pyytää uuden salasanan näiden tietojen avulla</string>
+    <string name="secondary_email_label"><b>"Toissijainen
+sähköpostiosoite"</b></string>
+    <string name="invalid_email">"Sähköpostiosoite ei kelpaa.
+ Esimerkki: jori@example.com"</string>
+    <string name="invalid_email_primary">Toissijainen sähköpostiosoite ei voi olla sama kuin luotava sähköpostiosoite</string>
+    <string name="tutorial_intro_title">^1 – Tutustu laitteesi käyttöön</string>
+    <string name="begin_button_label">Aloita</string>
+    <string name="tutorial_intro_message_generic">On muutamia tärkeitä seikkoja, jotka sinun tulee ymmärtää käyttääksesi Android-laitettasi mahdollisimman tehokkaasti. <font size="17">"
+"</font>" 
+"<li>Näyttönäppäimistön käyttäminen</li> <font size="17">"
+"</font>" 
+Aloita esittely ja lue lisätietoja koskettamalla Aloita."</string>
+    <string name="tutorial_intro_message_setupwizard">On muutamia tärkeitä seikkoja, jotka sinun tulee ymmärtää käyttääksesi Android-laitettasi mahdollisimman tehokkaasti. <font size="17">"
+"</font>" 
+"<li>Näyttönäppäimistön käyttäminen</li>" 
+"<li>Google-tilin luominen</li> <font size="17">"
+"</font>" 
+Aloita esittely ja lue lisätietoja koskettamalla Aloita tai ohita esittely ja jatka koskettamalla Ohita."</string>
+    <string name="keyboard_tutorial_title">Virtuaalinäppäimistön käyttäminen</string>
+    <string name="keyboard_tutorial_message">Kosketa mitä tahansa tekstikenttää, niin näppäimistö avautuu ja voit alkaa kirjoittaa. Kokeile tässä!</string>
+    <string name="keyboard_tutorial_edittext_hint">Kosketa tätä, niin voit alkaa kirjoittaa</string>
+    <string name="done_typing_message">Lopetitko kirjoittamisen? Sulje näppäimistö painamalla Takaisin-painiketta.</string>
+    <string name="done_button_label_in_tutorial">Valmis</string>
+    <string name="backup_consent_title">Varmuuskopioi asetukseni</string>
+    <string name="backup_consent_message">Omat asetuksesi (kuten kirjanmerkkisi ja wifi-salasanasi) voidaan varmuuskopioida automaattisesti Google-tiliisi. Jos saat uuden Android-laitteen (jos hankit uuden laitteen kadonneen tilalle tai päivität laitteen uudempaan), asetukset palautetaan uuteen Android-laitteeseesi.</string>
+    <string name="backup_consent_howto_disable_message">Voit muuttaa varmuuskopiointiasetuksiasi milloin tahansa asetusten kohdassa Tietosuoja.</string>
+    <string name="backup_consent_yes_agree">Varmuuskopioi asetukset Google-tiliini.</string>
+    <string name="restore_disable">Poista palautus käytöstä</string>
+    <string name="restore_enable">Ota palautus käyttöön</string>
+    <string name="restore_enabled">Jos olet aiemmin varmuuskopioinut asetuksesi, ne palautetaan.</string>
+    <string name="restore_disabled">Asetuksiasi ei palauteta varmuuskopiosta.</string>
+    <string name="webview_progress_title">Muodostetaan yhteyttä verkkotunnukseen...</string>
+    <string name="webview_progress_verbose_message">"Yrityksesi palvelimet lähettävät puhelimeesi kirjautumistietoja. Tämä saattaa kestää muutaman minuutin. 
+Yrityksesi kirjautumissivu tulee näkyviin, kun lähetys on valmis."</string>
+    <string name="enterprise_unmanaged_domain">Google-sovellukset eivät ole käytössä tällä verkkotunnuksella. Tarkista verkkotunnuksen nimi ja yritä uudelleen.</string>
+    <string name="use_location_for_services_agree">Hyväksyn</string>
+    <string name="use_location_for_services_disagree">En hyväksy</string>
+    <string name="use_location_for_services_title">Käytä Omaa sijaintia</string>
+    <string name="use_location_for_services_text">Haluatko antaa Googlen käyttää sijaintitietojasi, jotta se voi tarjota parempia hakutuloksia ja muita palveluita?</string>
+    <string name="permlab_readGsettings">Google-asetusten lukeminen</string>
+    <string name="permdesc_readGsettings">Sallii sovelluksen lukea Google-asetuksia.</string>
+    <string name="permlab_writeGsettings">Google-asetusten muokkaaminen</string>
+    <string name="permdesc_writeGsettings">Sallii sovelluksen muokata Google-asetuksia.</string>
+    <string name="permlab_readGservices">lue Googlen palvelumäärityksiä</string>
+    <string name="permdesc_readGservices">Sallii sovelluksen lukea Googlen palveluiden määritystietoja.</string>
+    <string name="permlab_writeGservices">Googlen palvelumääritysten muokkaaminen</string>
+    <string name="permdesc_writeGservices">Sallii sovelluksen muokata Googlen palveluiden määritystietoja.</string>
+    <string name="gls_label">Google</string>
+    <string name="gls_clear_data_label">Google-sovellukset</string>
+    <string name="permlab_googleAuthPassword">Google-tilien salasanojen käyttäminen</string>
+    <string name="permdesc_googleAuthPassword">Sallii sovellusten käyttää suoraan määrittämiesi Google-tilien salasanoja.</string>
+    <string name="permlab_googleMailSwitch">Gmail- tai Google Mail -nimen valitseminen</string>
+    <string name="permdesc_googleMailSwitch">Antaa sovellusten vaihtaa Gmail- ja Google Mail -brändäyksen välillä.</string>
+    <string name="permlab_googleAuth">määritettyjen tilien tarkasteleminen</string>
+    <string name="permdesc_googleAuth">Sallii sovellusten nähdä määrittämiesi Google-tilien käyttäjänimet (sähköpostiosoitteet).</string>
+    <string name="permlab_googleAuth_ALL">kaikkien Googlen palveluiden käyttäminen</string>
+    <string name="permdesc_googleAuth_ALL">Antaa sovellusten kirjautua sisään KAIKKIIN Googlen palveluihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_OTHER">muiden Googlen palveluiden käyttäminen</string>
+    <string name="permdesc_googleAuth_OTHER">Antaa sovellusten kirjautua sisään Googlen palveluihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_mail">Googlen sähköposti</string>
+    <string name="permdesc_googleAuth_mail">Antaa sovellusten kirjautua sisään Googlen sähköpostiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_cl">Google-kalenteri</string>
+    <string name="permdesc_googleAuth_cl">Antaa sovellusten kirjautua sisään Google-kalenteriin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_android">Android-palvelut</string>
+    <string name="permdesc_googleAuth_android">Antaa sovellusten kirjautua sisään Android-palveluihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_sierra">Google Checkout -tilit</string>
+    <string name="permdesc_googleAuth_sierra">Antaa sovellusten kirjautua sisään Google Checkoutiin (ja tehdä mahdollisesti ostoksia) käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_sierraqa">Google Checkout QA -tilit</string>
+    <string name="permdesc_googleAuth_sierraqa">Antaa sovellusten kirjautua sisään Google Checkout QA -palveluun käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_sierrasandbox">Google Checkout Sandbox -tilit</string>
+    <string name="permdesc_googleAuth_sierrasandbox">Antaa sovellusten kirjautua sisään Google Checkout Sandbox -palveluun käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_youtube">YouTube</string>
+    <string name="permdesc_googleAuth_youtube">Antaa sovellusten kirjautua sisään YouTubeen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_YouTubeUser">YouTube-käyttäjänimet</string>
+    <string name="permdesc_googleAuth_YouTubeUser">Antaa sovellusten nähdä tähän Android-laitteeseen yhdistettyjen Google-tilien YouTube-käyttäjänimet.</string>
+    <string name="permlab_googleAuth_talk">Google Talk</string>
+    <string name="permdesc_googleAuth_talk">Antaa sovellusten kirjautua sisään Google FTalkiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_ig">iGoogle-tilit</string>
+    <string name="permdesc_googleAuth_ig">Antaa sovellusten kirjautua sisään iGoogleen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_lh2">Picasa-verkkoalbumit</string>
+    <string name="permdesc_googleAuth_lh2">Antaa sovellusten kirjautua sisään Picasa-verkkoalbumeihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_mobile">Googlen mobiilisovellukset</string>
+    <string name="permdesc_googleAuth_mobile">Antaa sovellusten kirjautua sisään Google-mobiilisovelluksiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_cp">Google-tilien yhteystiedot</string>
+    <string name="permdesc_googleAuth_cp">Antaa sovellusten käyttää tähän Android-laitteeseen tallennettujen tilien yhteys- ja profiilitietoja.</string>
+    <string name="permlab_googleAuth_adsense">AdSense</string>
+    <string name="permdesc_googleAuth_adsense">Antaa sovellusten kirjautua sisään Google AdSenseen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_adwords">AdWords</string>
+    <string name="permdesc_googleAuth_adwords">Antaa sovellusten kirjautua sisään Google AdWordsiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_blogger">Blogger</string>
+    <string name="permdesc_googleAuth_blogger">Antaa sovellusten kirjautua sisään Bloggeriin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_dodgeball">Dodgeball</string>
+    <string name="permdesc_googleAuth_dodgeball">Antaa sovellusten kirjautua sisään Dodgeballiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_gbase">Google Base</string>
+    <string name="permdesc_googleAuth_gbase">Antaa sovellusten kirjautua sisään Google Baseen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_groups2">Google-ryhmät</string>
+    <string name="permdesc_googleAuth_groups2">Antaa sovellusten kirjautua sisään Google-ryhmiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_health">Google Health</string>
+    <string name="permdesc_googleAuth_health">Antaa sovellusten kirjautua sisään Google Healthiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_jotspot">JotSpot</string>
+    <string name="permdesc_googleAuth_jotspot">Antaa sovellusten kirjautua sisään JotSpotiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_knol">Knol</string>
+    <string name="permdesc_googleAuth_knol">Antaa sovellusten kirjautua sisään Knoliin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_news">Google-uutiset</string>
+    <string name="permdesc_googleAuth_news">Antaa sovellusten kirjautua sisään Google-uutisiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_orkut">Orkut</string>
+    <string name="permdesc_googleAuth_orkut">Antaa sovellusten kirjautua sisään Orkutiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_print">Google-teoshaku</string>
+    <string name="permdesc_googleAuth_print">Antaa sovellusten kirjautua sisään Google-kirjoihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_sitemaps">Verkkovastaavan työkalut</string>
+    <string name="permdesc_googleAuth_sitemaps">Antaa sovellusten kirjautua sisään Googlen Verkkovastaavan työkaluihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_wifi">Google WiFi</string>
+    <string name="permdesc_googleAuth_wifi">Antaa sovellusten kirjautua sisään Google-wifiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_writely">Google-dokumentit</string>
+    <string name="permdesc_googleAuth_writely">Antaa sovellusten kirjautua sisään Google-dokumentteihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_wise">Google Spreadsheets</string>
+    <string name="permdesc_googleAuth_wise">Antaa sovellusten kirjautua sisään Google-dokumentteihin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_finance">Google Finance</string>
+    <string name="permdesc_googleAuth_finance">Antaa sovellusten kirjautua sisään Google Financeen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_local">Google Maps</string>
+    <string name="permdesc_googleAuth_local">Antaa sovellusten kirjautua sisään Google Mapsiin käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_ah">Google App Engine</string>
+    <string name="permdesc_googleAuth_ah">Antaa sovellusten kirjautua sisään Google App Engineen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_notebook">Google-muistikirja</string>
+    <string name="permdesc_googleAuth_notebook">Antaa sovellusten kirjautua sisään Google-muistikirjaan käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_grandcentral">Google Voice</string>
+    <string name="permdesc_googleAuth_grandcentral">Antaa sovellusten kirjautua sisään Google Voiceen käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="permlab_googleAuth_speechpersonalization">Henkilökohtainen puheentunnistus</string>
+    <string name="permdesc_googleAuth_speechpersonalization">Antaa sovellusten kirjautua sisään Henkilökohtainen puheentunnistus -palveluun käyttäen tähän Android-laitteeseen tallennettuja tilejä.</string>
+    <string name="gls_notification_title">Kirjaudu tiliisi</string>
+    <string name="gls_notification_new_account">^1-tili tarvitaan</string>
+    <string name="gls_notification_new_account_youtube">YouTube-tili tarvitaan</string>
+    <string name="gls_notification_login_error">Kirjaudu tiliisi koskettamalla.</string>
+    <string name="gls_ui_add_account_title">Tilin asetukset</string>
+    <string name="gls_ui_google_account_subtitle">Google-tili</string>
+    <string name="gls_ui_activity_title">Kirjautuminen Googleen</string>
+    <string name="gls_ui_activity_title_browser_signin">Kirjautuminen selaimella</string>
+    <string name="gls_ui_activity_title_enterprise">Yritystilin kirjautuminen</string>
+    <string name="gls_ui_activity_title_youtube">Kirjautuminen YouTubeen</string>
+    <string name="gls_ui_activity_authenticating">Todennetaan…</string>
+    <string name="gls_captcha_activity_message">Kirjoita kuvassa näkyvät merkit:</string>
+    <string name="gls_captcha_activity_ok_button">Valmis</string>
+    <string name="gls_error_activity_message">Tiliin <b>^1</b> kirjautumisessa tapahtui verkkovirhe. Yritä nyt uudelleen tai peruuta painamalla Takaisin-painiketta.</string>
+    <string name="gls_error_activity_retry_button">Yritä uudelleen</string>
+    <string name="gls_dmagent_activity_message">" Verkkotunnuksesi edellyttää mobiililaitehallintaa. Asenna Google Apps -laitteiden käytäntö -sovellus ottaaksesi käyttöön "<b>^1</b>-tilin edellyttämät suojauskäytännöt.</string>
+    <string name="gls_dmagent_activity_retry_button">Lataa</string>
+    <string name="gls_login_activity_username_label">Käyttäjänimi</string>
+    <string name="gls_login_activity_password_label">Salasana</string>
+    <string name="gls_login_activity_ok_button">Kirjaudu sisään</string>
+    <string name="gls_login_activity_loginfail_text_both">Käyttäjänimi tai salasana ei kelpaa. <b>^1</b>-tili tarvitaan. Yritä uudelleen.</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">Kirjoitit väärän salasanan tai tilisi on vaihtunut. Anna salasana uudelleen.</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">Kirjoita tilin salasana.</string>
+    <string name="gls_enterprise_login_activity_msg">"Kirjaudu todennusta varten yritystiliisi osoitteessa ^1.
+Avaa yrityksesi kirjautumissivu valitsemalla Kirjaudu."</string>
+    <string name="gls_login_activity_badaccount_text">Et voi käyttää tässä tapauksessa tätä tiliä. Valitse jokin muu tili.</string>
+    <string name="gls_login_activity_newaccount_text">Kirjaudu palvelun <b>^1</b> tiliisi.</string>
+    <string name="gls_login_activity_youtube_domain">YouTube</string>
+    <string name="gls_login_activity_gmail_domain">Gmail</string>
+    <string name="gls_login_activity_googlemail_domain">Google Mail</string>
+    <string name="gls_login_activity_create_youtube">Eikö sinulla ole YouTube-tiliä? Luo uusi tili koskettamalla <a href="http://www.youtube.com/signup">tätä</a>.</string>
+    <string name="gls_settings_tos_activity_title">Googlen lakiasiat</string>
+    <string name="gls_settings_tos_activity_unsuccessful_message">Laitteella ei ole yhteyttä tiedonsiirtopalveluun. Voit lukea tiedot nyt siirtymällä osoitteeseen %s internetiin yhdistetyllä tietokoneella.</string>
+    <string name="gls_settings_contributors_activity_title">Osallistujat</string>
+    <string name="gls_settings_contributors_activity_unsuccessful_message">Et ole muodostanut yhteyttä tiedonsiirtopalveluun. Jos haluat lukea nämä tiedot nyt, siirry osoitteeseen %s internetiin yhdistetyllä tietokoneella.</string>
+    <string name="gls_webview_progress_title">Muodostetaan yhteyttä verkkotunnukseen...</string>
+    <string name="gls_webview_progress_verbose_message">"Yrityksesi palvelimet lähettävät kirjautumistietosi. Tämä voi kestää muutaman minuutin.
+Yrityksesi kirjautumissivu tulee näkyviin, kun lähetys on valmis."</string>
+    <string name="gls_sign_in_button_label">Kirjaudu sisään</string>
+    <string name="gls_back_button_label">Takaisin</string>
+    <string name="gls_cancel_button_label">Peruuta</string>
+    <string name="gls_exit_account_setup_button_label">Poistu asetuksista</string>
+    <string name="gls_reauthorize_button_label">Valtuuta uudelleen</string>
+    <string name="gls_sign_in_message">Android-laitteesi on otettava tilin luomisen aikana yhteys Googlen palvelimiin. Tässä voi kestää viisi minuuttia.</string>
+    <string name="gls_sign_in_title">Kirjaudutaan sisään…</string>
+</resources>

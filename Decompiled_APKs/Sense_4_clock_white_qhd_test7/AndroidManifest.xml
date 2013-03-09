@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" android:installLocation="internalOnly" package="fr.clockwidget.lpsense"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:label="@string/app_name" android:name=".PreferencesActivity" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_picker_title" android:name=".AppPickerActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="@string/set_location_title" android:name=".SetLocation" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.Dialog" android:label="@string/app_name" android:name=".ForecastActivity" android:taskAffinity="" android:finishOnTaskLaunch="true" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:label="@string/widget_name" android:name=".ClockWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_main" />
+        </receiver>
+        <activity android:label="@string/app_name" android:name="fr.allo_mobile.lpsense.classicsense.Skin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_BOOKMARKS" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_TWITTER" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_CALENDAR" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_PEOPLE" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_GMAIL" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_FACEBOOK" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_FRIENDS" />
+                <category android:name="com.fede.launcher.SKIN_WIDGET_MESSAGING" />
+            </intent-filter>
+        </activity>
+        <service android:label="FancyRefreshService" android:name=".UpdateService" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

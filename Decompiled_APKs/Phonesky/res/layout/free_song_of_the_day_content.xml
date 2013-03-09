@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/uneven_grid_cell_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/header_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/free_song_of_the_day_header" />
+        <include android:id="@id/hero_header" android:layout_width="fill_parent" android:layout_height="@dimen/wide_graphic_max_height" layout="@layout/hero_graphic" />
+        <include android:id="@id/summary_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/free_song_of_the_day_summary" />
+        <FrameLayout android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:id="@id/description" android:background="@drawable/highlight_overlay" android:paddingLeft="@dimen/details_content_margin" android:paddingTop="12.0dip" android:paddingRight="@dimen/details_content_margin" android:paddingBottom="8.0dip" android:focusable="true" style="@style/DetailsPage_ContentText" />
+        </FrameLayout>
+        <include android:id="@id/album_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/free_song_of_the_day_album" />
+    </LinearLayout>
+</ScrollView>

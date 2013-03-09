@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.phone.widget.ButtonGroup android:id="@id/task_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.android.phone.widget.ButtonGroup android:id="@id/incoming_cmd_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/task_bar">
+        <RelativeLayout android:orientation="vertical" android:id="@id/all" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/titleBar" android:layout_alignParentTop="true" layout="@layout/title_bar" />
+            <RelativeLayout android:id="@id/mainFrame" android:background="@drawable/incall_screen_bk" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/titleBar">
+                <View android:id="@id/mc_bg" android:background="@drawable/listview_listbackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RelativeLayout android:id="@id/inCallPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+                <include layout="@layout/htc_call_control_panel" />
+                <ViewStub android:id="@id/otaCallCardStub" android:layout="@layout/otacall_card" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <include layout="@layout/dtmf_twelve_key_dialer" />
+        </RelativeLayout>
+        <FrameLayout android:layout_gravity="top" android:id="@id/inCallProviderOverlay" android:background="@drawable/dialog_bg_calling_via" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="88.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMediumInverse" android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/callingVia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/calling_via_template" />
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

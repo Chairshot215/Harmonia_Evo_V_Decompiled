@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.media" android:versionCode="230347133" android:versionName="2.30.2213302927.347133" android:sharedUserLabel="@string/uid_label" package="com.android.providers.media"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MTP" />
+    <uses-permission android:name="android.permission.ACCESS_CW_FOLDER" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <application android:label="@string/app_label" android:process="android.process.media">
+        <provider android:name="MediaProvider" android:multiprocess="false" android:authorities="media" />
+        <receiver android:name="MediaUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="MediaScannerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.htc.providers.media.ID_UPDATE_REQUEST" />
+            </intent-filter>
+        </receiver>
+        <service android:name="MediaScannerService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.IMediaScannerService" />
+            </intent-filter>
+        </service>
+        <service android:name="MediaDBMigrationService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.htc.providers.media.ID_UPDATE_REQUEST" />
+            </intent-filter>
+        </service>
+        <receiver android:name="UsbReceiver">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_STATE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="MtpService" />
+    </application>
+</manifest>

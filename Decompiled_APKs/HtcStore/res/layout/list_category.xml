@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/header" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/promo_featured_stub" android:layout="@layout/promo_featured" android:inflatedId="@id/promo_featured" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:background="@*android:color/black" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/margin" android:layout_width="fill_parent" android:layout_height="@dimen/promo_featured_padding" />
+            <com.htc.store.module.view.HubListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/listview_style" />
+            <include layout="@layout/list_empty" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

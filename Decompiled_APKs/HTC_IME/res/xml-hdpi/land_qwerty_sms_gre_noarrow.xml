@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard label="@string/land_qwerty" width="95px" hgap="0px" vgap="0px" height="77px" keyTextSize="35px" popupTextSize="45px" keyTextYOffset="-1" topLabelTextSize="20px" topLabelTextYOffset="-7" previewTopLevel="false" keyboardBackground="@drawable/sapphire_land_background" keyboardPadding="0,7,5,5" functionKeyBackground="@drawable/sapphire_landscape_function_key" commonKeyBackground="@drawable/sapphire_landscape_common_key" splitKeyBackground="@drawable/sapphire_land_split_key" closeKeyBackground="@drawable/qwerty_land_close_key">
+    <row>
+        <key codes="0x003b" label=";" topLabel="1" hgap="5px" leftEdge="true" popupCharacters="@string/alternates_for_1" accentType="0" alignIndex="0" xt9idx="0" />
+        <key codes="0x03C2" label="ς" topLabel="2" popupCharacters="@string/alternates_for_2" accentType="0" alignIndex="0" xt9idx="1" />
+        <key codes="0x03b5" label="ε" topLabel="3" popupCharacters="@string/alternates_for_3" accentType="3" alignIndex="0" xt9idx="2" />
+        <key codes="0x03c1" label="ρ" topLabel="4" popupCharacters="@string/alternates_for_4" accentType="0" alignIndex="0" xt9idx="3" />
+        <key codes="0x03C4" label="τ" topLabel="5" popupCharacters="@string/alternates_for_5" accentType="0" alignIndex="0" xt9idx="4" />
+        <key codes="0x03c5" label="υ" topLabel="6" popupCharacters="@string/alternates_for_6" accentType="3" alignIndex="0" xt9idx="5" />
+        <key codes="0x03B8" label="θ" topLabel="7" popupCharacters="@string/alternates_for_7" accentType="0" alignIndex="0" xt9idx="6" />
+        <key codes="0x03b9" label="ι" topLabel="8" popupCharacters="@string/alternates_for_8" accentType="3" alignIndex="4" xt9idx="7" />
+        <key codes="0x03BF" label="ο" topLabel="9" popupCharacters="@string/alternates_for_9" accentType="3" alignIndex="1" xt9idx="8" />
+        <key codes="0x03c0" label="π" topLabel="0" popupCharacters="@string/alternates_for_0" accentType="0" alignIndex="0" rightEdge="true" xt9idx="9" />
+    </row>
+    <row>
+        <key codes="0x03B1" label="α" topLabel="!" hgap="53px" popupCharacters="@string/alternates_for_exclam" accentType="3" alignIndex="0" xt9idx="10" leftEdge="true" />
+        <key codes="0x03C3" label="σ" topLabel="\@" popupCharacters="@string/alternates_for_at" accentType="0" alignIndex="0" xt9idx="11" />
+        <key codes="0x03B4" label="δ" topLabel="\#" popupCharacters="@string/alternates_for_number" accentType="0" alignIndex="0" xt9idx="12" />
+        <key codes="0x03C6" label="φ" topLabel="$" popupCharacters="@string/alternates_for_dollar" accentType="0" alignIndex="0" xt9idx="13" />
+        <key codes="0x03B3" label="γ" topLabel="%" popupCharacters="@string/alternates_for_percent" accentType="0" alignIndex="0" xt9idx="14" />
+        <key codes="0x03B7" label="η" topLabel="&amp;" popupCharacters="@string/alternates_for_ampersand" accentType="3" alignIndex="0" xt9idx="15" />
+        <key codes="0x03BE" label="ξ" topLabel="*" popupCharacters="@string/alternates_for_asterisk" accentType="0" alignIndex="0" xt9idx="16" />
+        <key codes="0x03BA" label="κ" topLabel="\?" popupCharacters="@string/alternates_for_question" accentType="0" alignIndex="0" xt9idx="17" />
+        <key codes="0x03BB" label="λ" topLabel="/" popupCharacters="@string/alternates_for_slash" accentType="0" alignIndex="0" rightEdge="true" xt9idx="18" />
+    </row>
+    <row>
+        <key codes="-1" width="92px" modifier="true" hgap="7px" sticky="true" function="true" leftEdge="true" icon="@drawable/key_icon_shift_toggle" iconPreview="@drawable/sapphire_icon_shift_toggle" />
+        <key codes="0x03B6" label="ζ" topLabel="~" hgap="1px" width="108px" popupCharacters="@string/alternates_for_tilde" accentType="0" alignIndex="0" xt9idx="20" />
+        <key codes="0x03C7" label="χ" topLabel="&quot;" width="108px" popupCharacters="@string/alternates_for_dquotation" accentType="0" alignIndex="0" xt9idx="21" />
+        <key codes="0x03C8" label="ψ" topLabel="'" width="108px" popupCharacters="@string/alternates_for_apostrophe" accentType="0" alignIndex="0" xt9idx="22" />
+        <key codes="0x03C9" label="ω" topLabel="(" width="109px" popupCharacters="@string/alternates_for_lparen" accentType="3" alignIndex="0" xt9idx="23" />
+        <key codes="0x03B2" label="β" topLabel=")" width="109px" popupCharacters="@string/alternates_for_rparen" accentType="0" alignIndex="0" xt9idx="24" />
+        <key codes="0x03BD" label="ν" topLabel="-" width="109px" popupCharacters="@string/alternates_for_dash" accentType="0" alignIndex="0" xt9idx="25" />
+        <key codes="0x03BC" label="μ" topLabel="_" width="109px" popupCharacters="@string/alternates_for_underscore" accentType="0" alignIndex="0" xt9idx="26" />
+        <key codes="0x0008" hgap="2px" width="92px" function="true" repeatable="true" rightEdge="true" icon="@drawable/key_icon_delete" iconPreview="@drawable/sapphire_icon_backspace" xt9idx="27" />
+    </row>
+    <row>
+        <key codes="-4" width="102px" hgap="7px" function="true" leftEdge="true" icon="@drawable/key_icon_close_sip" iconPreview="@drawable/sapphire_icon_close_sip" />
+        <key codes="-16" width="92px" function="true" hgap="3px" grouped="1" />
+        <key codes="-23" hgap="-92px" width="92px" function="true" icon="@drawable/key_icon_mic_settings" iconPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-24" hgap="-92px" width="92px" function="true" longpressPreview="@drawable/sapphire_icon_mic" grouped="1" />
+        <key codes="-99" hgap="0px" width="0px" function="true" grouped="1" />
+        <key codes="0x002C" label="," topLabel=";" hgap="1px" splitSet="1" popupCharacters="@string/alternates_for_comma_lower" accentType="3" alignIndex="0" labelOffsetY="-2" xt9idx="30" />
+        <key codes="0x002F" label="/" topLabel=";" hgap="-95px" splitSet="2" popupCharacters="@string/alternates_for_comma_lower" accentType="3" />
+        <key codes="0x0040" label="\@" topLabel=";" hgap="-95px" splitSet="3" popupCharacters="@string/alternates_for_comma_lower" accentType="3" alignIndex="0" />
+        <key codes="0x0020" width="370px" repeatable="true" splitSet="1" showPreview="false" icon="@drawable/key_icon_space" xt9idx="31" />
+        <key codes="-7" label=".com" hgap="-370px" width="186px" splitSet="2" splitLeft="true" textScale="80%p" popupCharacters="@string/alternates_for_dotcom" feedbackBG="3" accentType="1" alignIndex="1" />
+        <key codes="0x0020" hgap="-1px" repeatable="true" width="185px" splitSet="2" splitRight="true" feedbackBG="4" icon="@drawable/key_icon_space" showPreview="false" iconPreview="@drawable/sapphire_icon_space" xt9idx="31" />
+        <key codes="-7" label=".com" hgap="-370px" width="186px" splitSet="3" splitLeft="true" textScale="80%p" popupCharacters="@string/alternates_for_dotcom" feedbackBG="3" accentType="1" alignIndex="1" />
+        <key codes="0x005F" label="_" hgap="-1px" width="185px" splitSet="3" splitRight="true" feedbackBG="4" />
+        <key codes="0x002E" label="." topLabel=":" popupCharacters="@string/alternates_for_dot_lower" accentType="3" alignIndex="0" labelOffsetY="-2" xt9idx="32" />
+        <key codes="-2" label="12#" width="92px" hgap="2px" function="true" textScale="85%p" popupCharacters="@string/alternates_for_sym" popupDelay="300" accentType="2" alignIndex="8" />
+        <key codes="0x000A" width="92px" hgap="3px" function="true" sticky="true" icon="@drawable/key_icon_enter_toggle" iconPreview="@drawable/sapphire_icon_enter_toggle" rightEdge="true" xt9idx="34" />
+    </row>
+</keyboard>

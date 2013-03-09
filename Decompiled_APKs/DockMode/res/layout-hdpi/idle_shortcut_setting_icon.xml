@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="top" android:id="@id/icon_layout" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ap_icon" android:layout_width="@dimen/idle_shortcut_setting_icon_width" android:layout_height="@dimen/idle_shortcut_setting_icon_height" android:layout_marginTop="@dimen/idle_shortcut_app_icon_label_margin_top" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="22.0px" android:textColor="#ffffffff" android:ellipsize="none" android:gravity="center_horizontal" android:id="@id/ap_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="160.0px" android:maxLines="2" android:layout_below="@id/ap_icon" style="@style/shadowStyle" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/device_status_icon_view" android:paddingLeft="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@*android:dimen/htc_dark_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:gravity="center_vertical" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="0.0px" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@com.htc:dimen/title_primary_l" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/message" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="2.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@com.htc:dimen/title_secondary_m" android:gravity="center_vertical" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:maxLines="3" android:layout_toRightOf="@id/icon" android:layout_below="@id/message" android:layout_alignLeft="@id/message" />
+    </RelativeLayout>
+</RelativeLayout>

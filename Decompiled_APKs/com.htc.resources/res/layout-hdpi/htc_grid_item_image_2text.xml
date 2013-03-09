@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="196.0px" android:layout_height="196.0px">
+        <ImageView android:layout_gravity="top" android:id="@id/img_base" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/img_1x1" android:layout_width="140.0px" android:layout_height="140.0px" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:gravity="center_horizontal" android:id="@id/txt_1x1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerHorizontal="true" style="@com.htc:style/list_secondary_s" />
+    <TextView android:gravity="center_horizontal" android:id="@id/txt_2x1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerHorizontal="true" style="@com.htc:style/list_secondary_s" />
+</LinearLayout>

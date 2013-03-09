@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/sd_err_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/sd_err_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/sd_err_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_gallery_glance_margin_left_right" android:layout_marginRight="@dimen/common_gallery_glance_margin_left_right" android:layout_marginBottom="@dimen/common_gallery_glance_margin_bottom" style="@com.htc:style/title_secondary_m" />
+    </LinearLayout>
+</LinearLayout>

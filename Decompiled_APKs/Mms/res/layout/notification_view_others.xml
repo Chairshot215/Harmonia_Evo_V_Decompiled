@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.view.impl.NotificationViewImpl android:orientation="horizontal" android:id="@id/msg_view" android:paddingRight="@dimen/others_bubble_empty_width" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/msg_body" android:background="@drawable/l_message_conversation_others" android:paddingBottom="@dimen/bubble_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/bubble_marging" android:layout_marginTop="@dimen/bubble_marging">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/text_padding" android:paddingRight="@dimen/others_bubble_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:id="@id/from_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/secondary_subject" />
+            <TextView android:id="@id/subject_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/secondary_subject" />
+            <TextView android:id="@id/msg_size_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/secondary_subject" />
+            <TextView android:id="@id/expire_time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/secondary_subject" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/text_padding" android:paddingRight="@dimen/others_bubble_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px">
+            <Button android:id="@id/btn_download_msg" android:visibility="gone" android:layout_width="@dimen/download_btn_width" android:layout_height="@dimen/downloading_label_height" android:text="@string/download" style="@style/htc_button_style_white" />
+            <Button android:id="@id/btn_decline_msg" android:visibility="gone" android:layout_width="@dimen/decline_btn_width" android:layout_height="@dimen/downloading_label_height" android:text="@string/decline" style="@style/htc_button_style_white" />
+            <TextView android:textSize="@dimen/downloading_label_text_size" android:ellipsize="marquee" android:gravity="center" android:id="@id/label_downloading" android:visibility="gone" android:layout_width="0.0px" android:layout_height="@dimen/downloading_label_height" android:text="@com.htc:string/htc_picker_downloading" android:singleLine="true" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:id="@id/right_status_indicator" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="top" android:id="@id/third_status_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.android.mms.view.impl.NotificationViewImpl>

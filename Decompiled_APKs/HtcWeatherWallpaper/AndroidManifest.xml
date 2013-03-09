@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100254298" android:versionName="1.0.2211223223.254298" package="com.htc.WeatherWallpaper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:description="@string/license" android:hardwareAccelerated="false">
+        <uses-library android:name="com.htc.fusion.fx" />
+        <service android:name=".WeatherWallpaperService">
+            <intent-filter>
+                <action android:name="com.htc.weatherwallpaper.service.intent.action.SHOW_WEATHER_WALLPAPER" />
+                <action android:name="com.htc.weatherwallpaper.service.intent.action.HIDE_WEATHER_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+</manifest>

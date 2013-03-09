@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="resolution">
+        <enum name="hvga" value="0" />
+        <enum name="qvga" value="1" />
+        <enum name="wvga" value="2" />
+        <enum name="wqvga" value="3" />
+    </attr>
+    <attr name="highlight_height" format="integer" />
+    <attr name="frequences" format="reference" />
+    <attr name="positions" format="reference" />
+    <attr name="maxCount" format="integer" />
+    <attr name="space" format="integer" />
+    <attr name="onResID" format="reference" />
+    <attr name="offResID" format="reference" />
+    <attr name="topBorderHeight" format="dimension" />
+    <attr name="bottomBorderHeight" format="dimension" />
+    <attr name="shouldFillEmpty" format="boolean" />
+    <attr name="topDrawable" format="reference" />
+    <attr name="bottomDrawable" format="reference" />
+    <attr name="middleDrawable" format="reference" />
+    <attr name="topBorderDrawable" format="reference" />
+</resources>

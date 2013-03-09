@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/cmd_bar_height" style="?com.htc:attr/commandBarBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/task_bar_common_margin" android:layout_alignParentLeft="true">
+        <ImageView android:id="@id/control_left_button" android:background="?attr_taskbar_button_left" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/control_center_frame" android:layout_width="@dimen/cmd_bar_control_center_frame_width" android:layout_height="@dimen/cmd_bar_control_center_frame_height" android:layout_centerInParent="true">
+            <LinearLayout android:id="@id/control_center" android:background="?attr_taskbar_center" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/linetwo_text" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/darklist_primary_xl" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_up" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="-1.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+                <TextView android:textSize="@dimen/darklist_secondary_s" android:textColor="#ffa6a6a6" android:gravity="center" android:id="@id/text_down" android:paddingTop="@dimen/cmd_bar_control_center_frame_padding" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="-1.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+            </RelativeLayout>
+            <TextSwitcher android:textSize="@dimen/button_primary_m" android:layout_gravity="center" android:id="@id/toggle_center" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <TextView android:textSize="14.0px" android:textColor="#ffffffff" android:gravity="center" android:id="@id/count_indicator" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:shadowColor="#ff666666" android:shadowDx="-1.0" android:shadowDy="-1.0" android:shadowRadius="1.0" android:layout_alignParentRight="true" style="?com.htc:notificationBubbleStyle" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/task_bar_common_margin" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/control_right_button" android:background="?attr_taskbar_button_right" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    </LinearLayout>
+</RelativeLayout>

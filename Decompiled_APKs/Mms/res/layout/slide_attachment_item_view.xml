@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.SlideAttachmentItemView android:gravity="fill" android:orientation="vertical" android:id="@id/slide_attachment_item_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:textColorLink="@com.htc:color/link_text" android:autoLink="all" android:linksClickable="false" android:id="@id/slide_text_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0px" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0px">
+            <ImageView android:id="@id/slideshow_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/slideshow_image_margin_left" android:layout_marginTop="@dimen/slideshow_image_margin_top" android:scaleType="fitEnd" android:minWidth="@dimen/slideshow_image_min_width" android:minHeight="@dimen/slideshow_image_min_height" android.maxWidth="@dimen/slideshow_image_max_width" />
+            <ImageView android:id="@id/slideshow_video" android:visibility="gone" android:layout_width="@dimen/slideshow_video_width" android:layout_height="@dimen/slideshow_video_height" android:layout_marginLeft="@dimen/slideshow_image_margin_left" android:layout_marginTop="@dimen/slideshow_image_margin_top" android:scaleType="centerCrop" />
+            <ImageView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/play_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/slideshow_play_button_margin_bottom" android:src="@drawable/l_msg_detail_insert_video" />
+        </FrameLayout>
+        <include layout="@layout/slide_attachment_info" />
+        <TextView android:textColorLink="@com.htc:color/link_text" android:autoLink="all" android:linksClickable="false" android:id="@id/slide_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/slide_attachment_view_text_margin" android:layout_marginBottom="@dimen/slide_attachment_view_text_margin" android:layout_weight="1.0" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+</com.android.mms.ui.SlideAttachmentItemView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:layout="@layout/preference_kb_title" android:title="@string/keyboard_ime_settings_udb_editor_title" android:selectable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/user_dictionary_editor_title" android:key="@string/user_dictionary_editor" android:summary="@string/user_dictionary_editor_title_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.util.UDBEditor" />
+    </com.htc.preference.HtcPreferenceScreen>
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/user_dictionary_sync_title" android:key="@string/user_dictionary_sync" android:summary="@string/user_dictionary_sync_title_summary">
+        <intent android:targetPackage="com.htc.android.htcime" android:action="android.intent.action.MAIN" android:targetClass="com.htc.android.htcime.settings.KeyboardSettingsUserDictionarySync" />
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

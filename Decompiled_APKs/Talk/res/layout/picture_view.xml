@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/picture_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="horizontal" android:id="@id/picture_block" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/photo" android:background="@drawable/bg_frame_sm01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:maxWidth="144.0dip" />
+                <ImageView android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/badge" android:paddingLeft="3.0dip" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/picasa" android:scaleType="fitCenter"
+                  xmlns:android="http://schemas.android.com/apk/res/android" />
+            </LinearLayout>
+            <ImageView android:id="@*android:id/progress" android:background="@drawable/bg_frame_sm01" android:layout_width="142.0dip" android:layout_height="110.0dip" android:src="@drawable/ic_photo" android:scaleType="center"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </FrameLayout>
+        <TextView android:textColor="#ff000000" android:id="@id/pictureinfo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

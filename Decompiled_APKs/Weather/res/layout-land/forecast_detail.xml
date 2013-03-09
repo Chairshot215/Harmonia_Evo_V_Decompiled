@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_color" android:gravity="center" android:id="@id/day_info" android:layout_width="@dimen/day_space" android:layout_height="fill_parent" android:singleLine="true" />
+    <ImageView android:id="@id/day_condition" android:layout_width="@dimen/day_image_space" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_toRightOf="@id/day_info" />
+    <RelativeLayout android:gravity="center" android:id="@id/day_temp" android:visibility="gone" android:layout_width="@dimen/day_temp_space" android:layout_height="fill_parent" android:layout_toRightOf="@id/day_condition">
+        <RelativeLayout android:id="@id/temp_label" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_temp_high_color" android:id="@id/day_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weather_high_indicator" />
+            <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_temp_low_color" android:id="@id/day_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weather_low_indicator" android:layout_below="@id/day_high" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/temp_label">
+            <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_temp_high_color" android:id="@id/day_high_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/day_textsize" android:textColor="@color/day_temp_low_color" android:id="@id/day_low_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/day_high_temp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

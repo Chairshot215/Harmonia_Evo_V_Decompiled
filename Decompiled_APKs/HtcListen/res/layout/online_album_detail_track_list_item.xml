@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HtcListItem android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0px">
+        <com.htc.widget.HtcListItemImageButton android:id="@id/img_1x1" android:layout_width="wrap_content" android:layout_height="wrap_content" htc:imageMode="indicator" />
+        <android.widget.ProgressBar android:layout_gravity="center" android:id="@id/img_1x1_progressbar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+    </FrameLayout>
+    <com.htc.widget.HtcListItem2LineText android:id="@id/text" />
+    <com.htc.widget.HtcListItem2LineStamp android:id="@id/stamp" />
+    <com.htc.widget.HtcListItemImageButton android:id="@id/imgButton" android:background="?com.htc:attr_common_button_small" />
+</com.htc.widget.HtcListItem>

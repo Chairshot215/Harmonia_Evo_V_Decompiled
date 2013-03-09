@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/list_item_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/htc_editor_entry_name_left_margin" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/primaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_style_primary" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/second_line_margin">
+            <TextView android:id="@id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text_style_secondary" />
+            <TextView android:ellipsize="end" android:id="@id/secondaryText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/text_style_secondary" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:layout_gravity="right|center" android:id="@id/selectedIcon" android:focusable="false" android:visibility="visible" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@com.htc:dimen/htc_list_item_margin_right" android:button="?com.htc:attr_common_checkbox" android:layout_alignParentRight="true" />
+</LinearLayout>

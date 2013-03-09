@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/combo_paddingTop" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.browser.view.BookmarkExpandableView android:layout_gravity="center_horizontal" android:id="@id/grid" android:layout_width="fill_parent" android:layout_height="fill_parent" android:childDivider="@*android:color/transparent" android:divider="@*android:color/transparent" android:dividerHeight="0.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center" android:id="@*android:id/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_bookmarks_folder" />
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme" />
+    <style name="tab_button_text">
+        <item name="android:textSize">26.0px</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/tab_button_text_color</item>
+    </style>
+    <style name="list_background_white">
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@com.htc:drawable/common_divider_list</item>
+    </style>
+    <style name="ThemeNoTitle">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Hero">
+        <item name="android:colorForeground">@color/white</item>
+        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/light_grey</item>
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+        <item name="android:textColorTertiary">@color/light_grey</item>
+    </style>
+    <style name="Hero_layer2">
+        <item name="android:colorForeground">@color/white</item>
+        <item name="android:colorBackground">@*android:color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/light_grey</item>
+        <item name="android:windowBackground">?com.htc:attr_common_app_bkg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupWindowStyle">@*android:style/Widget.PopupWindow</item>
+        <item name="android:textColorTertiary">@color/light_grey</item>
+    </style>
+    <style name="shadow_0">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="shadow_0_ul">
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.1</item>
+        <item name="android:shadowDy">-1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="shadow_128">
+        <item name="android:shadowColor">#ff858585</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="shadow_192">
+        <item name="android:shadowColor">#ffc0c0c0</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="shadow_255">
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="titleBarStyleLarge">
+        <item name="android:textSize">@dimen/subtitlebar_textsize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/subtitlebar_padding</item>
+        <item name="android:paddingRight">@dimen/subtitlebar_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/subtitlebar_large_height</item>
+    </style>
+    <style name="titleBarStyleLargeShadow">
+        <item name="android:textSize">@dimen/subtitlebar_textsize</item>
+        <item name="android:textColor">#7f000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">@dimen/subtitlebar_padding</item>
+        <item name="android:paddingRight">@dimen/subtitlebar_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/subtitlebar_large_height</item>
+        <item name="android:layout_marginLeft">-2.0px</item>
+        <item name="android:layout_marginTop">-2.0px</item>
+    </style>
+    <style name="shadow_today_condition">
+        <item name="android:shadowColor">#f1000000</item>
+        <item name="android:shadowDx">1.1</item>
+        <item name="android:shadowDy">1.1</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+</resources>

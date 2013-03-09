@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@*android:id/hint" android:nextFocusUp="@*android:id/list" android:nextFocusDown="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@*android:color/white" android:gravity="center" android:id="@id/hint1" android:focusable="true" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smartSearchHint" android:cursorVisible="false" android:singleLine="true" android:freezesText="true" android:layout_alignParentTop="true" style="@style/style_hint1" />
+    <TextView android:textColor="@com.htc:color/ltgray" android:gravity="center" android:id="@id/hint2" android:focusable="false" android:saveEnabled="false" android:singleLine="true" android:freezesText="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/style_hint2" />
+</RelativeLayout>

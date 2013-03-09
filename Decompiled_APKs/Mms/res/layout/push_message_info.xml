@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="@com.htc:dimen/alert_dialog_content_margin_left" android:paddingTop="@com.htc:dimen/alert_dialog_content_margin_top" android:paddingRight="@com.htc:dimen/alert_dialog_content_margin_right" android:paddingBottom="@com.htc:dimen/alert_dialog_content_margin_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/phoneNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@id/website" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" style="@com.htc:style/list_primary_m" />
+        <TextView android:id="@id/receivedDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@com.htc:dimen/alert_dialog_content_margin_top" style="@com.htc:style/list_secondary_m" />
+    </LinearLayout>
+</ScrollView>

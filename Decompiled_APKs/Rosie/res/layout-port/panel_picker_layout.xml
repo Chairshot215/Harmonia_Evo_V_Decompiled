@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_glance_bkg_mg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@com.htc:dimen/title_primary_m" android:textColor="@color/bb_textcolor_normal" android:gravity="center" android:id="@id/panel_picker_title" android:paddingTop="@dimen/panel_picker_title_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@com.htc:dimen/title_secondary_m" android:textColor="@color/scene_picker_count_color" android:gravity="center" android:id="@id/panel_picker_count" android:paddingTop="@dimen/panel_picker_count_padding_top" android:paddingBottom="@dimen/panel_picker_count_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.htc.widget.DecorFlow android:id="@id/panel_picker_gallery" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0px" android:cacheColorHint="@null" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="@com.htc:dimen/cmd_bar_height">
+            <View android:id="@id/button_bar_background" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/CustomStyle_common_app_bkg" />
+            <include android:id="@id/panel_picker_button_bar" layout="@com.htc:layout/cmd_bar_2" />
+            <include android:id="@id/panel_picker_button_bar_one_button" android:visibility="gone" layout="@com.htc:layout/cmd_bar_1" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@com.htc:dimen/title_primary_m" android:textColor="@color/bb_textcolor_normal" android:gravity="center" android:id="@id/panel_picker_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/panel_picker_scene_name_margin_top" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

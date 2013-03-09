@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="100275696" android:versionName="1.0.2212122536.275696" package="com.htc.HtcBeatsNotify"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.android.beats.permission.UPDATE_NOTIFICATION" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/app_name" android:icon="@drawable/beats_htc_icon_red" allowSkinChange="true">
+        <receiver android:name="HtcBeatsNotifyReceiver" android:permission="com.android.beats.permission.UPDATE_NOTIFICATION" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.htc.intent.action.BEATS_STATE_NOTIFICATION" />
+                <action android:name="com.htc.intent.action.BEATS_STATE_CHANGE" />
+                <action android:name="com.htc.intent.action.BEATS_NOTIFY_ON" />
+                <action android:name="com.htc.intent.action.BEATS_NOTIFY_OFF" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

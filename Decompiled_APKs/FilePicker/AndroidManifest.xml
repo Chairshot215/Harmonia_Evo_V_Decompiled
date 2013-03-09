@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="com.htc.bg.uid.shared" android:versionCode="100302063" android:versionName="1.0.2212253123.302063" package="com.htc.FilePicker"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pluto="http://www.w3.org/2001/pluto.html">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.htc.cloudstorage.dropbox.GET_TOKEN" />
+    <uses-permission android:name="com.htc.cloudstorage.skydrive.GET_TOKEN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="htc.pluginmanager.permission.USE_PROVIDER" />
+    <permission android:name="com.htc.FilePicker.permission.INTENT_TOKEN" android:protectionLevel="signatureOrSystem" />
+    <application android:label="@string/app_name" android:description="@string/license" android:hardwareAccelerated="false" pluto:isThemeable="true" allowSkinChange="true">
+        <activity android:theme="@style/Theme" android:label="@string/app_name" android:name=".FilePicker" android:permission="com.htc.FilePicker.permission.INTENT_TOKEN" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="FILEPICKER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

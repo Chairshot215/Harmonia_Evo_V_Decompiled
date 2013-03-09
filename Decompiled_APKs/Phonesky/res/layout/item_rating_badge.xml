@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:finsky="http://schemas.android.com/apk/res/com.android.vending">
+    <RatingBar android:id="@id/li_rating" android:paddingBottom="@dimen/rating_bar_padding_bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="@style/FinskyRatingBarSmall" />
+    <com.google.android.finsky.layout.DecoratedTextView android:textSize="@dimen/content_generic_xsmall_size" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/li_badge" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="2.0dip" finsky:decoration_position="left" />
+</merge>

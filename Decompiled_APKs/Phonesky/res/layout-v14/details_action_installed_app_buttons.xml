@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center_vertical" android:id="@id/uninstall_button" android:visibility="gone" android:layout_width="0.0dip" android:text="@string/uninstall" android:layout_weight="1.0" style="@style/DetailsPage_Button" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/update_button" android:visibility="gone" android:layout_width="0.0dip" android:text="@string/update" android:layout_weight="1.0" style="@style/DetailsPage_Button" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/launch_button" android:visibility="gone" android:layout_width="0.0dip" android:text="@string/open" android:layout_weight="1.0" style="@style/DetailsPage_Button" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/install_button" android:visibility="gone" android:layout_width="0.0dip" android:text="@string/install" android:layout_weight="1.0" style="@style/DetailsPage_Button" />
+</merge>

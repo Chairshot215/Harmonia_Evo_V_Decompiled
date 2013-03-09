@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tablet_setup_background" android:paddingLeft="100.0dip" android:paddingTop="60.0dip" android:paddingRight="100.0dip" android:paddingBottom="100.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/setupWizardTitleLarge" android:id="@id/setup_complete_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setup_complete_title" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <View android:id="@id/top_divider" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="40.0dip" android:layout_below="@id/setup_complete_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/messages" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top_divider" android:layout_alignParentLeft="true">
+        <TextView android:textAppearance="@style/setupWizardBodyTextPrimary" android:id="@id/optional_message" android:layout_width="1000.0dip" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" />
+        <TextView android:textAppearance="@style/setupWizardBodyTextPrimary" android:id="@id/common_message" android:layout_width="1000.0dip" android:layout_height="wrap_content" android:layout_below="@id/optional_message" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/skip_button" android:layout_marginRight="40.0dip" android:text="@string/skip_button_label" style="@style/CustomButtonSize" />
+        <Button android:id="@id/next_button" android:text="@string/next_button_label" style="@style/CustomButtonSize" />
+    </LinearLayout>
+</RelativeLayout>

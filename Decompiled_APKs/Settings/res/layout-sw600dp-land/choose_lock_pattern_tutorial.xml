@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="horizontal" android:id="@id/topLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.htc.lockscreen.view.HtcLockPatternView android:layout_gravity="center_horizontal" android:id="@id/lockPattern" android:layout_marginLeft="45.0dip" android:layout_marginTop="32.0dip" android:layout_toRightOf="@id/headerText" aspect="square" style="@style/lock_pattern_style_small" />
+        <TextView android:id="@id/headerText" android:layout_width="468.0dip" android:layout_height="wrap_content" android:layout_marginTop="88.0dip" android:text="@string/lock_intro_message" android:layout_alignParentTop="true" style="@com.htc:style/list_primary_m" />
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SecurityPreferenceButtonContainer">
+            <Button android:id="@id/skip_button" android:text="@string/lockpattern_tutorial_cancel_label" style="@style/SecurityPreferenceButton" />
+            <Button android:id="@id/next_button" android:text="@string/lockpattern_tutorial_continue_label" style="@style/SecurityPreferenceButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

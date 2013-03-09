@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings.framework.activity.powersaver">
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_backgrounddata" android:key="powersaver_backgrounddata" android:summaryOn="@string/powersaver_backgrounddata_summary" android:summaryOff="@string/powersaver_backgrounddata_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_wifi" android:key="powersaver_wifi" android:summaryOn="@string/powersaver_wifi_summary" android:summaryOff="@string/powersaver_wifi_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_bluetooth" android:key="powersaver_bluetooth" android:summaryOn="@string/powersaver_bluetooth_summary" android:summaryOff="@string/powersaver_bluetooth_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_screen_brightness" android:key="powersaver_screen_brightness" />
+    <com.android.settings.framework.activity.powersaver.PowerSaverBrightnessPreference android:persistent="false" android:title="@string/powersaver_screen_brightness_settings" android:key="powersaver_screen_brightness_settings" android:dependency="powersaver_screen_brightness" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_screen_timeout" android:key="powersaver_screen_timeout" />
+    <com.android.settings.framework.activity.powersaver.PowersaverScreenTimeoutPreference android:persistent="false" android:title="@string/powersaver_screen_timeout_settings" android:key="powersaver_screen_timeout_settings" android:dependency="powersaver_screen_timeout" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_onscreen_animation" android:key="powersaver_onscreen_animation" android:summaryOn="@string/powersaver_onscreen_animation_summary" android:summaryOff="@string/powersaver_onscreen_animation_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/powersaver_haptic_feedback" android:key="powersaver_haptic_feedback" android:summaryOn="@string/powersaver_haptic_feedback_summary" android:summaryOff="@string/powersaver_haptic_feedback_summary" />
+</com.htc.preference.HtcPreferenceScreen>

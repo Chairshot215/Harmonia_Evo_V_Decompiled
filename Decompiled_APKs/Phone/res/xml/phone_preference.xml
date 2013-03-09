@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/htc_advanced_setting" android:key="pref_cate_phone_setting">
+        <com.htc.preference.HtcPreference android:title="@string/preference_call_reject_edit" android:key="pref_key_reject_msg_text" android:summary="@string/preference_call_reject_statement" android:defaultValue="@string/preference_call_reject_statement" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/preference_call_reject_enable_title" android:key="pref_key_edit_reject_msg" android:summary="@string/preference_call_reject_enable" android:defaultValue="true" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/preference_save_contact" android:key="pref_key_save_contact" android:summary="@string/preference_save_contact_statement" android:defaultValue="true" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/home_dialing_title" android:key="button_home_country_key" android:summaryOn="@string/home_dialing_enabled_summary" android:summaryOff="@string/home_dialing_disabled_summary" />
+    <com.htc.preference.HtcPreference android:persistent="false" android:title="@string/home_dialing_settings_title" android:key="button_home_dialing_key" />
+    <com.htc.preference.HtcCheckBoxPreference android:persistent="true" android:title="@string/international_dialing_assistant" android:key="international_dialing_key" android:summaryOn="@string/international_dialing_assistant_summary_on" android:summaryOff="@string/international_dialing_assistant_summary_off" />
+    <com.android.phone.EditNumberPreference android:persistent="true" android:singleLine="true" android:title="@string/international_dialing_assistant_settings" android:key="international_dialing_number_key" android:dialogTitle="@string/international_dialing_code" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/phono_notification_preview" android:key="htc_phone_notification_preview" android:summary="@string/phono_notification_preview_summary" />
+    <com.htc.preference.HtcCheckBoxPreference android:title="@string/charm_notification" android:key="charm_phone_notification" android:summary="@string/charm_notification_summary" />
+</com.htc.preference.HtcPreferenceScreen>

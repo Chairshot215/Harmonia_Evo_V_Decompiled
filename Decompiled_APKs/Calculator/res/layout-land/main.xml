@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_l" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.calculator2.CalculatorDisplay android:id="@id/display" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lcd_layout_margin_left_right" android:layout_marginRight="@dimen/lcd_layout_margin_left_right">
+                <com.android.calculator2.CalculatorEditText style="@style/display_style" />
+                <com.android.calculator2.CalculatorEditText style="@style/display_style" />
+            </com.android.calculator2.CalculatorDisplay>
+        </LinearLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/input_mask" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/allPad" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/pad_panel_margin_top">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.android.calculator2.CalculatorImageButton android:id="@id/sin" android:src="@drawable/sin" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/cos" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/cos" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/tan" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/tan" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/digit7" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no7" style="@style/htc_number_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/digit8" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no8" style="@style/htc_number_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/digit9" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no9" style="@style/htc_number_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/div" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/divide" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/back" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/back" style="@style/htc_fn_button_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_gap">
+            <com.android.calculator2.CalculatorImageButton android:id="@id/ln" android:src="@drawable/ln" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/lg" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/log" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/factorial" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/exclamation" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/digit4" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no4" style="@style/htc_number_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/digit5" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no5" style="@style/htc_number_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/digit6" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no6" style="@style/htc_number_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/mul" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/multiply" style="@style/htc_fn_button_style" />
+            <com.android.calculator2.CalculatorImageButton android:id="@id/del" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/clear" style="@style/htc_fn_button_style" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_gap">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/pi" android:src="@drawable/pi" style="@style/htc_fn_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/e" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/e" style="@style/htc_fn_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/power" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/caret" style="@style/htc_fn_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/digit1" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no1" style="@style/htc_number_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/digit2" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no2" style="@style/htc_number_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/digit3" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/no3" style="@style/htc_number_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/minus" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/minus" style="@style/htc_fn_button_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/row_gap">
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/leftParen" android:src="@drawable/open" style="@style/htc_fn_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/rightParen" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/close" style="@style/htc_fn_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/sqrt" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/radical" style="@style/htc_fn_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/dot" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/dot" style="@style/htc_number_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/digit0" android:layout_marginLeft="@dimen/column_gap" style="@style/htc_zero_button_style" />
+                    <com.android.calculator2.CalculatorImageButton android:id="@id/plus" android:layout_marginLeft="@dimen/column_gap" android:src="@drawable/plus" style="@style/htc_fn_button_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.android.calculator2.CalculatorImageButton android:id="@id/equal" android:layout_marginLeft="@dimen/column_gap" style="@style/htc_equal_button_style" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

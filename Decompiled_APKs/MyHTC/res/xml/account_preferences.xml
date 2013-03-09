@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_general_title" />
+    <PreferenceScreen android:title="@string/title_newsletter" android:key="@string/pref_account_title" android:summary="@string/newsletter_summary">
+        <intent android:targetPackage="com.htc.cs" android:action="com.htc.cs.ACCOUNT_MANAGER_ENTRY" android:targetClass="com.htc.cs.activity.accountactivities.CSSettingActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

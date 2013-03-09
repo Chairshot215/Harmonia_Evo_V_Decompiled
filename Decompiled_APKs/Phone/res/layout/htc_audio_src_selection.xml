@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/src_top" android:layout_width="@dimen/reject_msg_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/bluetooth_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+                        <Button android:textSize="@dimen/fontSize_dialog_action" android:textColor="@color/button_text" android:gravity="center" android:layout_gravity="center" android:id="@id/bluetooth_button" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_common_margin_left" android:layout_marginRight="@dimen/htc_common_margin_right" android:minWidth="-1.0px" android:minHeight="-1.0px" />
+                        <ImageView android:layout_gravity="right|center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_common_margin_right" />
+                    </FrameLayout>
+                    <View android:background="@drawable/common_phone_divider_list" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+                    <Button android:textSize="@dimen/fontSize_dialog_action" android:textColor="@color/button_text" android:gravity="center" android:layout_gravity="center" android:id="@id/device_button" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_common_margin_left" android:layout_marginRight="@dimen/htc_common_margin_right" android:minWidth="-1.0px" android:minHeight="-1.0px" />
+                    <ImageView android:layout_gravity="right|center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_common_margin_right" />
+                </FrameLayout>
+                <View android:background="@drawable/common_phone_divider_list" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="@com.htc:dimen/htc_list_item_height">
+                    <Button android:textSize="@dimen/fontSize_dialog_action" android:textColor="@color/button_text" android:gravity="center" android:layout_gravity="center" android:id="@id/speaker_button" android:background="?com.htc:attr_common_button_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_common_margin_left" android:layout_marginRight="@dimen/htc_common_margin_right" android:minWidth="-1.0px" android:minHeight="-1.0px" android:text="@string/menu_speaker" />
+                    <ImageView android:layout_gravity="right|center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/htc_common_margin_right" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

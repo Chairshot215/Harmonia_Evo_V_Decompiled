@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htcSetupWizard="http://schemas.android.com/apk/res/com.htc.android.htcsetupwizard">
+    <LinearLayout android:orientation="vertical" android:id="@id/sim_image_layout" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="4.0">
+            <TextView android:id="@id/title" android:text="@string/sim_title" style="@style/google_title_text" />
+            <ImageView android:id="@id/divider" style="@style/google_title_divider" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="14.0">
+            <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:gravity="center" android:id="@id/insert_sim_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="6.0">
+            <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sim_clip_group" android:layout_width="fill_parent" android:layout_height="93.0px" android:checkedButton="@id/sim_clip_1">
+                <RadioButton android:id="@id/sim_clip_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginRight="12.0px" />
+                <RadioButton android:id="@id/sim_clip_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginRight="12.0px" />
+                <RadioButton android:id="@id/sim_clip_3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginRight="12.0px" />
+                <RadioButton android:id="@id/sim_clip_4" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0px" android:layout_marginRight="12.0px" />
+            </RadioGroup>
+            <TextView android:textColor="@color/white_text_white_focused" android:gravity="center_horizontal" android:id="@id/sim_subtitle" android:layout_width="wrap_content" android:layout_height="0.0px" android:layout_weight="6.0" style="@style/textAppearance_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/progressbar" />
+    <RelativeLayout style="@style/layout_panel">
+        <Button android:id="@id/emergency_dial" android:text="@string/emergency_dial" android:layout_alignParentLeft="true" style="@style/bottom_button" />
+        <Button android:id="@id/skip" android:text="@string/skip" android:drawableRight="@drawable/ic_btn_next" android:layout_alignParentRight="true" style="@style/bottom_button" />
+    </RelativeLayout>
+</LinearLayout>

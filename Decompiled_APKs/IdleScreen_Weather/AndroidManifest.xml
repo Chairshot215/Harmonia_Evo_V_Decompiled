@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="300350863" android:versionName="3.0.2214162457.350863" package="com.htc.weatheridlescreen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:hardwareAccelerated="false">
+        <uses-library android:name="com.htc.lockscreen.fusion" />
+        <uses-library android:name="com.htc.fusion.fx" />
+        <activity android:theme="@*android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name=".activity.WISActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name=".service.WISService">
+            <intent-filter>
+                <action android:name="com.htc.lockscreen.idlescreen.IdleScreenService" />
+            </intent-filter>
+            <meta-data android:name="com.htc.lockscreen.idlescreen" android:resource="@xml/idlescreen" />
+        </service>
+        <service android:name=".service.WISPreviewService" android:process=":preview">
+            <intent-filter>
+                <action android:name="com.htc.lockscreen.idlescreen.preview.IdleScreenService" />
+            </intent-filter>
+        </service>
+        <activity android:name=".setting.WISSetting" android:configChanges="locale|mcc|mnc|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.htc.weatheridlescreen.setting.WISSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="htc.permission.weather.USE_DATA" />
+</manifest>

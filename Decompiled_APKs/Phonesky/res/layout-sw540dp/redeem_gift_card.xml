@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/title_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="460.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:orientation="vertical" android:id="@id/content_frame" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/redeem_gift_card_main_content" />
+            <ImageView android:id="@id/gplay_graphic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginRight="48.0dip" android:src="@drawable/gplay_graphic" android:layout_below="@id/user_message" />
+            <LinearLayout android:gravity="right" android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginRight="@dimen/details_content_margin" android:layout_toRightOf="@id/gplay_graphic" android:layout_below="@id/user_message" android:layout_alignParentRight="true">
+                <Button android:id="@id/redeem_gift_card_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:text="@string/redeem_gift_card" style="@style/DetailsPage_MainBuyButton" />
+                <Button android:id="@id/continue_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:text="@string/continue_text" style="@style/DetailsPage_MainBuyButton" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/footers" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/details_content_margin" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/gplay_graphic" android:layout_below="@id/button_container" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </ScrollView>
+    <include android:visibility="gone" layout="@layout/page_loading_indicator_no_text" />
+</FrameLayout>

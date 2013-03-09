@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.CarouselOverlay android:gravity="center" android:orientation="vertical" android:id="@id/tabinfo" android:background="@color/grid_dark_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sd_img" android:layout_width="@dimen/carousel_overlay_width" android:layout_height="@dimen/carousel_overlay_width" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/title_primary_l" android:textColor="#ffffffff" android:id="@id/sd_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.htc.widget.CarouselOverlay>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/tumblers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/timer_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@com.htc:drawable/timer_tumblers_line01" android:layout_centerInParent="true" />
+    <com.htc.android.worldclock.widget.MyTableView android:id="@id/my_table_view" android:focusable="false" android:layout_width="120.0px" android:layout_height="230.0px" android:layout_centerInParent="true" android:selectable="false" />
+    <LinearLayout android:id="@id/shadow" android:background="@com.htc:drawable/timer_shadow01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</merge>

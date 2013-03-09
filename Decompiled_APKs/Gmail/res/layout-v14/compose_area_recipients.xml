@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/compose_recipients_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:chips="http://schemas.android.com/apk/res/com.google.android.gm">
+    <LinearLayout android:id="@id/to_content" style="@style/RecipientComposeFieldLayout">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/to_label" android:text="@string/to" android:contentDescription="@string/to" style="@style/RecipientComposeHeading" />
+            <com.android.ex.chips.RecipientEditTextView android:id="@id/to" chips:invalidChipBackground="@drawable/chip_background_invalid" chips:chipBackground="@drawable/chip_background" chips:chipBackgroundPressed="@drawable/chip_background_selected" chips:chipDelete="@drawable/chip_delete" chips:chipAlternatesLayout="@layout/chips_alternate_item" chips:chipPadding="@dimen/chip_padding" chips:chipHeight="@dimen/chip_height" chips:chipFontSize="@dimen/chip_text_size" style="@style/RecipientEditTextViewStyle" />
+        </LinearLayout>
+        <View style="@style/RecipientComposeFieldSpacer" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/cc_bcc_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/to_content">
+        <LinearLayout android:id="@id/cc_content" android:visibility="gone" android:layout_alignParentTop="true" android:alpha="0.0" style="@style/RecipientComposeFieldLayout">
+            <LinearLayout android:gravity="center_vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/cc_label" android:text="@string/cc" android:contentDescription="@string/cc" style="@style/RecipientComposeHeading" />
+                <com.android.ex.chips.RecipientEditTextView android:id="@id/cc" chips:chipBackground="@drawable/chip_background" style="@style/RecipientEditTextViewStyle" />
+            </LinearLayout>
+            <View style="@style/RecipientComposeFieldSpacer" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/bcc_content" android:visibility="gone" android:layout_below="@id/cc_content" android:alpha="0.0" style="@style/RecipientComposeFieldLayout">
+            <LinearLayout android:gravity="center_vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/bcc_label" android:text="@string/bcc" android:contentDescription="@string/bcc" style="@style/RecipientComposeHeading" />
+                <com.android.ex.chips.RecipientEditTextView android:id="@id/bcc" chips:chipBackground="@drawable/chip_background" style="@style/RecipientEditTextViewStyle" />
+            </LinearLayout>
+            <View style="@style/RecipientComposeFieldSpacer" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_below="@id/cc_bcc_wrapper" style="@style/ComposeFieldLayout">
+        <com.google.android.gm.ComposeSubjectText android:textColorHint="@color/compose_label_text" android:id="@id/subject" android:hint="@string/subject_hint" android:inputType="textEmailSubject|textCapSentences|textAutoCorrect|textMultiLine|textImeMultiLine" android:imeOptions="actionDone|flagNoExtractUi" style="@style/ComposeEditTextView" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_data_store_version">0</string>
+    <string name="def_client_id">android-google</string>
+    <string name="def_voicesearch_client_id">ms-android-google</string>
+    <string name="def_maps_client_id">เว็บ</string>
+    <string name="def_youtube_client_id">mvapp-android-google</string>
+    <string name="def_market_client_id">am-google</string>
+    <string name="def_rlz">ไม่รู้จัก</string>
+    <string name="sharedUserLabel">บริการของ Google</string>
+    <string name="app_label">ผู้จัดการบัญชี Google</string>
+    <string name="gls_label">Google</string>
+    <string name="default_device_name">Android</string>
+    <string name="welcome_message">ยินดีต้อนรับสู่ ^1</string>
+    <string name="next_button_label">ถัดไป</string>
+    <string name="back_button_label">ย้อนกลับ</string>
+    <string name="sign_in_button_label">ลงชื่อเข้าใช้</string>
+    <string name="create_button_label">รับบัญชี</string>
+    <string name="not_now_button_label">ข้ามไปก่อน</string>
+    <string name="skip_button_label">ข้าม</string>
+    <string name="new_button_label">ใหม่</string>
+    <string name="existing_button_label">ที่มีอยู่</string>
+    <string name="first_name">ชื่อ</string>
+    <string name="last_name">นามสกุล</string>
+    <string name="done">ตกลง</string>
+    <string name="cancel_button_label">ยกเลิก</string>
+    <string name="try_again_button_label">ลองใหม่อีกครั้ง</string>
+    <string name="close_button_label">ปิด</string>
+    <string name="edit_text_help">แตะกล่องข้อความใดก็ได้เพื่อเริ่มพิมพ์</string>
+    <string name="add_a_google_account">เพิ่มบัญชี Google</string>
+    <string name="no_sim_setup_wireless">คุณไม่มีซิมการ์ดในโทรศัพท์ ดังนั้นจึงเชื่อมต่อกับเครือข่ายโทรศัพท์มือถือเพื่อใช้บริการเสียงหรือข้อมูลไม่ได้ แต่คุณสามารถเชื่อมต่อกับเครือข่าย Wi-Fi ได้โดยไม่ต้องใช้ซิม</string>
+    <string name="setup_wifi_button_label">เชื่อมต่อกับ Wi-Fi</string>
+    <string name="setup_wizard_title">ตัวช่วยการตั้งค่า</string>
+    <string name="captcha_title">ต้องป้อน CAPTCHA</string>
+    <string name="choose_account_title">เลือกบัญชี</string>
+    <string name="show_error_title">ข้อผิดพลาดที่พบ</string>
+    <string name="close_and_launch_title">ปิดตัวช่วยการตั้งค่า</string>
+    <string name="server_error">เกิดปัญหาในขณะสื่อสารกับเซิร์ฟเวอร์ของ Google</string>
+    <string name="server_error_help">โปรดลองใหม่ในภายหลัง</string>
+    <string name="network_unreliable">ไม่สามารถสร้างการเชื่อมต่อที่เชื่อถือได้กับเซิร์ฟเวอร์</string>
+    <string name="network_unreliable_help">นี่อาจเป็นปัญหาชั่วคราวหรืออุปกรณ์ Android คุณอาจไม่ได้รับบริการข้อมูล หากยังพบปัญหาอีก โปรดติดต่อฝ่ายบริการลูกค้า</string>
+    <string name="invalid_login_character">อักขระไม่ถูกต้อง อนุญาตให้ใช้เฉพาะ 0-9, a-z, A-Z และจุดเท่านั้น</string>
+    <string name="invalid_password_character">อักขระของรหัสผ่านไม่ถูกต้อง</string>
+    <string name="add_apn">การตั้งค่าระบบไร้สาย</string>
+    <string name="setup_google_account_title">ตั้งค่าบัญชี Google ของคุณ</string>
+    <string name="setup_complete_title">การตั้งค่าเสร็จสมบูรณ์</string>
+    <string name="cant_be_blank">ต้องกรอกข้อมูลในฟิลด์</string>
+    <string name="calendar">Google ปฏิทิน</string>
+    <string name="talk">Google Talk</string>
+    <string name="email">Google Mail</string>
+    <string name="url_load_unsuccessful_message">อุปกรณ์ Android ของคุณไม่ได้เชื่อมต่อกับบริการข้อมูล หากต้องการดูข้อมูลนี้ในขณะนี้ โปรดไปที่ %s โดยใช้เว็บเบราว์เซอร์</string>
+    <string name="field_cant_be_blank">ต้องกรอกข้อมูลในฟิลด์นี้</string>
+    <string name="field_invalid_domain">ชื่อโดเมนนี้ไม่ถูกต้อง</string>
+    <string name="field_invalid_user">ชื่อผู้ใช้นี้ไม่ถูกต้อง</string>
+    <string name="field_invalid_user_domain">ป้อนเฉพาะชื่อผู้ใช้ ไม่ใช่ที่อยู่อีเมล</string>
+    <string name="setup_device_title">การตั้งค่า ^1 ของคุณ</string>
+    <string name="dont_have_an_account">คุณยังไม่มีบัญชี Google หรือ</string>
+    <string name="create_one_now">ลองสร้างบัญชีดูสิ! ง่ายนิดเดียว</string>
+    <string name="already_have_an_account">คุณมีบัญชี Google แล้วหรือ</string>
+    <string name="sign_in_with_google_account">ลงชื่อเข้าใช้ด้วยบัญชี Google ที่คุณต้องการจะใช้กับอุปกรณ์ Android นี้</string>
+    <string name="skip_message">ต้องการตั้งค่าบัญชีในภายหลังใช่หรือไม่</string>
+    <string name="delayed_gaia_agreement">" หากดำเนินการต่อ หมายถึงคุณยอมรับนโยบายส่วนบุคคลของ "<annotation id="google_privacy">Google</annotation> และ <annotation id="android_privacy">ส่วนเพิ่มเติม</annotation></string>
+    <string name="plus_query_title">เข้าร่วม Google+</string>
+    <string name="plus_query_text">Google+ ทำให้การแบ่งปันบนเว็บคล้ายกับการแบ่งปันในชีวิตจริงยิ่งขึ้น</string>
+    <string name="circles_subtitle">แวดวง</string>
+    <string name="circles_text">วิธีที่ง่ายที่สุดในการแบ่งปันสิ่งที่สำคัญที่สุดในโลกออนไลน์</string>
+    <string name="uploads_subtitle">อัปโหลดทันใจ</string>
+    <string name="uploads_text">ซิงค์ภาพถ่ายทั้งหมดจากทุกอุปกรณ์ของคุณได้อย่างง่ายดาย</string>
+    <string name="huddle_text">การรับส่งข้อความกลุ่มสำหรับทุกคนในแวดวงของคุณ</string>
+    <string name="plus_declined_button_label">ข้ามไปก่อน</string>
+    <string name="plus_accepted_button_label">เข้าร่วม Google+</string>
+    <string name="plus_name_check_title">กำลังติดต่อ Google+...</string>
+    <string name="plus_name_check_text">โปรดรอสักครู่</string>
+    <string name="plus_faq_title">ยินดีต้อนรับสู่ Google+!</string>
+    <string name="plus_faq_text" formatted="false">"ที่ Google+ คุณจะมีโปรไฟล์สาธารณะเพื่อช่วยให้เพื่อนๆ หาคุณพบได้ในอินเทอร์เน็ต ใครก็ตามที่ทราบที่อยู่อีเมลของคุณจะสามารถค้นพบและดูโปรไฟล์นี้ได้
+
+คุณสามารถใช้ปุ่ม +1 เพื่อแนะนำสิ่งต่างๆ บนเว็บให้ทุกคนรู้ได้ โปรไฟล์และการ +1 ของคุณจะปรากฏต่อสาธารณะผ่านทางการค้นหา โฆษณา และบนเว็บ
+
+ขณะนี้โปรไฟล์จะแสดงเพียงชื่อของคุณเท่านั้น (%s %s) คุณสามารถเพิ่มภาพถ่าย ประวัติ และรายละเอียดอื่นๆ ในภายหลังเมื่อคุณเริ่มใช้งาน Google+"</string>
+    <string name="dasher_warning">ผู้ดูแลระบบที่ %s เป็นเจ้าของและจัดการข้อมูลทั้งหมดของคุณบน Google+ และสามารถลบหรือแก้ไขโปรไฟล์ของคุณได้ทุกเมื่อโดยไม่ต้องรอการอนุญาตจากคุณ</string>
+    <string name="picassa_info_title">Picasa และ Google+</string>
+    <string name="picassa_info_text" formatted="false">ภาพถ่ายและวิดีโอของคุณใน Picasa Web Albums จะสามารถใช้ได้ใน Google+ และความคิดเห็นของคุณจะแสดงด้วย %s %s แทนที่จะเป็น %s เมื่อคุณแบ่งปันภาพถ่ายใน Google+ ผู้รับจะสามารถแบ่งปันภาพเหล่านี้ให้กับผู้อื่นต่อได้ด้วย การตั้งค่าการมองเห็นในอัลบั้มของคุณจะไม่เปลี่ยนแปลง และคุณสามารถจำกัดไม่ให้มีการแบ่งปันซ้ำโดยอิสระได้ทุกเมื่อ</string>
+    <string name="name_title">ชื่อของคุณ</string>
+    <string name="name_title_plus">ชื่อ Google+ ของคุณ</string>
+    <string name="name_title_local">โทรศัพท์นี้เป็นของ...</string>
+    <string name="name_text">ชื่อของคุณจะถูกใช้ในการปรับเปลี่ยนโทรศัพท์และบริการต่างๆ ของ Google ในแบบของคุณ</string>
+    <string name="name_text_local">โทรศัพท์นี้ใช้ชื่อของคุณในการปรับเปลี่ยนแอปพลิเคชันบางอย่างในแบบของคุณ</string>
+    <string name="bad_name_title">ใช้ชื่อนี้หรือไม่</string>
+    <string name="invalid_name_title">ไม่สามารถใช้ชื่อนี้</string>
+    <string name="bad_name_display">%1$s %2$s</string>
+    <string name="bad_name_text">"หากคุณต้องการใช้ชื่อนี้เป็นชื่อ Google+ ของคุณ ทีมงานของเราจำเป็นต้องทำการตรวจสอบก่อน หากชื่อดังกล่าวละเมิดนโยบายชื่อ โปรไฟล์ของคุณอาจถูกระงับ ซึ่งจะเป็นการจำกัดสิทธิ์การใช้ผลิตภัณฑ์ของ Google ที่ต้องใช้โปรไฟล์ที่มีการใช้งาน
+
+"<annotation id="learn_more">เรียนรู้เพิ่มเติม</annotation></string>
+    <string name="bad_name_text2">"หากคุณต้องการใช้ชื่อนี้เป็นชื่อ Google+ ของคุณ ทีมงานของเราจำเป็นต้องทำการตรวจสอบก่อน หากชื่อดังกล่าวละเมิดนโยบายชื่อ โปรไฟล์ของคุณอาจถูกระงับและคุณจะไม่สามารถเข้าถึง Google+ และบริการอื่นๆ ที่เชื่อมโยงกับโปรไฟล์ของคุณได้อีก
+
+"<annotation id="learn_more">เรียนรู้เพิ่มเติม</annotation></string>
+    <string name="invalid_name_text">ไม่สามารถใช้ชื่อนี้กับ Google+ ได้เนื่องจากมีอักขระที่ไม่ถูกต้อง</string>
+    <string name="invalid_nickname_text">ไม่สามารถใช้ชื่อนี้กับ Google+ ได้เนื่องจากมีอักขระที่ไม่ถูกต้อง หากคุณกำลังลองใช้ชื่อเล่น ชื่อเดิม หรือคำนำหน้าชื่อ คุณสามารถเพิ่มข้อมูลดังกล่าวในโปรไฟล์ได้หลังจากที่คุณเข้าร่วมแล้ว</string>
+    <string name="invalid_other_text">ไม่สามารถใช้ชื่อนี้กับ Google+ ได้</string>
+    <string name="bad_name_agree_text">ฉันเข้าใจและต้องการใช้ชื่อนี้</string>
+    <string name="bad_name_decline_button_label">อัปเดตชื่อ</string>
+    <string name="bad_name_agree_button_label">ส่งชื่อเพื่อรับการตรวจสอบ</string>
+    <string name="bad_name_skip_button_label">ข้าม Google+</string>
+    <string name="photo_title">ภาพของคุณ</string>
+    <string name="photo_text">ภาพนี้จะถูกใช้ในบันทึกติดต่อของคุณ คุณสามารถเปลี่ยนภาพในแอปพลิเคชัน People ได้ในภายหลัง</string>
+    <string name="photo_text_es">ถ่ายภาพที่เพื่อนของคุณจะได้เห็นใน Google+ คุณสามารถเลือกภาพใหม่ได้ในภายหลัง</string>
+    <string name="photo_button_label">ถ่ายภาพ</string>
+    <string name="retake_photo_button_label">ถ่ายภาพซ้ำ</string>
+    <string name="photo_failure">ไม่สามารถเปิดกล้อง</string>
+    <string name="crop_failure">ไม่สามารถตัดรูปภาพ</string>
+    <string name="open_keyboard_message">เลื่อนเปิดแป้นพิมพ์เพื่อเริ่มต้น</string>
+    <string name="open_keyboard_message_to_continue">เลื่อนเปิดแป้นพิมพ์เพื่อทำงานต่อ</string>
+    <string name="emergency_dial">หมุนหมายเลขฉุกเฉิน</string>
+    <string name="change_language">เปลี่ยนภาษา</string>
+    <string name="close_keyboard_message">เลื่อนแป้นพิมพ์กลับเข้าที่เพื่อทำงานต่อ</string>
+    <string name="communicating_message">โทรศัพท์ของคุณกำลังติดต่อ Google เพื่อบันทึกข้อมูลลงในบัญชีของคุณ ซึ่งอาจใช้เวลาถึง 5 นาที</string>
+    <string name="creating_account_title">กำลังบันทึกบัญชี...</string>
+    <string name="checking_username_message">"โทรศัพท์ของคุณกำลังติดต่อ Google เพื่อดูว่าชื่อผู้ใช้ที่คุณต้องการสามารถใช้ได้หรือไม่
+
+การดำเนินการนี้อาจใช้เวลาหลายนาที"</string>
+    <string name="adding_account_title">กำลังบันทึกบัญชี...</string>
+    <string name="account_setup_network_failure_title">ไม่สามารถเข้าถึง Google</string>
+    <string name="account_setup_network_failure_text">ลองอีกครั้งหรือข้ามไปก่อน</string>
+    <string name="plus_failure_title">เข้าร่วม Google+ ภายหลัง</string>
+    <string name="plus_failure_new_account_text">สร้างบัญชี Google ของคุณแล้ว แต่คำขอเข้าร่วม Google+ ของคุณยังไม่ผ่านขั้นตอน ลองอีกครั้งในภายหลังที่ plus.google.com โดยใช้เว็บเบราว์เซอร์ใดก็ได้</string>
+    <string name="plus_failure_text">คำขอเข้าร่วม Google+ ของคุณยังไม่ผ่านขั้นตอน ลองอีกครั้งในภายหลังที่ plus.google.com โดยใช้เว็บเบราว์เซอร์ใดก็ได้</string>
+    <string name="login_title">ป้อนอีเมลและรหัสผ่าน</string>
+    <string name="login_task_title">การลงชื่อเข้าใช้</string>
+    <string name="domain_name">example.com</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="sign_in_agreement">" การลงชื่อเข้าใช้หมายถึงคุณยอมรับนโยบายส่วนบุคคลของ "<annotation id="google_privacy">Google</annotation> และ<annotation id="android_privacy">ส่วนเพิ่มเติม</annotation></string>
+    <string name="create_prompt">" หากคุณไม่มีบัญชี Google โปรด"<annotation id="create_account">สร้างบัญชีในตอนนี้</annotation></string>
+    <string name="create">สร้าง</string>
+    <string name="create_message">ต้องการบัญชี Google หรือ</string>
+    <string name="now_signing_in">กำลังเข้าสู่ระบบ…</string>
+    <string name="now_verifying_domain">กำลังค้นหาโดเมนของคุณ…</string>
+    <string name="sign_in_with_google_account_short">ลงชื่อเข้าใช้ด้วยบัญชี Google ของคุณ:</string>
+    <string name="browser_sign_in_explanation">ใช้หน้าจอนี้หากคุณมีสิ่งที่ต้องพิจารณาเป็นพิเศษเมื่อลงชื่อเข้าใช้ซึ่งต้องอาศัยเว็บเบราว์เซอร์</string>
+    <string name="gls_browser_login_intro_message">อุปกรณ์ Android นี้ไม่สามารถเข้าถึงบัญชี Google หรือ Google Apps ของคุณได้ จำเป็นต้องมีการตรวจสอบสิทธิ์ซ้ำ</string>
+    <string name="enter_domain_name">ใส่ชื่อโดเมนบริษัทของคุณ:</string>
+    <string name="enter_user_name">ป้อนชื่อผู้ใช้และรหัสผ่านของ ^1:</string>
+    <string name="inactive_domain">" บัญชีนี้ไม่สามารถใช้ได้เนื่องจากบัญชีเป็นของโดเมนที่ไม่ได้ใช้งาน โปรดติดต่อผู้ดูแลระบบโดเมนของ "<b>^1</b> หรือลงชื่อเข้าใช้ด้วยบัญชีอื่น</string>
+    <string name="invalid_username">ข้อความที่ป้อนเป็นชื่อผู้ใช้ที่ไม่ถูกต้อง</string>
+    <string name="web_login_error_title">ขออภัย...</string>
+    <string name="web_login_error_desc">"พบปัญหาในการเชื่อมต่อกับเซิร์ฟเวอร์ของบริษัทคุณที่ ^1
+
+ข้อมูลข้อผิดพลาด:
+"</string>
+    <string name="web_login_error_redirects">หน้าเว็บสำหรับลงชื่อเข้าใช้มีการเปลี่ยนเส้นทางหลายครั้งเกินไป</string>
+    <string name="web_login_error_http">ข้อผิดพลาด HTTP ^1 : ^2</string>
+    <string name="captcha_instructions">พิมพ์ข้อความที่คุณเห็นที่นี่:</string>
+    <string name="create_google_account">สร้างที่อยู่อีเมล</string>
+    <string name="example_usernames">เช่น JSmith, John.Smith</string>
+    <string name="create_account_agreement">การสร้างบัญชีนี้แสดงว่าคุณยอมรับนโยบายส่วนบุคคลของ <annotation id="google_privacy">Google</annotation> และ<annotation id="android_privacy">ส่วนที่เพิ่มเติมมา</annotation></string>
+    <string name="background_task_error">สร้างบัญชี Gmail ใหม่ของคุณเรียบร้อยแล้ว แต่มีปัญหาในการเพิ่มลงในบัญชีของคุณบนอุปกรณ์นี้ คุณสามารถลองใหม่อีกครั้ง หรือลองลงชื่อเข้าใช้บัญชีใหม่ด้วยตนเอง หรือข้ามขั้นตอนการสร้างบัญชีไปในขณะนี้</string>
+    <string name="retry_button_label">ลองอีกครั้ง</string>
+    <string name="login_button_label">ลงชื่อเข้าใช้เอง</string>
+    <string name="account_already_has_gmail">บัญชีมี Gmail อยู่แล้ว</string>
+    <string name="error_account_disabled">"บัญชีนี้ถูกปิดใช้งานแล้ว 
+
+ (หากต้องการทราบรายละเอียด โปรดไปที่ http://google.com/accounts บนเว็บเบราว์เซอร์)"</string>
+    <string name="no_network">คุณยังไม่ได้เชื่อมต่อเครือข่าย</string>
+    <string name="no_network_help">ปัญหานี้อาจเป็นปัญหาชั่วคราวหรืออุปกรณ์ Android ของคุณอาจไม่ได้รับบริการข้อมูล โปรดลองอีกครั้งเมื่อเชื่อมต่อกับเครือข่ายโทรศัพท์มือถือหรือเครือข่าย Wi-Fi</string>
+    <string name="no_network_help_wifi_only">ปัญหานี้อาจเกิดขึ้นชั่วคราว โปรดลองอีกครั้งหรือเชื่อมต่อเครือข่าย Wi-Fi อื่น</string>
+    <string name="error_login_failed">"ชื่อผู้ใช้และรหัสผ่านของคุณไม่ตรงกัน ลองอีกครั้ง
+
+หากต้องการกู้คืนข้อมูลบัญชีของคุณ ให้ไปที่ google.com/accounts/recovery/"</string>
+    <string name="error_account_not_verified">"บัญชีนี้ยังไม่ได้รับการยืนยัน โปรดตรวจสอบอีเมลของคุณและคลิกลิงก์ที่ระบุไว้เพื่อยืนยันบัญชีนี้ 
+
+(หากต้องการกู้คืนข้อมูลบัญชีของคุณ ให้ไปที่ http://www.google.com/accounts/recovery บนคอมพิวเตอร์ของคุณ)"</string>
+    <string name="add_account_init">กำลังโหลดหน้าการสร้างบัญชี...</string>
+    <string name="add_account_init_for_update_credentials">กำลังโหลดหน้าอัปเดตข้อมูลประจำตัว...</string>
+    <string name="add_account_init_for_add_account">กำลังโหลดหน้าเพิ่มบัญชี...</string>
+    <string name="add_account_pageload" />
+    <string name="add_account_final">กำลังสร้างบัญชีใหม่...</string>
+    <string name="add_account_final_adding">กำลังเพิ่มบัญชี...</string>
+    <string name="add_account_final_updating">กำลังอัปเดตข้อมูลประจำตัว...</string>
+    <string name="add_account_init_waiting_for_network">กำลังรอให้เครือข่ายพร้อมใช้งาน...</string>
+    <string name="exit_menu_item">ออกจากการลงชื่อเข้าใช้ผ่านเบราว์เซอร์</string>
+    <string name="creating_account">กำลังสร้างบัญชีของคุณ...</string>
+    <string name="creating_profile">สร้างโปรไฟล์ของคุณ…</string>
+    <string name="name_check">กำลังตรวจสอบชื่อ…</string>
+    <string name="checking_account">กำลังตรวจสอบความพร้อม...</string>
+    <string name="try_a_different_username">ลองใช้ชื่อผู้ใช้อื่น</string>
+    <string name="is_not_available">ชื่อผู้ใช้ <b>^1</b> ไม่สามารถใช้ได้</string>
+    <string name="suggestions_hint">แตะเพื่อรับคำแนะนำ</string>
+    <string name="suggest_username_next_button_label">เปลี่ยนชื่อผู้ใช้</string>
+    <string name="hint_size">" "<b>^1</b> มีอักขระน้อยกว่า 6 หรือมากกว่า 30 ตัว</string>
+    <string name="hint_numbers_only">" "<b>^1</b> ไม่มีอักษรใดอยู่เลย</string>
+    <string name="hint_illegal_chars">" "<b>^1</b>" มีได้เฉพาะตัวอักษร
+ตัวเลข และจุด"</string>
+    <string name="doesnt_use_gmail">" "<b>^1</b> ไม่ได้ใช้ Gmail</string>
+    <string name="sign_in">ลงชื่อเข้าใช้</string>
+    <string name="sign_in_browser">ลงชื่อเข้าใช้ผ่านเบราว์เซอร์</string>
+    <string name="here_are_alternatives">ทางเลือกมีดังนี้:</string>
+    <string name="alternatives_list_title">ชื่อผู้ใช้ที่แนะนำ</string>
+    <string name="alternatives_list_hint">แตะเพื่อรับคำแนะนำ</string>
+    <string name="password_title">สร้างรหัสผ่าน</string>
+    <string name="choose_a_password">รหัสผ่าน</string>
+    <string name="confirm_password">พิมพ์รหัสผ่านอีกครั้ง</string>
+    <string name="too_short">สั้นเกินไป</string>
+    <string name="security_question">" "<b>"คำถามเพื่อ
+ความปลอดภัย"</b></string>
+    <string name="security_questions_title">คำถามเพื่อความปลอดภัย</string>
+    <string name="answer">" "<b>คำตอบ</b></string>
+    <string name="password_mismatch">รหัสผ่านของคุณไม่ถูกต้อง โปรดพิมพ์อีกครั้ง</string>
+    <string name="your_account_was_created">สร้างบัญชีของคุณเรียบร้อยแล้ว</string>
+    <string name="eight_chars_min">(ไม่ต่ำกว่า 8 อักขระ)</string>
+    <string name="verify_your_profile">ตรวจสอบโปรไฟล์ของคุณ</string>
+    <string name="error_not_logged_in">ผู้ใช้ยังไม่ได้ลงชื่อเข้าใช้</string>
+    <string name="error_username_unavailable">ชื่อผู้ใช้นี้ใช้ไม่ได้</string>
+    <string name="error_bad_password">รหัสผ่านไม่รัดกุมหรือมีอักขระที่ไม่ถูกต้อง โปรดลองอีกครั้ง</string>
+    <string name="error_bad_username">ชื่อผู้ใช้ไม่ถูกต้อง</string>
+    <string name="loading">กำลังโหลด...</string>
+    <string name="existing_account_error_title">บัญชีมีอยู่แล้ว</string>
+    <string name="existing_account_error_text">บัญชี ^1 มีอยู่แล้วบนอุปกรณ์ Android นี้</string>
+    <string name="submission_title">ขออภัย...</string>
+    <string name="submission_error_text">เกิดข้อผิดพลาด โปรดลองใหม่อีกครั้ง</string>
+    <string name="sync_intro_title">การซิงค์บัญชี</string>
+    <string name="syncing_message">" "<font size="17">"แอปพลิเคชันต่างๆ ของ Google กำลังซิงค์ข้อมูลในขณะนี้
+ "<font height="17">"
+"</font>%i ไอคอน \"กำลังซิงค์\" จะแสดงขึ้นในแถบสถานะที่ด้านบนของหน้าจอ เพื่อแจ้งว่ากำลังมีการซิงค์ข้อมูลจากบัญชี Google ของคุณ การซิงค์ครั้งแรกอาจใช้เวลานานหลายนาที ขึ้นอยู่กับปริมาณข้อมูลในสมุดโทรศัพท์ อีเมล กิจกรรมในปฏิทิน และข้อมูลแอปพลิเคชันของ Google อื่นๆ</font></string>
+    <string name="account_tos_title">เสร็จสิ้นการสร้างบัญชี</string>
+    <string name="account_tos_plus_title">เสร็จสิ้นการเข้าร่วม Google+</string>
+    <string name="account_tos_account_title">เสร็จสิ้นการตั้งค่าบัญชี</string>
+    <string name="account_tos_google_title">เสร็จสิ้นการเข้าร่วม Google</string>
+    <string name="i_accept">ฉันยอมรับ</string>
+    <string name="android_privacy_policy_title">นโยบายส่วนบุคคลเพิ่มเติม</string>
+    <string name="google_terms_of_service_title">เสร็จสิ้นการสร้างบัญชี</string>
+    <string name="google_privacy_policy_title">นโยบายส่วนบุคคลของ Google</string>
+    <string name="google_plus_privacy_policy_title">นโยบายส่วนบุคคลของ Google Plus</string>
+    <string name="allow_personalized_content">อนุญาตให้ Google ใช้ข้อมูลของคุณเพื่อปรับเปลี่ยนเนื้อหาและโฆษณาบนเว็บไซต์ที่ไม่ใช่ของ Google ในแบบของคุณ</string>
+    <string name="enable_web_history">เปิดใช้งานประวัติเว็บ</string>
+    <string name="learn_more"><annotation id="learn_more">เรียนรู้เพิ่มเติม</annotation></string>
+    <string name="google_plus_tos_login">การสร้างบัญชี Google+ แสดงว่าคุณยอมรับในนโยบายส่วนบุคคลของ <annotation id="google_plus_privacy">Google+</annotation></string>
+    <string name="google_plus_tos_signup">การแตะ <b>ฉันยอมรับ</b> ด้านล่างนี้ เป็นการแสดงว่าคุณได้ยอมรับ<annotation id="tos">ข้อกำหนดในการให้บริการ</annotation>และนโยบายส่วนบุคคลของ <annotation id="google_privacy">Google</annotation>, <annotation id="google_plus_privacy">Google+</annotation> และนโยบายส่วนบุคคล<annotation id="android_privacy">เพิ่มเติม</annotation></string>
+    <string name="account_creation_tos">การแตะ <b>ฉันยอมรับ</b> ด้านล่างนี้ เป็นการแสดงว่าคุณได้ยอมรับ<annotation id="tos">ข้อกำหนดในการให้บริการ</annotation>และนโยบายส่วนบุคคลของ <annotation id="google_privacy">Google</annotation> และนโยบายส่วนบุคคล<annotation id="android_privacy">เพิ่มเติม</annotation></string>
+    <string name="gender_prompt">เพศ</string>
+    <string name="gender_hint">ระบุเพศ</string>
+    <string name="account_intro_title">บัญชี Google</string>
+    <string name="account_intro_required_title">ขับเคลื่อนโดย Google</string>
+    <string name="account_intro_recommended_title">ใช้ Google</string>
+    <string name="common_message">"บัญชี Google ช่วยให้คุณสามารถ
+
+"<li><ul>ดูและจัดระเบียบข้อมูลทั้งหมดของคุณจากทุกๆ ที่</ul></li>"
+
+"<li><ul>สำรองข้อมูลของคุณโดยอัตโนมัติ</ul></li>"
+
+"<li><ul>ใช้บริการต่างๆ ของ Google ได้โดยง่ายจากทุกๆ ที่</ul></li></string>
+    <string name="add_account_message">" คุณสามารถใช้บัญชี Google ได้มากกว่าหนึ่งบัญชี (เช่น บัญชีสำหรับที่บ้านและที่ทำงาน) แตะ "<b>ลงชื่อเข้าใช้</b> หรือ <b>สร้างบัญชี</b> เพื่อเพิ่มบัญชี Google</string>
+    <string name="account_intro_default_message">ข้อมูลต่างๆ ของคุณจะไม่สูญหายอีกต่อไป บัญชี Google จะเก็บทุกอย่างไว้อย่างปลอดภัย</string>
+    <string name="account_intro_custom_endtext">หากยังไม่มี %s ลงชื่อเข้าใช้เลย</string>
+    <string name="account_intro_simple_message">คุณต้องการเพิ่มบัญชีที่มีอยู่หรือสร้างขึ้นใหม่</string>
+    <string name="learn_more_title"><annotation id="learn_more">เรียนรู้เพิ่มเติม</annotation></string>
+    <string name="learn_more_account_intro">"บัญชี Google ช่วยให้คุณสามารถ
+"<li><ul>ดูและจัดระเบียบข้อมูลทั้งหมดของคุณจากทุกที่<li>สำรองข้อมูลของคุณ เช่น อีเมล, รายชื่อติดต่อ, เพลง และภาพโดยอัตโนมัติ</li><li>ใช้บริการต่างๆ ของ Google จากทุกที่ได้อย่างง่ายดาย—รวมทั้งรายชื่อติดต่อ, ปฏิทิน, แผนที่ และอื่นๆ </li></ul></li></string>
+    <string name="learn_more_account_intro_title">เกี่ยวกับบัญชี Google</string>
+    <string name="learn_more_web_history">"ประวัติเว็บปรับปรุงผลการค้นหาโดยอิงตามสิ่งที่คุณเคยค้นหาและไซต์ที่คุณเคยเข้าชม โดยให้ประสบการณ์การใช้งาน Google ที่ปรับเปลี่ยนในแบบของคุณ
+
+หากต้องการดูและจัดการประวัติเว็บของคุณ รวมทั้งปิดหรือเปิดใช้งาน ให้ดูที่ http//www.google.com/history"</string>
+    <string name="learn_more_web_history_title">เกี่ยวกับประวัติเว็บ</string>
+    <string name="learn_more_bad_name">Google+ กำหนดให้คุณใช้ชื่อปกติของคุณ โปรไฟล์ของคุณควรเป็นตัวแทนของบุคคลหนึ่ง ไม่ใช่ธุรกิจ องค์กร หรือครอบครัว และควรประกอบด้วยชื่อและนามสกุลของคุณในภาษาเดียวโดยไม่ต้องมีคำเรียกทางวิชาชีพหรือเครื่องหมายวรรคตอนที่ไม่จำเป็น หลังจากการลงชื่อสมัครใช้ คุณจะสามารถใส่ชื่อเล่นหรือชื่ออื่นๆ ที่คุณมีการเชื่อมโยงไว้ในฟิลด์ \"ชื่ออื่นๆ\" ในโปรไฟล์ของคุณได้</string>
+    <string name="learn_more_bad_name_title">เกี่ยวกับนโยบายชื่อ</string>
+    <string name="wait_for_device_country_title">การตั้งค่าบัญชี</string>
+    <string name="wait_for_device_country_msg">กำลังรวบรวมข้อมูลเกี่ยวกับโทรศัพท์ของคุณ โดยอาจใช้เวลาถึง 30 วินาที</string>
+    <string name="reactivate_account_message">" คุณจำเป็นต้องเพิ่มบัญชี Google Mail 
+
+คุณมีชื่อผู้ใช้ Google Mail  ( "<b>^1</b>" ) ที่เชื่อมโยงกับบัญชีนี้อยู่แล้ว แต่ขณะนี้ชื่อนั้นไม่ได้ใช้งาน
+
+แตะ \"ถัดไป\" เพื่อเปิดและใช้งานชื่อผู้ใช้นี้อีกครั้ง
+
+หรือหากคุณต้องการใช้บัญชีอื่น ให้กดปุ่ม \"ย้อนกลับ\" และลงชื่อเข้าใช้ด้วยบัญชีดังกล่าว หรือสร้างบัญชีอีกบัญชีหนึ่ง"</string>
+    <string name="reactivating_account">กำลังเปิดการใช้งานบัญชีอีกครั้ง…</string>
+    <string name="your_account_was_reactivated">บัญชีของคุณถูกเปิดใช้งานแล้ว</string>
+    <string name="recovery_title">ข้อมูลการกู้คืน</string>
+    <string name="account_recovery_info">หากรหัสผ่านของคุณสูญหาย คุณสามารถตอบคำถามเพื่อความปลอดภัยและรับลิงก์สำหรับรีเซ็ตรหัสผ่านซึ่งจะส่งถึงคุณผ่านทางที่อยู่อื่น</string>
+    <string name="security_question_prompt">เลือกคำถามเพื่อความปลอดภัย</string>
+    <string name="secondary_email_label">ที่อยู่อีเมลสำรอง</string>
+    <string name="invalid_email">"ที่อยู่อีเมลที่ป้อนไม่ถูกต้อง 
+ตัวอย่าง: joe@example.com"</string>
+    <string name="invalid_email_primary">ไม่สามารถใช้ที่อยู่ที่คุณสร้างเป็นที่อยู่สำหรับการกู้คืนได้</string>
+    <string name="backup_consent_title">สำรองข้อมูลการตั้งค่า</string>
+    <string name="backup_consent_message">"ใช้บัญชี Google ของคุณเพื่อสำรองข้อมูลแอปพลิเคชัน การตั้งค่า (เช่น บุ๊กมาร์กและรหัสผ่าน Wi-Fi) และข้อมูลอื่นๆ หากคุณสำรองข้อมูลบัญชีไว้แล้วก่อนหน้านี้ คุณสามารถคืนค่าในโทรศัพท์นี้ได้เลย
+
+คุณสามารถเปลี่ยนการตั้งค่าการสำรองข้อมูลได้ทุกเมื่อในการตั้งค่า"</string>
+    <string name="backup_consent_message_no_restore">"ใช้บัญชี Google ของคุณเพื่อสำรองข้อมูลแอปพลิเคชัน การตั้งค่า (เช่น บุ๊กมาร์กและรหัสผ่าน Wi-Fi) และข้อมูลอื่นๆ
+
+คุณสามารถเปลี่ยนการตั้งค่าการสำรองข้อมูลได้ทุกเมื่อในการตั้งค่า"</string>
+    <string name="backup_consent_howto_disable_message">คุณสามารถเปลี่ยนการตั้งค่าการสำรองข้อมูลของคุณเมื่อใดก็ได้ในแอปพลิเคชันการตั้งค่า ซึ่งอยู่ในข้อมูลส่วนบุคคล</string>
+    <string name="backup_consent_yes_agree">สำรองข้อมูลโทรศัพท์นี้ด้วยบัญชี Google ของฉัน</string>
+    <string name="restore_consent_yes_agree">คืนค่าจากบัญชี Google ของฉันไปยังโทรศัพท์นี้</string>
+    <string name="restore_disable">ปิดการใช้งานการคืนค่า</string>
+    <string name="restore_enable">เปิดการใช้งานการคืนค่า</string>
+    <string name="restore_enabled">"หากคุณได้สำรองข้อมูลการตั้งค่าไว้แล้ว
+ข้อมูลเหล่านั้นจะได้รับการคืนค่า"</string>
+    <string name="restore_disabled">การตั้งค่าของคุณจะไม่ได้รับการคืนค่าจากข้อมูลสำรอง</string>
+    <string name="restoring_title">กำลังคืนค่า...</string>
+    <string name="restoring_message">โทรศัพท์ของคุณกำลังติดต่อ Google เพื่อคืนค่าให้กับบัญชีของคุณ ซึ่งอาจใช้เวลาถึง 5 นาที</string>
+    <string name="restored_title">คืนค่าแล้ว</string>
+    <string name="restored_message" />
+    <string name="webview_progress_title">กำลังเชื่อมต่อกับโดเมน...</string>
+    <string name="webview_progress_verbose_message">"เซิร์ฟเวอร์ของบริษัทคุณกำลังส่งข้อมูลการลงชื่อเข้าใช้ไปยังโทรศัพท์ของคุณ ซึ่งอาจใช้เวลาสักครู่ 
+ หน้าลงชื่อเข้าใช้ของบริษัทคุณจะแสดงขึ้นเมื่อการดำเนินการนี้เสร็จเรียบร้อย"</string>
+    <string name="enterprise_unmanaged_domain">โดเมนนี้ไม่ได้ใช้ Google Apps โปรดตรวจสอบชื่อโดเมนและลองอีกครั้ง</string>
+    <string name="gls_notification_title">เข้าสู่บัญชีของคุณ</string>
+    <string name="gls_notification_new_account">ต้องการบัญชีจาก ^1</string>
+    <string name="gls_notification_new_account_youtube">ต้องใช้บัญชี YouTube</string>
+    <string name="gls_notification_login_error">แตะเพื่อลงชื่อเข้าใช้บัญชีของคุณ</string>
+    <string name="gls_ui_add_account_title">การตั้งค่าบัญชี</string>
+    <string name="gls_ui_google_account_subtitle">บัญชี Google</string>
+    <string name="gls_ui_activity_title">ลงชื่อเข้าใช้ Google</string>
+    <string name="gls_ui_activity_title_browser_signin">ลงชื่อเข้าใช้ผ่านเบราว์เซอร์</string>
+    <string name="gls_ui_activity_title_enterprise">การลงชื่อเข้าใช้แบบองค์กร</string>
+    <string name="gls_ui_activity_title_youtube">ลงชื่อเข้าใช้ YouTube</string>
+    <string name="gls_ui_activity_title_checking_in">กำลังเตรียม…</string>
+    <string name="gls_ui_activity_authenticating">กำลังตรวจสอบความถูกต้อง…</string>
+    <string name="gls_captcha_activity_message">โปรดป้อนอักขระที่คุณเห็นในภาพ:</string>
+    <string name="gls_captcha_activity_ok_button">เสร็จสิ้น</string>
+    <string name="gls_error_activity_message">" เกิดข้อผิดพลาดของเครือข่ายขณะพยายามลงชื่อเข้าใช้  "<b>^1</b> ลองใหม่อีกครั้งทันทีหรือกดปุ่ม \"ย้อนกลับ\" เพื่อยกเลิก</string>
+    <string name="gls_error_activity_retry_button">ลองใหม่อีกครั้ง</string>
+    <string name="gls_dmagent_activity_message">" โดเมนของคุณต้องการการจัดการโทรศัพท์มือถือ โปรดติดตั้งแอปพลิเคชัน Google Apps Device Policy เพื่อบังคับใช้นโยบายความปลอดภัยที่กำหนดโดยบัญชี  "<b>^1</b>" "</string>
+    <string name="gls_dmagent_activity_retry_button">ดาวน์โหลด</string>
+    <string name="gls_login_activity_username_label">ชื่อผู้ใช้</string>
+    <string name="gls_login_activity_password_label">รหัสผ่าน</string>
+    <string name="gls_login_activity_ok_button">ลงชื่อเข้าใช้</string>
+    <string name="gls_login_activity_loginfail_text_both">" ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง ต้องใช้บัญชี  "<b>^1</b> โปรดลองอีกครั้ง</string>
+    <string name="gls_login_activity_loginfail_text_pwonly">คุณป้อนรหัสผ่านไม่ถูกต้องหรือบัญชีของคุณถูกเปลี่ยนแปลง โปรดป้อนรหัสผ่านของคุณอีกครั้ง</string>
+    <string name="gls_invalid_two_factor">ใช้รหัสผ่านเฉพาะแอปพลิเคชันแทนรหัสผ่านบัญชีตามปกติของคุณ</string>
+    <string name="gls_login_activity_loginfail_text_pwmissing">พิมพ์รหัสผ่านสำหรับบัญชีนี้</string>
+    <string name="gls_enterprise_login_activity_msg">"โปรดลงชื่อเข้าใช้บัญชีองค์กรของคุณที่ ^1 เพื่อการตรวจสอบสิทธิ์
+แตะลงชื่อเข้าใช้เพื่อเปิดหน้าลงชื่อเข้าใช้ผ่านเว็บของบริษัทคุณ"</string>
+    <string name="gls_login_activity_badaccount_text">คุณไม่สามารถใช้บัญชีนั้นได้ในขณะนี้ โปรดลองใช้บัญชีอื่น</string>
+    <string name="gls_login_activity_newaccount_text">" ลงชื่อเข้าใช้บัญชี  "<b>^1</b> ของคุณ</string>
+    <string name="gls_login_activity_create_youtube">" หากคุณไม่มีบัญชี YouTube ให้แตะ"<a href="http://www.youtube.com/signup">ที่นี่</a>เพื่อสร้างบัญชี</string>
+    <string name="gls_webview_progress_title">กำลังเชื่อมต่อกับโดเมน...</string>
+    <string name="gls_webview_progress_verbose_message">"เซิร์ฟเวอร์ของบริษัทของคุณกำลังส่งข้อมูลในการเข้าสู่ระบบ ซึ่งอาจใช้เวลาไม่กี่นาที 
+หน้าลงชื่อเข้าใช้ของบริษัทคุณจะปรากฏขึ้นเมื่อขั้นตอนนี้เสร็จสมบูรณ์แล้ว"</string>
+    <string name="gls_sign_in_button_label">ลงชื่อเข้าใช้</string>
+    <string name="gls_back_button_label">ย้อนกลับ</string>
+    <string name="gls_cancel_button_label">ยกเลิก</string>
+    <string name="gls_exit_account_setup_button_label">ออกจากการตั้งค่าบัญชี</string>
+    <string name="gls_reauthorize_button_label">ให้สิทธิ์อีกครั้ง</string>
+    <string name="permlab_googleAuthPassword">เข้าถึงรหัสผ่านของบัญชี Google</string>
+    <string name="permdesc_googleAuthPassword">อนุญาตให้แอปพลิเคชันเข้าถึงรหัสผ่านของบัญชี Google ที่คุณกำหนดค่าไว้ได้โดยตรง</string>
+    <string name="header_data_and_synchronization">ข้อมูลและการซิงค์</string>
+    <string name="permlab_googleMailSwitch">เลือกการสร้างแบรนด์ Gmail หรือ Google Mail</string>
+    <string name="permdesc_googleMailSwitch">อนุญาตให้แอปพลิเคชันสลับชื่อที่แสดงระหว่างแบรนด์ \"Gmail\" และ \"Google Mail\"</string>
+    <string name="sync_item_title">ซิงค์ %s</string>
+    <string name="grant_credentials_permission_message_header">คำขออนุญาต</string>
+    <string name="grant_credentials_permission_message_footer">พวกเขากำลังขออนุญาตเพื่อ:</string>
+    <string name="grant_credentials_permission_message_app">แอปพลิเคชันเหล่านี้ต้องมีการเข้าถึงบัญชี Google ของคุณนับจากนี้ไป:</string>
+    <string name="grant_permissions_header_text">คำขออนุญาต</string>
+    <string name="allow">อนุญาตให้เข้าถึง</string>
+    <string name="deny">ไม่ ขอบคุณ</string>
+    <string name="permission_request_notification_title">ขอการอนุญาต</string>
+    <string name="permission_request_notification_with_subtitle">"ขอรับการอนุญาต
+สำหรับบัญชี %s"</string>
+    <string name="notification_title">ข้อผิดพลาดในการลงชื่อเข้าใช้สำหรับ %1$s</string>
+    <string name="account_setup_title">บัญชี Google</string>
+    <string name="signed_in">ลงชื่อเข้าใช้เรียบร้อยแล้ว</string>
+    <string name="account_linked_message">ลงชื่อเข้าใช้ %s แล้วและกำลังซิงค์ข้อมูล</string>
+    <string name="account_created_message">บัญชีใหม่ที่สร้าง: %s</string>
+    <string name="done_button_label">เสร็จสิ้น</string>
+    <string name="captcha_message_string">ความพยายามผิดพลาดหลายครั้งเกินไป</string>
+    <string name="login_activity_title">ลงชื่อเข้าใช้</string>
+    <string name="show_error_activity_title">ไม่สามารถลงชื่อเข้าใช้</string>
+    <string name="login_activity_task_title">กำลังลงชื่อเข้าใช้...</string>
+    <string name="sync_intro_activity_title_first_account">การสำรองและคืนค่า</string>
+    <string name="sync_intro_activity_title_first_created_account">ข้อมูลสำรอง</string>
+    <string name="sync_intro_activity_title">ลงชื่อเข้าใช้บัญชีสำเร็จ</string>
+    <string name="username">อีเมล</string>
+    <string name="error_invalid_second_factor">ใช้รหัสผ่านเฉพาะแอปพลิเคชันแทนรหัสผ่านบัญชีตามปกติของคุณ</string>
+    <string name="error_needs_browser">หากต้องการเข้าถึงบัญชีของคุณ คุณต้องลงชื่อเข้าใช้ในเว็บ แตะ \"ถัดไป\" เพื่อเริ่มการลงชื่อเข้าใช้ผ่านเบราว์เซอร์</string>
+</resources>

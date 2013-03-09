@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="120.0px" android:layout_height="142.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iconBg" android:background="@drawable/photo_preset_frame" android:layout_width="104.0px" android:layout_height="104.0px" android:layout_marginLeft="8.0px" android:layout_marginTop="9.0px" />
+    <ImageView android:id="@id/iconImage" android:layout_width="100.0px" android:layout_height="100.0px" android:layout_marginLeft="10.0px" android:layout_marginTop="11.0px" />
+    <View android:id="@id/iconFront" android:layout_width="104.0px" android:layout_height="104.0px" android:layout_marginLeft="8.0px" android:layout_marginTop="9.0px" />
+    <TextView android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/text" android:layout_width="120.0px" android:layout_height="wrap_content" android:layout_marginBottom="5.0px" android:singleLine="true" android:layout_alignParentBottom="true" android:marqueeRepeatLimit="3" style="@com.htc:style/title_secondary_xs" />
+</RelativeLayout>

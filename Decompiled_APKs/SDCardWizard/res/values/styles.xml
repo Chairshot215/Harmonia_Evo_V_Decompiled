@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sd_screen">
+        <item name="android:orientation">vertical</item>
+        <item name="android:id">@id/main_screen</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="sd_listview">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:scrollingCache">true</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:headerDividersEnabled">false</item>
+    </style>
+    <style name="sd_items_button">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="translucent_no_title_bar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

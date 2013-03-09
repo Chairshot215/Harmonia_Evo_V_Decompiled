@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="0.0dip" style="@style/AccountSwitchSpinnerItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/unread" android:layout_marginLeft="4.0dip" android:layout_alignParentRight="true" style="@style/unreadCountActionBar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/unread" android:layout_alignParentLeft="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/spinner" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:attr/actionDropDownStyle">
+            <TextView android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" style="@style/AccountSpinnerAnchorTextPrimary" />
+            <TextView android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:singleLine="true" android:includeFontPadding="false" style="@style/AccountSpinnerAnchorTextSecondary" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

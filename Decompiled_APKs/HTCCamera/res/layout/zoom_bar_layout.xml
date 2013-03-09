@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/zoom_bar_container" android:visibility="gone" android:layout_width="@dimen/zoom_bar_container_height" android:layout_height="@dimen/zoom_bar_container_width" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.android.camera.rotate.RotateRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/zoom_in" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_zoom_bar_in" android:layout_centerInParent="true" />
+                </com.android.camera.rotate.RotateRelativeLayout>
+            </RelativeLayout>
+            <com.android.camera.rotate.RotateRelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/zoom_bar_width" android:layout_marginTop="@dimen/zoom_bar_margin_left" android:layout_marginBottom="@dimen/zoom_bar_margin_right">
+                <SeekBar android:id="@id/zoom_bar" android:background="@drawable/camera_zoom_track" android:paddingLeft="@dimen/zoom_bar_padding_left" android:paddingRight="@dimen/zoom_bar_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/zoom_bar_height" android:thumb="@drawable/camera_zoom_indicator" android:layout_centerInParent="true" />
+            </com.android.camera.rotate.RotateRelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.android.camera.rotate.RotateRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/zoom_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_zoom_bar_out" android:layout_centerInParent="true" />
+                </com.android.camera.rotate.RotateRelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.android.camera.rotate.RotateRelativeLayout android:id="@id/zoom_bar_touch_receiver" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

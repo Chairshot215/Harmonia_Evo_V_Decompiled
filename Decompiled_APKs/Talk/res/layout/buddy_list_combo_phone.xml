@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:talk="http://schemas.android.com/apk/res/com.google.android.talk">
+    <RelativeLayout android:id="@id/loading_view" android:paddingTop="48.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/spinner" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:id="@id/waiting_to_load_title" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waiting_to_load_title" android:layout_toRightOf="@id/spinner" android:layout_alignTop="@id/spinner" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:id="@id/waiting_to_load_message" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/waiting_to_load" android:layout_toRightOf="@id/spinner" android:layout_below="@id/waiting_to_load_title" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/left_panel_container" android:paddingTop="@dimen/roster_list_offset_from_top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/right_panel_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/chat_and_status" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/chat_screen_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <FrameLayout android:id="@id/status_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

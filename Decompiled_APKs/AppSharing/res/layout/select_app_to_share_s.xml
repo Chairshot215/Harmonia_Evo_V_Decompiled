@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@com.htc:drawable/common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarShort android:id="@id/headerbar" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:bubble_visibility="invisible" headerbar:progress_visibility="invisible">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarShort>
+    <TextView android:gravity="center" android:id="@id/empty_list_text" android:background="@com.htc:drawable/listview_listbackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_apps" android:layout_below="@id/headerbar" style="@com.htc:style/darklist_primary_s_bold" />
+    <com.htc.widget.HtcListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:layout_below="@id/headerbar" style="@style/ListView.HtcGreen" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="100325525" android:versionName="1.0.2212393063.325525" package="com.android.CSDFunctionG"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.SET_ORIENTATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <application android:label="@string/app_label" android:icon="@drawable/htc">
+        <activity android:label="@string/app_label" android:name="Instruction" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_label" android:name="csdfunction" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="vibratortest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="backlighttest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="ledtest" android:screenOrientation="portrait" />
+        <activity android:label="Line Drawing Test" android:name="touchtest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="buttontest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="batteryrundown" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="flashlight" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="audiotest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="headsetstatus" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="Gsensortest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="Proximitytest" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="lightsensor" android:screenOrientation="portrait" />
+        <activity android:label="Copyright" android:name="copyright" android:screenOrientation="portrait" />
+        <activity android:theme="@style/customTheme" android:name="declare" android:screenOrientation="portrait" />
+        <activity android:label="Test Log" android:name="log" android:screenOrientation="portrait" />
+        <activity android:label="@string/app_label" android:name="moretestitems" android:screenOrientation="portrait" />
+        <receiver android:name="GsdBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+                <data android:scheme="android_secret_code" android:host="3424" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

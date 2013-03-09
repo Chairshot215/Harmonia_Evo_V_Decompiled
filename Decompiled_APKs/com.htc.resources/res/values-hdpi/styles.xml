@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="lock_pattern_style_small">
+        <item name="lock_btn_default">@drawable/btn_code_lock_default_s</item>
+        <item name="lock_btn_touch">@drawable/btn_code_lock_touched_s</item>
+        <item name="lock_circle_default">@drawable/indicator_code_lock_point_area_default_s</item>
+        <item name="lock_circle_green">@drawable/indicator_code_lock_point_area_green_s</item>
+        <item name="lock_circle_red">@drawable/indicator_code_lock_point_area_red_s</item>
+    </style>
+    <style name="FooterBarStyle">
+        <item name="android:layout_height">@dimen/htc_footer_height</item>
+        <item name="one_child_width">@dimen/htc_footer_one_child_width_port</item>
+        <item name="one_child_width_land">@dimen/htc_footer_one_child_width_land</item>
+        <item name="def_child_weight">1.0</item>
+        <item name="enable_secondary_background">true</item>
+        <item name="secondary_transparent_alpha">@integer/htc_footer_secondary_transparent_alpha</item>
+    </style>
+    <style name="FooterBarButtonStyle" parent="@*android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="footerButtonImage">@null</item>
+    </style>
+    <style name="photo_recipient_button">
+        <item name="android:textSize">@dimen/button_secondary_m</item>
+        <item name="android:textColor">@drawable/button_text_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">5.0px</item>
+        <item name="android:paddingRight">5.0px</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35.0px</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="photo_recipient_image">
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">35.0px</item>
+        <item name="android:scaleType">center</item>
+    </style>
+</resources>

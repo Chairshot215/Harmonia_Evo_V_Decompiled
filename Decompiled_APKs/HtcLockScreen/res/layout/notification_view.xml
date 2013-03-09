@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/notification_view_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/notification_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_icon_marginLeft" android:layout_marginBottom="@dimen/notification_icon_marginBottom" />
+    <LinearLayout android:orientation="vertical" android:id="@id/notifications_text_panel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_text_marginLeft" android:layout_marginBottom="@dimen/notification_text_marginBottom">
+        <TextView android:textSize="@dimen/notification_title_textSize" android:textColor="@color/white" android:ellipsize="end" android:id="@id/notification_description1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginRight="0.0px" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.2" />
+        <TextView android:textSize="@dimen/notification_textSize" android:textColor="@color/white" android:ellipsize="end" android:id="@id/notification_description2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginRight="0.0px" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.2" />
+    </LinearLayout>
+</LinearLayout>

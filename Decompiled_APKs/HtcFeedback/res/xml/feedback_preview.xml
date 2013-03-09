@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/preview_error_category" android:key="preview_error">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_type" android:key="error_type" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_package_name" android:key="error_package_name" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_package_version" android:key="error_package_version" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_package_version_name" android:key="error_package_version_name" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_installed_by" android:key="error_installed_by" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_process_name" android:key="error_process_name" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_time" android:key="error_time" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_up_time" android:key="error_up_time" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_awake_time" android:key="error_awake_time" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/error_system_app" android:key="error_system_app" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/preview_system_category" android:key="preview_system_category">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_device" android:key="system_device" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_build_id" android:key="system_build_id" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_build_type" android:key="system_build_type" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_model" android:key="system_model" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_product" android:key="system_product" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_sdk_version" android:key="system_sdk_version" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_release" android:key="system_release" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_incremental_version" android:key="system_incremental_version" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/system_brand" android:key="system_brand" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/preview_crash_category" android:key="preview_crash_category">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/crash_exception_class" android:key="crash_exception_class" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/crash_source_file" android:key="crash_source_file" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/crash_source_class" android:key="crash_source_class" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/crash_source_method" android:key="crash_source_method" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/crash_line_number" android:key="crash_line_number" />
+        <com.htc.feedback.FeedbackInfoPreference android:title="@string/crash_stack_trace" android:key="crash_stack_trace" />
+        <com.htc.feedback.FeedbackInfoPreference android:title="@string/system_crash_log" android:key="crash_log" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/preview_anr_category" android:key="preview_anr_category">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/anr_activity" android:key="anr_activity" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/anr_caused_by" android:key="anr_caused_by" />
+        <com.htc.feedback.FeedbackInfoPreference android:title="@string/anr_additional_info" android:key="anr_additional_info" />
+        <com.htc.feedback.FeedbackInfoPreference android:title="@string/anr_stack_traces" android:key="anr_stack_traces" />
+        <com.htc.feedback.FeedbackInfoPreference android:title="@string/system_crash_log" android:key="anr_crash_log" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/preview_system_crash_category" android:key="preview_system_crash_category">
+        <com.htc.feedback.FeedbackInfoPreference android:title="@string/system_crash_log" android:key="system_crash_log" />
+    </com.htc.preference.HtcPreferenceCategory>
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/preview_radio_category" android:key="preview_radio_category">
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_mcc" android:key="radio_mcc" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_mnc" android:key="radio_mnc" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_lac" android:key="radio_lac" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_cell_id" android:key="radio_cell_id" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_sid" android:key="radio_sid" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_nid" android:key="radio_nid" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_bid" android:key="radio_bid" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_rscp" android:key="radio_rscp" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_latitude" android:key="radio_latitude" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/radio_longitude" android:key="radio_longitude" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

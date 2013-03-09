@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/photoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/contactImage" android:background="@drawable/incall_photo_border" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/picture_unknown" android:scaleType="fitXY" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="28.0sp" android:gravity="center_horizontal" android:id="@id/nameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:singleLine="true" android:layout_toRightOf="@id/contactImage" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dateCell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_toRightOf="@id/contactImage" android:layout_below="@id/nameText">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="18.0sp" android:textColor="?android:textColorSecondary" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="18.0sp" android:textColor="?android:textColorSecondary" android:id="@id/senderAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="408-910-3801" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/timestampLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/contactImage" android:layout_below="@id/dateCell">
+            <ImageView android:id="@id/urgentIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/ic_vvm_urgent" />
+            <ImageView android:id="@id/privateIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@drawable/ic_vvm_private" />
+            <ImageView android:id="@id/lockIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/ic_lock" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:id="@id/dateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9:34am Mar 5, 2009" android:singleLine="true" />
+        </LinearLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/recipientsBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/multiple_recipients_word_cap" android:layout_toRightOf="@id/contactImage" android:layout_below="@id/timestampLayout" />
+    </RelativeLayout>
+    <ViewStub android:id="@id/playback_views_stub" android:layout="@layout/stub_playback_views" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

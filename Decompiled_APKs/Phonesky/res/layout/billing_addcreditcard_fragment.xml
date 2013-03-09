@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/credit_card_details" android:background="@color/billing_form_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/addinstrument_content_padding" android:paddingRight="@dimen/addinstrument_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/addcreditcard_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" style="@style/AddInstrumentBodyTextPrimary" />
+            <ImageView android:id="@id/addcreditcard_logos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/credit_cards" />
+            <include layout="@layout/billing_addcreditcard_fields" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/billing_addinstrument_buttonbar" />
+</LinearLayout>

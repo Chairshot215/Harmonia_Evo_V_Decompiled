@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0px" android:layout_marginRight="@dimen/arrow_left_marginRight" />
+    <TextView android:textSize="@dimen/lockscreen_hint_textSize" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/unlock_hint_text" android:paddingTop="0.0px" android:layout_width="@dimen/lockscreen_hint_text_maxWidth" android:layout_height="wrap_content" android:maxLines="2" android:shadowColor="@color/black" android:shadowDx="1.1" android:shadowDy="1.1" android:shadowRadius="1.1" />
+    <ImageView android:id="@id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/arrow_left_marginLeft" android:layout_marginTop="0.0px" />
+</LinearLayout>

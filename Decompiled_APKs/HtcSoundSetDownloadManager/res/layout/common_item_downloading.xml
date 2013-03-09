@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/downloading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_item_downloading_margin_right" android:indeterminate="true" style="?android:attr/progressBarStyleSmallInverse" />
+    <TextView android:textSize="@dimen/list_text_size_primary" android:textColor="@*android:color/black" android:gravity="center_vertical" android:id="@id/downloading_text" android:layout_width="wrap_content" android:layout_height="@dimen/htc_list_item_height" android:text="@string/text_loading" />
+</LinearLayout>

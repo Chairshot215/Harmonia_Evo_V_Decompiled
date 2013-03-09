@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.preference.HtcPreferenceScreen android:title="@string/pref_title_notification_enabled" android:key="notification_preferenceScreen">
+        <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_received_notification_settings_title" android:key="pref_received_notification_settings_category">
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_received_notification_enabled" android:key="pref_key_enable_received_notifications" android:summary="@string/pref_summary_received_notification_enabled" android:defaultValue="true" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_play_notification" android:key="pref_key_play_received_notifications" android:dependency="pref_key_enable_received_notifications" android:defaultValue="true" />
+            <com.android.mms.ui.MmsRingtonePreference android:title="@string/htc_pref_title_notification_ringtone" android:key="pref_key_received_ringtone" android:summary="@string/pref_summary_notification_ringtone" android:dependency="pref_key_play_received_notifications" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" android:showDefault="true" android:showSilent="false" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_notification_vibrate" android:key="pref_key_vibrate_received_notifications" android:summary="@string/pref_summary_received_notification_vibrate" android:dependency="pref_key_enable_received_notifications" android:defaultValue="true" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_notification_preview" android:key="pref_key_preview_received_notifications" android:summary="@string/pref_summary_received_notification_preview" android:dependency="pref_key_enable_received_notifications" android:defaultValue="true" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_charm_notification" android:key="pref_key_charm_notifications" android:summary="@string/pref_summary_charm_notification" android:dependency="pref_key_enable_received_notifications" android:defaultValue="true" />
+        </com.htc.preference.HtcPreferenceCategory>
+        <com.htc.preference.HtcPreferenceCategory android:title="@string/pref_sent_notification_settings_title" android:key="pref_sent_notification_settings_category">
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_sent_notification_enabled" android:key="pref_key_enable_sent_notifications" android:summary="@string/pref_summary_sent_notification_enabled" android:defaultValue="false" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_send_failure_notification" android:key="pref_key_enable_sent_failure_notifications" android:summary="@string/pref_summary_sent_failure_notifications" android:defaultValue="true" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_play_notification" android:key="pref_key_play_sent_notifications" android:defaultValue="true" />
+            <com.android.mms.ui.MmsRingtonePreference android:title="@string/htc_pref_title_notification_ringtone" android:key="pref_key_sent_ringtone" android:summary="@string/pref_summary_notification_ringtone" android:dependency="pref_key_play_sent_notifications" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" android:showDefault="true" android:showSilent="false" />
+            <com.htc.preference.HtcCheckBoxPreference android:title="@string/pref_title_notification_vibrate" android:key="pref_key_vibrate_sent_notifications" android:summary="@string/pref_summary_sent_notification_vibrate" android:defaultValue="true" />
+            <com.htc.preference.HtcListPreference android:persistent="true" android:entries="@array/pref_entries_display_message" android:title="@string/pref_sent_notification_display_settings_title" android:key="pref_display_message" android:defaultValue="success" android:entryValues="@array/pref_entries_values_display_message" />
+        </com.htc.preference.HtcPreferenceCategory>
+    </com.htc.preference.HtcPreferenceScreen>
+</com.htc.preference.HtcPreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/etUrl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/etUrlHint" />
+    <Button android:id="@id/btnGo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btnGoText" android:layout_below="@id/etUrl" android:layout_alignParentLeft="true" />
+    <Button android:id="@id/btnGetPolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btnGetPolicyText" android:layout_toRightOf="@id/btnGo" android:layout_below="@id/etUrl" />
+    <Button android:id="@id/btnAck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btnAckText" android:layout_toRightOf="@id/btnGetPolicy" android:layout_below="@id/etUrl" />
+    <EditText android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/etDisplay" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/etDisplayText" android:layout_below="@id/btnGo" />
+</RelativeLayout>

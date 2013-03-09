@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_block" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <FrameLayout android:id="@id/mailListFooterArea" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ViewStub android:id="@id/stub_mailFooterBar2Btn" android:layout="@layout/mail_footer_bar_2btn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/stub_mailFooterBar3Btn" android:layout="@layout/mail_footer_bar_3btn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.htc.widget.CarouselHost android:id="@*android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mailListFooterArea">
+        <FrameLayout android:id="@id/mailListTitleArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <com.htc.android.mail.widget.MailActionBar android:id="@id/mailListActionBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/stub_mailListSearchBar" android:layout="@layout/stub_mail_search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.htc.widget.CarouselWidget android:id="@*android:id/tabs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.widget.CarouselHost>
+</RelativeLayout>

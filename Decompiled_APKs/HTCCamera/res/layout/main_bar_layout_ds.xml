@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/item_main_bar_ds" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="106.0px" android:layout_weight="1.0" android:layout_alignParentTop="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/btn_mode_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_mode_ds" android:layout_width="fill_parent" android:layout_height="100.0px">
+                <ImageView android:id="@id/view_mode_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0px" android:src="@drawable/camera_icon_camera" />
+                <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                <TextView android:id="@id/text_mode_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doubleshot_main_bar_camera" style="@style/mainbar_ds_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/btn_camera_switch_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_camera_switch_ds" android:layout_width="fill_parent" android:layout_height="100.0px">
+                <ImageView android:id="@id/icon_camera_switch_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0px" android:src="@drawable/camera_icon_back" />
+                <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                <TextView android:id="@id/text_camera_switch_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doubleshot_main_bar_back" style="@style/mainbar_ds_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/btn_flash_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_flash_ds" android:layout_width="fill_parent" android:layout_height="100.0px">
+                <ImageView android:id="@id/view_flash_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0px" android:src="@drawable/camera_icon_flash_auto" />
+                <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                <TextView android:id="@id/text_flash_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doubleshot_main_bar_flash_auto" style="@style/mainbar_ds_style" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/btn_scene_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_scene_ds" android:layout_width="fill_parent" android:layout_height="100.0px">
+                <ImageView android:id="@id/view_scene_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0px" android:src="@drawable/camera_icon_auto" />
+                <View android:layout_width="wrap_content" android:layout_height="5.0px" />
+                <TextView android:id="@id/text_scene_ds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doubleshot_main_bar_scene_auto" style="@style/mainbar_ds_style" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/receiver_main_bar_ds" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/handle_height" android:layout_alignParentTop="true">
+        <View android:id="@id/receiver_mode_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_camera_switch_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_flash_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/receiver_scene_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ViewStub android:id="@id/on_screen_view_ds" android:layout="@layout/on_screen_layout_ds" android:inflatedId="@id/on_screen_stub_ds" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

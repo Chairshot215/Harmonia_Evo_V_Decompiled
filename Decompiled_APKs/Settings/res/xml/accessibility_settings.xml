@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.preference.HtcPreferenceScreen android:title="@string/accessibility_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/accessibility_services_title" android:key="services_category" />
+    <com.htc.preference.HtcPreferenceCategory android:title="@string/accessibility_system_title" android:key="system_category">
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/accessibility_power_button_ends_call_title" android:key="toggle_power_button_ends_call_preference" android:order="2" />
+        <com.htc.preference.HtcCheckBoxPreference android:persistent="false" android:title="@string/accelerometer_title" android:key="toggle_auto_rotate_screen_preference" android:order="3" />
+        <com.htc.preference.HtcPreferenceScreen android:title="@string/accessibility_touch_exploration_title" android:key="toggle_touch_exploration_preference" android:order="4" android:fragment="com.android.settings.AccessibilitySettings$ToggleTouchExplorationFragment">
+            <extra android:name="title" android:value="@string/accessibility_touch_exploration_title" />
+            <extra android:name="summary" android:value="@string/accessibility_touch_exploration_summary" />
+            <extra android:name="enable_warning_title" android:value="@*android:string/dialog_alert_title" />
+            <extra android:name="enable_warning_message" android:value="@string/accessibility_touch_exploration_warning" />
+            <extra android:name="settings_title" android:value="@string/accessibility_menu_item_tutorial" />
+            <extra android:name="settings_component_name" android:value="com.android.settings/com.android.settings.AccessibilityTutorialActivity" />
+        </com.htc.preference.HtcPreferenceScreen>
+        <com.htc.preference.HtcListPreference android:persistent="false" android:entries="@array/long_press_timeout_selector_titles" android:title="@string/accessibility_long_press_timeout_title" android:key="select_long_press_timeout_preference" android:order="5" android:entryValues="@array/long_press_timeout_selector_values" />
+        <com.android.settings.AccessibilityEnableScriptInjectionPreference android:persistent="false" android:title="@string/accessibility_script_injection_title" android:key="toggle_script_injection_preference" android:order="6" android:dialogTitle="@string/accessibility_script_injection_security_warning_title" android:dialogMessage="@string/accessibility_script_injection_security_warning_summary" android:dialogIcon="@*android:drawable/ic_dialog_alert" android:positiveButtonText="@string/accessibility_script_injection_button_allow" android:negativeButtonText="@string/accessibility_script_injection_button_disallow" />
+    </com.htc.preference.HtcPreferenceCategory>
+</com.htc.preference.HtcPreferenceScreen>

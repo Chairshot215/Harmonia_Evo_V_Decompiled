@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/archive" android:id="@id/y_button" android:title="@string/archive" android:alphabeticShortcut="@string/trigger_y_char" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/trash" android:id="@id/delete" android:title="@string/delete" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_labels_holo_light" android:id="@id/change_labels" android:title="@string/menu_change_labels" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_mark_unread_holo_light" android:id="@id/read_unread" android:title="@string/mark_read" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_menu_star_holo_light" android:id="@id/star" android:title="@string/star" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_email_caret_double" android:id="@id/mark_important" android:title="@string/mark_important" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_email_caret_single" android:id="@id/mark_not_important" android:title="@string/mark_not_important" android:showAsAction="never" />
+    <item android:id="@id/mute" android:title="@string/mute" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_spam_normal_holo_light" android:id="@id/report_spam" android:title="@string/report_spam" android:showAsAction="never" />
+</menu>

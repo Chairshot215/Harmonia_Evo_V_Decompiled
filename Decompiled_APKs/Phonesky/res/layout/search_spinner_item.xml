@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bucket_header_background" android:layout_width="fill_parent" android:layout_height="@dimen/base_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.finsky.layout.AccessibleTextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="left|center" android:id="@id/dropdown_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_spinner_dropdown_margin_left" android:layout_marginRight="@dimen/search_spinner_dropdown_margin_left" android:singleLine="true" />
+</LinearLayout>

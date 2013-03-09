@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.android.htcime.ui.FullWCL android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.htc.android.htcime">
+    <com.htc.android.htcime.ui.WordCandsListEX android:scrollbarStyle="outsideOverlay" android:id="@id/wcl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/carrier" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.htc.android.htcime.ui.SimpleWCL android:id="@id/wcv" android:layout_width="fill_parent" android:layout_height="230.0dip" />
+        </FrameLayout>
+    </com.htc.android.htcime.ui.WordCandsListEX>
+    <LinearLayout android:layout_gravity="bottom|right|center" android:orientation="horizontal" android:id="@id/full_wclbar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.htc.android.htcime.ui.DefaultKeyButton android:textSize="28.0px" android:gravity="center" android:id="@id/full_previous" android:layout_width="wrap_content" android:layout_height="50.0px" android:text="@string/fwcl_previous" />
+        <com.htc.android.htcime.ui.DefaultKeyButton android:textSize="28.0px" android:gravity="center" android:id="@id/full_next" android:layout_width="wrap_content" android:layout_height="50.0px" android:text="@string/fwcl_next" />
+        <com.htc.android.htcime.ui.DefaultKeyButton android:textSize="28.0px" android:gravity="center" android:id="@id/full_add_word" android:layout_width="wrap_content" android:layout_height="50.0px" android:text="@string/fwcl_add_word" />
+        <com.htc.android.htcime.ui.DefaultKeyButton android:textSize="28.0px" android:gravity="center" android:id="@id/full_close" android:layout_width="65.0px" android:layout_height="50.0px" android:text="@string/fwcl_close" />
+        <View android:id="@id/padding_view" android:layout_width="11.0px" android:layout_height="50.0px" />
+    </LinearLayout>
+</com.htc.android.htcime.ui.FullWCL>

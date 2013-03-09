@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:headerbar="http://schemas.android.com/apk/res/com.htc">
+    <com.htc.widget.HeaderBarMiddle android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HeaderBarText android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="fill_parent" headerbar:panel_gravity="center_panel" />
+    </com.htc.widget.HeaderBarMiddle>
+    <ListView android:id="@id/listview" android:background="#ffffffff" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/connect_to_pc_main_listview_marginTop" android:cacheColorHint="#ffffffff" android:divider="@com.htc:drawable/list_divider" android:footerDividersEnabled="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/checkbox_bkg" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/connect_to_pc_main_checkbox_bkg_height">
+        <CheckBox android:textColor="#ff000000" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/connect_to_pc_main_checkbox_marginLeft" android:text="@string/usb_dont_ask" style="@com.htc:style/list_primary_m" />
+    </LinearLayout>
+    <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="@dimen/connect_to_pc_main_htc_footer_height">
+        <com.htc.widget.HtcFooterButton android:id="@id/footer_button" />
+    </com.htc.widget.HtcFooter>
+</LinearLayout>

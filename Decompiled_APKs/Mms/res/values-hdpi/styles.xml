@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_appearance_medium" parent="@*android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/medium_text_appearance_text_size</item>
+    </style>
+    <style name="Theme.Hero.Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:listPreferredItemHeight">@dimen/common_list_item_height</item>
+        <item name="android:windowBackground">@*android:drawable/screen_background_light</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme_htc_Transparent">
+        <item name="android:listPreferredItemHeight">@dimen/common_list_item_height</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme_fake" parent="@style/Theme_htc_Transparent">
+        <item name="com.htc:fakescreenStyle">style_01</item>
+    </style>
+    <style name="report_text_style">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="primary">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">@color/primary_selected_color</item>
+    </style>
+    <style name="secondary">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">@color/secondary_selected_color</item>
+    </style>
+    <style name="primary_list_item">
+        <item name="android:textSize">@dimen/text_size_26</item>
+        <item name="android:textColor">@color/primary_selected_color</item>
+    </style>
+    <style name="primary_list_item_dropdown" parent="@style/common_pulldown">
+        <item name="android:textSize">@dimen/text_size_26</item>
+        <item name="android:textColor">@color/htc_text_color_black</item>
+    </style>
+    <style name="secondary_list_item">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/secondary_selected_color_gray</item>
+    </style>
+    <style name="secondary_list_item_time" parent="@style/secondary_list_item" />
+    <style name="secondary_subject">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">@color/primary_selected_color</item>
+    </style>
+    <style name="text_a">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">@color/primary_selected_color</item>
+    </style>
+    <style name="text_b">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">@color/secondary_selected_color</item>
+    </style>
+    <style name="text_c">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">@color/secondary_selected_color_gray</item>
+    </style>
+    <style name="attachment_a">
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:textColor">@color/primary_attachment_selected_color</item>
+    </style>
+    <style name="attachment_b">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/secondary_attachment_selected_color</item>
+    </style>
+    <style name="attachment_a_white">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">@color/htc_text_color_white</item>
+    </style>
+    <style name="attachment_b_white">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">@color/htc_text_color_light_gray</item>
+    </style>
+    <style name="text_notification">
+        <item name="android:textSize">14.0px</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="htc_listitem_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_list_item_height</item>
+    </style>
+    <style name="htc_listitem_headerview_style" parent="@style/htc_listitem_style">
+        <item name="android:minHeight">@dimen/common_list_item_height</item>
+    </style>
+    <style name="htc_navbar_button_style">
+        <item name="android:textSize">@dimen/text_size_28</item>
+        <item name="android:textColor">@color/button_selected_color_b</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:background">@drawable/common_panel_navbar_button</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+    <style name="htc_button_style_white">
+        <item name="android:textSize">@dimen/downloading_label_text_size</item>
+        <item name="android:textColor">@color/button_selected_color_w</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:background">?com.htc:attr_common_button_small</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="htc_mms_slide_edit_button_white" parent="@style/htc_button_style_white">
+        <item name="android:textSize">@dimen/edit_slide_button_text_size</item>
+        <item name="android:layout_width">@dimen/edit_slide_button_width</item>
+        <item name="android:layout_height">@dimen/edit_slide_button_height</item>
+    </style>
+    <style name="htc_area_top_style">
+        <item name="android:background">@drawable/common_section_divider_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">14.0px</item>
+    </style>
+    <style name="htc_divider_item_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/common_divider_items</item>
+    </style>
+    <style name="common_sublevel_header_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_sublevel_header_height</item>
+    </style>
+    <style name="compose_bottom_panel">
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/common_sub_panel_navbar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/compose_bottom_panel_height</item>
+    </style>
+    <style name="htc_button_style.compose_send" parent="@style/htc_button_style_normal">
+        <item name="android:layout_width">@dimen/compose_send_btn_width</item>
+        <item name="android:layout_height">@dimen/compose_send_btn_height</item>
+        <item name="android:layout_marginLeft">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/common_margin_right</item>
+        <item name="android:layout_marginBottom">@dimen/compose_send_btn_marginBottom</item>
+        <item name="android:text">@string/send</item>
+    </style>
+    <style name="common_b5_bottom_panel_touch_area">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="common_b5_bottom_panel_btn_style" parent="@style/common_b_button_small">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">@dimen/common_button_square_v1_len</item>
+        <item name="android:layout_height">@dimen/common_button_square_v1_len</item>
+    </style>
+    <style name="common_b5_bottom_panel_btn_leftSide" parent="@style/common_b5_bottom_panel_btn_style">
+        <item name="android:layout_marginLeft">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/common_button_panel_margin_top</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="common_b5_bottom_panel_btn_rightSide" parent="@style/common_b5_bottom_panel_btn_style">
+        <item name="android:layout_marginTop">@dimen/common_button_panel_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/common_layout_margin_horizontal</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="common_list_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/common_list_divider</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="editable_mediaView_main_panel">
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">157.0px</item>
+        <item name="android:layout_marginLeft">5.0px</item>
+        <item name="android:layout_marginTop">5.0px</item>
+        <item name="android:layout_marginRight">3.0px</item>
+        <item name="android:layout_marginBottom">5.0px</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="editable_mediaView_image_holder">
+        <item name="android:layout_width">88.0px</item>
+        <item name="android:layout_height">88.0px</item>
+        <item name="android:layout_marginLeft">3.0px</item>
+        <item name="android:layout_marginTop">30.0px</item>
+    </style>
+    <style name="editable_mediaView_media_preview">
+        <item name="android:layout_width">80.0px</item>
+        <item name="android:layout_height">80.0px</item>
+        <item name="android:layout_marginLeft">7.0px</item>
+        <item name="android:layout_marginTop">34.0px</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="editable_mediaView_title">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">95.0px</item>
+        <item name="android:layout_marginTop">40.0px</item>
+        <item name="android:layout_marginRight">5.0px</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="editable_mediaView_size">
+        <item name="android:textSize">24.0px</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">95.0px</item>
+        <item name="android:layout_marginTop">70.0px</item>
+        <item name="android:layout_marginRight">5.0px</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="editable_mediaView_btn_edit">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">140.0px</item>
+        <item name="android:layout_height">76.0px</item>
+        <item name="android:text">@string/htc_edit_draft</item>
+    </style>
+    <style name="editable_mediaView_btn_remove">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">140.0px</item>
+        <item name="android:layout_height">76.0px</item>
+        <item name="android:layout_marginTop">5.0px</item>
+        <item name="android:text">@string/remove</item>
+    </style>
+    <style name="text_style_title_detail_primary">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/htc_text_color_white</item>
+        <item name="android:layout_marginLeft">0.5dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="text_style_title_detail_primary_shadow">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="text_style_title_detail_secondary">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/htc_text_color_white</item>
+        <item name="android:layout_marginLeft">0.5dip</item>
+        <item name="android:layout_marginTop">1.0dip</item>
+    </style>
+    <style name="text_style_title_detail_secondary_shadow">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@*android:color/black</item>
+    </style>
+    <style name="select_contact_info_title_text">
+        <item name="android:textSize">@dimen/text_size_secondary</item>
+        <item name="android:textColor">@color/htc_text_color_white</item>
+    </style>
+    <style name="slid_audio_style">
+        <item name="android:background">@drawable/common_fill_topround</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="htc_divider_Wap_style">
+        <item name="android:background">@drawable/common_section_divider_top</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/common_divider_top_height</item>
+    </style>
+    <style name="common_b_button">
+        <item name="android:background">?com.htc:attr_common_b_button</item>
+    </style>
+    <style name="common_b_button_small">
+        <item name="android:background">?com.htc:attr_common_b_button_small</item>
+    </style>
+    <style name="common_pulldown">
+        <item name="android:background">@drawable/common_pulldown</item>
+    </style>
+    <style name="htc_button_style_normal" parent="@style/htc_button_style">
+        <item name="android:background">?com.htc:attr_common_b_button</item>
+    </style>
+    <style name="htc_button_style" parent="@style/common_b_button_small">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:textColor">@color/button_selected_color_b</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+</resources>

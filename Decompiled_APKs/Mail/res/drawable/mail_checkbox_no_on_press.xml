@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_enabled="true" android:state_checked="true" android:drawable="@com.htc:drawable/common_checkbox_on" />
+    <item android:state_window_focused="false" android:state_enabled="true" android:state_checked="false" android:drawable="@com.htc:drawable/common_checkbox_off" />
+    <item android:state_enabled="true" android:state_checked="false" android:drawable="@com.htc:drawable/common_checkbox_off" />
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@com.htc:drawable/common_checkbox_on" />
+    <item android:state_window_focused="false" android:state_checked="true" android:drawable="@com.htc:drawable/common_checkbox_on_disable" />
+    <item android:state_window_focused="false" android:state_checked="false" android:drawable="@com.htc:drawable/common_checkbox_off_disable" />
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@com.htc:drawable/common_checkbox_on_disable_focused" />
+    <item android:state_focused="true" android:state_checked="false" android:drawable="@com.htc:drawable/common_checkbox_off_disable_focused" />
+    <item android:state_checked="false" android:drawable="@com.htc:drawable/common_checkbox_off_disable" />
+    <item android:state_checked="true" android:drawable="@com.htc:drawable/common_checkbox_on_disable" />
+</selector>

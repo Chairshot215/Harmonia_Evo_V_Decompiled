@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/htc_list_dialer_item_width" android:layout_height="@dimen/htc_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left" android:id="@id/img_1x1" android:layout_width="@dimen/htc_list_item_height" android:layout_height="@dimen/htc_list_item_height" android:src="@drawable/common_icon_default_avatar" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/img_1x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/htc_list_item_margin_left_indicator" android:layout_marginTop="@dimen/htc_list_item_margin_top_indicator" />
+</RelativeLayout>
